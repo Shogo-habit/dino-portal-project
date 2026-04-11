@@ -2310,10 +2310,290 @@ const DINOSAURS = [
       { trait: "完全再現", value: "生きた姿", detail: "三次元的な装甲の配置が完全に判明している唯一の鎧竜" }
     ],
     image: "images/borealopelta.webp"
+  },
+  {
+    id: "edmontosaurus",
+    name: "エドモントサウルス",
+    kana: "えどもんとさうるす",
+    scientificName: "Edmontosaurus annectens",
+    era: "白亜紀後期",
+    region: "北アメリカ",
+    diet: "草食",
+    length: "12.0m",
+    weight: "3.5t",
+    description: "アヒルのような嘴を持つ代表的なハドロサウルス類。トサカのない平坦な頭部が特徴で、非常に高い密度で群れを作り、渡りを行っていたことが知られている。",
+    bioTraits: [
+      { trait: "アヒル口", value: "特化型", detail: "数千本の歯が並ぶデンタルバッテリーで植物をすり潰す" },
+      { trait: "群居性", value: "高い", detail: "数千頭規模の巨大な群れで移動していた証拠がある" }
+    ],
+    image: "images/edmontosaurus.webp"
+  },
+  {
+    id: "corythosaurus",
+    name: "コリトサウルス",
+    kana: "こりとさうるす",
+    scientificName: "Corythosaurus casuarius",
+    era: "白亜紀後期",
+    region: "北アメリカ",
+    diet: "草食",
+    length: "9.0m",
+    weight: "3.0t",
+    description: "カシオワリ（ヒクイドリ）のような半円形の立派なトサカを持つ恐竜。トサカの内部は空洞になっており、共鳴させて大きな声を出して仲間とコミュニケーションをとっていた。",
+    bioTraits: [
+      { trait: "半円形トサカ", value: "共鳴器", detail: "声を増幅させ、数キロ先まで音を届けることが可能" },
+      { trait: "視覚的装飾", value: "ディスプレイ", detail: "トサカは成長とともに大きくなり、雌雄の識別にも使われた" }
+    ],
+    image: "images/corythosaurus.webp"
+  },
+  {
+    id: "maiasaura",
+    name: "マイアサウラ",
+    kana: "まいあさうら",
+    scientificName: "Maiasaura peeblesorum",
+    era: "白亜紀後期",
+    region: "北アメリカ",
+    diet: "草食",
+    length: "9.0m",
+    weight: "2.5t",
+    description: "「良い母親のトカゲ」を意味する名を持ち、恐竜が子育てをしていたことを初めて証明した重要な種。大規模な営巣地を作り、子供が成長するまで世話を焼いていた。",
+    bioTraits: [
+      { trait: "子育て", value: "高度な社会性", detail: "卵の孵化から幼体の成長まで群れ全体で保護する" },
+      { trait: "営巣戦略", value: "コロニー形成", detail: "一定の間隔で巣を配置し、集団で捕食者から守る" }
+    ],
+    image: "images/maiasaura.webp"
+  },
+  {
+    id: "muttaburrasaurus",
+    name: "ムッタブラサウルス",
+    kana: "むったぶらさうるす",
+    scientificName: "Muttaburrasaurus langdoni",
+    era: "白亜紀前期",
+    region: "オーストラリア",
+    diet: "草食",
+    length: "8.0m",
+    weight: "2.8t",
+    description: "オーストラリアを代表する大型の鳥脚類。膨らんだ大きな鼻腔が特徴で、嗅覚が非常に鋭かった、あるいは大きな鳴き声を出すための共鳴器として機能していたと考えられている。",
+    bioTraits: [
+      { trait: "隆起した鼻", value: "特異形状", detail: "嗅覚の強化や音響調節に使用された可能性が高い" },
+      { trait: "咬合力", value: "強力", detail: "硬い植物を切断するのに適した鋭い嘴と歯を持つ" }
+    ],
+    image: "images/muttaburrasaurus.webp"
+  },
+  {
+    id: "shantungosaurus",
+    name: "シャントゥンゴサウルス",
+    kana: "しゃんとぅんごさうるす",
+    scientificName: "Shantungosaurus giganteus",
+    era: "白亜紀後期",
+    region: "アジア（中国）",
+    diet: "草食",
+    length: "15.0m",
+    weight: "16.0t",
+    description: "史上最大のハドロサウルス類であり、最大の二足歩行動物の一つ。その巨体は一部の竜脚類にも匹敵し、白亜紀のアジアにおいて圧倒的な存在感を放っていた。",
+    bioTraits: [
+      { trait: "巨大化", value: "最大級", detail: "ハドロサウルス類としては異例の15メートル超えの体躯" },
+      { trait: "骨格強度", value: "極めて高い", detail: "巨体を支えるための頑強な脊椎と後肢を持つ" }
+    ],
+    image: "images/shantungosaurus.webp"
+  },
+  {
+    id: "tenontosaurus",
+    name: "テノントサウルス",
+    kana: "てのんとさうるす",
+    scientificName: "Tenontosaurus tilletti",
+    era: "白亜紀前期",
+    region: "北アメリカ",
+    diet: "草食",
+    length: "7.0m",
+    weight: "1.0t",
+    description: "極端に長い尾を持つ鳥脚類。デイノニクスなどの小型肉食恐竜の主な獲物となっていたことが、化石の発見状況から強く示唆されている。",
+    bioTraits: [
+      { trait: "超長尾", value: "バランス調整", detail: "全長の半分以上を占める強靭な尾でバランスを取る" },
+      { trait: "被食者", value: "生態系の中核", detail: "肉食恐竜との格闘の痕跡が複数の化石に残っている" }
+    ],
+    image: "images/tenontosaurus.webp"
+  },
+  {
+    id: "camptosaurus",
+    name: "カンプトサウルス",
+    kana: "かんぷとさうるす",
+    scientificName: "Camptosaurus dispar",
+    era: "ジュラ紀後期〜白亜紀前期",
+    region: "北アメリカ・ヨーロッパ",
+    diet: "草食",
+    length: "6.0m",
+    weight: "0.8t",
+    description: "イグアノドン類に近い原始的な鳥脚類。がっしりとした四肢を持ち、通常は四足、走る時は二足歩行を使い分けることができたと考えられている。",
+    bioTraits: [
+      { trait: "歩行柔軟性", value: "二足/四足併用", detail: "状況に応じて歩行スタイルを自在に切り替える" },
+      { trait: "強靭な嘴", value: "植物切断", detail: "地表に近い植物を効率よく摘み取るための嘴" }
+    ],
+    image: "images/camptosaurus.webp"
+  },
+  {
+    id: "ouranosaurus",
+    name: "オウラノサウルス",
+    kana: "おうらのさうるす",
+    scientificName: "Ouranosaurus nigeriensis",
+    era: "白亜紀前期",
+    region: "アフリカ（ニジェール）",
+    diet: "草食",
+    length: "7.0m",
+    weight: "2.2t",
+    description: "背中に帆のような突起を持つユニークなイグアノドン類。この帆は体温調節や、仲間へのディスプレイ（自己アピール）に使われたと考えられている。",
+    bioTraits: [
+      { trait: "背中の帆", value: "体温調節", detail: "表面積を広げ、熱を放射または吸収する役割" },
+      { trait: "親指スパイク", value: "防御武器", detail: "イグアノドン類特有の鋭い親指の爪で身を守る" }
+    ],
+    image: "images/ouranosaurus.webp"
+  },
+  {
+    id: "olorotitan",
+    name: "オロロティタン",
+    kana: "おろろてぃたん",
+    scientificName: "Olorotitan arharensis",
+    era: "白亜紀後期",
+    region: "アジア（ロシア）",
+    diet: "草食",
+    length: "12.0m",
+    weight: "5.0t",
+    description: "扇形の巨大なトサカを持つハドロサウルス類。ロシアの極東地域で発見され、白亜紀末期まで生き残っていた。",
+    bioTraits: [
+      { trait: "構造", value: "扇形トサカ", detail: "中空のトサカで音を鳴らし仲間と通信した" },
+      { trait: "機動性", value: "中程度", detail: "二足・四足歩行の両方で移動可能" }
+    ],
+    image: "images/olorotitan.webp"
+  },
+  {
+    id: "stegoceras",
+    name: "ステゴケラス",
+    kana: "すてごけらす",
+    scientificName: "Stegoceras validum",
+    era: "白亜紀後期",
+    region: "北アメリカ",
+    diet: "草食",
+    length: "2.5m",
+    weight: "40kg",
+    description: "分厚いドーム状の頭骨を持つパキケファロサウルス類。比較的小型だが、頭突きによる儀礼的闘争を行っていたと考えられている。",
+    bioTraits: [
+      { trait: "武装", value: "頭骨ドーム", detail: "衝撃に強い強化された骨構造" },
+      { trait: "感覚", value: "鋭敏な嗅覚", detail: "脳の嗅球が発達していた" }
+    ],
+    image: "images/stegoceras.webp"
+  },
+  {
+    id: "homalocephale",
+    name: "ホマロケファレ",
+    kana: "ほまろけふぁれ",
+    scientificName: "Homalocephale calathocercos",
+    era: "白亜紀後期",
+    region: "アジア（モンゴル）",
+    diet: "草食",
+    length: "1.8m",
+    weight: "43kg",
+    description: "ドーム状ではなく平らな頭頂部を持つパキケファロサウルス類。骨盤が広く、内臓を保護するのに適していた。",
+    bioTraits: [
+      { trait: "構造", value: "平坦な頭頂", detail: "頭突きよりも威嚇やディスプレイ用か" },
+      { trait: "安定性", value: "広い骨盤", detail: "低重心で安定した歩行が可能" }
+    ],
+    image: "images/homalocephale.webp"
+  },
+  {
+    id: "hyperodapedon",
+    name: "ハイペロダペドン",
+    kana: "はいぺろだぺどん",
+    scientificName: "Hyperodapedon",
+    era: "三畳紀後期",
+    region: "全世界",
+    diet: "草食",
+    length: "1.3m",
+    weight: "50kg",
+    description: "三畳紀に繁栄したリンコサウルス類。嘴のような口と、植物をすりつぶすのに特化したプレート状の歯を持つ。",
+    bioTraits: [
+      { trait: "採食", value: "特殊な嘴", detail: "硬い種子や植物を砕くための強力な顎" },
+      { trait: "生存戦略", value: "爆発的繁栄", detail: "三畳紀後期の主要な草食動物だった" }
+    ],
+    image: "images/hyperodapedon.webp"
+  },
+  {
+    id: "dimetrodon",
+    name: "ディメトロドン",
+    kana: "でぃめとろどん",
+    scientificName: "Dimetrodon",
+    era: "ペルム紀前期",
+    region: "北アメリカ・ヨーロッパ",
+    diet: "肉食",
+    length: "3.5m",
+    weight: "250kg",
+    description: "背中の巨大な帆が特徴的な単弓類。恐竜ではなく、爬虫類よりも哺乳類に近い系統（哺乳類型爬虫類）に属する。",
+    bioTraits: [
+      { trait: "構造", value: "熱調節の帆", detail: "背中の帆で太陽光を浴び体温を上げた" },
+      { trait: "捕食武器", value: "二種類の歯", detail: "切り裂き用と保持用の異なる形状の歯" }
+    ],
+    image: "images/dimetrodon.webp"
+  },
+  {
+    id: "inostrancevia",
+    name: "イノストランケビア",
+    kana: "いのすとらんけびあ",
+    scientificName: "Inostrancevia",
+    era: "ペルム紀後期",
+    region: "アジア（ロシア）",
+    diet: "肉食",
+    length: "3.5m",
+    weight: "300kg",
+    description: "ペルム紀末の頂点捕食者であるゴルゴノプス類。巨大な犬歯を持ち、当時の大型草食動物を狩っていた。",
+    bioTraits: [
+      { trait: "攻撃", value: "サーベルタイガー状の牙", detail: "厚い皮を貫く巨大な牙" },
+      { trait: "脚力", value: "高い", detail: "初期の単弓類としては直立に近い脚配置" }
+    ],
+    image: "images/inostrancevia.webp"
+  },
+  {
+    id: "postosuchus",
+    name: "ポストスクス",
+    kana: "ぽすとすくす",
+    scientificName: "Postosuchus",
+    era: "三畳紀後期",
+    region: "北アメリカ",
+    diet: "肉食",
+    length: "4.0m",
+    weight: "300kg",
+    description: "三畳紀の陸上に君臨した巨大な擬鰐類。ワニに近い系統だが、二足歩行も可能で、当時の初期の恐竜たちを圧倒していた。",
+    bioTraits: [
+      { trait: "武器", value: "強力な顎", detail: "ワニのような骨を砕く顎の力" },
+      { trait: "機動力", value: "二足・四足", detail: "大型の体躯を支える強力な後肢" }
+    ],
+    image: "images/postosuchus.webp"
+  },
+  {
+    id: "desmatosuchus",
+    name: "デスマトスクス",
+    kana: "ですまとすくす",
+    scientificName: "Desmatosuchus",
+    era: "三畳紀後期",
+    region: "北アメリカ",
+    diet: "草食",
+    length: "4.5m",
+    weight: "500kg",
+    description: "全身を棘と装甲板で覆った草食の擬鰐類。肩に非常にながい棘があり、肉食動物からの防御に役立っていた。",
+    bioTraits: [
+      { trait: "防御", value: "ショルダー・スパイク", detail: "横からの攻撃を防ぐ巨大な棘" },
+      { trait: "装甲", value: "骨質板", detail: "全身を覆うリベット状の鎧" }
+    ],
+    image: "images/desmatosuchus.webp"
   }
 ];
 
 const NEWS = [
+  {
+    id: "news-005",
+    date: "2026.04.10",
+    category: "DB-UPDATE",
+    title: "鳥脚類・ハドロサウルス類アーカイブを更新",
+    summary: "エドモントサウルスやマイアサウラを含む、北米・豪州・アジアの代表的なハドロサウルス類・鳥脚類8種が完全統合されました。生態展示シミュレーターで比較可能です。",
+    securityLevel: "LEVEL 2"
+  },
   {
     id: "news-004",
     date: "2026.04.10",

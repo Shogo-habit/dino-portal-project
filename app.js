@@ -127,8 +127,10 @@ function renderDictionary() {
         <input type="text" id="dino-search" class="search-input" placeholder="SEARCH NAME..." value="${state.search}">
         <select id="filter-era" class="search-input" style="width: auto;">
             <option value="" ${state.era === '' ? 'selected' : ''}>ERA: ALL</option>
-            <option value="白亜紀" ${state.era === '白亜紀' ? 'selected' : ''}>白亜紀</option>
+            <option value="ペルム紀" ${state.era === 'ペルム紀' ? 'selected' : ''}>ペルム紀</option>
+            <option value="三畳紀" ${state.era === '三畳紀' ? 'selected' : ''}>三畳紀</option>
             <option value="ジュラ紀" ${state.era === 'ジュラ紀' ? 'selected' : ''}>ジュラ紀</option>
+            <option value="白亜紀" ${state.era === '白亜紀' ? 'selected' : ''}>白亜紀</option>
         </select>
         <select id="filter-region" class="search-input" style="width: auto;">
             <option value="" ${state.region === '' ? 'selected' : ''}>REGION: ALL</option>
@@ -175,6 +177,9 @@ function attachDictionaryEvents() {
     const region = document.getElementById('filter-region');
     const sort = document.getElementById('sort-order');
 
+    const hiraToKata = (str) => str.replace(/[\u3041-\u3096]/g, m => String.fromCharCode(m.charCodeAt(0) + 0x60));
+    const kataToHira = (str) => str.replace(/[\u30a1-\u30f6]/g, m => String.fromCharCode(m.charCodeAt(0) - 0x60));
+
     const extractNumber = (str) => {
         if (!str) return 0;
         const match = str.match(/[0-9.]+/);
@@ -182,21 +187,29 @@ function attachDictionaryEvents() {
     };
 
     const updateList = () => {
-        const searchVal = search.value.toLowerCase();
+        const rawSearchVal = search.value.trim();
+        const searchVal = rawSearchVal.toLowerCase();
+        const searchKata = hiraToKata(rawSearchVal);
+        const searchHira = kataToHira(rawSearchVal);
+        
         const eraVal = era.value;
         const regionVal = region.value;
         const sortVal = sort.value;
 
         // Save state
         saveDictState({
-            search: search.value,
+            search: rawSearchVal,
             era: eraVal,
             region: regionVal,
             sort: sortVal
         });
 
         let filtered = DINOSAURS.filter(d => {
-            const matchesSearch = d.name.includes(searchVal) || d.id.includes(searchVal);
+            const matchesSearch = 
+                d.name.startsWith(searchKata) || 
+                d.kana.startsWith(searchHira) || 
+                d.id.includes(searchVal) ||
+                (d.scientificName && d.scientificName.toLowerCase().includes(searchVal));
             const matchesEra = !eraVal || d.era.includes(eraVal);
             const matchesRegion = !regionVal || d.region.includes(regionVal);
             return matchesSearch && matchesEra && matchesRegion;
