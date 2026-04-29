@@ -637,40 +637,6 @@ const DINOSAURS = [
     image: "images/argentinosaurus.webp"
   },
   {
-    id: "megalodon",
-    name: "メガロドン",
-    kana: "めがろどん",
-    scientificName: "Otodus megalodon",
-    era: "中新世〜鮮新世",
-    region: "全世界の海洋",
-    diet: "肉食",
-    length: "18.0m",
-    weight: "60.0t",
-    description: "史上最大級のサメ。クジラを主食としていたと考えられており、その巨大な顎には数百本の鋭い歯が並んでいた。絶滅した理由は気候変動や獲物の減少など諸説ある。",
-    bioTraits: [
-      { trait: "咬合力", value: "絶大", detail: "陸海空を通じて史上最強クラスの噛む力" },
-      { trait: "捕食特化", value: "鯨食", detail: "大型の鯨類を主食としていた" }
-    ],
-    image: "images/megalodon.webp"
-  },
-  {
-    id: "deinosuchus",
-    name: "デイノスクス",
-    kana: "でいのすくす",
-    scientificName: "Deinosuchus rugosus",
-    era: "白亜紀後期",
-    region: "北アメリカ",
-    diet: "肉食",
-    length: "10.6m",
-    weight: "5.0t",
-    description: "史上最大級のワニ類。恐竜をも捕食していたと考えられており、その咬合力はティラノサウルスに匹敵したという説もある。現代のワニをそのまま巨大化させたような姿をしていた。",
-    bioTraits: [
-      { trait: "咬合力", value: "驚異的", detail: "大型恐竜の骨をも砕く強力な顎" },
-      { trait: "奇襲", value: "水辺の恐怖", detail: "水中に潜み、水を飲みに来た恐竜を襲う" }
-    ],
-    image: "images/deinosuchus.webp"
-  },
-  {
     id: "styracosaurus",
     name: "スティラコサウルス",
     kana: "すてぃらこさうるす",
@@ -2722,3 +2688,5 @@ const GLOSSARY = [
   { id: "permian", term: "ペルム紀 (Permian)", def: "約2億9890万年前から2億5190万年前までの期間。恐竜の直前の時代。厳密には恐竜出現前の時代だが、古生物学的に重要。" }
 ];
 
+
+module.exports = { DINOSAURS };

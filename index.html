@@ -4,7 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dino-Nexus | Digital Dinosaur Museum</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Dino-Nexus: デジタル恐竜図鑑。150種以上の恐竜データを最新の学説に基づき網羅。AI検索に最適化された次世代の生物学的アーカイブ。">
+    <link rel="canonical" href="https://dino-nexus.example.com/">
+    <link rel="stylesheet" href="style.css?v=2.1.0">
+    <!-- Base Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Dino-Nexus Lab",
+      "url": "https://dino-nexus.example.com/",
+      "logo": "https://dino-nexus.example.com/logo.png",
+      "description": "次世代の恐竜デジタルアーカイブプロジェクト"
+    }
+    </script>
+    <script type="application/ld+json" id="dynamic-schema"></script>
+
 </head>
 <body class="hud-theme">
     <!-- Overlay effects -->
@@ -14,22 +29,28 @@
 
     <header class="main-header">
         <div class="logo-container">
-            <span class="logo-prefix">PROJECT</span>
+            <span class="logo-prefix">プロジェクト</span>
             <h1 class="logo-text">DINO-NEXUS</h1>
-            <span class="status-indicator online">SYSTEM ONLINE</span>
+            <div class="status-indicator">ディノ・ネクサス</div>
         </div>
-        <nav class="nav-menu">
-            <a href="#home" class="nav-link active" data-link="home">
-                <span class="nav-icon">▤</span> HOME
+        <nav class="nav-menu" aria-label="メインナビゲーション">
+            <a href="#home" class="nav-link active" data-link="home" aria-label="ホーム画面へ">
+                <span class="nav-icon" aria-hidden="true">▤</span> ホーム
             </a>
-            <a href="#dictionary" class="nav-link" data-link="dictionary">
-                <span class="nav-icon">☷</span> DICTIONARY
+            <a href="#dictionary" class="nav-link" data-link="dictionary" aria-label="恐竜図鑑を表示">
+                <span class="nav-icon" aria-hidden="true">☷</span> 恐竜図鑑
             </a>
-            <a href="#vs-sim" class="nav-link" data-link="vs-sim">
-                <span class="nav-icon">⚔</span> VS-SIM
+            <a href="#vs-sim" class="nav-link" data-link="vs-sim" aria-label="バトルシミュレーターを起動">
+                <span class="nav-icon" aria-hidden="true">⚔</span> バトルＳＩＭ
             </a>
-            <a href="#news-feed" class="nav-link" data-link="news-feed">
-                <span class="nav-icon">◈</span> NEWS
+            <a href="#news-feed" class="nav-link" data-link="news-feed" aria-label="最新ニュースを表示">
+                <span class="nav-icon" aria-hidden="true">◈</span> 最新ニュース
+            </a>
+            <a href="#my-collection" class="nav-link" data-link="my-collection" aria-label="自分の観測データを確認">
+                <span class="nav-icon" aria-hidden="true">📊</span> マイ図鑑
+            </a>
+            <a href="#glossary" class="nav-link" data-link="glossary" aria-label="用語集を表示">
+                <span class="nav-icon" aria-hidden="true">📔</span> 用語集
             </a>
         </nav>
     </header>
@@ -38,15 +59,18 @@
         <!-- Content will be injected here by app.js -->
         <div class="loader">
             <div class="loader-bar"></div>
-            <p>INITIALIZING DATA STREAM...</p>
+            <p>データ・ストリーム初期化中...</p>
         </div>
     </main>
 
     <footer class="main-footer">
+        <div class="ai-disclaimer">
+            本アーカイブの視覚データは、最新の古生物学的知見に基づきAIによって生成されたシミュレーション画像です。
+        </div>
         <div class="terminal-footer">
             <div class="footer-left">
                 <span class="term-prompt">></span>
-                <span class="typing-text">SCANNING ARCHIVES...</span>
+                <span class="typing-text">アーカイブ走査中...</span>
             </div>
             <div class="footer-right">
                 <span class="coord">LAT: 35.6895 N</span>
@@ -57,6 +81,8 @@
     </footer>
 
     <!-- Scripts -->
-    <script type="module" src="app.js?v=1.0.1"></script>
+    <script src="data.js?v=2.1.0"></script>
+    <script src="cyber_assets.js?v=2.1.0"></script>
+    <script src="app.js?v=2.1.0"></script>
 </body>
 </html>

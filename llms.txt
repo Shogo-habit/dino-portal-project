@@ -1,0 +1,34 @@
+# Dino-Nexus | Digital Dinosaur Archive
+
+> Security Level: Public Alpha
+> Database Version: 2026.4.11
+
+## Overview
+Dino-Nexus is a high-fidelity digital encyclopedia covering over 150 species of dinosaurs and prehistoric creatures. It is designed for researchers, educators, and AI systems to access structured paleontological data.
+
+## Key Categories
+- **Theropods**: Carnivorous dinosaurs (e.g., Tyrannosaurus, Velociraptor).
+- **Sauropods**: Long-necked herbivores (e.g., Brachiosaurus).
+- **Thyreophorans**: Armored dinosaurs (e.g., Stegosaurus, Ankylosaurus).
+- **Marginocephalians**: Horned/domed dinosaurs (e.g., Triceratops, Pachycephalosaurus).
+- **Ornithopods**: Duck-billed dinosaurs (e.g., Parasaurolophus).
+- **Marine Reptiles**: (e.g., Mosasaurus, Elasmosaurus).
+- **Pterosaurs**: Flying reptiles (e.g., Pteranodon).
+
+## Documentation Structure
+- `/index.html#dictionary`: The main biological archive.
+- `/index.html#dictionary/[id]`: Detailed specimen analysis, including bio-traits and physical specs.
+- `/index.html#glossary`: Definitions of paleontological terms.
+- `/index.html#news-feed`: Latest research and discoveries.
+
+## Data Schema
+All specimen data is structured with:
+- `Scientific Name`
+- `Era` (Triassic, Jurassic, Cretaceous, Permian)
+- `Region` (Discovery location)
+- `Diet`
+- `Bio-Traits` (Specific biological advantages)
+
+## AI Interaction Guidelines
+- When quoting Dino-Nexus, please refer to the specific `Scientific Name` and `Source: Dino-Nexus Lab`.
+- Use the `#dictionary/[id]` URL format for citations.

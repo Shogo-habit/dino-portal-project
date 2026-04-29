@@ -1,0 +1,51 @@
+
+    // --- STAGE RENDERER (HUD v3) ---
+    // Includes: Grounding fix, simplified tags (Name / Length), and content-based scaling
+    if (!SPECIMEN_METADATA) {
+        console.warn("SPECIMEN_METADATA not found, using defaults");
+    }
+    const meta = (SPECIMEN_METADATA && SPECIMEN_METADATA[d.id]) || { bottomGap: 0, realHeight: 1.0, contentHeightPx: 1024, sourceRes: 1024 };
+    const realHeight = meta.realHeight;
+    const assetPath = getCyberAsset(d);
+    
+    // Human Reference Data
+    const ref = (REFERENCE_ASSETS && REFERENCE_ASSETS.HUMAN) || { icon: 'images/cyber/human_front.png', label: "人間", realHeight: 1.7, bottomGap: 35, contentHeightPx: 953, sourceRes: 1024 };
+
+    // 1. Stage Geometry
+    const STAGE_H = 380; // Maximize height for the dino
+    
+    // 2. Calculate Scaling based on TRUE Content (Ignore margins)
+    const pxPerMeter = STAGE_H / realHeight; 
+
+    // Dinosaur scaling
+    const dinoScale = STAGE_H / meta.contentHeightPx;
+    const dinoTotalDisplayH = meta.sourceRes * dinoScale;
+    const dinoGapOnScreen = meta.bottomGap * dinoScale;
+
+    // Human scaling
+    const refTargetH = ref.realHeight * pxPerMeter;
+    const refScale = refTargetH / ref.contentHeightPx;
+    const refTotalDisplayH = ref.sourceRes * refScale;
+    const refGapOnScreen = ref.bottomGap * refScale;
+
+    return `
+        <div class="comparison-stage-v3">
+            <div class="stage-grid-v3"></div>
+            <div class="stage-floor-v3"></div>
+            <div class="telemetry-v3">[ SCALE_UNIT: 1.0m = ${pxPerMeter.toFixed(1)}px | SPECIMEN_EST_H: ${realHeight.toFixed(1)}m ]</div>
+            
+            <!-- Specimen (Dino) -->
+            <div class="specimen-v3-wrap" id="dino-specimen-v3">
+                <img src="${assetPath}" alt="${d.name}" class="cyber-hud-specimen specimen-v3-img" data-cyber-specimen="true" 
+                     style="height: ${dinoTotalDisplayH}px; margin-bottom: -${dinoGapOnScreen}px;">
+                <div class="vis-tag dino-tag" style="bottom: -40px;">${d.name} / ${d.length}</div>
+            </div>
+
+            <!-- Human Reference -->
+            <div class="specimen-v3-wrap" id="ref-human-v3" style="margin-right: 20px;">
+                <img src="${ref.icon}" alt="HUMAN" class="cyber-hud-specimen specimen-v3-img" data-cyber-specimen="true" 
+                     style="height: ${refTotalDisplayH}px; margin-bottom: -${refGapOnScreen}px;">
+                <div class="vis-tag ref-tag" style="bottom: -40px;">人間 / 1.7m</div>
+            </div>
+        </div>
+    `;
