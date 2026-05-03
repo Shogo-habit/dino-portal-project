@@ -78,6 +78,23 @@ const CYBER_ASSETS = {
     eoraptor: 'images/cyber/eoraptor.png',
     herrerasaurus: 'images/cyber/herrerasaurus.png',
     compsognathus: 'images/cyber/compsognathus.png',
+    gigantoraptor: 'images/cyber/gigantoraptor.png',
+    cryolophosaurus: 'images/cyber/cryolophosaurus.png',
+    monolophosaurus: 'images/cyber/monolophosaurus.png',
+    concavenator: 'images/cyber/concavenator.png',
+    megalosaurus: 'images/cyber/megalosaurus.png',
+    mapusaurus: 'images/cyber/mapusaurus.png',
+    camarasaurus: 'images/cyber/camarasaurus.png',
+    shunosaurus: 'images/cyber/shunosaurus.png',
+    puertasaurus: 'images/cyber/puertasaurus.png',
+    vulcanodon: 'images/cyber/vulcanodon.png',
+    giraffatitan: 'images/cyber/giraffatitan.png',
+    barosaurus: 'images/cyber/barosaurus.png',
+    jobaria: 'images/cyber/jobaria.png',
+    alamosaurus: 'images/cyber/alamosaurus.png',
+    ampelosaurus: 'images/cyber/ampelosaurus.png',
+    brontosaurus: 'images/cyber/brontosaurus.png',
+    dreadnoughtus: 'images/cyber/dreadnoughtus.png',
     human: 'images/cyber/human_front.png',
 };
 
@@ -671,6 +688,176 @@ const SPECIMEN_METADATA = {
         dinoLeft: '25%',
         refRight: '15%',
         zoom: 1.0
+    },
+    gigantoraptor: { 
+        bottomGap: 60, 
+        realHeight: 8.07, 
+        realLength: 8.0,
+        contentHeightPx: 932, 
+        sourceRes: 1024,
+        dinoLeft: '18%',
+        refRight: '30%',
+        zoom: 0.9
+    },
+    cryolophosaurus: { 
+        bottomGap: 205, 
+        realHeight: 5.08, 
+        realLength: 6.5,
+        contentHeightPx: 725, 
+        sourceRes: 1024,
+        dinoLeft: '10%',
+        refRight: '22%',
+        zoom: 0.9
+    },
+    monolophosaurus: { 
+        bottomGap: 270, 
+        realHeight: 2.59, 
+        realLength: 5.0,
+        contentHeightPx: 501, 
+        sourceRes: 1024,
+        dinoLeft: '2%',
+        refRight: '10%',
+        zoom: 0.9
+    },
+    concavenator: { 
+        bottomGap: 220, 
+        realHeight: 3.77, 
+        realLength: 6.0,
+        contentHeightPx: 618, 
+        sourceRes: 1024,
+        dinoLeft: '5%',
+        refRight: '15%',
+        zoom: 0.9
+    },
+    megalosaurus: { 
+        bottomGap: 280, 
+        realHeight: 3.70, 
+        realLength: 9.0,
+        contentHeightPx: 409, 
+        sourceRes: 1024,
+        dinoLeft: '0%',
+        refRight: '20%',
+        zoom: 1.0
+    },
+    mapusaurus: { 
+        bottomGap: 315, 
+        realHeight: 5.21, 
+        realLength: 12.2,
+        contentHeightPx: 411, 
+        sourceRes: 1024,
+        dinoLeft: '0%',
+        refRight: '20%',
+        zoom: 1.0
+    },
+    camarasaurus: { 
+        bottomGap: 175, 
+        realHeight: 12.24, 
+        realLength: 18.0,
+        contentHeightPx: 668, 
+        sourceRes: 1024,
+        dinoLeft: '10%',
+        refRight: '25%',
+        zoom: 0.9
+    },
+    shunosaurus: { 
+        bottomGap: 305, 
+        realHeight: 4.69, 
+        realLength: 10.0,
+        contentHeightPx: 457, 
+        sourceRes: 1024,
+        dinoLeft: '1%',
+        refRight: '20%',
+        zoom: 1.0
+    },
+    puertasaurus: { 
+        bottomGap: 311, 
+        realHeight: 12.82, 
+        realLength: 30.0,
+        contentHeightPx: 419, 
+        sourceRes: 1024,
+        dinoLeft: '5%',
+        refRight: '20%',
+        zoom: 0.95
+    },
+    vulcanodon: { 
+        bottomGap: 300, 
+        realHeight: 3.00, 
+        realLength: 6.5,
+        contentHeightPx: 453, 
+        sourceRes: 1024,
+        dinoLeft: '5%',
+        refRight: '65%',
+        zoom: 1.0
+    },
+    giraffatitan: { 
+        bottomGap: 70, 
+        realHeight: 27.90, 
+        realLength: 25.0,
+        contentHeightPx: 919, 
+        sourceRes: 1024,
+        dinoLeft: '20%',
+        refRight: '32%',
+        zoom: 0.9
+    },
+    barosaurus: { 
+        bottomGap: 140, 
+        realHeight: 21.00, 
+        realLength: 26.0,
+        contentHeightPx: 780, 
+        sourceRes: 1024,
+        dinoLeft: '13%',
+        refRight: '30%',
+        zoom: 0.9
+    },
+    jobaria: { 
+        bottomGap: 200, 
+        realHeight: 11.72, 
+        realLength: 18.0,
+        contentHeightPx: 640, 
+        sourceRes: 1024,
+        dinoLeft: '5%',
+        refRight: '25%',
+        zoom: 0.9
+    },
+    alamosaurus: { 
+        bottomGap: 260, 
+        realHeight: 17.14, 
+        realLength: 30.0,
+        contentHeightPx: 556, 
+        sourceRes: 1024,
+        dinoLeft: '8%',
+        refRight: '30%',
+        zoom: 0.8
+    },
+    ampelosaurus: { 
+        bottomGap: 235, 
+        realHeight: 8.50, 
+        realLength: 15.0,
+        contentHeightPx: 551, 
+        sourceRes: 1024,
+        dinoLeft: '5%',
+        refRight: '20%',
+        zoom: 0.9
+    },
+    brontosaurus: { 
+        bottomGap: 175, 
+        realHeight: 14.94, 
+        realLength: 22.0,
+        contentHeightPx: 660, 
+        sourceRes: 1024,
+        dinoLeft: '12%',
+        refRight: '25%',
+        zoom: 0.9
+    },
+    dreadnoughtus: { 
+        bottomGap: 105, 
+        realHeight: 22.57, 
+        realLength: 26.0,
+        contentHeightPx: 848, 
+        sourceRes: 1024,
+        dinoLeft: '18%',
+        refRight: '30%',
+        zoom: 0.85
     },
     tyrannosaurus: { 
         bottomGap: 274, 

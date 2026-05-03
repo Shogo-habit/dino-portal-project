@@ -2,8 +2,8 @@
 
 ## 1. 進捗状況
 - **総登録数**: 158種 (data.js)
-- **比較パネル実装済み (○)**: 79種
-- **アーカイブ登録のみ (△)**: 79種
+- **比較パネル実装済み (○)**: 96種
+- **アーカイブ登録のみ (△)**: 62種
 
 ---
 
@@ -87,6 +87,23 @@
 - [○] **エオラプトル** (Eoraptor lunensis / 1.0m)
 - [○] **ヘレラサウルス** (Herrerasaurus ischigualastensis / 4.0m)
 - [○] **コンプソグナトゥス** (Compsognathus longipes / 1.0m)
+- [○] **ギガントラプトル** (Gigantoraptor erlianensis / 8.0m)
+- [○] **クリオロフォサウルス** (Cryolophosaurus ellioti / 6.5m)
+- [○] **モノロフォサウルス** (Monolophosaurus jiangi / 5.0m)
+- [○] **コンカベナトル** (Concavenator corcovatus / 6.0m)
+- [○] **メガロサウルス** (Megalosaurus bucklandii / 9.0m)
+- [○] **マップサウルス** (Mapusaurus roseae / 12.2m)
+- [○] **カマラサウルス** (Camarasaurus supremus / 18.0m)
+- [○] **シュノサウルス** (Shunosaurus lii / 10.0m)
+- [○] **プエルタサウルス** (Puertasaurus reuili / 30.0m)
+- [○] **ウルカノドン** (Vulcanodon karibaensis / 6.5m)
+- [○] **ギラファティタン** (Giraffatitan brancai / 25.0m)
+- [○] **バロサウルス** (Barosaurus lentus / 26.0m)
+- [○] **ジョバリア** (Jobaria tiguidensis / 18.0m)
+- [○] **アラモサウルス** (Alamosaurus sanjuanensis / 30.0m)
+- [○] **アンペロサウルス** (Ampelosaurus atacis / 15.0m)
+- [○] **ブロントサウルス** (Brontosaurus excelsus / 22.0m)
+- [○] **ドレッドノータス** (Dreadnoughtus schrani / 26.0m)
 
 
 
@@ -97,23 +114,6 @@
 ---
 
 ## 3. アーカイブ登録済み・比較パネル未実装 (△)
-- [△] **ギガントラプトル** (Gigantoraptor erlianensis / 8.0m)
-- [△] **クリオロフォサウルス** (Cryolophosaurus ellioti / 6.5m)
-- [△] **モノロフォサウルス** (Monolophosaurus jiangi / 5.0m)
-- [△] **コンカベナトル** (Concavenator corcovatus / 6.0m)
-- [△] **メガロサウルス** (Megalosaurus bucklandii / 9.0m)
-- [△] **マップサウルス** (Mapusaurus roseae / 12.2m)
-- [△] **カマラサウルス** (Camarasaurus supremus / 18.0m)
-- [△] **シュノサウルス** (Shunosaurus lii / 10.0m)
-- [△] **プエルタサウルス** (Puertasaurus reuili / 30.0m)
-- [△] **ウルカノドン** (Vulcanodon karibaensis / 6.5m)
-- [△] **ギラファティタン** (Giraffatitan brancai / 25.0m)
-- [△] **バロサウルス** (Barosaurus lentus / 26.0m)
-- [△] **ジョバリア** (Jobaria tiguidensis / 18.0m)
-- [△] **アラモサウルス** (Alamosaurus sanjuanensis / 30.0m)
-- [△] **アンペロサウルス** (Ampelosaurus atacis / 15.0m)
-- [△] **ブロントサウルス** (Brontosaurus excelsus / 22.0m)
-- [△] **ドレッドノータス** (Dreadnoughtus schrani / 26.0m)
 - [△] **リオプレウロドン** (Liopleurodon ferox / 7.0m)
 - [△] **クロノサウルス** (Kronosaurus queenslandicus / 11.0m)
 - [△] **ショニサウルス** (Shonisaurus popularis / 15.0m)

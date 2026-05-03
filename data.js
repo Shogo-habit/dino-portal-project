@@ -22,7 +22,8 @@ const DINOSAURS = [
       { trait: "咬合力", value: "驚異的", detail: "骨を砕くための特殊な歯の構造を持つ" },
       { trait: "感知能力", value: "極めて高い", detail: "優れた立体視を持つ" }
     ],
-    image: "images/tyrannosaurus.webp"
+    image: "images/tyrannosaurus.webp",
+    group: "獣脚類"
   },
   {
     id: "triceratops",
@@ -39,7 +40,8 @@ const DINOSAURS = [
       { trait: "防御力", value: "鉄壁", detail: "厚い襟飾りが首元を保護する" },
       { trait: "攻撃手段", value: "突進", detail: "最大1メートルの角による突き" }
     ],
-    image: "images/triceratops.webp"
+    image: "images/triceratops.webp",
+    group: "角竜類"
   },
   {
     id: "spinosaurus",
@@ -56,7 +58,8 @@ const DINOSAURS = [
       { trait: "水中適応", value: "最高水準", detail: "パドルのような尾による遊泳" },
       { trait: "捕食特化", value: "魚食", detail: "長い顎で魚を捕らえる" }
     ],
-    image: "images/spinosaurus.webp"
+    image: "images/spinosaurus.webp",
+    group: "獣脚類"
   },
   {
     id: "stegosaurus",
@@ -73,7 +76,8 @@ const DINOSAURS = [
       { trait: "防御武具", value: "スパイク", detail: "サゴマイザーと呼ばれる尾の武器" },
       { trait: "体温調節", value: "可能", detail: "背中の骨板による熱制御説" }
     ],
-    image: "images/stegosaurus.webp"
+    image: "images/stegosaurus.webp",
+    group: "剣竜類"
   },
   {
     id: "ankylosaurus",
@@ -90,7 +94,8 @@ const DINOSAURS = [
       { trait: "装甲", value: "超硬質", detail: "皮膚に骨質の装飾が埋め込まれている" },
       { trait: "反撃能力", value: "ハンマー", detail: "尾で肉食恐竜の骨を砕く" }
     ],
-    image: "images/ankylosaurus.webp"
+    image: "images/ankylosaurus.webp",
+    group: "よろい竜類"
   },
   {
     id: "velociraptor",
@@ -107,7 +112,8 @@ const DINOSAURS = [
       { trait: "敏捷性", value: "最高速", detail: "軽量な骨格による高速移動" },
       { trait: "知能", value: "高い", detail: "集団での狩りが可能だったとされる" }
     ],
-    image: "images/velociraptor.webp"
+    image: "images/velociraptor.webp",
+    group: "獣脚類"
   },
   {
     id: "allosaurus",
@@ -124,7 +130,8 @@ const DINOSAURS = [
       { trait: "攻撃特性", value: "噛みつき・爪", detail: "斧のように上顎を振り下ろす攻撃" },
       { trait: "機動力", value: "高い", detail: "同サイズの肉食恐竜より俊敏" }
     ],
-    image: "images/allosaurus.webp"
+    image: "images/allosaurus.webp",
+    group: "獣脚類"
   },
   {
     id: "brachiosaurus",
@@ -141,7 +148,8 @@ const DINOSAURS = [
       { trait: "リーチ", value: "超広範囲", detail: "地上13メートル以上の葉を摂取" },
       { trait: "防御", value: "巨大質量", detail: "捕食者に襲われるリスクはほぼ皆無" }
     ],
-    image: "images/brachiosaurus.webp"
+    image: "images/brachiosaurus.webp",
+    group: "竜脚類"
   },
   {
     id: "carnotaurus",
@@ -158,7 +166,8 @@ const DINOSAURS = [
       { trait: "走力", value: "最高クラス", detail: "直進加速能力が非常に高いとされる" },
       { trait: "感覚", value: "嗅覚", detail: "強力な嗅覚で獲物を追跡する" }
     ],
-    image: "images/carnotaurus.webp"
+    image: "images/carnotaurus.webp",
+    group: "獣脚類"
   },
   {
     id: "diplodocus",
@@ -175,7 +184,8 @@ const DINOSAURS = [
       { trait: "防御手段", value: "鞭打ち", detail: "尾を音速で振り回し、音波や打撃で攻撃" },
       { trait: "採食効率", value: "高い", detail: "首を横に振るだけで広範囲の植物を食べられた" }
     ],
-    image: "images/diplodocus.webp"
+    image: "images/diplodocus.webp",
+    group: "竜脚類"
   },
   {
     id: "elasmosaurus",
@@ -192,7 +202,8 @@ const DINOSAURS = [
       { trait: "水中機動", value: "高い", detail: "ヒレ状の四肢で滑らかに泳ぐ" },
       { trait: "奇襲性", value: "高い", detail: "水面下から頭だけを動かして魚を捕らえる" }
     ],
-    image: "images/elasmosaurus.webp"
+    image: "images/elasmosaurus.webp",
+    group: "首長竜"
   },
   {
     id: "fukuisaurus",
@@ -209,7 +220,8 @@ const DINOSAURS = [
       { trait: "汎用性", value: "高い", detail: "二足と四足の両方で活動可能" },
       { trait: "咀嚼能力", value: "進化型", detail: "植物を効率よくすりつぶす歯の構造" }
     ],
-    image: "images/fukuisaurus.webp"
+    image: "images/fukuisaurus.webp",
+    group: "鳥脚類"
   },
   {
     id: "mosasaurus",
@@ -226,7 +238,8 @@ const DINOSAURS = [
       { trait: "破壊力", value: "絶大", detail: "強力な咬合力でカメの甲羅も砕く" },
       { trait: "推進力", value: "高い", detail: "強力な尾びれによる突進" }
     ],
-    image: "images/mosasaurus.webp"
+    image: "images/mosasaurus.webp",
+    group: "その他"
   },
   {
     id: "giganotosaurus",
@@ -243,7 +256,8 @@ const DINOSAURS = [
       { trait: "巨体", value: "最大級", detail: "地上最大級の獣脚類の一つ" },
       { trait: "咬合力", value: "高い", detail: "肉を切り裂くのに適した薄く鋭い歯" }
     ],
-    image: "images/giganotosaurus.webp"
+    image: "images/giganotosaurus.webp",
+    group: "獣脚類"
   },
   {
     id: "hadrosaurus",
@@ -260,7 +274,8 @@ const DINOSAURS = [
       { trait: "咀嚼能力", value: "高度", detail: "数百本の歯が並ぶデンタルバッテリー構造" },
       { trait: "移動形式", value: "二足・四足", detail: "状況に応じて歩行スタイルを切り替えた" }
     ],
-    image: "images/hadrosaurus.webp"
+    image: "images/hadrosaurus.webp",
+    group: "鳥脚類"
   },
   {
     id: "iguanodon",
@@ -277,7 +292,8 @@ const DINOSAURS = [
       { trait: "自衛武器", value: "親指のスパイク", detail: "捕食者に対する強力な武器" },
       { trait: "食性適応", value: "効率的", detail: "硬い植物をすりつぶす能力に長けていた" }
     ],
-    image: "images/iguanodon.webp"
+    image: "images/iguanodon.webp",
+    group: "鳥脚類"
   },
   {
     id: "juravenator",
@@ -294,7 +310,8 @@ const DINOSAURS = [
       { trait: "皮膚構造", value: "ハイブリッド", detail: "鱗と羽毛の痕跡が同時に確認されている" },
       { trait: "敏捷性", value: "極めて高い", detail: "小型の獲物を捕らえるための俊敏な動き" }
     ],
-    image: "images/juravenator.webp"
+    image: "images/juravenator.webp",
+    group: "獣脚類"
   },
   {
     id: "kentrosaurus",
@@ -311,7 +328,8 @@ const DINOSAURS = [
       { trait: "カウンター", value: "鋭いトゲ", detail: "尾を振り回して敵を攻撃する" },
       { trait: "防御態勢", value: "ハリネズミ状", detail: "全身のトゲで捕食者を威嚇" }
     ],
-    image: "images/kentrosaurus.webp"
+    image: "images/kentrosaurus.webp",
+    group: "剣竜類"
   },
   {
     id: "lambeosaurus",
@@ -328,7 +346,8 @@ const DINOSAURS = [
       { trait: "音響装置", value: "トサカ", detail: "低周波の音を増幅させて通信に利用" },
       { trait: "社会性", value: "高い", detail: "群れで行動し、音声で警告を発し合った" }
     ],
-    image: "images/lambeosaurus.webp"
+    image: "images/lambeosaurus.webp",
+    group: "鳥脚類"
   },
   {
     id: "nigersaurus",
@@ -345,7 +364,8 @@ const DINOSAURS = [
       { trait: "採食特化", value: "広幅の口", detail: "一度に大量の地表植物を摂取可能" },
       { trait: "軽量化", value: "極限の骨格", detail: "骨の多くが薄く、頭骨は透けて見えるほど" }
     ],
-    image: "images/nigersaurus.webp"
+    image: "images/nigersaurus.webp",
+    group: "竜脚類"
   },
   {
     id: "oviraptor",
@@ -362,7 +382,8 @@ const DINOSAURS = [
       { trait: "育児本能", value: "極めて強い", detail: "卵を抱いたまま化石化した個体が発見" },
       { trait: "嘴の破壊力", value: "強力", detail: "硬い殻や木の実を砕くことができる" }
     ],
-    image: "images/oviraptor.webp"
+    image: "images/oviraptor.webp",
+    group: "獣脚類"
   },
   {
     id: "parasaurolophus",
@@ -379,7 +400,8 @@ const DINOSAURS = [
       { trait: "遠距離通信", value: "最高水準", detail: "長いトサカで独自の音波を発生" },
       { trait: "感知能力", value: "高い", detail: "優れた視覚と聴覚で外敵を察知" }
     ],
-    image: "images/parasaurolophus.webp"
+    image: "images/parasaurolophus.webp",
+    group: "鳥脚類"
   },
   {
     id: "pteranodon",
@@ -396,7 +418,8 @@ const DINOSAURS = [
       { trait: "飛行能力", value: "超長距離", detail: "上昇気流を利用したグライダー飛行" },
       { trait: "捕食技術", value: "魚食特化", detail: "水面の魚をダイビングして捕らえる" }
     ],
-    image: "images/pteranodon.webp"
+    image: "images/pteranodon.webp",
+    group: "翼竜"
   },
   {
     id: "quetzalcoatlus",
@@ -413,7 +436,8 @@ const DINOSAURS = [
       { trait: "圧倒的サイズ", value: "空の王者", detail: "軽飛行機に匹敵する翼の広さ" },
       { trait: "地上移動", value: "意外に俊敏", detail: "四足歩行で地上を歩き獲物を探す" }
     ],
-    image: "images/quetzalcoatlus.webp"
+    image: "images/quetzalcoatlus.webp",
+    group: "翼竜"
   },
   {
     id: "rugops",
@@ -430,7 +454,8 @@ const DINOSAURS = [
       { trait: "頭部装飾", value: "特徴的", detail: "血管が通る多くの穴があり、ディスプレイ用か" },
       { trait: "食性", value: "スカベンジャー", detail: "死肉を効率よく食べるのに適した構造" }
     ],
-    image: "images/rugops.webp"
+    image: "images/rugops.webp",
+    group: "獣脚類"
   },
   {
     id: "utahraptor",
@@ -447,7 +472,8 @@ const DINOSAURS = [
       { trait: "凶器", value: "巨大鉤爪", detail: "足にある20cm以上の鎌状の爪" },
       { trait: "筋力", value: "強靭", detail: "跳躍力と瞬発力に優れる" }
     ],
-    image: "images/utahraptor.webp"
+    image: "images/utahraptor.webp",
+    group: "獣脚類"
   },
   {
     id: "wuerhosaurus",
@@ -464,7 +490,8 @@ const DINOSAURS = [
       { trait: "骨板形状", value: "低重心", detail: "平らで低い板が背中を守る" },
       { trait: "生存戦略", value: "長期間", detail: "白亜紀という激戦の時代を生き抜いた剣竜" }
     ],
-    image: "images/wuerhosaurus.webp"
+    image: "images/wuerhosaurus.webp",
+    group: "剣竜類"
   },
   {
     id: "xenoceratops",
@@ -481,7 +508,8 @@ const DINOSAURS = [
       { trait: "威嚇力", value: "絶大", detail: "派手で巨大なフリルと角" },
       { trait: "突進力", value: "高い", detail: "重量を活かした重戦車のような突進" }
     ],
-    image: "images/xenoceratops.webp"
+    image: "images/xenoceratops.webp",
+    group: "角竜類"
   },
   {
     id: "yutyrannus",
@@ -498,7 +526,8 @@ const DINOSAURS = [
       { trait: "耐寒性能", value: "羽毛装甲", detail: "全身を覆う長い羽毛で寒さに適応" },
       { trait: "集団狩猟", value: "可能性あり", detail: "複数の個体が同時に発見されることが多い" }
     ],
-    image: "images/yutyrannus.webp"
+    image: "images/yutyrannus.webp",
+    group: "獣脚類"
   },
   {
     id: "zuniceratops",
@@ -515,7 +544,8 @@ const DINOSAURS = [
       { trait: "角の先駆者", value: "眉上の角", detail: "大型角竜に繋がる特徴をいち早く獲得" },
       { trait: "機動力", value: "中型犬並み", detail: "小回りのきく動きで外敵を回避" }
     ],
-    image: "images/zuniceratops.webp"
+    image: "images/zuniceratops.webp",
+    group: "角竜類"
   },
   {
     id: "pachycephalosaurus",
@@ -532,7 +562,8 @@ const DINOSAURS = [
       { trait: "打撃武器", value: "堅い頭頂部", detail: "衝撃を吸収する特殊な骨構造" },
       { trait: "防御装甲", value: "骨質ノブ", detail: "頭部の周囲に並ぶ刺状の突起" }
     ],
-    image: "images/pachycephalosaurus.webp"
+    image: "images/pachycephalosaurus.webp",
+    group: "堅頭竜類"
   },
   {
     id: "dilophosaurus",
@@ -549,7 +580,8 @@ const DINOSAURS = [
       { trait: "ディスプレイ", value: "扇形トサカ", detail: "個体識別や求愛に使用された可能性" },
       { trait: "機動力", value: "高い", detail: "細身の体格を活かしたスピーディな狩り" }
     ],
-    image: "images/dilophosaurus.webp"
+    image: "images/dilophosaurus.webp",
+    group: "獣脚類"
   },
   {
     id: "apatosaurus",
@@ -566,7 +598,8 @@ const DINOSAURS = [
       { trait: "リーチ", value: "広範囲", detail: "長い首を動かし大量の植物を摂取" },
       { trait: "護身", value: "鞭の尾", detail: "尾を音速で振り回し天敵を威嚇" }
     ],
-    image: "images/apatosaurus.webp"
+    image: "images/apatosaurus.webp",
+    group: "竜脚類"
   },
   {
     id: "therizinosaurus",
@@ -583,7 +616,8 @@ const DINOSAURS = [
       { trait: "リーチ", value: "巨大な鎌", detail: "史上最大級のハンドクローを保持" },
       { trait: "特異な外観", value: "羽毛と巨体", detail: "直立に近い姿勢で高い木の葉を食べる" }
     ],
-    image: "images/therizinosaurus.webp"
+    image: "images/therizinosaurus.webp",
+    group: "獣脚類"
   },
   {
     id: "deinocheirus",
@@ -600,7 +634,8 @@ const DINOSAURS = [
       { trait: "汎用性", value: "雑食適応", detail: "魚、植物、昆虫など多様な食事を摂取" },
       { trait: "構造", value: "帆と嘴", detail: "水辺での生活に適した特異な骨格構造" }
     ],
-    image: "images/deinocheirus.webp"
+    image: "images/deinocheirus.webp",
+    group: "獣脚類"
   },
   {
     id: "baryonyx",
@@ -617,7 +652,8 @@ const DINOSAURS = [
       { trait: "捕食特化", value: "魚獲りの爪", detail: "大型の魚を引っ掛けて捕らえる鉤爪" },
       { trait: "構造", value: "細長い顎", detail: "90本以上の歯を持つ魚食に適した口" }
     ],
-    image: "images/baryonyx.webp"
+    image: "images/baryonyx.webp",
+    group: "獣脚類"
   },
   {
     id: "argentinosaurus",
@@ -634,7 +670,8 @@ const DINOSAURS = [
       { trait: "質量", value: "地上最強", detail: "他の大型肉食恐竜を圧倒する巨体" },
       { trait: "構造", value: "強靭な四肢", detail: "数十トンの体重を支えるための柱のような脚" }
     ],
-    image: "images/argentinosaurus.webp"
+    image: "images/argentinosaurus.webp",
+    group: "竜脚類"
   },
   {
     id: "megalodon",
@@ -651,7 +688,8 @@ const DINOSAURS = [
       { trait: "咬合力", value: "絶大", detail: "陸海空を通じて史上最強クラスの噛む力" },
       { trait: "捕食特化", value: "鯨食", detail: "大型の鯨類を主食としていた" }
     ],
-    image: "images/megalodon.webp"
+    image: "images/megalodon.webp",
+    group: "その他"
   },
   {
     id: "deinosuchus",
@@ -668,7 +706,8 @@ const DINOSAURS = [
       { trait: "咬合力", value: "驚異的", detail: "大型恐竜の骨をも砕く強力な顎" },
       { trait: "奇襲", value: "水辺の恐怖", detail: "水中に潜み、水を飲みに来た恐竜を襲う" }
     ],
-    image: "images/deinosuchus.webp"
+    image: "images/deinosuchus.webp",
+    group: "その他"
   },
   {
     id: "styracosaurus",
@@ -685,7 +724,8 @@ const DINOSAURS = [
       { trait: "威嚇力", value: "刺々しいフリル", detail: "捕食者に襲われるリスクを軽減する装飾" },
       { trait: "攻撃", value: "長大な鼻角", detail: "一撃で相手を仕留める貫通力" }
     ],
-    image: "images/styracosaurus.webp"
+    image: "images/styracosaurus.webp",
+    group: "角竜類"
   },
   {
     id: "gallimimus",
@@ -702,7 +742,8 @@ const DINOSAURS = [
       { trait: "速力", value: "最高クラス", detail: "時速50〜60kmでの高速移動が可能" },
       { trait: "感覚", value: "高度な視覚", detail: "広い視野で周囲の危険を素早く察知" }
     ],
-    image: "images/gallimimus.webp"
+    image: "images/gallimimus.webp",
+    group: "獣脚類"
   },
   {
     id: "archaeopteryx",
@@ -719,7 +760,8 @@ const DINOSAURS = [
       { trait: "進化の繋ぎ目", value: "羽毛と爬虫類質", detail: "滑空と樹上生活への適応" },
       { trait: "構造", value: "翼の鉤爪", detail: "木を登るために発達した指先の爪" }
     ],
-    image: "images/archaeopteryx.webp"
+    image: "images/archaeopteryx.webp",
+    group: "獣脚類"
   },
   {
     id: "fukuiraptor",
@@ -736,7 +778,8 @@ const DINOSAURS = [
       { trait: "機動力", value: "高い", detail: "中型獣脚類特有の軽快な動き" },
       { trait: "武器", value: "鋭い爪", detail: "前肢の発達した鉤爪で獲物を捕らえる" }
     ],
-    image: "images/fukuiraptor.webp"
+    image: "images/fukuiraptor.webp",
+    group: "獣脚類"
   },
   {
     id: "futabasaurus",
@@ -753,7 +796,8 @@ const DINOSAURS = [
       { trait: "潜水能力", value: "優秀", detail: "深い海での魚獲りに適した能力" },
       { trait: "柔軟性", value: "高い", detail: "長い首を自在に動かして獲物を追う" }
     ],
-    image: "images/futabasaurus.webp"
+    image: "images/futabasaurus.webp",
+    group: "首長竜"
   },
   {
     id: "kamuyasaurus",
@@ -770,7 +814,8 @@ const DINOSAURS = [
       { trait: "集団行動", value: "可能性あり", detail: "群れで行動し外敵から身を守る" },
       { trait: "適応力", value: "高い", detail: "沿岸部などの過酷な環境にも適応" }
     ],
-    image: "images/kamuyasaurus.webp"
+    image: "images/kamuyasaurus.webp",
+    group: "鳥脚類"
   },
   {
     id: "fukuititan",
@@ -787,7 +832,8 @@ const DINOSAURS = [
       { trait: "巨大質量", value: "圧倒的", detail: "日本国内では最大級の体躯" },
       { trait: "採食範囲", value: "広い", detail: "長い首を利用して高い場所の植物を摂取" }
     ],
-    image: "images/fukuititan.webp"
+    image: "images/fukuititan.webp",
+    group: "竜脚類"
   },
   {
     id: "fukuivenator",
@@ -804,7 +850,8 @@ const DINOSAURS = [
       { trait: "進化の鍵", value: "特異構造", detail: "鳥類に近い耳の構造などを持つ" },
       { trait: "汎用性", value: "高い", detail: "多様な環境で生き抜く雑食性" }
     ],
-    image: "images/fukuivenator.webp"
+    image: "images/fukuivenator.webp",
+    group: "獣脚類"
   },
   {
     id: "koshisaurus",
@@ -821,7 +868,8 @@ const DINOSAURS = [
       { trait: "警戒心", value: "強い", detail: "小型ゆえに鋭い感覚で天敵を察知" },
       { trait: "機動性", value: "中程度", detail: "二足歩行での迅速な退避が可能" }
     ],
-    image: "images/koshisaurus.webp"
+    image: "images/koshisaurus.webp",
+    group: "鳥脚類"
   },
   {
     id: "tambatitan",
@@ -838,7 +886,8 @@ const DINOSAURS = [
       { trait: "地響き", value: "強烈", detail: "その巨体が一歩歩くごとに周囲が震えた" },
       { trait: "防御", value: "サイズ依存", detail: "大きさそのものが肉食恐竜への威嚇" }
     ],
-    image: "images/tambatitan.webp"
+    image: "images/tambatitan.webp",
+    group: "竜脚類"
   },
   {
     id: "yamatodraco",
@@ -855,7 +904,8 @@ const DINOSAURS = [
       { trait: "生存戦略", value: "長期間", detail: "原始的な特徴を残したまま進化し続けた" },
       { trait: "採食能力", value: "優秀", detail: "沿岸の多様な植物を効率よく摂取" }
     ],
-    image: "images/yamatodraco.webp"
+    image: "images/yamatodraco.webp",
+    group: "鳥脚類"
   },
   {
     id: "paralitherizinosaurus",
@@ -872,7 +922,8 @@ const DINOSAURS = [
       { trait: "巨大武器", value: "鎌状の爪", detail: "護身や採食に用いる長大な爪" },
       { trait: "威嚇", value: "効果的", detail: "その異様な姿で天敵を遠ざける" }
     ],
-    image: "images/paralitherizinosaurus.webp"
+    image: "images/paralitherizinosaurus.webp",
+    group: "獣脚類"
   },
   {
     id: "nipponosaurus",
@@ -889,7 +940,8 @@ const DINOSAURS = [
       { trait: "歴史的価値", value: "最高位", detail: "日本の恐竜研究をスタートさせた存在" },
       { trait: "成長段階", value: "発育中", detail: "発見されたのは亜成体とされている" }
     ],
-    image: "images/nipponosaurus.webp"
+    image: "images/nipponosaurus.webp",
+    group: "鳥脚類"
   },
   {
     id: "wakinosaurus",
@@ -906,7 +958,8 @@ const DINOSAURS = [
       { trait: "牙", value: "鋭利", detail: "肉を切り裂くのに適した鋸歯状の歯" },
       { trait: "追跡", value: "粘り強い", detail: "発達した脚力で獲物を追い詰める" }
     ],
-    image: "images/wakinosaurus.webp"
+    image: "images/wakinosaurus.webp",
+    group: "獣脚類"
   },
   {
     id: "sanchuryu",
@@ -923,7 +976,8 @@ const DINOSAURS = [
        { trait: "速力", value: "最高クラス", detail: "二足歩行での極めて高い走破性" },
        { trait: "生存戦略", value: "雑食", detail: "昆虫から植物まで幅広く摂取" }
     ],
-    image: "images/sanchuryu.webp"
+    image: "images/sanchuryu.webp",
+    group: "獣脚類"
   },
   {
     id: "deinonychus",
@@ -940,7 +994,8 @@ const DINOSAURS = [
       { trait: "武器", value: "鎌状の鉤爪", detail: "足の第2指にある巨大な爪で致命傷を与える" },
       { trait: "機動性", value: "高い", detail: "群れで行動し、俊敏な動きで獲物を追い詰める" }
     ],
-    image: "images/deinonychus.webp"
+    image: "images/deinonychus.webp",
+    group: "獣脚類"
   },
   {
     id: "ceratosaurus",
@@ -957,7 +1012,8 @@ const DINOSAURS = [
       { trait: "突進", value: "角による一撃", detail: "鼻上の角はディスプレイや儀礼的闘争に使われたか" },
       { trait: "捕食", value: "水辺のハンター", detail: "魚や水生生物も捕食していた可能性がある" }
     ],
-    image: "images/ceratosaurus.webp"
+    image: "images/ceratosaurus.webp",
+    group: "獣脚類"
   },
   {
     id: "tarbosaurus",
@@ -974,7 +1030,8 @@ const DINOSAURS = [
       { trait: "咬合力", value: "最強クラス", detail: "巨大な竜脚類をも倒す顎の力" },
       { trait: "感知", value: "高度な聴覚", detail: "獲物のわずかな動きを音で察知する" }
     ],
-    image: "images/tarbosaurus.webp"
+    image: "images/tarbosaurus.webp",
+    group: "獣脚類"
   },
   {
     id: "acrocanthosaurus",
@@ -991,7 +1048,8 @@ const DINOSAURS = [
       { trait: "筋力", value: "強靭な背筋", detail: "背中の突起は獲物を支える筋肉の付着部だったか" },
       { trait: "追跡", value: "持久力", detail: "大型の獲物を長時間追跡することが可能" }
     ],
-    image: "images/acrocanthosaurus.webp"
+    image: "images/acrocanthosaurus.webp",
+    group: "獣脚類"
   },
   {
     id: "majungasaurus",
@@ -1008,7 +1066,8 @@ const DINOSAURS = [
       { trait: "防御", value: "強固な頭部", detail: "獲物への突進や仲間との争いに耐える頭骨" },
       { trait: "知能", value: "中程度", detail: "孤立した環境での生存に適した能力" }
     ],
-    image: "images/majungasaurus.webp"
+    image: "images/majungasaurus.webp",
+    group: "獣脚類"
   },
   {
     id: "suchomimus",
@@ -1025,7 +1084,8 @@ const DINOSAURS = [
       { trait: "捕食", value: "魚獲りの天才", detail: "ワニのような長い顎と滑りにくい歯" },
       { trait: "武器", value: "親指の巨大爪", detail: "水中の獲物を引っ掛けて捕らえる" }
     ],
-    image: "images/suchomimus.webp"
+    image: "images/suchomimus.webp",
+    group: "獣脚類"
   },
   {
     id: "gigantoraptor",
@@ -1042,7 +1102,8 @@ const DINOSAURS = [
       { trait: "存在感", value: "威圧的", detail: "鳥のような姿でありながら圧倒的な巨体" },
       { trait: "汎用", value: "高度な雑食性", detail: "様々な環境で食料を確保できる能力" }
     ],
-    image: "images/gigantoraptor.webp"
+    image: "images/gigantoraptor.webp",
+    group: "獣脚類"
   },
   {
     id: "monolophosaurus",
@@ -1059,7 +1120,8 @@ const DINOSAURS = [
       { trait: "威嚇", value: "ディスプレイ", detail: "トサカは視覚的なコミュニケーションに使われた" },
       { trait: "反射", value: "鋭い攻撃", detail: "中型獣脚類らしい迅速な狩り" }
     ],
-    image: "images/monolophosaurus.webp"
+    image: "images/monolophosaurus.webp",
+    group: "獣脚類"
   },
   {
     id: "abelisaurus",
@@ -1076,7 +1138,8 @@ const DINOSAURS = [
       { trait: "攻撃", value: "強力な顎", detail: "一噛みで獲物の肉を大きく削ぎ落とす" },
       { trait: "探索", value: "優れた感知", detail: "広い範囲をパトロールして獲物を探す" }
     ],
-    image: "images/abelisaurus.webp"
+    image: "images/abelisaurus.webp",
+    group: "獣脚類"
   },
   {
     id: "compsognathus",
@@ -1093,7 +1156,8 @@ const DINOSAURS = [
       { trait: "敏捷性", value: "最高クラス", detail: "小回りのきく動きで外敵から逃げ切る" },
       { trait: "連携", value: "集団", detail: "小柄ながら集団で行動し、効率的に狩る" }
     ],
-    image: "images/compsognathus.webp"
+    image: "images/compsognathus.webp",
+    group: "獣脚類"
   },
   {
     id: "guanlong",
@@ -1110,7 +1174,8 @@ const DINOSAURS = [
       { trait: "進化", value: "祖先の資質", detail: "後のティラノサウルスに繋がる強力な脚部" },
       { trait: "特性", value: "トサカの誇示", detail: "派手なトサカで自らの存在をアピールしたか" }
     ],
-    image: "images/guanlong.webp"
+    image: "images/guanlong.webp",
+    group: "獣脚類"
   },
   {
     id: "cryolophosaurus",
@@ -1127,7 +1192,8 @@ const DINOSAURS = [
       { trait: "環境適応", value: "高い", detail: "季節変動のある高緯度地域で活動できた" },
       { trait: "武器", value: "斬撃", detail: "鋭い牙で獲物を素早く仕留める" }
     ],
-    image: "images/cryolophosaurus.webp"
+    image: "images/cryolophosaurus.webp",
+    group: "獣脚類"
   },
   {
     id: "eoraptor",
@@ -1144,7 +1210,8 @@ const DINOSAURS = [
       { trait: "原初", value: "バランス型", detail: "あらゆる環境に順応できる身体能力" },
       { trait: "生存", value: "回避特化", detail: "大型の爬虫類から逃げ抜く俊敏さ" }
     ],
-    image: "images/eoraptor.webp"
+    image: "images/eoraptor.webp",
+    group: "獣脚類"
   },
   {
     id: "herrerasaurus",
@@ -1161,7 +1228,8 @@ const DINOSAURS = [
       { trait: "打撃", value: "強力な四肢", detail: "大きな足爪を活かした力強い一撃" },
       { trait: "不屈", value: "闘争心", detail: "自分より大きな競合相手とも渡り合った" }
     ],
-    image: "images/herrerasaurus.webp"
+    image: "images/herrerasaurus.webp",
+    group: "獣脚類"
   },
   {
     id: "albertosaurus",
@@ -1178,7 +1246,8 @@ const DINOSAURS = [
       { trait: "機動力", value: "高い", detail: "ティラノサウルスより高速で走行可能だった" },
       { trait: "集団性", value: "可能性あり", detail: "多数の個体が一度に発見された例がある" }
     ],
-    image: "images/albertosaurus.webp"
+    image: "images/albertosaurus.webp",
+    group: "獣脚類"
   },
   {
     id: "daspletosaurus",
@@ -1195,7 +1264,8 @@ const DINOSAURS = [
       { trait: "咬合力", value: "強力", detail: "骨を噛み砕くのに適した頑丈な頭骨" },
       { trait: "攻撃性", value: "高い", detail: "同地域に生息した角竜類などを捕食" }
     ],
-    image: "images/daspletosaurus.webp"
+    image: "images/daspletosaurus.webp",
+    group: "獣脚類"
   },
   {
     id: "gorgosaurus",
@@ -1212,7 +1282,8 @@ const DINOSAURS = [
       { trait: "狩りのスタイル", value: "追跡型", detail: "俊敏さを活かして獲物を追い詰める" },
       { trait: "成長速度", value: "急速", detail: "短期間で成体に達する成長戦略" }
     ],
-    image: "images/gorgosaurus.webp"
+    image: "images/gorgosaurus.webp",
+    group: "獣脚類"
   },
   {
     id: "coelophysis",
@@ -1229,7 +1300,8 @@ const DINOSAURS = [
       { trait: "骨格構造", value: "超軽量", detail: "中空の骨による優れた敏捷性" },
       { trait: "適応力", value: "高い", detail: "乾燥した三畳紀の環境に広く適応" }
     ],
-    image: "images/coelophysis.webp"
+    image: "images/coelophysis.webp",
+    group: "獣脚類"
   },
   {
     id: "microraptor",
@@ -1246,7 +1318,8 @@ const DINOSAURS = [
       { trait: "飛行能力", value: "滑空", detail: "木から木へと飛び移る能力" },
       { trait: "視覚", value: "夜行性？", detail: "大きな眼窩から夜間の活動も推測される" }
     ],
-    image: "images/microraptor.webp"
+    image: "images/microraptor.webp",
+    group: "獣脚類"
   },
   {
     id: "concavenator",
@@ -1263,7 +1336,8 @@ const DINOSAURS = [
       { trait: "身体的特徴", value: "背中のコブ", detail: "体温調節やディスプレイの役割説がある" },
       { trait: "皮膚構造", value: "羽毛の萌芽", detail: "前肢に羽軸隆起の形跡がある" }
     ],
-    image: "images/concavenator.webp"
+    image: "images/concavenator.webp",
+    group: "獣脚類"
   },
   {
     id: "megalosaurus",
@@ -1280,7 +1354,8 @@ const DINOSAURS = [
       { trait: "歴史的価値", value: "最初", detail: "1824年に恐竜として初めて正式に記載" },
       { trait: "牙の構造", value: "鋸歯状", detail: "肉を切り裂くのに適した鋭い歯" }
     ],
-    image: "images/megalosaurus.webp"
+    image: "images/megalosaurus.webp",
+    group: "獣脚類"
   },
   {
     id: "mapusaurus",
@@ -1297,7 +1372,8 @@ const DINOSAURS = [
       { trait: "狩猟戦略", value: "群れ", detail: "集団でアルゼンチノサウルスに対抗した説" },
       { trait: "攻撃力", value: "致命的", detail: "薄く鋭い歯による深い傷を与える攻撃" }
     ],
-    image: "images/mapusaurus.webp"
+    image: "images/mapusaurus.webp",
+    group: "獣脚類"
   },
   {
     id: "amargasaurus",
@@ -1314,7 +1390,8 @@ const DINOSAURS = [
       { trait: "防御武具", value: "首の棘", detail: "捕食者に対する防御や威嚇に使用した" },
       { trait: "帆の存在", value: "可能性", detail: "棘の間に皮膚の帆が張られていた説がある" }
     ],
-    image: "images/amargasaurus.webp"
+    image: "images/amargasaurus.webp",
+    group: "竜脚類"
   },
   {
     id: "camarasaurus",
@@ -1331,7 +1408,8 @@ const DINOSAURS = [
       { trait: "採食能力", value: "広範囲", detail: "頑丈な歯で硬い植物も食べることができた" },
       { trait: "群れの行動", value: "一般的", detail: "大規模な群れで移動していた証拠がある" }
     ],
-    image: "images/camarasaurus.webp"
+    image: "images/camarasaurus.webp",
+    group: "竜脚類"
   },
   {
     id: "mamenchisaurus",
@@ -1348,7 +1426,8 @@ const DINOSAURS = [
       { trait: "首の長さ", value: "驚異的", detail: "10メートルを超える驚異的なリーチ" },
       { trait: "構造", value: "軽量化", detail: "複雑な骨の構造により長い首を支えた" }
     ],
-    image: "images/mamenchisaurus.webp"
+    image: "images/mamenchisaurus.webp",
+    group: "竜脚類"
   },
   {
     id: "saltasaurus",
@@ -1365,7 +1444,8 @@ const DINOSAURS = [
       { trait: "防御力", value: "装甲板", detail: "皮膚に埋め込まれた無数の骨質の塊" },
       { trait: "進化の特異点", value: "装甲化", detail: "竜脚類の新たな生存戦略を示した" }
     ],
-    image: "images/saltasaurus.webp"
+    image: "images/saltasaurus.webp",
+    group: "竜脚類"
   },
   {
     id: "shunosaurus",
@@ -1382,7 +1462,8 @@ const DINOSAURS = [
       { trait: "反撃兵器", value: "尾の棍棒", detail: "アンキロサウルスに似た防御用クラブ" },
       { trait: "歯の形状", value: "円筒状", detail: "植物をすりつぶすのに適した構造" }
     ],
-    image: "images/shunosaurus.webp"
+    image: "images/shunosaurus.webp",
+    group: "竜脚類"
   },
   {
     id: "patagotitan",
@@ -1399,7 +1480,8 @@ const DINOSAURS = [
       { trait: "巨大質量", value: "規格外", detail: "ジェット機に匹敵する圧倒的な重さ" },
       { trait: "心肺能力", value: "強靭", detail: "巨大な体を維持するための強力な循環システム" }
     ],
-    image: "images/patagotitan.webp"
+    image: "images/patagotitan.webp",
+    group: "竜脚類"
   },
   {
     id: "puertasaurus",
@@ -1416,7 +1498,8 @@ const DINOSAURS = [
       { trait: "胸郭幅", value: "世界最大級", detail: "約5メートルに達する驚異的な胴体の幅" },
       { trait: "生存戦略", value: "超巨体", detail: "サイズそのものを最大の防御とした" }
     ],
-    image: "images/puertasaurus.webp"
+    image: "images/puertasaurus.webp",
+    group: "竜脚類"
   },
   {
     id: "vulcanodon",
@@ -1433,7 +1516,8 @@ const DINOSAURS = [
       { trait: "進化的位置", value: "過渡期", detail: "古竜脚類から真竜脚類への橋渡し" },
       { trait: "足の構造", value: "原始的", detail: "後の竜脚類とは異なる爪の構造" }
     ],
-    image: "images/vulcanodon.webp"
+    image: "images/vulcanodon.webp",
+    group: "竜脚類"
   },
   {
     id: "giraffatitan",
@@ -1450,7 +1534,8 @@ const DINOSAURS = [
       { trait: "リーチ", value: "垂直上昇", detail: "地上10メートル以上の高さに到達可能" },
       { trait: "心臓", value: "超強力", detail: "頭部まで血液を押し上げるための巨大な心臓" }
     ],
-    image: "images/giraffatitan.webp"
+    image: "images/giraffatitan.webp",
+    group: "竜脚類"
   },
   {
     id: "barosaurus",
@@ -1467,7 +1552,8 @@ const DINOSAURS = [
       { trait: "二足立ち", value: "可能性あり", detail: "後肢と強力な尾でバランスを取り直立" },
       { trait: "首の骨", value: "延長", detail: "個々の頸椎が非常に長く伸びている" }
     ],
-    image: "images/barosaurus.webp"
+    image: "images/barosaurus.webp",
+    group: "竜脚類"
   },
   {
     id: "jobaria",
@@ -1484,7 +1570,8 @@ const DINOSAURS = [
       { trait: "原始的な特徴", value: "スプーン状の歯", detail: "進化した竜脚類とは異なる歯の形状" },
       { trait: "骨格の保存", value: "ほぼ全身", detail: "95%近くの骨格が揃った状態で発見された" }
     ],
-    image: "images/jobaria.webp"
+    image: "images/jobaria.webp",
+    group: "竜脚類"
   },
   {
     id: "alamosaurus",
@@ -1501,7 +1588,8 @@ const DINOSAURS = [
       { trait: "巨大なサイズ", value: "超大型", detail: "北米大陸における白亜紀後期の最大級の恐竜" },
       { trait: "分布の謎", value: "南から北へ", detail: "南米系の系統が北米へ進出したと考えられている" }
     ],
-    image: "images/alamosaurus.webp"
+    image: "images/alamosaurus.webp",
+    group: "竜脚類"
   },
   {
     id: "ampelosaurus",
@@ -1518,7 +1606,8 @@ const DINOSAURS = [
       { trait: "防御機構", value: "皮骨装甲", detail: "竜脚類としては珍しく高度に発達した装甲を持つ" },
       { trait: "系統的特徴", value: "ティタノサウルス類", detail: "進化した竜脚類のグループに属し、広範囲に分布した" }
     ],
-    image: "images/ampelosaurus.webp"
+    image: "images/ampelosaurus.webp",
+    group: "竜脚類"
   },
   {
     id: "brontosaurus",
@@ -1535,7 +1624,8 @@ const DINOSAURS = [
       { trait: "復活した学名", value: "学名の変遷", detail: "一度は抹消された名前が2015年の研究で復活" },
       { trait: "強力な尾", value: "ムチのような尾", detail: "尾の先端を音速で振り回し、威嚇や防御に使用した" }
     ],
-    image: "images/brontosaurus.webp"
+    image: "images/brontosaurus.webp",
+    group: "竜脚類"
   },
   {
     id: "dreadnoughtus",
@@ -1552,7 +1642,8 @@ const DINOSAURS = [
       { trait: "骨格確実性", value: "高い", detail: "超大型竜脚類としては珍しく全身の7割近くが発見" },
       { trait: "成長力", value: "驚異的", detail: "発見された個体はまだ成長途上であった可能性がある" }
     ],
-    image: "images/dreadnoughtus.webp"
+    image: "images/dreadnoughtus.webp",
+    group: "竜脚類"
   },
   {
     id: "plesiosaurus",
@@ -1569,7 +1660,8 @@ const DINOSAURS = [
       { trait: "遊泳法", value: "水中飛翔", detail: "4枚のパドルを上下に動かして泳ぐ" },
       { trait: "捕獲能力", value: "高い", detail: "針のような細い歯で逃げる魚を逃がさない" }
     ],
-    image: "images/plesiosaurus.webp"
+    image: "images/plesiosaurus.webp",
+    group: "首長竜"
   },
   {
     id: "ichthyosaurus",
@@ -1586,7 +1678,8 @@ const DINOSAURS = [
       { trait: "水中適応", value: "完璧", detail: "高速泳行に適した尾鰭と背鰭" },
       { trait: "視覚力", value: "極めて高い", detail: "深海や夜間でも獲物を見つける巨大な目" }
     ],
-    image: "images/ichthyosaurus.webp"
+    image: "images/ichthyosaurus.webp",
+    group: "魚竜"
   },
   {
     id: "liopleurodon",
@@ -1620,7 +1713,8 @@ const DINOSAURS = [
       { trait: "咬合力", value: "破壊的", detail: "T-Rexを凌ぐとされる圧倒的な噛む力" },
       { trait: "大型牙", value: "25cm以上", detail: "獲物の骨を粉砕する巨大な円錐形の歯" }
     ],
-    image: "images/kronosaurus.webp"
+    image: "images/kronosaurus.webp",
+    group: "首長竜"
   },
   {
     id: "shonisaurus",
@@ -1637,7 +1731,8 @@ const DINOSAURS = [
       { trait: "サイズ", value: "超弩級", detail: "魚竜としては異例の巨大な体躯" },
       { trait: "生存戦略", value: "長距離移動", detail: "エネルギー効率の良い巨大な体での外洋移動" }
     ],
-    image: "images/shonisaurus.webp"
+    image: "images/shonisaurus.webp",
+    group: "魚竜"
   },
   {
     id: "archelon",
@@ -1654,7 +1749,8 @@ const DINOSAURS = [
       { trait: "軽量甲羅", value: "特殊構造", detail: "皮膚張りの甲羅による水浮力調節" },
       { trait: "咬合部", value: "嘴状", detail: "硬いアンモナイトの殻を砕く強力な嘴" }
     ],
-    image: "images/archelon.webp"
+    image: "images/archelon.webp",
+    group: "その他"
   },
   {
     id: "tanystropheus",
@@ -1671,7 +1767,8 @@ const DINOSAURS = [
       { trait: "首の構造", value: "棒状", detail: "頸椎1つ1つが極端に長く、柔軟性は低かった" },
       { trait: "狩りの手法", value: "待ち伏せ", detail: "水中への不意のリーチによる捕食" }
     ],
-    image: "images/tanystropheus.webp"
+    image: "images/tanystropheus.webp",
+    group: "その他"
   },
   {
     id: "tylosaurus",
@@ -1688,7 +1785,8 @@ const DINOSAURS = [
       { trait: "攻撃特性", value: "体当たり", detail: "硬い鼻先を武器として使用" },
       { trait: "捕食", value: "広範囲", detail: "サメや首長竜、さらには他のモササウルス類も捕食" }
     ],
-    image: "images/tylosaurus.webp"
+    image: "images/tylosaurus.webp",
+    group: "その他"
   },
   {
     id: "hainosaurus",
@@ -1705,7 +1803,8 @@ const DINOSAURS = [
       { trait: "推進力", value: "強力な尾", detail: "巨大な体を高速で加速させる筋肉" },
       { trait: "骨格", value: "多椎骨", detail: "柔軟な動きを可能にする背骨の構造" }
     ],
-    image: "images/hainosaurus.webp"
+    image: "images/hainosaurus.webp",
+    group: "その他"
   },
   {
     id: "prognathodon",
@@ -1722,7 +1821,8 @@ const DINOSAURS = [
       { trait: "咬合力", value: "絶大", detail: "硬い獲物の殻を粉砕する特殊な歯" },
       { trait: "潜水", value: "深海対応", detail: "深海での活動を示唆する強固な耳の構造" }
     ],
-    image: "images/prognathodon.webp"
+    image: "images/prognathodon.webp",
+    group: "その他"
   },
   {
     id: "nothosaurus",
@@ -1739,7 +1839,8 @@ const DINOSAURS = [
       { trait: "機動性", value: "水陸両用", detail: "ヒレ状の足で陸上も移動可能だった" },
       { trait: "捕食技術", value: "鋭い牙", detail: "魚を捕らえて逃がさない複雑な歯列" }
     ],
-    image: "images/nothosaurus.webp"
+    image: "images/nothosaurus.webp",
+    group: "首長竜"
   },
   {
     id: "placodus",
@@ -1756,7 +1857,8 @@ const DINOSAURS = [
       { trait: "特殊歯", value: "石畳状の歯", detail: "硬い殻を押しつぶすための強力な歯" },
       { trait: "防御", value: "骨質ノブ", detail: "背中にある小さな骨の装甲" }
     ],
-    image: "images/placodus.webp"
+    image: "images/placodus.webp",
+    group: "その他"
   },
   {
     id: "henodus",
@@ -1773,7 +1875,8 @@ const DINOSAURS = [
       { trait: "装甲", value: "箱状甲羅", detail: "1枚の大きな骨板で覆われた平らな体" },
       { trait: "採食", value: "フィルター", detail: "広くて平らな口による砂泥の濾過" }
     ],
-    image: "images/henodus.webp"
+    image: "images/henodus.webp",
+    group: "その他"
   },
   {
     id: "cymbospondylus",
@@ -1790,7 +1893,8 @@ const DINOSAURS = [
       { trait: "巨体", value: "三畳紀最大級", detail: "全長10メートルに達する細長い体" },
       { trait: "遊泳法", value: "蛇行", detail: "長い全身を使って力強く泳ぐ" }
     ],
-    image: "images/cymbospondylus.webp"
+    image: "images/cymbospondylus.webp",
+    group: "魚竜"
   },
   {
     id: "leedsichthys",
@@ -1807,7 +1911,8 @@ const DINOSAURS = [
       { trait: "濾過摂食", value: "高効率", detail: "数千の鰓耙（さいは）で微細な餌を捕集" },
       { trait: "巨体", value: "最大級の魚類", detail: "他の大型魚類や爬虫類を圧倒する質量" }
     ],
-    image: "images/leedsichthys.webp"
+    image: "images/leedsichthys.webp",
+    group: "その他"
   },
   {
     id: "dimorphodon",
@@ -1824,7 +1929,8 @@ const DINOSAURS = [
       { trait: "異形歯", value: "2種類", detail: "獲物を捕らえる長い前歯と噛み切る奥歯を持つ" },
       { trait: "構造", value: "長い尾", detail: "飛行時のバランスを保つための長い尾" }
     ],
-    image: "images/dimorphodon.webp"
+    image: "images/dimorphodon.webp",
+    group: "翼竜"
   },
   {
     id: "rhamphorhynchus",
@@ -1841,7 +1947,8 @@ const DINOSAURS = [
       { trait: "舵取り装置", value: "菱形の尾", detail: "尾の先端のひれが飛行中の方向転換を助ける" },
       { trait: "捕食特化", value: "前向きの歯", detail: "滑りやすい魚を確実に捕らえる構造" }
     ],
-    image: "images/rhamphorhynchus.webp"
+    image: "images/rhamphorhynchus.webp",
+    group: "翼竜"
   },
   {
     id: "pterodactylus",
@@ -1858,7 +1965,8 @@ const DINOSAURS = [
       { trait: "機動力", value: "高い", detail: "短い尾により空中での旋回性能が向上" },
       { trait: "構造", value: "軽量化", detail: "極限まで薄い骨格による効率的な飛行" }
     ],
-    image: "images/pterodactylus.webp"
+    image: "images/pterodactylus.webp",
+    group: "翼竜"
   },
   {
     id: "tapejara",
@@ -1875,7 +1983,8 @@ const DINOSAURS = [
       { trait: "巨大トサカ", value: "帆状", detail: "骨質と帆のような膜からなる大きな装飾" },
       { trait: "食性適応", value: "嘴", detail: "種子や果実も食べられたとされる特殊な形状" }
     ],
-    image: "images/tapejara.webp"
+    image: "images/tapejara.webp",
+    group: "翼竜"
   },
   {
     id: "tupandactylus",
@@ -1892,7 +2001,8 @@ const DINOSAURS = [
       { trait: "極大トサカ", value: "驚異的サイズ", detail: "頭部の数倍の大きさになるディスプレイ用トサカ" },
       { trait: "社会性", value: "高い", detail: "トサカを用いた個体識別やコミュニケーション" }
     ],
-    image: "images/tupandactylus.webp"
+    image: "images/tupandactylus.webp",
+    group: "翼竜"
   },
   {
     id: "alanqa",
@@ -1909,7 +2019,8 @@ const DINOSAURS = [
       { trait: "地上高", value: "キリン並み", detail: "四足歩行時には高い視点から地上を監視" },
       { trait: "構造", value: "堅牢な嘴", detail: "貝殻などの硬いものも砕けた可能性" }
     ],
-    image: "images/alanqa.webp"
+    image: "images/alanqa.webp",
+    group: "翼竜"
   },
   {
     id: "dsungaripterus",
@@ -1926,7 +2037,8 @@ const DINOSAURS = [
       { trait: "特殊嘴", value: "反り返り", detail: "岩の隙間から獲物を引き抜くのに適した形状" },
       { trait: "粉砕能力", value: "高い", detail: "硬い殻を噛み砕くための強靭な奥歯" }
     ],
-    image: "images/dsungaripterus.webp"
+    image: "images/dsungaripterus.webp",
+    group: "翼竜"
   },
   {
     id: "tropeognathus",
@@ -1943,7 +2055,8 @@ const DINOSAURS = [
       { trait: "キール構造", value: "嘴のトサカ", detail: "水中に嘴を入れて飛ぶ際の水の抵抗を軽減" },
       { trait: "巨翼", value: "白亜紀前期最大", detail: "上昇気流を捉えて数千キロを移動可能" }
     ],
-    image: "images/tropeognathus.webp"
+    image: "images/tropeognathus.webp",
+    group: "翼竜"
   },
   {
     id: "anhanguera",
@@ -1960,7 +2073,8 @@ const DINOSAURS = [
       { trait: "捕食トラップ", value: "交差する歯", detail: "一度捕らえた魚を逃さないケージのような歯" },
       { trait: "センシング", value: "高い平衡感覚", detail: "低空飛行で正確に獲物を狙い撃つ" }
     ],
-    image: "images/anhanguera.webp"
+    image: "images/anhanguera.webp",
+    group: "翼竜"
   },
   {
     id: "eudimorphodon",
@@ -1977,7 +2091,8 @@ const DINOSAURS = [
       { trait: "複雑な歯", value: "多咬頭歯", detail: "原始的だが複雑な形状の歯で多様な餌に対応" },
       { trait: "構造", value: "長い尾", detail: "ステアリングの役割を果たす硬い尾" }
     ],
-    image: "images/eudimorphodon.webp"
+    image: "images/eudimorphodon.webp",
+    group: "翼竜"
   },
   {
     id: "sordes",
@@ -1994,7 +2109,8 @@ const DINOSAURS = [
       { trait: "外皮", value: "体毛状組織", detail: "全身を覆う毛のような組織による保温効果" },
       { trait: "適応", value: "昆虫食", detail: "夜間や寒冷地でも活動できた可能性" }
     ],
-    image: "images/sordes.webp"
+    image: "images/sordes.webp",
+    group: "翼竜"
   },
   {
     id: "jeholopterus",
@@ -2011,7 +2127,8 @@ const DINOSAURS = [
       { trait: "広角嘴", value: "夜間狩猟", detail: "大きく開く口で空中を飛ぶ昆虫を効率よく捕獲" },
       { trait: "鉤爪", value: "強靭", detail: "樹木にしっかりと掴まるための発達した爪" }
     ],
-    image: "images/jeholopterus.webp"
+    image: "images/jeholopterus.webp",
+    group: "翼竜"
   },
   {
     id: "protoceratops",
@@ -2028,7 +2145,8 @@ const DINOSAURS = [
       { trait: "襟飾り", value: "発達", detail: "個体識別や求愛、筋肉の付着点として機能" },
       { trait: "嘴", value: "強力", detail: "硬い砂漠の植物を切り取るための鋭いくちばし" }
     ],
-    image: "images/protoceratops.webp"
+    image: "images/protoceratops.webp",
+    group: "角竜類"
   },
   {
     id: "pachyrhinosaurus",
@@ -2045,7 +2163,8 @@ const DINOSAURS = [
       { trait: "骨のコブ", value: "頑強", detail: "鼻の上の厚いコブは儀礼的な闘争に使われた可能性" },
       { trait: "群れ", value: "大規模", detail: "アラスカなどで大量の化石が発見され、大移動をしていたとされる" }
     ],
-    image: "images/pachyrhinosaurus.webp"
+    image: "images/pachyrhinosaurus.webp",
+    group: "角竜類"
   },
   {
     id: "chasmosaurus",
@@ -2062,7 +2181,8 @@ const DINOSAURS = [
       { trait: "大型襟飾", value: "威嚇特化", detail: "面積が広く、捕食者を驚かせるのに十分な大きさ" },
       { trait: "角の構成", value: "短角", detail: "目の上と鼻に短い角を持つ" }
     ],
-    image: "images/chasmosaurus.webp"
+    image: "images/chasmosaurus.webp",
+    group: "角竜類"
   },
   {
     id: "torosaurus",
@@ -2079,7 +2199,8 @@ const DINOSAURS = [
       { trait: "巨大頭骨", value: "記録的サイズ", detail: "頭部だけで2.5メートル以上に達する個体も存在" },
       { trait: "装飾進化", value: "極限", detail: "より大きな襟飾りが選択された進化の結果" }
     ],
-    image: "images/torosaurus.webp"
+    image: "images/torosaurus.webp",
+    group: "角竜類"
   },
   {
     id: "diabloceratops",
@@ -2096,7 +2217,8 @@ const DINOSAURS = [
       { trait: "襟飾角", value: "左右一対", detail: "上方に大きく湾曲した特徴的な2本の角" },
       { trait: "進化段階", value: "原始的", detail: "セントロサウルス類の中でも古い時代の特徴を残す" }
     ],
-    image: "images/diabloceratops.webp"
+    image: "images/diabloceratops.webp",
+    group: "角竜類"
   },
   {
     id: "nasutoceratops",
@@ -2113,7 +2235,8 @@ const DINOSAURS = [
       { trait: "牛状の角", value: "前方湾曲", detail: "他の角竜とは異なる、闘牛のように前に向いた角" },
       { trait: "巨大な鼻", value: "解剖学的特徴", detail: "嗅覚や発声に関わっていた可能性のある大きな鼻腔" }
     ],
-    image: "images/nasutoceratops.webp"
+    image: "images/nasutoceratops.webp",
+    group: "角竜類"
   },
   {
     id: "centrosaurus",
@@ -2130,7 +2253,8 @@ const DINOSAURS = [
       { trait: "鼻角", value: "一本槍", detail: "前方に向けられた強力な一本の武器" },
       { trait: "襟飾フック", value: "内側湾曲", detail: "襟飾りの縁から内側に向かって伸びる不思議な突起" }
     ],
-    image: "images/centrosaurus.webp"
+    image: "images/centrosaurus.webp",
+    group: "角竜類"
   },
   {
     id: "einiosaurus",
@@ -2147,7 +2271,8 @@ const DINOSAURS = [
       { trait: "前曲角", value: "ボトルオープナー", detail: "下向きに大きく曲がった独特の鼻角" },
       { trait: "スパイク", value: "防御・威嚇", detail: "襟飾りの上部から外側へ向かう二本のトゲ" }
     ],
-    image: "images/einiosaurus.webp"
+    image: "images/einiosaurus.webp",
+    group: "角竜類"
   },
   {
     id: "leptoceratops",
@@ -2164,7 +2289,8 @@ const DINOSAURS = [
       { trait: "無襟飾", value: "原始的", detail: "防御用の襟飾りがなく、身軽な体格を持つ" },
       { trait: "移動形式", value: "二足・四足行", detail: "通常は四足、緊急時には二足で走ることができた" }
     ],
-    image: "images/leptoceratops.webp"
+    image: "images/leptoceratops.webp",
+    group: "角竜類"
   },
   {
     id: "gastonia",
@@ -2181,7 +2307,8 @@ const DINOSAURS = [
       { trait: "トゲ装甲", value: "全身武装", detail: "体中から飛び出した大小様々な棘が接近を阻む" },
       { trait: "シザーズ・テイル", value: "攻撃手段", detail: "尾を左右に振るだけで肉食恐竜に深い傷を負わせる" }
     ],
-    image: "images/gastonia.webp"
+    image: "images/gastonia.webp",
+    group: "よろい竜類"
   },
   {
     id: "sauropelta",
@@ -2198,7 +2325,8 @@ const DINOSAURS = [
       { trait: "ショルダースパイク", value: "対空・対側面", detail: "肩にある最大級のトゲが首元を保護する" },
       { trait: "盾状装甲", value: "モザイク装甲", detail: "皮膚に埋め込まれた無数の骨質の板" }
     ],
-    image: "images/sauropelta.webp"
+    image: "images/sauropelta.webp",
+    group: "よろい竜類"
   },
   {
     id: "edmontonia",
@@ -2215,7 +2343,8 @@ const DINOSAURS = [
       { trait: "正面迎撃", value: "突進防御", detail: "正面を向いた二対の巨大な肩のトゲ" },
       { trait: "装甲密度", value: "最高水準", detail: "頭部から尾まで隙間なく並んだ硬い骨板" }
     ],
-    image: "images/edmontonia.webp"
+    image: "images/edmontonia.webp",
+    group: "よろい竜類"
   },
   {
     id: "polacanthus",
@@ -2232,7 +2361,8 @@ const DINOSAURS = [
       { trait: "腰の盾", value: "サクラル・シールド", detail: "腰から臀部を覆う広大な単一の骨板" },
       { trait: "マルチ武装", value: "トゲと板", detail: "部位によってトゲと板状の装甲を使い分ける" }
     ],
-    image: "images/polacanthus.webp"
+    image: "images/polacanthus.webp",
+    group: "よろい竜類"
   },
   {
     id: "euoplocephalus",
@@ -2249,7 +2379,8 @@ const DINOSAURS = [
       { trait: "ハンマーテイル", value: "重量武器", detail: "数百キロの衝撃を与える骨の塊" },
       { trait: "装甲まぶた", value: "全身保護", detail: "目という弱点すら骨質の板で保護可能" }
     ],
-    image: "images/euoplocephalus.webp"
+    image: "images/euoplocephalus.webp",
+    group: "よろい竜類"
   },
   {
     id: "saichania",
@@ -2266,7 +2397,8 @@ const DINOSAURS = [
       { trait: "砂漠適応", value: "熱交換システム", detail: "鼻腔内の複雑な構造で吸気を冷却" },
       { trait: "二段腹装甲", value: "特殊装甲", detail: "腹部側まで装甲が回り込んでいる珍しい構造" }
     ],
-    image: "images/saichania.webp"
+    image: "images/saichania.webp",
+    group: "よろい竜類"
   },
   {
     id: "minmi",
@@ -2283,7 +2415,8 @@ const DINOSAURS = [
       { trait: "副脊椎骨", value: "背筋強化", detail: "素早く逃げたり激しい動きを支えるための特殊な骨" },
       { trait: "腹部守備", value: "鎖帷子", detail: "お腹側を保護する小さな骨の粒の集合体" }
     ],
-    image: "images/minmi.webp"
+    image: "images/minmi.webp",
+    group: "よろい竜類"
   },
   {
     id: "scelidosaurus",
@@ -2300,7 +2433,8 @@ const DINOSAURS = [
       { trait: "原初装甲", value: "骨質ノブ", detail: "皮膚に規則正しく並んだ原始的な装具" },
       { trait: "進化の基点", value: "装盾亜目", detail: "すべての装甲系恐竜の進化の鍵を握る種" }
     ],
-    image: "images/scelidosaurus.webp"
+    image: "images/scelidosaurus.webp",
+    group: "よろい竜類"
   },
   {
     id: "hylaeosaurus",
@@ -2317,7 +2451,8 @@ const DINOSAURS = [
       { trait: "歴史的重要種", value: "三大恐竜", detail: "「恐竜」誕生時に数えられた歴史的な種" },
       { trait: "背棘", value: "三列のトゲ", detail: "背中の中心線とその両脇に並ぶ鋭いトゲ" }
     ],
-    image: "images/hylaeosaurus.webp"
+    image: "images/hylaeosaurus.webp",
+    group: "よろい竜類"
   },
   {
     id: "tarchia",
@@ -2334,7 +2469,8 @@ const DINOSAURS = [
       { trait: "最大重量級", value: "アジアの壁", detail: "極めて重厚な装甲と巨大な体躯" },
       { trait: "対捕食者", value: "ハンマー攻撃", detail: "巨大な尾のハンマーでタルボサウルスに対抗" }
     ],
-    image: "images/tarchia.webp"
+    image: "images/tarchia.webp",
+    group: "よろい竜類"
   },
   {
     id: "borealopelta",
@@ -2351,7 +2487,8 @@ const DINOSAURS = [
       { trait: "保護色", value: "赤茶色", detail: "カウンターシェーディングによる擬態の証拠" },
       { trait: "完全再現", value: "生きた姿", detail: "三次元的な装甲の配置が完全に判明している唯一の鎧竜" }
     ],
-    image: "images/borealopelta.webp"
+    image: "images/borealopelta.webp",
+    group: "よろい竜類"
   },
   {
     id: "edmontosaurus",
@@ -2368,7 +2505,8 @@ const DINOSAURS = [
       { trait: "アヒル口", value: "特化型", detail: "数千本の歯が並ぶデンタルバッテリーで植物をすり潰す" },
       { trait: "群居性", value: "高い", detail: "数千頭規模の巨大な群れで移動していた証拠がある" }
     ],
-    image: "images/edmontosaurus.webp"
+    image: "images/edmontosaurus.webp",
+    group: "鳥脚類"
   },
   {
     id: "corythosaurus",
@@ -2385,7 +2523,8 @@ const DINOSAURS = [
       { trait: "半円形トサカ", value: "共鳴器", detail: "声を増幅させ、数キロ先まで音を届けることが可能" },
       { trait: "視覚的装飾", value: "ディスプレイ", detail: "トサカは成長とともに大きくなり、雌雄の識別にも使われた" }
     ],
-    image: "images/corythosaurus.webp"
+    image: "images/corythosaurus.webp",
+    group: "鳥脚類"
   },
   {
     id: "maiasaura",
@@ -2402,7 +2541,8 @@ const DINOSAURS = [
       { trait: "子育て", value: "高度な社会性", detail: "卵の孵化から幼体の成長まで群れ全体で保護する" },
       { trait: "営巣戦略", value: "コロニー形成", detail: "一定の間隔で巣を配置し、集団で捕食者から守る" }
     ],
-    image: "images/maiasaura.webp"
+    image: "images/maiasaura.webp",
+    group: "鳥脚類"
   },
   {
     id: "muttaburrasaurus",
@@ -2419,7 +2559,8 @@ const DINOSAURS = [
       { trait: "隆起した鼻", value: "特異形状", detail: "嗅覚の強化や音響調節に使用された可能性が高い" },
       { trait: "咬合力", value: "強力", detail: "硬い植物を切断するのに適した鋭い嘴と歯を持つ" }
     ],
-    image: "images/muttaburrasaurus.webp"
+    image: "images/muttaburrasaurus.webp",
+    group: "鳥脚類"
   },
   {
     id: "shantungosaurus",
@@ -2436,7 +2577,8 @@ const DINOSAURS = [
       { trait: "巨大化", value: "最大級", detail: "ハドロサウルス類としては異例の15メートル超えの体躯" },
       { trait: "骨格強度", value: "極めて高い", detail: "巨体を支えるための頑強な脊椎と後肢を持つ" }
     ],
-    image: "images/shantungosaurus.webp"
+    image: "images/shantungosaurus.webp",
+    group: "鳥脚類"
   },
   {
     id: "tenontosaurus",
@@ -2453,7 +2595,8 @@ const DINOSAURS = [
       { trait: "超長尾", value: "バランス調整", detail: "全長の半分以上を占める強靭な尾でバランスを取る" },
       { trait: "被食者", value: "生態系の中核", detail: "肉食恐竜との格闘の痕跡が複数の化石に残っている" }
     ],
-    image: "images/tenontosaurus.webp"
+    image: "images/tenontosaurus.webp",
+    group: "鳥脚類"
   },
   {
     id: "camptosaurus",
@@ -2470,7 +2613,8 @@ const DINOSAURS = [
       { trait: "歩行柔軟性", value: "二足/四足併用", detail: "状況に応じて歩行スタイルを自在に切り替える" },
       { trait: "強靭な嘴", value: "植物切断", detail: "地表に近い植物を効率よく摘み取るための嘴" }
     ],
-    image: "images/camptosaurus.webp"
+    image: "images/camptosaurus.webp",
+    group: "鳥脚類"
   },
   {
     id: "ouranosaurus",
@@ -2487,7 +2631,8 @@ const DINOSAURS = [
       { trait: "背中の帆", value: "体温調節", detail: "表面積を広げ、熱を放射または吸収する役割" },
       { trait: "親指スパイク", value: "防御武器", detail: "イグアノドン類特有の鋭い親指の爪で身を守る" }
     ],
-    image: "images/ouranosaurus.webp"
+    image: "images/ouranosaurus.webp",
+    group: "鳥脚類"
   },
   {
     id: "olorotitan",
@@ -2504,7 +2649,8 @@ const DINOSAURS = [
       { trait: "構造", value: "扇形トサカ", detail: "中空のトサカで音を鳴らし仲間と通信した" },
       { trait: "機動性", value: "中程度", detail: "二足・四足歩行の両方で移動可能" }
     ],
-    image: "images/olorotitan.webp"
+    image: "images/olorotitan.webp",
+    group: "鳥脚類"
   },
   {
     id: "stegoceras",
@@ -2521,7 +2667,8 @@ const DINOSAURS = [
       { trait: "武装", value: "頭骨ドーム", detail: "衝撃に強い強化された骨構造" },
       { trait: "感覚", value: "鋭敏な嗅覚", detail: "脳の嗅球が発達していた" }
     ],
-    image: "images/stegoceras.webp"
+    image: "images/stegoceras.webp",
+    group: "堅頭竜類"
   },
   {
     id: "homalocephale",
@@ -2538,7 +2685,8 @@ const DINOSAURS = [
       { trait: "構造", value: "平坦な頭頂", detail: "頭突きよりも威嚇やディスプレイ用か" },
       { trait: "安定性", value: "広い骨盤", detail: "低重心で安定した歩行が可能" }
     ],
-    image: "images/homalocephale.webp"
+    image: "images/homalocephale.webp",
+    group: "堅頭竜類"
   },
   {
     id: "hyperodapedon",
@@ -2555,7 +2703,8 @@ const DINOSAURS = [
       { trait: "採食", value: "特殊な嘴", detail: "硬い種子や植物を砕くための強力な顎" },
       { trait: "生存戦略", value: "爆発的繁栄", detail: "三畳紀後期の主要な草食動物だった" }
     ],
-    image: "images/hyperodapedon.webp"
+    image: "images/hyperodapedon.webp",
+    group: "その他"
   },
   {
     id: "dimetrodon",
@@ -2572,7 +2721,8 @@ const DINOSAURS = [
       { trait: "構造", value: "熱調節の帆", detail: "背中の帆で太陽光を浴び体温を上げた" },
       { trait: "捕食武器", value: "二種類の歯", detail: "切り裂き用と保持用の異なる形状の歯" }
     ],
-    image: "images/dimetrodon.webp"
+    image: "images/dimetrodon.webp",
+    group: "その他"
   },
   {
     id: "inostrancevia",
@@ -2589,7 +2739,8 @@ const DINOSAURS = [
       { trait: "攻撃", value: "サーベルタイガー状の牙", detail: "厚い皮を貫く巨大な牙" },
       { trait: "脚力", value: "高い", detail: "初期の単弓類としては直立に近い脚配置" }
     ],
-    image: "images/inostrancevia.webp"
+    image: "images/inostrancevia.webp",
+    group: "その他"
   },
   {
     id: "postosuchus",
@@ -2606,7 +2757,8 @@ const DINOSAURS = [
       { trait: "武器", value: "強力な顎", detail: "ワニのような骨を砕く顎の力" },
       { trait: "機動力", value: "二足・四足", detail: "大型の体躯を支える強力な後肢" }
     ],
-    image: "images/postosuchus.webp"
+    image: "images/postosuchus.webp",
+    group: "その他"
   },
   {
     id: "desmatosuchus",
@@ -2623,7 +2775,8 @@ const DINOSAURS = [
       { trait: "防御", value: "ショルダー・スパイク", detail: "横からの攻撃を防ぐ巨大な棘" },
       { trait: "装甲", value: "骨質板", detail: "全身を覆うリベット状の鎧" }
     ],
-    image: "images/desmatosuchus.webp"
+    image: "images/desmatosuchus.webp",
+    group: "その他"
   },
   {
     id: "nyctosaurus",
@@ -2640,7 +2793,8 @@ const DINOSAURS = [
       { trait: "巨大なトサカ", value: "V字/Y字型", detail: "極めて高く伸びる分岐したトサカ" },
       { trait: "飛行適応", value: "グライダー", detail: "上昇気流を捉えて海上で長時間飛行する" }
     ],
-    image: "images/nyctosaurus.webp"
+    image: "images/nyctosaurus.webp",
+    group: "翼竜"
   },
   {
     id: "sasayamagnomus",
@@ -2657,7 +2811,8 @@ const DINOSAURS = [
       { trait: "進化の鍵", value: "原始的な角", detail: "北米のケラトプス類へと繋がる進化の道筋を示す" },
       { trait: "小型軽量", value: "高い敏捷性", detail: "森林地帯で外敵を避けながら生活していた" }
     ],
-    image: "images/sasayamagnomus.webp"
+    image: "images/sasayamagnomus.webp",
+    group: "角竜類"
   },
   {
     id: "titanoboa",
@@ -2674,7 +2829,8 @@ const DINOSAURS = [
       { trait: "圧倒的サイズ", value: "史上最大", detail: "全長12mを超え、胴体の太さは1mに達した" },
       { trait: "締め付け", value: "強力", detail: "巨体から繰り出される締め付けは獲物を一瞬で無力化する" }
     ],
-    image: "images/titanoboa.webp"
+    image: "images/titanoboa.webp",
+    group: "その他"
   },
   {
     id: "nanuqsaurus",
@@ -2691,7 +2847,8 @@ const DINOSAURS = [
       { trait: "防寒羽毛", value: "可能性大", detail: "極地の寒さに耐えるための絶縁性の羽毛" },
       { trait: "感覚器官", value: "鋭敏", detail: "冬の長い夜でも獲物を探せる優れた嗅覚と視覚" }
     ],
-    image: "images/nanuqsaurus.webp"
+    image: "images/nanuqsaurus.webp",
+    group: "獣脚類"
   }
 ];
 

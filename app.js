@@ -25,6 +25,20 @@ const REGIONS = [
     { id: '海洋', label: '海洋' }
 ];
 
+const GROUPS = [
+    { id: '獣脚類', label: '獣脚類' },
+    { id: '竜脚類', label: '竜脚類' },
+    { id: '鳥脚類', label: '鳥脚類' },
+    { id: '剣竜類', label: '剣竜類' },
+    { id: '堅頭竜類', label: '堅頭竜類' },
+    { id: 'よろい竜類', label: 'よろい竜類' },
+    { id: '角竜類', label: '角竜類' },
+    { id: '翼竜', label: '翼竜' },
+    { id: '首長竜', label: '首長竜' },
+    { id: '魚竜', label: '魚竜' },
+    { id: 'その他', label: 'その他' }
+];
+
 // --- ROUTER CONFIG ---
 const routes = {
   home: renderHome,
@@ -226,6 +240,7 @@ function getDictState() {
         search: '',
         era: '',
         region: '',
+        group: '',
         sort: 'kana'
     };
 }
@@ -342,11 +357,33 @@ function renderMap(activeRegion) {
     `;
 }
 
+function renderGroupFilter(activeGroup) {
+    return `
+        <div class="timeline-container group-timeline">
+            <div class="timeline-label-fixed" style="padding: 0 30px; font-family: var(--font-mono); font-size: 12px; color: var(--primary-neon); border-right: 1px solid var(--panel-border); height: 100%; display: flex; align-items: center; white-space: nowrap; background: rgba(0, 242, 255, 0.05);">
+                系統フィルタ
+            </div>
+            <div class="timeline-track">
+                <div class="timeline-group ${!activeGroup ? 'active' : ''}" data-group="">
+                    <div class="era-marker"></div>
+                    <span class="era-label">すべて</span>
+                </div>
+                ${GROUPS.map(g => `
+                    <div class="timeline-group ${activeGroup === g.id ? 'active' : ''}" data-group="${g.id}">
+                        <div class="era-marker"></div>
+                        <span class="era-label">${g.label}</span>
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+    `;
+}
+
 function renderDictionary() {
   const state = getDictState();
   
   return `
-    <section class="page-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
+    <section class="page-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px; margin-bottom: 20px;">
         <div>
             <h2 class="page-title" style="margin-bottom: 5px;">古生物アーカイブ</h2>
             <p class="page-subtitle">標本リスト : 総数 ${DINOSAURS.length}</p>
@@ -362,16 +399,46 @@ function renderDictionary() {
         </div>
     </section>
 
-    <!-- Temporal Navigation -->
-    <div class="timeline-wrapper" style="margin-bottom: 20px;">
-        ${renderTimeline(state.era)}
+    <!-- Filter Toggle & Active Chips -->
+    <div class="filter-controls-header hud-panel" style="margin-bottom: 20px; padding: 10px 20px; display: flex; align-items: center; gap: 20px; justify-content: space-between; cursor: pointer;" id="filter-accordion-toggle">
+        <div style="display: flex; align-items: center; gap: 15px; overflow-x: auto; scrollbar-width: none;" id="active-filter-chips">
+            <span style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); white-space: nowrap;">// フィルタ設定:</span>
+            <div class="filter-chips-container" style="display: flex; gap: 8px;">
+                ${state.era ? `<span class="filter-chip">${state.era}</span>` : ''}
+                ${state.region ? `<span class="filter-chip">${state.region}</span>` : ''}
+                ${state.group ? `<span class="filter-chip">${state.group}</span>` : ''}
+                ${(!state.era && !state.region && !state.group) ? '<span style="font-size: 11px; color: var(--text-dim);">未設定</span>' : ''}
+            </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 10px; color: var(--primary-neon); font-family: var(--font-mono); font-size: 12px; white-space: nowrap;">
+            <span id="accordion-label">フィルタを展開</span>
+            <span id="accordion-icon" style="transition: transform 0.3s ease;">[ + ]</span>
+        </div>
     </div>
 
-    <!-- Spatial Navigation -->
-    ${renderMap(state.region)}
+    <!-- Collapsible Filter Content -->
+    <div id="filter-accordion-content" style="display: none; margin-bottom: 30px;">
+        <div class="hud-panel" style="padding: 10px 0; border-top: none;">
+            <!-- Temporal Navigation -->
+            <div class="timeline-wrapper" style="margin-bottom: 10px;">
+                ${renderTimeline(state.era)}
+            </div>
+
+            <!-- Spatial Navigation -->
+            <div class="timeline-wrapper" style="margin-bottom: 10px;">
+                ${renderMap(state.region)}
+            </div>
+
+            <!-- Taxonomic Navigation -->
+            <div class="timeline-wrapper">
+                ${renderGroupFilter(state.group)}
+            </div>
+        </div>
+    </div>
 
     <input type="hidden" id="filter-era" value="${state.era}">
     <input type="hidden" id="filter-region" value="${state.region}">
+    <input type="hidden" id="filter-group" value="${state.group}">
 
     <div class="dino-grid" id="dino-grid-content">
         <!-- Initial content will be updated by attachDictionaryEvents -->
@@ -392,7 +459,8 @@ function renderDinoCards(list) {
                 </div>
                 <div class="card-info">
                     <h3 class="card-title">${d.name}</h3>
-                    <div class="card-tags" style="display: flex; gap: 10px;">
+                    <div class="card-tags" style="display: flex; gap: 5px; flex-wrap: wrap;">
+                        <span class="card-tag group-tag">${d.group || '未分類'}</span>
                         <span class="card-tag">${d.era}</span>
                         <span class="card-tag">${d.diet}</span>
                     </div>
@@ -406,6 +474,7 @@ function attachDictionaryEvents() {
     const search = document.getElementById('dino-search');
     const era = document.getElementById('filter-era');
     const region = document.getElementById('filter-region');
+    const group = document.getElementById('filter-group');
     const sort = document.getElementById('sort-order');
 
     const hiraToKata = (str) => str.replace(/[\u3041-\u3096]/g, m => String.fromCharCode(m.charCodeAt(0) + 0x60));
@@ -415,6 +484,19 @@ function attachDictionaryEvents() {
         if (!str) return 0;
         const match = str.match(/[0-9.]+/);
         return match ? parseFloat(match[0]) : 0;
+    };
+
+    const updateFilterChips = (eraVal, regionVal, groupVal) => {
+        const chipContainer = document.querySelector('.filter-chips-container');
+        if (!chipContainer) return;
+        
+        let html = '';
+        if (eraVal) html += `<span class="filter-chip">${eraVal}</span>`;
+        if (regionVal) html += `<span class="filter-chip">${regionVal}</span>`;
+        if (groupVal) html += `<span class="filter-chip">${groupVal}</span>`;
+        if (!html) html = '<span style="font-size: 11px; color: var(--text-dim);">未設定</span>';
+        
+        chipContainer.innerHTML = html;
     };
 
     const updateList = () => {
@@ -432,6 +514,7 @@ function attachDictionaryEvents() {
             search: rawSearchVal,
             era: eraVal,
             region: regionVal,
+            group: group.value,
             sort: sortVal
         });
 
@@ -442,6 +525,11 @@ function attachDictionaryEvents() {
         document.querySelectorAll('.timeline-region').forEach(r => {
             r.classList.toggle('active', r.getAttribute('data-region') === regionVal);
         });
+        document.querySelectorAll('.timeline-group').forEach(g => {
+            g.classList.toggle('active', g.getAttribute('data-group') === group.value);
+        });
+
+        updateFilterChips(eraVal, regionVal, group.value);
 
         let filtered = DINOSAURS.filter(d => {
             const matchesSearch = 
@@ -454,7 +542,8 @@ function attachDictionaryEvents() {
                 (regionVal === '海洋' ? 
                     (d.region.includes('海') && !d.region.includes('北海道')) : 
                     d.region.includes(regionVal));
-            return matchesSearch && matchesEra && matchesRegion;
+            const matchesGroup = !group.value || d.group === group.value;
+            return matchesSearch && matchesEra && matchesRegion && matchesGroup;
         });
 
         // Sorting
@@ -470,6 +559,7 @@ function attachDictionaryEvents() {
     if (search) search.addEventListener('input', updateList);
     if (era) era.addEventListener('change', updateList);
     if (region) region.addEventListener('change', updateList);
+    if (group) group.addEventListener('change', updateList);
     if (sort) sort.addEventListener('change', updateList);
 
     // Timeline clicks
@@ -495,6 +585,33 @@ function attachDictionaryEvents() {
             updateList();
         });
     });
+
+    // Group filter clicks
+    document.querySelectorAll('.timeline-group').forEach(el => {
+        el.addEventListener('click', () => {
+            const groupVal = el.getAttribute('data-group');
+            group.value = groupVal;
+            document.querySelectorAll('.timeline-group').forEach(t => t.classList.remove('active'));
+            el.classList.add('active');
+            updateList();
+        });
+    });
+
+    // Accordion Toggle logic
+    const accordionToggle = document.getElementById('filter-accordion-toggle');
+    const accordionContent = document.getElementById('filter-accordion-content');
+    const accordionLabel = document.getElementById('accordion-label');
+    const accordionIcon = document.getElementById('accordion-icon');
+
+    if (accordionToggle && accordionContent) {
+        accordionToggle.addEventListener('click', () => {
+            const isHidden = accordionContent.style.display === 'none';
+            accordionContent.style.display = isHidden ? 'block' : 'none';
+            accordionLabel.innerText = isHidden ? 'フィルタを閉じる' : 'フィルタを展開';
+            accordionIcon.innerText = isHidden ? '[ - ]' : '[ + ]';
+            accordionToggle.style.borderColor = isHidden ? 'var(--primary-neon)' : 'var(--panel-border)';
+        });
+    }
 
     // Run once on load to apply initial state
     setTimeout(updateList, 0);
@@ -599,11 +716,12 @@ function findRelatedDinosaurs(currentDino, limit = 4) {
     const related = DINOSAURS.filter(d => {
         if (d.id === currentDino.id) return false;
         
-        // Match by same era base (e.g., both are Cretaceous) or same region
+        // Match by same group, era base (e.g., both are Cretaceous) or same region
+        const matchesGroup = d.group === currentDino.group;
         const matchesEra = currentEraBase && d.era.includes(currentEraBase);
         const matchesRegion = d.region === currentDino.region;
         
-        return matchesEra || matchesRegion;
+        return matchesGroup || matchesEra || matchesRegion;
     });
 
     // Shuffle and pick

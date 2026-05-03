@@ -1117,7 +1117,7 @@ body {
 
 /* Timeline Component */
 .timeline-container {
-    padding: 10px 0;
+    padding: 5px 0;
     overflow-x: auto;
     white-space: nowrap;
     border-top: 1px solid var(--panel-border);
@@ -1144,7 +1144,7 @@ body {
 .timeline-track {
     display: flex;
     position: relative;
-    padding: 10px 40px;
+    padding: 5px 30px;
     min-width: 100%;
 }
 
@@ -1190,9 +1190,9 @@ body {
     display: none;
 }
 
-.timeline-era, .timeline-region {
+.timeline-era, .timeline-region, .timeline-group {
     flex: 0 0 auto;
-    padding: 0 40px;
+    padding: 0 25px;
     cursor: pointer;
     transition: all 0.3s ease;
     text-align: center;
@@ -1240,6 +1240,42 @@ body {
     display: block;
     margin-top: 4px;
     opacity: 0.6;
+}
+
+.timeline-group:hover .era-marker,
+.timeline-group.active .era-marker {
+    border-color: var(--secondary-neon);
+    background: var(--secondary-neon);
+    box-shadow: 0 0 10px var(--secondary-neon);
+}
+
+.timeline-group:hover .era-label,
+.timeline-group.active .era-label {
+    color: var(--secondary-neon);
+    text-shadow: 0 0 5px var(--secondary-neon);
+}
+
+.card-tag.group-tag {
+    background: rgba(157, 255, 0, 0.1);
+    border-color: var(--secondary-neon);
+    color: var(--secondary-neon);
+}
+
+/* Filter Chips */
+.filter-chip {
+    display: inline-block;
+    font-size: 10px;
+    font-family: var(--font-mono);
+    padding: 2px 8px;
+    background: rgba(0, 242, 255, 0.15);
+    border: 1px solid var(--primary-neon);
+    color: var(--primary-neon);
+    clip-path: polygon(0 0, 90% 0, 100% 30%, 100% 100%, 10% 100%, 0 70%);
+}
+
+.filter-controls-header:hover {
+    background: rgba(0, 242, 255, 0.1) !important;
+    border-color: var(--primary-neon) !important;
 }
 
 /* Map Component (Simplified Region Selector) */
