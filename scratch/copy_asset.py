@@ -1,8 +1,8 @@
 import shutil
 import os
 
-src = "/Users/kosako/.gemini/antigravity/brain/b4f9fb6a-f4bf-41fc-8d78-5b27c4099a11/argentinosaurus_cyber_1777346150802.png"
-dst = "images/cyber/argentinosaurus.png"
+src = "/Users/kosako/.gemini/antigravity/brain/2bb32c28-3b36-44f9-9f3b-93a8cc8528d0/leptoceratops_cyber_mesh_1778146011147.png"
+dst = "images/cyber/leptoceratops.png"
 
 try:
     shutil.copy(src, dst)

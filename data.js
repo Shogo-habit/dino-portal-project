@@ -1696,7 +1696,8 @@ const DINOSAURS = [
       { trait: "探知能力", value: "嗅覚", detail: "水中の微かな匂いを立体的に嗅ぎ分ける" },
       { trait: "瞬発力", value: "爆発的", detail: "巨大なパドルによる一瞬の突進攻撃" }
     ],
-    image: "images/liopleurodon.webp"
+    image: "images/liopleurodon.webp",
+    group: "魚竜・首長竜"
   },
   {
     id: "kronosaurus",
@@ -1714,7 +1715,7 @@ const DINOSAURS = [
       { trait: "大型牙", value: "25cm以上", detail: "獲物の骨を粉砕する巨大な円錐形の歯" }
     ],
     image: "images/kronosaurus.webp",
-    group: "首長竜"
+    group: "魚竜・首長竜"
   },
   {
     id: "shonisaurus",
@@ -1732,7 +1733,7 @@ const DINOSAURS = [
       { trait: "生存戦略", value: "長距離移動", detail: "エネルギー効率の良い巨大な体での外洋移動" }
     ],
     image: "images/shonisaurus.webp",
-    group: "魚竜"
+    group: "魚竜・首長竜"
   },
   {
     id: "archelon",
@@ -1768,7 +1769,7 @@ const DINOSAURS = [
       { trait: "狩りの手法", value: "待ち伏せ", detail: "水中への不意のリーチによる捕食" }
     ],
     image: "images/tanystropheus.webp",
-    group: "その他"
+    group: "魚竜・首長竜"
   },
   {
     id: "tylosaurus",
@@ -1786,7 +1787,7 @@ const DINOSAURS = [
       { trait: "捕食", value: "広範囲", detail: "サメや首長竜、さらには他のモササウルス類も捕食" }
     ],
     image: "images/tylosaurus.webp",
-    group: "その他"
+    group: "魚竜・首長竜"
   },
   {
     id: "hainosaurus",
@@ -1804,7 +1805,7 @@ const DINOSAURS = [
       { trait: "骨格", value: "多椎骨", detail: "柔軟な動きを可能にする背骨の構造" }
     ],
     image: "images/hainosaurus.webp",
-    group: "その他"
+    group: "魚竜・首長竜"
   },
   {
     id: "prognathodon",
@@ -1822,7 +1823,7 @@ const DINOSAURS = [
       { trait: "潜水", value: "深海対応", detail: "深海での活動を示唆する強固な耳の構造" }
     ],
     image: "images/prognathodon.webp",
-    group: "その他"
+    group: "魚竜・首長竜"
   },
   {
     id: "nothosaurus",
@@ -1840,7 +1841,7 @@ const DINOSAURS = [
       { trait: "捕食技術", value: "鋭い牙", detail: "魚を捕らえて逃がさない複雑な歯列" }
     ],
     image: "images/nothosaurus.webp",
-    group: "首長竜"
+    group: "魚竜・首長竜"
   },
   {
     id: "placodus",
@@ -1858,7 +1859,7 @@ const DINOSAURS = [
       { trait: "防御", value: "骨質ノブ", detail: "背中にある小さな骨の装甲" }
     ],
     image: "images/placodus.webp",
-    group: "その他"
+    group: "魚竜・首長竜"
   },
   {
     id: "henodus",
@@ -1876,7 +1877,7 @@ const DINOSAURS = [
       { trait: "採食", value: "フィルター", detail: "広くて平らな口による砂泥の濾過" }
     ],
     image: "images/henodus.webp",
-    group: "その他"
+    group: "魚竜・首長竜"
   },
   {
     id: "cymbospondylus",
@@ -1894,7 +1895,7 @@ const DINOSAURS = [
       { trait: "遊泳法", value: "蛇行", detail: "長い全身を使って力強く泳ぐ" }
     ],
     image: "images/cymbospondylus.webp",
-    group: "魚竜"
+    group: "魚竜・首長竜"
   },
   {
     id: "leedsichthys",
@@ -1912,7 +1913,7 @@ const DINOSAURS = [
       { trait: "巨体", value: "最大級の魚類", detail: "他の大型魚類や爬虫類を圧倒する質量" }
     ],
     image: "images/leedsichthys.webp",
-    group: "その他"
+    group: "魚類"
   },
   {
     id: "dimorphodon",
@@ -2446,7 +2447,7 @@ const DINOSAURS = [
     diet: "草食",
     length: "5.0m",
     weight: "2.0t",
-    description: "「森のトカゲ」を意味し、1842年にリチャード・オーウェンが「Dinosauria（恐竜）」という言葉を提唱した際に含まれていた最初の3頭の一つ。",
+    description: "「森のトカゲ」を意味し、1842年にリチャード・オーウェンが「Dinosauria（恐竜）」という言葉を提唱した際に含まれていた最初の3頭の一つ。メガロサウルス、イグアノドンに続いて世界で3番目に名前が与えられた歴史的な存在。",
     bioTraits: [
       { trait: "歴史的重要種", value: "三大恐竜", detail: "「恐竜」誕生時に数えられた歴史的な種" },
       { trait: "背棘", value: "三列のトゲ", detail: "背中の中心線とその両脇に並ぶ鋭いトゲ" }
@@ -2855,52 +2856,52 @@ const DINOSAURS = [
 
 const NEWS = [
   {
-    id: "news-006",
-    date: "2026.04.12",
+    id: "news-011",
+    date: "2026.05.01",
     category: "RESEARCH",
-    title: "最新の角竜「ササヤマグノームス」をアーカイブに追加",
-    summary: "兵庫県丹波市で発見された原始的な角竜類「ササヤマグノームス・サエキ」の最新解析データを登録完了。本標本は白亜紀前期の東アジアにおける恐竜の移動と進化を解明する重要なピースとなります。",
+    title: "恐竜の多様性は小惑星衝突の直前まで維持されていた（最新解析）",
+    summary: "2025年末から2026年にかけて発表された複数の論文（ブリストル大学等）にて、化石記録の再評価が行われました。その結果、恐竜は絶滅直前に衰退していたのではなく、衝突の瞬間まで極めて高い多様性を維持していたことが統計的に示されました。環境変化への適応能力が依然として高かったことが示唆されています。",
     securityLevel: "LEVEL 3 (PUBLIC)"
   },
   {
-    id: "news-005",
-    date: "2026.04.10",
-    category: "DB-UPDATE",
-    title: "鳥脚類・ハドロサウルス類アーカイブを更新",
-    summary: "エドモントサウルスやマイアサウラを含む、北米・豪州・アジアの代表的なハドロサウルス類・鳥脚類8種が完全統合されました。生態展示シミュレーターで比較可能です。",
-    securityLevel: "LEVEL 2"
+    id: "news-006",
+    date: "2026.04.12",
+    category: "RESEARCH",
+    title: "兵庫県丹波市産の新種角竜「ササヤマグノームス・サエキ」の解析",
+    summary: "2020年に兵庫県丹波市で発見され、2024年9月に田中公教氏（兵庫県立人と自然の博物館）らによって命名された基盤的角竜類の研究。白亜紀前期（約1億1千万年前）の東アジアから北米への移動経路を解明する上で極めて重要な標本であり、現在も詳細な骨格復元が進められています。",
+    securityLevel: "LEVEL 3 (PUBLIC)"
   },
   {
-    id: "news-004",
-    date: "2026.04.10",
-    category: "DB-UPDATE",
-    title: "アンキロサウルス類アセットの完全統合が完了",
-    summary: "鎧竜・装甲恐竜グループの6種（サイカニア、ミンミ等）の高解像度復元画像がデータベースに反映されました。これにより総登録種数は134種に達しました。",
+    id: "news-007",
+    date: "2026.04.05",
+    category: "EVENT",
+    title: "「ヨコハマ恐竜展2026」パシフィコ横浜にて7月開催決定",
+    summary: "2026年7月17日から9月6日まで開催。実在する大規模イベント計画に基づき、最新の学説を反映した「恐竜の食卓」をメインテーマに掲げています。世界中から集められた希少な全身骨格と、最新のバイオメカニクス解析に基づく摂食行動の復元展示が行われます。",
     securityLevel: "LEVEL 1"
   },
   {
-    id: "news-001",
-    date: "2026.03.15",
-    category: "RESEARCH",
-    title: "T-Rexの神経系スキャン解析が完了",
-    summary: "最新の人工知能を用いたCTスキャンにより、ティラノサウルスの脳構造が再構築されました。結果、従来考えられていたよりも数倍複雑な社会性を持っていた可能性が浮上しています。",
-    securityLevel: "LEVEL 3"
-  },
-  {
-    id: "news-002",
-    date: "2026.02.28",
+    id: "news-012",
+    date: "2026.03.10",
     category: "DISCOVERY",
-    title: "南極圏で未知の小型獣脚類を発見",
-    summary: "氷床の下から保存状態の良い骨格が発掘。マイナス数十度の極寒でも活動可能だった可能性があり、内温性（温血性）の証拠として注目を浴びています。",
-    securityLevel: "LEVEL 2"
+    title: "スコットランド・スカイ島で発見の新種翼竜「セオプテラ」の分析",
+    summary: "2024年2月に発表された論文（ロンドン自然史博物館等）にて、スコットランドで発見されたジュラ紀中期の新種翼竜「セオプテラ・エヴァンサエ（Ceoptera evansae）」の詳細が判明。翼竜の進化における空白期間を埋める重要な発見であり、世界各地への拡散プロセスを裏付ける事実として注目されています。",
+    securityLevel: "LEVEL 4 (UNCLASSIFIED)"
   },
   {
-    id: "news-003",
-    date: "2026.01.10",
-    category: "TECHNOLOGY",
-    title: "軟組織保存プロトコルのアップデート",
-    summary: "琥珀内部の微量な血液成分からDNA断片を抽出し、当時の生態系をデジタルシミュレートする「Nexus-Project」がフェーズ4に移行しました。",
-    securityLevel: "LEVEL 5 (TOP SECRET)"
+    id: "news-008",
+    date: "2026.02.25",
+    category: "RESEARCH",
+    title: "ナノティラヌスの独立種説に関する論争と最新知見",
+    summary: "2024年1月にN.ロングリッチ博士らによって提示された、ナノティラヌスを独立種（Nanotyrannus lancensis）とする再定義。骨の組織学的な成長解析に基づき、T-Rexの幼体ではないとする主張は、現在も古生物学界で活発な議論の対象となっており、検証が進められています。",
+    securityLevel: "LEVEL 3 (PUBLIC)"
+  },
+  {
+    id: "news-010",
+    date: "2026.01.20",
+    category: "EVENT",
+    title: "特別展「大絶滅展」大阪市立自然史博物館へ巡回",
+    summary: "名古屋市科学館での開催後、2026年7月17日より大阪市立自然史博物館にて巡回展示がスタート。生命史における五大絶滅（ビッグファイブ）をテーマに、実在する化石標本と地質学的データに基づいた展示構成となっています。",
+    securityLevel: "LEVEL 2"
   }
 ];
 

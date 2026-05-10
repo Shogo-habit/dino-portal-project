@@ -1036,8 +1036,13 @@ function renderNews() {
     </section>
 
     <div class="news-list">
-        ${NEWS.map(item => `
-            <div class="hud-panel" style="margin-bottom: 20px; border-left: 5px solid ${item.category === 'RESEARCH' ? 'var(--primary-neon)' : 'var(--secondary-neon)'}">
+        ${NEWS.map(item => {
+            let borderColor = 'var(--secondary-neon)';
+            if (item.category === 'RESEARCH') borderColor = 'var(--primary-neon)';
+            if (item.category === 'EVENT') borderColor = 'var(--alert-neon)';
+            
+            return `
+            <div class="hud-panel" style="margin-bottom: 20px; border-left: 5px solid ${borderColor}">
                 <div style="display:flex; justify-content: space-between; margin-bottom: 10px;">
                     <span style="font-family: var(--font-mono); color: var(--primary-neon); font-size: 12px;">[ ${item.category} ]</span>
                     <span style="font-family: var(--font-mono); color: var(--text-dim); font-size: 12px;">${item.date}</span>
@@ -1048,7 +1053,8 @@ function renderNews() {
                     アクセスレベル: ${item.securityLevel}
                 </div>
             </div>
-        `).join('')}
+            `;
+        }).join('')}
     </div>
   `;
 }
