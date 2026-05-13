@@ -1,15 +1,18 @@
-# 恐竜図鑑 全古生物マスターリスト (158種)
+# 恐竜図鑑 全古生物マスターリスト (165種)
 
 ## 1. 進捗状況
-- **総登録数**: 158種 (data.js)
-- **比較パネル実装済み (○)**: 149種
-- **アーカイブ登録のみ (△)**: 9種
-- **メインイラスト修正予定**: 1種
-- **今後登録予定**: 23種
+- **総登録数**: 165種 (data.js)
+- **登録済み (○)**: 165種
+- **メインイラスト修正予定**: 0種
+- **今後登録予定**: 3種 (古生代〜中生代限定)
 
 ---
 
-## 2. 比較パネル実装済み (○)
+## 2. 開発方針 (Project Policy)
+- **対象範囲**: 古生代（カンブリア紀〜ペルム紀）および中生代（三畳紀〜白亜紀）の生物。
+- **除外対象**: 新生代（恐竜絶滅後）の哺乳類・海生哺乳類などは、本アーカイブの対象外とする。
+
+## 3. 登録済み (○)
 - [○] **アルゼンチノサウルス** (Argentinosaurus huinculensis / 35.0m)
 - [○] **ケツァルコアトルス** (Quetzalcoatlus northropi / 翼開長11.0m)
 - [○] **ギガノトサウルス** (Giganotosaurus carolini / 13.0m)
@@ -159,46 +162,31 @@
 - [○] **デスマトスクス** (Desmatosuchus / 4.5m)
 - [○] **ニクトサウルス** (Nyctosaurus gracilis / 翼開長2.0m)
 - [○] **アベリサウルス** (Abelisaurus comahuensis / 9.0m)
-
----
-
-## 3. アーカイブ登録済み・比較パネル未実装 (△)
-- [△] **ウエルホサウルス** (Wuerhosaurus homheni / 7.0m)
-- [△] **クセノケラトプス** (Xenoceratops foremostensis / 6.0m)
-- [△] **グアンロン** (Guanlong wucaii / 3.0m)
-- [△] **ササヤマグノームス** (Sasayamagnomus saeki / 0.8m)
-- [△] **ジュラベナトル** (Juravenator starki / 0.8m)
-- [△] **デイノケイルス** (Deinocheirus mirificus / 11.0m)
-- [△] **ニゲルサウルス** (Nigersaurus taqueti / 9.0m)
-- [△] **ハドロサウルス** (Hadrosaurus foulkii / 8.0m)
-- [△] **ズニケラトプス** (Zuniceratops christopheri / 3.5m)
+- [○] **ウエルホサウルス** (Wuerhosaurus homheni / 7.0m)
+- [○] **クセノケラトプス** (Xenoceratops foremostensis / 6.0m)
+- [○] **グアンロン** (Guanlong wucaii / 3.0m)
+- [○] **ササヤマグノームス** (Sasayamagnomus saeki / 0.8m)
+- [○] **ジュラベナトル** (Juravenator starki / 0.8m)
+- [○] **デイノケイルス** (Deinocheirus mirificus / 11.0m)
+- [○] **ニジェールサウルス** (Nigersaurus taqueti / 9.0m)
+- [○] **ハドロサウルス** (Hadrosaurus foulkii / 8.0m)
+- [○] **ズニケラトプス** (Zuniceratops christopheri / 3.5m)
+- [○] **バジャダサウルス** (Bajadasaurus pronuspinax / 10.0m)
+- [○] **プシッタコサウルス** (Psittacosaurus / 2.0m)
+- [○] **カルカロドントサウルス** (Carcharodontosaurus saharicus / 13.0m)
+- [○] **ギガントスピノサウルス** (Gigantspinosaurus sichuanensis / 4.2m)
+- [○] **ディニクティス** (Dinichthys herzeri / 6.0m)
+- [○] **パラリティタン** (Paralititan stromeri / 26.0m)
+- [○] **ダンクレオステウス** (Dunkleosteus terrelli / 6.0m)
 
 ---
 
 ## 4. メインイラスト修正予定 (Correction Plan)
- - [ ] **デスマトスクス** (Desmatosuchus / 体の特徴の誤りを修正予定)
+(現在なし)
 
 ---
 
 ## 5. 今後登録予定 (Future Registration)
-- [ ] **プシッタコサウルス** (Psittacosaurus / 2.0m)
-- [ ] **ディニクティス** (Dinictis / 1.1m)
-- [ ] **パラリティタン** (Paralititan stromeri / 26.0m)
-- [ ] **メガテリウム** (Megatherium americanum / 6.0m)
-- [ ] **スミロドン** (Smilodon populator / 2.5m)
-- [ ] **ケナガマンモス** (Mammuthus primigenius / 3.5m)
-- [ ] **アンドリューサルクス** (Andrewsarchus mongoliensis / 3.5m)
-- [ ] **パラケラテリウム** (Paraceratherium / 5.0m)
-- [ ] **メガロケロス** (Megaloceros giganteus / 3.0m)
-- [ ] **バシロサウルス** (Basilosaurus cetoides / 18.0m)
-- [ ] **オドベノケトプス** (Odobenocetops peruvianus / 2.1m)
-- [ ] **ドゥンクレオステウス** (Dunkleosteus terrelli / 6.0m)
-- [ ] **ヘリコプリオン** (Helicoprion bessonowi / 4.0m)
-- [ ] **カルボネミス** (Carbonemys cofrinii / 1.7m)
 - [ ] **サルコスクス** (Sarcosuchus imperator / 12.0m)
 - [ ] **ディプロカウルス** (Diplocaulus magnicornis / 1.0m)
 - [ ] **エステメノスクス** (Estemmenosuchus mirabilis / 4.0m)
-- [ ] **スカフォニクス** (Scaphonyx / 2.0m)
-- [ ] **ロンギスクアマ** (Longisquama insignis / 0.15m)
-- [ ] **カルカノドントサウルス** (Carcharodontosaurus saharicus / 13.0m)
-- [ ] **ギガントスピノサウルス** (Gigantspinosaurus sichuanensis / 4.2m)

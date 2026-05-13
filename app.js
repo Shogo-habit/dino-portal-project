@@ -9,7 +9,7 @@ const HUD_CONFIG = {
 
 // --- DATA CONSTANTS ---
 const ERAS = [
-    { id: 'ペルム紀', label: 'ペルム紀', period: '2億9900万 - 2億5100万年前' },
+    { id: '古生代', label: '古生代', period: '5億4100万 - 2億5100万年前' },
     { id: '三畳紀', label: '三畳紀', period: '2億5100万 - 2億0100万年前' },
     { id: 'ジュラ紀', label: 'ジュラ紀', period: '2億0100万 - 1億4500万年前' },
     { id: '白亜紀', label: '白亜紀', period: '1億4500万 - 6600万年前' }
@@ -710,7 +710,7 @@ function renderDetail(id) {
 }
 
 function findRelatedDinosaurs(currentDino, limit = 4) {
-    const eras = ["白亜紀", "ジュラ紀", "三畳紀", "ペルム紀"];
+    const eras = ["白亜紀", "ジュラ紀", "三畳紀", "古生代"];
     const currentEraBase = eras.find(e => currentDino.era.includes(e));
 
     const related = DINOSAURS.filter(d => {

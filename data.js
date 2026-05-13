@@ -351,8 +351,8 @@ const DINOSAURS = [
   },
   {
     id: "nigersaurus",
-    name: "ニゲルサウルス",
-    kana: "にげるさうるす",
+    name: "ニジェールサウルス",
+    kana: "にじぇーるさうるす",
     scientificName: "Nigersaurus taqueti",
     era: "白亜紀前期",
     region: "アフリカ",
@@ -366,6 +366,78 @@ const DINOSAURS = [
     ],
     image: "images/nigersaurus.webp",
     group: "竜脚類"
+  },
+  {
+    id: "bajadasaurus",
+    name: "バジャダサウルス",
+    kana: "ばじゃださうるす",
+    scientificName: "Bajadasaurus pronuspinax",
+    era: "白亜紀前期",
+    region: "南アメリカ",
+    diet: "草食",
+    length: "10.0m",
+    weight: "4.0t",
+    description: "首から前向きに伸びる巨大な棘が最大の特徴である竜脚類。この棘は身を守るための武器、あるいは肉食恐竜を威嚇するための装飾だったと考えられている。",
+    bioTraits: [
+      { trait: "防御構造", value: "前向頸棘", detail: "首の神経棘が前方に長く伸び、頭部を守る" },
+      { trait: "進化の特異性", value: "極めて高い", detail: "アマルガサウルスとは逆に、棘が前を向く" }
+    ],
+    image: "images/bajadasaurus.webp",
+    group: "竜脚類"
+  },
+  {
+    id: "psittacosaurus",
+    name: "プシッタコサウルス",
+    kana: "ぷしったこさうるす",
+    scientificName: "Psittacosaurus mongoliensis",
+    era: "白亜紀前期",
+    region: "アジア",
+    diet: "草食",
+    length: "2.0m",
+    weight: "20kg",
+    description: "「オウムトカゲ」を意味する名の通り、強力な嘴（くちばし）を持つ初期の角竜類。尻尾の付け根から背中にかけて長い毛（剛毛）が生えていたことが、保存状態の良い化石から判明している。",
+    bioTraits: [
+      { trait: "特異な外見", value: "オウム状の嘴", detail: "硬い植物や木の実を砕いて食べていた" },
+      { trait: "防御器官", value: "尾の剛毛", detail: "威嚇やディスプレイに使われた可能性のある長いクイル" }
+    ],
+    image: "images/psittacosaurus.webp",
+    group: "角竜類"
+  },
+  {
+    id: "carcharodontosaurus",
+    name: "カルカロドントサウルス",
+    kana: "かるかろどんとさうるす",
+    scientificName: "Carcharodontosaurus saharicus",
+    era: "白亜紀後期",
+    region: "アフリカ",
+    diet: "肉食",
+    length: "13.0m",
+    weight: "8,000kg",
+    description: "「サメの歯を持つトカゲ」を意味する名を持つ、史上最大級の肉食恐竜。ティラノサウルスに匹敵、あるいは凌駕する巨体を持ち、その名の通り肉を切り裂くのに適した薄く鋭い歯が特徴。",
+    bioTraits: [
+      { trait: "攻撃器官", value: "サメ状の歯", detail: "縁がギザギザ（鋸歯）になった鋭い歯で獲物の肉を切り裂く" },
+      { trait: "身体的特徴", value: "巨大な頭骨", detail: "全長1.6mに達する巨大な頭部を持ち、噛む力よりも切り裂く力を重視していた" }
+    ],
+    image: "images/carcharodontosaurus.webp",
+    group: "獣脚類"
+  },
+  {
+    id: "gigantspinosaurus",
+    name: "ギガントスピノサウルス",
+    kana: "ぎがんとすぴのさうるす",
+    scientificName: "Gigantspinosaurus sichuanensis",
+    era: "ジュラ紀後期",
+    region: "アジア",
+    diet: "草食",
+    length: "4.2m",
+    weight: "700kg",
+    description: "肩から巨大な棘が後ろ向きに突き出した、極めて特異な姿を持つ剣竜類。スピノサウルスと名が付くが獣脚類ではなく、ステゴサウルスに近い仲間。この巨大な棘は防御だけでなく、ディスプレイの役割もあったと考えられている。",
+    bioTraits: [
+      { trait: "防御器官", value: "巨大な肩甲棘", detail: "肩から側面後方へ伸びる巨大な棘。側面からの攻撃に対する強力な盾となった" },
+      { trait: "攻撃器官", value: "サゴマイザー", detail: "尾の先端に4本の鋭い棘を持ち、肉食恐竜を撃退した" }
+    ],
+    image: "images/gigantspinosaurus.webp",
+    group: "剣竜類"
   },
   {
     id: "oviraptor",
@@ -2712,7 +2784,7 @@ const DINOSAURS = [
     name: "ディメトロドン",
     kana: "でぃめとろどん",
     scientificName: "Dimetrodon",
-    era: "ペルム紀前期",
+    era: "古生代 (ペルム紀前期)",
     region: "北アメリカ・ヨーロッパ",
     diet: "肉食",
     length: "3.5m",
@@ -2730,7 +2802,7 @@ const DINOSAURS = [
     name: "イノストランケビア",
     kana: "いのすとらんけびあ",
     scientificName: "Inostrancevia",
-    era: "ペルム紀後期",
+    era: "古生代 (ペルム紀後期)",
     region: "アジア（ロシア）",
     diet: "肉食",
     length: "3.5m",
@@ -2850,6 +2922,60 @@ const DINOSAURS = [
     ],
     image: "images/nanuqsaurus.webp",
     group: "獣脚類"
+  },
+  {
+    id: "dinichthys",
+    name: "ディニクティス",
+    kana: "でぃにくてぃす",
+    scientificName: "Dinichthys herzeri",
+    era: "古生代 (デボン紀後期)",
+    region: "北アメリカ",
+    diet: "肉食",
+    length: "6.0m",
+    weight: "1.0t",
+    description: "古生代デボン紀の海に君臨した巨大な板皮類。強力な顎の骨を刃物のように使い、あらゆる獲物を切り裂いたと考えられている。「恐怖の魚」の異名を持つ。ダンクルオステウスの近縁種である。",
+    bioTraits: [
+      { trait: "装甲", value: "超硬質", detail: "頭部から肩にかけて頑強な骨質の装甲を持つ" },
+      { trait: "咬合力", value: "絶大", detail: "骨をも容易に断ち切る鋭い顎のプレート" }
+    ],
+    image: "images/dinichthys.webp",
+    group: "その他"
+  },
+  {
+    id: "paralititan",
+    name: "パラリティタン",
+    kana: "ぱらりていたん",
+    scientificName: "Paralititan stromeri",
+    era: "白亜紀後期 (セノマニアン)",
+    region: "アフリカ (エジプト)",
+    diet: "草食",
+    length: "26.0m",
+    weight: "59.0t",
+    description: "エジプトのマングローブ沼地で発見された巨大な竜脚類。名前は「潮の巨神」を意味する。化石が潮間帯の堆積物から見つかったため、海岸付近の湿地帯に生息していたと考えられている。カルカロドントサウルスなどの巨大肉食恐竜と共存していた。",
+    bioTraits: [
+      { trait: "骨格", value: "巨大", detail: "長さ1.69mにも及ぶ巨大な上腕骨を持つ" },
+      { trait: "環境適応", value: "湿地帯", detail: "マングローブが茂る海岸線での生活に適応" }
+    ],
+    image: "images/paralititan.webp",
+    group: "竜脚類"
+  },
+  {
+    id: "dunkleosteus",
+    name: "ダンクレオステウス",
+    kana: "だんくれおすてうす",
+    scientificName: "Dunkleosteus terrelli",
+    era: "古生代 (デボン紀後期)",
+    region: "北アメリカ・ヨーロッパ・北アフリカ",
+    diet: "肉食",
+    length: "6.0m",
+    weight: "1.0t",
+    description: "デボン紀の海を支配した最大級の板皮類。頭部から肩にかけて強力な装甲を持ち、顎には歯の代わりに鋭い骨のプレートが備わっていた。その咬合力は凄まじく、当時のあらゆる生物を噛み砕くことができたとされる。「恐怖の魚」の代表格である。",
+    bioTraits: [
+      { trait: "装甲", value: "超硬質", detail: "頭部から胸部を覆う頑強な骨質のプレート" },
+      { trait: "咬合力", value: "絶大", detail: "あらゆる獲物を両断する鋭い顎の刃" }
+    ],
+    image: "images/dunkleosteus.webp",
+    group: "その他"
   }
 ];
 
@@ -2911,6 +3037,6 @@ const GLOSSARY = [
   { id: "cretaceous", term: "白亜紀 (Cretaceous)", def: "約1億4500万年前から6600万年前までの期間。恐竜が最も多様化した時代。" },
   { id: "jurassic", term: "ジュラ紀 (Jurassic)", def: "約2億130万年前から1億4500万年前までの期間。大型の竜脚類が繁栄した。" },
   { id: "triassic", term: "三畳紀 (Triassic)", def: "約2億5190万年前から2億130万年前までの期間。恐竜が登場し始めた時代。" },
-  { id: "permian", term: "ペルム紀 (Permian)", def: "約2億9890万年前から2億5190万年前までの期間。恐竜の直前の時代。厳密には恐竜出現前の時代だが、古生物学的に重要。" }
+  { id: "paleozoic", term: "古生代 (Paleozoic)", def: "約5億4100万年前から2億5190万年前までの期間。生命の多様化が爆発的に進んだ時代であり、魚類、両生類、そして初期の単弓類（哺乳類の祖先系）が繁栄した。カンブリア紀からペルム紀までを含む。" }
 ];
 
