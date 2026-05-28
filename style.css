@@ -609,7 +609,7 @@ body {
 
 /* FAQ (details/summary) Styling */
 .geo-faq-section {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 15px;
 }
