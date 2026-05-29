@@ -2166,6 +2166,15 @@ body {
     left: -61% !important;
     bottom: 0 !important;
     padding: 0 40px 60px 40px !important;
+    /* transformによるレンダリングレイヤー分離バグ（黒背景が透けない現象）を解消するため、
+       ステージ自体に直接ブレンド対象となる背景色とグリッドを適用します */
+    background: radial-gradient(circle at center, rgba(0, 40, 60, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%) !important;
+    background-image: 
+        linear-gradient(rgba(0, 242, 255, 0.2) 1.5px, transparent 1.5px),
+        linear-gradient(90deg, rgba(0, 242, 255, 0.2) 1.5px, transparent 1.5px),
+        linear-gradient(rgba(0, 242, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 242, 255, 0.05) 1px, transparent 1px) !important;
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px !important;
   }
 
   /* --- トピックス一覧ページ --- */
