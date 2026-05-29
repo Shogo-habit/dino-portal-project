@@ -2150,20 +2150,37 @@ body {
     gap: 10px;
   }
 
-  /* サイズ比較パネル */
+  /* サイズ比較パネル (元の比率を保ったままスマホ幅に縮小) */
   .size-comparison-panel {
-    height: 300px !important;
+    height: 260px !important;
     margin-top: 25px;
+    overflow: hidden;
+    position: relative;
   }
 
   .comparison-stage {
-    height: 300px !important;
-    gap: 15px !important;
-    padding: 0 15px 40px 15px !important;
+    width: 160% !important;
+    height: 400px !important;
+    transform: scale(0.6) !important;
+    transform-origin: bottom center;
+    left: -30% !important;
+    bottom: 0 !important;
+    padding: 0 40px 60px 40px !important;
   }
 
-  .dino-vis-hero img {
-    max-width: 65vw !important;
+  /* --- トピックス一覧ページ --- */
+  .topic-card {
+    flex-direction: column;
+    gap: 15px !important;
+    padding: 15px !important;
+  }
+
+  .topic-thumb {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-bottom: 1px solid var(--panel-border);
   }
 
   /* --- 世界地図 (ワールドマップ) --- */
