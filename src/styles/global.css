@@ -2152,18 +2152,18 @@ body {
 
   /* サイズ比較パネル (元の比率を保ったままスマホ幅に縮小) */
   .size-comparison-panel {
-    height: 260px !important;
+    height: 200px !important;
     margin-top: 25px;
     overflow: hidden;
     position: relative;
   }
 
   .comparison-stage {
-    width: 160% !important;
+    width: 222% !important;
     height: 400px !important;
-    transform: scale(0.6) !important;
+    transform: scale(0.45) !important;
     transform-origin: bottom center;
-    left: -30% !important;
+    left: -61% !important;
     bottom: 0 !important;
     padding: 0 40px 60px 40px !important;
   }
@@ -2178,8 +2178,8 @@ body {
   .topic-thumb {
     width: 100% !important;
     height: auto !important;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
     border-bottom: 1px solid var(--panel-border);
   }
 
