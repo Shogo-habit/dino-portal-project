@@ -2177,8 +2177,8 @@ body {
   .topic-thumb {
     width: 100% !important;
     height: auto !important;
-    aspect-ratio: auto !important;
-    object-fit: contain !important;
+    aspect-ratio: 3 / 1 !important;
+    object-fit: cover !important;
     border-bottom: 1px solid var(--panel-border);
   }
 
