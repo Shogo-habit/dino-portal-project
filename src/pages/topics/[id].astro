@@ -18,7 +18,7 @@ const relatedDinos = (topic.relatedSpecimens || []).map(specimenId => {
 }).filter(Boolean);
 ---
 
-<Layout title={`${topic.title} | Dino-Portal`} activeTab="topics" description={topic.summary}>
+<Layout title={`${topic.title} | Dino-Portal`} activeTab="topics" description={topic.summary} ogImage={`/${topic.image}`}>
     <article class="topic-article hud-panel">
         <div class="topic-detail-header" style="border-bottom: 1px solid var(--panel-border); padding-bottom: 15px; margin-bottom: 25px;">
             <div class="topic-meta" style="font-size: 11px; color: var(--primary-neon); font-family: var(--font-mono); margin-bottom: 10px;">

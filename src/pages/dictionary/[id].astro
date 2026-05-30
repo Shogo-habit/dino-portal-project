@@ -124,7 +124,7 @@ const relatedSpecimens = DINOSAURS.filter(item => {
 }).slice(0, 4);
 ---
 
-<Layout title={`${d.name} | Specimen Analysis | Dino-Portal`} activeTab="dictionary" description={`${d.name} (${d.scientificName}) の生物学的特性、出現年代、生息地、サイズ比較スケールデータ。`}>
+<Layout title={`${d.name} | Specimen Analysis | Dino-Portal`} activeTab="dictionary" description={`${d.name} (${d.scientificName}) の生物学的特性、出現年代、生息地、サイズ比較スケールデータ。`} ogImage={`/${d.image}`}>
     <!-- Inject dynamic schema -->
     <script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />
 
