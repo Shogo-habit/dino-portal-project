@@ -10,6 +10,18 @@ export interface AffiliateProduct {
     details: string[];      // 特徴スペックリスト (例: ["1/10 スケール", "関節可動式"])
 }
 
+// もしもアフィリエイトの広告ID。Amazon提携承認後にここに取得したID（例: 1234567）を設定します。
+// 空文字 "" の状態では、通常のAmazon直リンク（プレビュー用）になります。
+export const MOSHIMO_AMAZON_ID = "";
+
+export function buildAffiliateUrl(amazonUrl: string): string {
+    if (!MOSHIMO_AMAZON_ID) {
+        return amazonUrl; // IDが未設定の場合は通常のAmazonURLを返す
+    }
+    const encodedUrl = encodeURIComponent(amazonUrl);
+    return `https://af.moshimo.com/af/c/click?a_id=${MOSHIMO_AMAZON_ID}&p_id=170&pc_id=185&pl_id=4062&url=${encodedUrl}`;
+}
+
 // 共通フォールバック用の商品データ (個別設定がない恐竜で表示)
 export const DEFAULT_AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     {
@@ -19,7 +31,7 @@ export const DEFAULT_AFFILIATE_PRODUCTS: AffiliateProduct[] = [
         type: "figure",
         badgeText: "PRECISION MODEL",
         imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81q2vR0vMHL._AC_SL1500_.jpg",
-        affiliateUrl: "https://www.amazon.co.jp/dp/B00N1Y8682",
+        affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/B00N1Y8682"),
         priceText: "PRICE: ¥6,600 (税込)",
         details: ["安全なソフト素材", "ティラノ/トリケラ等5体セット", "迫力のプレミアムサイズ"]
     },
@@ -30,7 +42,7 @@ export const DEFAULT_AFFILIATE_PRODUCTS: AffiliateProduct[] = [
         type: "book",
         badgeText: "ARCHIVAL BOOK",
         imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81A1-24NACL._AC_SL1500_.jpg",
-        affiliateUrl: "https://www.amazon.co.jp/dp/4092173111",
+        affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/4092173111"),
         priceText: "PRICE: ¥2,200 (税込)",
         details: ["最新恐竜データ400種以上", "ドラえもんコラボDVD付き", "教育的学習アーカイブに最適"]
     }
@@ -46,7 +58,7 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
             type: "figure",
             badgeText: "PRECISION MODEL",
             imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81e5sKszwOL._AC_SL1500_.jpg",
-            affiliateUrl: "https://www.amazon.co.jp/dp/B07R4R1YRF",
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/B07R4R1YRF"),
             priceText: "PRICE: ¥1,100 (税込)",
             details: ["タカラトミー公式", "口・脚・尾がリアル可動", "ワイルドカラーペイント"]
         },
@@ -57,7 +69,7 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
             type: "book",
             badgeText: "ARCHIVAL BOOK",
             imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81d4V0Rk0XL._AC_SL1500_.jpg",
-            affiliateUrl: "https://www.amazon.co.jp/dp/404104584X",
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/404104584X"),
             priceText: "PRICE: ¥1,078 (税込)",
             details: ["角川まんが科学シリーズ", "オールカラーまんが", "ティラノとスピノの徹底分析"]
         }
@@ -70,7 +82,7 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
             type: "figure",
             badgeText: "PRECISION MODEL",
             imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81B43c9YqyL._AC_SL1500_.jpg",
-            affiliateUrl: "https://www.amazon.co.jp/dp/B07R6R38C1",
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/B07R6R38C1"),
             priceText: "PRICE: ¥1,100 (税込)",
             details: ["タカラトミー公式", "角と首・後脚が可動", "臨場感あるワイルド塗装"]
         },
@@ -81,7 +93,7 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
             type: "book",
             badgeText: "ARCHIVAL BOOK",
             imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81ZtQzG%2BkeL._AC_SL1500_.jpg",
-            affiliateUrl: "https://www.amazon.co.jp/dp/4041071417",
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/4041071417"),
             priceText: "PRICE: ¥1,078 (税込)",
             details: ["角川まんが科学シリーズ", "角の進化プロセス特集", "角竜類の生態データベース"]
         }
@@ -94,7 +106,7 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
             type: "figure",
             badgeText: "PRECISION MODEL",
             imageUrl: "https://images-na.ssl-images-amazon.com/images/I/71uVvEw67BL._AC_SL1500_.jpg",
-            affiliateUrl: "https://www.amazon.co.jp/dp/B085MT8Q9C",
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/B085MT8Q9C"),
             priceText: "PRICE: ¥1,430 (税込)",
             details: ["タカラトミー公式", "ラージサイズアニア", "口の開閉・尾の左右可動"]
         },
@@ -105,9 +117,9 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
             type: "book",
             badgeText: "ARCHIVAL BOOK",
             imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81A1-24NACL._AC_SL1500_.jpg", // 代替
-            affiliateUrl: "https://www.amazon.co.jp/dp/4092173111",
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/4092173111"),
             priceText: "PRICE: ¥2,200 (税込)",
-            details: ["スピノサウルスの骨格再現", "二足歩行と四足歩行の論争", "最新復元図アート収録"]
+            details: ["スピノサウルスの骨格再現", "二足歩行と四足歩行 of 論争", "最新復元図アート収録"]
         }
     ],
     "stegosaurus": [
@@ -118,7 +130,7 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
             type: "figure",
             badgeText: "PRECISION MODEL",
             imageUrl: "https://images-na.ssl-images-amazon.com/images/I/61r5P4rJ8AL._AC_SL1500_.jpg",
-            affiliateUrl: "https://www.amazon.co.jp/dp/B085MS8V7M",
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/B085MS8V7M"),
             priceText: "PRICE: ¥1,430 (税込)",
             details: ["タカラトミー公式", "ラージサイズアニア", "首とスパイク付き尾が可動"]
         }
@@ -127,11 +139,11 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
         {
             id: "ankylosaurus_figure",
             title: "アニア AL-05 アンキロサウルス",
-            subtitle: "全身を覆う鎧装甲と、ハンマー状の堅牢な尾を完全再現",
+            subtitle: "全身を覆う鎧装装甲と、ハンマー状の堅牢な尾を完全再現",
             type: "figure",
             badgeText: "PRECISION MODEL",
             imageUrl: "https://images-na.ssl-images-amazon.com/images/I/61B6-d6W2PL._AC_SL1500_.jpg",
-            affiliateUrl: "https://www.amazon.co.jp/dp/B07BL1ZBLG",
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/B07BL1ZBLG"),
             priceText: "PRICE: ¥1,430 (税込)",
             details: ["タカラトミー公式", "ラージサイズアニア", "首とハンマー付き尾の可動"]
         }
