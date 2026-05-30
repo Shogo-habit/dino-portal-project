@@ -16,9 +16,36 @@ const { topic } = Astro.props;
 const relatedDinos = (topic.relatedSpecimens || []).map(specimenId => {
     return DINOSAURS.find(d => d.id === specimenId);
 }).filter(Boolean);
+
+// Create structured data (JSON-LD) for Article SEO
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": topic.title,
+  "description": topic.summary,
+  "image": [
+    `https://dino-portal-project.vercel.app/${topic.image}`
+  ],
+  "datePublished": topic.date.replace(/\./g, '-'),
+  "author": {
+    "@type": "Person",
+    "name": "Dino-Portal キュレーター"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dino-Portal Lab",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dino-portal-project.vercel.app/favicon.png"
+    }
+  }
+};
 ---
 
 <Layout title={`${topic.title} | Dino-Portal`} activeTab="topics" description={topic.summary} ogImage={`/${topic.image}`}>
+    <!-- Inject dynamic Article schema -->
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(articleSchema)} />
+
     <article class="topic-article hud-panel">
         <div class="topic-detail-header" style="border-bottom: 1px solid var(--panel-border); padding-bottom: 15px; margin-bottom: 25px;">
             <div class="topic-meta" style="font-size: 11px; color: var(--primary-neon); font-family: var(--font-mono); margin-bottom: 10px;">
