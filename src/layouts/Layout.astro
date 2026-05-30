@@ -49,6 +49,24 @@ const fullOgImageUrl = new URL(ogImage, 'https://dino-portal-project.vercel.app/
     <meta property="twitter:description" content={description}>
     <meta property="twitter:image" content={fullOgImageUrl.href}>
 
+    <!-- Google Search Console verification -->
+    {import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION && (
+      <meta name="google-site-verification" content={import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION} />
+    )}
+
+    <!-- Google Analytics (GA4) -->
+    {import.meta.env.PUBLIC_GA_TRACKING_ID && (
+      <>
+        <script is:inline type="text/javascript" src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.PUBLIC_GA_TRACKING_ID}`} defer></script>
+        <script is:inline type="text/javascript" define:vars={{ gaId: import.meta.env.PUBLIC_GA_TRACKING_ID }}>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', gaId);
+        </script>
+      </>
+    )}
+
     <!-- Base Schema -->
     <script type="application/ld+json" is:inline>
     {
