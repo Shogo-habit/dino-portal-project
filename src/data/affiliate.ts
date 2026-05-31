@@ -13,7 +13,7 @@ export interface AffiliateProduct {
 // もしもアフィリエイトの広告ID。Amazonおよび楽天の提携承認後に、取得したID（7桁前後の数値。例: "1234567"）を設定します。
 // ※同じ「もしもアフィリエイト」のアカウントであれば、Amazonも楽天も基本的に共通のアカウントIDになります。
 export const MOSHIMO_AMAZON_ID = "";
-export const MOSHIMO_RAKUTEN_ID = "";
+export const MOSHIMO_RAKUTEN_ID = "5603988";
 
 // Amazon用アフィリエイトリンク生成（旧互換名）
 export function buildAffiliateUrl(amazonUrl: string): string {
