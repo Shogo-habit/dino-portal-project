@@ -10,16 +10,30 @@ export interface AffiliateProduct {
     details: string[];      // 特徴スペックリスト (例: ["1/10 スケール", "関節可動式"])
 }
 
-// もしもアフィリエイトの広告ID。Amazon提携承認後にここに取得したID（例: 1234567）を設定します。
-// 空文字 "" の状態では、通常のAmazon直リンク（プレビュー用）になります。
+// もしもアフィリエイトの広告ID。Amazonおよび楽天の提携承認後に、取得したID（7桁前後の数値。例: "1234567"）を設定します。
+// ※同じ「もしもアフィリエイト」のアカウントであれば、Amazonも楽天も基本的に共通のアカウントIDになります。
 export const MOSHIMO_AMAZON_ID = "";
+export const MOSHIMO_RAKUTEN_ID = "";
 
+// Amazon用アフィリエイトリンク生成（旧互換名）
 export function buildAffiliateUrl(amazonUrl: string): string {
     if (!MOSHIMO_AMAZON_ID) {
         return amazonUrl; // IDが未設定の場合は通常のAmazonURLを返す
     }
     const encodedUrl = encodeURIComponent(amazonUrl);
     return `https://af.moshimo.com/af/c/click?a_id=${MOSHIMO_AMAZON_ID}&p_id=170&pc_id=185&pl_id=4062&url=${encodedUrl}`;
+}
+
+// 楽天市場用アフィリエイトリンク生成（検索キーワードから自動生成）
+export function buildRakutenAffiliateUrl(searchQuery: string): string {
+    const cleanedQuery = searchQuery.replace(/[\(\)\[\]]/g, ' ').trim(); // 記号を除去して検索精度を高める
+    const defaultRakutenUrl = `https://search.rakuten.co.jp/search/mall/${encodeURIComponent(cleanedQuery)}/`;
+    if (!MOSHIMO_RAKUTEN_ID) {
+        return defaultRakutenUrl; // IDが未設定の場合は通常の楽天市場の検索結果URLを返す
+    }
+    const encodedUrl = encodeURIComponent(defaultRakutenUrl);
+    // もしもアフィリエイト楽天市場プロモーションID (p_id=54, pc_id=54, pl_id=616)
+    return `https://af.moshimo.com/af/c/click?a_id=${MOSHIMO_RAKUTEN_ID}&p_id=54&pc_id=54&pl_id=616&url=${encodedUrl}`;
 }
 
 // 共通フォールバック用の商品データ (個別設定がない恐竜で表示)

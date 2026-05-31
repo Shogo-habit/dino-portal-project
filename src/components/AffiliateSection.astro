@@ -1,5 +1,5 @@
 ---
-import { DINO_AFFILIATE_MAP, DEFAULT_AFFILIATE_PRODUCTS, type AffiliateProduct } from '../data/affiliate';
+import { DINO_AFFILIATE_MAP, DEFAULT_AFFILIATE_PRODUCTS, buildRakutenAffiliateUrl, type AffiliateProduct } from '../data/affiliate';
 
 interface Props {
     dinoId: string;
@@ -37,56 +37,70 @@ if (mapped && mapped.length > 0) {
     </div>
 
     <div class="affiliate-grid">
-        {products.map((product) => (
-            <div class="product-card hud-panel">
-                <!-- 装飾コーナー -->
-                <div class="hud-corner top-left"></div>
-                <div class="hud-corner bottom-right"></div>
+        {products.map((product) => {
+            const rakutenUrl = buildRakutenAffiliateUrl(product.title);
+            return (
+                <div class="product-card hud-panel">
+                    <!-- 装飾コーナー -->
+                    <div class="hud-corner top-left"></div>
+                    <div class="hud-corner bottom-right"></div>
 
-                <!-- カテゴリバッジ -->
-                <span class={`product-badge ${product.type}`}>
-                    [ {product.badgeText} ]
-                </span>
+                    <!-- カテゴリバッジ -->
+                    <span class={`product-badge ${product.type}`}>
+                        [ {product.badgeText} ]
+                    </span>
 
-                <!-- 画像枠 -->
-                <div class="product-img-wrap">
-                    <div class="img-grid-overlay"></div>
-                    <img 
-                        src={product.imageUrl} 
-                        alt={product.title} 
-                        loading="lazy" 
-                        decoding="async" 
-                        class="product-image"
-                    />
+                    <!-- 画像枠 -->
+                    <div class="product-img-wrap">
+                        <div class="img-grid-overlay"></div>
+                        <img 
+                            src={product.imageUrl} 
+                            alt={product.title} 
+                            loading="lazy" 
+                            decoding="async" 
+                            class="product-image"
+                        />
+                    </div>
+
+                    <!-- 情報領域 -->
+                    <div class="product-info">
+                        <h4 class="product-title">{product.title}</h4>
+                        <p class="product-desc">{product.subtitle}</p>
+                        
+                        <ul class="product-specs">
+                            {product.details.map((detail) => (
+                                <li>&bull; {detail}</li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    <!-- アクション領域 -->
+                    <div class="product-actions">
+                        <div class="product-price">{product.priceText}</div>
+                        <div class="shop-buttons-group">
+                            <a 
+                                href={product.affiliateUrl} 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                class="shop-action-btn amazon-btn"
+                            >
+                                <span>AMAZON</span>
+                                <span class="btn-arrow">&raquo;</span>
+                            </a>
+                            <a 
+                                href={rakutenUrl} 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                class="shop-action-btn rakuten-btn"
+                            >
+                                <span>楽天市場</span>
+                                <span class="btn-arrow">&raquo;</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- 情報領域 -->
-                <div class="product-info">
-                    <h4 class="product-title">{product.title}</h4>
-                    <p class="product-desc">{product.subtitle}</p>
-                    
-                    <ul class="product-specs">
-                        {product.details.map((detail) => (
-                            <li>&bull; {detail}</li>
-                        ))}
-                    </ul>
-                </div>
-
-                <!-- アクション領域 -->
-                <div class="product-actions">
-                    <div class="product-price">{product.priceText}</div>
-                    <a 
-                        href={product.affiliateUrl} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        class="shop-action-btn"
-                    >
-                        <span>{product.type === 'figure' ? 'VIEW PRODUCT' : 'SHOP NOW'}</span>
-                        <span class="btn-arrow">&raquo;</span>
-                    </a>
-                </div>
-            </div>
-        ))}
+            );
+        })}
     </div>
 </section>
 
@@ -258,10 +272,12 @@ if (mapped && mapped.length > 0) {
         color: var(--text-main);
     }
     
+    .shop-buttons-group {
+        display: flex;
+        gap: 10px;
+    }
+
     .shop-action-btn {
-        background: rgba(0, 242, 255, 0.06);
-        border: 1px solid var(--primary-neon);
-        color: var(--primary-neon);
         font-family: var(--font-mono);
         font-weight: 700;
         font-size: 11px;
@@ -270,26 +286,46 @@ if (mapped && mapped.length > 0) {
         border-radius: 4px;
         display: flex;
         align-items: center;
-        gap: 8px;
-        box-shadow: 0 0 10px rgba(0, 242, 255, 0.1);
+        gap: 6px;
         transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
         text-transform: uppercase;
         letter-spacing: 1px;
+        border: 1px solid;
     }
     
-    .shop-action-btn:hover {
+    .amazon-btn {
+        background: rgba(0, 242, 255, 0.04);
+        border-color: var(--primary-neon);
+        color: var(--primary-neon);
+        box-shadow: 0 0 8px rgba(0, 242, 255, 0.08);
+    }
+
+    .amazon-btn:hover {
         background: var(--primary-neon);
         color: #000;
         box-shadow: 0 0 15px var(--primary-neon);
     }
-    
+
+    .rakuten-btn {
+        background: rgba(0, 255, 102, 0.04);
+        border-color: var(--secondary-neon);
+        color: var(--secondary-neon);
+        box-shadow: 0 0 8px rgba(0, 255, 102, 0.08);
+    }
+
+    .rakuten-btn:hover {
+        background: var(--secondary-neon);
+        color: #000;
+        box-shadow: 0 0 15px var(--secondary-neon);
+    }
+
     .btn-arrow {
         font-size: 12px;
         transition: transform 0.3s ease;
     }
     
     .shop-action-btn:hover .btn-arrow {
-        transform: translateX(3px);
+        transform: translateX(2px);
     }
 
     @media (max-width: 480px) {
@@ -301,8 +337,13 @@ if (mapped && mapped.length > 0) {
         }
         .product-actions {
             flex-direction: column;
-            gap: 12px;
+            gap: 15px;
             align-items: flex-start;
+        }
+        .shop-buttons-group {
+            width: 100%;
+            flex-direction: column;
+            gap: 8px;
         }
         .shop-action-btn {
             width: 100%;

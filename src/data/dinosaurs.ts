@@ -9,13 +9,21 @@ export const DINOSAURS = [
     diet: "肉食",
     length: "12.3m",
     weight: "8.4t",
-    description: "史上最大級の肉食恐竜。その咬合力は全ての陸上生物の中で最強クラスと言われ、骨をも噛み砕くことができた。頂点捕食者として君臨していた。",
+    description: "史上最大級 of 肉食恐竜。その咬合力は全ての陸上生物の中で最強クラスと言われ、骨をも噛み砕くことができた。頂点捕食者として君臨していた。",
     bioTraits: [
       { trait: "咬合力", value: "驚異的", detail: "骨を砕くための特殊な歯の構造を持つ" },
       { trait: "感知能力", value: "極めて高い", detail: "優れた立体視を持つ" }
     ],
     image: "images/tyrannosaurus.webp",
-    group: "獣脚類"
+    group: "獣脚類",
+    references: [
+      {
+        title: "Tyrannosaurus and other Cretaceous carnivorous dinosaurs",
+        journal: "Bulletin of the American Museum of Natural History",
+        year: 1905,
+        url: "https://digitallibrary.amnh.org/handle/2246/1464"
+      }
+    ]
   },
   {
     id: "triceratops",
@@ -33,7 +41,15 @@ export const DINOSAURS = [
       { trait: "攻撃手段", value: "突進", detail: "最大1メートルの角による突き" }
     ],
     image: "images/triceratops.webp",
-    group: "角竜類"
+    group: "角竜類",
+    references: [
+      {
+        title: "Notice of gigantic horned Dinosauria from the Cretaceous",
+        journal: "American Journal of Science",
+        year: 1889,
+        url: "https://doi.org/10.2475/ajs.s3-38.224.173"
+      }
+    ]
   },
   {
     id: "spinosaurus",
@@ -51,7 +67,15 @@ export const DINOSAURS = [
       { trait: "捕食特化", value: "魚食", detail: "長い顎で魚を捕らえる" }
     ],
     image: "images/spinosaurus.webp",
-    group: "獣脚類"
+    group: "獣脚類",
+    references: [
+      {
+        title: "Semiaquatic adaptations in a giant predatory dinosaur",
+        journal: "Science",
+        year: 2014,
+        url: "https://doi.org/10.1126/science.1258750"
+      }
+    ]
   },
   {
     id: "stegosaurus",
@@ -69,7 +93,15 @@ export const DINOSAURS = [
       { trait: "体温調節", value: "可能", detail: "背中の骨板による熱制御説" }
     ],
     image: "images/stegosaurus.webp",
-    group: "剣竜類"
+    group: "剣竜類",
+    references: [
+      {
+        title: "A new order of extinct Reptilia (Stegosauria) from the Colorado Rocky Mountains",
+        journal: "American Journal of Science",
+        year: 1877,
+        url: "https://doi.org/10.2475/ajs.s3-14.84.513"
+      }
+    ]
   },
   {
     id: "ankylosaurus",
@@ -87,7 +119,15 @@ export const DINOSAURS = [
       { trait: "反撃能力", value: "ハンマー", detail: "尾で肉食恐竜の骨を砕く" }
     ],
     image: "images/ankylosaurus.webp",
-    group: "よろい竜類"
+    group: "よろい竜類",
+    references: [
+      {
+        title: "The Ankylosauridae, a new family of armored dinosaurs from the Upper Cretaceous",
+        journal: "Bulletin of the American Museum of Natural History",
+        year: 1908,
+        url: "https://hdl.handle.net/2246/1435"
+      }
+    ]
   },
   {
     id: "velociraptor",
@@ -105,7 +145,15 @@ export const DINOSAURS = [
       { trait: "知能", value: "高い", detail: "集団での狩りが可能だったとされる" }
     ],
     image: "images/velociraptor.webp",
-    group: "獣脚類"
+    group: "獣脚類",
+    references: [
+      {
+        title: "Three new Theropoda, Protoceratops zone on outer Mongolia",
+        journal: "American Museum Novitates",
+        year: 1924,
+        url: "https://hdl.handle.net/2246/3223"
+      }
+    ]
   },
   {
     id: "allosaurus",
