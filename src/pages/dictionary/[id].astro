@@ -4,6 +4,7 @@ import AffiliateSection from '../../components/AffiliateSection.astro';
 import { DINOSAURS } from '../../data/dinosaurs';
 import { SPECIMEN_METADATA, REFERENCE_ASSETS } from '../../data/cyberAssets';
 import { AUTHOR_DATA } from '../../data/author';
+import dinoExplanations from '../../data/dino_explanations.json';
 
 export async function getStaticPaths() {
   return DINOSAURS.map(d => ({
@@ -13,6 +14,7 @@ export async function getStaticPaths() {
 }
 
 const { d } = Astro.props;
+const extendedDescription = (dinoExplanations as Record<string, string>)[d.id] || "";
 
 // FAQ Generation Logic for SEO/GEO
 function generateDynamicFAQs(dino: any) {
@@ -175,6 +177,17 @@ const relatedSpecimens = DINOSAURS.filter(item => {
             <section class="hud-panel" style="margin-bottom: 30px;">
                 <p style="line-height: 1.8; font-size: 14px;">{d.description}</p>
             </section>
+
+            {extendedDescription && (
+                <section class="hud-panel" style="margin-bottom: 30px; padding: 25px; border-color: rgba(0, 242, 255, 0.15); position: relative;">
+                    <div class="hud-corner top-left" style="border-top-color: rgba(0, 242, 255, 0.3); border-left-color: rgba(0, 242, 255, 0.3);"></div>
+                    <div class="hud-corner bottom-right" style="border-bottom-color: rgba(0, 242, 255, 0.3); border-right-color: rgba(0, 242, 255, 0.3);"></div>
+                    <h4 style="border-bottom: 1px solid var(--panel-border); padding-bottom: 10px; margin-bottom: 15px; color: var(--primary-neon); font-size: 14px; font-family: var(--font-mono); letter-spacing: 1px;">
+                        [ ARCHIVAL MEMORANDUM / 詳細解説記録 ]
+                    </h4>
+                    <p style="line-height: 1.9; font-size: 14px; color: var(--text-main); white-space: pre-line; margin: 0; text-align: justify;">{extendedDescription}</p>
+                </section>
+            )}
 
             <div class="spec-panel">
                 <div class="spec-item"><span class="spec-label">生息年代</span><br>{d.era}</div>
