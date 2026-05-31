@@ -59,7 +59,13 @@ if (mapped && mapped.length > 0) {
                             loading="lazy" 
                             decoding="async" 
                             class="product-image"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                         />
+                        <div class="product-image-placeholder" style="display: none;">
+                            <span class="placeholder-icon">▵</span>
+                            <span class="placeholder-text">NO IMAGE DATA</span>
+                            <span class="placeholder-sub">SCANNING RESOLUTION...</span>
+                        </div>
                     </div>
 
                     <!-- 情報領域 -->
@@ -210,6 +216,44 @@ if (mapped && mapped.length > 0) {
         object-fit: contain;
         filter: drop-shadow(0 0 10px rgba(255,255,255,0.05));
         transition: transform 0.5s ease;
+    }
+    
+    .product-image-placeholder {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-dim);
+        font-family: var(--font-mono);
+        background: rgba(1, 10, 18, 0.4);
+        padding: 20px;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .placeholder-icon {
+        font-size: 20px;
+        color: var(--primary-neon);
+        margin-bottom: 6px;
+        animation: blink 2s infinite;
+    }
+    
+    .placeholder-text {
+        font-size: 11px;
+        font-weight: bold;
+        color: var(--text-main);
+        letter-spacing: 1.5px;
+    }
+    
+    .placeholder-sub {
+        font-size: 8px;
+        color: var(--primary-neon);
+        margin-top: 4px;
+        opacity: 0.6;
     }
     
     .product-card:hover .product-image {
