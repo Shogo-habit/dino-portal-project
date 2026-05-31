@@ -8,8 +8,8 @@
   --alert-neon: #ff0055;
   --text-main: #e0faff;
   --text-dim: #8fa7ab;
-  --font-mono: 'Share Tech Mono', 'Courier New', Courier, monospace;
-  --font-sans: 'Orbitron', 'Inter', sans-serif;
+  --font-mono: 'Inter', monospace;
+  --font-sans: 'Inter', sans-serif;
   --hud-glitch: 3px;
 }
 
