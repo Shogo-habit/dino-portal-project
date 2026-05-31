@@ -67,14 +67,14 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
     "tyrannosaurus": [
         {
             id: "t_rex_figure",
-            title: "アニア AA-01 ティラノサウルス (ワイルドバージョン)",
-            subtitle: "口・脚・尾が可動する、大迫力の精密ギミックフィギュア",
+            title: "アニア AL-01 ティラノサウルス",
+            subtitle: "口・脚・尾が可動する、ラージサイズ仕様の精密ギミックフィギュア",
             type: "figure",
             badgeText: "PRECISION MODEL",
             imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81e5sKszwOL._AC_SL1500_.jpg",
-            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/B07R4R1YRF"),
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/B00C74Y9E8"),
             priceText: "PRICE: ¥1,100 (税込)",
-            details: ["タカラトミー公式", "口・脚・尾がリアル可動", "ワイルドカラーペイント"]
+            details: ["タカラトミー公式", "口・脚・尾がリアル可動", "ラージサイズ定番モデル"]
         },
         {
             id: "t_rex_book",
@@ -91,14 +91,14 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
     "triceratops": [
         {
             id: "triceratops_figure",
-            title: "アニア AA-02 トリケラトプス (ワイルドバージョン)",
-            subtitle: "3本の角と特徴的なフリル、首・尾が連動可動するフィギュア",
+            title: "アニア AL-02 トリケラトプス",
+            subtitle: "3本の角と特徴的なフリル、首・尾が連動可動する精密フィギュア",
             type: "figure",
             badgeText: "PRECISION MODEL",
             imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81B43c9YqyL._AC_SL1500_.jpg",
-            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/B07R6R38C1"),
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/B00C74YAXC"),
             priceText: "PRICE: ¥1,100 (税込)",
-            details: ["タカラトミー公式", "角と首・後脚が可動", "臨場感あるワイルド塗装"]
+            details: ["タカラトミー公式", "角と首・後脚が可動", "ラージサイズ定番モデル"]
         },
         {
             id: "triceratops_book",
