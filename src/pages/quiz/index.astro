@@ -89,6 +89,10 @@ import { EXAM_QUESTIONS } from '../../data/exam';
             <div class="quiz-content-layout" style="display: flex; gap: 30px; flex-wrap: wrap;">
                 <!-- Visual/Question Left Area -->
                 <div class="quiz-question-visual-area" style="flex: 1.2; min-width: 300px;">
+                    <!-- Exam Metadata Header (Visible only in Exam Mode) -->
+                    <div id="exam-metadata-header" style="display: none; font-family: var(--font-mono); font-size: 11px; color: var(--secondary-neon); margin-bottom: 12px; border-bottom: 1px dashed rgba(0, 242, 255, 0.2); padding-bottom: 8px;">
+                    </div>
+
                     <!-- Question Prompt Title -->
                     <div class="question-prompt" id="question-prompt-text" style="font-family: var(--font-mono); font-size: 14px; color: var(--text-main); margin-bottom: 15px; border-left: 3px solid var(--primary-neon); padding-left: 15px;">
                         クイズをロード中...
@@ -463,23 +467,32 @@ import { EXAM_QUESTIONS } from '../../data/exam';
             const choicesBox = document.getElementById('quiz-choices-box');
             choicesBox!.innerHTML = '';
 
+            const visualFrame = document.querySelector('.quiz-visual-frame') as HTMLElement;
+            const leftArea = document.querySelector('.quiz-question-visual-area') as HTMLElement;
+            const rightArea = document.querySelector('.quiz-answers-area') as HTMLElement;
+            const contentLayout = document.querySelector('.quiz-content-layout') as HTMLElement;
+            const examMetaHeader = document.getElementById('exam-metadata-header');
+
             if (quizState.selectedMode === 'exam') {
                 const q = currentQ.questionObj;
                 promptText!.innerText = q.question;
                 
-                textContainer!.style.display = 'flex';
-                const telemetryText = document.getElementById('telemetry-detail-text');
-                
-                telemetryText!.innerHTML = `
-                    <div style="font-family: var(--font-mono); border-bottom: 1px dashed rgba(0, 242, 255, 0.2); padding-bottom: 8px; margin-bottom: 12px; display: flex; justify-content: space-between; font-size: 11px;">
-                        <span>SYS_STATUS: EXAM_MODE_ACTIVE</span>
-                        <span style="color: var(--secondary-neon);">LEVEL: ${q.level === 'beginner' ? '初級' : '中級'}</span>
-                    </div>
-                    <strong>&bull; 出現分野:</strong> ${q.category}<br>
-                    <strong>&bull; 設問番号:</strong> Q_${quizState.currentStep + 1}<br>
-                    <div style="margin-top: 20px; font-size: 10px; color: var(--text-dim);">
-                        * 右側の選択肢から最も適切なものを1つ選択してください。<br>
-                        * 制限時間はありません。慎重に解析を進めてください。
+                // 1カラム表示に切り替え、ボックスを非表示
+                visualFrame.style.display = 'none';
+                leftArea.style.flex = 'none';
+                leftArea.style.width = '100%';
+                rightArea.style.flex = 'none';
+                rightArea.style.width = '100%';
+                rightArea.style.marginTop = '20px';
+                contentLayout.style.flexDirection = 'column';
+
+                // メタデータヘッダー表示
+                examMetaHeader!.style.display = 'block';
+                examMetaHeader!.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                        <span>[ SYSTEM: EXAM_ACTIVE ]</span>
+                        <span>[ FIELD: ${q.category} ]</span>
+                        <span>[ TARGET: ${q.level === 'beginner' ? '初級' : '中級'} ]</span>
                     </div>
                 `;
 
@@ -509,6 +522,17 @@ import { EXAM_QUESTIONS } from '../../data/exam';
 
             } else {
                 // Aptitude Mode
+                // 従来の左右2カラム表示に戻す
+                visualFrame.style.display = 'flex';
+                leftArea.style.flex = '1.2';
+                leftArea.style.width = '';
+                rightArea.style.flex = '1';
+                rightArea.style.width = '';
+                rightArea.style.marginTop = '0';
+                contentLayout.style.flexDirection = 'row';
+
+                examMetaHeader!.style.display = 'none';
+
                 if (currentQ.mode === 0) {
                     // Silhouette Mode
                     promptText!.innerText = `この影絵が示す恐竜の名前を選択してください。`;
