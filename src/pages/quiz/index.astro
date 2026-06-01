@@ -465,7 +465,7 @@ import { EXAM_QUESTIONS } from '../../data/exam';
 
             if (quizState.selectedMode === 'exam') {
                 const q = currentQ.questionObj;
-                promptText!.innerText = `[模擬試験: ${q.category}分野] ${q.question}`;
+                promptText!.innerText = q.question;
                 
                 textContainer!.style.display = 'flex';
                 const telemetryText = document.getElementById('telemetry-detail-text');
@@ -477,9 +477,6 @@ import { EXAM_QUESTIONS } from '../../data/exam';
                     </div>
                     <strong>&bull; 出現分野:</strong> ${q.category}<br>
                     <strong>&bull; 設問番号:</strong> Q_${quizState.currentStep + 1}<br>
-                    <div style="margin-top: 15px; border-left: 2px solid var(--primary-neon); padding-left: 12px; color: var(--text-main); font-size: 13px; line-height: 1.6; font-family: sans-serif;">
-                        ${q.question}
-                    </div>
                     <div style="margin-top: 20px; font-size: 10px; color: var(--text-dim);">
                         * 右側の選択肢から最も適切なものを1つ選択してください。<br>
                         * 制限時間はありません。慎重に解析を進めてください。
@@ -514,14 +511,14 @@ import { EXAM_QUESTIONS } from '../../data/exam';
                 // Aptitude Mode
                 if (currentQ.mode === 0) {
                     // Silhouette Mode
-                    promptText!.innerText = `[クイズ形式: シルエット] この影絵が示す恐竜の名前を選択してください。`;
+                    promptText!.innerText = `この影絵が示す恐竜の名前を選択してください。`;
                     silContainer!.style.display = 'flex';
                     
                     const silImg = document.getElementById('silhouette-image') as HTMLImageElement;
                     silImg.src = `/images/silhouette/${currentQ.dino.id}.webp`;
                 } else if (currentQ.mode === 1) {
                     // Close-Up Mode
-                    promptText!.innerText = `[クイズ形式: クローズアップ] 拡大表示された特徴（${currentQ.specimen.featureName}）から名前を当ててください。`;
+                    promptText!.innerText = `拡大表示された特徴（${currentQ.specimen.featureName}）から名前を当ててください。`;
                     closeContainer!.style.display = 'block';
                     
                     const closeImg = document.getElementById('closeup-image') as HTMLImageElement;
@@ -532,7 +529,7 @@ import { EXAM_QUESTIONS } from '../../data/exam';
                     closeImg.style.transformOrigin = `${currentQ.specimen.originX} ${currentQ.specimen.originY}`;
                 } else {
                     // Telemetry (Text) Mode
-                    promptText!.innerText = `[クイズ形式: 生態解析] 一部が伏せられた以下の解析ログから恐竜を特定してください。`;
+                    promptText!.innerText = `一部が伏せられた以下の解析ログから恐竜を特定してください。`;
                     textContainer!.style.display = 'flex';
                     
                     const telemetryText = document.getElementById('telemetry-detail-text');
