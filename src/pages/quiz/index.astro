@@ -43,13 +43,13 @@ import { EXAM_QUESTIONS } from '../../data/exam';
 
             <p id="mode-description-text" style="line-height: 1.8; color: var(--text-dim); font-size: 14px; max-width: 600px; margin: 0 auto 25px auto;">
                 恐竜のシルエット、クローズアップ、または生態データから名前を当てるクイズです。<br>
-                全5問に回答し、あなたの正解率（同期率）を測定します。
+                全5問に回答し、あなたの正解率を測定します。
             </p>
 
             <!-- 難易度セレクター -->
             <div class="difficulty-section" style="margin-bottom: 30px;">
-                <div style="font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 2px;">
-                    // 難易度を選択 (SELECT DIFFICULTY)
+                <div style="font-family: var(--font-mono); font-size: 13px; color: var(--text-dim); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 2px;">
+                    難易度を選択
                 </div>
                 <div class="difficulty-buttons" style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
                     <button class="diff-btn active" data-difficulty="beginner" style="min-width: 120px;">
@@ -307,7 +307,7 @@ import { EXAM_QUESTIONS } from '../../data/exam';
                     } else {
                         modeDesc.innerHTML = `
                             恐竜のシルエット、クローズアップ、または生態データから名前を当てるクイズです。<br>
-                            全5問に回答し、あなたの正解率（同期率）を測定します。
+                            全5問に回答し、あなたの正解率を測定します。
                         `;
                         
                         // Show all buttons and restore regular states
