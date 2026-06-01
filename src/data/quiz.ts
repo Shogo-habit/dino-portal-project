@@ -143,5 +143,275 @@ export const QUIZ_SPECIMENS: QuizSpecimen[] = [
         originY: "42%",
         featureName: "頭突きやディスプレイに使われた厚さ25cmに達する分厚い頭骨",
         difficulty: "beginner"
+    },
+    {
+        id: "carnotaurus",
+        name: "カルノタウルス",
+        zoom: 3.8,
+        originX: "25%",
+        originY: "40%",
+        featureName: "目の上にある2本の鋭い角",
+        difficulty: "intermediate"
+    },
+    {
+        id: "elasmosaurus",
+        name: "エラスモサウルス",
+        zoom: 3.5,
+        originX: "25%",
+        originY: "35%",
+        featureName: "70個以上の骨からなる極めて長い首",
+        difficulty: "intermediate"
+    },
+    {
+        id: "fukuisaurus",
+        name: "フクイサウルス",
+        zoom: 3.8,
+        originX: "22%",
+        originY: "48%",
+        featureName: "植物を効率よくすりつぶすための頑丈な上顎と歯",
+        difficulty: "intermediate"
+    },
+    {
+        id: "giganotosaurus",
+        name: "ギガノトサウルス",
+        zoom: 3.5,
+        originX: "22%",
+        originY: "45%",
+        featureName: "肉を切り裂くのに適した薄く鋭い歯が並ぶ巨大な頭部",
+        difficulty: "intermediate"
+    },
+    {
+        id: "oviraptor",
+        name: "オヴィラプトル",
+        zoom: 3.8,
+        originX: "25%",
+        originY: "40%",
+        featureName: "卵や木の実を砕くための歯のない強力なくちばし",
+        difficulty: "intermediate"
+    },
+    {
+        id: "dilophosaurus",
+        name: "ディロフォサウルス",
+        zoom: 3.8,
+        originX: "22%",
+        originY: "38%",
+        featureName: "頭部にある一対（2本）の高く丸いトサカ",
+        difficulty: "intermediate"
+    },
+    {
+        id: "baryonyx",
+        name: "バリオニクス",
+        zoom: 3.8,
+        originX: "32%",
+        originY: "55%",
+        featureName: "親指にある長さ30cmに達する巨大な鉤爪",
+        difficulty: "intermediate"
+    },
+    {
+        id: "deinocheirus",
+        name: "デイノケイルス",
+        zoom: 3.8,
+        originX: "15%",
+        originY: "48%",
+        featureName: "魚などを捕らえるための平らなアヒルのようなくちばし",
+        difficulty: "intermediate"
+    },
+    {
+        id: "apatosaurus",
+        name: "アパトサウルス",
+        zoom: 3.8,
+        originX: "85%",
+        originY: "45%",
+        featureName: "天敵の威嚇や攻撃に使われた鞭のような長い尾",
+        difficulty: "intermediate"
+    },
+    {
+        id: "kentrosaurus",
+        name: "ケントロサウルス",
+        zoom: 3.8,
+        originX: "60%",
+        originY: "40%",
+        featureName: "背中から尾にかけて並ぶ鋭く長いトゲ（スパイク）",
+        difficulty: "intermediate"
+    },
+    {
+        id: "acrocanthosaurus",
+        name: "アクロカントサウルス",
+        zoom: 3.8,
+        originX: "50%",
+        originY: "38%",
+        featureName: "背中に沿って走る特徴的な低い帆状の突起",
+        difficulty: "intermediate"
+    },
+    {
+        id: "amargasaurus",
+        name: "アマルガサウルス",
+        zoom: 3.8,
+        originX: "30%",
+        originY: "40%",
+        featureName: "首から背中にかけて並ぶ2列の長い棘（きょく）",
+        difficulty: "intermediate"
+    },
+    {
+        id: "archaeopteryx",
+        name: "アーケオプテリクス",
+        zoom: 3.8,
+        originX: "40%",
+        originY: "45%",
+        featureName: "鳥類への進化の過程を示す美しい羽毛",
+        difficulty: "intermediate"
+    },
+    {
+        id: "archelon",
+        name: "アルケロン",
+        zoom: 3.5,
+        originX: "50%",
+        originY: "48%",
+        featureName: "現生のカメとは異なり、甲羅が皮膚で覆われていた肋骨のフレーム",
+        difficulty: "intermediate"
+    },
+    {
+        id: "dimetrodon",
+        name: "ディメトロドン",
+        zoom: 3.8,
+        originX: "50%",
+        originY: "35%",
+        featureName: "体温調節やディスプレイに使われた背中の巨大な帆",
+        difficulty: "intermediate"
+    },
+    {
+        id: "diplodocus",
+        name: "ディプロドクス",
+        zoom: 3.8,
+        originX: "82%",
+        originY: "48%",
+        featureName: "敵を威嚇し音速で振り回された鞭のように細長い尾の先端",
+        difficulty: "advanced"
+    },
+    {
+        id: "hadrosaurus",
+        name: "ハドロサウルス",
+        zoom: 3.8,
+        originX: "18%",
+        originY: "45%",
+        featureName: "何百本もの小さな歯が隙間なく並ぶデンタルバッテリー構造の口",
+        difficulty: "advanced"
+    },
+    {
+        id: "juravenator",
+        name: "ジュラベナトル",
+        zoom: 3.8,
+        originX: "55%",
+        originY: "50%",
+        featureName: "鱗と羽毛の両方の痕跡が発見された尾の付け根付近の皮膚",
+        difficulty: "advanced"
+    },
+    {
+        id: "lambeosaurus",
+        name: "ランベオサウルス",
+        zoom: 3.8,
+        originX: "22%",
+        originY: "38%",
+        featureName: "音を響かせて通信したとされる特徴的な斧（コブ）状のトサカ",
+        difficulty: "advanced"
+    },
+    {
+        id: "nigersaurus",
+        name: "ニジェールサウルス",
+        zoom: 3.8,
+        originX: "18%",
+        originY: "52%",
+        featureName: "地表の植物を効率よく刈り取るための横に広い掃除機のような口",
+        difficulty: "advanced"
+    },
+    {
+        id: "bajadasaurus",
+        name: "バジャダサウルス",
+        zoom: 3.8,
+        originX: "25%",
+        originY: "38%",
+        featureName: "首から前向きに長く伸びる独特で巨大な棘（神経棘）",
+        difficulty: "advanced"
+    },
+    {
+        id: "psittacosaurus",
+        name: "プシッタコサウルス",
+        zoom: 3.8,
+        originX: "18%",
+        originY: "42%",
+        featureName: "木の実を砕くための頑丈なオウム状の嘴（くちばし）",
+        difficulty: "advanced"
+    },
+    {
+        id: "carcharodontosaurus",
+        name: "カルカロドントサウルス",
+        zoom: 3.8,
+        originX: "22%",
+        originY: "45%",
+        featureName: "獲物の肉を切り裂くのに適した薄くギザギザなサメのような歯",
+        difficulty: "advanced"
+    },
+    {
+        id: "gigantspinosaurus",
+        name: "ギガントスピノサウルス",
+        zoom: 3.8,
+        originX: "42%",
+        originY: "45%",
+        featureName: "肩から後方に向かって長く突き出した巨大な一対の棘（肩甲棘）",
+        difficulty: "advanced"
+    },
+    {
+        id: "utahraptor",
+        name: "ユタラプトル",
+        zoom: 3.8,
+        originX: "45%",
+        originY: "62%",
+        featureName: "獲物の急所を狙い突き刺すための後肢にある20cm以上の巨大な鉤爪",
+        difficulty: "advanced"
+    },
+    {
+        id: "wuerhosaurus",
+        name: "ウエルホサウルス",
+        zoom: 3.8,
+        originX: "48%",
+        originY: "42%",
+        featureName: "ステゴサウルス類に比べて低く丸みを帯びた形状の骨板",
+        difficulty: "advanced"
+    },
+    {
+        id: "xenoceratops",
+        name: "クセノケラトプス",
+        zoom: 3.8,
+        originX: "20%",
+        originY: "45%",
+        featureName: "襟飾り（フリル）の端から突き出る巨大なスパイク状の角",
+        difficulty: "advanced"
+    },
+    {
+        id: "yutyrannus",
+        name: "ユティラヌス",
+        zoom: 3.5,
+        originX: "45%",
+        originY: "48%",
+        featureName: "寒冷な気候から身を守るために発達した全身を覆う羽毛の痕跡",
+        difficulty: "advanced"
+    },
+    {
+        id: "zuniceratops",
+        name: "ズニケラトプス",
+        zoom: 3.8,
+        originX: "22%",
+        originY: "45%",
+        featureName: "角竜類の進化の鍵を握る、目の上（眉上）に発達した一対の角",
+        difficulty: "advanced"
+    },
+    {
+        id: "argentinosaurus",
+        name: "アルゼンチノサウルス",
+        zoom: 3.5,
+        originX: "28%",
+        originY: "55%",
+        featureName: "超巨大な質量を支えるために発達した太い柱のような前肢",
+        difficulty: "advanced"
     }
 ];
