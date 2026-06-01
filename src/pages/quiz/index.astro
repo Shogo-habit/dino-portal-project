@@ -382,11 +382,21 @@ import { EXAM_QUESTIONS } from '../../data/exam';
                 const selected = shuffled.slice(0, 10);
                 
                 quizState.questions = selected.map((q: any) => {
+                    const correctText = q.choices[q.correctIndex];
+                    const shuffledChoices = [...q.choices].sort(() => 0.5 - Math.random());
+                    const newCorrectIndex = shuffledChoices.indexOf(correctText);
+                    
+                    const updatedQ = {
+                        ...q,
+                        choices: shuffledChoices,
+                        correctIndex: newCorrectIndex
+                    };
+
                     return {
-                        questionObj: q,
+                        questionObj: updatedQ,
                         mode: 'exam',
-                        choices: q.choices,
-                        correctIndex: q.correctIndex
+                        choices: shuffledChoices,
+                        correctIndex: newCorrectIndex
                     };
                 });
             } else {
