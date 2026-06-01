@@ -280,14 +280,13 @@ import { EXAM_QUESTIONS } from '../../data/exam';
                             <strong>全10問の4択テスト</strong>を行い、<strong>正解率70%以上（7問以上正解）で合格</strong>となります。
                         `;
                         
-                        // Disable advanced & master
+                        // Hide advanced & master
                         diffButtons.forEach(btn => {
                             const diff = btn.getAttribute('data-difficulty');
                             if (diff === 'advanced' || diff === 'master') {
-                                btn.classList.add('locked');
-                                (btn as HTMLButtonElement).disabled = true;
-                                const subText = btn.querySelector('span');
-                                if (subText) subText.innerText = 'LOCKED';
+                                (btn as HTMLButtonElement).style.display = 'none';
+                            } else {
+                                (btn as HTMLButtonElement).style.display = 'flex';
                             }
                         });
                         
@@ -311,14 +310,21 @@ import { EXAM_QUESTIONS } from '../../data/exam';
                             全5問に回答し、あなたの正解率（同期率）を測定します。
                         `;
                         
-                        // Enable advanced (master remains locked)
+                        // Show all buttons and restore regular states
                         diffButtons.forEach(btn => {
+                            (btn as HTMLButtonElement).style.display = 'flex';
+                            
                             const diff = btn.getAttribute('data-difficulty');
                             if (diff === 'advanced') {
                                 btn.classList.remove('locked');
                                 (btn as HTMLButtonElement).disabled = false;
                                 const subText = btn.querySelector('span');
                                 if (subText) subText.innerText = 'ADVANCED';
+                            } else if (diff === 'master') {
+                                btn.classList.add('locked');
+                                (btn as HTMLButtonElement).disabled = true;
+                                const subText = btn.querySelector('span');
+                                if (subText) subText.innerText = 'LOCKED';
                             }
                         });
                     }
