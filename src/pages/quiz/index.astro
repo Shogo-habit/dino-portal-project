@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { DINOSAURS } from '../../data/dinosaurs';
 import { QUIZ_SPECIMENS } from '../../data/quiz';
+import { EXAM_QUESTIONS } from '../../data/exam';
 ---
 
 <Layout title="恐竜クイズ | Dino-Portal" activeTab="quiz" description="メジャー恐竜のシルエット・近接拡大・生態データから種を当てる、恐竜クイズコーナー。">
@@ -9,6 +10,7 @@ import { QUIZ_SPECIMENS } from '../../data/quiz';
     <div id="quiz-data-bridge" 
          data-dinosaurs={JSON.stringify(DINOSAURS)} 
          data-quiz-specimens={JSON.stringify(QUIZ_SPECIMENS)} 
+         data-exam-questions={JSON.stringify(EXAM_QUESTIONS)} 
          style="display: none;">
     </div>
 
@@ -25,8 +27,21 @@ import { QUIZ_SPECIMENS } from '../../data/quiz';
             <div class="hud-corner bottom-right"></div>
             
             <div class="panel-icon">☵</div>
-            <h3>恐竜クイズに挑戦</h3>
-            <p style="line-height: 1.8; color: var(--text-dim); font-size: 14px; max-width: 600px; margin: 0 auto 25px auto;">
+            <h3>恐竜クイズ ＆ 検定模擬試験</h3>
+            
+            <!-- モード選択タブ -->
+            <div class="mode-selector" style="display: flex; justify-content: center; gap: 15px; margin-bottom: 25px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 15px;">
+                <button class="mode-tab active" data-mode="aptitude" style="flex: 1; max-width: 250px; background: rgba(0, 242, 255, 0.03); border: 1px solid rgba(0, 242, 255, 0.2); padding: 12px; border-radius: 4px; color: var(--text-dim); cursor: pointer; transition: all 0.3s ease;">
+                    <div style="font-size: 14px; font-weight: bold; color: var(--primary-neon); transition: color 0.3s ease;">適性解析クイズ</div>
+                    <div style="font-size: 9px; font-family: var(--font-mono); text-transform: uppercase; margin-top: 3px; letter-spacing: 1px;">Aptitude Quiz (5 Qs)</div>
+                </button>
+                <button class="mode-tab" data-mode="exam" style="flex: 1; max-width: 250px; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--panel-border); padding: 12px; border-radius: 4px; color: var(--text-dim); cursor: pointer; transition: all 0.3s ease;">
+                    <div style="font-size: 14px; font-weight: bold; color: var(--text-main); transition: color 0.3s ease;">恐竜学検定 模擬試験</div>
+                    <div style="font-size: 9px; font-family: var(--font-mono); text-transform: uppercase; margin-top: 3px; letter-spacing: 1px;">Mock Exam (10 Qs)</div>
+                </button>
+            </div>
+
+            <p id="mode-description-text" style="line-height: 1.8; color: var(--text-dim); font-size: 14px; max-width: 600px; margin: 0 auto 25px auto;">
                 恐竜のシルエット、クローズアップ、または生態データから名前を当てるクイズです。<br>
                 全5問に回答し、あなたの正解率（同期率）を測定します。
             </p>
@@ -198,14 +213,19 @@ import { QUIZ_SPECIMENS } from '../../data/quiz';
         let quizState = {
             dinosaurs: [],
             quizSpecimens: [],
+            examQuestions: [],
             questions: [], // Array of generated questions
             currentStep: 0,
             score: 0,
-            answersRecorded: [], // { d: dino, correct: boolean }
-            selectedDifficulty: 'beginner' // デフォルト
+            answersRecorded: [], // Aptitude: { dino, correct }, Exam: { questionObj, correct, chosenIndex, correctIndex }
+            selectedDifficulty: 'beginner', // デフォルト
+            selectedMode: 'aptitude' // 'aptitude' | 'exam'
         };
 
-        function getHighScoreKey(difficulty: string) {
+        function getHighScoreKey(difficulty: string, mode: string) {
+            if (mode === 'exam') {
+                return `dino_portal_exam_highscore_${difficulty}`;
+            }
             return `${HIGH_SCORE_BASE_KEY}_${difficulty}`;
         }
 
@@ -216,6 +236,7 @@ import { QUIZ_SPECIMENS } from '../../data/quiz';
             // Load data
             quizState.dinosaurs = JSON.parse(bridge.getAttribute('data-dinosaurs') || '[]');
             quizState.quizSpecimens = JSON.parse(bridge.getAttribute('data-quiz-specimens') || '[]');
+            quizState.examQuestions = JSON.parse(bridge.getAttribute('data-exam-questions') || '[]');
 
             // Bind start button
             const startPanel = document.getElementById('quiz-start-panel');
@@ -231,8 +252,82 @@ import { QUIZ_SPECIMENS } from '../../data/quiz';
                 retryBtn.addEventListener('click', startTest);
             }
 
-            // Bind difficulty selector buttons
+            // Bind mode selector tabs
+            const modeTabs = document.querySelectorAll('.mode-tab');
+            const modeDesc = document.getElementById('mode-description-text');
             const diffButtons = document.querySelectorAll('.diff-btn');
+            
+            modeTabs.forEach(tab => {
+                tab.addEventListener('click', (e) => {
+                    const target = e.currentTarget as HTMLButtonElement;
+                    modeTabs.forEach(t => {
+                        t.classList.remove('active');
+                        const titleEl = t.querySelector('div');
+                        if (titleEl) titleEl.style.color = 'var(--text-main)';
+                    });
+                    
+                    target.classList.add('active');
+                    const activeTitle = target.querySelector('div');
+                    if (activeTitle) activeTitle.style.color = 'var(--primary-neon)';
+                    
+                    const mode = target.getAttribute('data-mode') || 'aptitude';
+                    quizState.selectedMode = mode;
+                    
+                    // Update mode description and difficulty buttons availability
+                    if (mode === 'exam') {
+                        modeDesc.innerHTML = `
+                            恐竜学検定の公式シミュレーターです。分類・生態・歴史・地質の4分野から出題されます。<br>
+                            <strong>全10問の4択テスト</strong>を行い、<strong>正解率70%以上（7問以上正解）で合格</strong>となります。
+                        `;
+                        
+                        // Disable advanced & master
+                        diffButtons.forEach(btn => {
+                            const diff = btn.getAttribute('data-difficulty');
+                            if (diff === 'advanced' || diff === 'master') {
+                                btn.classList.add('locked');
+                                (btn as HTMLButtonElement).disabled = true;
+                                const subText = btn.querySelector('span');
+                                if (subText) subText.innerText = 'LOCKED';
+                            }
+                        });
+                        
+                        // If selected difficulty is advanced/master, fallback to intermediate
+                        if (quizState.selectedDifficulty === 'advanced' || quizState.selectedDifficulty === 'master') {
+                            quizState.selectedDifficulty = 'intermediate';
+                            diffButtons.forEach(btn => {
+                                const diff = btn.getAttribute('data-difficulty');
+                                if (diff === 'intermediate') {
+                                    btn.classList.add('active');
+                                } else {
+                                    btn.classList.remove('active');
+                                }
+                            });
+                            const diffLabel = document.getElementById('difficulty-label-display');
+                            if (diffLabel) diffLabel.innerText = '中級';
+                        }
+                    } else {
+                        modeDesc.innerHTML = `
+                            恐竜のシルエット、クローズアップ、または生態データから名前を当てるクイズです。<br>
+                            全5問に回答し、あなたの正解率（同期率）を測定します。
+                        `;
+                        
+                        // Enable advanced (master remains locked)
+                        diffButtons.forEach(btn => {
+                            const diff = btn.getAttribute('data-difficulty');
+                            if (diff === 'advanced') {
+                                btn.classList.remove('locked');
+                                (btn as HTMLButtonElement).disabled = false;
+                                const subText = btn.querySelector('span');
+                                if (subText) subText.innerText = 'ADVANCED';
+                            }
+                        });
+                    }
+                    
+                    displayHighScore();
+                });
+            });
+
+            // Bind difficulty selector buttons
             diffButtons.forEach(btn => {
                 btn.addEventListener('click', (e) => {
                     const target = e.currentTarget as HTMLButtonElement;
@@ -260,49 +355,70 @@ import { QUIZ_SPECIMENS } from '../../data/quiz';
         function displayHighScore() {
             const hsSpan = document.getElementById('start-high-score');
             if (hsSpan) {
-                const key = getHighScoreKey(quizState.selectedDifficulty);
+                const key = getHighScoreKey(quizState.selectedDifficulty, quizState.selectedMode);
                 const hs = localStorage.getItem(key) || '0';
                 hsSpan.innerText = `${hs}%`;
             }
         }
 
-        // Generate random test of 5 questions
+        // Generate random test of 5 or 10 questions
         function startTest() {
             document.getElementById('quiz-start-panel')!.style.display = 'none';
             document.getElementById('quiz-result-panel')!.style.display = 'none';
             
-            // Filter specimens by selected difficulty
-            const filteredSpecimens = quizState.quizSpecimens.filter(
-                (specimen: any) => specimen.difficulty === quizState.selectedDifficulty
-            );
-
-            // Fallback to all if empty
-            const specimensToUse = filteredSpecimens.length > 0 ? filteredSpecimens : quizState.quizSpecimens;
-
-            // Randomly select 5 specimens
-            const shuffledSpecimens = [...specimensToUse].sort(() => 0.5 - Math.random());
-            const selectedSpecimens = shuffledSpecimens.slice(0, 5);
-
-            // Modes: 0 = Silhouette, 1 = Close-Up, 2 = Telemetry (Text)
-            quizState.questions = selectedSpecimens.map((specimen: any, index) => {
-                const d = quizState.dinosaurs.find((item: any) => item.id === specimen.id);
-                const mode = Math.floor(Math.random() * 3); // 0, 1, 2
+            if (quizState.selectedMode === 'exam') {
+                // Exam Mode: 10 random questions of chosen difficulty
+                const filteredQuestions = quizState.examQuestions.filter(
+                    (q: any) => q.level === quizState.selectedDifficulty
+                );
                 
-                // Generate 4 unique choices from specimens of the SAME difficulty
-                const incorrects = quizState.dinosaurs
-                    .filter((item: any) => item.id !== d.id && specimensToUse.some((qs: any) => qs.id === item.id))
-                    .sort(() => 0.5 - Math.random())
-                    .slice(0, 3);
+                const questionsToUse = filteredQuestions.length > 0 ? filteredQuestions : quizState.examQuestions;
+                const shuffled = [...questionsToUse].sort(() => 0.5 - Math.random());
+                const selected = shuffled.slice(0, 10);
                 
-                const choices = [d, ...incorrects].sort(() => 0.5 - Math.random());
+                quizState.questions = selected.map((q: any) => {
+                    return {
+                        questionObj: q,
+                        mode: 'exam',
+                        choices: q.choices,
+                        correctIndex: q.correctIndex
+                    };
+                });
+            } else {
+                // Aptitude Mode: 5 random specimens of chosen difficulty
+                // Filter specimens by selected difficulty
+                const filteredSpecimens = quizState.quizSpecimens.filter(
+                    (specimen: any) => specimen.difficulty === quizState.selectedDifficulty
+                );
 
-                return {
-                    specimen: specimen,
-                    dino: d,
-                    mode: mode,
-                    choices: choices
-                };
-            });
+                // Fallback to all if empty
+                const specimensToUse = filteredSpecimens.length > 0 ? filteredSpecimens : quizState.quizSpecimens;
+
+                // Randomly select 5 specimens
+                const shuffledSpecimens = [...specimensToUse].sort(() => 0.5 - Math.random());
+                const selectedSpecimens = shuffledSpecimens.slice(0, 5);
+
+                // Modes: 0 = Silhouette, 1 = Close-Up, 2 = Telemetry (Text)
+                quizState.questions = selectedSpecimens.map((specimen: any) => {
+                    const d = quizState.dinosaurs.find((item: any) => item.id === specimen.id);
+                    const mode = Math.floor(Math.random() * 3); // 0, 1, 2
+                    
+                    // Generate 4 unique choices from specimens of the SAME difficulty
+                    const incorrects = quizState.dinosaurs
+                        .filter((item: any) => item.id !== d.id && specimensToUse.some((qs: any) => qs.id === item.id))
+                        .sort(() => 0.5 - Math.random())
+                        .slice(0, 3);
+                    
+                    const choices = [d, ...incorrects].sort(() => 0.5 - Math.random());
+
+                    return {
+                        specimen: specimen,
+                        dino: d,
+                        mode: mode,
+                        choices: choices
+                    };
+                });
+            }
 
             quizState.currentStep = 0;
             quizState.score = 0;
@@ -314,13 +430,17 @@ import { QUIZ_SPECIMENS } from '../../data/quiz';
 
         function loadQuestion() {
             const currentQ = quizState.questions[quizState.currentStep];
+            const maxSteps = quizState.selectedMode === 'exam' ? 10 : 5;
             
             // Update UI indices
             const stepIndicator = document.querySelector('.quiz-step-indicator');
             const scoreIndicator = document.querySelector('.quiz-score-indicator');
             
             if (stepIndicator) {
-                stepIndicator.innerText = `[ QUESTION: 0${quizState.currentStep + 1} / 05 ]`;
+                const stepNum = quizState.currentStep + 1;
+                const formattedStep = stepNum < 10 ? `0${stepNum}` : `${stepNum}`;
+                const formattedMax = maxSteps < 10 ? `0${maxSteps}` : `${maxSteps}`;
+                stepIndicator.innerText = `[ QUESTION: ${formattedStep} / ${formattedMax} ]`;
             }
             if (scoreIndicator) {
                 scoreIndicator.innerText = `正解数: ${quizState.score}`;
@@ -343,42 +463,89 @@ import { QUIZ_SPECIMENS } from '../../data/quiz';
             const choicesBox = document.getElementById('quiz-choices-box');
             choicesBox!.innerHTML = '';
 
-            if (currentQ.mode === 0) {
-                // Silhouette Mode
-                promptText!.innerText = `[クイズ形式: シルエット] この影絵が示す恐竜の名前を選択してください。`;
-                silContainer!.style.display = 'flex';
+            if (quizState.selectedMode === 'exam') {
+                const q = currentQ.questionObj;
+                promptText!.innerText = `[模擬試験: ${q.category}分野] ${q.question}`;
                 
-                const silImg = document.getElementById('silhouette-image') as HTMLImageElement;
-                silImg.src = `/images/silhouette/${currentQ.dino.id}.webp`; // 事前生成した高品質な透過シルエットWebPを使用
-            }             else if (currentQ.mode === 1) {
-                // Close-Up Mode
-                promptText!.innerText = `[クイズ形式: クローズアップ] 拡大表示された特徴（${currentQ.specimen.featureName}）から名前を当ててください。`;
-                closeContainer!.style.display = 'block';
-                
-                const closeImg = document.getElementById('closeup-image') as HTMLImageElement;
-                closeImg.src = `/${currentQ.dino.image}`; // メインイラストWEBPを使用
-                
-                // Apply transform styling dynamically
-                closeImg.style.transform = `scale(${currentQ.specimen.zoom})`;
-                closeImg.style.transformOrigin = `${currentQ.specimen.originX} ${currentQ.specimen.originY}`;
-            } 
-            else {
-                // Telemetry (Text) Mode
-                promptText!.innerText = `[クイズ形式: 生態解析] 一部が伏せられた以下の解析ログから恐竜を特定してください。`;
                 textContainer!.style.display = 'flex';
-                
                 const telemetryText = document.getElementById('telemetry-detail-text');
                 
-                // Hide species name and scientific name with placeholder
-                let rawDesc = currentQ.dino.description;
-                const regexName = new RegExp(currentQ.dino.name, 'g');
-                const maskedDesc = rawDesc.replace(regexName, ' ［ ？？？ ］ ');
-                
-                let traitsHtml = currentQ.dino.bioTraits.map((t: any) => {
-                    return `<br>&bull; 特性: ${t.trait} -> [${t.value}] - ${t.detail}`;
-                }).join('');
+                telemetryText!.innerHTML = `
+                    <div style="font-family: var(--font-mono); border-bottom: 1px dashed rgba(0, 242, 255, 0.2); padding-bottom: 8px; margin-bottom: 12px; display: flex; justify-content: space-between; font-size: 11px;">
+                        <span>SYS_STATUS: EXAM_MODE_ACTIVE</span>
+                        <span style="color: var(--secondary-neon);">LEVEL: ${q.level === 'beginner' ? '初級 (3級相当)' : '中級 (2級相当)'}</span>
+                    </div>
+                    <strong>&bull; 出現分野:</strong> ${q.category}<br>
+                    <strong>&bull; 設問番号:</strong> Q_${quizState.currentStep + 1}<br>
+                    <div style="margin-top: 15px; border-left: 2px solid var(--primary-neon); padding-left: 12px; color: var(--text-main); font-size: 13px; line-height: 1.6; font-family: sans-serif;">
+                        ${q.question}
+                    </div>
+                    <div style="margin-top: 20px; font-size: 10px; color: var(--text-dim);">
+                        * 右側の選択肢から最も適切なものを1つ選択してください。<br>
+                        * 制限時間はありません。慎重に解析を進めてください。
+                    </div>
+                `;
 
-                telemetryHtml: {
+                // Populate choices
+                currentQ.choices.forEach((choiceText: string, index: number) => {
+                    const btn = document.createElement('button');
+                    btn.className = 'nav-link';
+                    btn.style.width = '100%';
+                    btn.style.textAlign = 'left';
+                    btn.style.padding = '12px 20px';
+                    btn.style.fontSize = '14px';
+                    btn.style.background = 'var(--panel-bg)';
+                    btn.style.border = '1px solid var(--panel-border)';
+                    btn.style.display = 'flex';
+                    btn.style.justifyContent = 'space-between';
+                    btn.style.alignItems = 'center';
+                    btn.style.cursor = 'pointer';
+                    
+                    btn.innerHTML = `
+                        <span style="font-family: sans-serif;">[ 0${index + 1} ] &nbsp; ${choiceText}</span>
+                        <span class="choice-indicator" style="font-family: var(--font-mono); color: var(--primary-neon);">>> ANALYZE</span>
+                    `;
+                    
+                    btn.addEventListener('click', () => submitAnswer(index, btn));
+                    choicesBox!.appendChild(btn);
+                });
+
+            } else {
+                // Aptitude Mode
+                if (currentQ.mode === 0) {
+                    // Silhouette Mode
+                    promptText!.innerText = `[クイズ形式: シルエット] この影絵が示す恐竜の名前を選択してください。`;
+                    silContainer!.style.display = 'flex';
+                    
+                    const silImg = document.getElementById('silhouette-image') as HTMLImageElement;
+                    silImg.src = `/images/silhouette/${currentQ.dino.id}.webp`;
+                } else if (currentQ.mode === 1) {
+                    // Close-Up Mode
+                    promptText!.innerText = `[クイズ形式: クローズアップ] 拡大表示された特徴（${currentQ.specimen.featureName}）から名前を当ててください。`;
+                    closeContainer!.style.display = 'block';
+                    
+                    const closeImg = document.getElementById('closeup-image') as HTMLImageElement;
+                    closeImg.src = `/${currentQ.dino.image}`;
+                    
+                    // Apply transform styling dynamically
+                    closeImg.style.transform = `scale(${currentQ.specimen.zoom})`;
+                    closeImg.style.transformOrigin = `${currentQ.specimen.originX} ${currentQ.specimen.originY}`;
+                } else {
+                    // Telemetry (Text) Mode
+                    promptText!.innerText = `[クイズ形式: 生態解析] 一部が伏せられた以下の解析ログから恐竜を特定してください。`;
+                    textContainer!.style.display = 'flex';
+                    
+                    const telemetryText = document.getElementById('telemetry-detail-text');
+                    
+                    // Hide species name and scientific name with placeholder
+                    let rawDesc = currentQ.dino.description;
+                    const regexName = new RegExp(currentQ.dino.name, 'g');
+                    const maskedDesc = rawDesc.replace(regexName, ' ［ ？？？ ］ ');
+                    
+                    let traitsHtml = currentQ.dino.bioTraits.map((t: any) => {
+                        return `<br>&bull; 特性: ${t.trait} -> [${t.value}] - ${t.detail}`;
+                    }).join('');
+
                     telemetryText!.innerHTML = `
                         <strong>&bull; 出現地域:</strong> ${currentQ.dino.region}<br>
                         <strong>&bull; 生息年代:</strong> ${currentQ.dino.era}<br>
@@ -389,45 +556,63 @@ import { QUIZ_SPECIMENS } from '../../data/quiz';
                         <strong>&bull; パラメータ特性:</strong> ${traitsHtml}
                     `;
                 }
-            }
 
-            // Populate choices
-            currentQ.choices.forEach((choice: any, index: number) => {
-                const btn = document.createElement('button');
-                btn.className = 'nav-link';
-                btn.style.width = '100%';
-                btn.style.textAlign = 'left';
-                btn.style.padding = '12px 20px';
-                btn.style.fontSize = '14px';
-                btn.style.background = 'var(--panel-bg)';
-                btn.style.border = '1px solid var(--panel-border)';
-                btn.style.display = 'flex';
-                btn.style.justifyContent = 'space-between';
-                btn.style.alignItems = 'center';
-                
-                btn.innerHTML = `
-                    <span>[ 0${index + 1} ] &nbsp; ${choice.name}</span>
-                    <span class="choice-indicator" style="font-family: var(--font-mono); color: var(--primary-neon);">>> ANALYZE</span>
-                `;
-                
-                btn.addEventListener('click', () => submitAnswer(choice, btn));
-                choicesBox!.appendChild(btn);
-            });
+                // Populate choices (Dinosaur objects)
+                currentQ.choices.forEach((choice: any, index: number) => {
+                    const btn = document.createElement('button');
+                    btn.className = 'nav-link';
+                    btn.style.width = '100%';
+                    btn.style.textAlign = 'left';
+                    btn.style.padding = '12px 20px';
+                    btn.style.fontSize = '14px';
+                    btn.style.background = 'var(--panel-bg)';
+                    btn.style.border = '1px solid var(--panel-border)';
+                    btn.style.display = 'flex';
+                    btn.style.justifyContent = 'space-between';
+                    btn.style.alignItems = 'center';
+                    btn.style.cursor = 'pointer';
+                    
+                    btn.innerHTML = `
+                        <span>[ 0${index + 1} ] &nbsp; ${choice.name}</span>
+                        <span class="choice-indicator" style="font-family: var(--font-mono); color: var(--primary-neon);">>> ANALYZE</span>
+                    `;
+                    
+                    btn.addEventListener('click', () => submitAnswer(choice, btn));
+                    choicesBox!.appendChild(btn);
+                });
+            }
 
             // Display main panel
             document.getElementById('quiz-main-panel')!.style.display = 'block';
         }
 
-        function submitAnswer(chosenDino: any, clickedBtn: HTMLElement) {
+        function submitAnswer(chosenVal: any, clickedBtn: HTMLElement) {
             const currentQ = quizState.questions[quizState.currentStep];
-            const correctDino = currentQ.dino;
-            const isCorrect = chosenDino.id === correctDino.id;
+            let isCorrect = false;
 
-            // Record answer
-            quizState.answersRecorded.push({
-                dino: correctDino,
-                correct: isCorrect
-            });
+            if (quizState.selectedMode === 'exam') {
+                const chosenIndex = chosenVal as number;
+                const correctIndex = currentQ.correctIndex;
+                isCorrect = chosenIndex === correctIndex;
+
+                // Record answer
+                quizState.answersRecorded.push({
+                    questionObj: currentQ.questionObj,
+                    correct: isCorrect,
+                    chosenIndex: chosenIndex,
+                    correctIndex: correctIndex
+                });
+            } else {
+                const chosenDino = chosenVal;
+                const correctDino = currentQ.dino;
+                isCorrect = chosenDino.id === correctDino.id;
+
+                // Record answer
+                quizState.answersRecorded.push({
+                    dino: correctDino,
+                    correct: isCorrect
+                });
+            }
 
             if (isCorrect) {
                 quizState.score++;
@@ -437,27 +622,46 @@ import { QUIZ_SPECIMENS } from '../../data/quiz';
             const choicesBox = document.getElementById('quiz-choices-box');
             const buttons = Array.from(choicesBox!.getElementsByTagName('button'));
             
-            buttons.forEach((btn: any) => {
+            buttons.forEach((btn: any, index: number) => {
                 btn.disabled = true;
-                const text = btn.innerText;
                 
-                // Extract original dino object representing this button
-                const btnDino = currentQ.choices.find((c: any) => text.includes(c.name));
-                
-                if (btnDino.id === correctDino.id) {
-                    btn.style.borderColor = 'var(--secondary-neon)'; // Green
-                    btn.style.background = 'rgba(0, 255, 102, 0.05)';
-                    btn.querySelector('.choice-indicator').innerText = '正解 (CORRECT)';
-                    btn.querySelector('.choice-indicator').style.color = 'var(--secondary-neon)';
-                } else if (btnDino.id === chosenDino.id && !isCorrect) {
-                    btn.style.borderColor = 'var(--alert-neon)'; // Red/Pink
-                    btn.style.background = 'rgba(255, 0, 90, 0.05)';
-                    btn.querySelector('.choice-indicator').innerText = '不正解 (WRONG)';
-                    btn.querySelector('.choice-indicator').style.color = 'var(--alert-neon)';
+                if (quizState.selectedMode === 'exam') {
+                    const correctIndex = currentQ.correctIndex;
+                    if (index === correctIndex) {
+                        btn.style.borderColor = 'var(--secondary-neon)'; // Green
+                        btn.style.background = 'rgba(0, 255, 102, 0.05)';
+                        btn.querySelector('.choice-indicator').innerText = '正解 (CORRECT)';
+                        btn.querySelector('.choice-indicator').style.color = 'var(--secondary-neon)';
+                    } else if (index === chosenVal && !isCorrect) {
+                        btn.style.borderColor = 'var(--alert-neon)'; // Red/Pink
+                        btn.style.background = 'rgba(255, 0, 90, 0.05)';
+                        btn.querySelector('.choice-indicator').innerText = '不正解 (WRONG)';
+                        btn.querySelector('.choice-indicator').style.color = 'var(--alert-neon)';
+                    } else {
+                        btn.style.opacity = '0.5';
+                        btn.querySelector('.choice-indicator').innerText = '----';
+                        btn.querySelector('.choice-indicator').style.color = 'var(--text-dim)';
+                    }
                 } else {
-                    btn.style.opacity = '0.5';
-                    btn.querySelector('.choice-indicator').innerText = '----';
-                    btn.querySelector('.choice-indicator').style.color = 'var(--text-dim)';
+                    const correctDino = currentQ.dino;
+                    const text = btn.innerText;
+                    const btnDino = currentQ.choices.find((c: any) => text.includes(c.name));
+                    
+                    if (btnDino.id === correctDino.id) {
+                        btn.style.borderColor = 'var(--secondary-neon)'; // Green
+                        btn.style.background = 'rgba(0, 255, 102, 0.05)';
+                        btn.querySelector('.choice-indicator').innerText = '正解 (CORRECT)';
+                        btn.querySelector('.choice-indicator').style.color = 'var(--secondary-neon)';
+                    } else if (btnDino.id === chosenVal.id && !isCorrect) {
+                        btn.style.borderColor = 'var(--alert-neon)'; // Red/Pink
+                        btn.style.background = 'rgba(255, 0, 90, 0.05)';
+                        btn.querySelector('.choice-indicator').innerText = '不正解 (WRONG)';
+                        btn.querySelector('.choice-indicator').style.color = 'var(--alert-neon)';
+                    } else {
+                        btn.style.opacity = '0.5';
+                        btn.querySelector('.choice-indicator').innerText = '----';
+                        btn.querySelector('.choice-indicator').style.color = 'var(--text-dim)';
+                    }
                 }
             });
 
@@ -475,22 +679,33 @@ import { QUIZ_SPECIMENS } from '../../data/quiz';
                 correctnessInd!.style.color = "var(--alert-neon)";
             }
 
-            expDetail!.innerHTML = `
-                <strong>正解: ${correctDino.name}</strong> (${correctDino.scientificName})<br>
-                ${correctDino.description}<br>
-                <span style="color: var(--secondary-neon); font-size: 11px; font-family: var(--font-mono); display: block; margin-top: 5px;">
-                    [解説]: ${currentQ.specimen.featureName}
-                </span>
-            `;
+            if (quizState.selectedMode === 'exam') {
+                const q = currentQ.questionObj;
+                expDetail!.innerHTML = `
+                    <strong>正解: [0${q.correctIndex + 1}] ${q.choices[q.correctIndex]}</strong><br>
+                    <p style="margin-top: 8px; color: var(--text-main); font-size: 13px; font-family: sans-serif;">
+                        ${q.explanation}
+                    </p>
+                `;
+            } else {
+                const correctDino = currentQ.dino;
+                expDetail!.innerHTML = `
+                    <strong>正解: ${correctDino.name}</strong> (${correctDino.scientificName})<br>
+                    ${correctDino.description}<br>
+                    <span style="color: var(--secondary-neon); font-size: 11px; font-family: var(--font-mono); display: block; margin-top: 5px;">
+                        [解説]: ${currentQ.specimen.featureName}
+                    </span>
+                `;
+            }
 
-            if (quizState.currentStep < 4) {
+            const maxSteps = quizState.selectedMode === 'exam' ? 10 : 5;
+            if (quizState.currentStep < maxSteps - 1) {
                 nextBtn!.innerText = "次の問題へ >";
             } else {
-                nextBtn!.innerText = "クイズ結果へ >";
+                nextBtn!.innerText = "テスト結果へ >";
             }
 
             // Bind next question action
-            // Remove previous event listener to avoid stacking
             const newNextBtn = nextBtn!.cloneNode(true) as HTMLButtonElement;
             nextBtn!.parentNode!.replaceChild(newNextBtn, nextBtn!);
             
@@ -501,14 +716,13 @@ import { QUIZ_SPECIMENS } from '../../data/quiz';
 
         function proceedToNext() {
             quizState.currentStep++;
+            const maxSteps = quizState.selectedMode === 'exam' ? 10 : 5;
             
-            if (quizState.currentStep < 5) {
-                // Show scanning animation
+            if (quizState.currentStep < maxSteps) {
                 showScanningScreen(() => {
                     loadQuestion();
                 });
             } else {
-                // Show scanning animation then show result
                 showScanningScreen(() => {
                     showResults();
                 });
@@ -540,10 +754,11 @@ import { QUIZ_SPECIMENS } from '../../data/quiz';
         }
 
         function showResults() {
-            const finalScorePercent = (quizState.score / 5) * 100;
+            const maxSteps = quizState.selectedMode === 'exam' ? 10 : 5;
+            const finalScorePercent = Math.round((quizState.score / maxSteps) * 100);
             
             // Record High Score in localStorage per difficulty
-            const hsKey = getHighScoreKey(quizState.selectedDifficulty);
+            const hsKey = getHighScoreKey(quizState.selectedDifficulty, quizState.selectedMode);
             const previousHighScore = parseInt(localStorage.getItem(hsKey) || '0');
             let isNewHighScore = false;
             
@@ -558,7 +773,6 @@ import { QUIZ_SPECIMENS } from '../../data/quiz';
             const scoreText = document.getElementById('result-score-percent');
             
             if (meterCircle) {
-                // Radius is 70. Circumference is 2 * PI * r = 439.8 (approx 440)
                 const circumference = 440;
                 const offset = circumference - (circumference * finalScorePercent) / 100;
                 meterCircle.style.strokeDashoffset = offset.toString();
@@ -575,56 +789,155 @@ import { QUIZ_SPECIMENS } from '../../data/quiz';
             const rankBadge = document.getElementById('result-rank-badge');
             const rankDesc = document.getElementById('result-rank-desc');
 
-            if (finalScorePercent === 100) {
-                rankBadge!.innerText = "Sランク: 恐竜マスター (全問正解！)";
-                rankBadge!.style.color = "var(--secondary-neon)";
-                rankDesc!.innerText = "素晴らしい知識量です！全問正解おめでとうございます。これであなたも立派な恐竜マスターです。";
-            } 
-            else if (finalScorePercent === 80) {
-                rankBadge!.innerText = "Aランク: 恐竜博士級 (優秀！)";
-                rankBadge!.style.color = "var(--primary-neon)";
-                rankDesc!.innerText = "非常に優秀な成績です！あと一歩で満点でした。図鑑やトピックスを読み直して完璧を目指しましょう。";
-            }
-            else if (finalScorePercent === 60) {
-                rankBadge!.innerText = "Bランク: 恐竜ファン級 (普通)";
-                rankBadge!.style.color = "var(--text-main)";
-                rankDesc!.innerText = "恐竜の知識をしっかり持っていますね。さらにスキャンや図鑑を学習すれば、さらに高得点が狙えます！";
-            }
-            else {
-                rankBadge!.innerText = "Cランク: 恐竜初心者級 (もっと学ぼう)";
-                rankBadge!.style.color = "var(--alert-neon)";
-                rankDesc!.innerText = "少し難しかったかもしれません。図鑑アーカイブの恐竜データや、サイズ比較などを確認して再学習してみましょう！";
+            const isExam = quizState.selectedMode === 'exam';
+            const isPass = finalScorePercent >= 70;
+
+            if (isExam) {
+                const resultTitle = document.querySelector('.result-title');
+                if (resultTitle) {
+                    resultTitle.innerHTML = isPass 
+                        ? `<span style="color: var(--secondary-neon); font-weight: bold; border: 1px solid var(--secondary-neon); padding: 2px 8px; border-radius: 3px;">★ PASS (合格) ★</span>`
+                        : `<span style="color: var(--alert-neon); font-weight: bold; border: 1px solid var(--alert-neon); padding: 2px 8px; border-radius: 3px;">▲ FAIL (不合格) ▲</span>`;
+                }
+
+                if (isPass) {
+                    rankBadge!.innerText = `【合格】恐竜学検定 ${quizState.selectedDifficulty === 'beginner' ? '初級' : '中級'} 模擬試験`;
+                    rankBadge!.style.color = "var(--secondary-neon)";
+                    rankDesc!.innerHTML = `
+                        <div class="hud-panel certificate-box" style="border: 2px solid var(--secondary-neon); background: rgba(0, 255, 102, 0.03); padding: 20px; margin-top: 15px; border-radius: 4px; text-align: center; position: relative; animation: glitch 0.5s ease-in-out;">
+                            <div style="font-family: var(--font-mono); font-size: 10px; color: var(--secondary-neon); margin-bottom: 10px; text-transform: uppercase;">// CERTIFICATE OF EXAM PASSAGE //</div>
+                            <h4 style="font-size: 20px; color: #fff; margin-bottom: 12px; font-family: sans-serif; letter-spacing: 2px;">合格証</h4>
+                            <p style="font-size: 13px; color: var(--text-main); margin-bottom: 15px;">
+                                あなたは恐竜学検定（模擬試験）において、基準（70%以上）を超える優秀な成績を収め、見事合格したことをここに証します。
+                            </p>
+                            <div style="font-family: var(--font-mono); font-size: 11px; color: var(--secondary-neon);">
+                                正解率: ${finalScorePercent}% (10問中 ${quizState.score}問正解)<br>
+                                認定レベル: ${quizState.selectedDifficulty === 'beginner' ? '初級 (3級相当)' : '中級 (2級相当)'}
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    rankBadge!.innerText = `【不合格】恐竜学検定 ${quizState.selectedDifficulty === 'beginner' ? '初級' : '中級'} 模擬試験`;
+                    rankBadge!.style.color = "var(--alert-neon)";
+                    rankDesc!.innerHTML = `
+                        <div class="hud-panel fail-box" style="border: 1px dashed var(--alert-neon); background: rgba(255, 0, 90, 0.02); padding: 20px; margin-top: 15px; border-radius: 4px; text-align: center;">
+                            <div style="font-family: var(--font-mono); font-size: 10px; color: var(--alert-neon); margin-bottom: 10px; text-transform: uppercase;">// EXAM RESULT: FAILED //</div>
+                            <h4 style="font-size: 18px; color: #fff; margin-bottom: 12px; font-family: sans-serif;">不合格 (得点不足)</h4>
+                            <p style="font-size: 13px; color: var(--text-dim); margin-bottom: 15px;">
+                                合格ラインである正解率70%（10問中7問正解）に届きませんでした。復習レビューを確認し、再受験してリベンジしましょう。
+                            </p>
+                            <div style="font-family: var(--font-mono); font-size: 11px; color: var(--alert-neon);">
+                                正解率: ${finalScorePercent}% (10問中 ${quizState.score}問正解)<br>
+                                目標: 70%以上
+                            </div>
+                        </div>
+                    `;
+                }
+            } else {
+                const resultTitle = document.querySelector('.result-title');
+                if (resultTitle) resultTitle.innerHTML = '// FINISHED //';
+
+                if (finalScorePercent === 100) {
+                    rankBadge!.innerText = "Sランク: 恐竜マスター (全問正解！)";
+                    rankBadge!.style.color = "var(--secondary-neon)";
+                    rankDesc!.innerText = "素晴らしい知識量です！全問正解おめでとうございます。これであなたも立派な恐竜マスターです。";
+                } 
+                else if (finalScorePercent === 80) {
+                    rankBadge!.innerText = "Aランク: 恐竜博士級 (優秀！)";
+                    rankBadge!.style.color = "var(--primary-neon)";
+                    rankDesc!.innerText = "非常に優秀な成績です！あと一歩で満点でした。図鑑やトピックスを読み直して完璧を目指しましょう。";
+                }
+                else if (finalScorePercent === 60) {
+                    rankBadge!.innerText = "Bランク: 恐竜ファン級 (普通)";
+                    rankBadge!.style.color = "var(--text-main)";
+                    rankDesc!.innerText = "恐竜の知識をしっかり持っていますね。さらにスキャンや図鑑を学習すれば、さらに高得点が狙えます！";
+                }
+                else {
+                    rankBadge!.innerText = "Cランク: 恐竜初心者級 (もっと学ぼう)";
+                    rankBadge!.style.color = "var(--alert-neon)";
+                    rankDesc!.innerText = "少し難しかったかもしれません。図鑑アーカイブの恐竜 dataや、サイズ比較などを確認して再学習してみましょう！";
+                }
             }
 
-            // Render review grid
+            // Render review grid/list
             const reviewBox = document.getElementById('result-review-box');
             reviewBox!.innerHTML = '';
 
-            quizState.answersRecorded.forEach(record => {
-                const card = document.createElement('a');
-                card.href = `/dictionary/${record.dino.id}`;
-                card.style.textDecoration = 'none';
-                card.style.color = 'inherit';
-                
-                const borderColor = record.correct ? 'var(--secondary-neon)' : 'var(--alert-neon)';
-                const badgeText = record.correct ? '正解' : '不正解';
-                const badgeColor = record.correct ? 'var(--secondary-neon)' : 'var(--alert-neon)';
+            const reviewSectionTitle = document.querySelector('.review-section h4');
 
-                card.innerHTML = `
-                    <div class="related-card hud-panel" style="cursor: pointer; height: 100%; border-color: ${borderColor};">
-                        <div class="related-img-wrap" style="width: 100%; height: auto; aspect-ratio: 16 / 9; overflow: hidden; position: relative;">
-                            <img src="/${record.dino.image}" alt="${record.dino.name}" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
-                            <span style="position: absolute; top: 5px; right: 5px; font-family: var(--font-mono); font-size: 8px; background: rgba(0,0,0,0.8); color: ${badgeColor}; border: 1px solid ${badgeColor}; padding: 1px 4px; border-radius: 2px;">
-                                ${badgeText}
-                            </span>
-                        </div>
-                        <h4 class="related-name" style="font-size: 12px; margin: 8px 0 4px 0; color: var(--text-main);">${record.dino.name}</h4>
-                        <div class="related-meta" style="font-size: 9px; color: var(--text-dim);">${record.dino.era}</div>
-                    </div>
-                `;
+            if (isExam) {
+                if (reviewSectionTitle) reviewSectionTitle.innerHTML = '// 試験の復習と解説レポート (DETAILS & EXPLANATION)';
                 
-                reviewBox!.appendChild(card);
-            });
+                reviewBox!.style.display = 'flex';
+                reviewBox!.style.flexDirection = 'column';
+                reviewBox!.style.gap = '15px';
+
+                quizState.answersRecorded.forEach((record: any, index: number) => {
+                    const q = record.questionObj;
+                    const item = document.createElement('div');
+                    item.className = 'hud-panel';
+                    item.style.padding = '20px';
+                    
+                    const borderColor = record.correct ? 'var(--secondary-neon)' : 'var(--alert-neon)';
+                    const badgeText = record.correct ? '正解 (CORRECT)' : '不正解 (WRONG)';
+                    const badgeColor = record.correct ? 'var(--secondary-neon)' : 'var(--alert-neon)';
+                    
+                    item.style.borderColor = borderColor;
+
+                    const userValText = q.choices[record.chosenIndex];
+                    const correctValText = q.choices[record.correctIndex];
+
+                    item.innerHTML = `
+                        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px dashed rgba(255,255,255,0.1); padding-bottom: 8px; margin-bottom: 12px; font-family: var(--font-mono); font-size: 11px;">
+                            <span>QUESTION 0${index + 1} [分野: ${q.category}]</span>
+                            <span style="color: ${badgeColor}; font-weight: bold; border: 1px solid ${badgeColor}; padding: 1px 6px; border-radius: 2px;">${badgeText}</span>
+                        </div>
+                        <h5 style="font-size: 14px; color: var(--text-main); margin-bottom: 12px; font-family: sans-serif;">${q.question}</h5>
+                        <div style="font-size: 12px; color: var(--text-dim); margin-bottom: 10px;">
+                            <strong>あなたの回答:</strong> <span style="color: ${record.correct ? 'var(--secondary-neon)' : 'var(--alert-neon)'};">${userValText}</span><br>
+                            ${!record.correct ? `<strong>正解の回答:</strong> <span style="color: var(--secondary-neon);">${correctValText}</span><br>` : ''}
+                        </div>
+                        <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.05); padding: 12px; border-radius: 4px; font-size: 12px; line-height: 1.6; color: var(--text-dim); font-family: sans-serif;">
+                            <strong style="color: var(--primary-neon); display: block; margin-bottom: 4px; font-family: var(--font-mono);">[解説 / ANALYSIS]:</strong>
+                            ${q.explanation}
+                        </div>
+                    `;
+                    
+                    reviewBox!.appendChild(item);
+                });
+            } else {
+                if (reviewSectionTitle) reviewSectionTitle.innerHTML = '// クイズで出題された恐竜の復習 (図鑑へリンク)';
+                
+                reviewBox!.style.display = 'grid';
+                reviewBox!.style.gridTemplateColumns = 'repeat(auto-fill, minmax(130px, 1fr))';
+                reviewBox!.style.gap = '15px';
+
+                quizState.answersRecorded.forEach(record => {
+                    const card = document.createElement('a');
+                    card.href = `/dictionary/${record.dino.id}`;
+                    card.style.textDecoration = 'none';
+                    card.style.color = 'inherit';
+                    
+                    const borderColor = record.correct ? 'var(--secondary-neon)' : 'var(--alert-neon)';
+                    const badgeText = record.correct ? '正解' : '不正解';
+                    const badgeColor = record.correct ? 'var(--secondary-neon)' : 'var(--alert-neon)';
+
+                    card.innerHTML = `
+                        <div class="related-card hud-panel" style="cursor: pointer; height: 100%; border-color: ${borderColor};">
+                            <div class="related-img-wrap" style="width: 100%; height: auto; aspect-ratio: 16 / 9; overflow: hidden; position: relative;">
+                                <img src="/${record.dino.image}" alt="${record.dino.name}" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                                <span style="position: absolute; top: 5px; right: 5px; font-family: var(--font-mono); font-size: 8px; background: rgba(0,0,0,0.8); color: ${badgeColor}; border: 1px solid ${badgeColor}; padding: 1px 4px; border-radius: 2px;">
+                                    ${badgeText}
+                                </span>
+                            </div>
+                            <h4 class="related-name" style="font-size: 12px; margin: 8px 0 4px 0; color: var(--text-main);">${record.dino.name}</h4>
+                            <div class="related-meta" style="font-size: 9px; color: var(--text-dim);">${record.dino.era}</div>
+                        </div>
+                    `;
+                    
+                    reviewBox!.appendChild(card);
+                });
+            }
 
             // Show result panel
             document.getElementById('quiz-result-panel')!.style.display = 'block';
@@ -717,5 +1030,22 @@ import { QUIZ_SPECIMENS } from '../../data/quiz';
         cursor: not-allowed;
         border-style: dashed;
         background: rgba(0, 0, 0, 0.2);
+    }
+    
+    /* モード選択タブ */
+    .mode-tab {
+        transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .mode-tab:hover {
+        border-color: var(--primary-neon) !important;
+        background: rgba(0, 242, 255, 0.08) !important;
+    }
+    .mode-tab.active {
+        border-color: var(--primary-neon) !important;
+        background: rgba(0, 242, 255, 0.15) !important;
+        box-shadow: 0 0 15px rgba(0, 242, 255, 0.15);
+    }
+    .mode-tab.active div {
+        color: var(--primary-neon) !important;
     }
 </style>
