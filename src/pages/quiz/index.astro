@@ -121,7 +121,7 @@ import { EXAM_QUESTIONS } from '../../data/exam';
 
                 <!-- Control/Answer Choices Right Area -->
                 <div class="quiz-answers-area" style="flex: 1; min-width: 280px; display: flex; flex-direction: column; justify-content: center;">
-                    <div class="answer-label" style="font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); margin-bottom: 10px;">// 選択肢</div>
+                    <div class="answer-label" style="font-family: var(--font-mono); font-size: 13px; color: var(--text-dim); margin-bottom: 10px;">選択肢</div>
                     
                     <div class="choices-container" id="quiz-choices-box" style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px;">
                         <!-- Choice Buttons will be injected here -->
@@ -473,7 +473,7 @@ import { EXAM_QUESTIONS } from '../../data/exam';
                 telemetryText!.innerHTML = `
                     <div style="font-family: var(--font-mono); border-bottom: 1px dashed rgba(0, 242, 255, 0.2); padding-bottom: 8px; margin-bottom: 12px; display: flex; justify-content: space-between; font-size: 11px;">
                         <span>SYS_STATUS: EXAM_MODE_ACTIVE</span>
-                        <span style="color: var(--secondary-neon);">LEVEL: ${q.level === 'beginner' ? '初級 (3級相当)' : '中級 (2級相当)'}</span>
+                        <span style="color: var(--secondary-neon);">LEVEL: ${q.level === 'beginner' ? '初級' : '中級'}</span>
                     </div>
                     <strong>&bull; 出現分野:</strong> ${q.category}<br>
                     <strong>&bull; 設問番号:</strong> Q_${quizState.currentStep + 1}<br>
@@ -503,7 +503,7 @@ import { EXAM_QUESTIONS } from '../../data/exam';
                     
                     btn.innerHTML = `
                         <span style="font-family: sans-serif;">[ 0${index + 1} ] &nbsp; ${choiceText}</span>
-                        <span class="choice-indicator" style="font-family: var(--font-mono); color: var(--primary-neon);">>> ANALYZE</span>
+                        <span class="choice-indicator" style="font-family: var(--font-mono); color: var(--primary-neon);"></span>
                     `;
                     
                     btn.addEventListener('click', () => submitAnswer(index, btn));
@@ -574,7 +574,7 @@ import { EXAM_QUESTIONS } from '../../data/exam';
                     
                     btn.innerHTML = `
                         <span>[ 0${index + 1} ] &nbsp; ${choice.name}</span>
-                        <span class="choice-indicator" style="font-family: var(--font-mono); color: var(--primary-neon);">>> ANALYZE</span>
+                        <span class="choice-indicator" style="font-family: var(--font-mono); color: var(--primary-neon);"></span>
                     `;
                     
                     btn.addEventListener('click', () => submitAnswer(choice, btn));
@@ -812,7 +812,7 @@ import { EXAM_QUESTIONS } from '../../data/exam';
                             </p>
                             <div style="font-family: var(--font-mono); font-size: 11px; color: var(--secondary-neon);">
                                 正解率: ${finalScorePercent}% (10問中 ${quizState.score}問正解)<br>
-                                認定レベル: ${quizState.selectedDifficulty === 'beginner' ? '初級 (3級相当)' : '中級 (2級相当)'}
+                                認定レベル: ${quizState.selectedDifficulty === 'beginner' ? '初級' : '中級'}
                             </div>
                         </div>
                     `;

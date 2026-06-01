@@ -9,7 +9,7 @@ export interface ExamQuestion {
 }
 
 export const EXAM_QUESTIONS: ExamQuestion[] = [
-    // --- 初級（検定3級相当） ---
+    // --- 初級 ---
     {
         id: "beg_q1",
         question: "恐竜の学問的な定義として、最も重要な特徴は次のうちどれ？",
@@ -82,7 +82,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     },
     {
         id: "beg_q6",
-        question: "日本国内（福井県など）で多くの恐竜化石が見見つかる、恐竜時代の最後の時代はどれ？",
+        question: "日本国内（福井県など）で多くの恐竜化石が見つかる、恐竜時代の最後の時代はどれ？",
         choices: [
             "三畳紀",
             "ジュラ紀",
@@ -221,7 +221,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
         category: "生態"
     },
 
-    // --- 中級（検定2級相当） ---
+    // --- 中級 ---
     {
         id: "int_q1",
         question: "恐竜は骨盤の形状の違いから2つの大きなグループに分類されますが、それは何と何？",
