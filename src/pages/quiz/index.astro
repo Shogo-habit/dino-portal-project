@@ -89,12 +89,8 @@ import { EXAM_QUESTIONS } from '../../data/exam';
             <div class="quiz-content-layout" style="display: flex; gap: 30px; flex-wrap: wrap;">
                 <!-- Visual/Question Left Area -->
                 <div class="quiz-question-visual-area" style="flex: 1.2; min-width: 300px;">
-                    <!-- Exam Metadata Header (Visible only in Exam Mode) -->
-                    <div id="exam-metadata-header" style="display: none; font-family: var(--font-mono); font-size: 11px; color: var(--secondary-neon); margin-bottom: 12px; border-bottom: 1px dashed rgba(0, 242, 255, 0.2); padding-bottom: 8px;">
-                    </div>
-
                     <!-- Question Prompt Title -->
-                    <div class="question-prompt" id="question-prompt-text" style="font-family: var(--font-mono); font-size: 14px; color: var(--text-main); margin-bottom: 15px; border-left: 3px solid var(--primary-neon); padding-left: 15px;">
+                    <div class="question-prompt" id="question-prompt-text" style="font-family: var(--font-mono); font-size: 16px; color: var(--text-main); margin-bottom: 15px; border-left: 3px solid var(--primary-neon); padding-left: 15px;">
                         クイズをロード中...
                     </div>
 
@@ -471,7 +467,6 @@ import { EXAM_QUESTIONS } from '../../data/exam';
             const leftArea = document.querySelector('.quiz-question-visual-area') as HTMLElement;
             const rightArea = document.querySelector('.quiz-answers-area') as HTMLElement;
             const contentLayout = document.querySelector('.quiz-content-layout') as HTMLElement;
-            const examMetaHeader = document.getElementById('exam-metadata-header');
 
             if (quizState.selectedMode === 'exam') {
                 const q = currentQ.questionObj;
@@ -485,16 +480,6 @@ import { EXAM_QUESTIONS } from '../../data/exam';
                 rightArea.style.width = '100%';
                 rightArea.style.marginTop = '20px';
                 contentLayout.style.flexDirection = 'column';
-
-                // メタデータヘッダー表示
-                examMetaHeader!.style.display = 'block';
-                examMetaHeader!.innerHTML = `
-                    <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-                        <span>[ SYSTEM: EXAM_ACTIVE ]</span>
-                        <span>[ FIELD: ${q.category} ]</span>
-                        <span>[ TARGET: ${q.level === 'beginner' ? '初級' : '中級'} ]</span>
-                    </div>
-                `;
 
                 // Populate choices
                 currentQ.choices.forEach((choiceText: string, index: number) => {
@@ -530,8 +515,6 @@ import { EXAM_QUESTIONS } from '../../data/exam';
                 rightArea.style.width = '';
                 rightArea.style.marginTop = '0';
                 contentLayout.style.flexDirection = 'row';
-
-                examMetaHeader!.style.display = 'none';
 
                 if (currentQ.mode === 0) {
                     // Silhouette Mode
