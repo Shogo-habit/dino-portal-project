@@ -413,5 +413,140 @@ export const QUIZ_SPECIMENS: QuizSpecimen[] = [
         originY: "55%",
         featureName: "超巨大な質量を支えるために発達した太い柱のような前肢",
         difficulty: "advanced"
+    },
+    {
+        id: "sasayamagnomus",
+        name: "ササヤマグノームス",
+        zoom: 3.8,
+        originX: "18%",
+        originY: "48%",
+        featureName: "角竜類の進化を示す小さな吻部と原始的なオウム状のクチバシ",
+        difficulty: "master"
+    },
+    {
+        id: "fukuivenator",
+        name: "フクイベナトル",
+        zoom: 3.5,
+        originX: "22%",
+        originY: "45%",
+        featureName: "鳥類に似た二股に分かれた鎖骨や、肉食・草食両方の特徴を持つ頭部",
+        difficulty: "master"
+    },
+    {
+        id: "borealopelta",
+        name: "ボレアロペルタ",
+        zoom: 3.8,
+        originX: "20%",
+        originY: "45%",
+        featureName: "ほぼ生前の立体的な形状を保ったまま化石化した、頭部から肩にかけての頑丈なスパイクと装甲",
+        difficulty: "master"
+    },
+    {
+        id: "dunkleosteus",
+        name: "ダンクレオステウス",
+        zoom: 3.5,
+        originX: "25%",
+        originY: "50%",
+        featureName: "歯の代わりにナイフのように機能した、強力な頭甲の一部である鋭い骨質の顎板",
+        difficulty: "master"
+    },
+    {
+        id: "sarcosuchus",
+        name: "サルコスクス",
+        zoom: 3.5,
+        originX: "15%",
+        originY: "52%",
+        featureName: "獲物を捕食するために肥大化した、スコップ状の吻部（口先）の先端部分",
+        difficulty: "master"
+    },
+    {
+        id: "tanystropheus",
+        name: "タニストロフェウス",
+        zoom: 3.2,
+        originX: "30%",
+        originY: "40%",
+        featureName: "全長の半分以上を占め、頸椎自体が一つずつ非常に長く伸びた極端な首",
+        difficulty: "master"
+    },
+    {
+        id: "leedsichthys",
+        name: "リードシクティス",
+        zoom: 3.2,
+        originX: "25%",
+        originY: "48%",
+        featureName: "海水中のプランクトンを効率よく濾過するための、頭部にある巨大なエラ（鰓）の構造",
+        difficulty: "master"
+    },
+    {
+        id: "nyctosaurus",
+        name: "ニクトサウルス",
+        zoom: 3.5,
+        originX: "30%",
+        originY: "25%",
+        featureName: "頭頂部から信じられないほどの長さで上空後方へと伸びた、Y字型の巨大なトサカ",
+        difficulty: "master"
+    },
+    {
+        id: "mamenchisaurus",
+        name: "マメンチサウルス",
+        zoom: 3.2,
+        originX: "20%",
+        originY: "30%",
+        featureName: "長い首の竜脚類の中でも群を抜いて長く、体長の約半分にも達する驚異的な首",
+        difficulty: "master"
+    },
+    {
+        id: "concavenator",
+        name: "コンカベナトル",
+        zoom: 3.8,
+        originX: "58%",
+        originY: "40%",
+        featureName: "背中（腰の上部）にラクダのコブのようにそびえ立つ、三角形の奇妙な骨の隆起",
+        difficulty: "master"
+    },
+    {
+        id: "fukuiraptor",
+        name: "フクイラプトル",
+        zoom: 3.8,
+        originX: "40%",
+        originY: "58%",
+        featureName: "獲物を捕らえるために非常に大きく発達した、強力な前肢の鋭い鉤爪",
+        difficulty: "master"
+    },
+    {
+        id: "futabasaurus",
+        name: "フタバサウルス",
+        zoom: 3.5,
+        originX: "45%",
+        originY: "65%",
+        featureName: "日本で発見された代表的な首長竜の、水中を羽ばたくように泳ぐための巨大な四肢のヒレ",
+        difficulty: "master"
+    },
+    {
+        id: "kamuyasaurus",
+        name: "カムイサウルス",
+        zoom: 3.5,
+        originX: "20%",
+        originY: "45%",
+        featureName: "日本国内でほぼ全身の骨格が発見された、ハドロサウルス科に見られる特徴的な頭部構造",
+        difficulty: "master"
+    },
+    {
+        id: "deinosuchus",
+        name: "デイノスクス",
+        zoom: 3.5,
+        originX: "20%",
+        originY: "50%",
+        featureName: "中生代の恐竜をも水中に引きずり込んで捕食したと推測される、分厚く強大な頭骨",
+        difficulty: "master"
+    },
+    {
+        id: "titanoboa",
+        name: "ティタノボア",
+        zoom: 3.0,
+        originX: "50%",
+        originY: "50%",
+        featureName: "全長13メートルを超え、獲物を締め殺すのに十分な太さを持つ史上最大のヘビの強靭な胴体",
+        difficulty: "master"
     }
 ];

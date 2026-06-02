@@ -228,6 +228,50 @@ import { EXAM_QUESTIONS } from '../../data/exam';
             return `${HIGH_SCORE_BASE_KEY}_${difficulty}`;
         }
 
+        function updateDifficultyButtons() {
+            const diffButtons = document.querySelectorAll('.diff-btn');
+            const advancedHighScore = parseInt(localStorage.getItem('dino_portal_quiz_highscore_advanced') || '0');
+            const isMasterUnlocked = advancedHighScore >= 80;
+
+            diffButtons.forEach(btn => {
+                const diff = btn.getAttribute('data-difficulty');
+                const subText = btn.querySelector('span');
+
+                if (quizState.selectedMode === 'exam') {
+                    if (diff === 'advanced' || diff === 'master') {
+                        (btn as HTMLButtonElement).style.display = 'none';
+                    } else {
+                        (btn as HTMLButtonElement).style.display = 'flex';
+                    }
+                } else {
+                    (btn as HTMLButtonElement).style.display = 'flex';
+                    if (diff === 'advanced') {
+                        btn.classList.remove('locked');
+                        (btn as HTMLButtonElement).disabled = false;
+                        if (subText) {
+                            subText.innerText = 'ADVANCED';
+                        }
+                    } else if (diff === 'master') {
+                        if (isMasterUnlocked) {
+                            btn.classList.remove('locked');
+                            (btn as HTMLButtonElement).disabled = false;
+                            if (subText) {
+                                subText.innerText = 'MASTER';
+                                subText.style.color = 'var(--secondary-neon)';
+                            }
+                        } else {
+                            btn.classList.add('locked');
+                            (btn as HTMLButtonElement).disabled = true;
+                            if (subText) {
+                                subText.innerText = 'LOCKED';
+                                subText.style.color = 'var(--text-dim)';
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
         function initQuizProgram() {
             const bridge = document.getElementById('quiz-data-bridge');
             if (!bridge) return;
@@ -279,16 +323,6 @@ import { EXAM_QUESTIONS } from '../../data/exam';
                             <strong>全10問の4択テスト</strong>を行い、<strong>正解率70%以上（7問以上正解）で合格</strong>となります。
                         `;
                         
-                        // Hide advanced & master
-                        diffButtons.forEach(btn => {
-                            const diff = btn.getAttribute('data-difficulty');
-                            if (diff === 'advanced' || diff === 'master') {
-                                (btn as HTMLButtonElement).style.display = 'none';
-                            } else {
-                                (btn as HTMLButtonElement).style.display = 'flex';
-                            }
-                        });
-                        
                         // If selected difficulty is advanced/master, fallback to intermediate
                         if (quizState.selectedDifficulty === 'advanced' || quizState.selectedDifficulty === 'master') {
                             quizState.selectedDifficulty = 'intermediate';
@@ -308,26 +342,9 @@ import { EXAM_QUESTIONS } from '../../data/exam';
                             恐竜のシルエット、クローズアップ、または生態データから名前を当てるクイズです。<br>
                             全5問に回答し、あなたの正解率を測定します。
                         `;
-                        
-                        // Show all buttons and restore regular states
-                        diffButtons.forEach(btn => {
-                            (btn as HTMLButtonElement).style.display = 'flex';
-                            
-                            const diff = btn.getAttribute('data-difficulty');
-                            if (diff === 'advanced') {
-                                btn.classList.remove('locked');
-                                (btn as HTMLButtonElement).disabled = false;
-                                const subText = btn.querySelector('span');
-                                if (subText) subText.innerText = 'ADVANCED';
-                            } else if (diff === 'master') {
-                                btn.classList.add('locked');
-                                (btn as HTMLButtonElement).disabled = true;
-                                const subText = btn.querySelector('span');
-                                if (subText) subText.innerText = 'LOCKED';
-                            }
-                        });
                     }
                     
+                    updateDifficultyButtons();
                     displayHighScore();
                 });
             });
@@ -355,6 +372,7 @@ import { EXAM_QUESTIONS } from '../../data/exam';
 
             // Display highscore on start panel
             displayHighScore();
+            updateDifficultyButtons();
         }
 
         function displayHighScore() {
@@ -785,6 +803,7 @@ import { EXAM_QUESTIONS } from '../../data/exam';
                 localStorage.setItem(hsKey, finalScorePercent.toString());
                 isNewHighScore = true;
                 displayHighScore();
+                updateDifficultyButtons();
             }
 
             // Render Circle SVG score animation
@@ -859,22 +878,38 @@ import { EXAM_QUESTIONS } from '../../data/exam';
                 if (finalScorePercent === 100) {
                     rankBadge!.innerText = "Sランク: 恐竜マスター (全問正解！)";
                     rankBadge!.style.color = "var(--secondary-neon)";
-                    rankDesc!.innerText = "素晴らしい知識量です！全問正解おめでとうございます。これであなたも立派な恐竜マスターです。";
+                    let descHtml = "素晴らしい知識量です！全問正解おめでとうございます。これであなたも立派な恐竜マスターです。";
+                    if (quizState.selectedDifficulty === 'advanced' && previousHighScore < 80) {
+                        descHtml += `
+                            <div style="margin-top: 15px; padding: 12px; border: 1px solid var(--secondary-neon); background: rgba(0, 255, 102, 0.05); color: var(--secondary-neon); font-family: var(--font-mono); font-size: 11px; border-radius: 4px; text-align: center; box-shadow: 0 0 10px rgba(0, 255, 102, 0.1);">
+                                【SYSTEM UNLOCK】難易度「恐竜博士 (MASTER)」が解放されました！
+                            </div>
+                        `;
+                    }
+                    rankDesc!.innerHTML = descHtml;
                 } 
                 else if (finalScorePercent === 80) {
                     rankBadge!.innerText = "Aランク: 恐竜博士級 (優秀！)";
                     rankBadge!.style.color = "var(--primary-neon)";
-                    rankDesc!.innerText = "非常に優秀な成績です！あと一歩で満点でした。図鑑やトピックスを読み直して完璧を目指しましょう。";
+                    let descHtml = "非常に優秀な成績です！あと一歩で満点でした。図鑑やトピックスを読み直して完璧を目指しましょう。";
+                    if (quizState.selectedDifficulty === 'advanced' && previousHighScore < 80) {
+                        descHtml += `
+                            <div style="margin-top: 15px; padding: 12px; border: 1px solid var(--secondary-neon); background: rgba(0, 255, 102, 0.05); color: var(--secondary-neon); font-family: var(--font-mono); font-size: 11px; border-radius: 4px; text-align: center; box-shadow: 0 0 10px rgba(0, 255, 102, 0.1);">
+                                【SYSTEM UNLOCK】難易度「恐竜博士 (MASTER)」が解放されました！
+                            </div>
+                        `;
+                    }
+                    rankDesc!.innerHTML = descHtml;
                 }
                 else if (finalScorePercent === 60) {
                     rankBadge!.innerText = "Bランク: 恐竜ファン級 (普通)";
                     rankBadge!.style.color = "var(--text-main)";
-                    rankDesc!.innerText = "恐竜の知識をしっかり持っていますね。さらにスキャンや図鑑を学習すれば、さらに高得点が狙えます！";
+                    rankDesc!.innerHTML = "恐竜の知識をしっかり持っていますね。さらにスキャンや図鑑を学習すれば、さらに高得点が狙えます！";
                 }
                 else {
                     rankBadge!.innerText = "Cランク: 恐竜初心者級 (もっと学ぼう)";
                     rankBadge!.style.color = "var(--alert-neon)";
-                    rankDesc!.innerText = "少し難しかったかもしれません。図鑑アーカイブの恐竜 dataや、サイズ比較などを確認して再学習してみましょう！";
+                    rankDesc!.innerHTML = "少し難しかったかもしれません。図鑑アーカイブの恐竜データや、サイズ比較などを確認して再学習してみましょう！";
                 }
             }
 
