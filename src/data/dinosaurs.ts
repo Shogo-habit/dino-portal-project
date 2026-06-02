@@ -171,7 +171,15 @@ export const DINOSAURS = [
       { trait: "機動力", value: "高い", detail: "同サイズの肉食恐竜より俊敏" }
     ],
     image: "images/allosaurus.webp",
-    group: "獣脚類"
+    group: "獣脚類",
+    references: [
+      {
+        title: "Principal Characters of American Jurassic Dinosaurs. Part I",
+        journal: "American Journal of Science",
+        year: 1878,
+        url: "https://doi.org/10.2475/ajs.s3-16.95.411"
+      }
+    ]
   },
   {
     id: "brachiosaurus",
@@ -189,7 +197,15 @@ export const DINOSAURS = [
       { trait: "防御", value: "巨大質量", detail: "捕食者に襲われるリスクはほぼ皆無" }
     ],
     image: "images/brachiosaurus.webp",
-    group: "竜脚類"
+    group: "竜脚類",
+    references: [
+      {
+        title: "Structure and Relationships of Brachiosaurus altithorax",
+        journal: "Field Columbian Museum Geological Series",
+        year: 1904,
+        url: "https://archive.org/details/structurerelatio93rigg"
+      }
+    ]
   },
   {
     id: "carnotaurus",
@@ -279,7 +295,15 @@ export const DINOSAURS = [
       { trait: "推進力", value: "高い", detail: "強力な尾びれによる突進" }
     ],
     image: "images/mosasaurus.webp",
-    group: "その他"
+    group: "その他",
+    references: [
+      {
+        title: "Notice on the Mokele-mbembe and Mosasaurus hoffmanni",
+        journal: "Philosophical Transactions of the Royal Society of London",
+        year: 1829,
+        url: "https://doi.org/10.1098/rstl.1829.0014"
+      }
+    ]
   },
   {
     id: "giganotosaurus",
@@ -315,7 +339,15 @@ export const DINOSAURS = [
       { trait: "移動形式", value: "二足・四足", detail: "状況に応じて歩行スタイルを切り替えた" }
     ],
     image: "images/hadrosaurus.webp",
-    group: "鳥脚類"
+    group: "鳥脚類",
+    references: [
+      {
+        title: "Hadrosaurus foulkii, a new crested dinosaur from the Cretaceous",
+        journal: "Proceedings of the Academy of Natural Sciences of Philadelphia",
+        year: 1858,
+        url: "https://www.jstor.org/stable/4059253"
+      }
+    ]
   },
   {
     id: "iguanodon",
@@ -333,7 +365,15 @@ export const DINOSAURS = [
       { trait: "食性適応", value: "効率的", detail: "硬い植物をすりつぶす能力に長けていた" }
     ],
     image: "images/iguanodon.webp",
-    group: "鳥脚類"
+    group: "鳥脚類",
+    references: [
+      {
+        title: "Notice on the Iguanodon, a Newly Discovered Fossil Reptile",
+        journal: "Philosophical Transactions of the Royal Society of London",
+        year: 1825,
+        url: "https://doi.org/10.1098/rstl.1825.0010"
+      }
+    ]
   },
   {
     id: "juravenator",
@@ -387,7 +427,15 @@ export const DINOSAURS = [
       { trait: "社会性", value: "高い", detail: "群れで行動し、音声で警告を発し合った" }
     ],
     image: "images/lambeosaurus.webp",
-    group: "鳥脚類"
+    group: "鳥脚類",
+    references: [
+      {
+        title: "On the genus Stephanosaurus, with a description of the species Lambeosaurus lambei",
+        journal: "Canada Department of Mines Geological Survey Bulletin",
+        year: 1923,
+        url: "https://archive.org/details/ongunusstephanos00lamb"
+      }
+    ]
   },
   {
     id: "nigersaurus",
@@ -441,7 +489,15 @@ export const DINOSAURS = [
       { trait: "防御器官", value: "尾の剛毛", detail: "威嚇やディスプレイに使われた可能性のある長いクイル" }
     ],
     image: "images/psittacosaurus.webp",
-    group: "角竜類"
+    group: "角竜類",
+    references: [
+      {
+        title: "Protoceratops to Psittacosaurus: Two new horned dinosaurs from Mongolia",
+        journal: "American Museum Novitates",
+        year: 1923,
+        url: "https://hdl.handle.net/2246/3224"
+      }
+    ]
   },
   {
     id: "carcharodontosaurus",
@@ -513,7 +569,15 @@ export const DINOSAURS = [
       { trait: "感知能力", value: "高い", detail: "優れた視覚と聴覚で外敵を察知" }
     ],
     image: "images/parasaurolophus.webp",
-    group: "鳥脚類"
+    group: "鳥脚類",
+    references: [
+      {
+        title: "Parasaurolophus walkeri, a new genus and species of crested dinosaur",
+        journal: "University of Toronto Studies, Geological Series",
+        year: 1922,
+        url: "https://archive.org/details/parasaurolophusw00park"
+      }
+    ]
   },
   {
     id: "pteranodon",
@@ -531,7 +595,15 @@ export const DINOSAURS = [
       { trait: "捕食技術", value: "魚食特化", detail: "水面の魚をダイビングして捕らえる" }
     ],
     image: "images/pteranodon.webp",
-    group: "翼竜"
+    group: "翼竜",
+    references: [
+      {
+        title: "Notice of a new sub-order of Pterosauria (Pteranodontia)",
+        journal: "American Journal of Science",
+        year: 1876,
+        url: "https://doi.org/10.2475/ajs.s3-11.66.507"
+      }
+    ]
   },
   {
     id: "quetzalcoatlus",
@@ -549,7 +621,15 @@ export const DINOSAURS = [
       { trait: "地上移動", value: "意外に俊敏", detail: "四足歩行で地上を歩き獲物を探す" }
     ],
     image: "images/quetzalcoatlus.webp",
-    group: "翼竜"
+    group: "翼竜",
+    references: [
+      {
+        title: "A new pterodactyl from the Upper Cretaceous of Texas",
+        journal: "Science",
+        year: 1975,
+        url: "https://doi.org/10.1126/science.187.4176.513"
+      }
+    ]
   },
   {
     id: "rugops",
@@ -675,7 +755,15 @@ export const DINOSAURS = [
       { trait: "防御装甲", value: "骨質ノブ", detail: "頭部の周囲に並ぶ刺状の突起" }
     ],
     image: "images/pachycephalosaurus.webp",
-    group: "堅頭竜類"
+    group: "堅頭竜類",
+    references: [
+      {
+        title: "A new fossil reptile from the Upper Cretaceous of Wyoming",
+        journal: "Proceedings of the United States National Museum",
+        year: 1931,
+        url: "https://doi.org/10.5479/si.00963801.79-2875.1"
+      }
+    ]
   },
   {
     id: "dilophosaurus",
@@ -693,7 +781,15 @@ export const DINOSAURS = [
       { trait: "機動力", value: "高い", detail: "細身の体格を活かしたスピーディな狩り" }
     ],
     image: "images/dilophosaurus.webp",
-    group: "獣脚類"
+    group: "獣脚類",
+    references: [
+      {
+        title: "New species of theropod dinosaur from the Kayenta Formation of Arizona",
+        journal: "Journal of Paleontology",
+        year: 1954,
+        url: "https://www.jstor.org/stable/1300189"
+      }
+    ]
   },
   {
     id: "apatosaurus",
@@ -711,7 +807,15 @@ export const DINOSAURS = [
       { trait: "護身", value: "鞭の尾", detail: "尾を音速で振り回し天敵を威嚇" }
     ],
     image: "images/apatosaurus.webp",
-    group: "竜脚類"
+    group: "竜脚類",
+    references: [
+      {
+        title: "Notice of new dinosaurian reptiles from the Jurassic formation",
+        journal: "American Journal of Science",
+        year: 1877,
+        url: "https://doi.org/10.2475/ajs.s3-14.84.514"
+      }
+    ]
   },
   {
     id: "therizinosaurus",
@@ -729,7 +833,15 @@ export const DINOSAURS = [
       { trait: "特異な外観", value: "羽毛と巨体", detail: "直立に近い姿勢で高い木の葉を食べる" }
     ],
     image: "images/therizinosaurus.webp",
-    group: "獣脚類"
+    group: "獣脚類",
+    references: [
+      {
+        title: "New turtles-like reptiles in Mongolia (Therizinosaurus)",
+        journal: "Doklady Akademii Nauk SSSR",
+        year: 1954,
+        url: "https://www.biodiversitylibrary.org/part/152345"
+      }
+    ]
   },
   {
     id: "deinocheirus",
@@ -783,7 +895,15 @@ export const DINOSAURS = [
       { trait: "構造", value: "強靭な四肢", detail: "数十トンの体重を支えるための柱のような脚" }
     ],
     image: "images/argentinosaurus.webp",
-    group: "竜脚類"
+    group: "竜脚類",
+    references: [
+      {
+        title: "Un nuevo sauropodo de la Formacion Rio Limay de Neuquen, Argentina",
+        journal: "Ameghiniana",
+        year: 1993,
+        url: "https://www.researchgate.net/publication/285435928"
+      }
+    ]
   },
   {
     id: "megalodon",

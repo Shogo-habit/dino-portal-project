@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { DINOSAURS } from '../../data/dinosaurs';
+import { BADGES } from '../../data/badges';
 ---
 
 <Layout title="マイ・アーカイブ | Dino-Portal" activeTab="my-collection" description="保存した恐竜データのアーカイブ。観測済み標本データベース。">
@@ -10,15 +11,49 @@ import { DINOSAURS } from '../../data/dinosaurs';
     </section>
 
     <!-- Progress Indicator Panel -->
-    <div class="hud-panel" style="margin-bottom: 40px; border-color: var(--secondary-neon);">
+    <div class="hud-panel" style="margin-bottom: 30px; border-color: var(--secondary-neon);">
+        <div class="hud-corner top-left" style="border-top-color: var(--secondary-neon); border-left-color: var(--secondary-neon);"></div>
+        <div class="hud-corner bottom-right" style="border-bottom-color: var(--secondary-neon); border-right-color: var(--secondary-neon);"></div>
         <div style="display: flex; justify-content: space-between; margin-bottom: 10px; font-family: var(--font-mono); font-size: 12px;">
             <span>アーカイブ同期進捗</span>
             <span id="collection-progress-text">0 / {DINOSAURS.length} (0%)</span>
         </div>
-        <div class="progress-bar-container">
-            <div class="progress-bar-fill" id="collection-progress-bar" style="width: 0%"></div>
+        <div class="progress-bar-container" style="background: rgba(255, 255, 255, 0.05); height: 8px; border-radius: 4px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1);">
+            <div class="progress-bar-fill" id="collection-progress-bar" style="width: 0%; height: 100%; background: var(--secondary-neon); box-shadow: 0 0 10px var(--secondary-neon); transition: width 1s ease;"></div>
         </div>
     </div>
+
+    <!-- Achievements / Badges Section -->
+    <section class="hud-panel" style="margin-bottom: 40px; padding: 25px; position: relative;">
+        <div class="hud-corner top-left"></div>
+        <div class="hud-corner bottom-right"></div>
+        <h3 style="color: var(--primary-neon); border-bottom: 1px solid var(--panel-border); padding-bottom: 10px; margin-bottom: 20px; font-family: var(--font-mono); font-size: 14px; letter-spacing: 2px;">
+            [ ARCHIVAL ACHIEVEMENTS / 調査業績バッジ ]
+        </h3>
+
+        <div class="badges-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 15px;">
+            {BADGES.map(badge => (
+                <div class="badge-card locked" 
+                     id={`badge-${badge.id}`} 
+                     data-id={badge.id}
+                     style="border: 1px dashed rgba(255, 255, 255, 0.15); background: rgba(0, 0, 0, 0.2); padding: 15px 10px; border-radius: 4px; text-align: center; cursor: pointer; transition: all 0.3s ease; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 120px;">
+                    <!-- Badge Icon -->
+                    <div class="badge-icon-wrap" style="font-size: 32px; filter: grayscale(100%); opacity: 0.4; transition: all 0.3s ease; line-height: 1; margin-bottom: 8px;">
+                        {badge.icon}
+                    </div>
+                    <!-- Badge Text -->
+                    <div class="badge-name" style="font-size: 12px; font-weight: bold; color: var(--text-dim); transition: all 0.3s ease; font-family: sans-serif;">
+                        {badge.name}
+                    </div>
+                    <div class="badge-subname" style="font-size: 8px; font-family: var(--font-mono); color: var(--text-dim); opacity: 0.5; margin-top: 2px; text-transform: uppercase;">
+                        {badge.englishName}
+                    </div>
+                    <!-- Lock Indicator -->
+                    <span class="badge-status-tag" style="font-size: 8px; font-family: var(--font-mono); color: rgba(255, 0, 90, 0.5); border: 1px solid rgba(255, 0, 90, 0.2); background: rgba(255, 0, 90, 0.05); padding: 1px 4px; border-radius: 2px; margin-top: 6px; letter-spacing: 0.5px;">LOCKED</span>
+                </div>
+            ))}
+        </div>
+    </section>
 
     <!-- Empty State -->
     <div class="empty-state hud-panel" id="collection-empty-state" style="text-align: center; padding: 60px; display: none;">
@@ -48,9 +83,34 @@ import { DINOSAURS } from '../../data/dinosaurs';
         ))}
     </div>
 
-    <!-- Client-side collection loaders -->
+    <!-- Badge Detail Modal (HUD Overlay) -->
+    <div id="badge-detail-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(5, 8, 15, 0.85); z-index: 1000; align-items: center; justify-content: center; backdrop-filter: blur(4px); transition: all 0.3s ease;">
+        <div class="hud-panel modal-content" style="max-width: 450px; width: 90%; background: rgba(11, 16, 25, 0.95); border: 1px solid var(--panel-border); padding: 30px; border-radius: 6px; box-shadow: 0 0 30px rgba(0, 242, 255, 0.1); position: relative; animation: scan-info-fade 0.3s cubic-bezier(0.1, 0.8, 0.1, 1);">
+            <div class="hud-corner top-left"></div>
+            <div class="hud-corner bottom-right"></div>
+            
+            <button id="close-modal-btn" aria-label="閉じる" style="position: absolute; top: 15px; right: 15px; background: transparent; border: none; color: var(--text-dim); font-size: 18px; cursor: pointer; font-family: var(--font-mono); transition: color 0.3s ease;">[X]</button>
+            
+            <div style="text-align: center; margin-top: 10px;">
+                <div id="modal-badge-icon" style="font-size: 64px; line-height: 1; margin-bottom: 15px; filter: drop-shadow(0 0 10px rgba(0,242,255,0.4));">◉</div>
+                <h4 id="modal-badge-name" style="font-size: 20px; font-weight: bold; color: var(--text-main); margin-bottom: 5px;">バッジ名</h4>
+                <div id="modal-badge-subname" style="font-family: var(--font-mono); font-size: 10px; color: var(--primary-neon); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px;">ACHIEVEMENT_NAME</div>
+                
+                <div style="border-top: 1px dashed rgba(255, 255, 255, 0.1); border-bottom: 1px dashed rgba(255, 255, 255, 0.1); padding: 15px 10px; margin-bottom: 25px; background: rgba(255, 255, 255, 0.01);">
+                    <p id="modal-badge-desc" style="font-size: 13px; line-height: 1.6; color: var(--text-dim); margin: 0;"></p>
+                </div>
+                
+                <div id="modal-badge-status" style="font-family: var(--font-mono); font-size: 12px; font-weight: bold; letter-spacing: 1px;">
+                    STATUS: LOCKED
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Client-side loaders -->
     <script>
         import { DINOSAURS } from '../../data/dinosaurs';
+        import { BADGES } from '../../data/badges';
 
         const COLLECTION_KEY = 'dino_portal_saved_observations';
 
@@ -95,6 +155,148 @@ import { DINOSAURS } from '../../data/dinosaurs';
                 emptyState.style.display = 'none';
                 gridContent.style.display = 'grid';
             }
+
+            // --- BADGES LOGIC ---
+            BADGES.forEach(badge => {
+                const isUnlocked = badge.checkUnlock(observedIds, DINOSAURS);
+                const cardEl = document.getElementById(`badge-${badge.id}`);
+                if (!cardEl) return;
+
+                const iconWrap = cardEl.querySelector('.badge-icon-wrap') as HTMLElement;
+                const nameWrap = cardEl.querySelector('.badge-name') as HTMLElement;
+                const statusTag = cardEl.querySelector('.badge-status-tag') as HTMLElement;
+
+                if (isUnlocked) {
+                    cardEl.classList.remove('locked');
+                    cardEl.classList.add('unlocked');
+                    
+                    // apply neon unlock styling
+                    cardEl.style.border = `1px solid ${badge.themeColor}`;
+                    cardEl.style.background = `rgba(${hexToRgb(badge.themeColor)}, 0.05)`;
+                    cardEl.style.boxShadow = `0 0 10px rgba(${hexToRgb(badge.themeColor)}, 0.15)`;
+                    
+                    iconWrap.style.filter = 'none';
+                    iconWrap.style.opacity = '1';
+                    iconWrap.style.color = badge.themeColor;
+                    iconWrap.style.textShadow = `0 0 8px ${badge.themeColor}`;
+                    
+                    nameWrap.style.color = 'var(--text-main)';
+                    
+                    statusTag.innerText = 'UNLOCKED';
+                    statusTag.style.color = badge.themeColor;
+                    statusTag.style.borderColor = badge.themeColor;
+                    statusTag.style.background = `rgba(${hexToRgb(badge.themeColor)}, 0.08)`;
+                } else {
+                    cardEl.classList.remove('unlocked');
+                    cardEl.classList.add('locked');
+                    
+                    // Reset back to locked styling
+                    cardEl.style.border = '1px dashed rgba(255, 255, 255, 0.15)';
+                    cardEl.style.background = 'rgba(0, 0, 0, 0.2)';
+                    cardEl.style.boxShadow = 'none';
+                    
+                    iconWrap.style.filter = 'grayscale(100%)';
+                    iconWrap.style.opacity = '0.4';
+                    iconWrap.style.color = '';
+                    iconWrap.style.textShadow = 'none';
+                    
+                    nameWrap.style.color = 'var(--text-dim)';
+                    
+                    statusTag.innerText = 'LOCKED';
+                    statusTag.style.color = 'rgba(255, 0, 90, 0.5)';
+                    statusTag.style.borderColor = 'rgba(255, 0, 90, 0.2)';
+                    statusTag.style.background = 'rgba(255, 0, 90, 0.05)';
+                }
+
+                // Bind click event for modal popup
+                // Remove old event listeners if any
+                const newCardEl = cardEl.cloneNode(true);
+                cardEl.parentNode!.replaceChild(newCardEl, cardEl);
+
+                newCardEl.addEventListener('click', () => {
+                    openBadgeModal(badge, isUnlocked);
+                });
+            });
+
+            // Modal Controls
+            const modal = document.getElementById('badge-detail-modal');
+            const closeBtn = document.getElementById('close-modal-btn');
+            
+            if (modal && closeBtn) {
+                closeBtn.addEventListener('click', () => {
+                    modal.style.display = 'none';
+                });
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        modal.style.display = 'none';
+                    }
+                });
+            }
+        }
+
+        function openBadgeModal(badge: any, isUnlocked: boolean) {
+            const modal = document.getElementById('badge-detail-modal');
+            const mIcon = document.getElementById('modal-badge-icon');
+            const mName = document.getElementById('modal-badge-name');
+            const mSubname = document.getElementById('modal-badge-subname');
+            const mDesc = document.getElementById('modal-badge-desc');
+            const mStatus = document.getElementById('modal-badge-status');
+
+            if (!modal || !mIcon || !mName || !mSubname || !mDesc || !mStatus) return;
+
+            // Set modal data
+            mIcon.innerText = badge.icon;
+            mName.innerText = badge.name;
+            mSubname.innerText = badge.englishName;
+            mDesc.innerText = badge.description;
+
+            // Style Icon
+            if (isUnlocked) {
+                mIcon.style.color = badge.themeColor;
+                mIcon.style.filter = 'none';
+                mIcon.style.opacity = '1';
+                mIcon.style.textShadow = `0 0 15px ${badge.themeColor}`;
+                
+                mStatus.innerText = 'STATUS: UNLOCKED // ARCHIVE MATCHED';
+                mStatus.style.color = badge.themeColor;
+                
+                // Modal border shadow highlight
+                const content = modal.querySelector('.modal-content') as HTMLElement;
+                if (content) {
+                    content.style.borderColor = badge.themeColor;
+                    content.style.boxShadow = `0 0 35px rgba(${hexToRgb(badge.themeColor)}, 0.2)`;
+                }
+            } else {
+                mIcon.style.color = '';
+                mIcon.style.filter = 'grayscale(100%)';
+                mIcon.style.opacity = '0.4';
+                mIcon.style.textShadow = 'none';
+                
+                mStatus.innerText = 'STATUS: LOCKED // ARCHIVE DATA INSUFFICIENT';
+                mStatus.style.color = 'var(--alert-neon)'; // Red
+                
+                const content = modal.querySelector('.modal-content') as HTMLElement;
+                if (content) {
+                    content.style.borderColor = 'var(--panel-border)';
+                    content.style.boxShadow = '0 0 30px rgba(0, 242, 255, 0.05)';
+                }
+            }
+
+            modal.style.display = 'flex';
+        }
+
+        // Helper: Hex color string to RGB comma-separated values (e.g. "#00ff66" -> "0, 255, 102")
+        function hexToRgb(hex: string) {
+            let c: any;
+            if (/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)) {
+                c = hex.substring(1).split('');
+                if (c.length === 3) {
+                    c = [c[0], c[0], c[1], c[1], c[2], c[2]];
+                }
+                c = '0x' + c.join('');
+                return [(c >> 16) & 255, (c >> 8) & 255, c & 255].join(', ');
+            }
+            return "0, 242, 255"; // Fallback to primary cyan
         }
 
         document.addEventListener('astro:page-load', initMyCollection);
