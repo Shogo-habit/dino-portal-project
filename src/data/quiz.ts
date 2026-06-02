@@ -478,12 +478,12 @@ export const QUIZ_SPECIMENS: QuizSpecimen[] = [
         difficulty: "master"
     },
     {
-        id: "nyctosaurus",
-        name: "ニクトサウルス",
+        id: "tapejara",
+        name: "タペヤラ",
         zoom: 3.5,
-        originX: "30%",
-        originY: "25%",
-        featureName: "頭頂部から信じられないほどの長さで上空後方へと伸びた、Y字型の巨大なトサカ",
+        originX: "28%",
+        originY: "40%",
+        featureName: "頭頂部にそびえ立つ、骨質と皮膚の膜からなる巨大な帆状のトサカ",
         difficulty: "master"
     },
     {
