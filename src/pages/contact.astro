@@ -395,8 +395,7 @@ import Layout from '../layouts/Layout.astro';
 
     // フォーム送信時のイベント
     form.addEventListener('submit', () => {
-      // フォームを非表示、送信中をビジュアル表示
-      form.classList.add('hidden');
+      // 送信中をビジュアル表示
       transmitting.classList.remove('hidden');
 
       // ログ行のタイピング演出シミュレータ
@@ -408,6 +407,11 @@ import Layout from '../layouts/Layout.astro';
       });
 
       submitted = true;
+
+      // ブラウザが送信処理を完了するまでフォーム要素を非表示にするのを少し遅らせる（即時非表示にすると送信がキャンセルされるブラウザ対策）
+      setTimeout(() => {
+        form.classList.add('hidden');
+      }, 200);
     });
 
     // 隠しiframeのロード完了（送信完了）を検知して完了画面を表示
