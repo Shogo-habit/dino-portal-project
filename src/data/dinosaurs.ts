@@ -1943,7 +1943,7 @@ export const DINOSAURS = [
     weight: "12.0t",
     description: "古代のギリシャ神話の神クロノスから名付けられた、史上最大級のプリオサウルス類。2メートルに近い頭部は海のあらゆる生物の脅威だった。",
     bioTraits: [
-      { trait: "咬合力", value: "破壊的", detail: "T-Rexを凌ぐとされる圧倒的な噛む力" },
+      { trait: "咬合力", value: "破壊的", detail: "ティラノサウルスを凌ぐとされる圧倒的な噛む力" },
       { trait: "大型牙", value: "25cm以上", detail: "獲物の骨を粉砕する巨大な円錐形の歯" }
     ],
     image: "images/kronosaurus.webp",

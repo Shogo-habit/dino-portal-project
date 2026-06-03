@@ -185,7 +185,7 @@ export const TOPICS = [
     date: "2026.05.20",
     category: "RESEARCH_HISTORY",
     title: "スピノサウルスの生態推測の歴史的変化：陸の王者から水中の狩人へ",
-    summary: "かつてはT-Rexのような二足歩行の陸生恐竜と考えられていたスピノサウルスが、いかにして「四足歩行の水棲恐竜」という特異な姿へと推測が変わっていったのか、その歴史的変遷を追う。",
+    summary: "かつてはティラノサウルスのような二足歩行の陸生恐竜と考えられていたスピノサウルスが、いかにして「四足歩行の水棲恐竜」という特異な姿へと推測が変わっていったのか、その歴史的変遷を追う。",
     content: `
 <h2 class="article-section-title">初期の発掘と大戦による喪失</h2>
 <p class="article-paragraph">
@@ -230,7 +230,7 @@ export const TOPICS = [
     date: "2026.05.21",
     category: "RESEARCH_HISTORY",
     title: "ティラノサウルスの「羽毛」論争と最新の姿：モフモフ説は否定された？",
-    summary: "一時期「ティラノサウルスは全身羽毛に覆われていた」という説がメディアを席巻したが、その後の皮膚化石の発見により「大人のT-Rexはウロコに覆われていた」という説が有力になっている。最新の研究からT-Rexの本当の姿を読み解く。",
+    summary: "一時期「ティラノサウルスは全身羽毛に覆われていた」という説がメディアを席巻したが、その後の皮膚化石の発見により「大人のティラノサウルスはウロコに覆われていた」という説が有力になっている。最新の研究からティラノサウルスの本当の姿を読み解く。",
     content: `
 <h2 class="article-section-title">「全身モフモフ」のティラノサウルス像の誕生</h2>
 <p class="article-paragraph">
@@ -245,13 +245,17 @@ export const TOPICS = [
   しかし、2017年にオーストラリアやアメリカの国際研究チームが、ティラノサウルス・レックスの実物化石（首、骨盤、尾などの皮膚痕跡）を詳細に分析した結果を発表しました。そこには、鳥のような羽毛の痕跡はなく、現生爬虫類のような「細かいウロコ」がはっきりと残されていました。
 </p>
 <p class="article-paragraph">
-  これにより、「少なくとも成長した大人のティラノサウルスは、全身の大部分がウロコで覆われていた」ことがほぼ確実となりました。巨体を持つT-Rexにとって、全身を羽毛で覆うことは体温が上がりすぎる（オーバーヒートの）危険性があったため、進化の過程で羽毛を失っていったと考えられています。
+  これにより、「少なくとも成長した大人のティラノサウルスは、全身の大部分がウロコで覆われていた」ことがほぼ確実となりました。巨体を持つティラノサウルスにとって、全身を羽毛で覆うことは体温が上がりすぎる（オーバーヒートの）危険性があったため、進化の過程で羽毛を失っていったと考えられています。
 </p>
 
 <h2 class="article-section-title">現在のティラノサウルスの復元像</h2>
 <p class="article-paragraph">
   現在最も有力なのは、「幼体の頃は保温のために産毛のような羽毛が生えていたが、成長するにつれて抜け落ち、大人になるとゾウやサイのように皮膚（ウロコ）がむき出しになり、背中や首筋などにわずかに装飾的な羽毛が残る程度だった」という説です。
   恐竜の姿は新しい化石が発見されるたびに変わります。ティラノサウルスの復元の変遷も、まさに科学が常に自己修正していくプロセスを体現していると言えるでしょう。
+</p>
+<p class="article-paragraph" style="margin-top: 20px;">
+  ※より詳細なティラノサウルスの全身スペックや最新の感覚能力に関する解説はこちら：<br>
+  <a href="/topics/tyrannosaurus-guide" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【最強の肉食恐竜】ティラノサウルスの生態を徹底解説！最新の研究が明かす真実とおすすめフィギュア</a>
 </p>
     `,
     image: "images/topics/trex_feathers.webp",
@@ -476,6 +480,255 @@ export const TOPICS = [
     image: "images/topics/first_named_dinosaur.webp",
     securityLevel: "LEVEL 3 (PUBLIC)",
     relatedSpecimens: ["iguanodon"]
+  },
+  {
+    id: "fossil-reconstruction-science",
+    date: "2026.05.22",
+    category: "RESEARCH",
+    title: "完全な化石がないのになぜ全身がわかる？古生物学者が「パズル」を解く科学的アプローチ",
+    summary: "「博物館の恐竜骨格はほとんど想像で作られている？」そんな素朴な疑問に迫ります。一部の骨しか見つかっていない恐竜の全身像を、科学的に高い精度で復元する驚きのテクニックを解説。",
+    content: `
+<h2 class="article-section-title">博物館の骨格は「ほぼ想像」で作られている？</h2>
+<p class="article-paragraph">
+  博物館に並ぶ巨大な恐竜の全身骨格を見上げるとき、「全身の骨が100%きれいに見つかることなんてあるのだろうか？」と疑問に思ったことはありませんか？
+</p>
+<p class="article-paragraph">
+  実は、頭から足の先まで全ての骨が完全な状態で発掘されるケースは極めてまれです。多くの場合は、全身のわずか数パーセント〜数十パーセントの骨しか見つかりません。では、なぜ古生物学者たちは残りの失われたパーツを補い、生きていた頃のリアルな姿を再現できるのでしょうか。その裏側にある科学的な「謎解き（復元）のテクニック」を紹介します。
+</p>
+
+<h2 class="article-section-title">手がかり1：骨格の共通ルールを使う「比較解剖学」</h2>
+<p class="article-paragraph">
+  生物の骨は、進化の歴史や機能（歩く、食べるなど）に応じて一定の法則に沿って作られています。これを研究するのが<strong>比較解剖学</strong>です。
+</p>
+<p class="article-paragraph">
+  例えば、新しい恐竜の「一本の歯」が見つかったとします。その歯の形がトリケラトプスにそっくりであれば、その恐竜は角竜（角を持つ植物食恐竜）の仲間である可能性が極めて高くなります。すると科学者たちは、すでに全身の骨格がよく分かっているトリケラトプスやプロトケラトプスの骨格データをベースにして、見つかっていない胴体や足の形を高い精度で予測（推測）することができるのです。
+</p>
+
+<h2 class="article-section-title">手がかり2：ワニと鳥で挟み撃ちにする「系統的ブラケッティング」</h2>
+<p class="article-paragraph">
+  恐竜の「筋肉」や「内臓」「皮膚」といった柔らかい組織は、化石として残りにくい弱点があります。これらを復元するために使われるのが<strong>系統的ブラケッティング（Phylogenetic Bracketing）</strong>という手法です。
+</p>
+<p class="article-paragraph">
+  恐竜は、現代の生き物でいうと<strong>「鳥類」</strong>と<strong>「ワニ類」</strong>の間に位置するグループです。そこで科学者たちは、恐竜の骨化石に残された筋肉の付着痕（筋痕）を観察し、現代の鳥とワニの筋肉の付き方を比較します。両方に共通する特徴があれば、「恐竜にも同じ位置に同じ筋肉があったはずだ」と高い確率で特定でき、ただの骨の塊にリアルな肉付けを施すことが可能になります。
+</p>
+
+<h2 class="article-section-title">世紀の大逆転：腕だけで50年間悩ませた「デイノケイルス」</h2>
+<p class="article-paragraph">
+  この予測の難しさと面白さを象徴する最も有名な例が、<strong>デイノケイルス（Deinocheirus）</strong>です。
+</p>
+<p class="article-paragraph">
+  1965年、モンゴルのゴビ砂漠で、長さ2.4メートルもある巨大で鋭い爪を持つ「一対の前肢（腕）の骨」だけが発見されました。これを見た学者たちは、「ティラノサウルスを超える超巨大で凶暴な肉食恐竜に違いない」と予測し、様々な恐ろしい復元図が描かれました。
+</p>
+<p class="article-paragraph">
+  しかし発見から約50年後の2014年、ついに全身の化石が発見されます。現れたその姿は、誰もが予想しなかったものでした。頭部はアヒルのように平らで歯がなく、背中には大きな帆（コブ）があり、基本的には植物や魚を食べるおっとりとした雑食恐竜だったのです。このように、新しい化石の発見によって復元図が「上書き」され、より真実に近づいていくことこそが古生物学のダイナミズムです。
+</p>
+
+<h2 class="article-section-title">復元を支える3大科学アプローチ</h2>
+<p class="article-paragraph">
+  現代の恐竜復元は、ただの絵描き（イラストレーター）の想像ではなく、以下のような多角的な科学技術 of 連携によって行われています。
+</p>
+<ul style="list-style-type: square; padding-left: 20px; line-height: 1.8; margin-bottom: 20px; font-size: 14px;">
+  <li><strong style="color: var(--primary-neon);">3Dスキャンとデジタル組み立て</strong>: 歪んで潰れた骨の化石をCTスキャンし、コンピュータ上で元の立体的な形に修正してパズルのように組み立てる。</li>
+  <li><strong style="color: var(--primary-neon);">バイオメカニクス（生体力学）解析</strong>: 関節の可動範囲や骨の強度をシミュレーションし、「実際にその脚で体重を支え、歩くことが可能か」を物理法則に基づいて検証する。</li>
+  <li><strong style="color: var(--primary-neon);">骨組織学（マイクロスコープ解析）</strong>: 骨の内部組織を顕微鏡で観察し、その恐竜が何歳で、どのくらいのスピードで成長していたのかを特定する。</li>
+</ul>
+<p class="article-paragraph">
+  次に博物館で恐竜の骨格を見るときは、ぜひ「どの部分が実際に見つかった骨で、どの部分が科学的な裏付けによって補われたパズルなのか」を想像しながら観察してみてください。
+</p>
+    `,
+    image: "images/topics/fossil_reconstruction.webp",
+    securityLevel: "LEVEL 3 (PUBLIC)",
+    relatedSpecimens: ["deinocheirus"]
+  },
+  {
+    id: "trex-small-arms",
+    date: "2026.05.23",
+    category: "RESEARCH",
+    title: "ティラノサウルスの「小さな前足」の謎！何のために使っていた？",
+    summary: "体長12メートルを超える巨大な体に、人間とほぼ同じ長さの小さな前足。アンバランスで愛嬌すら感じるティラノサウルスの前足の使い道について、最新の説をわかりやすく解説。",
+    content: `
+<h2 class="article-section-title">アンバランスすぎる「小さな前足」</h2>
+<p class="article-paragraph">
+  史上最強の肉食恐竜ティラノサウルス。その最大の武器は、あらゆるものを噛み砕く巨大な頭部ですが、それとは対照的に、驚くほど小さな「前足（腕）」を持っています。
+</p>
+<p class="article-paragraph">
+  その長さはわずか約1メートル。これは大人の人間の腕とほぼ同じ長さです。体長12メートルを超える巨体に対してあまりにも小さく、なんと自分の口にさえ届きません。なぜ、これほどまでに前足が小さくなってしまったのでしょうか。そして、彼らはこの前足を何に使っていたのでしょうか。
+</p>
+
+<h2 class="article-section-title">なぜ前足が小さくなったのか？</h2>
+<p class="article-paragraph">
+  進化の過程で前足が小さくなった最大の理由は、<strong>「頭部が巨大化しすぎたため」</strong>と考えられています。
+</p>
+<p class="article-paragraph">
+  ティラノサウルスは進化を重ねるにつれ、強力な顎の筋肉を支えるために頭骨がどんどん大きく重くなっていきました。もし前足まで大きくて重いままだったら、重心が前に偏りすぎてしまい、二足歩行でバランスを取って走ることが難しくなります。そのため、体のバランスを保つための「重り調整」として前足が縮んでいったのです。
+</p>
+
+<h2 class="article-section-title">何に使っていた？5つの面白い仮説</h2>
+<p class="article-paragraph">
+  「小さすぎて役に立たなかったのでは？」と思われがちですが、骨の化石を詳しく調べると、筋肉が強く付着していた痕跡があり、小さくても非常に力強かったことが分かっています。主に以下のような使い道の仮説が提案されています。
+</p>
+
+<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">1. 起き上がり補助説</h3>
+<p class="article-paragraph">
+  ティラノサウルスが地面に寝そべった状態から立ち上がるとき、この小さな前足で地面をぐっと押して体を支え、後ろ脚で立ち上がるための「滑り止め・スタビライザー」として使ったという説です。
+</p>
+
+<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">2. 獲物のホールド（抑え込み）説</h3>
+<p class="article-paragraph">
+  顎で噛みついた獲物が激しく暴れた際、胸の前に引き寄せて逃げられないように、短い前足と2本の鋭い爪でガッチリとホールドしたという説です。
+</p>
+
+<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">3. 切り裂き武器説</h3>
+<p class="article-paragraph">
+  2017年に発表された説で、超至近戦において、獲物に約10センチメートルもある鋭い爪を使って深手を負わせる「接近戦用の隠し武器」だったとする主張です。
+</p>
+
+<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">4. 同種同士の闘争時における自己防衛説</h3>
+<p class="article-paragraph">
+  近年の非常に説得力のある仮説として、「大きな前肢を持っていると、仲間同士で死肉を奪い合う際、相手に腕を噛みちぎられて大怪我をするリスクがあるため、不要な前肢を小さく退化させて噛まれる標的を減らした」とする生存戦略としての適応説です。
+</p>
+
+<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">5. 役に立っていなかった説（退化）</h3>
+<p class="article-paragraph">
+  現代のキウイやダチョウの羽のように、特に機能は持っておらず、進化の途中でただ退化していっただけであるという説です。
+</p>
+
+<h2 class="article-section-title">小さな前足の仮説まとめ</h2>
+<div class="table-container" style="overflow-x: auto; margin-bottom: 20px;">
+  <table style="width: 100%; border-collapse: collapse; border: 1px solid var(--panel-border); font-size: 14px;">
+    <thead>
+      <tr style="background-color: rgba(0, 242, 255, 0.1); border-bottom: 1px solid var(--panel-border);">
+        <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left;">仮説名</th>
+        <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left;">具体的な機能</th>
+        <th style="padding: 10px; text-align: left;">支持される理由 / 疑問点</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom: 1px solid var(--panel-border);">
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">起き上がり補助</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">地面を突いて起き上がりのバランスをとる</td>
+        <td style="padding: 10px;">巨体を支えるには前足が小さすぎるという意見もある</td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--panel-border);">
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">獲物のホールド</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">噛みついた獲物を至近距離で固定する</td>
+        <td style="padding: 10px;">骨や筋肉の構造が非常に頑丈であり、強い力が出せた証拠がある</td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--panel-border);">
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">切り裂き武器</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">鋭い爪で獲物に傷を負わせる</td>
+        <td style="padding: 10px;">リーチが短すぎるため、そもそも攻撃が届く場面が少ないという指摘も</td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--panel-border);">
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">自己防衛（闘争回避）</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">仲間同士の争いでの怪我リスクを軽減する</td>
+        <td style="padding: 10px;">近年の有力な説。腕を小さくすることで、被噛付面積を最小限にした</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">退化プロセス</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">使われなくなり、ただ小さくなっている途中</td>
+        <td style="padding: 10px;">機能がないにしては筋肉の付着痕が発達しすぎているという矛盾がある</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p class="article-paragraph">
+  現在も決定的な結論は出ていませんが、近縁種のカルノタウルスではさらに前足が退化して指の関節すらなくなっています。このように、最強の恐竜のちょっと可愛らしい前足には、生物の「進化と適応の歴史」がぎゅっと詰まっているのです。
+</p>
+<p class="article-paragraph" style="margin-top: 20px;">
+  ※より詳細なティラノサウルスの全身スペックや最新の感覚能力に関する解説はこちら：<a href="/topics/tyrannosaurus-guide" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【最強の肉食恐竜】ティラノサウルスの生態を徹底解説！最新の研究が明かす真実とおすすめフィギュア</a>
+</p>
+    `,
+    image: "images/topics/trex_small_arms.webp",
+    securityLevel: "LEVEL 2 (SCIENTIFIC REVISION)",
+    relatedSpecimens: ["tyrannosaurus", "carnotaurus"]
+  },
+  {
+    id: "triceratops-frill-mystery",
+    date: "2026.05.23",
+    category: "RESEARCH",
+    title: "トリケラトプスの頭の「フリル」、実は盾（たて）じゃなかった！？",
+    summary: "ティラノサウルスの攻撃を防ぐ最強のバリアだと思われていたトリケラトプスのフリル。実は防御用としては脆かった？最新の研究から浮かび上がった意外な使い道を解説。",
+    content: `
+<h2 class="article-section-title">誰もが信じる「最強の防具」</h2>
+<p class="article-paragraph">
+  3本の角と、頭の後ろに広がる巨大なうちわのような骨の飾り「フリル」。トリケラトプスの姿を特徴づけるこのフリルは、長年「宿敵ティラノサウルスの鋭い牙から首元を守るための頑丈な盾（シールド）」であると信じられてきました。
+</p>
+<p class="article-paragraph">
+  しかし、近年の古生物学研究によって、この定説に大きな疑問が投げかけられています。実は、このフリルは防具として使うにはあまりにも不向きな構造をしていたのです。
+</p>
+
+<h2 class="article-section-title">「盾としては弱すぎる」という新事実</h2>
+<p class="article-paragraph">
+  フリルが盾ではなかったと考えられている主な理由は以下の3点です。
+</p>
+<ul style="list-style-type: square; padding-left: 20px; line-height: 1.8; margin-bottom: 20px; font-size: 14px;">
+  <li><strong>骨が薄く、穴だらけだった</strong>: トリケラトプスの仲間（角竜類）の多くは、フリルの骨に「窓」のような大きな穴（窓骨）が開いており、そこは皮膚だけで覆われていました。これでは牙や角を通してしまうため、盾としての用をなしません。</li>
+  <li><strong>血管がびっしり通っていた</strong>: フリルの表面には、無数の血管が通っていた痕跡（溝）が刻まれています。もしここにティラノサウルスの強烈な噛みつき攻撃を受ければ、大出血を起こしてしまい非常に危険です。</li>
+  <li><strong>トリケラトプス自身のフリルも意外と薄い</strong>: トリケラトプスは穴が開いていない頑丈なフリルを持っていましたが、それでも厚みは数センチメートル程度であり、ティラノサウルスの数トンに達する咬合力（噛む力）を防ぎきることは困難でした。</li>
+</ul>
+
+<h2 class="article-section-title">フリルの真の役割は？3つの有力な説</h2>
+<p class="article-paragraph">
+  では、盾でなければ何のためにこれほど巨大なフリルを発達させたのでしょうか。現在、主に以下の3つの役割があったと考えられています。
+</p>
+
+<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">1. 求愛とコミュニケーション（ディスプレイ説）</h3>
+<p class="article-paragraph">
+  現代のクジャクの羽やシカの角のように、異性に自分をアピールしたり、ライバルを威嚇するための「ディスプレイ」だったとする説です。血管が豊富に通っていたため、興奮するとフリルの色を赤や鮮やかな色に変色させ、視覚的に訴えかけていた可能性も指摘されています。
+</p>
+
+<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">2. 体温調節のエアコン（熱放射説）</h3>
+<p class="article-paragraph">
+  巨大なフリルに風を当てることで、血管の中の血液を冷やし、体温が上がりすぎるのを防ぐ「放熱板」として機能していたという説です。ゾウの大きな耳と同じようなシステムです。
+</p>
+
+<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">3. 顎を動かすための筋肉の土台（顎筋サポート説）</h3>
+<p class="article-paragraph">
+  トリケラトプスは、繊維質の硬い植物をすりつぶして食べるために強力な顎（あご）を持っていました。この巨大な顎を動かすための強力な筋肉の端を、フリルに固定することで、噛む力を大幅に強化していたという説です。
+</p>
+
+<h2 class="article-section-title">フリルの役割まとめ</h2>
+<div class="table-container" style="overflow-x: auto; margin-bottom: 20px;">
+  <table style="width: 100%; border-collapse: collapse; border: 1px solid var(--panel-border); font-size: 14px;">
+    <thead>
+      <tr style="background-color: rgba(0, 242, 255, 0.1); border-bottom: 1px solid var(--panel-border);">
+        <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left;">機能説</th>
+        <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left;">メリット・目的</th>
+        <th style="padding: 10px; text-align: left;">現代の生物での例</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom: 1px solid var(--panel-border);">
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">ディスプレイ</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">異性へのアピール、強さの誇示、変色による威嚇</td>
+        <td style="padding: 10px;">クジャクの飾り羽、カメレオンの皮膚色変化</td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--panel-border);">
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">体温調節</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">風を受けて血液を冷やすラジエーター効果</td>
+        <td style="padding: 10px;">アフリカゾウの大きな耳</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">咀嚼（そしゃく）補助</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">顎を動かす巨大な筋肉のアンカー（固定場所）</td>
+        <td style="padding: 10px;">現代の多くの哺乳類（頭頂部の骨の隆起）</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p class="article-paragraph">
+  もちろん、完全に防御の役に立たなかったわけではなく、結果的に首を守る防護壁になったことも事実でしょう。しかし、トリケラトプスのシンボルであるフリルは、ただ戦うためだけのものではなく、恋をしたり、暑さをしのいだり、食事をしたりといった彼らの「日常の暮らし」を支える多機能マルチツールだったのです。
+</p>
+<p class="article-paragraph" style="margin-top: 20px;">
+  ※トリケラトプスの基本スペック、戦術、および種分類に関する詳細な総合解説はこちら：<a href="/topics/triceratops-guide" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【盾角竜の代表格】トリケラトプスのすべてを徹底解説！3本の角とフリルの秘密と大人気おもちゃ</a>
+</p>
+    `,
+    image: "images/topics/triceratops_frill.webp",
+    securityLevel: "LEVEL 2 (SCIENTIFIC REVISION)",
+    relatedSpecimens: ["triceratops", "protoceratops", "styracosaurus"]
   },
   {
     id: "stegosaurus-plates-science",
@@ -758,16 +1011,24 @@ export const TOPICS = [
   第二に、<strong>「起き上がる際の手すり」</strong>としての機能です。ティラノサウルスが地面に腹這いになって眠ったり休息したりした状態から、巨体を立ち上げる際のバランス取りとしてこの腕を地面に押し当てて支えたという物理学的なアプローチ。
   第三に、<strong>「同種同士の闘争時にかじられないようにするための自己防衛」</strong>という最近の説です。大きな前肢を持っていると、ティラノサウルス同士で死肉を巡って争う際に相手に噛みちぎられて大怪我を負うリスクが高まるため、不要な前肢を小さく退化させることで闘争時の生存確率を高めたとする、非常にシニカルな適応進化の考え方です。
 </p>
+<p class="article-paragraph" style="margin-top: 15px;">
+  ※この小さな前肢が辿った退化の経緯や、各仮説の詳しい科学的根拠については、こちらの個別記事で詳しく解説しています：<br>
+  <a href="/topics/trex-small-arms" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">ティラノサウルスの「小さな前足」の謎！何のために使っていた？</a>
+</p>
 
 <h2 class="article-section-title">羽毛の有無をめぐる論争：最新の皮膚化石分析から見えた真の姿</h2>
 <p class="article-paragraph">
-  1990年代以降、中国で多くの羽毛恐竜の化石が発見され、ティラノサウルスの祖先系統にあたるユウティラヌス（全長約9メートル）に全身を覆う羽毛が見つかったことから、「T-Rexも全身がモフモフの羽毛で覆われていたのではないか」という仮説が一時期世界を席巻しました。多くの図鑑やイラストで、毛むくじゃらのティラノサウルスが描かれたのを見たことがある方も多いでしょう。
+  1990年代以降、中国で多くの羽毛恐竜の化石が発見され、ティラノサウルスの祖先系統にあたるユウティラヌス（全長約9メートル）に全身を覆う羽毛が見つかったことから、「ティラノサウルスも全身がモフモフの羽毛で覆われていたのではないか」という仮説が一時期世界を席巻しました。多くの図鑑やイラストで、毛むくじゃらのティラノサウルスが描かれたのを見たことがある方も多いでしょう。
 </p>
 <p class="article-paragraph">
   しかし、2017年に発表された皮膚化石の包括的な研究により、その復元像は再び書き換えられました。カナダなどで発見されたティラノサウルスの部分的な皮膚化石（首、骨盤、尾のまわり）を精査した結果、そこには鳥のような羽毛の痕跡はなく、トカゲのような<strong>微細なウロコ（鱗化石）</strong>しか存在しないことが実証されたのです。
 </p>
 <p class="article-paragraph">
-  このことから、現在の古生物学界では、「ティラノサウルスの祖先は寒冷な気候に対応するため羽毛を持っていたが、T-Rexほどの超巨大体型になると、体熱がこもりやすくなる（恒温動物における熱放射の効率低下）ため、進化の過程で羽毛を失い、ほぼウロコに覆われた皮膚に戻った」と考えられています。ただし、生まれたばかりの幼体期には体温保持のために産毛のような羽毛があり、成長とともに抜け落ちていった可能性は依然として高く指摘されています。
+  このことから、現在の古生物学界では、「ティラノサウルスの祖先は寒冷な気候に対応するため羽毛を持っていたが、ティラノサウルスほどの超巨大体型になると、体熱がこもりやすくなる（恒温動物における熱放射の効率低下）ため、進化の過程で羽毛を失い、ほぼウロコに覆われた皮膚に戻った」と考えられています。ただし、生まれたばかりの幼体期には体温保持のために産毛のような羽毛があり、成長とともに抜け落ちていった可能性は依然として高く指摘されています。
+</p>
+<p class="article-paragraph" style="margin-top: 15px;">
+  ※ティラノサウルスの羽毛をめぐる学説の変遷や、モフモフ説が広まった経緯についてより詳しく知りたい方はこちら：<br>
+  <a href="/topics/trex-feathers" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">ティラノサウルスの「羽毛」論争と最新の姿：モフモフ説は否定された？</a>
 </p>
 
 <h2 class="article-section-title">超越的な感覚器官：目・鼻・耳の驚くべきハンティング能力</h2>
@@ -802,7 +1063,7 @@ export const TOPICS = [
 </p>
 <p class="article-paragraph">
   そして、小学生以上の知的好奇心旺盛なお子様や、親子で本格的なホビーを楽しみたい方に最も推奨するのが、バンダイの『プラノサウルス ティラノサウルレックス』プラモデルです。このキットは、「骨格」をまずパズルのように組み立てて、その構造をじっくりと観察したあと、その上から「外皮（皮膚）」パーツを取り付けるという二層構造になっています。
-  実際にパチパチと組み立てることで、「T-Rexの頭蓋骨にはどんな穴があいていて、どうやって大きな顎の筋肉を支えているか」「前肢の爪はなぜ2本しかないのか」を立体的な体験を通じて直感的に学ぶことができます。接着剤やハサミが不要で、色分けもしっかりとされているため、親子でのコミュニケーションツールとしても素晴らしいクオリティを提供してくれます。
+  実際にパチパチと組み立てることで、「ティラノサウルスの頭蓋骨にはどんな穴があいていて、どうやって大きな顎の筋肉を支えているか」「前肢の爪はなぜ2本しかないのか」を立体的な体験を通じて直感的に学ぶことができます。接着剤やハサミが不要で、色分けもしっかりとされているため、親子でのコミュニケーションツールとしても素晴らしいクオリティを提供してくれます。
 </p>
 <p class="article-paragraph" style="margin-top: 20px;">
   関連するライバル恐竜の徹底解説はこちら：<a href="/topics/triceratops-guide" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【盾角竜の代表格】トリケラトプスのすべてを徹底解説！</a><br>
@@ -847,6 +1108,10 @@ export const TOPICS = [
 <p class="article-paragraph">
   第二に、<strong>熱調節器官（ラジエーター）</strong>としての機能です。フリルの広大な表面積とそこに張り巡らされた血管網により、体内にこもった熱を放射し、過酷な白亜紀の気候下で体温を一定に保つ役割を果たしていたとされています。
   第三に、<strong>強力な顎の筋肉の起点</strong>としての役割です。トリケラトプスの凄まじい咀嚼力を支える筋肉は、この巨大なフリルの根元から顎にかけて繋がっており、フリルの大型化は食性の進化と密接に結びついていました。
+</p>
+<p class="article-paragraph" style="margin-top: 15px;">
+  ※「フリルが実は盾ではなかった」とされる科学的な根拠や、化石に残された血管痕、フリルの厚みに関するより詳細な研究についてはこちら：<br>
+  <a href="/topics/triceratops-frill-mystery" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">トリケラトプスの頭の「フリル」、実は盾（たて）じゃなかった！？</a>
 </p>
 
 <h2 class="article-section-title">驚異的な植物粉砕機「デンタルバッテリー」と顎の進化</h2>
