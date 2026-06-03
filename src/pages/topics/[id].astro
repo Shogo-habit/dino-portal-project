@@ -61,7 +61,9 @@ const articleSchema = {
             <Fragment set:html={topic.content} />
         </div>
 
-        <AffiliateSection dinoId={topic.relatedSpecimens && topic.relatedSpecimens.length > 0 ? topic.relatedSpecimens[0] : 'default'} />
+        {topic.relatedSpecimens && topic.relatedSpecimens.length > 0 && (
+            <AffiliateSection dinoId={topic.relatedSpecimens[0]} />
+        )}
         
         {relatedDinos.length > 0 && (
             <section class="related-specimens" style="margin-top: 60px;">

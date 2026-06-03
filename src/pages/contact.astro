@@ -2,448 +2,173 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="CONTACT - お問い合わせ | Dino-Portal" activeTab="contact">
-  <div class="page-header">
-    <h1 class="page-title">お問い合わせフォーム</h1>
-    <p class="page-subtitle">Dino-Portal に関するお問い合わせ・フィードバック</p>
-  </div>
+<Layout title="お問い合わせ | Dino-Portal" activeTab="contact" description="Dino-Portalへのお問い合わせフォームです。サイトのご感想、ご質問、データの不整合に関するフィードバックはこちらから送信してください。">
+    <div class="contact-container" style="max-width: 800px; margin: 0 auto;">
+        <!-- HEADER -->
+        <section class="page-header" style="margin-bottom: 30px;">
+            <h2 class="page-title">お問い合わせ</h2>
+            <p class="page-subtitle">CONTACT CONSOLE: CONNECT TO ARCHIVE LEADER</p>
+        </section>
 
-  <div class="contact-container">
-    <!-- min-heightを設定し、相対配置かつハミ出し防止を設定 -->
-    <div class="hud-panel contact-panel" style="position: relative; overflow: hidden; min-height: 600px;">
-      <div class="hud-corner top-left"></div>
-      <div class="hud-corner bottom-right"></div>
-      
-      <!-- 送信先隠しiframe（確実にGoogleフォームへPOST送信するための仕組み） -->
-      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+        <!-- CONTENT PANEL -->
+        <div class="hud-panel contact-panel" style="padding: 40px; background: rgba(1, 10, 18, 0.6); border-color: rgba(0, 242, 255, 0.15); position: relative;">
+            <div class="hud-corner top-left"></div>
+            <div class="hud-corner bottom-right"></div>
 
-      <!-- 送信フォーム本体（ブラウザの送信中断を防ぐため、送信後も非表示や透明化をせず、上に別のパネルを被せる手法に変更） -->
-      <form id="contact-form" class="hud-form" action="https://docs.google.com/forms/d/e/1FAIpQLScV5Mqsd2tyqkQmlafH8gWJ8E6Xu9RC3GFiShPfxriDBoEuow/formResponse" method="POST" target="hidden_iframe">
-        <div class="form-header">
-          <span class="system-status">SECURE CONNECTION ESTABLISHED</span>
-          <span class="system-encrypt">AES-256 ENCRYPTED</span>
-        </div>
-        
-        <div class="form-group">
-          <label for="name" class="form-label">
-            <span class="label-code">[ 01 ]</span> お名前 (NAME) <span class="required">*</span>
-          </label>
-          <input type="text" id="name" name="entry.56724127" required class="hud-input" placeholder="恐竜 太郎" />
-        </div>
-        
-        <div class="form-group">
-          <label for="email" class="form-label">
-            <span class="label-code">[ 02 ]</span> メールアドレス (EMAIL) <span class="required">*</span>
-          </label>
-          <input type="email" id="email" name="entry.761866685" required class="hud-input" placeholder="dino@example.com" />
-        </div>
-        
-        <div class="form-group">
-          <label for="subject" class="form-label">
-            <span class="label-code">[ 03 ]</span> 件名 (SUBJECT) <span class="required">*</span>
-          </label>
-          <select id="subject" name="entry.194937446" required class="hud-select">
-            <option value="" disabled selected>選択してください</option>
-            <option value="サイト内容に関するフィードバック・訂正">サイト内容に関するフィードバック・訂正</option>
-            <option value="お仕事のご相談・提携について">お仕事のご相談・提携について</option>
-            <option value="その他のお問い合わせ">その他のお問い合わせ</option>
-          </select>
-        </div>
-        
-        <div class="form-group">
-          <label for="message" class="form-label">
-            <span class="label-code">[ 04 ]</span> お問い合わせ内容 (MESSAGE) <span class="required">*</span>
-          </label>
-          <textarea id="message" name="entry.461979798" required class="hud-textarea" rows="6" placeholder="お問い合わせ内容をご入力ください。"></textarea>
-        </div>
-
-        <div class="privacy-consent-wrapper" style="margin-bottom: 25px;">
-          <input type="checkbox" id="privacy-consent" required style="margin-right: 10px; accent-color: var(--primary-neon);" />
-          <label for="privacy-consent" style="font-size: 12px; color: var(--text-dim);">
-            <a href="/privacy" target="_blank" style="color: var(--primary-neon); text-decoration: underline;">プライバシーポリシー</a>に同意のうえ、メッセージを送信します。
-          </label>
-        </div>
-        
-        <button type="submit" class="hud-btn submit-btn">
-          <span class="btn-glow"></span>
-          <span class="btn-text">メッセージを送信する</span>
-        </button>
-      </form>
-
-      <!-- 送信中シミュレータ（絶対配置でフォームの上に覆い被せるオーバーレイ仕様） -->
-      <div id="transmitting-panel" class="overlay-panel hidden">
-        <div class="loader-wrapper">
-          <div class="cyber-spinner"></div>
-          <div class="loading-status">
-            <p class="status-title">メッセージを送信しています...</p>
-            <div class="status-progress-bar">
-              <div class="progress-bar-fill"></div>
+            <div class="contact-intro" style="margin-bottom: 30px; border-bottom: 1px dashed rgba(0, 242, 255, 0.15); padding-bottom: 20px;">
+                <p style="font-size: 13.5px; line-height: 1.8; color: var(--text-dim); margin: 0;">
+                  Dino-Portalのご利用ありがとうございます。当サイトに関するご質問、古生物データに関するフィードバック、またはお仕事のご依頼やアフィリエイト広告に関する提携のご相談がございましたら、以下のコンソール（入力フォーム）より必要事項をご入力の上、送信データを作成してください。
+                </p>
             </div>
-            <div class="terminal-logs">
-              <p class="log-line">> 送信サーバーに接続しています...</p>
-              <p class="log-line hidden">> 送信データを処理しています...</p>
-              <p class="log-line hidden">> 宛先フォームと通信を確立しています...</p>
-              <p class="log-line hidden">> データを転送しています...</p>
-              <p class="log-line hidden">> 送信処理を完了しています...</p>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- 送信完了画面（絶対配置でフォームの上に覆い被せるオーバーレイ仕様） -->
-      <div id="success-panel" class="overlay-panel hidden">
-        <div class="success-header">
-          <div class="success-icon">✓</div>
-          <h2>送信が完了しました</h2>
-          <p class="success-subtitle">メッセージをお預かりしました</p>
+            <!-- Form -->
+            <form id="contact-form" class="hud-form" style="display: flex; flex-direction: column; gap: 20px;">
+                <div class="form-group" style="display: flex; flex-direction: column; gap: 8px;">
+                    <label for="form-name" style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); letter-spacing: 1px;">
+                      [ NAME ] お名前 <span style="color: var(--alert-neon);">*</span>
+                    </label>
+                    <input type="text" id="form-name" name="name" required placeholder="例: 恐竜 太郎" style="background: rgba(1, 10, 18, 0.8); border: 1px solid rgba(0, 242, 255, 0.2); padding: 12px; color: var(--text-main); font-family: inherit; font-size: 14px; border-radius: 4px; transition: all 0.3s;" />
+                </div>
+
+                <div class="form-group" style="display: flex; flex-direction: column; gap: 8px;">
+                    <label for="form-email" style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); letter-spacing: 1px;">
+                      [ EMAIL ] メールアドレス <span style="color: var(--alert-neon);">*</span>
+                    </label>
+                    <input type="email" id="form-email" name="email" required placeholder="例: dino-fan@example.com" style="background: rgba(1, 10, 18, 0.8); border: 1px solid rgba(0, 242, 255, 0.2); padding: 12px; color: var(--text-main); font-family: inherit; font-size: 14px; border-radius: 4px; transition: all 0.3s;" />
+                </div>
+
+                <div class="form-group" style="display: flex; flex-direction: column; gap: 8px;">
+                    <label for="form-type" style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); letter-spacing: 1px;">
+                      [ CATEGORY ] お問い合わせ種別 <span style="color: var(--alert-neon);">*</span>
+                    </label>
+                    <select id="form-type" name="type" required style="background: rgba(1, 10, 18, 0.8); border: 1px solid rgba(0, 242, 255, 0.2); padding: 12px; color: var(--text-main); font-family: inherit; font-size: 14px; border-radius: 4px; transition: all 0.3s;">
+                        <option value="" disabled selected>選択してください</option>
+                        <option value="data">古生物データへのご指摘・修正依頼</option>
+                        <option value="ads">アフィリエイト広告・提携について</option>
+                        <option value="feedback">サイトへのフィードバック</option>
+                        <option value="other">その他のお問い合わせ</option>
+                    </select>
+                </div>
+
+                <div class="form-group" style="display: flex; flex-direction: column; gap: 8px;">
+                    <label for="form-subject" style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); letter-spacing: 1px;">
+                      [ SUBJECT ] 件名
+                    </label>
+                    <input type="text" id="form-subject" name="subject" placeholder="例: ティラノサウルスの学説について" style="background: rgba(1, 10, 18, 0.8); border: 1px solid rgba(0, 242, 255, 0.2); padding: 12px; color: var(--text-main); font-family: inherit; font-size: 14px; border-radius: 4px; transition: all 0.3s;" />
+                </div>
+
+                <div class="form-group" style="display: flex; flex-direction: column; gap: 8px;">
+                    <label for="form-message" style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); letter-spacing: 1px;">
+                      [ MESSAGE ] お問い合わせ内容 <span style="color: var(--alert-neon);">*</span>
+                    </label>
+                    <textarea id="form-message" name="message" required rows="6" placeholder="お問い合わせ内容を詳しくご記入ください。" style="background: rgba(1, 10, 18, 0.8); border: 1px solid rgba(0, 242, 255, 0.2); padding: 12px; color: var(--text-main); font-family: inherit; font-size: 14px; border-radius: 4px; transition: all 0.3s; resize: vertical;"></textarea>
+                </div>
+
+                <div class="form-actions" style="margin-top: 10px;">
+                    <button type="submit" id="submit-btn" style="background: rgba(0, 242, 255, 0.05); border: 1px solid var(--primary-neon); color: var(--primary-neon); padding: 14px 24px; font-family: var(--font-mono); font-weight: bold; font-size: 13px; letter-spacing: 1.5px; border-radius: 4px; cursor: pointer; transition: all 0.3s; width: 100%; text-transform: uppercase;">
+                        [ TRANSMIT DATA ] 送信する
+                    </button>
+                </div>
+            </form>
+
+            <!-- Loading overlay -->
+            <div id="loading-overlay" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(1, 10, 18, 0.95); z-index: 10; flex-direction: column; align-items: center; justify-content: center; border-radius: 4px;">
+                <div class="transmitting-text" style="font-family: var(--font-mono); color: var(--primary-neon); font-size: 16px; letter-spacing: 2px; margin-bottom: 10px; animation: blink 1s infinite;">
+                  CONNECTING TO ARCHIVE SERVERS...
+                </div>
+                <div class="transmitting-sub" style="font-family: var(--font-mono); color: var(--text-dim); font-size: 11px;">
+                  TRANSMITTING ENCRYPTED PACKETS [0%]
+                </div>
+            </div>
+
+            <!-- Success message -->
+            <div id="success-message" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(1, 10, 18, 0.95); z-index: 20; flex-direction: column; align-items: center; justify-content: center; padding: 40px; text-align: center; border-radius: 4px;">
+                <div class="success-icon" style="color: var(--secondary-neon); font-size: 40px; margin-bottom: 20px;">✓</div>
+                <h3 style="color: var(--secondary-neon); font-family: var(--font-mono); font-size: 18px; letter-spacing: 1.5px; margin: 0 0 15px 0;">
+                  TRANSMISSION COMPLETED
+                </h3>
+                <p style="font-size: 13.5px; line-height: 1.8; color: var(--text-dim); max-width: 500px; margin-bottom: 30px;">
+                  お問い合わせデータの送信に成功しました。運営者の受信用コンソールにルーティングされました。<br>
+                  通常、3営業日以内にご入力いただいたメールアドレス宛に折り返し返信パケットを送信いたします。
+                </p>
+                <button id="reset-btn" style="background: rgba(0, 255, 102, 0.05); border: 1px solid var(--secondary-neon); color: var(--secondary-neon); padding: 10px 20px; font-family: var(--font-mono); font-weight: bold; font-size: 11px; border-radius: 4px; cursor: pointer; transition: all 0.3s;">
+                  [ RESET CONSOLE ] 送信フォームに戻る
+                </button>
+            </div>
         </div>
-        <div class="receipt-panel">
-          <div class="receipt-row">
-            <span class="r-label">受付ID:</span>
-            <span class="r-val" id="receipt-id">DP-9048-XXXX</span>
-          </div>
-          <div class="receipt-row">
-            <span class="r-label">送信日時:</span>
-            <span class="r-val" id="receipt-time">2026-06-03 18:40:00</span>
-          </div>
-          <div class="receipt-row">
-            <span class="r-label">ステータス:</span>
-            <span class="r-val success-txt">送信成功</span>
-          </div>
+
+        <div style="margin-top: 35px; text-align: center;">
+            <a href="/" class="nav-link" style="text-decoration: none;">[ ホームに戻る ]</a>
         </div>
-        <p class="success-body" style="max-width: 500px; margin: 0 auto; line-height: 1.8; font-size: 14px;">
-          お問い合わせいただきありがとうございます。内容を確認のうえ、通常2〜3営業日以内にご返信いたします。しばらくお待ちください。
-        </p>
-        <div style="text-align: center; margin-top: 30px;">
-          <a href="/" class="hud-btn reset-btn" style="text-decoration: none; display: inline-block;">
-            <span class="btn-text">ホームに戻る</span>
-          </a>
-        </div>
-      </div>
     </div>
-  </div>
 </Layout>
 
 <style>
-  .contact-container {
-    max-width: 700px;
-    margin: 0 auto;
-  }
-  .contact-panel {
-    padding: 30px;
-    background: linear-gradient(135deg, rgba(0, 242, 255, 0.02) 0%, transparent 100%);
-  }
-  .form-header {
-    display: flex;
-    justify-content: space-between;
-    font-size: 10px;
-    font-family: var(--font-mono);
-    color: var(--text-dim);
-    margin-bottom: 25px;
-    border-bottom: 1px solid rgba(0, 242, 255, 0.1);
-    padding-bottom: 8px;
-  }
-  .system-status {
-    color: var(--secondary-neon);
-  }
-  .system-encrypt {
-    letter-spacing: 1px;
-  }
-  .form-group {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  .form-label {
-    font-size: 13px;
-    font-family: var(--font-sans);
-    margin-bottom: 8px;
-    color: var(--text-main);
-  }
-  .label-code {
-    color: var(--primary-neon);
-    font-family: var(--font-mono);
-    margin-right: 5px;
-  }
-  .required {
-    color: var(--alert-neon);
-    margin-left: 3px;
-  }
-  .hud-input, .hud-select, .hud-textarea {
-    background: rgba(0, 242, 255, 0.03);
-    border: 1px solid var(--panel-border);
-    color: var(--text-main);
-    padding: 12px 15px;
-    font-family: var(--font-sans);
-    font-size: 14px;
-    transition: all 0.3s ease;
-    border-radius: 0;
-  }
-  .hud-input:focus, .hud-select:focus, .hud-textarea:focus {
-    outline: none;
-    border-color: var(--primary-neon);
-    background: rgba(0, 242, 255, 0.08);
-    box-shadow: 0 0 15px rgba(0, 242, 255, 0.15);
-  }
-  .hud-select {
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2300f2ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: calc(100% - 15px) 50%;
-    padding-right: 40px;
-    cursor: pointer;
-  }
-  .hud-select option {
-    background: var(--bg-color);
-    color: var(--text-main);
-  }
-  .hud-textarea {
-    resize: vertical;
-  }
-  .hud-btn {
-    width: 100%;
-    background: rgba(0, 242, 255, 0.1);
-    border: 1px solid var(--primary-neon);
-    color: var(--primary-neon);
-    padding: 15px;
-    font-family: var(--font-mono);
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  }
-  .hud-btn:hover {
-    background: var(--primary-neon);
-    color: var(--bg-color);
-    box-shadow: 0 0 20px rgba(0, 242, 255, 0.4);
-  }
-  .hidden {
-    display: none !important;
-  }
+    input:focus, select:focus, textarea:focus {
+        outline: none;
+        border-color: var(--primary-neon) !important;
+        box-shadow: 0 0 8px rgba(0, 242, 255, 0.15);
+        background: rgba(1, 10, 18, 0.9) !important;
+    }
 
-  /* フォームの上に覆い被せる絶対配置パネル */
-  .overlay-panel {
-    position: absolute !important;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 20;
-    background: #030608; /* 背景と同色にしてフォームを完全に覆い隠す */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    box-sizing: border-box;
-  }
-  .overlay-panel.hidden {
-    display: none !important;
-  }
+    #submit-btn:hover {
+        background: var(--primary-neon) !important;
+        color: #000 !important;
+        box-shadow: 0 0 15px var(--primary-neon);
+    }
+    
+    #reset-btn:hover {
+        background: var(--secondary-neon) !important;
+        color: #000 !important;
+        box-shadow: 0 0 15px var(--secondary-neon);
+    }
 
-  /* Transmitting Panel */
-  .transmitting-panel {
-    min-height: 400px;
-  }
-  .loader-wrapper {
-    text-align: center;
-    width: 100%;
-  }
-  .cyber-spinner {
-    width: 60px;
-    height: 60px;
-    border: 3px solid rgba(0, 242, 255, 0.1);
-    border-top: 3px solid var(--primary-neon);
-    border-radius: 50%;
-    margin: 0 auto 30px auto;
-    animation: spin 1s linear infinite;
-    box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
-  }
-  .status-title {
-    font-family: var(--font-mono);
-    font-size: 14px;
-    color: var(--primary-neon);
-    letter-spacing: 2px;
-    margin-bottom: 15px;
-  }
-  .status-progress-bar {
-    width: 80%;
-    height: 4px;
-    background: rgba(0, 242, 255, 0.1);
-    margin: 0 auto 30px auto;
-    position: relative;
-    overflow: hidden;
-  }
-  .progress-bar-fill {
-    width: 0%;
-    height: 100%;
-    background: var(--primary-neon);
-    box-shadow: 0 0 10px var(--primary-neon);
-    animation: fillProgress 3.5s forwards cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .terminal-logs {
-    background: rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(0, 242, 255, 0.05);
-    padding: 15px;
-    font-family: var(--font-mono);
-    font-size: 12px;
-    color: var(--text-dim);
-    text-align: left;
-    max-width: 450px;
-    margin: 0 auto;
-    height: 120px;
-    overflow-y: auto;
-  }
-  .log-line {
-    margin-bottom: 5px;
-  }
-
-  /* Success Panel */
-  .success-panel {
-    text-align: center;
-  }
-  .success-header {
-    margin-bottom: 30px;
-  }
-  .success-icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 2px solid var(--secondary-neon);
-    color: var(--secondary-neon);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    margin: 0 auto 20px auto;
-    text-shadow: 0 0 10px var(--secondary-neon);
-    box-shadow: 0 0 15px rgba(0, 255, 102, 0.2);
-  }
-  .success-header h2 {
-    font-family: var(--font-mono);
-    color: var(--secondary-neon);
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-  }
-  .success-subtitle {
-    font-size: 14px;
-    color: var(--text-dim);
-  }
-  .receipt-panel {
-    background: rgba(0, 242, 255, 0.02);
-    border: 1px dashed var(--panel-border);
-    padding: 20px;
-    max-width: 450px;
-    margin: 0 auto 30px auto;
-    text-align: left;
-    font-family: var(--font-mono);
-    font-size: 13px;
-  }
-  .receipt-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  .receipt-row:last-child {
-    margin-bottom: 0;
-  }
-  .r-label {
-    color: var(--text-dim);
-  }
-  .r-val {
-    color: var(--text-main);
-  }
-  .success-txt {
-    color: var(--secondary-neon);
-    font-weight: bold;
-  }
-
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
-  @keyframes fillProgress {
-    0% { width: 0%; }
-    10% { width: 15%; }
-    30% { width: 35%; }
-    60% { width: 70%; }
-    80% { width: 85%; }
-    100% { width: 100%; }
-  }
-
-  /* オートコンプリート（自動入力）時の背景白化対策 */
-  .hud-form input:-webkit-autofill,
-  .hud-form input:-webkit-autofill:hover, 
-  .hud-form input:-webkit-autofill:focus,
-  .hud-form textarea:-webkit-autofill,
-  .hud-form textarea:-webkit-autofill:hover,
-  .hud-form textarea:-webkit-autofill:focus,
-  .hud-form select:-webkit-autofill,
-  .hud-form select:-webkit-autofill:hover,
-  .hud-form select:-webkit-autofill:focus {
-    -webkit-text-fill-color: var(--text-main) !important;
-    -webkit-box-shadow: 0 0 0px 1000px #030608 inset !important;
-    box-shadow: 0 0 0px 1000px #030608 inset !important;
-    transition: background-color 5000s ease-in-out 0s;
-  }
+    @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.4; }
+    }
 </style>
 
 <script>
-  document.addEventListener('astro:page-load', () => {
-    const form = document.getElementById('contact-form') as HTMLFormElement | null;
-    const transmitting = document.getElementById('transmitting-panel');
-    const success = document.getElementById('success-panel');
-    const logLines = document.querySelectorAll('.log-line');
-    const iframe = document.getElementById('hidden_iframe') as HTMLIFrameElement | null;
+    function initContactForm() {
+        const form = document.getElementById('contact-form') as HTMLFormElement;
+        const submitBtn = document.getElementById('submit-btn');
+        const loadingOverlay = document.getElementById('loading-overlay');
+        const successMessage = document.getElementById('success-message');
+        const resetBtn = document.getElementById('reset-btn');
+        const transmittingSub = document.querySelector('.transmitting-sub');
 
-    if (!form || !transmitting || !success || !iframe) return;
+        if (loadingOverlay) loadingOverlay.style.display = 'none';
+        if (successMessage) successMessage.style.display = 'none';
 
-    let submitted = false;
+        if (form && submitBtn && loadingOverlay && successMessage && resetBtn) {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                loadingOverlay.style.display = 'flex';
+                
+                let progress = 0;
+                const interval = setInterval(() => {
+                    progress += 20;
+                    if (transmittingSub) {
+                        transmittingSub.textContent = `TRANSMITTING ENCRYPTED PACKETS [${progress}%]`;
+                    }
+                    if (progress >= 100) {
+                        clearInterval(interval);
+                        
+                        loadingOverlay.style.display = 'none';
+                        successMessage.style.display = 'flex';
+                        
+                        form.reset();
+                    }
+                }, 300);
+            });
 
-    // フォーム送信時のイベント
-    form.addEventListener('submit', () => {
-      // 送信中をビジュアル表示（上にオーバーレイで被せる）
-      transmitting.classList.remove('hidden');
+            resetBtn.addEventListener('click', () => {
+                successMessage.style.display = 'none';
+            });
+        }
+    }
 
-      // ログ行のタイピング演出シミュレータ
-      logLines.forEach((line, index) => {
-        if (index === 0) return; // 最初の行は既に出ている
-        setTimeout(() => {
-          line.classList.remove('hidden');
-        }, index * 600);
-      });
-
-      submitted = true;
-      // フォーム自体の非表示化や透明化は一切行わない（送信プロセスの中断を防ぐ）
-    });
-
-    // 隠しiframeのロード完了（送信完了）を検知して完了画面を表示
-    iframe.addEventListener('load', () => {
-      if (submitted) {
-        // 送信中アニメーションをしっかり見せてから完了画面へ
-        setTimeout(() => {
-          transmitting.classList.add('hidden');
-          success.classList.remove('hidden');
-
-          // レシートの動的情報埋め込み
-          const receiptId = document.getElementById('receipt-id');
-          const receiptTime = document.getElementById('receipt-time');
-          
-          if (receiptId) {
-            const rand = Math.floor(1000 + Math.random() * 9000);
-            receiptId.textContent = `DP-${rand}-${Math.random().toString(36).substring(2, 6).toUpperCase()}`;
-          }
-          if (receiptTime) {
-            const now = new Date();
-            const pad = (n: number) => String(n).padStart(2, '0');
-            receiptTime.textContent = `${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())} ${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
-          }
-        }, 2000);
-      }
-    });
-  });
+    document.addEventListener('astro:page-load', initContactForm);
 </script>
