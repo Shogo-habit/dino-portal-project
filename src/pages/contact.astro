@@ -9,15 +9,16 @@ import Layout from '../layouts/Layout.astro';
   </div>
 
   <div class="contact-container">
-    <div class="hud-panel contact-panel">
+    <!-- min-heightを設定し、相対配置かつハミ出し防止を設定 -->
+    <div class="hud-panel contact-panel" style="position: relative; overflow: hidden; min-height: 600px;">
       <div class="hud-corner top-left"></div>
       <div class="hud-corner bottom-right"></div>
       
-      <!-- 送信先隠しiframe（CORSエラーを完全に回避して確実にGoogleフォームへ送信するための仕組み） -->
+      <!-- 送信先隠しiframe（確実にGoogleフォームへPOST送信するための仕組み） -->
       <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
-      <!-- 送信フォーム本体 -->
-      <form id="contact-form" class="hud-form" action="https://docs.google.com/forms/d/e/1FAIpQLScV5Mqsd2tyqkQmlafH8gWJ8E6Xu9RC3GFiShPfxriDBoEuow/formResponse" method="POST" target="hidden_iframe">
+      <!-- 送信フォーム本体（ブラウザの送信中断を防ぐため、送信後も非表示や透明化をせず、上に別のパネルを被せる手法に変更） -->
+      <form id="contact-form" class="hud-form">
         <div class="form-header">
           <span class="system-status">SECURE CONNECTION ESTABLISHED</span>
           <span class="system-encrypt">AES-256 ENCRYPTED</span>
@@ -69,8 +70,8 @@ import Layout from '../layouts/Layout.astro';
         </button>
       </form>
 
-      <!-- 送信中シミュレータ -->
-      <div id="transmitting-panel" class="transmitting-panel hidden">
+      <!-- 送信中シミュレータ（絶対配置でフォームの上に覆い被せるオーバーレイ仕様） -->
+      <div id="transmitting-panel" class="overlay-panel hidden">
         <div class="loader-wrapper">
           <div class="cyber-spinner"></div>
           <div class="loading-status">
@@ -89,8 +90,8 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </div>
 
-      <!-- 送信完了画面 -->
-      <div id="success-panel" class="success-panel hidden">
+      <!-- 送信完了画面（絶対配置でフォームの上に覆い被せるオーバーレイ仕様） -->
+      <div id="success-panel" class="overlay-panel hidden">
         <div class="success-header">
           <div class="success-icon">✓</div>
           <h2>送信が完了しました</h2>
@@ -110,7 +111,7 @@ import Layout from '../layouts/Layout.astro';
             <span class="r-val success-txt">送信成功</span>
           </div>
         </div>
-        <p class="success-body">
+        <p class="success-body" style="max-width: 500px; margin: 0 auto; line-height: 1.8; font-size: 14px;">
           お問い合わせいただきありがとうございます。内容を確認のうえ、通常2〜3営業日以内にご返信いたします。しばらくお待ちください。
         </p>
         <div style="text-align: center; margin-top: 30px;">
@@ -222,20 +223,29 @@ import Layout from '../layouts/Layout.astro';
   .hidden {
     display: none !important;
   }
-  .form-inactive {
+
+  /* フォームの上に覆い被せる絶対配置パネル */
+  .overlay-panel {
     position: absolute !important;
-    width: 0 !important;
-    height: 0 !important;
-    opacity: 0 !important;
-    overflow: hidden !important;
-    pointer-events: none !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background: #030608; /* 背景と同色にしてフォームを完全に覆い隠す */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .overlay-panel.hidden {
+    display: none !important;
   }
 
   /* Transmitting Panel */
   .transmitting-panel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 400px;
   }
   .loader-wrapper {
@@ -294,7 +304,6 @@ import Layout from '../layouts/Layout.astro';
   /* Success Panel */
   .success-panel {
     text-align: center;
-    padding: 20px 0;
   }
   .success-header {
     margin-bottom: 30px;
@@ -351,13 +360,6 @@ import Layout from '../layouts/Layout.astro';
     color: var(--secondary-neon);
     font-weight: bold;
   }
-  .success-body {
-    font-size: 14px;
-    line-height: 1.8;
-    color: var(--text-main);
-    max-width: 500px;
-    margin: 0 auto;
-  }
 
   @keyframes spin {
     0% { transform: rotate(0deg); }
@@ -404,7 +406,7 @@ import Layout from '../layouts/Layout.astro';
 
     // フォーム送信時のイベント
     form.addEventListener('submit', () => {
-      // 送信中をビジュアル表示
+      // 送信中をビジュアル表示（上にオーバーレイで被せる）
       transmitting.classList.remove('hidden');
 
       // ログ行のタイピング演出シミュレータ
@@ -416,15 +418,13 @@ import Layout from '../layouts/Layout.astro';
       });
 
       submitted = true;
-
-      // display: none にせず、CSSで物理的に隠すことでブラウザによる送信の強制キャンセルを完全に防止
-      form.classList.add('form-inactive');
+      // フォーム自体の非表示化や透明化は一切行わない（送信プロセスの中断を防ぐ）
     });
 
     // 隠しiframeのロード完了（送信完了）を検知して完了画面を表示
     iframe.addEventListener('load', () => {
       if (submitted) {
-        // 送信中アニメーション（3.5秒）をしっかり見せてから完了画面へ
+        // 送信中アニメーションをしっかり見せてから完了画面へ
         setTimeout(() => {
           transmitting.classList.add('hidden');
           success.classList.remove('hidden');
