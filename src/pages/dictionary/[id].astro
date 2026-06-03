@@ -5,6 +5,7 @@ import { DINOSAURS } from '../../data/dinosaurs';
 import { SPECIMEN_METADATA, REFERENCE_ASSETS } from '../../data/cyberAssets';
 import { AUTHOR_DATA } from '../../data/author';
 import dinoExplanations from '../../data/dino_explanations.json';
+import { TOPICS } from '../../data/topics';
 
 export async function getStaticPaths() {
   return DINOSAURS.map(d => ({
@@ -124,6 +125,11 @@ const relatedSpecimens = DINOSAURS.filter(item => {
     const matchesRegion = item.region === d.region;
     return matchesGroup || matchesEra || matchesRegion;
 }).slice(0, 4);
+
+const relatedTopics = TOPICS
+    .filter(t => t.relatedSpecimens && t.relatedSpecimens.includes(d.id))
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .slice(0, 3);
 ---
 
 <Layout title={`${d.name} | Specimen Analysis | Dino-Portal`} activeTab="dictionary" description={`${d.name} (${d.scientificName}) の生物学的特性、出現年代、生息地、サイズ比較スケールデータ。`} ogImage={`/${d.image}`}>
@@ -261,6 +267,32 @@ const relatedSpecimens = DINOSAURS.filter(item => {
                 </section>
             )}
 
+            <!-- Related Topics Section -->
+            {relatedTopics.length > 0 && (
+                <section class="related-topics" style="margin-top: 40px; border-top: 1px solid var(--panel-border); padding-top: 30px;">
+                    <h3 class="related-title" style="font-family: var(--font-mono); font-size: 14px; color: var(--primary-neon); margin-bottom: 20px; letter-spacing: 1px;">
+                        [ RELATED TOPICS / 関連する特集・記事 ]
+                    </h3>
+                    <div class="topics-simple-list" style="display: flex; flex-direction: column; gap: 15px;">
+                        {relatedTopics.map(t => (
+                            <a href={`/topics/${t.id}`} style="text-decoration: none; color: inherit; display: block;">
+                                <div class="related-topic-card hud-panel" style="cursor: pointer; display: flex; gap: 15px; align-items: center; padding: 15px; border-color: rgba(0, 242, 255, 0.15); transition: all 0.3s ease;">
+                                    <div class="topic-mini-thumb" style="width: 80px; height: 50px; flex-shrink: 0; background-color: #000; border: 1px solid var(--panel-border); overflow: hidden;">
+                                        <img src={`/${t.image}`} alt={t.title} style="width: 100%; height: 100%; object-fit: cover;">
+                                    </div>
+                                    <div style="flex: 1;">
+                                        <div style="font-size: 10px; color: var(--primary-neon); font-family: var(--font-mono); margin-bottom: 3px;">
+                                            {t.date} | {t.category}
+                                        </div>
+                                        <h4 style="font-size: 14px; margin: 0; color: var(--text-main); font-weight: 500;">{t.title}</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        ))}
+                    </div>
+                </section>
+            )}
+
             <!-- Related Specimens Section -->
             {relatedSpecimens.length > 0 && (
                 <section class="related-specimens" style="margin-top: 60px;">
@@ -356,3 +388,11 @@ const relatedSpecimens = DINOSAURS.filter(item => {
         document.addEventListener('astro:page-load', initSpecimenDetail);
     </script>
 </Layout>
+
+<style>
+  .related-topic-card:hover {
+    border-color: var(--primary-neon) !important;
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
+    background: rgba(0, 242, 255, 0.05) !important;
+  }
+</style>

@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { TOPICS } from '../../data/topics';
 import { DINOSAURS } from '../../data/dinosaurs';
+import AffiliateSection from '../../components/AffiliateSection.astro';
 
 export async function getStaticPaths() {
   return TOPICS.map(topic => ({
@@ -59,6 +60,8 @@ const articleSchema = {
         <div class="topic-content">
             <Fragment set:html={topic.content} />
         </div>
+
+        <AffiliateSection dinoId={topic.relatedSpecimens && topic.relatedSpecimens.length > 0 ? topic.relatedSpecimens[0] : 'default'} />
         
         {relatedDinos.length > 0 && (
             <section class="related-specimens" style="margin-top: 60px;">

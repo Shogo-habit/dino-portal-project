@@ -1,0 +1,412 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="CONTACT - お問い合わせ | Dino-Portal" activeTab="contact">
+  <div class="page-header">
+    <h1 class="page-title">Contact Portal</h1>
+    <p class="page-subtitle">お問い合わせ・フィードバック送信窓口</p>
+  </div>
+
+  <div class="contact-container">
+    <div class="hud-panel contact-panel">
+      <div class="hud-corner top-left"></div>
+      <div class="hud-corner bottom-right"></div>
+      
+      <!-- 送信フォーム本体 -->
+      <form id="contact-form" class="hud-form">
+        <div class="form-header">
+          <span class="system-status">SECURE CONNECTION ESTABLISHED</span>
+          <span class="system-encrypt">AES-256 ENCRYPTED</span>
+        </div>
+        
+        <div class="form-group">
+          <label for="name" class="form-label">
+            <span class="label-code">[ 01 ]</span> お名前 (NAME) <span class="required">*</span>
+          </label>
+          <input type="text" id="name" name="name" required class="hud-input" placeholder="恐竜 太郎" />
+        </div>
+        
+        <div class="form-group">
+          <label for="email" class="form-label">
+            <span class="label-code">[ 02 ]</span> メールアドレス (EMAIL) <span class="required">*</span>
+          </label>
+          <input type="email" id="email" name="email" required class="hud-input" placeholder="dino@example.com" />
+        </div>
+        
+        <div class="form-group">
+          <label for="subject" class="form-label">
+            <span class="label-code">[ 03 ]</span> 件名 (SUBJECT) <span class="required">*</span>
+          </label>
+          <select id="subject" name="subject" required class="hud-select">
+            <option value="" disabled selected>選択してください</option>
+            <option value="site-feedback">サイト内容に関するフィードバック・訂正</option>
+            <option value="business-inquiry">お仕事のご相談・提携について</option>
+            <option value="other">その他のお問い合わせ</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="message" class="form-label">
+            <span class="label-code">[ 04 ]</span> お問い合わせ内容 (MESSAGE) <span class="required">*</span>
+          </label>
+          <textarea id="message" name="message" required class="hud-textarea" rows="6" placeholder="お問い合わせ内容をご入力ください。"></textarea>
+        </div>
+
+        <div class="privacy-consent-wrapper" style="margin-bottom: 25px;">
+          <input type="checkbox" id="privacy-consent" required style="margin-right: 10px; accent-color: var(--primary-neon);" />
+          <label for="privacy-consent" style="font-size: 12px; color: var(--text-dim);">
+            <a href="/privacy" target="_blank" style="color: var(--primary-neon); text-decoration: underline;">プライバシーポリシー</a>に同意のうえ、メッセージを送信します。
+          </label>
+        </div>
+        
+        <button type="submit" class="hud-btn submit-btn">
+          <span class="btn-glow"></span>
+          <span class="btn-text">INITIALIZE TRANSMISSION</span>
+        </button>
+      </form>
+
+      <!-- 送信中シミュレータ -->
+      <div id="transmitting-panel" class="transmitting-panel hidden">
+        <div class="loader-wrapper">
+          <div class="cyber-spinner"></div>
+          <div class="loading-status">
+            <p class="status-title">TRANSMITTING PACKETS...</p>
+            <div class="status-progress-bar">
+              <div class="progress-bar-fill"></div>
+            </div>
+            <div class="terminal-logs">
+              <p class="log-line">> Establishing secure socket to gateway...</p>
+              <p class="log-line hidden">> Encoding data to protocol schema...</p>
+              <p class="log-line hidden">> Pinging destination mainframe...</p>
+              <p class="log-line hidden">> Synchronizing payload packets...</p>
+              <p class="log-line hidden">> Finalizing transmission handshakes...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 送信完了画面 -->
+      <div id="success-panel" class="success-panel hidden">
+        <div class="success-header">
+          <div class="success-icon">✓</div>
+          <h2>TRANSMISSION COMPLETED</h2>
+          <p class="success-subtitle">メッセージの送信に成功しました</p>
+        </div>
+        <div class="receipt-panel">
+          <div class="receipt-row">
+            <span class="r-label">TRANSMISSION ID:</span>
+            <span class="r-val" id="receipt-id">DP-9048-XXXX</span>
+          </div>
+          <div class="receipt-row">
+            <span class="r-label">TIMESTAMP:</span>
+            <span class="r-val" id="receipt-time">2026-06-03 18:40:00</span>
+          </div>
+          <div class="receipt-row">
+            <span class="r-label">STATUS:</span>
+            <span class="r-val success-txt">DELIVERED / OK</span>
+          </div>
+        </div>
+        <p class="success-body">
+          お問い合わせいただきありがとうございます。ご入力いただいたメールアドレス宛に、自動返信メール（送信確認）をお送りしました。
+          内容を確認のうえ、通常2〜3営業日以内にご返信いたします。しばらくお待ちください。
+        </p>
+        <div style="text-align: center; margin-top: 30px;">
+          <a href="/" class="hud-btn reset-btn" style="text-decoration: none; display: inline-block;">
+            <span class="btn-text">RETURN TO MAIN TERMINAL</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .contact-container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .contact-panel {
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(0, 242, 255, 0.02) 0%, transparent 100%);
+  }
+  .form-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    font-family: var(--font-mono);
+    color: var(--text-dim);
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(0, 242, 255, 0.1);
+    padding-bottom: 8px;
+  }
+  .system-status {
+    color: var(--secondary-neon);
+  }
+  .system-encrypt {
+    letter-spacing: 1px;
+  }
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .form-label {
+    font-size: 13px;
+    font-family: var(--font-sans);
+    margin-bottom: 8px;
+    color: var(--text-main);
+  }
+  .label-code {
+    color: var(--primary-neon);
+    font-family: var(--font-mono);
+    margin-right: 5px;
+  }
+  .required {
+    color: var(--alert-neon);
+    margin-left: 3px;
+  }
+  .hud-input, .hud-select, .hud-textarea {
+    background: rgba(0, 242, 255, 0.03);
+    border: 1px solid var(--panel-border);
+    color: var(--text-main);
+    padding: 12px 15px;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border-radius: 0;
+  }
+  .hud-input:focus, .hud-select:focus, .hud-textarea:focus {
+    outline: none;
+    border-color: var(--primary-neon);
+    background: rgba(0, 242, 255, 0.08);
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.15);
+  }
+  .hud-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2300f2ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15px) 50%;
+    padding-right: 40px;
+    cursor: pointer;
+  }
+  .hud-select option {
+    background: var(--bg-color);
+    color: var(--text-main);
+  }
+  .hud-textarea {
+    resize: vertical;
+  }
+  .hud-btn {
+    width: 100%;
+    background: rgba(0, 242, 255, 0.1);
+    border: 1px solid var(--primary-neon);
+    color: var(--primary-neon);
+    padding: 15px;
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  .hud-btn:hover {
+    background: var(--primary-neon);
+    color: var(--bg-color);
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.4);
+  }
+  .hidden {
+    display: none !important;
+  }
+
+  /* Transmitting Panel */
+  .transmitting-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+  }
+  .loader-wrapper {
+    text-align: center;
+    width: 100%;
+  }
+  .cyber-spinner {
+    width: 60px;
+    height: 60px;
+    border: 3px solid rgba(0, 242, 255, 0.1);
+    border-top: 3px solid var(--primary-neon);
+    border-radius: 50%;
+    margin: 0 auto 30px auto;
+    animation: spin 1s linear infinite;
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
+  }
+  .status-title {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    color: var(--primary-neon);
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+  .status-progress-bar {
+    width: 80%;
+    height: 4px;
+    background: rgba(0, 242, 255, 0.1);
+    margin: 0 auto 30px auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .progress-bar-fill {
+    width: 0%;
+    height: 100%;
+    background: var(--primary-neon);
+    box-shadow: 0 0 10px var(--primary-neon);
+    animation: fillProgress 3.5s forwards cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .terminal-logs {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 242, 255, 0.05);
+    padding: 15px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text-dim);
+    text-align: left;
+    max-width: 450px;
+    margin: 0 auto;
+    height: 120px;
+    overflow-y: auto;
+  }
+  .log-line {
+    margin-bottom: 5px;
+  }
+
+  /* Success Panel */
+  .success-panel {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .success-header {
+    margin-bottom: 30px;
+  }
+  .success-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--secondary-neon);
+    color: var(--secondary-neon);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0 auto 20px auto;
+    text-shadow: 0 0 10px var(--secondary-neon);
+    box-shadow: 0 0 15px rgba(0, 255, 102, 0.2);
+  }
+  .success-header h2 {
+    font-family: var(--font-mono);
+    color: var(--secondary-neon);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  .success-subtitle {
+    font-size: 14px;
+    color: var(--text-dim);
+  }
+  .receipt-panel {
+    background: rgba(0, 242, 255, 0.02);
+    border: 1px dashed var(--panel-border);
+    padding: 20px;
+    max-width: 450px;
+    margin: 0 auto 30px auto;
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 13px;
+  }
+  .receipt-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .receipt-row:last-child {
+    margin-bottom: 0;
+  }
+  .r-label {
+    color: var(--text-dim);
+  }
+  .r-val {
+    color: var(--text-main);
+  }
+  .success-txt {
+    color: var(--secondary-neon);
+    font-weight: bold;
+  }
+  .success-body {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--text-main);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @keyframes fillProgress {
+    0% { width: 0%; }
+    10% { width: 15%; }
+    30% { width: 35%; }
+    60% { width: 70%; }
+    80% { width: 85%; }
+    100% { width: 100%; }
+  }
+</style>
+
+<script>
+  document.addEventListener('astro:page-load', () => {
+    const form = document.getElementById('contact-form') as HTMLFormElement | null;
+    const transmitting = document.getElementById('transmitting-panel');
+    const success = document.getElementById('success-panel');
+    const logLines = document.querySelectorAll('.log-line');
+
+    if (!form || !transmitting || !success) return;
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      // フォームを非表示、送信中をビジュアル表示
+      form.classList.add('hidden');
+      transmitting.classList.remove('hidden');
+
+      // ログ行のタイピング演出シミュレータ
+      logLines.forEach((line, index) => {
+        if (index === 0) return; // 最初の行は既に出ている
+        setTimeout(() => {
+          line.classList.remove('hidden');
+        }, index * 600);
+      });
+
+      // 3.5秒後に送信完了を表示
+      setTimeout(() => {
+        transmitting.classList.add('hidden');
+        success.classList.remove('hidden');
+
+        // レシートの動的情報埋め込み
+        const receiptId = document.getElementById('receipt-id');
+        const receiptTime = document.getElementById('receipt-time');
+        
+        if (receiptId) {
+          const rand = Math.floor(1000 + Math.random() * 9000);
+          receiptId.textContent = `DP-${rand}-${Math.random().toString(36).substring(2, 6).toUpperCase()}`;
+        }
+        if (receiptTime) {
+          const now = new Date();
+          const pad = (n: number) => String(n).padStart(2, '0');
+          receiptTime.textContent = `${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())} ${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
+        }
+      }, 3500);
+    });
+  });
+</script>

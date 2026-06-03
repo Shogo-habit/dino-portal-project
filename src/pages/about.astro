@@ -1,0 +1,207 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { AUTHOR_DATA } from '../data/author';
+---
+
+<Layout title="ABOUT - プロフィール & サイトについて | Dino-Portal" activeTab="about">
+  <div class="page-header">
+    <h1 class="page-title">Operator Profile & Mission</h1>
+    <p class="page-subtitle">サイト運営者プロフィール ＆ アーカイブ設立目的</p>
+  </div>
+
+  <div class="about-container">
+    <!-- 運営者プロフィールパネル -->
+    <div class="hud-panel profile-hero" style="margin-bottom: 30px;">
+      <div class="hud-corner top-left"></div>
+      <div class="hud-corner bottom-right"></div>
+      
+      <div class="profile-layout">
+        <div class="avatar-container">
+          <div class="operator-avatar">🦕</div>
+          <div class="status-badge">ONLINE</div>
+        </div>
+        <div class="profile-details">
+          <h2 class="operator-name">{AUTHOR_DATA.name}</h2>
+          <p class="operator-title">{AUTHOR_DATA.role}</p>
+          <div class="operator-meta-grid">
+            <div class="meta-item"><span class="label">AGE/STATUS:</span> <span class="val">30代会社員 / 2児の父親</span></div>
+            <div class="meta-item"><span class="label">LOCATION:</span> <span class="val">Tokyo, Japan</span></div>
+            <div class="meta-item"><span class="label">FAVORITE:</span> <span class="val">ティラノサウルス、トリケラトプス</span></div>
+            <div class="meta-item"><span class="label">CONTACT:</span> <span class="val"><a href="/contact" style="color: var(--primary-neon); text-decoration: none;">[ 送信フォーム ]</a></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ストーリーと設立目的のグリッド -->
+    <div class="about-grid">
+      <!-- ハマったきっかけ -->
+      <div class="hud-panel">
+        <h3 class="section-title">BACKGROUND / 恐竜にハマったきっかけ</h3>
+        <p class="story-paragraph">
+          きっかけは、当時4歳だった長男が突然「恐竜」に強い興味を持ち始めたことでした。子どもの「なぜ？」「これなに？」に答えるため、一緒に図鑑をめくり、博物館へ足を運ぶうちに、私自身がその奥深い古生物の世界に完全に魅了されてしまいました。
+        </p>
+        <p class="story-paragraph">
+          30代の普通の会社員として働きながら、夜や週末の限られた時間を使って、子どもと一緒に最新の学説を調べたり、恐竜のフィギュアで遊んだりすることが、日々の最大の楽しみとなっています。
+        </p>
+      </div>
+
+      <!-- サイト設立目的 -->
+      <div class="hud-panel">
+        <h3 class="section-title">MISSION / サイト設立の目的</h3>
+        <p class="story-paragraph">
+          インターネット上には多くの恐竜情報がありますが、専門的すぎて難解なものか、逆に子供向けに簡略化されすぎたものが多く、親子で「もっと深く知りたい」と思ったときに、ちょうど良い情報源が不足していると感じていました。
+        </p>
+        <p class="story-paragraph">
+          そこで、「大人も子どももワクワクできる、正確で最先端のデジタルアーカイブを作りたい」という思いから、この『Dino-Portal』を立ち上げました。本サイトでは、学術的な厳密さを保ちつつ、直感的で視覚的な楽しさを提供することを目指しています。
+        </p>
+      </div>
+    </div>
+
+    <!-- コンテンツ制作方針とアフィリエイトについて -->
+    <div class="hud-panel" style="margin-top: 30px;">
+      <h3 class="section-title">EDITORIAL POLICY / コンテンツ制作・運営方針</h3>
+      <div class="policy-grid">
+        <div class="policy-item">
+          <h4>1. 科学的根拠に基づいた情報発信</h4>
+          <p>紹介する恐竜データや解説は、論文や専門書など信頼性の高いソースに基づき、常に最新の古生物学説を取り入れるよう努めています。</p>
+        </div>
+        <div class="policy-item">
+          <h4>2. 親子の知的好奇心を刺激するビジュアル</h4>
+          <p>恐竜の生態をリアルにイメージできるよう、AIシミュレーションを活用した高精細なビジュアル表現と、HUD（ヘッドアップディスプレイ）を模した直感的なデザインを融合させています。</p>
+        </div>
+        <div class="policy-item">
+          <h4>3. 適切な情報整理と内部リンク</h4>
+          <p>個々の恐竜データとトピックス（特集記事）を密接にリンクさせ、読みたい情報へスムーズにアクセスできる動線を設計しています。</p>
+        </div>
+      </div>
+      
+      <div class="affiliate-notice" style="margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(0, 242, 255, 0.1); font-size: 12px; color: var(--text-dim);">
+        <p style="margin-bottom: 10px; font-weight: bold; color: var(--primary-neon);">[ アフィリエイトプログラムについて ]</p>
+        <p>
+          Dino-Portalは、Amazonアソシエイトおよびもしもアフィリエイトなどのアフィリエイトプログラムに参加しています。記事内で紹介しているおすすめの図鑑や関連商品は、運営者が実際に子どもと読んで良かったものや、古生物学習において強く推薦できるアイテムを厳選してご紹介しています。リンク経由での紹介料は、サイトのサーバー維持費や、新たな恐竜図鑑・資料の購入費など、すべて本サイトの品質向上とコンテンツ制作に還元されます。
+        </p>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .profile-layout {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  .avatar-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .operator-avatar {
+    width: 100px;
+    height: 100px;
+    border: 2px solid var(--primary-neon);
+    background: rgba(0, 242, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+  }
+  .status-badge {
+    margin-top: 10px;
+    font-size: 10px;
+    font-family: var(--font-mono);
+    color: var(--secondary-neon);
+    border: 1px solid var(--secondary-neon);
+    padding: 2px 8px;
+    letter-spacing: 1px;
+    background: rgba(0, 255, 102, 0.05);
+  }
+  .profile-details {
+    flex: 1;
+  }
+  .operator-name {
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 5px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  .operator-title {
+    font-size: 13px;
+    font-family: var(--font-mono);
+    color: var(--primary-neon);
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+  .operator-meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .meta-item {
+    font-size: 13px;
+  }
+  .meta-item .label {
+    color: var(--text-dim);
+    font-family: var(--font-mono);
+    margin-right: 8px;
+  }
+  .meta-item .val {
+    color: var(--text-main);
+  }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .section-title {
+    font-family: var(--font-mono);
+    color: var(--primary-neon);
+    font-size: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 242, 255, 0.15);
+    padding-bottom: 8px;
+    letter-spacing: 1px;
+  }
+  .story-paragraph {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--text-main);
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  .policy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .policy-item h4 {
+    color: var(--secondary-neon);
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .policy-item p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--text-dim);
+  }
+  @media (max-width: 768px) {
+    .profile-layout {
+      flex-direction: column;
+      text-align: center;
+    }
+    .operator-meta-grid {
+      grid-template-columns: 1fr;
+      text-align: left;
+    }
+    .about-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
