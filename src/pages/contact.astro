@@ -13,8 +13,11 @@ import Layout from '../layouts/Layout.astro';
       <div class="hud-corner top-left"></div>
       <div class="hud-corner bottom-right"></div>
       
+      <!-- 送信先隠しiframe（CORSエラーを完全に回避して確実にGoogleフォームへ送信するための仕組み） -->
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
       <!-- 送信フォーム本体 -->
-      <form id="contact-form" class="hud-form">
+      <form id="contact-form" class="hud-form" action="https://docs.google.com/forms/d/e/1FAIpQLScV5Mqsd2tyqkQmlafH8gWJ8E6Xu9RC3GFiShPfxriDBoEuow/formResponse" method="POST" target="hidden_iframe">
         <div class="form-header">
           <span class="system-status">SECURE CONNECTION ESTABLISHED</span>
           <span class="system-encrypt">AES-256 ENCRYPTED</span>
@@ -361,6 +364,21 @@ import Layout from '../layouts/Layout.astro';
     80% { width: 85%; }
     100% { width: 100%; }
   }
+
+  /* オートコンプリート（自動入力）時の背景白化対策 */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--text-main) !important;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(0, 242, 255, 0.03) inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
 </style>
 
 <script>
@@ -369,12 +387,14 @@ import Layout from '../layouts/Layout.astro';
     const transmitting = document.getElementById('transmitting-panel');
     const success = document.getElementById('success-panel');
     const logLines = document.querySelectorAll('.log-line');
+    const iframe = document.getElementById('hidden_iframe') as HTMLIFrameElement | null;
 
-    if (!form || !transmitting || !success) return;
+    if (!form || !transmitting || !success || !iframe) return;
 
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
+    let submitted = false;
 
+    // フォーム送信時のイベント
+    form.addEventListener('submit', () => {
       // フォームを非表示、送信中をビジュアル表示
       form.classList.add('hidden');
       transmitting.classList.remove('hidden');
@@ -387,48 +407,32 @@ import Layout from '../layouts/Layout.astro';
         }, index * 600);
       });
 
-      // Google フォームへの送信データ送信処理
-      const formActionUrl = "https://docs.google.com/forms/d/e/1FAIpQLScV5Mqsd2tyqkQmlafH8gWJ8E6Xu9RC3GFiShPfxriDBoEuow/formResponse";
+      submitted = true;
+    });
 
-      if (formActionUrl) {
-        const formData = new FormData(form);
-        const searchParams = new URLSearchParams();
-        for (const [key, value] of formData.entries()) {
-          searchParams.append(key, value as string);
-        }
-        try {
-          await fetch(formActionUrl, {
-            method: "POST",
-            body: searchParams,
-            mode: "no-cors", // CORSエラーを回避して送信
-            headers: {
-              "Content-Type": "application/x-www-form-urlencoded"
-            }
-          });
-        } catch (err) {
-          console.error("Data transmission error:", err);
-        }
+    // 隠しiframeのロード完了（送信完了）を検知して完了画面を表示
+    iframe.addEventListener('load', () => {
+      if (submitted) {
+        // 送信中アニメーション（3.5秒）をしっかり見せてから完了画面へ
+        setTimeout(() => {
+          transmitting.classList.add('hidden');
+          success.classList.remove('hidden');
+
+          // レシートの動的情報埋め込み
+          const receiptId = document.getElementById('receipt-id');
+          const receiptTime = document.getElementById('receipt-time');
+          
+          if (receiptId) {
+            const rand = Math.floor(1000 + Math.random() * 9000);
+            receiptId.textContent = `DP-${rand}-${Math.random().toString(36).substring(2, 6).toUpperCase()}`;
+          }
+          if (receiptTime) {
+            const now = new Date();
+            const pad = (n: number) => String(n).padStart(2, '0');
+            receiptTime.textContent = `${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())} ${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
+          }
+        }, 2000); // ログ演出と合わせるためのディレイ
       }
-
-      // 3.5秒後に送信完了を表示
-      setTimeout(() => {
-        transmitting.classList.add('hidden');
-        success.classList.remove('hidden');
-
-        // レシートの動的情報埋め込み
-        const receiptId = document.getElementById('receipt-id');
-        const receiptTime = document.getElementById('receipt-time');
-        
-        if (receiptId) {
-          const rand = Math.floor(1000 + Math.random() * 9000);
-          receiptId.textContent = `DP-${rand}-${Math.random().toString(36).substring(2, 6).toUpperCase()}`;
-        }
-        if (receiptTime) {
-          const now = new Date();
-          const pad = (n: number) => String(n).padStart(2, '0');
-          receiptTime.textContent = `${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())} ${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
-        }
-      }, 3500);
     });
   });
 </script>
