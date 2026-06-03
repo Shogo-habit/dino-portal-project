@@ -222,6 +222,14 @@ import Layout from '../layouts/Layout.astro';
   .hidden {
     display: none !important;
   }
+  .form-inactive {
+    position: absolute !important;
+    width: 0 !important;
+    height: 0 !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
+  }
 
   /* Transmitting Panel */
   .transmitting-panel {
@@ -366,17 +374,18 @@ import Layout from '../layouts/Layout.astro';
   }
 
   /* オートコンプリート（自動入力）時の背景白化対策 */
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover, 
-  input:-webkit-autofill:focus,
-  textarea:-webkit-autofill,
-  textarea:-webkit-autofill:hover,
-  textarea:-webkit-autofill:focus,
-  select:-webkit-autofill,
-  select:-webkit-autofill:hover,
-  select:-webkit-autofill:focus {
+  .hud-form input:-webkit-autofill,
+  .hud-form input:-webkit-autofill:hover, 
+  .hud-form input:-webkit-autofill:focus,
+  .hud-form textarea:-webkit-autofill,
+  .hud-form textarea:-webkit-autofill:hover,
+  .hud-form textarea:-webkit-autofill:focus,
+  .hud-form select:-webkit-autofill,
+  .hud-form select:-webkit-autofill:hover,
+  .hud-form select:-webkit-autofill:focus {
     -webkit-text-fill-color: var(--text-main) !important;
-    -webkit-box-shadow: 0 0 0px 1000px rgba(0, 242, 255, 0.03) inset !important;
+    -webkit-box-shadow: 0 0 0px 1000px #030608 inset !important;
+    box-shadow: 0 0 0px 1000px #030608 inset !important;
     transition: background-color 5000s ease-in-out 0s;
   }
 </style>
@@ -408,10 +417,8 @@ import Layout from '../layouts/Layout.astro';
 
       submitted = true;
 
-      // ブラウザが送信処理を完了するまでフォーム要素を非表示にするのを少し遅らせる（即時非表示にすると送信がキャンセルされるブラウザ対策）
-      setTimeout(() => {
-        form.classList.add('hidden');
-      }, 200);
+      // display: none にせず、CSSで物理的に隠すことでブラウザによる送信の強制キャンセルを完全に防止
+      form.classList.add('form-inactive');
     });
 
     // 隠しiframeのロード完了（送信完了）を検知して完了画面を表示
@@ -435,7 +442,7 @@ import Layout from '../layouts/Layout.astro';
             const pad = (n: number) => String(n).padStart(2, '0');
             receiptTime.textContent = `${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())} ${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
           }
-        }, 2000); // ログ演出と合わせるためのディレイ
+        }, 2000);
       }
     });
   });
