@@ -24,21 +24,24 @@ import Layout from '../layouts/Layout.astro';
           <label for="name" class="form-label">
             <span class="label-code">[ 01 ]</span> お名前 (NAME) <span class="required">*</span>
           </label>
-          <input type="text" id="name" name="name" required class="hud-input" placeholder="恐竜 太郎" />
+          <!-- Googleフォーム用: entry.XXXXXX (お名前のID) に書き換えてください -->
+          <input type="text" id="name" name="entry.XXXXXX_NAME" required class="hud-input" placeholder="恐竜 太郎" />
         </div>
         
         <div class="form-group">
           <label for="email" class="form-label">
             <span class="label-code">[ 02 ]</span> メールアドレス (EMAIL) <span class="required">*</span>
           </label>
-          <input type="email" id="email" name="email" required class="hud-input" placeholder="dino@example.com" />
+          <!-- Googleフォーム用: entry.XXXXXX (メールアドレスのID) に書き換えてください -->
+          <input type="email" id="email" name="entry.XXXXXX_EMAIL" required class="hud-input" placeholder="dino@example.com" />
         </div>
         
         <div class="form-group">
           <label for="subject" class="form-label">
             <span class="label-code">[ 03 ]</span> 件名 (SUBJECT) <span class="required">*</span>
           </label>
-          <select id="subject" name="subject" required class="hud-select">
+          <!-- Googleフォーム用: entry.XXXXXX (件名のID) に書き換えてください -->
+          <select id="subject" name="entry.XXXXXX_SUBJECT" required class="hud-select">
             <option value="" disabled selected>選択してください</option>
             <option value="site-feedback">サイト内容に関するフィードバック・訂正</option>
             <option value="business-inquiry">お仕事のご相談・提携について</option>
@@ -50,7 +53,8 @@ import Layout from '../layouts/Layout.astro';
           <label for="message" class="form-label">
             <span class="label-code">[ 04 ]</span> お問い合わせ内容 (MESSAGE) <span class="required">*</span>
           </label>
-          <textarea id="message" name="message" required class="hud-textarea" rows="6" placeholder="お問い合わせ内容をご入力ください。"></textarea>
+          <!-- Googleフォーム用: entry.XXXXXX (内容のID) に書き換えてください -->
+          <textarea id="message" name="entry.XXXXXX_MESSAGE" required class="hud-textarea" rows="6" placeholder="お問い合わせ内容をご入力ください。"></textarea>
         </div>
 
         <div class="privacy-consent-wrapper" style="margin-bottom: 25px;">
@@ -373,7 +377,7 @@ import Layout from '../layouts/Layout.astro';
 
     if (!form || !transmitting || !success) return;
 
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       // フォームを非表示、送信中をビジュアル表示
@@ -387,6 +391,23 @@ import Layout from '../layouts/Layout.astro';
           line.classList.remove('hidden');
         }, index * 600);
       });
+
+      // Google フォームへの送信データ送信処理
+      // ※注意: GoogleフォームのformResponseのURLをここに記述してください
+      const formActionUrl = "YOUR_GOOGLE_FORM_RESPONSE_URL";
+
+      if (formActionUrl && formActionUrl !== "YOUR_GOOGLE_FORM_RESPONSE_URL") {
+        const formData = new FormData(form);
+        try {
+          await fetch(formActionUrl, {
+            method: "POST",
+            body: formData,
+            mode: "no-cors" // CORSエラーを回避して送信
+          });
+        } catch (err) {
+          console.error("Data transmission error:", err);
+        }
+      }
 
       // 3.5秒後に送信完了を表示
       setTimeout(() => {
