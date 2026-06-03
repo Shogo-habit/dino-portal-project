@@ -4,8 +4,8 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="CONTACT - お問い合わせ | Dino-Portal" activeTab="contact">
   <div class="page-header">
-    <h1 class="page-title">Contact Portal</h1>
-    <p class="page-subtitle">お問い合わせ・フィードバック送信窓口</p>
+    <h1 class="page-title">お問い合わせフォーム</h1>
+    <p class="page-subtitle">Dino-Portal に関するお問い合わせ・フィードバック</p>
   </div>
 
   <div class="contact-container">
@@ -62,7 +62,7 @@ import Layout from '../layouts/Layout.astro';
         
         <button type="submit" class="hud-btn submit-btn">
           <span class="btn-glow"></span>
-          <span class="btn-text">INITIALIZE TRANSMISSION</span>
+          <span class="btn-text">メッセージを送信する</span>
         </button>
       </form>
 
@@ -71,16 +71,16 @@ import Layout from '../layouts/Layout.astro';
         <div class="loader-wrapper">
           <div class="cyber-spinner"></div>
           <div class="loading-status">
-            <p class="status-title">TRANSMITTING PACKETS...</p>
+            <p class="status-title">メッセージを送信しています...</p>
             <div class="status-progress-bar">
               <div class="progress-bar-fill"></div>
             </div>
             <div class="terminal-logs">
-              <p class="log-line">> Establishing secure socket to gateway...</p>
-              <p class="log-line hidden">> Encoding data to protocol schema...</p>
-              <p class="log-line hidden">> Pinging destination mainframe...</p>
-              <p class="log-line hidden">> Synchronizing payload packets...</p>
-              <p class="log-line hidden">> Finalizing transmission handshakes...</p>
+              <p class="log-line">> 送信サーバーに接続しています...</p>
+              <p class="log-line hidden">> 送信データを処理しています...</p>
+              <p class="log-line hidden">> 宛先フォームと通信を確立しています...</p>
+              <p class="log-line hidden">> データを転送しています...</p>
+              <p class="log-line hidden">> 送信処理を完了しています...</p>
             </div>
           </div>
         </div>
@@ -90,30 +90,29 @@ import Layout from '../layouts/Layout.astro';
       <div id="success-panel" class="success-panel hidden">
         <div class="success-header">
           <div class="success-icon">✓</div>
-          <h2>TRANSMISSION COMPLETED</h2>
-          <p class="success-subtitle">メッセージの送信に成功しました</p>
+          <h2>送信が完了しました</h2>
+          <p class="success-subtitle">メッセージをお預かりしました</p>
         </div>
         <div class="receipt-panel">
           <div class="receipt-row">
-            <span class="r-label">TRANSMISSION ID:</span>
+            <span class="r-label">受付ID:</span>
             <span class="r-val" id="receipt-id">DP-9048-XXXX</span>
           </div>
           <div class="receipt-row">
-            <span class="r-label">TIMESTAMP:</span>
+            <span class="r-label">送信日時:</span>
             <span class="r-val" id="receipt-time">2026-06-03 18:40:00</span>
           </div>
           <div class="receipt-row">
-            <span class="r-label">STATUS:</span>
-            <span class="r-val success-txt">DELIVERED / OK</span>
+            <span class="r-label">ステータス:</span>
+            <span class="r-val success-txt">送信成功</span>
           </div>
         </div>
         <p class="success-body">
-          お問い合わせいただきありがとうございます。ご入力いただいたメールアドレス宛に、自動返信メール（送信確認）をお送りしました。
-          内容を確認のうえ、通常2〜3営業日以内にご返信いたします。しばらくお待ちください。
+          お問い合わせいただきありがとうございます。内容を確認のうえ、通常2〜3営業日以内にご返信いたします。しばらくお待ちください。
         </p>
         <div style="text-align: center; margin-top: 30px;">
           <a href="/" class="hud-btn reset-btn" style="text-decoration: none; display: inline-block;">
-            <span class="btn-text">RETURN TO MAIN TERMINAL</span>
+            <span class="btn-text">ホームに戻る</span>
           </a>
         </div>
       </div>
@@ -391,13 +390,20 @@ import Layout from '../layouts/Layout.astro';
       // Google フォームへの送信データ送信処理
       const formActionUrl = "https://docs.google.com/forms/d/e/1FAIpQLScV5Mqsd2tyqkQmlafH8gWJ8E6Xu9RC3GFiShPfxriDBoEuow/formResponse";
 
-      if (formActionUrl && formActionUrl !== "YOUR_GOOGLE_FORM_RESPONSE_URL") {
+      if (formActionUrl) {
         const formData = new FormData(form);
+        const searchParams = new URLSearchParams();
+        for (const [key, value] of formData.entries()) {
+          searchParams.append(key, value as string);
+        }
         try {
           await fetch(formActionUrl, {
             method: "POST",
-            body: formData,
-            mode: "no-cors" // CORSエラーを回避して送信
+            body: searchParams,
+            mode: "no-cors", // CORSエラーを回避して送信
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded"
+            }
           });
         } catch (err) {
           console.error("Data transmission error:", err);
