@@ -41,15 +41,17 @@ export function buildRakutenAffiliateUrl(searchQuery: string): string {
 // 共通フォールバック用の商品データ (個別設定がない恐竜で表示)
 export const DEFAULT_AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     {
-        id: "default_figure",
-        title: "フェバリット 恐竜 ビニールモデル プレミアムセット",
-        subtitle: "迫力のやわらか恐竜フィギュア、豪華5体パック",
-        type: "figure",
-        badgeText: "PRECISION MODEL",
-        imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81q2vR0vMHL._AC_SL1500_.jpg",
-        affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/B00N1Y8682"),
-        priceText: "PRICE: ¥6,600 (税込)",
-        details: ["安全なソフト素材", "ティラノ/トリケラ等5体セット", "迫力のプレミアムサイズ"]
+        id: "default_battle_book",
+        title: "恐竜最強王図鑑　（最強王図鑑シリーズ）",
+        subtitle: "恐竜たちがトーナメント戦で最強の座を争うバトルシミュレーション図鑑",
+        type: "book",
+        badgeText: "ARCHIVAL BOOK",
+        imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5714/9784052045714.jpg?_ex=300x300",
+        affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/4052045716"),
+        priceText: "PRICE: ¥968 (税込)",
+        details: ["バトルシミュレーション形式", "トーナメント対決構成", "小学生に大人気の読書入門書"],
+        rakutenAffiliateUrl: "https://af.moshimo.com/af/c/click?a_id=5603988&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F14546615%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F18265139%2F",
+        impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
     },
     {
         id: "default_book",
