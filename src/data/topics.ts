@@ -723,7 +723,7 @@ export const TOPICS = [
   もちろん、完全に防御の役に立たなかったわけではなく、結果的に首を守る防護壁になったことも事実でしょう。しかし、トリケラトプスのシンボルであるフリルは、ただ戦うためだけのものではなく、恋をしたり、暑さをしのいだり、食事をしたりといった彼らの「日常の暮らし」を支える多機能マルチツールだったのです。
 </p>
 <p class="article-paragraph" style="margin-top: 20px;">
-  ※トリケラトプスの基本スペック、戦術、および種分類に関する詳細な総合解説はこちら：<a href="/topics/triceratops-guide" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【盾角竜の代表格】トリケラトプスのすべてを徹底解説！3本の角とフリルの秘密と大人気おもちゃ</a>
+  ※トリケラトプスの基本スペック、戦術、および種分類に関する詳細な総合解説はこちら：<a href="/topics/triceratops-guide" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【盾角竜の代表格】トリケラトプスのすべてを徹底解説！3本の角とフリルの秘密</a>
 </p>
     `,
     image: "images/topics/triceratops_frill.webp",
@@ -1066,7 +1066,7 @@ export const TOPICS = [
   実際にパチパチと組み立てることで、「ティラノサウルスの頭蓋骨にはどんな穴があいていて、どうやって大きな顎の筋肉を支えているか」「前肢の爪はなぜ2本しかないのか」を立体的な体験を通じて直感的に学ぶことができます。接着剤やハサミが不要で、色分けもしっかりとされているため、親子でのコミュニケーションツールとしても素晴らしいクオリティを提供してくれます。
 </p>
 <p class="article-paragraph" style="margin-top: 20px;">
-  関連するライバル恐竜の徹底解説はこちら：<a href="/topics/triceratops-guide" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【盾角竜の代表格】トリケラトプスのすべてを徹底解説！</a><br>
+  関連するライバル恐竜の徹底解説はこちら：<a href="/topics/triceratops-guide" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【盾角竜の代表格】トリケラトプスのすべてを徹底解説！3本の角とフリルの秘密</a><br>
   小学生におすすめの図鑑情報はこちら：<a href="/topics/dinosaur-books-selection" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【2026年最新】小学生におすすめの恐竜図鑑5選！選び方のコツ</a>
 </p>
     `,
@@ -1078,7 +1078,7 @@ export const TOPICS = [
     id: "triceratops-guide",
     date: "2026.06.03",
     category: "RESEARCH",
-    title: "【盾角竜の代表格】トリケラトプスのすべてを徹底解説！3本の角とフリルの秘密と大人気おもちゃ",
+    title: "【盾角竜の代表格】トリケラトプスのすべてを徹底解説！3本の角とフリルの秘密",
     summary: "三本の角と巨大なフリルを持つトリケラトプス。その防衛に特化した進化、ティラノサウルスとの死闘の実態、謎に包まれたフリルの役割、おもちゃやフィギュアの紹介を徹底解説。",
     content: `
 <h2 class="article-section-title">白亜紀の終焉を飾った角竜の完成形、トリケラトプスの基本スペックと分類</h2>
