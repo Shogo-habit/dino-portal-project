@@ -38,7 +38,7 @@ if (mapped && mapped.length > 0) {
 
     <div class="affiliate-grid">
         {products.map((product) => {
-            const rakutenUrl = buildRakutenAffiliateUrl(product.title);
+            const rakutenUrl = product.rakutenAffiliateUrl || buildRakutenAffiliateUrl(product.title);
             return (
                 <div class="product-card hud-panel">
                     <!-- 装飾コーナー -->
@@ -95,6 +95,10 @@ if (mapped && mapped.length > 0) {
                             </a>
                         </div>
                     </div>
+
+                    {product.impressionUrl && (
+                        <img src={product.impressionUrl} alt="" loading="lazy" width="1" height="1" style="border: 0px; display: none;" />
+                    )}
                 </div>
             );
         })}

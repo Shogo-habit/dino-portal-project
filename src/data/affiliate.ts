@@ -8,6 +8,8 @@ export interface AffiliateProduct {
     affiliateUrl: string;   // 紹介アフィリエイトURL
     priceText: string;      // 価格目安テキスト (例: "PRICE: ¥1,200")
     details: string[];      // 特徴スペックリスト (例: ["1/10 スケール", "関節可動式"])
+    rakutenAffiliateUrl?: string; // 楽天市場用の個別アフィリエイトURL (任意)
+    impressionUrl?: string;       // インプレッション計測用URL (任意)
 }
 
 // もしもアフィリエイトの広告ID。Amazonおよび楽天の提携承認後に、取得したID（7桁前後の数値。例: "1234567"）を設定します。
@@ -71,10 +73,12 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
             subtitle: "口・脚・尾が可動する、ラージサイズ仕様の精密ギミックフィギュア",
             type: "figure",
             badgeText: "PRECISION MODEL",
-            imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81e5sKszwOL._AC_SL1500_.jpg",
+            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/morushop/cabinet/r_2025010236/20250102085551_88_1.jpg?_ex=300x300",
             affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/B00C74Y9E8"),
             priceText: "PRICE: ¥1,100 (税込)",
-            details: ["タカラトミー公式", "口・脚・尾がリアル可動", "ラージサイズ定番モデル"]
+            details: ["タカラトミー公式", "口・脚・尾がリアル可動", "ラージサイズ定番モデル"],
+            rakutenAffiliateUrl: "https://af.moshimo.com/af/c/click?a_id=5603988&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmorushop%2F20250102085551_88%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmorushop%2Fi%2F10049452%2F",
+            impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
         },
         {
             id: "t_rex_book",
