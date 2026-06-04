@@ -1,4 +1,4 @@
-export const TOPICS = [
+const RAW_TOPICS = [
   {
     id: "japan-dinosaur-spots",
     date: "2026.05.30",
@@ -1367,3 +1367,6 @@ export const TOPICS = [
     relatedSpecimens: ["tyrannosaurus", "triceratops"]
   },
 ];
+
+export const TOPICS = [...RAW_TOPICS].sort((a, b) => b.date.localeCompare(a.date));
+
