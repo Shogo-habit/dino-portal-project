@@ -196,13 +196,38 @@ export const TOPICS = [
 </p>
 
 <h2 class="article-section-title">二足歩行の陸生肉食恐竜としてのイメージ</h2>
-<div class="article-flex-container" style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 30px;">
+<style>
+  .spinosaurus-flex-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .spinosaurus-image-wrap {
+    flex: 0 0 420px;
+    max-width: 100%;
+    margin-top: -50px;
+  }
+  @media (max-width: 991px) {
+    .spinosaurus-image-wrap {
+      margin-top: -30px;
+    }
+  }
+  @media (max-width: 768px) {
+    .spinosaurus-image-wrap {
+      flex: 1 0 100%;
+      margin-top: 0;
+    }
+  }
+</style>
+<div class="spinosaurus-flex-container">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
       2001年の映画『ジュラシック・パークIII』では、ティラノサウルスを凌ぐ巨大な陸の捕食者として描かれ、世界的に有名になりました。この時期の学説でも、ワニのような長い口先を持ちながらも、基本的にはティラノサウルスのように強靭な後脚で二足歩行する陸生の恐竜として復元されていました。
     </p>
   </div>
-  <div style="flex: 0 0 280px; max-width: 100%; align-self: center;">
+  <div class="spinosaurus-image-wrap">
     <img src="/images/topics/spinosaurus_evolution1.webp" alt="スピノサウルス二足歩行期復元図" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1);" />
   </div>
 </div>
