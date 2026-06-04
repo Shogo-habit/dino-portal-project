@@ -220,10 +220,12 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
             subtitle: "スマホをかざすと3D恐竜が飛び出す、最先端のAR体験図鑑",
             type: "book",
             badgeText: "ARCHIVAL BOOK",
-            imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81F-S4j3LPL._AC_SL1500_.jpg",
-            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/4052051619"),
+            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1845/9784052051845_1_2.jpg?_ex=300x300",
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/4052051848"),
             priceText: "PRICE: ¥2,420 (税込)",
-            details: ["掲載種数：約350種", "特典：BBCドキュメンタリーDVD（約50分）", "スマホ連動のAR機能搭載"]
+            details: ["掲載種数：約350種", "特典：BBCドキュメンタリーDVD（約50分）", "スマホ連動のAR機能搭載"],
+            rakutenAffiliateUrl: "https://af.moshimo.com/af/c/click?a_id=5603988&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17125134%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F20648276%2F",
+            impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
         }
     ]
 };
