@@ -123,14 +123,16 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
         },
         {
             id: "triceratops_book",
-            title: "どっちが強い!? トリケラトプス vs カブトムシ",
-            subtitle: "盾角竜と甲虫王者の異種格闘技戦！強靭な武器の秘密を探る",
+            title: "小学館の図鑑NEO [新版] 恐竜 DVD付き",
+            subtitle: "最新の学説に基づいた決定版恐竜図鑑、映像コンテンツ同梱",
             type: "book",
             badgeText: "ARCHIVAL BOOK",
-            imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81ZtQzG%2BkeL._AC_SL1500_.jpg",
-            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/4041071417"),
-            priceText: "PRICE: ¥1,078 (税込)",
-            details: ["角川まんが科学シリーズ", "角の進化プロセス特集", "角竜類の生態データベース"]
+            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3118/9784092173118_1_24.jpg?_ex=300x300",
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/4092173111"),
+            priceText: "PRICE: ¥2,200 (税込)",
+            details: ["最新恐竜データ400種以上", "ドラえもんコラボDVD付き", "教育的学習アーカイブに最適"],
+            rakutenAffiliateUrl: "https://af.moshimo.com/af/c/click?a_id=5603988&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F12781560%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F16942437%2F",
+            impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
         }
     ],
     "spinosaurus": [
