@@ -82,7 +82,6 @@ if (mapped && mapped.length > 0) {
 
                     <!-- アクション領域 -->
                     <div class="product-actions">
-                        <div class="product-price">{product.priceText}</div>
                         <div class="shop-buttons-group">
                             <a 
                                 href={rakutenUrl} 
@@ -297,18 +296,11 @@ if (mapped && mapped.length > 0) {
     
     .product-actions {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         border-top: 1px dashed rgba(0, 242, 255, 0.1);
         padding-top: 15px;
         margin-top: auto;
-    }
-    
-    .product-price {
-        font-family: var(--font-mono);
-        font-size: 12px;
-        font-weight: bold;
-        color: var(--text-main);
     }
     
     .shop-buttons-group {
