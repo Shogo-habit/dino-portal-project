@@ -178,5 +178,40 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
             priceText: "PRICE: ¥1,430 (税込)",
             details: ["タカラトミー公式", "ラージサイズアニア", "首とハンマー付き尾の可動"]
         }
+    ],
+    "dinosaur-books-selection": [
+        {
+            id: "book_neo",
+            title: "小学館の図鑑NEO [新版] 恐竜 DVD付き",
+            subtitle: "実物化石写真の多さと圧倒的な学術的信頼度を誇る決定版",
+            type: "book",
+            badgeText: "ARCHIVAL BOOK",
+            imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81A1-24NACL._AC_SL1500_.jpg",
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/4092173111"),
+            priceText: "PRICE: ¥2,200 (税込)",
+            details: ["掲載種数：約400種", "特典：ドラえもんDVD（約70分）", "実物化石写真が豊富"]
+        },
+        {
+            id: "book_move",
+            title: "講談社の動く図鑑MOVE 恐竜 [新訂版] DVD付き",
+            subtitle: "躍動感あふれるイラストと、戦う恐竜たちのダイナミックな姿",
+            type: "book",
+            badgeText: "ARCHIVAL BOOK",
+            imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81+X34-tE1L._AC_SL1500_.jpg",
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/4065299104"),
+            priceText: "PRICE: ¥2,200 (税込)",
+            details: ["掲載種数：約320種", "特典：NHKスペシャルDVD（約60分）", "大迫力の戦闘イラスト"]
+        },
+        {
+            id: "book_live",
+            title: "学研の図鑑LIVE 恐竜 新版 DVD付き",
+            subtitle: "スマホをかざすと3D恐竜が飛び出す、最先端のAR体験図鑑",
+            type: "book",
+            badgeText: "ARCHIVAL BOOK",
+            imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81F-S4j3LPL._AC_SL1500_.jpg",
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/4052051619"),
+            priceText: "PRICE: ¥2,420 (税込)",
+            details: ["掲載種数：約350種", "特典：BBCドキュメンタリーDVD（約50分）", "スマホ連動のAR機能搭載"]
+        }
     ]
 };

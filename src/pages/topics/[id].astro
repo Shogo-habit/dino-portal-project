@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import { TOPICS } from '../../data/topics';
 import { DINOSAURS } from '../../data/dinosaurs';
 import AffiliateSection from '../../components/AffiliateSection.astro';
+import { DINO_AFFILIATE_MAP } from '../../data/affiliate';
 
 export async function getStaticPaths() {
   return TOPICS.map(topic => ({
@@ -17,6 +18,9 @@ const { topic } = Astro.props;
 const relatedDinos = (topic.relatedSpecimens || []).map(specimenId => {
     return DINOSAURS.find(d => d.id === specimenId);
 }).filter(Boolean);
+
+// Determine affiliate target ID (use topic ID if custom map exists, otherwise fallback to related specimen)
+const affiliateId = DINO_AFFILIATE_MAP[topic.id] ? topic.id : (topic.relatedSpecimens && topic.relatedSpecimens.length > 0 ? topic.relatedSpecimens[0] : null);
 
 // Create structured data (JSON-LD) for Article SEO
 const articleSchema = {
@@ -61,8 +65,8 @@ const articleSchema = {
             <Fragment set:html={topic.content} />
         </div>
 
-        {topic.relatedSpecimens && topic.relatedSpecimens.length > 0 && (
-            <AffiliateSection dinoId={topic.relatedSpecimens[0]} />
+        {affiliateId && (
+            <AffiliateSection dinoId={affiliateId} />
         )}
         
         {relatedDinos.length > 0 && (
