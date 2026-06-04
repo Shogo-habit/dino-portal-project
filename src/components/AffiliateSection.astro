@@ -7,25 +7,30 @@ interface Props {
 
 const { dinoId } = Astro.props;
 
-// アフィリエイト製品の抽出ロジック
+// アフィリエイト製品の抽出ロジック（常に3つ表示）
 let products: AffiliateProduct[] = [];
 
-const mapped = DINO_AFFILIATE_MAP[dinoId];
+const mapped = DINO_AFFILIATE_MAP[dinoId] || [];
 
-if (mapped && mapped.length > 0) {
-    if (mapped.length === 2) {
-        // フィギュアと書籍の両方が登録されている場合
-        products = mapped;
-    } else if (mapped.length === 1) {
-        // 片方（例: フィギュアのみ）しかない場合、もう片方はデフォルトの図鑑を補填
-        products = [
-            mapped[0],
-            mapped[0].type === 'figure' ? DEFAULT_AFFILIATE_PRODUCTS[1] : DEFAULT_AFFILIATE_PRODUCTS[0]
-        ];
+// まずは個別登録されているものを追加
+products = [...mapped];
+
+// 3つに満たない場合、デフォルトから重複しないタイプを優先して補填
+for (const defaultProduct of DEFAULT_AFFILIATE_PRODUCTS) {
+    if (products.length >= 3) break;
+    const isTypeDup = products.some(p => p.type === defaultProduct.type);
+    if (!isTypeDup) {
+        products.push(defaultProduct);
     }
-} else {
-    // 登録がない場合は共通デフォルトを表示 (フィギュア＋図鑑)
-    products = DEFAULT_AFFILIATE_PRODUCTS;
+}
+
+// それでも3つに満たない場合、IDの重複を避けて補填
+for (const defaultProduct of DEFAULT_AFFILIATE_PRODUCTS) {
+    if (products.length >= 3) break;
+    const isIdDup = products.some(p => p.id === defaultProduct.id);
+    if (!isIdDup) {
+        products.push(defaultProduct);
+    }
 }
 ---
 
@@ -141,7 +146,7 @@ if (mapped && mapped.length > 0) {
 
     .affiliate-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         gap: 25px;
     }
     
@@ -179,6 +184,10 @@ if (mapped && mapped.length > 0) {
     
     .product-badge.book {
         color: var(--secondary-neon);
+    }
+    
+    .product-badge.goods {
+        color: #ff9f1c; /* ネオンオレンジ */
     }
 
     .product-img-wrap {
@@ -346,7 +355,13 @@ if (mapped && mapped.length > 0) {
         transform: translateX(2px);
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 992px) {
+        .affiliate-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 720px) {
         .affiliate-grid {
             grid-template-columns: 1fr;
         }

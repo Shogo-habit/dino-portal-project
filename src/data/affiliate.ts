@@ -61,6 +61,17 @@ export const DEFAULT_AFFILIATE_PRODUCTS: AffiliateProduct[] = [
         affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/4092173111"),
         priceText: "PRICE: ¥2,200 (税込)",
         details: ["最新恐竜データ400種以上", "ドラえもんコラボDVD付き", "教育的学習アーカイブに最適"]
+    },
+    {
+        id: "default_goods",
+        title: "アニア 恐竜バトルキングダム",
+        subtitle: "白熱のバトルを楽しめる、アニアシリーズ最大の恐竜プレイセット",
+        type: "goods",
+        badgeText: "INTERACTIVE TOY",
+        imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81P-4xRjIeL._AC_SL1500_.jpg",
+        affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/B07BL2B9SM"),
+        priceText: "PRICE: ¥6,380 (税込)",
+        details: ["タカラトミー公式", "バトルギミック搭載マップ", "ティラノサウルス(ワイルドVer.)付属"]
     }
 ];
 
