@@ -1138,8 +1138,7 @@ export const TOPICS = [
   また、より本格的な組み立て体験ができる『プラノサウルス トリケラトプス』（バンダイ）も非常におすすめです。このプラモデルは、トリケラトプスの特徴である巨大な頭部を骨格レベルから再現しており、「フリルの骨には実は穴があいていない（トロサウルスとの違い）」ことや「角が骨からどのように伸びているか」を自分の手を動かしながら学ぶことができます。ハサミや接着剤を使わずに手でパチパチと組み立てられるため、小学生の初めてのプラモデル作りにも最適です。
 </p>
 <p class="article-paragraph" style="margin-top: 20px;">
-  ライバル恐竜の徹底解説はこちら：<a href="/topics/tyrannosaurus-guide" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【最強の肉食恐竜】ティラノサウルスの生態を徹底解説！</a><br>
-  買ってよかった恐竜おもちゃの特集はこちら：<a href="/topics/best-dinosaur-toys" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【恐竜好きの子に】買ってよかったおすすめ恐竜おもちゃ・知育玩具7選！</a>
+  ライバル恐竜の徹底解説はこちら：<a href="/topics/tyrannosaurus-guide" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【最強の肉食恐竜】ティラノサウルスの生態を徹底解説！</a>
 </p>
     `,
     image: "images/topics/triceratops_detail.webp",
@@ -1273,177 +1272,10 @@ export const TOPICS = [
   図鑑を選ぶ際は、まずお子さんの普段の遊び方や好みを観察してみてください。「化石や骨格に興味があり、じっくり調べたい」なら<strong>小学館のNEO</strong>、「テレビや映像が好きで、ダイナミックな動きを楽しみたい」なら<strong>講談社のMOVE</strong>、「スマホやARで遊びながら学びたい」なら<strong>学研のLIVE</strong>がぴったりです。
   図鑑で得た知識は、子どもたちの知的好奇心の種となります。ぜひ、お気に入りの一冊を見つけて、親子で太古の地球への冒険を楽しんでください。
 </p>
-<p class="article-paragraph" style="margin-top: 20px;">
-  図鑑で学んだ知識を持って出かけよう：<a href="/topics/family-dinosaur-museum-guide" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【親子で大冒険】全国の恐竜博物館・化石発掘体験ガイド</a><br>
-  買ってよかった恐竜おもちゃの特集はこちら：<a href="/topics/best-dinosaur-toys" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【恐竜好きの子に】買ってよかったおすすめ恐竜おもちゃ・知育玩具7選！</a>
-</p>
+
     `,
     image: "images/topics/recommended_books.webp",
     securityLevel: "LEVEL 1 (GENERAL)",
     relatedSpecimens: ["tyrannosaurus", "triceratops"]
   },
-  {
-    id: "best-dinosaur-toys",
-    date: "2026.06.03",
-    category: "DISCOVERY",
-    title: "【恐竜好きの子に】買ってよかったおすすめ恐竜おもちゃ・知育玩具7選！年齢別の選び方と体験レビュー",
-    summary: "2人の子どもと一緒に様々な恐竜おもちゃで遊んできた運営者が、耐久性・知育効果・楽しさの観点から「本当に買ってよかった」と自信を持っておすすめする恐竜玩具を厳選。",
-    content: `
-<h2 class="article-section-title">恐竜おもちゃが子どもの発育にもたらす素晴らしい効果</h2>
-<p class="article-paragraph">
-  多くの子どもたちが一度は通る「恐竜ブーム」。実は、恐竜おもちゃで遊ぶことは、子どもの発達に非常に良い影響を与えることが知られています。恐竜の名前や複雑な特徴を覚えることで<strong>記憶力や認知能力</strong>が鍛えられ、フィギュアを使ったごっこ遊びによって<strong>想像力やコミュニケーション能力</strong>が育まれます。また、組み立て式のモデルやブロックは、指先の器用さや<strong>空間認識能力</strong>を高める最高の教材となります。
-</p>
-<p class="article-paragraph">
-  しかし、おもちゃ売り場には無数の恐竜グッズが並んでおり、「どれを選べば長く遊んでくれるのか」迷ってしまいます。本記事では、30代会社員であり2児の父である筆者が、実際に自宅で購入し、子どもたちが毎日のように遊んで「本当に耐久性があり、知育効果も高かった」と太鼓判を押せる恐竜おもちゃ・知育玩具7選をレビュー形式で紹介します。
-</p>
-
-<h2 class="article-section-title">失敗しない！恐竜おもちゃ選びの3つのポイント</h2>
-<p class="article-paragraph">
-  おもちゃ選びで後悔しないために、以下の3点に注目しましょう。
-</p>
-<ul style="list-style-type: square; padding-left: 20px; line-height: 1.8; margin-bottom: 20px; font-size: 14px;">
-  <li><strong style="color: var(--primary-neon);">1. 安全性と「耐久性」</strong>: 特に低年齢の子どもは、恐竜同士を激しくぶつけ合ったり落としたりします。細いパーツが折れにくく、角が丸いものを選ぶのが安全です。</li>
-  <li><strong style="color: var(--primary-neon);">2. 「可動箇所」の有無</strong>: 口が開く、足が動くなど、少しでも動くギミックがあると、ごっこ遊びの幅が劇的に広がります。</li>
-  <li><strong style="color: var(--primary-neon);">3. 学び（知育要素）との連動</strong>: 単なるフィギュアではなく、骨格の仕組みがわかったり、パズル要素があったりすると、遊びが自然と知育に繋がります。</li>
-</ul>
-
-<h2 class="article-section-title">買って本当によかった！恐竜おもちゃ・知育玩具7選の詳細レビュー</h2>
-
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">1. タカラトミー『アニア 恐竜シリーズ』</h3>
-<p class="article-paragraph">
-  <strong>【対象年齢：3歳〜 | ジャンル：可動フィギュア | 知育効果：ごっこ遊びによる社会性の育成】</strong><br>
-  子どもの恐竜遊びの「最初の相棒」として絶対におすすめなのがアニアです。手のひらサイズで小さな手にも馴染みやすく、なんといっても塗装が剥げにくく非常に頑丈です。ティラノサウルスの口が開いたり、首が動いたりするギミックがあり、何百回ぶつけ合っても壊れません。価格も手頃で種類が豊富なため、少しずつ集めてコレクションする楽しみもあります。お風呂や砂場でガシガシ使っても錆びないプラスチック製なのも嬉しいポイントです。
-</p>
-
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">2. バンダイ『プラノサウルス』シリーズ</h3>
-<p class="article-paragraph">
-  <strong>【対象年齢：6歳〜 | ジャンル：組み立て式プラスチックモデル | 知育効果：骨格構造の理解・空間認識力】</strong><br>
-  小学生以上の男の子・女の子に一押しの、画期的な組み立ておもちゃです。このプラモデルは、最初に恐竜の「骨格」を組み立て、その後に「筋肉や外皮」パーツを取り付けるという画期的な2段階構造になっています。「恐竜の骨ってこうなっているんだ！」「骨の周りにこうやって肉が付くんだ！」という解剖学的な学びが、組み立てながら体感できます。道具を使わずに手でパーツを取り外せるため、プラモデル初心者でも簡単かつ安全に楽しめます。
-</p>
-
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">3. レゴ(LEGO)『ジュラシック・ワールド』シリーズ</h3>
-<p class="article-paragraph">
-  <strong>【対象年齢：4歳〜 | ジャンル：ブロック・ごっこ遊び | 知育効果：創造力・エンジニアリング的思考】</strong><br>
-  言わずと知れたレゴブロックと、映画『ジュラシック・ワールド』のコラボシリーズです。自分で研究所やジープを組み立て、恐竜フィギュアと組み合わせて脱走劇などのストーリーを作って遊べます。レゴならではの創造力の育成はもちろん、手持ちの他のレゴブロックと組み合わせて独自の恐竜基地を作るなど、長く無限に遊べるのが最大のメリットです。パーツを組み立てる微細運動は、手先の巧緻性を著しく高めます。
-</p>
-
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">4. シュライヒ (Schleich)『恐竜フィギュア』</h3>
-<p class="article-paragraph">
-  <strong>【対象年齢：4歳〜 | ジャンル：本格精細フィギュア | 知育効果：観察力・美術的感性の育成】</strong><br>
-  ドイツの老舗フィギュアメーカー・シュライヒの恐竜は、大人が見惚れるほどの「圧倒的なリアルさ」が特徴です。皮膚のシワやウロコの質感、筋肉の隆起などが非常に細かく表現されており、おもちゃというよりは美術工芸品のようです。お部屋のインテリアとしても美しく、本物志向の子どもや、図鑑のイラストと見比べながら遊びたい子どもに最適です。耐久性も抜群で、世代を超えて受け継ぐことができる価値があります。
-</p>
-
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">5. Gakken『ニューブロック 恐竜クロニクル』</h3>
-<p class="article-paragraph">
-  <strong>【対象年齢：2歳〜 | ジャンル：幼児向け知育ブロック | 知育効果：立体認知力・指先の筋力】</strong><br>
-  まだ小さな2〜4歳児におすすめなのが、柔らかくて組みやすいニューブロックの恐竜セットです。頭や足の特殊なパーツが含まれており、自分だけのオリジナルの合体恐竜を作ることができます。ブロック同士を繋ぐことで、論理的思考や指先の筋力が養われ、年齢が上がるとより巨大な作品作りにステップアップできます。踏んでも痛くないソフト素材なので安全性も極めて高いおもちゃです。
-</p>
-
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">6. エポック社『恐竜立体パズル』</h3>
-<p class="article-paragraph">
-  <strong>【対象年齢：5歳〜 | ジャンル：知的パズル | 知育効果：空間座標認識・問題解決能力】</strong><br>
-  恐竜の体を立体的なパーツに分割し、それを組み立て直すパズルです。二次元のジグソーパズルと異なり、三次元で物の形を捉える必要があるため、空間認識能力が非常に鍛えられます。パズルを解く楽しさと同時に、恐竜の骨格や体節の繋がりを直感的に学べる知育玩具です。完成した際の一体感と達成感は、子どもの自己肯定感を大きく高めてくれます。
-</p>
-
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">7. 『化石発掘おもちゃキット』（自宅体験用）</h3>
-<p class="article-paragraph">
-  <strong>【対象年齢：6歳〜 | ジャンル：疑似発掘体験キット | 知育効果：集中力・考古学的探究心の育成】</strong><br>
-  石膏のブロックの中に、恐竜の骨の模型（または本物のサメの歯やアンモナイトの化石）が埋まっており、付属のハンマーとノミ、ハシを使って少しずつ削り出すキットです。考古学者さながらの「発掘体験」が自宅のテーブルの上で楽しめます。非常に集中力が必要な作業であり、指先の丁寧なコントロール力と、中から骨が現れた時の大きな感動を体験することができます。削り粉が出るため、新聞紙やトレイを敷いて遊ぶのがコツです。
-</p>
-
-<h2 class="article-section-title">年齢別！おすすめの恐竜おもちゃ提案マップ</h2>
-<p class="article-paragraph">
-  子どもの成長段階に合わせて最適なおもちゃを与えることは、興味を長持ちさせる上で非常に大切です。
-</p>
-<ul style="list-style-type: square; padding-left: 20px; line-height: 1.8; margin-bottom: 20px; font-size: 14px;">
-  <li><strong style="color: var(--primary-neon);">1〜3歳（幼児期前・中期）</strong>: 安全第一で柔らかく、角のないものが適しています。『ニューブロック 恐竜クロニクル』は噛んでも飲み込めない大サイズで安全です。</li>
-  <li><strong style="color: var(--primary-neon);">4〜6歳（幼稚園・保育園）</strong>: ごっこ遊びが本格化する時期。『アニア』や『レゴ ジュラシック・ワールド』の簡単なキットで、ストーリーを作るごっこ遊びを促してあげましょう。</li>
-  <li><strong style="color: var(--primary-neon);">小学校低学年以上（6歳〜）</strong>: 構造や科学的な仕組みに興味を持ち始める時期です。『プラノサウルス』での骨格ビルドや、集中して石膏を削る『化石発掘おもちゃキット』が大きな達成感をもたらします。</li>
-</ul>
-
-<h2 class="article-section-title">まとめ：おもちゃを通した親子の会話を楽しもう</h2>
-<p class="article-paragraph">
-  おもちゃを選んだら、ぜひ親御さんも「これなんていう恐竜？」「ここが動くんだね！」と声をかけて、一緒に遊んでみてください。親が興味を示すことで、子どもの探求心はさらに刺激されます。おもちゃで遊んだあとは、図鑑で実際の生態を調べたり、週末に博物館へ本物の化石を見に行ったりすると、子どもの学びは無限に広がっていきます。
-</p>
-<p class="article-paragraph" style="margin-top: 20px;">
-  おもちゃと一緒に読みたいおすすめ図鑑はこちら：<a href="/topics/dinosaur-books-selection" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【2026年最新】小学生におすすめの恐竜図鑑5選！選び方のコツ</a><br>
-  本物の化石を掘りに行こう：<a href="/topics/family-dinosaur-museum-guide" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【親子で大冒険】全国の恐竜博物館・化石発掘体験ガイド</a>
-</p>
-    `,
-    image: "images/topics/best-toys.webp",
-    securityLevel: "LEVEL 2 (SCIENTIFIC REVISION)",
-    relatedSpecimens: ["spinosaurus"]
-  },
-  {
-    id: "family-dinosaur-museum-guide",
-    date: "2026.06.03",
-    category: "DISCOVERY",
-    title: "【親子で大冒険】全国の恐竜博物館・化石発掘体験ガイドと、旅行が10倍楽しくなる事前準備",
-    summary: "子どもとの思い出作りに最適な日本の恐竜博物館と化石発掘スポットを紹介。子連れ旅行での注意点や、旅行がさらに楽しくなる事前準備・アイテムも解説。",
-    content: `
-<h2 class="article-section-title">本物の化石が放つ圧倒的なインパクトを子どもに体験させよう</h2>
-<p class="article-paragraph">
-  「子どもが図鑑を毎日読んでいるけれど、そろそろ本物の恐竜を見せてあげたいな」——そう思ったら、恐竜博物館への旅行が最高の選択肢です。実物大の骨格標本が放つ圧倒的なスケール感や、何億年も前に地中に埋もれた本物の化石の手触りは、図鑑や画面の中だけでは決して得られない<strong>「本物の感動」</strong>を子どもに与えます。この体験は、子どもの知的好奇心や科学への関心を一気に加速させるトリガーとなります。
-</p>
-<p class="article-paragraph">
-  日本には、世界的に見ても極めて質の高い展示を誇る恐竜博物館や、実際に自分で化石を発掘できる貴重なスポットが数多く存在します。本記事では、30代会社員で2児の父であり、家族で全国の恐竜スポットを巡っている筆者が、特におすすめの聖地と、旅行を成功させるための実用的なアドバイス・事前準備について詳しく解説します。
-</p>
-
-<h2 class="article-section-title">親子で行くべき！全国の恐竜博物館おすすめ3選</h2>
-
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">① 福井県立恐竜博物館（福井県勝山市）</h3>
-<p class="article-paragraph">
-  <strong>【特徴：世界三大恐竜博物館の一つ。圧倒的な骨格展示と国内発掘の聖地】</strong><br>
-  日本の恐竜ファンの聖地であり、文句なしに国内最大・最高峰の博物館です。巨大なドーム状の展示室には、50体以上の恐竜全身骨格が立ち並び、そのうち10体以上は本物の化石骨格を使用しています。福井県勝山市で発見された「フクイサウルス」や「フクイラプトル」の実物化石や復元モデルも間近で見ることができます。
-  また、事前予約制の「野外恐竜博物館」ツアーに参加すれば、実際の恐竜化石発掘現場のすぐ隣で、本物の地層から化石を掘り出す発掘体験が楽しめます。貝や植物だけでなく、運が良ければ恐竜の歯が見つかることもあり、一生の思い出になること間違いなしです。
-</p>
-
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">② 神流町恐竜センター（群馬県神流町）</h3>
-<p class="article-paragraph">
-  <strong>【特徴：関東における恐竜の聖地。アットホームながら本格的な展示と体験】</strong><br>
-  山あいの美しい自然に囲まれた、関東エリアで最も有名な恐竜専門の博物館です。日本で初めて恐竜の足跡化石が発見された地層の近くにあり、モンゴルで発見された珍しい恐竜（ハドロサウルス類や格闘恐竜など）のレプリカや骨格が充実しています。
-  ここでは、スタッフの丁寧な指導のもと、白亜紀の地層から実際に化石を掘り出す「化石発掘体験」が週末や夏休みに開催されており、小学生前後の子どもたちが安全にハンマーを使って大発見に挑戦することができます。
-</p>
-
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">③ 国立科学博物館（東京都上野公園）</h3>
-<p class="article-paragraph">
-  <strong>【特徴：アクセス抜群。地球全体の進化の歴史の中で恐竜を学べる場所】</strong><br>
-  都心からのアクセスが最も良く、日本最高峰の総合科学博物館です。地球館の地下1階には、ティラノサウルスとトリケラトプスが対峙するダイナミックな骨格展示があり、その迫力は日本トップクラスです。
-  恐竜だけでなく、人類の進化や他の古代生物、宇宙の歴史までが体系的に展示されているため、「なぜ恐竜が絶滅し、哺乳類や人間が登場したのか」という大きな歴史のうねりの中で恐竜を捉え直すことができ、自由研究のテーマ選びにも非常に適しています。
-</p>
-
-<h2 class="article-section-title">本物の化石を自分で掘り当てよう！化石発掘体験の魅力とコツ</h2>
-<p class="article-paragraph">
-  ただ展示を見るだけでなく、自分の手でハンマーとノミを使って本物の化石を発掘する体験は、子どもたちにとって計り知れない興奮をもたらします。日本には、一般の親子でも手軽に発掘体験ができる場所があります。
-  代表的なのが福井県勝山市の『かつやま恐竜の森』や群馬県神流町の体験イベント、そして兵庫県丹波市の篠山層群周辺の施設です。
-</p>
-<p class="article-paragraph">
-  発掘で「良い石を見つけるコツ」は、**細かく黒いしま模様（層状の堆積物）がある泥岩や頁岩**を狙うことです。このような石は当時の湖の底に植物や生物が堆積してできたもので、平らな面に対して垂直にタガネを当て、ハンマーで優しく叩いて「本を開くように」割ると、中から美しい貝や葉っぱの化石、あるいは運がよければ恐竜の牙が綺麗に露出します。見つけた化石が学術的に価値のあるもの（新種の恐竜の骨や歯など）である場合、研究材料として博物館に登録され、第一発見者として子どもの名前が残るチャンスもあります！
-</p>
-
-<h2 class="article-section-title">化石発掘体験に行く際のアドバイスと必須の持ち物チェックリスト</h2>
-<p class="article-paragraph">
-  勝山市や神流町などの発掘体験に参加する際は、事前の準備が成功の鍵を握ります。現場は屋外の岩場や砂地であることが多いため、以下のアイテムを必ず用意しましょう。
-</p>
-<ul style="list-style-type: square; padding-left: 20px; line-height: 1.8; margin-bottom: 20px; font-size: 14px;">
-  <li><strong style="color: var(--primary-neon);">長袖・長ズボンと「歩きやすい靴」</strong>: 岩の破片から手足を保護するため、夏でも長袖・長ズボンが必須です。靴はスニーカーか登山靴を選び、サンダルは厳禁です。</li>
-  <li><strong style="color: var(--primary-neon);">子ども用の「滑り止め付き軍手」</strong>: ハンマーやタガネを使う際、手元が滑るのを防ぎます。手のサイズに合っていないとケガの原因になるため、子ども用の小さな軍手を用意してあげましょう。</li>
-  <li><strong style="color: var(--primary-neon);">保護用ゴーグル（またはサングラス）</strong>: 石を叩いて割る際、細かい火花や破片が目に向かって飛び散ることがあります。安全のために保護用の透明ゴーグルを着用させると安心です。</li>
-  <li><strong style="color: var(--primary-neon);">ジッパー付き保存袋と油性サインペン</strong>: 見つけた植物や貝の化石を綺麗に持ち帰るため、袋が必須です。サインペンで日付や発掘場所を書いておくと、夏休みの自由研究にそのまま使えます。</li>
-</ul>
-
-<h2 class="article-section-title">旅行が10倍楽しくなる！おすすめの事前準備</h2>
-<p class="article-paragraph">
-  博物館に行く前に、あらかじめ図鑑や本で「そこに行くお目当ての恐竜」を親子で調べておくことを強くおすすめします。「明日は福井に行って、この前図鑑で見たフクイラプトルとフクイサウルスを探そうね！」と話しておくことで、子どもは展示室に入った瞬間に「あ！これ図鑑に載ってたやつだ！」と目を輝かせ、学びの吸収率が劇的に高まります。
-  事前知識があることで、ただ「大きくて凄かった」で終わらず、「この恐竜の骨格のここは〜」といった深い観察に繋がります。ぜひ事前準備をしっかり整えて、親子でスリリングな太古の冒険に出かけてみてください！
-</p>
-<p class="article-paragraph" style="margin-top: 20px;">
-  旅行前に親子で読みたいおすすめ図鑑はこちら：<a href="/topics/dinosaur-books-selection" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【2026年最新】小学生におすすめの恐竜図鑑5選！選び方のコツ</a><br>
-  福井で発見された国産恐竜フクイサウルスの詳細はこちら：<a href="/dictionary/fukuisaurus" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">恐竜アーカイブ：フクイサウルス</a>
-</p>
-    `,
-    image: "images/topics/fukuisaurus_detail.webp",
-    securityLevel: "LEVEL 3 (PUBLIC)",
-    relatedSpecimens: ["fukuiraptor", "fukuisaurus"]
-  }
 ];
