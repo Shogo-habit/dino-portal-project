@@ -17,7 +17,9 @@ import { AUTHOR_DATA } from '../data/author';
       
       <div class="profile-layout">
         <div class="avatar-container">
-          <div class="operator-avatar">🦕</div>
+          <div class="operator-avatar">
+            <img src="/images/plofile/profile_image.webp" alt="Dino-Portal 運営代表" />
+          </div>
           <div class="status-badge">ONLINE</div>
         </div>
         <div class="profile-details">
@@ -112,6 +114,11 @@ import { AUTHOR_DATA } from '../data/author';
     justify-content: center;
     font-size: 50px;
     box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+  }
+  .operator-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .status-badge {
     margin-top: 10px;
