@@ -114,10 +114,12 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
             subtitle: "3本の角と特徴的なフリル、首・尾が連動可動する精密フィギュア",
             type: "figure",
             badgeText: "PRECISION MODEL",
-            imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81B43c9YqyL._AC_SL1500_.jpg",
+            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/morushop/cabinet/r_2025010236/20250102085147_88_1.jpg?_ex=300x300",
             affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/B00C74YAXC"),
             priceText: "PRICE: ¥1,100 (税込)",
-            details: ["タカラトミー公式", "角と首・後脚が可動", "ラージサイズ定番モデル"]
+            details: ["タカラトミー公式", "角と首・後脚が可動", "ラージサイズ定番モデル"],
+            rakutenAffiliateUrl: "https://af.moshimo.com/af/c/click?a_id=5603988&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmorushop%2F20250102085147_88%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmorushop%2Fi%2F10049421%2F",
+            impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
         },
         {
             id: "triceratops_book",
