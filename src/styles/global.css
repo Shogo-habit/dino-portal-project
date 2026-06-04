@@ -667,19 +667,6 @@ body {
     padding-top: 15px;
 }
 
-/* Glossary Styling */
-.glossary-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-
-.glossary-item h3 {
-    font-family: var(--font-mono);
-    letter-spacing: 1px;
-}
-
-
 /* --- RELATED SPECIMENS --- */
 .related-specimens {
     margin-top: 60px;
