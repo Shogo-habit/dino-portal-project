@@ -82,14 +82,14 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
         },
         {
             id: "t_rex_book",
-            title: "どっちが強い!? T-REX vs スピノサウルス",
-            subtitle: "最強の肉食恐竜同士が激突！まんがで学ぶ古生物の謎",
+            title: "学研の図鑑LIVE エクストリーム ティラノサウルス",
+            subtitle: "最新研究に基づき、ティラノサウルスを骨・筋肉から生態まで徹底深掘り",
             type: "book",
             badgeText: "ARCHIVAL BOOK",
-            imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81d4V0Rk0XL._AC_SL1500_.jpg",
-            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/404104584X"),
-            priceText: "PRICE: ¥1,078 (税込)",
-            details: ["角川まんが科学シリーズ", "オールカラーまんが", "ティラノとスピノの徹底分析"]
+            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1073/9784052061073_1_5.jpg?_ex=300x300",
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/405206107X"),
+            priceText: "PRICE: ¥2,420 (税込)",
+            details: ["1冊丸ごとティラノサウルス特化", "最新の古生物学知見を網羅", "上科約30種を完全収録"]
         }
     ],
     "triceratops": [
