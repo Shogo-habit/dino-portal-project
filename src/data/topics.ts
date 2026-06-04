@@ -202,22 +202,43 @@ export const TOPICS = [
     gap: 20px;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: -70px;
   }
   .spinosaurus-image-wrap {
     flex: 0 0 420px;
     max-width: 100%;
     margin-top: -50px;
   }
+  
+  /* Prevent title and paragraph from overlapping the floated/shifted image on desktop */
+  .spinosaurus-next-title,
+  .spinosaurus-next-para {
+    margin-right: 440px;
+  }
+
   @media (max-width: 991px) {
     .spinosaurus-image-wrap {
       margin-top: -30px;
     }
+    .spinosaurus-flex-container {
+      margin-bottom: -40px;
+    }
+    .spinosaurus-next-title,
+    .spinosaurus-next-para {
+      margin-right: 440px;
+    }
   }
   @media (max-width: 768px) {
+    .spinosaurus-flex-container {
+      margin-bottom: 30px;
+    }
     .spinosaurus-image-wrap {
       flex: 1 0 100%;
       margin-top: 0;
+    }
+    .spinosaurus-next-title,
+    .spinosaurus-next-para {
+      margin-right: 0;
     }
   }
 </style>
@@ -232,8 +253,8 @@ export const TOPICS = [
   </div>
 </div>
 
-<h2 class="article-section-title">2014年のパラダイムシフト：四足歩行と水中生活説</h2>
-<p class="article-paragraph">
+<h2 class="article-section-title spinosaurus-next-title">2014年のパラダイムシフト：四足歩行と水中生活説</h2>
+<p class="article-paragraph spinosaurus-next-para">
   2014年、ニザール・イブラヒム博士らの研究チームが新たな化石を発見し、これまでの復元図を根本から覆す発表を行いました。
 </p>
 <p class="article-paragraph">
