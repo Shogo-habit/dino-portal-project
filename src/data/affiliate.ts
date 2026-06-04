@@ -199,14 +199,16 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
         },
         {
             id: "book_move",
-            title: "講談社の動く図鑑MOVE 恐竜 [新訂版] DVD付き",
+            title: "講談社の動く図鑑MOVE 恐竜 [新訂二版] DVD付き",
             subtitle: "躍動感あふれるイラストと、戦う恐竜たちのダイナミックな姿",
             type: "book",
             badgeText: "ARCHIVAL BOOK",
-            imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81+X34-tE1L._AC_SL1500_.jpg",
-            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/4065299104"),
+            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9678/9784065369678.jpg?_ex=300x300",
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/4065369676"),
             priceText: "PRICE: ¥2,200 (税込)",
-            details: ["掲載種数：約320種", "特典：NHKスペシャルDVD（約60分）", "大迫力の戦闘イラスト"]
+            details: ["掲載種数：約320種", "特典：NHKスペシャルDVD（約60分）", "大迫力の戦闘イラスト"],
+            rakutenAffiliateUrl: "https://af.moshimo.com/af/c/click?a_id=5603988&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17998141%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21381007%2F",
+            impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
         },
         {
             id: "book_live",
