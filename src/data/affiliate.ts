@@ -57,10 +57,12 @@ export const DEFAULT_AFFILIATE_PRODUCTS: AffiliateProduct[] = [
         subtitle: "最新の学説に基づいた決定版恐竜図鑑、映像コンテンツ同梱",
         type: "book",
         badgeText: "ARCHIVAL BOOK",
-        imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81A1-24NACL._AC_SL1500_.jpg",
+        imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3118/9784092173118_1_24.jpg?_ex=300x300",
         affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/4092173111"),
         priceText: "PRICE: ¥2,200 (税込)",
-        details: ["最新恐竜データ400種以上", "ドラえもんコラボDVD付き", "教育的学習アーカイブに最適"]
+        details: ["最新恐竜データ400種以上", "ドラえもんコラボDVD付き", "教育的学習アーカイブに最適"],
+        rakutenAffiliateUrl: "https://af.moshimo.com/af/c/click?a_id=5603988&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F12781560%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F16942437%2F",
+        impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
     },
     {
         id: "default_goods",
@@ -192,10 +194,12 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
             subtitle: "実物化石写真の多さと圧倒的な学術的信頼度を誇る決定版",
             type: "book",
             badgeText: "ARCHIVAL BOOK",
-            imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81A1-24NACL._AC_SL1500_.jpg",
+            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3118/9784092173118_1_24.jpg?_ex=300x300",
             affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/4092173111"),
             priceText: "PRICE: ¥2,200 (税込)",
-            details: ["掲載種数：約400種", "特典：ドラえもんDVD（約70分）", "実物化石写真が豊富"]
+            details: ["掲載種数：約400種", "特典：ドラえもんDVD（約70分）", "実物化石写真が豊富"],
+            rakutenAffiliateUrl: "https://af.moshimo.com/af/c/click?a_id=5603988&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F12781560%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F16942437%2F",
+            impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
         },
         {
             id: "book_move",
