@@ -142,14 +142,16 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
     "spinosaurus": [
         {
             id: "spinosaurus_figure",
-            title: "アニア AL-15 スピノサウルス",
-            subtitle: "背中に巨大な帆を持つ水棲恐竜。口・尾がダイナミックに可動",
+            title: "アニア ジュラシック・ワールド 海のモササウルス DXセット",
+            subtitle: "モササウルス・スピノサウルス(B)・アクイロプスの豪華3体セット",
             type: "figure",
             badgeText: "PRECISION MODEL",
-            imageUrl: "https://images-na.ssl-images-amazon.com/images/I/71uVvEw67BL._AC_SL1500_.jpg",
-            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/B085MT8Q9C"),
-            priceText: "PRICE: ¥1,430 (税込)",
-            details: ["タカラトミー公式", "ラージサイズアニア", "口の開閉・尾の左右可動"]
+            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/yousay-do/cabinet/20250523y/4904810954842.jpg?_ex=300x300",
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/s?k=4904810954842"),
+            priceText: "PRICE: ¥2,970 (税込)",
+            details: ["タカラトミー公式", "豪華恐竜3体セット", "モササウルス・スピノサウルス(B)・アクイロプスが入ったDXセット", "口・脚・尾などの可動ギミック搭載"],
+            rakutenAffiliateUrl: "https://af.moshimo.com/af/c/click?a_id=5603988&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fyousay-do%2F4904810954842%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyousay-do%2Fi%2F10099193%2F",
+            impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
         },
         {
             id: "spinosaurus_book",
