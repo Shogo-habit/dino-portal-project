@@ -68,10 +68,12 @@ export const DEFAULT_AFFILIATE_PRODUCTS: AffiliateProduct[] = [
         subtitle: "白熱のバトルを楽しめる、アニアシリーズ最大の恐竜プレイセット",
         type: "goods",
         badgeText: "INTERACTIVE TOY",
-        imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81P-4xRjIeL._AC_SL1500_.jpg",
+        imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/edion/cabinet/goods/ll/img_184/4904810399995_ll.jpg?_ex=300x300",
         affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/B07BL2B9SM"),
         priceText: "PRICE: ¥6,380 (税込)",
-        details: ["タカラトミー公式", "バトルギミック搭載マップ", "ティラノサウルス(ワイルドVer.)付属"]
+        details: ["タカラトミー公式", "バトルギミック搭載マップ", "ティラノサウルス(ワイルドVer.)付属"],
+        rakutenAffiliateUrl: "https://af.moshimo.com/af/c/click?a_id=5603988&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fedion%2F4904810399995%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fedion%2Fi%2F10484925%2F",
+        impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
     }
 ];
 
