@@ -261,13 +261,48 @@ export const TOPICS = [
   新しく見つかった骨格から、<strong>後脚が非常に短く、重心が極端に前にある</strong>ことが判明したのです。これにより、「二足歩行は困難であり、陸上では四足歩行していた。そして、人生の大半を水中で過ごす水棲（または半水棲）恐竜であった」という衝撃的な説が提唱されました。
 </p>
 
+<style>
+  .spinosaurus-tail-flex-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .spinosaurus-tail-image-wrap {
+    flex: 0 0 420px;
+    max-width: 100%;
+    margin-top: -50px;
+  }
+  @media (max-width: 991px) {
+    .spinosaurus-tail-image-wrap {
+      margin-top: -30px;
+    }
+  }
+  @media (max-width: 768px) {
+    .spinosaurus-tail-flex-container {
+      margin-bottom: 30px;
+    }
+    .spinosaurus-tail-image-wrap {
+      flex: 1 0 100%;
+      margin-top: 0;
+    }
+  }
+</style>
 <h2 class="article-section-title">2020年の決定打：オオサンショウウオのような尾</h2>
-<p class="article-paragraph">
-  さらに2020年、同じモロッコの地層からスピノサウルスの<strong>完全な尾の化石</strong>が発見されました。その尾はこれまでの獣脚類のような丸い断面ではなく、<strong>上部に非常に長い骨（神経棘）が伸びた、オールの形（ヒレ状）</strong>をしていたのです。
-</p>
-<p class="article-paragraph">
-  これにより、スピノサウルスがこの尾を左右に振ることで、ワニやオオサンショウウオのように水中で強力な推進力を得て泳いでいたことが確実視されるようになりました。
-</p>
+<div class="spinosaurus-tail-flex-container">
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0;">
+      さらに2020年、同じモロッコの地層からスピノサウルスの<strong>完全な尾の化石</strong>が発見されました。その尾はこれまでの獣脚類のような丸い断面ではなく、<strong>上部に非常に長い骨（神経棘）が伸びた、オールの形（ヒレ状）</strong>をしていたのです。
+    </p>
+    <p class="article-paragraph" style="margin-bottom: 0;">
+      これにより、スピノサウルスがこの尾を左右に振ることで、ワニやオオサンショウウオのように水中で強力な推進力を得て泳いでいたことが確実視されるようになりました。
+    </p>
+  </div>
+  <div class="spinosaurus-tail-image-wrap">
+    <img src="/images/topics/spinosaurus_evolution2.webp" alt="スピノサウルス完全な尾の化石復元図" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1);" />
+  </div>
+</div>
 
 <h2 class="article-section-title">最新の研究と続く議論</h2>
 <p class="article-paragraph">
