@@ -255,7 +255,7 @@ export const TOPICS = [
 </p>
 <p class="article-paragraph" style="margin-top: 20px;">
   ※より詳細なティラノサウルスの全身スペックや最新の感覚能力に関する解説はこちら：<br>
-  <a href="/topics/tyrannosaurus-guide" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【最強の肉食恐竜】ティラノサウルスの生態を徹底解説！最新の研究が明かす真実とおすすめフィギュア</a>
+  <a href="/topics/tyrannosaurus-guide" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【最強の肉食恐竜】ティラノサウルスの生態を徹底解説！最新の研究が明かす真実</a>
 </p>
     `,
     image: "images/topics/trex_feathers.webp",
@@ -637,7 +637,7 @@ export const TOPICS = [
   現在も決定的な結論は出ていませんが、近縁種のカルノタウルスではさらに前足が退化して指の関節すらなくなっています。このように、最強の恐竜のちょっと可愛らしい前足には、生物の「進化と適応の歴史」がぎゅっと詰まっているのです。
 </p>
 <p class="article-paragraph" style="margin-top: 20px;">
-  ※より詳細なティラノサウルスの全身スペックや最新の感覚能力に関する解説はこちら：<a href="/topics/tyrannosaurus-guide" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【最強の肉食恐竜】ティラノサウルスの生態を徹底解説！最新の研究が明かす真実とおすすめフィギュア</a>
+  ※より詳細なティラノサウルスの全身スペックや最新の感覚能力に関する解説はこちら：<a href="/topics/tyrannosaurus-guide" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【最強の肉食恐竜】ティラノサウルスの生態を徹底解説！最新の研究が明かす真実</a>
 </p>
     `,
     image: "images/topics/trex_small_arms.webp",
@@ -979,7 +979,7 @@ export const TOPICS = [
     id: "tyrannosaurus-guide",
     date: "2026.06.03",
     category: "RESEARCH",
-    title: "【最強の肉食恐竜】ティラノサウルスの生態を徹底解説！最新の研究が明かす真実とおすすめフィギュア",
+    title: "【最強の肉食恐竜】ティラノサウルスの生態を徹底解説！最新の研究が明かす真実",
     summary: "古生物の代名詞とも言えるティラノサウルス・レックス（T-Rex）。その強大な顎、驚異的な五感、羽毛の有無をめぐる最新学説から、親子で楽しめるフィギュアやおもちゃの紹介までを徹底解説。",
     content: `
 <h2 class="article-section-title">地球史上最大の陸生肉食獣、ティラノサウルス・レックスの基本像と全身スペック</h2>
