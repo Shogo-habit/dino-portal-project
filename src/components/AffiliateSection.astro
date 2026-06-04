@@ -85,15 +85,6 @@ if (mapped && mapped.length > 0) {
                         <div class="product-price">{product.priceText}</div>
                         <div class="shop-buttons-group">
                             <a 
-                                href={product.affiliateUrl} 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                class="shop-action-btn amazon-btn"
-                            >
-                                <span>AMAZON</span>
-                                <span class="btn-arrow">&raquo;</span>
-                            </a>
-                            <a 
                                 href={rakutenUrl} 
                                 target="_blank" 
                                 rel="noopener noreferrer" 
@@ -335,19 +326,6 @@ if (mapped && mapped.length > 0) {
         text-transform: uppercase;
         letter-spacing: 1px;
         border: 1px solid;
-    }
-    
-    .amazon-btn {
-        background: rgba(0, 242, 255, 0.04);
-        border-color: var(--primary-neon);
-        color: var(--primary-neon);
-        box-shadow: 0 0 8px rgba(0, 242, 255, 0.08);
-    }
-
-    .amazon-btn:hover {
-        background: var(--primary-neon);
-        color: #000;
-        box-shadow: 0 0 15px var(--primary-neon);
     }
 
     .rakuten-btn {
