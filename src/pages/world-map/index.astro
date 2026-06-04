@@ -272,6 +272,12 @@ const engLabels: Record<string, string> = {
                     
                     isScanning = true;
                     
+                    // スキャンデータ表示エリアへ自動でスクロール
+                    const scanTerminal = document.querySelector('.scan-terminal');
+                    if (scanTerminal) {
+                        scanTerminal.scrollIntoView({ behavior: 'smooth' });
+                    }
+                    
                     // Show and move region selector brackets
                     const frame = REGION_FRAMES[region];
                     const frameGroup = document.getElementById('selected-region-frame');
