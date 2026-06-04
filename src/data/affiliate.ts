@@ -86,10 +86,12 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
             subtitle: "最新研究に基づき、ティラノサウルスを骨・筋肉から生態まで徹底深掘り",
             type: "book",
             badgeText: "ARCHIVAL BOOK",
-            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1073/9784052061073_1_5.jpg?_ex=300x300",
+            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1073/9784052061073_1_2.jpg?_ex=300x300",
             affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/405206107X"),
             priceText: "PRICE: ¥2,420 (税込)",
-            details: ["1冊丸ごとティラノサウルス特化", "最新の古生物学知見を網羅", "上科約30種を完全収録"]
+            details: ["1冊丸ごとティラノサウルス特化", "最新の古生物学知見を網羅", "上科約30種を完全収録"],
+            rakutenAffiliateUrl: "https://af.moshimo.com/af/c/click?a_id=5603988&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18330036%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21693053%2F",
+            impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
         }
     ],
     "triceratops": [
