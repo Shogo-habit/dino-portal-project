@@ -196,9 +196,16 @@ export const TOPICS = [
 </p>
 
 <h2 class="article-section-title">二足歩行の陸生肉食恐竜としてのイメージ</h2>
-<p class="article-paragraph">
-  2001年の映画『ジュラシック・パークIII』では、ティラノサウルスを凌ぐ巨大な陸の捕食者として描かれ、世界的に有名になりました。この時期の学説でも、ワニのような長い口先を持ちながらも、基本的にはティラノサウルスのように強靭な後脚で二足歩行する陸生の恐竜として復元されていました。
-</p>
+<div class="article-flex-container" style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 30px;">
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0;">
+      2001年の映画『ジュラシック・パークIII』では、ティラノサウルスを凌ぐ巨大な陸の捕食者として描かれ、世界的に有名になりました。この時期の学説でも、ワニのような長い口先を持ちながらも、基本的にはティラノサウルスのように強靭な後脚で二足歩行する陸生の恐竜として復元されていました。
+    </p>
+  </div>
+  <div style="flex: 0 0 280px; max-width: 100%; align-self: center;">
+    <img src="/images/topics/spinosaurus_evolution1.webp" alt="スピノサウルス二足歩行期復元図" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1);" />
+  </div>
+</div>
 
 <h2 class="article-section-title">2014年のパラダイムシフト：四足歩行と水中生活説</h2>
 <p class="article-paragraph">
