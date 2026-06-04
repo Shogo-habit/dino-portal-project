@@ -155,14 +155,16 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
         },
         {
             id: "spinosaurus_book",
-            title: "恐竜の対決：スピノサウルス (学研の科学)",
-            subtitle: "最新の学説から解き明かされる謎多き巨大水棲恐竜のすべて",
+            title: "恐竜トリケラトプスとスピノサウルス",
+            subtitle: "あかちゃん恐竜をまもる巻 （たたかう恐竜たち） [ 黒川光広 ]",
             type: "book",
             badgeText: "ARCHIVAL BOOK",
-            imageUrl: "https://images-na.ssl-images-amazon.com/images/I/81A1-24NACL._AC_SL1500_.jpg", // 代替
-            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/4092173111"),
-            priceText: "PRICE: ¥2,200 (税込)",
-            details: ["スピノサウルスの骨格再現", "二足歩行と四足歩行 of 論争", "最新復元図アート収録"]
+            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3131/9784338173131.jpg?_ex=300x300",
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/s?k=9784338173131"),
+            priceText: "PRICE: ¥1,430 (税込)",
+            details: ["黒川光広・作絵", "たたかう恐竜たちシリーズ", "あかちゃん恐竜をまもるトリケラトプスの大冒険", "子どもたちに大人気の定番恐竜絵本"],
+            rakutenAffiliateUrl: "https://af.moshimo.com/af/c/click?a_id=5603988&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F6519963%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F13700451%2F",
+            impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
         }
     ],
     "stegosaurus": [
