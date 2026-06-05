@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap Location
-Sitemap: https://dino-portal-project.vercel.app/sitemap-index.xml
+Sitemap: https://dino-portal.com/sitemap-index.xml

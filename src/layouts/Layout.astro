@@ -18,8 +18,8 @@ const {
   ogType = 'website'
 } = Astro.props;
 
-const canonicalURL = new URL(Astro.url.pathname, 'https://dino-portal-project.vercel.app/');
-const fullOgImageUrl = new URL(ogImage, 'https://dino-portal-project.vercel.app/');
+const canonicalURL = new URL(Astro.url.pathname, 'https://dino-portal.com/');
+const fullOgImageUrl = new URL(ogImage, 'https://dino-portal.com/');
 ---
 <!DOCTYPE html>
 <html lang="ja">
@@ -79,8 +79,8 @@ const fullOgImageUrl = new URL(ogImage, 'https://dino-portal-project.vercel.app/
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Dino-Portal Lab",
-      "url": "https://dino-portal-project.vercel.app/",
-      "logo": "https://dino-portal-project.vercel.app/logo.png",
+      "url": "https://dino-portal.com/",
+      "logo": "https://dino-portal.com/logo.png",
       "description": "次世代の恐竜デジタルアーカイブプロジェクト"
     }
     </script>

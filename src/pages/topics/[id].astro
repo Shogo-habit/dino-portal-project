@@ -29,7 +29,7 @@ const articleSchema = {
   "headline": topic.title,
   "description": topic.summary,
   "image": [
-    `https://dino-portal-project.vercel.app/${topic.image}`
+    `https://dino-portal.com/${topic.image}`
   ],
   "datePublished": topic.date.replace(/\./g, '-'),
   "author": {
@@ -41,7 +41,7 @@ const articleSchema = {
     "name": "Dino-Portal Lab",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://dino-portal-project.vercel.app/favicon.png"
+      "url": "https://dino-portal.com/favicon.png"
     }
   }
 };
