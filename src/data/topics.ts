@@ -1177,10 +1177,10 @@ const RAW_TOPICS = [
     </p>
   </div>
   <div class="toy-affiliate-wrap" style="width: 300px; flex-shrink: 0; margin: 0 auto;">
-    <!-- TODO: アニア AL-01 ティラノサウルス アフィリエイトコード挿入箇所 -->
-    <div style="border: 1px dashed var(--primary-neon); border-radius: 4px; padding: 20px; text-align: center; background: rgba(0, 242, 255, 0.02); min-height: 150px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-      <span style="font-size: 11px; color: var(--primary-neon); font-family: var(--font-mono); margin-bottom: 5px;">[ AFFILIATE LINK PLACEHOLDER ]</span>
-      <span style="font-size: 12px; color: var(--text-dim);">アニア AL-01 ティラノサウルス<br>コード準備中</span>
+    <div class="toy-affiliate-card">
+      <div class="hud-corner top-left" style="position: absolute; top: -1px; left: -1px; width: 6px; height: 6px; border-top: 1px solid var(--primary-neon); border-left: 1px solid var(--primary-neon);"></div>
+      <div class="hud-corner bottom-right" style="position: absolute; bottom: -1px; right: -1px; width: 6px; height: 6px; border-bottom: 1px solid var(--primary-neon); border-right: 1px solid var(--primary-neon);"></div>
+      <a href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmorushop%2F20250102085551_88%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fmorushop%2Fi%2F10049452%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="//thumbnail.image.rakuten.co.jp/@0_mall/morushop/cabinet/r_2025010236/20250102085551_88_1.jpg?_ex=128x128" alt="" style="border: none;" /><br>タカラトミー(TAKARA TOMY) アニア AL-01 ティラノサウルス</a><img src="//i.moshimo.com/af/i/impression?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;">
     </div>
   </div>
 </div>
@@ -1194,13 +1194,59 @@ const RAW_TOPICS = [
     </p>
   </div>
   <div class="toy-affiliate-wrap" style="width: 300px; flex-shrink: 0; margin: 0 auto;">
-    <!-- TODO: プラノサウルス ティラノサウルス・レックス アフィリエイトコード挿入箇所 -->
-    <div style="border: 1px dashed var(--primary-neon); border-radius: 4px; padding: 20px; text-align: center; background: rgba(0, 242, 255, 0.02); min-height: 150px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-      <span style="font-size: 11px; color: var(--primary-neon); font-family: var(--font-mono); margin-bottom: 5px;">[ AFFILIATE LINK PLACEHOLDER ]</span>
-      <span style="font-size: 12px; color: var(--text-dim);">プラノサウルス ティラノサウルス・レックス<br>コード準備中</span>
+    <div class="toy-affiliate-card">
+      <div class="hud-corner top-left" style="position: absolute; top: -1px; left: -1px; width: 6px; height: 6px; border-top: 1px solid var(--primary-neon); border-left: 1px solid var(--primary-neon);"></div>
+      <div class="hud-corner bottom-right" style="position: absolute; bottom: -1px; right: -1px; width: 6px; height: 6px; border-bottom: 1px solid var(--primary-neon); border-right: 1px solid var(--primary-neon);"></div>
+      <a href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17821338%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21227927%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="//thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2622/4573102642622.jpg?_ex=128x128" alt="" style="border: none;" /><br>プラノサウルス ティラノサウルス (プラモデル)</a><img src="//i.moshimo.com/af/i/impression?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;">
     </div>
   </div>
 </div>
+<style>
+.toy-affiliate-card {
+  border: 1px solid rgba(0, 242, 255, 0.15);
+  border-radius: 4px;
+  padding: 20px 15px;
+  background: rgba(1, 10, 18, 0.6);
+  box-shadow: 0 0 15px rgba(0, 242, 255, 0.02);
+  text-align: center;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  width: 100%;
+  box-sizing: border-box;
+}
+.toy-affiliate-card:hover {
+  border-color: var(--primary-neon);
+  box-shadow: 0 0 25px rgba(0, 242, 255, 0.08);
+  transform: translateY(-2px);
+}
+.toy-affiliate-card a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-main);
+  font-size: 12px;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+.toy-affiliate-card a:hover {
+  color: var(--primary-neon);
+}
+.toy-affiliate-card img {
+  max-width: 120px;
+  max-height: 120px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  background: #fff;
+  padding: 6px;
+  border: 1px solid rgba(0, 242, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+.toy-affiliate-card:hover img {
+  transform: scale(1.05);
+}
+</style>
 <p class="article-paragraph" style="margin-top: 20px;">
   関連するライバル恐竜の徹底解説はこちら：<a href="/topics/triceratops-guide" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【盾角竜の代表格】トリケラトプスのすべてを徹底解説！3本の角とフリルの秘密</a><br>
   小学生におすすめの図鑑情報はこちら：<a href="/topics/dinosaur-books-selection" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【2026年最新】小学生におすすめの恐竜図鑑5選！選び方のコツ</a>
