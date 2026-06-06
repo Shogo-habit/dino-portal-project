@@ -1107,9 +1107,9 @@ const RAW_TOPICS = [
 </p>
 <p class="article-paragraph" style="margin-top: 15px;">
   ※この小さな前肢が辿った退化の経緯や、各仮説の詳しい科学的根拠については、こちらの個別記事で詳しく解説しています：
-  <a href="/topics/trex-small-arms" class="article-link" style="display: flex; align-items: center; gap: 15px; text-decoration: none; color: inherit; margin-top: 12px; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); max-width: 500px;">
-    <img src="/images/topics/trex_small_arms.webp" alt="ティラノサウルスの小さな前足" style="width: 80px; height: 50px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border);">
-    <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px;">ティラノサウルスの「小さな前足」の謎！何のために使っていた？</span>
+  <a href="/topics/trex-small-arms" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 12px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
+    <img src="/images/topics/trex_small_arms.webp" alt="ティラノサウルスの小さな前足" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+    <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">ティラノサウルスの「小さな前足」の謎！何のために使っていた？</span>
   </a>
 </p>
 
@@ -1128,9 +1128,9 @@ const RAW_TOPICS = [
 </p>
 <p class="article-paragraph" style="margin-top: 15px;">
   ※ティラノサウルスの羽毛をめぐる学説の変遷や、モフモフ説が広まった経緯についてより詳しく知りたい方はこちら：
-  <a href="/topics/trex-feathers" class="article-link" style="display: flex; align-items: center; gap: 15px; text-decoration: none; color: inherit; margin-top: 12px; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); max-width: 500px;">
-    <img src="/images/topics/trex_feathers.webp" alt="ティラノサウルスの羽毛" style="width: 80px; height: 50px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border);">
-    <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px;">ティラノサウルスの「羽毛」論争と最新の姿：モフモフ説は否定された？</span>
+  <a href="/topics/trex-feathers" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 12px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
+    <img src="/images/topics/trex_feathers.webp" alt="ティラノサウルスの羽毛" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+    <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">ティラノサウルスの「羽毛」論争と最新の姿：モフモフ説は否定された？</span>
   </a>
 </p>
 
