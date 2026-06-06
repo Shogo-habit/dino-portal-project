@@ -1398,6 +1398,10 @@ const RAW_TOPICS = [
   トリケラトプスは、ただ逃げ回るだけの植物食恐竜ではありませんでした。正面からティラノサウルスの攻撃を受け止め、鋭い角で反撃して追い払うことができる、当時としては数少ない「闘う植物食恐竜」だったのです。この2頭の真剣勝負は、大昔の地球で繰り広げられていた、生命をかけた本気のドラマでした。
 </p>
 
+<div style="margin: 20px auto 35px auto; text-align: center; max-width: 900px;">
+  <img src="/images/topics/triceratops_frill.webp" alt="トリケラトプスの襟飾り" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
+</div>
+
 <h2 class="article-section-title">なぜ私たちはトリケラトプスに惹かれるのか</h2>
 <p class="article-paragraph">
   トリケラトプスがこれほどまでに多くの人を引きつける理由はどこにあるのでしょうか。
