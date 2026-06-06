@@ -1170,15 +1170,37 @@ const RAW_TOPICS = [
 <p class="article-paragraph">
   これまで解説してきたティラノサウルスの驚異的な進化の歴史や、生物学的な特徴をただの知識として終わらせず、手元で実際に触れ、立体的に体感することは、子どもの科学的探究心や知的好奇心を刺激する上でこれ以上ない教育効果をもたらす。現代のトイ・ホビー市場には、最新の古生物学知見を精巧に落とし込んだ、親子で楽しめる素晴らしい玩具が多数展開されている。
 </p>
-<p class="article-paragraph">
-  まだハサミや組み立て工具を扱うのが難しい未就学児〜小学校低学年のお子様に最もおすすめしたいのが、タカラトミーの『アニア 恐竜シリーズ』（例：アニア AL-01 ティラノサウルス）である。手のひらサイズでありながら、T-Rex独自の筋肉質な体躯や皮膚の質感が見事に再現されている。アニアの最大の特徴は「頑丈さ」と「可動ギミック」である。大きく開閉する強靭な顎、しなやかに左右にスイングする長い尾、さらには足首が可動することで、劇的な戦闘ポーズを再現して遊ぶことができる。「獲物を噛み砕くごっこ遊び」を通じて、子どもたちは「なぜT-Rexの頭はこんなに大きいのか」「なぜ顎が動くのか」を、直感的かつ身体的感覚を通じて学習していく。
-</p>
-<p class="article-paragraph">
-  さらに、小学校中高学年〜大人まで、よりアカデミックで創造的な組み立て体験を求める層に絶大な支持を得ているのが、バンダイのプラモデルシリーズ『プラノサウルス ティラノサウルス・レックス』である。このプロダクトのコンセプトは「骨格を組み立て、その上に外皮を被せる」という、まさに恐竜復元プロセスそのものの疑似体験である。パーツ同士を指で押し込むだけで組み立てられる（タッチゲート方式・接着剤不要）親切設計でありながら、その中身は非常に本格的である。
-</p>
-<p class="article-paragraph">
-  まず最初に「骨格ビルド」を行い、頭骨に開いた巨大な筋肉用の窓（側頭窓）の配置や、機能する指が2本しかない極小の前肢の骨格構造を立体パズルのように組み立てる。その後、最新学説に基づく「ウロコ（鱗化石）調」の外皮パーツを骨格にかぶせていくことで、「どのようにして骨に筋肉と皮膚がつき、私たちがよく知るT-Rexの姿になるのか」を完璧に構造的に理解することができる。この立体的なアプローチは、平面の図鑑を読むだけでは得られない「構造的理解」と「感動」を指先から脳へと直接届けてくれる。これらの優れた玩具を囲み、「最新の研究だと、この腕は立ち上がるための支えだったらしいよ」と親子で対話を重ねることこそ、未来の科学の目を養う最良の時間となるだろう。
-</p>
+<div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
+  <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0; margin-bottom: 0;">
+      まだハサミや組み立て工具を扱うのが難しい未就学児〜小学校低学年のお子様に最もおすすめしたいのが、タカラトミーの『アニア 恐竜シリーズ』（例：アニア AL-01 ティラノサウルス）である。手のひらサイズでありながら、T-Rex独自の筋肉質な体躯や皮膚の質感が見事に再現されている。アニアの最大の特徴は「頑丈さ」と「可動ギミック」である。大きく開閉する強靭な顎、しなやかに左右にスイングする長い尾、さらには足首が可動することで、劇的な戦闘ポーズを再現して遊ぶことができる。「獲物を噛み砕くごっこ遊び」を通じて、子どもたちは「なぜT-Rexの頭はこんなに大きいのか」「なぜ顎が動くのか」を、直感的かつ身体的感覚を通じて学習していく。
+    </p>
+  </div>
+  <div class="toy-affiliate-wrap" style="width: 300px; flex-shrink: 0; margin: 0 auto;">
+    <!-- TODO: アニア AL-01 ティラノサウルス アフィリエイトコード挿入箇所 -->
+    <div style="border: 1px dashed var(--primary-neon); border-radius: 4px; padding: 20px; text-align: center; background: rgba(0, 242, 255, 0.02); min-height: 150px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <span style="font-size: 11px; color: var(--primary-neon); font-family: var(--font-mono); margin-bottom: 5px;">[ AFFILIATE LINK PLACEHOLDER ]</span>
+      <span style="font-size: 12px; color: var(--text-dim);">アニア AL-01 ティラノサウルス<br>コード準備中</span>
+    </div>
+  </div>
+</div>
+<div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
+  <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0;">
+      さらに、小学校中高学年〜大人まで、よりアカデミックで創造的な組み立て体験を求める層に絶大な支持を得ているのが、バンダイのプラモデルシリーズ『プラノサウルス ティラノサウルス・レックス』である。このプロダクトのコンセプトは「骨格を組み立て、その上に外皮を被せる」という、まさに恐竜復元プロセスそのものの疑似体験である。パーツ同士を指で押し込むだけで組み立てられる（タッチゲート方式・接着剤不要）親切設計でありながら、その中身は非常に本格的である。
+    </p>
+    <p class="article-paragraph" style="margin-bottom: 0;">
+      まず最初に「骨格ビルド」を行い、頭骨に開いた巨大な筋肉用の窓（側頭窓）の配置や、機能する指が2本しかない極小の前肢の骨格構造を立体パズルのように組み立てる。その後、最新学説に基づく「ウロコ（鱗化石）調」の外皮パーツを骨格にかぶせていくことで、「どのようにして骨に筋肉と皮膚がつき、私たちがよく知るT-Rexの姿になるのか」を完璧に構造的に理解することができる。この立体的なアプローチは、平面の図鑑を読むだけでは得られない「構造的理解」と「感動」を指先から脳へと直接届けてくれる。これらの優れた玩具を囲み、「最新の研究だと、この腕は立ち上がるための支えだったらしいよ」と親子で対話を重ねることこそ、未来の科学の目を養う最良の時間となるだろう。
+    </p>
+  </div>
+  <div class="toy-affiliate-wrap" style="width: 300px; flex-shrink: 0; margin: 0 auto;">
+    <!-- TODO: プラノサウルス ティラノサウルス・レックス アフィリエイトコード挿入箇所 -->
+    <div style="border: 1px dashed var(--primary-neon); border-radius: 4px; padding: 20px; text-align: center; background: rgba(0, 242, 255, 0.02); min-height: 150px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <span style="font-size: 11px; color: var(--primary-neon); font-family: var(--font-mono); margin-bottom: 5px;">[ AFFILIATE LINK PLACEHOLDER ]</span>
+      <span style="font-size: 12px; color: var(--text-dim);">プラノサウルス ティラノサウルス・レックス<br>コード準備中</span>
+    </div>
+  </div>
+</div>
 <p class="article-paragraph" style="margin-top: 20px;">
   関連するライバル恐竜の徹底解説はこちら：<a href="/topics/triceratops-guide" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【盾角竜の代表格】トリケラトプスのすべてを徹底解説！3本の角とフリルの秘密</a><br>
   小学生におすすめの図鑑情報はこちら：<a href="/topics/dinosaur-books-selection" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【2026年最新】小学生におすすめの恐竜図鑑5選！選び方のコツ</a>
