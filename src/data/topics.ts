@@ -1105,13 +1105,13 @@ const RAW_TOPICS = [
 <p class="article-paragraph">
   1つ目は、超至近距離で獲物に組み付いた際、鋭い爪で獲物を押さえ込んで逃げられないようにする「クランプ（固定）説」である。2つ目は、地面に這いつくばって休息している姿勢から立ち上がる際に、この腕で地面を突いて上半身を持ち上げる「起き上がり補助説」である。そして3つ目は、近年発表された非常に説得力のある「闘争回避説」である。死肉や縄張りをめぐってT-Rex同士が激しく争う際、長い腕を持っていると相手に噛みちぎられて致命的な感染症や大怪我を負うリスクが高まる。そのため、前肢を限界まで縮小させることで「噛まれる標的（的）を極限まで減らした」という、進化の冷徹かつ<strong>シニカルな</strong>生存戦略の結果とする見方である。いずれの説にせよ、この小さな手は単なる進化の「敗北」ではなく、最強のハンターとしての最適化プロセスの極地なのである。
 </p>
-<p class="article-paragraph" style="margin-top: 15px;">
+<p class="article-paragraph" style="margin-top: 15px; margin-bottom: 0;">
   ※この小さな前肢が辿った退化の経緯や、各仮説の詳しい科学的根拠については、こちらの個別記事で詳しく解説しています：
-  <a href="/topics/trex-small-arms" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 12px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-    <img src="/images/topics/trex_small_arms.webp" alt="ティラノサウルスの小さな前足" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
-    <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">ティラノサウルスの「小さな前足」の謎！何のために使っていた？</span>
-  </a>
 </p>
+<a href="/topics/trex-small-arms" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
+  <img src="/images/topics/trex_small_arms.webp" alt="ティラノサウルスの小さな前足" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+  <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">ティラノサウルスの「小さな前足」の謎！何のために使っていた？</span>
+</a>
 
 <h2 class="article-section-title">羽毛の有無をめぐる論争：最新の皮膚化石分析から見えた真の姿</h2>
 <p class="article-paragraph">
@@ -1126,13 +1126,13 @@ const RAW_TOPICS = [
 <p class="article-paragraph">
   最新の研究から導き出された妥当な結論は、「T-Rexは巨大化に伴う熱放射効率の向上（熱中症の防止）のために進化の過程で大部分の羽毛を喪失し、ほぼ全身が微細な鱗に覆われたウロコ肌に先祖返りした」という見解である。ただし、体表面積が小さく熱を失いやすい幼体期においては、体温保持のための「産毛」のような羽毛を一時的に有しており、成長とともに抜け落ちていったとする説は、今なお極めて有力に支持されている。
 </p>
-<p class="article-paragraph" style="margin-top: 15px;">
+<p class="article-paragraph" style="margin-top: 15px; margin-bottom: 0;">
   ※ティラノサウルスの羽毛をめぐる学説の変遷や、モフモフ説が広まった経緯についてより詳しく知りたい方はこちら：
-  <a href="/topics/trex-feathers" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 12px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-    <img src="/images/topics/trex_feathers.webp" alt="ティラノサウルスの羽毛" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
-    <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">ティラノサウルスの「羽毛」論争と最新の姿：モフモフ説は否定された？</span>
-  </a>
 </p>
+<a href="/topics/trex-feathers" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
+  <img src="/images/topics/trex_feathers.webp" alt="ティラノサウルスの羽毛" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+  <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">ティラノサウルスの「羽毛」論争と最新の姿：モフモフ説は否定された？</span>
+</a>
 
 <h2 class="article-section-title">超越的な感覚器官：目・鼻・耳の驚くべきハンティング能力</h2>
 <p class="article-paragraph">
