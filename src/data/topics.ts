@@ -1081,7 +1081,7 @@ const RAW_TOPICS = [
   特筆すべきは、同時代に他の大陸に生息していた巨大肉食恐竜との比較である。例えば、南米のギガノトサウルスや北アフリカのカルカロドントサウルスは、全長においてはT-Rexと同等かそれ以上（13メートル超）に達したが、骨格の頑強さと筋肉の質量を総合した「体積・質量」の面では、T-Rexが頭一つ抜きん出ていた。T-Rexの頭蓋骨は最大で長さ1.5メートルを超え、強大な顎の筋肉を収めるために横幅が非常に広く頑丈な構造をしていた。また、この重厚な頭部を支えつつ敏捷に運動するため、S字型に湾曲した太く強力な首の筋肉、骨盤から伸びる極めて太い大腿骨と長い後ろ脚を備えていた。  この二足歩行を可能にする完璧な重心設計と、強靭な尾による精巧なバランスを取る仕組みこそが、T-Rexを地球史上最も完成された超巨大ハンターたらしめる基本像なのである。
 </p>
 
-<div style="margin: 20px auto 35px auto; text-align: center; max-width: 600px;">
+<div style="margin: 20px auto 35px auto; text-align: center; max-width: 900px;">
   <img src="/images/topics/tyrannosaurus_size_comparison.webp" alt="ティラノサウルスのサイズ比較イラスト" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
