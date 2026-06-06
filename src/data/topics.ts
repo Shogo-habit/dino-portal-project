@@ -1180,7 +1180,12 @@ const RAW_TOPICS = [
     <div class="toy-affiliate-card">
       <div class="hud-corner top-left" style="position: absolute; top: -1px; left: -1px; width: 6px; height: 6px; border-top: 1px solid var(--primary-neon); border-left: 1px solid var(--primary-neon);"></div>
       <div class="hud-corner bottom-right" style="position: absolute; bottom: -1px; right: -1px; width: 6px; height: 6px; border-bottom: 1px solid var(--primary-neon); border-right: 1px solid var(--primary-neon);"></div>
-      <a href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmorushop%2F20250102085551_88%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fmorushop%2Fi%2F10049452%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="//thumbnail.image.rakuten.co.jp/@0_mall/morushop/cabinet/r_2025010236/20250102085551_88_1.jpg?_ex=128x128" alt="" style="border: none;" /><br>タカラトミー(TAKARA TOMY) アニア AL-01 ティラノサウルス</a><img src="//i.moshimo.com/af/i/impression?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;">
+      <a class="toy-link" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmorushop%2F20250102085551_88%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fmorushop%2Fi%2F10049452%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//thumbnail.image.rakuten.co.jp/@0_mall/morushop/cabinet/r_2025010236/20250102085551_88_1.jpg?_ex=128x128" alt="" style="border: none;" /><br>タカラトミー(TAKARA TOMY) アニア AL-01 ティラノサウルス</a>
+      <a class="rakuten-btn" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmorushop%2F20250102085551_88%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fmorushop%2Fi%2F10049452%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+        <span>楽天市場で見る</span>
+        <span class="btn-arrow">&raquo;</span>
+      </a>
+      <img src="//i.moshimo.com/af/i/impression?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;">
     </div>
   </div>
 </div>
@@ -1197,7 +1202,12 @@ const RAW_TOPICS = [
     <div class="toy-affiliate-card">
       <div class="hud-corner top-left" style="position: absolute; top: -1px; left: -1px; width: 6px; height: 6px; border-top: 1px solid var(--primary-neon); border-left: 1px solid var(--primary-neon);"></div>
       <div class="hud-corner bottom-right" style="position: absolute; bottom: -1px; right: -1px; width: 6px; height: 6px; border-bottom: 1px solid var(--primary-neon); border-right: 1px solid var(--primary-neon);"></div>
-      <a href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17821338%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21227927%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="//thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2622/4573102642622.jpg?_ex=128x128" alt="" style="border: none;" /><br>プラノサウルス ティラノサウルス (プラモデル)</a><img src="//i.moshimo.com/af/i/impression?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;">
+      <a class="toy-link" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17821338%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21227927%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2622/4573102642622.jpg?_ex=128x128" alt="" style="border: none;" /><br>プラノサウルス ティラノサウルス (プラモデル)</a>
+      <a class="rakuten-btn" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17821338%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21227927%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+        <span>楽天市場で見る</span>
+        <span class="btn-arrow">&raquo;</span>
+      </a>
+      <img src="//i.moshimo.com/af/i/impression?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;">
     </div>
   </div>
 </div>
@@ -1213,13 +1223,16 @@ const RAW_TOPICS = [
   transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
   width: 100%;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .toy-affiliate-card:hover {
   border-color: var(--primary-neon);
   box-shadow: 0 0 25px rgba(0, 242, 255, 0.08);
   transform: translateY(-2px);
 }
-.toy-affiliate-card a {
+.toy-affiliate-card a.toy-link {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1228,11 +1241,12 @@ const RAW_TOPICS = [
   font-size: 12px;
   line-height: 1.5;
   transition: color 0.3s ease;
+  width: 100%;
 }
-.toy-affiliate-card a:hover {
+.toy-affiliate-card a.toy-link:hover {
   color: var(--primary-neon);
 }
-.toy-affiliate-card img {
+.toy-affiliate-card a.toy-link img {
   max-width: 120px;
   max-height: 120px;
   object-fit: contain;
@@ -1243,8 +1257,47 @@ const RAW_TOPICS = [
   border: 1px solid rgba(0, 242, 255, 0.1);
   transition: transform 0.3s ease;
 }
-.toy-affiliate-card:hover img {
+.toy-affiliate-card:hover a.toy-link img {
   transform: scale(1.05);
+}
+.toy-affiliate-card img[width="1"],
+.toy-affiliate-card img[height="1"] {
+  display: none !important;
+}
+.toy-affiliate-card .rakuten-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 11px;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid var(--secondary-neon);
+  background: rgba(0, 255, 102, 0.04);
+  color: var(--secondary-neon);
+  box-shadow: 0 0 8px rgba(0, 255, 102, 0.08);
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  margin-top: 15px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+.toy-affiliate-card .rakuten-btn:hover {
+  background: var(--secondary-neon);
+  color: #000;
+  box-shadow: 0 0 15px var(--secondary-neon);
+}
+.toy-affiliate-card .rakuten-btn .btn-arrow {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+.toy-affiliate-card .rakuten-btn:hover .btn-arrow {
+  transform: translateX(2px);
 }
 </style>
 <p class="article-paragraph" style="margin-top: 20px;">
