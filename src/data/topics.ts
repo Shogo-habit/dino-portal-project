@@ -1082,7 +1082,7 @@ const RAW_TOPICS = [
 </p>
 
 <div style="margin: 20px auto 35px auto; text-align: center; max-width: 600px;">
-  <img src="/images/topics/tyrannosaurus size comparison.webp" alt="ティラノサウルスのサイズ比較イラスト" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
+  <img src="/images/topics/tyrannosaurus_size_comparison.webp" alt="ティラノサウルスのサイズ比較イラスト" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
 <h2 class="article-section-title">最新古生物学が解き明かす「破壊的な噛む力」と「骨を食べる理由」</h2>
