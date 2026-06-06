@@ -75,14 +75,12 @@ const articleSchema = {
                 <div class="related-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 15px;">
                     {relatedDinos.map(d => (
                         <a href={`/dictionary/${d.id}`} style="text-decoration: none; color: inherit;">
-                            <div class="related-card hud-panel" style="cursor: pointer; height: 100%; padding: 0; overflow: hidden;">
-                                <div class="related-img-wrap" style="height: 80px; overflow: hidden;">
-                                    <img src={`/${d.image}`} alt={d.name} loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="related-card hud-panel" style="cursor: pointer; height: 100%;">
+                                <div class="related-img-wrap" style="width: 100%; height: auto; overflow: hidden; position: relative;">
+                                    <img src={`/${d.image}`} alt={d.name} loading="lazy" decoding="async" style="width: 100%; height: auto; display: block; object-fit: contain;">
                                 </div>
-                                <div class="related-content" style="padding: 10px 12px 12px 12px;">
-                                    <h4 class="related-name" style="font-size: 12px; margin: 0 0 4px 0; color: var(--text-main);">{d.name}</h4>
-                                    <div class="related-meta" style="font-size: 9px; color: var(--text-dim);">{d.era} / {d.region}</div>
-                                </div>
+                                <h4 class="related-name" style="font-size: 12px; margin: 8px 0 4px 0; color: var(--text-main);">{d.name}</h4>
+                                <div class="related-meta" style="font-size: 9px; color: var(--text-dim);">{d.era} / {d.region}</div>
                             </div>
                         </a>
                     ))}
