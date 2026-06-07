@@ -14,7 +14,7 @@ import { BADGES } from '../../data/badges';
         <div class="hud-corner top-left" style="border-top-color: var(--secondary-neon); border-left-color: var(--secondary-neon);"></div>
         <div class="hud-corner bottom-right" style="border-bottom-color: var(--secondary-neon); border-right-color: var(--secondary-neon);"></div>
         <div style="display: flex; justify-content: space-between; margin-bottom: 10px; font-family: var(--font-mono); font-size: 12px;">
-            <span>アーカイブ同期進捗</span>
+            <span>図鑑収集状況</span>
             <span id="collection-progress-text">0 / {DINOSAURS.length} (0%)</span>
         </div>
         <div class="progress-bar-container" style="background: rgba(255, 255, 255, 0.05); height: 8px; border-radius: 4px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1);">
@@ -56,8 +56,8 @@ import { BADGES } from '../../data/badges';
 
     <!-- Empty State -->
     <div class="empty-state hud-panel" id="collection-empty-state" style="text-align: center; padding: 60px; display: none;">
-        <p style="color: var(--text-dim); margin-bottom: 20px;">観測データがありません。アーカイブから標本を選択して保存してください。</p>
-        <a href="/dictionary" class="nav-link" style="display: inline-block; text-decoration: none;">[ アーカイブへ移動 ]</a>
+        <p style="color: var(--text-dim); margin-bottom: 20px;">観測データがありません。図鑑から標本を選択して保存してください。</p>
+        <a href="/dictionary" class="nav-link" style="display: inline-block; text-decoration: none;">[ 恐竜図鑑へ移動 ]</a>
     </div>
 
     <!-- Collection Grid -->
