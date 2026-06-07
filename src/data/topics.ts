@@ -1476,9 +1476,25 @@ const RAW_TOPICS = [
 <p class="article-paragraph">
   まず、小さなお子様におすすめなのが、タカラトミーの動かして遊べるフィギュア『アニア AL-02 トリケラトプス』です。手のひらサイズでありながら、首や尻尾が動くため、おうちにある肉食恐竜のフィギュアと戦わせるごっこ遊びがすぐに楽しめます。角や体が丸みを帯びて作られており、小さな子どもが触っても安全な点も魅力です。
 </p>
-<p class="article-paragraph">
-  また、より本格的な組み立て体験ができる『プラノサウルス トリケラトプス』（バンダイ）も非常におすすめです。このプラモデルは、トリケラトプスの特徴である巨大な頭部を骨格レベルから再現しており、「骨を組み立てる骨格状態」の上から「皮膚を取り付ける外皮状態」を組み立てるという、ユニークな2段階の作りになっています。接着剤やハサミを使わずに手でパーツをはめ込むことができるため、初めての模型作りにも最適です。骨を組み立てる過程で、「角が骨からどのように伸びているか」や「襟飾りの骨の構造」を自分の手で触りながら学ぶことができ、知育としても非常に優れています。
-</p>
+<div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
+  <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0; margin-bottom: 0;">
+      また、より本格的な組み立て体験ができる『プラノサウルス トリケラトプス』（バンダイ）も非常におすすめです。このプラモデルは、トリケラトプスの特徴である巨大な頭部を骨格レベルから再現しており、「骨を組み立てる骨格状態」の上から「皮膚を取り付ける外皮状態」を組み立てるという、ユニークな2段階の作りになっています。接着剤やハサミを使わずに手でパーツをはめ込むことができるため、初めての模型作りにも最適です。骨を組み立てる過程で、「角が骨からどのように伸びているか」や「襟飾りの骨の構造」を自分の手で触りながら学ぶことができ、知育としても非常に優れています。
+    </p>
+  </div>
+  <div class="toy-affiliate-wrap" style="width: 300px; flex-shrink: 0; margin: 0 auto;">
+    <div class="toy-affiliate-card">
+      <div class="hud-corner top-left" style="position: absolute; top: -1px; left: -1px; width: 6px; height: 6px; border-top: 1px solid var(--primary-neon); border-left: 1px solid var(--primary-neon);"></div>
+      <div class="hud-corner bottom-right" style="position: absolute; bottom: -1px; right: -1px; width: 6px; height: 6px; border-bottom: 1px solid var(--primary-neon); border-right: 1px solid var(--primary-neon);"></div>
+      <a class="toy-link" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17454236%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2639/4573102642639.jpg?_ex=128x128" alt="" style="border: none;" /><br>プラノサウルス トリケラトプス (プラモデル)</a>
+      <a class="rakuten-btn" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17454236%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+        <span>楽天市場で見る</span>
+        <span class="btn-arrow">&raquo;</span>
+      </a>
+      <img src="//i.moshimo.com/af/i/impression?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;">
+    </div>
+  </div>
+</div>
 <p class="article-paragraph" style="margin-top: 20px;">
   ライバル恐竜の徹底解説はこちら：<a href="/topics/tyrannosaurus-guide" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【最強の肉食恐竜】ティラノサウルスの生態を徹底解説！</a>
 </p>
