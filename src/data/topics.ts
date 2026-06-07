@@ -767,7 +767,7 @@ const RAW_TOPICS = [
   現代のクジャクの羽やシカの角のように、異性に自分をアピールしたり、ライバルを威嚇するための「ディスプレイ」だったとする説です。血管が豊富に通っていたため、興奮するとフリルの色を赤や鮮やかな色に変色させ、視覚的に訴えかけていた可能性も指摘されています。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">2. 体温調節のエアコン（熱放射説）</h3>
+<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">2. 体温調節のラジエーター（熱放射説）</h3>
 <p class="article-paragraph">
   巨大なフリルに風を当てることで、血管の中の血液を冷やし、体温が上がりすぎるのを防ぐ「放熱板」として機能していたという説です。ゾウの大きな耳と同じようなシステムです。
 </p>
@@ -822,7 +822,7 @@ const RAW_TOPICS = [
     id: "stegosaurus-plates-science",
     date: "2026.05.23",
     category: "RESEARCH",
-    title: "ステゴサウルスの背中の板の謎：エアコン説と威嚇用の盾の真実",
+    title: "ステゴサウルスの背中の板の謎：ラジエーター説と威嚇用の盾の真実",
     summary: "誰もが知る剣竜ステゴサウルス。その背中に交互に立ち並ぶ巨大な「骨板」の真の機能とは？最新の熱力学シミュレーションと顕微鏡分析から明かされた真相。",
     content: `
 <h2 class="article-section-title">誰もが知る「背中の板」の謎</h2>
@@ -837,11 +837,11 @@ const RAW_TOPICS = [
   しかし、その後の研究で板は背中から空に向かってほぼ垂直に立ち並んでいたことが証明され、さらに板の内部は空洞が多く、非常に薄くて脆い構造であることが分かりました。もしアロサウルスのような大型肉食恐竜がこの板に噛みつけば、簡単に粉砕されてしまったでしょう。つまり、背中の板は物理的な攻撃を防ぐ盾としては機能しなかったのです。
 </p>
 
-<h2 class="article-section-title">有力な2つの現代学説：エアコン説とディスプレイ説</h2>
+<h2 class="article-section-title">有力な2つの現代学説：ラジエーター説とディスプレイ説</h2>
 <p class="article-paragraph">
   現在、ステゴサウルスの板の役割について、古生物学界で極めて有力視されているのが以下の2つの説です。
 </p>
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">1. 体温調節のための「エアコン」機能</h3>
+<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">1. 体温調節のための「ラジエーター」機能</h3>
 <p class="article-paragraph">
   板の表面や内部をCTスキャンや顕微鏡で詳細に観察した結果、板には無数の**細かい血管が張り巡らされていた溝**が存在することが判明しました。
   ステゴサウルスは冷え込みの厳しい朝には背中の板を太陽の光に向けて血液を温め、逆に日中の暑い時間には風に向けて熱を逃がすことで、巨大な体躯の体温を一定に保つ「空調システム（サーモレギュレーター）」として機能させていたと考えられています。熱力学のシミュレーションでも、この板があることで体温調節の効率が劇的に上がることが実証されています。
@@ -867,7 +867,7 @@ const RAW_TOPICS = [
       <tr style="border-bottom: 1px solid var(--panel-border);">
         <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">背中の板</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">薄く、血管が多く通る。骨組みとは繋がっていない。</td>
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">体温調節（エアコン）、威嚇用のディスプレイ</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">体温調節（ラジエーター）、威嚇用のディスプレイ</td>
         <td style="padding: 10px;">低い（攻撃を受けると破損・大出血の危険）</td>
       </tr>
       <tr>
@@ -880,7 +880,7 @@ const RAW_TOPICS = [
   </table>
 </div>
 <p class="article-paragraph">
-  なお、ステゴサウルスの本当の武器は背中の板ではなく、尾の先にある4本の鋭いトゲ（通称：サゴマイザー）でした。背中の板でエアコンのように体温を調節し、見た目を大きく見せて威嚇しつつ、いざとなったら尾のトゲで一撃を食らわせる——これが、ステゴサウルスが編み出した見事な生存戦略だったのです。
+  なお、ステゴサウルスの本当の武器は背中の板ではなく、尾の先にある4本の鋭いトゲ（通称：サゴマイザー）でした。背中の板でラジエーターのように体温を調節し、見た目を大きく見せて威嚇しつつ、いざとなったら尾のトゲで一撃を食らわせる——これが、ステゴサウルスが編み出した見事な生存戦略だったのです。
 </p>
     `,
     image: "images/topics/stegosaurus_plates.webp",
@@ -1361,7 +1361,7 @@ const RAW_TOPICS = [
 </p>
 <ul style="list-style-type: square; padding-left: 20px; line-height: 1.8; margin-bottom: 20px; font-size: 14px;">
   <li><strong>仲間へのアピールや気持ちの伝達</strong>:<br />襟飾りにはカラフルな皮膚の模様があり、それを見せることで、異性に自分をアピールしたり、群れの中の強さを示したりしました。また、興奮すると血管に血液がたくさん流れ込み、襟飾りの色が赤や鮮やかな色に変わって、敵を驚かせて威嚇したのではないかとも言われています。</li>
-  <li><strong>体温を下げるエアコンのような役割</strong>:<br />暑い時には、この広い襟飾りに風を当てることで、中に通る血液を冷やし、体温が上がりすぎるのを防いでいたという説です。</li>
+  <li><strong>体温を下げるラジエーターのような役割</strong>:<br />暑い時には、この広い襟飾りに風を当てることで、中に通る血液を冷やし、体温が上がりすぎるのを防いでいたという説です。</li>
   <li><strong>あごを動かす筋肉の土台</strong>:<br />硬い植物を噛み砕くための強力な筋肉が、この襟飾りの根元につながっていました。襟飾りが大きくなったのは、食事のための筋肉を支えるためでもあったのです。</li>
 </ul>
 <p class="article-paragraph">
