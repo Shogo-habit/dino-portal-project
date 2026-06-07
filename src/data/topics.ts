@@ -1338,7 +1338,7 @@ const RAW_TOPICS = [
       そして、彼らの口の奥には、植物を食べるための驚くべき仕組みが隠されていました。それは、何百本もの小さな歯がすき間なくびっしりと並び、まるで大きなすり鉢のようになった「歯の板」です。この仕組みのおかげで、彼らは硬い繊維質の植物を細かくすりつぶして消化することができました。さらに、歯がすり減って使えなくなると、下から新しい歯が次々と押し出されて生え変わるようになっていました。生涯にわたって常に新しく鋭い歯を維持し続けることができたこの仕組みこそが、トリケラトプスが大繁栄できた大きな秘密だったのです。
     </p>
   </div>
-  <div style="width: 250px; flex-shrink: 0; margin: 0 auto;">
+  <div style="width: 375px; flex-shrink: 0; margin: 0 auto;">
     <img src="/images/topics/triceratops_detail1.webp" alt="トリケラトプスの特徴" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
   </div>
 </div>
