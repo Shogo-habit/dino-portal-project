@@ -1367,10 +1367,13 @@ const RAW_TOPICS = [
 <p class="article-paragraph">
   このように、トリケラトプスの頭の飾りは、戦うためだけでなく、日々の生活を支える便利で多機能な道具だったのです。
 </p>
-<p class="article-paragraph" style="margin-top: 15px;">
-  ※「襟飾りが実は盾ではなかった」とされる科学的な根拠や、化石に残された血管の跡、襟飾りの厚みに関するより詳細な研究についてはこちら：<br>
-  <a href="/topics/triceratops-frill-mystery" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">トリケラトプスの頭の「フリル」、実は盾（たて）じゃなかった！？</a>
+<p class="article-paragraph" style="margin-top: 15px; margin-bottom: 0;">
+  ※「襟飾りが実は盾ではなかった」とされる科学的な根拠や、化石に残された血管の跡、襟飾りの厚みに関するより詳細な研究については、こちらの個別記事で分かりやすく解説しています：
 </p>
+<a href="/topics/triceratops-frill-mystery" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
+  <img src="/images/topics/triceratops_frill.webp" alt="トリケラトプスのフリル" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+  <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">トリケラトプスの頭の「フリル」、実は盾（たて）じゃなかった！？</span>
+</a>
 
 <h2 class="article-section-title">トリケラトプスの仲間たち</h2>
 <p class="article-paragraph">
