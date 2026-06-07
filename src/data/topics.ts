@@ -811,7 +811,7 @@ const RAW_TOPICS = [
   もちろん、完全に防御の役に立たなかったわけではなく、結果的に首を守る防護壁になったことも事実でしょう。しかし、トリケラトプスのシンボルであるフリルは、ただ戦うためだけのものではなく、恋をしたり、暑さをしのいだり、食事をしたりといった彼らの「日常の暮らし」を支える多機能マルチツールだったのです。
 </p>
 <p class="article-paragraph" style="margin-top: 20px;">
-  ※トリケラトプスの基本スペック、戦術、および種分類に関する詳細な総合解説はこちら：<a href="/topics/triceratops-guide" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【盾角竜の代表格】トリケラトプスのすべてを徹底解説！3本の角とフリルの秘密</a>
+  ※トリケラトプスの基本スペック、戦術、および種分類に関する詳細な総合解説はこちら：<a href="/topics/triceratops-guide" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【盾角竜の代表格】トリケラトプスのすべてを徹底解説！</a>
 </p>
     `,
     image: "images/topics/triceratops_frill.webp",
@@ -1298,7 +1298,7 @@ const RAW_TOPICS = [
 }
 </style>
 <p class="article-paragraph" style="margin-top: 20px;">
-  関連するライバル恐竜の徹底解説はこちら：<a href="/topics/triceratops-guide" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【盾角竜の代表格】トリケラトプスのすべてを徹底解説！3本の角とフリルの秘密</a><br>
+  関連するライバル恐竜の徹底解説はこちら：<a href="/topics/triceratops-guide" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【盾角竜の代表格】トリケラトプスのすべてを徹底解説！</a><br>
   小学生におすすめの図鑑情報はこちら：<a href="/topics/dinosaur-books-selection" class="article-link" style="color: var(--primary-neon); text-decoration: underline;">【2026年最新】小学生におすすめの恐竜図鑑5選！選び方のコツ</a>
 </p>
     `,
@@ -1311,7 +1311,7 @@ const RAW_TOPICS = [
     id: "triceratops-guide",
     date: "2026.06.03",
     category: "RESEARCH",
-    title: "【盾角竜の代表格】トリケラトプスのすべてを徹底解説！3本の角とフリルの秘密",
+    title: "【盾角竜の代表格】トリケラトプスのすべてを徹底解説！",
     summary: "三本の角と巨大なフリルを持つトリケラトプス。その防衛に特化した進化、ティラノサウルスとの死闘の実態、謎に包まれたフリルの役割、おもちゃやフィギュアの紹介を徹底解説。",
     content: `
 <h2 class="article-section-title">ティラノサウルスと並ぶ、白亜紀の2大スター</h2>
@@ -1329,12 +1329,19 @@ const RAW_TOPICS = [
 <p class="article-paragraph">
   まず、その大きさですが、大人のトリケラトプスは全長が約8メートルから9メートル、体重は5トンから9トンもあったと推定されています。これは、現代の陸上で一番大きな動物であるアフリカゾウと同じか、それ以上の重さです。体はどっしりとした低重心で、まるで頑丈な戦車のようでした。4本の足は非常に太く、筋肉がしっかりとついており、この巨大な体重をしっかりと支えていました。
 </p>
-<p class="article-paragraph">
-  彼らの主な食べ物は、地面近くに生えていたシダ植物や、ソテツなどの硬い葉っぱでした。トリケラトプスの口先は、オウムのようなくちばしの形をしており、これで硬い植物の茎をスパッと切り取っていました。
-</p>
-<p class="article-paragraph">
-  そして、彼らの口の奥には、植物を食べるための驚くべき仕組みが隠されていました。それは、何百本もの小さな歯がすき間なくびっしりと並び、まるで大きなすり鉢のようになった「歯の板」です。この仕組みのおかげで、彼らは硬い繊維質の植物を細かくすりつぶして消化することができました。さらに、歯がすり減って使えなくなると、下から新しい歯が次々と押し出されて生え変わるようになっていました。生涯にわたって常に新しく鋭い歯を維持し続けることができたこの仕組みこそが、トリケラトプスが大繁栄できた大きな秘密だったのです。
-</p>
+<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0;">
+      彼らの主な食べ物は、地面近くに生えていたシダ植物や、ソテツなどの硬い葉っぱでした。トリケラトプスの口先は、オウムのようなくちばしの形をしており、これで硬い植物の茎をスパッと切り取っていました。
+    </p>
+    <p class="article-paragraph" style="margin-bottom: 0;">
+      そして、彼らの口の奥には、植物を食べるための驚くべき仕組みが隠されていました。それは、何百本もの小さな歯がすき間なくびっしりと並び、まるで大きなすり鉢のようになった「歯の板」です。この仕組みのおかげで、彼らは硬い繊維質の植物を細かくすりつぶして消化することができました。さらに、歯がすり減って使えなくなると、下から新しい歯が次々と押し出されて生え変わるようになっていました。生涯にわたって常に新しく鋭い歯を維持し続けることができたこの仕組みこそが、トリケラトプスが大繁栄できた大きな秘密だったのです。
+    </p>
+  </div>
+  <div style="width: 250px; flex-shrink: 0; margin: 0 auto;">
+    <img src="/images/topics/triceratops_detail1.webp" alt="トリケラトプスの特徴" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+  </div>
+</div>
 
 <h2 class="article-section-title">最大のチャームポイント「3本の角」と「襟飾り」の謎</h2>
 <p class="article-paragraph">
