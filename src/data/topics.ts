@@ -1437,7 +1437,7 @@ const RAW_TOPICS = [
     `,
     image: "images/topics/triceratops_detail.webp",
     securityLevel: "LEVEL 3 (PUBLIC)",
-    relatedSpecimens: ["triceratops"]
+    relatedSpecimens: ["triceratops", "styracosaurus", "torosaurus", "nasutoceratops", "protoceratops", "sasayamagnomus"]
   },
   {
     id: "dinosaur-books-selection",
