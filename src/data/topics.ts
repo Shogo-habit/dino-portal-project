@@ -1389,6 +1389,54 @@ const RAW_TOPICS = [
   トリケラトプスの近い仲間たちの中には、ユニークな姿をしたものがたくさんいます。例えば、「スティラコサウルス」は、鼻の上の角が非常に長く、襟飾りのまわりにトゲのような骨がいくつも突き出ていました。また、「トロサウルス」という恐竜は、トリケラトプスとよく似ていますが、襟飾りがさらに長く、骨に大きな穴が開いていました。実は、このトロサウルスについては、「トリケラトプスがさらに成長して大人になった姿なのではないか」という説もあり、現在でも研究者たちの間で熱い議論が交わされています。
 </p>
 
+<div class="related-grid" style="margin-top: 20px; margin-bottom: 30px;">
+  <a href="/dictionary/styracosaurus" style="text-decoration: none; color: inherit;">
+    <div class="related-card hud-panel" style="height: 100%;">
+      <div class="related-img-wrap">
+        <img src="/images/styracosaurus.webp" alt="スティラコサウルス" loading="lazy" decoding="async" />
+      </div>
+      <h4 class="related-name">スティラコサウルス</h4>
+      <div class="related-meta">白亜紀後期 / 北アメリカ</div>
+    </div>
+  </a>
+  <a href="/dictionary/torosaurus" style="text-decoration: none; color: inherit;">
+    <div class="related-card hud-panel" style="height: 100%;">
+      <div class="related-img-wrap">
+        <img src="/images/torosaurus.webp" alt="トロサウルス" loading="lazy" decoding="async" />
+      </div>
+      <h4 class="related-name">トロサウルス</h4>
+      <div class="related-meta">白亜紀後期 / 北アメリカ</div>
+    </div>
+  </a>
+  <a href="/dictionary/nasutoceratops" style="text-decoration: none; color: inherit;">
+    <div class="related-card hud-panel" style="height: 100%;">
+      <div class="related-img-wrap">
+        <img src="/images/nasutoceratops.webp" alt="ナーストケラトプス" loading="lazy" decoding="async" />
+      </div>
+      <h4 class="related-name">ナーストケラトプス</h4>
+      <div class="related-meta">白亜紀後期 / 北アメリカ</div>
+    </div>
+  </a>
+  <a href="/dictionary/protoceratops" style="text-decoration: none; color: inherit;">
+    <div class="related-card hud-panel" style="height: 100%;">
+      <div class="related-img-wrap">
+        <img src="/images/protoceratops.webp" alt="プロトケラトプス" loading="lazy" decoding="async" />
+      </div>
+      <h4 class="related-name">プロトケラトプス</h4>
+      <div class="related-meta">白亜紀後期 / アジア</div>
+    </div>
+  </a>
+  <a href="/dictionary/sasayamagnomus" style="text-decoration: none; color: inherit;">
+    <div class="related-card hud-panel" style="height: 100%;">
+      <div class="related-img-wrap">
+        <img src="/images/sasayamagnomus.webp" alt="ササヤマグノームス" loading="lazy" decoding="async" />
+      </div>
+      <h4 class="related-name">ササヤマグノームス</h4>
+      <div class="related-meta">白亜紀前期 / 日本（兵庫県）</div>
+    </div>
+  </a>
+</div>
+
 <h2 class="article-section-title">宿命のライバル：ティラノサウルスとの真剣勝負</h2>
 <p class="article-paragraph">
   恐竜ファンの夢といえば、やはりティラノサウルスとトリケラトプスの対決です。この2頭は、同じ時代、同じ場所で暮らしていたため、実際に何度も顔を合わせて戦っていたと考えられています。
@@ -1437,7 +1485,7 @@ const RAW_TOPICS = [
     `,
     image: "images/topics/triceratops_detail.webp",
     securityLevel: "LEVEL 3 (PUBLIC)",
-    relatedSpecimens: ["triceratops", "styracosaurus", "torosaurus", "nasutoceratops", "protoceratops", "sasayamagnomus"]
+    relatedSpecimens: ["triceratops"]
   },
   {
     id: "dinosaur-books-selection",
