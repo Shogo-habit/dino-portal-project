@@ -659,14 +659,14 @@ const RAW_TOPICS = [
     <p class="article-paragraph">
       そして、最も古生物学者たちを驚かせたのは、前足の骨の厚みと、そこに付着していた筋肉の痕跡です。化石をCTスキャンや3Dモデリングで解析した結果、前足の骨は極めて密度が高く頑丈で、上腕二頭筋（腕を曲げる筋肉）や胸筋が驚くほど発達していたことが判明しました。
     </p>
+    <p class="article-paragraph">
+      生体力学的なシミュレーションによれば、大人のティラノサウルスのこの小さな腕は、なんと片腕だけで<strong style="color: var(--primary-neon);">約200キログラム以上</strong>の重量を持ち上げる筋力があったと推測されています。これは人間の世界的な重量挙げ選手に匹敵するパワーです。もし本当にこの腕が不要で退化しているだけであるならば、これほどまでに強靭な骨や筋肉の付着部が維持されるはずはありません。ここから、「小さな前足には何らかの強力な物理的用途があった」という確かな仮説が浮かび上がってくるのです。
+    </p>
   </div>
   <div style="width: 300px; flex-shrink: 0; margin: 0 auto;">
     <img src="/images/topics/trex_small_arms1.webp" alt="ティラノサウルスの骨格と小さな前足" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
   </div>
 </div>
-<p class="article-paragraph">
-  生体力学的なシミュレーションによれば、大人のティラノサウルスのこの小さな腕は、なんと片腕だけで<strong style="color: var(--primary-neon);">約200キログラム以上</strong>の重量を持ち上げる筋力があったと推測されています。これは人間の世界的な重量挙げ選手に匹敵するパワーです。もし本当にこの腕が不要で退化しているだけであるならば、これほどまでに強靭な骨や筋肉の付着部が維持されるはずはありません。ここから、「小さな前足には何らかの強力な物理的用途があった」という確かな仮説が浮かび上がってくるのです。
-</p>
 
 <h2 class="article-section-title">なぜ前足は小さくなった？頭部巨大化とのトレードオフ</h2>
 <p class="article-paragraph">
