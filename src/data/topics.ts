@@ -774,7 +774,7 @@ const RAW_TOPICS = [
 <div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
   <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0; margin-bottom: 20px;">
-      ティラノサウルスの独特な体型バランスや、その小さな前肢と巨大な顎の対比を最も直感的に学ぶするには、実際に手で触って遊べる精密なトイ（フィギュア）を使うのが最適です。
+      ティラノサウルスの独特な体型バランスを直感的に学ぶには、実際に手で触って遊べる精密なフィギュアを使うのが最適です。
     </p>
     <p class="article-paragraph" style="margin-top: 0; margin-bottom: 0;">
       親子で恐竜の生態を学びながら遊べるおもちゃとして今最も注目されているのが、世界的な玩具メーカーであるマテル社からリリースされた<strong style="color: var(--primary-neon);">『ジュラシック・ワールド ラボ襲撃！T-レックス』</strong>です。このフィギュアは、全長約46.4センチメートルという大迫力のサイズで再現されたティラノサウルスが主役のプレイセットです。背中のボタンを押すことで、顎が上下に大きく開き、獲物に激しく噛みつくダイナミックなアクションが楽しめます。
