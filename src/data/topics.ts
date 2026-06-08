@@ -661,7 +661,7 @@ const RAW_TOPICS = [
     </p>
   </div>
   <div style="width: 300px; flex-shrink: 0; margin: 0 auto;">
-    <img src="/images/topics/trex_small_arms.webp" alt="ティラノサウルスの骨格と小さな前足" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+    <img src="/images/topics/trex_small_arms1.webp" alt="ティラノサウルスの骨格と小さな前足" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
   </div>
 </div>
 <p class="article-paragraph">
