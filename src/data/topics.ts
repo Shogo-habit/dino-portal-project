@@ -785,11 +785,11 @@ const RAW_TOPICS = [
     <div class="toy-affiliate-card">
       <div class="hud-corner top-left" style="position: absolute; top: -1px; left: -1px; width: 6px; height: 6px; border-top: 1px solid var(--primary-neon); border-left: 1px solid var(--primary-neon);"></div>
       <div class="hud-corner bottom-right" style="position: absolute; bottom: -1px; right: -1px; width: 6px; height: 6px; border-bottom: 1px solid var(--primary-neon); border-right: 1px solid var(--primary-neon);"></div>
-      <a class="toy-link" href="https://af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%259E%25E3%2583%2586%25E3%2583%25AB%25E3%2580%2580%25E3%2582%25B8%25E3%2583%25A5%25E3%2583%25A9%25E3%2582%25B7%25E3%2583%2583%25E3%2582%25AF%25E3%2583%25BB%25E3%2583%25AF%25E3%2583%25BC%25E3%2583%25AB%25E3%2583%2589%25E3%2580%2580%25E3%2583%25A9%25E3%2583%259C%25E8%25A5%25B2%25E6%2592%2583%25EF%25BC%2581T-%25E3%2583%25AC%25E3%2583%2583%25E3%2582%25AF%25E3%2582%25B9%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
-        <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/biccamera/cabinet/product/9114/0194735235552_1.jpg?_ex=128x128" alt="" style="border: none;" /><br>
-        マテル(MATTEL) ジュラシック・ワールド ラボ襲撃！T-レックス
+      <a class="toy-link" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Firohadohonten%2F0194735317233%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Firohadohonten%2Fi%2F10012068%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+        <img src="//thumbnail.image.rakuten.co.jp/@0_mall/irohadohonten/cabinet/07128561/09622213/0194735317233_1.jpg?_ex=128x128" alt="" style="border: none;" /><br>
+        〔☆〕 ジュラシック・ワールド ラボ襲撃！T-レックス マテル 4歳以上 フィギア 恐竜 肉食 ティラノサウルス 動く 光る アプリ連動可 室内遊び 男の子 女の子 おもちゃ 玩具 映画 復活の大地
       </a>
-      <a class="rakuten-btn" href="https://af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%259E%25E3%2583%2586%25E3%2583%25AB%25E3%2580%2580%25E3%2582%25B8%25E3%2583%25A5%25E3%2583%25A9%25E3%2582%25B7%25E3%2583%2583%25E3%2582%25AF%25E3%2583%25BB%25E3%2583%25AF%25E3%2583%25BC%25E3%2583%25AB%25E3%2583%2589%25E3%2580%2580%25E3%2583%25A9%25E3%2583%259C%25E8%25A5%25B2%25E6%2592%2583%25EF%25BC%2581T-%25E3%2583%25AC%25E3%2583%2583%25E3%2582%25AF%25E3%2582%25B9%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+      <a class="rakuten-btn" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Firohadohonten%2F0194735317233%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Firohadohonten%2Fi%2F10012068%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
         <span>楽天市場で見る</span>
         <span class="btn-arrow">&raquo;</span>
       </a>
