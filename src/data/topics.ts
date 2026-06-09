@@ -1805,6 +1805,7 @@ const RAW_TOPICS = [
 
 <div style="margin: 20px auto 35px auto; text-align: center; max-width: 900px;">
   <img src="/images/topics/brachiosaurus_detail1.webp" alt="ブラキオサウルスの長い首と高所の葉を食べる様子" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
+  <p style="font-size: 12px; color: var(--text-dim); margin-top: 8px; font-family: var(--font-mono); text-align: center;">左：ブラキオサウルス、右：ディプロドクス</p>
 </div>
 
 <h2 class="article-section-title">4. 前足が後ろ足よりも長くなった秘密</h2>
