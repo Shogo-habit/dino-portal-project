@@ -1619,39 +1619,134 @@ const RAW_TOPICS = [
 <h2 class="article-section-title">徹底比較！小学生向け恐竜図鑑おすすめ5選</h2>
 
 <h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">① 小学館の図鑑NEO『恐竜』[新版] DVD付き</h3>
-<p class="article-paragraph">
-  <strong>【学術的信頼性：★★★★★ | 網羅性：★★★★★ | 対象：小学生全般〜大人】</strong><br>
-  学習図鑑の絶対的な金字塔であり、最も信頼できる決定版です。掲載されている恐竜の数は日本最多クラスの約400種。最新の学説に基づいた極めて精緻なイラストに加え、発掘された化石の「実物写真」が非常に豊富に掲載されているのが特徴です。
-  これにより、子どもは恐竜を「空想のモンスター」ではなく、「かつて地球上に実在した生物」として客観的に捉えることができます。ドラえもんがナビゲートする約70分のDVDも完成度が高く、未就学児の入門から小学校高学年の自由研究まで、最も長く愛用できる一冊です。
-</p>
+<div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
+  <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0;">
+      <strong>【学術的信頼性：★★★★★ | 網羅性：★★★★★ | 対象：小学生全般〜大人】</strong><br>
+      学習図鑑の絶対的な金字塔であり、最も信頼できる決定版です。掲載されている恐竜の数は日本最多クラスの約400種。最新の学説に基づいた極めて精緻なイラストに加え、発掘された化石の「実物写真」が非常に豊富に掲載されているのが特徴です。
+      これにより、子どもは恐竜を「空想のモンスター」ではなく、「かつて地球上に実在した生物」として客観的に捉えることができます。ドラえもんがナビゲートする約70分のDVDも完成度が高く、未就学児の入門から小学校高学年の自由研究まで、最も長く愛用できる一冊です。
+    </p>
+  </div>
+  <div class="toy-affiliate-wrap" style="width: 300px; flex-shrink: 0; margin: 0 auto;">
+    <div class="toy-affiliate-card">
+      <div class="hud-corner top-left" style="position: absolute; top: -1px; left: -1px; width: 6px; height: 6px; border-top: 1px solid var(--primary-neon); border-left: 1px solid var(--primary-neon);"></div>
+      <div class="hud-corner bottom-right" style="position: absolute; bottom: -1px; right: -1px; width: 6px; height: 6px; border-bottom: 1px solid var(--primary-neon); border-right: 1px solid var(--primary-neon);"></div>
+      <a class="toy-link" href="https://af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F12781560%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F16942437%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+        <img src="//thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3118/9784092173118_1_24.jpg?_ex=128x128" alt="小学館の図鑑NEO 恐竜" style="border: none;" /><br>
+        小学館の図鑑NEO 恐竜 [新版] DVD付き
+      </a>
+      <a class="rakuten-btn" href="https://af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F12781560%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F16942437%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+        <span>楽天市場で見る</span>
+        <span class="btn-arrow">&raquo;</span>
+      </a>
+      <img src="https://i.moshimo.com/af/i/impression?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;">
+    </div>
+  </div>
+</div>
 
 <h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">② 講談社の動く図鑑MOVE『恐竜』[新訂版] DVD付き</h3>
-<p class="article-paragraph">
-  <strong>【躍動感・エンタメ性：★★★★★ | 映像の迫力：★★★★★ | 対象：未就学児〜小学校中学年】</strong><br>
-  「とにかく迫力のあるイラストと映像で子どもの心を掴みたい！」という場合におすすめの図鑑です。MOVEの最大の特徴は、NHKスペシャルなどのハイクオリティなCG映像を再編集したDVDが付属している点です。
-  図鑑の誌面も、恐竜同士が戦うダイナミックな見開きや、獲物を追うリアルな表情のイラストが多く、「生きている動物としての恐竜」の姿を体感できます。文字を読むのがまだ苦手な子どもでも、映像と迫力あるビジュアルで一気に恐竜の世界に引き込まれます。
-</p>
+<div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
+  <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0;">
+      <strong>【躍動感・エンタメ性：★★★★★ | 映像の迫力：★★★★★ | 対象：未就学児〜小学校中学年】</strong><br>
+      「とにかく迫力のあるイラストと映像で子どもの心を掴みたい！」という場合におすすめの図鑑です。MOVEの最大の特徴は、NHKスペシャルなどのハイクオリティなCG映像を再編集したDVDが付属している点です。
+      図鑑の誌面も、恐竜同士が戦うダイナミックな見開きや、獲物を追うリアルな表情のイラストが多く、「生きている動物としての恐竜」の姿を体感できます。文字を読むのがまだ苦手な子どもでも、映像と迫力あるビジュアルで一気に恐竜の世界に引き込まれます。
+    </p>
+  </div>
+  <div class="toy-affiliate-wrap" style="width: 300px; flex-shrink: 0; margin: 0 auto;">
+    <div class="toy-affiliate-card">
+      <div class="hud-corner top-left" style="position: absolute; top: -1px; left: -1px; width: 6px; height: 6px; border-top: 1px solid var(--primary-neon); border-left: 1px solid var(--primary-neon);"></div>
+      <div class="hud-corner bottom-right" style="position: absolute; bottom: -1px; right: -1px; width: 6px; height: 6px; border-bottom: 1px solid var(--primary-neon); border-right: 1px solid var(--primary-neon);"></div>
+      <a class="toy-link" href="https://af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17998141%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21381007%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+        <img src="//thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9678/9784065369678.jpg?_ex=128x128" alt="講談社の動く図鑑MOVE 恐竜" style="border: none;" /><br>
+        講談社の動く図鑑MOVE 恐竜 [新訂二版] DVD付き
+      </a>
+      <a class="rakuten-btn" href="https://af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17998141%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21381007%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+        <span>楽天市場で見る</span>
+        <span class="btn-arrow">&raquo;</span>
+      </a>
+      <img src="https://i.moshimo.com/af/i/impression?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;">
+    </div>
+  </div>
+</div>
 
 <h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">③ 学研の図鑑LIVE『恐竜』新版 DVD付き</h3>
-<p class="article-paragraph">
-  <strong>【デジタル連動：★★★★★ | 映像のリアルさ：★★★★★ | 対象：小学生全般】</strong><br>
-  スマートフォンやタブレットとの連動（AR機能）に最も力を入れている、最先端の図鑑です。専用アプリを起動してページにかざすと、精細な3DCGの恐竜が画面上に飛び出し、鳴き声を上げたり歩き回ったりします。自分の部屋にティラノサウルスが出現したかのような体験ができ、現代のデジタルネイティブな子どもたちに大人気です。
-  付属のDVDは、高品質な海外番組で知られる「BBC（英国放送協会）」の映像を使用しており、映画さながらのリアリティあふれる生態描写を楽しむことができます。
-</p>
+<div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
+  <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0;">
+      <strong>【デジタル連動：★★★★★ | 映像のリアルさ：★★★★★ | 対象：小学生全般】</strong><br>
+      スマートフォンやタブレットとの連動（AR機能）に最も力を入れている、最先端の図鑑です。専用アプリを起動してページにかざすと、精細な3DCGの恐竜が画面上に飛び出し、鳴き声を上げたり歩き回ったりします。自分の部屋にティラノサウルスが出現したかのような体験ができ、現代のデジタルネイティブな子どもたちに大人気です。
+      付属のDVDは、高品質な海外番組で知られる「BBC（英国放送協会）」の映像を使用しており、映画さながらのリアリティあふれる生態描写を楽しむことができます。
+    </p>
+  </div>
+  <div class="toy-affiliate-wrap" style="width: 300px; flex-shrink: 0; margin: 0 auto;">
+    <div class="toy-affiliate-card">
+      <div class="hud-corner top-left" style="position: absolute; top: -1px; left: -1px; width: 6px; height: 6px; border-top: 1px solid var(--primary-neon); border-left: 1px solid var(--primary-neon);"></div>
+      <div class="hud-corner bottom-right" style="position: absolute; bottom: -1px; right: -1px; width: 6px; height: 6px; border-bottom: 1px solid var(--primary-neon); border-right: 1px solid var(--primary-neon);"></div>
+      <a class="toy-link" href="https://af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17125134%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F20648276%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+        <img src="//thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1845/9784052051845_1_2.jpg?_ex=128x128" alt="学研の図鑑LIVE 恐竜" style="border: none;" /><br>
+        学研の図鑑LIVE 恐竜 新版 DVD付き
+      </a>
+      <a class="rakuten-btn" href="https://af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17125134%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F20648276%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+        <span>楽天市場で見る</span>
+        <span class="btn-arrow">&raquo;</span>
+      </a>
+      <img src="https://i.moshimo.com/af/i/impression?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;">
+    </div>
+  </div>
+</div>
 
 <h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">④ ポプラ社 WONDER MOVE『恐竜』</h3>
-<p class="article-paragraph">
-  <strong>【デザイン・携帯性：★★★★☆ | コラムの面白さ：★★★★☆ | 対象：小学校低学年〜中学年】</strong><br>
-  非常に見やすく、洗練されたレイアウトが特徴の図鑑です。他社の図鑑に比べてややスリムで軽量なため、子どもが自分で本棚から取り出してきたり、車内や旅行先に持っていったりするのに適しています。
-  「もしも恐竜が現代の街中に現れたら？」といった視覚的なスケール比較や、恐竜にまつわる面白い疑問に答えるQ&Aコラムなど、子どもが飽きずに読み進められるユニークな編集が随所に光ります。
-</p>
+<div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
+  <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0;">
+      <strong>【デザイン・携帯性：★★★★☆ | コラムの面白さ：★★★★☆ | 対象：小学校低学年〜中学年】</strong><br>
+      非常に見やすく、洗練されたレイアウトが特徴の図鑑です。他社の図鑑に比べてややスリムで軽量なため、子どもが自分で本棚から取り出してきたり、車内や旅行先に持っていったりするのに適しています。
+      「もしも恐竜が現代の街中に現れたら？」といった視覚的なスケール比較や、恐竜にまつわる面白い疑問に答えるQ&Aコラムなど、子どもが飽きずに読み進められるユニークな編集が随所に光ります。
+    </p>
+  </div>
+  <div class="toy-affiliate-wrap" style="width: 300px; flex-shrink: 0; margin: 0 auto;">
+    <div class="toy-affiliate-card">
+      <div class="hud-corner top-left" style="position: absolute; top: -1px; left: -1px; width: 6px; height: 6px; border-top: 1px solid var(--primary-neon); border-left: 1px solid var(--primary-neon);"></div>
+      <div class="hud-corner bottom-right" style="position: absolute; bottom: -1px; right: -1px; width: 6px; height: 6px; border-bottom: 1px solid var(--primary-neon); border-right: 1px solid var(--primary-neon);"></div>
+      <a class="toy-link" href="https://af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F12771569%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F16934444%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+        <img src="//thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9974/9784591139974.jpg?_ex=128x128" alt="ポプラ社の図鑑 WONDER 恐竜" style="border: none;" /><br>
+        ポプラ社の図鑑 WONDER 恐竜
+      </a>
+      <a class="rakuten-btn" href="https://af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F12771569%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F16934444%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+        <span>楽天市場で見る</span>
+        <span class="btn-arrow">&raquo;</span>
+      </a>
+      <img src="https://i.moshimo.com/af/i/impression?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;">
+    </div>
+  </div>
+</div>
 
 <h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">⑤ Gakken『恐竜最強王図鑑』</h3>
-<p class="article-paragraph">
-  <strong>【バトルのワクワク感：★★★★★ | 読書への入り口：★★★★★ | 対象：小学生全般】</strong><br>
-  こちらは厳密な分類を網羅した学習図鑑ではありませんが、「子どもを本好き・恐竜好きにするきっかけ」として絶大な人気を誇るシミュレーション図鑑です。「ティラノサウルスとトリケラトプスが、もし現代のトーナメント戦で戦ったらどちらが強いのか？」というテーマのもと、それぞれの攻撃力、防御力、素早さなどのパラメーターをベースに対決が繰り広げられます。
-  子どもはゲーム感覚で夢中になってスペック表を読み込み、結果として恐竜の生息年代や食性、体長などの正確なデータに自然と詳しくなっていきます。普段活字を読まない子が自分から進んで読み始めるため、プレゼントとしても大人気です。
-</p>
+<div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
+  <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0;">
+      <strong>【バトルのワクワク感：★★★★★ | 読書への入り口：★★★★★ | 対象：小学生全般】</strong><br>
+      こちらは厳密な分類を網羅した学習図鑑ではありませんが、「子どもを本好き・恐竜好きにするきっかけ」として絶大な人気を誇るシミュレーション図鑑です。「ティラノサウルスとトリケラトプスが、もし現代のトーナメント戦で戦ったらどちらが強いのか？」というテーマのもと、それぞれの攻撃力、防御力、素早さなどのパラメーターをベースに対決が繰り広げられます。
+      子どもはゲーム感覚で夢中になってスペック表を読み込み、結果として恐竜の生息年代や食性、体長などの正確なデータに自然と詳しくなっていきます。普段活字を読まない子が自分から進んで読み始めるため、プレゼントとしても大人気です。
+    </p>
+  </div>
+  <div class="toy-affiliate-wrap" style="width: 300px; flex-shrink: 0; margin: 0 auto;">
+    <div class="toy-affiliate-card">
+      <div class="hud-corner top-left" style="position: absolute; top: -1px; left: -1px; width: 6px; height: 6px; border-top: 1px solid var(--primary-neon); border-left: 1px solid var(--primary-neon);"></div>
+      <div class="hud-corner bottom-right" style="position: absolute; bottom: -1px; right: -1px; width: 6px; height: 6px; border-bottom: 1px solid var(--primary-neon); border-right: 1px solid var(--primary-neon);"></div>
+      <a class="toy-link" href="https://af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F14546615%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F18265139%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+        <img src="//thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5714/9784052045714.jpg?_ex=128x128" alt="恐竜最強王図鑑" style="border: none;" /><br>
+        恐竜最強王図鑑 （最強王図鑑シリーズ）
+      </a>
+      <a class="rakuten-btn" href="https://af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F14546615%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F18265139%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+        <span>楽天市場で見る</span>
+        <span class="btn-arrow">&raquo;</span>
+      </a>
+      <img src="https://i.moshimo.com/af/i/impression?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;">
+    </div>
+  </div>
+</div>
 
 <h2 class="article-section-title">図鑑選びが子どもにもたらす素晴らしい知育効果</h2>
 <p class="article-paragraph">
