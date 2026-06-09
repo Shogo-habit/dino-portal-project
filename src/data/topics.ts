@@ -1803,6 +1803,10 @@ const RAW_TOPICS = [
   もしブラキオサウルスも同じ高さの植物を狙っていたら、すぐに食べ物がなくなってしまいますよね。そこで彼らは「高い場所にある葉を食べる」という進化の道を選びました。首を上に長く伸ばすことで、他の恐竜が絶対に手を出せない、ビルの4階に相当する地上12メートル以上の場所にある豊かな木の葉を独り占めすることができたのです。このように、他の恐竜たちと食べ物を巡る争いを避ける（競争回避）ために、ブラキオサウルスの首は長く伸びていきました。
 </p>
 
+<div style="margin: 20px auto 35px auto; text-align: center; max-width: 900px;">
+  <img src="/images/topics/brachiosaurus_detail1.webp" alt="ブラキオサウルスの長い首と高所の葉を食べる様子" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
+</div>
+
 <h2 class="article-section-title">4. 前足が後ろ足よりも長くなった秘密</h2>
 <p class="article-paragraph">
   アパトサウルスやディプロドクスのような一般的な「竜脚類」は、前足よりも後ろ足の方が長く、背中が水平か、ややお尻側が高くなっていました。しかしブラキオサウルスはその真逆で、前足が後ろ足よりも明らかに長く、背中が肩からお尻にかけて滑り台のように斜めに下がっています。この不思議な特徴には、どのようなメリットがあったのでしょうか？
@@ -1813,6 +1817,10 @@ const RAW_TOPICS = [
 <p class="article-paragraph">
   前足が長いということは、肩の位置が最初から高い場所にあることを意味します。これにより、首の骨を最初から上向きの角度で立ち上げやすくなり、余計な筋肉の力を使わなくても自然と高い木の上部に頭を届かせることができました。また、ブラキオサウルスの頭と首はとても重いため、前足を長く頑丈にして上半身を大きくすることで、重心を前にしっかり置き、歩くときの安定感を高めていたと考えられています。前肢が長いという特徴は、彼らが「高所の葉を効率よく食べるプロフェッショナル」として特化した結果生まれた、完璧な進化の形だったのです。
 </p>
+
+<div style="margin: 20px auto 35px auto; text-align: center; max-width: 900px;">
+  <img src="/images/topics/brachiosaurus_detail2.webp" alt="ブラキオサウルスの長い前足と傾斜した背中の特徴" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
+</div>
 
 <h2 class="article-section-title">5. 大きさはどれくらい？身近なもので徹底比較！</h2>
 <p class="article-paragraph">
