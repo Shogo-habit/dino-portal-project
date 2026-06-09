@@ -1600,31 +1600,36 @@ const RAW_TOPICS = [
     content: `
 <h2 class="article-section-title">子どもの「恐竜ブーム」を本物の学びに変える図鑑の力</h2>
 <p class="article-paragraph">
-  「子どもが恐竜の名前を覚え始めたけれど、どの図鑑を買ってあげるのがベストなのだろう？」——これは多くの親御さんが一度は抱く疑問です。恐竜の世界は、毎年のように新しい化石が発見され、学説が非常にスピーディにアップデートされています。例えば、「スピノサウルスの尾がヒレ状だった」「ティラノサウルスはほぼウロコ肌だった」といった事実は、近年の図鑑でなければ正しく描かれていません。
+  「子どもが恐竜の名前を覚え始めたけれど、どの図鑑を買ってあげるのがベストなのだろう？」——これは多くの親御さんが一度は抱く疑問です。恐竜の世界は、毎年のように新しい化石が発見され、学説が非常にスピーディにアップデートされています。例えば、「スピノサウルスの尾が実はヒレ状で、水中を泳ぎ回る生活をしていた」「ティラノサウルスは成体になると羽毛を持たず、ほぼ全身が細かなウロコに覆われていた」といった事実は、近年の図鑑でなければ正しく描かれていません。
 </p>
 <p class="article-paragraph">
-  そのため、図鑑を選ぶ際は単にビジュアルが綺麗であることだけでなく、<strong>「最新の古生物学の知見が反映されているか」</strong>、そして<strong>「子どもの成長段階や興味のタイプに合っているか」</strong>が重要になります。本記事では、30代会社員であり2人の子どもを育てる父である筆者が、実際に購入して子どもたちとボロボロになるまで読み込んだ体験を踏まえ、小学生におすすめの恐竜図鑑5冊を徹底的にレビュー・比較します。
+  さらに、現代の児童向け図鑑市場は、単なる知識のカタログから、五感を刺激する「体験型エンターテインメント」へと劇的なパラダイムシフトを遂げています。かつての図鑑は「見る・読む」という受動的な本でしたが、現在は最新テクノロジーや緻密なメディアミックスにより、読者がその世界観に「没入・体験する」プラットフォームへと変容しました。本記事では、30代会社員であり2人の子どもを育てる父である筆者が、実際に購入して子どもたちとボロボロになるまで読み込んだ体験と、最新の知育トレンドや業界動向を踏まえ、小学生におすすめの恐竜図鑑5冊を徹底的に比較・解説します。
 </p>
 
-<h2 class="article-section-title">失敗しない！小学生向け恐竜図鑑の選び方 3つの基準</h2>
+<h2 class="article-section-title">失敗しない！小学生向け恐竜図鑑の選び方 5つの新基準</h2>
 <p class="article-paragraph">
-  まず、図鑑を選ぶ際に確認すべき3つのポイントを整理しておきましょう。
+  まず、図鑑を選ぶ際におさえておくべき5つの重要なチェックポイントを整理しておきましょう。単なる「掲載数の多さ」だけで選ぶと、子どもの関心とミスマッチを起こし、本棚の飾りになってしまうリスクがあります。
 </p>
 <ul style="list-style-type: square; padding-left: 20px; line-height: 1.8; margin-bottom: 20px; font-size: 14px;">
-  <li><strong style="color: var(--primary-neon);">1. 出版・改訂された「時期」</strong>: 恐竜の研究は進歩が極めて早いため、必ず過去5年以内に改訂された最新版を選びましょう。</li>
-  <li><strong style="color: var(--primary-neon);">2. 特典DVD・映像メディアのクオリティ</strong>: 付属のDVDのテイストが子どもに合うかがポイントです。</li>
-  <li><strong style="color: var(--primary-neon);">3. 調べやすさと索引の充実度</strong>: 巻末のあいうえお順索引や分類表が使いやすいものは、自分で調べる力を伸ばします。</li>
+  <li><strong style="color: var(--primary-neon);">1. 対象年齢と読む環境（難易度と携帯性）</strong>: ひらがな主体のやさしい解説か、漢字にフリガナが付き、解説が深いかを確認しましょう。また、家でじっくり読む大判サイズか、屋外や旅行先へ持ち運べるスリムな軽量タイプかも選択の分かれ目です。</li>
+  <li><strong style="color: var(--primary-neon);">2. 図鑑のビジュアル思想（写真重視か、イラスト重視か）</strong>: 実物化石の写真が多い図鑑は、太古の生物が「実在した」という客観的なスケール感や質感が伝わります。一方で、躍動感あふれる復元イラストが多い図鑑は、恐竜たちの暮らしぶりや迫力を想像しやすく、知的好奇心を刺激します。</li>
+  <li><strong style="color: var(--primary-neon);">3. 最新情報の反映スピードと信頼性</strong>: 恐竜研究は日々進化しているため、必ず過去5年以内に改訂された最新版を選ぶのが鉄則です。国内での最新発見（兵庫県の「ササヤマグノームス」など）が迅速に反映されているかどうかは、図鑑の学術的価値とブランド力を測る重要なバロメーターです。</li>
+  <li><strong style="color: var(--primary-neon);">4. 索引と巻末資料の使いやすさ</strong>: 知りたい恐竜にすぐたどり着けるかどうかも知育における重要な要素です。「あいうえお順」だけでなく、学名（アルファベット）や生息地域、人と恐竜の大きさを比較できる親切な設計があるかを確認しましょう。</li>
+  <li><strong style="color: var(--primary-neon);">5. 付属メディアの体験価値（DVD、AR、ストリーミング）</strong>: 恐竜の動く姿や鳴き声を知るために、DVDのクオリティやスマホのAR機能との連動性もチェックします。特にデジタルネイティブ世代にとって、五感を使った「体験」が学びをさらに深めます。</li>
 </ul>
 
-<h2 class="article-section-title">徹底比較！小学生向け恐竜図鑑おすすめ5選</h2>
+<h2 class="article-section-title">徹底比較！小学生向け恐竜図鑑おすすめ5選と各社の生存戦略</h2>
 
 <h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">① 小学館　図鑑NEO 恐竜 [新版] DVD付き</h3>
 <div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
   <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
       <strong>【学術的信頼性：★★★★★ | 網羅性：★★★★★ | 対象：小学生全般〜大人】</strong><br>
-      学習図鑑の絶対的な金字塔であり、最も信頼できる決定版です。掲載されている恐竜の数は日本最多クラスの約400種。最新の学説に基づいた極めて精緻なイラストに加え、発掘された化石の「実物写真」が非常に豊富に掲載されているのが特徴です。
+      学習図鑑の絶対的な金字塔であり、王道としての信頼度が最も高い決定版です。掲載数は日本最多クラスの約400種。最新の学説に基づいた精緻なイラストに加え、発掘された化石の「実物写真」が非常に豊富に掲載されているのが特徴です。
       これにより、子どもは恐竜を「空想のモンスター」ではなく、「かつて地球上に実在した生物」として客観的に捉えることができます。ドラえもんがナビゲートする約70分のDVDも完成度が高く、未就学児の入門から小学校高学年の自由研究まで、最も長く愛用できる一冊です。
+    </p>
+    <p class="article-paragraph" style="margin-bottom: 0;">
+      出版戦略の観点では、小学館は「ドラえもん」という強力なIPをナビゲーターに据えることで、幼児期からの早期囲い込みに成功しています。他社に比べてデジタルコンテンツ（スマホアプリ等の連携）の軽快さには進化の余地を残しますが、圧倒的な情報量と体系的なレイアウトは他の追随を許しません。
     </p>
   </div>
   <div class="toy-affiliate-wrap" style="width: 300px; flex-shrink: 0; margin: 0 auto;">
@@ -1652,6 +1657,9 @@ const RAW_TOPICS = [
       「とにかく迫力のあるイラストと映像で子どもの心を掴みたい！」という場合におすすめの図鑑です。MOVEの最大の特徴は、NHKスペシャルなどのハイクオリティなCG映像を再編集したDVDが付属している点です。
       図鑑の誌面も、恐竜同士が戦うダイナミックな見開きや、獲物を追うリアルな表情のイラストが多く、「生きている動物としての恐竜」の姿を体感できます。文字を読むのがまだ苦手な子どもでも、映像と迫力あるビジュアルで一気に恐竜の世界に引き込まれます。
     </p>
+    <p class="article-paragraph" style="margin-bottom: 0;">
+      MOVEのビジネスモデルは「映像主導の体験価値」。NHKの圧倒的な映像アーカイブ資産を活用し、「テレビを見る感覚で図鑑に入る」という視聴体験を構築しています。これにより、まだ文字をスラスラと読めない幼児期の子どもでも直感的に恐竜の生態系を理解できるため、入門書として抜群の仕上がりです。
+    </p>
   </div>
   <div class="toy-affiliate-wrap" style="width: 300px; flex-shrink: 0; margin: 0 auto;">
     <div class="toy-affiliate-card">
@@ -1676,7 +1684,10 @@ const RAW_TOPICS = [
     <p class="article-paragraph" style="margin-top: 0;">
       <strong>【デジタル連動：★★★★★ | 映像のリアルさ：★★★★★ | 対象：小学生全般】</strong><br>
       スマートフォンやタブレットとの連動（AR機能）に最も力を入れている、最先端の図鑑です。専用アプリを起動してページにかざすと、精細な3DCGの恐竜が画面上に飛び出し、鳴き声を上げたり歩き回ったりします。自分の部屋にティラノサウルスが出現したかのような体験ができ、現代のデジタルネイティブな子どもたちに大人気です。
-      付属のDVDは、高品質な海外番組で知られる「BBC（英国放送協会）」の映像を使用しており、映画さながらのリアリティあふれる生態描写を楽しむことができます。
+      付属のDVDは、高品質な海外番組で知られる「BBC（英国放送協会）」の映像を使用しており、映画さながらのリアルな生態描写を楽しむことができます。
+    </p>
+    <p class="article-paragraph" style="margin-bottom: 0;">
+      学研は「紙・映像・ARの三位一体エコシステム」を構築し、デジタルガジェットを通じた新しい学習体験価値をアピールしています。アプリの動作環境に左右される面はありますが、インタラクティブ（双方向）な知的好奇心の爆発を設計する点において、他社の一歩先を行く存在です。
     </p>
   </div>
   <div class="toy-affiliate-wrap" style="width: 300px; flex-shrink: 0; margin: 0 auto;">
@@ -1704,6 +1715,9 @@ const RAW_TOPICS = [
       非常に見やすく、洗練されたレイアウトが特徴の図鑑です。他社の図鑑に比べてややスリムで軽量なため、子どもが自分で本棚から取り出してきたり、車内や旅行先に持っていったりするのに適しています。
       「もしも恐竜が現代の街中に現れたら？」といった視覚的なスケール比較や、恐竜にまつわる面白い疑問に答えるQ&Aコラムなど、子どもが飽きずに読み進められるユニークな編集が随所に光ります。
     </p>
+    <p class="article-paragraph" style="margin-bottom: 0;">
+      ポプラ社は、学校図書館で絶大な支持を得る『ポプラディア』のブランドドメインを背景に持ち、教育現場での実用性を考慮した実直な作りが魅力です。他社のようなド派手なメディアミックスこそ少ないですが、自発的に「本をめくって探求する」という物理メディア本来の体験価値を追求しています。
+    </p>
   </div>
   <div class="toy-affiliate-wrap" style="width: 300px; flex-shrink: 0; margin: 0 auto;">
     <div class="toy-affiliate-card">
@@ -1727,8 +1741,11 @@ const RAW_TOPICS = [
   <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
       <strong>【バトルのワクワク感：★★★★★ | 読書への入り口：★★★★★ | 対象：小学生全般】</strong><br>
-      こちらは厳密な分類を網羅した学習図鑑ではありませんが、「子どもを本好き・恐竜好きにするきっかけ」として絶大な人気を誇るシミュレーション図鑑です。「ティラノサウルスとトリケラトプスが、もし現代のトーナメント戦で戦ったらどちらが強いのか？」というテーマのもと、それぞれの攻撃力、防御力、素早さなどのパラメーターをベースに対決が繰り広げられます。
+      こちらは生物の体系的な分類を網羅した学習図鑑とは一線を画す、「子どもを活字好き・本好きにする」ためのバトルシミュレーション図鑑です。「ティラノサウルスとトリケラトプスが、もしトーナメント戦で対決したらどちらが強いのか？」というテーマのもと、それぞれの攻撃力、防御力、素早さなどのパラメーターをベースに対決が繰り広げられます。
       子どもはゲーム感覚で夢中になってスペック表を読み込み、結果として恐竜の生息年代や食性、体長などの正確なデータに自然と詳しくなっていきます。普段活字を読まない子が自分から進んで読み始めるため、プレゼントとしても大人気です。
+    </p>
+    <p class="article-paragraph" style="margin-bottom: 0;">
+      本図鑑の最大の提供価値は「知的好奇心のゲーミフィケーション」。普段は分厚い図鑑や本を開こうとしない子どもでも、対決という強力なエンタメ要素に引き寄せられて読書に没頭します。監修者による専門的な骨格・筋肉データに基づいたリアルなシミュレーションであるため、空想対決でありながら高度な自発的リサーチ（調べ学習）の入り口として機能しています。
     </p>
   </div>
   <div class="toy-affiliate-wrap" style="width: 300px; flex-shrink: 0; margin: 0 auto;">
@@ -1763,7 +1780,7 @@ const RAW_TOPICS = [
       <tr style="background-color: rgba(0, 242, 255, 0.1); border-bottom: 1px solid var(--panel-border);">
         <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left;">図鑑名</th>
         <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left;">特徴（強み）</th>
-        <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left;">DVD特典</th>
+        <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left;">DVD/メディア特典</th>
         <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left;">掲載種数</th>
         <th style="padding: 10px; text-align: left;">おすすめ年齢</th>
       </tr>
@@ -1771,7 +1788,7 @@ const RAW_TOPICS = [
     <tbody>
       <tr style="border-bottom: 1px solid var(--panel-border);">
         <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">小学館NEO</td>
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">実物化石写真の多さと学術的信頼度</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">実物化石写真の多さと圧倒的学術信頼度</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">ドラえもん（約70分）</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">約400種</td>
         <td style="padding: 10px;">5歳〜小学生全般</td>
@@ -1808,10 +1825,35 @@ const RAW_TOPICS = [
   </table>
 </div>
 
-<h2 class="article-section-title">まとめ：お子さんの興味に合わせた最適な選択を</h2>
+<h2 class="article-section-title">【タイプ別】お子さんの「ワクワク」で選ぶクイックチャート</h2>
+<div class="hud-panel" style="padding: 20px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(1, 10, 18, 0.4); margin-bottom: 30px;">
+  <p class="article-paragraph" style="margin-top: 0; font-weight: bold; color: var(--primary-neon);">
+    お子さんがどんなアプローチに最も興味を示すか、観察して選ぶのが一番のコツです。
+  </p>
+  <ul style="list-style-type: none; padding-left: 0; line-height: 2.0; font-size: 14px;">
+    <li style="margin-bottom: 12px; border-bottom: 1px dashed rgba(0, 242, 255, 0.15); padding-bottom: 8px;">
+      <span style="background: var(--primary-neon); color: #000; padding: 2px 8px; border-radius: 3px; font-weight: bold; font-size: 11px; margin-right: 10px;">講談社MOVE</span>
+      <strong>「映画のような臨場感が好き」「最新情報や迫力のある戦いを見たい」</strong>
+    </li>
+    <li style="margin-bottom: 12px; border-bottom: 1px dashed rgba(0, 242, 255, 0.15); padding-bottom: 8px;">
+      <span style="background: var(--primary-neon); color: #000; padding: 2px 8px; border-radius: 3px; font-weight: bold; font-size: 11px; margin-right: 10px;">小学館NEO</span>
+      <strong>「アニアなどの玩具が好き」「進化の流れや細かい特徴を自分でじっくり調べたい」</strong>
+    </li>
+    <li style="margin-bottom: 12px; border-bottom: 1px dashed rgba(0, 242, 255, 0.15); padding-bottom: 8px;">
+      <span style="background: var(--primary-neon); color: #000; padding: 2px 8px; border-radius: 3px; font-weight: bold; font-size: 11px; margin-right: 10px;">ポプラWONDA</span>
+      <strong>「自分で疑問をパッと解決したい」「学校の宿題や調べ学習に持っていきたい」</strong>
+    </li>
+    <li style="margin-bottom: 0; padding-bottom: 0;">
+      <span style="background: var(--primary-neon); color: #000; padding: 2px 8px; border-radius: 3px; font-weight: bold; font-size: 11px; margin-right: 10px;">最強王図鑑</span>
+      <strong>「ゲームや対決バトルが好き」「文字を読むのが少し苦手で、自発的に開くきっかけが欲しい」</strong>
+    </li>
+  </ul>
+</div>
+
+<h2 class="article-section-title">まとめ：図鑑は「好奇心の爆発を設計するインターフェース」</h2>
 <p class="article-paragraph">
-  図鑑を選ぶ際は、まずお子さんの普段の遊び方や好みを観察してみてください。「化石や骨格に興味があり、じっくり調べたい」なら<strong>小学館のNEO</strong>、「テレビや映像が好きで、ダイナミックな動きを楽しみたい」なら<strong>講談社のMOVE</strong>、「スマホやARで遊びながら学びたい」なら<strong>学研のLIVE</strong>がぴったりです。
-  図鑑で得た知識は、子どもたちの知的好奇心の種となります。ぜひ、お気に入りの一冊を見つけて、親子で太古の地球への冒険を楽しんでください。
+  現代の図鑑は、単に知識を一方的に授受するだけの「情報の容器」ではありません。子どもたちの自発的な問いや、親子のコミュニケーションを触発する「知的好奇心のインターフェース」です。
+  子どもたちの知的な発達段階や個性に合わせた最適な図鑑を一つ手渡すことで、彼らは恐竜という太古のロマンを入り口に、地球の歴史や生物学、分類学といった科学的思考の広大な海へと旅立ちます。ぜひ、お子さんと一緒にぴったりの一冊を選んで、知的なワクワクを親子で共有してみてください。
 </p>
 
     `,
