@@ -1618,7 +1618,7 @@ const RAW_TOPICS = [
 
 <h2 class="article-section-title">徹底比較！小学生向け恐竜図鑑おすすめ5選</h2>
 
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">① 小学館の図鑑NEO『恐竜』[新版] DVD付き</h3>
+<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">① 小学館　図鑑NEO 恐竜 [新版] DVD付き</h3>
 <div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
   <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -1644,7 +1644,7 @@ const RAW_TOPICS = [
   </div>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">② 講談社の動く図鑑MOVE『恐竜』[新訂版] DVD付き</h3>
+<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">② 講談社　動く図鑑MOVE 恐竜 [新訂二版] DVD付き</h3>
 <div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
   <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -1670,7 +1670,7 @@ const RAW_TOPICS = [
   </div>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">③ 学研の図鑑LIVE『恐竜』新版 DVD付き</h3>
+<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">③ 学研　図鑑LIVE 恐竜 新版 DVD付き</h3>
 <div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
   <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -1696,7 +1696,7 @@ const RAW_TOPICS = [
   </div>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">④ ポプラ『ポプラディア大図鑑WONDA 恐竜』</h3>
+<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">④ ポプラ　ポプラディア大図鑑WONDA 恐竜</h3>
 <div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
   <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -1722,7 +1722,7 @@ const RAW_TOPICS = [
   </div>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">⑤ Gakken『恐竜最強王図鑑』</h3>
+<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">⑤ Gakken　恐竜最強王図鑑</h3>
 <div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
   <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
