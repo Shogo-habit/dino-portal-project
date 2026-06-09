@@ -1818,10 +1818,6 @@ const RAW_TOPICS = [
   前足が長いということは、肩の位置が最初から高い場所にあることを意味します。これにより、首の骨を最初から上向きの角度で立ち上げやすくなり、余計な筋肉の力を使わなくても自然と高い木の上部に頭を届かせることができました。また、ブラキオサウルスの頭と首はとても重いため、前足を長く頑丈にして上半身を大きくすることで、重心を前にしっかり置き、歩くときの安定感を高めていたと考えられています。前肢が長いという特徴は、彼らが「高所の葉を効率よく食べるプロフェッショナル」として特化した結果生まれた、完璧な進化の形だったのです。
 </p>
 
-<div style="margin: 20px auto 35px auto; text-align: center; max-width: 900px;">
-  <img src="/images/topics/brachiosaurus_detail2.webp" alt="ブラキオサウルスの長い前足と傾斜した背中の特徴" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
-</div>
-
 <h2 class="article-section-title">5. 大きさはどれくらい？身近なもので徹底比較！</h2>
 <p class="article-paragraph">
   全長約25メートル、高さ約12メートルと言われても、大きすぎてなかなかイメージしにくいかもしれません。そこで、現代の身近な建物や乗り物、そして他の有名な恐竜たちと比較してみましょう！
@@ -1837,6 +1833,10 @@ const RAW_TOPICS = [
 <p class="article-paragraph">
   次に、他の恐竜たちと大きさを比べてみましょう。肉食恐竜の王者ティラノサウルスは全長約12メートルですので、ブラキオサウルスはその2倍以上の長さがありました。また、背中に板を持つステゴサウルス（全長約9メートル）と比べると、ブラキオサウルスの足元にステゴサウルスがちょこんと収まってしまうほどの圧倒的なサイズ差がありました。まさに「陸の戦艦」と呼ぶにふさわしい、途方もない大きさだったのです。
 </p>
+
+<div style="margin: 20px auto 35px auto; text-align: center; max-width: 900px;">
+  <img src="/images/topics/brachiosaurus_detail2.webp" alt="ブラキオサウルスの長い前足と傾斜した背中の特徴" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
+</div>
 
 <h2 class="article-section-title">6. 強さはどれくらい？天敵やライバルとの関係</h2>
 <p class="article-paragraph">
