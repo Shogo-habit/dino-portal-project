@@ -1837,6 +1837,7 @@ const RAW_TOPICS = [
 
 <div style="margin: 20px auto 35px auto; text-align: center; max-width: 900px;">
   <img src="/images/topics/brachiosaurus_detail2.webp" alt="ブラキオサウルスの長い前足と傾斜した背中の特徴" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
+  <p style="font-size: 12px; color: var(--text-dim); margin-top: 8px; font-family: var(--font-mono); text-align: center;">ブラキオサウルス、ティラノサウルス、4階建ビルの比較</p>
 </div>
 
 <h2 class="article-section-title">6. 強さはどれくらい？天敵やライバルとの関係</h2>
