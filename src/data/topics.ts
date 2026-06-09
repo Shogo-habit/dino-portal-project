@@ -1926,7 +1926,7 @@ const RAW_TOPICS = [
     `,
     image: "images/topics/brachiosaurus_detail.webp",
     securityLevel: "LEVEL 2 (SCIENTIFIC REVISION)",
-    relatedSpecimens: ["brachiosaurus"]
+    relatedSpecimens: ["brachiosaurus", "diplodocus", "apatosaurus"]
   },
 ];
 
