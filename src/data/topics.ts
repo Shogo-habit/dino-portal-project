@@ -615,7 +615,7 @@ const RAW_TOPICS = [
                 <div class="vis-tag dino-tag" style="white-space: nowrap; position: absolute; bottom: -40px; font-family: var(--font-mono); font-size: 10px; color: var(--text-color);">ササヤマグノームス / 約0.8m</div>
             </div>
             <!-- Human reference -->
-            <div class="ref-vis" style="position: absolute; right: 20%; bottom: 80px; height: 250px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible;">
+            <div class="ref-vis" style="position: absolute; right: 10%; bottom: 80px; height: 250px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible;">
                 <img src="/images/cyber/human_front.webp" alt="HUMAN" class="cyber-hud-specimen" 
                      style="height: 233px; width: auto; margin-bottom: -17px; flex-shrink: 0; mix-blend-mode: screen !important;" />
                 <div class="vis-tag ref-tag" style="white-space: nowrap; position: absolute; bottom: -40px; font-family: var(--font-mono); font-size: 10px; color: var(--text-color);">人間 / 1.7m</div>
