@@ -626,16 +626,23 @@ const RAW_TOPICS = [
 </div>
 
 <h2 class="article-section-title">特徴的な部位の深掘り：「森の小人」と「身軽な二足歩行」</h2>
-<p class="article-paragraph">
-  この風変わりな恐竜には、その生態と発見の歴史にふさわしいユニークな名前が与えられました。
-  属名の『ササヤマグノームス（Sasayamagnomus）』は、発見地である「丹波篠山」に、ヨーロッパの伝承で地下の財宝を守るとされる小人<strong style="color: var(--primary-neon);">「グノーム（Gnomus）」</strong>を組み合わせたものです。篠山層群という地下深くの地層に何億年もの間ひっそりと眠っていた貴重な骨の化石を、小人が守っていた財宝になぞらえたロマンあふれる命名です。
-  また、種小名の『サエキ（saeki）』は、この貴重な化石の第一発見者であるアマチュア化石収集家の佐伯昭二氏への敬意を表したものです。日本の恐竜発掘は、熱意ある市民の手によって支えられていることを象徴する素晴らしいエピソードと言えます。
-</p>
-<p class="article-paragraph">
-  ササヤマグノームスの身体的特徴を詳しく見てみると、後世のトリケラトプスの姿からは想像もつかないほど原始的な特徴を残しています。
-  顔にはトリケラトプスのような立派な3本の角はなく、鼻の上がわずかに盛り上がっている程度でした。さらに、首の後ろに広がる骨のフリルも非常に小さく、まだ発達の途上にありました。
-  また、彼らは四足歩行だけでなく、<strong style="color: var(--primary-neon);">後脚で立ち上がって軽快に二足歩行する</strong>こともできたと考えられています。巨大な捕食者が闊歩する過酷な白亜紀の生態系において、この身軽さと俊敏さこそが、彼らが生き残るための最大の防衛兵器だったのです。
-</p>
+<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0; margin-bottom: 15px;">
+      この風変わりな恐竜には、その生態と発見の歴史にふさわしいユニークな名前が与えられました。
+      属名の『ササヤマグノームス（Sasayamagnomus）』は、発見地である「丹波篠山」に、ヨーロッパの伝承で地下の財宝を守るとされる小人<strong style="color: var(--primary-neon);">「グノーム（Gnomus）」</strong>を組み合わせたものです。篠山層群という地下深くの地層に何億年もの間ひっそりと眠っていた貴重な骨の化石を、小人が守っていた財宝になぞらえたロマンあふれる命名です。
+      また、種小名の『サエキ（saeki）』は、この貴重な化石の第一発見者であるアマチュア化石収集家の佐伯昭二氏への敬意を表したものです。日本の恐竜発掘は、熱意ある市民の手によって支えられていることを象徴する素晴らしいエピソードと言えます。
+    </p>
+    <p class="article-paragraph" style="margin-top: 0; margin-bottom: 0;">
+      ササヤマグノームスの身体的特徴を詳しく見てみると、後世のトリケラトプスの姿からは想像もつかないほど原始的な特徴を残しています。
+      顔にはトリケラトプスのような立派な3本の角はなく、鼻の上がわずかに盛り上がっている程度でした。さらに、首の後ろに広がる骨のフリルも非常に小さく、まだ発達の途上にありました。
+      また、彼らは四足歩行だけでなく、<strong style="color: var(--primary-neon);">後脚で立ち上がって軽快に二足歩行する</strong>こともできたと考えられています。巨大な捕食者が闊歩する過酷な白亜紀の生態系において、この身軽さと俊敏さこそが、彼らが生き残るための最大の防衛兵器だったのです。
+    </p>
+  </div>
+  <div style="width: 350px; flex-shrink: 0; margin: 0 auto;">
+    <img src="/images/topics/sasayamagnomus_habitat1.webp" alt="ササヤマグノームスの特徴と生息環境の復元イメージ" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+  </div>
+</div>
 
 <h2 class="article-section-title">角竜進化のミッシングリンク：アジアから北米への大移動</h2>
 <p class="article-paragraph">
