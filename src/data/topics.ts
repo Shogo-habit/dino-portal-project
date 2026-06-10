@@ -607,7 +607,6 @@ const RAW_TOPICS = [
   </div>
   <div style="width: 450px; flex-shrink: 0; margin: 0 auto; position: relative;">
     <section class="size-comparison-panel" style="position: relative; height: 350px; overflow: hidden; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(0, 0, 0, 0.2); box-shadow: 0 0 10px rgba(0, 242, 255, 0.05);">
-        <h4 style="color: var(--primary-neon); margin: 12px 0 0 12px; position: relative; z-index: 10; font-family: var(--font-mono); font-size: 12px;">[ SIZE COMPARISON / 視覚的個体比較スケール ]</h4>
         <div class="comparison-stage" style="position: absolute; width: 100%; height: 100%; bottom: 0; left: 0;">
             <!-- Dino visual -->
             <div class="dino-vis" style="position: absolute; left: 20%; bottom: 80px; height: 250px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible;">
