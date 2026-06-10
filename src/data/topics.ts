@@ -967,6 +967,134 @@ const RAW_TOPICS = [
   </table>
 </div>
 
+<h3 style="color: var(--primary-neon); margin-top: 30px; margin-bottom: 15px; font-size: 16px;">個性豊かな角竜たちの詳細図鑑（アーカイブ）</h3>
+<div class="dino-archive-grid">
+  <a href="/dictionary/triceratops" class="dino-archive-card">
+    <div class="dino-archive-img-wrap">
+      <img src="/images/triceratops.webp" alt="トリケラトプス" />
+    </div>
+    <div class="dino-archive-body">
+      <span class="dino-archive-title">トリケラトプス</span>
+      <p class="dino-archive-desc">
+        3本の角と巨大な襟飾りが特徴。強力な防御能力を持ち、大型肉食恐竜に対しても立ち向かった。
+      </p>
+    </div>
+  </a>
+
+  <a href="/dictionary/styracosaurus" class="dino-archive-card">
+    <div class="dino-archive-img-wrap">
+      <img src="/images/styracosaurus.webp" alt="スティラコサウルス" />
+    </div>
+    <div class="dino-archive-body">
+      <span class="dino-archive-title">スティラコサウルス</span>
+      <p class="dino-archive-desc">
+        鼻の上の巨大な角と、襟飾りに並ぶ6本以上の長いトゲが特徴。敵に対する威嚇と防御において、極めて派手で強力な装備を持つ。
+      </p>
+    </div>
+  </a>
+
+  <a href="/dictionary/torosaurus" class="dino-archive-card">
+    <div class="dino-archive-img-wrap">
+      <img src="/images/torosaurus.webp" alt="トロサウルス" />
+    </div>
+    <div class="dino-archive-body">
+      <span class="dino-archive-title">トロサウルス</span>
+      <p class="dino-archive-desc">
+        陸生動物の中で最大級の頭骨を持つ恐竜。トリケラトプスに似ているが、襟飾りがさらに長く、大きな窓（穴）が開いているのが特徴。
+      </p>
+    </div>
+  </a>
+
+  <a href="/dictionary/protoceratops" class="dino-archive-card">
+    <div class="dino-archive-img-wrap">
+      <img src="/images/protoceratops.webp" alt="プロトケラトプス" />
+    </div>
+    <div class="dino-archive-body">
+      <span class="dino-archive-title">プロトケラトプス</span>
+      <p class="dino-archive-desc">
+        「最初の角のある顔」を意味するが角を持たず、発達した襟飾りのみを持つ初期の角竜。羊ほどの大きさで、砂漠地帯に生息していた。
+      </p>
+    </div>
+  </a>
+
+  <a href="/dictionary/chasmosaurus" class="dino-archive-card">
+    <div class="dino-archive-img-wrap">
+      <img src="/images/chasmosaurus.webp" alt="カスモサウルス" />
+    </div>
+    <div class="dino-archive-body">
+      <span class="dino-archive-title">カスモサウルス</span>
+      <p class="dino-archive-desc">
+        「穴の開いたトカゲ」という意味の名を持つ。非常に大きな襟飾りには巨大な穴が開いており、重量を軽く保ちつつ視覚的な威嚇効果を高めていた。
+      </p>
+    </div>
+  </a>
+</div>
+
+<style>
+  .dino-archive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  .dino-archive-card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid var(--panel-border);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.02);
+    overflow: hidden;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  }
+  .dino-archive-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--primary-neon);
+    box-shadow: 0 8px 20px rgba(0, 242, 255, 0.15);
+  }
+  .dino-archive-img-wrap {
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    border-bottom: 1px solid var(--panel-border);
+    background: rgba(0, 242, 255, 0.02);
+  }
+  .dino-archive-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  .dino-archive-card:hover img {
+    transform: scale(1.05);
+  }
+  .dino-archive-body {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .dino-archive-title {
+    font-weight: bold;
+    color: var(--primary-neon);
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .dino-archive-desc {
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--text-muted);
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>
+
 <p class="article-paragraph">
   もちろん、完全に防御の役に立たなかったわけではなく、結果的に首を守る防護壁になったことも事実でしょう。しかし、トリケラトプスのシンボルであるフリルは、ただ戦うためだけのものではなく、恋をしたり、暑さをしのいだり、食事をしたりといった彼らの「日常の暮らし」を支える多機能マルチツールだったのです。
 </p>
