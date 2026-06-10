@@ -609,13 +609,13 @@ const RAW_TOPICS = [
     <section class="size-comparison-panel" style="position: relative; height: 250px; overflow: hidden; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(0, 0, 0, 0.2); box-shadow: 0 0 10px rgba(0, 242, 255, 0.05);">
         <div class="comparison-stage" style="position: absolute; width: 100%; height: 100%; bottom: 0; left: 0;">
             <!-- Dino visual -->
-            <div class="dino-vis" style="position: absolute; left: 15%; bottom: 60px; height: 190px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible;">
+            <div class="dino-vis" style="position: absolute; left: 20%; bottom: 60px; height: 190px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible;">
                 <img src="/images/cyber/sasayamagnomus.webp" alt="ササヤマグノームス" class="cyber-hud-specimen" 
                      style="height: 76px; width: auto; margin-bottom: -22px; flex-shrink: 0; mix-blend-mode: screen !important;" />
                 <div class="vis-tag dino-tag" style="white-space: nowrap; position: absolute; bottom: -30px; font-family: var(--font-mono); font-size: 9px; color: var(--text-color);">ササヤマグノームス / 約0.8m</div>
             </div>
             <!-- Human reference -->
-            <div class="ref-vis" style="position: absolute; right: 10%; bottom: 60px; height: 190px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible;">
+            <div class="ref-vis" style="position: absolute; right: 5%; bottom: 60px; height: 190px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible;">
                 <img src="/images/cyber/human_front.webp" alt="HUMAN" class="cyber-hud-specimen" 
                      style="height: 168px; width: auto; margin-bottom: -12px; flex-shrink: 0; mix-blend-mode: screen !important;" />
                 <div class="vis-tag ref-tag" style="white-space: nowrap; position: absolute; bottom: -30px; font-family: var(--font-mono); font-size: 9px; color: var(--text-color);">人間 / 1.7m</div>
