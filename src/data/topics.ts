@@ -605,7 +605,7 @@ const RAW_TOPICS = [
       彼らが暮らしていたのは、現在の兵庫県丹波市付近に広がる「篠山層群（ささやまそうぐん）」と呼ばれる地層です。当時は温暖な気候のもと、大きな河川の周囲に豊かな森林や湿地が形成されており、その鬱蒼とした森の中で、周囲の捕食者に見つからないよう身を隠しながら、低木やシダ植物を食べて暮らしていたと考えられています。
     </p>
   </div>
-  <div style="width: 320px; flex-shrink: 0; margin: 0 auto; position: relative;">
+  <div style="width: 320px; flex-shrink: 0; margin: -50px auto 0 auto; position: relative;">
     <section class="size-comparison-panel" style="position: relative; height: 250px; overflow: hidden; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(0, 0, 0, 0.2); box-shadow: 0 0 10px rgba(0, 242, 255, 0.05);">
         <div class="comparison-stage" style="position: absolute; width: 100%; height: 100%; bottom: 0; left: 0;">
             <!-- Dino visual -->
