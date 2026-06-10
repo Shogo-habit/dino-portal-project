@@ -883,16 +883,30 @@ const RAW_TOPICS = [
 </p>
 
 <h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">説1：自己主張と恋のアピール</h3>
-<p class="article-paragraph">
-  最も有力とされているのが、現代のクジャクの美しい飾り羽やシカの巨大な角と同じ、仲間や異性に対する<strong style="color: var(--primary-neon);">「視覚的アピール」</strong>の役割です。
-  フリルの表面には鮮やかで個性的な皮膚の模様があったと考えられており、自身の健康状態や遺伝的な優秀さを異性にアピールするために使われました。また、血管がびっしり通っていた特性を活かし、興奮すると一気に血流を増やしてフリル全体の皮膚を赤や鮮やかな色に変色させ、ライバルを威嚇したり、天敵を驚かせて追い払うためのフラッシング（警告色）効果もあったのではないかとも推測されています。
-</p>
+<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0; margin-bottom: 0;">
+      最も有力とされているのが、現代のクジャクの美しい飾り羽やシカの巨大な角と同じ、仲間や異性に対する<strong style="color: var(--primary-neon);">「視覚的アピール」</strong>の役割です。
+      フリルの表面には鮮やかで個性的な皮膚の模様があったと考えられており、自身の健康状態や遺伝的な優秀さを異性にアピールするために使われました。また、血管がびっしり通っていた特性を活かし、興奮すると一気に血流を増やしてフリル全体の皮膚を赤や鮮やかな色に変色させ、ライバルを威嚇したり、天敵を驚かせて追い払うためのフラッシング（警告色）効果もあったのではないかとも推測されています。
+    </p>
+  </div>
+  <div style="width: 300px; flex-shrink: 0; margin: 0 auto;">
+    <img src="/images/topics/triceratops_frill2.webp" alt="フリルによる視覚的アピール（イメージ）" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+  </div>
+</div>
 
 <h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">説2：体温をコントロールする「ラジエーター機能」</h3>
-<p class="article-paragraph">
-  トリケラトプスのような巨大な動物（恒温動物に近い性質を持っていたとされます）は、体内で発生した熱が外に逃げにくく、熱中症のように体温が上がりすぎてしまう危険性がありました。
-  そこで、フリルに無数に通る血液を、広い面積を持つフリルに風を当てることで効率よく冷やし、体全体の体温を一定に保つ<strong style="color: var(--primary-neon);">「クーラー（放熱板）」</strong>として活用していたという説です。これは、現代のアフリカゾウが大きな耳をパタパタと動かして血液を冷やすシステムと全く同じメカニズムです。
-</p>
+<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0; margin-bottom: 0;">
+      トリケラトプスのような巨大な動物（恒温動物に近い性質を持っていたとされます）は、体内で発生した熱が外に逃げにくく、熱中症のように体温が上がりすぎてしまう危険性がありました。
+      そこで、フリルに無数に通る血液を、広い面積を持つフリルに風を当てることで効率よく冷やし、体全体の体温を一定に保つ<strong style="color: var(--primary-neon);">「クーラー（放熱板）」</strong>として活用していたという説です。これは、現代のアフリカゾウが大きな耳をパタパタと動かして血液を冷やすシステムと全く同じメカニズムです。
+    </p>
+  </div>
+  <div style="width: 300px; flex-shrink: 0; margin: 0 auto;">
+    <img src="/images/topics/triceratops_frill3.webp" alt="放熱ラジエーターとしてのフリル（イメージ）" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+  </div>
+</div>
 
 <h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">説3：硬い植物をすりつぶす「巨大な顎を動かす筋肉の土台」</h3>
 <p class="article-paragraph">
