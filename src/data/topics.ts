@@ -1104,7 +1104,7 @@ const RAW_TOPICS = [
     `,
     image: "images/topics/triceratops_frill.webp",
     securityLevel: "LEVEL 2 (SCIENTIFIC REVISION)",
-    relatedSpecimens: ["triceratops", "protoceratops", "styracosaurus"]
+    relatedSpecimens: ["triceratops", "protoceratops", "styracosaurus", "torosaurus", "chasmosaurus"]
   },
   {
     id: "stegosaurus-plates-science",
