@@ -827,69 +827,127 @@ const RAW_TOPICS = [
     title: "トリケラトプスの頭の「フリル」、実は盾（たて）じゃなかった！？",
     summary: "ティラノサウルスの攻撃を防ぐ最強のバリアだと思われていたトリケラトプスのフリル。実は防御用としては脆かった？最新の研究から浮かび上がった意外な使い道を解説。",
     content: `
-<h2 class="article-section-title">誰もが信じる「最強の防具」</h2>
+<h2 class="article-section-title">誰もが信じる「最強の防具」のイメージと、古生物学の常識破り</h2>
 <p class="article-paragraph">
-  3本の角と、頭の後ろに広がる巨大なうちわのような骨の飾り「フリル」。トリケラトプスの姿を特徴づけるこのフリルは、長年「宿敵ティラノサウルスの鋭い牙から首元を守るための頑丈な盾（シールド）」であると信じられてきました。
+  恐竜ファンの間で絶大な人気を誇る植物食恐竜<strong style="color: var(--primary-neon);">トリケラトプス</strong>。彼らのシンボルといえば、顔に突き出た3本の鋭い角と、首の後ろに大きく広がるうちわのような骨の飾り「フリル（襟飾り）」です。ティラノサウルスの攻撃から首元を守るため、重厚で頑丈な盾（シールド）として機能していた——そんな戦闘シーンは、数々の映画や図鑑、絵本で描かれてきた定番の構図であり、多くの人が疑わない「常識」でした。
 </p>
 <p class="article-paragraph">
-  しかし、近年の古生物学研究によって、この定説に大きな疑問が投げかけられています。実は、このフリルは防具として使うにはあまりにも不向きな構造をしていたのです。
-</p>
-
-<h2 class="article-section-title">「盾としては弱すぎる」という新事実</h2>
-<p class="article-paragraph">
-  フリルが盾ではなかったと考えられている主な理由は以下の3点です。
-</p>
-<ul style="list-style-type: square; padding-left: 20px; line-height: 1.8; margin-bottom: 20px; font-size: 14px;">
-  <li><strong>骨が薄く、穴だらけだった</strong>: トリケラトプスの仲間（角竜類）の多くは、フリルの骨に「窓」のような大きな穴（窓骨）が開いており、そこは皮膚だけで覆われていました。これでは牙や角を通してしまうため、盾としての用をなしません。</li>
-  <li><strong>血管がびっしり通っていた</strong>: フリルの表面には、無数の血管が通っていた痕跡（溝）が刻まれています。もしここにティラノサウルスの強烈な噛みつき攻撃を受ければ、大出血を起こしてしまい非常に危険です。</li>
-  <li><strong>トリケラトプス自身のフリルも意外と薄い</strong>: トリケラトプスは穴が開いていない頑丈なフリルを持っていましたが、それでも厚みは数センチメートル程度であり、ティラノサウルスの数トンに達する咬合力（噛む力）を防ぎきることは困難でした。</li>
-</ul>
-
-<h2 class="article-section-title">フリルの真の役割は？3つの有力な説</h2>
-<p class="article-paragraph">
-  では、盾でなければ何のためにこれほど巨大なフリルを発達させたのでしょうか。現在、主に以下の3つの役割があったと考えられています。
+  しかし、近年の古生物学研究の進歩によって、この長年の定説に大きな疑問が投げかけられています。最新の骨格解析やCTスキャン、恐竜たちの進化系統の研究から明らかになったのは、<strong>「フリルは戦うための防具（盾）としてはあまりにも不向きな構造をしていた」</strong>という驚きの事実です。
+  本記事では、なぜフリルが盾ではなかったと考えられるのかという科学的根拠から、浮かび上がってきたフリルの本当の役割、さらには他の角竜たちとの比較まで、最新の学説をもとに徹底解説します！
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">1. 求愛とコミュニケーション（ディスプレイ説）</h3>
+<h2 class="article-section-title">トリケラトプスの基本データと「陸上最大の頭骨」</h2>
+<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0;">
+      トリケラトプスは、白亜紀後期（約6800万〜6600万年前）の北アメリカ大陸に生息していた、角竜類（ケラトプス科）の恐竜です。全長は約8〜9メートル、体重は5〜9トンと、現代のアフリカゾウを凌ぐ巨体を誇り、まさに「動く戦車」のような圧倒的な存在感を持っていました。
+    </p>
+    <p class="article-paragraph">
+      彼らを特徴づける頭部の骨（頭骨）は、巨大なフリルを含めると最大で<strong style="color: var(--primary-neon);">2.5メートル以上</strong>に達し、これは地球の歴史上に登場したすべての陸上動物の中で最大級のサイズを誇ります。頭骨全体の重さだけでも数百キログラムあり、それを支えるために首の骨（頚椎）の最初の3つは固く融合して一体化していました。
+    </p>
+    <p class="article-paragraph" style="margin-bottom: 0;">
+      フリル自体の構造を詳しく見てみると、トリケラトプス属（*Triceratops*）のフリルは、後頭部から扇状に伸びた骨で構成され、その縁には「エピオシピタル」と呼ばれる小さな三角形の装飾的な骨が並んでいました。この巨大なフリルが頭全体の約半分を占めており、正面から見るとまるで巨大な団扇（うちわ）を背負っているかのような、ユニークで美しいシンメトリーを描いていました。このダイナミックな進化が、彼らの生存戦略と深く関わっているのです。
+    </p>
+  </div>
+  <div style="width: 375px; flex-shrink: 0; margin: 0 auto;">
+    <img src="/images/topics/triceratops_frill.webp" alt="トリケラトプスの巨大なフリルと頭部骨格" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+  </div>
+</div>
+
+<h2 class="article-section-title">なぜ「盾（たて）」ではない？明らかになった3つの科学的根拠</h2>
 <p class="article-paragraph">
-  現代のクジャクの羽やシカの角のように、異性に自分をアピールしたり、ライバルを威嚇するための「ディスプレイ」だったとする説です。血管が豊富に通っていたため、興奮するとフリルの色を赤や鮮やかな色に変色させ、視覚的に訴えかけていた可能性も指摘されています。
+  長年、ティラノサウルスの攻撃を防ぐ最強のバリアだと思われていたトリケラトプスのフリル. しかし、古生物学者たちが化石の微細な構造を詳しく調べた結果、物理的な防具として使用するには重大な欠陥が複数存在することが明らかになりました。その主な根拠は以下の3点です。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">2. 体温調節のラジエーター（熱放射説）</h3>
+<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">① 骨が薄く、親戚たちのフリルには「大きな穴」が開いていた</h3>
 <p class="article-paragraph">
-  巨大なフリルに風を当てることで、血管の中の血液を冷やし、体温が上がりすぎるのを防ぐ「放熱板」として機能していたという説です。ゾウの大きな耳と同じようなシステムです。
+  トリケラトプスが属する「角竜類（角を持つ恐竜のグループ）」のほぼすべての種において、フリルの骨の真ん中に<strong style="color: var(--primary-neon);">「窓骨（てんそう）」</strong>と呼ばれる巨大な左右一対の穴が開いていました。この穴の部分は骨がなく、薄い皮膚と血管だけで覆われていました。もしここに肉食恐竜が噛みついたり、ライバルの角が突き刺されば、簡単に貫通してしまいます。
+  トリケラトプス自身は例外的にこの穴が塞がった頑丈なフリルを持っていましたが、それでも骨の厚さはわずか数センチメートルしかありませんでした。ティラノサウルスの数トンに達する圧倒的な咬合力（噛む力）の直撃を受ければ、防ぐどころか一撃で粉砕されてしまうほどの薄さだったのです。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">3. 顎を動かすための筋肉の土台（顎筋サポート説）</h3>
+<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">② 表面に張り巡らされた「無数の血管」という大弱点</h3>
 <p class="article-paragraph">
-  トリケラトプスは、繊維質の硬い植物をすりつぶして食べるために強力な顎（あご）を持っていました。この巨大な顎を動かすための強力な筋肉の端を、フリルに固定することで、噛む力を大幅に強化していたという説です。
+  トリケラトプスのフリルの化石の表面を顕微鏡などで観察すると、木の枝のように枝分かれした複雑な溝がびっしりと刻まれています。これは、フリル全体に<strong style="color: var(--primary-neon);">無数の太い血管が通っていた痕跡</strong>です。
+  もしフリルが戦闘用の盾であったなら、血管が豊富に通っている場所を敵に向けて差し出すのは致命的です。ティラノサウルスの鋭い牙でここを傷つけられれば、激しい痛みとともに致命的な大出血を起こし、あっという間に力尽きて捕食されてしまうでしょう。生物の防具として、これほど不合理な構造はありません。
 </p>
 
-<h2 class="article-section-title">フリルの役割まとめ</h2>
-<div class="table-container" style="overflow-x: auto; margin-bottom: 20px;">
+<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">③ 闘争による「損傷痕」のパターンの矛盾</h3>
+<p class="article-paragraph">
+  トリケラトプスの頭部化石には、時折ティラノサウルスの噛み跡や、他のトリケラトプスと突き合いをして傷ついたと考えられる痕跡が見つかります。しかし興味深いことに、致命的な傷の多くは「角の付け根」や「顔の側面」に集中しており、フリル自体がボロボロに破壊された化石はほとんどありません。
+  これは、彼らが戦う際にフリルを盾として積極的に相手にぶつけるのではなく、主に向かい合って角と角を噛み合わせるように戦っていたことを示唆しています。フリルは戦闘中に「結果的に首を守る防護壁」になったことはあったかもしれませんが、それが本来の主目的ではなかったと考えられています。
+</p>
+
+<h2 class="article-section-title">フリルの真の役割は？最新学説が解き明かす3つのマルチ機能</h2>
+<p class="article-paragraph">
+  では、盾（防具）として使うには不向きであるにもかかわらず、なぜ彼らは頭全体の半分を占めるほどの巨大なフリルを発達させ続けたのでしょうか。進化の歴史において、無駄なパーツがこれほど巨大化することはありません。最新の古生物学では、フリルは彼らの「日常の暮らし」を支える非常に重要なマルチツールであったと考えられており、主に以下の3つの役割があったと提唱されています。
+</p>
+
+<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">説1：自己主張と恋のアピール（ディスプレイ機能）</h3>
+<p class="article-paragraph">
+  最も有力とされているのが、現代のクジャクの美しい飾り羽やシカの巨大な角と同じ、仲間や異性に対する<strong style="color: var(--primary-neon);">「ディスプレイ（視覚的アピール）」</strong>の役割です。
+  フリルの表面には鮮やかで個性的な皮膚の模様があったと考えられており、自身の健康状態や遺伝的な優秀さを異性にアピールするために使われました。また、血管がびっしり通っていた特性を活かし、興奮すると一気に血流を増やしてフリル全体の皮膚を赤や鮮やかな色に変色させ、ライバルを威嚇したり、天敵を驚かせて追い払うためのフラッシング（警告色）効果もあったのではないかとも推測されています。
+</p>
+
+<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">説2：体温をコントロールする「ラジエーター機能」</h3>
+<p class="article-paragraph">
+  トリケラトプスのような巨大な動物（恒温動物に近い性質を持っていたとされます）は、体内で発生した熱が外に逃げにくく、熱中症のように体温が上がりすぎてしまう危険性がありました。
+  そこで、フリルに無数に通る血液を、広い面積を持つフリルに風を当てることで効率よく冷やし、体全体の体温を一定に保つ<strong style="color: var(--primary-neon);">「クーラー（放熱板）」</strong>として活用していたという説です。これは、現代のアフリカゾウが大きな耳をパタパタと動かして血液を冷やすシステムと全く同じメカニズムです。
+</p>
+
+<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">説3：硬い植物をすりつぶす「巨大な顎を動かす筋肉の土台」</h3>
+<p class="article-paragraph">
+  トリケラトプスは、非常に頑丈なオウムのようなくちばしと、硬いシダ植物の繊維を噛み切るための強力な歯の列を持っていました。この強靭な顎（あご）の力を生み出すには、大量の太い咀嚼筋（噛むための筋肉）が必要でした。
+  その巨大な顎の筋肉を固定し、支えるための<strong style="color: var(--primary-neon);">「アンカー（固定場所・土台）」</strong>としてフリルの裏側や付け根が利用されていたという説です。筋肉の付着面が広ければ広いほど、より強力な噛む力を生み出すことができるため、食事を効率化する進化の結果としてフリルが巨大化したという側面もあります。
+</p>
+
+<h2 class="article-section-title">トリケラトプスだけじゃない！驚きのフリルを持つ「個性派の角竜たち」</h2>
+<p class="article-paragraph">
+  トリケラトプスは、白亜紀の最後に登場した最も進化した角竜（ケラトプス科）の代表格ですが、進化の歴史を辿ると、他にも非常に個性的で奇妙なフリルや角を発達させた仲間たちがたくさん存在していました。彼らの姿を比較することで、フリルが防具ではなくディスプレイとして多様な形に進化したことがより深く理解できます。
+</p>
+<p class="article-paragraph">
+  例えば、初期の角竜である<strong style="color: var(--primary-neon);">プロトケラトプス</strong>は体長2メートルほどで角を持ちませんが、巨大なフリルには大きな窓があり、アピールツールとして使っていました。また、<strong style="color: var(--primary-neon);">スティラコサウルス</strong>はフリルの縁から6本もの鋭い巨大なトゲが後方に伸びており、威嚇効果を極限まで高めていました。さらに、陸上動物最大の頭骨を持つ<strong style="color: var(--primary-neon);">トロサウルス</strong>は、トリケラトプスとそっくりな姿でありながらフリルに大きな窓が開いており、これらはトリケラトプスの老齢個体ではないかという「同種説（成長段階の変形）」も現在盛んに議論されています。
+</p>
+
+<div class="table-container" style="overflow-x: auto; margin-bottom: 25px; margin-top: 15px;">
   <table style="width: 100%; border-collapse: collapse; border: 1px solid var(--panel-border); font-size: 14px;">
     <thead>
       <tr style="background-color: rgba(0, 242, 255, 0.1); border-bottom: 1px solid var(--panel-border);">
-        <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left;">機能説</th>
-        <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left;">メリット・目的</th>
-        <th style="padding: 10px; text-align: left;">現代の生物での例</th>
+        <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left;">角竜名</th>
+        <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left;">全長（目安）</th>
+        <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left;">フリルの最大の特徴</th>
+        <th style="padding: 10px; text-align: left;">学名の意味と生息地</th>
       </tr>
     </thead>
     <tbody>
       <tr style="border-bottom: 1px solid var(--panel-border);">
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">ディスプレイ</td>
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">異性へのアピール、強さの誇示、変色による威嚇</td>
-        <td style="padding: 10px;">クジャクの飾り羽、カメレオンの皮膚色変化</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">トリケラトプス</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">約8.0〜9.0m</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">穴が開いていない頑丈で半円形のフリル</td>
+        <td style="padding: 10px;">「3本の角を持つ顔」（北アメリカ）</td>
       </tr>
       <tr style="border-bottom: 1px solid var(--panel-border);">
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">体温調節</td>
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">風を受けて血液を冷やすラジエーター効果</td>
-        <td style="padding: 10px;">アフリカゾウの大きな耳</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">スティラコサウルス</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">約5.5m</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">フリルの縁から6本の長い棘が放射状に伸びる</td>
+        <td style="padding: 10px;">「棘のあるトカゲ」（北アメリカ）</td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--panel-border);">
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">トロサウルス</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">約7.5〜9.0m</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">頭骨が最大2.7m超、フリルには2つの大きな穴</td>
+        <td style="padding: 10px;">「突き通すトカゲ」または「牛トカゲ」（北アメリカ）</td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--panel-border);">
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">プロトケラトプス</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">約1.8〜2.0m</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">角を持たず、フリルには大きな窓がある初期型</td>
+        <td style="padding: 10px;">「最初の角のある顔」（アジア・モンゴル）</td>
       </tr>
       <tr>
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">咀嚼（そしゃく）補助</td>
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">顎を動かす巨大な筋肉のアンカー（固定場所）</td>
-        <td style="padding: 10px;">現代の多くの哺乳類（頭頂部の骨の隆起）</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">カスモサウルス</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">約5.0〜6.0m</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">長方形の巨大なフリル、大部分が大きな穴</td>
+        <td style="padding: 10px;">「穴の開いたトカゲ」（北アメリカ）</td>
       </tr>
     </tbody>
   </table>
