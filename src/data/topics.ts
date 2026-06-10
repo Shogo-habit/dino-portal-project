@@ -715,14 +715,15 @@ const RAW_TOPICS = [
     <div class="toy-affiliate-card" style="border: 1px solid var(--panel-border); border-radius: 4px; padding: 15px; text-align: center; background: rgba(255, 255, 255, 0.02); position: relative; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1);">
       <div class="hud-corner top-left" style="position: absolute; top: -1px; left: -1px; width: 6px; height: 6px; border-top: 1px solid var(--primary-neon); border-left: 1px solid var(--primary-neon);"></div>
       <div class="hud-corner bottom-right" style="position: absolute; bottom: -1px; right: -1px; width: 6px; height: 6px; border-bottom: 1px solid var(--primary-neon); border-right: 1px solid var(--primary-neon);"></div>
-      <a class="toy-link" href="https://hb.afl.rakuten.co.jp/hgc/g00r0y09.v7glca80.g00r0y09.v7gldb87/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftoy-toy-shop%2F4904810165187%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftoy-toy-shop%2Fi%2F10006243%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" style="text-decoration: none; color: inherit; display: block; margin-bottom: 15px;">
-        <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/toy-toy-shop/cabinet/image19/4904810165187_1.jpg?_ex=128x128" alt="タカラトミー アニア AL-02 トリケラトプス" style="border: none; margin-bottom: 10px;" /><br>
-        <span style="font-size: 13px; font-weight: bold; color: var(--text-color);">タカラトミー アニア AL-02 トリケラトプス（首・角可動）</span>
+      <a class="toy-link" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmorushop%2F20250102085147_88%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fmorushop%2Fi%2F10049421%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" style="text-decoration: none; color: inherit; display: block; margin-bottom: 15px;">
+        <img src="//thumbnail.image.rakuten.co.jp/@0_mall/morushop/cabinet/r_2025010236/20250102085147_88_1.jpg?_ex=128x128" alt="タカラトミー アニア AL-02 トリケラトプス" style="border: none; margin-bottom: 10px;" /><br>
+        <span style="font-size: 13px; font-weight: bold; color: var(--text-color);">アニア AL-02 トリケラトプス</span>
       </a>
-      <a class="rakuten-btn" href="https://hb.afl.rakuten.co.jp/hgc/g00r0y09.v7glca80.g00r0y09.v7gldb87/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftoy-toy-shop%2F4904810165187%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftoy-toy-shop%2Fi%2F10006243%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px; background: rgba(0, 242, 255, 0.15); border: 1px solid var(--primary-neon); border-radius: 4px; color: var(--primary-neon); font-weight: bold; text-decoration: none; transition: background 0.2s;">
+      <a class="rakuten-btn" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmorushop%2F20250102085147_88%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fmorushop%2Fi%2F10049421%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px; background: rgba(0, 242, 255, 0.15); border: 1px solid var(--primary-neon); border-radius: 4px; color: var(--primary-neon); font-weight: bold; text-decoration: none; transition: background 0.2s; margin-bottom: 10px;">
         <span>楽天市場で見る</span>
         <span class="btn-arrow">&raquo;</span>
       </a>
+      <img src="//i.moshimo.com/af/i/impression?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px; display: block; margin: 0 auto;">
     </div>
   </div>
 </div>
