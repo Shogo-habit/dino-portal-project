@@ -890,7 +890,7 @@ const RAW_TOPICS = [
       フリルの表面には鮮やかで個性的な皮膚の模様があったと考えられており、自身の健康状態や遺伝的な優秀さを異性にアピールするために使われました。また、血管がびっしり通っていた特性を活かし、興奮すると一気に血流を増やしてフリル全体の皮膚を赤や鮮やかな色に変色させ、ライバルを威嚇したり、天敵を驚かせて追い払うためのフラッシング（警告色）効果もあったのではないかとも推測されています。
     </p>
   </div>
-  <div style="width: 300px; flex-shrink: 0; margin: 0 auto;">
+  <div style="width: 150px; flex-shrink: 0; margin: 0 auto;">
     <img src="/images/topics/triceratops_frill2.webp" alt="フリルによる視覚的アピール（イメージ）" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
   </div>
 </div>
@@ -903,7 +903,7 @@ const RAW_TOPICS = [
       そこで、フリルに無数に通る血液を、広い面積を持つフリルに風を当てることで効率よく冷やし、体全体の体温を一定に保つ<strong style="color: var(--primary-neon);">「クーラー（放熱板）」</strong>として活用していたという説です。これは、現代のアフリカゾウが大きな耳をパタパタと動かして血液を冷やすシステムと全く同じメカニズムです。
     </p>
   </div>
-  <div style="width: 300px; flex-shrink: 0; margin: 0 auto;">
+  <div style="width: 150px; flex-shrink: 0; margin: 0 auto;">
     <img src="/images/topics/triceratops_frill3.webp" alt="放熱ラジエーターとしてのフリル（イメージ）" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
   </div>
 </div>
