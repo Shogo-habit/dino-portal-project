@@ -280,9 +280,9 @@ const RAW_TOPICS = [
     }
   }
 </style>
+<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">【Phase 2】1980年代〜2000年代：『ジュラシック・パークIII』と陸の凶暴な王者のイメージ</h3>
 <div class="spinosaurus-flex-container">
   <div style="flex: 1; min-width: 280px;">
-    <h3 style="color: var(--primary-neon); margin-top: 0; margin-bottom: 10px; font-size: 16px;">【Phase 2】1980年代〜2000年代：『ジュラシック・パークIII』と陸の凶暴な王者のイメージ</h3>
     <p class="article-paragraph" style="margin-top: 0;">
       その後、モロッコなどで断片的な化石がいくつか見つかり、1980年代には近縁種の「バリオニクス」の発見により, スピノサウルスもワニのように細長い口先（吻部）を持っていたことが分かってきました。しかし、この時点でも「長い口で川岸の魚をつまみ食いしつつも、基本は強靭な後脚で二足歩行する陸生恐竜」というイメージは変わりませんでした。
     </p>
@@ -314,12 +314,6 @@ const RAW_TOPICS = [
   .spinosaurus-tail-image-wrap {
     flex: 0 0 420px;
     max-width: 100%;
-    margin-top: -50px;
-  }
-  @media (max-width: 991px) {
-    .spinosaurus-tail-image-wrap {
-      margin-top: -30px;
-    }
   }
   @media (max-width: 768px) {
     .spinosaurus-tail-flex-container {
@@ -327,7 +321,6 @@ const RAW_TOPICS = [
     }
     .spinosaurus-tail-image-wrap {
       flex: 1 0 100%;
-      margin-top: 0;
     }
   }
 </style>
