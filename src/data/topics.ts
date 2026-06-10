@@ -359,7 +359,7 @@ const RAW_TOPICS = [
   <table style="width: 100%; border-collapse: collapse; border: 1px solid var(--panel-border); font-size: 14px;">
     <thead>
       <tr style="background-color: rgba(0, 242, 255, 0.1); border-bottom: 1px solid var(--panel-border);">
-        <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left; color: var(--primary-neon);">恐竜名</th>
+        <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left; color: var(--primary-neon); white-space: nowrap;">恐竜名</th>
         <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left; color: var(--primary-neon);">昔の推測・姿</th>
         <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left; color: var(--primary-neon);">現在の推測・姿</th>
         <th style="padding: 10px; text-align: left; color: var(--primary-neon);">変化をもたらした発見・理由</th>
@@ -367,31 +367,77 @@ const RAW_TOPICS = [
     </thead>
     <tbody>
       <tr style="border-bottom: 1px solid var(--panel-border);">
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">イグアノドン</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); white-space: nowrap;">イグアノドン</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">鼻の上に角を持つ巨大トカゲ。ゴジラのような完全直立歩行。</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">角ではなく親指の爪（武器）。基本は四足歩行で二足歩行も可。</td>
         <td style="padding: 10px;">ベルギーの炭鉱から30体以上の完全な全身骨格がまとまって発見され、関節のつながりが判明した。</td>
       </tr>
       <tr style="border-bottom: 1px solid var(--panel-border);">
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">ステゴサウルス</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); white-space: nowrap;">ステゴサウルス</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">背中の板がカメの甲羅のように平らに並び、尾を引きずって歩く。</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">板は互い違いに直立。尾は地面から高く持ち上げ、左右に振る。</td>
         <td style="padding: 10px;">尾の骨の角度や関節構造の再検証、および足跡化石の分析により、尾を引きずっていないことが証明された。</td>
       </tr>
       <tr style="border-bottom: 1px solid var(--panel-border);">
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">ブラキオサウルス</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); white-space: nowrap;">ブラキオサウルス</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">体重が重すぎるため、湖や沼の底を歩き、鼻だけを水面に出して呼吸。</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">骨に空気を溜める気嚢があり軽量。乾燥した陸地を活発に歩行。</td>
         <td style="padding: 10px;">深水に入ると胸部にかかる強大な水圧で肺呼吸ができなくなるという生物物理学的な証明による。</td>
       </tr>
       <tr>
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">デイノニクス</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); white-space: nowrap;">デイノニクス</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">緑やグレーのウロコに覆われた、冷血で鈍重なトカゲのような爬虫類。</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">鳥類のようにカラフルな羽毛をまとい、温血で素早く動く敏捷なハンター。</td>
         <td style="padding: 10px;">1960年代の発見後、骨格が鳥類に酷似していることが判明（恐竜ルネサンスの引き金）。後に羽毛化石が発見された。</td>
       </tr>
     </tbody>
   </table>
+</div>
+
+<p class="article-paragraph" style="margin-top: 15px; margin-bottom: 15px;">
+  ※それぞれの恐竜の詳しい生態や化石データについては、以下の図鑑アーカイブをチェックしてみましょう：
+</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 12px; margin-bottom: 25px;">
+  <a href="/dictionary/spinosaurus" style="text-decoration: none; color: inherit;">
+    <div class="hud-panel" style="padding: 10px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border-color: rgba(0, 242, 255, 0.15);">
+      <div style="width: 100%; height: 80px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+        <img src="/images/spinosaurus.webp" alt="スピノサウルス" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+      </div>
+      <span style="color: var(--primary-neon); font-size: 12px; font-weight: bold; text-decoration: underline;">スピノサウルス</span>
+    </div>
+  </a>
+  <a href="/dictionary/iguanodon" style="text-decoration: none; color: inherit;">
+    <div class="hud-panel" style="padding: 10px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border-color: rgba(0, 242, 255, 0.15);">
+      <div style="width: 100%; height: 80px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+        <img src="/images/iguanodon.webp" alt="イグアノドン" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+      </div>
+      <span style="color: var(--primary-neon); font-size: 12px; font-weight: bold; text-decoration: underline;">イグアノドン</span>
+    </div>
+  </a>
+  <a href="/dictionary/stegosaurus" style="text-decoration: none; color: inherit;">
+    <div class="hud-panel" style="padding: 10px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border-color: rgba(0, 242, 255, 0.15);">
+      <div style="width: 100%; height: 80px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+        <img src="/images/stegosaurus.webp" alt="ステゴサウルス" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+      </div>
+      <span style="color: var(--primary-neon); font-size: 12px; font-weight: bold; text-decoration: underline;">ステゴサウルス</span>
+    </div>
+  </a>
+  <a href="/dictionary/brachiosaurus" style="text-decoration: none; color: inherit;">
+    <div class="hud-panel" style="padding: 10px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border-color: rgba(0, 242, 255, 0.15);">
+      <div style="width: 100%; height: 80px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+        <img src="/images/brachiosaurus.webp" alt="ブラキオサウルス" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+      </div>
+      <span style="color: var(--primary-neon); font-size: 12px; font-weight: bold; text-decoration: underline;">ブラキオサウルス</span>
+    </div>
+  </a>
+  <a href="/dictionary/deinonychus" style="text-decoration: none; color: inherit;">
+    <div class="hud-panel" style="padding: 10px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border-color: rgba(0, 242, 255, 0.15);">
+      <div style="width: 100%; height: 80px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+        <img src="/images/deinonychus.webp" alt="デイノニクス" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+      </div>
+      <span style="color: var(--primary-neon); font-size: 12px; font-weight: bold; text-decoration: underline;">デイノニクス</span>
+    </div>
+  </a>
 </div>
 
 <p class="article-paragraph">
