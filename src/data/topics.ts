@@ -258,60 +258,35 @@ const RAW_TOPICS = [
   しかし、当時はわずかな骨しか見つかっておらず、全体像は不明でした。そのため、当時は「ティラノサウルスの背中に大きな帆を生やし、二足歩行で陸上を直立して歩く恐竜」として復元されました。そして追い打ちをかけるように、1944年、第二次世界大戦中の連合国軍によるミュンヘン大空襲によって、ドイツのバイエルン州立古生物学博物館に保管されていたスピノサウルスの貴重な基準標本（ホロタイプ）がすべて焼失してしまったのです。これにより、スピノサウルスは写真とスケッチだけが残る「幻の恐竜」となってしまいました。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">【Phase 2】1980年代〜2000年代：『ジュラシック・パークIII』と陸の凶暴な王者のイメージ</h3>
-<p class="article-paragraph">
-  その後、モロッコなどで断片的な化石がいくつか見つかり、1980年代には近縁種の「バリオニクス」の発見により、スピノサウルスもワニのように細長い口先（吻部）を持っていたことが分かってきました。しかし、この時点でも「長い口で川岸の魚をつまみ食いしつつも、基本は強靭な後脚で二足歩行する陸生恐竜」というイメージは変わりませんでした。
-</p>
-
 <style>
   .spinosaurus-flex-container {
     display: flex;
     gap: 20px;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-bottom: -70px;
+    margin-bottom: 30px;
   }
   .spinosaurus-image-wrap {
     flex: 0 0 420px;
     max-width: 100%;
-    margin-top: -50px;
-  }
-  
-  /* Prevent title and paragraph from overlapping the floated/shifted image on desktop */
-  .spinosaurus-next-title,
-  .spinosaurus-next-para {
-    margin-right: 440px;
   }
 
-  @media (max-width: 991px) {
-    .spinosaurus-image-wrap {
-      margin-top: -30px;
-    }
-    .spinosaurus-flex-container {
-      margin-bottom: -40px;
-    }
-    .spinosaurus-next-title,
-    .spinosaurus-next-para {
-      margin-right: 440px;
-    }
-  }
   @media (max-width: 768px) {
     .spinosaurus-flex-container {
       margin-bottom: 30px;
     }
     .spinosaurus-image-wrap {
       flex: 1 0 100%;
-      margin-top: 0;
-    }
-    .spinosaurus-next-title,
-    .spinosaurus-next-para {
-      margin-right: 0;
     }
   }
 </style>
 <div class="spinosaurus-flex-container">
   <div style="flex: 1; min-width: 280px;">
+    <h3 style="color: var(--primary-neon); margin-top: 0; margin-bottom: 10px; font-size: 16px;">【Phase 2】1980年代〜2000年代：『ジュラシック・パークIII』と陸の凶暴な王者のイメージ</h3>
     <p class="article-paragraph" style="margin-top: 0;">
+      その後、モロッコなどで断片的な化石がいくつか見つかり、1980年代には近縁種の「バリオニクス」の発見により, スピノサウルスもワニのように細長い口先（吻部）を持っていたことが分かってきました。しかし、この時点でも「長い口で川岸の魚をつまみ食いしつつも、基本は強靭な後脚で二足歩行する陸生恐竜」というイメージは変わりませんでした。
+    </p>
+    <p class="article-paragraph">
       その陸生巨大捕食者としてのイメージを決定づけたのが、2001年公開の映画『ジュラシック・パークIII』です。劇中では、王者ティラノサウルスと真っ向からぶつかり合い、その太い首をねじ切って倒すという衝撃的な描写がなされました。これにより、世界中の人々にとってスピノサウルスは「T-Rexをも凌ぐ、陸上最強の凶暴なハンター」という絶対的なイメージとして定着したのです。
     </p>
   </div>
@@ -320,8 +295,8 @@ const RAW_TOPICS = [
   </div>
 </div>
 
-<h2 class="article-section-title spinosaurus-next-title">【Phase 3】2014年：パラダイムシフト「四足歩行と半水棲生活説」</h2>
-<p class="article-paragraph spinosaurus-next-para">
+<h2 class="article-section-title">【Phase 3】2014年：パラダイムシフト「四足歩行と半水棲生活説」</h2>
+<p class="article-paragraph">
   しかし2014年、古生物学界を揺るがす大事件（パラダイムシフト）が起こります。シカゴ大学のニザール・イブラヒム博士らの研究チームが、モロッコで発見された新たな骨格化石（ネオタイプ）を含む最新のデジタル複合骨格モデルを発表しました。
 </p>
 <p class="article-paragraph">
