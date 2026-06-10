@@ -700,6 +700,49 @@ const RAW_TOPICS = [
     </tbody>
   </table>
 </div>
+
+<p class="article-paragraph" style="margin-top: 20px; margin-bottom: 15px;">
+  ※それぞれの恐竜の詳しい生態情報や標本データについては、以下の図鑑アーカイブでご確認いただけます：
+</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 15px; margin-bottom: 30px;">
+  <a href="/dictionary/sasayamagnomus" style="text-decoration: none; color: inherit;">
+    <div class="hud-panel" style="padding: 12px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border: 1px solid rgba(0, 242, 255, 0.15); background: rgba(255, 255, 255, 0.01); transition: all 0.3s;">
+      <div style="width: 100%; height: 90px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+        <img src="/images/sasayamagnomus.webp" alt="ササヤマグノームス" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+      </div>
+      <div style="font-size: 13px; font-weight: bold; color: var(--text-color); margin-bottom: 4px;">ササヤマグノームス</div>
+      <div style="font-size: 10px; color: var(--text-dim);">角竜類 / 白亜紀前期</div>
+    </div>
+  </a>
+  <a href="/dictionary/kamuyasaurus" style="text-decoration: none; color: inherit;">
+    <div class="hud-panel" style="padding: 12px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border: 1px solid rgba(0, 242, 255, 0.15); background: rgba(255, 255, 255, 0.01); transition: all 0.3s;">
+      <div style="width: 100%; height: 90px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+        <img src="/images/kamuyasaurus.webp" alt="カムイサウルス" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+      </div>
+      <div style="font-size: 13px; font-weight: bold; color: var(--text-color); margin-bottom: 4px;">カムイサウルス</div>
+      <div style="font-size: 10px; color: var(--text-dim);">鳥脚類 / 白亜紀後期</div>
+    </div>
+  </a>
+  <a href="/dictionary/fukuiraptor" style="text-decoration: none; color: inherit;">
+    <div class="hud-panel" style="padding: 12px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border: 1px solid rgba(0, 242, 255, 0.15); background: rgba(255, 255, 255, 0.01); transition: all 0.3s;">
+      <div style="width: 100%; height: 90px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+        <img src="/images/fukuiraptor.webp" alt="フクイラプトル" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+      </div>
+      <div style="font-size: 13px; font-weight: bold; color: var(--text-color); margin-bottom: 4px;">フクイラプトル</div>
+      <div style="font-size: 10px; color: var(--text-dim);">獣脚類 / 白亜紀前期</div>
+    </div>
+  </a>
+  <a href="/dictionary/tambatitan" style="text-decoration: none; color: inherit;">
+    <div class="hud-panel" style="padding: 12px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border: 1px solid rgba(0, 242, 255, 0.15); background: rgba(255, 255, 255, 0.01); transition: all 0.3s;">
+      <div style="width: 100%; height: 90px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+        <img src="/images/tambatitan.webp" alt="タンバティタニス" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+      </div>
+      <div style="font-size: 13px; font-weight: bold; color: var(--text-color); margin-bottom: 4px;">タンバティタニス</div>
+      <div style="font-size: 10px; color: var(--text-dim);">竜脚類 / 白亜紀前期</div>
+    </div>
+  </a>
+</div>
+
 <p class="article-paragraph">
   これらの恐竜たちは、日本がかつてユーラシア大陸の一部（東端の沿岸地域）だった時代に、独自の生態系を育んでいたことを物語っています。今後も日本各地の地層から、私たちの固定観念を覆すような新種の恐竜が発見される可能性が極めて高く、日本の古生物学は今まさに「黄金期」を迎えています。
 </p>
