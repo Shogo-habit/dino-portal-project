@@ -922,22 +922,18 @@ const RAW_TOPICS = [
   「恐竜」の定義を決定づけ、歴史のスタートラインを飾った3頭の恐竜たちは、いずれもイギリスの豊かな地層からほぼ同時期に発見されました。
 </p>
 
-<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 25px;">
-  <div style="flex: 1; min-width: 280px;">
-    <h3 style="color: var(--primary-neon); margin-top: 0; margin-bottom: 10px; font-size: 18px;">1. メガロサウルス（1824年命名）</h3>
-    <p class="article-paragraph" style="margin-top: 0;">
-      歴史上、最も最初に正式な学名が与えられた恐竜が、ジュラ紀中期の肉食恐竜である<strong>メガロサウルス（Megalosaurus）</strong>です。
-    </p>
-    <p class="article-paragraph">
-      1824年、イギリスの聖職者であり地質学者でもあったウィリアム・バックランドが、オックスフォードシャー州の石切り場から発見された巨大な顎と歯、四肢の骨の化石をもとに学会で発表し、「巨大なトカゲ」を意味する「メガロサウルス」と命名しました。
-    </p>
-    <p class="article-paragraph">
-      当時は、二足歩行で素早く走り回る活発な獣脚類の姿など誰も想像できなかったため、バックランドはこれを「全長10メートルを超える、巨大なワニやトカゲのような四足歩行の爬虫類」として復元しました。
-    </p>
-  </div>
-  <div style="width: 300px; flex-shrink: 0; margin: 0 auto;">
-    <img src="/images/megalosaurus.webp" alt="メガロサウルスの復元イラスト" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
-  </div>
+<h3 style="color: var(--primary-neon); margin-top: 0; margin-bottom: 10px; font-size: 18px;">1. メガロサウルス（1824年命名）</h3>
+<p class="article-paragraph" style="margin-top: 0;">
+  歴史上、最も最初に正式な学名が与えられた恐竜が、ジュラ紀中期の肉食恐竜である<strong>メガロサウルス（Megalosaurus）</strong>です。
+</p>
+<p class="article-paragraph">
+  1824年、イギリスの聖職者であり地質学者でもあったウィリアム・バックランドが、オックスフォードシャー州の石切り場から発見された巨大な顎と歯、四肢の骨の化石をもとに学会で発表し、「巨大なトカゲ」を意味する「メガロサウルス」と命名しました。
+</p>
+<p class="article-paragraph">
+  当時は、二足歩行で素早く走り回る活発な獣脚類の姿など誰も想像できなかったため、バックランドはこれを「全長10メートルを超える、巨大なワニやトカゲのような四足歩行の爬虫類」として復元しました。
+</p>
+<div style="width: 100%; max-width: 600px; margin: 15px auto 25px auto;">
+  <img src="/images/topics/first_named_dinosaur1.webp" alt="メガロサウルスの復元イラスト (歴史的復元)" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 25px;">
