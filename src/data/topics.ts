@@ -905,30 +905,35 @@ const RAW_TOPICS = [
   さらに、ティラノサウルス（白亜紀最末期・北米）とスピノサウルス（白亜紀中期・北アフリカ）は、生息した時代も地域も完全に異なっており、実際に出会うことはありませんでした。
 </p>
 
-<p class="article-paragraph" style="margin-top: 15px; margin-bottom: 0;">
-  ※劇的な学説変遷を遂げたスピノサウルスの進化史と水中生態についての詳細はこちら：
-</p>
-<a href="/topics/spinosaurus-ecology" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-  <img src="/images/topics/spinosaurus_evolution1.webp" alt="スピノサウルスの生態解説" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
-  <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
-    スピノサウルスの生態を徹底解説！最新の研究が明かす水棲生活の真実
-  </span>
-</a>
-
 <p class="article-paragraph">
   また、トリケラトプスの特徴である「フリル（首飾りのような骨板）」も、かつては防具と考えられていましたが、最新の研究では「ディスプレイ（仲間へのアピールや威嚇）」や、血管を通して熱を逃がす「体温調節機能」としての役割が主であったと考えられています。
   しかし、ティラノサウルスの攻撃を防ぐ盾としても機能していたのは事実であり、これらの捕食者と被食者の間で「矛と盾」の進化のデッドヒートが繰り広げられていたのです。
 </p>
 
-<p class="article-paragraph" style="margin-top: 15px; margin-bottom: 0;">
-  ※T-Rexと極限の進化論争を繰り広げたトリケラトプスの詳細解説はこちら：
-</p>
-<a href="/topics/triceratops-guide" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-  <img src="/images/topics/triceratops_detail1.webp" alt="トリケラトプス解説記事" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
-  <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
-    【盾角竜の代表格】トリケラトプスの生態と3本の角の謎を徹底解説！
-  </span>
-</a>
+<div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 15px; margin-bottom: 25px;">
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0; margin-bottom: 8px;">
+      ※劇的な学説変遷を遂げたスピノサウルスの進化史と水中生態についての詳細はこちら：
+    </p>
+    <a href="/topics/spinosaurus-ecology" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 100%; box-sizing: border-box;">
+      <img src="/images/topics/spinosaurus_evolution1.webp" alt="スピノサウルスの生態解説" style="width: 100%; height: auto; max-height: 150px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+      <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
+        スピノサウルスの生態を徹底解説！最新の研究が明かす水棲生活の真実
+      </span>
+    </a>
+  </div>
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0; margin-bottom: 8px;">
+      ※T-Rexと極限の進化論争を繰り広げたトリケラトプスの詳細解説はこちら：
+    </p>
+    <a href="/topics/triceratops-guide" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 100%; box-sizing: border-box;">
+      <img src="/images/topics/triceratops_detail1.webp" alt="トリケラトプス解説記事" style="width: 100%; height: auto; max-height: 150px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+      <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
+        【盾角竜の代表格】トリケラトプスの生態と3本の角の謎を徹底解説！
+      </span>
+    </a>
+  </div>
+</div>
 
 <h2 class="article-section-title">【シチュエーション別】最強恐竜ランキング決定版</h2>
 <p class="article-paragraph">
