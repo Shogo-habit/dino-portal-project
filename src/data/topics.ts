@@ -957,11 +957,9 @@ const RAW_TOPICS = [
       ※劇的な学説変遷を遂げたスピノサウルスの進化史と水中生態についての詳細はこちら：
     </p>
     <a href="/topics/spinosaurus-ecology" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 100%; box-sizing: border-box;">
-      <div style="width: 100%; height: 150px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; overflow: hidden;">
-        <img src="/images/topics/spinosaurus_evolution.webp" alt="スピノサウルスの生態解説" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block;">
-      </div>
+      <img src="/images/topics/spinosaurus_evolution.webp" alt="スピノサウルスの生態解説" style="width: 100%; height: auto; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
       <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block; overflow: hidden; text-overflow: ellipsis;">
-        スピノサウルスの生態を徹底解説！最新の研究が明かす 水棲生活 の真実
+        スピノサウルスの生態を徹底解説！最新の研究が明かす水棲生活の真実
       </span>
     </a>
   </div>
@@ -970,9 +968,7 @@ const RAW_TOPICS = [
       ※T-Rexと極限の進化論争を繰り広げたトリケラトプスの詳細解説はこちら：
     </p>
     <a href="/topics/triceratops-guide" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 100%; box-sizing: border-box;">
-      <div style="width: 100%; height: 150px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; overflow: hidden;">
-        <img src="/images/topics/triceratops_detail.webp" alt="トリケラトプス解説記事" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block;">
-      </div>
+      <img src="/images/topics/triceratops_detail.webp" alt="トリケラトプス解説記事" style="width: 100%; height: auto; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
       <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block; overflow: hidden; text-overflow: ellipsis;">
         【盾角竜の代表格】トリケラトプスの生態と3本の角の謎を徹底解説！
       </span>
