@@ -926,8 +926,13 @@ const RAW_TOPICS = [
 
 <p class="article-paragraph">
   <strong style="color: var(--primary-neon);">【生ける戦車】アンキロサウルス</strong><br>
-  全身を硬い骨質の装甲プレート（鎧）で覆い、首元にはトゲ状の突起を配したアンキロサウルス（全長約8m、体重約4〜8t）は、究極 of 防御型恐竜です。
+  全身を硬い骨質の装甲プレート（鎧）で覆い、首元にはトゲ状の突起を配したアンキロサウルス（全長約8m、体重約4〜8t）は、究極の防御型恐竜です。
   最大の武器は、尾の先端にある数十キログラムに達する頑丈な骨の塊（ハンマー）です。このハンマーは強力な尾の筋肉によって横にスイングされ、直撃すれば大型肉食恐竜のスネの骨や肋骨を一撃で粉砕する破壊力を持っていました。肉食恐竜は、彼らの硬い背中を突破できず、尾のハンマーを警戒せねばならず、事実上の攻防一体の要塞でした。
+</p>
+
+<p class="article-paragraph">
+  <strong style="color: var(--primary-neon);">【究極の超質量】アルゼンチノサウルス</strong><br>
+  ディフェンダー部門で忘れてはならないのが、最大級の竜脚類であるアルゼンチノサウルスです。その最強の武器は、他を圧倒する「物理的な質量（サイズ）」そのものです。体重約70〜90トンに達する巨体は、肉食恐竜の牙や爪による攻撃をほとんど無力化する天然の防護壁でした。もし捕食者が執拗に攻撃を仕掛ければ、太柱のような脚による一踏みで逆に押し潰されてしまいます。存在そのものが「攻防一体の超重量要塞」でした。
 </p>
 
 <h2 class="article-section-title">最新学説が明かす恐竜たちの「リアルな戦闘力」と生態の謎</h2>
@@ -952,8 +957,10 @@ const RAW_TOPICS = [
       ※劇的な学説変遷を遂げたスピノサウルスの進化史と水中生態についての詳細はこちら：
     </p>
     <a href="/topics/spinosaurus-ecology" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 100%; box-sizing: border-box;">
-      <img src="/images/topics/spinosaurus_evolution1.webp" alt="スピノサウルスの生態解説" style="width: 100%; height: auto; max-height: 150px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
-      <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
+      <div style="width: 100%; height: 150px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; overflow: hidden;">
+        <img src="/images/topics/spinosaurus_evolution1.webp" alt="スピノサウルスの生態解説" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block;">
+      </div>
+      <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block; overflow: hidden; text-overflow: ellipsis;">
         スピノサウルスの生態を徹底解説！最新の研究が明かす水棲生活の真実
       </span>
     </a>
@@ -963,15 +970,17 @@ const RAW_TOPICS = [
       ※T-Rexと極限の進化論争を繰り広げたトリケラトプスの詳細解説はこちら：
     </p>
     <a href="/topics/triceratops-guide" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 100%; box-sizing: border-box;">
-      <img src="/images/topics/triceratops_detail1.webp" alt="トリケラトプス解説記事" style="width: 100%; height: auto; max-height: 150px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
-      <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
+      <div style="width: 100%; height: 150px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; overflow: hidden;">
+        <img src="/images/topics/triceratops_detail1.webp" alt="トリケラトプス解説記事" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block;">
+      </div>
+      <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block; overflow: hidden; text-overflow: ellipsis;">
         【盾角竜の代表格】トリケラトプスの生態と3本の角の謎を徹底解説！
       </span>
     </a>
   </div>
 </div>
 
-<h2 class="article-section-title">【シチュエーション別】最強恐竜ランキング決定版</h2>
+<h2 class="article-section-title">【シチュエーション別】最強恐竜 決定版</h2>
 <p class="article-paragraph">
   戦う環境や条件によって、恐竜たちの優位性は大きく変化します。ここでは4つの異なる状況を想定したシチュエーション別最強ランキングを発表します。
 </p>
@@ -1013,6 +1022,48 @@ const RAW_TOPICS = [
       </tr>
     </tbody>
   </table>
+</div>
+
+<p class="article-paragraph" style="margin-top: 20px; margin-bottom: 15px;">
+  ※シチュエーション別最強に輝いた4頭のさらに詳しい生態情報や図鑑データについては、以下の図鑑アーカイブでご確認いただけます：
+</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 15px; margin-bottom: 30px;">
+  <a href="/dictionary/tyrannosaurus" style="text-decoration: none; color: inherit;">
+    <div class="hud-panel" style="padding: 12px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border: 1px solid rgba(0, 242, 255, 0.15); background: rgba(255, 255, 255, 0.01); transition: all 0.3s;">
+      <div style="width: 100%; height: 90px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+        <img src="/images/tyrannosaurus.webp" alt="ティラノサウルス" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+      </div>
+      <div style="font-size: 13px; font-weight: bold; color: var(--text-color); margin-bottom: 4px;">ティラノサウルス</div>
+      <div style="font-size: 10px; color: var(--text-dim);">獣脚類 / 白亜紀後期</div>
+    </div>
+  </a>
+  <a href="/dictionary/argentinosaurus" style="text-decoration: none; color: inherit;">
+    <div class="hud-panel" style="padding: 12px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border: 1px solid rgba(0, 242, 255, 0.15); background: rgba(255, 255, 255, 0.01); transition: all 0.3s;">
+      <div style="width: 100%; height: 90px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+        <img src="/images/argentinosaurus.webp" alt="アルゼンチノサウルス" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+      </div>
+      <div style="font-size: 13px; font-weight: bold; color: var(--text-color); margin-bottom: 4px;">アルゼンチノサウルス</div>
+      <div style="font-size: 10px; color: var(--text-dim);">竜脚類 / 白亜紀後期</div>
+    </div>
+  </a>
+  <a href="/dictionary/spinosaurus" style="text-decoration: none; color: inherit;">
+    <div class="hud-panel" style="padding: 12px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border: 1px solid rgba(0, 242, 255, 0.15); background: rgba(255, 255, 255, 0.01); transition: all 0.3s;">
+      <div style="width: 100%; height: 90px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+        <img src="/images/spinosaurus.webp" alt="スピノサウルス" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+      </div>
+      <div style="font-size: 13px; font-weight: bold; color: var(--text-color); margin-bottom: 4px;">スピノサウルス</div>
+      <div style="font-size: 10px; color: var(--text-dim);">獣脚類 / 白亜紀中～後期</div>
+    </div>
+  </a>
+  <a href="/dictionary/ankylosaurus" style="text-decoration: none; color: inherit;">
+    <div class="hud-panel" style="padding: 12px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border: 1px solid rgba(0, 242, 255, 0.15); background: rgba(255, 255, 255, 0.01); transition: all 0.3s;">
+      <div style="width: 100%; height: 90px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+        <img src="/images/ankylosaurus.webp" alt="アンキロサウルス" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+      </div>
+      <div style="font-size: 13px; font-weight: bold; color: var(--text-color); margin-bottom: 4px;">アンキロサウルス</div>
+      <div style="font-size: 10px; color: var(--text-dim);">よろい竜類 / 白亜紀後期</div>
+    </div>
+  </a>
 </div>
 
 <h2 class="article-section-title">親子で遊んでバトルを再現！『アニア パッとおかたづけ！恐竜大乱闘ワールド』</h2>
@@ -1083,7 +1134,7 @@ const RAW_TOPICS = [
   現在、図鑑や映画でおなじみの「恐竜」たち。しかし、今から約200年前の19世紀初頭には、「恐竜」という言葉もその概念もこの世に存在していませんでした。地層から掘り出された巨大な骨や歯の化石を見た当時の人々は、それを「大洪水で溺れて死んだ巨人の遺骨」や「伝説のドラゴンの骨」だと本気で信じていたのです。
 </p>
 <p class="article-paragraph">
-  そんな未知の時代に、奇妙な化石を科学の目で分析し、歴史上初めて正式な学名（ラテン語による学術名）を与えられた「最初の3頭」がいました。彼らの発見こそが、現代 of 古生物学の扉を開き、のちに「恐竜」という言葉を生み出す決定的なきっかけとなったのです。
+  そんな未知の時代に、奇妙な化石を科学の目で分析し、歴史上初めて正式な学名（ラテン語による学術名）を与えられた「最初の3頭」がいました。彼らの発見こそが、現代の古生物学の扉を開き、のちに「恐竜」という言葉を生み出す決定的なきっかけとなったのです。
 </p>
 <p class="article-paragraph">
   本記事では、世界で最初に名前がついた3大恐竜たちの発見エピソードから、その後の「恐竜（Dinosauria）」誕生の歴史、そしてなぜこの3頭の中で<strong>「イグアノドン」だけが圧倒的な知名度を誇っているのか</strong>という謎について、歴史的背景を交えて徹底的に解説します。
