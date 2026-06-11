@@ -936,22 +936,18 @@ const RAW_TOPICS = [
   <img src="/images/topics/first_named_dinosaur1.webp" alt="メガロサウルスの復元イラスト (歴史的復元)" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
-<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 25px;">
-  <div style="flex: 1; min-width: 280px;">
-    <h3 style="color: var(--primary-neon); margin-top: 0; margin-bottom: 10px; font-size: 18px;">2. イグアノドン（1825年命名）</h3>
-    <p class="article-paragraph" style="margin-top: 0;">
-      世界で2番目に名前がついたのが、草食恐竜の<strong>イグアノドン（Iguanodon）</strong>です。
-    </p>
-    <p class="article-paragraph">
-      1822年、イギリスの医師ギデオン・マンテルの妻メアリー・アンが、道路の砂利石の中に輝く奇妙な化石を発見しました。これが、すべてのはじまりとなる「イグアノドンの歯」でした。
-    </p>
-    <p class="article-paragraph">
-      マンテルはこの歯が現生の爬虫類「イグアナ」の歯と酷似しているものの、サイズが数十倍も大きいことに驚愕し、1825年に「イグアナの歯」を意味する「イグアノドン」と命名しました。マンテルは当初、一緒に見つかった鋭いスパイク状の骨を「鼻の上の角」と勘違いし、巨大なサイのような復元図を描きましたが、後の完全な化石の発見により、これが「親指の爪（スパイク）」であることが判明しました。
-    </p>
-  </div>
-  <div style="width: 300px; flex-shrink: 0; margin: 0 auto;">
-    <img src="/images/iguanodon.webp" alt="イグアノドンの復元イラスト" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
-  </div>
+<h3 style="color: var(--primary-neon); margin-top: 0; margin-bottom: 10px; font-size: 18px;">2. イグアノドン（1825年命名）</h3>
+<p class="article-paragraph" style="margin-top: 0;">
+  世界で2番目に名前がついたのが、草食恐竜の<strong>イグアノドン（Iguanodon）</strong>です。
+</p>
+<p class="article-paragraph">
+  1822年、イギリスの医師ギデオン・マンテルの妻メアリー・アンが、道路の砂利石の中に輝く奇妙な化石を発見しました。これが、すべてのはじまりとなる「イグアノドンの歯」でした。
+</p>
+<p class="article-paragraph">
+  マンテルはこの歯が現生の爬虫類「イグアナ」の歯と酷似しているものの、サイズが数十倍も大きいことに驚愕し、1825年に「イグアナの歯」を意味する「イグアノドン」と命名しました。マンテルは当初、一緒に見つかった鋭いスパイク状の骨を「鼻の上の角」と勘違いし、巨大なサイのような復元図を描きましたが、後の完全な化石の発見により、これが「親指の爪（スパイク）」であることが判明しました。
+</p>
+<div style="width: 100%; max-width: 600px; margin: 15px auto 25px auto;">
+  <img src="/images/topics/first_named_dinosaur2.webp" alt="イグアノドンの復元イラスト (歴史的復元)" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 25px;">
