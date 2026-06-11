@@ -1085,12 +1085,11 @@ const RAW_TOPICS = [
 
 
 <h2 class="article-section-title">親子で楽しむ！最初の3大恐竜とおもちゃを通した学び</h2>
-<p class="article-paragraph">
-  恐竜の歴史のはじまりを告げた「最初の3大恐竜」。その中でも、最も歴史を大きく動かしたイグアノドンの「親指のスパイク」や「復元の歴史の変遷」は、実際に手で触って遊べるおもちゃ（フィギュア）を使うことで、より深く、楽しく立体的に学ぶことができます。
-</p>
-
 <div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
   <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0; margin-bottom: 20px;">
+      恐竜の歴史のはじまりを告げた「最初の3大恐竜」。その中でも、最も歴史を大きく動かしたイグアノドンの「親指のスパイク」や「復元の歴史の変遷」は、実際に手で触って遊べるおもちゃ（フィギュア）を使うことで、より深く、楽しく立体的に学ぶことができます。
+    </p>
     <p class="article-paragraph" style="margin-top: 0; margin-bottom: 20px;">
       特にお子様と一緒に学ぶのにおすすめなのが、世界中で愛されている高品質フィギュアブランド、フェバリット（Favorite）社の<strong>『イグアノドン ソフトモデル (FDW-018)』</strong>です。
     </p>
