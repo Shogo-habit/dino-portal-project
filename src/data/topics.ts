@@ -1000,6 +1000,9 @@ const RAW_TOPICS = [
 </p>
 
 <h2 class="article-section-title">「恐竜（Dinosauria）」という言葉の誕生（1842年）</h2>
+<div style="width: 100%; max-width: 900px; margin: 15px auto 25px auto;">
+  <img src="/images/topics/first_named_dinosaur3.webp" alt="「恐竜（Dinosauria）」という言葉の誕生" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+</div>
 <p class="article-paragraph">
   これら3頭の恐竜が命名された当初、それぞれは単に「変わった巨大爬虫類」として別個に分類されていました。
 </p>
