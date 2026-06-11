@@ -946,7 +946,7 @@ const RAW_TOPICS = [
 <p class="article-paragraph">
   マンテルはこの歯が現生の爬虫類「イグアナ」の歯と酷似しているものの、サイズが数十倍も大きいことに驚愕し、1825年に「イグアナの歯」を意味する「イグアノドン」と命名しました。マンテルは当初、一緒に見つかった鋭いスパイク状の骨を「鼻の上の角」と勘違いし、巨大なサイのような復元図を描きましたが、後の完全な化石の発見により、これが「親指の爪（スパイク）」であることが判明しました。
 </p>
-<div style="width: 100%; max-width: 600px; margin: 15px auto 25px auto;">
+<div style="width: 100%; max-width: 900px; margin: 15px auto 25px auto;">
   <img src="/images/topics/first_named_dinosaur2.webp" alt="イグアノドンの復元イラスト (歴史的復元)" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
