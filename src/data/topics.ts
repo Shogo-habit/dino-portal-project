@@ -879,17 +879,10 @@ const RAW_TOPICS = [
   </div>
 </div>
 
-<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 25px; margin-top: 20px;">
-  <div style="flex: 1; min-width: 280px;">
-    <p class="article-paragraph" style="margin-top: 0;">
-      一方で、肉食恐竜（獣脚類）のサイズランキングは、全長において1位<strong style="color: var(--primary-neon);">スピノサウルス（約15m）</strong>、2位<strong style="color: var(--primary-neon);">ギガノトサウルス（約13m）</strong>、3位<strong style="color: var(--primary-neon);">ティラノサウルス（約12.3m）</strong>の順となります。
-      しかし、体重の観点ではティラノサウルスが約8〜9トンと、他の巨大肉食恐竜より骨格がはるかに太く頑丈で肉厚であったため、実質的な「最大・最重量の肉食恐竜」はティラノサウルスであったというのが最新の定説です。
-    </p>
-  </div>
-  <div style="width: 320px; flex-shrink: 0; margin: 0 auto; position: relative;">
-    <img src="/images/topics/tyrannosaurus_size_comparison.webp" alt="ティラノサウルスと人間・他の巨大恐竜のサイズ比較" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
-  </div>
-</div>
+<p class="article-paragraph">
+  一方で、肉食恐竜（獣脚類）のサイズランキングは、全長において1位<strong style="color: var(--primary-neon);">スピノサウルス（約15m）</strong>、2位<strong style="color: var(--primary-neon);">ギガノトサウルス（約13m）</strong>、3位<strong style="color: var(--primary-neon);">ティラノサウルス（約12.3m）</strong>の順となります。
+  しかし、体重の観点ではティラノサウルスが約8〜9トンと、他の巨大肉食恐竜より骨格がはるかに太く頑丈で肉厚であったため、実質的な「最大・最重量の肉食恐竜」はティラノサウルスであったというのが最新の定説です。
+</p>
 
 <h2 class="article-section-title">【最強の恐竜】戦闘力徹底分析！頂点に君臨する候補たち</h2>
 <p class="article-paragraph">
