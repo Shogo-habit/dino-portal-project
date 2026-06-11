@@ -828,20 +828,56 @@ const RAW_TOPICS = [
 </p>
 
 <h3 style="color: var(--primary-neon); margin-top: 15px; margin-bottom: 10px; font-size: 18px;">1位：アルゼンチノサウルス（全長約35m / 推定体重約70〜90t）</h3>
-<p class="article-paragraph" style="margin-top: 0;">
-  地球史上最大の陸上動物としてほぼ確実視されているのが、白亜紀後期の南米に生息していた巨大な竜脚類（草食恐竜）<strong style="color: var(--primary-neon);">「アルゼンチノサウルス（Argentinosaurus）」</strong>です。全長は約35メートルに達し、これは一般的な25メートルプールをはるかに超え、ジャンボジェット機の全長のおよそ半分に匹敵します。
-  さらに驚くべきはその重さで、推定体重は70〜90トン（最大100トン近いという説も）とされており、これはアフリカゾウ約12〜15頭分に相当します。脊椎（背骨）の化石1個だけで高さ1.5メートルを超えており、その巨大な質量そのものが肉食恐竜に対する絶対的な防衛力となっていました。
-</p>
+<div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap; margin-bottom: 20px;">
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0; margin-bottom: 0;">
+      地球史上最大の陸上動物としてほぼ確実視されているのが、白亜紀後期の南米に生息していた巨大な竜脚類（草食恐竜）<strong style="color: var(--primary-neon);">「アルゼンチノサウルス（Argentinosaurus）」</strong>です。全長は約35メートルに達し、これは一般的な25メートルプールをはるかに超え、ジャンボジェット機の全長のおよそ半分に匹敵します。
+      さらに驚くべきはその重さで、推定体重は70〜90トン（最大100トン近いという説も）とされており、これはアフリカゾウ約12〜15頭分に相当します。脊椎（背骨）の化石1個だけで高さ1.5メートルを超えており、その巨大な質量そのものが肉食恐竜に対する絶対的な防衛力となっていました。
+    </p>
+  </div>
+  <div style="flex-shrink: 0; margin: 0 auto;">
+    <a href="/dictionary/argentinosaurus" style="display: inline-block; text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 150px; text-align: center; box-sizing: border-box;">
+      <img src="/images/argentinosaurus.webp" alt="アルゼンチノサウルス" style="width: 100%; height: auto; max-height: 80px; object-fit: contain; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 6px; display: block; background: #010408;">
+      <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 11px; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+        図鑑で詳しく見る
+      </span>
+    </a>
+  </div>
+</div>
 
 <h3 style="color: var(--primary-neon); margin-top: 15px; margin-bottom: 10px; font-size: 18px;">2位：パタゴティタン（全長約37m / 推定体重約60〜70t）</h3>
-<p class="article-paragraph" style="margin-top: 0;">
-  アルゼンチノサウルスに迫る巨体を誇るのが、同じくアルゼンチンで発見された<strong style="color: var(--primary-neon);">「パタゴティタン・マヨルム（Patagotitan）」</strong>です。発見された複数の標本から、全長はアルゼンチノサウルスを上回る約37メートルに達した可能性が指摘されていますが、骨格がややスリムであったため、体重は約60〜70トンとアルゼンチノサウルスよりわずかに軽量だったと推測されています。
-</p>
+<div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap; margin-bottom: 20px;">
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0; margin-bottom: 0;">
+      アルゼンチノサウルスに迫る巨体を誇るのが、同じくアルゼンチンで発見された<strong style="color: var(--primary-neon);">「パタゴティタン・マヨルム（Patagotitan）」</strong>です。発見された複数の標本から、全長はアルゼンチノサウルスを上回る約37メートルに達した可能性が指摘されていますが、骨格がややスリムであったため、体重は約60〜70トンとアルゼンチノサウルスよりわずかに軽量だったと推測されています。
+    </p>
+  </div>
+  <div style="flex-shrink: 0; margin: 0 auto;">
+    <a href="/dictionary/patagotitan" style="display: inline-block; text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 150px; text-align: center; box-sizing: border-box;">
+      <img src="/images/patagotitan.webp" alt="パタゴティタン" style="width: 100%; height: auto; max-height: 80px; object-fit: contain; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 6px; display: block; background: #010408;">
+      <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 11px; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+        図鑑で詳しく見る
+      </span>
+    </a>
+  </div>
+</div>
 
 <h3 style="color: var(--primary-neon); margin-top: 15px; margin-bottom: 10px; font-size: 18px;">3位：スーパーサウルス（全長約39m以上 / 推定体重約35〜40t）</h3>
-<p class="article-paragraph" style="margin-top: 0;">
-  「長さ」の面において歴代最長クラスとされるのが、ジュラ紀後期の北米に生息していた<strong style="color: var(--primary-neon);">「スーパーサウルス（Supersaurus）」</strong>です。鞭のような長い尾と細長い首を持ち、最新の研究では全長39メートルから42メートルに達したと推定されています。ただし、前述のチタノサウルス類（アルゼンチノサウルスなど）に比べて体幹が細いため、体重は35〜40トン前後と、重量ランキングでは下位になります。
-</p>
+<div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap; margin-bottom: 20px;">
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0; margin-bottom: 0;">
+      「長さ」の面において歴代最長クラスとされるのが、ジュラ紀後期の北米に生息していた<strong style="color: var(--primary-neon);">「スーパーサウルス（Supersaurus）」</strong>です。鞭のような長い尾と細長い首を持ち、最新の研究では全長39メートルから42メートルに達したと推定されています。ただし、前述のチタノサウルス類（アルゼンチノサウルスなど）に比べて体幹が細いため、体重は35〜40トン前後と、重量ランキングでは下位になります。
+    </p>
+  </div>
+  <div style="flex-shrink: 0; margin: 0 auto;">
+    <a href="/dictionary/supersaurus" style="display: inline-block; text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 150px; text-align: center; box-sizing: border-box;">
+      <img src="/images/supersaurus.webp" alt="スーパーサウルス" style="width: 100%; height: auto; max-height: 80px; object-fit: contain; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 6px; display: block; background: #010408;">
+      <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 11px; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+        図鑑で詳しく見る
+      </span>
+    </a>
+  </div>
+</div>
 
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 25px; margin-top: 20px;">
   <div style="flex: 1; min-width: 280px;">
