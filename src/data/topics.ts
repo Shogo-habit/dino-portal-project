@@ -1053,6 +1053,37 @@ const RAW_TOPICS = [
   </table>
 </div>
 
+<p class="article-paragraph" style="margin-top: 15px; margin-bottom: 15px;">
+  ※それぞれの恐竜の詳しい生態や化石データについては、以下の図鑑アーカイブをチェックしてみましょう：
+</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 12px; margin-bottom: 25px;">
+  <a href="/dictionary/megalosaurus" style="text-decoration: none; color: inherit;">
+    <div class="hud-panel" style="padding: 10px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border-color: rgba(0, 242, 255, 0.15);">
+      <div style="width: 100%; height: 80px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+        <img src="/images/megalosaurus.webp" alt="メガロサウルス" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+      </div>
+      <span style="color: var(--primary-neon); font-size: 12px; font-weight: bold; text-decoration: underline;">メガロサウルス</span>
+    </div>
+  </a>
+  <a href="/dictionary/iguanodon" style="text-decoration: none; color: inherit;">
+    <div class="hud-panel" style="padding: 10px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border-color: rgba(0, 242, 255, 0.15);">
+      <div style="width: 100%; height: 80px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+        <img src="/images/iguanodon.webp" alt="イグアノドン" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+      </div>
+      <span style="color: var(--primary-neon); font-size: 12px; font-weight: bold; text-decoration: underline;">イグアノドン</span>
+    </div>
+  </a>
+  <a href="/dictionary/hylaeosaurus" style="text-decoration: none; color: inherit;">
+    <div class="hud-panel" style="padding: 10px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border-color: rgba(0, 242, 255, 0.15);">
+      <div style="width: 100%; height: 80px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+        <img src="/images/hylaeosaurus.webp" alt="ヒラエオサウルス" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+      </div>
+      <span style="color: var(--primary-neon); font-size: 12px; font-weight: bold; text-decoration: underline;">ヒラエオサウルス</span>
+    </div>
+  </a>
+</div>
+
+
 <h2 class="article-section-title">親子で楽しむ！最初の3大恐竜とおもちゃを通した学び</h2>
 <p class="article-paragraph">
   恐竜の歴史のはじまりを告げた「最初の3大恐竜」。その中でも、最も歴史を大きく動かしたイグアノドンの「親指のスパイク」や「復元の歴史の変遷」は、実際に手で触って遊べるおもちゃ（フィギュア）を使うことで、より深く、楽しく立体的に学ぶことができます。
@@ -1072,17 +1103,18 @@ const RAW_TOPICS = [
     <div class="toy-affiliate-card" style="border: 1px solid var(--panel-border); border-radius: 4px; padding: 15px; text-align: center; background: rgba(255, 255, 255, 0.02); position: relative; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1);">
       <div class="hud-corner top-left" style="position: absolute; top: -1px; left: -1px; width: 6px; height: 6px; border-top: 1px solid var(--primary-neon); border-left: 1px solid var(--primary-neon);"></div>
       <div class="hud-corner bottom-right" style="position: absolute; bottom: -1px; right: -1px; width: 6px; height: 6px; border-bottom: 1px solid var(--primary-neon); border-right: 1px solid var(--primary-neon);"></div>
-      <a class="toy-link" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Ff-favorite%2Ffdw-018%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Ff-favorite%2Fi%2F10000078%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" style="text-decoration: none; color: inherit; display: block; margin-bottom: 15px;">
-        <img src="//thumbnail.image.rakuten.co.jp/@0_mall/f-favorite/cabinet/fdw/fdw-018_1.jpg?_ex=128x128" alt="フェバリット イグアノドン ソフトモデル" style="border: none; margin-bottom: 10px;" /><br>
-        <span style="font-size: 13px; font-weight: bold; color: var(--text-color);">イグアノドン ソフトモデル (FDW-018)</span>
+      <a class="toy-link" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsoprano%2Ffdw-018%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fsoprano%2Fi%2F10021767%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" style="text-decoration: none; color: inherit; display: block; margin-bottom: 15px;">
+        <img src="//thumbnail.image.rakuten.co.jp/@0_mall/soprano/cabinet/00473136/fdw-018-1.jpg?_ex=128x128" alt="フェバリット 恐竜フィギュアダイナソー ソフトモデルイグアノドン" style="border: none; margin-bottom: 10px;" /><br>
+        <span style="font-size: 13px; font-weight: bold; color: var(--text-color);">フェバリット 恐竜フィギュアダイナソー ソフトモデルイグアノドン</span>
       </a>
-      <a class="rakuten-btn" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Ff-favorite%2Ffdw-018%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Ff-favorite%2Fi%2F10000078%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px; background: rgba(0, 242, 255, 0.15); border: 1px solid var(--primary-neon); border-radius: 4px; color: var(--primary-neon); font-weight: bold; text-decoration: none; transition: background 0.2s; margin-bottom: 10px;">
+      <a class="rakuten-btn" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsoprano%2Ffdw-018%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fsoprano%2Fi%2F10021767%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px; background: rgba(0, 242, 255, 0.15); border: 1px solid var(--primary-neon); border-radius: 4px; color: var(--primary-neon); font-weight: bold; text-decoration: none; transition: background 0.2s; margin-bottom: 10px;">
         <span>楽天市場で見る</span>
         <span class="btn-arrow">&raquo;</span>
       </a>
       <img src="//i.moshimo.com/af/i/impression?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px; display: block; margin: 0 auto;">
     </div>
   </div>
+
 </div>
 
 <h2 class="article-section-title">まとめ：語り継がれる最初の3頭と古生物学のダイナミズム</h2>
