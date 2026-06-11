@@ -963,7 +963,7 @@ const RAW_TOPICS = [
       背中や肩の周りに並ぶ鋭いトゲ（スパイク）や、皮膚の中に埋もれた骨質の装甲プレートが特徴であり、草食恐竜が肉食恐竜から身を守るために頑丈な防御用の武装を発達させていたことを示す最初の強力な証拠となりました。
     </p>
   </div>
-  <div style="width: 300px; flex-shrink: 0; margin: 0 auto;">
+  <div style="width: 240px; flex-shrink: 0; margin: 0 auto;">
     <img src="/images/hylaeosaurus.webp" alt="ヒラエオサウルスの復元イラスト" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
   </div>
 </div>
