@@ -1000,9 +1000,6 @@ const RAW_TOPICS = [
 </p>
 
 <h2 class="article-section-title">「恐竜（Dinosauria）」という言葉の誕生（1842年）</h2>
-<div style="width: 100%; max-width: 900px; margin: 15px auto 25px auto;">
-  <img src="/images/topics/first_named_dinosaur3.webp" alt="「恐竜（Dinosauria）」という言葉の誕生" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
-</div>
 <p class="article-paragraph">
   これら3頭の恐竜が命名された当初、それぞれは単に「変わった巨大爬虫類」として別個に分類されていました。
 </p>
@@ -1013,6 +1010,9 @@ const RAW_TOPICS = [
 <p class="article-paragraph">
   1842年、オーウェンはこれらは全く新しい独自の爬虫類グループであると提唱し、ギリシャ語の「deinos（恐ろしい、凄まじく巨大な）」と「sauros（トカゲ、爬虫類）」を組み合わせて、<strong>「Dinosauria（恐竜類）」</strong>という言葉を作りました。これが、現在私たちが使っている「恐竜」という言葉の歴史の始まりなのです。
 </p>
+<div style="width: 100%; max-width: 900px; margin: 15px auto 25px auto;">
+  <img src="/images/topics/first_named_dinosaur3.webp" alt="「恐竜（Dinosauria）」という言葉の誕生" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+</div>
 
 <h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">歴史を創った最初の3大恐竜スペック比較</h3>
 <div class="table-container" style="overflow-x: auto; margin-bottom: 25px;">
