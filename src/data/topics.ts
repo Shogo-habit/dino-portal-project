@@ -932,7 +932,7 @@ const RAW_TOPICS = [
 <p class="article-paragraph">
   当時は、二足歩行で素早く走り回る活発な獣脚類の姿など誰も想像できなかったため、バックランドはこれを「全長10メートルを超える、巨大なワニやトカゲのような四足歩行の爬虫類」として復元しました。
 </p>
-<div style="width: 100%; max-width: 600px; margin: 15px auto 25px auto;">
+<div style="width: 100%; max-width: 900px; margin: 15px auto 25px auto;">
   <img src="/images/topics/first_named_dinosaur1.webp" alt="メガロサウルスの復元イラスト (歴史的復元)" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
