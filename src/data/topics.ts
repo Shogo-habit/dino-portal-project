@@ -1056,29 +1056,29 @@ const RAW_TOPICS = [
 <p class="article-paragraph" style="margin-top: 15px; margin-bottom: 15px;">
   ※それぞれの恐竜の詳しい生態や化石データについては、以下の図鑑アーカイブをチェックしてみましょう：
 </p>
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 12px; margin-bottom: 25px;">
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(195px, 1fr)); gap: 18px; margin-bottom: 25px;">
   <a href="/dictionary/megalosaurus" style="text-decoration: none; color: inherit;">
-    <div class="hud-panel" style="padding: 10px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border-color: rgba(0, 242, 255, 0.15);">
-      <div style="width: 100%; height: 80px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+    <div class="hud-panel" style="padding: 15px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border-color: rgba(0, 242, 255, 0.15);">
+      <div style="width: 100%; height: 120px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 12px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
         <img src="/images/megalosaurus.webp" alt="メガロサウルス" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
       </div>
-      <span style="color: var(--primary-neon); font-size: 12px; font-weight: bold; text-decoration: underline;">メガロサウルス</span>
+      <span style="color: var(--primary-neon); font-size: 16px; font-weight: bold; text-decoration: underline;">メガロサウルス</span>
     </div>
   </a>
   <a href="/dictionary/iguanodon" style="text-decoration: none; color: inherit;">
-    <div class="hud-panel" style="padding: 10px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border-color: rgba(0, 242, 255, 0.15);">
-      <div style="width: 100%; height: 80px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+    <div class="hud-panel" style="padding: 15px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border-color: rgba(0, 242, 255, 0.15);">
+      <div style="width: 100%; height: 120px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 12px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
         <img src="/images/iguanodon.webp" alt="イグアノドン" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
       </div>
-      <span style="color: var(--primary-neon); font-size: 12px; font-weight: bold; text-decoration: underline;">イグアノドン</span>
+      <span style="color: var(--primary-neon); font-size: 16px; font-weight: bold; text-decoration: underline;">イグアノドン</span>
     </div>
   </a>
   <a href="/dictionary/hylaeosaurus" style="text-decoration: none; color: inherit;">
-    <div class="hud-panel" style="padding: 10px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border-color: rgba(0, 242, 255, 0.15);">
-      <div style="width: 100%; height: 80px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+    <div class="hud-panel" style="padding: 15px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border-color: rgba(0, 242, 255, 0.15);">
+      <div style="width: 100%; height: 120px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 12px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
         <img src="/images/hylaeosaurus.webp" alt="ヒラエオサウルス" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
       </div>
-      <span style="color: var(--primary-neon); font-size: 12px; font-weight: bold; text-decoration: underline;">ヒラエオサウルス</span>
+      <span style="color: var(--primary-neon); font-size: 16px; font-weight: bold; text-decoration: underline;">ヒラエオサウルス</span>
     </div>
   </a>
 </div>
