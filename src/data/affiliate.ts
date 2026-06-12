@@ -178,7 +178,7 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
             affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/B085MS8V7M"),
             priceText: "PRICE: ¥1,100 (税込)",
             details: ["タカラトミー公式", "ラージサイズアニア", "首とスパイク付き尾が可動"],
-            rakutenAffiliateUrl: "https://af.moshimo.com/af/c/click?a_id=5603988&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fedion%2F4904810496281%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fedion%2Fi%2F10353388%2F",
+            rakutenAffiliateUrl: buildRakutenAffiliateUrl("アニア AL-03 ステゴサウルス"),
             impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
         }
     ],

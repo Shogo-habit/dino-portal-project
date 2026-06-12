@@ -159,7 +159,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus","miragaia"]
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 15px; margin-bottom: 30px;">
   <a href="/dictionary/stegosaurus/" style="text-decoration: none; color: inherit;">
     <div class="hud-panel" style="padding: 12px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border: 1px solid rgba(0, 242, 255, 0.15); background: rgba(255, 255, 255, 0.01); transition: all 0.3s;">
-      <div style="width: 100%; height: 90px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+      <div style="width: 100%; aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
         <img src="/images/stegosaurus.webp" alt="ステゴサウルス" style="width: 100%; height: 100%; object-fit: contain; display: block;" />
       </div>
       <div style="font-size: 13px; font-weight: bold; color: var(--text-color); margin-bottom: 4px;">ステゴサウルス</div>
@@ -168,7 +168,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus","miragaia"]
   </a>
   <a href="/dictionary/kentrosaurus/" style="text-decoration: none; color: inherit;">
     <div class="hud-panel" style="padding: 12px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border: 1px solid rgba(0, 242, 255, 0.15); background: rgba(255, 255, 255, 0.01); transition: all 0.3s;">
-      <div style="width: 100%; height: 90px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+      <div style="width: 100%; aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
         <img src="/images/kentrosaurus.webp" alt="ケントロサウルス" style="width: 100%; height: 100%; object-fit: contain; display: block;" />
       </div>
       <div style="font-size: 13px; font-weight: bold; color: var(--text-color); margin-bottom: 4px;">ケントロサウルス</div>
@@ -177,7 +177,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus","miragaia"]
   </a>
   <a href="/dictionary/wuerhosaurus/" style="text-decoration: none; color: inherit;">
     <div class="hud-panel" style="padding: 12px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border: 1px solid rgba(0, 242, 255, 0.15); background: rgba(255, 255, 255, 0.01); transition: all 0.3s;">
-      <div style="width: 100%; height: 90px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+      <div style="width: 100%; aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
         <img src="/images/wuerhosaurus.webp" alt="ウエルホサウルス" style="width: 100%; height: 100%; object-fit: contain; display: block;" />
       </div>
       <div style="font-size: 13px; font-weight: bold; color: var(--text-color); margin-bottom: 4px;">ウエルホサウルス</div>
@@ -186,7 +186,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus","miragaia"]
   </a>
   <a href="/dictionary/miragaia/" style="text-decoration: none; color: inherit;">
     <div class="hud-panel" style="padding: 12px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border: 1px solid rgba(0, 242, 255, 0.15); background: rgba(255, 255, 255, 0.01); transition: all 0.3s;">
-      <div style="width: 100%; height: 90px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+      <div style="width: 100%; aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
         <img src="/images/miragaia.webp" alt="ミラガイア" style="width: 100%; height: 100%; object-fit: contain; display: block;" />
       </div>
       <div style="font-size: 13px; font-weight: bold; color: var(--text-color); margin-bottom: 4px;">ミラガイア</div>
@@ -219,11 +219,11 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus","miragaia"]
     <div class="toy-affiliate-card" style="border: 1px solid var(--panel-border); border-radius: 4px; padding: 15px; text-align: center; background: rgba(255, 255, 255, 0.02); position: relative; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1);">
       <div class="hud-corner top-left" style="position: absolute; top: -1px; left: -1px; width: 6px; height: 6px; border-top: 1px solid var(--primary-neon); border-left: 1px solid var(--primary-neon);"></div>
       <div class="hud-corner bottom-right" style="position: absolute; bottom: -1px; right: -1px; width: 6px; height: 6px; border-bottom: 1px solid var(--primary-neon); border-right: 1px solid var(--primary-neon);"></div>
-      <a class="toy-link" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fedion%2F4904810496281%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fedion%2Fi%2F10353388%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" style="text-decoration: none; color: inherit; display: block; margin-bottom: 15px;">
+      <a class="toy-link" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25A2%25E3%2583%258B%25E3%2582%25A2%2520AL-03%2520%25E3%2582%25B9%25E3%2583%2586%25E3%2582%25B4%25E3%2582%25A6%25E3%2583%25AB%25E3%2582%25B9%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" style="text-decoration: none; color: inherit; display: block; margin-bottom: 15px;">
         <img src="//thumbnail.image.rakuten.co.jp/@0_mall/edion/cabinet/goods/ll/img_131/4904810496281_ll.jpg?_ex=128x128" alt="タカラトミー アニア AL-03 ステゴサウルス" style="border: none; margin-bottom: 10px;" /><br>
         <span style="font-size: 13px; font-weight: bold; color: var(--text-color);">アニア AL-03 ステゴサウルス</span>
       </a>
-      <a class="rakuten-btn" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fedion%2F4904810496281%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fedion%2Fi%2F10353388%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px; background: rgba(0, 242, 255, 0.15); border: 1px solid var(--primary-neon); border-radius: 4px; color: var(--primary-neon); font-weight: bold; text-decoration: none; transition: background 0.2s; margin-bottom: 10px;">
+      <a class="rakuten-btn" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25A2%25E3%2583%258B%25E3%2582%25A2%2520AL-03%2520%25E3%2582%25B9%25E3%2583%2586%25E3%2582%25B4%25E3%2582%25A6%25E3%2583%25AB%25E3%2582%25B9%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px; background: rgba(0, 242, 255, 0.15); border: 1px solid var(--primary-neon); border-radius: 4px; color: var(--primary-neon); font-weight: bold; text-decoration: none; transition: background 0.2s; margin-bottom: 10px;">
         <span>楽天市場で見る</span>
         <span class="btn-arrow">&raquo;</span>
       </a>
