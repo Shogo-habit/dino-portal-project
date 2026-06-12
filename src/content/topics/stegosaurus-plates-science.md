@@ -28,7 +28,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus"]
       ステゴサウルスの最初の化石は、1877年にアメリカの古生物学者オスニエル・チャールズ・マーシュによって発見されました。当時は骨の一部しか見つかっておらず、マーシュは「この巨大な板は、カメの甲羅のように背中を平らに覆っていたのだろう」と推測しました。そのため、学名としてギリシャ語の「Stegos（屋根・覆い）」と「Sauros（トカゲ）」を組み合わせ、<strong style="color: var(--primary-neon);">「瓦屋根のトカゲ（ステゴサウルス）」</strong>と名付けたのです。しかしその後の発見により、板は横に寝ているのではなく、背中の皮膚から空に向かってほぼ垂直に直立していたことが判明し、初期の復元は大きな誤りであったことが証明されました。
     </p>
   </div>
-  <div style="width: 375px; flex-shrink: 0; margin: 0 auto;">
+  <div style="width: 488px; flex-shrink: 0; margin: 0 auto;">
     <img src="/images/topics/stegosaurus_plates1.webp" alt="ステゴサウルスの背中の板と立ち並ぶ骨板" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
   </div>
 </div>
