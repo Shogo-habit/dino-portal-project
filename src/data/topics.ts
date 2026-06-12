@@ -2019,7 +2019,7 @@ const RAW_TOPICS = [
   しかし、恐竜は直立歩行によって左右のうねりをなくしたため、<strong style="color: var(--primary-neon);">「走りながらでも正常に呼吸する」</strong>ことができるようになりました。これにより、抜群の持久力と敏捷性を手に入れ、獲物を追いかけたり天敵から逃げたりする上で圧倒的なアドバンテージを得たのです。
 </p>
 
-<div style="width: 375px; max-width: 100%; margin: 20px auto;">
+<div style="width: 750px; max-width: 100%; margin: 20px auto;">
   <img src="/images/topics/not_dinosaurs0.webp" alt="直立歩行と這い歩きにおける呼吸効率の比較イメージ" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
