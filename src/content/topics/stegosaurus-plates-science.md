@@ -34,12 +34,19 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus"]
 </div>
 
 <h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">「脳がクルミサイズ」という伝説と知能の真実</h3>
-<p class="article-paragraph">
-  ステゴサウルスを語る際によく引用されるのが、「体は巨大なのに脳がクルミほどの大きさ（約30グラム）しかなかった」という、知能の低さをからかうようなエピソードです。実際、その脳の重量比率は体重のわずか数万分の一にすぎず、恐竜の中でも最小クラスです。
-</p>
-<p class="article-paragraph">
-  かつては「知能が低く、動きも鈍いため、すぐに絶滅した」と考えられていましたが、これは大きな誤解です。彼らはジュラ紀後期の過酷な環境下で数百万年もの間、繁栄を続けました。巨大な脳を持たなくても、匂いを嗅ぎ分ける嗅覚や、危険を察知する感覚器官は非常に鋭く発達していました。知能の高さ＝生存能力の高さではなく、無駄なエネルギーを脳に消費せず、草食に特化した極めて合理的な省エネ型の生存戦略をとっていたのです。
-</p>
+<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0;">
+      ステゴサウルスを語る際によく引用されるのが、「体は巨大なのに脳がクルミほどの大きさ（約30グラム）しかなかった」という、知能の低さをからかうようなエピソードです。実際、その脳の重量比率は体重のわずか数万分の一にすぎず、恐竜の中でも最小クラスです。
+    </p>
+    <p class="article-paragraph" style="margin-bottom: 0;">
+      かつては「知能が低く、動きも鈍いため、すぐに絶滅した」と考えられていましたが、これは大きな誤解です。彼らはジュラ紀後期の過酷な環境下で数百万年もの間、繁栄を続けました。巨大な脳を持たなくても、匂いを嗅ぎ分ける嗅覚や、危険を察知する感覚器官は非常に鋭く発達していました。知能の高さ＝生存能力の高さではなく、無駄なエネルギーを脳に消費せず、草食に特化した極めて合理的な省エネ型の生存戦略をとっていたのです。
+    </p>
+  </div>
+  <div style="width: 375px; flex-shrink: 0; margin: 0 auto;">
+    <img src="/images/topics/stegosaurus_plates2.webp" alt="ステゴサウルスの脳と知能の真実" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+  </div>
+</div>
 
 <h2 class="article-section-title">背中の板「骨板（プレート）」の謎を徹底解剖：最新科学が明かす驚愕の真実</h2>
 <h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">なぜ「防具（盾）」ではなかったのか？3つの科学的証拠</h3>
@@ -167,18 +174,18 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus"]
     </p>
   </div>
   <div class="toy-affiliate-wrap" style="width: 300px; flex-shrink: 0; margin: 0 auto;">
-    <div class="toy-affiliate-card">
+    <div class="toy-affiliate-card" style="border: 1px solid var(--panel-border); border-radius: 4px; padding: 15px; text-align: center; background: rgba(255, 255, 255, 0.02); position: relative; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1);">
       <div class="hud-corner top-left" style="position: absolute; top: -1px; left: -1px; width: 6px; height: 6px; border-top: 1px solid var(--primary-neon); border-left: 1px solid var(--primary-neon);"></div>
       <div class="hud-corner bottom-right" style="position: absolute; bottom: -1px; right: -1px; width: 6px; height: 6px; border-bottom: 1px solid var(--primary-neon); border-right: 1px solid var(--primary-neon);"></div>
-      <a class="toy-link" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25A2%25E3%2583%258B%25E3%2582%25A2%2520AL-03%2520%25E3%2582%25B9%25E3%2583%2586%25E3%2582%25B4%25E3%2582%25B5%25E3%2582%25A6%25E3%2583%25AB%25E3%2582%25B9%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
-        <img src="//thumbnail.image.rakuten.co.jp/@0_mall/toys-selesele/cabinet/09618059/4904810496281.jpg?_ex=128x128" alt="" style="border: none;" /><br>
-        アニア AL-03 ステゴサウルス タカラトミー 3歳以上 フィギュア 恐竜 草食 リアル 動く しっぽ 可動 男の子 女の子 おもちゃ 玩具 知育 クリスマス 誕生日 プレゼント
+      <a class="toy-link" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fedion%2F4904810496281%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fedion%2Fi%2F10353388%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" style="text-decoration: none; color: inherit; display: block; margin-bottom: 15px;">
+        <img src="//thumbnail.image.rakuten.co.jp/@0_mall/edion/cabinet/goods/ll/img_131/4904810496281_ll.jpg?_ex=128x128" alt="タカラトミー アニア AL-03 ステゴサウルス" style="border: none; margin-bottom: 10px;" /><br>
+        <span style="font-size: 13px; font-weight: bold; color: var(--text-color);">アニア AL-03 ステゴサウルス</span>
       </a>
-      <a class="rakuten-btn" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25A2%25E3%2583%258B%25E3%2582%25A2%2520AL-03%2520%25E3%2582%25B9%25E3%2583%2586%25E3%2582%25B4%25E3%2582%25B5%25E3%2582%25A6%25E3%2583%25AB%25E3%2582%25B9%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+      <a class="rakuten-btn" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fedion%2F4904810496281%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fedion%2Fi%2F10353388%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px; background: rgba(0, 242, 255, 0.15); border: 1px solid var(--primary-neon); border-radius: 4px; color: var(--primary-neon); font-weight: bold; text-decoration: none; transition: background 0.2s; margin-bottom: 10px;">
         <span>楽天市場で見る</span>
         <span class="btn-arrow">&raquo;</span>
       </a>
-      <img src="https://i.moshimo.com/af/i/impression?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;">
+      <img src="//i.moshimo.com/af/i/impression?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px; display: block; margin: 0 auto;">
     </div>
   </div>
 </div>
