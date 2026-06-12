@@ -2041,7 +2041,7 @@ const RAW_TOPICS = [
       なお、鳥類は「恐竜の生き残り（獣脚類）」ですが、鳥の翼は前肢の指が退化・融合して羽毛で飛ぶため、翼竜の翼とは全く異なる骨格の進化（収斂進化）の結果です。
     </p>
   </div>
-  <div style="width: 180px; flex-shrink: 0; margin: 0 auto;">
+  <div style="width: 270px; flex-shrink: 0; margin: 0 auto;">
     <img src="/images/topics/not_dinosaurs1.webp" alt="プテラノドンの翼骨格構造" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
   </div>
 </div>
@@ -2055,7 +2055,7 @@ const RAW_TOPICS = [
       水中で生きるために、彼らの四肢は骨が平たく並び、オールのような<strong style="color: var(--primary-neon);">「ヒレ（フリッパー）」</strong>へと完全に変化しました。骨格的には、肩の骨（肩甲骨）や胸の骨（烏口骨）が体の腹側で板のように巨大化（腹側帯）し、強力な筋肉でヒレを羽ばたかせるための土台となっていました。当然、陸上を歩くための直立関節などは持たず、陸に上がることは困難でした。
     </p>
   </div>
-  <div style="width: 180px; flex-shrink: 0; margin: 0 auto;">
+  <div style="width: 270px; flex-shrink: 0; margin: 0 auto;">
     <img src="/images/topics/not_dinosaurs2.webp" alt="フタバサウルスのヒレ骨格構造" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
   </div>
 </div>
@@ -2069,7 +2069,7 @@ const RAW_TOPICS = [
       骨格を見ると、トカゲ特有の「関節の緩い顎（二重関節の顎骨）」を持っており、ヘビのように下顎が左右に開き、大きな獲物を丸呑みすることができました。四肢は泳ぐためのヒレになっていますが、骨を透かすと、指の骨の数が異常に増える「指骨多骨症（しこつたこつしょう）」というトカゲ特有の海適応が見られます。つまり、モササウルスは「海に適応して超巨大化したトカゲ」そのものなのです。
     </p>
   </div>
-  <div style="width: 180px; flex-shrink: 0; margin: 0 auto;">
+  <div style="width: 270px; flex-shrink: 0; margin: 0 auto;">
     <img src="/images/topics/not_dinosaurs3.webp" alt="モササウルスの顎とヒレ骨格構造" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
   </div>
 </div>
