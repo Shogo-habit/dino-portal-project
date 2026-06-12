@@ -8,6 +8,7 @@ interface Props {
   activeTab?: string;
   ogImage?: string;
   ogType?: string;
+  noindex?: boolean;
 }
 
 const { 
@@ -15,7 +16,8 @@ const {
   description = 'Dino-Portal: デジタル恐竜図鑑。150種以上の恐竜データを最新の学説に基づき網羅。AI検索に最適化された次世代の生物学的アーカイブ。', 
   activeTab = 'home',
   ogImage = '/images/cyber_world_map.webp',
-  ogType = 'website'
+  ogType = 'website',
+  noindex = false
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, 'https://dino-portal.com/');
@@ -34,6 +36,7 @@ const fullOgImageUrl = new URL(ogImage, 'https://dino-portal.com/');
 
     <title>{title}</title>
     <meta name="description" content={description}>
+    {noindex && <meta name="robots" content="noindex" />}
     <link rel="canonical" href={canonicalURL.href}>
     
     <!-- Preconnect Google Fonts for performance -->
@@ -103,25 +106,25 @@ const fullOgImageUrl = new URL(ogImage, 'https://dino-portal.com/');
             <a href="/" class={`nav-link ${activeTab === 'home' ? 'active' : ''}`} aria-label="ホーム画面へ">
                 <span class="nav-icon" aria-hidden="true">▤</span> ホーム
             </a>
-            <a href="/dictionary" class={`nav-link ${activeTab === 'dictionary' ? 'active' : ''}`} aria-label="恐竜図鑑を表示">
+            <a href="/dictionary/" class={`nav-link ${activeTab === 'dictionary' ? 'active' : ''}`} aria-label="恐竜図鑑を表示">
                 <span class="nav-icon" aria-hidden="true">☷</span> 恐竜図鑑
             </a>
-            <a href="/world-map" class={`nav-link ${activeTab === 'world-map' ? 'active' : ''}`} aria-label="世界地図から探索">
+            <a href="/world-map/" class={`nav-link ${activeTab === 'world-map' ? 'active' : ''}`} aria-label="世界地図から探索">
                 <span class="nav-icon" aria-hidden="true">◰</span> 世界地図
             </a>
-            <a href="/topics" class={`nav-link ${activeTab === 'topics' ? 'active' : ''}`} aria-label="恐竜に関するトピックスを読む">
+            <a href="/topics/" class={`nav-link ${activeTab === 'topics' ? 'active' : ''}`} aria-label="恐竜に関するトピックスを読む">
                 <span class="nav-icon" aria-hidden="true">▧</span> トピックス
             </a>
-            <a href="/my-collection" class={`nav-link ${activeTab === 'my-collection' ? 'active' : ''}`} aria-label="自分の観測データを確認">
+            <a href="/my-collection/" class={`nav-link ${activeTab === 'my-collection' ? 'active' : ''}`} aria-label="自分の観測データを確認">
                 <span class="nav-icon" aria-hidden="true">📊</span> マイ図鑑
             </a>
-            <a href="/quiz" class={`nav-link ${activeTab === 'quiz' ? 'active' : ''}`} aria-label="恐竜クイズに挑戦">
+            <a href="/quiz/" class={`nav-link ${activeTab === 'quiz' ? 'active' : ''}`} aria-label="恐竜クイズに挑戦">
                 <span class="nav-icon" aria-hidden="true">☵</span> クイズ
             </a>
-            <a href="/about" class={`nav-link ${activeTab === 'about' ? 'active' : ''}`} aria-label="このサイトと運営者について">
+            <a href="/about/" class={`nav-link ${activeTab === 'about' ? 'active' : ''}`} aria-label="このサイトと運営者について">
                 <span class="nav-icon" aria-hidden="true">👤</span> プロフィール
             </a>
-            <a href="/contact" class={`nav-link ${activeTab === 'contact' ? 'active' : ''}`} aria-label="お問い合わせ">
+            <a href="/contact/" class={`nav-link ${activeTab === 'contact' ? 'active' : ''}`} aria-label="お問い合わせ">
                 <span class="nav-icon" aria-hidden="true">✉</span> お問い合わせ
             </a>
         </nav>
@@ -137,10 +140,10 @@ const fullOgImageUrl = new URL(ogImage, 'https://dino-portal.com/');
         <div class="ai-disclaimer" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
             <span>本図鑑の視覚データは、最新の古生物学的知見に基づきAIによって生成されたシミュレーション画像です。</span>
             <div class="footer-links" style="display: flex; gap: 15px;">
-                <a href="/privacy" class="footer-privacy-link" style="color: var(--primary-neon); text-decoration: none; font-size: 11px; font-family: var(--font-mono); transition: opacity 0.3s ease;">
+                <a href="/privacy/" class="footer-privacy-link" style="color: var(--primary-neon); text-decoration: none; font-size: 11px; font-family: var(--font-mono); transition: opacity 0.3s ease;">
                     [ PRIVACY POLICY ]
                 </a>
-                <a href="/contact" class="footer-privacy-link" style="color: var(--primary-neon); text-decoration: none; font-size: 11px; font-family: var(--font-mono); transition: opacity 0.3s ease;">
+                <a href="/contact/" class="footer-privacy-link" style="color: var(--primary-neon); text-decoration: none; font-size: 11px; font-family: var(--font-mono); transition: opacity 0.3s ease;">
                     [ CONTACT ]
                 </a>
             </div>

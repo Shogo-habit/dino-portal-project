@@ -13,6 +13,7 @@ export async function getStaticPaths() {
 }
 
 const { topic } = Astro.props;
+const processedContent = topic.content.replace(/href="(\/(topics|dictionary)\/[a-zA-Z0-9-_]+)(?!\/)"/g, 'href="$1/"');
 
 // Fetch related specimens data
 const relatedDinos = (topic.relatedSpecimens || []).map(specimenId => {
@@ -62,7 +63,7 @@ const articleSchema = {
         <img src={`/${topic.image}`} class="topic-detail-img" alt={topic.title}>
         
         <div class="topic-content">
-            <Fragment set:html={topic.content} />
+            <Fragment set:html={processedContent} />
         </div>
 
         {affiliateId && (
@@ -89,7 +90,7 @@ const articleSchema = {
         )}
         
         <div style="margin-top: 40px; border-top: 1px solid var(--panel-border); padding-top: 20px;">
-            <a href="/topics" class="nav-link" aria-label="トピックス一覧に戻る" style="text-decoration: none;">[ トピックス一覧に戻る ]</a>
+            <a href="/topics/" class="nav-link" aria-label="トピックス一覧に戻る" style="text-decoration: none;">[ トピックス一覧に戻る ]</a>
         </div>
     </article>
 </Layout>

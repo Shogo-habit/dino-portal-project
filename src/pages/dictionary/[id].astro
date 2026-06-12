@@ -231,7 +231,7 @@ const relatedTopics = TOPICS
             </div>
             
             <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--panel-border); padding-top: 20px; gap: 20px; flex-wrap: wrap;">
-                <a href="/dictionary" class="nav-link" aria-label="アーカイブ一覧に戻る" style="text-decoration: none;">[ アーカイブに戻る ]</a>
+                <a href="/dictionary/" class="nav-link" aria-label="アーカイブ一覧に戻る" style="text-decoration: none;">[ アーカイブに戻る ]</a>
                 
                 <div class="feedback-container" id="feedback-detail" style="display: flex; align-items: center; gap: 10px;">
                     <span style="font-size: 11px; color: var(--text-dim); font-family: var(--font-mono);">
@@ -275,7 +275,7 @@ const relatedTopics = TOPICS
                     </h3>
                     <div class="topics-simple-list" style="display: flex; flex-direction: column; gap: 15px;">
                         {relatedTopics.map(t => (
-                            <a href={`/topics/${t.id}`} style="text-decoration: none; color: inherit; display: block;">
+                            <a href={`/topics/${t.id}/`} style="text-decoration: none; color: inherit; display: block;">
                                 <div class="related-topic-card hud-panel" style="cursor: pointer; display: flex; gap: 15px; align-items: center; padding: 15px; border-color: rgba(0, 242, 255, 0.15); transition: all 0.3s ease;">
                                     <div class="topic-mini-thumb" style="width: 80px; height: 50px; flex-shrink: 0; background-color: #000; border: 1px solid var(--panel-border); overflow: hidden;">
                                         <img src={`/${t.image}`} alt={t.title} style="width: 100%; height: 100%; object-fit: cover;">
@@ -301,7 +301,7 @@ const relatedTopics = TOPICS
                     </h3>
                     <div class="related-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 15px;">
                         {relatedSpecimens.map(item => (
-                            <a href={`/dictionary/${item.id}`} style="text-decoration: none; color: inherit;">
+                            <a href={`/dictionary/${item.id}/`} style="text-decoration: none; color: inherit;">
                                 <div class="related-card hud-panel" style="cursor: pointer; height: 100%;">
                                     <div class="related-img-wrap" style="width: 100%; height: auto; overflow: hidden; position: relative;">
                                         <img src={`/${item.image}`} alt={item.name} loading="lazy" decoding="async" style="width: 100%; height: auto; display: block; object-fit: contain;">

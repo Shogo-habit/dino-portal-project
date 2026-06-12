@@ -223,7 +223,7 @@ const engLabels: Record<string, string> = {
                 return list.map(d => {
                     const isCollected = collected.includes(d.id);
                     return `
-                        <div class="dino-card hud-panel ${isCollected ? 'is-collected' : ''}" onclick="location.href='/dictionary/${d.id}'" style="cursor:pointer;">
+                        <div class="dino-card hud-panel ${isCollected ? 'is-collected' : ''}" onclick="location.href='/dictionary/${d.id}/'" style="cursor:pointer;">
                             <div class="card-img-wrap">
                                 <img src="/${d.image}" alt="${d.name}" loading="lazy" decoding="async" width="400" height="225">
                                 ${isCollected ? '<div class="collected-badge">OBSERVED</div>' : ''}

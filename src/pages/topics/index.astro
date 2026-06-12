@@ -10,7 +10,7 @@ import { TOPICS } from '../../data/topics';
     
     <div class="topic-list">
         {TOPICS.map(topic => (
-            <a href={`/topics/${topic.id}`} style="text-decoration: none; color: inherit; display: block; margin-bottom: 20px;">
+            <a href={`/topics/${topic.id}/`} style="text-decoration: none; color: inherit; display: block; margin-bottom: 20px;">
                 <div class="topic-card hud-panel" style="cursor: pointer; display: flex; gap: 20px; flex-wrap: wrap;">
                     <img src={`/${topic.image}`} class="topic-thumb" alt={topic.title} loading="lazy" decoding="async">
                     <div class="topic-summary" style="flex: 1; min-width: 250px;">

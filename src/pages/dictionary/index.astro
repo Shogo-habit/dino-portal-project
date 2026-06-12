@@ -144,7 +144,7 @@ const GROUPS = [
     <div class="dino-grid" id="dino-grid-content">
         {DINOSAURS.map(d => (
             <div class="dino-card hud-panel" data-id={d.id} data-name={d.name} data-kana={d.kana} data-scientific={d.scientificName} data-group={d.group || '未分類'} data-era={d.era} data-region={d.region} data-length={d.length} data-diet={d.diet}>
-                <a href={`/dictionary/${d.id}`} style="text-decoration: none; color: inherit; display: block; height: 100%;">
+                <a href={`/dictionary/${d.id}/`} style="text-decoration: none; color: inherit; display: block; height: 100%;">
                     <div class="card-img-wrap">
                         <img src={`/${d.image}`} alt={d.name} loading="lazy" decoding="async" width="400" height="225">
                         <div class="collected-badge" style="display: none;">OBSERVED</div>
