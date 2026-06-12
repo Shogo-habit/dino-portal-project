@@ -160,7 +160,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus","miragaia"]
   <a href="/dictionary/stegosaurus/" style="text-decoration: none; color: inherit;">
     <div class="hud-panel" style="padding: 12px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border: 1px solid rgba(0, 242, 255, 0.15); background: rgba(255, 255, 255, 0.01); transition: all 0.3s;">
       <div style="width: 100%; height: 90px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
-        <img src="/images/stegosaurus.webp" alt="ステゴサウルス" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+        <img src="/images/stegosaurus.webp" alt="ステゴサウルス" style="width: 100%; height: 100%; object-fit: contain; display: block;" />
       </div>
       <div style="font-size: 13px; font-weight: bold; color: var(--text-color); margin-bottom: 4px;">ステゴサウルス</div>
       <div style="font-size: 10px; color: var(--text-dim);">剣竜類 / ジュラ紀後期</div>
@@ -169,7 +169,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus","miragaia"]
   <a href="/dictionary/kentrosaurus/" style="text-decoration: none; color: inherit;">
     <div class="hud-panel" style="padding: 12px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border: 1px solid rgba(0, 242, 255, 0.15); background: rgba(255, 255, 255, 0.01); transition: all 0.3s;">
       <div style="width: 100%; height: 90px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
-        <img src="/images/kentrosaurus.webp" alt="ケントロサウルス" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+        <img src="/images/kentrosaurus.webp" alt="ケントロサウルス" style="width: 100%; height: 100%; object-fit: contain; display: block;" />
       </div>
       <div style="font-size: 13px; font-weight: bold; color: var(--text-color); margin-bottom: 4px;">ケントロサウルス</div>
       <div style="font-size: 10px; color: var(--text-dim);">剣竜類 / ジュラ紀後期</div>
@@ -178,7 +178,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus","miragaia"]
   <a href="/dictionary/wuerhosaurus/" style="text-decoration: none; color: inherit;">
     <div class="hud-panel" style="padding: 12px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border: 1px solid rgba(0, 242, 255, 0.15); background: rgba(255, 255, 255, 0.01); transition: all 0.3s;">
       <div style="width: 100%; height: 90px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
-        <img src="/images/wuerhosaurus.webp" alt="ウエルホサウルス" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+        <img src="/images/wuerhosaurus.webp" alt="ウエルホサウルス" style="width: 100%; height: 100%; object-fit: contain; display: block;" />
       </div>
       <div style="font-size: 13px; font-weight: bold; color: var(--text-color); margin-bottom: 4px;">ウエルホサウルス</div>
       <div style="font-size: 10px; color: var(--text-dim);">剣竜類 / 白亜紀前期</div>
@@ -187,7 +187,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus","miragaia"]
   <a href="/dictionary/miragaia/" style="text-decoration: none; color: inherit;">
     <div class="hud-panel" style="padding: 12px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border: 1px solid rgba(0, 242, 255, 0.15); background: rgba(255, 255, 255, 0.01); transition: all 0.3s;">
       <div style="width: 100%; height: 90px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
-        <img src="/images/miragaia.webp" alt="ミラガイア" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+        <img src="/images/miragaia.webp" alt="ミラガイア" style="width: 100%; height: 100%; object-fit: contain; display: block;" />
       </div>
       <div style="font-size: 13px; font-weight: bold; color: var(--text-color); margin-bottom: 4px;">ミラガイア</div>
       <div style="font-size: 10px; color: var(--text-dim);">剣竜類 / ジュラ紀後期</div>
