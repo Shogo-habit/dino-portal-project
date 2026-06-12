@@ -43,7 +43,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus"]
       かつては「知能が低く、動きも鈍いため、すぐに絶滅した」と考えられていましたが、これは大きな誤解です。彼らはジュラ紀後期の過酷な環境下で数百万年もの間、繁栄を続けました。巨大な脳を持たなくても、匂いを嗅ぎ分ける嗅覚や、危険を察知する感覚器官は非常に鋭く発達していました。知能の高さ＝生存能力の高さではなく、無駄なエネルギーを脳に消費せず、草食に特化した極めて合理的な省エネ型の生存戦略をとっていたのです。
     </p>
   </div>
-  <div style="width: 375px; flex-shrink: 0; margin: 0 auto;">
+  <div style="width: 488px; flex-shrink: 0; margin: 0 auto;">
     <img src="/images/topics/stegosaurus_plates2.webp" alt="ステゴサウルスの脳と知能の真実" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
   </div>
 </div>
