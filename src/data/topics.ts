@@ -2130,16 +2130,16 @@ const RAW_TOPICS = [
 </div>
 
 <h2 class="article-section-title">親子で体感！おもちゃと模型で学ぶ骨格の違い</h2>
-<p class="article-paragraph">
-  言葉や図鑑のイラストだけで骨格の違いを理解するのは難しいですが、実際に自分の手で組み立ててみると驚くほどすんなりと納得できます。特におすすめの知育玩具をご紹介します。
-</p>
 
 <div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
   <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0; margin-bottom: 20px;">
+      言葉や図鑑のイラストだけで骨格の違いを理解するのは難しいですが、実際に自分の手で組み立ててみると驚くほどすんなりと納得できます。特におすすめの知育玩具をご紹介します。
+    </p>
+    <p class="article-paragraph" style="margin-bottom: 20px;">
       本格的な組み立て体験を通じて、骨格構造を徹底的に学びたい小学生や大人におすすめなのが、バンダイのプラモデルシリーズ<strong style="color: var(--primary-neon);">『プラノサウルス モササウルス』</strong>です。
     </p>
-    <p class="article-paragraph" style="margin-top: 0; margin-bottom: 0;">
+    <p class="article-paragraph" style="margin-bottom: 0;">
       このプラモデルは、「まず骨格を組み立て、その上から外皮（皮膚）をはめ込む」という、実際の古生物学者の復元プロセスを疑似体験できる設計になっています。組み立てながら、モササウルスのヒレの中に隠された指の骨の並びや、獲物を丸呑みにするための顎の関節の連動ギミックを自分の手で動かして学ぶことができます。道具を使わず手でパチパチとはめ込めるため安全で、ティラノサウルスのプラノサウルスと並べて比べることで、脚の生え方の違いが一目瞭然になります。
     </p>
   </div>
