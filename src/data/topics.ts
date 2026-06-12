@@ -2147,11 +2147,11 @@ const RAW_TOPICS = [
     <div class="toy-affiliate-card">
       <div class="hud-corner top-left" style="position: absolute; top: -1px; left: -1px; width: 6px; height: 6px; border-top: 1px solid var(--primary-neon); border-left: 1px solid var(--primary-neon);"></div>
       <div class="hud-corner bottom-right" style="position: absolute; bottom: -1px; right: -1px; width: 6px; height: 6px; border-bottom: 1px solid var(--primary-neon); border-right: 1px solid var(--primary-neon);"></div>
-      <a class="toy-link" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17565342%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F20993072%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
-        <img src="//thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2714/4573102662714.jpg?_ex=128x128" alt="" style="border: none;" /><br>
-        プラノサウルス モササウルス (プラモデル)
+      <a class="toy-link" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbiccamera%2F4573102653215%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbiccamera%2Fi%2F14226126%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+        <img src="//thumbnail.image.rakuten.co.jp/@0_mall/biccamera/cabinet/product/7578/00000010874452_a01.jpg?_ex=128x128" alt="" style="border: none;" /><br>
+        バンダイスピリッツ｜BANDAI SPIRITS プラノサウルス モササウルス 【代金引換配送不可】
       </a>
-      <a class="rakuten-btn" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17565342%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F20993072%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+      <a class="rakuten-btn" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbiccamera%2F4573102653215%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbiccamera%2Fi%2F14226126%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
         <span>楽天市場で見る</span>
         <span class="btn-arrow">&raquo;</span>
       </a>
@@ -2163,7 +2163,7 @@ const RAW_TOPICS = [
 <div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
   <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0; margin-bottom: 20px;">
-      より手軽に、動かせる楽しさを通じて体感したい小さなお子様には、タカラトミーの頑丈なミニチュアフィギュア<strong style="color: var(--primary-neon);">『アニア AS-13 モササウルス（水に浮くVer.）』</strong>が最適です。
+      より手軽に、動かせる楽しさを通じて体感したい小さなお子様には、タカラトミーの頑丈なミニチュアフィギュア<strong style="color: var(--primary-neon);">『アニア AL-07 モササウルス（水に浮くVer.）』</strong>が最適です。
     </p>
     <p class="article-paragraph" style="margin-top: 0; margin-bottom: 0;">
       このアニアの魅力は、水に浮く仕様になっており、お風呂やプールで泳がせながら遊べる点です。口が大きく開閉し、しっぽが左右に滑らかに動くため、トカゲ特有のうねるような遊泳スタイルを直感的に再現できます。また、プテラノドンのアニアと並べて、「空を飛ぶ翼」「海を泳ぐヒレ」がそれぞれどんな形をしているのか、手で触って遊ぶ「ごっこ遊び」の中で、子どもたちは生き物の多様な体つきを自発的に学び取っていきます。
@@ -2173,11 +2173,11 @@ const RAW_TOPICS = [
     <div class="toy-affiliate-card">
       <div class="hud-corner top-left" style="position: absolute; top: -1px; left: -1px; width: 6px; height: 6px; border-top: 1px solid var(--primary-neon); border-left: 1px solid var(--primary-neon);"></div>
       <div class="hud-corner bottom-right" style="position: absolute; bottom: -1px; right: -1px; width: 6px; height: 6px; border-bottom: 1px solid var(--primary-neon); border-right: 1px solid var(--primary-neon);"></div>
-      <a class="toy-link" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmorushop%2F20250102085731_88%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fmorushop%2Fi%2F10049463%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
-        <img src="//thumbnail.image.rakuten.co.jp/@0_mall/morushop/cabinet/r_2025010236/20250102085731_88_1.jpg?_ex=128x128" alt="" style="border: none;" /><br>
-        タカラトミー(TAKARA TOMY) アニア AS-13 モササウルス (水に浮くVer.)
+      <a class="toy-link" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fedion%2F4904810168980%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fedion%2Fi%2F10674576%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+        <img src="//thumbnail.image.rakuten.co.jp/@0_mall/edion/cabinet/goods/ll/img_217/4904810168980_ll.jpg?_ex=128x128" alt="" style="border: none;" /><br>
+        タカラトミー アニア AL-07 モササウルス(水に浮くVer．) アニアAL07モササウルスミズニウクVER [アニアAL07モササウルスミズニウクVER]
       </a>
-      <a class="rakuten-btn" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmorushop%2F20250102085731_88%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fmorushop%2Fi%2F10049463%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+      <a class="rakuten-btn" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fedion%2F4904810168980%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fedion%2Fi%2F10674576%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
         <span>楽天市場で見る</span>
         <span class="btn-arrow">&raquo;</span>
       </a>
