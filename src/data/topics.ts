@@ -2202,7 +2202,7 @@ const RAW_TOPICS = [
     <img src="/images/topics/tyrannosaurus_detail.webp" alt="ティラノサウルスのすべて" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
     <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; display: block;">【最強の肉食恐竜】ティラノサウルスのすべてを徹底解説！</span>
   </a>
-  <a href="/topics/triceratops-frill-science" class="article-link" style="flex: 1; min-width: 280px; text-decoration: none; color: inherit; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: block;">
+  <a href="/topics/triceratops-frill-mystery" class="article-link" style="flex: 1; min-width: 280px; text-decoration: none; color: inherit; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: block;">
     <img src="/images/topics/triceratops_frill.webp" alt="トリケラトプスのフリル" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
     <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; display: block;">トリケラトプスのフリルの謎：なぜ「盾」ではないのか？最新学説が解き明かす真の役割</span>
   </a>
