@@ -29,7 +29,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus"]
     </p>
   </div>
   <div style="width: 375px; flex-shrink: 0; margin: 0 auto;">
-    <img src="/images/topics/stegosaurus_plates.webp" alt="ステゴサウルスの背中の板と立ち並ぶ骨板" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+    <img src="/images/topics/stegosaurus_plates1.webp" alt="ステゴサウルスの背中の板と立ち並ぶ骨板" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
   </div>
 </div>
 
