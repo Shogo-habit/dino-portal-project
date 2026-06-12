@@ -1,0 +1,36 @@
+---
+id: "velociraptor"
+name: "ヴェロキラプトル"
+kana: "ヴぇろきらぷとる"
+scientificName: "Velociraptor mongoliensis"
+era: "白亜紀後期"
+region: "アジア"
+diet: "肉食"
+length: "2.0m"
+weight: "15kg"
+image: "images/velociraptor.webp"
+group: "獣脚類"
+bioTraits:
+  - trait: "敏捷性"
+    value: "最高速"
+    detail: "軽量な骨格による高速移動"
+  - trait: "知能"
+    value: "高い"
+    detail: "集団での狩りが可能だったとされる"
+cyberMetadata:
+  bottomGap: 355
+  realHeight: 0.6
+  realLength: 2
+  contentHeightPx: 300
+  sourceRes: 1024
+  dinoLeft: "12%"
+  refRight: "12%"
+  zoom: 1
+references:
+  - title: "Three new Theropoda, Protoceratops zone on outer Mongolia"
+    journal: "American Museum Novitates"
+    year: 1924
+    url: "https://hdl.handle.net/2246/3223"
+---
+
+白亜紀後期のモンゴル周辺に生息した小型の肉食恐竜。映画『ジュラシック・パーク』の影響で大柄に見えるが、実際のサイズは現生のコヨーテ程度（全長約2m、体重約15kg）である。後肢の第2指には「シックルクロー」と呼ばれる巨大な鎌状の鉤爪があり、獲物に突き刺して制動する武器として機能した。全身が鳥類に近い高度な羽毛に覆われており、知能が高く、俊敏な動きと立体視を活かして小動物やプロトケラトプスなどを積極的に狩っていたとされる。

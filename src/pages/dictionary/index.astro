@@ -1,6 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { DINOSAURS } from '../../data/dinosaurs';
+import { getCollection } from 'astro:content';
+
+const dinosaurEntries = await getCollection('dinosaurs');
+const DINOSAURS = dinosaurEntries.map(entry => entry.data);
 
 const ERAS = [
     { id: '古生代', label: '古生代', period: '5億4100万 - 2億5100万年前' },

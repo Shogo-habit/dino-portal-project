@@ -1,8 +1,11 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { DINOSAURS } from '../../data/dinosaurs';
+import { getCollection } from 'astro:content';
 import { QUIZ_SPECIMENS } from '../../data/quiz';
 import { EXAM_QUESTIONS } from '../../data/exam';
+
+const dinosaurEntries = await getCollection('dinosaurs');
+const DINOSAURS = dinosaurEntries.map(entry => entry.data);
 ---
 
 <Layout title="恐竜クイズ | Dino-Portal" activeTab="quiz" description="メジャー恐竜のシルエット・近接拡大・生態データから種を当てる、恐竜クイズコーナー。">

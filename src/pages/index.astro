@@ -1,12 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
-import { DINOSAURS } from '../data/dinosaurs';
 import { AUTHOR_DATA } from '../data/author';
 
+const dinosaurs = await getCollection('dinosaurs');
 // Choose a random dinosaur at build time (beneficial for SEO/GEO crawlers indexing unique keywords on each build)
-const randomIndex = Math.floor(Math.random() * DINOSAURS.length);
-const pickupDino = DINOSAURS[randomIndex];
+const randomIndex = Math.floor(Math.random() * dinosaurs.length);
+const pickupDino = dinosaurs[randomIndex].data;
 
 const topics = await getCollection('topics');
 const topicItems = topics

@@ -1,21 +1,22 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import AffiliateSection from '../../components/AffiliateSection.astro';
-import { DINOSAURS } from '../../data/dinosaurs';
-import { SPECIMEN_METADATA, REFERENCE_ASSETS } from '../../data/cyberAssets';
+import { REFERENCE_ASSETS } from '../../data/cyberAssets';
 import { AUTHOR_DATA } from '../../data/author';
-import { getCollection } from 'astro:content';
-import dinoExplanations from '../../data/dino_explanations.json';
+import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
-  return DINOSAURS.map(d => ({
-    params: { id: d.id },
-    props: { d }
+  const dinosaurEntries = await getCollection('dinosaurs');
+  return dinosaurEntries.map(entry => ({
+    params: { id: entry.id },
+    props: { entry }
   }));
 }
 
-const { d } = Astro.props;
-const extendedDescription = (dinoExplanations as Record<string, string>)[d.id] || "";
+const { entry } = Astro.props;
+const { data: d } = entry;
+const { Content } = await render(entry);
+const allDinosaurs = (await getCollection('dinosaurs')).map(entry => entry.data);
 
 // FAQ Generation Logic for SEO/GEO
 function generateDynamicFAQs(dino: any) {
@@ -77,7 +78,7 @@ const BASELINE_PX = 100;
 const SAFE_ZONE_H = PANEL_HEIGHT - BASELINE_PX; // 300px
 const SAFE_ZONE_W = 600;
 
-const hasComparison = !!SPECIMEN_METADATA[d.id];
+const hasComparison = !!d.cyberMetadata;
 let dinoTotalH = 0;
 let dinoBottomOffset = 0;
 let refTotalH = 0;
@@ -86,7 +87,7 @@ let dinoLeft = '15%';
 let refRight = '15%';
 
 if (hasComparison) {
-    const meta = SPECIMEN_METADATA[d.id];
+    const meta = d.cyberMetadata!;
     const realH = meta.realHeight || (parseFloat(d.length) * 0.35);
     const realL = meta.realLength || parseFloat(d.length);
     const ref = REFERENCE_ASSETS.HUMAN;
@@ -118,7 +119,7 @@ if (hasComparison) {
 // Find related specimens
 const eras = ["白亜紀", "ジュラ紀", "三畳紀", "古生代"];
 const currentEraBase = eras.find(e => d.era.includes(e));
-const relatedSpecimens = DINOSAURS.filter(item => {
+const relatedSpecimens = allDinosaurs.filter(item => {
     if (item.id === d.id) return false;
     const matchesGroup = item.group === d.group;
     const matchesEra = currentEraBase && item.era.includes(currentEraBase);
@@ -186,16 +187,16 @@ const relatedTopics = topics
                 <p style="line-height: 1.8; font-size: 14px;">{d.description}</p>
             </section>
 
-            {extendedDescription && (
-                <section class="hud-panel" style="margin-bottom: 30px; padding: 25px; border-color: rgba(0, 242, 255, 0.15); position: relative;">
-                    <div class="hud-corner top-left" style="border-top-color: rgba(0, 242, 255, 0.3); border-left-color: rgba(0, 242, 255, 0.3);"></div>
-                    <div class="hud-corner bottom-right" style="border-bottom-color: rgba(0, 242, 255, 0.3); border-right-color: rgba(0, 242, 255, 0.3);"></div>
-                    <h4 style="border-bottom: 1px solid var(--panel-border); padding-bottom: 10px; margin-bottom: 15px; color: var(--primary-neon); font-size: 14px; font-family: var(--font-mono); letter-spacing: 1px;">
-                        [ ARCHIVAL MEMORANDUM / 詳細解説記録 ]
-                    </h4>
-                    <p style="line-height: 1.9; font-size: 14px; color: var(--text-main); white-space: pre-line; margin: 0; text-align: justify;">{extendedDescription}</p>
-                </section>
-            )}
+            <section class="hud-panel" style="margin-bottom: 30px; padding: 25px; border-color: rgba(0, 242, 255, 0.15); position: relative;">
+                <div class="hud-corner top-left" style="border-top-color: rgba(0, 242, 255, 0.3); border-left-color: rgba(0, 242, 255, 0.3);"></div>
+                <div class="hud-corner bottom-right" style="border-bottom-color: rgba(0, 242, 255, 0.3); border-right-color: rgba(0, 242, 255, 0.3);"></div>
+                <h4 style="border-bottom: 1px solid var(--panel-border); padding-bottom: 10px; margin-bottom: 15px; color: var(--primary-neon); font-size: 14px; font-family: var(--font-mono); letter-spacing: 1px;">
+                    [ ARCHIVAL MEMORANDUM / 詳細解説記録 ]
+                </h4>
+                <div class="archival-content" style="line-height: 1.9; font-size: 14px; color: var(--text-main); text-align: justify;">
+                    <Content />
+                </div>
+            </section>
 
             <div class="spec-panel">
                 <div class="spec-item"><span class="spec-label">生息年代</span><br>{d.era}</div>

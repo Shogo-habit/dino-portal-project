@@ -1,7 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { DINOSAURS } from '../../data/dinosaurs';
 import { BADGES } from '../../data/badges';
+import { getCollection } from 'astro:content';
+
+const dinosaurEntries = await getCollection('dinosaurs');
+const DINOSAURS = dinosaurEntries.map(entry => entry.data);
 ---
 
 <Layout title="マイ図鑑 | Dino-Portal" activeTab="my-collection" description="保存した恐竜データのアーカイブ。観測済み標本データベース。" noindex={true}>
@@ -61,7 +64,7 @@ import { BADGES } from '../../data/badges';
     </div>
 
     <!-- Collection Grid -->
-    <div class="dino-grid" id="collection-grid-content">
+    <div class="dino-grid" id="collection-grid-content" data-dinosaurs={JSON.stringify(DINOSAURS)}>
         {DINOSAURS.map(d => (
             <div class="dino-card hud-panel" data-id={d.id} style="display: none; cursor: pointer;">
                 <a href={`/dictionary/${d.id}`} style="text-decoration: none; color: inherit; display: block; height: 100%;">
@@ -108,7 +111,6 @@ import { BADGES } from '../../data/badges';
 
     <!-- Client-side loaders -->
     <script>
-        import { DINOSAURS } from '../../data/dinosaurs';
         import { BADGES } from '../../data/badges';
 
         const COLLECTION_KEY = 'dino_portal_saved_observations';
@@ -120,6 +122,9 @@ import { BADGES } from '../../data/badges';
             const gridContent = document.getElementById('collection-grid-content');
 
             if (!progressText || !progressBar || !emptyState || !gridContent) return;
+
+            const dinosaursData = gridContent.getAttribute('data-dinosaurs');
+            const DINOSAURS = dinosaursData ? JSON.parse(dinosaursData) : [];
 
             // Load observed list
             const savedStr = localStorage.getItem(COLLECTION_KEY);

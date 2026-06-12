@@ -1,6 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { DINOSAURS } from '../../data/dinosaurs';
+import { getCollection } from 'astro:content';
+
+const dinosaurEntries = await getCollection('dinosaurs');
+const DINOSAURS = dinosaurEntries.map(entry => entry.data);
 
 const REGION_CENTERS = {
   '北アメリカ': { x: 700, y: 520 },
@@ -70,7 +73,7 @@ const engLabels: Record<string, string> = {
       <p class="page-subtitle" style="font-size: 15px;">地図上の地域をクリックして恐竜データをスキャン</p>
     </section>
 
-    <div class="world-map-layout">
+    <div class="world-map-layout" id="world-map-root" data-dinosaurs={JSON.stringify(DINOSAURS)}>
         <div class="map-3d-stage">
             <!-- マップコンテナ -->
             <div class="cyber-map-container" id="map-3d-container">
@@ -144,7 +147,6 @@ const engLabels: Record<string, string> = {
 
     <!-- Client-side scan scripts -->
     <script>
-        import { DINOSAURS } from '../../data/dinosaurs';
 
         const REGION_CENTERS: Record<string, {x: number, y: number}> = {
           '北アメリカ': { x: 700, y: 520 },
@@ -208,8 +210,12 @@ const engLabels: Record<string, string> = {
             const hotspotsSvg = document.getElementById('map-hotspots-svg');
             const scanBeam = document.getElementById('scan-beam-el');
             const terminalContent = document.getElementById('terminal-content');
+            const root = document.getElementById('world-map-root');
             
-            if (!hotspotsSvg || !terminalContent) return;
+            if (!hotspotsSvg || !terminalContent || !root) return;
+            
+            const dinosaursData = root.getAttribute('data-dinosaurs');
+            const DINOSAURS = dinosaursData ? JSON.parse(dinosaursData) : [];
             
             let isScanning = false;
             
@@ -218,7 +224,7 @@ const engLabels: Record<string, string> = {
                 return saved ? JSON.parse(saved) : [];
             };
 
-            const renderDinoCards = (list: typeof DINOSAURS) => {
+            const renderDinoCards = (list: any[]) => {
                 const collected = getCollection();
                 return list.map(d => {
                     const isCollected = collected.includes(d.id);
