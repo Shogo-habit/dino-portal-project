@@ -1986,22 +1986,15 @@ const RAW_TOPICS = [
 </p>
 
 <h2 class="article-section-title">「恐竜」の科学的定義とは？すべては「直立歩行」から始まった</h2>
-<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
-  <div style="flex: 1; min-width: 280px;">
-    <p class="article-paragraph" style="margin-top: 0;">
-      そもそも、私たちが日常的に「恐竜」と呼んでいるグループは、古生物学において極めて厳密に定義されています。恐竜とは、<strong style="color: var(--primary-neon);">「直立歩行に適した骨盤と脚の構造を持つ爬虫類の一群（恐竜類）」</strong>を指します。
-    </p>
-    <p class="article-paragraph">
-      爬虫類といえば、トカゲやワニのように這いつくばって歩く姿をイメージするでしょう。しかし、恐竜は爬虫類でありながら、哺乳類や鳥類のように「脚が胴体の真下にまっすぐ伸びて歩く」という革命的な進化を遂げたグループなのです。
-    </p>
-    <p class="article-paragraph" style="margin-bottom: 0;">
-      この「直立歩行」こそが、恐竜を地球の絶対的王者に押し上げた最大の原動力でした。脚が胴体の真下にあることで、重力に対して最も効率的に巨大な体重を支えることが可能になりました。その結果、数十トンに達する超巨大化（竜脚類など）が実現したのです。また、這い歩きに比べて移動のエネルギー効率が劇的に向上し、陸上を高速かつ長距離にわたって走り回るアクティブな生態を獲得することに成功しました。
-    </p>
-  </div>
-  <div style="width: 300px; flex-shrink: 0; margin: 0 auto;">
-    <img src="/images/topics/not_dinosaurs.webp" alt="恐竜の定義：胴体の真下にまっすぐ伸びる脚" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
-  </div>
-</div>
+<p class="article-paragraph">
+  そもそも、私たちが日常的に「恐竜」と呼んでいるグループは、古生物学において極めて厳密に定義されています。恐竜とは、<strong style="color: var(--primary-neon);">「直立歩行に適した骨盤と脚の構造を持つ爬虫類の一群（恐竜類）」</strong>を指します。
+</p>
+<p class="article-paragraph">
+  爬虫類といえば、トカゲやワニのように這いつくばって歩く姿をイメージするでしょう。しかし、恐竜は爬虫類でありながら、哺乳類や鳥類のように「脚が胴体の真下にまっすぐ伸びて歩く」という革命的な進化を遂げたグループなのです。
+</p>
+<p class="article-paragraph">
+  この「直立歩行」こそが、恐竜を地球の絶対的王者に押し上げた最大の原動力でした。脚が胴体の真下にあることで、重力に対して最も効率的に巨大な体重を支えることが可能になりました。その結果、数十トンに達する超巨大化（竜脚類など）が実現したのです。また、這い歩きに比べて移動のエネルギー効率が劇的に向上し、陸上を高速かつ長距離にわたって走り回るアクティブな生態を獲得することに成功しました。
+</p>
 
 <h2 class="article-section-title">骨格構造の決定的な違い！「寛骨臼」と「大腿骨」のソケット構造</h2>
 <p class="article-paragraph">
