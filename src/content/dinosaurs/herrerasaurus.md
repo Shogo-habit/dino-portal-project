@@ -10,6 +10,7 @@ length: "4.0m"
 weight: "210kg"
 image: "images/herrerasaurus.webp"
 group: "獣脚類"
+description: "最初期にして最大級の肉食恐竜の一つ。未だ恐竜が世界の支配者ではなかった時代において、既に強力な捕食者としての圧倒的な資質を誇っていた。"
 bioTraits:
   - trait: "打撃"
     value: "強力な四肢"

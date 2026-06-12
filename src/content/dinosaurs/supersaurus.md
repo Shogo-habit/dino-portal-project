@@ -10,6 +10,7 @@ length: "39.0m"
 weight: "38.0t"
 image: "images/supersaurus.webp"
 group: "竜脚類"
+description: "ジュラ紀後期に生息した、地球史上最長クラスの竜脚類。非常に長い首と鞭のような長い尾を持ち、全長は40メートル近くに達したとされるが、体型は比較的スリムであった。"
 bioTraits:
   - trait: "全長"
     value: "史上最長クラス"

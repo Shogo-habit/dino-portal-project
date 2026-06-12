@@ -10,6 +10,7 @@ length: "10.6m"
 weight: "5.0t"
 image: "images/deinosuchus.webp"
 group: "その他"
+description: "史上最大級のワニ類。恐竜をも捕食していたと考えられており、その咬合力はティラノサウルスに匹敵したという説もある。現代のワニをそのまま巨大化させたような姿をしていた。"
 bioTraits:
   - trait: "咬合力"
     value: "驚異的"

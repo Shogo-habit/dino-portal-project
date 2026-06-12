@@ -10,6 +10,7 @@ length: "10.0m"
 weight: "4.0t"
 image: "images/bajadasaurus.webp"
 group: "竜脚類"
+description: "首から前向きに伸びる巨大な棘が最大の特徴である竜脚類。この棘は身を守るための武器、あるいは肉食恐竜を威嚇するための装飾だったと考えられている。"
 bioTraits:
   - trait: "防御構造"
     value: "前向頸棘"

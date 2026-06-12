@@ -10,6 +10,7 @@ length: "7.0m"
 weight: "1.0t"
 image: "images/tenontosaurus.webp"
 group: "鳥脚類"
+description: "極端に長い尾を持つ鳥脚類。デイノニクスなどの小型肉食恐竜の主な獲物となっていたことが、化石の発見状況から強く示唆されている。"
 bioTraits:
   - trait: "超長尾"
     value: "バランス調整"

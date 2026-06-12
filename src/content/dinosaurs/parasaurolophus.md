@@ -10,6 +10,7 @@ length: "10.0m"
 weight: "3.0t"
 image: "images/parasaurolophus.webp"
 group: "鳥脚類"
+description: "後方に長く伸びたトサカが特徴的な恐竜。このトサカは管楽器のように音を響かせることができ、数キロ先まで声が届いたとされる。"
 bioTraits:
   - trait: "遠距離通信"
     value: "最高水準"

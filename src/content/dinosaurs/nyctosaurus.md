@@ -10,6 +10,7 @@ length: "翼開長2.0m"
 weight: "2kg"
 image: "images/nyctosaurus.webp"
 group: "翼竜"
+description: "翼竜の中でも極めて特異な、頭部の数倍もある巨大なトサカを持つ。トサカは1本の主軸がV字型に分かれた構造をしており、帆のように風を受けて飛行を補助した可能性もある。"
 bioTraits:
   - trait: "巨大なトサカ"
     value: "V字/Y字型"

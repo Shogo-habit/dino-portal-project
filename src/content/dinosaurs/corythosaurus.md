@@ -10,6 +10,7 @@ length: "9.0m"
 weight: "3.0t"
 image: "images/corythosaurus.webp"
 group: "鳥脚類"
+description: "カシオワリ（ヒクイドリ）のような半円形の立派なトサカを持つ恐竜。トサカの内部は空洞になっており、共鳴させて大きな声を出して仲間とコミュニケーションをとっていた。"
 bioTraits:
   - trait: "半円形トサカ"
     value: "共鳴器"

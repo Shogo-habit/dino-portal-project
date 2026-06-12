@@ -10,6 +10,7 @@ length: "3.0m"
 weight: "300kg"
 image: "images/minmi.webp"
 group: "よろい竜類"
+description: "オーストラリアで発見された小型の鎧竜。脊椎の横に「パラバーテブラ（副脊椎骨）」という特殊な骨があり、それが名前の由来。背中だけでなくお腹側も小さな骨で守られていた。"
 bioTraits:
   - trait: "副脊椎骨"
     value: "背筋強化"

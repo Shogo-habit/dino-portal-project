@@ -10,6 +10,7 @@ length: "15.0m"
 weight: "16.0t"
 image: "images/shantungosaurus.webp"
 group: "鳥脚類"
+description: "史上最大のハドロサウルス類であり、最大の二足歩行動物の一つ。その巨体は一部の竜脚類にも匹敵し、白亜紀のアジアにおいて圧倒的な存在感を放っていた。"
 bioTraits:
   - trait: "巨大化"
     value: "最大級"

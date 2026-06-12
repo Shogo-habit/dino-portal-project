@@ -10,6 +10,7 @@ length: "10.0m"
 weight: "5.0t"
 image: "images/prognathodon.webp"
 group: "魚竜・首長竜"
+description: "非常に頑丈な頭骨と強力な牙を持つモササウルス類。貝類やアンモナイト、硬い鱗を持つ魚などを噛み砕くのに適した顎を持っていた。"
 bioTraits:
   - trait: "咬合力"
     value: "絶大"

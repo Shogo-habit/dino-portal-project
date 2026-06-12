@@ -10,6 +10,7 @@ length: "9.0m"
 weight: "2.0t"
 image: "images/nigersaurus.webp"
 group: "竜脚類"
+description: "「掃除機のような口」を持つ不思議な外見の竜脚類。地面の草を効率よく食べるため、頭部が常に下を向くような骨格構造をしていた。"
 bioTraits:
   - trait: "採食特化"
     value: "広幅の口"

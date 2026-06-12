@@ -10,6 +10,7 @@ length: "9.0m"
 weight: "2.5t"
 image: "images/maiasaura.webp"
 group: "鳥脚類"
+description: "「良い母親のトカゲ」を意味する名を持ち、恐竜が子育てをしていたことを初めて証明した重要な種。大規模な営巣地を作り、子供が成長するまで世話を焼いていた。"
 bioTraits:
   - trait: "子育て"
     value: "高度な社会性"

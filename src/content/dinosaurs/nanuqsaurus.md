@@ -10,6 +10,7 @@ length: "6.0m"
 weight: "1.0t"
 image: "images/nanuqsaurus.webp"
 group: "獣脚類"
+description: "北極圏の厳しい環境に適応したティラノサウルス類。名前はイヌピアック語で「ホッキョクグマ・トカゲ」を意味する。ティラノサウルスに近い仲間だが、資源の限られた極地で効率よく活動するために小型化したと考えられている。"
 bioTraits:
   - trait: "防寒羽毛"
     value: "可能性大"

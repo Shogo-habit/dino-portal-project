@@ -10,6 +10,7 @@ length: "4.5m"
 weight: "1.5t"
 image: "images/nasutoceratops.webp"
 group: "角竜類"
+description: "牛のような、前方に大きく湾曲した角を持つユニークな角竜。名前は「大きな鼻を持つ角竜」を意味し、特大の鼻の空間が特徴的。"
 bioTraits:
   - trait: "牛状の角"
     value: "前方湾曲"

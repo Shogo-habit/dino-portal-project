@@ -10,6 +10,7 @@ length: "6.5m"
 weight: "3.5t"
 image: "images/vulcanodon.webp"
 group: "竜脚類"
+description: "初期の竜脚類の一種。まだ比較的小型だが、竜脚類特有の長い首と頑丈な四肢への進化の過渡期を示している貴重な種。"
 bioTraits:
   - trait: "進化的位置"
     value: "過渡期"

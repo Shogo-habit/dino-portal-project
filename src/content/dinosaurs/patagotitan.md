@@ -10,6 +10,7 @@ length: "37.0m"
 weight: "70.0t"
 image: "images/patagotitan.webp"
 group: "竜脚類"
+description: "史上最大級の陸棲動物。パタゴニアで発見されたこの巨人は、その圧倒的な質量により、成体になれば天敵はほぼ存在しなかった。"
 bioTraits:
   - trait: "巨大質量"
     value: "規格外"

@@ -10,6 +10,7 @@ length: "8.0m"
 weight: "2.8t"
 image: "images/muttaburrasaurus.webp"
 group: "鳥脚類"
+description: "オーストラリアを代表する大型の鳥脚類。膨らんだ大きな鼻腔が特徴で、嗅覚が非常に鋭かった、あるいは大きな鳴き声を出すための共鳴器として機能していたと考えられている。"
 bioTraits:
   - trait: "隆起した鼻"
     value: "特異形状"

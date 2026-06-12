@@ -10,6 +10,7 @@ length: "4.5m"
 weight: "1.0t"
 image: "images/kentrosaurus.webp"
 group: "剣竜類"
+description: "ステゴサウルスの仲間だが、背中の後半から尾にかけて鋭いスパイクが並んでいるのが特徴。アフリカのタンザニアで多く発見された。"
 bioTraits:
   - trait: "カウンター"
     value: "鋭いトゲ"

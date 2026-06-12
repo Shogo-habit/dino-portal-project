@@ -10,6 +10,7 @@ length: "8.0m"
 weight: "3.0t"
 image: "images/hadrosaurus.webp"
 group: "鳥脚類"
+description: "「カモノハシ竜」として知られる草食恐竜の代表格。北アメリカで初めてほぼ完全な骨格が発見された恐竜でもある。"
 bioTraits:
   - trait: "咀嚼能力"
     value: "高度"

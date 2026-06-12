@@ -10,6 +10,7 @@ length: "11.0m"
 weight: "6.5t"
 image: "images/deinocheirus.webp"
 group: "獣脚類"
+description: "「恐ろしい手」という意味の通り、巨大な前肢のみが長年謎とされていた恐竜。近年全身が判明し、帆のような背中とアヒルのような口を持つ特異な姿だったことが明らかになった。"
 bioTraits:
   - trait: "汎用性"
     value: "雑食適応"

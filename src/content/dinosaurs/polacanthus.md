@@ -10,6 +10,7 @@ length: "5.0m"
 weight: "2.0t"
 image: "images/polacanthus.webp"
 group: "よろい竜類"
+description: "腰の部分に「サクラル・シールド」と呼ばれる一枚板のような巨大な装甲を持っていたのが特徴。背中にはトゲ、尾には板状の突起が並んでいた。"
 bioTraits:
   - trait: "腰の盾"
     value: "サクラル・シールド"

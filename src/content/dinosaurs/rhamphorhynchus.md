@@ -10,6 +10,7 @@ length: "翼開長1.2m"
 weight: "2kg"
 image: "images/rhamphorhynchus.webp"
 group: "翼竜"
+description: "長い尾の先端に菱形のひれを持つ翼竜。嘴には前方に突き出した鋭い歯があり、水面の魚を捕らえるのに適していた。"
 bioTraits:
   - trait: "舵取り装置"
     value: "菱形の尾"

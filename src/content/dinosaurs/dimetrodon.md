@@ -10,6 +10,7 @@ length: "3.5m"
 weight: "250kg"
 image: "images/dimetrodon.webp"
 group: "その他"
+description: "背中の巨大な帆が特徴的な単弓類。恐竜ではなく、爬虫類よりも哺乳類に近い系統（哺乳類型爬虫類）に属する。"
 bioTraits:
   - trait: "構造"
     value: "熱調節の帆"

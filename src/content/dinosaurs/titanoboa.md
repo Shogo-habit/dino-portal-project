@@ -10,6 +10,7 @@ length: "12.8m"
 weight: "1.1t"
 image: "images/titanoboa.webp"
 group: "その他"
+description: "史上最大のヘビ。恐竜絶滅後の古新世に、現在のコロンビアにあたる湿熱な熱帯雨林に生息していた。現生のアナコンダを遥かに凌ぐ巨体を持ち、巨大なワニや魚を捕食していたと考えられている。"
 bioTraits:
   - trait: "圧倒的サイズ"
     value: "史上最大"

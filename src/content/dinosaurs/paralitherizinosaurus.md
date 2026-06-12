@@ -10,6 +10,7 @@ length: "8.5m"
 weight: "4.0t"
 image: "images/paralitherizinosaurus.webp"
 group: "獣脚類"
+description: "北海道で発見されたテリジノサウルス類。非常に長い爪を持ち、護身や植物を引き寄せるために使っていたと考えられている。"
 bioTraits:
   - trait: "巨大武器"
     value: "鎌状の爪"

@@ -10,6 +10,7 @@ length: "6.0m"
 weight: "2.5t"
 image: "images/centrosaurus.webp"
 group: "角竜類"
+description: "鼻の上に一本の長い角があり、襟飾りの縁には複雑な「フック状」の飾りが並んでいるのが特徴。代表的な角竜の一つ。"
 bioTraits:
   - trait: "鼻角"
     value: "一本槍"

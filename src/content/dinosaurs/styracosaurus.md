@@ -10,6 +10,7 @@ length: "5.5m"
 weight: "2.5t"
 image: "images/styracosaurus.webp"
 group: "角竜類"
+description: "鼻の上の巨大な角と、襟飾りに並ぶ6本以上の長いトゲが特徴。敵に対する威嚇と防御において、角竜類の中でも極めて派手で強力な装備を持っていた。"
 bioTraits:
   - trait: "威嚇力"
     value: "刺々しいフリル"

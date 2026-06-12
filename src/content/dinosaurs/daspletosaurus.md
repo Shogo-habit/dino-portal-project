@@ -10,6 +10,7 @@ length: "9.0m"
 weight: "3.0t"
 image: "images/daspletosaurus.webp"
 group: "獣脚類"
+description: "「恐ろしいトカゲ」を意味する名を持ち、ティラノサウルス科の中でも非常に強力な顎と頑丈な体格を持っていた。"
 bioTraits:
   - trait: "咬合力"
     value: "強力"

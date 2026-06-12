@@ -10,6 +10,7 @@ length: "5.5m"
 weight: "1.5t"
 image: "images/diabloceratops.webp"
 group: "角竜類"
+description: "「悪魔の角を持つ顔」を意味する名を持つ。襟飾りの上部から左右に長く伸びた2本の角が、まるで悪魔の角のように見えることから命名された。"
 bioTraits:
   - trait: "襟飾角"
     value: "左右一対"

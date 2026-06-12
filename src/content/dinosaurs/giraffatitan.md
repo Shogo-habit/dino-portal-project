@@ -10,6 +10,7 @@ length: "25.0m"
 weight: "30.0t"
 image: "images/giraffatitan.webp"
 group: "竜脚類"
+description: "「キリンの巨人」を意味し、前肢が後肢より長く、首が垂直に近い角度まで高く伸びていた。高所の木の葉を食べるのに特化していた。"
 bioTraits:
   - trait: "リーチ"
     value: "垂直上昇"

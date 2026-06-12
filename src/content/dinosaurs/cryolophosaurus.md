@@ -10,6 +10,7 @@ length: "6.5m"
 weight: "465kg"
 image: "images/cryolophosaurus.webp"
 group: "獣脚類"
+description: "南極で発見された「氷のトサカを持つトカゲ」。当時は温暖だった南極の森に生息しており、エルビス・プレスリーのような髪型に見えるトサカが有名。"
 bioTraits:
   - trait: "環境適応"
     value: "高い"

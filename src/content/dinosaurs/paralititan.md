@@ -10,6 +10,7 @@ length: "26.0m"
 weight: "59.0t"
 image: "images/paralititan.webp"
 group: "竜脚類"
+description: "エジプトのマングローブ沼地で発見された巨大な竜脚類。名前は「潮の巨神」を意味する。化石が潮間帯の堆積物から見つかったため、海岸付近の湿地帯に生息していたと考えられている。カルカロドントサウルスなどの巨大肉食恐竜と共存していた。"
 bioTraits:
   - trait: "骨格"
     value: "巨大"

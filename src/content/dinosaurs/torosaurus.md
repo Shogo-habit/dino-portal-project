@@ -10,6 +10,7 @@ length: "8.0m"
 weight: "6.0t"
 image: "images/torosaurus.webp"
 group: "角竜類"
+description: "陸生動物の中で最大級の頭骨を持つ恐竜。トリケラトプスに似ているが、襟飾りがさらに長く、大きな窓（穴）が開いているのが特徴。"
 bioTraits:
   - trait: "巨大頭骨"
     value: "記録的サイズ"

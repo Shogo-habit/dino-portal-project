@@ -10,6 +10,7 @@ length: "1.8m"
 weight: "180kg"
 image: "images/protoceratops.webp"
 group: "角竜類"
+description: "「最初の角のある顔」を意味する名前だが、実際には角を持たず、発達した襟飾りのみを持つ初期の角竜。羊ほどの大きさで、砂漠地帯に生息していた。"
 bioTraits:
   - trait: "襟飾り"
     value: "発達"

@@ -10,6 +10,7 @@ length: "0.8m"
 weight: "2kg"
 image: "images/juravenator.webp"
 group: "獣脚類"
+description: "ドイツで発見された小型の肉食恐竜。皮膚の痕跡から、鱗と羽毛の両方を持っていた可能性が示唆されている。"
 bioTraits:
   - trait: "皮膚構造"
     value: "ハイブリッド"

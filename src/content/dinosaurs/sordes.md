@@ -10,6 +10,7 @@ length: "翼開長0.5m"
 weight: "0.5kg"
 image: "images/sordes.webp"
 group: "翼竜"
+description: "「毛深い不浄なもの」という名を持つが、翼竜が羽毛（ピクノファイバー）を持っていたことを示す重要な証拠となった小型種。"
 bioTraits:
   - trait: "外皮"
     value: "体毛状組織"

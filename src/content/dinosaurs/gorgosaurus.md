@@ -10,6 +10,7 @@ length: "8.5m"
 weight: "2.5t"
 image: "images/gorgosaurus.webp"
 group: "獣脚類"
+description: "ダスプレトサウルスと同時期に生息していたが、より軽量で俊敏な捕食者だったと考えられている。当時の生態系で主要な役割を果たした。"
 bioTraits:
   - trait: "狩りのスタイル"
     value: "追跡型"

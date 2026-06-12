@@ -10,6 +10,7 @@ length: "27.0m"
 weight: "12.0t"
 image: "images/diplodocus.webp"
 group: "竜脚類"
+description: "非常に長い首と、鞭のように細長い尾を持つ大型の竜脚類。細長い体型を活かして広範囲の植物を摂取した。"
 bioTraits:
   - trait: "防御手段"
     value: "鞭打ち"

@@ -10,6 +10,7 @@ length: "2.5m"
 weight: "40kg"
 image: "images/stegoceras.webp"
 group: "堅頭竜類"
+description: "分厚いドーム状の頭骨を持つパキケファロサウルス類。比較的小型だが、頭突きによる儀礼的闘争を行っていたと考えられている。"
 bioTraits:
   - trait: "武装"
     value: "頭骨ドーム"

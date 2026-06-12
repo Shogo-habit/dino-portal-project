@@ -10,6 +10,7 @@ length: "6.0m"
 weight: "0.8t"
 image: "images/camptosaurus.webp"
 group: "鳥脚類"
+description: "イグアノドン類に近い原始的な鳥脚類。がっしりとした四肢を持ち、通常は四足、走る時は二足歩行を使い分けることができたと考えられている。"
 bioTraits:
   - trait: "歩行柔軟性"
     value: "二足/四足併用"

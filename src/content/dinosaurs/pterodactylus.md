@@ -10,6 +10,7 @@ length: "翼開長1.0m"
 weight: "2kg"
 image: "images/pterodactylus.webp"
 group: "翼竜"
+description: "世界で最初に発見された翼竜。コンパクトな体と短い尾を持ち、翼竜の中でも洗練された飛行能力を有していた。"
 bioTraits:
   - trait: "機動力"
     value: "高い"

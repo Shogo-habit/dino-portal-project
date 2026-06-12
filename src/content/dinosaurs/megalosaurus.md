@@ -10,6 +10,7 @@ length: "9.0m"
 weight: "1.0t"
 image: "images/megalosaurus.webp"
 group: "獣脚類"
+description: "世界で最初に名前が付けられた恐竜として有名。ジュラ紀中期における強力な捕食者で、当時のイギリス周辺の頂点に立っていた。"
 bioTraits:
   - trait: "歴史的価値"
     value: "最初"

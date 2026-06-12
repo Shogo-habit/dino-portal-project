@@ -10,6 +10,7 @@ length: "翼開長1.0m"
 weight: "1kg"
 image: "images/eudimorphodon.webp"
 group: "翼竜"
+description: "既知で最古級の翼竜の一つ。初期の翼竜ながら、魚の鱗が胃の内容物から見つかるなど、高度な狩りを行っていた。"
 bioTraits:
   - trait: "複雑な歯"
     value: "多咬頭歯"

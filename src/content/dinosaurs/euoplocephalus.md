@@ -10,6 +10,7 @@ length: "6.0m"
 weight: "2.5t"
 image: "images/euoplocephalus.webp"
 group: "よろい竜類"
+description: "「立派な装甲の頭」という意味の通り、まぶたまで装甲化されていた徹底した防御型のアンキロサウルス類。尾の先端には巨大な骨のハンマーを持つ。"
 bioTraits:
   - trait: "ハンマーテイル"
     value: "重量武器"

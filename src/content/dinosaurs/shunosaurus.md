@@ -10,6 +10,7 @@ length: "10.0m"
 weight: "3.0t"
 image: "images/shunosaurus.webp"
 group: "竜脚類"
+description: "竜脚類としては珍しく、尾の先端に2対のスパイクを備えた重厚な骨の棍棒（クラブ）を持っていた。この武器で捕食者を撃退したとされる。"
 bioTraits:
   - trait: "反撃兵器"
     value: "尾の棍棒"

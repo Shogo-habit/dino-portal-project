@@ -10,6 +10,7 @@ length: "18.0m"
 weight: "60.0t"
 image: "images/megalodon.webp"
 group: "その他"
+description: "史上最大級のサメ。クジラを主食としていたと考えられており、その巨大な顎には数百本の鋭い歯が並んでいた。絶滅した理由は気候変動や獲物の減少など諸説ある。"
 bioTraits:
   - trait: "咬合力"
     value: "絶大"

@@ -10,6 +10,7 @@ length: "22.0m"
 weight: "27.0t"
 image: "images/mamenchisaurus.webp"
 group: "竜脚類"
+description: "体長の半分近くを占めるほど異常に長い首が最大の特徴。首の骨（頚椎）の数は最大19個に達し、あらゆる動物の中で最も多い部類に入る。"
 bioTraits:
   - trait: "首の長さ"
     value: "驚異的"

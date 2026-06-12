@@ -10,6 +10,7 @@ length: "12.0m"
 weight: "7.0t"
 image: "images/saltasaurus.webp"
 group: "竜脚類"
+description: "竜脚類として初めて、背中に骨質の装甲板（オステオダーム）を持つことが確認された。これにより、巨大さに寄らない防御能力を証明した。"
 bioTraits:
   - trait: "防御力"
     value: "装甲板"

@@ -10,6 +10,7 @@ length: "8.0m"
 weight: "4.5t"
 image: "images/tarchia.webp"
 group: "よろい竜類"
+description: "「知恵がある」という意味の名前を持つが、これは非常に大きな脳函を持っていたことから。アジア最大級のアンキロサウルス類で、タルボサウルスなどの大型肉食恐竜と共存していた。"
 bioTraits:
   - trait: "最大重量級"
     value: "アジアの壁"

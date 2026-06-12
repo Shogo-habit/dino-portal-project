@@ -10,6 +10,7 @@ length: "5.0m"
 weight: "2.0t"
 image: "images/chasmosaurus.webp"
 group: "角竜類"
+description: "「穴の開いたトカゲ」という意味の名を持つ。非常に大きな襟飾りには巨大な穴が開いており、重量を軽く保ちつつ視覚的な威嚇効果を高めていた。"
 bioTraits:
   - trait: "大型襟飾"
     value: "威嚇特化"

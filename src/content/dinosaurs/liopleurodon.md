@@ -10,6 +10,7 @@ length: "7.0m"
 weight: "3.5t"
 image: "images/liopleurodon.webp"
 group: "魚竜・首長竜"
+description: "ジュラ紀の海における恐ろしい捕食者。巨大な頭部と強力な顎を持ち、イカや大型の魚、他の海生爬虫類までも捕食していた。"
 bioTraits:
   - trait: "探知能力"
     value: "嗅覚"

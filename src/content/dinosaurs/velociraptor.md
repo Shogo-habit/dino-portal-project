@@ -10,6 +10,7 @@ length: "2.0m"
 weight: "15kg"
 image: "images/velociraptor.webp"
 group: "獣脚類"
+description: "小型だが知能が高く、俊敏な捕食者。鉤爪を使い、獲物の急所を執拗に狙う狩りを得意としていた。"
 bioTraits:
   - trait: "敏捷性"
     value: "最高速"

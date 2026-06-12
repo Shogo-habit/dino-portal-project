@@ -10,6 +10,7 @@ length: "11.0m"
 weight: "5.0t"
 image: "images/tarbosaurus.webp"
 group: "獣脚類"
+description: "「恐怖させるトカゲ」という意味のアジア最大級のティラノサウルス類。北米のティラノサウルスと極めて近縁だが、前肢はさらに小さく進化していた。"
 bioTraits:
   - trait: "咬合力"
     value: "最強クラス"

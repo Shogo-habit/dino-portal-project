@@ -10,6 +10,7 @@ length: "17.0m"
 weight: "20.0t"
 image: "images/mosasaurus.webp"
 group: "その他"
+description: "白亜紀の海に君臨した頂点捕食者。強力な顎と遊泳に適した流線型の体を持ち、多様な獲物を捕らえていた。"
 bioTraits:
   - trait: "破壊力"
     value: "絶大"

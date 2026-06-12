@@ -10,6 +10,7 @@ length: "12.2m"
 weight: "5.0t"
 image: "images/mapusaurus.webp"
 group: "獣脚類"
+description: "ギガノトサウルスに近い巨大なカルカロドントサウルス科。多数の個体が一緒に発見され、集団で超大型竜脚類を狩っていた可能性がある。"
 bioTraits:
   - trait: "狩猟戦略"
     value: "群れ"

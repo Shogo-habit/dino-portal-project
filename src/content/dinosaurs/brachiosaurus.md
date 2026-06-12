@@ -10,6 +10,7 @@ length: "25.0m"
 weight: "56.0t"
 image: "images/brachiosaurus.webp"
 group: "竜脚類"
+description: "前肢が後肢よりも長い超大型恐竜。高い所の植物を食べることに特化し、圧倒的な巨体が防具となった。"
 bioTraits:
   - trait: "リーチ"
     value: "超広範囲"

@@ -10,6 +10,7 @@ length: "5.0m"
 weight: "700kg"
 image: "images/monolophosaurus.webp"
 group: "獣脚類"
+description: "鼻先から目の上にかけて一本の独特なトサカを持つ。「一つのトサカを持つトカゲ」という意味で、初期の堅頭竜に近い特徴も見られる謎多き恐竜。"
 bioTraits:
   - trait: "威嚇"
     value: "ディスプレイ"

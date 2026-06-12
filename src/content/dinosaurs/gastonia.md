@@ -10,6 +10,7 @@ length: "5.0m"
 weight: "1.9t"
 image: "images/gastonia.webp"
 group: "よろい竜類"
+description: "体表に鋭いトゲがびっしりと並んだ鎧竜の仲間（ノドサウルス科）。特に尾の側面にあるトゲは、尾を振ることで獲物を切り裂くハサミのように機能した。"
 bioTraits:
   - trait: "トゲ装甲"
     value: "全身武装"

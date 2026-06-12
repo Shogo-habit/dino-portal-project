@@ -10,6 +10,7 @@ length: "1.3m"
 weight: "50kg"
 image: "images/hyperodapedon.webp"
 group: "その他"
+description: "三畳紀に繁栄したリンコサウルス類。嘴のような口と、植物をすりつぶすのに特化したプレート状の歯を持つ。"
 bioTraits:
   - trait: "採食"
     value: "特殊な嘴"

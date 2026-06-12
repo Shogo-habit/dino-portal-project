@@ -10,6 +10,7 @@ length: "11.0m"
 weight: "12.0t"
 image: "images/kronosaurus.webp"
 group: "魚竜・首長竜"
+description: "古代のギリシャ神話の神クロノスから名付けられた、史上最大級のプリオサウルス類。2メートルに近い頭部は海のあらゆる生物の脅威だった。"
 bioTraits:
   - trait: "咬合力"
     value: "破壊的"

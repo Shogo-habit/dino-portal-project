@@ -10,6 +10,7 @@ length: "0.5m"
 weight: "0.5kg"
 image: "images/archaeopteryx.webp"
 group: "獣脚類"
+description: "「始祖鳥」として有名な、恐竜と鳥類の中間に位置する重要種。羽毛はあるが、鳥と異なり口には歯があり、翼には爪、そして長い骨質の尾を持っていた。"
 bioTraits:
   - trait: "進化の繋ぎ目"
     value: "羽毛と爬虫類質"

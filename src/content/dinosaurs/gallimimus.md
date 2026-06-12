@@ -10,6 +10,7 @@ length: "7.0m"
 weight: "250kg"
 image: "images/gallimimus.webp"
 group: "獣脚類"
+description: "「鶏もどき」を意味する、ダチョウのような姿をした恐竜。中型バイク並みのスピードで走ることができたとされ、翼のような前肢と歯のない嘴を持つ。"
 bioTraits:
   - trait: "速力"
     value: "最高クラス"

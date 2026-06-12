@@ -10,6 +10,7 @@ length: "2.5m"
 weight: "180kg"
 image: "images/leptoceratops.webp"
 group: "角竜類"
+description: "白亜紀の最後にまで生き残った、小型で襟飾りのない角竜。二足歩行での逃走も可能だったと考えられ、原始的な特徴を最後まで維持していた。"
 bioTraits:
   - trait: "無襟飾"
     value: "原始的"

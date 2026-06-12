@@ -10,6 +10,7 @@ length: "翼開長3.0m"
 weight: "15kg"
 image: "images/dsungaripterus.webp"
 group: "翼竜"
+description: "先端がわずかに反り返った、ピンセットのような嘴を持つ。口の奥には貝などを砕くための平らな歯が並んでいた。"
 bioTraits:
   - trait: "特殊嘴"
     value: "反り返り"

@@ -10,6 +10,7 @@ length: "7.5m"
 weight: "3.0t"
 image: "images/yamatodraco.webp"
 group: "鳥脚類"
+description: "淡路島で発見されたハドロサウルス類。白亜紀末期まで生き残った「生きた化石」のような存在だった可能性がある。"
 bioTraits:
   - trait: "生存戦略"
     value: "長期間"

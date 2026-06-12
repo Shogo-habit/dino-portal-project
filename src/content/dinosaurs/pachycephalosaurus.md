@@ -10,6 +10,7 @@ length: "4.5m"
 weight: "450kg"
 image: "images/pachycephalosaurus.webp"
 group: "堅頭竜類"
+description: "厚さ25cmにも達する分厚い頭骨を持つ恐竜。頭突きで儀礼的な争いや防御を行っていたと考えられており、その独特な形状から非常に人気が高い。"
 bioTraits:
   - trait: "打撃武器"
     value: "堅い頭頂部"

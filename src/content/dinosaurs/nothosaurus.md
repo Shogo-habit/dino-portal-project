@@ -10,6 +10,7 @@ length: "4.0m"
 weight: "300kg"
 image: "images/nothosaurus.webp"
 group: "魚竜・首長竜"
+description: "アザラシのように水陸両方で活動したとされる海生爬虫類。長い首と鋭い歯を持ち、待ち伏せや奇襲で魚を捕らえていた。"
 bioTraits:
   - trait: "機動性"
     value: "水陸両用"

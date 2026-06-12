@@ -10,6 +10,7 @@ length: "12.0m"
 weight: "3.5t"
 image: "images/edmontosaurus.webp"
 group: "鳥脚類"
+description: "アヒルのような嘴を持つ代表的なハドロサウルス類。トサカのない平坦な頭部が特徴で、非常に高い密度で群れを作り、渡りを行っていたことが知られている。"
 bioTraits:
   - trait: "アヒル口"
     value: "特化型"

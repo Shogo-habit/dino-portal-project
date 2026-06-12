@@ -10,6 +10,7 @@ length: "13.0m"
 weight: "8.0t"
 image: "images/tylosaurus.webp"
 group: "魚竜・首長竜"
+description: "最大級のモササウルス類。頑丈で長い骨質の吻（ふん）を持ち、獲物への体当たりや攻撃に使ったと考えられている。海の食物連鎖の頂点に君臨していた。"
 bioTraits:
   - trait: "攻撃特性"
     value: "体当たり"

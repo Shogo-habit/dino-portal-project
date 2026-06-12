@@ -10,6 +10,7 @@ length: "11.5m"
 weight: "6.0t"
 image: "images/acrocanthosaurus.webp"
 group: "獣脚類"
+description: "「高い棘を持つトカゲ」の名の通り、背中に沿って高く伸びた神経棘を持つ。当時の北米における最大級の捕食者であり、大型の竜脚類も襲った形跡がある。"
 bioTraits:
   - trait: "筋力"
     value: "強靭な背筋"

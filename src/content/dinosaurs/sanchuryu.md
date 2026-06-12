@@ -10,6 +10,7 @@ length: "2.5m"
 weight: "30kg"
 image: "images/sanchuryu.webp"
 group: "獣脚類"
+description: "群馬県で発見された、ダチョウに似た姿の恐竜。非常に素早く走ることができ、雑食性で多様な環境に適応していた。"
 bioTraits:
   - trait: "速力"
     value: "最高クラス"

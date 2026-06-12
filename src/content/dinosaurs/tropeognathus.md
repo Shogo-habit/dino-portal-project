@@ -10,6 +10,7 @@ length: "翼開長8.0m"
 weight: "50kg"
 image: "images/tropeognathus.webp"
 group: "翼竜"
+description: "嘴の先端に半円形のトサカ（隆起）を持つ巨大な翼竜。この隆起は水面ギリギリを飛ぶ際の安定性を高めていたとされる。"
 bioTraits:
   - trait: "キール構造"
     value: "嘴のトサカ"

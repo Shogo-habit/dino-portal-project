@@ -10,6 +10,7 @@ length: "7.5m"
 weight: "1.35t"
 image: "images/carnotaurus.webp"
 group: "獣脚類"
+description: "「肉食の雄牛」を意味し、目の上にある2本の角が特徴。極端に短い前肢と、非常に発達した脚力を持つ。"
 bioTraits:
   - trait: "走力"
     value: "最高クラス"

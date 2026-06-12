@@ -10,6 +10,7 @@ length: "9.0m"
 weight: "10.0t"
 image: "images/triceratops.webp"
 group: "角竜類"
+description: "3本の角と巨大な襟飾りが特徴。強力な防御能力を持ち、大型肉食恐竜に対しても立ち向かった。"
 bioTraits:
   - trait: "防御力"
     value: "鉄壁"

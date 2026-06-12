@@ -10,6 +10,7 @@ length: "1.0m"
 weight: "20kg"
 image: "images/henodus.webp"
 group: "魚竜・首長竜"
+description: "カメに似た箱状の甲羅を持つが、カメとは全く別の系統。汽水域や湖に生息し、平らな口で水底の堆積物をこし取って食べていたとされる。"
 bioTraits:
   - trait: "装甲"
     value: "箱状甲羅"

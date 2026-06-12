@@ -10,6 +10,7 @@ length: "4.0m"
 weight: "270kg"
 image: "images/scelidosaurus.webp"
 group: "よろい竜類"
+description: "ジュラ紀の初期に現れた、最も原始的な装甲恐竜の一つ。後のアンキロサウルス類やステゴサウルス類の共通の先祖に近いと考えられている。"
 bioTraits:
   - trait: "原初装甲"
     value: "骨質ノブ"

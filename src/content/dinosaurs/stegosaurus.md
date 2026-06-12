@@ -10,6 +10,7 @@ length: "9.0m"
 weight: "5.0t"
 image: "images/stegosaurus.webp"
 group: "剣竜類"
+description: "背中に並ぶ骨板と、尾の鋭いスパイクが特徴。脳は小さいが、尾による強力な防御策を持っていた。"
 bioTraits:
   - trait: "防御武具"
     value: "スパイク"

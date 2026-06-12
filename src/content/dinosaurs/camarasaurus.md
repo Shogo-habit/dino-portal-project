@@ -10,6 +10,7 @@ length: "18.0m"
 weight: "20.0t"
 image: "images/camarasaurus.webp"
 group: "竜脚類"
+description: "北アメリカで最も一般的な竜脚類の一つ。頭骨に大きな空洞（室）があり、軽量化されていた。スプーン状の非常に頑丈な歯が特徴。"
 bioTraits:
   - trait: "採食能力"
     value: "広範囲"

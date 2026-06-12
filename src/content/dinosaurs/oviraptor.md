@@ -10,6 +10,7 @@ length: "2.0m"
 weight: "33kg"
 image: "images/oviraptor.webp"
 group: "獣脚類"
+description: "「卵泥棒」を意味する名前だが、実際には自分の卵を抱いて守っていたことが判明した子煩悩な恐竜。歯がなく、強力なくちばしを持っていた。"
 bioTraits:
   - trait: "育児本能"
     value: "極めて強い"

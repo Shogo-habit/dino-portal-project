@@ -10,6 +10,7 @@ length: "10.0m"
 weight: "4.0t"
 image: "images/cymbospondylus.webp"
 group: "魚竜・首長竜"
+description: "初期の魚竜としては異例の巨体を誇る。後の魚竜のような三日月型の尾鰭を持たず、ウナギのように体をくねらせて泳いでいた。"
 bioTraits:
   - trait: "巨体"
     value: "三畳紀最大級"

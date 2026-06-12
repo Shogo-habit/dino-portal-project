@@ -10,6 +10,7 @@ length: "23.0m"
 weight: "20.0t"
 image: "images/apatosaurus.webp"
 group: "竜脚類"
+description: "「まどわすトカゲ」を意味する名を持つ超大型竜脚類。かつてはブロントサウルスとして知られていた最も有名な恐竜の一つで、巨大な体と長い鞭のような尾を持つ。"
 bioTraits:
   - trait: "リーチ"
     value: "広範囲"

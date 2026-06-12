@@ -10,6 +10,7 @@ length: "翼開長1.4m"
 weight: "2kg"
 image: "images/dimorphodon.webp"
 group: "翼竜"
+description: "「2種類の歯」を意味する名を持つ翼竜。大きな頭部と長い尾が特徴で、地上でも比較的活発に動けたと考えられている。"
 bioTraits:
   - trait: "異形歯"
     value: "2種類"

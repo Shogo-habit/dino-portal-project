@@ -10,6 +10,7 @@ length: "4.5m"
 weight: "500kg"
 image: "images/desmatosuchus.webp"
 group: "その他"
+description: "全身を棘と装甲板で覆った草食の擬鰐類。肩に非常にながい棘があり、肉食動物からの防御に役立っていた。"
 bioTraits:
   - trait: "防御"
     value: "ショルダー・スパイク"

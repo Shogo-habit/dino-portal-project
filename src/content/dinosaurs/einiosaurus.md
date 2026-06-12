@@ -10,6 +10,7 @@ length: "4.5m"
 weight: "1.3t"
 image: "images/einiosaurus.webp"
 group: "角竜類"
+description: "鼻の上の角が、栓抜きのように前方に強く曲がっているのが最大の特徴。襟飾りの上部には2本の鋭いスパイクが付いていた。"
 bioTraits:
   - trait: "前曲角"
     value: "ボトルオープナー"

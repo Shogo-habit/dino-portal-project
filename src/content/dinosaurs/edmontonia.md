@@ -10,6 +10,7 @@ length: "6.0m"
 weight: "3.0t"
 image: "images/edmontonia.webp"
 group: "よろい竜類"
+description: "非常に重厚な装甲を持つノドサウルス科の鎧竜。肩に前方を向いた巨大なスパイクを持ち、肉食恐竜が突進してきても逆に串刺しにする能力があった。"
 bioTraits:
   - trait: "正面迎撃"
     value: "突進防御"

@@ -10,6 +10,7 @@ length: "16.5m"
 weight: "21.0t"
 image: "images/leedsichthys.webp"
 group: "魚類"
+description: "史上最大の硬骨魚類の一つ。現生のジンベエザメのように、巨大な口で海水中のプランクトンを濾しとって食べていた平和な巨人。"
 bioTraits:
   - trait: "濾過摂食"
     value: "高効率"

@@ -10,6 +10,7 @@ length: "8.0m"
 weight: "4.5t"
 image: "images/kamuyasaurus.webp"
 group: "鳥脚類"
+description: "北海道むかわ町で発見された、通称「むかわ竜」。日本列島で発見された恐竜として最大級の全身骨格を誇るハドロサウルス類。"
 bioTraits:
   - trait: "集団行動"
     value: "可能性あり"

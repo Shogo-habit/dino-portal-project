@@ -10,6 +10,7 @@ length: "0.8m"
 weight: "10kg"
 image: "images/sasayamagnomus.webp"
 group: "角竜類"
+description: "2024年に正式に命名された、日本で発見された最小級の角竜類。トリケラトプスなどの祖先に近いグループであり、東アジアにおける角竜の進化を解き明かす重要な発見となった。"
 bioTraits:
   - trait: "進化の鍵"
     value: "原始的な角"

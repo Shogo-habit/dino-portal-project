@@ -10,6 +10,7 @@ length: "9.0m"
 weight: "4.0t"
 image: "images/lambeosaurus.webp"
 group: "鳥脚類"
+description: "頭部に斧のような形の大きなトサカを持つハドロサウルス類。トサカの内部は空洞で、音を鳴らして仲間と通信していた可能性がある。"
 bioTraits:
   - trait: "音響装置"
     value: "トサカ"

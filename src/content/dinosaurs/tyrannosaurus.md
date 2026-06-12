@@ -10,6 +10,7 @@ length: "12.3m"
 weight: "8.4t"
 image: "images/tyrannosaurus.webp"
 group: "獣脚類"
+description: "史上最大級 of 肉食恐竜。その咬合力は全ての陸上生物の中で最強クラスと言われ、骨をも噛み砕くことができた。頂点捕食者として君臨していた。"
 bioTraits:
   - trait: "咬合力"
     value: "驚異的"

@@ -10,6 +10,7 @@ length: "7.0m"
 weight: "3.0t"
 image: "images/futabasaurus.webp"
 group: "首長竜"
+description: "福島県で発見された有名な首長竜。長い首と4つのヒレを使い、太古の日本近海を泳いでいた。"
 bioTraits:
   - trait: "潜水能力"
     value: "優秀"

@@ -10,6 +10,7 @@ length: "26.0m"
 weight: "20.0t"
 image: "images/barosaurus.webp"
 group: "竜脚類"
+description: "ディプロドクスに似ているが、首がさらに長く、尾は少し短い。最近の研究では、後肢だけで立ち上がり高い木の葉を食べたと言われる。"
 bioTraits:
   - trait: "二足立ち"
     value: "可能性あり"

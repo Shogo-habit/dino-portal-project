@@ -10,6 +10,7 @@ length: "9.0m"
 weight: "2.5t"
 image: "images/albertosaurus.webp"
 group: "獣脚類"
+description: "ティラノサウルス科の中では細身で脚が長く、機動力に優れていたと考えられている。カナダのアルバータ州で多くの化石が発見されている。"
 bioTraits:
   - trait: "機動力"
     value: "高い"

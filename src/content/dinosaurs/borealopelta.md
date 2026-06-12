@@ -10,6 +10,7 @@ length: "5.5m"
 weight: "1.3t"
 image: "images/borealopelta.webp"
 group: "よろい竜類"
+description: "奇跡的な保存状態で発見された「恐竜のミイラ」。皮膚や装甲、さらには最後の食事内容まで保存されており、生前は赤茶色の保護色をしていたことが判明している。"
 bioTraits:
   - trait: "保護色"
     value: "赤茶色"

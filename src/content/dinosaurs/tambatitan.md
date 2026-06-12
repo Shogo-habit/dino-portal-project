@@ -10,6 +10,7 @@ length: "15.0m"
 weight: "20.0t"
 image: "images/tambatitan.webp"
 group: "竜脚類"
+description: "兵庫県丹波市で発見された「丹波竜」。独特な尾の骨の形状を持ち、国内発見の恐竜としては史上最大級のサイズを誇る。"
 bioTraits:
   - trait: "地響き"
     value: "強烈"

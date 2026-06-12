@@ -10,6 +10,7 @@ length: "翼開長4.5m"
 weight: "25kg"
 image: "images/anhanguera.webp"
 group: "翼竜"
+description: "「年老いた悪魔」を意味する名を持つ。交互に並ぶ長い獲物捕らえ用の歯が特徴で、魚食に特化した進化を遂げた。"
 bioTraits:
   - trait: "捕食トラップ"
     value: "交差する歯"

@@ -10,6 +10,7 @@ length: "0.8m"
 weight: "1kg"
 image: "images/microraptor.webp"
 group: "獣脚類"
+description: "前肢と後肢の両方に長い羽毛を持ち、4枚の翼で滑空していたと考えられる。恐竜から鳥類への進化を解き明かす重要な種。"
 bioTraits:
   - trait: "飛行能力"
     value: "滑空"

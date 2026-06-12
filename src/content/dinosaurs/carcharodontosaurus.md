@@ -10,6 +10,7 @@ length: "13.0m"
 weight: "8,000kg"
 image: "images/carcharodontosaurus.webp"
 group: "獣脚類"
+description: "「サメの歯を持つトカゲ」を意味する名を持つ、史上最大級の肉食恐竜。ティラノサウルスに匹敵、あるいは凌駕する巨体を持ち、その名の通り肉を切り裂くのに適した薄く鋭い歯が特徴。"
 bioTraits:
   - trait: "攻撃器官"
     value: "サメ状の歯"

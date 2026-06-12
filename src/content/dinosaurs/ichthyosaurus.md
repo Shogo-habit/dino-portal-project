@@ -10,6 +10,7 @@ length: "3.3m"
 weight: "150kg"
 image: "images/ichthyosaurus.webp"
 group: "魚竜"
+description: "イルカのような流線型の体を持った魚竜。完全に水中に適応しており、卵ではなく赤ちゃんを直接産む「胎生」であったことがわかっている。"
 bioTraits:
   - trait: "水中適応"
     value: "完璧"

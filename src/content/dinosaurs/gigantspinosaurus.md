@@ -10,6 +10,7 @@ length: "4.2m"
 weight: "700kg"
 image: "images/gigantspinosaurus.webp"
 group: "剣竜類"
+description: "肩から巨大な棘が後ろ向きに突き出した、極めて特異な姿を持つ剣竜類。スピノサウルスと名が付くが獣脚類ではなく、ステゴサウルスに近い仲間。この巨大な棘は防御だけでなく、ディスプレイの役割もあったと考えられている。"
 bioTraits:
   - trait: "防御器官"
     value: "巨大な肩甲棘"

@@ -10,6 +10,7 @@ length: "翼開長3.5m"
 weight: "10kg"
 image: "images/tapejara.webp"
 group: "翼竜"
+description: "頭部にある巨大なトサカと、オウムのような短く鋭い嘴が特徴。トサカはディスプレイや飛行時のバランス調節に使われた可能性がある。"
 bioTraits:
   - trait: "巨大トサカ"
     value: "帆状"

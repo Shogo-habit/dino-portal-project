@@ -10,6 +10,7 @@ length: "15.0m"
 weight: "30.0t"
 image: "images/shonisaurus.webp"
 group: "魚竜・首長竜"
+description: "史上最大級の魚竜の一つ。クジラのような巨体を持ち、胎生であった。三畳紀の広大な海で優占的な地位を占めていたと考えられている。"
 bioTraits:
   - trait: "サイズ"
     value: "超弩級"

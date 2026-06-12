@@ -10,6 +10,7 @@ length: "7.0m"
 weight: "2.2t"
 image: "images/ouranosaurus.webp"
 group: "鳥脚類"
+description: "背中に帆のような突起を持つユニークなイグアノドン類。この帆は体温調節や、仲間へのディスプレイ（自己アピール）に使われたと考えられている。"
 bioTraits:
   - trait: "背中の帆"
     value: "体温調節"

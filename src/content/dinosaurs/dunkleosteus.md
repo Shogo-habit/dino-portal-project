@@ -10,6 +10,7 @@ length: "6.0m"
 weight: "1.0t"
 image: "images/dunkleosteus.webp"
 group: "その他"
+description: "デボン紀の海を支配した最大級の板皮類。頭部から肩にかけて強力な装甲を持ち、顎には歯の代わりに鋭い骨のプレートが備わっていた。その咬合力は凄まじく、当時のあらゆる生物を噛み砕くことができたとされる。「恐怖の魚」の代表格である。"
 bioTraits:
   - trait: "装甲"
     value: "超硬質"

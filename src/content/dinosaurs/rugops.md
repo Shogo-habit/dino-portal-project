@@ -10,6 +10,7 @@ length: "6.0m"
 weight: "750kg"
 image: "images/rugops.webp"
 group: "獣脚類"
+description: "「しわのある顔」を意味する名前の通り、頭骨に多くの溝や穴がある肉食恐竜。死肉をあさるスカベンジャーだったという説もある。"
 bioTraits:
   - trait: "頭部装飾"
     value: "特徴的"

@@ -10,6 +10,7 @@ length: "2.5m"
 weight: "25kg"
 image: "images/fukuivenator.webp"
 group: "獣脚類"
+description: "「奇妙な福井のハンター」を意味する名を持つ。鳥への進化の過程を示す特異な骨格を持ち、食性も多岐にわたっていたと考えられている。"
 bioTraits:
   - trait: "進化の鍵"
     value: "特異構造"

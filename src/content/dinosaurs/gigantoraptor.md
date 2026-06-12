@@ -10,6 +10,7 @@ length: "8.0m"
 weight: "2.0t"
 image: "images/gigantoraptor.webp"
 group: "獣脚類"
+description: "オヴィラプトルの仲間としては桁外れに巨大で、鳥のような嘴と羽毛を持っていた。その巨体にもかかわらず、敏捷な動きができたと考えられている。"
 bioTraits:
   - trait: "存在感"
     value: "威圧的"

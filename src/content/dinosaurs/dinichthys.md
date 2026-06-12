@@ -10,6 +10,7 @@ length: "6.0m"
 weight: "1.0t"
 image: "images/dinichthys.webp"
 group: "その他"
+description: "古生代デボン紀の海に君臨した巨大な板皮類。強力な顎の骨を刃物のように使い、あらゆる獲物を切り裂いたと考えられている。「恐怖の魚」の異名を持つ。ダンクルオステウスの近縁種である。"
 bioTraits:
   - trait: "装甲"
     value: "超硬質"

@@ -10,6 +10,7 @@ length: "3.5m"
 weight: "300kg"
 image: "images/inostrancevia.webp"
 group: "その他"
+description: "ペルム紀末の頂点捕食者であるゴルゴノプス類。巨大な犬歯を持ち、当時の大型草食動物を狩っていた。"
 bioTraits:
   - trait: "攻撃"
     value: "サーベルタイガー状の牙"

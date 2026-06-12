@@ -10,6 +10,7 @@ length: "4.5m"
 weight: "2.2t"
 image: "images/archelon.webp"
 group: "その他"
+description: "史上最大のウミガメ。甲羅は硬い板ではなく、骨のフレームに厚い皮膚が張られた構造をしており、軽量化と潜水能力を両立させていた。"
 bioTraits:
   - trait: "軽量甲羅"
     value: "特殊構造"

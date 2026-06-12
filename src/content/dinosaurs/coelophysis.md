@@ -10,6 +10,7 @@ length: "3.0m"
 weight: "30kg"
 image: "images/coelophysis.webp"
 group: "獣脚類"
+description: "初期の獣脚類の一つで、中空の骨を持つ軽量な体格が特徴。集団で行動し、小型の爬虫類や昆虫を捕らえていた。"
 bioTraits:
   - trait: "骨格構造"
     value: "超軽量"

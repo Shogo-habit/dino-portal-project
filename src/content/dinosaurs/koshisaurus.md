@@ -10,6 +10,7 @@ length: "3.0m"
 weight: "500kg"
 image: "images/koshisaurus.webp"
 group: "鳥脚類"
+description: "福井県勝山市で発見された小型のイグアノドン類。フクイサウルスよりも原始的な特徴を持ち、初期の鳥脚類の多様性を示している。"
 bioTraits:
   - trait: "警戒心"
     value: "強い"

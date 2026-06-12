@@ -10,6 +10,7 @@ length: "7.0m"
 weight: "6.0t"
 image: "images/ankylosaurus.webp"
 group: "よろい竜類"
+description: "全身が装甲板で覆われ、尾の先端にはハンマーのような骨の塊がある。最も硬い恐竜の一つ。"
 bioTraits:
   - trait: "装甲"
     value: "超硬質"

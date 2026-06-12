@@ -10,6 +10,7 @@ length: "1.0m"
 weight: "3kg"
 image: "images/compsognathus.webp"
 group: "獣脚類"
+description: "小型恐竜の代表格。「かわいい顎」を意味するが、小型のトカゲや昆虫を素早く捕らえる鋭いハンターだった。始祖鳥と同じ環境に生息していた。"
 bioTraits:
   - trait: "敏捷性"
     value: "最高クラス"

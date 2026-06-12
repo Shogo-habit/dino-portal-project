@@ -10,6 +10,7 @@ length: "4.0m"
 weight: "300kg"
 image: "images/postosuchus.webp"
 group: "その他"
+description: "三畳紀の陸上に君臨した巨大な擬鰐類。ワニに近い系統だが、二足歩行も可能で、当時の初期の恐竜たちを圧倒していた。"
 bioTraits:
   - trait: "武器"
     value: "強力な顎"

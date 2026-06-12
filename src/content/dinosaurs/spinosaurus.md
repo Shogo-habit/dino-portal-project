@@ -10,6 +10,7 @@ length: "15.0m"
 weight: "7.0t"
 image: "images/spinosaurus.webp"
 group: "獣脚類"
+description: "背中に帆を持つ水陸両生の肉食恐竜。ワニのような長い顎を持ち、水中での狩りに適応していた。"
 bioTraits:
   - trait: "水中適応"
     value: "最高水準"

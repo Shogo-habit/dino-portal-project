@@ -10,6 +10,7 @@ length: "12.0m"
 weight: "7.0t"
 image: "images/hainosaurus.webp"
 group: "魚竜・首長竜"
+description: "ティロサウルスの近縁種で、かつては史上最大のモササウルス類と考えられていた。非常に長い体を持ち、尾を使ってパワフルに泳ぐことができた。"
 bioTraits:
   - trait: "推進力"
     value: "強力な尾"

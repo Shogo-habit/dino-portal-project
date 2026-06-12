@@ -10,6 +10,7 @@ length: "7.5m"
 weight: "1.5t"
 image: "images/abelisaurus.webp"
 group: "獣脚類"
+description: "南米を代表する肉食恐竜の一つ。アベリサウルス科の模式標本であり、非常にがっしりとした頭骨を持つことが特徴。短いが強力な顎で獲物を屠る。"
 bioTraits:
   - trait: "攻撃"
     value: "強力な顎"

@@ -10,6 +10,7 @@ length: "14.0m"
 weight: "2.0t"
 image: "images/elasmosaurus.webp"
 group: "首長竜"
+description: "全長の大半分を占める極端に長い首を持つ首長竜。その首は70個以上の骨からなり、柔軟に獲物を追跡できた。"
 bioTraits:
   - trait: "水中機動"
     value: "高い"

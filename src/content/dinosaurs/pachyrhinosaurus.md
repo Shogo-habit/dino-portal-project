@@ -10,6 +10,7 @@ length: "8.0m"
 weight: "4.0t"
 image: "images/pachyrhinosaurus.webp"
 group: "角竜類"
+description: "鼻の上の角の代わりに、分厚く平らな「骨のコブ」を持つ奇妙な角竜。襟飾りの縁には複雑な形状の角や飾りが並んでいた。"
 bioTraits:
   - trait: "骨のコブ"
     value: "頑強"

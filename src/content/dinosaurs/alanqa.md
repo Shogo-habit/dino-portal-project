@@ -10,6 +10,7 @@ length: "翼開長6.0m"
 weight: "40kg"
 image: "images/alanqa.webp"
 group: "翼竜"
+description: "サハラ砂漠で発見された巨大な翼竜。地上に立つとキリンほどの高さがあり、強力な嘴で様々な獲物を捕食していた。"
 bioTraits:
   - trait: "地上高"
     value: "キリン並み"

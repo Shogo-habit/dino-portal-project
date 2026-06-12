@@ -10,6 +10,7 @@ length: "5.0m"
 weight: "2.0t"
 image: "images/hylaeosaurus.webp"
 group: "よろい竜類"
+description: "「森のトカゲ」を意味し、1842年にリチャード・オーウェンが「Dinosauria（恐竜）」という言葉を提唱した際に含まれていた最初の3頭の一つ。メガロサウルス、イグアノドンに続いて世界で3番目に名前が与えられた歴史的な存在。"
 bioTraits:
   - trait: "歴史的重要種"
     value: "三大恐竜"

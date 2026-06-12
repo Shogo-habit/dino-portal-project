@@ -10,6 +10,7 @@ length: "2.0m"
 weight: "150kg"
 image: "images/placodus.webp"
 group: "魚竜・首長竜"
+description: "石畳のような平らな歯を持つ、貝を食べることに特化した爬虫類。海底をゆっくりと泳ぎながら、貝類や甲殻類を探して食べていた。"
 bioTraits:
   - trait: "特殊歯"
     value: "石畳状の歯"

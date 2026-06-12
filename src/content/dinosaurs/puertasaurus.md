@@ -10,6 +10,7 @@ length: "30.0m"
 weight: "50.0t"
 image: "images/puertasaurus.webp"
 group: "竜脚類"
+description: "アルゼンチノサウルスに匹敵する超巨大竜脚類。非常に広い胸郭を持っていたと考えられており、世界で最も幅の広い恐竜の一つとされる。"
 bioTraits:
   - trait: "胸郭幅"
     value: "世界最大級"

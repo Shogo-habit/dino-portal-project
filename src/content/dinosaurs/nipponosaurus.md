@@ -10,6 +10,7 @@ length: "7.6m"
 weight: "2.5t"
 image: "images/nipponosaurus.webp"
 group: "鳥脚類"
+description: "日本人が初めて本格的に研究した恐竜。ハドロサウルス類の子供の化石として知られ、日本の恐竜研究の礎となった象徴的な種。"
 bioTraits:
   - trait: "歴史的価値"
     value: "最高位"

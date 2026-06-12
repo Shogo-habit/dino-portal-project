@@ -10,6 +10,7 @@ length: "7.0m"
 weight: "4.0t"
 image: "images/wuerhosaurus.webp"
 group: "剣竜類"
+description: "中国で発見された、白亜紀まで生き残った珍しい剣竜類。背中の板がステゴサウルスよりも低く、丸みを帯びているのが特徴。"
 bioTraits:
   - trait: "骨板形状"
     value: "低重心"

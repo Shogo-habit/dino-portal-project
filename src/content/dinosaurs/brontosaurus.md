@@ -10,6 +10,7 @@ length: "22.0m"
 weight: "15.0t"
 image: "images/brontosaurus.webp"
 group: "竜脚類"
+description: "かつてアパトサウルスと同じとされていたが、近年の研究により別属として復活した「雷竜」。強靭な首とムチのような尾を持ち、ジュラ紀の湿地帯に生息していた。"
 bioTraits:
   - trait: "復活した学名"
     value: "学名の変遷"

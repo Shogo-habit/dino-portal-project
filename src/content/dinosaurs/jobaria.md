@@ -10,6 +10,7 @@ length: "18.0m"
 weight: "16.0t"
 image: "images/jobaria.webp"
 group: "竜脚類"
+description: "竜脚類としては比較的原始的な特徴を多く残している。発見された骨格の保存状態が非常に良く、その生態の詳細が判明している。"
 bioTraits:
   - trait: "原始的な特徴"
     value: "スプーン状の歯"

@@ -10,6 +10,7 @@ length: "3.0m"
 weight: "75kg"
 image: "images/guanlong.webp"
 group: "獣脚類"
+description: "「五彩の冠を戴く竜」という意味。ティラノサウルスの遠い祖先であり、頭部に非常に薄く壊れやすいトサカを持っていたのが特徴。"
 bioTraits:
   - trait: "進化"
     value: "祖先の資質"

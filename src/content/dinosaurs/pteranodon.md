@@ -10,6 +10,7 @@ length: "翼開長7.0m"
 weight: "20kg"
 image: "images/pteranodon.webp"
 group: "翼竜"
+description: "最も有名な翼竜の一つ。歯のないくちばしと、頭部後方の長いトサカが特徴。海の上を飛び回り、魚を捕らえて食べていた。"
 bioTraits:
   - trait: "飛行能力"
     value: "超長距離"

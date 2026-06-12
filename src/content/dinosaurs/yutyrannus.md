@@ -10,6 +10,7 @@ length: "9.0m"
 weight: "1.4t"
 image: "images/yutyrannus.webp"
 group: "獣脚類"
+description: "全身が羽毛に覆われていたことが確認されている、ティラノサウルスの仲間。比較的寒冷な地域に住んでいたため、保温のために羽毛が発達したとされる。"
 bioTraits:
   - trait: "耐寒性能"
     value: "羽毛装甲"

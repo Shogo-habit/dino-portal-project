@@ -10,6 +10,7 @@ length: "3.5m"
 weight: "150kg"
 image: "images/zuniceratops.webp"
 group: "角竜類"
+description: "目の上に立派な角を持つ、最初期の角竜類の一つ。これより古い角竜には目の上の角がなく、角の進化を解き明かす重要な鍵を握る。"
 bioTraits:
   - trait: "角の先駆者"
     value: "眉上の角"

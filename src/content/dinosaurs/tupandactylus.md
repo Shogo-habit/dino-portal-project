@@ -10,6 +10,7 @@ length: "翼開長5.0m"
 weight: "15kg"
 image: "images/tupandactylus.webp"
 group: "翼竜"
+description: "タペヤラの近縁種で、さらに巨大で複雑な形状のトサカを持つ。そのトサカは非常に色彩豊かだったと考えられている。"
 bioTraits:
   - trait: "極大トサカ"
     value: "驚異的サイズ"

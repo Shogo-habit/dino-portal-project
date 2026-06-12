@@ -10,6 +10,7 @@ length: "15.0m"
 weight: "8.0t"
 image: "images/ampelosaurus.webp"
 group: "竜脚類"
+description: "背中に骨質の装甲を持っていた竜脚類。ティタノサウルス類に属し、肉食恐竜から身を守るために皮膚に埋め込まれたトゲや板状の骨を発達させていた。"
 bioTraits:
   - trait: "防御機構"
     value: "皮骨装甲"

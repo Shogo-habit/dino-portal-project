@@ -10,6 +10,7 @@ length: "1.8m"
 weight: "43kg"
 image: "images/homalocephale.webp"
 group: "堅頭竜類"
+description: "ドーム状ではなく平らな頭頂部を持つパキケファロサウルス類。骨盤が広く、内臓を保護するのに適していた。"
 bioTraits:
   - trait: "構造"
     value: "平坦な頭頂"

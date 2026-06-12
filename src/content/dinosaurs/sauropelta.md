@@ -10,6 +10,7 @@ length: "5.0m"
 weight: "1.5t"
 image: "images/sauropelta.webp"
 group: "よろい竜類"
+description: "「トカゲの盾」の名を持つ鎧竜。肩から首にかけて巨大なスパイクが突き出しており、正面や側面からの攻撃に対して鉄壁の防御を誇った。"
 bioTraits:
   - trait: "ショルダースパイク"
     value: "対空・対側面"

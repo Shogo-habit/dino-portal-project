@@ -10,6 +10,7 @@ length: "6.0m"
 weight: "700kg"
 image: "images/ceratosaurus.webp"
 group: "獣脚類"
+description: "鼻の上に大きな角を持つ独特な外見の獣脚類。アロサウルスと同時代に生きていたが、より水辺に近い環境を好んでいた可能性が示唆されている。"
 bioTraits:
   - trait: "突進"
     value: "角による一撃"

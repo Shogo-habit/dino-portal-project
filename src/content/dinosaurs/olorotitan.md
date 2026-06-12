@@ -10,6 +10,7 @@ length: "12.0m"
 weight: "5.0t"
 image: "images/olorotitan.webp"
 group: "鳥脚類"
+description: "扇形の巨大なトサカを持つハドロサウルス類。ロシアの極東地域で発見され、白亜紀末期まで生き残っていた。"
 bioTraits:
   - trait: "構造"
     value: "扇形トサカ"

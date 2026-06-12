@@ -10,6 +10,7 @@ length: "1.0m"
 weight: "10kg"
 image: "images/eoraptor.webp"
 group: "獣脚類"
+description: "「夜明けの泥棒」を意味する、世界最古の恐竜の一つ。すべての恐竜の共通祖先に近い姿をしており、そのシンプルながら完成された体格が繁栄の鍵となった。"
 bioTraits:
   - trait: "原初"
     value: "バランス型"

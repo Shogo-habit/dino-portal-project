@@ -29,6 +29,7 @@ const dinosaursCollection = defineCollection({
     weight: z.string(),
     image: z.string(),
     group: z.string(),
+    description: z.string(),
     bioTraits: z.array(z.object({
       trait: z.string(),
       value: z.string(),

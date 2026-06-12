@@ -10,6 +10,7 @@ length: "翼開長0.9m"
 weight: "1kg"
 image: "images/jeholopterus.webp"
 group: "翼竜"
+description: "丸みを帯びた頭部と、非常に広い口を持つ特殊な翼竜。現代のヨタカのような、夜間に空中。で虫を捕らえる生活をしていた可能性がある。"
 bioTraits:
   - trait: "広角嘴"
     value: "夜間狩猟"

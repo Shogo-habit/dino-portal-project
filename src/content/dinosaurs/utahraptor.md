@@ -10,6 +10,7 @@ length: "7.0m"
 weight: "500kg"
 image: "images/utahraptor.webp"
 group: "獣脚類"
+description: "ラプトル類の中で最大最強の種。20cmを超える巨大な鉤爪を持ち、自分より大きな恐竜も執拗に攻撃して倒したと考えられている。"
 bioTraits:
   - trait: "凶器"
     value: "巨大鉤爪"
