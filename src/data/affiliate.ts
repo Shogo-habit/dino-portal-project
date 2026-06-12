@@ -170,14 +170,16 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
     "stegosaurus": [
         {
             id: "stegosaurus_figure",
-            title: "アニア AL-16 ステゴサウルス",
-            subtitle: "背中に対称に並ぶ骨板と、尾の鋭いスパイクをリアルに再現",
+            title: "アニア AL-03 ステゴサウルス",
+            subtitle: "背中に立ち並ぶ骨板と、尾の鋭いスパイク（サゴマイザー）をリアルに再現",
             type: "figure",
             badgeText: "PRECISION MODEL",
-            imageUrl: "https://images-na.ssl-images-amazon.com/images/I/61r5P4rJ8AL._AC_SL1500_.jpg",
+            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/toys-selesele/cabinet/09618059/4904810496281.jpg?_ex=300x300",
             affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/B085MS8V7M"),
-            priceText: "PRICE: ¥1,430 (税込)",
-            details: ["タカラトミー公式", "ラージサイズアニア", "首とスパイク付き尾が可動"]
+            priceText: "PRICE: ¥1,100 (税込)",
+            details: ["タカラトミー公式", "ラージサイズアニア", "首とスパイク付き尾が可動"],
+            rakutenAffiliateUrl: buildRakutenAffiliateUrl("アニア AL-03 ステゴサウルス"),
+            impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
         }
     ],
     "ankylosaurus": [
