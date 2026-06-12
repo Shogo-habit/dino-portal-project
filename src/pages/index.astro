@@ -36,21 +36,17 @@ const topicItems = topics
         <div class="news-summary-sidebar hud-panel">
             <h4 style="margin-bottom: 20px; border-bottom: 1px solid var(--panel-border); padding-bottom: 10px;">最新トピックス</h4>
             {topicItems.map(item => (
-                <a href={`/topics/${item.id}/`} class="news-item-card">
-                    <div class="hud-corner top-left"></div>
-                    <div class="hud-corner bottom-right"></div>
+                <a href={`/topics/${item.id}/`} class="news-item-link">
                     <div class="news-item-img-wrap">
                         <img src={`/${item.image}`} alt={item.title} loading="lazy" decoding="async" />
                         <div class="scanline-overlay"></div>
                     </div>
-                    <div class="news-item-content">
-                        <div class="news-item-meta">
-                            <span class="news-item-date">{item.date}</span>
-                            <span class="news-item-badge">{item.category}</span>
-                        </div>
-                        <h5 class="news-item-title">{item.title}</h5>
-                        <p class="news-item-summary">{item.summary.slice(0, 50)}...</p>
+                    <div class="news-item-meta">
+                        <span class="news-item-date">{item.date}</span>
+                        <span class="news-item-badge">{item.category}</span>
                     </div>
+                    <h5 class="news-item-title">{item.title}</h5>
+                    <p class="news-item-summary">{item.summary.slice(0, 50)}...</p>
                 </a>
             ))}
             <a href="/topics/" style="font-size: 12px; color: var(--primary-neon); text-decoration: none;">[ トピックス一覧にアクセス ]</a>
@@ -78,23 +74,11 @@ const topicItems = topics
 </Layout>
 
 <style>
-  .news-item-card {
+  .news-item-link {
     display: block;
     text-decoration: none;
     color: inherit;
-    border: 1px solid var(--panel-border);
-    background: rgba(0, 242, 255, 0.01);
-    margin-bottom: 20px;
-    position: relative;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    overflow: hidden;
-  }
-
-  .news-item-card:hover {
-    border-color: var(--primary-neon);
-    box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
-    background: rgba(0, 242, 255, 0.04);
-    transform: translateY(-2px);
+    margin-bottom: 25px;
   }
 
   .news-item-img-wrap {
@@ -102,8 +86,10 @@ const topicItems = topics
     width: 100%;
     aspect-ratio: 16 / 9;
     overflow: hidden;
-    border-bottom: 1px solid var(--panel-border);
+    border: 1px solid var(--panel-border);
     background: #000;
+    margin-bottom: 10px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .news-item-img-wrap img {
@@ -113,7 +99,12 @@ const topicItems = topics
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .news-item-card:hover .news-item-img-wrap img {
+  .news-item-link:hover .news-item-img-wrap {
+    border-color: var(--primary-neon);
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.25);
+  }
+
+  .news-item-link:hover .news-item-img-wrap img {
     transform: scale(1.05);
   }
 
@@ -122,10 +113,6 @@ const topicItems = topics
     inset: 0;
     background: linear-gradient(180deg, transparent 60%, rgba(0, 242, 255, 0.15) 100%);
     pointer-events: none;
-  }
-
-  .news-item-content {
-    padding: 15px;
   }
 
   .news-item-meta {
@@ -160,7 +147,7 @@ const topicItems = topics
     transition: color 0.3s ease;
   }
 
-  .news-item-card:hover .news-item-title {
+  .news-item-link:hover .news-item-title {
     color: var(--primary-neon);
   }
 
