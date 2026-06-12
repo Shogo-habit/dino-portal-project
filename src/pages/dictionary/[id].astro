@@ -4,8 +4,8 @@ import AffiliateSection from '../../components/AffiliateSection.astro';
 import { DINOSAURS } from '../../data/dinosaurs';
 import { SPECIMEN_METADATA, REFERENCE_ASSETS } from '../../data/cyberAssets';
 import { AUTHOR_DATA } from '../../data/author';
+import { getCollection } from 'astro:content';
 import dinoExplanations from '../../data/dino_explanations.json';
-import { TOPICS } from '../../data/topics';
 
 export async function getStaticPaths() {
   return DINOSAURS.map(d => ({
@@ -126,7 +126,9 @@ const relatedSpecimens = DINOSAURS.filter(item => {
     return matchesGroup || matchesEra || matchesRegion;
 }).slice(0, 4);
 
-const relatedTopics = TOPICS
+const topics = await getCollection('topics');
+const relatedTopics = topics
+    .map(entry => entry.data)
     .filter(t => t.relatedSpecimens && t.relatedSpecimens.includes(d.id))
     .sort((a, b) => b.date.localeCompare(a.date))
     .slice(0, 3);

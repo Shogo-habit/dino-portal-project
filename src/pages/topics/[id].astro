@@ -1,19 +1,21 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { TOPICS } from '../../data/topics';
+import { getCollection, render } from 'astro:content';
 import { DINOSAURS } from '../../data/dinosaurs';
 import AffiliateSection from '../../components/AffiliateSection.astro';
 import { DINO_AFFILIATE_MAP } from '../../data/affiliate';
 
 export async function getStaticPaths() {
-  return TOPICS.map(topic => ({
-    params: { id: topic.id },
-    props: { topic }
+  const topicEntries = await getCollection('topics');
+  return topicEntries.map(entry => ({
+    params: { id: entry.id },
+    props: { entry }
   }));
 }
 
-const { topic } = Astro.props;
-const processedContent = topic.content.replace(/href="(\/(topics|dictionary)\/[a-zA-Z0-9-_]+)(?!\/)"/g, 'href="$1/"');
+const { entry } = Astro.props;
+const { data: topic } = entry;
+const { Content } = await render(entry);
 
 // Fetch related specimens data
 const relatedDinos = (topic.relatedSpecimens || []).map(specimenId => {
@@ -63,7 +65,7 @@ const articleSchema = {
         <img src={`/${topic.image}`} class="topic-detail-img" alt={topic.title}>
         
         <div class="topic-content">
-            <Fragment set:html={processedContent} />
+            <Content />
         </div>
 
         {affiliateId && (

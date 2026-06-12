@@ -1,6 +1,11 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { TOPICS } from '../../data/topics';
+import { getCollection } from 'astro:content';
+
+const topics = await getCollection('topics');
+const sortedTopics = topics
+  .map(entry => entry.data)
+  .sort((a, b) => b.date.localeCompare(a.date));
 ---
 
 <Layout title="恐竜トピックス | Dino-Portal" activeTab="topics" description="恐竜の生態推測や歴史的変化など、古生物学における詳細なトピック記事一覧。">
@@ -9,7 +14,7 @@ import { TOPICS } from '../../data/topics';
     </section>
     
     <div class="topic-list">
-        {TOPICS.map(topic => (
+        {sortedTopics.map(topic => (
             <a href={`/topics/${topic.id}/`} style="text-decoration: none; color: inherit; display: block; margin-bottom: 20px;">
                 <div class="topic-card hud-panel" style="cursor: pointer; display: flex; gap: 20px; flex-wrap: wrap;">
                     <img src={`/${topic.image}`} class="topic-thumb" alt={topic.title} loading="lazy" decoding="async">

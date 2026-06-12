@@ -1,13 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
 import { DINOSAURS } from '../data/dinosaurs';
-import { TOPICS } from '../data/topics';
 import { AUTHOR_DATA } from '../data/author';
 
 // Choose a random dinosaur at build time (beneficial for SEO/GEO crawlers indexing unique keywords on each build)
 const randomIndex = Math.floor(Math.random() * DINOSAURS.length);
 const pickupDino = DINOSAURS[randomIndex];
-const topicItems = TOPICS.slice(0, 2);
+
+const topics = await getCollection('topics');
+const topicItems = topics
+  .map(entry => entry.data)
+  .sort((a, b) => b.date.localeCompare(a.date))
+  .slice(0, 2);
 ---
 
 <Layout title="ホーム | Dino-Portal" activeTab="home" description="Dino-Portalのメインコンソール。最新の古生物学的発見と本日のピックアップ標本データ。" ogImage="/images/cyber_world_map.webp">
