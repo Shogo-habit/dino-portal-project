@@ -47,13 +47,43 @@ relatedSpecimens: ["dilophosaurus","monolophosaurus","velociraptor","spinosaurus
   その筆頭が<strong style="color: var(--primary-neon);">ヴェロキサウルス（ラプトル）</strong>です。映画の公開前は、一般にはほとんど知られていない存在でしたが、劇中で「高い知能を持ち、集団で人間を追い詰める恐ろしいハンター」として描かれたことで、一躍ティラノサウルスと並ぶ人気恐竜となりました。また、『ジュラシック・パークIII』で主役に抜擢された<strong style="color: var(--primary-neon);">スピノサウルス</strong>や、『ジュラシック・ワールド』でプールから跳ね上がって観客を沸かせた巨大な海生爬虫類<strong style="color: var(--primary-neon);">モササウルス</strong>、さらには『ジュラシック・ワールド／新たなる支配者』で巨大な爪を武器に強烈なインパクトを残した<strong style="color: var(--primary-neon);">テリジノサウルス</strong>など、映画が恐竜の人気と知名度を牽引してきた功績は計り知れません。
 </p>
 
-<p class="article-paragraph" style="margin-top: 15px; margin-bottom: 0;">
-  ※映画で一躍スターとなったスピノサウルスの、劇的な生態復元の歴史はこちら：
+<p class="article-paragraph" style="margin-top: 15px; margin-bottom: 15px;">
+  ※映画で一躍脚光を浴びた恐竜たちの、詳しい生態や化石データについては以下の図鑑アーカイブをチェックしてみましょう：
 </p>
-<a href="/topics/spinosaurus-ecology/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-  <img src="/images/topics/spinosaurus_evolution.webp" alt="スピノサウルスの生態推測の歴史的変化：陸の王者から水中の狩人へ" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
-  <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">スピノサウルスの生態推測の歴史的変化：陸の王者から水中の狩人へ</span>
-</a>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 12px; margin-bottom: 25px;">
+  <a href="/dictionary/velociraptor/" style="text-decoration: none; color: inherit;">
+    <div class="hud-panel" style="padding: 10px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border-color: rgba(0, 242, 255, 0.15);">
+      <div style="width: 100%; height: 80px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+        <img src="/images/velociraptor.webp" alt="ヴェロキラプトル" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+      </div>
+      <span style="color: var(--primary-neon); font-size: 12px; font-weight: bold; text-decoration: underline;">ヴェロキラプトル</span>
+    </div>
+  </a>
+  <a href="/dictionary/spinosaurus/" style="text-decoration: none; color: inherit;">
+    <div class="hud-panel" style="padding: 10px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border-color: rgba(0, 242, 255, 0.15);">
+      <div style="width: 100%; height: 80px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+        <img src="/images/spinosaurus.webp" alt="スピノサウルス" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+      </div>
+      <span style="color: var(--primary-neon); font-size: 12px; font-weight: bold; text-decoration: underline;">スピノサウルス</span>
+    </div>
+  </a>
+  <a href="/dictionary/mosasaurus/" style="text-decoration: none; color: inherit;">
+    <div class="hud-panel" style="padding: 10px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border-color: rgba(0, 242, 255, 0.15);">
+      <div style="width: 100%; height: 80px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+        <img src="/images/mosasaurus.webp" alt="モササウルス" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+      </div>
+      <span style="color: var(--primary-neon); font-size: 12px; font-weight: bold; text-decoration: underline;">モササウルス</span>
+    </div>
+  </a>
+  <a href="/dictionary/therizinosaurus/" style="text-decoration: none; color: inherit;">
+    <div class="hud-panel" style="padding: 10px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border-color: rgba(0, 242, 255, 0.15);">
+      <div style="width: 100%; height: 80px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
+        <img src="/images/therizinosaurus.webp" alt="テリジノサウルス" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+      </div>
+      <span style="color: var(--primary-neon); font-size: 12px; font-weight: bold; text-decoration: underline;">テリジノサウルス</span>
+    </div>
+  </a>
+</div>
 
 <h2 class="article-section-title">実際とは違う姿で有名になった恐竜たちの比較</h2>
 <p class="article-paragraph">
@@ -116,11 +146,11 @@ relatedSpecimens: ["dilophosaurus","monolophosaurus","velociraptor","spinosaurus
     <div class="toy-affiliate-card">
       <div class="hud-corner top-left" style="position: absolute; top: -1px; left: -1px; width: 6px; height: 6px; border-top: 1px solid var(--primary-neon); border-left: 1px solid var(--primary-neon);"></div>
       <div class="hud-corner bottom-right" style="position: absolute; bottom: -1px; right: -1px; width: 6px; height: 6px; border-bottom: 1px solid var(--primary-neon); border-right: 1px solid var(--primary-neon);"></div>
-      <a class="toy-link" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25A2%25E3%2583%258B%25E3%2582%25A2%2520%25E3%2582%25B8%25E3%2583%25A5%25E3%2583%25A9%25E3%2582%25B7%25E3%2583%2583%25E3%2582%25AF%25E3%2583%25BB%25E3%2583%2591%25E3%2583%25BC%25E3%2582%25AF%252030%25E5%2591%25A8%25E5%25B9%25B4%25E8%25A8%2598%25E5%25BF%25B5%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
-        <img src="/images/dilophosaurus.webp" alt="アニア ジュラシック・パーク 30周年記念セット" style="border: none;" /><br>
-        タカラトミー(TAKARA TOMY) アニア ジュラシック・パーク 30周年記念セット
+      <a class="toy-link" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fedion%2F4904810298977%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fedion%2Fi%2F10815665%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+        <img src="//thumbnail.image.rakuten.co.jp/@0_mall/edion/cabinet/goods/ll/img_275/4904810298977_ll.jpg?_ex=128x128" alt="アニア ジュラシック・パーク 30周年記念セット" style="border: none;" /><br>
+        タカラトミー アニア ジュラシック・パーク30周年記念セット
       </a>
-      <a class="rakuten-btn" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25A2%25E3%2583%258B%25E3%2582%25A2%2520%25E3%2582%25B8%25E3%2583%25A5%25E3%2583%25A9%25E3%2582%25B7%25E3%2583%2583%25E3%2582%25AF%25E3%2583%25BB%25E3%2583%2591%25E3%2583%25BC%25E3%2582%25AF%252030%25E5%2591%25A8%25E5%25B9%25B4%25E8%25A8%2598%25E5%25BF%25B5%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+      <a class="rakuten-btn" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fedion%2F4904810298977%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fedion%2Fi%2F10815665%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
         <span>楽天市場で見る</span>
         <span class="btn-arrow">&raquo;</span>
       </a>
