@@ -39,14 +39,66 @@ relatedSpecimens: ["eoraptor","allosaurus","triceratops"]
   恐竜はこの時代の初期から中期（約2億3000万年前）に誕生しました。しかし当時はまだ、全長1〜3メートル程度の小さくすばしっこいトカゲのような存在でした。当時の陸上は、ワニの祖先に近いグループ（ポストスクスなどの擬鰐類）や、巨大な両生類、哺乳類の祖先に近いグループが支配しており、恐竜たちは彼らの影で敵から逃げ回りながらひっそりと暮らす「弱者」だったのです。
 </p>
 
+<p class="article-paragraph" style="margin-top: 20px; margin-bottom: 10px; font-weight: bold; color: var(--primary-neon);">
+  ▼ 三畳紀を代表する古生物・恐竜アーカイブ（クリックで詳細データへ）
+</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 15px; margin-bottom: 35px;">
+  <a href="/dictionary/eoraptor" class="article-link" style="text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; box-shadow: 0 0 5px rgba(0, 242, 255, 0.05);" onmouseover="this.style.borderColor='var(--primary-neon)'; this.style.boxShadow='0 0 10px rgba(0, 242, 255, 0.2)';" onmouseout="this.style.borderColor='var(--panel-border)'; this.style.boxShadow='0 0 5px rgba(0, 242, 255, 0.05)';">
+    <img src="/images/eoraptor.webp" alt="エオラプトル" style="width: 100%; height: 100px; object-fit: contain; border-radius: 2px; margin-bottom: 8px; display: block;" />
+    <span style="color: var(--primary-neon); font-weight: bold; font-size: 13px;">エオラプトル</span>
+  </a>
+  <a href="/dictionary/herrerasaurus" class="article-link" style="text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; box-shadow: 0 0 5px rgba(0, 242, 255, 0.05);" onmouseover="this.style.borderColor='var(--primary-neon)'; this.style.boxShadow='0 0 10px rgba(0, 242, 255, 0.2)';" onmouseout="this.style.borderColor='var(--panel-border)'; this.style.boxShadow='0 0 5px rgba(0, 242, 255, 0.05)';">
+    <img src="/images/herrerasaurus.webp" alt="ヘレラサウルス" style="width: 100%; height: 100px; object-fit: contain; border-radius: 2px; margin-bottom: 8px; display: block;" />
+    <span style="color: var(--primary-neon); font-weight: bold; font-size: 13px;">ヘレラサウルス</span>
+  </a>
+  <a href="/dictionary/coelophysis" class="article-link" style="text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; box-shadow: 0 0 5px rgba(0, 242, 255, 0.05);" onmouseover="this.style.borderColor='var(--primary-neon)'; this.style.boxShadow='0 0 10px rgba(0, 242, 255, 0.2)';" onmouseout="this.style.borderColor='var(--panel-border)'; this.style.boxShadow='0 0 5px rgba(0, 242, 255, 0.05)';">
+    <img src="/images/coelophysis.webp" alt="コエロフィシス" style="width: 100%; height: 100px; object-fit: contain; border-radius: 2px; margin-bottom: 8px; display: block;" />
+    <span style="color: var(--primary-neon); font-weight: bold; font-size: 13px;">コエロフィシス</span>
+  </a>
+  <a href="/dictionary/postosuchus" class="article-link" style="text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; box-shadow: 0 0 5px rgba(0, 242, 255, 0.05);" onmouseover="this.style.borderColor='var(--primary-neon)'; this.style.boxShadow='0 0 10px rgba(0, 242, 255, 0.2)';" onmouseout="this.style.borderColor='var(--panel-border)'; this.style.boxShadow='0 0 5px rgba(0, 242, 255, 0.05)';">
+    <img src="/images/postosuchus.webp" alt="ポストスクス" style="width: 100%; height: 100px; object-fit: contain; border-radius: 2px; margin-bottom: 8px; display: block;" />
+    <span style="color: var(--primary-neon); font-weight: bold; font-size: 13px;">ポストスクス</span>
+  </a>
+  <a href="/dictionary/shonisaurus" class="article-link" style="text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; box-shadow: 0 0 5px rgba(0, 242, 255, 0.05);" onmouseover="this.style.borderColor='var(--primary-neon)'; this.style.boxShadow='0 0 10px rgba(0, 242, 255, 0.2)';" onmouseout="this.style.borderColor='var(--panel-border)'; this.style.boxShadow='0 0 5px rgba(0, 242, 255, 0.05)';">
+    <img src="/images/shonisaurus.webp" alt="ショニサウルス" style="width: 100%; height: 100px; object-fit: contain; border-radius: 2px; margin-bottom: 8px; display: block;" />
+    <span style="color: var(--primary-neon); font-weight: bold; font-size: 13px;">ショニサウルス</span>
+  </a>
+</div>
+
 <h2 class="article-section-title">2. ジュラ紀：温暖化と森林の広がり、恐竜の「超巨大化」黄金期</h2>
 <p class="article-paragraph">
   今から約2億130万年前〜1億4500万年前までの時代です。
   超大陸パンゲアが徐々に南北に分裂し始め、陸地の間に新しく誕生した海が入り込むことで、地球全体に湿った風が行き渡るようになりました。気候は温暖で雨が多くなり、地表には巨大なシダ植物や、ソテツ、イチョウなどの針葉樹が大森林を形成しました。
 </p>
 <p class="article-paragraph">
-  この爆発的に増えた豊かな植物資源のおかげで、草食恐竜たちは驚異的な「超巨大化」を遂げることになります。ブラキオサウルスやディプロドクスといった、全長20〜30メートル、体重数十トンに達する「竜脚類」が全盛期を迎えました。そして、それらの巨獣たちを捕食するためにアロサウルスなどの大型肉食恐竜も出現。恐竜たちは名実ともに地球の絶対的な主役に躍り出たのです。
+  この爆発的に増えた豊かな植物資源のおかげで、草食恐竜たちは驚異的な「超巨大化」を遂げることになります。ブラキオサウルス/ディプロドクスといった、全長20〜30メートル、体重数十トンに達する「竜脚類」が全盛期を迎えました。そして、それらの巨獣たちを捕食するためにアロサウルスなどの大型肉食恐竜も出現。恐竜たちは名実ともに地球の絶対的な主役に躍り出たのです。
 </p>
+
+<p class="article-paragraph" style="margin-top: 20px; margin-bottom: 10px; font-weight: bold; color: var(--primary-neon);">
+  ▼ ジュラ紀を代表する恐竜アーカイブ（クリックで詳細データへ）
+</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 15px; margin-bottom: 35px;">
+  <a href="/dictionary/allosaurus" class="article-link" style="text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; box-shadow: 0 0 5px rgba(0, 242, 255, 0.05);" onmouseover="this.style.borderColor='var(--primary-neon)'; this.style.boxShadow='0 0 10px rgba(0, 242, 255, 0.2)';" onmouseout="this.style.borderColor='var(--panel-border)'; this.style.boxShadow='0 0 5px rgba(0, 242, 255, 0.05)';">
+    <img src="/images/allosaurus.webp" alt="アロサウルス" style="width: 100%; height: 100px; object-fit: contain; border-radius: 2px; margin-bottom: 8px; display: block;" />
+    <span style="color: var(--primary-neon); font-weight: bold; font-size: 13px;">アロサウルス</span>
+  </a>
+  <a href="/dictionary/brachiosaurus" class="article-link" style="text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; box-shadow: 0 0 5px rgba(0, 242, 255, 0.05);" onmouseover="this.style.borderColor='var(--primary-neon)'; this.style.boxShadow='0 0 10px rgba(0, 242, 255, 0.2)';" onmouseout="this.style.borderColor='var(--panel-border)'; this.style.boxShadow='0 0 5px rgba(0, 242, 255, 0.05)';">
+    <img src="/images/brachiosaurus.webp" alt="ブラキオサウルス" style="width: 100%; height: 100px; object-fit: contain; border-radius: 2px; margin-bottom: 8px; display: block;" />
+    <span style="color: var(--primary-neon); font-weight: bold; font-size: 13px;">ブラキオサウルス</span>
+  </a>
+  <a href="/dictionary/stegosaurus" class="article-link" style="text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; box-shadow: 0 0 5px rgba(0, 242, 255, 0.05);" onmouseover="this.style.borderColor='var(--primary-neon)'; this.style.boxShadow='0 0 10px rgba(0, 242, 255, 0.2)';" onmouseout="this.style.borderColor='var(--panel-border)'; this.style.boxShadow='0 0 5px rgba(0, 242, 255, 0.05)';">
+    <img src="/images/stegosaurus.webp" alt="ステゴサウルス" style="width: 100%; height: 100px; object-fit: contain; border-radius: 2px; margin-bottom: 8px; display: block;" />
+    <span style="color: var(--primary-neon); font-weight: bold; font-size: 13px;">ステゴサウルス</span>
+  </a>
+  <a href="/dictionary/dilophosaurus" class="article-link" style="text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; box-shadow: 0 0 5px rgba(0, 242, 255, 0.05);" onmouseover="this.style.borderColor='var(--primary-neon)'; this.style.boxShadow='0 0 10px rgba(0, 242, 255, 0.2)';" onmouseout="this.style.borderColor='var(--panel-border)'; this.style.boxShadow='0 0 5px rgba(0, 242, 255, 0.05)';">
+    <img src="/images/dilophosaurus.webp" alt="ディロフォサウルス" style="width: 100%; height: 100px; object-fit: contain; border-radius: 2px; margin-bottom: 8px; display: block;" />
+    <span style="color: var(--primary-neon); font-weight: bold; font-size: 13px;">ディロフォサウルス</span>
+  </a>
+  <a href="/dictionary/archaeopteryx" class="article-link" style="text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; box-shadow: 0 0 5px rgba(0, 242, 255, 0.05);" onmouseover="this.style.borderColor='var(--primary-neon)'; this.style.boxShadow='0 0 10px rgba(0, 242, 255, 0.2)';" onmouseout="this.style.borderColor='var(--panel-border)'; this.style.boxShadow='0 0 5px rgba(0, 242, 255, 0.05)';">
+    <img src="/images/archaeopteryx.webp" alt="アーケオプテリクス" style="width: 100%; height: 100px; object-fit: contain; border-radius: 2px; margin-bottom: 8px; display: block;" />
+    <span style="color: var(--primary-neon); font-weight: bold; font-size: 13px;">アーケオプテリクス</span>
+  </a>
+</div>
 
 <h2 class="article-section-title">3. 白亜紀：大陸分裂による百花繚乱の多様化と、ドラマチックな最期</h2>
 <p class="article-paragraph">
@@ -56,6 +108,32 @@ relatedSpecimens: ["eoraptor","allosaurus","triceratops"]
 <p class="article-paragraph">
   ティラノサウルスやトリケラトプス、アンキロサウルスなど、現在でも高い知名度を誇るスター恐竜の多くはこの白亜紀の末期に登場しました。しかし約6600万年前、直径約10キロメートルの小惑星がメキシコ・ユカタン半島付近に衝突。地球規模の気候寒冷化を引き起こし、鳥類を除くすべての恐竜たちが突如として絶滅を迎えるという、ドラマチックな最期を遂げたのです。
 </p>
+
+<p class="article-paragraph" style="margin-top: 20px; margin-bottom: 10px; font-weight: bold; color: var(--primary-neon);">
+  ▼ 白亜紀を代表する恐竜・古生物アーカイブ（クリックで詳細データへ）
+</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 15px; margin-bottom: 35px;">
+  <a href="/dictionary/tyrannosaurus" class="article-link" style="text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; box-shadow: 0 0 5px rgba(0, 242, 255, 0.05);" onmouseover="this.style.borderColor='var(--primary-neon)'; this.style.boxShadow='0 0 10px rgba(0, 242, 255, 0.2)';" onmouseout="this.style.borderColor='var(--panel-border)'; this.style.boxShadow='0 0 5px rgba(0, 242, 255, 0.05)';">
+    <img src="/images/tyrannosaurus.webp" alt="ティラノサウルス" style="width: 100%; height: 100px; object-fit: contain; border-radius: 2px; margin-bottom: 8px; display: block;" />
+    <span style="color: var(--primary-neon); font-weight: bold; font-size: 13px;">ティラノサウルス</span>
+  </a>
+  <a href="/dictionary/triceratops" class="article-link" style="text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; box-shadow: 0 0 5px rgba(0, 242, 255, 0.05);" onmouseover="this.style.borderColor='var(--primary-neon)'; this.style.boxShadow='0 0 10px rgba(0, 242, 255, 0.2)';" onmouseout="this.style.borderColor='var(--panel-border)'; this.style.boxShadow='0 0 5px rgba(0, 242, 255, 0.05)';">
+    <img src="/images/triceratops.webp" alt="トリケラトプス" style="width: 100%; height: 100px; object-fit: contain; border-radius: 2px; margin-bottom: 8px; display: block;" />
+    <span style="color: var(--primary-neon); font-weight: bold; font-size: 13px;">トリケラトプス</span>
+  </a>
+  <a href="/dictionary/spinosaurus" class="article-link" style="text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; box-shadow: 0 0 5px rgba(0, 242, 255, 0.05);" onmouseover="this.style.borderColor='var(--primary-neon)'; this.style.boxShadow='0 0 10px rgba(0, 242, 255, 0.2)';" onmouseout="this.style.borderColor='var(--panel-border)'; this.style.boxShadow='0 0 5px rgba(0, 242, 255, 0.05)';">
+    <img src="/images/spinosaurus.webp" alt="スピノサウルス" style="width: 100%; height: 100px; object-fit: contain; border-radius: 2px; margin-bottom: 8px; display: block;" />
+    <span style="color: var(--primary-neon); font-weight: bold; font-size: 13px;">スピノサウルス</span>
+  </a>
+  <a href="/dictionary/ankylosaurus" class="article-link" style="text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; box-shadow: 0 0 5px rgba(0, 242, 255, 0.05);" onmouseover="this.style.borderColor='var(--primary-neon)'; this.style.boxShadow='0 0 10px rgba(0, 242, 255, 0.2)';" onmouseout="this.style.borderColor='var(--panel-border)'; this.style.boxShadow='0 0 5px rgba(0, 242, 255, 0.05)';">
+    <img src="/images/ankylosaurus.webp" alt="アンキロサウルス" style="width: 100%; height: 100px; object-fit: contain; border-radius: 2px; margin-bottom: 8px; display: block;" />
+    <span style="color: var(--primary-neon); font-weight: bold; font-size: 13px;">アンキロサウルス</span>
+  </a>
+  <a href="/dictionary/mosasaurus" class="article-link" style="text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; box-shadow: 0 0 5px rgba(0, 242, 255, 0.05);" onmouseover="this.style.borderColor='var(--primary-neon)'; this.style.boxShadow='0 0 10px rgba(0, 242, 255, 0.2)';" onmouseout="this.style.borderColor='var(--panel-border)'; this.style.boxShadow='0 0 5px rgba(0, 242, 255, 0.05)';">
+    <img src="/images/mosasaurus.webp" alt="モササウルス" style="width: 100%; height: 100px; object-fit: contain; border-radius: 2px; margin-bottom: 8px; display: block;" />
+    <span style="color: var(--primary-neon); font-weight: bold; font-size: 13px;">モササウルス</span>
+  </a>
+</div>
 
 <h2 class="article-section-title">最新科学で迫る謎：なぜ恐竜だけが絶滅を乗り越え、覇者となれたのか？</h2>
 <p class="article-paragraph">
