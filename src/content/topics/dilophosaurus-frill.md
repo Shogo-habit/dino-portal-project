@@ -146,11 +146,11 @@ relatedSpecimens: ["dilophosaurus","monolophosaurus","velociraptor","spinosaurus
     <div class="toy-affiliate-card">
       <div class="hud-corner top-left" style="position: absolute; top: -1px; left: -1px; width: 6px; height: 6px; border-top: 1px solid var(--primary-neon); border-left: 1px solid var(--primary-neon);"></div>
       <div class="hud-corner bottom-right" style="position: absolute; bottom: -1px; right: -1px; width: 6px; height: 6px; border-bottom: 1px solid var(--primary-neon); border-right: 1px solid var(--primary-neon);"></div>
-      <a class="toy-link" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fedion%2F4904810298977%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fedion%2Fi%2F10815665%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+      <a class="toy-link" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25A2%25E3%2583%258B%25E3%2582%25A2%2520%25E3%2582%25B8%25E3%2583%25A5%25E3%2583%25A9%25E3%2582%25B7%25E3%2583%2583%25E3%2582%25AF%25E3%2583%25BB%25E3%2583%2591%25E3%2583%25BC%25E3%2582%25AF%252030%25E5%2591%25A8%25E5%25B9%25B4%25E8%25A8%2598%25E5%25BF%25B5%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
         <img src="//thumbnail.image.rakuten.co.jp/@0_mall/edion/cabinet/goods/ll/img_275/4904810298977_ll.jpg?_ex=128x128" alt="アニア ジュラシック・パーク 30周年記念セット" style="border: none;" /><br>
         タカラトミー アニア ジュラシック・パーク30周年記念セット
       </a>
-      <a class="rakuten-btn" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fedion%2F4904810298977%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fedion%2Fi%2F10815665%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+      <a class="rakuten-btn" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25A2%25E3%2583%258B%25E3%2582%25A2%2520%25E3%2582%25B8%25E3%2583%25A5%25E3%2583%25A9%25E3%2582%25B7%25E3%2583%2583%25E3%2582%25AF%25E3%2583%25BB%25E3%2583%2591%25E3%2583%25BC%25E3%2582%25AF%252030%25E5%2591%25A8%25E5%25B9%25B4%25E8%25A8%2598%25E5%25BF%25B5%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
         <span>楽天市場で見る</span>
         <span class="btn-arrow">&raquo;</span>
       </a>
