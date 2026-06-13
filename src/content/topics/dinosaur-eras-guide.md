@@ -161,7 +161,7 @@ relatedSpecimens: ["eoraptor","allosaurus","triceratops"]
   <table style="width: 100%; border-collapse: collapse; border: 1px solid var(--panel-border); font-size: 14px;">
     <thead>
       <tr style="background-color: rgba(0, 242, 255, 0.1); border-bottom: 1px solid var(--panel-border);">
-        <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left;">時代名</th>
+        <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left; white-space: nowrap;">時代名</th>
         <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left;">おおよその期間</th>
         <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left;">地球の環境・気候</th>
         <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left;">進化のマイルストーン</th>
@@ -171,7 +171,7 @@ relatedSpecimens: ["eoraptor","allosaurus","triceratops"]
     </thead>
     <tbody>
       <tr style="border-bottom: 1px solid var(--panel-border);">
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">三畳紀</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); white-space: nowrap;">三畳紀</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">約2.5億〜2.0億年前</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">超大陸パンゲア、極めて乾燥した砂漠気候</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">恐竜の誕生。小型で敏捷な初期型の出現。</td>
@@ -179,7 +179,7 @@ relatedSpecimens: ["eoraptor","allosaurus","triceratops"]
         <td style="padding: 10px;">三畳紀末の大規模火山噴火による大絶滅</td>
       </tr>
       <tr style="border-bottom: 1px solid var(--panel-border);">
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">ジュラ紀</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); white-space: nowrap;">ジュラ紀</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">約2.0億〜1.45億年前</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">大陸が分裂開始、温暖湿潤で広大な森林が広がる</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">恐竜の黄金期。植物食恐竜の巨大化・大繁栄。</td>
@@ -187,7 +187,7 @@ relatedSpecimens: ["eoraptor","allosaurus","triceratops"]
         <td style="padding: 10px;">気候変動による一部竜脚類の衰退</td>
       </tr>
       <tr>
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">白亜紀</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); white-space: nowrap;">白亜紀</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">約1.45億〜6600万年前</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">大陸が完全に分断、温暖な気候。被子植物の出現</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">進化の頂点。独自の地域適応による多種多様化。</td>

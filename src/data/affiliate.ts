@@ -243,11 +243,11 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
             subtitle: "「どっちが強い!?」のキャラクターと旅する、生息年代・地域別の新型ビジュアル図鑑",
             type: "book",
             badgeText: "AGE & REGION GUIDE",
-            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5772/9784041115772.jpg?_ex=300x300",
-            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/4041115774"),
+            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0572/9784041090572.jpg?_ex=300x300",
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/4041090577"),
             priceText: "PRICE: ¥2,200 (税込)",
             details: ["小林快次先生監修", "生息年代と地域ごとに紹介", "考える力を育むナゾトキ図鑑"],
-            rakutenAffiliateUrl: "https://af.moshimo.com/af/c/click?a_id=5603988&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F16723224%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F20387532%2F",
+            rakutenAffiliateUrl: buildRakutenAffiliateUrl("角川の集める図鑑GET！ 恐竜"),
             impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
         },
         {
@@ -256,11 +256,11 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
             subtitle: "火山・闘技場・崖が一体となった巨大プレイマップ＆合体ギミックトイ",
             type: "goods",
             badgeText: "DYNAMIC PLAYSET",
-            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/edion/cabinet/goods/ll/img_199/4904810175032_ll.jpg?_ex=300x300",
-            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/B09C1M88T5"),
+            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/edion/cabinet/goods/ll/img_203/4904810155218_ll.jpg?_ex=300x300",
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/B085MTFTQ4"),
             priceText: "PRICE: ¥7,480 (税込)",
             details: ["幅1m超の巨大探検マップ", "巨大ティラノサウルス合体機構", "アニア恐竜シリーズ最大級"],
-            rakutenAffiliateUrl: buildRakutenAffiliateUrl("アニア 合体 巨大 大乱闘 恐竜探検島"),
+            rakutenAffiliateUrl: buildRakutenAffiliateUrl("アニア 合体！恐竜探検島"),
             impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
         },
         {
