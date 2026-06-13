@@ -47,6 +47,14 @@ relatedSpecimens: ["dilophosaurus","monolophosaurus","velociraptor","spinosaurus
   その筆頭が<strong style="color: var(--primary-neon);">ヴェロキサウルス（ラプトル）</strong>です。映画の公開前は、一般にはほとんど知られていない存在でしたが、劇中で「高い知能を持ち、集団で人間を追い詰める恐ろしいハンター」として描かれたことで、一躍ティラノサウルスと並ぶ人気恐竜となりました。また、『ジュラシック・パークIII』で主役に抜擢された<strong style="color: var(--primary-neon);">スピノサウルス</strong>や、『ジュラシック・ワールド』でプールから跳ね上がって観客を沸かせた巨大な海生爬虫類<strong style="color: var(--primary-neon);">モササウルス</strong>、さらには『ジュラシック・ワールド／新たなる支配者』で巨大な爪を武器に強烈なインパクトを残した<strong style="color: var(--primary-neon);">テリジノサウルス</strong>など、映画が恐竜の人気と知名度を牽引してきた功績は計り知れません。
 </p>
 
+<p class="article-paragraph" style="margin-top: 15px; margin-bottom: 0;">
+  ※映画で一躍スターとなったスピノサウルスの、劇的な生態復元の歴史はこちら：
+</p>
+<a href="/topics/spinosaurus-ecology/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
+  <img src="/images/topics/spinosaurus_evolution.webp" alt="スピノサウルスの生態推測の歴史的変化：陸の王者から水中の狩人へ" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+  <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">スピノサウルスの生態推測の歴史的変化：陸の王者から水中の狩人へ</span>
+</a>
+
 <h2 class="article-section-title">実際とは違う姿で有名になった恐竜たちの比較</h2>
 <p class="article-paragraph">
   しかし、映画で有名になった恐竜たちの中には、劇中での劇的な演出や、当時の古い学説をベースにしたデザインが定着した結果、最新の科学的知見とは大きく異なる姿で知られるようになったものも少なくありません。ここでは、そんな「イメージと真実のギャップ」が特に大きい恐竜たちをご紹介します。
@@ -56,7 +64,7 @@ relatedSpecimens: ["dilophosaurus","monolophosaurus","velociraptor","spinosaurus
   <table style="width: 100%; border-collapse: collapse; border: 1px solid var(--panel-border); font-size: 14px;">
     <thead>
       <tr style="background-color: rgba(0, 242, 255, 0.1); border-bottom: 1px solid var(--panel-border);">
-        <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left; min-width: 100px;">恐竜名</th>
+        <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left; white-space: nowrap;">恐竜名</th>
         <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left; min-width: 150px;">映画での描写・イメージ</th>
         <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left; min-width: 180px;">最新科学が示す本当の姿</th>
         <th style="padding: 10px; text-align: left; min-width: 150px;">ギャップのポイント</th>
@@ -64,25 +72,25 @@ relatedSpecimens: ["dilophosaurus","monolophosaurus","velociraptor","spinosaurus
     </thead>
     <tbody>
       <tr style="border-bottom: 1px solid var(--panel-border);">
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">ディロフォサウルス</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); white-space: nowrap;">ディロフォサウルス</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">人間より小柄、襟飾りを広げ、黒い毒液を吐き出す。</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">全長7メートル、体重400キロの巨体。襟飾りや毒は一切なく、頑丈な顎を持つ。</td>
         <td style="padding: 10px;">「毒と襟飾り」は完全な創作。本来はジュラ紀前期の生態系の頂点に立つ巨大ハンター。</td>
       </tr>
       <tr style="border-bottom: 1px solid var(--panel-border);">
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">ヴェロキラプトル</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); white-space: nowrap;">ヴェロキラプトル</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">人間サイズ（全長3〜4m）、緑〜褐色のウロコ肌。</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">コヨーテ程度のサイズ（全長約1.8m、腰高60cm程度）、全身が鳥のような羽毛で覆われていた。</td>
         <td style="padding: 10px;">サイズが大幅に引き上げられ、羽毛が排除された。映画のデザインは近縁のデイノニクスに近い。</td>
       </tr>
       <tr style="border-bottom: 1px solid var(--panel-border);">
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">スピノサウルス</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); white-space: nowrap;">スピノサウルス</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">ティラノサウルスを凌ぐ陸上ハンター。二足歩行で走り回る。</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">短い後肢と櫂（かい）のような平たい尻尾を持つ、水中に特化した半水生の魚食恐竜。</td>
         <td style="padding: 10px;">陸上でティラノサウルスと激闘を繰り広げるのは不可能。実際はワニのように水中で魚を捕食していた。</td>
       </tr>
       <tr>
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">モササウルス</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); white-space: nowrap;">モササウルス</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">クジラを遥かに超える超巨体（推定30m以上）。水面から大ジャンプする。</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">最大種でも全長15〜17メートル程度。サメのような二股の尾ヒレを持ち、クジラのように跳ねることはできない。</td>
         <td style="padding: 10px;">迫力重視でサイズが過大に描かれた。尾ヒレの形状や遊泳スタイルの復元も現代と異なる。</td>
