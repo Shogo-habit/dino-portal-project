@@ -17,10 +17,6 @@ relatedSpecimens: ["dilophosaurus","monolophosaurus","velociraptor","spinosaurus
   映画の大ヒットに伴い、この「襟飾りを広げて毒を吐く小型肉食恐竜」というイメージは世界中で一般常識のように定着しました。しかし、古生物学的な事実を照らし合わせると、この印象的な特徴はすべて映画の演出のために付け加えられた<strong style="color: var(--primary-neon);">「純粋なフィクション（創作）」</strong>だったのです。
 </p>
 
-<div style="margin: 20px auto 35px auto; text-align: center; max-width: 900px;">
-  <img src="/images/topics/dilophosaurus_comparison.webp" alt="ディロフォサウルスの映画と実態の比較イラスト" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
-</div>
-
 <h2 class="article-section-title">実物スペック：ジュラ紀前期の巨大な支配者</h2>
 <p class="article-paragraph">
   では、実際のディロフォサウルスはどのような恐竜だったのでしょうか。まず、映画の描写と最も大きく異なるのがその<strong style="color: var(--primary-neon);">「サイズ」</strong>です。映画では人間より少し小さいサイズ（全長1.5〜2メートル程度）として描かれていましたが、化石から判明している大人のディロフォサウルスは<strong style="color: var(--primary-neon);">全長約6〜7メートル、体重は約400キログラム</strong>に達する大型の肉食恐竜でした。
