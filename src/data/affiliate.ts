@@ -235,5 +235,46 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
             rakutenAffiliateUrl: "https://af.moshimo.com/af/c/click?a_id=5603988&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17125134%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F20648276%2F",
             impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
         }
+    ],
+    "dinosaur-eras-guide": [
+        {
+            id: "dinosaur_eras_get",
+            title: "角川の集める図鑑GET！ 恐竜",
+            subtitle: "「どっちが強い!?」のキャラクターと旅する、生息年代・地域別の新型ビジュアル図鑑",
+            type: "book",
+            badgeText: "AGE & REGION GUIDE",
+            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5772/9784041115772.jpg?_ex=300x300",
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/4041115774"),
+            priceText: "PRICE: ¥2,200 (税込)",
+            details: ["小林快次先生監修", "生息年代と地域ごとに紹介", "考える力を育むナゾトキ図鑑"],
+            rakutenAffiliateUrl: "https://af.moshimo.com/af/c/click?a_id=5603988&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F16723224%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F20387532%2F",
+            impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
+        },
+        {
+            id: "dinosaur_eras_island",
+            title: "アニア 合体！巨大！大乱闘！恐竜探検島",
+            subtitle: "火山・闘技場・崖が一体となった巨大プレイマップ＆合体ギミックトイ",
+            type: "goods",
+            badgeText: "DYNAMIC PLAYSET",
+            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/edion/cabinet/goods/ll/img_199/4904810175032_ll.jpg?_ex=300x300",
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/B09C1M88T5"),
+            priceText: "PRICE: ¥7,480 (税込)",
+            details: ["幅1m超の巨大探検マップ", "巨大ティラノサウルス合体機構", "アニア恐竜シリーズ最大級"],
+            rakutenAffiliateUrl: buildRakutenAffiliateUrl("アニア 合体 巨大 大乱闘 恐竜探検島"),
+            impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
+        },
+        {
+            id: "dinosaur_eras_book_neo",
+            title: "小学館の図鑑NEO [新版] 恐竜 DVD付き",
+            subtitle: "最新の学説に基づいた決定版恐竜図鑑、映像コンテンツ同梱",
+            type: "book",
+            badgeText: "ARCHIVAL BOOK",
+            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3118/9784092173118_1_24.jpg?_ex=300x300",
+            affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/4092173111"),
+            priceText: "PRICE: ¥2,200 (税込)",
+            details: ["最新恐竜データ400種以上", "ドラえもんコラボDVD付き", "教育的学習アーカイブに最適"],
+            rakutenAffiliateUrl: "https://af.moshimo.com/af/c/click?a_id=5603988&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F12781560%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F16942437%2F",
+            impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
+        }
     ]
 };

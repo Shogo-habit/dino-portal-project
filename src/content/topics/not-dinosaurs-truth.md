@@ -250,6 +250,6 @@ relatedSpecimens: ["pteranodon","futabasaurus","mosasaurus"]
 </p>
 <a href="/topics/dinosaur-eras-guide/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
   <img src="/images/topics/dinosaur_eras.webp" alt="恐竜時代の歴史" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
-  <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">3分でわかる恐竜の歴史！「三畳紀・ジュラ紀・白亜紀」ってどんな時代？</span>
+  <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">【地球の覇権を握った1億6000万年】「三畳紀・ジュラ紀・白亜紀」恐竜たちの進化と環境の変化を徹底解説！</span>
 </a>
 
