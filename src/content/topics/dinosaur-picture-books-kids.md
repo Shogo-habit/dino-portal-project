@@ -11,13 +11,23 @@ relatedSpecimens: ["triceratops", "tyrannosaurus", "brachiosaurus"]
 
 <h2 class="article-section-title">子どもの「恐竜ブーム」を本物の学びに変える！幼児向け図鑑の重要性</h2>
 <p class="article-paragraph">
-  「子どもが突然、恐竜に興味を持ち始めたけれど、どの図鑑を買ってあげればいいのだろう？」——これは多くの親御さんが一度は抱く悩みです。子どもの成長において、3歳から6歳頃に訪れる「恐竜ブーム」は、知的好奇心や記憶力、読解力を爆発的に育てるため<h3 style="color: var(--primary-neon); font-size: 15px; margin-bottom: 12px;">▼ 3〜4歳向けおすすめ図鑑 比較表</h3>
+  「子どもが突然、恐竜に興味を持ち始めたけれど、どの図鑑を買ってあげればいいのだろう？」——これは多くの親御さんが一度は抱く悩みです。子どもの成長において、3歳から6歳頃に訪れる「恐竜ブーム」は、知的好奇心や記憶力、読解力を爆発的に育てるための非常に貴重な黄金期とされています。
+</p>
+<p class="article-paragraph">
+  しかし、図鑑選びを一歩間違えると、<strong style="color: var(--primary-neon);">「難しすぎて一度も開かない」「重すぎて子どもが自分で本棚から取り出せない」「親が説明しきれずにすぐ飽きてしまう」</strong>といった、親の「失敗あるある」に陥ってしまいがちです。幼児期の脳は、年齢や発達段階によって好むビジュアルや理解できる文字量が全く異なります。本記事では、3歳〜6歳児にぴったりの恐竜図鑑の「失敗しない選び方」と、本当におすすめできる厳選図鑑6選を徹底レビューしていきます。
+</p>
+
+<h2 class="article-section-title">【いきなり結論】幼児向けおすすめ恐竜図鑑6選 比較表</h2>
+<p class="article-paragraph">
+  まずは、本記事で紹介するおすすめの6冊について、その基本スペックや特徴を一覧にまとめました。お子さまの現在の年齢や好みに合わせて、最適な一冊を絞り込む参考にしてください。
+</p>
+
+<h3 style="color: var(--primary-neon); font-size: 15px; margin-bottom: 12px;">▼ 3〜4歳向けおすすめ図鑑 比較表</h3>
 <div class="table-container" style="overflow-x: auto; margin-bottom: 25px;">
   <table style="width: 100%; border-collapse: collapse; border: 1px solid var(--panel-border); font-size: 13px;">
     <thead>
       <tr style="background-color: rgba(0, 242, 255, 0.1); border-bottom: 1px solid var(--panel-border);">
-        <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left; width: 230px; min-width: 200px;">図鑑名 / 出版社</th>
-        <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center; width: 80px;">対象年齢</th>
+        <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left; width: 230px; min-width: 200px; white-space: nowrap;">図鑑名 / 出版社</th>
         <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center; width: 140px; white-space: nowrap;">ギミック・付録</th>
         <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left;">最大の特徴</th>
         <th style="padding: 10px; text-align: center; width: 90px;">詳細リンク</th>
@@ -25,22 +35,19 @@ relatedSpecimens: ["triceratops", "tyrannosaurus", "brachiosaurus"]
     </thead>
     <tbody>
       <tr style="border-bottom: 1px solid var(--panel-border);">
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); width: 230px; min-width: 200px;">はっけんずかん きょうりゅう 新版<br><span style="font-size: 11px; color: var(--text-muted);">（Gakken）</span></td>
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center; width: 80px;">3〜4歳</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); width: 230px; min-width: 200px; white-space: nowrap;">はっけんずかん きょうりゅう 新版<br><span style="font-size: 11px; color: var(--text-muted);">（Gakken）</span></td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center; width: 140px; white-space: nowrap;">めくる仕掛け窓</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">しかけをめくると恐竜の骨や動きの変化がわかる、めくり易い厚紙設計。</td>
         <td style="padding: 10px; text-align: center; width: 90px;"><a href="#detail-hakken" style="color: var(--primary-neon); text-decoration: underline;">レビューへ</a></td>
       </tr>
       <tr style="border-bottom: 1px solid var(--panel-border);">
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); width: 230px; min-width: 200px;">よみきかせずかん きょうりゅう<br><span style="font-size: 11px; color: var(--text-muted);">（KADOKAWA）</span></td>
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center; width: 80px;">3〜4歳</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); width: 230px; min-width: 200px; white-space: nowrap;">よみきかせずかん きょうりゅう<br><span style="font-size: 11px; color: var(--text-muted);">（KADOKAWA）</span></td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center; width: 140px; white-space: nowrap;">お話仕立て</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">物語を読み聞かせるように、親子で会話しながら恐竜の生態を学べる。</td>
         <td style="padding: 10px; text-align: center; width: 90px;"><a href="#detail-yomikase" style="color: var(--primary-neon); text-decoration: underline;">レビューへ</a></td>
       </tr>
       <tr style="border-bottom: 1px solid var(--panel-border);">
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); width: 230px; min-width: 200px;">まどあけずかん きょうりゅう<br><span style="font-size: 11px; color: var(--text-muted);">（小学館）</span></td>
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center; width: 80px;">3〜4歳</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); width: 230px; min-width: 200px; white-space: nowrap;">まどあけずかん きょうりゅう<br><span style="font-size: 11px; color: var(--text-muted);">（小学館）</span></td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center; width: 140px; white-space: nowrap;">英語つき窓あけ</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">たくさんの小窓と、全ての恐竜名に英語と発音ルビが記載された知育図鑑。</td>
         <td style="padding: 10px; text-align: center; width: 90px;"><a href="#detail-madoake" style="color: var(--primary-neon); text-decoration: underline;">レビューへ</a></td>
@@ -54,8 +61,7 @@ relatedSpecimens: ["triceratops", "tyrannosaurus", "brachiosaurus"]
   <table style="width: 100%; border-collapse: collapse; border: 1px solid var(--panel-border); font-size: 13px;">
     <thead>
       <tr style="background-color: rgba(0, 242, 255, 0.1); border-bottom: 1px solid var(--panel-border);">
-        <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left; width: 230px; min-width: 200px;">図鑑名 / 出版社</th>
-        <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center; width: 80px;">対象年齢</th>
+        <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left; width: 230px; min-width: 200px; white-space: nowrap;">図鑑名 / 出版社</th>
         <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center; width: 140px; white-space: nowrap;">ギミック・付録</th>
         <th style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: left;">最大の特徴</th>
         <th style="padding: 10px; text-align: center; width: 90px;">詳細リンク</th>
@@ -63,22 +69,19 @@ relatedSpecimens: ["triceratops", "tyrannosaurus", "brachiosaurus"]
     </thead>
     <tbody>
       <tr style="border-bottom: 1px solid var(--panel-border);">
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); width: 230px; min-width: 200px;">じぶんでよめる きょうりゅうずかん<br><span style="font-size: 11px; color: var(--text-muted);">（成美堂出版）</span></td>
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center; width: 80px;">5〜6歳</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); width: 230px; min-width: 200px; white-space: nowrap;">じぶんでよめる きょうりゅうずかん<br><span style="font-size: 11px; color: var(--text-muted);">（成美堂出版）</span></td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center; width: 140px; white-space: nowrap;">ひらがな・カタカナ</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">すべてひらがな・カタカナで書かれており、文字を読む練習に最適。</td>
         <td style="padding: 10px; text-align: center; width: 90px;"><a href="#detail-jibunde" style="color: var(--primary-neon); text-decoration: underline;">レビューへ</a></td>
       </tr>
       <tr style="border-bottom: 1px solid var(--panel-border);">
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); width: 230px; min-width: 200px;">はじめての恐竜図鑑 恐竜大行進 A to Z<br><span style="font-size: 11px; color: var(--text-muted);">（誠文堂新光社）</span></td>
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center; width: 80px;">5〜6歳</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); width: 230px; min-width: 200px; white-space: nowrap;">はじめての恐竜図鑑 恐竜大行進 A to Z<br><span style="font-size: 11px; color: var(--text-muted);">（誠文堂新光社）</span></td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center; width: 140px; white-space: nowrap;">アルファベット順</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">海外の美しい絵本のようなイラスト。学名のアルファベット順に恐竜を紹介。</td>
         <td style="padding: 10px; text-align: center; width: 90px;"><a href="#detail-atoz" style="color: var(--primary-neon); text-decoration: underline;">レビューへ</a></td>
       </tr>
       <tr>
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); width: 230px; min-width: 200px;">動く図鑑MOVE 恐竜 新訂二版<br><span style="font-size: 11px; color: var(--text-muted);">（講談社）</span></td>
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center; width: 80px;">5〜6歳</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); width: 230px; min-width: 200px; white-space: nowrap;">動く図鑑MOVE 恐竜 新訂二版<br><span style="font-size: 11px; color: var(--text-muted);">（講談社）</span></td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center; width: 140px; white-space: nowrap;">NHKのCG映像DVD</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">躍動感のあるイラストと、BBCやNHK特選のCG映像DVDで五感を刺激。</td>
         <td style="padding: 10px; text-align: center; width: 90px;"><a href="#detail-move" style="color: var(--primary-neon); text-decoration: underline;">レビューへ</a></td>
