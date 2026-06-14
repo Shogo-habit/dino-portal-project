@@ -241,15 +241,15 @@ relatedSpecimens: ["triceratops", "tyrannosaurus", "brachiosaurus"]
     <div class="toy-affiliate-card">
       <div class="hud-corner top-left" style="position: absolute; top: -1px; left: -1px; width: 6px; height: 6px; border-top: 1px solid var(--primary-neon); border-left: 1px solid var(--primary-neon);"></div>
       <div class="hud-corner bottom-right" style="position: absolute; bottom: -1px; right: -1px; width: 6px; height: 6px; border-bottom: 1px solid var(--primary-neon); border-right: 1px solid var(--primary-neon);"></div>
-      <a class="toy-link" href="https://af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F9784416521571%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
-        <img src="//thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1571/9784416521571.jpg?_ex=128x128" alt="はじめての恐竜図鑑 恐竜大行進 A to Z" style="border: none;" /><br>
-        はじめての恐竜図鑑 恐竜大行進 A to Z
+      <a class="toy-link" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F15885162%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F19587450%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+        <img src="//thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9998/9784416519998.jpg?_ex=128x128" alt="" style="border: none;" /><br>
+        はじめての恐竜図鑑 恐竜大行進 AtoZ ティラノサウルスもトリケラトプスも, 日本の恐竜もいる！ [ ダスティン・グロウィック ]
       </a>
-      <a class="rakuten-btn" href="https://af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F9784416521571%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+      <a class="rakuten-btn" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2581%25AF%25E3%2581%2598%25E3%2582%2581%25E3%2581%25A6%25E3%2581%25AE%25E6%2581%2590%25E7%25AB%259C%25E5%259B%25B3%25E9%2591%2592%25E3%2580%2580%25E6%2581%2590%25E7%25AB%259C%25E5%25A4%25A7%25E8%25A1%258C%25E9%2580%25B2%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
         <span>楽天市場で見る</span>
         <span class="btn-arrow">&raquo;</span>
       </a>
-      <img src="https://i.moshimo.com/af/i/impression?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;">
+      <img src="//i.moshimo.com/af/i/impression?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;">
     </div>
   </div>
 </div>
