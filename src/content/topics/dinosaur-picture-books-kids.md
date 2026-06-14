@@ -37,7 +37,7 @@ relatedSpecimens: ["triceratops", "tyrannosaurus", "brachiosaurus"]
       <tr style="border-bottom: 1px solid var(--panel-border);">
         <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); width: 230px; min-width: 200px; white-space: nowrap;">はっけんずかん きょうりゅう 新版<br><span style="font-size: 11px; color: var(--text-muted);">（Gakken）</span></td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center; width: 140px; white-space: nowrap;">めくる仕掛け窓</td>
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">しかけをめくると恐竜の骨や動きの変化がわかる、めくり易い厚紙設計。</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">仕掛けをめくると恐竜の骨や動きの変化がわかる、めくり易い厚紙設計。</td>
         <td style="padding: 10px; text-align: center; width: 90px;"><a href="#detail-hakken" style="color: var(--primary-neon); text-decoration: underline;">レビューへ</a></td>
       </tr>
       <tr style="border-bottom: 1px solid var(--panel-border);">
@@ -96,16 +96,16 @@ relatedSpecimens: ["triceratops", "tyrannosaurus", "brachiosaurus"]
 </p>
 
 <ul style="list-style-type: square; padding-left: 20px; line-height: 1.8; margin-bottom: 25px; font-size: 14px;">
-  <li><strong style="color: var(--primary-neon);">1. 年齢に合っているか（3歳と6歳の決定的な違い）</strong><br>3歳児は「絵本としてストーリーを楽しんだり、しかけを動かしたりする」段階です。一方で6歳児は「自分で文字を読み、恐竜の名前や生態などの細かい知識を収集する」段階に入ります。ここをミスマッチさせないことが最も大切です。</li>
+  <li><strong style="color: var(--primary-neon);">1. 年齢に合っているか（3歳と6歳の決定的な違い）</strong><br>3歳児は「絵本としてストーリーを楽しんだり、仕掛けを動かしたりする」段階です。一方で6歳児は「自分で文字を読み、恐竜の名前や生態などの細かい知識を収集する」段階に入ります。ここをミスマッチさせないことが最も大切です。</li>
   <li><strong style="color: var(--primary-neon);">2. イラスト vs リアル（子どもの好みとビジュアル表現）</strong><br>恐竜の姿をデフォルメした優しいタッチのイラスト絵本風のものと、最新のCGや化石写真が載っているリアル志向のものがあります。お子さまが普段どんな絵本を好んでいるかで選び分けましょう。</li>
   <li><strong style="color: var(--primary-neon);">3. 文字量と読み方（親が読み聞かせるか、子が自分で読むか）</strong><br>まだ文字が読めない時期は、短い解説で親が読み聞かせしやすいもの。少しずつ文字が読めるようになってきたら、ひらがな表記が多く子どもが一人で達成感を味わえるものがベストです。</li>
-  <li><strong style="color: var(--primary-neon);">4. DVD・しかけ・ARなどの付録（知的好奇心へのアプローチ）</strong><br>「本をただめくるだけでは飽きてしまう」という子には、飛び出すしかけや、NHK等のCG映像が収録されたDVD、スマホをかざすと動くAR機能つきの図鑑が強い味方になります。</li>
+  <li><strong style="color: var(--primary-neon);">4. DVD・仕掛け・ARなどの付録（知的好奇心へのアプローチ）</strong><br>「本をただめくるだけでは飽きてしまう」という子には、飛び出す仕掛けや、NHK等のCG映像が収録されたDVD、スマホをかざすと動くAR機能つきの図鑑が強い味方になります。</li>
   <li><strong style="color: var(--primary-neon);">5. サイズと重さ（子どもが自分で扱えるか）</strong><br>本格的な大判図鑑は情報量が多い反面、1kg以上の重さがあり、幼児には扱いづらく持ち運びも困難です。幼児期には、少し小さめで角が丸い厚紙仕様など、怪我の心配がなく自立して扱えるサイズ感も重要です。</li>
 </ul>
 
-<h2 class="article-section-title">【3〜4歳向け】しかけと絵で楽しむ！おすすめ恐竜図鑑3選</h2>
+<h2 class="article-section-title">【3〜4歳向け】仕掛けと絵で楽しむ！おすすめ恐竜図鑑3選</h2>
 <p class="article-paragraph">
-  3〜4歳児は、「五感を使って楽しむ」ことが学びの入り口です。絵本感覚で指先を動かし、繰り返し遊びたくなるようなしかけ付きや、温かみのあるストーリー性がある図鑑がおすすめです。
+  3〜4歳児は、「五感を使って楽しむ」ことが学びの入り口です。絵本感覚で指先を動かし、繰り返し遊びたくなるような仕掛け付きや、温かみのあるストーリー性がある図鑑がおすすめです。
 </p>
 
 <h3 id="detail-hakken" style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">① 『きょうりゅう 新版 (はっけんずかん)』（Gakken）</h3>
@@ -113,7 +113,7 @@ relatedSpecimens: ["triceratops", "tyrannosaurus", "brachiosaurus"]
   <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
       <strong>【直感的な楽しさ：★★★★★ | 耐久性：★★★★★ | 対象：3〜4歳】</strong><br>
-      窓あきのしかけをめくると、恐竜が動いたり、骨が見えたりする大人気の「しかけ図鑑」です。しかけ部分は破れにくい厚紙で作られており、幼児の小さな指でも簡単にめくれる工夫がされています。
+      窓あきの仕掛けをめくると、恐竜が動いたり、骨が見えたりする大人気の「仕掛け図鑑」です。仕掛け部分は破れにくい厚紙で作られており、幼児の小さな指でも簡単にめくれる工夫がされています。
     </p>
     <p class="article-paragraph" style="margin-bottom: 0;">
       イラストページで直感的に驚きや動きを楽しみ、その次の見開きでは本物の写真（化石や復元模型）と簡単な解説が載っているため、「遊びから学び」へのステップが自然に設計されています。初めての恐竜図鑑として最もおすすめできる一冊です。
@@ -168,7 +168,7 @@ relatedSpecimens: ["triceratops", "tyrannosaurus", "brachiosaurus"]
 <div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
   <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
-      <strong>【英語知育：★★★★★ | しかけの数：★★★★☆ | 対象：3〜4歳】</strong><br>
+      <strong>【英語知育：★★★★★ | 仕掛けの数：★★★★☆ | 対象：3〜4歳】</strong><br>
       小学館の信頼性と、幼児への遊びやすさを両立させた一冊です。ページの中に無数に配置された「まど（フラップ）」を開けると、恐竜の走るスピードや食べ物などが一目で分かる仕組みになっています。
     </p>
     <p class="article-paragraph" style="margin-bottom: 0;">
@@ -298,7 +298,7 @@ relatedSpecimens: ["triceratops", "tyrannosaurus", "brachiosaurus"]
   <p style="font-weight: bold; color: var(--primary-neon); margin-top: 20px;">Q2. せっかく購入したのに、子どもがすぐに飽きて本棚に入れっぱなしになっています。</p>
   <p class="article-paragraph" style="margin-left: 10px;">
     <strong>A. おもちゃのフィギュアと図鑑を組み合わせた「探索遊び」を試してみましょう。</strong><br>
-    子どもにとって本をただめくるだけの受動的な読書は、時として単調に感じられます。そこで、すでにお持ちの恐竜フィギュアを目の前に置き、「この子（フィギュア）は図鑑のどこに載っているかな？」と探すクイズゲームをしかけてみてください。立体物と図鑑が結びつくことで、実感を伴う能動的な遊びに変わり、一気に食いつきが良くなります。
+    子どもにとって本をただめくるだけの受動的な読書は、時として単調に感じられます。そこで、すでにお持ちの恐竜フィギュアを目の前に置き、「この子（フィギュア）は図鑑のどこに載っているかな？」と探すクイズゲームを仕掛けてみてください。立体物と図鑑が結びつくことで、実感を伴う能動的な遊びに変わり、一気に食いつきが良くなります。
   </p>
 
   <p style="font-weight: bold; color: var(--primary-neon); margin-top: 20px;">Q3. 親が恐竜の名前を正しく発音・説明できません。どう読み聞かせれば？</p>
