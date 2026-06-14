@@ -105,7 +105,7 @@ relatedSpecimens: ["triceratops", "tyrannosaurus", "brachiosaurus"]
 
 <h2 class="article-section-title">【3〜4歳向け】仕掛けと絵で楽しむ！おすすめ恐竜図鑑3選</h2>
 <p class="article-paragraph">
-  3〜4歳児は、「五感を使って楽しむ」ことが学びの入り口です。絵本感覚で指先を動かし、繰り返し遊びたくなるような仕掛け付きや、温かみのあるストーリー性がある図鑑がおすすめです。
+  3〜4歳児は、「五感を使って楽しむ」ことが学びの入り口です。絵本感覚で指先を動かし、繰り返し遊びたくなるような仕掛けや、温かみのあるストーリー性がある図鑑がおすすめです。
 </p>
 
 <h3 id="detail-hakken" style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">① 『きょうりゅう 新版 (はっけんずかん)』（Gakken）</h3>
