@@ -67,9 +67,9 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
     </p>
   </div>
   <div style="flex-shrink: 0; margin: 0 auto;">
-    <a href="/dictionary/tyrannosaurus/" style="display: inline-block; text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 150px; text-align: center; box-sizing: border-box;">
-      <img src="/images/tyrannosaurus.webp" alt="ティラノサウルス" style="width: 100%; height: auto; max-height: 80px; object-fit: contain; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 6px; display: block; background: #010408;">
-      <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 11px; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+    <a href="/dictionary/tyrannosaurus/" style="display: inline-block; text-decoration: none; color: inherit; padding: 15px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 225px; text-align: center; box-sizing: border-box;">
+      <img src="/images/tyrannosaurus.webp" alt="ティラノサウルス" style="width: 100%; height: auto; max-height: 120px; object-fit: contain; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 8px; display: block; background: #010408;">
+      <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 15px; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
         図鑑で詳しく見る
       </span>
     </a>
