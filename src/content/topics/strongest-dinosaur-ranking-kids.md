@@ -4,7 +4,7 @@ date: "2026.06.15"
 category: "RESEARCH_HISTORY"
 title: "最強の恐竜ランキングTOP10！子供にもわかりやすく解説"
 summary: "「地球で一番強い恐竜はどれ？」誰もが夢見る最強 of 最強の恐竜ランキングTOP10を、最新の科学と複数の説を交えて子供向けにわかりやすく解説します！ティラノサウルスなどの巨大肉食恐竜から、最強の防御力を誇る草食恐竜まで、強さの秘密や対決バトル予想も掲載。"
-image: "images/topics/strongest_dinosaur_debate.webp"
+image: "images/topics/strength_ranking.webp"
 securityLevel: "LEVEL 1 (KIDS FRIENDLY)"
 relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
 ---
