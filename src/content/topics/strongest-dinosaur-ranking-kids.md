@@ -125,25 +125,49 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
   </div>
 </div>
 
-<p class="article-paragraph" style="margin-top: 20px;">
-  <strong style="color: var(--primary-neon); font-size: 16px;">▼ ギガノトサウルス（南米に君臨した巨大スピードハンター）</strong><br>
-  全長約13メートルと、ティラノサウルスより一回り大きな体を持っていた巨大な肉食恐竜です。
-  アゴの力はティラノサウルスに劣りますが、彼らの武器は薄くて鋭い<strong style="color: var(--primary-neon);">「ナイフのような歯」</strong>です。獲物の肉をスッと切り裂いて大ケガを負わせる戦術を得意としていました。
-  また、体がスリムで足が速く、南米の巨大な草食恐竜を狩るために群れを作って協力していたという説もあります。
-</p>
-<p class="article-paragraph" style="background: rgba(0, 242, 255, 0.05); padding: 12px; border-left: 4px solid var(--primary-neon); font-weight: bold; margin-bottom: 20px;">
-  💡 子供向け一言まとめ：ティラノサウルスとおなじくらい大きくて、ナイフのような歯を持つ巨大ハンター！
-</p>
+<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px; margin-top: 20px;">
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0;">
+      <strong style="color: var(--primary-neon); font-size: 16px;">▼ ギガノトサウルス（南米に君臨した巨大スピードハンター）</strong><br>
+      全長約13メートルと、ティラノサウルスより一回り大きな体を持っていた巨大な肉食恐竜です。
+      アゴの力はティラノサウルスに劣りますが、彼らの武器は薄くて鋭い<strong style="color: var(--primary-neon);">「ナイフのような歯」</strong>です。獲物の肉をスッと切り裂いて大ケガを負わせる戦術を得意としていました。
+      また、体がスリムで足が速く、南米の巨大な草食恐竜を狩るために群れを作って協力していたという説もあります。
+    </p>
+    <p class="article-paragraph" style="background: rgba(0, 242, 255, 0.05); padding: 12px; border-left: 4px solid var(--primary-neon); font-weight: bold; margin-bottom: 0;">
+      💡 子供向け一言まとめ：ティラノサウルスとおなじくらい大きくて、ナイフのような歯を持つ巨大ハンター！
+    </p>
+  </div>
+  <div style="flex-shrink: 0; margin: 0;">
+    <a href="/dictionary/giganotosaurus/" style="display: inline-block; text-decoration: none; color: inherit; padding: 15px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 225px; text-align: center; box-sizing: border-box;">
+      <img src="/images/giganotosaurus.webp" alt="ギガノトサウルス" style="width: 100%; height: auto; object-fit: contain; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 8px; display: block; background: #010408;">
+      <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 15px; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+        図鑑で詳しく見る
+      </span>
+    </a>
+  </div>
+</div>
 
-<p class="article-paragraph" style="margin-top: 20px;">
-  <strong style="color: var(--primary-neon); font-size: 16px;">▼ カルカロドントサウルス（アフリカを恐怖に陥れたサメの歯を持つ猛獣）</strong><br>
-  名前の意味が「サメの歯を持つトカゲ」である通り、ホホジロザメのような平たくて鋭い鋸歯（ギザギザ）がある歯がずらりと並んでいました。
-  全長は12〜13メートルに達し、頭の骨の大きさはティラノサウルスよりも長かったとされています。
-  この鋭い歯で獲物に深い傷を負わせ、出血させて弱らせる攻撃を得意としていました。
-</p>
-<p class="article-paragraph" style="background: rgba(0, 242, 255, 0.05); padding: 12px; border-left: 4px solid var(--primary-neon); font-weight: bold; margin-bottom: 20px;">
-  💡 子供向け一言まとめ：サメのような鋭い歯で、どんな獲物も切り裂いてしまうアフリカの強敵！
-</p>
+<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px; margin-top: 20px;">
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0;">
+      <strong style="color: var(--primary-neon); font-size: 16px;">▼ カルカロドントサウルス（アフリカを恐怖に陥れたサメの歯を持つ猛獣）</strong><br>
+      名前の意味が「サメの歯を持つトカゲ」である通り、ホホジロザメのような平たくて鋭い鋸歯（ギザギザ）がある歯がずらりと並んでいました。
+      全長は12〜13メートルに達し、頭の骨の大きさはティラノサウルスよりも長かったとされています。
+      この鋭い歯で獲物に深い傷を負わせ、出血させて弱らせる攻撃を得意としていました。
+    </p>
+    <p class="article-paragraph" style="background: rgba(0, 242, 255, 0.05); padding: 12px; border-left: 4px solid var(--primary-neon); font-weight: bold; margin-bottom: 0;">
+      💡 子供向け一言まとめ：サメのような鋭い歯で、どんな獲物も切り裂いてしまうアフリカの強敵！
+    </p>
+  </div>
+  <div style="flex-shrink: 0; margin: 0;">
+    <a href="/dictionary/carcharodontosaurus/" style="display: inline-block; text-decoration: none; color: inherit; padding: 15px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 225px; text-align: center; box-sizing: border-box;">
+      <img src="/images/carcharodontosaurus.webp" alt="カルカロドントサウルス" style="width: 100%; height: auto; object-fit: contain; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 8px; display: block; background: #010408;">
+      <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 15px; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+        図鑑で詳しく見る
+      </span>
+    </a>
+  </div>
+</div>
 
 <h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第5位〜第10位（個性派ぞろいの猛者たち）</h3>
 
