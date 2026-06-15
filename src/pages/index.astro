@@ -15,7 +15,7 @@ const topicItems = topics
   .slice(0, 2);
 ---
 
-<Layout title="ホーム | Dino-Portal" activeTab="home" description="Dino-Portalのメインコンソール。最新の古生物学的発見と本日のピックアップ標本データ。" ogImage="/images/cyber_world_map.webp">
+<Layout title="ホーム | Dino-Portal" activeTab="home" description="Dino-Portalのメインコンソール。最新の古生物学的発見と本日のピックアップデータ。" ogImage="/images/cyber_world_map.webp">
     <section class="page-header">
       <h2 class="page-title">ホーム</h2>
     </section>
@@ -26,7 +26,7 @@ const topicItems = topics
             <div class="hud-corner bottom-right"></div>
             <div class="hero-img-container" style={`background-image: url('/${pickupDino.image}')`}></div>
             <div class="hero-content">
-                <span class="hero-label">【本日のピックアップ標本】</span>
+                <span class="hero-label">【本日のピックアップ】</span>
                 <h3 class="hero-name" style="font-size: 32px; margin: 10px 0;">{pickupDino.name}</h3>
                 <p class="hero-desc" style="color: var(--text-dim); line-height: 1.6; margin-bottom: 20px;">{pickupDino.description}</p>
                 <a href={`/dictionary/${pickupDino.id}/`} class="nav-link" style="display: inline-block; width: fit-content; text-decoration: none;">詳細データを閲覧</a>

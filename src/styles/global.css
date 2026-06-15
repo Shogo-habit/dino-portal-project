@@ -285,6 +285,10 @@ body {
   gap: 30px;
 }
 
+.news-summary-sidebar {
+  grid-row: span 2;
+}
+
 .dino-day-hero {
   height: 400px;
   overflow: hidden;
@@ -2068,6 +2072,10 @@ body {
   .home-layout {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .news-summary-sidebar {
+    grid-row: auto;
   }
 
   .dino-day-hero {
