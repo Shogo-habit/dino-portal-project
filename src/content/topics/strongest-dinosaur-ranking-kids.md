@@ -348,30 +348,44 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
 </p>
 
 <h3 style="color: var(--primary-neon); margin-top: 15px; margin-bottom: 10px; font-size: 18px;">対決①：ティラノサウルス vs スピノサウルス</h3>
-<p class="article-paragraph">
-  映画などで人気のこの対決。もし戦ったらどうなるでしょうか？
-</p>
-<ul class="article-paragraph" style="line-height: 1.8;">
-  <li><strong>陸の上で戦った場合：ティラノサウルスの勝ちが濃厚！</strong><br>
-    ティラノサウルスの圧倒的な噛む力と頑丈な骨格は、陸上での格闘戦で絶大な威力を発揮します。スピノサウルスは陸の上では後ろ足が短く動きが遅いため、ティラノサウルスの強力なアゴの一撃を避けるのは難しいでしょう。
-  </li>
-  <li><strong>水辺や川の中で戦った場合：スピノサウルスの勝ちが濃厚！</strong><br>
-    スピノサウルスは水泳が得意で、水の中で自由に動くことができます。ティラノサウルスを水の中に引きずり込むことができれば、長い前足の鋭いツメと水に慣れた体で、スピノサウルスが勝利する可能性が非常に高くなります。
-  </li>
-</ul>
+<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0;">
+      映画などで人気のこの対決。もし戦ったらどうなるでしょうか？
+    </p>
+    <ul class="article-paragraph" style="line-height: 1.8; margin-bottom: 0;">
+      <li><strong>陸の上で戦った場合：ティラノサウルスの勝ちが濃厚！</strong><br>
+        ティラノサウルスの圧倒的な噛む力と頑丈な骨格は、陸上での格闘戦で絶大な威力を発揮します。スピノサウルスは陸の上では後ろ足が短く動きが遅いため、ティラノサウルスの強力なアゴの一撃を避けるのは難しいでしょう。
+      </li>
+      <li><strong>水辺や川の中で戦った場合：スピノサウルスの勝ちが濃厚！</strong><br>
+        スピノサウルスは水泳が得意で、水の中で自由に動くことができます。ティラノサウルスを水の中に引きずり込むことができれば、長い前足の鋭いツメと水に慣れた体で、スピノサウルスが勝利する可能性が非常に高くなります。
+      </li>
+    </ul>
+  </div>
+  <div style="flex-shrink: 0; width: 250px; margin: 0 auto;">
+    <img src="/images/topics/strength_ranking1.webp" alt="ティラノサウルス vs スピノサウルス" style="width: 100%; height: auto; object-fit: contain; border-radius: 4px; border: 1px solid var(--panel-border); background: #010408; display: block;">
+  </div>
+</div>
 
 <h3 style="color: var(--primary-neon); margin-top: 15px; margin-bottom: 10px; font-size: 18px;">対決②：ティラノサウルス vs トリケラトプス</h3>
-<p class="article-paragraph">
-  白亜紀後期の北米で、実際に繰り広げられていた「最強の矛（ほこ）と盾（たて）」の戦いです。
-</p>
-<ul class="article-paragraph" style="line-height: 1.8;">
-  <li><strong>お互いに正面からぶつかった場合：トリケラトプスが有利！</strong><br>
-    トリケラトプスが時速30キロで突進し、頭の鋭いツノがティラノサウルスの体に突き刺されば、一撃でティラノサウルスを倒すことができます。
-  </li>
-  <li><strong>ティラノサウルスが背後や横から不意打ちをした場合：ティラノサウルスが有利！</strong><br>
-    ティラノサウルスは非常に知能が高いため、正面から突撃する危険を避け、死角となる後ろや横から奇襲を仕掛けたと考えられています。トリケラトプスの首の後ろは「フリル」で守られていますが、首の横や足に噛みつけば、ティラノサウルスの勝ちになります。
-  </li>
-</ul>
+<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0;">
+      白亜紀後期の北米で、実際に繰り広げられていた「最強の矛（ほこ）と盾（たて）」の戦いです。
+    </p>
+    <ul class="article-paragraph" style="line-height: 1.8; margin-bottom: 0;">
+      <li><strong>お互いに正面からぶつかった場合：トリケラトプスが有利！</strong><br>
+        トリケラトプスが時速30キロで突進し、頭の鋭いツノがティラノサウルスの体に突き刺されば、一撃でティラノサウルスを倒すことができます。
+      </li>
+      <li><strong>ティラノサウルスが背後や横から不意打ちをした場合：ティラノサウルスが有利！</strong><br>
+        ティラノサウルスは非常に知能が高いため、正面から突撃する危険を避け、死角となる後ろや横から奇襲を仕掛けたと考えられています。トリケラトプスの首の後ろは「フリル」で守られていますが、首の横や足に噛みつけば、ティラノサウルスの勝ちになります。
+      </li>
+    </ul>
+  </div>
+  <div style="flex-shrink: 0; width: 250px; margin: 0 auto;">
+    <img src="/images/topics/triceratops_detail2.webp" alt="ティラノサウルス vs トリケラトプス" style="width: 100%; height: auto; object-fit: contain; border-radius: 4px; border: 1px solid var(--panel-border); background: #010408; display: block;">
+  </div>
+</div>
 
 <h2 class="article-section-title">最強の恐竜ランキング比較表</h2>
 
