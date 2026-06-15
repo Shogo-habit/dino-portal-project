@@ -175,76 +175,147 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
   ここからは、それぞれ独自のすごい武器や防御能力を持っていた人気の恐竜たちを紹介します。
 </p>
 
-<p class="article-paragraph">
-  <strong style="color: var(--primary-neon); font-size: 16px;">第5位：トリケラトプス（最強の防御盾と突進ツノを持つ戦車）</strong><br>
-  植物を食べる草食恐竜ですが、その戦闘力は肉食恐竜にとって恐怖そのものでした。
-  頭には長さ1メートルを超える頑丈な2本のツノがあり、首には敵の攻撃から身を守る「フリル」と呼ばれる大きなえり飾りを持っています。
-  ティラノサウルスに襲われたときは、逃げるのではなく、この鋭いツノを相手に向けて時速30キロ以上で突進する戦法をとりました。
-  実際に、ティラノサウルスの骨にトリケラトプスのツノで刺された跡が見つかっており、肉食恐竜と互角以上に戦えたことは間違いありません。
-</p>
-<p class="article-paragraph" style="background: rgba(0, 242, 255, 0.05); padding: 12px; border-left: 4px solid var(--primary-neon); font-weight: bold; margin-bottom: 20px;">
-  💡 子供向け一言まとめ：３本の大きな角で、ティラノサウルスもはね返す「たたかう戦車」！
-</p>
+<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px; margin-top: 20px;">
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0;">
+      <strong style="color: var(--primary-neon); font-size: 16px;">第5位：トリケラトプス（最強の防御盾と突進ツノを持つ戦車）</strong><br>
+      植物を食べる草食恐竜ですが、その戦闘力は肉食恐竜にとって恐怖そのものでした。
+      頭には長さ1メートルを超える頑丈な2本のツノがあり、首には敵の攻撃から身を守る「フリル」と呼ばれる大きなえり飾りを持っています。
+      ティラノサウルスに襲われたときは、逃げるのではなく、この鋭いツノを相手に向けて時速30キロ以上で突進する戦法をとりました。
+      実際に、ティラノサウルスの骨にトリケラトプスのツノで刺された跡が見つかっており、肉食恐竜と互角以上に戦えたことは間違いありません。
+    </p>
+    <p class="article-paragraph" style="background: rgba(0, 242, 255, 0.05); padding: 12px; border-left: 4px solid var(--primary-neon); font-weight: bold; margin-bottom: 15px;">
+      💡 子供向け一言まとめ：３本の大きな角で、ティラノサウルスもはね返す「たたかう戦車」！
+    </p>
+    <p class="article-paragraph" style="margin-top: 15px; margin-bottom: 0;">
+      ※トリケラトプスの角の秘密や、進化した防御の戦術はこちら：
+    </p>
+    <a href="/topics/triceratops-guide/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 0; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
+      <img src="/images/topics/triceratops_detail.webp" alt="トリケラトプス解説記事" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+      <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
+        【盾角竜の代表格】トリケラトプスの生態と3本の角の謎を徹底解説！
+      </span>
+    </a>
+  </div>
+  <div style="flex-shrink: 0; margin: 0;">
+    <a href="/dictionary/triceratops/" style="display: inline-block; text-decoration: none; color: inherit; padding: 15px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 225px; text-align: center; box-sizing: border-box;">
+      <img src="/images/triceratops.webp" alt="トリケラトプス" style="width: 100%; height: auto; object-fit: contain; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 8px; display: block; background: #010408;">
+      <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 15px; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+        図鑑で詳しく見る
+      </span>
+    </a>
+  </div>
+</div>
 
-<p class="article-paragraph" style="margin-top: 15px; margin-bottom: 0;">
-  ※トリケラトプスの角の秘密や、進化した防御の戦術はこちら：
-</p>
-<a href="/topics/triceratops-guide/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-  <img src="/images/topics/triceratops_detail.webp" alt="トリケラトプス解説記事" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
-  <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
-    【盾角竜の代表格】トリケラトプスの生態と3本の角の謎を徹底解説！
-  </span>
-</a>
+<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px; margin-top: 20px;">
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0;">
+      <strong style="color: var(--primary-neon); font-size: 16px;">第6位：アンキロサウルス（全身を覆うカチカチのヨロイと鉄球）</strong><br>
+      全身が硬い骨のプレート（ヨロイ）で覆われた、究極 of 究極の防御型恐竜です。
+      肉食恐竜の鋭い牙も、このヨロイを突き破ることはできません。
+      そして、最大の武器はシッポの先にある「骨のハンマー」です。シッポの筋肉が非常に発達しており、この重いハンマーを強く振り回すことで、襲ってきた肉食恐竜の足の骨や肋骨を一撃で粉砕することができました。
+    </p>
+    <p class="article-paragraph" style="background: rgba(0, 242, 255, 0.05); padding: 12px; border-left: 4px solid var(--primary-neon); font-weight: bold; margin-bottom: 0;">
+      💡 子供向け一言まとめ：カチカチのヨロイで身を守り、シッポのハンマーで敵の足をくだく鉄壁の要塞！
+    </p>
+  </div>
+  <div style="flex-shrink: 0; margin: 0;">
+    <a href="/dictionary/ankylosaurus/" style="display: inline-block; text-decoration: none; color: inherit; padding: 15px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 225px; text-align: center; box-sizing: border-box;">
+      <img src="/images/ankylosaurus.webp" alt="アンキロサウルス" style="width: 100%; height: auto; object-fit: contain; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 8px; display: block; background: #010408;">
+      <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 15px; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+        図鑑で詳しく見る
+      </span>
+    </a>
+  </div>
+</div>
 
-<p class="article-paragraph" style="margin-top: 20px;">
-  <strong style="color: var(--primary-neon); font-size: 16px;">第6位：アンキロサウルス（全身を覆うカチカチのヨロイと鉄球）</strong><br>
-  全身が硬い骨のプレート（ヨロイ）で覆われた、究極 of 究極の防御型恐竜です。
-  肉食恐竜の鋭い牙も、このヨロイを突き破ることはできません。
-  そして、最大の武器はシッポの先にある「骨のハンマー」です。シッポの筋肉が非常に発達しており、この重いハンマーを強く振り回すことで、襲ってきた肉食恐竜の足の骨や肋骨を一撃で粉砕することができました。
-</p>
-<p class="article-paragraph" style="background: rgba(0, 242, 255, 0.05); padding: 12px; border-left: 4px solid var(--primary-neon); font-weight: bold; margin-bottom: 20px;">
-  💡 子供向け一言まとめ：カチカチのヨロイで身を守り、シッポのハンマーで敵の足をくだく鉄壁の要塞！
-</p>
+<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px; margin-top: 20px;">
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0;">
+      <strong style="color: var(--primary-neon); font-size: 16px;">第7位：アルゼンチノサウルス（圧倒的な大きさと質量で踏みつぶす超巨人）</strong><br>
+      全長は約35メートル、推定体重は約70〜90トン（アフリカゾウ約15頭分！）に達する、史上最大級の植物食恐竜です。
+      この恐竜の最強の武器は、その「圧倒的なデカさ」です。
+      どんなに狂勇な肉食恐竜であっても、この巨大なビルのような体をつぶすことは不可能ですし、下手に近づけば、柱のような大きな足で踏みつぶされて一瞬でペシャンコになってしまいます。
+    </p>
+    <p class="article-paragraph" style="background: rgba(0, 242, 255, 0.05); padding: 12px; border-left: 4px solid var(--primary-neon); font-weight: bold; margin-bottom: 0;">
+      💡 子供向け一言まとめ：ビルのように巨大な体で、敵を踏みつぶす「生きた巨大要塞」！
+    </p>
+  </div>
+  <div style="flex-shrink: 0; margin: 0;">
+    <a href="/dictionary/argentinosaurus/" style="display: inline-block; text-decoration: none; color: inherit; padding: 15px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 225px; text-align: center; box-sizing: border-box;">
+      <img src="/images/argentinosaurus.webp" alt="アルゼンチノサウルス" style="width: 100%; height: auto; object-fit: contain; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 8px; display: block; background: #010408;">
+      <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 15px; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+        図鑑で詳しく見る
+      </span>
+    </a>
+  </div>
+</div>
 
-<p class="article-paragraph" style="margin-top: 20px;">
-  <strong style="color: var(--primary-neon); font-size: 16px;">第7位：アルゼンチノサウルス（圧倒的な大きさと質量で踏みつぶす超巨人）</strong><br>
-  全長は約35メートル、推定体重は約70〜90トン（アフリカゾウ約15頭分！）に達する、史上最大級の植物食恐竜です。
-  この恐竜の最強の武器は、その「圧倒的なデカさ」です。
-  どんなに狂勇な肉食恐竜であっても、この巨大なビルのような体をつぶすことは不可能ですし、下手に近づけば、柱のような大きな足で踏みつぶされて一瞬でペシャンコになってしまいます。
-</p>
-<p class="article-paragraph" style="background: rgba(0, 242, 255, 0.05); padding: 12px; border-left: 4px solid var(--primary-neon); font-weight: bold; margin-bottom: 20px;">
-  💡 子供向け一言まとめ：ビルのように巨大な体で、敵を踏みつぶす「生きた巨大要塞」！
-</p>
+<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px; margin-top: 20px;">
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0;">
+      <strong style="color: var(--primary-neon); font-size: 16px;">第8位：アロサウルス（ジュラ紀最強の俊敏なスピードハンター）</strong><br>
+      ティラノサウルスよりも約8000万年も前の「ジュラ紀」の時代に、生態系の頂点として恐れられていた肉食恐竜です。
+      全長は約8.5メートル。ティラノサウルスよりも体が軽いため、最高時速30〜40キロメートルというかなりの高速で走ることができました。
+      アゴをヘビのように大きく開くことができ、上アゴを斧のように獲物に叩きつけて深い傷を負わせる戦法や、長い手の鋭い爪での攻撃を得意としていました。
+    </p>
+    <p class="article-paragraph" style="background: rgba(0, 242, 255, 0.05); padding: 12px; border-left: 4px solid var(--primary-neon); font-weight: bold; margin-bottom: 0;">
+      💡 子供向け一言まとめ：ジュラ紀のNo.1ハンター！すばやい動きとアゴの連打が得意わざ！
+    </p>
+  </div>
+  <div style="flex-shrink: 0; margin: 0;">
+    <a href="/dictionary/allosaurus/" style="display: inline-block; text-decoration: none; color: inherit; padding: 15px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 225px; text-align: center; box-sizing: border-box;">
+      <img src="/images/allosaurus.webp" alt="アロサウルス" style="width: 100%; height: auto; object-fit: contain; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 8px; display: block; background: #010408;">
+      <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 15px; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+        図鑑で詳しく見る
+      </span>
+    </a>
+  </div>
+</div>
 
-<p class="article-paragraph" style="margin-top: 20px;">
-  <strong style="color: var(--primary-neon); font-size: 16px;">第8位：アロサウルス（ジュラ紀最強の俊敏なスピードハンター）</strong><br>
-  ティラノサウルスよりも約8000万年も前の「ジュラ紀」の時代に、生態系の頂点として恐れられていた肉食恐竜です。
-  全長は約8.5メートル。ティラノサウルスよりも体が軽いため、最高時速30〜40キロメートルというかなりの高速で走ることができました。
-  アゴをヘビのように大きく開くことができ、上アゴを斧のように獲物に叩きつけて深い傷を負わせる戦法や、長い手の鋭い爪での攻撃を得意としていました。
-</p>
-<p class="article-paragraph" style="background: rgba(0, 242, 255, 0.05); padding: 12px; border-left: 4px solid var(--primary-neon); font-weight: bold; margin-bottom: 20px;">
-  💡 子供向け一言まとめ：ジュラ紀のNo.1ハンター！すばやい動きとアゴの連打が得意わざ！
-</p>
+<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px; margin-top: 20px;">
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0;">
+      <strong style="color: var(--primary-neon); font-size: 16px;">第9位：テリジノサウルス（死神のカマのような世界一長いツメ）</strong><br>
+      植物食の仲間ですが、前足に長さ70センチメートルを超える、カマのような巨大なツメ（爪）を持っていました。
+      これは地球の歴史上で、最も長い爪です。
+      この爪を振り回されると、ティラノサウルスのような天敵であっても体に当たれば致命傷になるため、簡単に手を出すことはできませんでした。
+    </p>
+    <p class="article-paragraph" style="background: rgba(0, 242, 255, 0.05); padding: 12px; border-left: 4px solid var(--primary-neon); font-weight: bold; margin-bottom: 0;">
+      💡 子供向け一言まとめ：カマのように鋭い、世界一長いツメを振り回すカウンターの名手！
+    </p>
+  </div>
+  <div style="flex-shrink: 0; margin: 0;">
+    <a href="/dictionary/therizinosaurus/" style="display: inline-block; text-decoration: none; color: inherit; padding: 15px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 225px; text-align: center; box-sizing: border-box;">
+      <img src="/images/therizinosaurus.webp" alt="テリジノサウルス" style="width: 100%; height: auto; object-fit: contain; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 8px; display: block; background: #010408;">
+      <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 15px; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+        図鑑で詳しく見る
+      </span>
+    </a>
+  </div>
+</div>
 
-<p class="article-paragraph" style="margin-top: 20px;">
-  <strong style="color: var(--primary-neon); font-size: 16px;">第9位：テリジノサウルス（死神のカマのような世界一長いツメ）</strong><br>
-  植物食の仲間ですが、前足に長さ70センチメートルを超える、カマのような巨大なツメ（爪）を持っていました。
-  これは地球の歴史上で、最も長い爪です。
-  この爪を振り回されると、ティラノサウルスのような天敵であっても体に当たれば致命傷になるため、簡単に手を出すことはできませんでした。
-</p>
-<p class="article-paragraph" style="background: rgba(0, 242, 255, 0.05); padding: 12px; border-left: 4px solid var(--primary-neon); font-weight: bold; margin-bottom: 20px;">
-  💡 子供向け一言まとめ：カマのように鋭い、世界一長いツメを振り回すカウンターの名手！
-</p>
-
-<p class="article-paragraph" style="margin-top: 20px;">
-  <strong style="color: var(--primary-neon); font-size: 16px;">第10位：ヴェロキアラプトル（スピードと高い知能を備えたハンター）</strong><br>
-  体長約2メートル、体重約15キロと、このランキングの中では圧倒的に小さい恐竜です。
-  しかし、後ろ足にある大きな「鉤爪（かぎづめ）」と、高い知能を持っていました。
-  彼らは群れを作り、高度なチームワークとすばやさで、自分たちよりはるかに大きな獲物を追い詰めて狩りをしました。
-</p>
-<p class="article-paragraph" style="background: rgba(0, 242, 255, 0.05); padding: 12px; border-left: 4px solid var(--primary-neon); font-weight: bold; margin-bottom: 20px;">
-  💡 子供向け一言まとめ：小さくても頭はバツグン！チームワークとすばやい攻撃で獲物を追い詰める！
-</p>
+<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px; margin-top: 20px;">
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0;">
+      <strong style="color: var(--primary-neon); font-size: 16px;">第10位：ヴェロキアラプトル（スピードと高い知能を備えたハンター）</strong><br>
+      体長約2メートル、体重約15キロと、このランキングの中では圧倒的に小さい恐竜です。
+      しかし、後ろ足にある大きな「鉤爪（かぎづめ）」と、高い知能を持っていました。
+      彼らは群れを作り、高度なチームワークとすばやさで、自分たちよりはるかに大きな獲物を追い詰めて狩りをしました。
+    </p>
+    <p class="article-paragraph" style="background: rgba(0, 242, 255, 0.05); padding: 12px; border-left: 4px solid var(--primary-neon); font-weight: bold; margin-bottom: 0;">
+      💡 子供向け一言まとめ：小さくても頭はバツグン！チームワークとすばやい攻撃で獲物を追い詰める！
+    </p>
+  </div>
+  <div style="flex-shrink: 0; margin: 0;">
+    <a href="/dictionary/velociraptor/" style="display: inline-block; text-decoration: none; color: inherit; padding: 15px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 225px; text-align: center; box-sizing: border-box;">
+      <img src="/images/velociraptor.webp" alt="ヴェロキアラプトル" style="width: 100%; height: auto; object-fit: contain; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 8px; display: block; background: #010408;">
+      <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 15px; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+        図鑑で詳しく見る
+      </span>
+    </a>
+  </div>
+</div>
 
 <h2 class="article-section-title">タイプ別で見る最強の恐竜</h2>
 
