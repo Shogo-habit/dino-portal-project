@@ -102,9 +102,18 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
       スピノサウルスは、ワニのような長い頭と、ティラノサウルスよりもはるかに<strong style="color: var(--primary-neon);">大きく発達した長い腕と鋭いツメ</strong>を持っていました。
       水辺や水中での戦いであれば、その泳ぎの軽快さと腕力でティラノサウルスすら圧倒する力を持っていましたが、陸上では足が短く素早く動くのが苦手だったため、陸上でのバトルには議論が残ります。
     </p>
-    <p class="article-paragraph" style="background: rgba(0, 242, 255, 0.05); padding: 12px; border-left: 4px solid var(--primary-neon); font-weight: bold; margin-bottom: 0;">
+    <p class="article-paragraph" style="background: rgba(0, 242, 255, 0.05); padding: 12px; border-left: 4px solid var(--primary-neon); font-weight: bold; margin-bottom: 15px;">
       💡 子供向け一言まとめ：水の中ならだれにも負けない！長いウデと鋭いツメを持った水辺 of 水辺の支配者！
     </p>
+    <p class="article-paragraph" style="margin-top: 15px; margin-bottom: 0;">
+      ※スピノサウルスの謎に包まれた水中生態と最新研究はこちら：
+    </p>
+    <a href="/topics/spinosaurus-ecology/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 0; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
+      <img src="/images/topics/spinosaurus_evolution.webp" alt="スピノサウルス生態解説" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+      <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
+        スピノサウルスの生態を徹底解説！最新の研究が明かす水棲生活の真実
+      </span>
+    </a>
   </div>
   <div style="flex-shrink: 0; margin: 0;">
     <a href="/dictionary/spinosaurus/" style="display: inline-block; text-decoration: none; color: inherit; padding: 15px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 225px; text-align: center; box-sizing: border-box;">
@@ -115,16 +124,6 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
     </a>
   </div>
 </div>
-
-<p class="article-paragraph" style="margin-top: 15px; margin-bottom: 0;">
-  ※スピノサウルスの謎に包まれた水中生態と最新研究はこちら：
-</p>
-<a href="/topics/spinosaurus-ecology/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-  <img src="/images/topics/spinosaurus_evolution.webp" alt="スピノサウルス生態解説" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
-  <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
-    スピノサウルスの生態を徹底解説！最新の研究が明かす水棲生活の真実
-  </span>
-</a>
 
 <p class="article-paragraph" style="margin-top: 20px;">
   <strong style="color: var(--primary-neon); font-size: 16px;">▼ ギガノトサウルス（南米に君臨した巨大スピードハンター）</strong><br>
