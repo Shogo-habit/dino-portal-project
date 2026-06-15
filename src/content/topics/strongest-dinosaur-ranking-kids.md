@@ -94,15 +94,27 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
   ここからは「同率2位」として、ティラノサウルスに匹敵する実力を持っていた最強候補の3頭を紹介します。生息する場所や戦い方が違っていたため、いずれも頂点を狙える実力者たちです。
 </p>
 
-<p class="article-paragraph">
-  <strong style="color: var(--primary-neon); font-size: 16px;">▼ スピノサウルス（水の中を支配した最大の肉食恐竜）</strong><br>
-  全長約15メートルと、すべての肉食恐竜の中で最も長い体を持っていました。
-  スピノサウルスは、ワニのような長い頭と、ティラノサウルスよりもはるかに<strong style="color: var(--primary-neon);">大きく発達した長い腕と鋭いツメ</strong>を持っていました。
-  水辺や水中での戦いであれば、その泳ぎの軽快さと腕力でティラノサウルスすら圧倒する力を持っていましたが、陸上では足が短く素早く動くのが苦手だったため、陸上でのバトルには議論が残ります。
-</p>
-<p class="article-paragraph" style="background: rgba(0, 242, 255, 0.05); padding: 12px; border-left: 4px solid var(--primary-neon); font-weight: bold; margin-bottom: 20px;">
-  💡 子供向け一言まとめ：水の中ならだれにも負けない！長いウデと鋭いツメを持った水辺 of 水辺の支配者！
-</p>
+<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
+  <div style="flex: 1; min-width: 280px;">
+    <p class="article-paragraph" style="margin-top: 0;">
+      <strong style="color: var(--primary-neon); font-size: 16px;">▼ スピノサウルス（水の中を支配した最大の肉食恐竜）</strong><br>
+      全長約15メートルと、すべての肉食恐竜の中で最も長い体を持っていました。
+      スピノサウルスは、ワニのような長い頭と、ティラノサウルスよりもはるかに<strong style="color: var(--primary-neon);">大きく発達した長い腕と鋭いツメ</strong>を持っていました。
+      水辺や水中での戦いであれば、その泳ぎの軽快さと腕力でティラノサウルスすら圧倒する力を持っていましたが、陸上では足が短く素早く動くのが苦手だったため、陸上でのバトルには議論が残ります。
+    </p>
+    <p class="article-paragraph" style="background: rgba(0, 242, 255, 0.05); padding: 12px; border-left: 4px solid var(--primary-neon); font-weight: bold; margin-bottom: 0;">
+      💡 子供向け一言まとめ：水の中ならだれにも負けない！長いウデと鋭いツメを持った水辺 of 水辺の支配者！
+    </p>
+  </div>
+  <div style="flex-shrink: 0; margin: 0;">
+    <a href="/dictionary/spinosaurus/" style="display: inline-block; text-decoration: none; color: inherit; padding: 15px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 225px; text-align: center; box-sizing: border-box;">
+      <img src="/images/spinosaurus.webp" alt="スピノサウルス" style="width: 100%; height: auto; object-fit: contain; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 8px; display: block; background: #010408;">
+      <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 15px; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+        図鑑で詳しく見る
+      </span>
+    </a>
+  </div>
+</div>
 
 <p class="article-paragraph" style="margin-top: 15px; margin-bottom: 0;">
   ※スピノサウルスの謎に包まれた水中生態と最新研究はこちら：
