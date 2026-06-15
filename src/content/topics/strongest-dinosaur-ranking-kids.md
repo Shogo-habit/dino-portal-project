@@ -54,7 +54,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
 </p>
 
 <h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第1位：ティラノサウルス（圧倒的な噛む力と知能を持つ絶対王者）</h3>
-<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
+<div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
       恐竜界の絶対王者と言えば、やはり<strong>ティラノサウルス</strong>です！
@@ -66,8 +66,13 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
       また、目が正面を向いていて距離を正確に測る「立体視」ができたことや、非常に頭が良く、嗅覚（においをかぎ分ける力）も鋭かったため、死角のない完璧なハンターでした。
     </p>
   </div>
-  <div style="width: 300px; flex-shrink: 0; margin: 0 auto;">
-    <img src="/images/topics/tyrannosaurus_detail.webp" alt="ティラノサウルス" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+  <div style="flex-shrink: 0; margin: 0 auto;">
+    <a href="/dictionary/tyrannosaurus/" style="display: inline-block; text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 150px; text-align: center; box-sizing: border-box;">
+      <img src="/images/tyrannosaurus.webp" alt="ティラノサウルス" style="width: 100%; height: auto; max-height: 80px; object-fit: contain; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 6px; display: block; background: #010408;">
+      <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 11px; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+        図鑑で詳しく見る
+      </span>
+    </a>
   </div>
 </div>
 <p class="article-paragraph" style="background: rgba(0, 242, 255, 0.05); padding: 12px; border-left: 4px solid var(--primary-neon); font-weight: bold; margin-bottom: 20px;">
