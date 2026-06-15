@@ -66,7 +66,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
       また、目が正面を向いていて距離を正確に測る「立体視」ができたことや、非常に頭が良く、嗅覚（においをかぎ分ける力）も鋭かったため、死角のない完璧なハンターでした。
     </p>
   </div>
-  <div style="flex-shrink: 0; margin: 0;">
+  <div class="t-rex-link-container" style="flex-shrink: 0; margin: 0;">
     <a href="/dictionary/tyrannosaurus/" style="display: inline-block; text-decoration: none; color: inherit; padding: 15px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 225px; text-align: center; box-sizing: border-box;">
       <img src="/images/tyrannosaurus.webp" alt="ティラノサウルス" style="width: 100%; height: auto; object-fit: contain; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 8px; display: block; background: #010408;">
       <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 15px; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
@@ -452,3 +452,11 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
     </div>
   </a>
 </div>
+
+<style>
+  @media (min-width: 769px) {
+    .t-rex-link-container {
+      margin-top: -3.5em !important;
+    }
+  }
+</style>
