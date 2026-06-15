@@ -362,7 +362,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
       </li>
     </ul>
   </div>
-  <div style="flex-shrink: 0; width: 250px; margin: 0 auto;">
+  <div style="flex-shrink: 0; width: 500px; max-width: 100%; margin: 0 auto;">
     <img src="/images/topics/strength_ranking1.webp" alt="ティラノサウルス vs スピノサウルス" style="width: 100%; height: auto; object-fit: contain; border-radius: 4px; border: 1px solid var(--panel-border); background: #010408; display: block;">
   </div>
 </div>
@@ -382,7 +382,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
       </li>
     </ul>
   </div>
-  <div style="flex-shrink: 0; width: 250px; margin: 0 auto;">
+  <div style="flex-shrink: 0; width: 500px; max-width: 100%; margin: 0 auto;">
     <img src="/images/topics/triceratops_detail2.webp" alt="ティラノサウルス vs トリケラトプス" style="width: 100%; height: auto; object-fit: contain; border-radius: 4px; border: 1px solid var(--panel-border); background: #010408; display: block;">
   </div>
 </div>
