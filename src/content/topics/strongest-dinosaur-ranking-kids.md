@@ -80,7 +80,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
 </p>
 
 <p class="article-paragraph" style="margin-top: 15px; margin-bottom: 0;">
-  ※ティラノサウルスの特徴や「小さな前足」のヒミツをもっと詳しく知りたい方はこちら：
+  ※ティラノサウルスの特徴をもっと詳しく知りたい方はこちら：
 </p>
 <a href="/topics/tyrannosaurus-guide/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
   <img src="/images/topics/tyrannosaurus_detail.webp" alt="ティラノサウルス解説記事" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
