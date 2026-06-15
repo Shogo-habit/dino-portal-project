@@ -65,6 +65,9 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
       他の肉食恐竜が「ナイフのような歯で肉を切り裂く」のに対し、ティラノサウルスは「太くて頑丈なバナナのような歯」を使って、獲物を**骨ごと噛み砕き、内臓ごと押しつぶす**という圧倒的な破壊力を誇りました。
       また、目が正面を向いていて距離を正確に測る「立体視」ができたことや、非常に頭が良く、嗅覚（においをかぎ分ける力）も鋭かったため、死角のない完璧なハンターでした。
     </p>
+    <p class="article-paragraph" style="background: rgba(0, 242, 255, 0.05); padding: 12px; border-left: 4px solid var(--primary-neon); font-weight: bold; margin-bottom: 0;">
+      💡 子供向け一言まとめ：骨まで噛みくだくアゴと、頭の良さをあわせ持った、恐竜界の無敵のチャンピオン！
+    </p>
   </div>
   <div class="t-rex-link-container" style="flex-shrink: 0; margin: 0;">
     <a href="/dictionary/tyrannosaurus/" style="display: inline-block; text-decoration: none; color: inherit; padding: 15px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 225px; text-align: center; box-sizing: border-box;">
@@ -75,9 +78,6 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
     </a>
   </div>
 </div>
-<p class="article-paragraph" style="background: rgba(0, 242, 255, 0.05); padding: 12px; border-left: 4px solid var(--primary-neon); font-weight: bold; margin-bottom: 20px;">
-  💡 子供向け一言まとめ：骨まで噛みくだくアゴと、頭の良さをあわせ持った、恐竜界の無敵のチャンピオン！
-</p>
 
 <p class="article-paragraph" style="margin-top: 15px; margin-bottom: 0;">
   ※ティラノサウルスの特徴をもっと詳しく知りたい方はこちら：
