@@ -34,11 +34,11 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
 </p>
 
 <h3 style="color: var(--primary-neon); margin-top: 15px; margin-bottom: 10px; font-size: 18px;">強さを決める4つのポイント</h3>
-<ul class="article-paragraph" style="line-height: 1.8;">
-  <li><strong>攻撃力</strong>：獲物をしとめるための最大の武器です。アゴで噛む強さや、鋭いツメの破壊力。</li>
-  <li><strong>防御力</strong>：敵の攻撃から身を守る力です。体が圧倒的に大きいことや、全身を覆う頑丈な「ヨロイ」の皮ふなど。</li>
-  <li><strong>スピード</strong>：どれだけすばやく動けるか。足の速さは、攻撃をよけたり獲物を追い詰めたりするのに有利になります。</li>
-  <li><strong>戦う環境</strong>：陸の上で戦うのが得意なのか、水の中で泳ぎながら戦うのが得意なのかといった環境の適応力。</li>
+<ul class="article-paragraph" style="line-height: 1.8; margin-left: 1em;">
+  <li><strong style="color: #ff6b6b;">攻撃力：</strong>獲物をしとめるための最大の武器です。アゴで噛む強さや、鋭いツメの破壊力。</li>
+  <li><strong style="color: #51cf66;">防御力：</strong>敵の攻撃から身を守る力です。体が圧倒的に大きいことや、全身を覆う頑丈な「ヨロイ」の皮ふなど。</li>
+  <li><strong style="color: #4dadf7;">スピード：</strong>どれだけすばやく動けるか。足の速さは、攻撃をよけたり獲物を追い詰めたりするのに有利になります。</li>
+  <li><strong style="color: #ff922b;">戦う環境：</strong>陸の上で戦うのが得意なのか、水の中で泳ぎながら戦うのが得意なのかといった環境の適応力。</li>
 </ul>
 
 <h3 style="color: var(--primary-neon); margin-top: 15px; margin-bottom: 10px; font-size: 18px;">この記事のランキングルール</h3>
