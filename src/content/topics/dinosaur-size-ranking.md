@@ -32,23 +32,16 @@ relatedSpecimens: ["argentinosaurus", "patagotitan", "supersaurus", "dreadnought
   現代 of 陸上最大の動物であるアフリカゾウは体重約6〜7トンですが、巨大恐竜たちの体重はその何十倍にも達していました。化石から体重を計算するときは、骨の太さや形から生前の筋肉の量を3Dモデリングで計算し、科学的に推測します。生物としての本当のスケールを比べるためには、この体重（重さ）で比較するのが最も信頼性が高いとされています。
 </p>
 
-<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
-  <div style="flex: 1; min-width: 280px;">
-    <h3 style="color: var(--primary-neon); margin-top: 0; margin-bottom: 15px; font-size: 18px;">なぜ巨大化できた？竜脚類の不思議な体のひみつ</h3>
-    <p class="article-paragraph" style="margin-top: 0;">
-      ランキングの上位を独占する超巨大恐竜たちは、すべて「竜脚類（りゅうきゃくるい）」と呼ばれる長い首と太い脚を持ったグループです。彼らがこれほど大きくなれたのには、主に2つの理由があります。
-    </p>
-    <p class="article-paragraph">
-      1つ目は、<strong>「骨の内部構造が鳥のように軽かったこと」</strong>です。竜脚類の背骨や首の骨の中には、無数の空洞があり、そこには空気をためる袋（気嚢：きのう）が詰まっていました。これにより、頑丈でありながら信じられないほど軽い体を実現していたのです。
-    </p>
-    <p class="article-paragraph">
-      2つ目は、<strong>「長い首による効率的な採食」</strong>です。彼らは首を掃除機のホースのように左右に大きく振ることで、一歩も歩かずに広い範囲の植物を噛まずに飲み込んで食べることができました。エネルギーを無駄遣いせず、大量のご飯を効率よくお腹に流し込むことができたため、驚異的な成長が可能だったのです。
-    </p>
-  </div>
-  <div style="width: 375px; flex-shrink: 0; margin: 0 auto;">
-    <img src="/images/topics/sauropod_bone_structure.webp" alt="竜脚類の骨の内部にある空洞と気嚢システム" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
-  </div>
-</div>
+<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 15px; font-size: 18px;">なぜ巨大化できた？竜脚類の不思議な体のひみつ</h3>
+<p class="article-paragraph">
+  ランキングの上位を独占する超巨大恐竜たちは、すべて「竜脚類（りゅうきゃくるい）」と呼ばれる長い首と太い脚を持ったグループです。彼らがこれほど大きくなれたのには、主に2つの理由があります。
+</p>
+<p class="article-paragraph">
+  1つ目は、<strong>「骨の内部構造が鳥のように軽かったこと」</strong>です。竜脚類の背骨や首の骨の中には、無数の空洞があり、そこには空気をためる袋（気嚢：きのう）が詰まっていました。これにより、頑丈でありながら信じられないほど軽い体を実現していたのです。
+</p>
+<p class="article-paragraph">
+  2つ目は、<strong>「長い首による効率的な採食」</strong>です。彼らは首を掃除機のホースのように左右に大きく振ることで、一歩も歩かずに広い範囲 of 植物を噛まずに飲み込んで食べることができました。エネルギーを無駄遣いせず、大量のご飯を効率よくお腹に流し込むことができたため、驚異的な成長が可能だったのです。
+</p>
 
 <h2 class="article-section-title">最新学説ベース！恐竜の重さ（体重）ランキングTOP10</h2>
 <p class="article-paragraph">
