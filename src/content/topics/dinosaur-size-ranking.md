@@ -459,9 +459,10 @@ relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauropose
       <div class="hud-corner top-left" style="position: absolute; top: -1px; left: -1px; width: 6px; height: 6px; border-top: 1px solid var(--primary-neon); border-left: 1px solid var(--primary-neon);"></div>
       <div class="hud-corner bottom-right" style="position: absolute; bottom: -1px; right: -1px; width: 6px; height: 6px; border-bottom: 1px solid var(--primary-neon); border-right: 1px solid var(--primary-neon);"></div>
       <a class="toy-link" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25A2%25E3%2583%258B%25E3%2582%25A2%2520AL-04%2520%25E3%2583%2596%25E3%2583%25A9%25E3%2582%25AD%25E3%2582%25AA%25E3%2582%25B5%25E3%2582%25A6%25E3%2583%25AB%25E3%2582%25B9%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
-        <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/morushop/cabinet/r_2025010236/20250102085718_88_1.jpg?_ex=128x128" alt="" style="border: none;" /><br>
+        <img src="//thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000135/7597417013.jpg?_ex=128x128" alt="" style="border: none;" /><br>
         タカラトミー アニア AL-04 ブラキオサウルス
       </a>
+      <img src="//i.moshimo.com/af/i/impression?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px; display: none;">
       <a class="rakuten-btn" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25A2%25E3%2583%258B%25E3%2582%25A2%2520AL-04%2520%25E3%2583%2596%25E3%2583%25A9%25E3%2582%25AD%25E3%2582%25AA%25E3%2582%25B5%25E3%2582%25A6%25E3%2583%25AB%25E3%2582%25B9%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
         <span>楽天市場で見る</span>
         <span class="btn-arrow">&raquo;</span>
@@ -484,11 +485,12 @@ relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauropose
     <div class="toy-affiliate-card">
       <div class="hud-corner top-left" style="position: absolute; top: -1px; left: -1px; width: 6px; height: 6px; border-top: 1px solid var(--primary-neon); border-left: 1px solid var(--primary-neon);"></div>
       <div class="hud-corner bottom-right" style="position: absolute; bottom: -1px; right: -1px; width: 6px; height: 6px; border-bottom: 1px solid var(--primary-neon); border-right: 1px solid var(--primary-neon);"></div>
-      <a class="toy-link" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%2595%25E3%2582%25A7%25E3%2583%2590%25E3%2583%25AA%25E3%2583%2583%25E3%2583%2588%2520%25E3%2583%2596%25E3%2583%25A9%25E3%2582%25AD%25E3%2582%25AA%25E3%2582%25B5%25E3%2582%25A6%25E3%2583%25AB%25E3%2582%25B9%2520%25E3%2583%259B%25E3%2583%25B3%25E3%2583%2580%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
-        <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/edion/cabinet/goods/ll/img_032/4967398007221_ll.jpg?_ex=128x128" alt="" style="border: none;" /><br>
-        フェバリット ブラキオサウルス ビニールモデル (FD-303)
+      <a class="toy-link" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%2595%25E3%2582%25A7%25E3%2583%2590%25E3%2583%25AA%25E3%2583%2583%25E3%2583%2588%2520%25E3%2583%2596%25E3%2583%25A9%25E3%2582%25AD%25E3%2582%25AA%25E3%2582%25B5%25E3%2582%25A6%25E3%2583%25AB%25E3%2582%25B9%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+        <img src="//thumbnail.image.rakuten.co.jp/@0_mall/biccamera/cabinet/product/2975/00000002388316_a01.jpg?_ex=128x128" alt="" style="border: none;" /><br>
+        フェバリット｜Favorite 恐竜 ブラキオサウルス ビニールモデル
       </a>
-      <a class="rakuten-btn" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%2595%25E3%2582%25A7%25E3%2583%2590%25E3%2583%25AA%25E3%2583%2583%25E3%2583%2588%2520%25E3%2583%2596%25E3%2583%25A9%25E3%2582%25AD%25E3%2582%25AA%25E3%2582%25B5%25E3%2582%25A6%25E3%2583%25AB%25E3%2582%25B9%2520%25E3%2583%259B%25E3%2583%25B3%25E3%2583%2580%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
+      <img src="//i.moshimo.com/af/i/impression?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px; display: none;">
+      <a class="rakuten-btn" href="//af.moshimo.com/af/c/click?a_id=5603988&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%2595%25E3%2582%25A7%25E3%2583%2590%25E3%2583%25AA%25E3%2583%2583%25E3%2583%2588%2520%25E3%2583%2596%25E3%2583%25A9%25E3%2582%25AD%25E3%2582%25AA%25E3%2582%25B5%25E3%2582%25A6%25E3%2583%25AB%25E3%2582%25B9%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">
         <span>楽天市場で見る</span>
         <span class="btn-arrow">&raquo;</span>
       </a>
