@@ -8,7 +8,7 @@ region: "アフリカ (ニジェールなど)"
 diet: "肉食"
 length: "12.0m"
 weight: "8.0t"
-image: "undefined"
+image: "images/sarcosuchus.webp"
 group: "その他"
 description: "白亜紀前期のアフリカに生息した史上最大級のワニ形類。現生のワニを遥かに凌ぐ巨体を持ち、「スーパークロック」とも呼ばれる。長く伸びた吻の先端には「ビュラ」と呼ばれる膨らみがあり、強力な咬合力で恐竜さえも獲物にしていたと考えられている。"
 bioTraits:
