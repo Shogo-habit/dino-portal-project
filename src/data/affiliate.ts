@@ -276,5 +276,33 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
             rakutenAffiliateUrl: "https://af.moshimo.com/af/c/click?a_id=5603988&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F12781560%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F16942437%2F",
             impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
         }
+    ],
+    "dinosaur-size-ranking": [
+        {
+            id: "ania_brachiosaurus",
+            title: "アニア AL-04 ブラキオサウルス",
+            subtitle: "首と長いしっぽが動く！ラージサイズのアニア定番巨大恐竜フィギュア",
+            type: "figure",
+            badgeText: "PRECISION MODEL",
+            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/morushop/cabinet/r_2025010236/20250102085718_88_1.jpg?_ex=300x300",
+            affiliateUrl: buildRakutenAffiliateUrl("アニア AL-04 ブラキオサウルス"),
+            priceText: "PRICE: ¥1,100 (税込)",
+            details: ["タカラトミー公式", "首・尻尾が連動可動", "ラージサイズ定番モデル"],
+            rakutenAffiliateUrl: buildRakutenAffiliateUrl("アニア AL-04 ブラキオサウルス"),
+            impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
+        },
+        {
+            id: "favorite_brachiosaurus_vinyl",
+            title: "フェバリット ブラキオサウルス ビニールモデル (FD-303)",
+            subtitle: "全長約49cm！軽くて丈夫なソフビ製で、圧倒的迫力と安全性を両立した巨大モデル",
+            type: "figure",
+            badgeText: "SOFT VINYL MODEL",
+            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/edion/cabinet/goods/ll/img_032/4967398007221_ll.jpg?_ex=300x300",
+            affiliateUrl: buildRakutenAffiliateUrl("フェバリット ブラキオサウルス ビニールモデル"),
+            priceText: "PRICE: ¥1,760 (税込)",
+            details: ["古生物造形家・荒木一成氏監修", "全長約49cmのビッグサイズ", "柔らかいソフビ素材で安全・頑丈"],
+            rakutenAffiliateUrl: buildRakutenAffiliateUrl("フェバリット ブラキオサウルス ビニールモデル"),
+            impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
+        }
     ]
 };
