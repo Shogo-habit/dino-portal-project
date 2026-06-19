@@ -304,5 +304,33 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
             rakutenAffiliateUrl: buildRakutenAffiliateUrl("フェバリット ブラキオサウルス"),
             impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
         }
+    ],
+    "mosasaurus": [
+        {
+            id: "mattel_mosasaurus",
+            title: "マテル ジュラシック・ワールド スーパービッグ! モササウルス",
+            subtitle: "全長約99cmの超巨大スケール！口を開けて別売りのミニフィギュアを飲み込める大迫力フィギュア",
+            type: "figure",
+            badgeText: "SUPER BIG FIGURE",
+            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0620/0194735270620.jpg?_ex=300x300",
+            affiliateUrl: buildRakutenAffiliateUrl("マテル ジュラシックワールド モササウルス"),
+            priceText: "PRICE: オープン価格",
+            details: ["全長約99cmの大迫力サイズ", "ミニフィギュアを飲み込むギミック搭載", "お腹を開けると飲み込んだフィギュアが出てくる構造"],
+            rakutenAffiliateUrl: buildRakutenAffiliateUrl("マテル ジュラシックワールド モササウルス"),
+            impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
+        },
+        {
+            id: "lego_mosasaurus",
+            title: "レゴ(LEGO) ジュラシック・ワールド モササウルス 76974",
+            subtitle: "レゴ ジュラシック・ワールドシリーズ！可動関節付きのモササウルスを組み立てられるブロックセット",
+            type: "goods",
+            badgeText: "LEGO TOY",
+            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/benelic-lcs/cabinet/jurassicworld/76974_01.jpg?_ex=300x300",
+            affiliateUrl: buildRakutenAffiliateUrl("レゴ モササウルス"),
+            priceText: "PRICE: オープン価格",
+            details: ["組み立て式のリアルなモササウルスフィギュア", "関節可動で様々な遊泳ポーズを再現可能", "レゴ公式ジュラシック・ワールドセット"],
+            rakutenAffiliateUrl: buildRakutenAffiliateUrl("レゴ モササウルス"),
+            impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
+        }
     ]
 };
