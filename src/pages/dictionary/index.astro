@@ -20,7 +20,8 @@ const REGIONS = [
     { id: 'アフリカ', label: 'アフリカ' },
     { id: 'ヨーロッパ', label: 'ヨーロッパ' },
     { id: '日本', label: '日本' },
-    { id: '海洋', label: '海洋' }
+    { id: '海洋', label: '海洋' },
+    { id: 'オセアニア', label: 'オセアニア' }
 ];
 
 const GROUPS = [
@@ -312,13 +313,23 @@ const GROUPS = [
                             matchesRegion = cardRegion.includes('海') && !cardRegion.includes('北海道');
                         } else if (regionVal === 'アジア') {
                             matchesRegion = cardRegion.includes('アジア') && !cardRegion.includes('ロシア');
+                        } else if (regionVal === 'オセアニア') {
+                            matchesRegion = cardRegion.includes('オセアニア') || cardRegion.includes('オーストラリア');
                         } else {
                             matchesRegion = cardRegion.includes(regionVal);
                         }
                     }
 
                     // Match Group
-                    const matchesGroup = !groupVal || cardGroup === groupVal;
+                    let matchesGroup = !groupVal;
+                    if (groupVal) {
+                        if (groupVal === 'その他') {
+                            const knownGroups = ['獣脚類', '竜脚類', '鳥脚類', '剣竜類', '堅頭竜類', 'よろい竜類', '角竜類', '翼竜', '首長竜', '魚竜'];
+                            matchesGroup = !knownGroups.includes(cardGroup);
+                        } else {
+                            matchesGroup = cardGroup === groupVal;
+                        }
+                    }
 
                     if (matchesSearch && matchesEra && matchesRegion && matchesGroup) {
                         card.style.display = 'block';
