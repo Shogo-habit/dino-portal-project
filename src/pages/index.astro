@@ -39,6 +39,42 @@ const recentlyAddedDinos = dinosaurs
                 </div>
             </div>
 
+            <div class="category-tag-scan hud-panel">
+                <h4 style="margin-bottom: 20px; border-bottom: 1px solid var(--panel-border); padding-bottom: 10px;">分類スキャン (TAG CLOUD)</h4>
+                
+                <div style="margin-bottom: 20px;">
+                    <span style="font-size: 11px; color: var(--primary-neon); font-family: var(--font-mono); display: block; margin-bottom: 8px;">[ 年代別セクター / TEMPORAL SECTOR ]</span>
+                    <div class="tag-group" style="display: flex; gap: 8px; flex-wrap: wrap;">
+                        <a href="/dictionary/?era=白亜紀" class="scan-tag-btn">白亜紀</a>
+                        <a href="/dictionary/?era=ジュラ紀" class="scan-tag-btn">ジュラ紀</a>
+                        <a href="/dictionary/?era=三畳紀" class="scan-tag-btn">三畳紀</a>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <span style="font-size: 11px; color: var(--primary-neon); font-family: var(--font-mono); display: block; margin-bottom: 8px;">[ 主要系統グループ / SYSTEMATIC GROUP ]</span>
+                    <div class="tag-group" style="display: flex; gap: 8px; flex-wrap: wrap;">
+                        <a href="/dictionary/?group=獣脚類" class="scan-tag-btn">獣脚類</a>
+                        <a href="/dictionary/?group=竜脚類" class="scan-tag-btn">竜脚類</a>
+                        <a href="/dictionary/?group=鳥脚類" class="scan-tag-btn">鳥脚類</a>
+                        <a href="/dictionary/?group=角竜類" class="scan-tag-btn">角竜類</a>
+                        <a href="/dictionary/?group=よろい竜類" class="scan-tag-btn">よろい竜類</a>
+                        <a href="/dictionary/?group=剣竜類" class="scan-tag-btn">剣竜類</a>
+                    </div>
+                </div>
+
+                <div>
+                    <span style="font-size: 11px; color: var(--primary-neon); font-family: var(--font-mono); display: block; margin-bottom: 8px;">[ 発掘セクター地域 / SPATIAL REGION ]</span>
+                    <div class="tag-group" style="display: flex; gap: 8px; flex-wrap: wrap;">
+                        <a href="/dictionary/?region=北アメリカ" class="scan-tag-btn">北アメリカ</a>
+                        <a href="/dictionary/?region=アジア" class="scan-tag-btn">アジア</a>
+                        <a href="/dictionary/?region=ヨーロッパ" class="scan-tag-btn">ヨーロッパ</a>
+                        <a href="/dictionary/?region=日本" class="scan-tag-btn">日本</a>
+                        <a href="/dictionary/?region=オセアニア" class="scan-tag-btn">オセアニア</a>
+                    </div>
+                </div>
+            </div>
+
             <div class="author-summary hud-panel">
                 <h4 style="margin-bottom: 20px; border-bottom: 1px solid var(--panel-border); padding-bottom: 10px;">キュレーター情報</h4>
                 <div class="author-profile-card">
@@ -197,5 +233,25 @@ const recentlyAddedDinos = dinosaurs
     border-color: var(--primary-neon) !important;
     box-shadow: 0 0 15px rgba(0, 242, 255, 0.25);
     background: rgba(0, 242, 255, 0.05) !important;
+  }
+
+  .scan-tag-btn {
+    font-size: 11px;
+    color: var(--text-main);
+    background: rgba(0, 242, 255, 0.03);
+    border: 1px solid var(--panel-border);
+    padding: 6px 12px;
+    text-decoration: none;
+    font-family: var(--font-mono);
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    display: inline-block;
+  }
+
+  .scan-tag-btn:hover {
+    border-color: var(--primary-neon);
+    background: rgba(0, 242, 255, 0.08);
+    box-shadow: 0 0 10px rgba(0, 242, 255, 0.2);
+    color: var(--primary-neon);
   }
 </style>

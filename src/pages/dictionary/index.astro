@@ -218,6 +218,24 @@ const GROUPS = [
             };
 
             const loadFiltersState = () => {
+                // 1. URL parameters check
+                const params = new URLSearchParams(window.location.search);
+                const pEra = params.get('era');
+                const pRegion = params.get('region');
+                const pGroup = params.get('group');
+                const pSearch = params.get('search');
+                
+                if (pEra || pRegion || pGroup || pSearch) {
+                    search.value = pSearch || '';
+                    era.value = pEra || '';
+                    region.value = pRegion || '';
+                    group.value = pGroup || '';
+                    sort.value = 'kana';
+                    saveFiltersState();
+                    return;
+                }
+
+                // 2. localStorage fallback
                 const saved = localStorage.getItem(DICT_FILTERS_KEY);
                 if (saved) {
                     const state = JSON.parse(saved);
