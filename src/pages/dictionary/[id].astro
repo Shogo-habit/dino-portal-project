@@ -4,6 +4,8 @@ import AffiliateSection from '../../components/AffiliateSection.astro';
 import { REFERENCE_ASSETS } from '../../data/cyberAssets';
 import { AUTHOR_DATA } from '../../data/author';
 import { getCollection, render } from 'astro:content';
+import fs from 'node:fs';
+import path from 'node:path';
 
 export async function getStaticPaths() {
   const dinosaurEntries = await getCollection('dinosaurs');
@@ -78,7 +80,8 @@ const BASELINE_PX = 100;
 const SAFE_ZONE_H = PANEL_HEIGHT - BASELINE_PX; // 300px
 const SAFE_ZONE_W = 600;
 
-const hasComparison = !!d.cyberMetadata;
+const imagePath = path.join(process.cwd(), 'public', 'images', 'cyber', `${entry.id}.webp`);
+const hasComparison = !!d.cyberMetadata && fs.existsSync(imagePath);
 let dinoTotalH = 0;
 let dinoBottomOffset = 0;
 let refTotalH = 0;
