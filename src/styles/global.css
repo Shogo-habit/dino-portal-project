@@ -285,14 +285,16 @@ body {
   gap: 30px;
 }
 
-.home-sidebar-column {
-  grid-row: span 2;
+.home-main-column {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.news-summary-sidebar {
+.home-sidebar-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .dino-day-hero {
