@@ -38,49 +38,51 @@ const recentlyAddedDinos = dinosaurs
             </div>
         </div>
 
-        <div class="news-summary-sidebar hud-panel">
-            <h4 style="margin-bottom: 20px; border-bottom: 1px solid var(--panel-border); padding-bottom: 10px;">最新トピックス</h4>
-            {topicItems.map(item => (
-                <a href={`/topics/${item.id}/`} class="news-item-link">
-                    <div class="news-item-img-wrap">
-                        <img src={`/${item.image}`} alt={item.title} loading="lazy" decoding="async" />
-                        <div class="scanline-overlay"></div>
-                    </div>
-                    <div class="news-item-meta">
-                        <span class="news-item-date">{item.date}</span>
-                        <span class="news-item-badge">{item.category}</span>
-                    </div>
-                    <h5 class="news-item-title">{item.title}</h5>
-                    <p class="news-item-summary">{item.summary.slice(0, 50)}...</p>
-                </a>
-            ))}
-            <a href="/topics/" style="font-size: 12px; color: var(--primary-neon); text-decoration: none;">[ トピックス一覧にアクセス ]</a>
-        </div>
-
-        <div class="recent-dinosaurs-sidebar hud-panel">
-            <h4 style="margin-bottom: 20px; border-bottom: 1px solid var(--panel-border); padding-bottom: 10px;">最近追加した恐竜</h4>
-            <div class="recent-dinos-list" style="display: flex; flex-direction: column; gap: 20px;">
-                {recentlyAddedDinos.map(dino => (
-                    <a href={`/dictionary/${dino.id}/`} class="recent-dino-item-link" style="text-decoration: none; color: inherit; display: block;">
-                        <div class="recent-dino-card" style="display: flex; gap: 15px; align-items: center; padding: 10px; border: 1px solid var(--panel-border); background: rgba(4, 8, 12, 0.4); transition: all 0.3s ease; position: relative; overflow: hidden;">
-                            <div class="recent-dino-thumb" style="width: 70px; height: 70px; flex-shrink: 0; border: 1px solid var(--panel-border); overflow: hidden; background: #000;">
-                                <img src={`/${dino.image}`} alt={dino.name} style="width: 100%; height: 100%; object-fit: cover;" />
-                            </div>
-                            <div style="flex: 1; min-width: 0;">
-                                <h5 style="margin: 0 0 5px 0; font-size: 14px; color: var(--text-main); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{dino.name}</h5>
-                                <div style="font-size: 10px; color: var(--primary-neon); font-family: var(--font-mono); margin-bottom: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                                    {dino.scientificName}
-                                </div>
-                                <div style="font-size: 11px; color: var(--text-dim);">
-                                    {dino.era} / {dino.region}
-                                </div>
-                            </div>
+        <div class="home-sidebar-column">
+            <div class="news-summary-sidebar hud-panel">
+                <h4 style="margin-bottom: 20px; border-bottom: 1px solid var(--panel-border); padding-bottom: 10px;">最新トピックス</h4>
+                {topicItems.map(item => (
+                    <a href={`/topics/${item.id}/`} class="news-item-link">
+                        <div class="news-item-img-wrap">
+                            <img src={`/${item.image}`} alt={item.title} loading="lazy" decoding="async" />
+                            <div class="scanline-overlay"></div>
                         </div>
+                        <div class="news-item-meta">
+                            <span class="news-item-date">{item.date}</span>
+                            <span class="news-item-badge">{item.category}</span>
+                        </div>
+                        <h5 class="news-item-title">{item.title}</h5>
+                        <p class="news-item-summary">{item.summary.slice(0, 50)}...</p>
                     </a>
                 ))}
+                <a href="/topics/" style="font-size: 12px; color: var(--primary-neon); text-decoration: none;">[ トピックス一覧にアクセス ]</a>
             </div>
-            <div style="margin-top: 20px;">
-                <a href="/dictionary/" style="font-size: 12px; color: var(--primary-neon); text-decoration: none;">[ 図鑑アーカイブ一覧 ]</a>
+
+            <div class="recent-dinosaurs-sidebar hud-panel">
+                <h4 style="margin-bottom: 20px; border-bottom: 1px solid var(--panel-border); padding-bottom: 10px;">最近追加した恐竜</h4>
+                <div class="recent-dinos-list" style="display: flex; flex-direction: column; gap: 20px;">
+                    {recentlyAddedDinos.map(dino => (
+                        <a href={`/dictionary/${dino.id}/`} class="recent-dino-item-link" style="text-decoration: none; color: inherit; display: block;">
+                            <div class="recent-dino-card" style="display: flex; gap: 15px; align-items: center; padding: 10px; border: 1px solid var(--panel-border); background: rgba(4, 8, 12, 0.4); transition: all 0.3s ease; position: relative; overflow: hidden;">
+                                <div class="recent-dino-thumb" style="width: 70px; height: 70px; flex-shrink: 0; border: 1px solid var(--panel-border); overflow: hidden; background: #000;">
+                                    <img src={`/${dino.image}`} alt={dino.name} style="width: 100%; height: 100%; object-fit: cover;" />
+                                </div>
+                                <div style="flex: 1; min-width: 0;">
+                                    <h5 style="margin: 0 0 5px 0; font-size: 14px; color: var(--text-main); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{dino.name}</h5>
+                                    <div style="font-size: 10px; color: var(--primary-neon); font-family: var(--font-mono); margin-bottom: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                        {dino.scientificName}
+                                    </div>
+                                    <div style="font-size: 11px; color: var(--text-dim);">
+                                        {dino.era} / {dino.region}
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    ))}
+                </div>
+                <div style="margin-top: 20px;">
+                    <a href="/dictionary/" style="font-size: 12px; color: var(--primary-neon); text-decoration: none;">[ 図鑑アーカイブ一覧 ]</a>
+                </div>
             </div>
         </div>
 

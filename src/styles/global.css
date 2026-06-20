@@ -285,6 +285,13 @@ body {
   gap: 30px;
 }
 
+.home-sidebar-column {
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .news-summary-sidebar {
 }
 
