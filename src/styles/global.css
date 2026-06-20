@@ -1322,15 +1322,15 @@ body {
 
 .timeline-group:hover .era-marker,
 .timeline-group.active .era-marker {
-    border-color: var(--secondary-neon);
-    background: var(--secondary-neon);
-    box-shadow: 0 0 10px var(--secondary-neon);
+    border-color: var(--primary-neon);
+    background: var(--primary-neon);
+    box-shadow: 0 0 10px var(--primary-neon);
 }
 
 .timeline-group:hover .era-label,
 .timeline-group.active .era-label {
-    color: var(--secondary-neon);
-    text-shadow: 0 0 5px var(--secondary-neon);
+    color: var(--primary-neon);
+    text-shadow: 0 0 5px var(--primary-neon);
 }
 
 .card-tag.group-tag {
