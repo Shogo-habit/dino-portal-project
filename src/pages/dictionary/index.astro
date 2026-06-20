@@ -64,9 +64,14 @@ const GROUPS = [
                 <span style="font-size: 11px; color: var(--text-dim);">未設定</span>
             </div>
         </div>
-        <div style="display: flex; align-items: center; gap: 10px; color: var(--primary-neon); font-family: var(--font-mono); font-size: 12px; white-space: nowrap;">
-            <span id="accordion-label">フィルタを展開</span>
-            <span id="accordion-icon" style="transition: transform 0.3s ease;">[ + ]</span>
+        <div style="display: flex; align-items: center; gap: 15px; flex-shrink: 0;">
+            <button id="filter-reset-btn" class="scan-tag-btn" style="padding: 4px 10px; font-size: 11px; display: none; margin: 0; cursor: pointer; height: auto; background: rgba(255, 0, 85, 0.05); border-color: rgba(255, 0, 85, 0.4); color: #ff0055; font-family: var(--font-mono); transition: all 0.3s ease;">
+                [ RESET ]
+            </button>
+            <div style="display: flex; align-items: center; gap: 10px; color: var(--primary-neon); font-family: var(--font-mono); font-size: 12px; white-space: nowrap;">
+                <span id="accordion-label">フィルタを展開</span>
+                <span id="accordion-icon" style="transition: transform 0.3s ease;">[ + ]</span>
+            </div>
         </div>
     </div>
 
@@ -250,6 +255,7 @@ const GROUPS = [
 
             const updateFilterChips = () => {
                 const chipContainer = document.querySelector('.filter-chips-container');
+                const resetBtn = document.getElementById('filter-reset-btn');
                 if (!chipContainer) return;
                 
                 let html = '';
@@ -259,6 +265,12 @@ const GROUPS = [
                 if (!html) html = '<span style="font-size: 11px; color: var(--text-dim);">未設定</span>';
                 
                 chipContainer.innerHTML = html;
+
+                // Toggle reset button visibility
+                if (resetBtn) {
+                    const hasActiveFilter = !!(era.value || region.value || group.value || search.value.trim() || sort.value !== 'kana');
+                    resetBtn.style.display = hasActiveFilter ? 'inline-block' : 'none';
+                }
             };
 
             const updateList = () => {
@@ -392,12 +404,34 @@ const GROUPS = [
             const accordionIcon = document.getElementById('accordion-icon');
 
             if (accordionToggle && accordionContent && accordionLabel && accordionIcon) {
-                accordionToggle.addEventListener('click', () => {
+                accordionToggle.addEventListener('click', (e) => {
+                    const target = e.target as HTMLElement;
+                    if (target.id === 'filter-reset-btn') {
+                        return; // Bypass toggling accordion when clicking reset
+                    }
                     const isHidden = accordionContent.style.display === 'none';
                     accordionContent.style.display = isHidden ? 'block' : 'none';
                     accordionLabel.innerText = isHidden ? 'フィルタを閉じる' : 'フィルタを展開';
                     accordionIcon.innerText = isHidden ? '[ - ]' : '[ + ]';
                     accordionToggle.style.borderColor = isHidden ? 'var(--primary-neon)' : 'var(--panel-border)';
+                });
+            }
+
+            // Reset button logic
+            const resetBtn = document.getElementById('filter-reset-btn');
+            if (resetBtn) {
+                resetBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    
+                    // Reset all filters
+                    era.value = '';
+                    region.value = '';
+                    group.value = '';
+                    search.value = '';
+                    sort.value = 'kana';
+                    
+                    // Trigger list update and save state
+                    updateList();
                 });
             }
 
@@ -410,3 +444,12 @@ const GROUPS = [
         document.addEventListener('astro:page-load', initDictionary);
     </script>
 </Layout>
+
+<style>
+    #filter-reset-btn:hover {
+        border-color: #ff0055 !important;
+        background: rgba(255, 0, 85, 0.15) !important;
+        box-shadow: 0 0 10px rgba(255, 0, 85, 0.3);
+        color: #ff0055 !important;
+    }
+</style>
