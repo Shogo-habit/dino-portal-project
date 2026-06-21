@@ -1,0 +1,36 @@
+---
+id: "moshiryu"
+name: "モシリュウ"
+kana: "もしりゅう"
+scientificName: "Mamenchisauridae gen. et sp. indet."
+era: "白亜紀前期"
+region: "日本（岩手県）"
+diet: "草食"
+length: "15.0m"
+weight: "15.0t"
+image: "images/moshiryu.webp"
+group: "竜脚類"
+description: "岩手県岩泉町茂市で発見された、日本国内で初めて確認された恐竜。東アジアに栄えた首の長い大型竜脚類の仲間です。"
+bioTraits:
+  - trait: "歴史的価値"
+    value: "日本初の恐竜"
+    detail: "1978年に発掘された上腕骨が、日本国内初の「恐竜化石」と鑑定された記念碑的標本"
+  - trait: "身体的特徴"
+    value: "超長頸"
+    detail: "中国などで見つかるマメンチサウルス科と同様に、全長の半分近くを占める非常に長い首を持つ"
+references:
+  - title: "A sauropod dinosaur humerus from the Lower Cretaceous of Miyako Group, Iwate Prefecture, Japan"
+    journal: "Proceedings of the Japan Academy"
+    year: 1978
+    url: "https://www.jstage.jst.go.jp/article/pjab/54/10/54_10_607/_article"
+---
+
+### 日本初の恐竜発見ストーリー
+モシリュウ（茂市竜）は、1978年に岩手県岩泉町茂市に分布する白亜紀前期（約1億1000万年前）の宮古層群から発見された恐竜です。採石場で発見された一本の大きな骨の破片を古生物学者らが鑑定した結果、巨大な草食恐竜（竜脚類）の上腕骨であることが判明しました。
+
+それまで「日本には恐竜の化石は存在しない」と信じられていた学説を覆し、日本古生物学界における本格的な「恐竜発掘時代」の幕開けを告げた極めて重要なシンボルです。
+
+### 分類と生態
+発見されたのは上腕骨の一部のみですが、その特徴から中国などで繁栄していた「マメンチサウルス科（Mamenchisauridae）」に属する竜脚類である可能性が高いと推定されています。
+
+マメンチサウルス類は、全長の半分を占めるほど極端に長い首が最大の特徴であり、モシリュウも全長約15mに及ぶ巨体を持っていたと考えられています。当時は地続きであったアジア大陸東端の温暖な森林地帯に暮らし、長い首を使って高い木々の葉を大量に食べ、他の巨大恐竜たちと共に豊かな生態系を築いていました。
