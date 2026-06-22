@@ -19,10 +19,10 @@ bioTraits:
     value: "鋭い鋸歯"
     detail: "ブレード状の平らな歯の側面に、肉を鋭利に切り裂くための細かい鋸歯（ギザギザ）が発達している"
 references:
-  - title: "Dinosaur remains from the Upper Cretaceous Mifune Group, Kyushu, Japan"
-    journal: "Canadian Journal of Earth Sciences"
-    year: 1984
-    url: "https://cdnsciencepub.com/doi/abs/10.1139/e84-142"
+  - title: "日本で最初に発見された肉食恐竜化石“ミフネリュウ”--熊本・御船層群の恐竜--"
+    journal: "milsil：自然と科学の情報誌（国立科学博物館）"
+    year: 2011
+    url: "https://cir.nii.ac.jp/crid/1520290884632766080"
 ---
 
 ### 日本初の「肉食恐竜」発見の歴史
