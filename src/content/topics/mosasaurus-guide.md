@@ -70,7 +70,7 @@ relatedSpecimens: ["mosasaurus", "wakayama-soryu", "plesiosaurus", "ichthyosauru
 
 <h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">全長は何メートル？モササウルスの大きさと最大クラスの種類</h3>
 <p class="article-paragraph">
-  モササウルスのなかまで一番大きかった種類（モササウルス・ホフマニ）は、なんと<strong>全長が約15〜17メートル以上</strong>に達したと考えられています。これは、現代の海にいる肉食の王者シャチ（最大約8〜9メートル）のなんと2倍近い大きさです！
+  モササウルスのなかまで一番大きかった種類（モササウルス・ホフマニ）は、なんと<strong>全長が約15〜17メートル以上</strong>に達したと考えられています。これは、現代の海にいるホオジロザメ（最大約4〜6メートル）のなんと3倍近い大きさです！
 </p>
 
 <h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">クジラやバスと比べてみよう！子供でもピンとくる巨大さ</h3>
