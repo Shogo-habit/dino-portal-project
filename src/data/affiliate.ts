@@ -76,7 +76,7 @@ export const DEFAULT_AFFILIATE_PRODUCTS: AffiliateProduct[] = [
         affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/s?k=%E3%82%A2%E3%83%8B%E3%82%A2+%E3%83%91%E3%83%83%E3%81%A8%E3%81%8A%E3%81%8B%E3%81%9F%E3%81%A5%E3%81%91%EF%BC%81%E6%81%90%E7%AB%9C%E5%A4%A7%E4%B9%B1%E9%97%98%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89"),
         priceText: "PRICE: ¥5,280 (税込)",
         details: ["タカラトミー公式", "操作ボタンでトントン恐竜バトル", "限定ゴールドティラノサウルス付き"],
-        rakutenAffiliateUrl: "https://af.moshimo.com/af/c/click?a_id=5603988&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fedion%2F4904810921134%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fedion%2Fi%2F10851747%2F",
+        rakutenAffiliateUrl: buildRakutenAffiliateUrl("アニア パッとおかたづけ！恐竜大乱闘ワールド"),
         impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
     }
 ];
