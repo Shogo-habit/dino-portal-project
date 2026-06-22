@@ -194,7 +194,7 @@ const relatedTopics = topics
                 <div class="hud-corner top-left" style="border-top-color: rgba(0, 242, 255, 0.3); border-left-color: rgba(0, 242, 255, 0.3);"></div>
                 <div class="hud-corner bottom-right" style="border-bottom-color: rgba(0, 242, 255, 0.3); border-right-color: rgba(0, 242, 255, 0.3);"></div>
                 <h4 style="border-bottom: 1px solid var(--panel-border); padding-bottom: 10px; margin-bottom: 15px; color: var(--primary-neon); font-size: 14px; font-family: var(--font-mono); letter-spacing: 1px;">
-                    [ ARCHIVAL MEMORANDUM / 詳細解説記録 ]
+                    [ 詳細解説 ]
                 </h4>
                 <div class="archival-content" style="line-height: 1.9; font-size: 14px; color: var(--text-main); text-align: justify;">
                     <Content />
@@ -265,7 +265,7 @@ const relatedTopics = topics
                                     <span>{ref.journal}</span> &bull; <span>{ref.year}</span>
                                 </div>
                                 <a href={ref.url} target="_blank" rel="noopener noreferrer" style="display: inline-block; font-size: 11px; color: var(--primary-neon); text-decoration: none; margin-top: 6px; font-family: var(--font-mono);">
-                                    [ DOI / ACCESS LITERATURE ] &raquo;
+                                    [ 論文・文献リンク ] &raquo;
                                 </a>
                             </li>
                         ))}
@@ -277,7 +277,7 @@ const relatedTopics = topics
             {relatedTopics.length > 0 && (
                 <section class="related-topics" style="margin-top: 40px; border-top: 1px solid var(--panel-border); padding-top: 30px;">
                     <h3 class="related-title" style="font-family: var(--font-mono); font-size: 14px; color: var(--primary-neon); margin-bottom: 20px; letter-spacing: 1px;">
-                        [ RELATED TOPICS / 関連する特集・記事 ]
+                        [ 関連する特集・記事 ]
                     </h3>
                     <div class="topics-simple-list" style="display: flex; flex-direction: column; gap: 15px;">
                         {relatedTopics.map(t => (
