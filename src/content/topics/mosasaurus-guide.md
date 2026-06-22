@@ -13,7 +13,7 @@ relatedSpecimens: ["mosasaurus", "wakayama-soryu", "plesiosaurus", "ichthyosauru
 「モササウルスって、恐竜のなかまなの？」
 
 <p class="article-paragraph" style="margin-bottom: 40px;">
-  恐竜図鑑や映画でおなじみの**モササウルス**。その圧倒的な強さや巨大さ、海の絶対王者としての生態を、子供から大人までわかりやすく解説します！
+  恐竜図鑑や映画でおなじみの<strong style="color: var(--primary-neon);">モササウルス</strong>。その圧倒的な強さや巨大さ、海の絶対王者としての生態を、子供から大人までわかりやすく解説します！
 </p>
 
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 25px;">
