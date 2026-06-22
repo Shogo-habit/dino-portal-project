@@ -18,11 +18,6 @@ bioTraits:
   - trait: "身体的特徴"
     value: "超長頸"
     detail: "中国などで見つかるマメンチサウルス科と同様に、全長の半分近くを占める非常に長い首を持つ"
-references:
-  - title: "A sauropod dinosaur humerus from the Lower Cretaceous of Miyako Group, Iwate Prefecture, Japan"
-    journal: "Proceedings of the Japan Academy"
-    year: 1978
-    url: "https://www.jstage.jst.go.jp/article/pjab/54/10/54_10_607/_article"
 ---
 
 ### 日本初の恐竜発見ストーリー
