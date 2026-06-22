@@ -27,11 +27,7 @@ cyberMetadata:
   dinoLeft: "13%"
   refRight: "25%"
   zoom: 1
-references:
-  - title: "On the genus Stephanosaurus, with a description of the species Lambeosaurus lambei"
-    journal: "Canada Department of Mines Geological Survey Bulletin"
-    year: 1923
-    url: "https://archive.org/details/ongunusstephanos00lamb"
+
 ---
 
 白亜紀後期の北アメリカに生息していた、カモノハシ竜の一種である大型の草食恐竜。頭頂部に「手斧」や「手袋」のような奇妙な形状をした巨大な中空の骨質トサカ（クレスト）を持っていた。このトサカの内部は鼻腔（鼻の通り道）と複雑に繋がっており、中空の空洞を利用して大きな音を響かせる「共鳴器」として機能していたと推測される。これにより、視界の悪い森林でも遠くの仲間と声でコミュニケーションを取っていた。

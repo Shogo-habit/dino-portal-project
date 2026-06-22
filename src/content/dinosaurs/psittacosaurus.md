@@ -27,11 +27,7 @@ cyberMetadata:
   dinoLeft: "10%"
   refRight: "15%"
   zoom: 1
-references:
-  - title: "Protoceratops to Psittacosaurus: Two new horned dinosaurs from Mongolia"
-    journal: "American Museum Novitates"
-    year: 1923
-    url: "https://hdl.handle.net/2246/3224"
+
 ---
 
 白亜紀前期のアジアに極めて広く繁栄していた、角竜類の祖先にあたる小型の植物食恐竜。「オウムトカゲ」の名の通り、オウムのような頑丈で鋭いクチバシを持ち、果実や種子を噛み砕いていた。全身化石の分析から、尾の背面にだけ「長くて硬いブラシのような毛（または剛毛）」が生えていたという驚くべき軟組織データが得られ、これが角竜類における原始的な羽毛のルーツではないかと学術的に大きな波紋を呼んだ。

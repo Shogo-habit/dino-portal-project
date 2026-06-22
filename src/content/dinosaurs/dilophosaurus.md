@@ -27,11 +27,7 @@ cyberMetadata:
   dinoLeft: "10%"
   refRight: "15%"
   zoom: 1
-references:
-  - title: "New species of theropod dinosaur from the Kayenta Formation of Arizona"
-    journal: "Journal of Paleontology"
-    year: 1954
-    url: "https://www.jstor.org/stable/1300189"
+
 ---
 
 ジュラ紀前期の北アメリカに生息した大型の肉食恐竜。映画『ジュラシック・パーク』での小型で襟飾りを持ち毒を吐く姿はフィクションであり、実際は全長約7m、体重約400kgに達する当時の頂点捕食者であった。頭部に並ぶ薄い半月状の一対の「トサカ」がトレードマークで、これは武器ではなく、鳥類のクチバシのように仲間を引き寄せるディスプレイのための装飾であったとされる。

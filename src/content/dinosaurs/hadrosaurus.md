@@ -27,11 +27,7 @@ cyberMetadata:
   dinoLeft: "3%"
   refRight: "15%"
   zoom: 1.2
-references:
-  - title: "Hadrosaurus foulkii, a new crested dinosaur from the Cretaceous"
-    journal: "Proceedings of the Academy of Natural Sciences of Philadelphia"
-    year: 1858
-    url: "https://www.jstor.org/stable/4059253"
+
 ---
 
 白亜紀後期の北アメリカ東部に生息していた植物食恐竜であり、ハドロサウルス科（カモノハシ竜）の基準となった恐竜。1858年にアメリカのニュージャージー州で発見され、北米で初めて骨格が組み立てられた歴史的記念碑である。クチバシの形状がカモのように平らで広く、口内には数千本もの微細な歯がびっしりと並んだデンタルバッテリー構造を持ち、繊維質の極めて硬い植物や樹皮をやすりのように完全にすり潰して食べることができた。
