@@ -19,10 +19,10 @@ bioTraits:
     value: "原始的"
     detail: "セントロサウルス類の中でも古い時代の特徴を残す"
 cyberMetadata:
-  bottomGap: 260
+  bottomGap: 234
   realHeight: 2
   realLength: 3.06
-  contentHeightPx: 640
+  contentHeightPx: 636
   sourceRes: 1024
   dinoLeft: "7%"
   refRight: "4%"

@@ -19,10 +19,10 @@ bioTraits:
     value: "羽毛の萌芽"
     detail: "前肢に羽軸隆起の形跡がある"
 cyberMetadata:
-  bottomGap: 220
+  bottomGap: 201
   realHeight: 3.77
   realLength: 6
-  contentHeightPx: 618
+  contentHeightPx: 603
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

@@ -19,10 +19,10 @@ bioTraits:
     value: "嘴状"
     detail: "硬いアンモナイトの殻を砕く強力な嘴"
 cyberMetadata:
-  bottomGap: 170
+  bottomGap: 157
   realHeight: 3
   realLength: 4.5
-  contentHeightPx: 626
+  contentHeightPx: 571
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

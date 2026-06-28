@@ -19,10 +19,10 @@ bioTraits:
     value: "強靭な四肢"
     detail: "数十トンの体重を支えるための柱のような脚"
 cyberMetadata:
-  bottomGap: 366
+  bottomGap: 356
   realHeight: 9
   realLength: 35
-  contentHeightPx: 339
+  contentHeightPx: 322
   sourceRes: 1024
   dinoLeft: "0"
   refRight: "20%"

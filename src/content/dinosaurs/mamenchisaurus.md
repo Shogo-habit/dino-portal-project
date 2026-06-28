@@ -19,10 +19,10 @@ bioTraits:
     value: "軽量化"
     detail: "複雑な骨の構造により長い首を支えた"
 cyberMetadata:
-  bottomGap: 175
+  bottomGap: 169
   realHeight: 15.5
   realLength: 22
-  contentHeightPx: 693
+  contentHeightPx: 677
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "30%"

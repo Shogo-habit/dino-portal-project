@@ -19,10 +19,10 @@ bioTraits:
     value: "強力"
     detail: "巨体から繰り出される締め付けは獲物を一瞬で無力化する"
 cyberMetadata:
-  bottomGap: 77
+  bottomGap: 78
   realHeight: 3.5
   realLength: 12.8
-  contentHeightPx: 878
+  contentHeightPx: 874
   sourceRes: 1024
   dinoLeft: "15%"
   refRight: "18%"

@@ -19,10 +19,10 @@ bioTraits:
     value: "広い骨盤"
     detail: "低重心で安定した歩行が可能"
 cyberMetadata:
-  bottomGap: 325
+  bottomGap: 309
   realHeight: 1.2
   realLength: 1.8
-  contentHeightPx: 400
+  contentHeightPx: 406
   sourceRes: 1024
   dinoLeft: "7%"
   refRight: "15%"

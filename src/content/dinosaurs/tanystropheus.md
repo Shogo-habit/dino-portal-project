@@ -19,10 +19,10 @@ bioTraits:
     value: "待ち伏せ"
     detail: "水中への不意のリーチによる捕食"
 cyberMetadata:
-  bottomGap: 355
+  bottomGap: 343
   realHeight: 2.35
   realLength: 6
-  contentHeightPx: 386
+  contentHeightPx: 378
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "70%"

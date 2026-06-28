@@ -19,10 +19,10 @@ bioTraits:
     value: "羽毛と巨体"
     detail: "直立に近い姿勢で高い木の葉を食べる"
 cyberMetadata:
-  bottomGap: 240
+  bottomGap: 236
   realHeight: 5
   realLength: 10
-  contentHeightPx: 680
+  contentHeightPx: 569
   sourceRes: 1024
   dinoLeft: "10%"
   refRight: "15%"

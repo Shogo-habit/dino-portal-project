@@ -19,10 +19,10 @@ bioTraits:
     value: "強靭"
     detail: "巨大な体を維持するための強力な循環システム"
 cyberMetadata:
-  bottomGap: 280
+  bottomGap: 272
   realHeight: 14
   realLength: 37
-  contentHeightPx: 506
+  contentHeightPx: 478
   sourceRes: 1024
   dinoLeft: "0%"
   refRight: "25%"

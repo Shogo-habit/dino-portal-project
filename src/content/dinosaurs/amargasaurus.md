@@ -19,7 +19,7 @@ bioTraits:
     value: "可能性"
     detail: "棘の間に皮膚の帆が張られていた説がある"
 cyberMetadata:
-  bottomGap: 225
+  bottomGap: 194
   realHeight: 6
   realLength: 10
   contentHeightPx: 581

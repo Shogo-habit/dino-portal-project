@@ -19,7 +19,7 @@ bioTraits:
     value: "斬撃"
     detail: "鋭い牙で獲物を素早く仕留める"
 cyberMetadata:
-  bottomGap: 205
+  bottomGap: 181
   realHeight: 5.08
   realLength: 6.5
   contentHeightPx: 725

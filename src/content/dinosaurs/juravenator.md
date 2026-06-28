@@ -19,10 +19,10 @@ bioTraits:
     value: "極めて高い"
     detail: "小型の獲物を捕らえるための俊敏な動き"
 cyberMetadata:
-  bottomGap: 300
+  bottomGap: 286
   realHeight: 0.39
   realLength: 1.04
-  contentHeightPx: 540
+  contentHeightPx: 451
   sourceRes: 1024
   dinoLeft: "30%"
   refRight: "15%"

@@ -19,10 +19,10 @@ bioTraits:
     value: "絶大"
     detail: "あらゆる獲物を両断する鋭い顎の刃"
 cyberMetadata:
-  bottomGap: 330
+  bottomGap: 309
   realHeight: 1.5
   realLength: 6
-  contentHeightPx: 450
+  contentHeightPx: 406
   sourceRes: 1024
   dinoLeft: "3%"
   refRight: "8%"

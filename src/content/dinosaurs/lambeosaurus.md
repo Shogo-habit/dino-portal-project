@@ -19,10 +19,10 @@ bioTraits:
     value: "高い"
     detail: "群れで行動し、音声で警告を発し合った"
 cyberMetadata:
-  bottomGap: 115
+  bottomGap: 87
   realHeight: 4.8
   realLength: 9
-  contentHeightPx: 841
+  contentHeightPx: 840
   sourceRes: 1024
   dinoLeft: "13%"
   refRight: "25%"

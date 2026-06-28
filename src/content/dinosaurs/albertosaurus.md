@@ -19,10 +19,10 @@ bioTraits:
     value: "可能性あり"
     detail: "多数の個体が一度に発見された例がある"
 cyberMetadata:
-  bottomGap: 255
+  bottomGap: 230
   realHeight: 5.11
   realLength: 9
-  contentHeightPx: 553
+  contentHeightPx: 552
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "20%"

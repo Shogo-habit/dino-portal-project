@@ -19,10 +19,10 @@ bioTraits:
     value: "グライダー"
     detail: "上昇気流を捉えて海上で長時間飛行する"
 cyberMetadata:
-  bottomGap: 80
+  bottomGap: 52
   realHeight: 1
   realLength: 2
-  contentHeightPx: 900
+  contentHeightPx: 921
   sourceRes: 1024
   dinoLeft: "20%"
   refRight: "14%"

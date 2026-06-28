@@ -19,10 +19,10 @@ bioTraits:
     value: "堅牢な嘴"
     detail: "貝殻などの硬いものも砕けた可能性"
 cyberMetadata:
-  bottomGap: 60
+  bottomGap: 16
   realHeight: 3
   realLength: 2.86
-  contentHeightPx: 972
+  contentHeightPx: 965
   sourceRes: 1024
   dinoLeft: "10%"
   refRight: "15%"

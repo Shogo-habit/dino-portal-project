@@ -19,10 +19,10 @@ bioTraits:
     value: "広い"
     detail: "長い首を利用して高い場所の植物を摂取"
 cyberMetadata:
-  bottomGap: 277
+  bottomGap: 276
   realHeight: 5
   realLength: 10
-  contentHeightPx: 485
+  contentHeightPx: 486
   sourceRes: 1024
   dinoLeft: "2%"
   refRight: "15%"

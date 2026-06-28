@@ -19,10 +19,10 @@ bioTraits:
     value: "高い"
     detail: "水面下から頭だけを動かして魚を捕らえる"
 cyberMetadata:
-  bottomGap: 220
+  bottomGap: 222
   realHeight: 5.9
   realLength: 10.3
-  contentHeightPx: 546
+  contentHeightPx: 541
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

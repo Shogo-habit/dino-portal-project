@@ -19,10 +19,10 @@ bioTraits:
     value: "骨質ノブ"
     detail: "頭部の周囲に並ぶ刺状の突起"
 cyberMetadata:
-  bottomGap: 260
+  bottomGap: 263
   realHeight: 1.8
   realLength: 4.5
-  contentHeightPx: 480
+  contentHeightPx: 489
   sourceRes: 1024
   dinoLeft: "10%"
   refRight: "10%"

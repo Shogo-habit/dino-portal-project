@@ -19,10 +19,10 @@ bioTraits:
     value: "鋭い攻撃"
     detail: "中型獣脚類らしい迅速な狩り"
 cyberMetadata:
-  bottomGap: 270
+  bottomGap: 257
   realHeight: 2.59
   realLength: 5
-  contentHeightPx: 501
+  contentHeightPx: 500
   sourceRes: 1024
   dinoLeft: "2%"
   refRight: "10%"

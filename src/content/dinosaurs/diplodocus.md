@@ -19,10 +19,10 @@ bioTraits:
     value: "高い"
     detail: "首を横に振るだけで広範囲の植物を食べられた"
 cyberMetadata:
-  bottomGap: 395
+  bottomGap: 389
   realHeight: 4.5
   realLength: 27
-  contentHeightPx: 160
+  contentHeightPx: 242
   sourceRes: 1024
   dinoLeft: "0"
   refRight: "25%"

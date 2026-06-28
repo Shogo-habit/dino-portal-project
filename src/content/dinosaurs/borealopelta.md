@@ -19,10 +19,10 @@ bioTraits:
     value: "生きた姿"
     detail: "三次元的な装甲の配置が完全に判明している唯一の鎧竜"
 cyberMetadata:
-  bottomGap: 365
+  bottomGap: 358
   realHeight: 3.2
   realLength: 5.5
-  contentHeightPx: 500
+  contentHeightPx: 307
   sourceRes: 1024
   dinoLeft: "3%"
   refRight: "60%"

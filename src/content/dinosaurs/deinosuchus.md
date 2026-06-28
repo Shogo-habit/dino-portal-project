@@ -19,10 +19,10 @@ bioTraits:
     value: "水辺の恐怖"
     detail: "水中に潜み、水を飲みに来た恐竜を襲う"
 cyberMetadata:
-  bottomGap: 405
+  bottomGap: 396
   realHeight: 1.5
   realLength: 10.6
-  contentHeightPx: 221
+  contentHeightPx: 226
   sourceRes: 1024
   dinoLeft: "10%"
   refRight: "20%"

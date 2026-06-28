@@ -19,10 +19,10 @@ bioTraits:
     value: "高い"
     detail: "細身の体格を活かしたスピーディな狩り"
 cyberMetadata:
-  bottomGap: 240
+  bottomGap: 217
   realHeight: 2.2
   realLength: 6
-  contentHeightPx: 480
+  contentHeightPx: 584
   sourceRes: 1024
   dinoLeft: "10%"
   refRight: "15%"

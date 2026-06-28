@@ -19,10 +19,10 @@ bioTraits:
     value: "長い尾"
     detail: "ステアリングの役割を果たす硬い尾"
 cyberMetadata:
-  bottomGap: 197
+  bottomGap: 202
   realHeight: 1
   realLength: 1.43
-  contentHeightPx: 675
+  contentHeightPx: 659
   sourceRes: 1024
   dinoLeft: "10%"
   refRight: "10%"

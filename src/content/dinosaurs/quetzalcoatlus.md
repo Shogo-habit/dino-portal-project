@@ -19,10 +19,10 @@ bioTraits:
     value: "意外に俊敏"
     detail: "四足歩行で地上を歩き獲物を探す"
 cyberMetadata:
-  bottomGap: 50
+  bottomGap: 42
   realHeight: 5
   realLength: 11
-  contentHeightPx: 950
+  contentHeightPx: 919
   sourceRes: 1024
   dinoLeft: "15%"
   refRight: "20%"

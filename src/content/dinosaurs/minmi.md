@@ -19,10 +19,10 @@ bioTraits:
     value: "鎖帷子"
     detail: "お腹側を保護する小さな骨の粒の集合体"
 cyberMetadata:
-  bottomGap: 370
+  bottomGap: 360
   realHeight: 1.1
   realLength: 3
-  contentHeightPx: 400
+  contentHeightPx: 290
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "5%"

@@ -19,10 +19,10 @@ bioTraits:
     value: "鋸歯状"
     detail: "肉を切り裂くのに適した鋭い歯"
 cyberMetadata:
-  bottomGap: 280
+  bottomGap: 269
   realHeight: 3.7
   realLength: 9
-  contentHeightPx: 409
+  contentHeightPx: 396
   sourceRes: 1024
   dinoLeft: "0%"
   refRight: "20%"

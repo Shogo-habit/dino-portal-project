@@ -19,10 +19,10 @@ bioTraits:
     value: "魚食"
     detail: "長い顎で魚を捕らえる"
 cyberMetadata:
-  bottomGap: 315
+  bottomGap: 308
   realHeight: 5
   realLength: 15
-  contentHeightPx: 417
+  contentHeightPx: 403
   sourceRes: 1024
   dinoLeft: "0%"
   refRight: "20%"

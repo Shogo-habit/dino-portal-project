@@ -8,8 +8,8 @@
   --alert-neon: #ff0055;
   --text-main: #e0faff;
   --text-dim: #8fa7ab;
-  --font-mono: 'Inter', monospace;
-  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'Share Tech Mono', monospace;
+  --font-sans: 'Orbitron', 'Inter Variable', 'Inter', sans-serif;
   --hud-glitch: 3px;
 }
 
@@ -95,29 +95,35 @@ body {
 .logo-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .logo-prefix {
-  font-size: 10px;
-  letter-spacing: 5px;
+  font-size: 9px;
+  letter-spacing: 3px;
   color: var(--primary-neon);
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  line-height: 1;
 }
 
 .logo-text {
-  font-size: 28px;
-  font-weight: 800;
-  letter-spacing: 2px;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
   color: #ffffff;
   text-shadow: 0 0 10px var(--primary-neon);
+  line-height: 1.1;
+  font-family: var(--font-sans);
 }
 
 .status-indicator {
-  font-size: 10px;
-  font-family: var(--font-mono);
-  margin-top: 2px;
+  font-size: 9px;
+  font-family: var(--font-sans);
+  margin-top: 3px;
   color: var(--text-dim);
   letter-spacing: 1.5px;
+  line-height: 1;
 }
 
 .status-indicator::before {
@@ -995,6 +1001,8 @@ body {
     flex-shrink: 0;
     transform: none !important; /* STRICT: Prevent isolation */
     transition: none !important; /* STRICT: Prevent isolation */
+    max-width: none !important; /* ALLOW SPECS-DRIVEN WIDTH */
+    max-height: none !important;
 }
 
 /* Metadata-driven grounding is now handled via inline styles from app.js */
@@ -1023,7 +1031,7 @@ body {
     font-size: 11px;
     color: var(--primary-neon);
     white-space: nowrap;
-    clip-path: polygon(0 0, 95% 0, 100% 30%, 100% 100%, 5% 100%, 0 70%);
+    border-radius: 2px;
 }
 
 .dino-tag {
@@ -1166,7 +1174,6 @@ body {
     font-family: var(--font-mono);
     font-size: 11px;
     color: var(--primary-neon);
-    text-transform: uppercase;
     letter-spacing: 1px;
     background: rgba(0, 20, 30, 0.6);
     padding: 2px 8px;

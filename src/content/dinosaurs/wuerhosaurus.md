@@ -19,10 +19,10 @@ bioTraits:
     value: "長期間"
     detail: "白亜紀という激戦の時代を生き抜いた剣竜"
 cyberMetadata:
-  bottomGap: 310
+  bottomGap: 305
   realHeight: 2.2
   realLength: 7
-  contentHeightPx: 440
+  contentHeightPx: 413
   sourceRes: 1024
   dinoLeft: "0%"
   refRight: "7%"

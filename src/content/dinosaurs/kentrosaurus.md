@@ -19,10 +19,10 @@ bioTraits:
     value: "ハリネズミ状"
     detail: "全身のトゲで捕食者を威嚇"
 cyberMetadata:
-  bottomGap: 270
+  bottomGap: 240
   realHeight: 2.87
   realLength: 4.5
-  contentHeightPx: 629
+  contentHeightPx: 516
   sourceRes: 1024
   dinoLeft: "0%"
   refRight: "6%"

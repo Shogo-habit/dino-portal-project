@@ -19,10 +19,10 @@ bioTraits:
     value: "回避特化"
     detail: "大型の爬虫類から逃げ抜く俊敏さ"
 cyberMetadata:
-  bottomGap: 255
+  bottomGap: 228
   realHeight: 0.62
   realLength: 1
-  contentHeightPx: 596
+  contentHeightPx: 595
   sourceRes: 1024
   dinoLeft: "25%"
   refRight: "15%"

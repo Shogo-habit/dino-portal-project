@@ -19,10 +19,10 @@ bioTraits:
     value: "植物切断"
     detail: "地表に近い植物を効率よく摘み取るための嘴"
 cyberMetadata:
-  bottomGap: 315
+  bottomGap: 309
   realHeight: 3.5
   realLength: 6
-  contentHeightPx: 500
+  contentHeightPx: 378
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "12%"

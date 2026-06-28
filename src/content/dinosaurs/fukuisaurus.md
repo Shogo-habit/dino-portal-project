@@ -19,10 +19,10 @@ bioTraits:
     value: "進化型"
     detail: "植物を効率よくすりつぶす歯の構造"
 cyberMetadata:
-  bottomGap: 273
+  bottomGap: 262
   realHeight: 2.27
   realLength: 4.7
-  contentHeightPx: 469
+  contentHeightPx: 470
   sourceRes: 1024
   dinoLeft: "0%"
   refRight: "10%"

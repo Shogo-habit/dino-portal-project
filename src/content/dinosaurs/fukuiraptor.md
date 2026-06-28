@@ -19,10 +19,10 @@ bioTraits:
     value: "鋭い爪"
     detail: "前肢の発達した鉤爪で獲物を捕らえる"
 cyberMetadata:
-  bottomGap: 275
+  bottomGap: 265
   realHeight: 2.1
   realLength: 4.2
-  contentHeightPx: 482
+  contentHeightPx: 483
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

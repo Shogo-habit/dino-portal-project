@@ -19,10 +19,10 @@ bioTraits:
     value: "帆と嘴"
     detail: "水辺での生活に適した特異な骨格構造"
 cyberMetadata:
-  bottomGap: 285
+  bottomGap: 278
   realHeight: 4.5
   realLength: 11
-  contentHeightPx: 540
+  contentHeightPx: 469
   sourceRes: 1024
   dinoLeft: "3%"
   refRight: "15%"

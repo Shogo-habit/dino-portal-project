@@ -19,10 +19,10 @@ bioTraits:
     value: "高い"
     detail: "同地域に生息した角竜類などを捕食"
 cyberMetadata:
-  bottomGap: 210
+  bottomGap: 188
   realHeight: 5.45
   realLength: 9
-  contentHeightPx: 576
+  contentHeightPx: 578
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "20%"

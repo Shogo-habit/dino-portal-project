@@ -19,10 +19,10 @@ bioTraits:
     value: "高い"
     detail: "多様な環境で生き抜く雑食性"
 cyberMetadata:
-  bottomGap: 227
+  bottomGap: 226
   realHeight: 1.49
   realLength: 2.5
-  contentHeightPx: 577
+  contentHeightPx: 579
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "11%"

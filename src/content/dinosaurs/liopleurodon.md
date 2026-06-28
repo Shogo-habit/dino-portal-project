@@ -19,7 +19,7 @@ bioTraits:
     value: "爆発的"
     detail: "巨大なパドルによる一瞬の突進攻撃"
 cyberMetadata:
-  bottomGap: 220
+  bottomGap: 276
   realHeight: 2.76
   realLength: 7
   contentHeightPx: 376

@@ -19,10 +19,10 @@ bioTraits:
     value: "サイズ依存"
     detail: "大きさそのものが肉食恐竜への威嚇"
 cyberMetadata:
-  bottomGap: 285
+  bottomGap: 276
   realHeight: 7.3
   realLength: 15
-  contentHeightPx: 486
+  contentHeightPx: 471
   sourceRes: 1024
   dinoLeft: "8%"
   refRight: "15%"

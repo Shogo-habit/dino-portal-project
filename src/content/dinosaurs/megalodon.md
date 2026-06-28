@@ -19,10 +19,10 @@ bioTraits:
     value: "鯨食"
     detail: "大型の鯨類を主食としていた"
 cyberMetadata:
-  bottomGap: 254
+  bottomGap: 256
   realHeight: 10.16
   realLength: 18
-  contentHeightPx: 531
+  contentHeightPx: 525
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "20%"

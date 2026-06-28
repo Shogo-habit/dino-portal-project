@@ -19,10 +19,10 @@ bioTraits:
     value: "高い"
     detail: "優れた視覚と聴覚で外敵を察知"
 cyberMetadata:
-  bottomGap: 240
+  bottomGap: 241
   realHeight: 4
   realLength: 9.5
-  contentHeightPx: 500
+  contentHeightPx: 507
   sourceRes: 1024
   dinoLeft: "10%"
   refRight: "15%"

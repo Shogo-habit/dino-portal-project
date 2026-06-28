@@ -19,10 +19,10 @@ bioTraits:
     value: "装盾亜目"
     detail: "すべての装甲系恐竜の進化の鍵を握る種"
 cyberMetadata:
-  bottomGap: 340
+  bottomGap: 336
   realHeight: 1.2
   realLength: 4
-  contentHeightPx: 480
+  contentHeightPx: 348
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "8%"

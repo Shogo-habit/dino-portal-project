@@ -19,7 +19,7 @@ bioTraits:
     value: "南から北へ"
     detail: "南米系の系統が北米へ進出したと考えられている"
 cyberMetadata:
-  bottomGap: 260
+  bottomGap: 238
   realHeight: 17.14
   realLength: 30
   contentHeightPx: 556

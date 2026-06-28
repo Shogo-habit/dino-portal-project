@@ -19,10 +19,10 @@ bioTraits:
     value: "三列のトゲ"
     detail: "背中の中心線とその両脇に並ぶ鋭いトゲ"
 cyberMetadata:
-  bottomGap: 350
+  bottomGap: 339
   realHeight: 2.8
   realLength: 5
-  contentHeightPx: 500
+  contentHeightPx: 331
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "8%"

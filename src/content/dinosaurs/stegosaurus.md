@@ -19,10 +19,10 @@ bioTraits:
     value: "可能"
     detail: "背中の骨板による熱制御説"
 cyberMetadata:
-  bottomGap: 258
+  bottomGap: 261
   realHeight: 4
   realLength: 9
-  contentHeightPx: 512
+  contentHeightPx: 505
   sourceRes: 1024
   dinoLeft: "0"
   refRight: "25%"

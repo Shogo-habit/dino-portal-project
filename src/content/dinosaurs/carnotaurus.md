@@ -19,10 +19,10 @@ bioTraits:
     value: "嗅覚"
     detail: "強力な嗅覚で獲物を追跡する"
 cyberMetadata:
-  bottomGap: 300
+  bottomGap: 286
   realHeight: 2.8
   realLength: 8
-  contentHeightPx: 450
+  contentHeightPx: 448
   sourceRes: 1024
   dinoLeft: "10%"
   refRight: "15%"

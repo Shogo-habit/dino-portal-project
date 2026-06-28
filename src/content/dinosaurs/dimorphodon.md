@@ -19,10 +19,10 @@ bioTraits:
     value: "長い尾"
     detail: "飛行時のバランスを保つための長い尾"
 cyberMetadata:
-  bottomGap: 67
+  bottomGap: 66
   realHeight: 1.16
   realLength: 1.19
-  contentHeightPx: 899
+  contentHeightPx: 900
   sourceRes: 1024
   dinoLeft: "20%"
   refRight: "13%"

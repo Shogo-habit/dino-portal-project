@@ -1,5 +1,8 @@
 ---
 import '../styles/global.css';
+import '@fontsource-variable/inter';
+import '@fontsource/orbitron';
+import '@fontsource/share-tech-mono';
 import { ClientRouter } from 'astro:transitions';
 
 interface Props {
@@ -9,6 +12,7 @@ interface Props {
   ogImage?: string;
   ogType?: string;
   noindex?: boolean;
+  schema?: object | object[];
 }
 
 const { 
@@ -17,7 +21,8 @@ const {
   activeTab = 'home',
   ogImage = '/images/cyber_world_map.webp',
   ogType = 'website',
-  noindex = false
+  noindex = false,
+  schema
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, 'https://dino-portal.com/');
@@ -39,10 +44,7 @@ const fullOgImageUrl = new URL(ogImage, 'https://dino-portal.com/');
     {noindex && <meta name="robots" content="noindex" />}
     <link rel="canonical" href={canonicalURL.href}>
     
-    <!-- Preconnect Google Fonts for performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
 
     <!-- Open Graph / Facebook (SEO & SNS) -->
     <meta property="og:type" content={ogType}>
@@ -88,6 +90,10 @@ const fullOgImageUrl = new URL(ogImage, 'https://dino-portal.com/');
     }
     </script>
     
+    {schema && (
+      <script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />
+    )}
+    
     <ClientRouter />
 </head>
 <body class="hud-theme">
@@ -98,8 +104,8 @@ const fullOgImageUrl = new URL(ogImage, 'https://dino-portal.com/');
  
     <header class="main-header">
         <a href="/" class="logo-container" style="text-decoration: none;">
-            <span class="logo-prefix">プロジェクト</span>
-            <span class="logo-text">DINO-PORTAL</span>
+            <div class="logo-prefix">プロジェクト</div>
+            <div class="logo-text">DINO-PORTAL</div>
             <div class="status-indicator">ディノ・ポータル</div>
         </a>
         <nav class="nav-menu" aria-label="メインナビゲーション">
@@ -108,6 +114,9 @@ const fullOgImageUrl = new URL(ogImage, 'https://dino-portal.com/');
             </a>
             <a href="/dictionary/" class={`nav-link ${activeTab === 'dictionary' ? 'active' : ''}`} aria-label="恐竜図鑑を表示">
                 <span class="nav-icon" aria-hidden="true">☷</span> 恐竜図鑑
+            </a>
+            <a href="/size-comparison/" class={`nav-link ${activeTab === 'comparison' ? 'active' : ''}`} aria-label="サイズ比較シミュレータを表示">
+                <span class="nav-icon" aria-hidden="true">📐</span> サイズ比較
             </a>
             <a href="/world-map/" class={`nav-link ${activeTab === 'world-map' ? 'active' : ''}`} aria-label="世界地図から探索">
                 <span class="nav-icon" aria-hidden="true">◰</span> 世界地図
@@ -120,9 +129,6 @@ const fullOgImageUrl = new URL(ogImage, 'https://dino-portal.com/');
             </a>
             <a href="/quiz/" class={`nav-link ${activeTab === 'quiz' ? 'active' : ''}`} aria-label="恐竜クイズに挑戦">
                 <span class="nav-icon" aria-hidden="true">☵</span> クイズ
-            </a>
-            <a href="/about/" class={`nav-link ${activeTab === 'about' ? 'active' : ''}`} aria-label="このサイトと運営者について">
-                <span class="nav-icon" aria-hidden="true">👤</span> プロフィール
             </a>
             <a href="/contact/" class={`nav-link ${activeTab === 'contact' ? 'active' : ''}`} aria-label="お問い合わせ">
                 <span class="nav-icon" aria-hidden="true">✉</span> お問い合わせ

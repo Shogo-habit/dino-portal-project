@@ -19,10 +19,10 @@ bioTraits:
     value: "鋭い牙"
     detail: "魚を捕らえて逃がさない複雑な歯列"
 cyberMetadata:
-  bottomGap: 200
+  bottomGap: 269
   realHeight: 1.77
   realLength: 4
-  contentHeightPx: 438
+  contentHeightPx: 431
   sourceRes: 1024
   dinoLeft: "8%"
   refRight: "55%"

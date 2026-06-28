@@ -19,7 +19,7 @@ bioTraits:
     value: "多椎骨"
     detail: "柔軟な動きを可能にする背骨の構造"
 cyberMetadata:
-  bottomGap: 310
+  bottomGap: 359
   realHeight: 3.49
   realLength: 12
   contentHeightPx: 285

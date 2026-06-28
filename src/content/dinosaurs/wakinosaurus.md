@@ -19,7 +19,7 @@ bioTraits:
     value: "粘り強い"
     detail: "発達した脚力で獲物を追い詰める"
 cyberMetadata:
-  bottomGap: 175
+  bottomGap: 151
   realHeight: 4.35
   realLength: 6
   contentHeightPx: 714

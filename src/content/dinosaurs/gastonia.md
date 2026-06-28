@@ -19,10 +19,10 @@ bioTraits:
     value: "攻撃手段"
     detail: "尾を左右に振るだけで肉食恐竜に深い傷を負わせる"
 cyberMetadata:
-  bottomGap: 260
+  bottomGap: 242
   realHeight: 2.67
   realLength: 5
-  contentHeightPx: 520
+  contentHeightPx: 432
   sourceRes: 1024
   dinoLeft: "2%"
   refRight: "5%"

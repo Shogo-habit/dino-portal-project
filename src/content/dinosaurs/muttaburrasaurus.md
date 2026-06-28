@@ -19,10 +19,10 @@ bioTraits:
     value: "強力"
     detail: "硬い植物を切断するのに適した鋭い嘴と歯を持つ"
 cyberMetadata:
-  bottomGap: 220
+  bottomGap: 206
   realHeight: 4.2
   realLength: 8
-  contentHeightPx: 520
+  contentHeightPx: 522
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

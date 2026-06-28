@@ -19,10 +19,10 @@ bioTraits:
     value: "フィルター"
     detail: "広くて平らな口による砂泥の濾過"
 cyberMetadata:
-  bottomGap: 202
+  bottomGap: 204
   realHeight: 0.47
   realLength: 1
-  contentHeightPx: 462
+  contentHeightPx: 455
   sourceRes: 1024
   dinoLeft: "28%"
   refRight: "15%"

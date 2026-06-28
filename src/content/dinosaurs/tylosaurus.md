@@ -19,7 +19,7 @@ bioTraits:
     value: "広範囲"
     detail: "サメや首長竜、さらには他のモササウルス類も捕食"
 cyberMetadata:
-  bottomGap: 300
+  bottomGap: 362
   realHeight: 3.94
   realLength: 13
   contentHeightPx: 301

@@ -19,10 +19,10 @@ bioTraits:
     value: "高い"
     detail: "群れで行動し、俊敏な動きで獲物を追い詰める"
 cyberMetadata:
-  bottomGap: 285
+  bottomGap: 284
   realHeight: 1.4
   realLength: 3.4
-  contentHeightPx: 381
+  contentHeightPx: 382
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "6%"

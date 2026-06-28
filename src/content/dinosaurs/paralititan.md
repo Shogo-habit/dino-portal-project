@@ -19,10 +19,10 @@ bioTraits:
     value: "湿地帯"
     detail: "マングローブが茂る海岸線での生活に適応"
 cyberMetadata:
-  bottomGap: 330
+  bottomGap: 320
   realHeight: 6
   realLength: 26
-  contentHeightPx: 220
+  contentHeightPx: 382
   sourceRes: 1024
   dinoLeft: "2%"
   refRight: "15%"

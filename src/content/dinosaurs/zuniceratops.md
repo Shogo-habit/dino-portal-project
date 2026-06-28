@@ -19,10 +19,10 @@ bioTraits:
     value: "中型犬並み"
     detail: "小回りのきく動きで外敵を回避"
 cyberMetadata:
-  bottomGap: 270
+  bottomGap: 241
   realHeight: 1.3
   realLength: 3.5
-  contentHeightPx: 400
+  contentHeightPx: 553
   sourceRes: 1024
   dinoLeft: "6%"
   refRight: "5%"

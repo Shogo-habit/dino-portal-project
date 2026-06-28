@@ -19,10 +19,10 @@ bioTraits:
     value: "致命的"
     detail: "薄く鋭い歯による深い傷を与える攻撃"
 cyberMetadata:
-  bottomGap: 315
+  bottomGap: 302
   realHeight: 5.21
   realLength: 12.2
-  contentHeightPx: 411
+  contentHeightPx: 406
   sourceRes: 1024
   dinoLeft: "0%"
   refRight: "20%"

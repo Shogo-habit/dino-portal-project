@@ -19,10 +19,10 @@ bioTraits:
     value: "絶大"
     detail: "骨をも容易に断ち切る鋭い顎のプレート"
 cyberMetadata:
-  bottomGap: 300
+  bottomGap: 293
   realHeight: 1.8
   realLength: 6
-  contentHeightPx: 450
+  contentHeightPx: 436
   sourceRes: 1024
   dinoLeft: "3%"
   refRight: "5%"

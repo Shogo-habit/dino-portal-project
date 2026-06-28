@@ -19,10 +19,10 @@ bioTraits:
     value: "ほぼ全身"
     detail: "95%近くの骨格が揃った状態で発見された"
 cyberMetadata:
-  bottomGap: 200
+  bottomGap: 175
   realHeight: 11.72
   realLength: 18
-  contentHeightPx: 640
+  contentHeightPx: 636
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "25%"

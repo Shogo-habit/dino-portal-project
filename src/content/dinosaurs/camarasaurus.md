@@ -19,10 +19,10 @@ bioTraits:
     value: "一般的"
     detail: "大規模な群れで移動していた証拠がある"
 cyberMetadata:
-  bottomGap: 175
+  bottomGap: 167
   realHeight: 12.24
   realLength: 18
-  contentHeightPx: 668
+  contentHeightPx: 651
   sourceRes: 1024
   dinoLeft: "10%"
   refRight: "25%"

@@ -19,10 +19,10 @@ bioTraits:
     value: "高い"
     detail: "数千頭規模の巨大な群れで移動していた証拠がある"
 cyberMetadata:
-  bottomGap: 270
+  bottomGap: 262
   realHeight: 5.8
   realLength: 12
-  contentHeightPx: 470
+  contentHeightPx: 469
   sourceRes: 1024
   dinoLeft: "0%"
   refRight: "10%"

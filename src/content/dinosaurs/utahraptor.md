@@ -19,10 +19,10 @@ bioTraits:
     value: "強靭"
     detail: "跳躍力と瞬発力に優れる"
 cyberMetadata:
-  bottomGap: 317
+  bottomGap: 318
   realHeight: 2.6
   realLength: 7
-  contentHeightPx: 371
+  contentHeightPx: 367
   sourceRes: 1024
   dinoLeft: "3%"
   refRight: "17%"

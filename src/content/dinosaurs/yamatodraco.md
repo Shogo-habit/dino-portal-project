@@ -19,10 +19,10 @@ bioTraits:
     value: "優秀"
     detail: "沿岸の多様な植物を効率よく摂取"
 cyberMetadata:
-  bottomGap: 275
+  bottomGap: 252
   realHeight: 3.9
   realLength: 7.5
-  contentHeightPx: 510
+  contentHeightPx: 493
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

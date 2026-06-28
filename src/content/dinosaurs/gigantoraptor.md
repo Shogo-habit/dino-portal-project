@@ -19,10 +19,10 @@ bioTraits:
     value: "高度な雑食性"
     detail: "様々な環境で食料を確保できる能力"
 cyberMetadata:
-  bottomGap: 60
+  bottomGap: 45
   realHeight: 8.07
   realLength: 8
-  contentHeightPx: 932
+  contentHeightPx: 930
   sourceRes: 1024
   dinoLeft: "18%"
   refRight: "30%"

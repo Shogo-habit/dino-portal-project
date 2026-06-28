@@ -19,10 +19,10 @@ bioTraits:
     value: "優れた感知"
     detail: "広い範囲をパトロールして獲物を探す"
 cyberMetadata:
-  bottomGap: 265
+  bottomGap: 259
   realHeight: 2.5
   realLength: 9
-  contentHeightPx: 420
+  contentHeightPx: 451
   sourceRes: 1024
   dinoLeft: "2%"
   refRight: "12%"

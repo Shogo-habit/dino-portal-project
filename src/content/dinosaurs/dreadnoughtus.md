@@ -19,7 +19,7 @@ bioTraits:
     value: "驚異的"
     detail: "発見された個体はまだ成長途上であった可能性がある"
 cyberMetadata:
-  bottomGap: 105
+  bottomGap: 87
   realHeight: 22.57
   realLength: 26
   contentHeightPx: 848

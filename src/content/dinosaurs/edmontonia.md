@@ -19,10 +19,10 @@ bioTraits:
     value: "最高水準"
     detail: "頭部から尾まで隙間なく並んだ硬い骨板"
 cyberMetadata:
-  bottomGap: 380
+  bottomGap: 362
   realHeight: 2.5
   realLength: 6
-  contentHeightPx: 500
+  contentHeightPx: 271
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

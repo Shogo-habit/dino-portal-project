@@ -19,7 +19,7 @@ bioTraits:
     value: "中程度"
     detail: "孤立した環境での生存に適した能力"
 cyberMetadata:
-  bottomGap: 275
+  bottomGap: 264
   realHeight: 3.24
   realLength: 7
   contentHeightPx: 450

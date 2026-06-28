@@ -19,10 +19,10 @@ bioTraits:
     value: "雑食"
     detail: "昆虫から植物まで幅広く摂取"
 cyberMetadata:
-  bottomGap: 215
+  bottomGap: 216
   realHeight: 1.54
   realLength: 2.5
-  contentHeightPx: 599
+  contentHeightPx: 581
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "10%"

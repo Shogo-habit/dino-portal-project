@@ -19,10 +19,10 @@ bioTraits:
     value: "夜行性？"
     detail: "大きな眼窩から夜間の活動も推測される"
 cyberMetadata:
-  bottomGap: 300
+  bottomGap: 262
   realHeight: 0.4
   realLength: 0.8
-  contentHeightPx: 453
+  contentHeightPx: 442
   sourceRes: 1024
   dinoLeft: "30%"
   refRight: "16%"

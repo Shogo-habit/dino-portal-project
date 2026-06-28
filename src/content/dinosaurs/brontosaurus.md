@@ -19,10 +19,10 @@ bioTraits:
     value: "ムチのような尾"
     detail: "尾の先端を音速で振り回し、威嚇や防御に使用した"
 cyberMetadata:
-  bottomGap: 175
+  bottomGap: 158
   realHeight: 14.94
   realLength: 22
-  contentHeightPx: 660
+  contentHeightPx: 662
   sourceRes: 1024
   dinoLeft: "12%"
   refRight: "25%"

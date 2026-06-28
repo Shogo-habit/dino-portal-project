@@ -19,10 +19,10 @@ bioTraits:
     value: "強力"
     detail: "硬い殻や木の実を砕くことができる"
 cyberMetadata:
-  bottomGap: 160
+  bottomGap: 153
   realHeight: 1.5
   realLength: 2
-  contentHeightPx: 739
+  contentHeightPx: 740
   sourceRes: 1024
   dinoLeft: "10%"
   refRight: "15%"

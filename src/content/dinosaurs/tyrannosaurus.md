@@ -19,10 +19,10 @@ bioTraits:
     value: "極めて高い"
     detail: "優れた立体視を持つ"
 cyberMetadata:
-  bottomGap: 274
+  bottomGap: 273
   realHeight: 4.5
   realLength: 12.3
-  contentHeightPx: 400
+  contentHeightPx: 406
   sourceRes: 1024
   dinoLeft: "0%"
   refRight: "15%"

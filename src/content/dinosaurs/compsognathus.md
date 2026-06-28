@@ -19,10 +19,10 @@ bioTraits:
     value: "集団"
     detail: "小柄ながら集団で行動し、効率的に狩る"
 cyberMetadata:
-  bottomGap: 245
+  bottomGap: 232
   realHeight: 0.56
   realLength: 1
-  contentHeightPx: 525
+  contentHeightPx: 522
   sourceRes: 1024
   dinoLeft: "25%"
   refRight: "15%"

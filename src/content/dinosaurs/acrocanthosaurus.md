@@ -19,10 +19,10 @@ bioTraits:
     value: "持久力"
     detail: "大型の獲物を長時間追跡することが可能"
 cyberMetadata:
-  bottomGap: 250
+  bottomGap: 241
   realHeight: 6.25
   realLength: 11.5
-  contentHeightPx: 529
+  contentHeightPx: 523
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "20%"

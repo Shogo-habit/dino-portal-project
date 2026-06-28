@@ -19,10 +19,10 @@ bioTraits:
     value: "解剖学的特徴"
     detail: "嗅覚や発声に関わっていた可能性のある大きな鼻腔"
 cyberMetadata:
-  bottomGap: 215
+  bottomGap: 186
   realHeight: 2.92
   realLength: 4.5
-  contentHeightPx: 634
+  contentHeightPx: 631
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "10%"

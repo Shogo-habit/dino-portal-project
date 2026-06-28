@@ -19,10 +19,10 @@ bioTraits:
     value: "極限"
     detail: "より大きな襟飾りが選択された進化の結果"
 cyberMetadata:
-  bottomGap: 265
+  bottomGap: 239
   realHeight: 3
   realLength: 4.91
-  contentHeightPx: 593
+  contentHeightPx: 587
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "7%"

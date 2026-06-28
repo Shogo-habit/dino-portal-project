@@ -19,10 +19,10 @@ bioTraits:
     value: "延長"
     detail: "個々の頸椎が非常に長く伸びている"
 cyberMetadata:
-  bottomGap: 140
+  bottomGap: 121
   realHeight: 21
   realLength: 26
-  contentHeightPx: 780
+  contentHeightPx: 782
   sourceRes: 1024
   dinoLeft: "13%"
   refRight: "30%"

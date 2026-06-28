@@ -19,10 +19,10 @@ bioTraits:
     value: "高度な聴覚"
     detail: "獲物のわずかな動きを音で察知する"
 cyberMetadata:
-  bottomGap: 280
+  bottomGap: 268
   realHeight: 5
   realLength: 11
-  contentHeightPx: 436
+  contentHeightPx: 435
   sourceRes: 1024
   dinoLeft: "0%"
   refRight: "15%"

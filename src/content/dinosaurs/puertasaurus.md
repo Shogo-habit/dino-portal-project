@@ -19,10 +19,10 @@ bioTraits:
     value: "超巨体"
     detail: "サイズそのものを最大の防御とした"
 cyberMetadata:
-  bottomGap: 311
+  bottomGap: 302
   realHeight: 12.82
   realLength: 30
-  contentHeightPx: 419
+  contentHeightPx: 425
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "20%"

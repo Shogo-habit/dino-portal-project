@@ -19,10 +19,10 @@ bioTraits:
     value: "円筒状"
     detail: "植物をすりつぶすのに適した構造"
 cyberMetadata:
-  bottomGap: 305
+  bottomGap: 297
   realHeight: 4.69
   realLength: 10
-  contentHeightPx: 457
+  contentHeightPx: 443
   sourceRes: 1024
   dinoLeft: "1%"
   refRight: "20%"

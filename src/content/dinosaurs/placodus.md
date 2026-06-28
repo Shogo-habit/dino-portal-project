@@ -19,10 +19,10 @@ bioTraits:
     value: "骨質ノブ"
     detail: "背中にある小さな骨の装甲"
 cyberMetadata:
-  bottomGap: 360
+  bottomGap: 369
   realHeight: 0.62
   realLength: 2
-  contentHeightPx: 300
+  contentHeightPx: 282
   sourceRes: 1024
   dinoLeft: "10%"
   refRight: "10%"

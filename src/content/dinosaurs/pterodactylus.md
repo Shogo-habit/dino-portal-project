@@ -19,10 +19,10 @@ bioTraits:
     value: "軽量化"
     detail: "極限まで薄い骨格による効率的な飛行"
 cyberMetadata:
-  bottomGap: -300
+  bottomGap: 225
   realHeight: 0.65
   realLength: 1
-  contentHeightPx: 633
+  contentHeightPx: 628
   sourceRes: 1024
   dinoLeft: "23%"
   refRight: "15%"

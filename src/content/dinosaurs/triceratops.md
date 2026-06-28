@@ -19,10 +19,10 @@ bioTraits:
     value: "突進"
     detail: "最大1メートルの角による突き"
 cyberMetadata:
-  bottomGap: 358
+  bottomGap: 346
   realHeight: 3
   realLength: 9
-  contentHeightPx: 325
+  contentHeightPx: 333
   sourceRes: 1024
   dinoLeft: "0"
   refRight: "15%"

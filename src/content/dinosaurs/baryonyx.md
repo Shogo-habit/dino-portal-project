@@ -19,10 +19,10 @@ bioTraits:
     value: "細長い顎"
     detail: "90本以上の歯を持つ魚食に適した口"
 cyberMetadata:
-  bottomGap: 205
+  bottomGap: 190
   realHeight: 6.46
   realLength: 9.5
-  contentHeightPx: 660
+  contentHeightPx: 662
   sourceRes: 1024
   dinoLeft: "8%"
   refRight: "22%"

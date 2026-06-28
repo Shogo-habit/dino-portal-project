@@ -19,10 +19,10 @@ bioTraits:
     value: "高度な視覚"
     detail: "広い視野で周囲の危険を素早く察知"
 cyberMetadata:
-  bottomGap: 279
+  bottomGap: 277
   realHeight: 3.5
   realLength: 7
-  contentHeightPx: 465
+  contentHeightPx: 468
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

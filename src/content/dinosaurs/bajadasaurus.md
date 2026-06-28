@@ -19,10 +19,10 @@ bioTraits:
     value: "極めて高い"
     detail: "アマルガサウルスとは逆に、棘が前を向く"
 cyberMetadata:
-  bottomGap: 190
+  bottomGap: 168
   realHeight: 2.5
   realLength: 10
-  contentHeightPx: 350
+  contentHeightPx: 647
   sourceRes: 1024
   dinoLeft: "6%"
   refRight: "20%"

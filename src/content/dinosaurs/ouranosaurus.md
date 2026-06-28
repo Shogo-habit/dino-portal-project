@@ -19,10 +19,10 @@ bioTraits:
     value: "防御武器"
     detail: "イグアノドン類特有の鋭い親指の爪で身を守る"
 cyberMetadata:
-  bottomGap: 300
+  bottomGap: 296
   realHeight: 3.8
   realLength: 7
-  contentHeightPx: 520
+  contentHeightPx: 417
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

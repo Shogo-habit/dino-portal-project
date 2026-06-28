@@ -19,10 +19,10 @@ bioTraits:
     value: "トゲと板"
     detail: "部位によってトゲと板状の装甲を使い分ける"
 cyberMetadata:
-  bottomGap: 330
+  bottomGap: 322
   realHeight: 2
   realLength: 5
-  contentHeightPx: 520
+  contentHeightPx: 381
   sourceRes: 1024
   dinoLeft: "10%"
   refRight: "8%"

@@ -19,10 +19,10 @@ bioTraits:
     value: "高い"
     detail: "乾燥した三畳紀の環境に広く適応"
 cyberMetadata:
-  bottomGap: 255
+  bottomGap: 251
   realHeight: 1.46
   realLength: 3
-  contentHeightPx: 483
+  contentHeightPx: 467
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

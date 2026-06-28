@@ -19,10 +19,10 @@ bioTraits:
     value: "中程度"
     detail: "二足・四足歩行の両方で移動可能"
 cyberMetadata:
-  bottomGap: 295
+  bottomGap: 283
   realHeight: 6
   realLength: 12
-  contentHeightPx: 550
+  contentHeightPx: 458
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

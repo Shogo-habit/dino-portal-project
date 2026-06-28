@@ -19,10 +19,10 @@ bioTraits:
     value: "二足・四足"
     detail: "大型の体躯を支える強力な後肢"
 cyberMetadata:
-  bottomGap: 375
+  bottomGap: 362
   realHeight: 1.6
   realLength: 4
-  contentHeightPx: 480
+  contentHeightPx: 289
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "10%"

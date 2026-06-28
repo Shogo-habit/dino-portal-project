@@ -19,10 +19,10 @@ bioTraits:
     value: "水辺のハンター"
     detail: "魚や水生生物も捕食していた可能性がある"
 cyberMetadata:
-  bottomGap: 240
+  bottomGap: 226
   realHeight: 3.62
   realLength: 6
-  contentHeightPx: 603
+  contentHeightPx: 574
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

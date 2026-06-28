@@ -19,10 +19,10 @@ bioTraits:
     value: "蛇行"
     detail: "長い全身を使って力強く泳ぐ"
 cyberMetadata:
-  bottomGap: 230
+  bottomGap: 353
   realHeight: 2.93
   realLength: 10
-  contentHeightPx: 287
+  contentHeightPx: 280
   sourceRes: 1024
   dinoLeft: "3%"
   refRight: "17%"

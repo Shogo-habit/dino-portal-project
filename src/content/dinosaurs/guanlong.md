@@ -19,10 +19,10 @@ bioTraits:
     value: "トサカの誇示"
     detail: "派手なトサカで自らの存在をアピールしたか"
 cyberMetadata:
-  bottomGap: 315
+  bottomGap: 310
   realHeight: 1.1
   realLength: 3
-  contentHeightPx: 350
+  contentHeightPx: 403
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "10%"

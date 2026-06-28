@@ -19,10 +19,10 @@ bioTraits:
     value: "巨大な頭骨"
     detail: "全長1.6mに達する巨大な頭部を持ち、噛む力よりも切り裂く力を重視していた"
 cyberMetadata:
-  bottomGap: 330
+  bottomGap: 318
   realHeight: 5
   realLength: 13
-  contentHeightPx: 380
+  contentHeightPx: 326
   sourceRes: 1024
   dinoLeft: "3%"
   refRight: "15%"

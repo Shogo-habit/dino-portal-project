@@ -1,0 +1,101 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import fs from 'node:fs';
+import path from 'node:path';
+
+// Get all dinosaurs
+const dinosaurs = await getCollection('dinosaurs');
+
+// Filter only dinos that have cyberMetadata and image exists
+const comparisonDinos = dinosaurs.filter(dino => {
+    if (!dino.data.cyberMetadata) return false;
+    const imagePath = path.join(process.cwd(), 'public', 'images', 'cyber', `${dino.id}.webp`);
+    return fs.existsSync(imagePath);
+}).sort((a, b) => {
+    return a.data.kana.localeCompare(b.data.kana, 'ja');
+});
+
+// Human metadata reference
+const HUMAN = {
+    realHeight: 1.7,
+    bottomGap: 50,
+    contentHeightPx: 936,
+    sourceRes: 1024
+};
+---
+
+<Layout title="サイズ比較テストプレビュー | Dino-Portal" activeTab="comparison">
+    <section class="page-header">
+        <h2 class="page-title" style="color: var(--secondary-neon);">サイズ比較テストプレビュー (計 {comparisonDinos.length} 種)</h2>
+        <p class="page-subtitle">すべての恐竜が人間（1.7m）と並んだ際のスケール比率と、地面（赤線）への接地状況をスクロールで一括点検するテスト画面です。</p>
+    </section>
+
+    <div class="test-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-top: 30px;">
+        {comparisonDinos.map(dino => {
+            const meta = dino.data.cyberMetadata!;
+            
+            // Calculate scale parameters
+            const STAGE_H = 195; // safe zone height in px
+            const maxRealH = Math.max(meta.realHeight, HUMAN.realHeight);
+            const pxPerMeter = (STAGE_H * 0.92) / maxRealH;
+
+            // Dino sizes
+            const dinoTargetH = meta.realHeight * pxPerMeter;
+            const dinoScale = dinoTargetH / meta.contentHeightPx;
+            const dinoTotalH = 1024 * dinoScale;
+            const dinoOffset = meta.bottomGap * dinoScale;
+
+            // Human sizes
+            const humanTargetH = HUMAN.realHeight * pxPerMeter;
+            const humanScale = humanTargetH / HUMAN.contentHeightPx;
+            const humanTotalH = 1024 * humanScale;
+            const humanOffset = HUMAN.bottomGap * humanScale;
+
+            return (
+                <div class="hud-panel" style="padding: 15px; display: flex; flex-direction: column; background: rgba(3, 6, 8, 0.8); border-color: rgba(0, 242, 255, 0.2);">
+                    <div style="font-family: var(--font-mono); font-size: 12px; margin-bottom: 8px; border-bottom: 1px solid rgba(0, 242, 255, 0.1); padding-bottom: 4px; display: flex; justify-content: space-between;">
+                        <span style="color: var(--primary-neon); font-weight: bold;">{dino.data.name}</span>
+                        <span style="color: var(--text-dim);">{dino.id}</span>
+                    </div>
+
+                    <!-- TEST STAGE -->
+                    <div class="test-stage" style="height: 220px; position: relative; overflow: hidden; background: rgba(0, 0, 0, 0.3); border: 1px dashed rgba(0, 242, 255, 0.15); border-radius: 4px;">
+                        
+                        <!-- Ground Line (Red Line to verify perfect grounding) -->
+                        <div style="position: absolute; left: 0; right: 0; bottom: 25px; border-bottom: 1px solid #ff0055; box-shadow: 0 0 4px rgba(255, 0, 85, 0.5); z-index: 2;"></div>
+                        
+                        <!-- Ground Tag -->
+                        <span style="position: absolute; left: 6px; bottom: 28px; font-family: var(--font-mono); font-size: 8px; color: #ff0055; z-index: 5;">GROUND LINE</span>
+
+                        <!-- Human Specimen -->
+                        <div style="position: absolute; left: 30px; bottom: 25px; height: 195px; width: 60px; overflow: visible; z-index: 3;">
+                            <img 
+                                src="/images/cyber/human_front.webp" 
+                                alt="Human" 
+                                style={`position: absolute; left: 50%; transform: translateX(-50%); bottom: -${humanOffset}px; height: ${humanTotalH}px; width: auto; mix-blend-mode: screen; opacity: 0.65; max-width: none !important; max-height: none !important;`} 
+                            />
+                        </div>
+
+                        <!-- Dinosaur Specimen -->
+                        <div style="position: absolute; right: 30px; bottom: 25px; height: 195px; width: 140px; overflow: visible; z-index: 3;">
+                            <img 
+                                src={`/images/cyber/${dino.id}.webp`} 
+                                alt={dino.data.name} 
+                                style={`position: absolute; left: 50%; transform: translateX(-50%); bottom: -${dinoOffset}px; height: ${dinoTotalH}px; width: auto; mix-blend-mode: screen; max-width: none !important; max-height: none !important;`} 
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Specs footer -->
+                    <div style="font-family: var(--font-mono); font-size: 10px; color: var(--text-dim); margin-top: 8px; display: grid; grid-template-columns: 1fr 1fr; gap: 4px;">
+                        <div>H: <span style="color: var(--text-main);">{meta.realHeight}m</span> (len: {dino.data.length})</div>
+                        <div>gap: <span style="color: var(--text-main);">{meta.bottomGap}px</span></div>
+                        <div>cH: <span style="color: var(--text-main);">{meta.contentHeightPx}px</span></div>
+                        <div style="text-align: right; color: var(--secondary-neon);">{dino.data.group}</div>
+                    </div>
+                </div>
+            );
+        })}
+    </div>
+</Layout>

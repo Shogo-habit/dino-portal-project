@@ -19,10 +19,10 @@ bioTraits:
     value: "嘴"
     detail: "種子や果実も食べられたとされる特殊な形状"
 cyberMetadata:
-  bottomGap: 50
+  bottomGap: 35
   realHeight: 1.5
   realLength: 1.13
-  contentHeightPx: 974
+  contentHeightPx: 954
   sourceRes: 1024
   dinoLeft: "20%"
   refRight: "18%"

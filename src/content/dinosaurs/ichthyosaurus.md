@@ -19,10 +19,10 @@ bioTraits:
     value: "極めて高い"
     detail: "深海や夜間でも獲物を見つける巨大な目"
 cyberMetadata:
-  bottomGap: 274
+  bottomGap: 281
   realHeight: 1.56
   realLength: 3.3
-  contentHeightPx: 456
+  contentHeightPx: 444
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "10%"

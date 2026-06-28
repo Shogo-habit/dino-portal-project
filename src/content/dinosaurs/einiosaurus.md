@@ -19,7 +19,7 @@ bioTraits:
     value: "防御・威嚇"
     detail: "襟飾りの上部から外側へ向かう二本のトゲ"
 cyberMetadata:
-  bottomGap: 290
+  bottomGap: 267
   realHeight: 2.1
   realLength: 3.63
   contentHeightPx: 556

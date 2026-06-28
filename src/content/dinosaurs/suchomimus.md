@@ -19,7 +19,7 @@ bioTraits:
     value: "親指の巨大爪"
     detail: "水中の獲物を引っ掛けて捕らえる"
 cyberMetadata:
-  bottomGap: 305
+  bottomGap: 290
   realHeight: 4.84
   realLength: 11
   contentHeightPx: 431

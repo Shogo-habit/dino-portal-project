@@ -19,10 +19,10 @@ bioTraits:
     value: "鋭敏な嗅覚"
     detail: "脳の嗅球が発達していた"
 cyberMetadata:
-  bottomGap: 310
+  bottomGap: 297
   realHeight: 1.5
   realLength: 2.5
-  contentHeightPx: 450
+  contentHeightPx: 430
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

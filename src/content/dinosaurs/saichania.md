@@ -19,10 +19,10 @@ bioTraits:
     value: "特殊装甲"
     detail: "腹部側まで装甲が回り込んでいる珍しい構造"
 cyberMetadata:
-  bottomGap: 295
+  bottomGap: 286
   realHeight: 2.2
   realLength: 6
-  contentHeightPx: 520
+  contentHeightPx: 431
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "10%"

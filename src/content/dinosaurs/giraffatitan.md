@@ -19,10 +19,10 @@ bioTraits:
     value: "超強力"
     detail: "頭部まで血液を押し上げるための巨大な心臓"
 cyberMetadata:
-  bottomGap: 70
+  bottomGap: 51
   realHeight: 27.9
   realLength: 25
-  contentHeightPx: 919
+  contentHeightPx: 911
   sourceRes: 1024
   dinoLeft: "20%"
   refRight: "32%"

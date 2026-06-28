@@ -19,10 +19,10 @@ bioTraits:
     value: "極限の骨格"
     detail: "骨の多くが薄く、頭骨は透けて見えるほど"
 cyberMetadata:
-  bottomGap: 370
+  bottomGap: 363
   realHeight: 2.5
   realLength: 9
-  contentHeightPx: 310
+  contentHeightPx: 288
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

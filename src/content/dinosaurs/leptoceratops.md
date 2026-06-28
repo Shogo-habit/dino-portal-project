@@ -19,10 +19,10 @@ bioTraits:
     value: "二足・四足行"
     detail: "通常は四足、緊急時には二足で走ることができた"
 cyberMetadata:
-  bottomGap: 180
+  bottomGap: 146
   realHeight: 1.5
   realLength: 2.5
-  contentHeightPx: 735
+  contentHeightPx: 716
   sourceRes: 1024
   dinoLeft: "15%"
   refRight: "10%"

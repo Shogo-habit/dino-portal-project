@@ -19,10 +19,10 @@ bioTraits:
     value: "鋭敏"
     detail: "冬の長い夜でも獲物を探せる優れた嗅覚と視覚"
 cyberMetadata:
-  bottomGap: 230
+  bottomGap: 216
   realHeight: 2.8
   realLength: 6
-  contentHeightPx: 553
+  contentHeightPx: 554
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

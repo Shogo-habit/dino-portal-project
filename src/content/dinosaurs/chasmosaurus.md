@@ -19,10 +19,10 @@ bioTraits:
     value: "短角"
     detail: "目の上と鼻に短い角を持つ"
 cyberMetadata:
-  bottomGap: 240
+  bottomGap: 217
   realHeight: 2
   realLength: 3.14
-  contentHeightPx: 616
+  contentHeightPx: 611
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "5%"

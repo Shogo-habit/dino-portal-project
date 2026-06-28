@@ -19,10 +19,10 @@ bioTraits:
     value: "高い"
     detail: "同サイズの肉食恐竜より俊敏"
 cyberMetadata:
-  bottomGap: 320
+  bottomGap: 319
   realHeight: 3.5
-  realLength: 12
-  contentHeightPx: 400
+  realLength: 8.5
+  contentHeightPx: 383
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

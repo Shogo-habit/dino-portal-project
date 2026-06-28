@@ -19,10 +19,10 @@ bioTraits:
     value: "昆虫食"
     detail: "夜間や寒冷地でも活動できた可能性"
 cyberMetadata:
-  bottomGap: 260
+  bottomGap: 236
   realHeight: 0.12
   realLength: 0.21
-  contentHeightPx: 532
+  contentHeightPx: 518
   sourceRes: 1024
   dinoLeft: "35%"
   refRight: "15%"

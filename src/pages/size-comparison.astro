@@ -1,0 +1,496 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { REFERENCE_ASSETS } from '../data/cyberAssets';
+import { getCollection } from 'astro:content';
+import fs from 'node:fs';
+import path from 'node:path';
+
+const dinosaurs = await getCollection('dinosaurs');
+
+// Filter only dinos that have cyberMetadata and image exists
+const comparisonDinos = dinosaurs.filter(dino => {
+    if (!dino.data.cyberMetadata) return false;
+    const imagePath = path.join(process.cwd(), 'public', 'images', 'cyber', `${dino.id}.webp`);
+    return fs.existsSync(imagePath);
+}).sort((a, b) => {
+    return a.data.kana.localeCompare(b.data.kana, 'ja');
+});
+
+// Use tyrannosaurus as default starting specimen
+const defaultDino = comparisonDinos.find(d => d.id === 'tyrannosaurus') || comparisonDinos[0];
+if (!defaultDino) {
+    throw new Error("No dinosaurs available for size comparison.");
+}
+---
+
+<Layout title="サイズ比較シミュレータ | Dino-Portal" activeTab="comparison">
+    <section class="page-header">
+        <h2 class="page-title">サイズ比較シミュレータ</h2>
+        <p class="page-subtitle">恐竜と現代の様々なオブジェクトのサイズを視覚的に比較できるシミュレーションツールです。</p>
+    </section>
+
+    <div class="sandbox-container" style="display: grid; grid-template-columns: 1fr; gap: 30px;">
+        <!-- CONTROL PANEL -->
+        <div class="hud-panel control-hud" style="padding: 20px; display: flex; flex-wrap: wrap; gap: 20px; align-items: center; border-color: var(--primary-neon);">
+            <div class="hud-corner top-left" style="border-top-color: var(--primary-neon); border-left-color: var(--primary-neon);"></div>
+            <div class="hud-corner bottom-right" style="border-bottom-color: var(--primary-neon); border-right-color: var(--primary-neon);"></div>
+            
+            <!-- Dino Selector -->
+            <div class="control-group" style="display: flex; flex-direction: column; gap: 6px;">
+                <label style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); letter-spacing: 1px;">[ 基準恐竜の選択 ]</label>
+                <select id="dino-selector" style="background: rgba(3, 6, 8, 0.9); border: 1px solid var(--primary-neon); color: var(--text-main); font-family: var(--font-mono); padding: 8px 12px; font-size: 14px; border-radius: 4px; min-width: 220px; cursor: pointer;">
+                    {comparisonDinos.map(dino => (
+                        <option 
+                            value={dino.id} 
+                            data-dino={JSON.stringify(dino.data)}
+                            selected={dino.id === defaultDino.id}
+                        >
+                            {dino.data.name} ({dino.data.cyberMetadata?.realHeight}m)
+                        </option>
+                    ))}
+                </select>
+            </div>
+
+            <!-- Target Selector -->
+            <div class="control-group" style="display: flex; flex-direction: column; gap: 6px;">
+                <label style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); letter-spacing: 1px;">[ 比較対象の選択 ]</label>
+                <select id="asset-selector" style="background: rgba(3, 6, 8, 0.9); border: 1px solid var(--primary-neon); color: var(--text-main); font-family: var(--font-mono); padding: 8px 12px; font-size: 14px; border-radius: 4px; min-width: 220px; cursor: pointer;">
+                    {Object.values(REFERENCE_ASSETS).map(asset => (
+                        <option value={asset.id} data-asset={JSON.stringify(asset)}>{asset.label}</option>
+                    ))}
+                </select>
+            </div>
+
+            <!-- Scale Telemetry -->
+            <div class="control-group" style="display: flex; flex-direction: column; gap: 6px; min-width: 180px;">
+                <span style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); letter-spacing: 1px;">[ 自動スケール制御 ]</span>
+                <div style="background: rgba(0, 242, 255, 0.05); border: 1px solid rgba(0, 242, 255, 0.2); padding: 8px 12px; border-radius: 4px; font-family: var(--font-mono); font-size: 14px; color: var(--secondary-neon); display: flex; justify-content: space-between; align-items: center; width: 220px; box-sizing: border-box;">
+                    <span>SCALE:</span>
+                    <span id="zoom-value" style="font-weight: bold;">1.00x</span>
+                </div>
+            </div>
+
+            <!-- Stats display -->
+            <div class="control-group" style="display: flex; gap: 20px; font-family: var(--font-mono); border-left: 1px solid var(--panel-border); padding-left: 20px; align-items: center;">
+                <div>
+                    <span style="color: var(--text-dim); font-size: 11px; letter-spacing: 0.5px;">[ 基準高/長 ]</span><br/>
+                    <span id="dino-hud-specs" style="color: var(--text-main); font-size: 16px; font-weight: bold; line-height: 1.6;">--</span>
+                </div>
+                <div style="padding-left: 20px; border-left: 1px solid var(--panel-border); display: flex; align-items: center;">
+                    <a id="dino-detail-link" href="" class="dino-detail-link" style="color: var(--secondary-neon); text-decoration: none; font-size: 11px; font-weight: bold; letter-spacing: 1px; border: 1px solid rgba(0, 242, 255, 0.4); padding: 5px 12px; border-radius: 4px; background: rgba(0, 242, 255, 0.05); transition: all 0.3s ease; display: inline-block;">
+                        図鑑アーカイブ ➔
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- STAGE AREA -->
+        <div class="hud-panel stage-hud" id="comparison-stage-container" style="height: 405px; position: relative; overflow: hidden; background: rgba(3, 6, 8, 0.4); border-color: var(--panel-border); user-select: none;">
+            <div class="hud-corner top-left"></div>
+            <div class="hud-corner bottom-right"></div>
+            
+            <!-- Dynamic Grid overlay background controlled by zoom -->
+            <div id="dynamic-grid" style="position: absolute; inset: 0; background-image: linear-gradient(rgba(0, 242, 255, 0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 242, 255, 0.15) 1px, transparent 1px); background-size: 50px 50px; pointer-events: none; opacity: 0.25; z-index: 1;"></div>
+ 
+            <!-- Dynamic Scale Ruler (Y-axis Helper) -->
+            <div class="ruler-y" style="position: absolute; left: 8px; top: 0; bottom: 25px; width: 44px; border-right: 1px dashed rgba(0, 242, 255, 0.3); z-index: 5; display: flex; flex-direction: column; justify-content: flex-end; font-family: var(--font-mono); font-size: 14px; color: var(--primary-neon);">
+                <!-- Dynamic markers will be rendered here by script -->
+            </div>
+ 
+            <!-- Baseline Ground Indicator -->
+            <div class="baseline-line" style="position: absolute; left: 0; right: 0; bottom: 25px; border-bottom: 2px solid var(--primary-neon); box-shadow: 0 0 10px rgba(0, 242, 255, 0.5); z-index: 2;">
+            </div>
+ 
+            <!-- Stage Content -->
+            <div class="stage-viewport" style="position: absolute; inset: 0; z-index: 3; cursor: grab;">
+                <!-- Dino Specimen -->
+                <div class="specimen-container dino-specimen" id="dino-element" 
+                     style="position: absolute; left: 360px; bottom: 25px; height: 380px; width: 300px; transition: transform 0.1s ease-out; overflow: visible;">
+                    <img id="dino-img" src="" alt="DINOSAUR" class="cyber-hud-specimen" 
+                          style="position: absolute; left: 50%; transform: translateX(-50%) !important; width: auto; mix-blend-mode: screen !important; max-width: none !important; max-height: none !important;" />
+                    <div id="dino-tag" class="vis-tag dino-tag" style="white-space: nowrap; position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-family: var(--font-mono); font-size: 11px; color: var(--text-main); background: transparent !important; border: none !important; padding: 0; z-index: 10; clip-path: none !important; width: auto !important;">
+                        --
+                    </div>
+                </div>
+ 
+                <!-- Reference Target -->
+                <div class="specimen-container reference-specimen" id="ref-element" 
+                     style="position: absolute; right: 80px; bottom: 25px; height: 380px; width: 200px; transition: transform 0.1s ease-out; overflow: visible;">
+                    <img id="ref-img" src="" alt="REFERENCE" class="cyber-hud-specimen" 
+                          style="position: absolute; left: 50%; transform: translateX(-50%) !important; width: auto; mix-blend-mode: screen !important; max-width: none !important; max-height: none !important;" />
+                    <div id="ref-tag" class="vis-tag ref-tag" style="white-space: nowrap; position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-family: var(--font-mono); font-size: 11px; color: var(--secondary-neon); background: transparent !important; border: none !important; padding: 0; z-index: 10; clip-path: none !important;">
+                        --
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- CLIENT SCRIPT FOR INTERACTIVE LOGIC -->
+    <script>
+        const PANEL_HEIGHT = 405;
+        const BASELINE_PX = 25;
+        const SAFE_ZONE_H = PANEL_HEIGHT - BASELINE_PX; // 380px
+        const SAFE_ZONE_W = 700; // 推定描画域
+
+        let currentZoom = 1.0;
+        let targetZoom = 1.0;
+        let activeAsset: any = null;
+        let activeDino: any = null;
+        let animationFrameId: number | null = null;
+
+        // Dom Elements (re-assigned dynamically on page-load for view transitions)
+        let selector: HTMLSelectElement | null = null;
+        let dinoSelector: HTMLSelectElement | null = null;
+        let zoomVal: HTMLElement | null = null;
+        let stageContainer: HTMLElement | null = null;
+        let grid: HTMLElement | null = null;
+        let ruler: HTMLElement | null = null;
+
+        // Specimens Elements
+        let dinoEl: HTMLElement | null = null;
+        let dinoImg: HTMLImageElement | null = null;
+        let dinoTag: HTMLElement | null = null;
+        let refEl: HTMLElement | null = null;
+        let refImg: HTMLImageElement | null = null;
+        let refTag: HTMLElement | null = null;
+
+        // Stats UI Elements
+        let dinoHudSpecs: HTMLElement | null = null;
+        let dinoDetailLink: HTMLAnchorElement | null = null;
+
+        // Dino specs from datasets
+        let dinoRealH = 2.0;
+        let dinoRealL = 6.0;
+        let dinoContentH = 450;
+        let dinoSourceRes = 1024;
+        let dinoBottomGap = 280;
+        let dinoName = "";
+        let dinoLength = "";
+        let dinoId = "";
+
+        function handleResize() {
+            recalculateAutofocus();
+        }
+
+        function initPrototype() {
+            // Retrieve DOM elements dynamically for the current page state
+            selector = document.getElementById('asset-selector') as HTMLSelectElement;
+            dinoSelector = document.getElementById('dino-selector') as HTMLSelectElement;
+            zoomVal = document.getElementById('zoom-value') as HTMLElement;
+            stageContainer = document.getElementById('comparison-stage-container') as HTMLElement;
+            grid = document.getElementById('dynamic-grid') as HTMLElement;
+            ruler = document.querySelector('.ruler-y') as HTMLElement;
+
+            dinoEl = document.getElementById('dino-element') as HTMLElement;
+            dinoImg = document.getElementById('dino-img') as HTMLImageElement;
+            dinoTag = document.getElementById('dino-tag') as HTMLElement;
+            refEl = document.getElementById('ref-element') as HTMLElement;
+            refImg = document.getElementById('ref-img') as HTMLImageElement;
+            refTag = document.getElementById('ref-tag') as HTMLElement;
+
+            dinoHudSpecs = document.getElementById('dino-hud-specs') as HTMLElement;
+            dinoDetailLink = document.getElementById('dino-detail-link') as HTMLAnchorElement;
+
+            // Guard: skip initialization if elements do not exist (when transition brings us to another page)
+            if (!selector || !dinoSelector || !stageContainer) return;
+
+            // Cancel any ongoing zoom animations to prevent memory leaks and updates on old values
+            if (animationFrameId !== null) {
+                cancelAnimationFrame(animationFrameId);
+                animationFrameId = null;
+            }
+
+            currentZoom = 1.0;
+            targetZoom = 1.0;
+
+            // Load initial dino
+            updateSelectedDino();
+
+            // Load initial asset
+            updateSelectedAsset();
+
+            // Bind UI controllers
+            selector.addEventListener('change', () => {
+                updateSelectedAsset();
+            });
+
+            dinoSelector.addEventListener('change', () => {
+                updateSelectedDino();
+            });
+
+            // Bind window resize
+            window.removeEventListener('resize', handleResize);
+            window.addEventListener('resize', handleResize);
+
+            // Initial render
+            renderStage();
+        }
+
+        function formatVal(val: number): string {
+            return val % 1 === 0 ? val.toFixed(1) : val.toString();
+        }
+
+        function updateSelectedDino() {
+            if (!dinoSelector || !dinoImg || !dinoTag) return;
+            const option = dinoSelector.options[dinoSelector.selectedIndex];
+            activeDino = JSON.parse(option.getAttribute('data-dino') || '{}');
+
+            if (activeDino) {
+                dinoId = activeDino.id;
+                dinoName = activeDino.name;
+                dinoLength = activeDino.length;
+                dinoRealH = activeDino.cyberMetadata?.realHeight || 2.0;
+                dinoRealL = activeDino.cyberMetadata?.realLength || 6.0;
+                dinoContentH = activeDino.cyberMetadata?.contentHeightPx || 450;
+                dinoSourceRes = activeDino.cyberMetadata?.sourceRes || 1024;
+                dinoBottomGap = activeDino.cyberMetadata?.bottomGap || 280;
+
+                // Update Specimen UI
+                dinoImg.src = `/images/cyber/${dinoId}.webp`;
+                dinoImg.alt = dinoName;
+                dinoTag.innerText = `${dinoName} / 高さ ${formatVal(dinoRealH)}m（全長 ${dinoLength}）`;
+
+                // Update Stats HUD
+                if (dinoHudSpecs) dinoHudSpecs.innerText = `${formatVal(dinoRealH)}m / ${formatVal(dinoRealL)}m`;
+
+                // Update Detail Link
+                if (dinoDetailLink) {
+                    dinoDetailLink.href = `/dictionary/${dinoId}/`;
+                }
+
+                // Recalculate zoom and trigger autofocus
+                recalculateAutofocus();
+            }
+        }
+
+        function updateSelectedAsset() {
+            if (!selector || !refImg || !refTag) return;
+            const option = selector.options[selector.selectedIndex];
+            activeAsset = JSON.parse(option.getAttribute('data-asset') || '{}');
+            
+            // Set image and tag
+            if (activeAsset) {
+                refImg.src = '/' + activeAsset.icon;
+                refImg.alt = activeAsset.label;
+                refTag.innerText = `${activeAsset.name} / 高さ ${formatVal(activeAsset.realHeight)}m`;
+
+                // Recalculate zoom and trigger autofocus
+                recalculateAutofocus();
+            }
+        }
+
+        function recalculateAutofocus() {
+            if (!stageContainer) return;
+            if (activeAsset && activeDino) {
+                // 1. Calculate height-based zoom
+                const maxRealH = Math.max(dinoRealH, activeAsset.realHeight);
+                let zoom = dinoRealH / maxRealH;
+
+                // 2. Calculate dynamic scale coefficients for horizontal span fitting
+                const marginFactor = 0.94;
+                const basePxPerMeter = (SAFE_ZONE_H * marginFactor) / dinoRealH;
+
+                // Dino and Ref width coefficients (width per zoom unit)
+                const C_dino = dinoSourceRes * (dinoRealH * basePxPerMeter) / dinoContentH;
+                const C_ref = activeAsset.sourceRes * (activeAsset.realHeight * basePxPerMeter) / activeAsset.contentHeightPx;
+
+                const stageW = stageContainer.clientWidth || SAFE_ZONE_W;
+                const gap = 80; // Distance between dinosaur and reference images
+                const maxSpan = stageW - 80 - 60; // Leave 60px on left (ruler) and 80px on right (margin)
+
+                // Clamp zoom to fit the stage width if the combined span exceeds maxSpan
+                if (maxSpan > gap) {
+                    const maxZoom = (maxSpan - gap) / (C_dino + C_ref);
+                    if (zoom > maxZoom) {
+                        zoom = maxZoom;
+                    }
+                }
+
+                targetZoom = zoom;
+
+                // Start autofocus animation
+                startZoomAnimation();
+            }
+        }
+
+        function startZoomAnimation() {
+            if (animationFrameId !== null) {
+                cancelAnimationFrame(animationFrameId);
+            }
+
+            function step() {
+                const diff = targetZoom - currentZoom;
+                
+                if (Math.abs(diff) < 0.001) {
+                    currentZoom = targetZoom;
+                    renderStage();
+                    syncZoomUI();
+                    animationFrameId = null;
+                } else {
+                    currentZoom += diff * 0.08; // smooth lerp step
+                    renderStage();
+                    syncZoomUI();
+                    animationFrameId = requestAnimationFrame(step);
+                }
+            }
+
+            animationFrameId = requestAnimationFrame(step);
+        }
+
+        function syncZoomUI() {
+            const text = `${currentZoom.toFixed(2)}x`;
+            if (zoomVal) zoomVal.innerText = text;
+        }
+
+        function renderStage() {
+            if (!activeAsset || !stageContainer || !dinoImg || !refImg || !dinoEl || !refEl || !grid) return;
+
+            // 1. Calculate standard PxPerMeter (without dynamic zoom)
+            // Let the dinosaur fit nicely in the height of the safe zone (at zoom = 1)
+            const marginFactor = 0.94;
+            const basePxPerMeter = (SAFE_ZONE_H * marginFactor) / dinoRealH;
+            
+            // 2. Apply active zoom
+            const pxPerMeter = basePxPerMeter * currentZoom;
+
+            // Padding lookup table (pixels of transparent margins out of 1024px canvas)
+            const paddingTable: Record<string, { left: number; right: number }> = {
+                compsognathus: { left: 44, right: 37 },
+                brachiosaurus: { left: 54, right: 44 },
+                tyrannosaurus: { left: 29, right: 31 },
+                human: { left: 329, right: 328 },
+                car: { left: 11, right: 8 },
+                elephant: { left: 70, right: 60 }
+            };
+
+            // 3. Calculate Dino Specimen Size
+            const dinoTargetH = dinoRealH * pxPerMeter;
+            const dinoScale = dinoTargetH / dinoContentH;
+            const dinoTotalH = dinoSourceRes * dinoScale;
+            const dinoOffset = dinoBottomGap * dinoScale;
+
+            const dinoPads = paddingTable[dinoId] || { left: 0, right: 0 };
+            const refPads = paddingTable[activeAsset.id] || { left: 0, right: 0 };
+
+            const dino_l_pad = dinoPads.left * dinoScale;
+            const dino_r_pad = dinoPads.right * dinoScale;
+            const dinoVisualW = dinoTotalH - dino_l_pad - dino_r_pad;
+
+            // 4. Calculate Reference Target Size
+            const refTargetH = activeAsset.realHeight * pxPerMeter;
+            const refScale = refTargetH / activeAsset.contentHeightPx;
+            const refTotalH = activeAsset.sourceRes * refScale;
+            const refOffset = activeAsset.bottomGap * refScale;
+
+            const ref_l_pad = refPads.left * refScale;
+            const ref_r_pad = refPads.right * refScale;
+            const refVisualW = refTotalH - ref_l_pad - ref_r_pad;
+
+            // Apply size styling
+            dinoImg.style.height = `${dinoTotalH}px`;
+            dinoImg.style.bottom = `-${dinoOffset}px`;
+            dinoImg.style.marginBottom = '0px';
+
+            refImg.style.height = `${refTotalH}px`;
+            refImg.style.bottom = `-${refOffset}px`;
+            refImg.style.marginBottom = '0px';
+
+            // 5. Position elements dynamically to be centered as a pair in the stage
+            const stageW = stageContainer.clientWidth || SAFE_ZONE_W;
+            const gap = 80; // Comfortable visual distance between dinosaur and reference illustrations
+            const visualSpan = dinoVisualW + gap + refVisualW;
+
+            // Determine left edge of dinosaur illustration (centered, but at least 60px to not overlap ruler)
+            const dinoVisualLeft = Math.max(60 + dino_l_pad, (stageW - visualSpan) / 2);
+
+            // Compute corresponding dinoLeft style value
+            const dinoLeftEdge = dinoVisualLeft - dino_l_pad;
+            const dinoLeft = dinoLeftEdge - 150 + (dinoTotalH / 2);
+            dinoEl.style.left = `${dinoLeft}px`;
+
+            // Compute corresponding refLeft style value
+            const refVisualLeft = dinoVisualLeft + dinoVisualW + gap;
+            let refLeftEdge = refVisualLeft - ref_l_pad;
+
+            // Clamp refLeftEdge to prevent reference illustration from overflowing the right edge of the stage
+            refLeftEdge = Math.min(refLeftEdge, stageW - 80 - refTotalH + ref_r_pad);
+            let refLeft = refLeftEdge - 100 + (refTotalH / 2);
+
+            refEl.style.right = 'auto';
+            refEl.style.left = `${refLeft}px`;
+
+            // 5. Render dynamic HUD Grid
+            const gridPx = 50 * currentZoom;
+            grid.style.backgroundSize = `${gridPx}px ${gridPx}px`;
+
+            // 6. Render Y-axis ruler ticks
+            renderRuler(pxPerMeter);
+        }
+
+        function renderRuler(pxPerMeter: number) {
+            if (!ruler) return;
+            ruler.innerHTML = '';
+            
+            // Calculate maximum height in meters visible on the stage
+            const maxMeters = SAFE_ZONE_H / pxPerMeter;
+
+            // Determine appropriate step based on max visible meters
+            let step = 1.0;
+            if (maxMeters <= 1.0) {
+                step = 0.2;
+            } else if (maxMeters <= 2.5) {
+                step = 0.5;
+            } else if (maxMeters <= 6.0) {
+                step = 1.0;
+            } else if (maxMeters <= 15.0) {
+                step = 2.0;
+            } else {
+                step = 5.0;
+            }
+
+            // Draw ticks using count to avoid float precision issues
+            const ticksCount = Math.ceil(maxMeters / step) + 1;
+            for (let i = 0; i <= ticksCount; i++) {
+                const m = i * step;
+                const pxVal = m * pxPerMeter;
+                if (pxVal > SAFE_ZONE_H + 10) break; // Don't overflow container top too much
+
+                const tick = document.createElement('div');
+                tick.style.position = 'absolute';
+                tick.style.bottom = `${pxVal}px`;
+                tick.style.right = '0';
+                tick.style.width = '100%';
+                tick.style.borderBottom = '1px solid rgba(0, 242, 255, 0.4)';
+                tick.style.paddingBottom = '2px';
+                tick.style.textAlign = 'right';
+                
+                // Show fractional digits if step has decimal
+                const decimals = step % 1 === 0 ? 0 : 1;
+                tick.innerHTML = `<span style="color: var(--secondary-neon); font-weight: bold;">${m.toFixed(decimals)}m</span>`;
+                
+                ruler.appendChild(tick);
+            }
+        }
+
+        // Initialize on astro page load
+        document.addEventListener('astro:page-load', initPrototype);
+    </script>
+
+    <style>
+        .sandbox-container {
+            margin-top: 20px;
+        }
+
+        .specimen-container {
+            transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .dino-detail-link:hover {
+            background: rgba(0, 242, 255, 0.15) !important;
+            border-color: var(--secondary-neon) !important;
+            box-shadow: 0 0 10px rgba(0, 242, 255, 0.2);
+            text-shadow: 0 0 5px var(--secondary-neon);
+        }
+    </style>
+</Layout>

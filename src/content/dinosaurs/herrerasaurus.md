@@ -19,10 +19,10 @@ bioTraits:
     value: "闘争心"
     detail: "自分より大きな競合相手とも渡り合った"
 cyberMetadata:
-  bottomGap: 215
+  bottomGap: 191
   realHeight: 2.72
   realLength: 4
-  contentHeightPx: 649
+  contentHeightPx: 625
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "8%"

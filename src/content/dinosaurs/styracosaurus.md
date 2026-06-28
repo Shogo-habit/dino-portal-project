@@ -19,10 +19,10 @@ bioTraits:
     value: "長大な鼻角"
     detail: "一撃で相手を仕留める貫通力"
 cyberMetadata:
-  bottomGap: 300
+  bottomGap: 295
   realHeight: 3.2
   realLength: 5.5
-  contentHeightPx: 554
+  contentHeightPx: 510
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "10%"

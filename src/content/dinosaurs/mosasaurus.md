@@ -19,10 +19,10 @@ bioTraits:
     value: "高い"
     detail: "強力な尾びれによる突進"
 cyberMetadata:
-  bottomGap: 400
+  bottomGap: 357
   realHeight: 3.5
   realLength: 17
-  contentHeightPx: 210
+  contentHeightPx: 307
   sourceRes: 1024
   dinoLeft: "2%"
   refRight: "15%"

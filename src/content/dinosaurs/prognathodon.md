@@ -19,10 +19,10 @@ bioTraits:
     value: "深海対応"
     detail: "深海での活動を示唆する強固な耳の構造"
 cyberMetadata:
-  bottomGap: 200
+  bottomGap: 215
   realHeight: 5.25
   realLength: 10
-  contentHeightPx: 501
+  contentHeightPx: 495
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

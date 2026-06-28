@@ -19,10 +19,10 @@ bioTraits:
     value: "翼の鉤爪"
     detail: "木を登るために発達した指先の爪"
 cyberMetadata:
-  bottomGap: 180
+  bottomGap: 170
   realHeight: 0.5
   realLength: 0.5
-  contentHeightPx: 695
+  contentHeightPx: 696
   sourceRes: 1024
   dinoLeft: "30%"
   refRight: "20%"

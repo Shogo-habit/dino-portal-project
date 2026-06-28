@@ -19,10 +19,10 @@ bioTraits:
     value: "急速"
     detail: "短期間で成体に達する成長戦略"
 cyberMetadata:
-  bottomGap: 260
+  bottomGap: 254
   realHeight: 4.47
   realLength: 8.5
-  contentHeightPx: 519
+  contentHeightPx: 500
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

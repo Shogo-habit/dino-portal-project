@@ -19,10 +19,10 @@ bioTraits:
     value: "25cm以上"
     detail: "獲物の骨を粉砕する巨大な円錐形の歯"
 cyberMetadata:
-  bottomGap: 250
+  bottomGap: 278
   realHeight: 6
   realLength: 11
-  contentHeightPx: 417
+  contentHeightPx: 381
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "70%"

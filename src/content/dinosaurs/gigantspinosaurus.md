@@ -19,10 +19,10 @@ bioTraits:
     value: "サゴマイザー"
     detail: "尾の先端に4本の鋭い棘を持ち、肉食恐竜を撃退した"
 cyberMetadata:
-  bottomGap: 240
+  bottomGap: 212
   realHeight: 2
   realLength: 4.2
-  contentHeightPx: 400
+  contentHeightPx: 524
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "8%"

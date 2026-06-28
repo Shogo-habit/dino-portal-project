@@ -19,10 +19,10 @@ bioTraits:
     value: "前向きの歯"
     detail: "滑りやすい魚を確実に捕らえる構造"
 cyberMetadata:
-  bottomGap: 40
+  bottomGap: 272
   realHeight: 0.8
   realLength: 1.2
-  contentHeightPx: 625
+  contentHeightPx: 622
   sourceRes: 1024
   dinoLeft: "20%"
   refRight: "15%"

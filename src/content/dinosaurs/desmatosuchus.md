@@ -19,10 +19,10 @@ bioTraits:
     value: "骨質板"
     detail: "全身を覆うリベット状の鎧"
 cyberMetadata:
-  bottomGap: 340
+  bottomGap: 335
   realHeight: 1.2
   realLength: 4.5
-  contentHeightPx: 270
+  contentHeightPx: 355
   sourceRes: 1024
   dinoLeft: "2%"
   refRight: "12%"

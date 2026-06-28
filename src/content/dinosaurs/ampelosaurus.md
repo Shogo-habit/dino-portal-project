@@ -19,10 +19,10 @@ bioTraits:
     value: "ティタノサウルス類"
     detail: "進化した竜脚類のグループに属し、広範囲に分布した"
 cyberMetadata:
-  bottomGap: 235
+  bottomGap: 227
   realHeight: 8.5
   realLength: 15
-  contentHeightPx: 551
+  contentHeightPx: 535
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "20%"

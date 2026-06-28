@@ -19,10 +19,10 @@ bioTraits:
     value: "魚食特化"
     detail: "水面の魚をダイビングして捕らえる"
 cyberMetadata:
-  bottomGap: 200
+  bottomGap: 206
   realHeight: 3
   realLength: 3.5
-  contentHeightPx: 780
+  contentHeightPx: 579
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

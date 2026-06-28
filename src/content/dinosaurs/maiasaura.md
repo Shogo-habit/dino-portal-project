@@ -19,10 +19,10 @@ bioTraits:
     value: "コロニー形成"
     detail: "一定の間隔で巣を配置し、集団で捕食者から守る"
 cyberMetadata:
-  bottomGap: 220
+  bottomGap: 187
   realHeight: 5.3
   realLength: 9
-  contentHeightPx: 564
+  contentHeightPx: 565
   sourceRes: 1024
   dinoLeft: "8%"
   refRight: "20%"

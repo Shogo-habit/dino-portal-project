@@ -19,10 +19,10 @@ bioTraits:
     value: "二種類の歯"
     detail: "切り裂き用と保持用の異なる形状の歯"
 cyberMetadata:
-  bottomGap: 295
+  bottomGap: 284
   realHeight: 1.9
   realLength: 3.5
-  contentHeightPx: 523
+  contentHeightPx: 494
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "6%"

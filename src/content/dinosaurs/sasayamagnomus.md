@@ -19,10 +19,10 @@ bioTraits:
     value: "高い敏捷性"
     detail: "森林地帯で外敵を避けながら生活していた"
 cyberMetadata:
-  bottomGap: 300
+  bottomGap: 286
   realHeight: 0.42
   realLength: 0.96
-  contentHeightPx: 540
+  contentHeightPx: 453
   sourceRes: 1024
   dinoLeft: "30%"
   refRight: "15%"

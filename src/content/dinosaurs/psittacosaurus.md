@@ -19,10 +19,10 @@ bioTraits:
     value: "尾の剛毛"
     detail: "威嚇やディスプレイに使われた可能性のある長いクイル"
 cyberMetadata:
-  bottomGap: 280
+  bottomGap: 258
   realHeight: 0.8
   realLength: 2
-  contentHeightPx: 400
+  contentHeightPx: 488
   sourceRes: 1024
   dinoLeft: "10%"
   refRight: "15%"

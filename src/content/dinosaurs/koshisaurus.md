@@ -19,7 +19,7 @@ bioTraits:
     value: "中程度"
     detail: "二足歩行での迅速な退避が可能"
 cyberMetadata:
-  bottomGap: 345
+  bottomGap: 332
   realHeight: 1.2
   realLength: 3
   contentHeightPx: 347

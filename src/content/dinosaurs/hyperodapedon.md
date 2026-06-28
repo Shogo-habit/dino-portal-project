@@ -19,10 +19,10 @@ bioTraits:
     value: "爆発的繁栄"
     detail: "三畳紀後期の主要な草食動物だった"
 cyberMetadata:
-  bottomGap: 400
+  bottomGap: 374
   realHeight: 0.8
   realLength: 1.3
-  contentHeightPx: 350
+  contentHeightPx: 260
   sourceRes: 1024
   dinoLeft: "15%"
   refRight: "12%"

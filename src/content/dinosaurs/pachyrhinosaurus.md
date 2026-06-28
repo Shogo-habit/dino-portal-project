@@ -19,10 +19,10 @@ bioTraits:
     value: "大規模"
     detail: "アラスカなどで大量の化石が発見され、大移動をしていたとされる"
 cyberMetadata:
-  bottomGap: 255
+  bottomGap: 225
   realHeight: 3
   realLength: 4.83
-  contentHeightPx: 611
+  contentHeightPx: 606
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "10%"

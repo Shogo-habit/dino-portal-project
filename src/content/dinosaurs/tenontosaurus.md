@@ -19,10 +19,10 @@ bioTraits:
     value: "生態系の中核"
     detail: "肉食恐竜との格闘の痕跡が複数の化石に残っている"
 cyberMetadata:
-  bottomGap: 335
+  bottomGap: 329
   realHeight: 3.8
   realLength: 7
-  contentHeightPx: 520
+  contentHeightPx: 298
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

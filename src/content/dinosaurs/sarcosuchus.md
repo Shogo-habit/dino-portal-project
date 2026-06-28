@@ -19,10 +19,10 @@ bioTraits:
     value: "巨大"
     detail: "全長12mに達し、現生ワニの2倍以上のサイズ"
 cyberMetadata:
-  bottomGap: 415
+  bottomGap: 397
   realHeight: 1.2
   realLength: 12
-  contentHeightPx: 75
+  contentHeightPx: 195
   sourceRes: 1024
   dinoLeft: "0%"
   refRight: "6%"

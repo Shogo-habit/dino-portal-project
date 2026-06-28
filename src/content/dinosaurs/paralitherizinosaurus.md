@@ -19,10 +19,10 @@ bioTraits:
     value: "効果的"
     detail: "その異様な姿で天敵を遠ざける"
 cyberMetadata:
-  bottomGap: 65
+  bottomGap: 61
   realHeight: 7.8
   realLength: 8.5
-  contentHeightPx: 895
+  contentHeightPx: 891
   sourceRes: 1024
   dinoLeft: "15%"
   refRight: "23%"

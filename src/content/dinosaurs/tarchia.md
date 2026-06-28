@@ -19,10 +19,10 @@ bioTraits:
     value: "ハンマー攻撃"
     detail: "巨大な尾のハンマーでタルボサウルスに対抗"
 cyberMetadata:
-  bottomGap: 350
+  bottomGap: 342
   realHeight: 4.5
   realLength: 8
-  contentHeightPx: 520
+  contentHeightPx: 301
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

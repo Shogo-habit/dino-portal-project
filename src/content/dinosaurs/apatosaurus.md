@@ -19,10 +19,10 @@ bioTraits:
     value: "鞭の尾"
     detail: "尾を音速で振り回し天敵を威嚇"
 cyberMetadata:
-  bottomGap: 175
+  bottomGap: 172
   realHeight: 8
   realLength: 23
-  contentHeightPx: 694
+  contentHeightPx: 699
   sourceRes: 1024
   dinoLeft: "10%"
   refRight: "30%"

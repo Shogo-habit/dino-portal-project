@@ -19,10 +19,10 @@ bioTraits:
     value: "原始的"
     detail: "後の竜脚類とは異なる爪の構造"
 cyberMetadata:
-  bottomGap: 300
+  bottomGap: 287
   realHeight: 3
   realLength: 6.5
-  contentHeightPx: 453
+  contentHeightPx: 431
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "65%"

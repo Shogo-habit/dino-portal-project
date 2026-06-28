@@ -19,10 +19,10 @@ bioTraits:
     value: "ディスプレイ"
     detail: "トサカは成長とともに大きくなり、雌雄の識別にも使われた"
 cyberMetadata:
-  bottomGap: 265
+  bottomGap: 259
   realHeight: 4.73
   realLength: 9
-  contentHeightPx: 509
+  contentHeightPx: 505
   sourceRes: 1024
   dinoLeft: "2%"
   refRight: "15%"

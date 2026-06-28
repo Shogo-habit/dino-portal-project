@@ -19,10 +19,10 @@ bioTraits:
     value: "強力"
     detail: "硬い砂漠の植物を切り取るための鋭いくちばし"
 cyberMetadata:
-  bottomGap: 235
+  bottomGap: 226
   realHeight: 1.03
   realLength: 1.8
-  contentHeightPx: 548
+  contentHeightPx: 549
   sourceRes: 1024
   dinoLeft: "10%"
   refRight: "15%"

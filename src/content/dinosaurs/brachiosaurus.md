@@ -19,10 +19,10 @@ bioTraits:
     value: "巨大質量"
     detail: "捕食者に襲われるリスクはほぼ皆無"
 cyberMetadata:
-  bottomGap: 100
+  bottomGap: 99
   realHeight: 13
   realLength: 25
-  contentHeightPx: 940
+  contentHeightPx: 834
   sourceRes: 1024
   dinoLeft: "20%"
   refRight: "20%"

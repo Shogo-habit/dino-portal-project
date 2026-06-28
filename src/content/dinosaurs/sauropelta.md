@@ -19,10 +19,10 @@ bioTraits:
     value: "モザイク装甲"
     detail: "皮膚に埋め込まれた無数の骨質の板"
 cyberMetadata:
-  bottomGap: 300
+  bottomGap: 297
   realHeight: 3
   realLength: 5
-  contentHeightPx: 520
+  contentHeightPx: 466
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

@@ -19,10 +19,10 @@ bioTraits:
     value: "二足・四足"
     detail: "状況に応じて歩行スタイルを切り替えた"
 cyberMetadata:
-  bottomGap: 310
+  bottomGap: 295
   realHeight: 3
   realLength: 8
-  contentHeightPx: 450
+  contentHeightPx: 387
   sourceRes: 1024
   dinoLeft: "3%"
   refRight: "15%"

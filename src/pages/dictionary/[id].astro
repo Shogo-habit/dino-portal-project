@@ -44,6 +44,17 @@ function generateDynamicFAQs(dino: any) {
 const faqs = generateDynamicFAQs(d);
 
 // Generate JSON-LD schema specifically for this dinosaur
+const taxonSchema = {
+    "@context": "https://schema.org",
+    "@type": "Taxon",
+    "@id": `https://dino-portal.com/dictionary/${entry.id}/#taxon`,
+    "name": d.name,
+    "scientificName": d.scientificName,
+    "taxonRank": d.group === "翼竜" ? "Order" : d.group === "首長竜" ? "Clade" : d.group === "魚竜" ? "Order" : "Genus",
+    "description": d.description,
+    "image": `https://dino-portal.com/${d.image}`
+};
+
 const schema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -58,8 +69,12 @@ const schema = {
                 "jobTitle": AUTHOR_DATA.role,
                 "description": AUTHOR_DATA.bio,
                 "url": "https://dino-portal.com/"
+            },
+            "about": {
+                "@id": `https://dino-portal.com/dictionary/${entry.id}/#taxon`
             }
         },
+        taxonSchema,
         {
             "@type": "FAQPage",
             "mainEntity": faqs.map(f => ({
@@ -119,6 +134,8 @@ if (hasComparison) {
     }
 }
 
+const formatVal = (val: number) => val % 1 === 0 ? val.toFixed(1) : val.toString();
+
 // Find related specimens
 const eras = ["白亜紀", "ジュラ紀", "三畳紀", "古生代"];
 const currentEraBase = eras.find(e => d.era.includes(e));
@@ -138,17 +155,14 @@ const relatedTopics = topics
     .slice(0, 3);
 ---
 
-<Layout title={`${d.name} | Specimen Analysis | Dino-Portal`} activeTab="dictionary" description={`${d.name} (${d.scientificName}) の生物学的特性、出現年代、生息地、サイズ比較スケールデータ。`} ogImage={`/${d.image}`}>
-    <!-- Inject dynamic schema -->
-    <script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />
-
+<Layout title={`${d.name} | Specimen Analysis | Dino-Portal`} activeTab="dictionary" description={`${d.name} (${d.scientificName}) の生物学的特性、出現年代、生息地、サイズ比較スケールデータ。`} ogImage={`/${d.image}`} schema={schema}>
     <article class="detail-layout">
         <div class="detail-visual-column">
             <div class="detail-img-viewer hud-panel" style="margin-bottom: 30px;">
                 <div class="hud-corner top-left"></div>
                 <div class="hud-corner bottom-right"></div>
                 <div class="scan-line-ani"></div>
-                <img src={`/${d.image}`} alt={d.name} fetchpriority="high" decoding="async">
+                <img src={`/${d.image}`} alt={d.name} fetchpriority="high" decoding="async" width="800" height="533" style="width: 100%; height: auto; display: block; object-fit: cover;">
                 <div style="position: absolute; bottom: 10px; right: 10px; font-family: var(--font-mono); font-size: 10px; color: var(--primary-neon);">
                     IMG_SEC_ENCRYPTED: {d.id.toUpperCase()}
                 </div>
@@ -157,19 +171,24 @@ const relatedTopics = topics
             <!-- SIZE COMPARISON AREA -->
             {hasComparison && (
                 <section class="size-comparison-panel hud-panel" style="margin-top: 40px; position: relative; height: 400px; overflow: hidden;">
-                    <h4 style="color: var(--primary-neon); margin-bottom: 20px; position: relative; z-index: 10;">視覚的個体比較スケール</h4>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; position: relative; z-index: 10; padding: 0 10px;">
+                        <h4 style="color: var(--primary-neon); margin: 0;">視覚的個体比較スケール</h4>
+                        <a href="/size-comparison/" style="font-size: 11px; color: var(--secondary-neon); text-decoration: none; font-family: var(--font-mono); font-weight: bold; transition: opacity 0.3s;">
+                            [ シミュレータで他と比較する ] &raquo;
+                        </a>
+                    </div>
                     <div class="comparison-stage" style="position: absolute; width: 100%; height: 100%; bottom: 0; left: 0;">
                         <!-- Dino visual -->
                         <div class="dino-vis" style={`position: absolute; left: ${dinoLeft}; bottom: ${BASELINE_PX}px; height: ${SAFE_ZONE_H}px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible;`}>
-                            <img src={`/images/cyber/${d.id}.webp`} alt={d.name} class="cyber-hud-specimen" 
+                            <img src={`/images/cyber/${d.id}.webp`} alt={d.name} class="cyber-hud-specimen" decoding="async" loading="lazy"
                                  style={`height: ${dinoTotalH}px; width: auto; margin-bottom: -${dinoBottomOffset}px; flex-shrink: 0; mix-blend-mode: screen !important;`}>
-                            <div class="vis-tag dino-tag" style="white-space: nowrap; position: absolute; bottom: -45px;">{d.name} / {d.length}</div>
+                            <div class="vis-tag dino-tag" style="white-space: nowrap; position: absolute; bottom: -45px;">{d.name} / 高さ {formatVal(d.cyberMetadata?.realHeight || 0)}m（全長 {d.length}）</div>
                         </div>
                         <!-- Human reference -->
                         <div class="ref-vis" style={`position: absolute; right: ${refRight}; bottom: ${BASELINE_PX}px; height: ${SAFE_ZONE_H}px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible;`}>
-                            <img src="/images/cyber/human_front.webp" alt="HUMAN" class="cyber-hud-specimen" 
+                            <img src="/images/cyber/human_front.webp" alt="HUMAN" class="cyber-hud-specimen" decoding="async" loading="lazy"
                                  style={`height: ${refTotalH}px; width: auto; margin-bottom: -${refBottomOffset}px; flex-shrink: 0; mix-blend-mode: screen !important;`}>
-                            <div class="vis-tag ref-tag" style="white-space: nowrap; position: absolute; bottom: -45px;">人間 / 1.7m</div>
+                            <div class="vis-tag ref-tag" style="white-space: nowrap; position: absolute; bottom: -45px;">人間 / 高さ 1.7m</div>
                         </div>
                     </div>
                 </section>
@@ -224,13 +243,13 @@ const relatedTopics = topics
             </div>
 
             <!-- Dynamic FAQ Section for GEO -->
-            <div class="geo-faq-section" style="margin-top: 30px;">
+            <div class="geo-faq-section" style="margin-top: 30px;" itemscope itemtype="https://schema.org/FAQPage">
                 <h4 style="color: var(--primary-neon); margin-bottom: 15px;">よくある質問と回答 (FAQ)</h4>
                 {faqs.map((faq, idx) => (
-                    <details class="faq-item hud-panel" open={idx === 0} style="margin-bottom: 10px;">
-                        <summary class="faq-summary" style="cursor: pointer; padding: 10px; color: var(--primary-neon); font-weight: bold;">{faq.q}</summary>
-                        <div class="faq-content" style="padding: 10px; line-height: 1.6; border-top: 1px solid var(--panel-border);">
-                            {faq.a}
+                    <details class="faq-item hud-panel" open={idx === 0} style="margin-bottom: 10px;" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                        <summary class="faq-summary" style="cursor: pointer; padding: 10px; color: var(--primary-neon); font-weight: bold;" itemprop="name">{faq.q}</summary>
+                        <div class="faq-content" style="padding: 10px; line-height: 1.6; border-top: 1px solid var(--panel-border);" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                            <span itemprop="text">{faq.a}</span>
                         </div>
                     </details>
                 ))}
@@ -284,7 +303,7 @@ const relatedTopics = topics
                             <a href={`/topics/${t.id}/`} style="text-decoration: none; color: inherit; display: block;">
                                 <div class="related-topic-card hud-panel" style="cursor: pointer; display: flex; gap: 15px; align-items: center; padding: 15px; border-color: rgba(0, 242, 255, 0.15); transition: all 0.3s ease;">
                                     <div class="topic-mini-thumb" style="width: 80px; height: 50px; flex-shrink: 0; background-color: #000; border: 1px solid var(--panel-border); overflow: hidden;">
-                                        <img src={`/${t.image}`} alt={t.title} style="width: 100%; height: 100%; object-fit: cover;">
+                                        <img src={`/${t.image}`} alt={t.title} width="80" height="50" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
                                     </div>
                                     <div style="flex: 1;">
                                         <div style="font-size: 10px; color: var(--primary-neon); font-family: var(--font-mono); margin-bottom: 3px;">
@@ -309,8 +328,8 @@ const relatedTopics = topics
                         {relatedSpecimens.map(item => (
                             <a href={`/dictionary/${item.id}/`} style="text-decoration: none; color: inherit;">
                                 <div class="related-card hud-panel" style="cursor: pointer; height: 100%;">
-                                    <div class="related-img-wrap" style="width: 100%; height: auto; overflow: hidden; position: relative;">
-                                        <img src={`/${item.image}`} alt={item.name} loading="lazy" decoding="async" style="width: 100%; height: auto; display: block; object-fit: contain;">
+                                    <div class="related-img-wrap" style="width: 100%; height: auto; aspect-ratio: 4/3; overflow: hidden; position: relative; background: #000;">
+                                        <img src={`/${item.image}`} alt={item.name} width="160" height="120" loading="lazy" decoding="async" style="width: 100%; height: 100%; display: block; object-fit: cover;">
                                     </div>
                                     <h4 class="related-name" style="font-size: 12px; margin: 8px 0 4px 0; color: var(--text-main);">{item.name}</h4>
                                     <div class="related-meta" style="font-size: 9px; color: var(--text-dim);">{item.era} / {item.region}</div>

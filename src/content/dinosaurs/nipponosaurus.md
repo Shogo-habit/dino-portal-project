@@ -19,10 +19,10 @@ bioTraits:
     value: "発育中"
     detail: "発見されたのは亜成体とされている"
 cyberMetadata:
-  bottomGap: 265
+  bottomGap: 243
   realHeight: 3.8
   realLength: 7.6
-  contentHeightPx: 477
+  contentHeightPx: 467
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

@@ -19,10 +19,10 @@ bioTraits:
     value: "高い"
     detail: "重量を活かした重戦車のような突進"
 cyberMetadata:
-  bottomGap: 285
+  bottomGap: 273
   realHeight: 2.2
   realLength: 6
-  contentHeightPx: 540
+  contentHeightPx: 537
   sourceRes: 1024
   dinoLeft: "2%"
   refRight: "2%"

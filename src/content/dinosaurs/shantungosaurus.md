@@ -19,10 +19,10 @@ bioTraits:
     value: "極めて高い"
     detail: "巨体を支えるための頑強な脊椎と後肢を持つ"
 cyberMetadata:
-  bottomGap: 335
+  bottomGap: 330
   realHeight: 7.5
   realLength: 15
-  contentHeightPx: 550
+  contentHeightPx: 339
   sourceRes: 1024
   dinoLeft: "2%"
   refRight: "20%"

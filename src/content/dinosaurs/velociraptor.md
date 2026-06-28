@@ -19,10 +19,10 @@ bioTraits:
     value: "高い"
     detail: "集団での狩りが可能だったとされる"
 cyberMetadata:
-  bottomGap: 355
+  bottomGap: 332
   realHeight: 0.6
   realLength: 2
-  contentHeightPx: 300
+  contentHeightPx: 360
   sourceRes: 1024
   dinoLeft: "12%"
   refRight: "12%"

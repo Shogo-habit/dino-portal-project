@@ -19,10 +19,10 @@ bioTraits:
     value: "高い"
     detail: "沿岸部などの過酷な環境にも適応"
 cyberMetadata:
-  bottomGap: 317
+  bottomGap: 312
   realHeight: 4.5
   realLength: 8
-  contentHeightPx: 450
+  contentHeightPx: 388
   sourceRes: 1024
   dinoLeft: "0%"
   refRight: "20%"

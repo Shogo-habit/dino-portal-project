@@ -19,10 +19,10 @@ bioTraits:
     value: "強靭"
     detail: "樹木にしっかりと掴まるための発達した爪"
 cyberMetadata:
-  bottomGap: 130
+  bottomGap: 100
   realHeight: 0.18
   realLength: 0.2
-  contentHeightPx: 787
+  contentHeightPx: 785
   sourceRes: 1024
   dinoLeft: "30%"
   refRight: "15%"

@@ -19,10 +19,10 @@ bioTraits:
     value: "効率的"
     detail: "硬い植物をすりつぶす能力に長けていた"
 cyberMetadata:
-  bottomGap: 340
+  bottomGap: 332
   realHeight: 3.7
   realLength: 10
-  contentHeightPx: 359
+  contentHeightPx: 352
   sourceRes: 1024
   dinoLeft: "0%"
   refRight: "15%"

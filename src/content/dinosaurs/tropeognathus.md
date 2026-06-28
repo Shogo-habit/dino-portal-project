@@ -19,7 +19,7 @@ bioTraits:
     value: "白亜紀前期最大"
     detail: "上昇気流を捉えて数千キロを移動可能"
 cyberMetadata:
-  bottomGap: 180
+  bottomGap: 223
   realHeight: 5.67
   realLength: 8
   contentHeightPx: 672

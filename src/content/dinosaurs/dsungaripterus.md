@@ -19,10 +19,10 @@ bioTraits:
     value: "高い"
     detail: "硬い殻を噛み砕くための強靭な奥歯"
 cyberMetadata:
-  bottomGap: 125
+  bottomGap: 94
   realHeight: 2.3
   realLength: 3
-  contentHeightPx: 733
+  contentHeightPx: 720
   sourceRes: 1024
   dinoLeft: "10%"
   refRight: "15%"

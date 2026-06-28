@@ -19,7 +19,7 @@ bioTraits:
     value: "高い"
     detail: "トサカを用いた個体識別やコミュニケーション"
 cyberMetadata:
-  bottomGap: 60
+  bottomGap: 42
   realHeight: 2.5
   realLength: 2.07
   contentHeightPx: 940

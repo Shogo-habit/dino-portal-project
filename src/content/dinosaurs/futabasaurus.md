@@ -19,10 +19,10 @@ bioTraits:
     value: "高い"
     detail: "長い首を自在に動かして獲物を追う"
 cyberMetadata:
-  bottomGap: 298
+  bottomGap: 300
   realHeight: 2.9
   realLength: 7
-  contentHeightPx: 411
+  contentHeightPx: 398
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

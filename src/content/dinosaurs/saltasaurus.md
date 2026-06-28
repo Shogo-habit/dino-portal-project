@@ -19,10 +19,10 @@ bioTraits:
     value: "装甲化"
     detail: "竜脚類の新たな生存戦略を示した"
 cyberMetadata:
-  bottomGap: 250
+  bottomGap: 231
   realHeight: 6.48
   realLength: 12
-  contentHeightPx: 527
+  contentHeightPx: 531
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "23%"

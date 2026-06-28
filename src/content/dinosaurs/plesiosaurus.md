@@ -19,10 +19,10 @@ bioTraits:
     value: "高い"
     detail: "針のような細い歯で逃げる魚を逃がさない"
 cyberMetadata:
-  bottomGap: 279
+  bottomGap: 276
   realHeight: 1.7
   realLength: 3.5
-  contentHeightPx: 445
+  contentHeightPx: 450
   sourceRes: 1024
   dinoLeft: "0%"
   refRight: "5%"

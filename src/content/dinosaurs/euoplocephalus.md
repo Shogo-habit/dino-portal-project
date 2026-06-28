@@ -19,10 +19,10 @@ bioTraits:
     value: "全身保護"
     detail: "目という弱点すら骨質の板で保護可能"
 cyberMetadata:
-  bottomGap: 285
+  bottomGap: 263
   realHeight: 2.4
   realLength: 6
-  contentHeightPx: 500
+  contentHeightPx: 450
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "10%"

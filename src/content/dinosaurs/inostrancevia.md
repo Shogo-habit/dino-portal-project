@@ -19,10 +19,10 @@ bioTraits:
     value: "高い"
     detail: "初期の単弓類としては直立に近い脚配置"
 cyberMetadata:
-  bottomGap: 315
+  bottomGap: 293
   realHeight: 1.4
   realLength: 3.5
-  contentHeightPx: 450
+  contentHeightPx: 439
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "2%"

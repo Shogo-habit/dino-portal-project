@@ -19,10 +19,10 @@ bioTraits:
     value: "最大級の魚類"
     detail: "他の大型魚類や爬虫類を圧倒する質量"
 cyberMetadata:
-  bottomGap: 238
+  bottomGap: 249
   realHeight: 8.42
   realLength: 16.5
-  contentHeightPx: 501
+  contentHeightPx: 483
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "20%"

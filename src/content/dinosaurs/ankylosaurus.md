@@ -19,10 +19,10 @@ bioTraits:
     value: "ハンマー"
     detail: "尾で肉食恐竜の骨を砕く"
 cyberMetadata:
-  bottomGap: 389
+  bottomGap: 391
   realHeight: 1.7
   realLength: 7
-  contentHeightPx: 246
+  contentHeightPx: 242
   sourceRes: 1024
   dinoLeft: "0"
   refRight: "72%"

@@ -19,10 +19,10 @@ bioTraits:
     value: "内側湾曲"
     detail: "襟飾りの縁から内側に向かって伸びる不思議な突起"
 cyberMetadata:
-  bottomGap: 260
+  bottomGap: 241
   realHeight: 2.3
   realLength: 3.67
-  contentHeightPx: 610
+  contentHeightPx: 606
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "8%"
