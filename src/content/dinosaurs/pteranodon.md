@@ -26,7 +26,7 @@ cyberMetadata:
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"
-  zoom: 1
+  zoom: 0.9
 references:
   - title: "Notice of a new sub-order of Pterosauria (Pteranodontia)"
     journal: "American Journal of Science"
