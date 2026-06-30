@@ -480,7 +480,8 @@ body {
     "visual header"
     "visual body"
     "comparison body"
-    "comparison specs";
+    "comparison specs-basic"
+    "comparison traits";
   gap: 40px;
 }
 
@@ -488,13 +489,15 @@ body {
   grid-template-areas:
     "visual header"
     "visual body"
-    "visual specs";
+    "visual specs-basic"
+    "visual traits";
 }
 
 .detail-header { grid-area: header; }
 .detail-main-visual { grid-area: visual; }
 .detail-content-body { grid-area: body; }
-.detail-specs { grid-area: specs; }
+.detail-specs-basic { grid-area: specs-basic; }
+.detail-traits { grid-area: traits; }
 .detail-comparison { grid-area: comparison; }
 
 .detail-img-viewer {

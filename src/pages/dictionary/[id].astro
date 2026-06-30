@@ -201,15 +201,52 @@ const relatedTopics = topics
             </section>
         </div>
 
-        <!-- 4. 基本スペック (specs) -->
-        <div class="detail-specs">
+        <!-- 4. 基本スペック (specs-basic) -->
+        <div class="detail-specs-basic">
             <div class="spec-panel">
                 <div class="spec-item"><span class="spec-label">生息年代</span><br>{d.era}</div>
                 <div class="spec-item"><span class="spec-label">出現地域</span><br>{d.region}</div>
                 <div class="spec-item"><span class="spec-label">全長</span><br>{d.length}</div>
                 <div class="spec-item"><span class="spec-label">推定体重</span><br>{d.weight}</div>
             </div>
+        </div>
 
+        <!-- 5. サイズ比較パネル (comparison) -->
+        {hasComparison && (
+            <div class="detail-comparison">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 0 5px;">
+                    <h4 style="color: var(--primary-neon); margin: 0; white-space: nowrap;">サイズ比較</h4>
+                    <a href="/size-comparison/" style="font-size: 11px; color: var(--secondary-neon); text-decoration: none; font-family: var(--font-mono); font-weight: bold; transition: opacity 0.3s; white-space: nowrap;">
+                        [ シミュレータで他と比較する ] &raquo;
+                    </a>
+                </div>
+                <section class="size-comparison-panel hud-panel" style="position: relative; height: 400px; overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch;">
+                    <div class="comparison-stage" style="position: absolute; width: 100%; min-width: 650px; height: 100%; bottom: 0; left: 0;">
+                        <!-- Dino visual -->
+                        <div class="dino-vis" style={`position: absolute; left: ${dinoLeft}; bottom: ${BASELINE_PX}px; height: ${SAFE_ZONE_H}px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible;`}>
+                            <img src={`/images/cyber/${d.id}.webp`} alt={d.name} class="cyber-hud-specimen" decoding="async" loading="lazy"
+                                 style={`height: ${dinoTotalH}px; width: auto; margin-bottom: -${dinoBottomOffset}px; flex-shrink: 0; mix-blend-mode: screen !important;`}>
+                            <div class="vis-tag dino-tag" style={`white-space: nowrap; position: absolute; bottom: -58px; display: flex; flex-direction: column; align-items: center; text-align: center;`}>
+                                <span>{d.name}</span>
+                                <span style="font-size: 9.5px; opacity: 0.8; margin-top: 1px;">高さ {formatVal(d.cyberMetadata?.realHeight || 0)}m（全長 {d.length}）</span>
+                            </div>
+                        </div>
+                        <!-- Human reference -->
+                        <div class="ref-vis" style={`position: absolute; right: ${refRight}; bottom: ${BASELINE_PX}px; height: ${SAFE_ZONE_H}px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible;`}>
+                            <img src="/images/cyber/human_front.webp" alt="HUMAN" class="cyber-hud-specimen" decoding="async" loading="lazy"
+                                 style={`height: ${refTotalH}px; width: auto; margin-bottom: -${refBottomOffset}px; flex-shrink: 0; mix-blend-mode: screen !important;`}>
+                            <div class="vis-tag ref-tag" style={`white-space: nowrap; position: absolute; bottom: -58px; display: flex; flex-direction: column; align-items: center; text-align: center;`}>
+                                <span>人間</span>
+                                <span style="font-size: 9.5px; opacity: 0.8; margin-top: 1px;">高さ 1.7m</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        )}
+
+        <!-- 6. 特性解析 & その他 (traits) -->
+        <div class="detail-traits">
             <div class="trait-bar-wrap" style="margin-top: 30px;">
                 <h4 style="border-bottom: 1px solid var(--panel-border); padding-bottom: 10px;">生物学的特性解析</h4>
                 {d.bioTraits.map(t => (
@@ -323,41 +360,6 @@ const relatedTopics = topics
                 </section>
             )}
         </div>
-
-        <!-- 5. サイズ比較パネル (comparison) -->
-        {hasComparison && (
-            <div class="detail-comparison">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 0 5px;">
-                    <h4 style="color: var(--primary-neon); margin: 0; white-space: nowrap;">サイズ比較</h4>
-                    <a href="/size-comparison/" style="font-size: 11px; color: var(--secondary-neon); text-decoration: none; font-family: var(--font-mono); font-weight: bold; transition: opacity 0.3s; white-space: nowrap;">
-                        [ シミュレータで他と比較する ] &raquo;
-                    </a>
-                </div>
-                <section class="size-comparison-panel hud-panel" style="position: relative; height: 400px; overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch;">
-                    <div class="comparison-stage" style="position: absolute; width: 100%; min-width: 650px; height: 100%; bottom: 0; left: 0;">
-                        <!-- Dino visual -->
-                        <div class="dino-vis" style={`position: absolute; left: ${dinoLeft}; bottom: ${BASELINE_PX}px; height: ${SAFE_ZONE_H}px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible;`}>
-                            <img src={`/images/cyber/${d.id}.webp`} alt={d.name} class="cyber-hud-specimen" decoding="async" loading="lazy"
-                                 style={`height: ${dinoTotalH}px; width: auto; margin-bottom: -${dinoBottomOffset}px; flex-shrink: 0; mix-blend-mode: screen !important;`}>
-                            <div class="vis-tag dino-tag" style={`white-space: nowrap; position: absolute; bottom: -58px; display: flex; flex-direction: column; align-items: center; text-align: center;`}>
-                                <span>{d.name}</span>
-                                <span style="font-size: 9.5px; opacity: 0.8; margin-top: 1px;">高さ {formatVal(d.cyberMetadata?.realHeight || 0)}m（全長 {d.length}）</span>
-                            </div>
-                        </div>
-                        <!-- Human reference -->
-                        <div class="ref-vis" style={`position: absolute; right: ${refRight}; bottom: ${BASELINE_PX}px; height: ${SAFE_ZONE_H}px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible;`}>
-                            <img src="/images/cyber/human_front.webp" alt="HUMAN" class="cyber-hud-specimen" decoding="async" loading="lazy"
-                                 style={`height: ${refTotalH}px; width: auto; margin-bottom: -${refBottomOffset}px; flex-shrink: 0; mix-blend-mode: screen !important;`}>
-                            <div class="vis-tag ref-tag" style={`white-space: nowrap; position: absolute; bottom: -58px; display: flex; flex-direction: column; align-items: center; text-align: center;`}>
-                                <span>人間</span>
-                                <span style="font-size: 9.5px; opacity: 0.8; margin-top: 1px;">高さ 1.7m</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        )}
-    </article>
 
     <!-- Affiliate Product recommendation section -->
     <AffiliateSection dinoId={d.id} />
