@@ -206,8 +206,8 @@ const relatedTopics = topics
         <div class="detail-data">
             <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
                 <div>
-                    <h1 style="font-size: 42px; margin-bottom: 5px; color: var(--text-main);">{d.name}</h1>
-                    <p style="font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 20px;">[ {d.scientificName} ]</p>
+                    <h1 class="detail-title">{d.name}</h1>
+                    <p class="detail-scientific">[ {d.scientificName} ]</p>
                 </div>
                 <button class="save-btn" id="observe-save-btn" aria-label="図鑑に保存" data-id={d.id}>
                     + 観測データに保存

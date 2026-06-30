@@ -457,6 +457,22 @@ body {
 }
 
 /* --- DETAIL PAGE --- */
+.detail-title {
+  font-size: clamp(24px, 4vw, 42px);
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: var(--text-main);
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.detail-scientific {
+  font-family: var(--font-mono);
+  color: var(--primary-neon);
+  margin-bottom: 20px;
+  font-size: clamp(12px, 1.8vw, 16px);
+}
+
 .detail-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
