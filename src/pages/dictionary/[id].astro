@@ -103,6 +103,7 @@ let refTotalH = 0;
 let refBottomOffset = 0;
 let dinoLeft = '15%';
 let refRight = '15%';
+let dinoTagStyle = 'white-space: nowrap; position: absolute; bottom: -58px; display: flex; flex-direction: column; align-items: center; text-align: center;';
 
 if (hasComparison) {
     const meta = d.cyberMetadata!;
@@ -110,15 +111,53 @@ if (hasComparison) {
     const realL = meta.realLength || parseFloat(d.length);
     const ref = REFERENCE_ASSETS.HUMAN;
 
-    const zoom = meta.zoom || 1.0;
-    let pxPerMeter = Math.min(SAFE_ZONE_H / realH, SAFE_ZONE_W / realL) * zoom;
+    // 1. セーフゾーンの高さ90%、幅85%以内に必ず収まる最大比率を算出 (見切れ防止)
+    const maxPxPerMeterH = (SAFE_ZONE_H * 0.9) / realH;
+    const maxPxPerMeterL = (SAFE_ZONE_W * 0.85) / realL;
+    let pxPerMeter = Math.min(maxPxPerMeterH, maxPxPerMeterL);
     
-    // Adjust scale for small creatures relative to human reference
+    // zoomがある場合は乗算
+    const zoom = meta.zoom || 1.0;
+    pxPerMeter = pxPerMeter * zoom;
+    
+    // zoom適用後も絶対上限（高さ92%、幅88%）を越えないように安全クランプ
+    const absoluteMaxH = (SAFE_ZONE_H * 0.92) / realH;
+    const absoluteMaxL = (SAFE_ZONE_W * 0.88) / realL;
+    pxPerMeter = Math.min(pxPerMeter, absoluteMaxH, absoluteMaxL);
+
+    // 小さい生物用の最小縮尺調整 (人間が巨大化しすぎるのを防ぐ)
     if (realH < ref.realHeight) {
         const humanTargetH = SAFE_ZONE_H * 0.85;
         pxPerMeter = Math.min(pxPerMeter, humanTargetH / ref.realHeight);
     }
     
+    // 2. 恐竜の描画サイズ（幅）に応じて、配置位置を動的に外側へ寄せる (横方向の見切れ防止)
+    const dinoDrawW = realL * pxPerMeter;
+    let leftPercent = 15;
+    let rightPercent = 15;
+    
+    if (dinoDrawW > 350) {
+        leftPercent = 5;
+        rightPercent = 5;
+    } else if (dinoDrawW > 250) {
+        leftPercent = 10;
+        rightPercent = 10;
+    }
+    
+    // メタデータに個別指定がある場合はそれを優先
+    dinoLeft = meta.dinoLeft || `${leftPercent}%`;
+    refRight = meta.refRight || `${rightPercent}%`;
+
+    // 3. 恐竜と人間のイラスト同士の距離を算出し、ラベル衝突時は恐竜側を左に退避 (案B)
+    const dinoLeftNum = parseFloat(dinoLeft);
+    const refRightNum = parseFloat(refRight);
+    const distancePercent = 100 - dinoLeftNum - refRightNum;
+
+    if (distancePercent < 45) { // 距離が45%（ステージ幅650px換算で約290px）未満の場合
+        // 左寄せにし、さらに左方向へ40pxスライドさせて完全に衝突を避ける
+        dinoTagStyle = 'white-space: nowrap; position: absolute; bottom: -58px; display: flex; flex-direction: column; align-items: flex-start; text-align: left; transform: translateX(-40px);';
+    }
+
     dinoScaleCalculation: {
         const dinoScale = (pxPerMeter * realH) / meta.contentHeightPx;
         dinoTotalH = meta.sourceRes * dinoScale;
@@ -128,9 +167,6 @@ if (hasComparison) {
         const refScale = refTargetH / ref.contentHeightPx;
         refTotalH = ref.sourceRes * refScale;
         refBottomOffset = ref.bottomGap * refScale;
-        
-        dinoLeft = meta.dinoLeft || '15%';
-        refRight = meta.refRight || '15%';
     }
 }
 
@@ -187,7 +223,7 @@ const relatedTopics = topics
                             <div class="dino-vis" style={`position: absolute; left: ${dinoLeft}; bottom: ${BASELINE_PX}px; height: ${SAFE_ZONE_H}px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible;`}>
                                 <img src={`/images/cyber/${d.id}.webp`} alt={d.name} class="cyber-hud-specimen" decoding="async" loading="lazy"
                                      style={`height: ${dinoTotalH}px; width: auto; margin-bottom: -${dinoBottomOffset}px; flex-shrink: 0; mix-blend-mode: screen !important;`}>
-                                <div class="vis-tag dino-tag" style={`white-space: nowrap; position: absolute; bottom: -58px; display: flex; flex-direction: column; align-items: center; text-align: center;`}>
+                                <div class="vis-tag dino-tag" style={dinoTagStyle}>
                                     <span>{d.name}</span>
                                     <span style="font-size: 9.5px; opacity: 0.8; margin-top: 1px;">高さ {formatVal(d.cyberMetadata?.realHeight || 0)}m（全長 {d.length}）</span>
                                 </div>
