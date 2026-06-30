@@ -111,18 +111,30 @@ if (hasComparison) {
     const realL = meta.realLength || parseFloat(d.length);
     const ref = REFERENCE_ASSETS.HUMAN;
 
-    // 1. セーフゾーンの高さ90%、幅85%以内に必ず収まる最大比率を算出 (見切れ防止)
-    const maxPxPerMeterH = (SAFE_ZONE_H * 0.9) / realH;
-    const maxPxPerMeterL = (SAFE_ZONE_W * 0.85) / realL;
+    const aspectRatio = realL / realH; // 横長度合い
+
+    // デフォルトの制限係数
+    let widthLimitFactor = 0.85;
+    
+    // アスペクト比が2.0以上の横長恐竜に対して、幅制限を大幅に緩和して横幅をフルに活用する
+    if (aspectRatio > 2.8) {
+        widthLimitFactor = 1.15; // 左右端ギリギリ（はみ出しや人間との重なりを許容）
+    } else if (aspectRatio > 2.0) {
+        widthLimitFactor = 1.0;
+    }
+
+    // 高さ92%、幅は緩和された制限を適用 (見切れを防止しつつ最大化)
+    const maxPxPerMeterH = (SAFE_ZONE_H * 0.92) / realH;
+    const maxPxPerMeterL = (SAFE_ZONE_W * widthLimitFactor) / realL;
     let pxPerMeter = Math.min(maxPxPerMeterH, maxPxPerMeterL);
     
     // zoomがある場合は乗算
     const zoom = meta.zoom || 1.0;
     pxPerMeter = pxPerMeter * zoom;
     
-    // zoom適用後も絶対上限（高さ92%、幅88%）を越えないように安全クランプ
-    const absoluteMaxH = (SAFE_ZONE_H * 0.92) / realH;
-    const absoluteMaxL = (SAFE_ZONE_W * 0.88) / realL;
+    // zoom適用後も絶対上限（高さ95%、幅は緩和上限）を越えないように安全クランプ
+    const absoluteMaxH = (SAFE_ZONE_H * 0.95) / realH;
+    const absoluteMaxL = (SAFE_ZONE_W * (widthLimitFactor + 0.05)) / realL;
     pxPerMeter = Math.min(pxPerMeter, absoluteMaxH, absoluteMaxL);
 
     // 小さい生物用の最小縮尺調整 (人間が巨大化しすぎるのを防ぐ)
@@ -131,17 +143,17 @@ if (hasComparison) {
         pxPerMeter = Math.min(pxPerMeter, humanTargetH / ref.realHeight);
     }
     
-    // 2. 恐竜の描画サイズ（幅）に応じて、配置位置を動的に外側へ寄せる (横方向の見切れ防止)
+    // 2. 恐竜の描画サイズ（幅）に応じて、配置位置を動的に外側へ寄せる (極限まで寄せる)
     const dinoDrawW = realL * pxPerMeter;
     let leftPercent = 15;
     let rightPercent = 15;
     
     if (dinoDrawW > 350) {
-        leftPercent = 5;
-        rightPercent = 5;
+        leftPercent = 2; // 端から2%まで寄せて描画幅を稼ぐ
+        rightPercent = 2;
     } else if (dinoDrawW > 250) {
-        leftPercent = 10;
-        rightPercent = 10;
+        leftPercent = 8;
+        rightPercent = 8;
     }
     
     // メタデータに個別指定がある場合はそれを優先
@@ -220,7 +232,7 @@ const relatedTopics = topics
                     <section class="size-comparison-panel hud-panel">
                         <div class="comparison-stage" id="dino-comparison-stage">
                             <!-- Dino visual -->
-                            <div class="dino-vis" style={`position: absolute; left: ${dinoLeft}; bottom: ${BASELINE_PX}px; height: ${SAFE_ZONE_H}px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible;`}>
+                            <div class="dino-vis" style={`position: absolute; left: ${dinoLeft}; bottom: ${BASELINE_PX}px; height: ${SAFE_ZONE_H}px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible; z-index: 1;`}>
                                 <img src={`/images/cyber/${d.id}.webp`} alt={d.name} class="cyber-hud-specimen" decoding="async" loading="lazy"
                                      style={`height: ${dinoTotalH}px; width: auto; margin-bottom: -${dinoBottomOffset}px; flex-shrink: 0; mix-blend-mode: screen !important;`}>
                                 <div class="vis-tag dino-tag" style={dinoTagStyle}>
@@ -229,7 +241,7 @@ const relatedTopics = topics
                                 </div>
                             </div>
                             <!-- Human reference -->
-                            <div class="ref-vis" style={`position: absolute; right: ${refRight}; bottom: ${BASELINE_PX}px; height: ${SAFE_ZONE_H}px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible;`}>
+                            <div class="ref-vis" style={`position: absolute; right: ${refRight}; bottom: ${BASELINE_PX}px; height: ${SAFE_ZONE_H}px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible; z-index: 2;`}>
                                 <img src="/images/cyber/human_front.webp" alt="HUMAN" class="cyber-hud-specimen" decoding="async" loading="lazy"
                                      style={`height: ${refTotalH}px; width: auto; margin-bottom: -${refBottomOffset}px; flex-shrink: 0; mix-blend-mode: screen !important;`}>
                                 <div class="vis-tag ref-tag" style={`white-space: nowrap; position: absolute; bottom: -58px; display: flex; flex-direction: column; align-items: center; text-align: center;`}>
