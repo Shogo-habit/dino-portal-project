@@ -148,14 +148,14 @@ if (hasComparison) {
     dinoLeft = meta.dinoLeft || `${leftPercent}%`;
     refRight = meta.refRight || `${rightPercent}%`;
 
-    // 3. 恐竜と人間のイラスト同士の距離を算出し、ラベル衝突時は恐竜側を左に退避 (案B)
+    // 3. 恐竜と人間のイラスト同士の距離を算出し、ラベル衝突時は恐竜側を「下」に下げて衝突回避 (縦ずらし案)
     const dinoLeftNum = parseFloat(dinoLeft);
     const refRightNum = parseFloat(refRight);
     const distancePercent = 100 - dinoLeftNum - refRightNum;
 
-    if (distancePercent < 45) { // 距離が45%未満の場合
-        // 左寄せにし、さらに左方向へ40pxスライドさせて完全に衝突を避ける
-        dinoTagStyle = 'white-space: nowrap; position: absolute; bottom: -58px; display: flex; flex-direction: column; align-items: flex-start; text-align: left; transform: translateX(-40px);';
+    if (distancePercent < 45) { // 距離が45%未満で衝突の危険がある場合
+        // 横スライドではなく、縦（下に27px下げる）にずらすことで、左右の見切れを100%防止する
+        dinoTagStyle = 'white-space: nowrap; position: absolute; bottom: -85px; display: flex; flex-direction: column; align-items: center; text-align: center;';
     }
 
     dinoScaleCalculation: {
