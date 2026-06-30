@@ -972,6 +972,7 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    transform-origin: bottom center;
     width: 650px;
     height: 100%;
     background-image: 
@@ -2410,16 +2411,4 @@ body {
   transform: translateX(2px);
 }
 
-/* --- 680px以下でのサイズ比較の等倍自動縮小 --- */
-@media (max-width: 680px) {
-  .size-comparison-panel {
-    height: calc(400px * (100vw - 36px) / 650) !important;
-  }
-  
-  .comparison-stage {
-    left: 0 !important;
-    transform: none !important;
-    width: 650px !important;
-    zoom: calc((100vw - 36px) / 650) !important;
-  }
-}
+

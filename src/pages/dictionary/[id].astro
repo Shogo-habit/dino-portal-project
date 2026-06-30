@@ -221,7 +221,7 @@ const relatedTopics = topics
                     </a>
                 </div>
                 <section class="size-comparison-panel hud-panel">
-                    <div class="comparison-stage">
+                    <div class="comparison-stage" id="dino-comparison-stage">
                         <!-- Dino visual -->
                         <div class="dino-vis" style={`position: absolute; left: ${dinoLeft}; bottom: ${BASELINE_PX}px; height: ${SAFE_ZONE_H}px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible;`}>
                             <img src={`/images/cyber/${d.id}.webp`} alt={d.name} class="cyber-hud-specimen" decoding="async" loading="lazy"
@@ -365,10 +365,38 @@ const relatedTopics = topics
     <AffiliateSection dinoId={d.id} />
 
     <!-- Client-side logic for observed savings & feedback -->
+    <!-- Client-side logic for observed savings & feedback -->
     <script>
         const COLLECTION_KEY = 'dino_portal_saved_observations';
 
+        function resizeComparisonPanel() {
+            const stage = document.getElementById('dino-comparison-stage');
+            if (!stage) return;
+            const panel = stage.parentElement;
+            if (!panel) return;
+            
+            const containerWidth = panel.getBoundingClientRect().width;
+            const baseWidth = 650;
+            const baseHeight = 400;
+            
+            if (containerWidth < baseWidth) {
+                const scale = containerWidth / baseWidth;
+                stage.style.transform = `translateX(-50%) scale(${scale})`;
+                stage.style.transformOrigin = 'bottom center';
+                stage.style.left = '50%';
+                panel.style.height = `${baseHeight * scale}px`;
+            } else {
+                stage.style.transform = 'translateX(-50%) scale(1)';
+                stage.style.transformOrigin = 'bottom center';
+                stage.style.left = '50%';
+                panel.style.height = `${baseHeight}px`;
+            }
+        }
+
         function initSpecimenDetail() {
+            // Execute scaling calculation on initialization
+            resizeComparisonPanel();
+
             const saveBtn = document.getElementById('observe-save-btn');
             if (!saveBtn) return;
 
@@ -428,8 +456,15 @@ const relatedTopics = topics
             }
         }
 
+        // Bind resize event safely
+        window.removeEventListener('resize', resizeComparisonPanel);
+        window.addEventListener('resize', resizeComparisonPanel);
+
         // Bind on page load / page changes
-        document.addEventListener('astro:page-load', initSpecimenDetail);
+        document.addEventListener('astro:page-load', () => {
+            initSpecimenDetail();
+            resizeComparisonPanel();
+        });
     </script>
 </Layout>
 
