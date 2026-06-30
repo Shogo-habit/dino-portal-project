@@ -2112,6 +2112,16 @@ body {
     padding: 20px 15px; /* モバイルでは余白を狭める */
   }
 
+  /* ページ余白を打ち消して比較パネルを画面幅いっぱいに広げる */
+  .size-comparison-panel {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+    width: calc(100% + 30px) !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0 !important;
+  }
+
   /* --- 共通ヘッダー & ナビゲーション --- */
   .main-header {
     flex-direction: column;
