@@ -431,9 +431,28 @@ const relatedTopics = topics
             
             const wrapper = panel.closest('.detail-comparison') || panel;
             let containerWidth = wrapper.getBoundingClientRect().width;
+            
             if (window.innerWidth <= 1024) {
+                // モバイル縮小時：JSから強制的に全幅化インラインスタイルを適用
+                panel.style.setProperty('margin-left', '-15px', 'important');
+                panel.style.setProperty('margin-right', '-15px', 'important');
+                panel.style.setProperty('width', 'calc(100% + 30px)', 'important');
+                panel.style.setProperty('border-left', 'none', 'important');
+                panel.style.setProperty('border-right', 'none', 'important');
+                panel.style.setProperty('border-radius', '0', 'important');
+                
+                // 縮尺の計算幅も全幅に補正
                 containerWidth += 30;
+            } else {
+                // PC大画面時：スタイルをクリア
+                panel.style.removeProperty('margin-left');
+                panel.style.removeProperty('margin-right');
+                panel.style.removeProperty('width');
+                panel.style.removeProperty('border-left');
+                panel.style.removeProperty('border-right');
+                panel.style.removeProperty('border-radius');
             }
+            
             const baseWidth = 650;
             const baseHeight = 400;
             
