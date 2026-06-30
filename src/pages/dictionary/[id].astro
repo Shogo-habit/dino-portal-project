@@ -220,8 +220,8 @@ const relatedTopics = topics
                         [ シミュレータで他と比較する ] &raquo;
                     </a>
                 </div>
-                <section class="size-comparison-panel hud-panel" style="position: relative; height: 400px; overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch;">
-                    <div class="comparison-stage" style="position: absolute; width: 100%; min-width: 650px; height: 100%; bottom: 0; left: 0;">
+                <section class="size-comparison-panel hud-panel">
+                    <div class="comparison-stage">
                         <!-- Dino visual -->
                         <div class="dino-vis" style={`position: absolute; left: ${dinoLeft}; bottom: ${BASELINE_PX}px; height: ${SAFE_ZONE_H}px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible;`}>
                             <img src={`/images/cyber/${d.id}.webp`} alt={d.name} class="cyber-hud-specimen" decoding="async" loading="lazy"

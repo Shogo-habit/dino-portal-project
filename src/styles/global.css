@@ -963,7 +963,12 @@ body {
 }
 
 .comparison-stage {
-    height: 400px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 650px;
+    height: 100%;
     background-image: 
         linear-gradient(rgba(0, 242, 255, 0.2) 1.5px, transparent 1.5px),
         linear-gradient(90deg, rgba(0, 242, 255, 0.2) 1.5px, transparent 1.5px),
@@ -971,7 +976,6 @@ body {
         linear-gradient(90deg, rgba(0, 242, 255, 0.05) 1px, transparent 1px);
     background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
     border: 1px solid rgba(0, 242, 255, 0.15);
-    position: relative;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -2401,5 +2405,16 @@ body {
   transform: translateX(2px);
 }
 
-
-
+/* --- 650px以下でのサイズ比較の等倍自動縮小 --- */
+@media (max-width: 650px) {
+  .size-comparison-panel {
+    height: calc(400px * (100vw - 30px) / 650) !important;
+  }
+  
+  .comparison-stage {
+    left: 0 !important;
+    transform: none !important;
+    width: 650px !important;
+    zoom: calc((100vw - 30px) / 650) !important;
+  }
+}
