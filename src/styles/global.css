@@ -476,34 +476,28 @@ body {
 .detail-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "visual header"
-    "visual body"
-    "comparison body"
-    "comparison specs-basic"
-    "comparison traits";
-  grid-auto-rows: min-content;
   align-items: start;
   gap: 40px;
 }
 
 .detail-layout.no-comparison {
-  grid-template-areas:
-    "visual header"
-    "visual body"
-    "visual specs-basic"
-    "visual traits";
-  grid-auto-rows: min-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: start;
   gap: 40px;
 }
 
-.detail-header { grid-area: header; }
-.detail-main-visual { grid-area: visual; }
-.detail-content-body { grid-area: body; }
-.detail-specs-basic { grid-area: specs-basic; }
-.detail-traits { grid-area: traits; }
-.detail-comparison { grid-area: comparison; }
+.detail-visual-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.detail-data {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 
 .detail-img-viewer {
   position: relative;
@@ -2244,6 +2238,18 @@ body {
     flex-direction: column;
     gap: 25px;
   }
+
+  .detail-visual-column,
+  .detail-data {
+    display: contents !important;
+  }
+
+  .detail-header { order: 1; }
+  .detail-main-visual { order: 2; }
+  .detail-content-body { order: 3; }
+  .detail-specs-basic { order: 4; }
+  .detail-comparison { order: 5; }
+  .detail-traits { order: 6; }
 
   .detail-img-viewer {
     height: 320px;

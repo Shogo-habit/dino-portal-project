@@ -157,209 +157,216 @@ const relatedTopics = topics
 
 <Layout title={`${d.name} | Specimen Analysis | Dino-Portal`} activeTab="dictionary" description={`${d.name} (${d.scientificName}) の生物学的特性、出現年代、生息地、サイズ比較スケールデータ。`} ogImage={`/${d.image}`} schema={schema}>
     <article class={`detail-layout ${!hasComparison ? 'no-comparison' : ''}`}>
-        <!-- 1. 恐竜名 & 学名 & 保存ボタン (header) -->
-        <header class="detail-header">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
-                <div>
-                    <h1 class="detail-title">{d.name}</h1>
-                    <p class="detail-scientific">[ {d.scientificName} ]</p>
-                </div>
-                <button class="save-btn" id="observe-save-btn" aria-label="図鑑に保存" data-id={d.id}>
-                    + 観測データに保存
-                </button>
-            </div>
-        </header>
-
-        <!-- 2. メインイラスト (visual) -->
-        <div class="detail-main-visual">
-            <div class="detail-img-viewer hud-panel" style="margin-bottom: 30px;">
-                <div class="hud-corner top-left"></div>
-                <div class="hud-corner bottom-right"></div>
-                <div class="scan-line-ani"></div>
-                <img src={`/${d.image}`} alt={d.name} fetchpriority="high" decoding="async" width="800" height="533" style="max-width: 100%; max-height: 100%; height: auto; display: block; object-fit: contain;">
-                <div style="position: absolute; bottom: 10px; right: 10px; font-family: var(--font-mono); font-size: 10px; color: var(--primary-neon);">
-                    IMG_SEC_ENCRYPTED: {d.id.toUpperCase()}
-                </div>
-            </div>
-        </div>
-
-        <!-- 3. 解説 (body) -->
-        <div class="detail-content-body">
-            <section class="hud-panel" style="margin-bottom: 30px;">
-                <p style="line-height: 1.8; font-size: 14px;">{d.description}</p>
-            </section>
-
-            <section class="hud-panel" style="margin-bottom: 30px; padding: 25px; border-color: rgba(0, 242, 255, 0.15); position: relative;">
-                <div class="hud-corner top-left" style="border-top-color: rgba(0, 242, 255, 0.3); border-left-color: rgba(0, 242, 255, 0.3);"></div>
-                <div class="hud-corner bottom-right" style="border-bottom-color: rgba(0, 242, 255, 0.3); border-right-color: rgba(0, 242, 255, 0.3);"></div>
-                <h4 style="border-bottom: 1px solid var(--panel-border); padding-bottom: 10px; margin-bottom: 15px; color: var(--primary-neon); font-size: 14px; font-family: var(--font-mono); letter-spacing: 1px;">
-                    [ 詳細解説 ]
-                </h4>
-                <div class="archival-content" style="line-height: 1.9; font-size: 14px; color: var(--text-main); text-align: justify;">
-                    <Content />
-                </div>
-            </section>
-        </div>
-
-        <!-- 4. 基本スペック (specs-basic) -->
-        <div class="detail-specs-basic">
-            <div class="spec-panel">
-                <div class="spec-item"><span class="spec-label">生息年代</span><br>{d.era}</div>
-                <div class="spec-item"><span class="spec-label">出現地域</span><br>{d.region}</div>
-                <div class="spec-item"><span class="spec-label">全長</span><br>{d.length}</div>
-                <div class="spec-item"><span class="spec-label">推定体重</span><br>{d.weight}</div>
-            </div>
-        </div>
-
-        <!-- 5. サイズ比較パネル (comparison) -->
-        {hasComparison && (
-            <div class="detail-comparison">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 0 5px;">
-                    <h4 style="color: var(--primary-neon); margin: 0; white-space: nowrap;">サイズ比較</h4>
-                    <a href="/size-comparison/" style="font-size: 11px; color: var(--secondary-neon); text-decoration: none; font-family: var(--font-mono); font-weight: bold; transition: opacity 0.3s; white-space: nowrap;">
-                        [ シミュレータで他と比較する ] &raquo;
-                    </a>
-                </div>
-                <section class="size-comparison-panel hud-panel">
-                    <div class="comparison-stage" id="dino-comparison-stage">
-                        <!-- Dino visual -->
-                        <div class="dino-vis" style={`position: absolute; left: ${dinoLeft}; bottom: ${BASELINE_PX}px; height: ${SAFE_ZONE_H}px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible;`}>
-                            <img src={`/images/cyber/${d.id}.webp`} alt={d.name} class="cyber-hud-specimen" decoding="async" loading="lazy"
-                                 style={`height: ${dinoTotalH}px; width: auto; margin-bottom: -${dinoBottomOffset}px; flex-shrink: 0; mix-blend-mode: screen !important;`}>
-                            <div class="vis-tag dino-tag" style={`white-space: nowrap; position: absolute; bottom: -58px; display: flex; flex-direction: column; align-items: center; text-align: center;`}>
-                                <span>{d.name}</span>
-                                <span style="font-size: 9.5px; opacity: 0.8; margin-top: 1px;">高さ {formatVal(d.cyberMetadata?.realHeight || 0)}m（全長 {d.length}）</span>
-                            </div>
-                        </div>
-                        <!-- Human reference -->
-                        <div class="ref-vis" style={`position: absolute; right: ${refRight}; bottom: ${BASELINE_PX}px; height: ${SAFE_ZONE_H}px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible;`}>
-                            <img src="/images/cyber/human_front.webp" alt="HUMAN" class="cyber-hud-specimen" decoding="async" loading="lazy"
-                                 style={`height: ${refTotalH}px; width: auto; margin-bottom: -${refBottomOffset}px; flex-shrink: 0; mix-blend-mode: screen !important;`}>
-                            <div class="vis-tag ref-tag" style={`white-space: nowrap; position: absolute; bottom: -58px; display: flex; flex-direction: column; align-items: center; text-align: center;`}>
-                                <span>人間</span>
-                                <span style="font-size: 9.5px; opacity: 0.8; margin-top: 1px;">高さ 1.7m</span>
-                            </div>
-                        </div>
+        <!-- 左カラム (ビジュアル系) -->
+        <div class="detail-visual-column">
+            <!-- 2. メインイラスト (visual) -->
+            <div class="detail-main-visual">
+                <div class="detail-img-viewer hud-panel" style="margin-bottom: 30px;">
+                    <div class="hud-corner top-left"></div>
+                    <div class="hud-corner bottom-right"></div>
+                    <div class="scan-line-ani"></div>
+                    <img src={`/${d.image}`} alt={d.name} fetchpriority="high" decoding="async" width="800" height="533" style="max-width: 100%; max-height: 100%; height: auto; display: block; object-fit: contain;">
+                    <div style="position: absolute; bottom: 10px; right: 10px; font-family: var(--font-mono); font-size: 10px; color: var(--primary-neon);">
+                        IMG_SEC_ENCRYPTED: {d.id.toUpperCase()}
                     </div>
+                </div>
+            </div>
+
+            <!-- 5. サイズ比較パネル (comparison) -->
+            {hasComparison && (
+                <div class="detail-comparison">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 0 5px;">
+                        <h4 style="color: var(--primary-neon); margin: 0; white-space: nowrap;">サイズ比較</h4>
+                        <a href="/size-comparison/" style="font-size: 11px; color: var(--secondary-neon); text-decoration: none; font-family: var(--font-mono); font-weight: bold; transition: opacity 0.3s; white-space: nowrap;">
+                            [ シミュレータで他と比較する ] &raquo;
+                        </a>
+                    </div>
+                    <section class="size-comparison-panel hud-panel">
+                        <div class="comparison-stage" id="dino-comparison-stage">
+                            <!-- Dino visual -->
+                            <div class="dino-vis" style={`position: absolute; left: ${dinoLeft}; bottom: ${BASELINE_PX}px; height: ${SAFE_ZONE_H}px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible;`}>
+                                <img src={`/images/cyber/${d.id}.webp`} alt={d.name} class="cyber-hud-specimen" decoding="async" loading="lazy"
+                                     style={`height: ${dinoTotalH}px; width: auto; margin-bottom: -${dinoBottomOffset}px; flex-shrink: 0; mix-blend-mode: screen !important;`}>
+                                <div class="vis-tag dino-tag" style={`white-space: nowrap; position: absolute; bottom: -58px; display: flex; flex-direction: column; align-items: center; text-align: center;`}>
+                                    <span>{d.name}</span>
+                                    <span style="font-size: 9.5px; opacity: 0.8; margin-top: 1px;">高さ {formatVal(d.cyberMetadata?.realHeight || 0)}m（全長 {d.length}）</span>
+                                </div>
+                            </div>
+                            <!-- Human reference -->
+                            <div class="ref-vis" style={`position: absolute; right: ${refRight}; bottom: ${BASELINE_PX}px; height: ${SAFE_ZONE_H}px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible;`}>
+                                <img src="/images/cyber/human_front.webp" alt="HUMAN" class="cyber-hud-specimen" decoding="async" loading="lazy"
+                                     style={`height: ${refTotalH}px; width: auto; margin-bottom: -${refBottomOffset}px; flex-shrink: 0; mix-blend-mode: screen !important;`}>
+                                <div class="vis-tag ref-tag" style={`white-space: nowrap; position: absolute; bottom: -58px; display: flex; flex-direction: column; align-items: center; text-align: center;`}>
+                                    <span>人間</span>
+                                    <span style="font-size: 9.5px; opacity: 0.8; margin-top: 1px;">高さ 1.7m</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            )}
+        </div>
+
+        <!-- 右カラム (テキストデータ系) -->
+        <div class="detail-data">
+            <!-- 1. 恐竜名 & 学名 & 保存ボタン (header) -->
+            <header class="detail-header">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
+                    <div>
+                        <h1 class="detail-title">{d.name}</h1>
+                        <p class="detail-scientific">[ {d.scientificName} ]</p>
+                    </div>
+                    <button class="save-btn" id="observe-save-btn" aria-label="図鑑に保存" data-id={d.id}>
+                        + 観測データに保存
+                    </button>
+                </div>
+            </header>
+
+            <!-- 3. 解説 (body) -->
+            <div class="detail-content-body">
+                <section class="hud-panel" style="margin-bottom: 30px;">
+                    <p style="line-height: 1.8; font-size: 14px;">{d.description}</p>
                 </section>
-            </div>
-        )}
 
-        <!-- 6. 特性解析 & その他 (traits) -->
-        <div class="detail-traits">
-            <div class="trait-bar-wrap" style="margin-top: 30px;">
-                <h4 style="border-bottom: 1px solid var(--panel-border); padding-bottom: 10px;">生物学的特性解析</h4>
-                {d.bioTraits.map(t => (
-                    <div class="trait-row" style="margin-bottom: 15px;">
-                        <div class="trait-label-row" style="display: flex; justify-content: space-between; margin-bottom: 5px;">
-                            <span class="trait-name" style="font-weight: bold; color: var(--text-main);">{t.trait}</span>
-                            <span class="trait-val" style="color: var(--secondary-neon); font-family: var(--font-mono);">{t.value}</span>
-                        </div>
-                        <div style="font-size: 13px; color: var(--text-dim); border-left: 2px solid var(--primary-neon); padding-left: 10px;">
-                            {t.detail}
-                        </div>
-                    </div>
-                ))}
-            </div>
-
-            <!-- Dynamic FAQ Section for GEO -->
-            <div class="geo-faq-section" style="margin-top: 30px;" itemscope itemtype="https://schema.org/FAQPage">
-                <h4 style="color: var(--primary-neon); margin-bottom: 15px;">よくある質問と回答 (FAQ)</h4>
-                {faqs.map((faq, idx) => (
-                    <details class="faq-item hud-panel" open={idx === 0} style="margin-bottom: 10px;" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-                        <summary class="faq-summary" style="cursor: pointer; padding: 10px; color: var(--primary-neon); font-weight: bold;" itemprop="name">{faq.q}</summary>
-                        <div class="faq-content" style="padding: 10px; line-height: 1.6; border-top: 1px solid var(--panel-border);" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                            <span itemprop="text">{faq.a}</span>
-                        </div>
-                    </details>
-                ))}
-            </div>
-            
-            <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--panel-border); padding-top: 20px; gap: 20px; flex-wrap: wrap;">
-                <a href="/dictionary/" class="nav-link" aria-label="アーカイブ一覧に戻る" style="text-decoration: none;">[ アーカイブに戻る ]</a>
-                
-                <div class="feedback-container" id="feedback-detail" style="display: flex; align-items: center; gap: 10px;">
-                    <span style="font-size: 11px; color: var(--text-dim); font-family: var(--font-mono);">
-                        期待したデータは得られましたか？
-                    </span>
-                    <button class="feedback-btn" id="feedback-yes" aria-label="はい">YES</button>
-                    <button class="feedback-btn" id="feedback-no" aria-label="いいえ">NO</button>
-                    <div class="feedback-msg" id="msg-detail" style="font-size: 11px; color: var(--secondary-neon); font-family: var(--font-mono); opacity: 0; transition: opacity 0.3s ease; position: absolute; margin-top: 25px;"></div>
-                </div>
-            </div>
-
-            <!-- Scientific References Section (E-E-A-T) -->
-            {d.references && d.references.length > 0 && (
-                <section class="references-panel hud-panel" style="margin-top: 40px; padding: 25px; border-color: rgba(0, 242, 255, 0.15); position: relative;">
+                <section class="hud-panel" style="margin-bottom: 30px; padding: 25px; border-color: rgba(0, 242, 255, 0.15); position: relative;">
                     <div class="hud-corner top-left" style="border-top-color: rgba(0, 242, 255, 0.3); border-left-color: rgba(0, 242, 255, 0.3);"></div>
                     <div class="hud-corner bottom-right" style="border-bottom-color: rgba(0, 242, 255, 0.3); border-right-color: rgba(0, 242, 255, 0.3);"></div>
                     <h4 style="border-bottom: 1px solid var(--panel-border); padding-bottom: 10px; margin-bottom: 15px; color: var(--primary-neon); font-size: 14px; font-family: var(--font-mono); letter-spacing: 1px;">
-                        [ 学術参考文献 ]
+                        [ 詳細解説 ]
                     </h4>
-                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px;">
-                        {d.references.map((ref: any) => (
-                            <li style="border-left: 2px solid var(--primary-neon); padding-left: 15px;">
-                                <div style="font-weight: bold; color: var(--text-main); font-size: 14px;">{ref.title}</div>
-                                <div style="font-size: 12px; color: var(--text-dim); margin-top: 4px;">
-                                    <span>{ref.journal}</span> &bull; <span>{ref.year}</span>
-                                </div>
-                                <a href={ref.url} target="_blank" rel="noopener noreferrer" style="display: inline-block; font-size: 11px; color: var(--primary-neon); text-decoration: none; margin-top: 6px; font-family: var(--font-mono);">
-                                    [ 論文・文献リンク ] &raquo;
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
+                    <div class="archival-content" style="line-height: 1.9; font-size: 14px; color: var(--text-main); text-align: justify;">
+                        <Content />
+                    </div>
                 </section>
-            )}
+            </div>
 
-            <!-- Related Topics Section -->
-            {relatedTopics.length > 0 && (
-                <section class="related-topics" style="margin-top: 40px; border-top: 1px solid var(--panel-border); padding-top: 30px;">
-                    <h3 class="related-title" style="font-family: var(--font-mono); font-size: 14px; color: var(--primary-neon); margin-bottom: 20px; letter-spacing: 1px;">
-                        [ 関連する特集・記事 ]
-                    </h3>
-                    <div class="topics-simple-list" style="display: flex; flex-direction: column; gap: 15px;">
-                        {relatedTopics.map(t => (
-                            <a href={`/topics/${t.id}/`} style="text-decoration: none; color: inherit; display: block;">
-                                <div class="related-topic-card hud-panel" style="cursor: pointer; display: flex; gap: 15px; align-items: center; padding: 15px; border-color: rgba(0, 242, 255, 0.15); transition: all 0.3s ease;">
-                                    <div class="topic-mini-thumb" style="width: 80px; height: 50px; flex-shrink: 0; background-color: #000; border: 1px solid var(--panel-border); overflow: hidden;">
-                                        <img src={`/${t.image}`} alt={t.title} width="80" height="50" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+            <!-- 4. 基本スペック (specs-basic) -->
+            <div class="detail-specs-basic">
+                <div class="spec-panel">
+                    <div class="spec-item"><span class="spec-label">生息年代</span><br>{d.era}</div>
+                    <div class="spec-item"><span class="spec-label">出現地域</span><br>{d.region}</div>
+                    <div class="spec-item"><span class="spec-label">全長</span><br>{d.length}</div>
+                    <div class="spec-item"><span class="spec-label">推定体重</span><br>{d.weight}</div>
+                </div>
+            </div>
+
+            <!-- 6. 特性解析 & その他 (traits) -->
+            <div class="detail-traits">
+                <div class="trait-bar-wrap" style="margin-top: 30px;">
+                    <h4 style="border-bottom: 1px solid var(--panel-border); padding-bottom: 10px;">生物学的特性解析</h4>
+                    {d.bioTraits.map(t => (
+                        <div class="trait-row" style="margin-bottom: 15px;">
+                            <div class="trait-label-row" style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                                <span class="trait-name" style="font-weight: bold; color: var(--text-main);">{t.trait}</span>
+                                <span class="trait-val" style="color: var(--secondary-neon); font-family: var(--font-mono);">{t.value}</span>
+                            </div>
+                            <div style="font-size: 13px; color: var(--text-dim); border-left: 2px solid var(--primary-neon); padding-left: 10px;">
+                                {t.detail}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+                <!-- Dynamic FAQ Section for GEO -->
+                <div class="geo-faq-section" style="margin-top: 30px;" itemscope itemtype="https://schema.org/FAQPage">
+                    <h4 style="color: var(--primary-neon); margin-bottom: 15px;">よくある質問と回答 (FAQ)</h4>
+                    {faqs.map((faq, idx) => (
+                        <details class="faq-item hud-panel" open={idx === 0} style="margin-bottom: 10px;" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                            <summary class="faq-summary" style="cursor: pointer; padding: 10px; color: var(--primary-neon); font-weight: bold;" itemprop="name">{faq.q}</summary>
+                            <div class="faq-content" style="padding: 10px; line-height: 1.6; border-top: 1px solid var(--panel-border);" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                <span itemprop="text">{faq.a}</span>
+                            </div>
+                        </details>
+                    ))}
+                </div>
+                
+                <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--panel-border); padding-top: 20px; gap: 20px; flex-wrap: wrap;">
+                    <a href="/dictionary/" class="nav-link" aria-label="アーカイブ一覧に戻る" style="text-decoration: none;">[ アーカイブに戻る ]</a>
+                    
+                    <div class="feedback-container" id="feedback-detail" style="display: flex; align-items: center; gap: 10px;">
+                        <span style="font-size: 11px; color: var(--text-dim); font-family: var(--font-mono);">
+                            期待したデータは得られましたか？
+                        </span>
+                        <button class="feedback-btn" id="feedback-yes" aria-label="はい">YES</button>
+                        <button class="feedback-btn" id="feedback-no" aria-label="いいえ">NO</button>
+                        <div class="feedback-msg" id="msg-detail" style="font-size: 11px; color: var(--secondary-neon); font-family: var(--font-mono); opacity: 0; transition: opacity 0.3s ease; position: absolute; margin-top: 25px;"></div>
+                    </div>
+                </div>
+
+                <!-- Scientific References Section (E-E-A-T) -->
+                {d.references && d.references.length > 0 && (
+                    <section class="references-panel hud-panel" style="margin-top: 40px; padding: 25px; border-color: rgba(0, 242, 255, 0.15); position: relative;">
+                        <div class="hud-corner top-left" style="border-top-color: rgba(0, 242, 255, 0.3); border-left-color: rgba(0, 242, 255, 0.3);"></div>
+                        <div class="hud-corner bottom-right" style="border-bottom-color: rgba(0, 242, 255, 0.3); border-right-color: rgba(0, 242, 255, 0.3);"></div>
+                        <h4 style="border-bottom: 1px solid var(--panel-border); padding-bottom: 10px; margin-bottom: 15px; color: var(--primary-neon); font-size: 14px; font-family: var(--font-mono); letter-spacing: 1px;">
+                            [ 学術参考文献 ]
+                        </h4>
+                        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px;">
+                            {d.references.map((ref: any) => (
+                                <li style="border-left: 2px solid var(--primary-neon); padding-left: 15px;">
+                                    <div style="font-weight: bold; color: var(--text-main); font-size: 14px;">{ref.title}</div>
+                                    <div style="font-size: 12px; color: var(--text-dim); margin-top: 4px;">
+                                        <span>{ref.journal}</span> &bull; <span>{ref.year}</span>
                                     </div>
-                                    <div style="flex: 1;">
-                                        <div style="font-size: 10px; color: var(--primary-neon); font-family: var(--font-mono); margin-bottom: 3px;">
-                                            {t.date} | {t.category}
+                                    <a href={ref.url} target="_blank" rel="noopener noreferrer" style="display: inline-block; font-size: 11px; color: var(--primary-neon); text-decoration: none; margin-top: 6px; font-family: var(--font-mono);">
+                                        [ 論文・文献リンク ] &raquo;
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </section>
+                )}
+
+                <!-- Related Topics Section -->
+                {relatedTopics.length > 0 && (
+                    <section class="related-topics" style="margin-top: 40px; border-top: 1px solid var(--panel-border); padding-top: 30px;">
+                        <h3 class="related-title" style="font-family: var(--font-mono); font-size: 14px; color: var(--primary-neon); margin-bottom: 20px; letter-spacing: 1px;">
+                            [ 関連する特集・記事 ]
+                        </h3>
+                        <div class="topics-simple-list" style="display: flex; flex-direction: column; gap: 15px;">
+                            {relatedTopics.map(t => (
+                                <a href={`/topics/${t.id}/`} style="text-decoration: none; color: inherit; display: block;">
+                                    <div class="related-topic-card hud-panel" style="cursor: pointer; display: flex; gap: 15px; align-items: center; padding: 15px; border-color: rgba(0, 242, 255, 0.15); transition: all 0.3s ease;">
+                                        <div class="topic-mini-thumb" style="width: 80px; height: 50px; flex-shrink: 0; background-color: #000; border: 1px solid var(--panel-border); overflow: hidden;">
+                                            <img src={`/${t.image}`} alt={t.title} width="80" height="50" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
                                         </div>
-                                        <h4 style="font-size: 14px; margin: 0; color: var(--text-main); font-weight: 500;">{t.title}</h4>
+                                        <div style="flex: 1;">
+                                            <div style="font-size: 10px; color: var(--primary-neon); font-family: var(--font-mono); margin-bottom: 3px;">
+                                                {t.date} | {t.category}
+                                            </div>
+                                            <h4 style="font-size: 14px; margin: 0; color: var(--text-main); font-weight: 500;">{t.title}</h4>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        ))}
-                    </div>
-                </section>
-            )}
+                                </a>
+                            ))}
+                        </div>
+                    </section>
+                )}
 
-            <!-- Related Specimens Section -->
-            {relatedSpecimens.length > 0 && (
-                <section class="related-specimens" style="margin-top: 60px;">
-                    <h3 class="related-title" style="border-bottom: 1px solid var(--panel-border); padding-bottom: 10px; margin-bottom: 20px;">
-                        関連する標本データ (時代/地域に基づく選出)
-                    </h3>
-                    <div class="related-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 15px;">
-                        {relatedSpecimens.map(item => (
-                            <a href={`/dictionary/${item.id}/`} style="text-decoration: none; color: inherit;">
-                                <div class="related-card hud-panel" style="cursor: pointer; height: 100%;">
-                                    <div class="related-img-wrap" style="width: 100%; height: auto; aspect-ratio: 4/3; overflow: hidden; position: relative; background: #000;">
-                                        <img src={`/${item.image}`} alt={item.name} width="160" height="120" loading="lazy" decoding="async" style="width: 100%; height: 100%; display: block; object-fit: cover;">
+                <!-- Related Specimens Section -->
+                {relatedSpecimens.length > 0 && (
+                    <section class="related-specimens" style="margin-top: 60px;">
+                        <h3 class="related-title" style="border-bottom: 1px solid var(--panel-border); padding-bottom: 10px; margin-bottom: 20px;">
+                            関連する標本データ (時代/地域に基づく選出)
+                        </h3>
+                        <div class="related-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 15px;">
+                            {relatedSpecimens.map(item => (
+                                <a href={`/dictionary/${item.id}/`} style="text-decoration: none; color: inherit;">
+                                    <div class="related-card hud-panel" style="cursor: pointer; height: 100%;">
+                                        <div class="related-img-wrap" style="width: 100%; height: auto; aspect-ratio: 4/3; overflow: hidden; position: relative; background: #000;">
+                                            <img src={`/${item.image}`} alt={item.name} width="160" height="120" loading="lazy" decoding="async" style="width: 100%; height: 100%; display: block; object-fit: cover;">
+                                        </div>
+                                        <h4 class="related-name" style="font-size: 12px; margin: 8px 0 4px 0; color: var(--text-main);">{item.name}</h4>
+                                        <div class="related-meta" style="font-size: 9px; color: var(--text-dim);">{item.era} / {item.region}</div>
                                     </div>
-                                    <h4 class="related-name" style="font-size: 12px; margin: 8px 0 4px 0; color: var(--text-main);">{item.name}</h4>
-                                    <div class="related-meta" style="font-size: 9px; color: var(--text-dim);">{item.era} / {item.region}</div>
-                                </div>
-                            </a>
-                        ))}
-                    </div>
-                </section>
-            )}
+                                </a>
+                            ))}
+                        </div>
+                    </section>
+                )}
+            </div>
         </div>
+    </article>
 
     <!-- Affiliate Product recommendation section -->
     <AffiliateSection dinoId={d.id} />
@@ -374,7 +381,8 @@ const relatedTopics = topics
             const panel = stage.parentElement;
             if (!panel) return;
             
-            const containerWidth = panel.getBoundingClientRect().width;
+            const wrapper = panel.closest('.detail-comparison') || panel;
+            const containerWidth = wrapper.getBoundingClientRect().width;
             const baseWidth = 650;
             const baseHeight = 400;
             
