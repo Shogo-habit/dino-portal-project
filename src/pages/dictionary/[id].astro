@@ -365,7 +365,6 @@ const relatedTopics = topics
     <AffiliateSection dinoId={d.id} />
 
     <!-- Client-side logic for observed savings & feedback -->
-    <!-- Client-side logic for observed savings & feedback -->
     <script>
         const COLLECTION_KEY = 'dino_portal_saved_observations';
 
@@ -381,14 +380,18 @@ const relatedTopics = topics
             
             if (containerWidth < baseWidth) {
                 const scale = containerWidth / baseWidth;
+                stage.style.width = `${baseWidth}px`;
+                stage.style.height = `${baseHeight}px`;
+                stage.style.left = '50%';
                 stage.style.transform = `translateX(-50%) scale(${scale})`;
                 stage.style.transformOrigin = 'bottom center';
-                stage.style.left = '50%';
                 panel.style.height = `${baseHeight * scale}px`;
             } else {
-                stage.style.transform = 'translateX(-50%) scale(1)';
+                stage.style.width = '100%';
+                stage.style.height = `${baseHeight}px`;
+                stage.style.left = '0';
+                stage.style.transform = 'none';
                 stage.style.transformOrigin = 'bottom center';
-                stage.style.left = '50%';
                 panel.style.height = `${baseHeight}px`;
             }
         }
