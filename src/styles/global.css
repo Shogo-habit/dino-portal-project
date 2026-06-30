@@ -2114,9 +2114,9 @@ body {
 
   /* ページ余白を打ち消して比較パネルを画面幅いっぱいに広げる */
   .size-comparison-panel {
-    margin-left: -15px !important;
-    margin-right: -15px !important;
-    width: calc(100% + 30px) !important;
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: calc(50% - 50vw) !important;
+    width: 100vw !important;
     border-left: none !important;
     border-right: none !important;
     border-radius: 0 !important;

@@ -433,18 +433,18 @@ const relatedTopics = topics
             let containerWidth = wrapper.getBoundingClientRect().width;
             
             if (window.innerWidth <= 1024) {
-                // モバイル縮小時：JSから強制的に全幅化インラインスタイルを適用
-                panel.style.setProperty('margin-left', '-15px', 'important');
-                panel.style.setProperty('margin-right', '-15px', 'important');
-                panel.style.setProperty('width', 'calc(100% + 30px)', 'important');
+                // モバイル縮小時：100vw（画面全体の横幅）に強制固定するインラインスタイルを適用
+                panel.style.setProperty('margin-left', 'calc(50% - 50vw)', 'important');
+                panel.style.setProperty('margin-right', 'calc(50% - 50vw)', 'important');
+                panel.style.setProperty('width', '100vw', 'important');
                 panel.style.setProperty('border-left', 'none', 'important');
                 panel.style.setProperty('border-right', 'none', 'important');
                 panel.style.setProperty('border-radius', '0', 'important');
                 
-                // 縮尺の計算幅も全幅に補正
-                containerWidth += 30;
+                // 縮尺の計算幅として、画面幅そのもの（window.innerWidth）を直接使用
+                containerWidth = window.innerWidth;
             } else {
-                // PC大画面時：スタイルをクリア
+                // PC大画面時：スタイルをクリアして元のグリッド幅に戻す
                 panel.style.removeProperty('margin-left');
                 panel.style.removeProperty('margin-right');
                 panel.style.removeProperty('width');
