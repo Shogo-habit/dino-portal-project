@@ -111,30 +111,18 @@ if (hasComparison) {
     const realL = meta.realLength || parseFloat(d.length);
     const ref = REFERENCE_ASSETS.HUMAN;
 
-    const aspectRatio = realL / realH; // 横長度合い
-
-    // デフォルトの制限係数
-    let widthLimitFactor = 0.85;
-    
-    // アスペクト比が2.0以上の横長恐竜に対して、幅制限を大幅に緩和して横幅をフルに活用する
-    if (aspectRatio > 2.8) {
-        widthLimitFactor = 1.15; // 左右端ギリギリ（はみ出しや人間との重なりを許容）
-    } else if (aspectRatio > 2.0) {
-        widthLimitFactor = 1.0;
-    }
-
-    // 高さ92%、幅は緩和された制限を適用 (見切れを防止しつつ最大化)
-    const maxPxPerMeterH = (SAFE_ZONE_H * 0.92) / realH;
-    const maxPxPerMeterL = (SAFE_ZONE_W * widthLimitFactor) / realL;
+    // 1. セーフゾーンの高さ90%、幅85%以内に必ず収まる元の最大比率を算出 (通常時の見切れを完全に防ぐ)
+    const maxPxPerMeterH = (SAFE_ZONE_H * 0.9) / realH;
+    const maxPxPerMeterL = (SAFE_ZONE_W * 0.85) / realL;
     let pxPerMeter = Math.min(maxPxPerMeterH, maxPxPerMeterL);
     
     // zoomがある場合は乗算
     const zoom = meta.zoom || 1.0;
     pxPerMeter = pxPerMeter * zoom;
     
-    // zoom適用後も絶対上限（高さ95%、幅は緩和上限）を越えないように安全クランプ
-    const absoluteMaxH = (SAFE_ZONE_H * 0.95) / realH;
-    const absoluteMaxL = (SAFE_ZONE_W * (widthLimitFactor + 0.05)) / realL;
+    // zoom適用後も絶対上限（高さ92%、幅88%）を越えないように安全クランプ
+    const absoluteMaxH = (SAFE_ZONE_H * 0.92) / realH;
+    const absoluteMaxL = (SAFE_ZONE_W * 0.88) / realL;
     pxPerMeter = Math.min(pxPerMeter, absoluteMaxH, absoluteMaxL);
 
     // 小さい生物用の最小縮尺調整 (人間が巨大化しすぎるのを防ぐ)
@@ -143,39 +131,21 @@ if (hasComparison) {
         pxPerMeter = Math.min(pxPerMeter, humanTargetH / ref.realHeight);
     }
     
-    // 2. 恐竜の描画サイズ（幅）に応じて、配置位置を動的に決定
+    // 2. 配置位置を通常時の美しいデフォルト値に戻す
     const dinoDrawW = realL * pxPerMeter;
     let leftPercent = 15;
     let rightPercent = 15;
     
     if (dinoDrawW > 350) {
-        leftPercent = 2; // 端から2%まで寄せて描画幅を稼ぐ
-        rightPercent = 2;
+        leftPercent = 5; // 元の5%に戻す
+        rightPercent = 5;
     } else if (dinoDrawW > 250) {
-        leftPercent = 8;
-        rightPercent = 8;
+        leftPercent = 10;
+        rightPercent = 10;
     }
     
-    // ベースとなる left 位置を数値として算出 (メタデータの値がある場合はそれをパースして優先)
-    const STAGE_WIDTH_PX = 650;
-    let dinoLeftPx = (STAGE_WIDTH_PX * leftPercent) / 100;
-    
-    if (meta.dinoLeft) {
-        if (meta.dinoLeft.includes('%')) {
-            dinoLeftPx = (STAGE_WIDTH_PX * parseFloat(meta.dinoLeft)) / 100;
-        } else {
-            dinoLeftPx = parseFloat(meta.dinoLeft);
-        }
-    }
-    
-    // 左端の見切れ防止の自動クランプを、メタデータの指定値に対しても無条件で強制適用する
-    // 画像は dino-vis の中心から左右に dinoDrawW / 2 ずつ広がるため、左端が 0px 未満にならないようにする
-    const halfDinoW = dinoDrawW / 2;
-    if (dinoLeftPx < halfDinoW) {
-        dinoLeftPx = halfDinoW; // 左端がステージの 0px 位置にピッタリ沿うように強制補正
-    }
-    
-    dinoLeft = `${dinoLeftPx}px`;
+    // メタデータに個別指定がある場合はそれを優先
+    dinoLeft = meta.dinoLeft || `${leftPercent}%`;
     refRight = meta.refRight || `${rightPercent}%`;
 
     // 3. 恐竜と人間のイラスト同士の距離を算出し、ラベル衝突時は恐竜側を左に退避 (案B)
@@ -183,7 +153,7 @@ if (hasComparison) {
     const refRightNum = parseFloat(refRight);
     const distancePercent = 100 - dinoLeftNum - refRightNum;
 
-    if (distancePercent < 45) { // 距離が45%（ステージ幅650px換算で約290px）未満の場合
+    if (distancePercent < 45) { // 距離が45%未満の場合
         // 左寄せにし、さらに左方向へ40pxスライドさせて完全に衝突を避ける
         dinoTagStyle = 'white-space: nowrap; position: absolute; bottom: -58px; display: flex; flex-direction: column; align-items: flex-start; text-align: left; transform: translateX(-40px);';
     }
@@ -476,21 +446,18 @@ const relatedTopics = topics
             
             if (containerWidth < baseWidth) {
                 const scale = containerWidth / baseWidth;
-                // 中央揃えのための左端位置を正確にピクセル計算
-                const left = (containerWidth - (baseWidth * scale)) / 2;
-                
                 stage.style.width = `${baseWidth}px`;
                 stage.style.height = `${baseHeight}px`;
-                stage.style.left = `${left}px`; // 計算された絶対位置を付与
-                stage.style.transform = `scale(${scale})`; // translateXは使わない
-                stage.style.transformOrigin = 'bottom left'; // 左下基準で縮小し、ズレを防止
+                stage.style.left = '50%';
+                stage.style.transform = `translateX(-50%) scale(${scale})`;
+                stage.style.transformOrigin = 'bottom center'; // 中央基準で完璧に等倍縮小
                 panel.style.height = `${baseHeight * scale}px`;
             } else {
                 stage.style.width = '100%';
                 stage.style.height = `${baseHeight}px`;
                 stage.style.left = '0';
                 stage.style.transform = 'none';
-                stage.style.transformOrigin = 'bottom left';
+                stage.style.transformOrigin = 'bottom center';
                 panel.style.height = `${baseHeight}px`;
             }
         }
