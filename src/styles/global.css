@@ -482,6 +482,8 @@ body {
     "comparison body"
     "comparison specs-basic"
     "comparison traits";
+  grid-auto-rows: min-content;
+  align-items: start;
   gap: 40px;
 }
 
@@ -491,6 +493,9 @@ body {
     "visual body"
     "visual specs-basic"
     "visual traits";
+  grid-auto-rows: min-content;
+  align-items: start;
+  gap: 40px;
 }
 
 .detail-header { grid-area: header; }
@@ -2405,16 +2410,16 @@ body {
   transform: translateX(2px);
 }
 
-/* --- 650px以下でのサイズ比較の等倍自動縮小 --- */
-@media (max-width: 650px) {
+/* --- 680px以下でのサイズ比較の等倍自動縮小 --- */
+@media (max-width: 680px) {
   .size-comparison-panel {
-    height: calc(400px * (100vw - 30px) / 650) !important;
+    height: calc(400px * (100vw - 36px) / 650) !important;
   }
   
   .comparison-stage {
     left: 0 !important;
     transform: none !important;
     width: 650px !important;
-    zoom: calc((100vw - 30px) / 650) !important;
+    zoom: calc((100vw - 36px) / 650) !important;
   }
 }
