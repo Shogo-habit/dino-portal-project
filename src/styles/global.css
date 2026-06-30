@@ -2130,9 +2130,14 @@ body {
   .hero-img-container {
     width: 100%;
     height: auto;
-    aspect-ratio: 16 / 9;
-    max-height: 300px;
     flex: none;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: contain;
   }
 
   .hero-img-container::after {
