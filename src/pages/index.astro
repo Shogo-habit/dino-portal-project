@@ -30,11 +30,13 @@ const recentlyAddedDinos = dinosaurs
             <div class="dino-day-hero hud-panel">
                 <div class="hud-corner top-left"></div>
                 <div class="hud-corner bottom-right"></div>
-                <div class="hero-img-container" style={`background-image: url('/${pickupDino.image}')`}></div>
+                <div class="hero-img-container">
+                    <img src={`/${pickupDino.image}`} alt={pickupDino.name} class="hero-img" loading="eager" />
+                </div>
                 <div class="hero-content">
                     <span class="hero-label">【本日のピックアップ】</span>
-                    <h3 class="hero-name" style="font-size: 32px; margin: 10px 0;">{pickupDino.name}</h3>
-                    <p class="hero-desc" style="color: var(--text-dim); line-height: 1.6; margin-bottom: 20px;">{pickupDino.description}</p>
+                    <h3 class="hero-name">{pickupDino.name}</h3>
+                    <p class="hero-desc">{pickupDino.description}</p>
                     <a href={`/dictionary/${pickupDino.id}/`} class="nav-link" style="display: inline-block; width: fit-content; text-decoration: none;">詳細データを閲覧</a>
                 </div>
             </div>

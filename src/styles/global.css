@@ -313,9 +313,21 @@ body {
 
 .hero-img-container {
   flex: 1;
-  background-size: cover;
-  background-position: center;
   position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-width: 500px;
+  max-height: 400px;
+  z-index: 1;
 }
 
 .hero-img-container::after {
@@ -323,6 +335,8 @@ body {
   position: absolute;
   top: 0; left: 0; width: 100%; height: 100%;
   background: linear-gradient(90deg, transparent 50%, var(--bg-color) 100%);
+  z-index: 2;
+  pointer-events: none;
 }
 
 .hero-content {
@@ -337,6 +351,20 @@ body {
   font-family: var(--font-mono);
   color: var(--primary-neon);
   font-size: 14px;
+}
+
+.hero-name {
+  font-size: clamp(22px, 3.5vw, 32px);
+  margin: 10px 0;
+  font-weight: bold;
+  color: var(--text-main);
+}
+
+.hero-desc {
+  color: var(--text-dim);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: clamp(13px, 1.8vw, 15px);
 }
 
 /* --- DICTIONARY --- */
@@ -2035,9 +2063,9 @@ body {
 }
 
 /* ==========================================================================
-   MOBILE RESPONSIVE STYLES (max-width: 768px)
+   RESPONSIVE STYLES (max-width: 1024px)
    ========================================================================== */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   /* --- 共通レイアウト --- */
   #app-container {
     padding: 20px 15px; /* モバイルでは余白を狭める */
@@ -2101,7 +2129,9 @@ body {
 
   .hero-img-container {
     width: 100%;
-    height: 200px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    max-height: 300px;
     flex: none;
   }
 
@@ -2116,7 +2146,11 @@ body {
   }
 
   .hero-name {
-    font-size: 24px !important;
+    font-size: clamp(20px, 4.5vw, 24px);
+  }
+
+  .hero-desc {
+    font-size: clamp(12px, 3vw, 14px);
   }
 
   /* --- 図鑑一覧ページ --- */
@@ -2166,22 +2200,7 @@ body {
     gap: 10px;
   }
 
-  /* サイズ比較パネル (元の比率を保ったままスマホ幅に縮小) */
-  .size-comparison-panel {
-    height: 200px !important;
-    margin-top: 25px;
-    overflow: hidden;
-    position: relative;
-  }
 
-  .comparison-stage {
-    width: 100% !important;
-    height: 400px !important;
-    zoom: 0.45 !important; /* transformによるレンダリング分離バグを回避し、透過ブレンドを保つためzoomを使用します */
-    left: 0 !important;
-    bottom: 0 !important;
-    padding: 0 40px 60px 40px !important;
-  }
 
   /* --- トピックス一覧ページ --- */
   .topic-card {
