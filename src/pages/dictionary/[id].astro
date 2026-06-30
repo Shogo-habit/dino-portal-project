@@ -430,7 +430,10 @@ const relatedTopics = topics
             if (!panel) return;
             
             const wrapper = panel.closest('.detail-comparison') || panel;
-            const containerWidth = wrapper.getBoundingClientRect().width;
+            let containerWidth = wrapper.getBoundingClientRect().width;
+            if (window.innerWidth <= 1024) {
+                containerWidth += 30;
+            }
             const baseWidth = 650;
             const baseHeight = 400;
             
