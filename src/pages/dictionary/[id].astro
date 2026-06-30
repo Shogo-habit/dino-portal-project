@@ -156,8 +156,18 @@ if (hasComparison) {
         rightPercent = 8;
     }
     
+    // 左端の見切れ（画像の左側へのはみ出し）を防止するため、dinoLeft の最小ピクセル値を自動クランプ
+    // 画像は dino-vis の中心から左右に dinoDrawW / 2 ずつ広がるため、左端が 0px 未満にならないようにする
+    const STAGE_WIDTH_PX = 650;
+    let dinoLeftPx = (STAGE_WIDTH_PX * leftPercent) / 100;
+    const halfDinoW = dinoDrawW / 2;
+    
+    if (dinoLeftPx < halfDinoW) {
+        dinoLeftPx = halfDinoW; // 左端がステージの 0px 位置にピッタリ沿うように補正
+    }
+    
     // メタデータに個別指定がある場合はそれを優先
-    dinoLeft = meta.dinoLeft || `${leftPercent}%`;
+    dinoLeft = meta.dinoLeft || `${dinoLeftPx}px`;
     refRight = meta.refRight || `${rightPercent}%`;
 
     // 3. 恐竜と人間のイラスト同士の距離を算出し、ラベル衝突時は恐竜側を左に退避 (案B)
