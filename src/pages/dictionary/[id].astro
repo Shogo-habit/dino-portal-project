@@ -133,9 +133,9 @@ if (hasComparison) {
     pxPerMeter = pxPerMeter * zoom;
     
     // SVG化によりはみ出し見切れリスクが消滅したため、巨大恐竜のサイズを限界まで大きくできるよう
-    // 幅の絶対上限クランプを 0.88 から 0.98 まで大幅に引き上げる！
-    const absoluteMaxH = (SAFE_ZONE_H * 0.92) / realH;
-    const absoluteMaxL = (SAFE_ZONE_W * 0.98) / realL;
+    // zoomが指定されている場合は、absoluteMaxL による幅の安全制限クランプを完全にバイパスします！
+    const absoluteMaxH = (SAFE_ZONE_H * 0.95) / realH;
+    const absoluteMaxL = meta.zoom ? 999 : (SAFE_ZONE_W * 0.98) / realL;
     pxPerMeter = Math.min(pxPerMeter, absoluteMaxH, absoluteMaxL);
 
     // 小さい生物用の最小縮尺調整 (人間が巨大化しすぎるのを防ぐ)

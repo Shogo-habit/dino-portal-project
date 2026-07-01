@@ -25,8 +25,8 @@ cyberMetadata:
   contentHeightPx: 322
   sourceRes: 1024
   dinoLeft: "0"
-  refRight: "20%"
-  zoom: 1.38
+  refRight: "5%"
+  zoom: 1.72
 references:
   - title: "Un nuevo sauropodo de la Formacion Rio Limay de Neuquen, Argentina"
     journal: "Ameghiniana"

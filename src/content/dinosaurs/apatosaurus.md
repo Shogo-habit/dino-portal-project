@@ -25,8 +25,8 @@ cyberMetadata:
   contentHeightPx: 699
   sourceRes: 1024
   dinoLeft: "10%"
-  refRight: "30%"
-  zoom: 1.14
+  refRight: "10%"
+  zoom: 1.48
 references:
   - title: "Notice of new dinosaurian reptiles from the Jurassic formation"
     journal: "American Journal of Science"
