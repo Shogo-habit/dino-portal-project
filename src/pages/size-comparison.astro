@@ -61,15 +61,6 @@ if (!defaultDino) {
                 </select>
             </div>
 
-            <!-- Scale Telemetry -->
-            <div class="control-group telemetry">
-                <span class="control-label">[ 自動スケール制御 ]</span>
-                <div class="scale-display">
-                    <span>SCALE:</span>
-                    <span id="zoom-value" style="font-weight: bold;">1.00x</span>
-                </div>
-            </div>
-
             <!-- Stats display -->
             <div class="control-group stats-group">
                 <div class="stats-label-wrap">
@@ -142,7 +133,6 @@ if (!defaultDino) {
         // Dom Elements (re-assigned dynamically on page-load for view transitions)
         let selector: HTMLSelectElement | null = null;
         let dinoSelector: HTMLSelectElement | null = null;
-        let zoomVal: HTMLElement | null = null;
         let stageContainer: HTMLElement | null = null;
         let grid: HTMLElement | null = null;
         let ruler: HTMLElement | null = null;
@@ -177,7 +167,6 @@ if (!defaultDino) {
             // Retrieve DOM elements dynamically for the current page state
             selector = document.getElementById('asset-selector') as HTMLSelectElement;
             dinoSelector = document.getElementById('dino-selector') as HTMLSelectElement;
-            zoomVal = document.getElementById('zoom-value') as HTMLElement;
             stageContainer = document.getElementById('comparison-stage-container') as HTMLElement;
             grid = document.getElementById('dynamic-grid') as HTMLElement;
             ruler = document.querySelector('.ruler-y') as HTMLElement;
@@ -331,22 +320,15 @@ if (!defaultDino) {
                 if (Math.abs(diff) < 0.001) {
                     currentZoom = targetZoom;
                     renderStage();
-                    syncZoomUI();
                     animationFrameId = null;
                 } else {
                     currentZoom += diff * 0.08; // smooth lerp step
                     renderStage();
-                    syncZoomUI();
                     animationFrameId = requestAnimationFrame(step);
                 }
             }
 
             animationFrameId = requestAnimationFrame(step);
-        }
-
-        function syncZoomUI() {
-            const text = `${currentZoom.toFixed(2)}x`;
-            if (zoomVal) zoomVal.innerText = text;
         }
 
         function renderStage() {
@@ -565,24 +547,7 @@ if (!defaultDino) {
             box-sizing: border-box;
         }
 
-        .control-group.telemetry {
-            min-width: 180px;
-        }
 
-        .scale-display {
-            background: rgba(0, 242, 255, 0.05);
-            border: 1px solid rgba(0, 242, 255, 0.2);
-            padding: 8px 12px;
-            border-radius: 4px;
-            font-family: var(--font-mono);
-            font-size: 14px;
-            color: var(--secondary-neon);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 220px;
-            box-sizing: border-box;
-        }
 
         .control-group.stats-group {
             flex-direction: row;
@@ -647,10 +612,6 @@ if (!defaultDino) {
 
             .hud-select {
                 min-width: 0;
-            }
-
-            .scale-display {
-                width: 100%;
             }
 
             .control-group.stats-group {
