@@ -103,8 +103,19 @@ let refTotalH = 0;
 let refBottomOffset = 0;
 let dinoLeft = '15%';
 let refRight = '15%';
-let dinoTagStyle = 'white-space: nowrap; position: absolute; bottom: -58px; display: flex; flex-direction: column; align-items: center; text-align: center;';
-let dinoImageLeft = 0;
+let isLabelConflict = false;
+
+// SVG座標系用 (viewBox 0 0 650 400)
+let dinoW = 0;
+let dinoH = 0;
+let dinoX = 0;
+let dinoY = 0;
+let refW = 0;
+let refH = 0;
+let refX = 0;
+let refY = 0;
+
+const BASELINE_Y = 315; // SVG内でのベースラインのY座標 (400 - 85)
 
 if (hasComparison) {
     const meta = d.cyberMetadata!;
@@ -112,7 +123,7 @@ if (hasComparison) {
     const realL = meta.realLength || parseFloat(d.length);
     const ref = REFERENCE_ASSETS.HUMAN;
 
-    // 1. セーフゾーンの高さ90%、幅85%以内に必ず収まる元の最大比率を算出 (通常時の見切れを完全に防ぐ)
+    // 1. セーフゾーンの高さ90%、幅85%以内に必ず収まる比率
     const maxPxPerMeterH = (SAFE_ZONE_H * 0.9) / realH;
     const maxPxPerMeterL = (SAFE_ZONE_W * 0.85) / realL;
     let pxPerMeter = Math.min(maxPxPerMeterH, maxPxPerMeterL);
@@ -121,9 +132,10 @@ if (hasComparison) {
     const zoom = meta.zoom || 1.0;
     pxPerMeter = pxPerMeter * zoom;
     
-    // zoom適用後も絶対上限（高さ92%、幅88%）を越えないように安全クランプ
+    // SVG化によりはみ出し見切れリスクが消滅したため、巨大恐竜のサイズを限界まで大きくできるよう
+    // 幅の絶対上限クランプを 0.88 から 0.98 まで大幅に引き上げる！
     const absoluteMaxH = (SAFE_ZONE_H * 0.92) / realH;
-    const absoluteMaxL = (SAFE_ZONE_W * 0.88) / realL;
+    const absoluteMaxL = (SAFE_ZONE_W * 0.98) / realL;
     pxPerMeter = Math.min(pxPerMeter, absoluteMaxH, absoluteMaxL);
 
     // 小さい生物用の最小縮尺調整 (人間が巨大化しすぎるのを防ぐ)
@@ -132,13 +144,13 @@ if (hasComparison) {
         pxPerMeter = Math.min(pxPerMeter, humanTargetH / ref.realHeight);
     }
     
-    // 2. 配置位置を通常時の美しいデフォルト値に戻す
+    // 2. 配置位置の決定
     const dinoDrawW = realL * pxPerMeter;
     let leftPercent = 15;
     let rightPercent = 15;
     
     if (dinoDrawW > 350) {
-        leftPercent = 5; // 元の5%に戻す
+        leftPercent = 5;
         rightPercent = 5;
     } else if (dinoDrawW > 250) {
         leftPercent = 10;
@@ -146,38 +158,35 @@ if (hasComparison) {
     }
     
     // 個別指定値（meta.dinoLeft）があればそれを基準とする
-    let finalLeftPercent = leftPercent;
-    if (meta.dinoLeft) {
-        finalLeftPercent = parseFloat(meta.dinoLeft);
-    }
+    const finalLeftPercent = meta.dinoLeft ? parseFloat(meta.dinoLeft) : leftPercent;
+    const finalRightPercent = meta.refRight ? parseFloat(meta.refRight) : rightPercent;
     
-    // サーバーサイドのクランプを廃止し、元の美しいパーセント配置のまま出力
     dinoLeft = `${finalLeftPercent}%`;
-    refRight = meta.refRight || `${rightPercent}%`;
+    refRight = `${finalRightPercent}%`;
+
+    // 3. 衝突判定
+    const distancePercent = 100 - finalLeftPercent - finalRightPercent;
+    if (distancePercent < 45) {
+        isLabelConflict = true;
+    }
+
+    // 4. SVG用の絶対座標の精密計算 (中央揃えからの変換)
+    const dinoScale = (pxPerMeter * realH) / meta.contentHeightPx;
+    dinoW = meta.sourceRes * dinoScale;
+    dinoH = meta.sourceRes * dinoScale;
+    const dinoBottomGapPx = meta.bottomGap * dinoScale;
     
-    // 画像の左側へのはみ出し量（ピクセル）を計算してクライアントサイドへ渡す
-    dinoImageLeft = (650 * finalLeftPercent / 100) - (dinoDrawW / 2);
+    dinoX = (650 * finalLeftPercent / 100) - (dinoW / 2);
+    dinoY = BASELINE_Y - dinoH + dinoBottomGapPx;
 
-    // 3. 恐竜と人間のイラスト同士の距離を算出し、ラベル衝突時は恐竜側を「下」に下げて衝突回避 (縦ずらし案)
-    const dinoLeftNum = parseFloat(dinoLeft);
-    const refRightNum = parseFloat(refRight);
-    const distancePercent = 100 - dinoLeftNum - refRightNum;
+    const refTargetH = ref.realHeight * pxPerMeter;
+    const refScale = refTargetH / ref.contentHeightPx;
+    refW = ref.sourceRes * refScale;
+    refH = ref.sourceRes * refScale;
+    const refBottomGapPx = ref.bottomGap * refScale;
 
-    if (distancePercent < 45) { // 距離が45%未満で衝突の危険がある場合
-        // 横スライドではなく、縦（下に27px下げる）にずらすことで、左右の見切れを100%防止する
-        dinoTagStyle = 'white-space: nowrap; position: absolute; bottom: -85px; display: flex; flex-direction: column; align-items: center; text-align: center;';
-    }
-
-    dinoScaleCalculation: {
-        const dinoScale = (pxPerMeter * realH) / meta.contentHeightPx;
-        dinoTotalH = meta.sourceRes * dinoScale;
-        dinoBottomOffset = meta.bottomGap * dinoScale;
-
-        const refTargetH = ref.realHeight * pxPerMeter;
-        const refScale = refTargetH / ref.contentHeightPx;
-        refTotalH = ref.sourceRes * refScale;
-        refBottomOffset = ref.bottomGap * refScale;
-    }
+    refX = 650 - (650 * finalRightPercent / 100) - (refW / 2);
+    refY = BASELINE_Y - refH + refBottomGapPx;
 }
 
 const formatVal = (val: number) => val % 1 === 0 ? val.toFixed(1) : val.toString();
@@ -227,28 +236,50 @@ const relatedTopics = topics
                             [ シミュレータで他と比較する ] &raquo;
                         </a>
                     </div>
-                    <section class="size-comparison-panel hud-panel">
-                        <div class="comparison-stage" id="dino-comparison-stage" data-dino-image-left={dinoImageLeft}>
+                    
+                    <div class="size-comparison-panel hud-panel" style="width: 100%; height: auto; aspect-ratio: 650/400; padding: 0; overflow: hidden; border: 1px solid var(--panel-border); background: radial-gradient(circle at center, rgba(0, 40, 60, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%);">
+                        <svg viewBox="0 0 650 400" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="display: block; overflow: visible;">
+                            <defs>
+                                <pattern id="hud-grid-minor" width="20" height="20" patternUnits="userSpaceOnUse">
+                                    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(0, 242, 255, 0.04)" stroke-width="1"/>
+                                </pattern>
+                                <pattern id="hud-grid-major" width="100" height="100" patternUnits="userSpaceOnUse">
+                                    <path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(0, 242, 255, 0.15)" stroke-width="1.5"/>
+                                </pattern>
+                            </defs>
+                            
+                            <!-- grid patterns -->
+                            <rect width="650" height="400" fill="url(#hud-grid-minor)" />
+                            <rect width="650" height="400" fill="url(#hud-grid-major)" />
+                            
+                            <!-- baseline -->
+                            <line x1="0" y1="315" x2="650" y2="315" stroke="rgba(0, 242, 255, 0.3)" stroke-width="1.5" stroke-dasharray="4,4" />
+                            
                             <!-- Dino visual -->
-                            <div class="dino-vis" style={`position: absolute; left: ${dinoLeft}; bottom: ${BASELINE_PX}px; height: ${SAFE_ZONE_H}px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible; z-index: 1;`}>
-                                <img src={`/images/cyber/${d.id}.webp`} alt={d.name} class="cyber-hud-specimen" decoding="async" loading="lazy"
-                                     style={`height: ${dinoTotalH}px; width: auto; margin-bottom: -${dinoBottomOffset}px; flex-shrink: 0; mix-blend-mode: screen !important;`}>
-                                <div class="vis-tag dino-tag" style={dinoTagStyle}>
-                                    <span>{d.name}</span>
-                                    <span style="font-size: 9.5px; opacity: 0.8; margin-top: 1px;">高さ {formatVal(d.cyberMetadata?.realHeight || 0)}m（全長 {d.length}）</span>
-                                </div>
-                            </div>
+                            <image href={`/images/cyber/${d.id}.webp`} x={dinoX} y={dinoY} width={dinoW} height={dinoH} style="mix-blend-mode: screen;" />
+                            
                             <!-- Human reference -->
-                            <div class="ref-vis" style={`position: absolute; right: ${refRight}; bottom: ${BASELINE_PX}px; height: ${SAFE_ZONE_H}px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible; z-index: 2;`}>
-                                <img src="/images/cyber/human_front.webp" alt="HUMAN" class="cyber-hud-specimen" decoding="async" loading="lazy"
-                                     style={`height: ${refTotalH}px; width: auto; margin-bottom: -${refBottomOffset}px; flex-shrink: 0; mix-blend-mode: screen !important;`}>
-                                <div class="vis-tag ref-tag" style={`white-space: nowrap; position: absolute; bottom: -58px; display: flex; flex-direction: column; align-items: center; text-align: center;`}>
-                                    <span>人間</span>
-                                    <span style="font-size: 9.5px; opacity: 0.8; margin-top: 1px;">高さ 1.7m</span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                            <image href="/images/cyber/human_front.webp" x={refX} y={refY} width={refW} height={refH} style="mix-blend-mode: screen;" />
+                            
+                            <!-- Dino Tag -->
+                            <g transform={`translate(${dinoX + dinoW/2}, ${isLabelConflict ? 377 : 350})`}>
+                                <rect x="-105" y="-12" width="210" height="30" fill="rgba(0, 10, 20, 0.75)" stroke="rgba(0, 242, 255, 0.25)" stroke-width="1" rx="3" />
+                                <line x1="0" y1="-25" x2="0" y2="-12" stroke="rgba(0, 242, 255, 0.2)" stroke-width="1" stroke-dasharray="2,2" />
+                                <text text-anchor="middle" fill="#00f2ff" font-size="11.5" font-family="'Share Tech Mono', monospace" font-weight="bold">{d.name}</text>
+                                <text text-anchor="middle" fill="#00f2ff" font-size="9" opacity="0.8" font-family="'Share Tech Mono', monospace" y="13">
+                                    高さ {formatVal(d.cyberMetadata?.realHeight || 0)}m（全長 {d.length}）
+                                </text>
+                            </g>
+                            
+                            <!-- Human Tag -->
+                            <g transform={`translate(${refX + refW/2}, 350)`}>
+                                <rect x="-55" y="-12" width="110" height="30" fill="rgba(0, 10, 20, 0.75)" stroke="rgba(0, 242, 255, 0.25)" stroke-width="1" rx="3" />
+                                <line x1="0" y1="-25" x2="0" y2="-12" stroke="rgba(0, 242, 255, 0.2)" stroke-width="1" stroke-dasharray="2,2" />
+                                <text text-anchor="middle" fill="#00f2ff" font-size="11.5" font-family="'Share Tech Mono', monospace" font-weight="bold">人間</text>
+                                <text text-anchor="middle" fill="#00f2ff" font-size="9" opacity="0.8" font-family="'Share Tech Mono', monospace" y="13">高さ 1.7m</text>
+                            </g>
+                        </svg>
+                    </div>
                 </div>
             )}
         </div>
@@ -421,51 +452,7 @@ const relatedTopics = topics
     <script>
         const COLLECTION_KEY = 'dino_portal_saved_observations';
 
-        function resizeComparisonPanel() {
-            const stage = document.getElementById('dino-comparison-stage');
-            if (!stage) return;
-            const panel = stage.parentElement;
-            if (!panel) return;
-            
-            // カラム内で一切スケールや高さの変更を受けない .detail-img-viewer (メイン画像) の幅を基準にする
-            // これにより、高さ変更による自己収縮の死のループが完全に根絶されます
-            const imgViewer = document.querySelector('.detail-img-viewer');
-            const containerWidth = imgViewer ? imgViewer.getBoundingClientRect().width : panel.getBoundingClientRect().width;
-            
-            const baseWidth = 650;
-            const baseHeight = 400;
-            
-            if (containerWidth < baseWidth) {
-                const scale = containerWidth / baseWidth;
-                let left = (containerWidth - (baseWidth * scale)) / 2;
-                
-                // 恐竜の左端（頭部）がステージの左端（0px）を突き出さないように left 座標を動的に右スライド補正
-                const dinoImageLeft = parseFloat(stage.getAttribute('data-dino-image-left') || '0');
-                const minLeft = 10 - (dinoImageLeft * scale);
-                if (left < minLeft) {
-                    left = minLeft;
-                }
-                
-                stage.style.width = `${baseWidth}px`;
-                stage.style.height = `${baseHeight}px`;
-                stage.style.left = `${left}px`;
-                stage.style.transform = `scale(${scale})`;
-                stage.style.transformOrigin = 'bottom left';
-                panel.style.height = `${baseHeight * scale}px`;
-            } else {
-                stage.style.width = '100%';
-                stage.style.height = `${baseHeight}px`;
-                stage.style.left = '0';
-                stage.style.transform = 'none';
-                stage.style.transformOrigin = 'bottom left';
-                panel.style.height = `${baseHeight}px`;
-            }
-        }
-
         function initSpecimenDetail() {
-            // Execute scaling calculation on initialization
-            resizeComparisonPanel();
-
             const saveBtn = document.getElementById('observe-save-btn');
             if (!saveBtn) return;
 
@@ -525,14 +512,9 @@ const relatedTopics = topics
             }
         }
 
-        // Bind resize event safely
-        window.removeEventListener('resize', resizeComparisonPanel);
-        window.addEventListener('resize', resizeComparisonPanel);
-
         // Bind on page load / page changes
         document.addEventListener('astro:page-load', () => {
             initSpecimenDetail();
-            resizeComparisonPanel();
         });
     </script>
 </Layout>
