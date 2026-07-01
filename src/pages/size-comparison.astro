@@ -352,6 +352,17 @@ if (!defaultDino) {
         function renderStage() {
             if (!activeAsset || !stageContainer || !dinoImg || !refImg || !dinoEl || !refEl || !grid) return;
 
+            const isMobile = window.innerWidth <= 768;
+            const baselinePx = isMobile ? 45 : 25;
+
+            // Dynamic bottom adjustment for baseline ground line, ruler container, and specimens
+            const baselineLine = document.querySelector('.baseline-line') as HTMLElement;
+            const rulerY = document.querySelector('.ruler-y') as HTMLElement;
+            if (baselineLine) baselineLine.style.bottom = `${baselinePx}px`;
+            if (rulerY) rulerY.style.bottom = `${baselinePx}px`;
+            if (dinoEl) dinoEl.style.bottom = `${baselinePx}px`;
+            if (refEl) refEl.style.bottom = `${baselinePx}px`;
+
             // 1. Calculate standard PxPerMeter (without dynamic zoom)
             // Let the dinosaur fit nicely in the height of the safe zone (at zoom = 1)
             const marginFactor = 0.94;
@@ -404,7 +415,6 @@ if (!defaultDino) {
 
             // 5. Position elements dynamically to be centered as a pair in the stage
             const stageW = stageContainer.clientWidth || SAFE_ZONE_W;
-            const isMobile = window.innerWidth <= 768;
             
             const gap = isMobile ? -20 : 80;
             const leftMargin = isMobile ? 45 : 60;
@@ -436,7 +446,7 @@ if (!defaultDino) {
                 const maxIllustH = Math.max(dinoTargetH, refTargetH);
                 const minPanelH = 200;
                 const maxPanelH = PANEL_HEIGHT; // 405
-                let neededPanelH = maxIllustH + BASELINE_PX + 30; // height + baseline + padding
+                let neededPanelH = maxIllustH + baselinePx + 30; // height + baselinePx + padding
                 neededPanelH = Math.max(minPanelH, Math.min(maxPanelH, neededPanelH));
                 stageContainer.style.height = `${neededPanelH}px`;
             } else {
@@ -464,18 +474,23 @@ if (!defaultDino) {
             if (!ruler) return;
             ruler.innerHTML = '';
             
-            // Calculate maximum height in meters visible on the stage
-            const maxMeters = SAFE_ZONE_H / pxPerMeter;
+            const currentStageH = stageContainer ? stageContainer.clientHeight : PANEL_HEIGHT;
+            const isMobile = window.innerWidth <= 768;
+            const baselinePx = isMobile ? 45 : 25;
+            const visibleSafeZoneH = currentStageH - baselinePx;
 
-            // Determine appropriate step based on max visible meters
+            // Calculate maximum height in meters visible on the stage based on dynamic heights
+            const maxMeters = visibleSafeZoneH / pxPerMeter;
+
+            // Determine appropriate step based on max visible meters (more granular ticks)
             let step = 1.0;
-            if (maxMeters <= 1.0) {
+            if (maxMeters <= 1.5) {
                 step = 0.2;
-            } else if (maxMeters <= 2.5) {
+            } else if (maxMeters <= 3.5) {
                 step = 0.5;
-            } else if (maxMeters <= 6.0) {
+            } else if (maxMeters <= 8.0) {
                 step = 1.0;
-            } else if (maxMeters <= 15.0) {
+            } else if (maxMeters <= 16.0) {
                 step = 2.0;
             } else {
                 step = 5.0;
@@ -486,7 +501,7 @@ if (!defaultDino) {
             for (let i = 0; i <= ticksCount; i++) {
                 const m = i * step;
                 const pxVal = m * pxPerMeter;
-                if (pxVal > SAFE_ZONE_H + 10) break; // Don't overflow container top too much
+                if (pxVal > visibleSafeZoneH + 10) break; // Don't overflow container top too much
 
                 const tick = document.createElement('div');
                 tick.style.position = 'absolute';
