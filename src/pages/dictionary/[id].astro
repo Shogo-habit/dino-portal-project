@@ -210,10 +210,10 @@ const relatedTopics = topics
 
             <!-- 5. サイズ比較パネル (comparison) -->
             {hasComparison && (
-                <div class="detail-comparison">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 0 5px;">
+                <div class="detail-comparison" style="min-width: 0;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 0 5px; flex-wrap: wrap; gap: 10px;">
                         <h4 style="color: var(--primary-neon); margin: 0; white-space: nowrap;">サイズ比較</h4>
-                        <a href="/size-comparison/" style="font-size: 11px; color: var(--secondary-neon); text-decoration: none; font-family: var(--font-mono); font-weight: bold; transition: opacity 0.3s; white-space: nowrap;">
+                        <a href="/size-comparison/" style="font-size: 11px; color: var(--secondary-neon); text-decoration: none; font-family: var(--font-mono); font-weight: bold; transition: opacity 0.3s; white-space: normal; text-align: right;">
                             [ シミュレータで他と比較する ] &raquo;
                         </a>
                     </div>
