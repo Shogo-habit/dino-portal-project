@@ -104,6 +104,7 @@ let refBottomOffset = 0;
 let dinoLeft = '15%';
 let refRight = '15%';
 let dinoTagStyle = 'white-space: nowrap; position: absolute; bottom: -58px; display: flex; flex-direction: column; align-items: center; text-align: center;';
+let dinoImageLeft = 0;
 
 if (hasComparison) {
     const meta = d.cyberMetadata!;
@@ -150,17 +151,12 @@ if (hasComparison) {
         finalLeftPercent = parseFloat(meta.dinoLeft);
     }
     
-    // 恐竜の左端（頭部）がステージ左端（0px）を突き抜けて見切れるのを物理的に防ぐ動的クランプ
-    // 画像半幅 (dinoDrawW * 0.5) から透明余白 (約10%) を引いた、実体部分のはみ出し限界を計算
-    const minDinoLeftPx = (dinoDrawW * 0.4) + 10;
-    let dinoLeftPx = (650 * finalLeftPercent) / 100;
-    if (dinoLeftPx < minDinoLeftPx) {
-        dinoLeftPx = minDinoLeftPx;
-    }
-    
-    // クランプ後の値をパーセント換算して最終的な dinoLeft とする
-    dinoLeft = `${(dinoLeftPx / 650 * 100).toFixed(1)}%`;
+    // サーバーサイドのクランプを廃止し、元の美しいパーセント配置のまま出力
+    dinoLeft = `${finalLeftPercent}%`;
     refRight = meta.refRight || `${rightPercent}%`;
+    
+    // 画像の左側へのはみ出し量（ピクセル）を計算してクライアントサイドへ渡す
+    dinoImageLeft = (650 * finalLeftPercent / 100) - (dinoDrawW / 2);
 
     // 3. 恐竜と人間のイラスト同士の距離を算出し、ラベル衝突時は恐竜側を「下」に下げて衝突回避 (縦ずらし案)
     const dinoLeftNum = parseFloat(dinoLeft);
@@ -232,7 +228,7 @@ const relatedTopics = topics
                         </a>
                     </div>
                     <section class="size-comparison-panel hud-panel">
-                        <div class="comparison-stage" id="dino-comparison-stage">
+                        <div class="comparison-stage" id="dino-comparison-stage" data-dino-image-left={dinoImageLeft}>
                             <!-- Dino visual -->
                             <div class="dino-vis" style={`position: absolute; left: ${dinoLeft}; bottom: ${BASELINE_PX}px; height: ${SAFE_ZONE_H}px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; pointer-events: none; overflow: visible; z-index: 1;`}>
                                 <img src={`/images/cyber/${d.id}.webp`} alt={d.name} class="cyber-hud-specimen" decoding="async" loading="lazy"
@@ -431,23 +427,30 @@ const relatedTopics = topics
             const panel = stage.parentElement;
             if (!panel) return;
             
-            // 親の .detail-comparison (wrapper) から幅を取得して、高さの自己収縮ループを防ぐ
-            const wrapper = panel.closest('.detail-comparison') || panel;
-            const containerWidth = wrapper.getBoundingClientRect().width - 2;
+            // カラム内で一切スケールや高さの変更を受けない .detail-img-viewer (メイン画像) の幅を基準にする
+            // これにより、高さ変更による自己収縮の死のループが完全に根絶されます
+            const imgViewer = document.querySelector('.detail-img-viewer');
+            const containerWidth = imgViewer ? imgViewer.getBoundingClientRect().width : panel.getBoundingClientRect().width;
             
             const baseWidth = 650;
             const baseHeight = 400;
             
             if (containerWidth < baseWidth) {
                 const scale = containerWidth / baseWidth;
-                // 中央揃えのための左端位置を正確にピクセル計算（マイナス座標はみ出しを防ぐ）
-                const left = (containerWidth - (baseWidth * scale)) / 2;
+                let left = (containerWidth - (baseWidth * scale)) / 2;
+                
+                // 恐竜の左端（頭部）がステージの左端（0px）を突き出さないように left 座標を動的に右スライド補正
+                const dinoImageLeft = parseFloat(stage.getAttribute('data-dino-image-left') || '0');
+                const minLeft = 10 - (dinoImageLeft * scale);
+                if (left < minLeft) {
+                    left = minLeft;
+                }
                 
                 stage.style.width = `${baseWidth}px`;
                 stage.style.height = `${baseHeight}px`;
-                stage.style.left = `${left}px`; // 計算された絶対位置を直接付与
-                stage.style.transform = `scale(${scale})`; // translateXは使わない
-                stage.style.transformOrigin = 'bottom left'; // 左下基準で縮小し、ズレを防止
+                stage.style.left = `${left}px`;
+                stage.style.transform = `scale(${scale})`;
+                stage.style.transformOrigin = 'bottom left';
                 panel.style.height = `${baseHeight * scale}px`;
             } else {
                 stage.style.width = '100%';
