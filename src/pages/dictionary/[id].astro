@@ -176,7 +176,7 @@ if (hasComparison) {
     dinoH = meta.sourceRes * dinoScale;
     const dinoBottomGapPx = meta.bottomGap * dinoScale;
     
-    dinoX = (650 * finalLeftPercent / 100) - (dinoW / 2);
+    dinoX = (650 * finalLeftPercent / 100);
     dinoY = BASELINE_Y - dinoH + dinoBottomGapPx;
 
     const refTargetH = ref.realHeight * pxPerMeter;
@@ -185,7 +185,7 @@ if (hasComparison) {
     refH = ref.sourceRes * refScale;
     const refBottomGapPx = ref.bottomGap * refScale;
 
-    refX = 650 - (650 * finalRightPercent / 100) - (refW / 2);
+    refX = 650 - (650 * finalRightPercent / 100) - refW;
     refY = BASELINE_Y - refH + refBottomGapPx;
 }
 
