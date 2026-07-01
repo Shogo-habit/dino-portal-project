@@ -431,9 +431,9 @@ const relatedTopics = topics
             const panel = stage.parentElement;
             if (!panel) return;
             
-            // パネル自身の実際の物理横幅（ボーダー2px分を引く）を直接取得して使用
-            const panelRect = panel.getBoundingClientRect();
-            const containerWidth = panelRect.width - 2;
+            // 親の .detail-comparison (wrapper) から幅を取得して、高さの自己収縮ループを防ぐ
+            const wrapper = panel.closest('.detail-comparison') || panel;
+            const containerWidth = wrapper.getBoundingClientRect().width - 2;
             
             const baseWidth = 650;
             const baseHeight = 400;
