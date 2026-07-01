@@ -229,7 +229,7 @@ const relatedTopics = topics
 
             <!-- 5. サイズ比較パネル (comparison) -->
             {hasComparison && (
-                <div class="detail-comparison" style="min-width: 0;">
+                <div class="detail-comparison" style="width: 100%; max-width: 100%; min-width: 0;">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 0 5px; flex-wrap: wrap; gap: 10px;">
                         <h4 style="color: var(--primary-neon); margin: 0; white-space: nowrap;">サイズ比較</h4>
                         <a href="/size-comparison/" style="font-size: 11px; color: var(--secondary-neon); text-decoration: none; font-family: var(--font-mono); font-weight: bold; transition: opacity 0.3s; white-space: normal; text-align: right;">
@@ -237,7 +237,7 @@ const relatedTopics = topics
                         </a>
                     </div>
                     
-                    <div class="size-comparison-panel hud-panel" style="width: 100%; height: auto; aspect-ratio: 650/400; padding: 0; overflow: hidden; border: 1px solid var(--panel-border); background: radial-gradient(circle at center, rgba(0, 40, 60, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%);">
+                    <div class="size-comparison-panel hud-panel" style="width: 100%; max-width: 100%; height: auto !important; aspect-ratio: 650/400; padding: 0; overflow: hidden; border: 1px solid var(--panel-border); background: radial-gradient(circle at center, rgba(0, 40, 60, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%);">
                         <svg viewBox="0 0 650 400" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="display: block; overflow: visible;">
                             <defs>
                                 <pattern id="hud-grid-minor" width="20" height="20" patternUnits="userSpaceOnUse">
