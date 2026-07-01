@@ -260,6 +260,21 @@ body {
 }
 
 /* Corner brackets component */
+.hud-corner {
+  position: absolute;
+  pointer-events: none;
+}
+
+.hud-corner.top-left {
+  top: 0;
+  left: 0;
+}
+
+.hud-corner.bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
 .hud-corner.top-left::before {
   content: "";
   position: absolute;

@@ -31,14 +31,14 @@ if (!defaultDino) {
 
     <div class="sandbox-container" style="display: grid; grid-template-columns: 1fr; gap: 30px;">
         <!-- CONTROL PANEL -->
-        <div class="hud-panel control-hud" style="padding: 20px; display: flex; flex-wrap: wrap; gap: 20px; align-items: center; border-color: var(--primary-neon);">
-            <div class="hud-corner top-left" style="border-top-color: var(--primary-neon); border-left-color: var(--primary-neon);"></div>
-            <div class="hud-corner bottom-right" style="border-bottom-color: var(--primary-neon); border-right-color: var(--primary-neon);"></div>
+        <div class="hud-panel control-hud">
+            <div class="hud-corner top-left"></div>
+            <div class="hud-corner bottom-right"></div>
             
             <!-- Dino Selector -->
-            <div class="control-group" style="display: flex; flex-direction: column; gap: 6px;">
-                <label style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); letter-spacing: 1px;">[ 基準恐竜の選択 ]</label>
-                <select id="dino-selector" style="background: rgba(3, 6, 8, 0.9); border: 1px solid var(--primary-neon); color: var(--text-main); font-family: var(--font-mono); padding: 8px 12px; font-size: 14px; border-radius: 4px; min-width: 220px; cursor: pointer;">
+            <div class="control-group">
+                <label class="control-label">[ 基準恐竜の選択 ]</label>
+                <select id="dino-selector" class="hud-select">
                     {comparisonDinos.map(dino => (
                         <option 
                             value={dino.id} 
@@ -52,9 +52,9 @@ if (!defaultDino) {
             </div>
 
             <!-- Target Selector -->
-            <div class="control-group" style="display: flex; flex-direction: column; gap: 6px;">
-                <label style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); letter-spacing: 1px;">[ 比較対象の選択 ]</label>
-                <select id="asset-selector" style="background: rgba(3, 6, 8, 0.9); border: 1px solid var(--primary-neon); color: var(--text-main); font-family: var(--font-mono); padding: 8px 12px; font-size: 14px; border-radius: 4px; min-width: 220px; cursor: pointer;">
+            <div class="control-group">
+                <label class="control-label">[ 比較対象の選択 ]</label>
+                <select id="asset-selector" class="hud-select">
                     {Object.values(REFERENCE_ASSETS).map(asset => (
                         <option value={asset.id} data-asset={JSON.stringify(asset)}>{asset.label}</option>
                     ))}
@@ -62,22 +62,22 @@ if (!defaultDino) {
             </div>
 
             <!-- Scale Telemetry -->
-            <div class="control-group" style="display: flex; flex-direction: column; gap: 6px; min-width: 180px;">
-                <span style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); letter-spacing: 1px;">[ 自動スケール制御 ]</span>
-                <div style="background: rgba(0, 242, 255, 0.05); border: 1px solid rgba(0, 242, 255, 0.2); padding: 8px 12px; border-radius: 4px; font-family: var(--font-mono); font-size: 14px; color: var(--secondary-neon); display: flex; justify-content: space-between; align-items: center; width: 220px; box-sizing: border-box;">
+            <div class="control-group telemetry">
+                <span class="control-label">[ 自動スケール制御 ]</span>
+                <div class="scale-display">
                     <span>SCALE:</span>
                     <span id="zoom-value" style="font-weight: bold;">1.00x</span>
                 </div>
             </div>
 
             <!-- Stats display -->
-            <div class="control-group" style="display: flex; gap: 20px; font-family: var(--font-mono); border-left: 1px solid var(--panel-border); padding-left: 20px; align-items: center;">
-                <div>
-                    <span style="color: var(--text-dim); font-size: 11px; letter-spacing: 0.5px;">[ 基準高/長 ]</span><br/>
-                    <span id="dino-hud-specs" style="color: var(--text-main); font-size: 16px; font-weight: bold; line-height: 1.6;">--</span>
+            <div class="control-group stats-group">
+                <div class="stats-label-wrap">
+                    <span class="stats-label">[ 基準高/長 ]</span><br/>
+                    <span id="dino-hud-specs" class="stats-value">--</span>
                 </div>
-                <div style="padding-left: 20px; border-left: 1px solid var(--panel-border); display: flex; align-items: center;">
-                    <a id="dino-detail-link" href="" class="dino-detail-link" style="color: var(--secondary-neon); text-decoration: none; font-size: 11px; font-weight: bold; letter-spacing: 1px; border: 1px solid rgba(0, 242, 255, 0.4); padding: 5px 12px; border-radius: 4px; background: rgba(0, 242, 255, 0.05); transition: all 0.3s ease; display: inline-block;">
+                <div class="detail-link-wrap">
+                    <a id="dino-detail-link" href="" class="dino-detail-link">
                         図鑑アーカイブ ➔
                     </a>
                 </div>
@@ -283,6 +283,8 @@ if (!defaultDino) {
         function recalculateAutofocus() {
             if (!stageContainer) return;
             if (activeAsset && activeDino) {
+                const isMobile = window.innerWidth <= 768;
+
                 // 1. Calculate height-based zoom
                 const maxRealH = Math.max(dinoRealH, activeAsset.realHeight);
                 let zoom = dinoRealH / maxRealH;
@@ -296,8 +298,12 @@ if (!defaultDino) {
                 const C_ref = activeAsset.sourceRes * (activeAsset.realHeight * basePxPerMeter) / activeAsset.contentHeightPx;
 
                 const stageW = stageContainer.clientWidth || SAFE_ZONE_W;
-                const gap = 80; // Distance between dinosaur and reference images
-                const maxSpan = stageW - 80 - 60; // Leave 60px on left (ruler) and 80px on right (margin)
+                
+                // Adjust parameters for mobile to prevent elements from scaling down too much
+                const gap = isMobile ? -20 : 80; // Overlap slightly on mobile
+                const leftMargin = isMobile ? 45 : 60; // Thinner ruler space on mobile
+                const rightMargin = isMobile ? 15 : 80;
+                const maxSpan = stageW - rightMargin - leftMargin;
 
                 // Clamp zoom to fit the stage width if the combined span exceeds maxSpan
                 if (maxSpan > gap) {
@@ -398,11 +404,16 @@ if (!defaultDino) {
 
             // 5. Position elements dynamically to be centered as a pair in the stage
             const stageW = stageContainer.clientWidth || SAFE_ZONE_W;
-            const gap = 80; // Comfortable visual distance between dinosaur and reference illustrations
+            const isMobile = window.innerWidth <= 768;
+            
+            const gap = isMobile ? -20 : 80;
+            const leftMargin = isMobile ? 45 : 60;
+            const rightMargin = isMobile ? 15 : 80;
+            
             const visualSpan = dinoVisualW + gap + refVisualW;
 
-            // Determine left edge of dinosaur illustration (centered, but at least 60px to not overlap ruler)
-            const dinoVisualLeft = Math.max(60 + dino_l_pad, (stageW - visualSpan) / 2);
+            // Determine left edge of dinosaur illustration (centered, but at least leftMargin to not overlap ruler)
+            const dinoVisualLeft = Math.max(leftMargin + dino_l_pad, (stageW - visualSpan) / 2);
 
             // Compute corresponding dinoLeft style value
             const dinoLeftEdge = dinoVisualLeft - dino_l_pad;
@@ -414,7 +425,7 @@ if (!defaultDino) {
             let refLeftEdge = refVisualLeft - ref_l_pad;
 
             // Clamp refLeftEdge to prevent reference illustration from overflowing the right edge of the stage
-            refLeftEdge = Math.min(refLeftEdge, stageW - 80 - refTotalH + ref_r_pad);
+            refLeftEdge = Math.min(refLeftEdge, stageW - rightMargin - refTotalH + ref_r_pad);
             let refLeft = refLeftEdge - 100 + (refTotalH / 2);
 
             refEl.style.right = 'auto';
@@ -482,6 +493,104 @@ if (!defaultDino) {
             margin-top: 20px;
         }
 
+        .control-hud {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            border-color: var(--primary-neon);
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .control-label {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            color: var(--primary-neon);
+            letter-spacing: 1px;
+        }
+
+        .hud-select {
+            background: rgba(3, 6, 8, 0.9);
+            border: 1px solid var(--primary-neon);
+            color: var(--text-main);
+            font-family: var(--font-mono);
+            padding: 8px 12px;
+            font-size: 14px;
+            border-radius: 4px;
+            min-width: 220px;
+            cursor: pointer;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .control-group.telemetry {
+            min-width: 180px;
+        }
+
+        .scale-display {
+            background: rgba(0, 242, 255, 0.05);
+            border: 1px solid rgba(0, 242, 255, 0.2);
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-family: var(--font-mono);
+            font-size: 14px;
+            color: var(--secondary-neon);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 220px;
+            box-sizing: border-box;
+        }
+
+        .control-group.stats-group {
+            flex-direction: row;
+            gap: 20px;
+            font-family: var(--font-mono);
+            border-left: 1px solid var(--panel-border);
+            padding-left: 20px;
+            align-items: center;
+        }
+
+        .stats-label {
+            color: var(--text-dim);
+            font-size: 11px;
+            letter-spacing: 0.5px;
+        }
+
+        .stats-value {
+            color: var(--text-main);
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.6;
+        }
+
+        .detail-link-wrap {
+            padding-left: 20px;
+            border-left: 1px solid var(--panel-border);
+            display: flex;
+            align-items: center;
+        }
+
+        .dino-detail-link {
+            color: var(--secondary-neon);
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            border: 1px solid rgba(0, 242, 255, 0.4);
+            padding: 5px 12px;
+            border-radius: 4px;
+            background: rgba(0, 242, 255, 0.05);
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
         .specimen-container {
             transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -491,6 +600,36 @@ if (!defaultDino) {
             border-color: var(--secondary-neon) !important;
             box-shadow: 0 0 10px rgba(0, 242, 255, 0.2);
             text-shadow: 0 0 5px var(--secondary-neon);
+        }
+
+        @media (max-width: 768px) {
+            .control-hud {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 15px;
+            }
+
+            .hud-select {
+                min-width: 0;
+            }
+
+            .scale-display {
+                width: 100%;
+            }
+
+            .control-group.stats-group {
+                border-left: none;
+                padding-left: 0;
+                border-top: 1px solid var(--panel-border);
+                padding-top: 15px;
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .detail-link-wrap {
+                border-left: none;
+                padding-left: 0;
+            }
         }
     </style>
 </Layout>
