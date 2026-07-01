@@ -2125,8 +2125,15 @@ body {
    ========================================================================== */
 @media (max-width: 1024px) {
   /* --- 共通レイアウト --- */
+  body {
+    height: auto !important;
+    overflow-y: visible !important;
+  }
+
   #app-container {
     padding: 20px 15px; /* モバイルでは余白を狭める */
+    overflow-y: visible !important;
+    flex: none !important;
   }
 
 
