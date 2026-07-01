@@ -144,8 +144,22 @@ if (hasComparison) {
         rightPercent = 10;
     }
     
-    // メタデータに個別指定がある場合はそれを優先
-    dinoLeft = meta.dinoLeft || `${leftPercent}%`;
+    // 個別指定値（meta.dinoLeft）があればそれを基準とする
+    let finalLeftPercent = leftPercent;
+    if (meta.dinoLeft) {
+        finalLeftPercent = parseFloat(meta.dinoLeft);
+    }
+    
+    // 恐竜の左端（頭部）がステージ左端（0px）を突き抜けて見切れるのを物理的に防ぐ動的クランプ
+    // 画像半幅 (dinoDrawW * 0.5) から透明余白 (約10%) を引いた、実体部分のはみ出し限界を計算
+    const minDinoLeftPx = (dinoDrawW * 0.4) + 10;
+    let dinoLeftPx = (650 * finalLeftPercent) / 100;
+    if (dinoLeftPx < minDinoLeftPx) {
+        dinoLeftPx = minDinoLeftPx;
+    }
+    
+    // クランプ後の値をパーセント換算して最終的な dinoLeft とする
+    dinoLeft = `${(dinoLeftPx / 650 * 100).toFixed(1)}%`;
     refRight = meta.refRight || `${rightPercent}%`;
 
     // 3. 恐竜と人間のイラスト同士の距離を算出し、ラベル衝突時は恐竜側を「下」に下げて衝突回避 (縦ずらし案)
@@ -417,32 +431,9 @@ const relatedTopics = topics
             const panel = stage.parentElement;
             if (!panel) return;
             
-            let containerWidth = 0;
-            
-            if (window.innerWidth <= 1024) {
-                // モバイル縮小時：100vw（画面全体の横幅）に強制固定するインラインスタイルを適用
-                panel.style.setProperty('margin-left', 'calc(50% - 50vw)', 'important');
-                panel.style.setProperty('margin-right', 'calc(50% - 50vw)', 'important');
-                panel.style.setProperty('width', '100vw', 'important');
-                panel.style.setProperty('border-left', 'none', 'important');
-                panel.style.setProperty('border-right', 'none', 'important');
-                panel.style.setProperty('border-radius', '0', 'important');
-                
-                // モバイル時はスタイルの再計算（Reflow）タイムラグを防ぐため、画面幅そのものを直接確定値として使用する
-                containerWidth = window.innerWidth;
-            } else {
-                // PC大画面時：スタイルをクリアして元のグリッド幅に戻す
-                panel.style.removeProperty('margin-left');
-                panel.style.removeProperty('margin-right');
-                panel.style.removeProperty('width');
-                panel.style.removeProperty('border-left');
-                panel.style.removeProperty('border-right');
-                panel.style.removeProperty('border-radius');
-                
-                // PC時はパネル自体の実際の物理横幅（ボーダー2px分を引く）を直接取得して使用
-                const panelRect = panel.getBoundingClientRect();
-                containerWidth = panelRect.width - 2;
-            }
+            // パネル自身の実際の物理横幅（ボーダー2px分を引く）を直接取得して使用
+            const panelRect = panel.getBoundingClientRect();
+            const containerWidth = panelRect.width - 2;
             
             const baseWidth = 650;
             const baseHeight = 400;
