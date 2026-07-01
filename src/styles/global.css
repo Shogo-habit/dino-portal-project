@@ -498,6 +498,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  min-width: 0; /* 防止子元素内容撑大网格列 */
 }
 
 .detail-img-viewer {

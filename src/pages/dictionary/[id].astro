@@ -210,7 +210,7 @@ const relatedTopics = topics
 
             <!-- 5. サイズ比較パネル (comparison) -->
             {hasComparison && (
-                <div class="detail-comparison" style="min-width: 0;">
+                <div class="detail-comparison" style="min-width: 0; overflow: hidden;">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 0 5px; flex-wrap: wrap; gap: 10px;">
                         <h4 style="color: var(--primary-neon); margin: 0; white-space: nowrap;">サイズ比較</h4>
                         <a href="/size-comparison/" style="font-size: 11px; color: var(--secondary-neon); text-decoration: none; font-family: var(--font-mono); font-weight: bold; transition: opacity 0.3s; white-space: normal; text-align: right;">
@@ -417,9 +417,6 @@ const relatedTopics = topics
             const panel = stage.parentElement;
             if (!panel) return;
             
-            const wrapper = panel.closest('.detail-comparison') || panel;
-            let containerWidth = wrapper.getBoundingClientRect().width;
-            
             if (window.innerWidth <= 1024) {
                 // モバイル縮小時：100vw（画面全体の横幅）に強制固定するインラインスタイルを適用
                 panel.style.setProperty('margin-left', 'calc(50% - 50vw)', 'important');
@@ -428,9 +425,6 @@ const relatedTopics = topics
                 panel.style.setProperty('border-left', 'none', 'important');
                 panel.style.setProperty('border-right', 'none', 'important');
                 panel.style.setProperty('border-radius', '0', 'important');
-                
-                // 縮尺の計算幅として、画面幅そのもの（window.innerWidth）を直接使用
-                containerWidth = window.innerWidth;
             } else {
                 // PC大画面時：スタイルをクリアして元のグリッド幅に戻す
                 panel.style.removeProperty('margin-left');
@@ -440,6 +434,10 @@ const relatedTopics = topics
                 panel.style.removeProperty('border-right');
                 panel.style.removeProperty('border-radius');
             }
+            
+            // 親のラッパーではなく、パネル自身の実際の物理横幅を直接取得（ボーダー2px分を引く）
+            const panelRect = panel.getBoundingClientRect();
+            const containerWidth = panelRect.width - 2;
             
             const baseWidth = 650;
             const baseHeight = 400;
