@@ -431,6 +431,27 @@ if (!defaultDino) {
             refEl.style.right = 'auto';
             refEl.style.left = `${refLeft}px`;
 
+            // Dynamic panel height adjustment for mobile to prevent huge top empty spaces
+            if (isMobile) {
+                const maxIllustH = Math.max(dinoTargetH, refTargetH);
+                const minPanelH = 200;
+                const maxPanelH = PANEL_HEIGHT; // 405
+                let neededPanelH = maxIllustH + BASELINE_PX + 30; // height + baseline + padding
+                neededPanelH = Math.max(minPanelH, Math.min(maxPanelH, neededPanelH));
+                stageContainer.style.height = `${neededPanelH}px`;
+            } else {
+                stageContainer.style.height = `${PANEL_HEIGHT}px`;
+            }
+
+            // Offset label vertical positions on mobile to prevent overlapping
+            if (isMobile && dinoTag && refTag) {
+                dinoTag.style.bottom = '-18px';
+                refTag.style.bottom = '-34px';
+            } else {
+                if (dinoTag) dinoTag.style.bottom = '-20px';
+                if (refTag) refTag.style.bottom = '-20px';
+            }
+
             // 5. Render dynamic HUD Grid
             const gridPx = 50 * currentZoom;
             grid.style.backgroundSize = `${gridPx}px ${gridPx}px`;
