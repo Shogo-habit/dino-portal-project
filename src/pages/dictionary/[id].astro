@@ -265,8 +265,8 @@ const relatedTopics = topics
                             <g transform={`translate(${dinoX + dinoW/2}, ${isLabelConflict ? 377 : 350})`}>
                                 <rect x="-105" y="-12" width="210" height="30" fill="rgba(0, 10, 20, 0.75)" stroke="rgba(0, 242, 255, 0.25)" stroke-width="1" rx="3" />
                                 <line x1="0" y1="-25" x2="0" y2="-12" stroke="rgba(0, 242, 255, 0.2)" stroke-width="1" stroke-dasharray="2,2" />
-                                <text text-anchor="middle" fill="#00f2ff" font-size="11.5" font-family="'Share Tech Mono', monospace" font-weight="bold">{d.name}</text>
-                                <text text-anchor="middle" fill="#00f2ff" font-size="9" opacity="0.8" font-family="'Share Tech Mono', monospace" y="13">
+                                <text text-anchor="middle" fill="#00f2ff" font-size="11.5" font-family="var(--font-mono)" font-weight="bold">{d.name}</text>
+                                <text text-anchor="middle" fill="#00f2ff" font-size="9" opacity="0.8" font-family="var(--font-mono)" y="13">
                                     高さ {formatVal(d.cyberMetadata?.realHeight || 0)}m（全長 {d.length}）
                                 </text>
                             </g>
@@ -275,8 +275,8 @@ const relatedTopics = topics
                             <g transform={`translate(${refX + refW/2}, 350)`}>
                                 <rect x="-55" y="-12" width="110" height="30" fill="rgba(0, 10, 20, 0.75)" stroke="rgba(0, 242, 255, 0.25)" stroke-width="1" rx="3" />
                                 <line x1="0" y1="-25" x2="0" y2="-12" stroke="rgba(0, 242, 255, 0.2)" stroke-width="1" stroke-dasharray="2,2" />
-                                <text text-anchor="middle" fill="#00f2ff" font-size="11.5" font-family="'Share Tech Mono', monospace" font-weight="bold">人間</text>
-                                <text text-anchor="middle" fill="#00f2ff" font-size="9" opacity="0.8" font-family="'Share Tech Mono', monospace" y="13">高さ 1.7m</text>
+                                <text text-anchor="middle" fill="#00f2ff" font-size="11.5" font-family="var(--font-mono)" font-weight="bold">人間</text>
+                                <text text-anchor="middle" fill="#00f2ff" font-size="9" opacity="0.8" font-family="var(--font-mono)" y="13">高さ 1.7m</text>
                             </g>
                         </svg>
                     </div>
