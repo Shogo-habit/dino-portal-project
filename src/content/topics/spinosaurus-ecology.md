@@ -71,7 +71,7 @@ relatedSpecimens: ["spinosaurus","tyrannosaurus"]
 </p>
 
 <h2 class="article-section-title">生態復元の歴史的変遷：4つのフェーズ</h2>
-<div style="width: 732px; max-width: 100%; margin: 20px auto;">
+<div style="width: 976px; max-width: 100%; margin: 20px auto;">
   <img src="/images/topics/spinosaurus_evolution3.webp" alt="スピノサウルスの生態復元の歴史的変遷" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
