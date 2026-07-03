@@ -523,7 +523,7 @@ export const QUIZ_SPECIMENS: QuizSpecimen[] = [
         difficulty: "master"
     },
     {
-        id: "kamuyasaurus",
+        id: "kamuysaurus",
         name: "カムイサウルス",
         zoom: 3.5,
         originX: "20%",

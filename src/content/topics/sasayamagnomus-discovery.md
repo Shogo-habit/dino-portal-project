@@ -6,7 +6,7 @@ title: "日本発の恐竜たち：ササヤマグノームスが解き明かす
 summary: "2024年に命名された兵庫県丹波市産の最小級角竜「ササヤマグノームス・サエキ」。トリケラトプスなどの北米の大型角竜へと続く進化のルーツとして、いかに重要な発見であるかを解説する。"
 image: "images/topics/sasayamagnomus_habitat.webp"
 securityLevel: "LEVEL 4 (UNCLASSIFIED)"
-relatedSpecimens: ["sasayamagnomus","triceratops","kamuyasaurus","fukuiraptor"]
+relatedSpecimens: ["sasayamagnomus","triceratops","kamuysaurus","fukuiraptor"]
 ---
 
 <p class="article-paragraph">
@@ -133,10 +133,10 @@ relatedSpecimens: ["sasayamagnomus","triceratops","kamuyasaurus","fukuiraptor"]
       <div style="font-size: 10px; color: var(--text-dim);">角竜類 / 白亜紀前期</div>
     </div>
   </a>
-  <a href="/dictionary/kamuyasaurus/" style="text-decoration: none; color: inherit;">
+  <a href="/dictionary/kamuysaurus/" style="text-decoration: none; color: inherit;">
     <div class="hud-panel" style="padding: 12px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border: 1px solid rgba(0, 242, 255, 0.15); background: rgba(255, 255, 255, 0.01); transition: all 0.3s;">
       <div style="width: 100%; height: 90px; display: flex; align-items: center; justify-content: center; background: #010408; border-radius: 2px; margin-bottom: 8px; overflow: hidden; border: 1px solid rgba(0, 242, 255, 0.05);">
-        <img src="/images/kamuyasaurus.webp" alt="カムイサウルス" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
+        <img src="/images/kamuysaurus.webp" alt="カムイサウルス" style="max-width: 90%; max-height: 90%; object-fit: contain; display: block;" />
       </div>
       <div style="font-size: 13px; font-weight: bold; color: var(--text-color); margin-bottom: 4px;">カムイサウルス</div>
       <div style="font-size: 10px; color: var(--text-dim);">鳥脚類 / 白亜紀後期</div>
