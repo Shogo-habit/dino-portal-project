@@ -27,7 +27,7 @@ const recentlyAddedDinos = dinosaurs
 
     <div class="home-layout">
         <div class="home-main-column">
-            <div class="dino-day-hero hud-panel">
+            <a href={`/dictionary/${pickupDino.id}/`} class="dino-day-hero hud-panel">
                 <div class="hud-corner top-left"></div>
                 <div class="hud-corner bottom-right"></div>
                 <div class="hero-img-container">
@@ -37,9 +37,9 @@ const recentlyAddedDinos = dinosaurs
                     <span class="hero-label">【本日のピックアップ】</span>
                     <h3 class="hero-name">{pickupDino.name}</h3>
                     <p class="hero-desc">{pickupDino.description}</p>
-                    <a href={`/dictionary/${pickupDino.id}/`} class="nav-link" style="display: inline-block; width: fit-content; text-decoration: none;">詳細データを閲覧</a>
+                    <span class="hero-nav-btn">[ 詳細データを閲覧 ]</span>
                 </div>
-            </div>
+            </a>
 
             <div class="category-tag-scan hud-panel">
                 <h4 style="margin-bottom: 20px; border-bottom: 1px solid var(--panel-border); padding-bottom: 10px;">タグから恐竜を探す</h4>
@@ -279,5 +279,46 @@ const recentlyAddedDinos = dinosaurs
     background: rgba(0, 242, 255, 0.08);
     box-shadow: 0 0 10px rgba(0, 242, 255, 0.2);
     color: var(--primary-neon);
+  }
+
+  /* dino-day-hero Link Hover & Inner Styling */
+  a.dino-day-hero {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  a.dino-day-hero:hover {
+    border-color: var(--primary-neon) !important;
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+    background: rgba(0, 242, 255, 0.05);
+  }
+
+  a.dino-day-hero:hover .hero-img {
+    transform: scale(1.04);
+  }
+
+  .hero-img {
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  }
+
+  .hero-nav-btn {
+    display: inline-block;
+    width: fit-content;
+    font-family: var(--font-mono);
+    color: var(--primary-neon);
+    font-size: 13px;
+    padding: 8px 14px;
+    border: 1px solid transparent;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    letter-spacing: 1px;
+  }
+
+  a.dino-day-hero:hover .hero-nav-btn {
+    color: #fff;
+    text-shadow: 0 0 8px var(--primary-neon);
+    border: 1px solid var(--panel-border);
+    background: rgba(0, 242, 255, 0.1);
+    box-shadow: 0 0 12px rgba(0, 242, 255, 0.15);
   }
 </style>
