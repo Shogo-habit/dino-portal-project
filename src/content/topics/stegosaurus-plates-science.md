@@ -2,7 +2,7 @@
 id: "stegosaurus-plates-science"
 date: "2026.05.23"
 category: "theory"
-title: "【剣竜の絶対王者】ステゴサウルスのすべてを徹底解説！背中の板の謎と尾の武器の真実"
+title: "ステゴサウルスの強さとは？強さ・大きさ・生態を子供でもわかりやすく解説"
 summary: "誰もが知る剣竜ステゴサウルス。その背中に交互に立ち並ぶ巨大な「骨板」の真の機能とは？最新の熱力学シミュレーションと顕微鏡分析から明かされた真相。"
 image: "images/topics/stegosaurus_plates.webp"
 securityLevel: "LEVEL 2 (SCIENTIFIC REVISION)"
@@ -78,7 +78,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus","miragaia"]
 <p class="article-paragraph">
   板の表面は角質やカラフルな皮膚の鞘で覆われていた可能性が高く、興興に板に通る血流量を一気に増加させることで、板の色を急激に赤く変化させる「フラッシング（変色）」を行っていたのではないかと考えられています。アロサウルスなどの天敵が迫った際、背中の巨大な板が一斉に真っ赤に染まる姿は、肉食恐竜に強い警戒心を抱かせ、攻撃を思いとどまらせる十分な威嚇効果があったでしょう。また、繁殖期にはこの板の大きさと美しさを競い合うことで、優れた遺伝子を持つ個体が異性にアピールする求愛行動（ディスプレイ）にも使われていたと考えられます。
 </p>
-<div style="width: 488px; max-width: 100%; margin: 20px auto;">
+<div style="width: 732px; max-width: 100%; margin: 20px auto;">
   <img src="/images/topics/stegosaurus_plates3.webp" alt="ステゴサウルスのフラッシングとディスプレイ" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
