@@ -10,6 +10,23 @@ const sortedTopics = topics
 // Extract unique categories from topic entries dynamically for ultimate extensibility
 const uniqueCategories = [...new Set(topics.map(entry => entry.data.category))].filter(Boolean);
 
+// Prescribed order for categories, user-specified
+const categoryOrder = ["basics", "introduction", "theory", "museum_goods", "ranking"];
+
+// Sort dynamically discovered categories based on the prescribed order
+const sortedCategories = uniqueCategories.sort((a, b) => {
+  let indexA = categoryOrder.indexOf(a);
+  let indexB = categoryOrder.indexOf(b);
+  
+  if (indexA === -1) indexA = 999;
+  if (indexB === -1) indexB = 999;
+  
+  if (indexA !== indexB) {
+    return indexA - indexB;
+  }
+  return a.localeCompare(b);
+});
+
 // Category Japanese/English labels mapping table
 const categoryLabels: Record<string, { ja: string; en: string }> = {
   introduction: { ja: "恐竜紹介", en: "INTRODUCTION" },
@@ -20,7 +37,7 @@ const categoryLabels: Record<string, { ja: string; en: string }> = {
 };
 
 // Generate labels dynamically for all found categories (fallbacks included)
-const categoriesWithLabels = uniqueCategories.map(cat => {
+const categoriesWithLabels = sortedCategories.map(cat => {
   const label = categoryLabels[cat] || {
     ja: cat.charAt(0).toUpperCase() + cat.slice(1),
     en: cat.toUpperCase()
