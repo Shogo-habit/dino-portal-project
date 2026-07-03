@@ -1,7 +1,7 @@
 ---
 id: "stegosaurus-plates-science"
 date: "2026.05.23"
-category: "theory"
+category: "introduction"
 title: "ステゴサウルスの強さとは？強さ・大きさ・生態を子供でもわかりやすく解説"
 summary: "誰もが知る剣竜ステゴサウルス。その背中に交互に立ち並ぶ巨大な「骨板」の真の機能とは？最新の熱力学シミュレーションと顕微鏡分析から明かされた真相。"
 image: "images/topics/stegosaurus_plates.webp"
