@@ -1,7 +1,7 @@
 ---
 id: "ankylosaurus-guide"
 date: "2026.06.29"
-category: "RESEARCH"
+category: "introduction"
 title: "アンキロサウルスの強さとは？強さ・大きさ・生態を子供でもわかりやすく解説"
 summary: "背中に硬いトゲトゲのよろいをまとい、しっぽの先には巨大な骨のハンマーを持つアンキロサウルス！『歩く戦車』とも呼ばれるその鉄壁の強さ、大きさ、防衛のひみつを子供向けにわかりやすく解説します。最強のティラノサウルスと対決したらどうなった？といった面白い疑問にも答えます！"
 image: "images/topics/ankylosaurus_detail.webp"

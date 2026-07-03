@@ -1,7 +1,7 @@
 ---
 id: "first-named-dinosaur"
 date: "2026.05.22"
-category: "RESEARCH_HISTORY"
+category: "theory"
 title: "【恐竜誕生の歴史】世界で最初に名前がついた恐竜とは？「恐竜（Dinosaur）」という言葉が生まれた歴史と最初の3大恐竜を徹底解説"
 summary: "「恐竜」という言葉が存在しなかった19世紀初頭、最初に見つかった化石は「巨人の骨」や「ドラゴンの遺骸」と信じられていました。歴史上初めて正式に学名が与えられた「メガロサウルス」「イグアノドン」「ヒラエオサウルス」の最初の3頭と、「恐竜（Dinosauria）」という言葉が誕生した知られざる歴史、そしてなぜイグアノドンだけが圧倒的に有名なのかを徹底解説。"
 image: "images/topics/first_named_dinosaur.webp"

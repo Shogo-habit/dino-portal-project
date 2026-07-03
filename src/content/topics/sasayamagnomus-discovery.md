@@ -1,7 +1,7 @@
 ---
 id: "sasayamagnomus-discovery"
 date: "2026.05.21"
-category: "DISCOVERY"
+category: "theory"
 title: "日本発の恐竜たち：ササヤマグノームスが解き明かす角竜進化の道筋"
 summary: "2024年に命名された兵庫県丹波市産の最小級角竜「ササヤマグノームス・サエキ」。トリケラトプスなどの北米の大型角竜へと続く進化のルーツとして、いかに重要な発見であるかを解説する。"
 image: "images/topics/sasayamagnomus_habitat.webp"

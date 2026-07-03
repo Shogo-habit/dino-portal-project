@@ -1,7 +1,7 @@
 ---
 id: "strongest-dinosaur-debate"
 date: "2026.05.22"
-category: "RESEARCH_HISTORY"
+category: "ranking"
 title: "【決定版】最強の恐竜ランキング＆大きさランキング！最新科学が明かす戦闘力と驚異のスペック徹底比較"
 summary: "「地球史上、一番強かった恐竜はどれだ？」誰もが夢見る恐竜の最強ランキングと大きさランキングを徹底解説！ティラノサウルスやトリケラトプス、アルゼンチノサウルスなどのサイズ・武器・最新学説に基づく戦闘力を徹底的に比較検証します。"
 image: "images/topics/strongest_dinosaur_debate.webp"

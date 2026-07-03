@@ -1,7 +1,7 @@
 ---
 id: "trex-small-arms"
 date: "2026.05.23"
-category: "RESEARCH"
+category: "theory"
 title: "ティラノサウルスの「小さな前足」の謎！何のために使っていた？"
 summary: "体長12メートルを超える巨大な体に、人間とほぼ同じ長さの小さな前足。アンバランスで愛嬌すら感じるティラノサウルスの前足の使い道について、最新の説をわかりやすく解説。"
 image: "images/topics/trex_small_arms.webp"

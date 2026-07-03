@@ -1,7 +1,7 @@
 ---
 id: "brachiosaurus-guide"
 date: "2026.06.09"
-category: "RESEARCH"
+category: "introduction"
 title: "ブラキオサウルスとは？大きさ・特徴・生態をわかりやすく解説"
 summary: "キリンのように首が長く、前足が後ろ足より長いユニークな超巨大恐竜ブラキオサウルス。その驚くべき大きさや特徴、生態のヒミツについて、お子様にも分かりやすい言葉で丁寧に解説します！"
 image: "images/topics/brachiosaurus_detail.webp"

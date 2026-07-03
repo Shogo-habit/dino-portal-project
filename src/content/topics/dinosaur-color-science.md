@@ -1,7 +1,7 @@
 ---
 id: "dinosaur-color-science"
 date: "2026.05.30"
-category: "RESEARCH"
+category: "theory"
 title: "恐竜の「色」はどうやってわかる？羽毛化石が解き明かすカラフルな真実"
 summary: "骨の化石しか残らない恐竜の本当の色を、どうやって科学的に突き止めるのか？ノーベル賞級の発見と言われる「メラノソーム」分析の仕組みと、色彩が判明した恐竜たちを紹介。"
 image: "images/topics/dinosaur_color_science.webp"

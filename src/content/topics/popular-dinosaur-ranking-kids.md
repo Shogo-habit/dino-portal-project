@@ -1,7 +1,7 @@
 ---
 id: "popular-dinosaur-ranking-kids"
 date: "2026.06.18"
-category: "RESEARCH_HISTORY"
+category: "ranking"
 title: "子供に人気の恐竜ランキングTOP10！なぜ人気なのかも解説"
 summary: "「一番人気の恐竜はどれ？」全国のファン投票や図鑑アンケート、おもちゃの売れ筋データを合算した、本当に納得できる『子供に人気の恐竜ランキングTOP10』を発表！各恐竜の特徴や「なぜ人気なのか」という秘密まで、子供向けに優しく解説します。"
 image: "images/topics/popular_dinosaur_ranking.webp"

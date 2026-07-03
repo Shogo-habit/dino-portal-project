@@ -1,7 +1,7 @@
 ---
 id: "dinosaur-size-ranking"
 date: "2026.06.16"
-category: "RESEARCH"
+category: "ranking"
 title: "【一番大きいのは？】恐竜の大きさランキングTOP10！最大の恐竜を最新の学説から徹底解説"
 summary: "地球上で最も大きかった恐竜はどれ？最新の研究データをもとに、全長や体重を比較した「恐竜の大きさランキングTOP10」を大発表！アルゼンチノサウルスやパタゴティタンなどの超巨大な竜脚類を中心に、子供向けに分かりやすく解説します。"
 image: "images/topics/dinosaur_size_ranking.webp"

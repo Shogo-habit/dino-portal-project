@@ -1,7 +1,7 @@
 ---
 id: "tyrannosaurus-guide"
 date: "2026.06.03"
-category: "RESEARCH"
+category: "introduction"
 title: "【最強の肉食恐竜】ティラノサウルスのすべてを徹底解説！"
 summary: "史上最強の肉食恐竜ティラノサウルス（T-Rex）。その強大な顎の力、獲物を見逃さない驚異的な五感、羽毛があったのかどうかの最新の研究、そして親子で遊べるおもちゃまでを分かりやすく解説します。"
 image: "images/topics/tyrannosaurus_detail.webp"

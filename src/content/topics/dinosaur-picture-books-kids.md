@@ -1,7 +1,7 @@
 ---
 id: "dinosaur-picture-books-kids"
 date: "2026.06.14"
-category: "DISCOVERY"
+category: "museum_goods"
 title: "【3歳〜6歳】幼児におすすめの恐竜図鑑6選！失敗しない選び方と年齢別レビュー"
 summary: "3歳〜6歳児の恐竜図鑑の選び方を徹底解説！失敗しやすいポイントや、3〜4歳向け・5〜6歳向けのおすすめ図鑑6選を詳細レビューと比較表で分かりやすく紹介します。"
 image: "images/topics/recommended_kids_books.webp"

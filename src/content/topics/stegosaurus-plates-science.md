@@ -1,7 +1,7 @@
 ---
 id: "stegosaurus-plates-science"
 date: "2026.05.23"
-category: "RESEARCH"
+category: "theory"
 title: "【剣竜の絶対王者】ステゴサウルスのすべてを徹底解説！背中の板の謎と尾の武器の真実"
 summary: "誰もが知る剣竜ステゴサウルス。その背中に交互に立ち並ぶ巨大な「骨板」の真の機能とは？最新の熱力学シミュレーションと顕微鏡分析から明かされた真相。"
 image: "images/topics/stegosaurus_plates.webp"

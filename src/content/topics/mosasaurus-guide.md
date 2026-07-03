@@ -1,7 +1,7 @@
 ---
 id: "mosasaurus-guide"
 date: "2026.06.19"
-category: "RESEARCH"
+category: "introduction"
 title: "モササウルスの強さとは？強さ・大きさ・生態を子供でもわかりやすく解説"
 summary: "海の絶対王者モササウルス！その恐るべき強さ、ビル4階建てに匹敵する巨大さ、取得した実物の詳細イラストを交えて子供向けに楽しく解説します。恐竜とは決定的な違いや、映画『ジュラシック・ワールド』で大活躍した理由など、親子で楽しめる豆知識が満載です！"
 image: "images/topics/mosasaurus_detail.webp"

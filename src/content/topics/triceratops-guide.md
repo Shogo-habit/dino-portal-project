@@ -1,7 +1,7 @@
 ---
 id: "triceratops-guide"
 date: "2026.06.03"
-category: "RESEARCH"
+category: "introduction"
 title: "【盾角竜の代表格】トリケラトプスのすべてを徹底解説！"
 summary: "三本の角と巨大なフリルを持つトリケラトプス。その防衛に特化した進化、ティラノサウルスとの死闘の実態、謎に包まれたフリルの役割、おもちゃやフィギュアの紹介を徹底解説。"
 image: "images/topics/triceratops_detail.webp"

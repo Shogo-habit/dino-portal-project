@@ -1,7 +1,7 @@
 ---
 id: "dilophosaurus-frill"
 date: "2026.06.13"
-category: "RESEARCH_HISTORY"
+category: "theory"
 title: "ディロフォサウルスの真実：映画が作った「毒と襟飾り」の虚像"
 summary: "映画『ジュラシック・パーク』で一躍有名になったディロフォサウルス。しかし、トレードマークである「襟飾り（フリル）」や「毒吐き」は本当に存在したのか？最新の研究から明らかになった本当の姿を解説する。"
 image: "images/topics/dilophosaurus_comparison.webp"

@@ -1,7 +1,7 @@
 ---
 id: "triceratops-frill-mystery"
 date: "2026.05.23"
-category: "RESEARCH"
+category: "theory"
 title: "トリケラトプスの頭の「フリル」、実は盾（たて）じゃなかった！？"
 summary: "ティラノサウルスの攻撃を防ぐ最強のバリアだと思われていたトリケラトプスのフリル。実は防御用としては脆かった？最新の研究から浮かび上がった意外な使い道を解説。"
 image: "images/topics/triceratops_frill.webp"

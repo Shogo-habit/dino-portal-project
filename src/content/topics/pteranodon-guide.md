@@ -1,7 +1,7 @@
 ---
 id: "pteranodon-guide"
 date: "2026.06.29"
-category: "RESEARCH"
+category: "introduction"
 title: "プテラノドンの強さとは？強さ・大きさ・生態を子供でもわかりやすく解説"
 summary: "空飛ぶ巨大な翼竜プテラノドン！翼を広げると小型飛行機に匹敵するその大きさ、どうやって飛んでいたのかという飛行のひみつ、そして恐竜との決定的な違いを子供向けにわかりやすく解説します。映画のように人間を乗せて飛べるの？といった気になる疑問にも迫ります！"
 image: "images/topics/pteranodon_detail.webp"

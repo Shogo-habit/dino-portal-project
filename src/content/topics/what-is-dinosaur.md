@@ -1,7 +1,7 @@
 ---
 id: "what-is-dinosaur"
 date: "2026.06.14"
-category: "RESEARCH"
+category: "introduction"
 title: "恐竜とは？子供でもわかる定義・種類・絶滅の理由"
 summary: "「恐竜ってなに？」そんな子どもたちの素朴な疑問に、恐竜の定義から代表的な種類、なぜ絶滅してしまったのかまで、分かりやすく丁寧に解説します。空を飛ぶプテラノドンや海のモササウルスが恐竜ではない理由など、意外と知らない豆知識も満載です。"
 image: "images/topics/what_is_dinosaur.webp"

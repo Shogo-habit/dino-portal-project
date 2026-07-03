@@ -1,7 +1,7 @@
 ---
 id: "spinosaurus-ecology"
 date: "2026.06.10"
-category: "RESEARCH_HISTORY"
+category: "theory"
 title: "スピノサウルスの生態推測の歴史的変化：陸の王者から水中の狩人へ"
 summary: "かつてはティラノサウルスのような二足歩行の陸生恐竜と考えられていたスピノサウルス。最新の化石発見と科学技術によって「四足歩行の水棲恐竜」へとその生態推測が激変した歴史と、最新の骨密度研究、さらに復元が変わった他の恐竜たちの比較や人気の秘密までを徹底解説。"
 image: "images/topics/spinosaurus_evolution.webp"

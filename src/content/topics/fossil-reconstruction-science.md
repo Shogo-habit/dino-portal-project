@@ -1,7 +1,7 @@
 ---
 id: "fossil-reconstruction-science"
 date: "2026.05.22"
-category: "RESEARCH"
+category: "theory"
 title: "完全な化石がないのになぜ全身がわかる？古生物学者が「パズル」を解く科学的アプローチ"
 summary: "「博物館の恐竜骨格はほとんど想像で作られている？」そんな素朴な疑問に迫ります。一部の骨しか見つかっていない恐竜の全身像を、科学的に高い精度で復元する驚きのテクニックを解説。"
 image: "images/topics/fossil_reconstruction.webp"

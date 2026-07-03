@@ -1,7 +1,7 @@
 ---
 id: "japan-dinosaur-spots"
 date: "2026.05.30"
-category: "DISCOVERY"
+category: "museum_goods"
 title: "日本は恐竜王国？国内の主要発掘エリアと化石発掘体験スポット5選"
 summary: "福井県、兵庫県、北海道など日本各地で見つかる恐竜化石と、一般の大人や子どもが実際に化石発掘体験を楽しめる全国の有名ミュージアムや体験スポットを徹底解説。"
 image: "images/topics/japan_dinosaur_spots.webp"

@@ -1,7 +1,7 @@
 ---
 id: "plesiosaurus-guide"
 date: "2026.06.29"
-category: "RESEARCH"
+category: "introduction"
 title: "プレシオサウルスの強さとは？強さ・大きさ・生態を子供でもわかりやすく解説"
 summary: "長い首と4枚の大きなヒレを持つ、海の優雅な首長竜プレシオサウルス！ペンギンのように水中を羽ばたいて泳ぐ不思議な生態、長い首に隠された驚きの進化、そして映画やモササウルスとの違いを子供向けにわかりやすく解説します。ネッシーの正体なの？といった夢のある疑問にも答えます！"
 image: "images/topics/plesiosaurus_detail.webp"

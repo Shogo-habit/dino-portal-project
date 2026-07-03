@@ -1,7 +1,7 @@
 ---
 id: "extinction-scenario"
 date: "2026.05.21"
-category: "RESEARCH"
+category: "theory"
 title: "恐竜絶滅の最新シナリオ：小惑星衝突の直前まで「彼らは全盛期だった」"
 summary: "かつての「恐竜は隕石が落ちる前から環境変化で衰退しつつあった」という説を覆す、最新の統計的アプローチによる研究。恐竜たちは絶滅の直前まで極めて多様で繁栄していたことが示された。"
 image: "images/topics/extinction_scenario.webp"
