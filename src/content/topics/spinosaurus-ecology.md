@@ -1,8 +1,8 @@
 ---
 id: "spinosaurus-ecology"
 date: "2026.06.10"
-category: "theory"
-title: "スピノサウルスの生態推測の歴史的変化：陸の王者から水中の狩人へ"
+category: "introduction"
+title: "スピノサウルスの強さとは？強さ・大きさ・生態を解説"
 summary: "かつてはティラノサウルスのような二足歩行の陸生恐竜と考えられていたスピノサウルス。最新の化石発見と科学技術によって「四足歩行の水棲恐竜」へとその生態推測が激変した歴史と、最新の骨密度研究、さらに復元が変わった他の恐竜たちの比較や人気の秘密までを徹底解説。"
 image: "images/topics/spinosaurus_evolution.webp"
 securityLevel: "LEVEL 1 (PUBLIC ARCHIVE)"
@@ -71,6 +71,9 @@ relatedSpecimens: ["spinosaurus","tyrannosaurus"]
 </p>
 
 <h2 class="article-section-title">生態復元の歴史的変遷：4つのフェーズ</h2>
+<div style="width: 732px; max-width: 100%; margin: 20px auto;">
+  <img src="/images/topics/spinosaurus_evolution3.webp" alt="スピノサウルスの生態復元の歴史的変遷" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+</div>
 
 <h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">【Phase 1】1912年〜1944年：最初の発見と戦争による悲劇</h3>
 <p class="article-paragraph">
