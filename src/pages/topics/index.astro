@@ -299,8 +299,16 @@ const categoriesWithLabels = uniqueCategories.map(cat => {
                 }
             });
 
-            // Re-append to DOM in the sorted order
-            sortedItems.forEach(item => {
+            // Re-append to DOM: active items first, then filtered-out items at the very end.
+            // This prevents hidden items from dynamically triggering flash heights/margins
+            // and causing weird white spaces between visible items when sorted.
+            const visibleItems = sortedItems.filter(item => !item.classList.contains('filtered-out'));
+            const hiddenItems = sortedItems.filter(item => item.classList.contains('filtered-out'));
+
+            visibleItems.forEach(item => {
+                topicList.appendChild(item);
+            });
+            hiddenItems.forEach(item => {
                 topicList.appendChild(item);
             });
         }
