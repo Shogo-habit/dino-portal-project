@@ -185,14 +185,16 @@ export const DINO_AFFILIATE_MAP: Record<string, AffiliateProduct[]> = {
     "ankylosaurus": [
         {
             id: "ankylosaurus_figure",
-            title: "アニア AL-05 アンキロサウルス",
+            title: "アニア アンキロサウルス",
             subtitle: "全身を覆う鎧装装甲と、ハンマー状の堅牢な尾を完全再現",
             type: "figure",
             badgeText: "PRECISION MODEL",
-            imageUrl: "https://images-na.ssl-images-amazon.com/images/I/61B6-d6W2PL._AC_SL1500_.jpg",
+            imageUrl: "https://thumbnail.image.rakuten.co.jp/@0_mall/toyhobbymarket/cabinet/thumb/3/4904810895657.jpg?_ex=128x128",
             affiliateUrl: buildAffiliateUrl("https://www.amazon.co.jp/dp/B07BL1ZBLG"),
             priceText: "PRICE: ¥1,430 (税込)",
-            details: ["タカラトミー公式", "ラージサイズアニア", "首とハンマー付き尾の可動"]
+            details: ["タカラトミー公式", "ラージサイズアニア", "首とハンマー付き尾の可動"],
+            rakutenAffiliateUrl: buildRakutenAffiliateUrl("アニア アンキロサウルス"),
+            impressionUrl: "https://i.moshimo.com/af/i/impression?a_id=5603988&p_id=54&pc_id=54&pl_id=616"
         }
     ],
     "dinosaur-books-selection": [
