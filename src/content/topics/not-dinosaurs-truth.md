@@ -1,7 +1,7 @@
 ---
 id: "not-dinosaurs-truth"
 date: "2026.05.23"
-category: "introduction"
+category: "basics"
 title: "プテラノドンやモササウルスは恐竜じゃないって本当！？"
 summary: "図鑑や映画では一緒に「恐竜」として紹介されがちな翼竜や首長竜。しかし学術的には恐竜ではありません。誰かに話したくなる、骨格構造の違いと正しい恐竜の見分け方を伝授！"
 image: "images/topics/not_dinosaurs.webp"

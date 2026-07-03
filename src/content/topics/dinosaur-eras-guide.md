@@ -1,7 +1,7 @@
 ---
 id: "dinosaur-eras-guide"
 date: "2026.05.24"
-category: "introduction"
+category: "basics"
 title: "【地球の覇権を握った1億6000万年】「三畳紀・ジュラ紀・白亜紀」恐竜たちの進化と環境の変化を徹底解説！"
 summary: "恐竜たちが主役として君臨し続けた約1億6000万年間（中生代）。大きく分かれる3つの時代「三畳紀」「ジュラ紀」「白亜紀」の気候や地形の劇的な変化と、それに適応していった恐竜たちの進化・多様化のプロセスを詳しく解説します。"
 image: "images/topics/dinosaur_eras.webp"
