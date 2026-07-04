@@ -341,15 +341,15 @@ const relatedTopics = topics
                     <!-- 生物学的特性解析 -->
                     {d.bioTraits && d.bioTraits.length > 0 && (
                         <div class="trait-bar-wrap" style="margin-top: 0; border-top: 1px dashed rgba(0, 242, 255, 0.15); padding-top: 15px;">
-                            <h5 style="color: var(--primary-neon); margin-bottom: 12px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.5px; text-transform: uppercase;">BIOLOGICAL SPECIFICATION ANALYSES</h5>
-                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
+                            <h5 style="color: var(--primary-neon); margin-bottom: 12px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.5px; text-transform: uppercase;">[ 特徴の分析 / DETAILED CHARACTERISTICS ]</h5>
+                            <div style="display: flex; flex-direction: column; gap: 15px;">
                                 {d.bioTraits.map(t => (
                                     <div class="trait-row" style="margin-bottom: 0;">
                                         <div class="trait-label-row" style="display: flex; justify-content: space-between; margin-bottom: 3px; font-size: 13px;">
                                             <span class="trait-name" style="font-weight: bold; color: var(--text-main);">{t.trait}</span>
                                             <span class="trait-val" style="color: var(--secondary-neon); font-family: var(--font-mono);">{t.value}</span>
                                         </div>
-                                        <div style="font-size: 12px; color: var(--text-dim); border-left: 2px solid var(--primary-neon); padding-left: 8px; line-height: 1.4;">
+                                        <div style="font-size: 12px; color: var(--text-dim); border-left: 2px solid var(--primary-neon); padding-left: 10px; line-height: 1.5; text-align: justify;">
                                             {t.detail}
                                         </div>
                                     </div>
