@@ -179,13 +179,7 @@ if (hasComparison) {
     dinoLeft = `${finalLeftPercent}%`;
     refRight = `${finalRightPercent}%`;
 
-    // 3. 衝突判定
-    const distancePercent = 100 - finalLeftPercent - finalRightPercent;
-    if (distancePercent < 45) {
-        isLabelConflict = true;
-    }
-
-    // 4. SVG用の絶対座標の精密計算 (中央揃えからの変換)
+    // 3. SVG用の絶対座標の精密計算 (中央揃えからの変換)
     const dinoScale = (pxPerMeter * realH) / meta.contentHeightPx;
     dinoW = meta.sourceRes * dinoScale;
     dinoH = meta.sourceRes * dinoScale;
@@ -202,6 +196,14 @@ if (hasComparison) {
 
     refX = 650 - (650 * finalRightPercent / 100) - refW;
     refY = BASELINE_Y - refH + refBottomGapPx;
+
+    // 4. 実座標ベースの衝突判定
+    const dinoTagX = dinoX + dinoW / 2;
+    const refTagX = refX + refW / 2;
+    // タグの合計横幅が 210/2 + 110/2 = 160px。マージンを入れて180px以内の接近で重なりと判定。
+    if (Math.abs(dinoTagX - refTagX) < 180) {
+        isLabelConflict = true;
+    }
 }
 
 const formatVal = (val: number) => val % 1 === 0 ? val.toFixed(1) : val.toString();
