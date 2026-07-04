@@ -12,10 +12,10 @@ image: "images/saltasaurus.webp"
 group: "竜脚類"
 description: "竜脚類として初めて、背中に骨質の装甲板（オステオダーム）を持つことが確認された。これにより、巨大さに寄らない防御能力を証明した。"
 bioTraits:
-  - trait: "防御力"
+  - trait: "皮膚に埋め込まれた骨質の装甲板"
     value: "装甲板"
     detail: "皮膚に埋め込まれた無数の骨質の塊"
-  - trait: "進化の特異点"
+  - trait: "装甲化による軽量化"
     value: "装甲化"
     detail: "竜脚類の新たな生存戦略を示した"
 cyberMetadata:

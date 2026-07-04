@@ -15,7 +15,7 @@ bioTraits:
   - trait: "咬合力"
     value: "驚異的"
     detail: "骨を砕くための特殊な歯の構造を持つ"
-  - trait: "感知能力"
+  - trait: "優れた立体視と嗅覚"
     value: "極めて高い"
     detail: "優れた立体視を持つ"
 cyberMetadata:

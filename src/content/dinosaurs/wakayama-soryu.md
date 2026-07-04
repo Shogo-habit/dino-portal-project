@@ -12,11 +12,11 @@ image: "images/wakayama_soryu.webp"
 group: "その他"
 description: "和歌山県で発見された、ほぼ全身の化石が残る貴重なモササウルス類。ペンギンのような巨大なヒレ足が特徴。"
 bioTraits:
-  - trait: "遊泳力"
-    value: "特異"
+  - trait: "ペンギンのようなヒレ足"
+    value: "特徴的"
     detail: "前ヒレが後ろヒレよりも大きく、ペンギンのように羽ばたいて泳いでいた可能性"
-  - trait: "化石保存度"
-    value: "極めて優秀"
+  - trait: "全身骨格の良好な保存"
+    value: "優秀"
     detail: "ほぼ全身の骨格が綺麗に揃った、世界的にも非常に珍しい状態での発見"
 cyberMetadata:
   bottomGap: 300

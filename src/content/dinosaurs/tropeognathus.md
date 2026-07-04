@@ -12,7 +12,7 @@ image: "images/tropeognathus.webp"
 group: "翼竜"
 description: "嘴の先端に半円形のトサカ（隆起）を持つ巨大な翼竜。この隆起は水面ギリギリを飛ぶ際の安定性を高めていたとされる。"
 bioTraits:
-  - trait: "キール構造"
+  - trait: "嘴の上下にある半円形のトサカ"
     value: "嘴のトサカ"
     detail: "水中に嘴を入れて飛ぶ際の水の抵抗を軽減"
   - trait: "巨翼"

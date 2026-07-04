@@ -15,7 +15,7 @@ bioTraits:
   - trait: "機動力"
     value: "高い"
     detail: "短い尾により空中での旋回性能が向上"
-  - trait: "構造"
+  - trait: "極限まで軽量化された中空の骨"
     value: "軽量化"
     detail: "極限まで薄い骨格による効率的な飛行"
 cyberMetadata:

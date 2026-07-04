@@ -12,7 +12,7 @@ image: "images/anhanguera.webp"
 group: "翼竜"
 description: "「年老いた悪魔」を意味する名を持つ。交互に並ぶ長い獲物捕らえ用の歯が特徴で、魚食に特化した進化を遂げた。"
 bioTraits:
-  - trait: "捕食トラップ"
+  - trait: "魚捕り用の長い顎"
     value: "交差する歯"
     detail: "一度捕らえた魚を逃さないケージのような歯"
   - trait: "センシング"

@@ -12,7 +12,7 @@ image: "images/amargasaurus.webp"
 group: "竜脚類"
 description: "首から背中にかけて2列の長い棘が伸びているのが特徴。竜脚類の中では比較的小型だが、その姿は非常に独特である。"
 bioTraits:
-  - trait: "防御武具"
+  - trait: "首の棘"
     value: "首の棘"
     detail: "捕食者に対する防御や威嚇に使用した"
   - trait: "帆の存在"

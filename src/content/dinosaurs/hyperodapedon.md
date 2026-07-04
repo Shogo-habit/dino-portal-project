@@ -12,10 +12,10 @@ image: "images/hyperodapedon.webp"
 group: "その他"
 description: "三畳紀に繁栄したリンコサウルス類。嘴のような口と、植物をすりつぶすのに特化したプレート状の歯を持つ。"
 bioTraits:
-  - trait: "採食"
+  - trait: "シャベル状の頑丈な嘴とハサミ状の歯"
     value: "特殊な嘴"
     detail: "硬い種子や植物を砕くための強力な顎"
-  - trait: "生存戦略"
+  - trait: "驚異的な個体数と繁栄"
     value: "爆発的繁栄"
     detail: "三畳紀後期の主要な草食動物だった"
 cyberMetadata:

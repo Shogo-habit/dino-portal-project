@@ -12,10 +12,10 @@ image: "images/suchomimus.webp"
 group: "獣脚類"
 description: "「ワニもどき」を意味する、スピノサウルスに近い系統の恐竜。川辺で魚を主食としていたと考えられ、長い口と前肢の巨大な爪を持つ。"
 bioTraits:
-  - trait: "捕食"
+  - trait: "魚を捕らえる細長いワニ状の顎"
     value: "魚獲りの天才"
     detail: "ワニのような長い顎と滑りにくい歯"
-  - trait: "武器"
+  - trait: "親指の巨大な鎌爪"
     value: "親指の巨大爪"
     detail: "水中の獲物を引っ掛けて捕らえる"
 cyberMetadata:

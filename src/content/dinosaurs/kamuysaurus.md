@@ -15,7 +15,7 @@ bioTraits:
   - trait: "集団行動"
     value: "可能性あり"
     detail: "群れで行動し外敵から身を守る"
-  - trait: "適応力"
+  - trait: "海岸沿いの平原で繁栄した骨格"
     value: "高い"
     detail: "沿岸部などの過酷な環境にも適応"
 cyberMetadata:

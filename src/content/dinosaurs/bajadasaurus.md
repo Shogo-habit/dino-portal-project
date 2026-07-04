@@ -12,10 +12,10 @@ image: "images/bajadasaurus.webp"
 group: "竜脚類"
 description: "首から前向きに伸びる巨大な棘が最大の特徴である竜脚類。この棘は身を守るための武器、あるいは肉食恐竜を威嚇するための装飾だったと考えられている。"
 bioTraits:
-  - trait: "防御構造"
+  - trait: "前方を向いた首のトゲ"
     value: "前向頸棘"
     detail: "首の神経棘が前方に長く伸び、頭部を守る"
-  - trait: "進化の特異性"
+  - trait: "特異に進化した首骨"
     value: "極めて高い"
     detail: "アマルガサウルスとは逆に、棘が前を向く"
 cyberMetadata:

@@ -15,7 +15,7 @@ bioTraits:
   - trait: "装甲"
     value: "超硬質"
     detail: "皮膚に骨質の装飾が埋め込まれている"
-  - trait: "反撃能力"
+  - trait: "尾の骨質ハンマー"
     value: "ハンマー"
     detail: "尾で肉食恐竜の骨を砕く"
 cyberMetadata:

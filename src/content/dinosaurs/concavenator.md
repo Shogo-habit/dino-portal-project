@@ -12,10 +12,10 @@ image: "images/concavenator.webp"
 group: "獣脚類"
 description: "腰の近くにある2本の椎骨が突き出し、独特のコブを形成しているのが最大の特徴。前肢に羽毛の痕跡が見つかっている。"
 bioTraits:
-  - trait: "身体的特徴"
+  - trait: "背中のコブ状の突起"
     value: "背中のコブ"
     detail: "体温調節やディスプレイの役割説がある"
-  - trait: "皮膚構造"
+  - trait: "腕の原始的な羽毛組織"
     value: "羽毛の萌芽"
     detail: "前肢に羽軸隆起の形跡がある"
 cyberMetadata:

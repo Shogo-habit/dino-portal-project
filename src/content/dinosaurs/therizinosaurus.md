@@ -12,11 +12,11 @@ image: "images/therizinosaurus.webp"
 group: "獣脚類"
 description: "「大鎌のトカゲ」の名にふさわしい、長さ1メートルにも達する巨大な爪を持つ恐竜。その巨大な爪は攻撃ではなく、植物を引き寄せたり自衛のために使われたと考えられている。"
 bioTraits:
-  - trait: "リーチ"
-    value: "巨大な鎌"
+  - trait: "長さ1メートルの巨大な鎌爪"
+    value: "特徴的"
     detail: "史上最大級のハンドクローを保持"
-  - trait: "特異な外観"
-    value: "羽毛と巨体"
+  - trait: "巨大な羽毛ボディ"
+    value: "高い"
     detail: "直立に近い姿勢で高い木の葉を食べる"
 cyberMetadata:
   bottomGap: 236

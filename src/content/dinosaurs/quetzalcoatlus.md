@@ -12,10 +12,10 @@ image: "images/quetzalcoatlus.webp"
 group: "翼竜"
 description: "史上最大級の空飛ぶ生物。キリンに匹敵する高さがあり、巨大な翼で大陸間を移動した可能性もある。地上でも四肢を使って活発に動けた。"
 bioTraits:
-  - trait: "圧倒的サイズ"
+  - trait: "史上最大級の翼開長"
     value: "空の王者"
     detail: "軽飛行機に匹敵する翼の広さ"
-  - trait: "地上移動"
+  - trait: "長い四肢を活かした四足歩行"
     value: "意外に俊敏"
     detail: "四足歩行で地上を歩き獲物を探す"
 cyberMetadata:

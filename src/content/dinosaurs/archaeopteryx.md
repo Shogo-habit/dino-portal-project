@@ -12,10 +12,10 @@ image: "images/archaeopteryx.webp"
 group: "獣脚類"
 description: "「始祖鳥」として有名な、恐竜と鳥類の中間に位置する重要種。羽毛はあるが、鳥と異なり口には歯があり、翼には爪、そして長い骨質の尾を持っていた。"
 bioTraits:
-  - trait: "進化の繋ぎ目"
+  - trait: "羽毛を持つ鳥脚骨格"
     value: "羽毛と爬虫類質"
     detail: "滑空と樹上生活への適応"
-  - trait: "構造"
+  - trait: "飛行用のはばたき翼"
     value: "翼の鉤爪"
     detail: "木を登るために発達した指先の爪"
 cyberMetadata:

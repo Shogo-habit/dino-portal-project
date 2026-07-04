@@ -15,7 +15,7 @@ bioTraits:
   - trait: "巨大トサカ"
     value: "帆状"
     detail: "骨質と帆のような膜からなる大きな装飾"
-  - trait: "食性適応"
+  - trait: "硬い果実を噛み砕く頑丈な嘴"
     value: "嘴"
     detail: "種子や果実も食べられたとされる特殊な形状"
 cyberMetadata:

@@ -12,11 +12,11 @@ image: "images/nyctosaurus.webp"
 group: "翼竜"
 description: "翼竜の中でも極めて特異な、頭部の数倍もある巨大なトサカを持つ。トサカは1本の主軸がV字型に分かれた構造をしており、帆のように風を受けて飛行を補助した可能性もある。"
 bioTraits:
-  - trait: "巨大なトサカ"
-    value: "V字/Y字型"
+  - trait: "巨大なY字型の頭冠"
+    value: "特徴的"
     detail: "極めて高く伸びる分岐したトサカ"
-  - trait: "飛行適応"
-    value: "グライダー"
+  - trait: "気流を捉える滑空翼"
+    value: "高い"
     detail: "上昇気流を捉えて海上で長時間飛行する"
 cyberMetadata:
   bottomGap: 52

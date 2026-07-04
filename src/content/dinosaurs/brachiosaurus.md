@@ -12,10 +12,10 @@ image: "images/brachiosaurus.webp"
 group: "竜脚類"
 description: "前肢が後肢よりも長い超大型恐竜。高い所の植物を食べることに特化し、圧倒的な巨体が防具となった。"
 bioTraits:
-  - trait: "リーチ"
+  - trait: "高く伸びる前肢と首"
     value: "超広範囲"
     detail: "地上13メートル以上の葉を摂取"
-  - trait: "防御"
+  - trait: "圧倒的な巨体"
     value: "巨大質量"
     detail: "捕食者に襲われるリスクはほぼ皆無"
 cyberMetadata:

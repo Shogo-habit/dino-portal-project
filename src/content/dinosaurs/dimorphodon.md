@@ -15,7 +15,7 @@ bioTraits:
   - trait: "異形歯"
     value: "2種類"
     detail: "獲物を捕らえる長い前歯と噛み切る奥歯を持つ"
-  - trait: "構造"
+  - trait: "極めて巨大な頭骨"
     value: "長い尾"
     detail: "飛行時のバランスを保つための長い尾"
 cyberMetadata:

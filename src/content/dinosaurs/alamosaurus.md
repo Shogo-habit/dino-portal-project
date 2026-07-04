@@ -12,7 +12,7 @@ image: "images/alamosaurus.webp"
 group: "竜脚類"
 description: "北アメリカで発見された数少ない竜脚類の一つ。ティラノサウルと同じ時代を生きた巨大な恐竜で、白亜紀末期の生態系における最大の草食恐竜の一つだった。"
 bioTraits:
-  - trait: "巨大なサイズ"
+  - trait: "超巨大な骨格"
     value: "超大型"
     detail: "北米大陸における白亜紀後期の最大級の恐竜"
   - trait: "分布の謎"

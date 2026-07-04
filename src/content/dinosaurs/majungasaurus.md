@@ -12,11 +12,11 @@ image: "images/majungasaurus.webp"
 group: "獣脚類"
 description: "マダガスカルの島で独自に進化したアベリサウルス類。短い鼻面と分厚い頭骨、そして共食いの痕跡が発見されていることで知られる異色の捕食者。"
 bioTraits:
-  - trait: "防御"
-    value: "強固な頭部"
+  - trait: "強固なドーム状の頭部"
+    value: "強固"
     detail: "獲物への突進や仲間との争いに耐える頭骨"
-  - trait: "知能"
-    value: "中程度"
+  - trait: "島嶼での生存適応"
+    value: "高い"
     detail: "孤立した環境での生存に適した能力"
 cyberMetadata:
   bottomGap: 264

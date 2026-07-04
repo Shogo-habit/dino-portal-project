@@ -15,7 +15,7 @@ bioTraits:
   - trait: "外皮"
     value: "体毛状組織"
     detail: "全身を覆う毛のような組織による保温効果"
-  - trait: "適応"
+  - trait: "昆虫を捉える飛行機動力"
     value: "昆虫食"
     detail: "夜間や寒冷地でも活動できた可能性"
 cyberMetadata:

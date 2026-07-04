@@ -12,10 +12,10 @@ image: "images/paralitherizinosaurus.webp"
 group: "獣脚類"
 description: "北海道で発見されたテリジノサウルス類。非常に長い爪を持ち、護身や植物を引き寄せるために使っていたと考えられている。"
 bioTraits:
-  - trait: "巨大武器"
+  - trait: "自衛用の鎌状の巨大な爪"
     value: "鎌状の爪"
     detail: "護身や採食に用いる長大な爪"
-  - trait: "威嚇"
+  - trait: "巨大な爪と腕による威嚇"
     value: "効果的"
     detail: "その異様な姿で天敵を遠ざける"
 cyberMetadata:

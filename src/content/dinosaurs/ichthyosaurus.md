@@ -12,7 +12,7 @@ image: "images/ichthyosaurus.webp"
 group: "魚竜"
 description: "イルカのような流線型の体を持った魚竜。完全に水中に適応しており、卵ではなく赤ちゃんを直接産む「胎生」であったことがわかっている。"
 bioTraits:
-  - trait: "水中適応"
+  - trait: "イルカに酷似した流線型の身体"
     value: "完璧"
     detail: "高速泳行に適した尾鰭と背鰭"
   - trait: "視覚力"

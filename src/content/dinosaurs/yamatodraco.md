@@ -12,10 +12,10 @@ image: "images/yamatodraco.webp"
 group: "鳥脚類"
 description: "淡路島で発見されたハドロサウルス類。白亜紀末期まで生き残った「生きた化石」のような存在だった可能性がある。"
 bioTraits:
-  - trait: "生存戦略"
-    value: "長期間"
+  - trait: "原始的特徴の維持"
+    value: "特徴的"
     detail: "原始的な特徴を残したまま進化し続けた"
-  - trait: "採食能力"
+  - trait: "ハドロサウルス科特有の咀嚼力"
     value: "優秀"
     detail: "沿岸の多様な植物を効率よく摂取"
 cyberMetadata:

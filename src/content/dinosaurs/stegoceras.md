@@ -12,11 +12,11 @@ image: "images/stegoceras.webp"
 group: "堅頭竜類"
 description: "分厚いドーム状の頭骨を持つパキケファロサウルス類。比較的小型だが、頭突きによる儀礼的闘争を行っていたと考えられている。"
 bioTraits:
-  - trait: "武装"
-    value: "頭骨ドーム"
+  - trait: "分厚い頭骨ドーム"
+    value: "特徴的"
     detail: "衝撃に強い強化された骨構造"
-  - trait: "感覚"
-    value: "鋭敏な嗅覚"
+  - trait: "非常に鋭敏な嗅覚"
+    value: "高い"
     detail: "脳の嗅球が発達していた"
 cyberMetadata:
   bottomGap: 297

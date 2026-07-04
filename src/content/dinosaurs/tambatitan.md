@@ -15,7 +15,7 @@ bioTraits:
   - trait: "地響き"
     value: "強烈"
     detail: "その巨体が一歩歩くごとに周囲が震えた"
-  - trait: "防御"
+  - trait: "圧倒的な巨体による絶対防御"
     value: "サイズ依存"
     detail: "大きさそのものが肉食恐竜への威嚇"
 cyberMetadata:

@@ -12,10 +12,10 @@ image: "images/cryolophosaurus.webp"
 group: "獣脚類"
 description: "南極で発見された「氷のトサカを持つトカゲ」。当時は温暖だった南極の森に生息しており、エルビス・プレスリーのような髪型に見えるトサカが有名。"
 bioTraits:
-  - trait: "環境適応"
+  - trait: "極地気候への耐性"
     value: "高い"
     detail: "季節変動のある高緯度地域で活動できた"
-  - trait: "武器"
+  - trait: "扇状の頭頂トサカ"
     value: "斬撃"
     detail: "鋭い牙で獲物を素早く仕留める"
 cyberMetadata:

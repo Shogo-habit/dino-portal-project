@@ -15,7 +15,7 @@ bioTraits:
   - trait: "強力な鉤爪"
     value: "強力"
     detail: "両肢の親指に発達した大きく湾曲したフック状の爪"
-  - trait: "俊敏な骨格"
+  - trait: "軽量な後肢と爪"
     value: "高速追跡"
     detail: "後肢が非常に長く、軽量かつ頑丈な骨格により敏捷に走る"
 cyberMetadata:

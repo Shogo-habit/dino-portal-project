@@ -15,7 +15,7 @@ bioTraits:
   - trait: "特殊歯"
     value: "石畳状の歯"
     detail: "硬い殻を押しつぶすための強力な歯"
-  - trait: "防御"
+  - trait: "背中を覆う骨質の突起（ノブ）"
     value: "骨質ノブ"
     detail: "背中にある小さな骨の装甲"
 cyberMetadata:

@@ -12,11 +12,11 @@ image: "images/nipponosaurus.webp"
 group: "鳥脚類"
 description: "日本人が初めて本格的に研究した恐竜。ハドロサウルス類の子供の化石として知られ、日本の恐竜研究の礎となった象徴的な種。"
 bioTraits:
-  - trait: "歴史的価値"
-    value: "最高位"
+  - trait: "日本初の本格的な研究対象"
+    value: "特徴的"
     detail: "日本の恐竜研究をスタートさせた存在"
-  - trait: "成長段階"
-    value: "発育中"
+  - trait: "未成体の骨格化石"
+    value: "高い"
     detail: "発見されたのは亜成体とされている"
 cyberMetadata:
   bottomGap: 243

@@ -43,21 +43,6 @@ function generateDynamicFAQs(dino: any) {
 
 const faqs = generateDynamicFAQs(d);
 
-// 特性データの表示クレンジング関数
-function getCleanTraitLabel(trait: string, value: string) {
-    const evalWords = [
-        "高い", "極めて高い", "低い", "中程度", "優秀", "強力", "極めて強力", 
-        "強固", "極めて強固", "あり", "なし", "可能性", "可能性あり", "可能性大", 
-        "不明", "普通", "平均的", "最大級", "特異的", "多様", "複雑", "発達", "未発達",
-        "特殊構造", "強力な武器", "武器", "特殊", "構造", "特徴", "機能", "能力", "生態",
-        "良好", "極めて良好"
-    ];
-    if (!value || evalWords.includes(value.trim())) {
-        return trait;
-    }
-    return value;
-}
-
 // Generate JSON-LD schema specifically for this dinosaur
 const taxonSchema = {
     "@context": "https://schema.org",
@@ -359,20 +344,17 @@ const relatedTopics = topics
                         <div class="trait-bar-wrap" style="margin-top: 0; border-top: 1px dashed rgba(0, 242, 255, 0.15); padding-top: 15px;">
                             <h5 style="color: var(--primary-neon); margin-bottom: 12px; font-family: var(--font-mono); font-size: 14px; font-weight: bold; letter-spacing: 1px;">[ 特徴 ]</h5>
                             <div style="display: flex; flex-direction: column; gap: 12px;">
-                                {d.bioTraits.map(t => {
-                                    const cleanLabel = getCleanTraitLabel(t.trait, t.value);
-                                    return (
-                                        <div class="trait-row" style="margin-bottom: 0;">
-                                            <div style="font-size: 13px; line-height: 1.6; color: var(--text-main); text-align: justify;">
-                                                <strong style="color: var(--primary-neon); font-family: var(--font-mono); margin-right: 6px;">
-                                                    {cleanLabel}
-                                                </strong>
-                                                <span style="color: var(--text-dim); margin-right: 6px;">:</span>
-                                                <span style="color: var(--text-main);">{t.detail}</span>
-                                            </div>
+                                {d.bioTraits.map(t => (
+                                    <div class="trait-row" style="margin-bottom: 0;">
+                                        <div style="font-size: 13px; line-height: 1.6; color: var(--text-main); text-align: justify;">
+                                            <strong style="color: var(--primary-neon); font-family: var(--font-mono); margin-right: 6px;">
+                                                {t.trait}
+                                            </strong>
+                                            <span style="color: var(--text-dim); margin-right: 6px;">:</span>
+                                            <span style="color: var(--text-main);">{t.detail}</span>
                                         </div>
-                                    );
-                                })}
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     )}

@@ -12,10 +12,10 @@ image: "images/coelophysis.webp"
 group: "獣脚類"
 description: "初期の獣脚類の一つで、中空の骨を持つ軽量な体格が特徴。集団で行動し、小型の爬虫類や昆虫を捕らえていた。"
 bioTraits:
-  - trait: "骨格構造"
+  - trait: "超軽量の中空骨"
     value: "超軽量"
     detail: "中空の骨による優れた敏捷性"
-  - trait: "適応力"
+  - trait: "俊敏な捕食能力"
     value: "高い"
     detail: "乾燥した三畳紀の環境に広く適応"
 cyberMetadata:

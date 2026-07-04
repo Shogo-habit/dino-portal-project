@@ -12,11 +12,11 @@ image: "images/postosuchus.webp"
 group: "その他"
 description: "三畳紀の陸上に君臨した巨大な擬鰐類。ワニに近い系統だが、二足歩行も可能で、当時の初期の恐竜たちを圧倒していた。"
 bioTraits:
-  - trait: "武器"
-    value: "強力な顎"
+  - trait: "ワニに似た強力な顎"
+    value: "強力"
     detail: "ワニのような骨を砕く顎の力"
-  - trait: "機動力"
-    value: "二足・四足"
+  - trait: "直立に近い二足・四足歩行"
+    value: "高い"
     detail: "大型の体躯を支える強力な後肢"
 cyberMetadata:
   bottomGap: 362

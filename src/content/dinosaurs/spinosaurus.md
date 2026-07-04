@@ -12,10 +12,10 @@ image: "images/spinosaurus.webp"
 group: "獣脚類"
 description: "背中に帆を持つ水陸両生の肉食恐竜。ワニのような長い顎を持ち、水中での狩りに適応していた。"
 bioTraits:
-  - trait: "水中適応"
+  - trait: "ワニのような尾と高密度の骨"
     value: "最高水準"
     detail: "パドルのような尾による遊泳"
-  - trait: "捕食特化"
+  - trait: "滑りやすい魚を捉える円錐状の歯"
     value: "魚食"
     detail: "長い顎で魚を捕らえる"
 cyberMetadata:

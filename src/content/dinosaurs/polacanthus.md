@@ -15,7 +15,7 @@ bioTraits:
   - trait: "腰の盾"
     value: "サクラル・シールド"
     detail: "腰から臀部を覆う広大な単一の骨板"
-  - trait: "マルチ武装"
+  - trait: "トゲと板骨による全身装甲"
     value: "トゲと板"
     detail: "部位によってトゲと板状の装甲を使い分ける"
 cyberMetadata:

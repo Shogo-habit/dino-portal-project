@@ -12,10 +12,10 @@ image: "images/hadrosaurus.webp"
 group: "鳥脚類"
 description: "「カモノハシ竜」として知られる草食恐竜の代表格。北アメリカで初めてほぼ完全な骨格が発見された恐竜でもある。"
 bioTraits:
-  - trait: "咀嚼能力"
+  - trait: "高い咀嚼力"
     value: "高度"
     detail: "数百本の歯が並ぶデンタルバッテリー構造"
-  - trait: "移動形式"
+  - trait: "二足・四足の歩行"
     value: "二足・四足"
     detail: "状況に応じて歩行スタイルを切り替えた"
 cyberMetadata:

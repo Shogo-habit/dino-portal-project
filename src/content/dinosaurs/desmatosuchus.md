@@ -12,7 +12,7 @@ image: "images/desmatosuchus.webp"
 group: "その他"
 description: "全身を棘と装甲板で覆った草食の擬鰐類。肩に非常にながい棘があり、肉食動物からの防御に役立っていた。"
 bioTraits:
-  - trait: "防御"
+  - trait: "肩の巨大なトゲと装甲板"
     value: "ショルダー・スパイク"
     detail: "横からの攻撃を防ぐ巨大な棘"
   - trait: "装甲"

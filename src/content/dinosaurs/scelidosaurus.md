@@ -15,7 +15,7 @@ bioTraits:
   - trait: "原初装甲"
     value: "骨質ノブ"
     detail: "皮膚に規則正しく並んだ原始的な装具"
-  - trait: "進化の基点"
+  - trait: "剣竜と鎧竜の共通祖先"
     value: "装盾亜目"
     detail: "すべての装甲系恐竜の進化の鍵を握る種"
 cyberMetadata:

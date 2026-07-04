@@ -15,7 +15,7 @@ bioTraits:
   - trait: "歴史的価値"
     value: "最初"
     detail: "1824年に恐竜として初めて正式に記載"
-  - trait: "牙の構造"
+  - trait: "鋸歯（ギザギザ）のある鋭い牙"
     value: "鋸歯状"
     detail: "肉を切り裂くのに適した鋭い歯"
 cyberMetadata:

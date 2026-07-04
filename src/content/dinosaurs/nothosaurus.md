@@ -15,7 +15,7 @@ bioTraits:
   - trait: "機動性"
     value: "水陸両用"
     detail: "ヒレ状の足で陸上も移動可能だった"
-  - trait: "捕食技術"
+  - trait: "獲物を絡め取る格子状の鋭い牙"
     value: "鋭い牙"
     detail: "魚を捕らえて逃がさない複雑な歯列"
 cyberMetadata:

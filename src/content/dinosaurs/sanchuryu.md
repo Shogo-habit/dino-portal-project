@@ -15,7 +15,7 @@ bioTraits:
   - trait: "速力"
     value: "最高クラス"
     detail: "二足歩行での極めて高い走破性"
-  - trait: "生存戦略"
+  - trait: "何でも食べる雑食性の嘴"
     value: "雑食"
     detail: "昆虫から植物まで幅広く摂取"
 cyberMetadata:

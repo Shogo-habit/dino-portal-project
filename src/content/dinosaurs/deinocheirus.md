@@ -15,7 +15,7 @@ bioTraits:
   - trait: "汎用性"
     value: "雑食適応"
     detail: "魚、植物、昆虫など多様な食事を摂取"
-  - trait: "構造"
+  - trait: "長さ2.4メートルの前肢"
     value: "帆と嘴"
     detail: "水辺での生活に適した特異な骨格構造"
 cyberMetadata:

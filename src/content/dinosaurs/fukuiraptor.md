@@ -15,7 +15,7 @@ bioTraits:
   - trait: "機動力"
     value: "高い"
     detail: "中型獣脚類特有の軽快な動き"
-  - trait: "武器"
+  - trait: "前肢の鋭い巨大な鉤爪"
     value: "鋭い爪"
     detail: "前肢の発達した鉤爪で獲物を捕らえる"
 cyberMetadata:

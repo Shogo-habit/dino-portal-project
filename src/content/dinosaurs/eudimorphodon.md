@@ -15,7 +15,7 @@ bioTraits:
   - trait: "複雑な歯"
     value: "多咬頭歯"
     detail: "原始的だが複雑な形状の歯で多様な餌に対応"
-  - trait: "構造"
+  - trait: "獲物を捕らえる多様な形状の歯"
     value: "長い尾"
     detail: "ステアリングの役割を果たす硬い尾"
 cyberMetadata:

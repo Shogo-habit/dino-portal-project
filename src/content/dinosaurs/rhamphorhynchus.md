@@ -15,7 +15,7 @@ bioTraits:
   - trait: "舵取り装置"
     value: "菱形の尾"
     detail: "尾の先端のひれが飛行中の方向転換を助ける"
-  - trait: "捕食特化"
+  - trait: "魚を突き刺す前向きの鋭い歯"
     value: "前向きの歯"
     detail: "滑りやすい魚を確実に捕らえる構造"
 cyberMetadata:

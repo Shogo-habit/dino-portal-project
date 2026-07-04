@@ -15,7 +15,7 @@ bioTraits:
   - trait: "速力"
     value: "最高クラス"
     detail: "時速50〜60kmでの高速移動が可能"
-  - trait: "感覚"
+  - trait: "広く見渡せる大きな目"
     value: "高度な視覚"
     detail: "広い視野で周囲の危険を素早く察知"
 cyberMetadata:

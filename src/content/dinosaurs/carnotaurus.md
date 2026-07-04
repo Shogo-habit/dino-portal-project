@@ -15,7 +15,7 @@ bioTraits:
   - trait: "走力"
     value: "最高クラス"
     detail: "直進加速能力が非常に高いとされる"
-  - trait: "感覚"
+  - trait: "非常に優れた嗅覚"
     value: "嗅覚"
     detail: "強力な嗅覚で獲物を追跡する"
 cyberMetadata:

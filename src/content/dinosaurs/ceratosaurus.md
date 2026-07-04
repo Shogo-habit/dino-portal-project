@@ -15,7 +15,7 @@ bioTraits:
   - trait: "突進"
     value: "角による一撃"
     detail: "鼻上の角はディスプレイや儀礼的闘争に使われたか"
-  - trait: "捕食"
+  - trait: "獲物を切り裂く長い牙"
     value: "水辺のハンター"
     detail: "魚や水生生物も捕食していた可能性がある"
 cyberMetadata:

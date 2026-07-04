@@ -12,10 +12,10 @@ image: "images/psittacosaurus.webp"
 group: "角竜類"
 description: "「オウムトカゲ」を意味する名の通り、強力な嘴（くちばし）を持つ初期の角竜類。尻尾の付け根から背中にかけて長い毛（剛毛）が生えていたことが、保存状態の良い化石から判明している。"
 bioTraits:
-  - trait: "特異な外見"
+  - trait: "オウムのような鋭い嘴"
     value: "オウム状の嘴"
     detail: "硬い植物や木の実を砕いて食べていた"
-  - trait: "防御器官"
+  - trait: "尾のブラシ状の剛毛"
     value: "尾の剛毛"
     detail: "威嚇やディスプレイに使われた可能性のある長いクイル"
 cyberMetadata:

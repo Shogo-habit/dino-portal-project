@@ -12,10 +12,10 @@ image: "images/diplodocus.webp"
 group: "竜脚類"
 description: "非常に長い首と、鞭のように細長い尾を持つ大型の竜脚類。細長い体型を活かして広範囲の植物を摂取した。"
 bioTraits:
-  - trait: "防御手段"
+  - trait: "鞭のような長い尾"
     value: "鞭打ち"
     detail: "尾を音速で振り回し、音波や打撃で攻撃"
-  - trait: "採食効率"
+  - trait: "低木の葉をすくい取る櫛状の歯"
     value: "高い"
     detail: "首を横に振るだけで広範囲の植物を食べられた"
 cyberMetadata:

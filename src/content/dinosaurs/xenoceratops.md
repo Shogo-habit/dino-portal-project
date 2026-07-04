@@ -12,10 +12,10 @@ image: "images/xenoceratops.webp"
 group: "角竜類"
 description: "「異質な角を持つ顔」を意味する、初期の大型角竜類。襟飾りの縁にある巨大なスパイクが、後のトリケラトプスらへと繋がる進化の道筋を示している。"
 bioTraits:
-  - trait: "威嚇力"
-    value: "絶大"
+  - trait: "フリル上の鋭い角"
+    value: "特徴的"
     detail: "派手で巨大なフリルと角"
-  - trait: "突進力"
+  - trait: "強靭な脚による突進"
     value: "高い"
     detail: "重量を活かした重戦車のような突進"
 cyberMetadata:

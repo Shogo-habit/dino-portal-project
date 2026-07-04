@@ -12,11 +12,11 @@ image: "images/homalocephale.webp"
 group: "堅頭竜類"
 description: "ドーム状ではなく平らな頭頂部を持つパキケファロサウルス類。骨盤が広く、内臓を保護するのに適していた。"
 bioTraits:
-  - trait: "構造"
-    value: "平坦な頭頂"
+  - trait: "平坦で頑丈な頭頂部"
+    value: "特徴的"
     detail: "頭突きよりも威嚇やディスプレイ用か"
-  - trait: "安定性"
-    value: "広い骨盤"
+  - trait: "低重心な広い骨盤"
+    value: "高い"
     detail: "低重心で安定した歩行が可能"
 cyberMetadata:
   bottomGap: 309

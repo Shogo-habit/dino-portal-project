@@ -12,10 +12,10 @@ image: "images/triceratops.webp"
 group: "角竜類"
 description: "3本の角と巨大な襟飾りが特徴。強力な防御能力を持ち、大型肉食恐竜に対しても立ち向かった。"
 bioTraits:
-  - trait: "防御力"
+  - trait: "骨質の巨大な首盾（フリル）"
     value: "鉄壁"
     detail: "厚い襟飾りが首元を保護する"
-  - trait: "攻撃手段"
+  - trait: "額から伸びる2本の長い角"
     value: "突進"
     detail: "最大1メートルの角による突き"
 cyberMetadata:

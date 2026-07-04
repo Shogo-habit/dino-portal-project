@@ -12,11 +12,11 @@ image: "images/tylosaurus.webp"
 group: "魚竜・首長竜"
 description: "最大級のモササウルス類。頑丈で長い骨質の吻（ふん）を持ち、獲物への体当たりや攻撃に使ったと考えられている。海の食物連鎖の頂点に君臨していた。"
 bioTraits:
-  - trait: "攻撃特性"
-    value: "体当たり"
+  - trait: "強固な吻部による突進"
+    value: "強力"
     detail: "硬い鼻先を武器として使用"
-  - trait: "捕食"
-    value: "広範囲"
+  - trait: "何でも呑み込む大食漢"
+    value: "高い"
     detail: "サメや首長竜、さらには他のモササウルス類も捕食"
 cyberMetadata:
   bottomGap: 362

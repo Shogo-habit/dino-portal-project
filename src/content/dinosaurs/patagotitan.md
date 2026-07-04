@@ -12,10 +12,10 @@ image: "images/patagotitan.webp"
 group: "竜脚類"
 description: "史上最大級の陸棲動物。パタゴニアで発見されたこの巨人は、その圧倒的な質量により、成体になれば天敵はほぼ存在しなかった。"
 bioTraits:
-  - trait: "巨大質量"
+  - trait: "史上最大級の巨体"
     value: "規格外"
     detail: "ジェット機に匹敵する圧倒的な重さ"
-  - trait: "心肺能力"
+  - trait: "強靭な心肺システム"
     value: "強靭"
     detail: "巨大な体を維持するための強力な循環システム"
 cyberMetadata:

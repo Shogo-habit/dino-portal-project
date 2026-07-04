@@ -12,10 +12,10 @@ image: "images/baryonyx.webp"
 group: "獣脚類"
 description: "ワニのような長い口先と、親指にある30cmもの巨大な鉤爪が特徴。水辺で魚を主食としていたと考えられており、スピノサウルスの近縁種にあたる。"
 bioTraits:
-  - trait: "捕食特化"
+  - trait: "魚食用の細長い顎"
     value: "魚獲りの爪"
     detail: "大型の魚を引っ掛けて捕らえる鉤爪"
-  - trait: "構造"
+  - trait: "親指の巨大な鉤爪"
     value: "細長い顎"
     detail: "90本以上の歯を持つ魚食に適した口"
 cyberMetadata:

@@ -12,11 +12,11 @@ image: "images/tanystropheus.webp"
 group: "魚竜・首長竜"
 description: "全長の半分以上が首という、極めて奇妙な姿をした爬虫類。岸辺から長い首を釣り竿のように伸ばし、水中の魚を捕らえていたとされる。"
 bioTraits:
-  - trait: "首の構造"
-    value: "棒状"
+  - trait: "棒状の極めて長い首"
+    value: "特徴的"
     detail: "頸椎1つ1つが極端に長く、柔軟性は低かった"
-  - trait: "狩りの手法"
-    value: "待ち伏せ"
+  - trait: "水辺での待ち伏せ狩り"
+    value: "高い"
     detail: "水中への不意のリーチによる捕食"
 cyberMetadata:
   bottomGap: 343

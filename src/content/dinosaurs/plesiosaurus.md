@@ -12,10 +12,10 @@ image: "images/plesiosaurus.webp"
 group: "首長竜"
 description: "代表的な首長竜。4枚のヒレ（パドル）を使い、空を飛ぶように海中を泳いだ。長い首は、魚の群れを不意に襲うのに適していた。"
 bioTraits:
-  - trait: "遊泳法"
-    value: "水中飛翔"
+  - trait: "水中を飛ぶような遊泳法"
+    value: "特徴的"
     detail: "4枚のパドルを上下に動かして泳ぐ"
-  - trait: "捕獲能力"
+  - trait: "針のように鋭い歯"
     value: "高い"
     detail: "針のような細い歯で逃げる魚を逃がさない"
 cyberMetadata:

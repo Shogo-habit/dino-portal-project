@@ -12,11 +12,11 @@ image: "images/monolophosaurus.webp"
 group: "獣脚類"
 description: "鼻先から目の上にかけて一本の独特なトサカを持つ。「一つのトサカを持つトカゲ」という意味で、初期の堅頭竜に近い特徴も見られる謎多き恐竜。"
 bioTraits:
-  - trait: "威嚇"
-    value: "ディスプレイ"
+  - trait: "鼻先の巨大なトサカ"
+    value: "特徴的"
     detail: "トサカは視覚的なコミュニケーションに使われた"
-  - trait: "反射"
-    value: "鋭い攻撃"
+  - trait: "中型捕食者の瞬発力"
+    value: "高い"
     detail: "中型獣脚類らしい迅速な狩り"
 cyberMetadata:
   bottomGap: 257

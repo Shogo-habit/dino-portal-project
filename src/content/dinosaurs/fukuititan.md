@@ -15,7 +15,7 @@ bioTraits:
   - trait: "巨大質量"
     value: "圧倒的"
     detail: "日本国内では最大級の体躯"
-  - trait: "採食範囲"
+  - trait: "高く伸びる首と頑強な前肢"
     value: "広い"
     detail: "長い首を利用して高い場所の植物を摂取"
 cyberMetadata:

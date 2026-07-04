@@ -12,10 +12,10 @@ image: "images/pteranodon.webp"
 group: "翼竜"
 description: "最も有名な翼竜の一つ。歯のないくちばしと、頭部後方の長いトサカが特徴。海の上を飛び回り、魚を捕らえて食べていた。"
 bioTraits:
-  - trait: "飛行能力"
+  - trait: "風を受け流す巨大な翼"
     value: "超長距離"
     detail: "上昇気流を利用したグライダー飛行"
-  - trait: "捕食技術"
+  - trait: "歯のない嘴による魚の丸呑み"
     value: "魚食特化"
     detail: "水面の魚をダイビングして捕らえる"
 cyberMetadata:

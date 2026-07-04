@@ -15,7 +15,7 @@ bioTraits:
   - trait: "遠距離通信"
     value: "最高水準"
     detail: "長いトサカで独自の音波を発生"
-  - trait: "感知能力"
+  - trait: "頭部トサカによる低周波受信"
     value: "高い"
     detail: "優れた視覚と聴覚で外敵を察知"
 cyberMetadata:

@@ -15,7 +15,7 @@ bioTraits:
   - trait: "カウンター"
     value: "鋭いトゲ"
     detail: "尾を振り回して敵を攻撃する"
-  - trait: "防御態勢"
+  - trait: "背中から尾に並ぶ鋭いトゲ"
     value: "ハリネズミ状"
     detail: "全身のトゲで捕食者を威嚇"
 cyberMetadata:

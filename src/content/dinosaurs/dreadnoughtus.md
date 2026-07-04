@@ -12,7 +12,7 @@ image: "images/dreadnoughtus.webp"
 group: "竜脚類"
 description: "「何も恐れない」という意味の名前を持つ南米の巨人。骨格の保存状態が極めて良く、超大型竜脚類の正確な体格や筋肉の付き方を解明する重要な手がかりとなった。"
 bioTraits:
-  - trait: "骨格確実性"
+  - trait: "全身骨格の驚異的な保存率"
     value: "高い"
     detail: "超大型竜脚類としては珍しく全身の7割近くが発見"
   - trait: "成長力"

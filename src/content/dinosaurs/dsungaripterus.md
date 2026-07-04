@@ -15,7 +15,7 @@ bioTraits:
   - trait: "特殊嘴"
     value: "反り返り"
     detail: "岩の隙間から獲物を引き抜くのに適した形状"
-  - trait: "粉砕能力"
+  - trait: "上に反り返った頑強な嘴"
     value: "高い"
     detail: "硬い殻を噛み砕くための強靭な奥歯"
 cyberMetadata:

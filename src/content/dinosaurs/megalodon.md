@@ -15,7 +15,7 @@ bioTraits:
   - trait: "咬合力"
     value: "絶大"
     detail: "陸海空を通じて史上最強クラスの噛む力"
-  - trait: "捕食特化"
+  - trait: "クジラを噛み砕く巨大な顎"
     value: "鯨食"
     detail: "大型の鯨類を主食としていた"
 cyberMetadata:

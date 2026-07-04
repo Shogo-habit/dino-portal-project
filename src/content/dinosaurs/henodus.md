@@ -15,7 +15,7 @@ bioTraits:
   - trait: "装甲"
     value: "箱状甲羅"
     detail: "1枚の大きな骨板で覆われた平らな体"
-  - trait: "採食"
+  - trait: "平らな嘴とフィルター構造の歯"
     value: "フィルター"
     detail: "広くて平らな口による砂泥の濾過"
 cyberMetadata:

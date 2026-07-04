@@ -12,11 +12,11 @@ image: "images/wakinosaurus.webp"
 group: "獣脚類"
 description: "福岡県で発見された大型の獣脚類。九州を闊歩していた捕食者で、当時の生態系の上位に位置していたと考えられる。"
 bioTraits:
-  - trait: "牙"
-    value: "鋭利"
+  - trait: "鋸歯状の鋭い歯"
+    value: "強力"
     detail: "肉を切り裂くのに適した鋸歯状の歯"
-  - trait: "追跡"
-    value: "粘り強い"
+  - trait: "強靭な脚力とスタミナ"
+    value: "高い"
     detail: "発達した脚力で獲物を追い詰める"
 cyberMetadata:
   bottomGap: 151

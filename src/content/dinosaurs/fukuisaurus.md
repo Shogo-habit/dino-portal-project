@@ -15,7 +15,7 @@ bioTraits:
   - trait: "汎用性"
     value: "高い"
     detail: "二足と四足の両方で活動可能"
-  - trait: "咀嚼能力"
+  - trait: "独自の可動性上顎構造"
     value: "進化型"
     detail: "植物を効率よくすりつぶす歯の構造"
 cyberMetadata:

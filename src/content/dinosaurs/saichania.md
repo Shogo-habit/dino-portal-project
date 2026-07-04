@@ -12,7 +12,7 @@ image: "images/saichania.webp"
 group: "よろい竜類"
 description: "「美しいもの」を意味し、その保存状態の良い装甲の見事さから名付けられた。乾燥した砂漠環境に適応しており、頭骨の内部には熱を逃がすための複雑な構造があった。"
 bioTraits:
-  - trait: "砂漠適応"
+  - trait: "熱を逃がす複雑な鼻腔システム"
     value: "熱交換システム"
     detail: "鼻腔内の複雑な構造で吸気を冷却"
   - trait: "二段腹装甲"

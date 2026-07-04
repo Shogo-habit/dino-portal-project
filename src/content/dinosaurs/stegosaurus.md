@@ -12,11 +12,11 @@ image: "images/stegosaurus.webp"
 group: "剣竜類"
 description: "背中に並ぶ骨板と、尾の鋭いスパイクが特徴。脳は小さいが、尾による強力な防御策を持っていた。"
 bioTraits:
-  - trait: "防御武具"
-    value: "スパイク"
+  - trait: "尾の鋭いスパイク"
+    value: "強力"
     detail: "サゴマイザーと呼ばれる尾の武器"
-  - trait: "体温調節"
-    value: "可能"
+  - trait: "背板による熱放散"
+    value: "高い"
     detail: "背中の骨板による熱制御説"
 cyberMetadata:
   bottomGap: 261

@@ -15,7 +15,7 @@ bioTraits:
   - trait: "巨大化"
     value: "最大級"
     detail: "ハドロサウルス類としては異例の15メートル超えの体躯"
-  - trait: "骨格強度"
+  - trait: "16tの超重量を支える頑強な脊椎骨"
     value: "極めて高い"
     detail: "巨体を支えるための頑強な脊椎と後肢を持つ"
 cyberMetadata:

@@ -15,7 +15,7 @@ bioTraits:
   - trait: "巨大頭骨"
     value: "記録的サイズ"
     detail: "頭部だけで2.5メートル以上に達する個体も存在"
-  - trait: "装飾進化"
+  - trait: "史上最大級の巨大なフリル"
     value: "極限"
     detail: "より大きな襟飾りが選択された進化の結果"
 cyberMetadata:

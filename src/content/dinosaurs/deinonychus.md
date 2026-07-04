@@ -12,7 +12,7 @@ image: "images/deinonychus.webp"
 group: "獣脚類"
 description: "「恐ろしい鉤爪」を意味する名を持つ。足にある巨大な鎌状の爪を使い、獲物を執拗に攻撃した。この恐竜の発見により、恐竜が活発な温血動物であったという説が広まった。"
 bioTraits:
-  - trait: "武器"
+  - trait: "後肢の大きな鎌爪"
     value: "鎌状の鉤爪"
     detail: "足の第2指にある巨大な爪で致命傷を与える"
   - trait: "機動性"
