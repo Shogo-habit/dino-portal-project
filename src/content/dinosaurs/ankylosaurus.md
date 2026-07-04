@@ -26,7 +26,7 @@ cyberMetadata:
   sourceRes: 1024
   dinoLeft: "0"
   refRight: "72%"
-  zoom: 1
+  zoom: 1.2
 references:
   - title: "The Ankylosauridae, a new family of armored dinosaurs from the Upper Cretaceous"
     journal: "Bulletin of the American Museum of Natural History"
