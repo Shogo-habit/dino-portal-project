@@ -353,7 +353,7 @@ const relatedTopics = topics
                     <!-- 生物学的特性解析 -->
                     {d.bioTraits && d.bioTraits.length > 0 && (
                         <div class="trait-bar-wrap" style="margin-top: 0; border-top: 1px dashed rgba(0, 242, 255, 0.15); padding-top: 15px;">
-                            <h5 style="color: var(--primary-neon); margin-bottom: 12px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.5px; text-transform: uppercase;">[ 特徴 ]</h5>
+                            <h5 style="color: var(--primary-neon); margin-bottom: 12px; font-family: var(--font-mono); font-size: 14px; font-weight: bold; letter-spacing: 1px;">[ 特徴 ]</h5>
                             <div style="display: flex; flex-direction: column; gap: 12px;">
                                 {d.bioTraits.map(t => {
                                     const cleanLabel = getCleanTraitLabel(t.trait, t.value);
