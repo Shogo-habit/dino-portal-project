@@ -18,6 +18,15 @@ bioTraits:
   - trait: "生態系"
     value: "海洋の支配者"
     detail: "トカゲに似た鋭い円錐形の歯を持つ頑丈な頭部と、流線型の胴体、四肢のヒレで北太平洋の海洋生態系の頂点に君臨"
+cyberMetadata:
+  bottomGap: 371
+  realHeight: 1.5
+  realLength: 6.0
+  contentHeightPx: 234
+  sourceRes: 1024
+  dinoLeft: "5%"
+  refRight: "15%"
+  zoom: 1.0
 references:
   - title: "A new species of Taniwhasaurus (Mosasauridae, Tylosaurinae) from the Upper Cretaceous of Hokkaido, Japan"
     journal: "Journal of Vertebrate Paleontology"

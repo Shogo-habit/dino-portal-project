@@ -18,6 +18,15 @@ bioTraits:
   - trait: "ウナギ型の泳ぎ方"
     value: "蛇行式"
     detail: "背ビレや尾ビレが未発達なため、全身を左右にくねらせて遊泳"
+cyberMetadata:
+  bottomGap: 391
+  realHeight: 0.6
+  realLength: 3.0
+  contentHeightPx: 199
+  sourceRes: 1024
+  dinoLeft: "5%"
+  refRight: "3%"
+  zoom: 1.0
 ---
 
 ### 発見の重要性と学術的価値

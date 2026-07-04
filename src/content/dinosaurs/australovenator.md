@@ -19,10 +19,10 @@ bioTraits:
     value: "高速追跡"
     detail: "後肢が非常に長く、軽量かつ頑丈な骨格により敏捷に走る"
 cyberMetadata:
-  bottomGap: 280
+  bottomGap: 319
   realHeight: 2.0
-  realLength: 6
-  contentHeightPx: 450
+  realLength: 6.0
+  contentHeightPx: 381
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "10%"

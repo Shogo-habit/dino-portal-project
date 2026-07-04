@@ -18,6 +18,15 @@ bioTraits:
   - trait: "身体的特徴"
     value: "超長頸"
     detail: "中国などで見つかるマメンチサウルス科と同様に、全長の半分近くを占める非常に長い首を持つ"
+cyberMetadata:
+  bottomGap: 383
+  realHeight: 3.8
+  realLength: 15.0
+  contentHeightPx: 256
+  sourceRes: 1024
+  dinoLeft: "5%"
+  refRight: "15%"
+  zoom: 1.2
 ---
 
 ### 日本初の恐竜発見ストーリー

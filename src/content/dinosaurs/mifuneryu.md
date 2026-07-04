@@ -18,6 +18,15 @@ bioTraits:
   - trait: "歯の構造"
     value: "鋭い鋸歯"
     detail: "ブレード状の平らな歯の側面に、肉を鋭利に切り裂くための細かい鋸歯（ギザギザ）が発達している"
+cyberMetadata:
+  bottomGap: 307
+  realHeight: 2.5
+  realLength: 6.0
+  contentHeightPx: 399
+  sourceRes: 1024
+  dinoLeft: "5%"
+  refRight: "15%"
+  zoom: 1.0
 ---
 
 ### 日本初の「肉食恐竜」発見の歴史

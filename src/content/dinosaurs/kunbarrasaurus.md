@@ -22,10 +22,10 @@ bioTraits:
     value: "板状スパイク"
     detail: "一般的な鎧竜の尾槌（ハンマー）とは異なり、板状の骨が融合したスパイク状の武器を備える"
 cyberMetadata:
-  bottomGap: 380
+  bottomGap: 339
   realHeight: 0.8
   realLength: 2.5
-  contentHeightPx: 400
+  contentHeightPx: 342
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "5%"

@@ -274,37 +274,44 @@ if (!defaultDino) {
             if (activeAsset && activeDino) {
                 const isMobile = window.innerWidth <= 768;
 
-                // 1. Calculate height-based zoom
-                const maxRealH = Math.max(dinoRealH, activeAsset.realHeight);
-                let zoom = dinoRealH / maxRealH;
-
-                // 2. Calculate dynamic scale coefficients for horizontal span fitting
+                const dinoDegenZoom = 1.0; // Enforce natural 1:1 scale ratio in simulator
                 const marginFactor = 0.94;
-                const basePxPerMeter = (SAFE_ZONE_H * marginFactor) / dinoRealH;
 
-                // Dino and Ref width coefficients (width per zoom unit)
-                const C_dino = dinoSourceRes * (dinoRealH * basePxPerMeter) / dinoContentH;
-                const C_ref = activeAsset.sourceRes * (activeAsset.realHeight * basePxPerMeter) / activeAsset.contentHeightPx;
+                // 1. Calculate height-based target pxPerMeter
+                // Let the tallest element (dino under zoom, or reference asset) fit vertically in the stage height (380px)
+                const maxRealH = Math.max(dinoRealH * dinoDegenZoom, activeAsset.realHeight);
+                const targetPxPerMeterH = (SAFE_ZONE_H * marginFactor) / maxRealH;
+
+                // 2. Calculate width-based target pxPerMeter bounds to prevent overflow
+                const ratioDino = dinoSourceRes / dinoContentH;
+                const ratioRef = activeAsset.sourceRes / activeAsset.contentHeightPx;
+
+                const C_dino = dinoRealH * dinoDegenZoom * ratioDino; // dino width per pxPerMeter unit
+                const C_ref = activeAsset.realHeight * ratioRef;     // ref asset width per pxPerMeter unit
 
                 const stageW = stageContainer.clientWidth || SAFE_ZONE_W;
                 
-                // Adjust parameters for mobile to prevent elements from scaling down too much
-                const gap = isMobile ? -20 : 80; // Overlap slightly on mobile
-                const leftMargin = isMobile ? 45 : 60; // Thinner ruler space on mobile
+                const gap = isMobile ? -20 : 80;
+                const leftMargin = isMobile ? 45 : 60;
                 const rightMargin = isMobile ? 15 : 80;
                 const maxSpan = stageW - rightMargin - leftMargin;
 
-                // Clamp zoom to fit the stage width if the combined span exceeds maxSpan
+                let targetPxPerMeter = targetPxPerMeterH;
                 if (maxSpan > gap) {
-                    const maxZoom = (maxSpan - gap) / (C_dino + C_ref);
-                    if (zoom > maxZoom) {
-                        zoom = maxZoom;
+                    const maxPxPerMeterW = (maxSpan - gap) / (C_dino + C_ref);
+                    if (targetPxPerMeter > maxPxPerMeterW) {
+                        targetPxPerMeter = maxPxPerMeterW;
                     }
                 }
 
-                targetZoom = zoom;
+                // targetZoom represents the direct target pxPerMeter
+                targetZoom = targetPxPerMeter;
 
-                // Start autofocus animation
+                // If currentZoom is fresh, snap to it immediately to prevent initial jump
+                if (currentZoom === 1.0 && targetZoom !== 1.0) {
+                    currentZoom = targetZoom;
+                }
+
                 startZoomAnimation();
             }
         }
@@ -345,13 +352,9 @@ if (!defaultDino) {
             if (dinoEl) dinoEl.style.bottom = `${baselinePx}px`;
             if (refEl) refEl.style.bottom = `${baselinePx}px`;
 
-            // 1. Calculate standard PxPerMeter (without dynamic zoom)
-            // Let the dinosaur fit nicely in the height of the safe zone (at zoom = 1)
-            const marginFactor = 0.94;
-            const basePxPerMeter = (SAFE_ZONE_H * marginFactor) / dinoRealH;
-            
-            // 2. Apply active zoom
-            const pxPerMeter = basePxPerMeter * currentZoom;
+            // 1. pxPerMeter is directly represented by currentZoom
+            const pxPerMeter = currentZoom;
+            const dinoDegenZoom = 1.0; // Enforce natural 1:1 scale ratio in simulator
 
             // Padding lookup table (pixels of transparent margins out of 1024px canvas)
             const paddingTable: Record<string, { left: number; right: number }> = {
@@ -363,8 +366,8 @@ if (!defaultDino) {
                 elephant: { left: 70, right: 60 }
             };
 
-            // 3. Calculate Dino Specimen Size
-            const dinoTargetH = dinoRealH * pxPerMeter;
+            // 3. Calculate Dino Specimen Size (using realHeight * zoom as height)
+            const dinoTargetH = dinoRealH * dinoDegenZoom * pxPerMeter;
             const dinoScale = dinoTargetH / dinoContentH;
             const dinoTotalH = dinoSourceRes * dinoScale;
             const dinoOffset = dinoBottomGap * dinoScale;
@@ -444,8 +447,8 @@ if (!defaultDino) {
                 if (refTag) refTag.style.bottom = '-20px';
             }
 
-            // 5. Render dynamic HUD Grid
-            const gridPx = 50 * currentZoom;
+            // 5. Render dynamic HUD Grid (1 square = 1 meter)
+            const gridPx = pxPerMeter;
             grid.style.backgroundSize = `${gridPx}px ${gridPx}px`;
 
             // 6. Render Y-axis ruler ticks

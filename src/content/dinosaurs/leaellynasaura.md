@@ -19,10 +19,10 @@ bioTraits:
     value: "抜群のバランス"
     detail: "体長の半分以上を占める非常に長い尾で走行時の方向転換をサポート"
 cyberMetadata:
-  bottomGap: 380
+  bottomGap: 294
   realHeight: 0.8
-  realLength: 2
-  contentHeightPx: 380
+  realLength: 2.0
+  contentHeightPx: 436
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "5%"
