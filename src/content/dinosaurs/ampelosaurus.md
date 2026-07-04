@@ -12,12 +12,12 @@ image: "images/ampelosaurus.webp"
 group: "竜脚類"
 description: "背中に骨質の装甲を持っていた竜脚類。ティタノサウルス類に属し、肉食恐竜から身を守るために皮膚に埋め込まれたトゲや板状の骨を発達させていた。"
 bioTraits:
-  - trait: "防御機構"
-    value: "皮骨装甲"
-    detail: "竜脚類としては珍しく高度に発達した装甲を持つ"
-  - trait: "系統的特徴"
-    value: "ティタノサウルス類"
-    detail: "進化した竜脚類のグループに属し、広範囲に分布した"
+  - trait: "皮骨装甲"
+    value: "強固"
+    detail: "背中に埋め込まれたトゲや板状の骨で肉食恐竜から身を守る"
+  - trait: "緩慢な動き"
+    value: "普通"
+    detail: "重厚な装甲と巨体ゆえに俊敏性を欠き、防御を装甲に依存"
 cyberMetadata:
   bottomGap: 227
   realHeight: 8.5

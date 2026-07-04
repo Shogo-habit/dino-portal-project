@@ -12,12 +12,12 @@ image: "images/velociraptor.webp"
 group: "獣脚類"
 description: "小型だが知能が高く、俊敏な捕食者。鉤爪を使い、獲物の急所を執拗に狙う狩りを得意としていた。"
 bioTraits:
-  - trait: "敏捷性"
-    value: "最高速"
-    detail: "軽量な骨格による高速移動"
-  - trait: "知能"
+  - trait: "高い機動力"
     value: "高い"
-    detail: "集団での狩りが可能だったとされる"
+    detail: "非常に軽量な骨格と長い後肢を活かした俊敏なフットワーク"
+  - trait: "高い知能"
+    value: "優秀"
+    detail: "脳が比較的大きく、高度な認知能力や集団行動を行えたとされる"
 cyberMetadata:
   bottomGap: 332
   realHeight: 0.6

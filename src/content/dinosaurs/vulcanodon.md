@@ -12,12 +12,12 @@ image: "images/vulcanodon.webp"
 group: "竜脚類"
 description: "初期の竜脚類の一種。まだ比較的小型だが、竜脚類特有の長い首と頑丈な四肢への進化の過渡期を示している貴重な種。"
 bioTraits:
-  - trait: "進化的位置"
-    value: "過渡期"
-    detail: "古竜脚類から真竜脚類への橋渡し"
-  - trait: "足の構造"
-    value: "原始的"
-    detail: "後の竜脚類とは異なる爪の構造"
+  - trait: "四足歩行への適応"
+    value: "優秀"
+    detail: "柱のように頑丈な脚を持ち、巨体を支える完全な四足歩行を確立"
+  - trait: "平らな爪の構造"
+    value: "特徴的"
+    detail: "後の竜脚類のような鋭い爪ではなく、平たくて幅広の蹄のような爪"
 cyberMetadata:
   bottomGap: 287
   realHeight: 3

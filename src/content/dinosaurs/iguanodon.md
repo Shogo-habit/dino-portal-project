@@ -12,12 +12,12 @@ image: "images/iguanodon.webp"
 group: "鳥脚類"
 description: "「イグアナの歯」を意味する名前を持つ、世界で2番目に命名された恐竜。親指にある鋭いスパイクが特徴で、自衛に用いたとされる。"
 bioTraits:
-  - trait: "自衛武器"
-    value: "親指のスパイク"
-    detail: "捕食者に対する強力な武器"
-  - trait: "食性適応"
-    value: "効率的"
-    detail: "硬い植物をすりつぶす能力に長けていた"
+  - trait: "親指のスパイク"
+    value: "武器"
+    detail: "捕食者に対する強力な自衛の武器として機能した鋭いツメ"
+  - trait: "高い咀嚼力"
+    value: "高い"
+    detail: "クチバシと特殊な歯の列で、硬い植物をすりつぶして摂取できた"
 cyberMetadata:
   bottomGap: 332
   realHeight: 3.7

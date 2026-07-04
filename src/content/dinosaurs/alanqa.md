@@ -12,12 +12,12 @@ image: "images/alanqa.webp"
 group: "翼竜"
 description: "サハラ砂漠で発見された巨大な翼竜。地上に立つとキリンほどの高さがあり、強力な嘴で様々な獲物を捕食していた。"
 bioTraits:
-  - trait: "地上高"
-    value: "キリン並み"
-    detail: "四足歩行時には高い視点から地上を監視"
-  - trait: "構造"
-    value: "堅牢な嘴"
-    detail: "貝殻などの硬いものも砕けた可能性"
+  - trait: "キリン並みの高さ"
+    value: "高い"
+    detail: "地上での四足歩行時には高い視点から周囲を広く見渡せた"
+  - trait: "強力な嘴"
+    value: "強力"
+    detail: "硬い貝殻や骨などを挟んで砕くことができる頑丈な顎構造"
 cyberMetadata:
   bottomGap: 16
   realHeight: 3

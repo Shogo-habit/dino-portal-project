@@ -12,12 +12,12 @@ image: "images/argentinosaurus.webp"
 group: "竜脚類"
 description: "史上最大の陸生動物の一つとされる超巨大竜脚類。その一歩は地響きを立て、圧倒的な質量こそが最大の防御であった。あまりの巨大さゆえに天敵はほぼ存在しなかった。"
 bioTraits:
-  - trait: "質量"
-    value: "地上最強"
-    detail: "他の大型肉食恐竜を圧倒する巨体"
-  - trait: "構造"
-    value: "強靭な四肢"
-    detail: "数十トンの体重を支えるための柱のような脚"
+  - trait: "史上最大級の巨体"
+    value: "最大級"
+    detail: "全長35mに達する圧倒的な質量により捕食者の攻撃をほぼ無力化"
+  - trait: "強靭な四肢"
+    value: "強固"
+    detail: "数十トンの超重量を支えるために柱のように頑丈に進化した脚"
 cyberMetadata:
   bottomGap: 356
   realHeight: 9

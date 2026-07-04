@@ -12,12 +12,12 @@ image: "images/jobaria.webp"
 group: "竜脚類"
 description: "竜脚類としては比較的原始的な特徴を多く残している。発見された骨格の保存状態が非常に良く、その生態の詳細が判明している。"
 bioTraits:
-  - trait: "原始的な特徴"
-    value: "スプーン状の歯"
-    detail: "進化した竜脚類とは異なる歯の形状"
-  - trait: "骨格の保存"
-    value: "ほぼ全身"
-    detail: "95%近くの骨格が揃った状態で発見された"
+  - trait: "スプーン状の歯"
+    value: "特徴的"
+    detail: "進化した竜脚類のような細い歯ではなく、幅広く頑丈なスプーン状の歯"
+  - trait: "高い骨格保存率"
+    value: "優秀"
+    detail: "全身の95%近くの骨格化石がほぼ揃った良好な状態で発見された"
 cyberMetadata:
   bottomGap: 175
   realHeight: 11.72

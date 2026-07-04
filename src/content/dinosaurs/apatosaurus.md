@@ -12,12 +12,12 @@ image: "images/apatosaurus.webp"
 group: "竜脚類"
 description: "「まどわすトカゲ」を意味する名を持つ超大型竜脚類。かつてはブロントサウルスとして知られていた最も有名な恐竜の一つで、巨大な体と長い鞭のような尾を持つ。"
 bioTraits:
-  - trait: "リーチ"
-    value: "広範囲"
-    detail: "長い首を動かし大量の植物を摂取"
-  - trait: "護身"
-    value: "鞭の尾"
-    detail: "尾を音速で振り回し天敵を威嚇"
+  - trait: "長い首"
+    value: "普通"
+    detail: "エネルギーを最小限に抑えながら広範囲の植物を効率よく摂取"
+  - trait: "鞭のような尾"
+    value: "強力"
+    detail: "尾を音速で振り回すことで、天敵への強力な武器・威嚇とした"
 cyberMetadata:
   bottomGap: 172
   realHeight: 8

@@ -12,12 +12,12 @@ image: "images/diabloceratops.webp"
 group: "角竜類"
 description: "「悪魔の角を持つ顔」を意味する名を持つ。襟飾りの上部から左右に長く伸びた2本の角が、まるで悪魔の角のように見えることから命名された。"
 bioTraits:
-  - trait: "襟飾角"
-    value: "左右一対"
-    detail: "上方に大きく湾曲した特徴的な2本の角"
-  - trait: "進化段階"
-    value: "原始的"
-    detail: "セントロサウルス類の中でも古い時代の特徴を残す"
+  - trait: "悪魔のような角"
+    value: "強力"
+    detail: "フリルの上部から左右に大きく湾曲して伸びる一対の巨大なスパイク"
+  - trait: "初期の角竜類"
+    value: "特徴的"
+    detail: "セントロサウルス類の中でも古い時代の進化の特徴を留める"
 cyberMetadata:
   bottomGap: 234
   realHeight: 2

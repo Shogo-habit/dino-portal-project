@@ -12,12 +12,12 @@ image: "images/camarasaurus.webp"
 group: "竜脚類"
 description: "北アメリカで最も一般的な竜脚類の一つ。頭骨に大きな空洞（室）があり、軽量化されていた。スプーン状の非常に頑丈な歯が特徴。"
 bioTraits:
-  - trait: "採食能力"
-    value: "広範囲"
-    detail: "頑丈な歯で硬い植物も食べることができた"
-  - trait: "群れの行動"
-    value: "一般的"
-    detail: "大規模な群れで移動していた証拠がある"
+  - trait: "スプーン状の頑丈な歯"
+    value: "強力"
+    detail: "幅広く頑丈な歯で、他の竜脚類が食べられない硬い針葉樹の枝まで噛み砕いた"
+  - trait: "集団での移動行動"
+    value: "高い"
+    detail: "化石の発見状況から、大規模な群れを形成して広範囲を渡り歩いていたとされる"
 cyberMetadata:
   bottomGap: 167
   realHeight: 12.24

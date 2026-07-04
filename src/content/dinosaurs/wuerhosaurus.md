@@ -12,12 +12,12 @@ image: "images/wuerhosaurus.webp"
 group: "剣竜類"
 description: "中国で発見された、白亜紀まで生き残った珍しい剣竜類。背中の板がステゴサウルスよりも低く、丸みを帯びているのが特徴。"
 bioTraits:
-  - trait: "骨板形状"
+  - trait: "平らな背板"
     value: "低重心"
-    detail: "平らで低い板が背中を守る"
-  - trait: "生存戦略"
-    value: "長期間"
-    detail: "白亜紀という激戦の時代を生き抜いた剣竜"
+    detail: "ステゴサウルスよりも低く丸みを帯びた骨板で防御"
+  - trait: "高い生存能力"
+    value: "優秀"
+    detail: "多くの剣竜類が絶滅した白亜紀前期という激戦の時代を生き抜いた"
 cyberMetadata:
   bottomGap: 305
   realHeight: 2.2

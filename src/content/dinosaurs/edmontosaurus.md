@@ -12,12 +12,12 @@ image: "images/edmontosaurus.webp"
 group: "鳥脚類"
 description: "アヒルのような嘴を持つ代表的なハドロサウルス類。トサカのない平坦な頭部が特徴で、非常に高い密度で群れを作り、渡りを行っていたことが知られている。"
 bioTraits:
-  - trait: "アヒル口"
-    value: "特化型"
-    detail: "数千本の歯が並ぶデンタルバッテリーで植物をすり潰す"
-  - trait: "群居性"
+  - trait: "高い咀嚼力"
     value: "高い"
-    detail: "数千頭規模の巨大な群れで移動していた証拠がある"
+    detail: "数千本の歯が密集したデンタルバッテリー構造で堅い針葉樹もすり潰した"
+  - trait: "高い群居性"
+    value: "優秀"
+    detail: "数千頭規模の巨大な群れを形成して移動し、外敵からの防御力を高めた"
 cyberMetadata:
   bottomGap: 262
   realHeight: 5.8

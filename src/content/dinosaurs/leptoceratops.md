@@ -12,12 +12,12 @@ image: "images/leptoceratops.webp"
 group: "角竜類"
 description: "白亜紀の最後にまで生き残った、小型で襟飾りのない角竜。二足歩行での逃走も可能だったと考えられ、原始的な特徴を最後まで維持していた。"
 bioTraits:
-  - trait: "無襟飾"
-    value: "原始的"
-    detail: "防御用の襟飾りがなく、身軽な体格を持つ"
-  - trait: "移動形式"
-    value: "二足・四足行"
-    detail: "通常は四足、緊急時には二足で走ることができた"
+  - trait: "小さなフリル"
+    value: "小型"
+    detail: "後の角竜のような派手な角や盾を持たず、軽量で俊敏な体型を維持"
+  - trait: "俊敏な二足歩行"
+    value: "俊敏"
+    detail: "普段は四足歩行だが、捕食者から逃げる際は二足歩行で素早く走れた"
 cyberMetadata:
   bottomGap: 146
   realHeight: 1.5
