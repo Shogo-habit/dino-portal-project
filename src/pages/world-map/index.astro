@@ -67,10 +67,17 @@ const engLabels: Record<string, string> = {
 };
 ---
 
-<Layout title="ワールドマップ | Dino-Portal" activeTab="world-map" description="立体地図インターフェースによる古生物地域分布探索シミュレーター。" ogImage="/images/cyber_world_map.webp">
-    <section class="page-header">
-      <h2 class="page-title">ワールドマップ</h2>
-      <p class="page-subtitle" style="font-size: 15px;">地図上の地域をクリックして恐竜データをスキャン</p>
+<Layout title="ワールドマップ | Dino-Portal" activeTab="world-map" description="立体地図インターフェースによる古生物地域分布探索シミュレーター。" ogImage="/images/map/cyber_world_map.webp">
+    <section class="page-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+      <div>
+        <h2 class="page-title">ワールドマップ</h2>
+        <p class="page-subtitle" style="font-size: 15px;">地図上の地域をクリックして恐竜データをスキャン</p>
+      </div>
+      <div>
+        <a href="/japan-map/" class="cyber-link-btn">
+          [ 日本地図へ ]
+        </a>
+      </div>
     </section>
 
     <div class="world-map-layout" id="world-map-root" data-dinosaurs={JSON.stringify(DINOSAURS)}>
@@ -78,7 +85,7 @@ const engLabels: Record<string, string> = {
             <!-- マップコンテナ -->
             <div class="cyber-map-container" id="map-3d-container">
                 <svg viewBox="0 80 2816 1266" class="cyber-world-map" id="map-hotspots-svg">
-                    <image href="/images/cyber_world_map.webp" x="0" y="0" width="2816" height="1536" />
+                    <image href="/images/map/cyber_world_map.webp" x="0" y="0" width="2816" height="1536" />
                     <!-- 地域ごとのホットスポット矩形 -->
                     {Object.keys(REGION_FRAMES).map(region => {
                         const frame = REGION_FRAMES[region as keyof typeof REGION_FRAMES];
@@ -273,6 +280,13 @@ const engLabels: Record<string, string> = {
                 if (hotspot && !isScanning) {
                     const region = hotspot.getAttribute('data-region');
                     if (!region) return;
+                    
+                    // 日本セクターをクリックした場合は、詳細日本マップへ遷移
+                    if (region === '日本') {
+                        location.href = '/japan-map/';
+                        return;
+                    }
+                    
                     const center = REGION_CENTERS[region];
                     if (!center) return;
                     
@@ -364,4 +378,28 @@ const engLabels: Record<string, string> = {
 
         document.addEventListener('astro:page-load', initWorldMap);
     </script>
+    
+    <style>
+    .cyber-link-btn {
+      display: inline-block;
+      padding: 8px 16px;
+      background: rgba(0, 242, 255, 0.05);
+      border: 1px solid var(--primary-neon);
+      color: var(--primary-neon);
+      font-family: var(--font-mono);
+      font-size: 13px;
+      text-decoration: none;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 5px rgba(0, 242, 255, 0.1);
+      border-radius: 4px;
+    }
+    .cyber-link-btn:hover {
+      background: rgba(0, 242, 255, 0.15);
+      box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
+      text-shadow: 0 0 5px var(--primary-neon);
+    }
+    </style>
 </Layout>
