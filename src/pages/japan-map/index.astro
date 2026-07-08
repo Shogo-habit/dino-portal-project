@@ -109,7 +109,7 @@ const DINO_FORMATIONS: Record<string, string> = {
 };
 ---
 
-<Layout title="日本マップ | Dino-Portal" activeTab="world-map" description="日本地図インターフェースによる日本産恐竜・古生物の地域分布および発掘地層スキャンシミュレータ。" ogImage="/images/map/cyber_japan_map.webp">
+<Layout title="日本マップ | Dino-Portal" activeTab="world-map" description="日本地図インターフェースによる日本産恐竜・古生物の地域分布および発掘地層スキャンシミュレータ。" ogImage="/images/map/japan/cyber_japan_map.webp">
     <section class="page-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
       <div>
         <h2 class="page-title">日本マップ</h2>
@@ -127,7 +127,7 @@ const DINO_FORMATIONS: Record<string, string> = {
             <!-- マップコンテナ -->
             <div class="cyber-map-container" id="map-3d-container">
                 <svg viewBox="0 0 1998 1529" class="cyber-world-map" id="map-hotspots-svg">
-                    <image href="/images/map/cyber_japan_map.webp" x="0" y="0" width="1998" height="1529" />
+                    <image href="/images/map/japan/cyber_japan_map.webp" x="0" y="0" width="1998" height="1529" />
                     
                     <!-- エリア別透過画像レイヤーの重ね合わせ表示 -->
                     {Object.keys(REGION_IMAGES).map(region => {
@@ -136,7 +136,7 @@ const DINO_FORMATIONS: Record<string, string> = {
                             <image
                                 class="region-image-layer"
                                 data-region={region}
-                                href={`/images/map/${fileName}`}
+                                href={`/images/map/japan/${fileName}`}
                                 x="0"
                                 y="0"
                                 width="1998"
