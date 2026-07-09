@@ -1,7 +1,7 @@
 ---
 id: "velociraptor-guide"
 date: "2026.07.09"
-category: "theory"
+category: "introduction"
 title: "ヴェロキラプトルってどんな恐竜？大きさ・特徴・生態を子供でもわかりやすく解説"
 summary: "映画で大人気の恐竜ヴェロキラプトル。実は本当の姿は小さくてフサフサの羽毛があった？「死の鉤爪」の秘密や、ライバル恐竜との戦いまで、最新科学をもとに子供向けに分かりやすく解説！"
 image: "images/topics/velociraptor_detail/velociraptor_detail.webp"
