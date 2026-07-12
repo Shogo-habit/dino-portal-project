@@ -2273,7 +2273,7 @@ body {
   .detail-header { order: 1; }
   .detail-main-visual { order: 2; }
   .detail-content-body { order: 3; }
-  .detail-specs-basic { order: 4; }
+  .detail-specs-integrated { order: 4; }
   .detail-comparison { order: 5; }
   .detail-traits { order: 6; }
 
