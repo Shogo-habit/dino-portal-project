@@ -17,8 +17,13 @@ relatedSpecimens: ["fukuiraptor", "fukuisaurus", "fukuititan", "fukuivenator"]
   今回は、我が家（夫、妻、4歳息子、2歳の娘）が<strong>山口県から車で大移動</strong>し、<strong>初めての福井県立恐竜博物館を平日の月曜日に堪能した</strong>リアルな体験談をもとに、幼児連れで疲れない・失敗しないための攻略ポイントを徹底解説します。
 </p>
 
-<div style="width: 100%; max-width: 976px; margin: 0 auto 40px auto;">
-  <img src="/images/topics/fukui_dinosaur_museum/fukui_dinosaur_museum_entrance.webp" alt="福井県立恐竜博物館のエントランス外観" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.15); display: block;" />
+<div style="display: flex; gap: 15px; flex-wrap: wrap; margin: 0 auto 40px auto; max-width: 976px;">
+  <div style="flex: 1; min-width: 280px;">
+    <img src="/images/topics/fukui_dinosaur_museum/fukui_dinosaur_museum_entrance.webp" alt="福井県立恐竜博物館のエントランス外観" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.15); display: block;" />
+  </div>
+  <div style="flex: 1; min-width: 280px;">
+    <img src="/images/topics/fukui_dinosaur_museum/fukui_dinosaur_museum_exterior.webp" alt="福井県立恐竜博物館の建物外観（ドーム）" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.15); display: block;" />
+  </div>
 </div>
 
 <h2 class="article-section-title">1. なぜ「平日の月曜日」？混雑を避ける最強の選択肢</h2>
@@ -71,8 +76,13 @@ relatedSpecimens: ["fukuiraptor", "fukuisaurus", "fukuititan", "fukuivenator"]
   博物館の建物は特徴的なドーム型になっており、エントランス（3階）から一気に地下1階まで長いエスカレーターで降りてから、地上に向かってスパイラル状に展示を上りながら見ていく構造（ダイノストリートなど）になっています。
 </p>
 
-<div style="width: 100%; max-width: 976px; margin: 20px auto 25px auto;">
-  <img src="/images/topics/fukui_dinosaur_museum/fukui_dinosaur_museum_escalator.webp" alt="福井県立恐竜博物館の名物エスカレーター" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+<div style="display: flex; gap: 15px; flex-wrap: wrap; margin: 20px auto 25px auto; max-width: 976px;">
+  <div style="flex: 1; min-width: 280px;">
+    <img src="/images/topics/fukui_dinosaur_museum/fukui_dinosaur_museum_escalator.webp" alt="福井県立恐竜博物館の名物エスカレーター" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+  </div>
+  <div style="flex: 1; min-width: 280px;">
+    <img src="/images/topics/fukui_dinosaur_museum/fukui_dinosaur_museum_on-site.webp" alt="福井県立恐竜博物館の館内展示の様子" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+  </div>
 </div>
 
 <div>
