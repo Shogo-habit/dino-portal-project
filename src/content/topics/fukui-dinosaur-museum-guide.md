@@ -20,11 +20,11 @@ relatedSpecimens: ["fukuiraptor", "fukuisaurus", "fukuititan", "fukuivenator"]
 <div style="display: flex; gap: 15px; flex-wrap: wrap; margin: 0 auto 40px auto; max-width: 976px;">
   <div style="flex: 1; min-width: 280px;">
     <img src="/images/topics/fukui_dinosaur_museum/fukui_dinosaur_museum_entrance.webp" alt="福井県立恐竜博物館のエントランス外観" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.15); display: block;" />
-    <span style="font-size: 11px; color: var(--text-dim); display: block; text-align: center; margin-top: 5px;">福井県立恐竜博物館のエントランス</span>
+    <span style="font-size: 11px; color: var(--text-dim); display: block; text-align: center; margin-top: 5px;">福井県立恐竜博物館入口の園名石</span>
   </div>
   <div style="flex: 1; min-width: 280px;">
     <img src="/images/topics/fukui_dinosaur_museum/fukui_dinosaur_museum_exterior.webp" alt="福井県立恐竜博物館の建物外観（ドーム）" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.15); display: block;" />
-    <span style="font-size: 11px; color: var(--text-dim); display: block; text-align: center; margin-top: 5px;">恐竜の卵を模した特徴的なドーム型の外観</span>
+    <span style="font-size: 11px; color: var(--text-dim); display: block; text-align: center; margin-top: 5px;">福井県立恐竜博物館の外観</span>
   </div>
 </div>
 
