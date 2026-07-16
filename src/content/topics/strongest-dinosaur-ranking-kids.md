@@ -4,7 +4,7 @@ date: "2026.06.15"
 category: "ranking"
 title: "最強の恐竜ランキングTOP10！子供にもわかりやすく解説"
 summary: "「地球で一番強い恐竜はどれ？」誰もが夢見る最強 of 最強の恐竜ランキングTOP10を、最新の科学と複数の説を交えて子供向けにわかりやすく解説します！ティラノサウルスなどの巨大肉食恐竜から、最強の防御力を誇る草食恐竜まで、強さの秘密や対決バトル予想も掲載。"
-image: "images/topics/strength_ranking.webp"
+image: "images/topics/strongest-dinosaur-ranking-kids/strength_ranking.webp"
 securityLevel: "LEVEL 1 (KIDS FRIENDLY)"
 relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
 ---
@@ -83,7 +83,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
   ※ティラノサウルスの特徴をもっと詳しく知りたい方はこちら：
 </p>
 <a href="/topics/tyrannosaurus-guide/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-  <img src="/images/topics/tyrannosaurus_detail.webp" alt="ティラノサウルス解説記事" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+  <img src="/images/topics/tyrannosaurus-guide/tyrannosaurus_detail.webp" alt="ティラノサウルス解説記事" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
   <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
     【最強の肉食恐竜】ティラノサウルスの生態を徹底解説！最新の研究が明かす真実
   </span>
@@ -109,7 +109,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
       ※スピノサウルスの謎に包まれた水中生態と最新研究はこちら：
     </p>
     <a href="/topics/spinosaurus-ecology/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 0; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-      <img src="/images/topics/spinosaurus_evolution.webp" alt="スピノサウルス生態解説" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+      <img src="/images/topics/spinosaurus-ecology/spinosaurus_evolution.webp" alt="スピノサウルス生態解説" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
       <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
         スピノサウルスの生態を徹底解説！最新の研究が明かす水棲生活の真実
       </span>
@@ -191,7 +191,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
       ※トリケラトプスの角の秘密や、進化した防御の戦術はこちら：
     </p>
     <a href="/topics/triceratops-guide/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 0; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-      <img src="/images/topics/triceratops_detail.webp" alt="トリケラトプス解説記事" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+      <img src="/images/topics/triceratops-guide/triceratops_detail.webp" alt="トリケラトプス解説記事" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
       <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
         【盾角竜の代表格】トリケラトプスの生態と3本の角の謎を徹底解説！
       </span>
@@ -363,7 +363,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
     </ul>
   </div>
   <div style="flex-shrink: 0; width: 500px; max-width: 100%; margin: 0 auto;">
-    <img src="/images/topics/strength_ranking1.webp" alt="ティラノサウルス vs スピノサウルス" style="width: 100%; height: auto; object-fit: contain; border-radius: 4px; border: 1px solid var(--panel-border); background: #010408; display: block;">
+    <img src="/images/topics/strongest-dinosaur-ranking-kids/strength_ranking1.webp" alt="ティラノサウルス vs スピノサウルス" style="width: 100%; height: auto; object-fit: contain; border-radius: 4px; border: 1px solid var(--panel-border); background: #010408; display: block;">
   </div>
 </div>
 
@@ -383,7 +383,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
     </ul>
   </div>
   <div style="flex-shrink: 0; width: 500px; max-width: 100%; margin: 0 auto;">
-    <img src="/images/topics/triceratops_detail2.webp" alt="ティラノサウルス vs トリケラトプス" style="width: 100%; height: auto; object-fit: contain; border-radius: 4px; border: 1px solid var(--panel-border); background: #010408; display: block;">
+    <img src="/images/topics/triceratops-guide/triceratops_detail2.webp" alt="ティラノサウルス vs トリケラトプス" style="width: 100%; height: auto; object-fit: contain; border-radius: 4px; border: 1px solid var(--panel-border); background: #010408; display: block;">
   </div>
 </div>
 

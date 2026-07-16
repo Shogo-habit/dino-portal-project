@@ -4,7 +4,7 @@ date: "2026.05.23"
 category: "basics"
 title: "プテラノドンやモササウルスは恐竜じゃないって本当！？"
 summary: "図鑑や映画では一緒に「恐竜」として紹介されがちな翼竜や首長竜。しかし学術的には恐竜ではありません。誰かに話したくなる、骨格構造の違いと正しい恐竜の見分け方を伝授！"
-image: "images/topics/not_dinosaurs.webp"
+image: "images/topics/not-dinosaurs-truth/not_dinosaurs.webp"
 securityLevel: "LEVEL 2 (SCIENTIFIC REVISION)"
 relatedSpecimens: ["pteranodon","futabasaurus","mosasaurus"]
 ---
@@ -52,7 +52,7 @@ relatedSpecimens: ["pteranodon","futabasaurus","mosasaurus"]
 </p>
 
 <div style="width: 750px; max-width: 100%; margin: 20px auto;">
-  <img src="/images/topics/not_dinosaurs0.webp" alt="直立歩行と這い歩きにおける呼吸効率の比較イメージ" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+  <img src="/images/topics/not-dinosaurs-truth/not_dinosaurs0.webp" alt="直立歩行と這い歩きにおける呼吸効率の比較イメージ" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
 
@@ -72,7 +72,7 @@ relatedSpecimens: ["pteranodon","futabasaurus","mosasaurus"]
     </p>
   </div>
   <div style="width: 270px; flex-shrink: 0; margin: 0 auto;">
-    <img src="/images/topics/not_dinosaurs1.webp" alt="プテラノドンの翼骨格構造" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+    <img src="/images/topics/not-dinosaurs-truth/not_dinosaurs1.webp" alt="プテラノドンの翼骨格構造" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
   </div>
 </div>
 
@@ -86,7 +86,7 @@ relatedSpecimens: ["pteranodon","futabasaurus","mosasaurus"]
     </p>
   </div>
   <div style="width: 270px; flex-shrink: 0; margin: 0 auto;">
-    <img src="/images/topics/not_dinosaurs2.webp" alt="フタバサウルスのヒレ骨格構造" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+    <img src="/images/topics/not-dinosaurs-truth/not_dinosaurs2.webp" alt="フタバサウルスのヒレ骨格構造" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
   </div>
 </div>
 
@@ -100,7 +100,7 @@ relatedSpecimens: ["pteranodon","futabasaurus","mosasaurus"]
     </p>
   </div>
   <div style="width: 270px; flex-shrink: 0; margin: 0 auto;">
-    <img src="/images/topics/not_dinosaurs3.webp" alt="モササウルスの顎とヒレ骨格構造" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+    <img src="/images/topics/not-dinosaurs-truth/not_dinosaurs3.webp" alt="モササウルスの顎とヒレ骨格構造" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
   </div>
 </div>
 
@@ -236,11 +236,11 @@ relatedSpecimens: ["pteranodon","futabasaurus","mosasaurus"]
 </p>
 <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 10px; margin-bottom: 20px;">
   <a href="/topics/tyrannosaurus-guide/" class="article-link" style="flex: 1; min-width: 280px; text-decoration: none; color: inherit; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: block;">
-    <img src="/images/topics/tyrannosaurus_detail.webp" alt="ティラノサウルスのすべて" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+    <img src="/images/topics/tyrannosaurus-guide/tyrannosaurus_detail.webp" alt="ティラノサウルスのすべて" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
     <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; display: block;">【最強の肉食恐竜】ティラノサウルスのすべてを徹底解説！</span>
   </a>
   <a href="/topics/triceratops-frill-mystery/" class="article-link" style="flex: 1; min-width: 280px; text-decoration: none; color: inherit; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: block;">
-    <img src="/images/topics/triceratops_frill.webp" alt="トリケラトプスのフリル" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+    <img src="/images/topics/triceratops-frill-mystery/triceratops_frill.webp" alt="トリケラトプスのフリル" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
     <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; display: block;">トリケラトプスのフリルの謎：なぜ「盾」ではないのか？最新学説が解き明かす真の役割</span>
   </a>
 </div>
@@ -249,7 +249,7 @@ relatedSpecimens: ["pteranodon","futabasaurus","mosasaurus"]
   ※彼らが活躍した中生代の3つの時代（三畳紀・ジュラ紀・白亜紀）の違いはこちら：
 </p>
 <a href="/topics/dinosaur-eras-guide/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-  <img src="/images/topics/dinosaur_eras.webp" alt="恐竜時代の歴史" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+  <img src="/images/topics/dinosaur-eras-guide/dinosaur_eras.webp" alt="恐竜時代の歴史" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
   <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">【地球の覇権を握った1億6000万年】「三畳紀・ジュラ紀・白亜紀」恐竜たちの進化と環境の変化を徹底解説！</span>
 </a>
 

@@ -4,7 +4,7 @@ date: "2026.06.09"
 category: "introduction"
 title: "ブラキオサウルスとは？大きさ・特徴・生態をわかりやすく解説"
 summary: "キリンのように首が長く、前足が後ろ足より長いユニークな超巨大恐竜ブラキオサウルス。その驚くべき大きさや特徴、生態のヒミツについて、お子様にも分かりやすい言葉で丁寧に解説します！"
-image: "images/topics/brachiosaurus_detail.webp"
+image: "images/topics/brachiosaurus-guide/brachiosaurus_detail.webp"
 securityLevel: "LEVEL 2 (SCIENTIFIC REVISION)"
 relatedSpecimens: ["brachiosaurus","diplodocus","apatosaurus"]
 ---
@@ -82,7 +82,7 @@ relatedSpecimens: ["brachiosaurus","diplodocus","apatosaurus"]
 </p>
 
 <div style="margin: 20px auto 35px auto; text-align: center; max-width: 900px;">
-  <img src="/images/topics/brachiosaurus_detail1.webp" alt="ブラキオサウルスの長い首と高所の葉を食べる様子" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
+  <img src="/images/topics/brachiosaurus-guide/brachiosaurus_detail1.webp" alt="ブラキオサウルスの長い首と高所の葉を食べる様子" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
   <p style="font-size: 12px; color: var(--text-dim); margin-top: 8px; font-family: var(--font-mono); text-align: center;">左：ブラキオサウルス、右：ディプロドクス</p>
 </div>
 
@@ -114,7 +114,7 @@ relatedSpecimens: ["brachiosaurus","diplodocus","apatosaurus"]
 </p>
 
 <div style="margin: 20px auto 35px auto; text-align: center; max-width: 900px;">
-  <img src="/images/topics/brachiosaurus_detail2.webp" alt="ブラキオサウルスの長い前足と傾斜した背中の特徴" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
+  <img src="/images/topics/brachiosaurus-guide/brachiosaurus_detail2.webp" alt="ブラキオサウルスの長い前足と傾斜した背中の特徴" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
   <p style="font-size: 12px; color: var(--text-dim); margin-top: 8px; font-family: var(--font-mono); text-align: center;">ブラキオサウルス、ティラノサウルス、4階建ビルの比較</p>
 </div>
 

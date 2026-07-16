@@ -4,7 +4,7 @@ date: "2026.06.03"
 category: "introduction"
 title: "【盾角竜の代表格】トリケラトプスのすべてを徹底解説！"
 summary: "三本の角と巨大なフリルを持つトリケラトプス。その防衛に特化した進化、ティラノサウルスとの死闘の実態、謎に包まれたフリルの役割、おもちゃやフィギュアの紹介を徹底解説。"
-image: "images/topics/triceratops_detail.webp"
+image: "images/topics/triceratops-guide/triceratops_detail.webp"
 securityLevel: "LEVEL 3 (PUBLIC)"
 relatedSpecimens: ["triceratops"]
 ---
@@ -34,7 +34,7 @@ relatedSpecimens: ["triceratops"]
     </p>
   </div>
   <div style="width: 375px; flex-shrink: 0; margin: 0 auto;">
-    <img src="/images/topics/triceratops_detail1.webp" alt="トリケラトプスの特徴" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+    <img src="/images/topics/triceratops-guide/triceratops_detail1.webp" alt="トリケラトプスの特徴" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
   </div>
 </div>
 
@@ -66,7 +66,7 @@ relatedSpecimens: ["triceratops"]
   ※こちらの個別記事で分かりやすく解説しています：
 </p>
 <a href="/topics/triceratops-frill-mystery/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-  <img src="/images/topics/triceratops_frill.webp" alt="トリケラトプスのフリル" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+  <img src="/images/topics/triceratops-frill-mystery/triceratops_frill.webp" alt="トリケラトプスのフリル" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
   <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">トリケラトプスの頭の「フリル」、実は盾（たて）じゃなかった！？</span>
 </a>
 
@@ -150,7 +150,7 @@ relatedSpecimens: ["triceratops"]
 </p>
 
 <div style="margin: 20px auto 35px auto; text-align: center; max-width: 900px;">
-  <img src="/images/topics/triceratops_detail2.webp" alt="ティラノサウルスとトリケラトプスの対決" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
+  <img src="/images/topics/triceratops-guide/triceratops_detail2.webp" alt="ティラノサウルスとトリケラトプスの対決" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
 <h2 class="article-section-title">なぜ私たちはトリケラトプスに惹かれるのか</h2>

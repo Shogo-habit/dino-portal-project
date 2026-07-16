@@ -4,7 +4,7 @@ date: "2026.06.13"
 category: "theory"
 title: "ディロフォサウルスの真実：映画が作った「毒と襟飾り」の虚像"
 summary: "映画『ジュラシック・パーク』で一躍有名になったディロフォサウルス。しかし、トレードマークである「襟飾り（フリル）」や「毒吐き」は本当に存在したのか？最新の研究から明らかになった本当の姿を解説する。"
-image: "images/topics/dilophosaurus_comparison.webp"
+image: "images/topics/dilophosaurus-frill/dilophosaurus_comparison.webp"
 securityLevel: "LEVEL 2 (SCIENTIFIC REVISION)"
 relatedSpecimens: ["dilophosaurus","monolophosaurus","velociraptor","spinosaurus","mosasaurus"]
 ---
@@ -170,13 +170,13 @@ relatedSpecimens: ["dilophosaurus","monolophosaurus","velociraptor","spinosaurus
   ※映画で描かれた恐竜のもう一つの大きなギャップである、ティラノサウルスの「腕」についての深掘りはこちら：
 </p>
 <a href="/topics/trex-small-arms/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-  <img src="/images/topics/trex_small_arms.webp" alt="ティラノサウルスの小さな前足" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+  <img src="/images/topics/trex-small-arms/trex_small_arms.webp" alt="ティラノサウルスの小さな前足" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
   <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">ティラノサウルスの「小さな前足」の謎！何のために使っていた？</span>
 </a>
 <p class="article-paragraph" style="margin-top: 15px; margin-bottom: 0;">
   ※その他のおすすめの恐竜図鑑の選び方についてはこちら：
 </p>
 <a href="/topics/dinosaur-books-selection/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-  <img src="/images/topics/recommended_books.webp" alt="おすすめの恐竜図鑑" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+  <img src="/images/topics/dinosaur-books-selection/recommended_books.webp" alt="おすすめの恐竜図鑑" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
   <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">【2026年最新】小学生におすすめの恐竜図鑑5選！選び方のコツ</span>
 </a>

@@ -4,7 +4,7 @@ date: "2026.06.14"
 category: "basics"
 title: "恐竜とは？子供でもわかる定義・種類・絶滅の理由"
 summary: "「恐竜ってなに？」そんな子どもたちの素朴な疑問に、恐竜の定義から代表的な種類、なぜ絶滅してしまったのかまで、分かりやすく丁寧に解説します。空を飛ぶプテラノドンや海のモササウルスが恐竜ではない理由など、意外と知らない豆知識も満載です。"
-image: "images/topics/what_is_dinosaur.webp"
+image: "images/topics/what-is-dinosaur/what_is_dinosaur.webp"
 securityLevel: "LEVEL 2 (SCIENTIFIC REVISION)"
 relatedSpecimens: ["tyrannosaurus","triceratops","brachiosaurus","mosasaurus","pteranodon"]
 ---
@@ -55,7 +55,7 @@ relatedSpecimens: ["tyrannosaurus","triceratops","brachiosaurus","mosasaurus","p
       ※こちらの個別記事でさらに詳しく解説しています。
     </p>
     <a href="/topics/not-dinosaurs-truth/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-      <img src="/images/topics/not_dinosaurs.webp" alt="プテラノドンやモササウルス" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+      <img src="/images/topics/not-dinosaurs-truth/not_dinosaurs.webp" alt="プテラノドンやモササウルス" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
       <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
         プテラノドンやモササウルスは恐竜じゃないって本当！？
       </span>
@@ -125,7 +125,7 @@ relatedSpecimens: ["tyrannosaurus","triceratops","brachiosaurus","mosasaurus","p
   ※三畳紀、ジュラ紀、白亜紀の気候変動や、大陸移動と恐竜の進化の関係については、こちらの記事でさらに詳しく解説しています。
 </p>
 <a href="/topics/dinosaur-eras-guide/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-  <img src="/images/topics/dinosaur_eras.webp" alt="恐竜の時代" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+  <img src="/images/topics/dinosaur-eras-guide/dinosaur_eras.webp" alt="恐竜の時代" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
   <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
     【地球の覇権を握った1億6000万年】三畳紀・ジュラ紀・白亜紀を徹底解説！
   </span>
@@ -339,7 +339,7 @@ relatedSpecimens: ["tyrannosaurus","triceratops","brachiosaurus","mosasaurus","p
   ※小惑星の衝突直前まで恐竜たちが極めて多様で全盛期だったという最新の絶滅シナリオについては、こちらの記事をご覧ください。
 </p>
 <a href="/topics/extinction-scenario/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-  <img src="/images/topics/extinction_scenario.webp" alt="恐竜絶滅のシナリオ" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+  <img src="/images/topics/extinction-scenario/extinction_scenario.webp" alt="恐竜絶滅のシナリオ" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
   <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
     恐竜絶滅の最新シナリオ：小惑星衝突の直前まで「彼らは全盛期だった」
   </span>
@@ -413,7 +413,7 @@ relatedSpecimens: ["tyrannosaurus","triceratops","brachiosaurus","mosasaurus","p
   ※日本国内の素晴らしい恐竜化石発掘スポットや、実際に行って体験できるおすすめミュージアムの詳しい解説はこちら：
 </p>
 <a href="/topics/japan-dinosaur-spots/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-  <img src="/images/topics/japan_dinosaur_spots.webp" alt="日本の恐竜発掘スポット" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+  <img src="/images/topics/japan-dinosaur-spots/japan_dinosaur_spots.webp" alt="日本の恐竜発掘スポット" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
   <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
     日本は恐竜王国？国内の主要発掘エリアと化石発掘体験スポット5選
   </span>

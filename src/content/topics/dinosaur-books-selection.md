@@ -4,7 +4,7 @@ date: "2026.06.03"
 category: "museum_goods"
 title: "【2026年最新】小学生におすすめの恐竜図鑑5選！選び方のコツと年齢別・目的別の徹底比較"
 summary: "子どもが恐竜に興味を持ったら、どの図鑑を選ぶべきか？情報の信頼性、映像特典、ビジュアル表現、および2児の父が実際に購入して比較した、おすすめ恐竜図鑑5冊を徹底比較解説。"
-image: "images/topics/recommended_books.webp"
+image: "images/topics/dinosaur-books-selection/recommended_books.webp"
 securityLevel: "LEVEL 1 (GENERAL)"
 relatedSpecimens: ["tyrannosaurus","triceratops"]
 ---

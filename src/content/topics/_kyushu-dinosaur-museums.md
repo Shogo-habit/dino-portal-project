@@ -4,7 +4,7 @@ date: "2026.07.03"
 category: "museum_goods"
 title: "【2026年最新】九州の3大恐竜博物館の見どころ＆子連れ完全攻略ガイド！混雑対策や周辺の遊び場も紹介"
 summary: "九州が誇る3大恐竜博物館（御船町恐竜博物館、いのちのたび博物館、ベネックス恐竜博物館）の見どころを徹底比較！子連れで120%楽しむための事前予約のコツ、混雑回避法、ランチ情報、周辺のおすすめスポットなど、パパ・ママ必見の情報を詰め込んだ完全攻略ガイドです。"
-image: "images/topics/kyushu_dinosaur_museums.webp"
+image: "images/topics/kyushu-dinosaur-museums/kyushu_dinosaur_museums.webp"
 securityLevel: "LEVEL 1 (GENERAL INFO)"
 relatedSpecimens: ["tyrannosaurus", "triceratops", "velociraptor", "protoceratops"]
 ---
@@ -19,9 +19,9 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "velociraptor", "protoceratop
 
 <!-- 【ユーザー様へ：メイン画像差替箇所】
      ここに「九州の美しい海や青空と、迫力ある恐竜のコラボレーションイラスト」の画像を配置してください。
-     ファイル名: public/images/topics/kyushu_dinosaur_museums.webp -->
+     ファイル名: public/images/topics/kyushu-dinosaur-museums/kyushu_dinosaur_museums.webp -->
 <div style="width: 100%; max-width: 976px; margin: 20px auto 35px auto;">
-  <img src="/images/topics/kyushu_dinosaur_museums.webp" alt="九州の3大恐竜博物館" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+  <img src="/images/topics/kyushu-dinosaur-museums/kyushu_dinosaur_museums.webp" alt="九州の3大恐竜博物館" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
 <h2 class="article-section-title">九州が誇る「3大恐竜博物館」はここ！</h2>
@@ -93,8 +93,8 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "velociraptor", "protoceratop
 <div style="width: 100%; max-width: 976px; margin: 20px auto 25px auto;">
   <!-- 【ユーザー様へ：本文画像1差替箇所】
        ここに「御船町恐竜博物館の骨格展示、またはガラス張りのオープンラボの様子」の画像を配置してください。
-       ファイル名: public/images/topics/mifune_museum_detail.webp -->
-  <img src="/images/topics/mifune_museum_detail.webp" alt="御船町恐竜博物館の展示" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+       ファイル名: public/images/topics/kyushu-dinosaur-museums/mifune_museum_detail.webp -->
+  <img src="/images/topics/kyushu-dinosaur-museums/mifune_museum_detail.webp" alt="御船町恐竜博物館の展示" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
 <h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">子連れ攻略ポイント</h3>
@@ -118,8 +118,8 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "velociraptor", "protoceratop
 <div style="width: 100%; max-width: 976px; margin: 20px auto 25px auto;">
   <!-- 【ユーザー様へ：本文画像2差替箇所】
        ここに「いのちのたび博物館の巨大アトリウムに並ぶ骨格標本と動く恐竜ジオラマ」の画像を配置してください。
-       ファイル名: public/images/topics/inochinotabi_museum_detail.webp -->
-  <img src="/images/topics/inochinotabi_museum_detail.webp" alt="いのちのたび博物館の展示" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+       ファイル名: public/images/topics/kyushu-dinosaur-museums/inochinotabi_museum_detail.webp -->
+  <img src="/images/topics/kyushu-dinosaur-museums/inochinotabi_museum_detail.webp" alt="いのちのたび博物館の展示" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
 <h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">子連れ攻略ポイント</h3>
@@ -144,8 +144,8 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "velociraptor", "protoceratop
 <div style="width: 100%; max-width: 976px; margin: 20px auto 25px auto;">
   <!-- 【ユーザー様へ：本文画像3差替箇所】
        ここに「長崎市恐竜博物館の外観と、隣接する恐竜公園の大型遊具で遊ぶ子供たちのイラスト」の画像を配置してください。
-       ファイル名: public/images/topics/benex_museum_detail.webp -->
-  <img src="/images/topics/benex_museum_detail.webp" alt="長崎市恐竜博物館" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+       ファイル名: public/images/topics/kyushu-dinosaur-museums/benex_museum_detail.webp -->
+  <img src="/images/topics/kyushu-dinosaur-museums/benex_museum_detail.webp" alt="長崎市恐竜博物館" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
 <h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">子連れ攻略ポイント</h3>

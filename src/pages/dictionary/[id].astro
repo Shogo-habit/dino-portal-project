@@ -218,15 +218,48 @@ const relatedTopics = topics
         <div class="detail-visual-column">
             <!-- 2. メインイラスト (visual) -->
             <div class="detail-main-visual">
-                <div class="detail-img-viewer hud-panel" style="margin-bottom: 30px;">
-                    <div class="hud-corner top-left"></div>
-                    <div class="hud-corner bottom-right"></div>
-                    <div class="scan-line-ani"></div>
-                    <img src={`/${d.image}`} alt={d.name} fetchpriority="high" decoding="async" width="800" height="533" style="max-width: 100%; max-height: 100%; height: auto; display: block; object-fit: contain;">
-                    <div style="position: absolute; bottom: 10px; right: 10px; font-family: var(--font-mono); font-size: 10px; color: var(--primary-neon);">
-                        IMG_SEC_ENCRYPTED: {d.id.toUpperCase()}
+                {d.gallery && d.gallery.length > 0 ? (
+                    <div class="detail-img-viewer hud-panel slider-panel" style="margin-bottom: 30px; position: relative;">
+                        <div class="hud-corner top-left"></div>
+                        <div class="hud-corner bottom-right"></div>
+                        <div class="scan-line-ani" style="pointer-events: none;"></div>
+                        
+                        <div class="slider-container" style="width: 100%; height: 100%; overflow: hidden;">
+                            <div class="slider-track" id="dino-slider" style="display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; scrollbar-width: none;">
+                                <div class="slider-slide" style="flex: 0 0 100%; width: 100%; scroll-snap-align: start; display: flex; justify-content: center; align-items: center;">
+                                    <img src={`/${d.image}`} alt={d.name} fetchpriority="high" decoding="async" width="800" height="533" style="max-width: 100%; max-height: 100%; height: auto; display: block; object-fit: contain;">
+                                </div>
+                                {d.gallery.map((imgUrl, idx) => (
+                                    <div class="slider-slide" style="flex: 0 0 100%; width: 100%; scroll-snap-align: start; display: flex; justify-content: center; align-items: center;">
+                                        <img src={`/${imgUrl}`} alt={`${d.name} イラスト ${idx + 2}`} loading="lazy" decoding="async" width="800" height="533" style="max-width: 100%; max-height: 100%; height: auto; display: block; object-fit: contain;">
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        <!-- Pagination Dots -->
+                        <div class="slider-dots" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                            <span class="slider-dot active" data-index="0" style="width: 8px; height: 8px; border-radius: 50%; background: var(--primary-neon); border: 1px solid var(--primary-neon); cursor: pointer; transition: all 0.3s ease; box-shadow: 0 0 8px var(--primary-neon);"></span>
+                            {d.gallery.map((_, idx) => (
+                                <span class="slider-dot" data-index={idx + 1} style="width: 8px; height: 8px; border-radius: 50%; background: rgba(0, 242, 255, 0.25); border: 1px solid var(--primary-neon); cursor: pointer; transition: all 0.3s ease;"></span>
+                            ))}
+                        </div>
+
+                        <div style="position: absolute; bottom: 10px; right: 10px; font-family: var(--font-mono); font-size: 10px; color: var(--primary-neon); z-index: 10; pointer-events: none;">
+                            IMG_SEC_ENCRYPTED: {d.id.toUpperCase()}
+                        </div>
                     </div>
-                </div>
+                ) : (
+                    <div class="detail-img-viewer hud-panel" style="margin-bottom: 30px;">
+                        <div class="hud-corner top-left"></div>
+                        <div class="hud-corner bottom-right"></div>
+                        <div class="scan-line-ani"></div>
+                        <img src={`/${d.image}`} alt={d.name} fetchpriority="high" decoding="async" width="800" height="533" style="max-width: 100%; max-height: 100%; height: auto; display: block; object-fit: contain;">
+                        <div style="position: absolute; bottom: 10px; right: 10px; font-family: var(--font-mono); font-size: 10px; color: var(--primary-neon);">
+                            IMG_SEC_ENCRYPTED: {d.id.toUpperCase()}
+                        </div>
+                    </div>
+                )}
             </div>
 
             <!-- 5. サイズ比較パネル (comparison) -->
@@ -532,9 +565,58 @@ const relatedTopics = topics
             }
         }
 
+        function initSpecimenSlider() {
+            const track = document.getElementById('dino-slider');
+            const dots = document.querySelectorAll('.slider-dot');
+            if (!track || dots.length === 0) return;
+
+            const updateActiveDot = () => {
+                const scrollLeft = track.scrollLeft;
+                const width = track.clientWidth;
+                const activeIndex = Math.round(scrollLeft / width);
+
+                dots.forEach((dot, idx) => {
+                    if (dot instanceof HTMLElement) {
+                        if (idx === activeIndex) {
+                            dot.classList.add('active');
+                            dot.style.background = 'var(--primary-neon)';
+                            dot.style.boxShadow = '0 0 8px var(--primary-neon)';
+                        } else {
+                            dot.classList.remove('active');
+                            dot.style.background = 'rgba(0, 242, 255, 0.25)';
+                            dot.style.boxShadow = 'none';
+                        }
+                    }
+                });
+            };
+
+            track.addEventListener('scroll', updateActiveDot);
+
+            dots.forEach((dot) => {
+                dot.addEventListener('click', (e) => {
+                    const target = e.target;
+                    if (target instanceof HTMLElement) {
+                        const index = parseInt(target.getAttribute('data-index') || '0', 10);
+                        const width = track.clientWidth;
+                        track.scrollTo({
+                            left: index * width,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Handle window resizing
+            window.addEventListener('resize', updateActiveDot);
+            
+            // Set initial state
+            updateActiveDot();
+        }
+
         // Bind on page load / page changes
         document.addEventListener('astro:page-load', () => {
             initSpecimenDetail();
+            initSpecimenSlider();
         });
     </script>
 </Layout>
@@ -544,5 +626,26 @@ const relatedTopics = topics
     border-color: var(--primary-neon) !important;
     box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
     background: rgba(0, 242, 255, 0.05) !important;
+  }
+
+  /* Slider UI styles */
+  .slider-panel {
+    overflow: hidden;
+  }
+  
+  .slider-track {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .slider-track::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Constrain images in slides to match original 90% footprint and shadow */
+  .slider-slide img {
+    max-width: 90% !important;
+    max-height: 90% !important;
+    object-fit: contain;
+    filter: drop-shadow(0 0 30px rgba(0, 242, 255, 0.3));
   }
 </style>

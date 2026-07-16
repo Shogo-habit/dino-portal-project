@@ -4,7 +4,7 @@ date: "2026.06.16"
 category: "ranking"
 title: "【一番大きいのは？】恐竜の大きさランキングTOP10！最大の恐竜を最新の学説から徹底解説"
 summary: "地球上で最も大きかった恐竜はどれ？最新の研究データをもとに、全長や体重を比較した「恐竜の大きさランキングTOP10」を大発表！アルゼンチノサウルスやパタゴティタンなどの超巨大な竜脚類を中心に、子供向けに分かりやすく解説します。"
-image: "images/topics/dinosaur_size_ranking.webp"
+image: "images/topics/dinosaur-size-ranking/dinosaur_size_ranking.webp"
 relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauroposeidon", "futalognkosaurus", "mamenchisaurus", "brachiosaurus", "supersaurus", "apatosaurus", "diplodocus"]
 ---
 
@@ -239,7 +239,7 @@ relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauropose
 </div>
 
 <div style="margin: 30px auto 35px auto; text-align: center; max-width: 900px;">
-  <img src="/images/topics/dinosaur_size_comparison.webp" alt="アルゼンチノサウルス、パタゴティタン、ティラノサウルス、人間の巨大サイズ比較イメージ図" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
+  <img src="/images/topics/dinosaur-size-ranking/dinosaur_size_comparison.webp" alt="アルゼンチノサウルス、パタゴティタン、ティラノサウルス、人間の巨大サイズ比較イメージ図" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
   <p style="font-size: 12px; color: var(--text-dim); margin-top: 8px; font-family: var(--font-mono); text-align: center;">左から：アルゼンチノサウルス、パタゴティタン、ティラノサウルス、人間（スケール比較用）</p>
 </div>
 
@@ -499,7 +499,7 @@ relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauropose
   ※巨大恐竜の代名詞！ブラキオサウルスの大きさや生態をさらに詳しく知りたい方はこちら：
 </p>
 <a href="/topics/brachiosaurus-guide" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-  <img src="/images/topics/brachiosaurus_detail.webp" alt="ブラキオサウルスのすべてを徹底解説" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+  <img src="/images/topics/brachiosaurus-guide/brachiosaurus_detail.webp" alt="ブラキオサウルスのすべてを徹底解説" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
   <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; display: block;">
     【巨大恐竜の代表格】ブラキオサウルスとは？大きさ・特徴・生態をわかりやすく解説！
   </span>

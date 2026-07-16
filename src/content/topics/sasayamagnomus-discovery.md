@@ -4,7 +4,7 @@ date: "2026.05.21"
 category: "theory"
 title: "日本発の恐竜たち：ササヤマグノームスが解き明かす角竜進化の道筋"
 summary: "2024年に命名された兵庫県丹波市産の最小級角竜「ササヤマグノームス・サエキ」。トリケラトプスなどの北米の大型角竜へと続く進化のルーツとして、いかに重要な発見であるかを解説する。"
-image: "images/topics/sasayamagnomus_habitat.webp"
+image: "images/topics/sasayamagnomus-discovery/sasayamagnomus_habitat.webp"
 securityLevel: "LEVEL 4 (UNCLASSIFIED)"
 relatedSpecimens: ["sasayamagnomus","triceratops","kamuysaurus","fukuiraptor"]
 ---
@@ -59,7 +59,7 @@ relatedSpecimens: ["sasayamagnomus","triceratops","kamuysaurus","fukuiraptor"]
     </p>
   </div>
   <div style="width: 350px; flex-shrink: 0; margin: 0 auto;">
-    <img src="/images/topics/sasayamagnomus_habitat1.webp" alt="ササヤマグノームスの特徴と生息環境の復元イメージ" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+    <img src="/images/topics/sasayamagnomus-discovery/sasayamagnomus_habitat1.webp" alt="ササヤマグノームスの特徴と生息環境の復元イメージ" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
   </div>
 </div>
 
@@ -207,7 +207,7 @@ relatedSpecimens: ["sasayamagnomus","triceratops","kamuysaurus","fukuiraptor"]
   ※ササヤマグノームスから進化したトリケラトプスの生態や、驚きのフリルの謎について詳しく知りたい方はこちら：
 </p>
 <a href="/topics/triceratops-guide/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-  <img src="/images/topics/triceratops_detail.webp" alt="【盾角竜の代表格】トリケラトプスのすべてを徹底解説！" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+  <img src="/images/topics/triceratops-guide/triceratops_detail.webp" alt="【盾角竜の代表格】トリケラトプスのすべてを徹底解説！" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
   <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
     【盾角竜の代表格】トリケラトプスのすべてを徹底解説！
   </span>
@@ -217,7 +217,7 @@ relatedSpecimens: ["sasayamagnomus","triceratops","kamuysaurus","fukuiraptor"]
   ※トリケラトプスや他の大型肉食恐竜との強さの比較に興味がある方はこちら：
 </p>
 <a href="/topics/strongest-dinosaur-debate/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-  <img src="/images/topics/strongest_dinosaur_debate.webp" alt="最強の恐竜は誰だ？ティラノサウルス・ギガノトサウルス・スピノサウルスを徹底比較！" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+  <img src="/images/topics/strongest-dinosaur-debate/strongest_dinosaur_debate.webp" alt="最強の恐竜は誰だ？ティラノサウルス・ギガノトサウルス・スピノサウルスを徹底比較！" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
   <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
     最強の恐竜は誰だ？ティラノサウルス・ギガノトサウルス・スピノサウルスを徹底比較！
   </span>

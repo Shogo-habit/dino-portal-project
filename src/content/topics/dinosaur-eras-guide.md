@@ -4,7 +4,7 @@ date: "2026.05.24"
 category: "basics"
 title: "【地球の覇権を握った1億6000万年】「三畳紀・ジュラ紀・白亜紀」恐竜たちの進化と環境の変化を徹底解説！"
 summary: "恐竜たちが主役として君臨し続けた約1億6000万年間（中生代）。大きく分かれる3つの時代「三畳紀」「ジュラ紀」「白亜紀」の気候や地形の劇的な変化と、それに適応していった恐竜たちの進化・多様化のプロセスを詳しく解説します。"
-image: "images/topics/dinosaur_eras.webp"
+image: "images/topics/dinosaur-eras-guide/dinosaur_eras.webp"
 securityLevel: "LEVEL 2 (SCIENTIFIC REVISION)"
 relatedSpecimens: ["eoraptor","allosaurus","triceratops"]
 ---
@@ -18,7 +18,7 @@ relatedSpecimens: ["eoraptor","allosaurus","triceratops"]
 </p>
 
 <div style="margin: 20px auto 35px auto; text-align: center; max-width: 900px;">
-  <img src="/images/topics/dinosaur_timeline.webp" class="topic-detail-img" alt="中生代の年代表" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
+  <img src="/images/topics/dinosaur-eras-guide/dinosaur_timeline.webp" class="topic-detail-img" alt="中生代の年代表" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
 <h2 class="article-section-title">中生代の全体像：超大陸の分裂と温暖化が生んだ奇跡</h2>
@@ -330,11 +330,11 @@ relatedSpecimens: ["eoraptor","allosaurus","triceratops"]
 </p>
 <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 10px; margin-bottom: 20px;">
   <a href="/topics/extinction-scenario/" class="article-link" style="flex: 1; min-width: 280px; text-decoration: none; color: inherit; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: block;">
-    <img src="/images/topics/extinction_scenario.webp" alt="恐竜絶滅のシナリオ" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+    <img src="/images/topics/extinction-scenario/extinction_scenario.webp" alt="恐竜絶滅のシナリオ" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
     <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; display: block;">隕石衝突だけではない？恐竜絶滅の真実と複合的要因シナリオ</span>
   </a>
   <a href="/topics/not-dinosaurs-truth/" class="article-link" style="flex: 1; min-width: 280px; text-decoration: none; color: inherit; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: block;">
-    <img src="/images/topics/not_dinosaurs.webp" alt="恐竜ではない古生物" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+    <img src="/images/topics/not-dinosaurs-truth/not_dinosaurs.webp" alt="恐竜ではない古生物" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
     <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; display: block;">プテラノドンやモササウルスは恐竜じゃないって本当！？</span>
   </a>
 </div>

@@ -8,7 +8,10 @@ region: "北アメリカ"
 diet: "肉食"
 length: "12.3m"
 weight: "8.4t"
-image: "images/tyrannosaurus.webp"
+image: "images/dinosaurs/tyrannosaurus/main.webp"
+gallery:
+  - "images/dinosaurs/tyrannosaurus/movie.webp"
+  - "images/dinosaurs/tyrannosaurus/ecology.webp"
 group: "獣脚類"
 description: "史上最大級の肉食恐竜。その咬合力は全ての陸上生物の中で最強クラスと言われ、骨をも噛み砕くことができた。頂点捕食者として君臨していた。"
 bioTraits:

@@ -4,7 +4,7 @@ date: "2026.06.29"
 category: "introduction"
 title: "プテラノドンの強さとは？強さ・大きさ・生態を子供でもわかりやすく解説"
 summary: "空飛ぶ巨大な翼竜プテラノドン！翼を広げると小型飛行機に匹敵するその大きさ、どうやって飛んでいたのかという飛行のひみつ、そして恐竜との決定的な違いを子供向けにわかりやすく解説します。映画のように人間を乗せて飛べるの？といった気になる疑問にも迫ります！"
-image: "images/topics/pteranodon_detail.webp"
+image: "images/topics/pteranodon-guide/pteranodon_detail.webp"
 securityLevel: "LEVEL 2 (SCIENTIFIC REVISION)"
 relatedSpecimens: ["pteranodon", "quetzalcoatlus", "alanqa", "tyrannosaurus"]
 ---
@@ -70,8 +70,8 @@ relatedSpecimens: ["pteranodon", "quetzalcoatlus", "alanqa", "tyrannosaurus"]
 <div style="width: 100%; max-width: 976px; margin: 20px auto 25px auto;">
 <!-- 【ユーザー様へ：サブ画像1差替箇所】
      ここに「プテラノドンが風に乗って滑空している、骨格や翼の膜の構造がわかるようなイラスト」の画像を配置してください。
-     ファイル名: public/images/topics/pteranodon_detail1.webp -->
-<img src="/images/topics/pteranodon_detail1.webp" alt="プテラノドンの飛行能力" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+     ファイル名: public/images/topics/pteranodon-guide/pteranodon_detail1.webp -->
+<img src="/images/topics/pteranodon-guide/pteranodon_detail1.webp" alt="プテラノドンの飛行能力" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
 <h2 class="article-section-title">海の上でどう暮らしていた？プテラノドンの生態とハンティング</h2>

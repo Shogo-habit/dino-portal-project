@@ -4,7 +4,7 @@ date: "2026.05.22"
 category: "ranking"
 title: "【決定版】最強の恐竜ランキング＆大きさランキング！最新科学が明かす戦闘力と驚異のスペック徹底比較"
 summary: "「地球史上、一番強かった恐竜はどれだ？」誰もが夢見る恐竜の最強ランキングと大きさランキングを徹底解説！ティラノサウルスやトリケラトプス、アルゼンチノサウルスなどのサイズ・武器・最新学説に基づく戦闘力を徹底的に比較検証します。"
-image: "images/topics/strongest_dinosaur_debate.webp"
+image: "images/topics/strongest-dinosaur-debate/strongest_dinosaur_debate.webp"
 securityLevel: "LEVEL 2 (SCIENTIFIC REVISION)"
 relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
 ---
@@ -144,7 +144,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
       ※劇的な学説変遷を遂げたスピノサウルスの進化史と水中生態についての詳細はこちら：
     </p>
     <a href="/topics/spinosaurus-ecology/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 100%; box-sizing: border-box;">
-      <img src="/images/topics/spinosaurus_evolution.webp" alt="スピノサウルスの生態解説" style="width: 100%; height: auto; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+      <img src="/images/topics/spinosaurus-ecology/spinosaurus_evolution.webp" alt="スピノサウルスの生態解説" style="width: 100%; height: auto; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
       <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block; overflow: hidden; text-overflow: ellipsis;">
         スピノサウルスの生態を徹底解説！最新の研究が明かす水棲生活の真実
       </span>
@@ -155,7 +155,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
       ※T-Rexと極限の進化論争を繰り広げたトリケラトプスの詳細解説はこちら：
     </p>
     <a href="/topics/triceratops-guide/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 100%; box-sizing: border-box;">
-      <img src="/images/topics/triceratops_detail.webp" alt="トリケラトプス解説記事" style="width: 100%; height: auto; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+      <img src="/images/topics/triceratops-guide/triceratops_detail.webp" alt="トリケラトプス解説記事" style="width: 100%; height: auto; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
       <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block; overflow: hidden; text-overflow: ellipsis;">
         【盾角竜の代表格】トリケラトプスの生態と3本の角の謎を徹底解説！
       </span>
@@ -295,7 +295,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
   ※地球史上の絶対的な王者であるティラノサウルスの詳しい全身スペックや感覚能力の秘密はこちら：
 </p>
 <a href="/topics/tyrannosaurus-guide/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-  <img src="/images/topics/tyrannosaurus_detail.webp" alt="ティラノサウルス解説記事へのリンク" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+  <img src="/images/topics/tyrannosaurus-guide/tyrannosaurus_detail.webp" alt="ティラノサウルス解説記事へのリンク" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
   <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
     【最強の肉食恐竜】ティラノサウルスの生態を徹底解説！最新の研究が明かす真実
   </span>

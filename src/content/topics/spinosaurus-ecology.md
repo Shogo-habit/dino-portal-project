@@ -4,7 +4,7 @@ date: "2026.06.10"
 category: "introduction"
 title: "スピノサウルスの強さとは？強さ・大きさ・生態を解説"
 summary: "かつてはティラノサウルスのような二足歩行の陸生恐竜と考えられていたスピノサウルス。最新の化石発見と科学技術によって「四足歩行の水棲恐竜」へとその生態推測が激変した歴史と、最新の骨密度研究、さらに復元が変わった他の恐竜たちの比較や人気の秘密までを徹底解説。"
-image: "images/topics/spinosaurus_evolution.webp"
+image: "images/topics/spinosaurus-ecology/spinosaurus_evolution.webp"
 securityLevel: "LEVEL 1 (PUBLIC ARCHIVE)"
 relatedSpecimens: ["spinosaurus","tyrannosaurus"]
 ---
@@ -72,7 +72,7 @@ relatedSpecimens: ["spinosaurus","tyrannosaurus"]
 
 <h2 class="article-section-title">生態復元の歴史的変遷：4つのフェーズ</h2>
 <div style="width: 976px; max-width: 100%; margin: 20px auto;">
-  <img src="/images/topics/spinosaurus_evolution3.webp" alt="スピノサウルスの生態復元の歴史的変遷" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+  <img src="/images/topics/spinosaurus-ecology/spinosaurus_evolution3.webp" alt="スピノサウルスの生態復元の歴史的変遷" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
 <h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">【Phase 1】1912年〜1944年：最初の発見と戦争による悲劇</h3>
@@ -116,7 +116,7 @@ relatedSpecimens: ["spinosaurus","tyrannosaurus"]
     </p>
   </div>
   <div class="spinosaurus-image-wrap">
-    <img src="/images/topics/spinosaurus_evolution1.webp" alt="スピノサウルス二足歩行期復元図" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1);" />
+    <img src="/images/topics/spinosaurus-ecology/spinosaurus_evolution1.webp" alt="スピノサウルス二足歩行期復元図" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1);" />
   </div>
 </div>
 
@@ -160,7 +160,7 @@ relatedSpecimens: ["spinosaurus","tyrannosaurus"]
     </p>
   </div>
   <div class="spinosaurus-tail-image-wrap">
-    <img src="/images/topics/spinosaurus_evolution2.webp" alt="スピノサウルス完全な尾の化石復元図" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1);" />
+    <img src="/images/topics/spinosaurus-ecology/spinosaurus_evolution2.webp" alt="スピノサウルス完全な尾の化石復元図" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1);" />
   </div>
 </div>
 
@@ -321,7 +321,7 @@ relatedSpecimens: ["spinosaurus","tyrannosaurus"]
   ※ティラノサウルスやギガノトサウルスとのスペック対決について詳しく知りたい方はこちら：
 </p>
 <a href="/topics/strongest-dinosaur-debate/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-  <img src="/images/topics/strongest_dinosaur_debate.webp" alt="最強の恐竜は誰だ？ティラノサウルス・ギガノトサウルス・スピノサウルスを徹底比較！" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+  <img src="/images/topics/strongest-dinosaur-debate/strongest_dinosaur_debate.webp" alt="最強の恐竜は誰だ？ティラノサウルス・ギガノトサウルス・スピノサウルスを徹底比較！" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
   <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
     最強の恐竜は誰だ？ティラノサウルス・ギガノトサウルス・スピノサウルスを徹底比較！
   </span>
@@ -331,7 +331,7 @@ relatedSpecimens: ["spinosaurus","tyrannosaurus"]
   ※もうひとつの大論争、ティラノサウルスの羽毛説の変遷はこちら：
 </p>
 <a href="/topics/trex-feathers/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-  <img src="/images/topics/trex_feathers.webp" alt="ティラノサウルスの「羽毛」論争と最新の姿：モフモフ説は否定された？" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+  <img src="/images/topics/trex-feathers/trex_feathers.webp" alt="ティラノサウルスの「羽毛」論争と最新の姿：モフモフ説は否定された？" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
   <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
     ティラノサウルスの「羽毛」論争と最新の姿：モフモフ説は否定された？
   </span>

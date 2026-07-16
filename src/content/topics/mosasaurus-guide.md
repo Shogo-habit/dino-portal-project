@@ -4,7 +4,7 @@ date: "2026.06.19"
 category: "introduction"
 title: "モササウルスの強さとは？強さ・大きさ・生態を子供でもわかりやすく解説"
 summary: "海の絶対王者モササウルス！その恐るべき強さ、ビル4階建てに匹敵する巨大さ、取得した実物の詳細イラストを交えて子供向けに楽しく解説します。恐竜とは決定的な違いや、映画『ジュラシック・ワールド』で大活躍した理由など、親子で楽しめる豆知識が満載です！"
-image: "images/topics/mosasaurus_detail.webp"
+image: "images/topics/mosasaurus-guide/mosasaurus_detail.webp"
 securityLevel: "LEVEL 2 (SCIENTIFIC REVISION)"
 relatedSpecimens: ["mosasaurus", "wakayama-soryu", "plesiosaurus", "ichthyosaurus"]
 ---
@@ -54,7 +54,7 @@ relatedSpecimens: ["mosasaurus", "wakayama-soryu", "plesiosaurus", "ichthyosauru
 </p>
 </div>
 <div style="width: 320px; flex-shrink: 0; margin: 10px auto 0 auto;">
-<img src="/images/topics/mosasaurus_detail1.webp" alt="モササウルスのダブルの歯と顎の構造" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+<img src="/images/topics/mosasaurus-guide/mosasaurus_detail1.webp" alt="モササウルスのダブルの歯と顎の構造" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 </div>
 
@@ -65,7 +65,7 @@ relatedSpecimens: ["mosasaurus", "wakayama-soryu", "plesiosaurus", "ichthyosauru
 </p>
 
 <div style="width: 100%; max-width: 976px; margin: 20px auto 25px auto;">
-  <img src="/images/topics/mosasaurus_detail2.webp" alt="モササウルスの大きさと身近なものとの比較" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+  <img src="/images/topics/mosasaurus-guide/mosasaurus_detail2.webp" alt="モササウルスの大きさと身近なものとの比較" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
 <h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">全長は何メートル？モササウルスの大きさと最大クラスの種類</h3>
@@ -104,7 +104,7 @@ relatedSpecimens: ["mosasaurus", "wakayama-soryu", "plesiosaurus", "ichthyosauru
 </p>
 
 <div style="width: 100%; max-width: 976px; margin: 20px auto 25px auto;">
-  <img src="/images/topics/mosasaurus_detail3.webp" alt="モササウルスの捕食シーン" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+  <img src="/images/topics/mosasaurus-guide/mosasaurus_detail3.webp" alt="モササウルスの捕食シーン" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
 <h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">アンモナイトから他の爬虫類まで！なんでも食べる大食漢</h3>

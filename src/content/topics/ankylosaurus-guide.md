@@ -4,7 +4,7 @@ date: "2026.06.29"
 category: "introduction"
 title: "アンキロサウルスの強さとは？強さ・大きさ・生態を子供でもわかりやすく解説"
 summary: "背中に硬いトゲトゲのよろいをまとい、しっぽの先には巨大な骨のハンマーを持つアンキロサウルス！『歩く戦車』とも呼ばれるその鉄壁の強さ、大きさ、防衛のひみつを子供向けにわかりやすく解説します。最強のティラノサウルスと対決したらどうなった？といった面白い疑問にも答えます！"
-image: "images/topics/ankylosaurus_detail.webp"
+image: "images/topics/ankylosaurus-guide/ankylosaurus_detail.webp"
 securityLevel: "LEVEL 2 (SCIENTIFIC REVISION)"
 relatedSpecimens: ["ankylosaurus", "borealopelta", "stegosaurus", "tyrannosaurus"]
 ---
@@ -54,8 +54,8 @@ relatedSpecimens: ["ankylosaurus", "borealopelta", "stegosaurus", "tyrannosaurus
 <div style="width: 100%; max-width: 976px; margin: 20px auto 25px auto;">
 <!-- 【ユーザー様へ：サブ画像1差替箇所】
      ここに「アンキロサウルスの尾のハンマーが敵（ティラノサウルスなど）の足元を攻撃するアクションシーン」の画像を配置してください。
-     ファイル名: public/images/topics/ankylosaurus_detail1.webp -->
-<img src="/images/topics/ankylosaurus_detail1.webp" alt="アンキロサウルスのしっぽのハンマーの威力" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+     ファイル名: public/images/topics/ankylosaurus-guide/ankylosaurus_detail1.webp -->
+<img src="/images/topics/ankylosaurus-guide/ankylosaurus_detail1.webp" alt="アンキロサウルスのしっぽのハンマーの威力" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
 <h2 class="article-section-title">まるで歩く中戦車！アンキロサウルスの大きさを身近なもので比較！</h2>

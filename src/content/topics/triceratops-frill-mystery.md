@@ -4,7 +4,7 @@ date: "2026.05.23"
 category: "theory"
 title: "トリケラトプスの頭の「フリル」、実は盾（たて）じゃなかった！？"
 summary: "ティラノサウルスの攻撃を防ぐ最強のバリアだと思われていたトリケラトプスのフリル。実は防御用としては脆かった？最新の研究から浮かび上がった意外な使い道を解説。"
-image: "images/topics/triceratops_frill.webp"
+image: "images/topics/triceratops-frill-mystery/triceratops_frill.webp"
 securityLevel: "LEVEL 2 (SCIENTIFIC REVISION)"
 relatedSpecimens: ["triceratops","protoceratops","styracosaurus","torosaurus","chasmosaurus"]
 ---
@@ -32,7 +32,7 @@ relatedSpecimens: ["triceratops","protoceratops","styracosaurus","torosaurus","c
     </p>
   </div>
   <div style="width: 375px; flex-shrink: 0; margin: 0 auto;">
-    <img src="/images/topics/triceratops_frill1.webp" alt="トリケラトプスの巨大なフリルと頭部骨格" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+    <img src="/images/topics/triceratops-frill-mystery/triceratops_frill1.webp" alt="トリケラトプスの巨大なフリルと頭部骨格" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
   </div>
 </div>
 
@@ -73,7 +73,7 @@ relatedSpecimens: ["triceratops","protoceratops","styracosaurus","torosaurus","c
     </p>
   </div>
   <div style="width: 150px; flex-shrink: 0; margin: 0 auto;">
-    <img src="/images/topics/triceratops_frill2.webp" alt="フリルによる視覚的アピール（イメージ）" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+    <img src="/images/topics/triceratops-frill-mystery/triceratops_frill2.webp" alt="フリルによる視覚的アピール（イメージ）" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
   </div>
 </div>
 
@@ -86,7 +86,7 @@ relatedSpecimens: ["triceratops","protoceratops","styracosaurus","torosaurus","c
     </p>
   </div>
   <div style="width: 150px; flex-shrink: 0; margin: 0 auto;">
-    <img src="/images/topics/triceratops_frill3.webp" alt="放熱ラジエーターとしてのフリル（イメージ）" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+    <img src="/images/topics/triceratops-frill-mystery/triceratops_frill3.webp" alt="放熱ラジエーターとしてのフリル（イメージ）" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
   </div>
 </div>
 

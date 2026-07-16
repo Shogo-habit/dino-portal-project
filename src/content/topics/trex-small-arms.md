@@ -4,7 +4,7 @@ date: "2026.05.23"
 category: "theory"
 title: "ティラノサウルスの「小さな前足」の謎！何のために使っていた？"
 summary: "体長12メートルを超える巨大な体に、人間とほぼ同じ長さの小さな前足。アンバランスで愛嬌すら感じるティラノサウルスの前足の使い道について、最新の説をわかりやすく解説。"
-image: "images/topics/trex_small_arms.webp"
+image: "images/topics/trex-small-arms/trex_small_arms.webp"
 securityLevel: "LEVEL 2 (SCIENTIFIC REVISION)"
 relatedSpecimens: ["tyrannosaurus","carnotaurus"]
 ---
@@ -38,7 +38,7 @@ relatedSpecimens: ["tyrannosaurus","carnotaurus"]
     </p>
   </div>
   <div style="width: 300px; flex-shrink: 0; margin: 0 auto;">
-    <img src="/images/topics/trex_small_arms1.webp" alt="ティラノサウルスの骨格と小さな前足" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+    <img src="/images/topics/trex-small-arms/trex_small_arms1.webp" alt="ティラノサウルスの骨格と小さな前足" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
   </div>
 </div>
 
@@ -183,7 +183,7 @@ relatedSpecimens: ["tyrannosaurus","carnotaurus"]
   ※ティラノサウルスの生態全般や最新研究のディープな詳細については、こちらのメイン解説記事も併せてご覧ください：
 </p>
 <a href="/topics/tyrannosaurus-guide/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-  <img src="/images/topics/tyrannosaurus_detail.webp" alt="【最強の肉食恐竜】ティラノサウルスのすべてを徹底解説！" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+  <img src="/images/topics/tyrannosaurus-guide/tyrannosaurus_detail.webp" alt="【最強の肉食恐竜】ティラノサウルスのすべてを徹底解説！" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
   <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
     【最強の肉食恐竜】ティラノサウルスのすべてを徹底解説！最新研究が解き明かす絶対王者の真実
   </span>

@@ -4,7 +4,7 @@ date: "2026.06.29"
 category: "introduction"
 title: "プレシオサウルスの強さとは？強さ・大きさ・生態を子供でもわかりやすく解説"
 summary: "長い首と4枚の大きなヒレを持つ、海の優雅な首長竜プレシオサウルス！ペンギンのように水中を羽ばたいて泳ぐ不思議な生態、長い首に隠された驚きの進化、そして映画やモササウルスとの違いを子供向けにわかりやすく解説します。ネッシーの正体なの？といった夢のある疑問にも答えます！"
-image: "images/topics/plesiosaurus_detail.webp"
+image: "images/topics/plesiosaurus-guide/plesiosaurus_detail.webp"
 securityLevel: "LEVEL 2 (SCIENTIFIC REVISION)"
 relatedSpecimens: ["plesiosaurus", "elasmosaurus", "futabasaurus", "mosasaurus"]
 ---
@@ -57,8 +57,8 @@ relatedSpecimens: ["plesiosaurus", "elasmosaurus", "futabasaurus", "mosasaurus"]
 <div style="width: 100%; max-width: 976px; margin: 20px auto 25px auto;">
 <!-- 【画像：プレシオサウルスの狩りの様子】
      プレシオサウルスが長い首をしなやかに伸ばして魚を捕食する水中シーン。
-     ファイル名: public/images/topics/plesiosaurus_detail1.webp -->
-<img src="/images/topics/plesiosaurus_detail1.webp" alt="プレシオサウルスの狩りの様子" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+     ファイル名: public/images/topics/plesiosaurus-guide/plesiosaurus_detail1.webp -->
+<img src="/images/topics/plesiosaurus-guide/plesiosaurus_detail1.webp" alt="プレシオサウルスの狩りの様子" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
 <h2 class="article-section-title">意外と小さい？プレシオサウルスの大きさを身近なもので比較！</h2>

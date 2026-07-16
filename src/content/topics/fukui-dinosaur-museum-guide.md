@@ -4,7 +4,7 @@ date: "2026.07.14"
 category: "museum_goods"
 title: "初めての子連れでも安心！平日にベビーカーで巡る福井県立恐竜博物館の完全攻略ガイド"
 summary: "初めて子連れ（4歳・2歳）で福井県立恐竜博物館を訪れたファミリー体験記。混雑を避けた月曜日のリアルな状況やベビーカーでの回り方、山口県からのロングドライブでの疲れケア、外の『ザウルスキッチン』でのランチまで、役立つ攻略情報を徹底解説します！"
-image: "images/topics/fukui_dinosaur_museum/fukui_dinosaur_museum_panorama.webp"
+image: "images/topics/fukui-dinosaur-museum-guide/fukui_dinosaur_museum_panorama.webp"
 securityLevel: "LEVEL 3 (PUBLIC)"
 relatedSpecimens: ["fukuiraptor", "fukuisaurus", "fukuititan", "fukuivenator"]
 ---
@@ -19,11 +19,11 @@ relatedSpecimens: ["fukuiraptor", "fukuisaurus", "fukuititan", "fukuivenator"]
 
 <div style="display: flex; gap: 15px; flex-wrap: wrap; margin: 0 auto 40px auto; max-width: 976px;">
   <div style="flex: 1; min-width: 280px;">
-    <img src="/images/topics/fukui_dinosaur_museum/fukui_dinosaur_museum_entrance.webp" alt="福井県立恐竜博物館のエントランス外観" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.15); display: block;" />
+    <img src="/images/topics/fukui-dinosaur-museum-guide/fukui_dinosaur_museum_entrance.webp" alt="福井県立恐竜博物館のエントランス外観" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.15); display: block;" />
     <span style="font-size: 11px; color: var(--text-dim); display: block; text-align: center; margin-top: 5px;">福井県立恐竜博物館入口の園名石</span>
   </div>
   <div style="flex: 1; min-width: 280px;">
-    <img src="/images/topics/fukui_dinosaur_museum/fukui_dinosaur_museum_exterior.webp" alt="福井県立恐竜博物館の建物外観（ドーム）" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.15); display: block;" />
+    <img src="/images/topics/fukui-dinosaur-museum-guide/fukui_dinosaur_museum_exterior.webp" alt="福井県立恐竜博物館の建物外観（ドーム）" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.15); display: block;" />
     <span style="font-size: 11px; color: var(--text-dim); display: block; text-align: center; margin-top: 5px;">福井県立恐竜博物館の外観</span>
   </div>
 </div>
@@ -80,11 +80,11 @@ relatedSpecimens: ["fukuiraptor", "fukuisaurus", "fukuititan", "fukuivenator"]
 
 <div style="display: flex; gap: 15px; flex-wrap: wrap; margin: 20px auto 25px auto; max-width: 976px;">
   <div style="flex: 1; min-width: 280px;">
-    <img src="/images/topics/fukui_dinosaur_museum/fukui_dinosaur_museum_escalator.webp" alt="福井県立恐竜博物館の名物エスカレーター" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+    <img src="/images/topics/fukui-dinosaur-museum-guide/fukui_dinosaur_museum_escalator.webp" alt="福井県立恐竜博物館の名物エスカレーター" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
     <span style="font-size: 11px; color: var(--text-dim); display: block; text-align: center; margin-top: 5px;">地下展示室へと続く名物のロングエスカレーター</span>
   </div>
   <div style="flex: 1; min-width: 280px;">
-    <img src="/images/topics/fukui_dinosaur_museum/fukui_dinosaur_museum_on-site.webp" alt="福井県立恐竜博物館の館内展示の様子" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+    <img src="/images/topics/fukui-dinosaur-museum-guide/fukui_dinosaur_museum_on-site.webp" alt="福井県立恐竜博物館の館内展示の様子" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
     <span style="font-size: 11px; color: var(--text-dim); display: block; text-align: center; margin-top: 5px;">実物大の恐竜骨格標本が立ち並ぶ広大な展示エリア</span>
   </div>
 </div>
@@ -105,15 +105,15 @@ relatedSpecimens: ["fukuiraptor", "fukuisaurus", "fukuititan", "fukuivenator"]
 
 <div style="display: flex; gap: 15px; flex-wrap: wrap; margin: 25px 0;">
   <div style="flex: 1; min-width: 250px;">
-    <img src="/images/topics/fukui_dinosaur_museum/fukui_dinosaur_museum_moving_tyrannosaurus.webp" alt="大迫力で動くティラノサウルスロボット" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; display: block;" />
+    <img src="/images/topics/fukui-dinosaur-museum-guide/fukui_dinosaur_museum_moving_tyrannosaurus.webp" alt="大迫力で動くティラノサウルスロボット" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; display: block;" />
     <span style="font-size: 11px; color: var(--text-dim); display: block; text-align: center; margin-top: 5px;">大迫力で動くティラノサウルスロボット</span>
   </div>
   <div style="flex: 1; min-width: 250px;">
-    <img src="/images/topics/fukui_dinosaur_museum/fukui_dinosaur_museum_fukuiraptor.webp" alt="福井県を代表する恐竜フクイラプトル" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; display: block;" />
+    <img src="/images/topics/fukui-dinosaur-museum-guide/fukui_dinosaur_museum_fukuiraptor.webp" alt="福井県を代表する恐竜フクイラプトル" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; display: block;" />
     <span style="font-size: 11px; color: var(--text-dim); display: block; text-align: center; margin-top: 5px;">福井県を代表する恐竜フクイラプトルの復元模型</span>
   </div>
   <div style="flex: 1; min-width: 250px;">
-    <img src="/images/topics/fukui_dinosaur_museum/fukui_dinosaur_museum_tyrannosaurus_bone.webp" alt="ティラノサウルスの全身骨格標本" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; display: block;" />
+    <img src="/images/topics/fukui-dinosaur-museum-guide/fukui_dinosaur_museum_tyrannosaurus_bone.webp" alt="ティラノサウルスの全身骨格標本" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; display: block;" />
     <span style="font-size: 11px; color: var(--text-dim); display: block; text-align: center; margin-top: 5px;">ティラノサウルスの全身骨格標本</span>
   </div>
 </div>
@@ -185,7 +185,7 @@ relatedSpecimens: ["fukuiraptor", "fukuisaurus", "fukuititan", "fukuivenator"]
 
 <p class="article-paragraph">
   <div style="width: 100%; max-width: 976px; margin: 25px auto;">
-    <img src="/images/topics/fukui_dinosaur_museum/fukui_dinosaur_museum_japanese_dinosours.webp" alt="日本で発見された恐竜たちの展示コーナー" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; display: block;" />
+    <img src="/images/topics/fukui-dinosaur-museum-guide/fukui_dinosaur_museum_japanese_dinosours.webp" alt="日本で発見された恐竜たちの展示コーナー" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; display: block;" />
     <span style="font-size: 11px; color: var(--text-dim); display: block; text-align: center; margin-top: 5px;">日本で発見された福井の恐竜たちの展示コーナー</span>
   </div>
 

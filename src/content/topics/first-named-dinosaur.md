@@ -4,7 +4,7 @@ date: "2026.05.22"
 category: "theory"
 title: "【恐竜誕生の歴史】世界で最初に名前がついた恐竜とは？「恐竜（Dinosaur）」という言葉が生まれた歴史と最初の3大恐竜を徹底解説"
 summary: "「恐竜」という言葉が存在しなかった19世紀初頭、最初に見つかった化石は「巨人の骨」や「ドラゴンの遺骸」と信じられていました。歴史上初めて正式に学名が与えられた「メガロサウルス」「イグアノドン」「ヒラエオサウルス」の最初の3頭と、「恐竜（Dinosauria）」という言葉が誕生した知られざる歴史、そしてなぜイグアノドンだけが圧倒的に有名なのかを徹底解説。"
-image: "images/topics/first_named_dinosaur.webp"
+image: "images/topics/first-named-dinosaur/first_named_dinosaur.webp"
 securityLevel: "LEVEL 3 (PUBLIC)"
 relatedSpecimens: ["megalosaurus","iguanodon","hylaeosaurus"]
 ---
@@ -47,7 +47,7 @@ relatedSpecimens: ["megalosaurus","iguanodon","hylaeosaurus"]
   当時は、二足歩行で素早く走り回る活発な獣脚類の姿など誰も想像できなかったため、バックランドはこれを「全長10メートルを超える、巨大なワニやトカゲのような四足歩行の爬虫類」として復元しました。
 </p>
 <div style="width: 100%; max-width: 900px; margin: 15px auto 25px auto;">
-  <img src="/images/topics/first_named_dinosaur1.webp" alt="メガロサウルスの復元イラスト (歴史的復元)" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+  <img src="/images/topics/first-named-dinosaur/first_named_dinosaur1.webp" alt="メガロサウルスの復元イラスト (歴史的復元)" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
 <h3 style="color: var(--primary-neon); margin-top: 0; margin-bottom: 10px; font-size: 18px;">2. イグアノドン（1825年命名）</h3>
@@ -61,7 +61,7 @@ relatedSpecimens: ["megalosaurus","iguanodon","hylaeosaurus"]
   マンテルはこの歯が現生の爬虫類「イグアナ」の歯と酷似しているものの、サイズが数十倍も大きいことに驚愕し、1825年に「イグアナの歯」を意味する「イグアノドン」と命名しました。マンテルは当初、一緒に見つかった鋭いスパイク状の骨を「鼻の上の角」と勘違いし、巨大なサイのような復元図を描きましたが、後の完全な化石の発見により、これが「親指の爪（スパイク）」であることが判明しました。
 </p>
 <div style="width: 100%; max-width: 900px; margin: 15px auto 25px auto;">
-  <img src="/images/topics/first_named_dinosaur2.webp" alt="イグアノドンの復元イラスト (歴史的復元)" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+  <img src="/images/topics/first-named-dinosaur/first_named_dinosaur2.webp" alt="イグアノドンの復元イラスト (歴史的復元)" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 25px;">
@@ -125,7 +125,7 @@ relatedSpecimens: ["megalosaurus","iguanodon","hylaeosaurus"]
   1842年、オーウェンはこれらは全く新しい独自の爬虫類グループであると提唱し、ギリシャ語の「deinos（恐ろしい、凄まじく巨大な）」と「sauros（トカゲ、爬虫類）」を組み合わせて、<strong>「Dinosauria（恐竜類）」</strong>という言葉を作りました。これが、現在私たちが使っている「恐竜」という言葉の歴史の始まりなのです。
 </p>
 <div style="width: 100%; max-width: 900px; margin: 15px auto 25px auto;">
-  <img src="/images/topics/first_named_dinosaur3.webp" alt="「恐竜（Dinosauria）」という言葉の誕生" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
+  <img src="/images/topics/first-named-dinosaur/first_named_dinosaur3.webp" alt="「恐竜（Dinosauria）」という言葉の誕生" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
 <h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">歴史を創った最初の3大恐竜スペック比較</h3>
@@ -245,7 +245,7 @@ relatedSpecimens: ["megalosaurus","iguanodon","hylaeosaurus"]
   ※頭骨の一部しか見つかっていない恐竜の全身像をどうやって予測するのか？古生物学者の「パズル解き」の裏側はこちら：
 </p>
 <a href="/topics/fossil-reconstruction-science/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-  <img src="/images/topics/fossil_reconstruction.webp" alt="古生物学者が「パズル」を解く科学的アプローチ" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+  <img src="/images/topics/fossil-reconstruction-science/fossil_reconstruction.webp" alt="古生物学者が「パズル」を解く科学的アプローチ" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
   <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">
     完全な化石がないのになぜ全身がわかる？古生物学者が「パズル」を解く科学的アプローチ
   </span>

@@ -4,7 +4,7 @@ date: "2026.06.03"
 category: "introduction"
 title: "【最強の肉食恐竜】ティラノサウルスのすべてを徹底解説！"
 summary: "史上最強の肉食恐竜ティラノサウルス（T-Rex）。その強大な顎の力、獲物を見逃さない驚異的な五感、羽毛があったのかどうかの最新の研究、そして親子で遊べるおもちゃまでを分かりやすく解説します。"
-image: "images/topics/tyrannosaurus_detail.webp"
+image: "images/topics/tyrannosaurus-guide/tyrannosaurus_detail.webp"
 securityLevel: "LEVEL 4 (CLASSIFIED RESEARCH)"
 relatedSpecimens: ["tyrannosaurus","giganotosaurus","carcharodontosaurus"]
 ---
@@ -21,7 +21,7 @@ relatedSpecimens: ["tyrannosaurus","giganotosaurus","carcharodontosaurus"]
 </p>
 
 <div style="margin: 20px auto 35px auto; text-align: center; max-width: 900px;">
-  <img src="/images/topics/tyrannosaurus_size_comparison.webp" alt="ティラノサウルスのサイズ比較イラスト" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
+  <img src="/images/topics/tyrannosaurus-guide/tyrannosaurus_size_comparison.webp" alt="ティラノサウルスのサイズ比較イラスト" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
 <h2 class="article-section-title">驚異的な「噛む力」と骨まで砕いて食べる秘密</h2>
@@ -52,7 +52,7 @@ relatedSpecimens: ["tyrannosaurus","giganotosaurus","carcharodontosaurus"]
   ※この小さな前足が小さくなっていった歴史や、それぞれの説の詳しい証拠については、こちらの個別記事で分かりやすく解説しています：
 </p>
 <a href="/topics/trex-small-arms/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-  <img src="/images/topics/trex_small_arms.webp" alt="ティラノサウルスの小さな前足" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+  <img src="/images/topics/trex-small-arms/trex_small_arms.webp" alt="ティラノサウルスの小さな前足" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
   <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">ティラノサウルスの「小さな前足」の謎！何のために使っていた？</span>
 </a>
 
@@ -73,7 +73,7 @@ relatedSpecimens: ["tyrannosaurus","giganotosaurus","carcharodontosaurus"]
   ※ティラノサウルスの羽毛があったかどうかをめぐる議論や、モフモフ説が広まった歴史についてもっと詳しく知りたい方はこちら：
 </p>
 <a href="/topics/trex-feathers/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
-  <img src="/images/topics/trex_feathers.webp" alt="ティラノサウルスの羽毛" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
+  <img src="/images/topics/trex-feathers/trex_feathers.webp" alt="ティラノサウルスの羽毛" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
   <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; white-space: nowrap; display: block;">ティラノサウルスの「羽毛」論争と最新の姿：モフモフ説は否定された？</span>
 </a>
 
