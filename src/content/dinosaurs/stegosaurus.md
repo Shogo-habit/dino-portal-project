@@ -8,7 +8,10 @@ region: "北アメリカ"
 diet: "草食"
 length: "9.0m"
 weight: "5.0t"
-image: "images/stegosaurus.webp"
+image: "images/dinosaurs/stegosaurus/main.webp"
+gallery:
+  - "images/dinosaurs/stegosaurus/movie.webp"
+  - "images/dinosaurs/stegosaurus/ecology.webp"
 group: "剣竜類"
 description: "背中に並ぶ骨板と、尾の鋭いスパイクが特徴。脳は小さいが、尾による強力な防御策を持っていた。"
 bioTraits:
