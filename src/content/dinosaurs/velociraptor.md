@@ -8,7 +8,10 @@ region: "アジア"
 diet: "肉食"
 length: "2.0m"
 weight: "15kg"
-image: "images/velociraptor.webp"
+image: "images/dinosaurs/velociraptor/main.webp"
+gallery:
+  - "images/dinosaurs/velociraptor/movie.png"
+  - "images/dinosaurs/velociraptor/ecology.png"
 group: "獣脚類"
 description: "小型だが知能が高く、俊敏な捕食者。鉤爪を使い、獲物の急所を執拗に狙う狩りを得意としていた。"
 bioTraits:
