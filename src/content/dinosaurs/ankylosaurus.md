@@ -8,7 +8,10 @@ region: "北アメリカ"
 diet: "草食"
 length: "7.0m"
 weight: "6.0t"
-image: "images/ankylosaurus.webp"
+image: "images/dinosaurs/ankylosaurus/main.webp"
+gallery:
+  - "images/dinosaurs/ankylosaurus/movie.webp"
+  - "images/dinosaurs/ankylosaurus/ecology.webp"
 group: "よろい竜類"
 description: "全身が装甲板で覆われ、尾の先端にはハンマーのような骨の塊がある。最も硬い恐竜の一つ。"
 bioTraits:
