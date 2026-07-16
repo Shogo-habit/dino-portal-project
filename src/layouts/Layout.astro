@@ -151,32 +151,6 @@ const fullOgImageUrl = new URL(ogImage, 'https://dino-portal.com/');
                     [ CONTACT ]
                 </a>
             </div>
-        </div>
-        <div class="terminal-footer">
-            <div class="footer-left">
-                <span class="term-prompt">></span>
-                <span class="typing-text">アーカイブ走査中...</span>
-            </div>
-
-        </div>
     </footer>
-
-    <!-- フッタータイピングアニメーション用スクリプト -->
-    <script>
-        document.addEventListener('astro:page-load', () => {
-            const footerText = document.querySelector('.typing-text');
-            if (!footerText) return;
-            const texts = ["遺伝子配列を解析中...", "古生物データベースを更新中...", "アーカイブと同期中...", "新しい発見をスキャン中..."];
-            let i = 0;
-            // 既存のタイマーがあればクリアする（View Transitions時に対策）
-            if ((window as any)._footerInterval) {
-                clearInterval((window as any)._footerInterval);
-            }
-            (window as any)._footerInterval = setInterval(() => {
-                footerText.innerText = texts[i];
-                i = (i + 1) % texts.length;
-            }, 4000);
-        });
-    </script>
 </body>
 </html>
