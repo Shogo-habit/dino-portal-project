@@ -8,7 +8,10 @@ region: "北アメリカ"
 diet: "草食"
 length: "9.0m"
 weight: "10.0t"
-image: "images/triceratops.webp"
+image: "images/dinosaurs/triceratops/main.webp"
+gallery:
+  - "images/dinosaurs/triceratops/movie.webp"
+  - "images/dinosaurs/triceratops/ecology.webp"
 group: "角竜類"
 description: "3本の角と巨大な襟飾りが特徴。強力な防御能力を持ち、大型肉食恐竜に対しても立ち向かった。"
 bioTraits:
