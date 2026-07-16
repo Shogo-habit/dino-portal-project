@@ -8,7 +8,10 @@ region: "海洋（全世界）"
 diet: "肉食"
 length: "17.0m"
 weight: "20.0t"
-image: "images/mosasaurus.webp"
+image: "images/dinosaurs/mosasaurus/main.webp"
+gallery:
+  - "images/dinosaurs/mosasaurus/movie.png"
+  - "images/dinosaurs/mosasaurus/ecology.png"
 group: "その他"
 description: "白亜紀の海に君臨した頂点捕食者。強力な顎と遊泳に適した流線型の体を持ち、多様な獲物を捕らえていた。"
 bioTraits:
