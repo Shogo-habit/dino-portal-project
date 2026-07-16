@@ -8,7 +8,10 @@ region: "北アメリカ"
 diet: "草食"
 length: "25.0m"
 weight: "56.0t"
-image: "images/brachiosaurus.webp"
+image: "images/dinosaurs/brachiosaurus/main.webp"
+gallery:
+  - "images/dinosaurs/brachiosaurus/movie.webp"
+  - "images/dinosaurs/brachiosaurus/ecology.webp"
 group: "竜脚類"
 description: "前肢が後肢よりも長い超大型恐竜。高い所の植物を食べることに特化し、圧倒的な巨体が防具となった。"
 bioTraits:
