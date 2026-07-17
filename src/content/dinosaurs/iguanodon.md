@@ -8,7 +8,10 @@ region: "ヨーロッパ・アジア"
 diet: "草食"
 length: "10.0m"
 weight: "4.0t"
-image: "images/iguanodon.webp"
+image: "images/dinosaurs/iguanodon/main.webp"
+gallery:
+  - "images/dinosaurs/iguanodon/movie.png"
+  - "images/dinosaurs/iguanodon/ecology.png"
 group: "鳥脚類"
 description: "「イグアナの歯」を意味する名前を持つ、世界で2番目に命名された恐竜。親指にある鋭いスパイクが特徴で、自衛に用いたとされる。"
 bioTraits:
