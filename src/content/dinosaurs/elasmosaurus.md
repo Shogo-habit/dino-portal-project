@@ -8,7 +8,10 @@ region: "北アメリカ"
 diet: "肉食（魚食）"
 length: "14.0m"
 weight: "2.0t"
-image: "images/elasmosaurus.webp"
+image: "images/dinosaurs/elasmosaurus/main.webp"
+gallery:
+  - "images/dinosaurs/elasmosaurus/movie.png"
+  - "images/dinosaurs/elasmosaurus/ecology.png"
 group: "首長竜"
 description: "全長の大半分を占める極端に長い首を持つ首長竜。その首は70個以上の骨からなり、柔軟に獲物を追跡できた。"
 bioTraits:
