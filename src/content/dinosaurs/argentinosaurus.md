@@ -10,8 +10,8 @@ length: "35.0m"
 weight: "70.0t"
 image: "images/dinosaurs/argentinosaurus/main.webp"
 gallery:
-  - "images/dinosaurs/argentinosaurus/movie.png"
-  - "images/dinosaurs/argentinosaurus/ecology.png"
+  - "images/dinosaurs/argentinosaurus/movie.webp"
+  - "images/dinosaurs/argentinosaurus/ecology.webp"
 group: "竜脚類"
 description: "史上最大の陸生動物の一つとされる超巨大竜脚類。その一歩は地響きを立て、圧倒的な質量こそが最大の防御であった。あまりの巨大さゆえに天敵はほぼ存在しなかった。"
 bioTraits:
