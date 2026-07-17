@@ -10,8 +10,8 @@ length: "4.2m"
 weight: "300kg"
 image: "images/dinosaurs/fukuiraptor/main.webp"
 gallery:
-  - "images/dinosaurs/fukuiraptor/movie.png"
-  - "images/dinosaurs/fukuiraptor/ecology.png"
+  - "images/dinosaurs/fukuiraptor/movie.webp"
+  - "images/dinosaurs/fukuiraptor/ecology.webp"
 group: "獣脚類"
 description: "日本で初めて全身骨格が復元された肉食恐竜。アロサウルスに近い仲間と考えられており、鋭い鉤爪を武器に狩りをしていた。"
 bioTraits:

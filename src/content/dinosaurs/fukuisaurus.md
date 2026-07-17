@@ -10,8 +10,8 @@ length: "4.7m"
 weight: "1.0t"
 image: "images/dinosaurs/fukuisaurus/main.webp"
 gallery:
-  - "images/dinosaurs/fukuisaurus/movie.png"
-  - "images/dinosaurs/fukuisaurus/ecology.png"
+  - "images/dinosaurs/fukuisaurus/movie.webp"
+  - "images/dinosaurs/fukuisaurus/ecology.webp"
 group: "鳥脚類"
 description: "福井県で発見されたイグアノドン類。日本を代表する恐竜の一つであり、四足歩行と二足歩行の両方が可能だった。"
 bioTraits:
