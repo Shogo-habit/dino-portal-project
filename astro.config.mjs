@@ -7,7 +7,6 @@ import mdx from '@astrojs/mdx';
 export default defineConfig({
   site: 'https://dino-portal.com',
   redirects: {
-    '/dictionary/kamuyasaurus/': '/dictionary/kamuysaurus/',
     '/dictionary/kamuyasaurus': '/dictionary/kamuysaurus/',
   },
   integrations: [sitemap({
