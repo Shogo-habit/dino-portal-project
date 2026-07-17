@@ -10,8 +10,8 @@ length: "10.0m"
 weight: "3.0t"
 image: "images/dinosaurs/parasaurolophus/main.webp"
 gallery:
-  - "images/dinosaurs/parasaurolophus/movie.png"
-  - "images/dinosaurs/parasaurolophus/ecology.png"
+  - "images/dinosaurs/parasaurolophus/movie.webp"
+  - "images/dinosaurs/parasaurolophus/ecology.webp"
 group: "鳥脚類"
 description: "後方に長く伸びたトサカが特徴的な恐竜。このトサカは管楽器のように音を響かせることができ、数キロ先まで声が届いたとされる。"
 bioTraits:

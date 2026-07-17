@@ -10,8 +10,8 @@ length: "8.5m"
 weight: "2.3t"
 image: "images/dinosaurs/allosaurus/main.webp"
 gallery:
-  - "images/dinosaurs/allosaurus/movie.png"
-  - "images/dinosaurs/allosaurus/ecology.png"
+  - "images/dinosaurs/allosaurus/movie.webp"
+  - "images/dinosaurs/allosaurus/ecology.webp"
 group: "獣脚類"
 description: "ジュラ紀の頂点捕食者。鋭い歯と強力な前肢の爪を持ち、大型の草食恐竜を集団で狩った可能性がある。"
 bioTraits:
