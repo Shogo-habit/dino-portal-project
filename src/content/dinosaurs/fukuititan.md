@@ -8,7 +8,10 @@ region: "日本（福井県）"
 diet: "草食"
 length: "10.0m"
 weight: "10.0t"
-image: "images/fukuititan.webp"
+image: "images/dinosaurs/fukuititan/main.webp"
+gallery:
+  - "images/dinosaurs/fukuititan/movie.png"
+  - "images/dinosaurs/fukuititan/ecology.png"
 group: "竜脚類"
 description: "福井県で発見された大型の竜脚類。日本で初めて学名がついた竜脚類であり、当時の日本の生態系を支える巨体であった。"
 bioTraits:
