@@ -9,6 +9,9 @@ diet: "肉食"
 length: "翼開長11.0m"
 weight: "200kg"
 image: "images/dinosaurs/quetzalcoatlus/main.webp"
+gallery:
+  - "images/dinosaurs/quetzalcoatlus/movie.png"
+  - "images/dinosaurs/quetzalcoatlus/ecology.png"
 group: "翼竜"
 description: "史上最大級の空飛ぶ生物。キリンに匹敵する高さがあり、巨大な翼で大陸間を移動した可能性もある。地上でも四肢を使って活発に動けた。"
 bioTraits:

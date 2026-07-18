@@ -9,6 +9,9 @@ diet: "肉食"
 length: "7.0m"
 weight: "400kg"
 image: "images/dinosaurs/dilophosaurus/main.webp"
+gallery:
+  - "images/dinosaurs/dilophosaurus/movie.png"
+  - "images/dinosaurs/dilophosaurus/ecology.png"
 group: "獣脚類"
 description: "頭部にある2本の高く丸いトサカが特徴的な獣脚類。映画等の影響で毒を吐くイメージがあるが、実際にはその証拠はなく、鋭い爪と牙で獲物を捕らえる俊敏なハンターだった。"
 bioTraits:
