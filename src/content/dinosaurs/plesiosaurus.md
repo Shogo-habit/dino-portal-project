@@ -10,8 +10,8 @@ length: "3.5m"
 weight: "450kg"
 image: "images/dinosaurs/plesiosaurus/main.webp"
 gallery:
-  - "images/dinosaurs/plesiosaurus/movie.png"
-  - "images/dinosaurs/plesiosaurus/ecology.png"
+  - "images/dinosaurs/plesiosaurus/movie.webp"
+  - "images/dinosaurs/plesiosaurus/ecology.webp"
 group: "首長竜"
 description: "代表的な首長竜。4枚のヒレ（パドル）を使い、空を飛ぶように海中を泳いだ。長い首は、魚の群れを不意に襲うのに適していた。"
 bioTraits:
