@@ -10,8 +10,8 @@ length: "10.0m"
 weight: "2.6t"
 image: "images/dinosaurs/amargasaurus/main.webp"
 gallery:
-  - "images/dinosaurs/amargasaurus/movie.png"
-  - "images/dinosaurs/amargasaurus/ecology.png"
+  - "images/dinosaurs/amargasaurus/movie.webp"
+  - "images/dinosaurs/amargasaurus/ecology.webp"
 group: "竜脚類"
 description: "首から背中にかけて2列の長い棘が伸びているのが特徴。竜脚類の中では比較的小型だが、その姿は非常に独特である。"
 bioTraits:
