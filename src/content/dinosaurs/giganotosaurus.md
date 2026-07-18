@@ -10,8 +10,8 @@ length: "13.0m"
 weight: "8.0t"
 image: "images/dinosaurs/giganotosaurus/main.webp"
 gallery:
-  - "images/dinosaurs/giganotosaurus/movie.png"
-  - "images/dinosaurs/giganotosaurus/ecology.png"
+  - "images/dinosaurs/giganotosaurus/movie.webp"
+  - "images/dinosaurs/giganotosaurus/ecology.webp"
 group: "獣脚類"
 description: "ティラノサウルスに匹敵、あるいはそれを上回る巨体を持つ巨大肉食恐竜。アルゼンチンで発見され、巨大な竜脚類を狩っていたと考えられている。"
 bioTraits:
