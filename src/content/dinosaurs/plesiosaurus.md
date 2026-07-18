@@ -8,7 +8,10 @@ region: "ヨーロッパ（イギリス）周辺の海"
 diet: "肉食（魚食・軟体動物）"
 length: "3.5m"
 weight: "450kg"
-image: "images/plesiosaurus.webp"
+image: "images/dinosaurs/plesiosaurus/main.webp"
+gallery:
+  - "images/dinosaurs/plesiosaurus/movie.png"
+  - "images/dinosaurs/plesiosaurus/ecology.png"
 group: "首長竜"
 description: "代表的な首長竜。4枚のヒレ（パドル）を使い、空を飛ぶように海中を泳いだ。長い首は、魚の群れを不意に襲うのに適していた。"
 bioTraits:
