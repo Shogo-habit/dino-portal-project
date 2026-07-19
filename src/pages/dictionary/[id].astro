@@ -641,10 +641,12 @@ const relatedTopics = topics
     display: none;
   }
 
-  /* Constrain images in slides to match original 90% footprint and shadow */
+  /* Constrain images in slides to match original 100% footprint and shadow */
   .slider-slide img {
-    max-width: 90% !important;
-    max-height: 90% !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
     object-fit: contain;
     filter: drop-shadow(0 0 30px rgba(0, 242, 255, 0.3));
   }
