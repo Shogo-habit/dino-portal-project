@@ -132,11 +132,17 @@ if (hasComparison) {
     const zoom = meta.zoom || 1.0;
     pxPerMeter = pxPerMeter * zoom;
     
-    // SVG化によりはみ出し見切れリスクが消滅したため、巨大恐竜のサイズを限界まで大きくできるよう
-    // zoomが指定されている場合は、absoluteMaxH や absoluteMaxL による安全制限クランプを完全にバイパスします！
-    const absoluteMaxH = meta.zoom ? 999 : (SAFE_ZONE_H * 0.95) / realH;
-    const absoluteMaxL = meta.zoom ? 999 : (SAFE_ZONE_W * 0.98) / realL;
-    pxPerMeter = Math.min(pxPerMeter, absoluteMaxH, absoluteMaxL);
+    // 【見切れ防止クランプ】 zoom指定の有無にかかわらず、実体が高さ方向（ViewBox上端）からはみ出さないように厳密にクランプする
+    // 上部セーフマージン 20px (BASELINE_Y (315) - 20 = 295px を高さ上限とする)
+    const absoluteMaxH = (BASELINE_Y - 20) / realH;
+    pxPerMeter = Math.min(pxPerMeter, absoluteMaxH);
+
+    // 幅方向（左右）については、zoomが指定されていない場合のみ左右セーフマージン（計80px）の安全クランプをかける
+    // zoomが明示的に指定されている場合は、迫力ある拡大を優先して左右のはみ出しは制限しない
+    if (!meta.zoom) {
+        const absoluteMaxL = (650 - 80) / realL;
+        pxPerMeter = Math.min(pxPerMeter, absoluteMaxL);
+    }
 
     // 小さい生物用の最小縮尺調整 (人間が巨大化しすぎるのを防ぐ)
     if (realH < ref.realHeight) {
@@ -291,7 +297,7 @@ const relatedTopics = topics
                             <line x1="0" y1="315" x2="650" y2="315" stroke="rgba(0, 242, 255, 0.3)" stroke-width="1.5" stroke-dasharray="4,4" />
                             
                             <!-- Dino visual -->
-                            <image href={`/images/cyber/${d.id}.webp`} x={dinoX} y={dinoY} width={dinoW} height={dinoH} style="mix-blend-mode: screen;" />
+                            <image href={`/images/cyber/${d.id}.webp`} x={dinoX} y={dinoY} width={dinoW} height={dinoH} class="cyber-hud-specimen" />
                             
                             <!-- Human reference -->
                             <image href="/images/cyber/human_front.webp" x={refX} y={refY} width={refW} height={refH} style="mix-blend-mode: screen;" />
