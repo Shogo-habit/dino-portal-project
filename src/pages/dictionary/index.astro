@@ -450,8 +450,8 @@ const GROUPS = [
 <style>
     .sticky-filter-wrapper {
         position: sticky !important;
-        top: -40px !important;
-        z-index: 9999 !important; /* Force to be in front of all grid items, cards, and overlays */
+        top: 0px !important; /* Align exactly to the main header bottom or screen top */
+        z-index: 99 !important; /* Slightly below the main header (100) but above everything else (cards, etc.) */
         background: #030608 !important; /* Force completely solid base background color to block card bleed-through */
         padding-top: 40px;
         padding-bottom: 15px;
