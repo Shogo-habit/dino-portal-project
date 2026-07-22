@@ -451,10 +451,8 @@ const GROUPS = [
     .sticky-filter-wrapper {
         position: sticky;
         top: -40px;
-        z-index: 90;
-        background: rgba(3, 6, 8, 0.95);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
+        z-index: 999; /* Ensure it is in front of all grid items and other overlays */
+        background: var(--bg-color); /* Make it completely opaque to prevent cards from showing through */
         padding-top: 40px;
         padding-bottom: 15px;
         margin-top: -40px;
