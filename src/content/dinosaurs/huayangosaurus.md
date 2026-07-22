@@ -19,10 +19,10 @@ bioTraits:
     value: "前歯の咀嚼"
     detail: "後期の剣竜では失われた前歯を持っており、多様な植物を噛みちぎることができた"
 cyberMetadata:
-  bottomGap: 782
+  bottomGap: 783
   realHeight: 1.5
   realLength: 4.5
-  contentHeightPx: 1235
+  contentHeightPx: 1234
   sourceRes: 2816
   zoom: 1.8
 ---

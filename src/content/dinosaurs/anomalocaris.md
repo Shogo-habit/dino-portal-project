@@ -19,10 +19,10 @@ bioTraits:
     value: "優れた視覚"
     detail: "突き出た2つの巨大な複眼を持ち、当時の生物としては圧倒的な視覚能力を誇った"
 cyberMetadata:
-  bottomGap: 1014
+  bottomGap: 1017
   realHeight: 0.2
   realLength: 0.6
-  contentHeightPx: 762
+  contentHeightPx: 756
   sourceRes: 2816
   zoom: 3
 ---

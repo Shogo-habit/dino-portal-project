@@ -19,10 +19,10 @@ bioTraits:
     value: "クチバシと頬袋"
     detail: "鋭いクチバシで植物を切り取り、頬袋に溜めてから奥歯で効率的にすり潰す"
 cyberMetadata:
-  bottomGap: 769
+  bottomGap: 786
   realHeight: 0.7
   realLength: 1.8
-  contentHeightPx: 1213
+  contentHeightPx: 1192
   sourceRes: 2816
   zoom: 2.3
 ---

@@ -19,10 +19,10 @@ bioTraits:
     value: "高い視野"
     detail: "長い首を活かして高い位置から周囲を見渡し、危険をいち早く察知する"
 cyberMetadata:
-  bottomGap: 844
+  bottomGap: 846
   realHeight: 3
   realLength: 8
-  contentHeightPx: 1077
+  contentHeightPx: 1072
   sourceRes: 2816
   zoom: 1.5
 ---

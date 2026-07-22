@@ -19,10 +19,10 @@ bioTraits:
     value: "二足歩行の機動力"
     detail: "装甲恐竜としては珍しく二足歩行で軽快に駆け回り、敵から素早く逃れることができた"
 cyberMetadata:
-  bottomGap: 797
+  bottomGap: 801
   realHeight: 0.5
   realLength: 1.5
-  contentHeightPx: 1106
+  contentHeightPx: 1099
   sourceRes: 2816
   zoom: 2
 ---

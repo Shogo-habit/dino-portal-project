@@ -19,10 +19,10 @@ bioTraits:
     value: "強力な追跡"
     detail: "gassiriとした後肢でアジアの半乾燥地帯を力強く走り、獲物を追いつめた"
 cyberMetadata:
-  bottomGap: 856
+  bottomGap: 857
   realHeight: 2.6
   realLength: 8
-  contentHeightPx: 1060
+  contentHeightPx: 1059
   sourceRes: 2816
   zoom: 1.4
 ---

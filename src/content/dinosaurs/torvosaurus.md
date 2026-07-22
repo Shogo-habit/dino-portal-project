@@ -19,10 +19,10 @@ bioTraits:
     value: "強大な鉤爪"
     detail: "太い前肢には非常に大きく鋭い爪があり、獲物を力づくでねじ伏せた"
 cyberMetadata:
-  bottomGap: 833
+  bottomGap: 834
   realHeight: 3
   realLength: 10
-  contentHeightPx: 1005
+  contentHeightPx: 1000
   sourceRes: 2816
   zoom: 1.36
 ---

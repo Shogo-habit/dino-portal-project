@@ -19,10 +19,10 @@ bioTraits:
     value: "巨大な飾り襟"
     detail: "頭骨の半分以上を占める超巨大なフリルが、首回りの急所を完璧に保護する"
 cyberMetadata:
-  bottomGap: 784
+  bottomGap: 785
   realHeight: 2.5
   realLength: 6
-  contentHeightPx: 1262
+  contentHeightPx: 1259
   sourceRes: 2816
   zoom: 1.5
 ---

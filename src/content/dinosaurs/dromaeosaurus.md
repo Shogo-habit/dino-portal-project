@@ -19,10 +19,10 @@ bioTraits:
     value: "俊敏な動き"
     detail: "軽量な体と優れた跳躍力で、標的を執拗に追い詰める"
 cyberMetadata:
-  bottomGap: 774
+  bottomGap: 775
   realHeight: 0.8
   realLength: 1.8
-  contentHeightPx: 1193
+  contentHeightPx: 1192
   sourceRes: 2816
   zoom: 2.2
 ---

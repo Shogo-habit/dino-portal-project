@@ -19,10 +19,10 @@ bioTraits:
     value: "噛み引き裂く顎"
     detail: "強靭な顎とナイフのような歯で、獲物の肉を大きく切り裂いて出血多死に追い込む"
 cyberMetadata:
-  bottomGap: 822
+  bottomGap: 823
   realHeight: 3.2
   realLength: 10.5
-  contentHeightPx: 809
+  contentHeightPx: 1131
   sourceRes: 2816
   zoom: 1.3
 ---
