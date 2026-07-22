@@ -362,12 +362,12 @@ body {
 .archive-sticky-header {
   position: sticky;
   top: -40px;
-  z-index: 100;
-  background: rgba(5, 5, 5, 0.8);
+  z-index: 99; /* Pass underneath main header (100) but stay in front of cards */
+  background: #030608; /* Completely opaque background to prevent card bleed-through */
   margin: -40px -40px 20px -40px;
   padding: 40px 40px 10px 40px;
   border-bottom: 1px solid var(--panel-border);
-  backdrop-filter: blur(15px);
+  backdrop-filter: none;
 }
 
 .dictionary-controls {
