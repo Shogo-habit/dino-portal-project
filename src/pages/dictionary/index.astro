@@ -40,7 +40,7 @@ const GROUPS = [
 ---
 
 <Layout title="恐竜図鑑 | Dino-Portal" activeTab="dictionary" description="150種以上の恐竜データを網羅したデジタル・アーカイブ。">
-    <div class="sticky-filter-wrapper">
+    <div class="archive-sticky-header">
         <section class="page-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px; margin-bottom: 20px;">
         <div>
             <h2 class="page-title" style="margin-bottom: 5px;">恐竜図鑑</h2>
@@ -448,16 +448,9 @@ const GROUPS = [
 </Layout>
 
 <style>
-    .sticky-filter-wrapper {
-        position: sticky !important;
-        top: 0px !important; /* Align exactly to the main header bottom or screen top */
-        z-index: 99 !important; /* Slightly below the main header (100) but above everything else (cards, etc.) */
-        background: #030608 !important; /* Force completely solid base background color to block card bleed-through */
-        padding-top: 40px;
-        padding-bottom: 15px;
-        margin-top: -40px;
-        margin-bottom: 25px;
-        border-bottom: 1px solid var(--panel-border) !important;
+    .archive-sticky-header {
+        background: #030608 !important; /* 完全に不透明にして背後のカードを隠す */
+        z-index: 99 !important; /* メインヘッダー(100)の裏側、かつコンテンツ(5)の最前面に固定 */
     }
     #filter-reset-btn:hover {
         border-color: #ff0055 !important;
