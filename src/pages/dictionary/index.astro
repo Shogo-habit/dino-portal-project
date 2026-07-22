@@ -449,15 +449,15 @@ const GROUPS = [
 
 <style>
     .sticky-filter-wrapper {
-        position: sticky;
-        top: -40px;
-        z-index: 999; /* Ensure it is in front of all grid items and other overlays */
-        background: var(--bg-color); /* Make it completely opaque to prevent cards from showing through */
+        position: sticky !important;
+        top: -40px !important;
+        z-index: 9999 !important; /* Force to be in front of all grid items, cards, and overlays */
+        background: #030608 !important; /* Force completely solid base background color to block card bleed-through */
         padding-top: 40px;
         padding-bottom: 15px;
         margin-top: -40px;
         margin-bottom: 25px;
-        border-bottom: 1px solid var(--panel-border);
+        border-bottom: 1px solid var(--panel-border) !important;
     }
     #filter-reset-btn:hover {
         border-color: #ff0055 !important;
