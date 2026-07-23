@@ -11,6 +11,13 @@ weight: "50.0t"
 image: "images/sauroposeidon.webp"
 group: "竜脚類"
 description: "「地震のトカゲの神」を意味する名を持つ超巨大竜脚類。首の骨が極めて長く発達し、頭を持ち上げたときの最高到達高度は約17メートルと、陸上生物史上もっとも背が高かった恐竜の最有力候補。"
+bioTraits:
+  - trait: "圧倒的な到達高度"
+    value: "高さ約17m"
+    detail: "ビルの6階に相当する高所の木の葉を独占して摂取"
+  - trait: "軽量化された長い首"
+    value: "空気の部屋（気腔）"
+    detail: "首の骨の内部に空気を含ませることで、強靭さと軽さを両立"
 cyberMetadata:
   bottomGap: 322
   realHeight: 16.0

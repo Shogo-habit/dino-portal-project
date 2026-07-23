@@ -11,6 +11,13 @@ weight: "45.0t"
 image: "images/futalognkosaurus.webp"
 group: "竜脚類"
 description: "「巨大な首のチーフ」を意味する名を持つ、南米アルゼンチンで発見された超巨大竜脚類。腰の骨の幅が約3メートルもあり、お尻まわりが極めてがっしりした体型が特徴。"
+bioTraits:
+  - trait: "極めて広い骨盤"
+    value: "腰幅約3m"
+    detail: "巨大な体重を安定して支える頑丈な骨格構造"
+  - trait: "超巨大な体格"
+    value: "全長約30m"
+    detail: "南米アルゼンチンで発見された最大級の竜脚類"
 cyberMetadata:
   bottomGap: 407
   realHeight: 7.0

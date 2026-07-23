@@ -27,6 +27,11 @@ cyberMetadata:
   dinoLeft: "10%"
   refRight: "15%"
   zoom: 1
+references:
+  - title: "A horned Cretaceous carnosaur from Patagonia, Argentina"
+    journal: "National Geographic Research"
+    year: 1985
+    url: "https://www.semanticscholar.org/paper/A-horned-Cretaceous-carnosaur-from-Patagonia%2C-Bonaparte/692019b5bfb7d15951d8b9485bb0e5ad3c3abfbe"
 ---
 
 白亜紀後期の南アメリカに生息していた、異形の獣脚類（肉食恐竜）。学名は「肉食の雄牛」を意味し、その名の通り頭部に一対の頑丈な「悪魔のような角」を持っていた。この角は獲物を刺す武器ではなく、求愛行動や仲間同士の頭突き儀礼に使われたとされる。前肢は退化して極端に小さく、ほぼ完全に機能していなかったが、後肢は非常に長く発達しており、大型獣脚類としてはトップクラスの走走速度（時速50km近く）を誇るスプリンターであった。

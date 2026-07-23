@@ -30,7 +30,11 @@ cyberMetadata:
   dinoLeft: "10%"
   refRight: "15%"
   zoom: 1
-
+references:
+  - title: "Parasaurolophus walkeri, a new genus and species of crested trachodont dinosaur"
+    journal: "University of Toronto Studies, Geological Series"
+    year: 1922
+    url: "https://archive.org/details/parasaurolophusw00parkuoft"
 ---
 
 白亜紀後期の北アメリカに繁栄した、最も有名な鳥脚類（カモノハシ竜）。頭部の後ろへ向けて約1.8mも長く突き出た「中空のチューブ状のトサカ」がトレードマーク。トサカの内部は鼻孔から続く空気管がUターンする構造の共鳴管になっており、トランペットやホルンのように低周波の音を響かせ、何キロメートルも離れた群れの仲間と音で通信していたことが、コンピュータシミュレーション解析によって裏付けられている。

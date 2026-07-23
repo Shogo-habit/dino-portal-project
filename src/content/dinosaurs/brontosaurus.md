@@ -27,6 +27,11 @@ cyberMetadata:
   dinoLeft: "12%"
   refRight: "25%"
   zoom: 0.9
+references:
+  - title: "A specimen-level phylogenetic analysis and taxonomic revision of Diplodocidae (Dinosauria, Sauropoda)"
+    journal: "PeerJ"
+    year: 2015
+    url: "https://doi.org/10.7717/peerj.857"
 ---
 
 ジュラ紀後期の北アメリカに生息していた巨大竜脚類。全長約22m。学名は「雷トカゲ」を意味し、長年アパトサウルスと同一視され抹消されていたが、2015年の詳細な骨格系統解析により**「アパトサウルスとは明確に異なる特徴を持つため、独立した属として復活させるべき」**とされ、学術的に劇的な復活を果たした。より太くがっしりとした頑丈な首と骨格を持っていた。

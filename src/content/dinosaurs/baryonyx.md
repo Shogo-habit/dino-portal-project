@@ -27,6 +27,11 @@ cyberMetadata:
   dinoLeft: "8%"
   refRight: "22%"
   zoom: 0.9
+references:
+  - title: "Baryonyx, a remarkable new theropod dinosaur from the Wealden of Surrey"
+    journal: "Nature"
+    year: 1986
+    url: "https://doi.org/10.1038/324359a0"
 ---
 
 白亜紀前期のヨーロッパ（イギリス）で発見された、初期のスピノサウルス科に属する水陸両生の肉食恐竜。学名は「重い爪」を意味し、前肢の親指にある長さ約30cmの巨大なフック状の爪が特徴。ワニのように細長く、多数の細かい鋸歯がある歯を備えた顎を持ち、主食は魚類であった。胃の化石から消化途中の魚のウロコや、イグアノドンの幼体の骨が見つかっており、魚以外も捕食していた。

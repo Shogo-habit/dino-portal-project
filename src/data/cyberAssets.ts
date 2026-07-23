@@ -11,7 +11,7 @@ export const REFERENCE_ASSETS = {
     },
     CAR: {
         id: 'car',
-        icon: 'images/cyber/car_side.png',
+        icon: 'images/cyber/car_side.webp',
         label: "乗用車 (1.5m)",
         name: "乗用車",
         realHeight: 1.5,
@@ -21,7 +21,7 @@ export const REFERENCE_ASSETS = {
     },
     ELEPHANT: {
         id: 'elephant',
-        icon: 'images/cyber/elephant_side.png',
+        icon: 'images/cyber/elephant_side.webp',
         label: "アフリカゾウ (3.2m)",
         name: "アフリカゾウ",
         realHeight: 3.2,

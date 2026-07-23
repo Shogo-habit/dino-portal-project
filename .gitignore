@@ -26,3 +26,7 @@ pnpm-debug.log*
 # scratch directory
 scratch/
 
+# backup and workspace temp files
+images_backup/
+images_png/
+
