@@ -31,7 +31,7 @@ references:
   - title: "Descriptions of extinct Batrachia and Reptilia from the Permian formation of Texas"
     journal: "Proceedings of the American Philosophical Society"
     year: 1878
-    url: "https://www.biodiversitylibrary.org/part/33719"
+    url: "https://www.biodiversitylibrary.org/item/95137"
 ---
 
 ペルム紀前期の北アメリカに生息していた、背中に巨大な帆を持つ肉食の単弓類（哺乳類の祖先系統であり、恐竜ではない）。全長約3〜4m。背中の長い突起に皮膚の「帆」が張られており、日光を浴びて体温を素早く上げ、夜間は放熱する温度調節板として機能していた。恐竜が出現するはるか昔の地球において、生態系の絶対的頂点捕食者として君臨していた歴史的古生物である。

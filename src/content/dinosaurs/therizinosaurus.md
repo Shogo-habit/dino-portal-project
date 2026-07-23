@@ -31,7 +31,7 @@ references:
   - title: "New turtles-like reptiles in Mongolia (Therizinosaurus)"
     journal: "Doklady Akademii Nauk SSSR"
     year: 1954
-    url: "https://www.biodiversitylibrary.org/part/152345"
+    url: "https://www.biodiversitylibrary.org/item/95138"
 ---
 
 白亜紀後期のモンゴルに生息していた、大型の風変わりな獣脚類（草食性）。最大の特徴は、前肢にある**長さ約70cm〜1mにも達する史上最大の巨大な鎌状の爪**である。発見当初は巨大なカメの肋骨と考えられていたが、実際は鋭く薄い爪であり、肉食恐竜との格闘武器として、または高い木の枝を引き寄せて葉を刈り取るための万能ツールとして使われていたと推測される。

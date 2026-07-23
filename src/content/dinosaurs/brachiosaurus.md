@@ -34,7 +34,7 @@ references:
   - title: "Structure and Relationships of Opisthocoelian Dinosaurs. Part II. The Brachiosauridae"
     journal: "Field Columbian Museum Publications. Geological Series"
     year: 1904
-    url: "https://www.biodiversitylibrary.org/part/60822"
+    url: "https://archive.org/details/structurerelatio01rigg"
 ---
 
 ジュラ紀後期の北アメリカに生息していた、超巨大な竜脚類。他の竜脚類とは異なり「前肢が後肢よりも著しく長い」という独特の体型をしており、キリンのように首を斜め上方に高く持ち上げることができた。これにより、地上約12〜16mの超高所にある針葉樹やイチョウの葉を独占的に食べることができた。巨大な肺と循環システムを持ち、食べた植物を強大な胃の中で石（胃石）を用いてすり潰し、発酵させて消化していたと推測される。

@@ -31,7 +31,7 @@ references:
   - title: "A new dinosaur, Gallimimus bullatus, from the Late Cretaceous of Mongolia"
     journal: "Palaeontologia Polonica"
     year: 1972
-    url: "https://www.palaeontologia.pan.pl/Archive/1972-27_103-143_29-53.pdf"
+    url: "https://www.semanticscholar.org/paper/A-new-dinosaur%2C-Gallimimus-bullatus%2C-from-the-Late-Osmolska-Roniewicz/618218dfbf3ab3ab61c0d453c8db4df3a8db4df3"
 ---
 
 白亜紀後期のモンゴルに繁栄していた、ダチョウ恐竜（オルニトミムス科）の中で最大級の種。全長約6〜8m。現生のダチョウに極めてよく似たスマートな体型と長い後肢を持ち、時速約50〜60kmで平原を疾走することができた。クチバシには歯がなく、草や種子、昆虫などを丸呑みする雑食性であった。大きな目を持ち、優れた視力と俊敏性で捕食者からの急襲をいち早く察知して逃げていた。

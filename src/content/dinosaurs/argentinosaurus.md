@@ -34,7 +34,7 @@ references:
   - title: "Un nuevo sauropodo de la Formacion Rio Limay de Neuquen, Argentina"
     journal: "Ameghiniana"
     year: 1993
-    url: "https://www.researchgate.net/publication/285435928"
+    url: "https://www.ameghiniana.org.ar/index.php/ameghiniana/article/view/2157"
 ---
 
 白亜紀中期の南アメリカ（アルゼンチン）に生息していた、地球史上最大級の超巨大竜脚類。全長は最大30〜35m、体重は70〜90tに達したと推定される。脊椎骨1個の高さだけで約1.69mもあり、まさに動く高層ビルのような存在であった。捕食者であるギガノトサウルスにとっても、成長しきったアルゼンチノサウルスを単独で倒すことは物理的に不可能であり、文字通り地上最大の絶対強者であった。

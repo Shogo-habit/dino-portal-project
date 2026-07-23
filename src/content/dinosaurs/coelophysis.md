@@ -31,7 +31,7 @@ references:
   - title: "The Triassic dinosaur Coelophysis"
     journal: "Museum of Northern Arizona Bulletin"
     year: 1989
-    url: "https://archive.org/details/triassicdinosaur00colb"
+    url: "https://www.semanticscholar.org/paper/The-Triassic-dinosaur-Coelophysis-Colbert/5ec47372d627c00e12d46e309ccdbf7c00cc8b9f"
 ---
 
 三畳紀後期の北アメリカに大繁栄していた、最初期の小型肉食恐竜。全長約3m、体重約20kg。骨の中身が中空で鳥類のように極めて軽かった。アメリカのゴーストランチ発掘地から、数千体分もの化石が折り重なるようにまとめて発見されたことで有名。これにより、彼らは巨大な群れ（コロニー）を作って行動し、大洪水などの災害で一挙に土砂に埋もれて化石化したことが判明している。
