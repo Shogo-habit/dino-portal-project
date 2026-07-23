@@ -27,6 +27,11 @@ cyberMetadata:
   dinoLeft: "5%"
   refRight: "15%"
   zoom: 1
+references:
+  - title: "Archelon ischyros: a new gigantic cryptodire testudinata from the Fort Pierre Cretaceous of South Dakota"
+    journal: "American Journal of Science"
+    year: 1896
+    url: "https://doi.org/10.2475/ajs.s4-2.12.399"
 ---
 
 白亜紀末期の北アメリカの内海に生息していた、史上最大のウミガメ。全長約4m、前肢の幅は5mに達し、体重は2tを超えたとされる。甲羅は現生のオサガメのように、骨質の甲板ではなく皮膚のような厚い革で覆われた軽量なフレーム構造になっており、浮力を高めていた。強力なクチバシを持ち、当時の海でアンモナイトやクラゲなどを主食にしていたと推測されている。

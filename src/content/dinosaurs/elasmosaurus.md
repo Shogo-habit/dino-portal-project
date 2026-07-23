@@ -30,6 +30,11 @@ cyberMetadata:
   dinoLeft: "5%"
   refRight: "15%"
   zoom: 0.9
+references:
+  - title: "Synopsis of the Extinct Batrachia and Reptilia of North America. Part I"
+    journal: "Transactions of the American Philosophical Society"
+    year: 1869
+    url: "https://doi.org/10.2307/1005349"
 ---
 
 白亜紀後期の北アメリカの海に生息していた、代表的な首長竜（爬虫類であり恐竜ではない）。全長約10〜14mのうち、その半分以上（約7m）が首で占められており、頚椎（首の骨）の数は動物史上最多クラスの71個に達する。首はヘビのように柔軟には曲がらなかったが、水面下で首をゆっくり動かし、魚の群れに気づかれずに接近して小魚やイカなどを捕食していた。4つの大きな鰭脚を羽ばたくように動かして水中を優雅に泳いでいた。

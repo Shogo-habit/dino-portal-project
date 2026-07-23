@@ -27,6 +27,11 @@ cyberMetadata:
   dinoLeft: "25%"
   refRight: "15%"
   zoom: 1
+references:
+  - title: "Neue Beiträge zur Kenntniss der urweltlichen Fauna des lithographischen Schiefers"
+    journal: "Abhandlungen der Mathemat.-Physikalischen Classe der Königlich Bayerischen Akademie der Wissenschaften"
+    year: 1859
+    url: "https://www.biodiversitylibrary.org/item/89776"
 ---
 
 ジュラ紀後期のヨーロッパ（ドイツ、フランス）に生息していた、極めて小型の獣脚類（肉食恐竜）。全長約70〜100cm、体重はわずか1〜3kg程度と、長い間「世界最小の恐竜」の代名詞として知られていた（現在はさらに小さい種も発見）。非常に身軽な体型と長い後肢を持ち、トカゲや昆虫などを俊敏に追いかけて捕食していた。化石の胃のあった場所から、未消化の小さなトカゲの骨が発見されている。

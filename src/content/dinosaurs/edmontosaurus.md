@@ -27,6 +27,11 @@ cyberMetadata:
   dinoLeft: "0%"
   refRight: "10%"
   zoom: 1
+references:
+  - title: "Mineralized soft-tissue structure and chemistry in a mummified dinosaur from the Hell Creek Formation, North Dakota, USA"
+    journal: "Proceedings of the Royal Society B: Biological Sciences"
+    year: 2009
+    url: "https://doi.org/10.1098/rspb.2009.0812"
 ---
 
 白亜紀最末期の北アメリカに大繁栄した、超大型のハドロサウルス類（カモノハシ竜）。全長約12〜15m、体重は最大9tに達した。クチバシの奥に「デンタルバッテリー」と呼ばれる千本以上の細かい歯が並び、硬い松の葉や木の枝まで強力にすり潰して消化した。極めて高い社会性を持ち、数千頭規模の巨大な群れで渡りを行い、同時代のティラノサウルスの主食として生存競争を繰り広げた。
