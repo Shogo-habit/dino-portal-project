@@ -27,6 +27,11 @@ cyberMetadata:
   dinoLeft: "30%"
   refRight: "20%"
   zoom: 3.0
+references:
+  - title: "On the Archaeopteryx of Von Meyer, with a description of the Fossil Remains of a Long-tailed species, from the Lithographic Slate of Solenhofen"
+    journal: "Philosophical Transactions of the Royal Society of London"
+    year: 1863
+    url: "https://doi.org/10.1098/rstl.1863.0002"
 ---
 
 ジュラ紀後期のドイツから発見された、世界で最も有名な「始祖鳥」（恐竜と鳥類の中間に位置する生物）。全長約30〜50cm。翼には現代の鳥類と同じ非対称の飛行用羽毛が生えそろっていたが、同時に「口にある鋭い歯」「翼の先端にある3本の指爪」「長い骨質の尾」という爬虫類（恐竜）の特徴を色濃く残していた。これにより恐竜が鳥類へと進化していくプロセスが証明された。

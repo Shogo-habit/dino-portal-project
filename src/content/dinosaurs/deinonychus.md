@@ -27,6 +27,11 @@ cyberMetadata:
   dinoLeft: "5%"
   refRight: "6%"
   zoom: 1
+references:
+  - title: "Osteology of Deinonychus antirrhopus, an unusual theropod from the Lower Cretaceous of Montana"
+    journal: "Bulletin of the Peabody Museum of Natural History"
+    year: 1969
+    url: "https://peabody.yale.edu/sites/default/files/files/ypm_bulletins/ypmB30_1969.pdf"
 ---
 
 白亜紀前期の北アメリカに生息していた、全長約3mの肉食恐竜。学名は「恐ろしい鉤爪」を意味し、後肢の第2指にある巨大な鎌状の爪で獲物を切り裂いた。1960年代にジョン・オストロム博士がこの恐竜を発見したことで、「恐竜は鈍重なトカゲではなく、温血動物のように活発に動く敏捷な生物だった」という**恐竜ルネサンス（学説の大革命）**の引き金となった歴史的恐竜である。

@@ -30,6 +30,11 @@ cyberMetadata:
   dinoLeft: "5%"
   refRight: "15%"
   zoom: 1
+references:
+  - title: "A new elasmosaurid plesiosaur from the Upper Cretaceous of Fukushima, Japan"
+    journal: "Palaeontology"
+    year: 2006
+    url: "https://doi.org/10.1111/j.1475-4983.2006.00554.x"
 ---
 
 白亜紀後期の日本（福島県いわき市）で高校生（鈴木直氏）によって発見された、日本を代表する巨大な首長竜「フタバサウルス・スズキイ」（爬虫類であり恐竜ではない）。全長約7m。日本国内で初めて正式に学名が与えられた首長竜である。クジラのように水中に適応した4つのヒレ足を持ち、細長い首としなやかな体を揺らして魚類やアンモナイトなどを捕食していたとされる。

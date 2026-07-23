@@ -27,6 +27,11 @@ cyberMetadata:
   dinoLeft: "3%"
   refRight: "60%"
   zoom: 1
+references:
+  - title: "An Exceptionally Preserved Three-Dimensional Nodosaurid Dinosaur from the Cretaceous of Alberta, Canada, with Implications for Coloration"
+    journal: "Current Biology"
+    year: 2017
+    url: "https://doi.org/10.1016/j.cub.2017.06.071"
 ---
 
 白亜紀前期のカナダで発見された、奇跡的な保存状態を誇るノドサウルス科のよろい竜。全長約5.5m。海底の泥に埋もれたことで、皮膚や装甲、胃の内容物、さらにはメラニン色素の痕跡までが立体的なミイラ化石として発掘された。分析の結果、背中が赤褐色で腹部が白いという「カウンターシェーディング（保護色）」を持っており、巨大な肉食恐竜から身を隠していたことが実証された。

@@ -27,6 +27,11 @@ cyberMetadata:
   dinoLeft: "30%"
   refRight: "16%"
   zoom: 1
+references:
+  - title: "Four-winged dinosaurs from China"
+    journal: "Nature"
+    year: 2003
+    url: "https://doi.org/10.1038/nature01342"
 ---
 
 白亜紀前期の中国に生息していた、風変わりな小型コエルロサウルス類（肉食恐竜）。全長約80cm。前肢だけでなく**「後肢にも長い飛行用羽毛が生えそろった、4枚の翼を持つ恐竜」**として極めて有名。ムササビのように木から木へと滑空し、小鳥やトカゲを空中で捕食していた。化石のメラノソーム分析により、全身の羽毛は現生のカラスのように光沢のある黒（構造色）だったことが判明している。

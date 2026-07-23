@@ -27,6 +27,11 @@ cyberMetadata:
   dinoLeft: "0%"
   refRight: "20%"
   zoom: 1
+references:
+  - title: "Notice on the Megalosaurus or great Fossil Lizard of Stonesfield"
+    journal: "Transactions of the Geological Society of London"
+    year: 1824
+    url: "https://doi.org/10.1144/transgsl.1.2.390"
 ---
 
 ジュラ紀中期のヨーロッパ（イギリス）に生息していた大型肉食恐竜。全長約9m。1824年に世界で初めて正式な学名（Megalosaurus ＝ 巨大なトカゲ）が与えられた、**「人類が初めて認識し命名した歴史的第一号の恐竜」**である。当時は恐竜の概念がなく、四足歩行のワニのような巨大怪獣として復元されたが、実際は二足歩行で獲物を狩るジュラ紀の強力な獣脚類であった。

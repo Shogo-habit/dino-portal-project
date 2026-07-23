@@ -27,6 +27,11 @@ cyberMetadata:
   dinoLeft: "0%"
   refRight: "25%"
   zoom: 1.2
+references:
+  - title: "A new giant titanosaur shed light on body mass evolution amongst sauropod dinosaurs"
+    journal: "Proceedings of the Royal Society B: Biological Sciences"
+    year: 2017
+    url: "https://doi.org/10.1098/rspb.2017.1219"
 ---
 
 白亜紀中期の南アメリカ（アルゼンチン）に生息していた、竜脚類（チタノサウルス類）の超巨大草食恐竜。全長は約37m、体重は約70tに達したと推定され、**「現在地球上で発見されているすべての恐竜の中で最大・最重量の種」**の有力候補である。2014年に良好な状態の化石が7頭分発見されたことで、巨大恐竜の正確な骨格構造が判明し、古生物学界のギネス的マイルストーンとなった。

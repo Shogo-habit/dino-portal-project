@@ -27,6 +27,11 @@ cyberMetadata:
   dinoLeft: "3%"
   refRight: "15%"
   zoom: 1.2
+references:
+  - title: "Resolving the long-standing enigmas of a giant ornithomimosaur Deinocheirus mirificus"
+    journal: "Nature"
+    year: 2014
+    url: "https://doi.org/10.1038/nature13874"
 ---
 
 白亜紀後期のモンゴルに生息していた、恐竜学史上最も奇妙な復元変遷を持つ超大型の雑食性恐竜。1965年に長さ2.4mの「巨大な腕」だけが発見されて以降、50年間全身像が謎に包まれていたが、2014年にほぼ完全な化石が発見された。その姿は、アヒルのようなクチバシを持つ頭部、背中にある巨大な帆（またはコブ）、そして大柄な体型という、誰も予想しなかった異形のものであった。
