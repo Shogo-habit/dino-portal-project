@@ -19,10 +19,10 @@ bioTraits:
     value: "背中の骨板と肩棘"
     detail: "背面の三角形の骨板に加え、肩に生えた巨大な棘が側面からの攻撃を防ぐ"
 cyberMetadata:
-  bottomGap: 769
+  bottomGap: 766
   realHeight: 2.2
   realLength: 7
-  contentHeightPx: 1263
+  contentHeightPx: 1266
   sourceRes: 2816
   zoom: 1.5
 ---

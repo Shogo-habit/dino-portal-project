@@ -19,10 +19,10 @@ bioTraits:
     value: "鋭い視覚"
     detail: "大きな眼窩を持ち、飛翔中や樹上から昆虫などの小動物を的確に捉えた"
 cyberMetadata:
-  bottomGap: 673
+  bottomGap: 670
   realHeight: 0.2
   realLength: 0.3
-  contentHeightPx: 1415
+  contentHeightPx: 1420
   sourceRes: 2816
   zoom: 2
 ---

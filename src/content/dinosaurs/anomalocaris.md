@@ -22,14 +22,9 @@ cyberMetadata:
   bottomGap: 1017
   realHeight: 0.2
   realLength: 0.6
-  contentHeightPx: 756
+  contentHeightPx: 759
   sourceRes: 2816
   zoom: 3
-references:
-  - title: "The anomalocaridids, giant active predators from the Cambrian of Maryland and British Columbia"
-    journal: "Philosophical Transactions of the Royal Society of London. B"
-    year: 1985
-    url: "https://doi.org/10.1098/rstb.1985.0115"
 ---
 
 約5億800万年前（古生代カンブリア紀）の海に生息していた節足動物の仲間。全長約60cm〜1mと、当時の生物の中では並外れて巨大であり、地球史における最初の「トッププレデター（生態系の頂点）」とされる。側面に並ぶヒレを波打たせてエレガントに泳ぎ、三葉虫などの硬い外骨格を持つ生物を捕食していたと考えられている。

@@ -19,10 +19,10 @@ bioTraits:
     value: "頑丈な歯列"
     detail: "白亜紀前期のヨーロッパに繁茂していたシダ類などの硬い植生を破砕するのに適した歯を持つ"
 cyberMetadata:
-  bottomGap: 1014
+  bottomGap: 1009
   realHeight: 1.3
   realLength: 4
-  contentHeightPx: 707
+  contentHeightPx: 719
   sourceRes: 2752
   zoom: 1.9
 ---

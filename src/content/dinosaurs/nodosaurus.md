@@ -19,10 +19,10 @@ bioTraits:
     value: "伏せ姿勢"
     detail: "足が短く低重心な体型で、腹部を守るために地面に低く平れ伏すことができた"
 cyberMetadata:
-  bottomGap: 872
+  bottomGap: 865
   realHeight: 1.5
   realLength: 5
-  contentHeightPx: 970
+  contentHeightPx: 983
   sourceRes: 2816
   zoom: 1.8
 ---

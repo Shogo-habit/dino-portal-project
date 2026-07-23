@@ -19,10 +19,10 @@ bioTraits:
     value: "後肢の第二趾の爪"
     detail: "後肢の親指に近い爪が特に大きく鋭く発達しており、格闘時に威力を発揮した"
 cyberMetadata:
-  bottomGap: 847
+  bottomGap: 841
   realHeight: 3.3
   realLength: 11
-  contentHeightPx: 952
+  contentHeightPx: 959
   sourceRes: 2816
   zoom: 1.3
 ---

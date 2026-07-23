@@ -19,10 +19,10 @@ bioTraits:
     value: "把握能力"
     detail: "比較的長い前肢と湾曲した爪で、植物の枝などを手元に引き寄せた"
 cyberMetadata:
-  bottomGap: 705
+  bottomGap: 702
   realHeight: 2.1
   realLength: 4.3
-  contentHeightPx: 1391
+  contentHeightPx: 1396
   sourceRes: 2816
   zoom: 1.7
 ---

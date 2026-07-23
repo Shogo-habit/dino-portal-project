@@ -22,7 +22,7 @@ cyberMetadata:
   bottomGap: 857
   realHeight: 2.6
   realLength: 8
-  contentHeightPx: 1059
+  contentHeightPx: 1063
   sourceRes: 2816
   zoom: 1.4
 ---
