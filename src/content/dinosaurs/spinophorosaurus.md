@@ -19,10 +19,10 @@ bioTraits:
     value: "頑強な四足歩行"
     detail: "首が長く前肢が後肢と同等に発達しており、頭部を高く持ち上げて中高所の植物を食べることができた"
 cyberMetadata:
-  bottomGap: 682
+  bottomGap: 774
   realHeight: 3.5
   realLength: 13
-  contentHeightPx: 686
+  contentHeightPx: 499
   sourceRes: 2048
   zoom: 1.3
 ---

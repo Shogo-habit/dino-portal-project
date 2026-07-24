@@ -19,10 +19,10 @@ bioTraits:
     value: "軽量な中型フレーム"
     detail: "骨盤や手足の骨が非常に軽量化されており、当時の森林を俊敏に駆け巡ることができた"
 cyberMetadata:
-  bottomGap: 548
+  bottomGap: 738
   realHeight: 1.5
   realLength: 4.3
-  contentHeightPx: 953
+  contentHeightPx: 574
   sourceRes: 2048
   zoom: 1.5
 ---

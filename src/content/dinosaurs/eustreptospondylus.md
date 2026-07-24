@@ -19,10 +19,10 @@ bioTraits:
     value: "限定的な遊泳能力"
     detail: "島から島へ短い距離を泳いで渡り、獲物を探していた可能性が指摘されている"
 cyberMetadata:
-  bottomGap: 579
+  bottomGap: 659
   realHeight: 1.5
   realLength: 4.6
-  contentHeightPx: 891
+  contentHeightPx: 662
   sourceRes: 2048
   zoom: 1.5
 ---

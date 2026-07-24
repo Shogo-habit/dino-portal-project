@@ -19,11 +19,11 @@ bioTraits:
     value: "低所の効率的採食"
     detail: "首が竜脚類としてはかなり短く、主に地面から高さ数メートル以内の中低所の植物を効率よく食べた"
 cyberMetadata:
-  bottomGap: 650
+  bottomGap: 1591
   realHeight: 3
   realLength: 12
-  contentHeightPx: 745
-  sourceRes: 2048
+  contentHeightPx: 903
+  sourceRes: 4128
   zoom: 1.3
 ---
 
