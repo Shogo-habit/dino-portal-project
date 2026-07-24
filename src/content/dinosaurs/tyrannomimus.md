@@ -19,10 +19,10 @@ bioTraits:
     value: "ティラノサウルス的特徴"
     detail: "他のダチョウ恐竜とは異なり、腸骨などの骨格にティラノサウルス類と酷似した特徴を有した"
 cyberMetadata:
-  bottomGap: 777
+  bottomGap: 769
   realHeight: 0.9
   realLength: 2
-  contentHeightPx: 1249
+  contentHeightPx: 1255
   sourceRes: 2816
   zoom: 2.1
 ---

@@ -19,10 +19,10 @@ bioTraits:
     value: "防御"
     detail: "体高が低く、背中にはドーム状の装甲があり、上からの肉食恐竜の攻撃を防いだ"
 cyberMetadata:
-  bottomGap: 798
+  bottomGap: 801
   realHeight: 0.8
   realLength: 2
-  contentHeightPx: 1210
+  contentHeightPx: 1207
   sourceRes: 2816
   zoom: 2
 ---

@@ -19,10 +19,10 @@ bioTraits:
     value: "伸縮式のノズル"
     detail: "頭部前方の長いノズルの先端にあるハサミで、泥の中に潜む獲物を掴みだす"
 cyberMetadata:
-  bottomGap: 958
+  bottomGap: 961
   realHeight: 0.05
   realLength: 0.07
-  contentHeightPx: 844
+  contentHeightPx: 839
   sourceRes: 2816
   zoom: 4
 ---
