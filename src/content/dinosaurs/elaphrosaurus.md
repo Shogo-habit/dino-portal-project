@@ -19,10 +19,10 @@ bioTraits:
     value: "食性の変化"
     detail: "幼体には鋭い歯があったが、成長すると歯が抜け落ちてクチバシになり、植物食や昆虫食へ移行した可能性が指摘されている"
 cyberMetadata:
-  bottomGap: 563
+  bottomGap: 662
   realHeight: 1.8
   realLength: 6.2
-  contentHeightPx: 920
+  contentHeightPx: 724
   sourceRes: 2048
   zoom: 1.35
 ---

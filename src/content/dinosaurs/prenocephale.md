@@ -19,10 +19,10 @@ bioTraits:
     value: "儀式的頭突き闘争"
     detail: "首の筋肉と背骨が頭突き時の衝撃を逃がすように強固に連結しており、群れの中での繁殖権や順位争いのために頭をぶつけ合ったとされる"
 cyberMetadata:
-  bottomGap: 527
+  bottomGap: 690
   realHeight: 0.8
   realLength: 2.4
-  contentHeightPx: 996
+  contentHeightPx: 670
   sourceRes: 2048
   zoom: 1.5
 ---

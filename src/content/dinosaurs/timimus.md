@@ -19,10 +19,10 @@ bioTraits:
     value: "スマートな二足歩行"
     detail: "ダチョウ型恐竜（オルニトミモサウルス類）に類似した長い脚を持ち、極地林を高速で走り抜けた"
 cyberMetadata:
-  bottomGap: 544
+  bottomGap: 650
   realHeight: 1
   realLength: 3
-  contentHeightPx: 961
+  contentHeightPx: 687
   sourceRes: 2048
   zoom: 1.5
 ---
