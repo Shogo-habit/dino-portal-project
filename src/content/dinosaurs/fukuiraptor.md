@@ -23,7 +23,7 @@ bioTraits:
     detail: "前肢の発達した鉤爪で獲物を捕らえる"
 cyberMetadata:
   bottomGap: 265
-  realHeight: 2.1
+  realHeight: 1.6
   realLength: 4.2
   contentHeightPx: 483
   sourceRes: 1024
