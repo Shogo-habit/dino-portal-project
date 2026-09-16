@@ -96,7 +96,7 @@ if (!defaultDino) {
             <div class="stage-viewport" style="position: absolute; inset: 0; z-index: 3; cursor: grab;">
                 <!-- Dino Specimen -->
                 <div class="specimen-container dino-specimen" id="dino-element" 
-                     style="position: absolute; left: 360px; bottom: 25px; height: 380px; width: 300px; transition: transform 0.1s ease-out; overflow: visible;">
+                     style="position: absolute; left: 360px; bottom: 25px; height: 380px; width: 300px; transition: transform 0.1s ease-out; overflow: visible; z-index: 4;">
                     <img id="dino-img" src="" alt="DINOSAUR" class="cyber-hud-specimen" 
                           style="position: absolute; left: 50%; transform: translateX(-50%) !important; width: auto; mix-blend-mode: screen !important; max-width: none !important; max-height: none !important;" />
                     <div id="dino-tag" class="vis-tag dino-tag" style="white-space: nowrap; position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-family: var(--font-mono); font-size: 11px; color: var(--text-main); background: transparent !important; border: none !important; padding: 0; z-index: 10; clip-path: none !important; width: auto !important;">
@@ -106,9 +106,9 @@ if (!defaultDino) {
  
                 <!-- Reference Target -->
                 <div class="specimen-container reference-specimen" id="ref-element" 
-                     style="position: absolute; right: 80px; bottom: 25px; height: 380px; width: 200px; transition: transform 0.1s ease-out; overflow: visible;">
+                     style="position: absolute; right: 80px; bottom: 25px; height: 380px; width: 200px; transition: transform 0.1s ease-out; overflow: visible; z-index: 5;">
                     <img id="ref-img" src="" alt="REFERENCE" class="cyber-hud-specimen" 
-                          style="position: absolute; left: 50%; transform: translateX(-50%) !important; width: auto; mix-blend-mode: screen !important; max-width: none !important; max-height: none !important;" />
+                          style="position: absolute; left: 50%; transform: translateX(-50%) !important; width: auto; max-width: none !important; max-height: none !important;" />
                     <div id="ref-tag" class="vis-tag ref-tag" style="white-space: nowrap; position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-family: var(--font-mono); font-size: 11px; color: var(--secondary-neon); background: transparent !important; border: none !important; padding: 0; z-index: 10; clip-path: none !important;">
                         --
                     </div>
@@ -361,6 +361,7 @@ if (!defaultDino) {
                 compsognathus: { left: 44, right: 37 },
                 brachiosaurus: { left: 54, right: 44 },
                 tyrannosaurus: { left: 29, right: 31 },
+                sinoceratops: { left: 196, right: 162 },
                 human: { left: 329, right: 328 },
                 car: { left: 11, right: 8 },
                 elephant: { left: 70, right: 60 }
