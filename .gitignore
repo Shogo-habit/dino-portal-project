@@ -29,4 +29,10 @@ scratch/
 # backup and workspace temp files
 images_backup/
 images_png/
+images_webp/
+images_差し替え/
+image generation rule/
+instagram/
+scratch_analysis.md
+*.HEIC
 

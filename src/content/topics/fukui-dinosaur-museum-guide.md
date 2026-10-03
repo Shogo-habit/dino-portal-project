@@ -61,6 +61,12 @@ relatedSpecimens: ["fukuiraptor", "fukuisaurus", "fukuititan", "fukuivenator"]
 </p>
 
 <p class="article-paragraph">
+  ちなみに、移動日である日曜日（見学前日）の午後には、博物館に隣接する「かつやまディノパーク」に立ち寄りました。「博物館のついでに寄る程度かな」と思っていましたが、森の中に実物大の動く恐竜たちが潜んでおり、想像以上のリアルさと大迫力に大興奮！ただし、激しいアップダウンがあるので幼児連れのベビーカー移動はなかなかの重労働でした。詳細な体験記は以下の関連記事にまとめています。
+  <br />
+  👉 <a href="/topics/katsuyama-dino-park/" style="color: var(--primary-neon); text-decoration: underline; font-weight: bold;">【関連記事】恐竜博物館のついでじゃない！子連れ（4歳・2歳）で楽しむ「かつやまディノパーク」混雑状況とベビーカー移動の注意点</a>
+</p>
+
+<p class="article-paragraph">
   道中では、「約1〜1.5時間ごとのSA（サービスエリア）休憩」を心掛けました。特に西日本の主要SA（吉備SA、宝塚北SA、南条SAなど）はキッズスペースや広い公園のような散歩スペースが設置されているところもあり、子どもたちを車外で十分に歩かせてリフレッシュさせました。特に南条SAは恐竜好きには必見ですよ！
 </p>
 
