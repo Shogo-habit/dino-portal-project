@@ -1,0 +1,362 @@
+[
+  {
+    "id": "lesothosaurus",
+    "name": "レソトサウルス",
+    "kana": "れそとさうるす",
+    "scientificName": "Lesothosaurus diagnosticus",
+    "era": "ジュラ紀前期",
+    "region": "アフリカ",
+    "diet": "植物食",
+    "length": "2.0m",
+    "weight": "20kg",
+    "group": "その他",
+    "description": "ほぼすべての鳥盤類恐竜の祖先に酷似した細身の草食恐竜。",
+    "bioTraits": [
+      {
+        "trait": "機動",
+        "value": "高速俊敏走行",
+        "detail": "鳥のように軽量な骨格と長い後肢で、肉食恐竜を振り切る速度で走った"
+      },
+      {
+        "trait": "探索",
+        "value": "鋭い前歯による摘み取り",
+        "detail": "口先の小さな歯で、硬い葉や草の芽を器用に摘み取って食べた"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 399,
+      "realHeight": 0.7,
+      "realLength": 2,
+      "contentHeightPx": 225,
+      "sourceRes": 1024,
+      "zoom": 1.8
+    },
+    "content": "ジュラ紀前期のアフリカに生息していた非常に原始的な鳥盤類恐竜。細身で足が長く、二足歩行で素早く走り回っていた。後の角竜や鳥脚類、よろい竜などに共通する祖先の姿を色濃く残している、進化史上の最重要種の一つ。",
+    "imagePrompt": "Scientific illustration of a Lesothosaurus diagnosticus, featuring highly realistic texture with watercolor and detailed ink wash style. The creature is depicted in its natural Mesozoic habitat, surrounded by ancient flora such as ferns, cycads, ginkgos, and primitive conifers, under natural soft lighting. Pure side profile view or dynamic realistic pose, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no glowing halos, no text or UI labels.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Lesothosaurus diagnosticus. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. The skeleton must have realistic proportions with a length-to-height ratio of roughly 3.0:1. The full body from head to tail must be fully visible and centered inside the 1:1 square frame with generous margin space on the left and right to prevent cropping. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "kulindadromeus",
+    "name": "クリンダドロメウス",
+    "kana": "くりんだどろめうす",
+    "scientificName": "Kulindadromeus zabaikalicus",
+    "era": "ジュラ紀後期",
+    "region": "アジア",
+    "diet": "植物食",
+    "length": "1.5m",
+    "weight": "15kg",
+    "group": "鳥脚類",
+    "description": "鳥脚類でありながら、体にふさふさした羽毛が保存されていた画期的な恐竜。",
+    "bioTraits": [
+      {
+        "trait": "適応",
+        "value": "繊維状羽毛による保温",
+        "detail": "全身を覆う細かな羽毛により体温を維持し、冷涼な気候にも適応できた"
+      },
+      {
+        "trait": "機動",
+        "value": "俊敏な二足走行",
+        "detail": "細長い尾でバランスを取りながら、森林内を軽快に駆け抜けた"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 399,
+      "realHeight": 0.5,
+      "realLength": 1.5,
+      "contentHeightPx": 225,
+      "sourceRes": 1024,
+      "zoom": 2
+    },
+    "content": "ジュラ紀後期のロシアで発見された小型の鳥脚類。鳥盤類恐竜でありながら、体にフサフサとしたフィラメント状の羽毛が保存されていた。これにより、羽毛が獣脚類だけでなく、恐竜全体の共通祖先に備わっていた可能性が強まった。",
+    "imagePrompt": "Scientific illustration of a Kulindadromeus zabaikalicus, featuring highly realistic texture with watercolor and detailed ink wash style. The creature is depicted in its natural Mesozoic habitat, surrounded by ancient flora such as ferns, cycads, ginkgos, and primitive conifers, under natural soft lighting. Pure side profile view or dynamic realistic pose, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no glowing halos, no text or UI labels.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Kulindadromeus zabaikalicus. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. The skeleton must have realistic proportions with a length-to-height ratio of roughly 2.8:1. The full body from head to tail must be fully visible and centered inside the 1:1 square frame with generous margin space on the left and right to prevent cropping. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "fruitadens",
+    "name": "フルイタデンス",
+    "kana": "ふるいたでんす",
+    "scientificName": "Fruitadens haagarorum",
+    "era": "ジュラ紀後期",
+    "region": "北米",
+    "diet": "雑食",
+    "length": "0.7m",
+    "weight": "700g",
+    "group": "鳥脚類",
+    "description": "全長約65〜75センチメートルと、最も小型の恐竜の一つ。",
+    "bioTraits": [
+      {
+        "trait": "適応",
+        "value": "超小型軽量ボディ",
+        "detail": "わずか700gの体躯で茂みに隠れ、大型捕食者の脅威から逃れた"
+      },
+      {
+        "trait": "探索",
+        "value": "雑食用の異型歯",
+        "detail": "鋭い犬歯状の歯とすり潰す奥歯を使い分け、昆虫から果実まで幅広く採食した"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 399,
+      "realHeight": 0.25,
+      "realLength": 0.7,
+      "contentHeightPx": 225,
+      "sourceRes": 1024,
+      "zoom": 2.5
+    },
+    "content": "ジュラ紀後期の北アメリカに生息していた、ヘテロドントサウルス科の極小恐竜。全長約65〜75cmと、これまでに発見された鳥盤類恐竜の中で最小級。異なった形状の歯（ヘテロドント）を持ち、植物のほかに昆虫も食べる雑食性だった。",
+    "imagePrompt": "Scientific illustration of a Fruitadens haagarorum, featuring highly realistic texture with watercolor and detailed ink wash style. The creature is depicted in its natural Mesozoic habitat, surrounded by ancient flora such as ferns, cycads, ginkgos, and primitive conifers, under natural soft lighting. Pure side profile view or dynamic realistic pose, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no glowing halos, no text or UI labels.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Fruitadens haagarorum. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. The skeleton must have realistic proportions with a length-to-height ratio of roughly 3.0:1. The full body from head to tail must be fully visible and centered inside the 1:1 square frame with generous margin space on the left and right to prevent cropping. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "probactrosaurus",
+    "name": "プロバクトロサウルス",
+    "kana": "ぷろばくとろさうるす",
+    "scientificName": "Probactrosaurus gobiensis",
+    "era": "白亜紀前期",
+    "region": "アジア",
+    "diet": "植物食",
+    "length": "6.0m",
+    "weight": "1.5t",
+    "group": "鳥脚類",
+    "description": "イグアノドン類から進化したハドロサウルス類への進化の過渡期に位置する種。",
+    "bioTraits": [
+      {
+        "trait": "攻撃",
+        "value": "親指スパイク",
+        "detail": "親指の鋭い骨質スパイクを突き出し、接近する捕食者を怯ませた"
+      },
+      {
+        "trait": "探索",
+        "value": "発達したデンタルバッテリー",
+        "detail": "すり潰しに適した多数の歯を備え、硬い繊維質の植物を効率的に処理した"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 399,
+      "realHeight": 2,
+      "realLength": 6,
+      "contentHeightPx": 225,
+      "sourceRes": 1024,
+      "zoom": 1.5
+    },
+    "content": "白亜紀前期のアジアに生息していたイグアノドン類。親指にイグアノドンに似た太いスパイクを持つが、歯の構造などは後のハドロサウルス科（鴨川竜）に非常に近くなっており、両者のミッシングリンクを埋める過渡期の種である。",
+    "imagePrompt": "Scientific illustration of a Probactrosaurus gobiensis, featuring highly realistic texture with watercolor and detailed ink wash style. The creature is depicted in its natural Mesozoic habitat, surrounded by ancient flora such as ferns, cycads, ginkgos, and primitive conifers, under natural soft lighting. Pure side profile view or dynamic realistic pose, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no glowing halos, no text or UI labels.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Probactrosaurus gobiensis. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. The skeleton must have realistic proportions with a length-to-height ratio of roughly 3.2:1. The full body from head to tail must be fully visible and centered inside the 1:1 square frame with generous margin space on the left and right to prevent cropping. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "rhabdodon",
+    "name": "ラブドドン",
+    "kana": "らぶどどん",
+    "scientificName": "Rhabdodon priscus",
+    "era": "白亜紀後期",
+    "region": "ヨーロッパ",
+    "diet": "植物食",
+    "length": "4.0m",
+    "weight": "800kg",
+    "group": "鳥脚類",
+    "description": "島嶼化環境の中で生息していたヨーロッパ独自のずんぐりした鳥脚類。",
+    "bioTraits": [
+      {
+        "trait": "適応",
+        "value": "島嶼環境への特化",
+        "detail": "限られた食物資源に適応した、ずんぐりとしてエネルギー効率の良い体型を誇る"
+      },
+      {
+        "trait": "探索",
+        "value": "強力な剪断顎",
+        "detail": "ハサミのように植物をカットする強力な顎と厚みのある歯で、硬い葉を咀嚼した"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 0,
+      "realHeight": 1.5,
+      "realLength": 4,
+      "contentHeightPx": 1024,
+      "sourceRes": 1024,
+      "zoom": 1.6
+    },
+    "content": "白亜紀後期のヨーロッパに生息していたずんぐりとした鳥脚類。当時、ヨーロッパは島々で構成されており、島嶼化（隔離環境で種が小型化すること）の影響で、イグアノドン類としてはかなりコンパクトな体型に進化した。",
+    "imagePrompt": "Scientific illustration of a Rhabdodon priscus, featuring highly realistic texture with watercolor and detailed ink wash style. The creature is depicted in its natural Mesozoic habitat, surrounded by ancient flora such as ferns, cycads, ginkgos, and primitive conifers, under natural soft lighting. Pure side profile view or dynamic realistic pose, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no glowing halos, no text or UI labels.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Rhabdodon priscus. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. The skeleton must have realistic proportions with a length-to-height ratio of roughly 3.1:1. The full body from head to tail must be fully visible and centered inside the 1:1 square frame with generous margin space on the left and right to prevent cropping. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "lufengosaurus",
+    "name": "ルーフェンゴサウルス",
+    "kana": "るーふぇんごさうるす",
+    "scientificName": "Lufengosaurus huenei",
+    "era": "ジュラ紀前期",
+    "region": "アジア",
+    "diet": "植物食",
+    "length": "6.0m",
+    "weight": "1.7t",
+    "group": "竜脚類",
+    "description": "中国で初めて組み立てられた有名な二足歩行も可能だった原始的な竜脚形類。",
+    "bioTraits": [
+      {
+        "trait": "探索",
+        "value": "二足立ちによる高所採餌",
+        "detail": "後肢で直立し、他の草食動物が届かない高い樹木の葉を摂取できた"
+      },
+      {
+        "trait": "攻撃",
+        "value": "親指の鋭い爪",
+        "detail": "前肢の親指にある大きな爪を使い、防衛や植物の枝の引き寄せを行った"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 399,
+      "realHeight": 2,
+      "realLength": 6,
+      "contentHeightPx": 225,
+      "sourceRes": 1024,
+      "zoom": 1.5
+    },
+    "content": "ジュラ紀前期の中国に生息していた、原始的な竜脚形類（古竜脚類）。中国の古生物学の黎明期に初めて全身骨格が組み立てられた歴史的に極めて有名な恐竜。基本は四足歩行だが、二足で立ち上がって高所の葉を食べることもできた。",
+    "imagePrompt": "Scientific illustration of a Lufengosaurus huenei, featuring highly realistic texture with watercolor and detailed ink wash style. The creature is depicted in its natural Mesozoic habitat, surrounded by ancient flora such as ferns, cycads, ginkgos, and primitive conifers, under natural soft lighting. Pure side profile view or dynamic realistic pose, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no glowing halos, no text or UI labels.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Lufengosaurus huenei. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. The skeleton must have realistic proportions with a length-to-height ratio of roughly 3.5:1. The full body from head to tail must be fully visible and centered inside the 1:1 square frame with generous margin space on the left and right to prevent cropping. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "omeisaurus",
+    "name": "オメイサウルス",
+    "kana": "おめいさうるす",
+    "scientificName": "Omeisaurus tianfuensis",
+    "era": "ジュラ紀中期 - 後期",
+    "region": "アジア",
+    "diet": "植物食",
+    "length": "20.0m",
+    "weight": "9.8t",
+    "group": "竜脚類",
+    "description": "マメンチサウルス科に属する、極めて長い首が特徴的な大型竜脚類。",
+    "bioTraits": [
+      {
+        "trait": "攻撃",
+        "value": "尾のクラブ（骨塊）",
+        "detail": "尾の先端にある小さな骨質のクラブを鞭のように振り回して自衛した"
+      },
+      {
+        "trait": "探索",
+        "value": "超極長首による採餌",
+        "detail": "長い首をクレーンのように水平・垂直に動かし、広範囲の葉を一度に食べた"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 399,
+      "realHeight": 4.5,
+      "realLength": 20,
+      "contentHeightPx": 225,
+      "sourceRes": 1024,
+      "zoom": 1
+    },
+    "content": "ジュラ紀中期から後期にかけて中国に繁栄した、マメンチサウルス科の巨大な竜脚類。首が極めて長く、体長の半分以上を首が占める。尾の先端にはコブ状の骨の塊があり、これを武器にして捕食者を追い払っていたとされる。",
+    "imagePrompt": "Scientific illustration of a Omeisaurus tianfuensis, featuring highly realistic texture with watercolor and detailed ink wash style. The creature is depicted in its natural Mesozoic habitat, surrounded by ancient flora such as ferns, cycads, ginkgos, and primitive conifers, under natural soft lighting. Pure side profile view or dynamic realistic pose, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no glowing halos, no text or UI labels.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Omeisaurus tianfuensis. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. The skeleton must have realistic proportions with a length-to-height ratio of roughly 3.8:1. The full body from head to tail must be fully visible and centered inside the 1:1 square frame with generous margin space on the left and right to prevent cropping. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "rapetosaurus",
+    "name": "ラペトサウルス",
+    "kana": "らぺとさうるす",
+    "scientificName": "Rapetosaurus krausei",
+    "era": "白亜紀後期",
+    "region": "アフリカ",
+    "diet": "植物食",
+    "length": "15.0m",
+    "weight": "10.0t",
+    "group": "竜脚類",
+    "description": "マダガスカル島から見つかった、完全な全身化石が知られる貴重なチタノサウルス類。",
+    "bioTraits": [
+      {
+        "trait": "防御",
+        "value": "皮骨の装甲板",
+        "detail": "チタノサウルス類特有の、表皮に埋め込まれた骨質のプレートで身を守った"
+      },
+      {
+        "trait": "適応",
+        "value": "孤立島での繁栄",
+        "detail": "マダガスカルという孤立した大陸で、頂点草食獣として多様な植物に対応した"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 399,
+      "realHeight": 3.5,
+      "realLength": 15,
+      "contentHeightPx": 225,
+      "sourceRes": 1024,
+      "zoom": 1.1
+    },
+    "content": "白亜紀後期のマダガスカル島に生息していたチタノサウルス類。幼体から成体までのほぼ完全な全身骨格化石が発見されており、謎の多いチタノサウルス類の骨格構造や成長過程を解明するための最大の鍵となった重要種。",
+    "imagePrompt": "Scientific illustration of a Rapetosaurus krausei, featuring highly realistic texture with watercolor and detailed ink wash style. The creature is depicted in its natural Mesozoic habitat, surrounded by ancient flora such as ferns, cycads, ginkgos, and primitive conifers, under natural soft lighting. Pure side profile view or dynamic realistic pose, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no glowing halos, no text or UI labels.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Rapetosaurus krausei. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. The skeleton must have realistic proportions with a length-to-height ratio of roughly 3.5:1. The full body from head to tail must be fully visible and centered inside the 1:1 square frame with generous margin space on the left and right to prevent cropping. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "opisthocoelicaudia",
+    "name": "オピストコエリカウディア",
+    "kana": "おぴすとこえりかうでぃあ",
+    "scientificName": "Opisthocoelicaudia skarzynskii",
+    "era": "白亜紀後期",
+    "region": "アジア",
+    "diet": "植物食",
+    "length": "12.0m",
+    "weight": "8.0t",
+    "group": "竜脚類",
+    "description": "尾の構造が非常に頑丈で、直立して高所の植物を食べられた可能性のある竜脚類。",
+    "bioTraits": [
+      {
+        "trait": "適応",
+        "value": "三点倒立直立",
+        "detail": "頑丈な尾と後肢で三点支持を作り、直立して超高所の木の葉を採食した"
+      },
+      {
+        "trait": "防御",
+        "value": "屈強な後部骨格",
+        "detail": "非常に強固な骨盤と尾の骨格により、後方からの肉食恐竜の不意打ちを耐えた"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 399,
+      "realHeight": 3.2,
+      "realLength": 12,
+      "contentHeightPx": 225,
+      "sourceRes": 1024,
+      "zoom": 1.2
+    },
+    "content": "白亜紀後期のモンゴル（ゴビ砂漠）に生息していたチタノサウルス類。尾の関節構造（尾椎）が非常に頑丈で、お互いが噛み合う「後凹型」をしている。これを利用し、尾を第3の足として地面に突いて直立できたと考えられている。",
+    "imagePrompt": "Scientific illustration of a Opisthocoelicaudia skarzynskii, featuring highly realistic texture with watercolor and detailed ink wash style. The creature is depicted in its natural Mesozoic habitat, surrounded by ancient flora such as ferns, cycads, ginkgos, and primitive conifers, under natural soft lighting. Pure side profile view or dynamic realistic pose, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no glowing halos, no text or UI labels.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Opisthocoelicaudia skarzynskii. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. The skeleton must have realistic proportions with a length-to-height ratio of roughly 3.3:1. The full body from head to tail must be fully visible and centered inside the 1:1 square frame with generous margin space on the left and right to prevent cropping. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "thecodontosaurus",
+    "name": "テコドントサウルス",
+    "kana": "てこどんとさうるす",
+    "scientificName": "Thecodontosaurus antiquus",
+    "era": "三畳紀後期",
+    "region": "ヨーロッパ",
+    "diet": "植物食",
+    "length": "2.5m",
+    "weight": "30kg",
+    "group": "竜脚類",
+    "description": "イギリスの地層から見つかった最初期の二足歩行をする小型竜脚形類。",
+    "bioTraits": [
+      {
+        "trait": "機動",
+        "value": "身軽な二足走行",
+        "detail": "細身の二足歩行骨格により、三畳紀の荒地を素早く駆け回ることができた"
+      },
+      {
+        "trait": "探索",
+        "value": "鋸歯状の葉状歯",
+        "detail": "縁にギザギザがある歯を使い、低木の柔らかい葉や新芽を器用に切り取った"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 399,
+      "realHeight": 0.8,
+      "realLength": 2.5,
+      "contentHeightPx": 225,
+      "sourceRes": 1024,
+      "zoom": 1.8
+    },
+    "content": "三畳紀後期のイギリスで発見された、最初期の竜脚形類。後の超巨大な竜脚類とは異なり、体はトカゲのように小さく、二足歩行を行っていた。ソケット（歯槽）に収まった発達した歯を持つことから「ソケット歯のトカゲ」と呼ばれる。",
+    "imagePrompt": "Scientific illustration of a Thecodontosaurus antiquus, featuring highly realistic texture with watercolor and detailed ink wash style. The creature is depicted in its natural Mesozoic habitat, surrounded by ancient flora such as ferns, cycads, ginkgos, and primitive conifers, under natural soft lighting. Pure side profile view or dynamic realistic pose, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no glowing halos, no text or UI labels.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Thecodontosaurus antiquus. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. The skeleton must have realistic proportions with a length-to-height ratio of roughly 3.3:1. The full body from head to tail must be fully visible and centered inside the 1:1 square frame with generous margin space on the left and right to prevent cropping. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  }
+]
