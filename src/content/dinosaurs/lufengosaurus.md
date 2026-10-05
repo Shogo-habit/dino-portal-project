@@ -19,10 +19,10 @@ bioTraits:
     value: "親指の鋭い爪"
     detail: "前肢の親指にある大きな爪を使い、防衛や植物の枝の引き寄せを行った"
 cyberMetadata:
-  bottomGap: 348
+  bottomGap: 313
   realHeight: 2
   realLength: 6
-  contentHeightPx: 329
+  contentHeightPx: 392
   sourceRes: 1024
   zoom: 1.5
 ---
