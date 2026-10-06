@@ -1,0 +1,362 @@
+[
+  {
+    "id": "nemegtosaurus",
+    "name": "ネメグトサウルス",
+    "kana": "ねめぐとさうるす",
+    "scientificName": "Nemegtosaurus mongoliensis",
+    "era": "白亜紀後期",
+    "region": "アジア",
+    "diet": "植物食",
+    "length": "15.0m",
+    "weight": "10.0t",
+    "group": "竜脚類",
+    "description": "巨大なチタノサウルス類において極めて稀な、精巧な頭骨のみが知られる恐竜。",
+    "bioTraits": [
+      {
+        "trait": "探索",
+        "value": "ペグ状の細い歯",
+        "detail": "口先の鉛筆のような細いペグ状の歯で、樹木の葉を効率よく梳き取った"
+      },
+      {
+        "trait": "感覚",
+        "value": "下向きの視野",
+        "detail": "頭骨の傾きから、比較的下方の地表植物を監視・採食するのに適していた"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 0,
+      "realHeight": 3.5,
+      "realLength": 15,
+      "contentHeightPx": 0,
+      "sourceRes": 1024,
+      "zoom": 1.1
+    },
+    "content": "白亜紀後期のモンゴル（ネメグト層）に生息していたチタノサウルス類。多くの竜脚類では発見されない頭骨がほぼ完全な形で見つかった。これにより、頭骨の構造から脳の形や、食べ物をすり潰す顎の動きなどが詳しく解明された。",
+    "imagePrompt": "Scientific illustration of a Nemegtosaurus mongoliensis titanosaur sauropod, featuring highly realistic texture with watercolor and detailed ink wash scientific plate style. The creature is depicted in its natural Mesozoic habitat, surrounded by ancient flora such as ferns, cycads, ginkgos, and primitive conifers, under natural soft lighting. Pure side profile view, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no glowing halos, no text or UI labels.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Nemegtosaurus mongoliensis. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. Titanosaur sauropod skeleton with realistic proportions with a length-to-height ratio of roughly 3.6:1. The entire skeleton must be scaled down to comfortably fit inside the 1:1 square frame with generous empty black margin on the left, right, top, and bottom, completely avoiding any cropping of the head or tail. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "pterodaustro",
+    "name": "プテロダウストロ",
+    "kana": "ぷてろだうすとろ",
+    "scientificName": "Pterodaustro guinazui",
+    "era": "白亜紀前期",
+    "region": "南米",
+    "diet": "雑食",
+    "length": "2.5m",
+    "weight": "3kg",
+    "group": "翼竜",
+    "description": "下顎に何百本もの櫛の歯のような細い毛状の突起を持つ特異な翼竜。",
+    "bioTraits": [
+      {
+        "trait": "探索",
+        "value": "プランクトン濾過嘴",
+        "detail": "櫛状の歯が並ぶ湾曲した嘴で水中の微生物を濾し取り、効率よく採餌した"
+      },
+      {
+        "trait": "機動",
+        "value": "浅瀬での歩行",
+        "detail": "四肢を使って浅瀬や泥地を器用に歩き回り、濾過給餌のスポットを探した"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 0,
+      "realHeight": 1,
+      "realLength": 2.5,
+      "contentHeightPx": 0,
+      "sourceRes": 1024,
+      "zoom": 1.8
+    },
+    "content": "白亜紀前期の南アメリカに生息していた、極めて特異な嘴を持つ翼竜。下顎から上に向かって約1000本もの細く長い櫛の歯のような毛状突起が生えている。これを使い、現在のフラミンゴのように水中のプランクトンを濾過して食べていた。",
+    "imagePrompt": "Scientific illustration of a Pterodaustro guinazui pterosaur standing near shallow water, displaying its distinctive upwardly curved bill lined with dense bristle-like teeth, watercolor and detailed ink wash scientific plate style. Natural soft lighting, ancient Cretaceous wetlands with ferns and horsetails. Pure side profile view, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no text.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Pterodaustro guinazui. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. Quadrupedal or resting pterosaur skeleton showcasing the upward-curved jaw lined with filter bristles. The entire skeleton must be scaled down to comfortably fit inside the 1:1 square frame with generous empty black margin on the left, right, top, and bottom, completely avoiding any cropping of the beak or wings. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "anurognathus",
+    "name": "アヌログナトゥス",
+    "kana": "あぬろぐなとぅす",
+    "scientificName": "Anurognathus ammoni",
+    "era": "ジュラ紀後期",
+    "region": "ヨーロッパ",
+    "diet": "肉食",
+    "length": "0.35m",
+    "weight": "40g",
+    "group": "翼竜",
+    "description": "尾が退化してカエルのような丸い頭を持つ極小の昆虫食性翼竜。",
+    "bioTraits": [
+      {
+        "trait": "機動",
+        "value": "超俊敏空中旋回",
+        "detail": "短い尾と幅広の翼により、夜の森林内でも障害物を避けて鋭く急旋回できた"
+      },
+      {
+        "trait": "感覚",
+        "value": "夜間用巨大眼",
+        "detail": "頭部に対して極めて大きな眼を持ち、暗闇を飛ぶ昆虫を正確に視認した"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 0,
+      "realHeight": 0.1,
+      "realLength": 0.35,
+      "contentHeightPx": 0,
+      "sourceRes": 1024,
+      "zoom": 2.5
+    },
+    "content": "ジュラ紀後期のヨーロッパに生息していた極小の翼竜。長い尾を持たず、頭部がカエルのように横に広く、大きな口を持っている。その姿から夜行性で、コウモリのように暗闇の中を飛び回りながら昆虫を空中捕獲していたと考えられている。",
+    "imagePrompt": "Scientific illustration of an Anurognathus ammoni, a tiny insectivorous pterosaur with a frog-like broad head and huge dark eyes, watercolor and detailed ink wash scientific plate style. Perched on a branch or in side profile flight in a lush Jurassic coniferous forest. Pure side profile view, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no text.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of an Anurognathus ammoni. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. The skeleton features a short tail, compact body, and wide skull with huge orbital openings. The entire skeleton must be scaled down to comfortably fit inside the 1:1 square frame with generous empty black margin on the left, right, top, and bottom, completely avoiding any cropping. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "darwinopterus",
+    "name": "ダーウィノプテルス",
+    "kana": "だーうぃのぷてるす",
+    "scientificName": "Darwinopterus modularis",
+    "era": "ジュラ紀中期 - 後期",
+    "region": "アジア",
+    "diet": "肉食",
+    "length": "1.0m",
+    "weight": "500g",
+    "group": "翼竜",
+    "description": "長い尾と進化した頭骨を持つ、翼竜進化の最大の中間段階を示す重要化石。",
+    "bioTraits": [
+      {
+        "trait": "攻撃",
+        "value": "鋭い捕食歯",
+        "detail": "顎の前方に並ぶ針状の歯を使い、滑空しながら空中や樹上の獲物を捕らえた"
+      },
+      {
+        "trait": "機動",
+        "value": "進化型翼骨格",
+        "detail": "首が長く可動域が広い骨格により、飛行中も頭部を自在に動かして狩りを行った"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 0,
+      "realHeight": 0.4,
+      "realLength": 1,
+      "contentHeightPx": 0,
+      "sourceRes": 1024,
+      "zoom": 2.2
+    },
+    "content": "ジュラ紀中期の中国に生息していた翼竜。原始的な「嘴口竜類」の長い尾と、進化した「翼手竜類」の大きな頭骨や長い首の骨格を併せ持つ。翼竜がどのように進化していったかを示すモザイク進化の決定的な証拠となった重要種。",
+    "imagePrompt": "Scientific illustration of a Darwinopterus modularis pterosaur, showcasing its long tail and advanced head crest, watercolor and detailed ink wash scientific plate style. Perched on an ancient cycad trunk under natural soft lighting. Pure side profile view, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no text.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Darwinopterus modularis. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. The skeleton showcases a long stiffened tail combined with an elongated neck and pterodactyloid skull. The entire skeleton must be scaled down to comfortably fit inside the 1:1 square frame with generous empty black margin on the left, right, top, and bottom, completely avoiding any cropping of the head crest or tail tip. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "thalassodromeus",
+    "name": "タラソドロメウス",
+    "kana": "たらそどろめうす",
+    "scientificName": "Thalassodromeus sethi",
+    "era": "白亜紀前期",
+    "region": "南米",
+    "diet": "肉食",
+    "length": "4.5m",
+    "weight": "15kg",
+    "group": "翼竜",
+    "description": "頭頂部にクジラの尾鰭のような巨大な薄いトサカを持つ大型翼竜。",
+    "bioTraits": [
+      {
+        "trait": "社会性",
+        "value": "巨大頭部トサカ",
+        "detail": "圧倒的なサイズのカラフルなトサカを誇示し、遠くの仲間へアピールした"
+      },
+      {
+        "trait": "適応",
+        "value": "トサカ血管の放熱",
+        "detail": "トサカに張り巡らされた血管網に風を受け、効率よく余剰体熱を放出した"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 0,
+      "realHeight": 1.8,
+      "realLength": 4.5,
+      "contentHeightPx": 0,
+      "sourceRes": 1024,
+      "zoom": 1.4
+    },
+    "content": "白亜紀前期のブラジルに生息していた大型の翼竜。頭骨の大部分を占める、薄くて巨大なトサカが最大の特徴。このトサカはディスプレイとして機能したほか、表面に血管の痕跡が多数あり、体温調節の役割を果たしたとされる。",
+    "imagePrompt": "Scientific illustration of a Thalassodromeus sethi pterosaur standing in quadrupedal stance on a coastal rock, featuring an immense thin bony crest atop its head, watercolor and detailed ink wash scientific plate style. Natural soft lighting, ancient coastal habitat. Pure side profile view, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no text.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Thalassodromeus sethi. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. Quadrupedal pterosaur skeleton featuring an immense, prominent cranial crest extending high above and behind the skull. The entire skeleton must be scaled down to comfortably fit inside the 1:1 square frame with generous empty black margin on the left, right, top, and bottom, completely avoiding any cropping of the top crest or beak tip. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "sinopterus",
+    "name": "シノプテルス",
+    "kana": "しのぷてるす",
+    "scientificName": "Sinopterus dongi",
+    "era": "白亜紀前期",
+    "region": "アジア",
+    "diet": "雑食",
+    "length": "1.2m",
+    "weight": "1.5kg",
+    "group": "翼竜",
+    "description": "中国産の良好な全身骨格で知られる、頭部に先のとがったトサカを持つ翼竜。",
+    "bioTraits": [
+      {
+        "trait": "探索",
+        "value": "嘴による種子採食",
+        "detail": "歯のない鋭い嘴を使い、樹上の果実や堅い種子をつついて食した"
+      },
+      {
+        "trait": "機動",
+        "value": "樹上・地上歩行",
+        "detail": "前肢の頑丈な関節と後肢を使い、樹上や地上を器用に四足歩行した"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 0,
+      "realHeight": 0.5,
+      "realLength": 1.2,
+      "contentHeightPx": 0,
+      "sourceRes": 1024,
+      "zoom": 2
+    },
+    "content": "白亜紀前期の中国（熱河層群）から発見されたテープヤラ科の翼竜。頭頂部に前方に突き出た鋭いトサカを持つ。保存状態の良い全身骨格が複数発見されており、果実や種子、または魚など幅広く食べる雑食性だったと考えられている。",
+    "imagePrompt": "Scientific illustration of a Sinopterus dongi pterosaur perched on a branch, displaying its sharp forward-pointed head crest and toothless beak, watercolor and detailed ink wash scientific plate style. Lush Cretaceous forest setting. Pure side profile view, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no text.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Sinopterus dongi. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. Quadrupedal tapejarid pterosaur skeleton with a forward-pointing pointed head crest. The entire skeleton must be scaled down to comfortably fit inside the 1:1 square frame with generous empty black margin on the left, right, top, and bottom, completely avoiding any cropping of the crest or limbs. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "rhomaleosaurus",
+    "name": "ロマレオサウルス",
+    "kana": "ろまれおさうるす",
+    "scientificName": "Rhomaleosaurus cramptoni",
+    "era": "ジュラ紀前期",
+    "region": "ヨーロッパ",
+    "diet": "肉食",
+    "length": "7.0m",
+    "weight": "3.0t",
+    "group": "魚竜・首長竜",
+    "description": "太く力強い首と巨大な顎を持つ、ジュラ紀前期の獰猛な海洋捕食者。",
+    "bioTraits": [
+      {
+        "trait": "攻撃",
+        "value": "巨大顎の噛みつき",
+        "detail": "トカゲのような頑丈な頭骨と顎の筋肉により、獲物の骨を噛み砕いた"
+      },
+      {
+        "trait": "機動",
+        "value": "四鰭の力強い遊泳",
+        "detail": "発達した前後の4つのフリッパー（鰭）を交互に羽ばたかせ、爆発的な推進力を得た"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 0,
+      "realHeight": 2,
+      "realLength": 7,
+      "contentHeightPx": 0,
+      "sourceRes": 1024,
+      "zoom": 1.4
+    },
+    "content": "ジュラ紀前期のヨーロッパに生息していた大型の首長竜（プリオサウルス類）。首が短く、頭骨が非常に大きく頑丈である。強大な顎と鋭い牙を持ち、魚や他の海洋爬虫類を襲うジュラ紀前期の海の頂点捕食者であった。",
+    "imagePrompt": "Scientific illustration of a Rhomaleosaurus cramptoni pliosaur swimming underwater, showcasing its massive robust skull, thick neck, and four powerful flippers, watercolor and detailed ink wash scientific plate style. Ancient Jurassic marine environment with soft underwater light rays. Pure side profile view, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no text.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Rhomaleosaurus cramptoni. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. Pliosaur skeleton featuring a large heavy skull, short powerful neck, and paddle flippers with a length-to-height ratio of roughly 3.6:1. The entire skeleton must be scaled down to comfortably fit inside the 1:1 square frame with generous empty black margin on the left, right, top, and bottom, completely avoiding any cropping of the snout or tail. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "pliosaurus",
+    "name": "プリオサウルス",
+    "kana": "ぷりおさうるす",
+    "scientificName": "Pliosaurus brachydeirus",
+    "era": "ジュラ紀後期",
+    "region": "ヨーロッパ",
+    "diet": "肉食",
+    "length": "10.0m",
+    "weight": "11.0t",
+    "group": "魚竜・首長竜",
+    "description": "首長竜の中でも「プリオサウルス類」を代表する、短頸で最強の肉食海洋爬虫類。",
+    "bioTraits": [
+      {
+        "trait": "攻撃",
+        "value": "超弩級プレデター顎",
+        "detail": "圧倒的な大きさを誇る顎で、あらゆる海洋生物を一噛みで両断した"
+      },
+      {
+        "trait": "機動",
+        "value": "高速潜水突撃",
+        "detail": "巨大なフリッパーによる水中羽ばたきで、深海から急浮上して標的を急襲した"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 0,
+      "realHeight": 2.8,
+      "realLength": 10,
+      "contentHeightPx": 0,
+      "sourceRes": 1024,
+      "zoom": 1.2
+    },
+    "content": "ジュラ紀後期のヨーロッパに生息していた、プリオサウルス類を代表する超大型海洋爬虫類。全長10メートル以上に達し、ティラノサウルス以上の噛む力を持っていたとされる。クジラのような流線型の体で高速遊泳し、巨大な獲物を捕食した。",
+    "imagePrompt": "Scientific illustration of a Pliosaurus brachydeirus, an apex marine predator with a colossal head, immense conical teeth, and four hydrodynamic flippers, watercolor and detailed ink wash scientific plate style. Open Jurassic sea with soft filtered sunlight. Pure side profile view, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no text.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Pliosaurus brachydeirus. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. Apex pliosaur skeleton with a gigantic predatory skull, short neck, robust ribcage, and large paddle limbs with a length-to-height ratio of roughly 3.5:1. The entire skeleton must be scaled down to comfortably fit inside the 1:1 square frame with generous empty black margin on the left, right, top, and bottom, completely avoiding any cropping. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "cryptoclidus",
+    "name": "クリプトクリドゥス",
+    "kana": "くりぷとくりどぅす",
+    "scientificName": "Cryptoclidus eurymerus",
+    "era": "ジュラ紀後期",
+    "region": "ヨーロッパ",
+    "diet": "魚食",
+    "length": "4.0m",
+    "weight": "800kg",
+    "group": "魚竜・首長竜",
+    "description": "長くしなやかな首を持ち、細かい針状の歯で魚を捕らえた代表的な首長竜。",
+    "bioTraits": [
+      {
+        "trait": "探索",
+        "value": "針状歯トラップ",
+        "detail": "網のように噛み合う無数の針状歯で、ぬめり気のある魚やイカを確実に捕らえた"
+      },
+      {
+        "trait": "機動",
+        "value": "しなやかな蛇頭遊泳",
+        "detail": "長く柔軟な首を水中 S字に動かし、魚の群れに頭部だけを静かに近づけた"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 0,
+      "realHeight": 1.2,
+      "realLength": 4,
+      "contentHeightPx": 0,
+      "sourceRes": 1024,
+      "zoom": 1.6
+    },
+    "content": "ジュラ紀後期のヨーロッパに生息していた、首の長い首長竜。多数の良好な化石がイギリス等で発見されている。口内に細い針状の歯が多数あり、これが噛み合わさって魚を逃がさない檻の役割を果たし、主に魚やイカを食べていた。",
+    "imagePrompt": "Scientific illustration of a Cryptoclidus eurymerus plesiosaur swimming gracefully, with a slender flexible neck, interlocking needle-like teeth, and four paddle flippers, watercolor and detailed ink wash scientific plate style. Jurassic seabed with ammonites in soft turquoise water. Pure side profile view, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no text.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Cryptoclidus eurymerus. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. Plesiosaur skeleton featuring a long graceful neck, compact torso, and four flipper paddles with a length-to-height ratio of roughly 3.6:1. The entire skeleton must be scaled down to comfortably fit inside the 1:1 square frame with generous empty black margin on the left, right, top, and bottom, completely avoiding any cropping of the head or tail tip. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "styxosaurus",
+    "name": "スティクソサウルス",
+    "kana": "すてぃくそさうるす",
+    "scientificName": "Styxosaurus snowii",
+    "era": "白亜紀後期",
+    "region": "北米",
+    "diet": "魚食",
+    "length": "11.0m",
+    "weight": "4.0t",
+    "group": "魚竜・首長竜",
+    "description": "エラスモサウルス科に属し、首が体全体の半分以上を占める極端な体型の首長竜。",
+    "bioTraits": [
+      {
+        "trait": "探索",
+        "value": "極長首によるステルス接近",
+        "detail": "巨体を離れた位置に残したまま首だけを伸ばし、警戒心の強い魚に接近した"
+      },
+      {
+        "trait": "適応",
+        "value": "胃石による浮力調整",
+        "detail": "胃の中に多数の石（胃石）を溜め、水中でのバラスト（おもり）として活用した"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 0,
+      "realHeight": 2.5,
+      "realLength": 11,
+      "contentHeightPx": 0,
+      "sourceRes": 1024,
+      "zoom": 1.2
+    },
+    "content": "白亜紀後期の北アメリカの海洋に生息していた、エラスモサウルス科の極端に首の長い首長竜。全長約11mのうち、首の長さだけで6m近くに達する。この長い首をゆっくりとくねらせながら、魚の群れに近づいて急襲していた。",
+    "imagePrompt": "Scientific illustration of a Styxosaurus snowii elasmosaurid plesiosaur with an extraordinarily elongated snake-like neck forming over half its total body length, watercolor and detailed ink wash scientific plate style. Cretaceous Western Interior Seaway with schooling fish and soft lighting. Pure side profile view, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no text.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Styxosaurus snowii. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. Elasmosaur skeleton featuring an extraordinarily long neck composed of over 60 vertebrae, compact body, and four flippers with a length-to-height ratio of roughly 4.5:1. The entire skeleton must be scaled down to comfortably fit inside the 1:1 square frame with generous empty black margin on the left, right, top, and bottom, completely avoiding any cropping of the head or tail. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  }
+]

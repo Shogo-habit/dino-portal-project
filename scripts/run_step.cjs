@@ -9,12 +9,16 @@ async function main() {
     process.exit(1);
   }
 
-  const jsonPath = path.resolve(__dirname, 'priority_50_part3.json');
-  const list = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+  const part3Path = path.resolve(__dirname, 'priority_50_part3.json');
+  const part4Path = path.resolve(__dirname, 'priority_50_part4.json');
+  let list = [];
+  if (fs.existsSync(part3Path)) list = list.concat(JSON.parse(fs.readFileSync(part3Path, 'utf8')));
+  if (fs.existsSync(part4Path)) list = list.concat(JSON.parse(fs.readFileSync(part4Path, 'utf8')));
+
   const dinoData = list.find(d => d.id === id);
 
   if (!dinoData) {
-    console.error(`Dinosaur ${id} not found in part3 json.`);
+    console.error(`Dinosaur ${id} not found in part3 or part4 json.`);
     process.exit(1);
   }
 
