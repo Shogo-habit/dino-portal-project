@@ -24,7 +24,9 @@ cyberMetadata:
   realLength: 11.0
   contentHeightPx: 194
   sourceRes: 1024
-  zoom: 1.2
+  dinoLeft: "2%"
+  refRight: "10%"
+  zoom: 0.85
 ---
 
 白亜紀後期の北アメリカの海洋に生息していた、エラスモサウルス科の極端に首の長い首長竜。全長約11mのうち、首の長さだけで6m近くに達する。この長い首をゆっくりとくねらせながら、魚の群れに近づいて急襲していた。
