@@ -19,10 +19,10 @@ bioTraits:
     value: "浅瀬での歩行"
     detail: "四肢を使って浅瀬や泥地を器用に歩き回り、濾過給餌のスポットを探した"
 cyberMetadata:
-  bottomGap: 205
+  bottomGap: 134
   realHeight: 1
   realLength: 2.5
-  contentHeightPx: 614
+  contentHeightPx: 716
   sourceRes: 1024
   zoom: 1.8
 ---

@@ -19,10 +19,10 @@ bioTraits:
     value: "下向きの視野"
     detail: "頭骨の傾きから、比較的下方の地表植物を監視・採食するのに適していた"
 cyberMetadata:
-  bottomGap: 264
+  bottomGap: 292
   realHeight: 3.5
   realLength: 15
-  contentHeightPx: 497
+  contentHeightPx: 412
   sourceRes: 1024
   zoom: 1.1
 ---
