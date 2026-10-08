@@ -19,6 +19,7 @@ async function runDinoPipeline(options) {
     id,
     mainImagePath,
     cyberImagePath,
+    cyberOptions = {},
     dinoData
   } = options;
 
@@ -45,7 +46,7 @@ async function runDinoPipeline(options) {
   let scanResult = null;
   if (cyberImagePath && fs.existsSync(cyberImagePath)) {
     console.log(`  -> Processing cyber skeleton specimen: ${cyberImagePath}`);
-    scanResult = await processCyberAsset(cyberImagePath, targetCyberWebp);
+    scanResult = await processCyberAsset(cyberImagePath, targetCyberWebp, cyberOptions);
     console.log(`     Cyber image successfully saved to ${targetCyberWebp}`);
     console.log(`     [Scan Results] contentHeightPx: ${scanResult.contentHeightPx}, bottomGap: ${scanResult.bottomGap}, sourceRes: ${scanResult.sourceRes}`);
   } else {

@@ -12,7 +12,7 @@ const sharp = require('sharp');
  * 5. ピクセル自動走査による contentHeightPx (実体高さ) と bottomGap (下部余白) の精密検出
  */
 
-async function processCyberAsset(inputPath, destPath) {
+async function processCyberAsset(inputPath, destPath, options = {}) {
   if (!fs.existsSync(inputPath)) {
     throw new Error(`Input file not found: ${inputPath}`);
   }
@@ -51,19 +51,25 @@ async function processCyberAsset(inputPath, destPath) {
       const b = data[idx + 2];
       const brightness = r + g + b;
 
-      if (brightness < bgThreshold) {
+      if (brightness <= 70) {
         data[idx] = 0;
         data[idx + 1] = 0;
         data[idx + 2] = 0;
         data[idx + 3] = 0;
+      } else if (brightness < 140) {
+        const factor = (brightness - 70) / (140 - 70);
+        data[idx + 3] = Math.round(255 * factor);
       } else {
         data[idx + 3] = 255;
       }
     }
   }
 
-  // 2. 1:1 正方形化パディング
+  // 2. 1:1 正方形化パディング & 水平反転 (flop)
   let sharpInstance = sharp(data, { raw: { width, height, channels } });
+  if (options.flop) {
+    sharpInstance = sharpInstance.flop();
+  }
   let finalRes = Math.max(width, height);
 
   if (width > height) {
@@ -143,22 +149,25 @@ if (require.main === module) {
     process.exit(1);
   }
 
-  const inputPath = path.resolve(args[0]);
+  const isFlop = args.includes('--flop');
+  const nonFlagArgs = args.filter(a => !a.startsWith('--'));
+
+  const inputPath = path.resolve(nonFlagArgs[0]);
   let destPath;
 
-  if (args[1]) {
-    if (args[1].endsWith('.webp') || args[1].includes('/') || args[1].includes('\\')) {
-      destPath = path.resolve(args[1]);
+  if (nonFlagArgs[1]) {
+    if (nonFlagArgs[1].endsWith('.webp') || nonFlagArgs[1].includes('/') || nonFlagArgs[1].includes('\\')) {
+      destPath = path.resolve(nonFlagArgs[1]);
     } else {
       // dino_id 指定とみなす
-      destPath = path.resolve(__dirname, '..', 'public', 'images', 'cyber', `${args[1]}.webp`);
+      destPath = path.resolve(__dirname, '..', 'public', 'images', 'cyber', `${nonFlagArgs[1]}.webp`);
     }
   } else {
     const baseName = path.basename(inputPath, path.extname(inputPath)).replace(/_cyber$/, '');
     destPath = path.resolve(__dirname, '..', 'public', 'images', 'cyber', `${baseName}.webp`);
   }
 
-  processCyberAsset(inputPath, destPath)
+  processCyberAsset(inputPath, destPath, { flop: isFlop })
     .then(result => {
       console.log(JSON.stringify(result, null, 2));
     })
