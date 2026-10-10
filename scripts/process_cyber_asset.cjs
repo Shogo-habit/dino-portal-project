@@ -46,6 +46,15 @@ async function processCyberAsset(inputPath, destPath, options = {}) {
         continue;
       }
 
+      // 最外周境界ノイズ除去 (画像枠のアーティファクト対策)
+      if (x < 3 || x >= width - 3 || y < 3 || y >= height - 3) {
+        data[idx] = 0;
+        data[idx + 1] = 0;
+        data[idx + 2] = 0;
+        data[idx + 3] = 0;
+        continue;
+      }
+
       const r = data[idx];
       const g = data[idx + 1];
       const b = data[idx + 2];

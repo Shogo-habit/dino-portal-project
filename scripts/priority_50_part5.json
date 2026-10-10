@@ -1,0 +1,362 @@
+[
+  {
+    "id": "megaraptor",
+    "name": "メガラプトル",
+    "kana": "めがらぷとる",
+    "scientificName": "Megaraptor namunhuaiquii",
+    "era": "白亜紀後期",
+    "region": "南米",
+    "diet": "肉食",
+    "length": "8.0m",
+    "weight": "1.0t",
+    "group": "獣脚類",
+    "description": "前肢に長さ30cm以上の超巨大な鉤爪を持つ、俊敏で獰猛な南米の肉食恐竜。",
+    "bioTraits": [
+      {
+        "trait": "攻撃",
+        "value": "超巨大ハンドクロー",
+        "detail": "前肢の第1指にある30cm超の鎌状の鉤爪で、獲物を強力に拘束・刺突した"
+      },
+      {
+        "trait": "機動",
+        "value": "軽量空気骨格",
+        "detail": "骨の内部に空気嚢が発達した軽量な骨格により、巨体ながら爆発的な敏捷性を発揮した"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 0,
+      "realHeight": 2.5,
+      "realLength": 8.0,
+      "contentHeightPx": 0,
+      "sourceRes": 1024,
+      "zoom": 1.3
+    },
+    "content": "白亜紀後期の南アメリカに生息していた大型獣脚類。発見当初は巨大な足の鉤爪を持つドロマエオサウルス類と考えられていたが、その後の研究で前肢の親指の爪であることが判明した。近年注目される「メガラプトル類」の模式属であり、強靭な前肢の爪を主武器とする独自の捕食適応を遂げていた。",
+    "imagePrompt": "Scientific illustration of a Megaraptor namunhuaiquii theropod dinosaur running aggressively, displaying immense 30-centimeter sickle-like claws on its hands, watercolor and detailed ink wash scientific plate style. Cretaceous Patagonian floodplain setting with ancient araucaria trees under natural soft lighting. Pure side profile view, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no text.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Megaraptor namunhuaiquii. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. Bipedal theropod skeleton posed in a fully horizontal, low-slung hunting posture with its spine perfectly parallel to the ground: head and neck stretched low and forward, modest compact forelimbs with three slender fingers and realistic small claws, slender ribcage, and a remarkably long straight counterbalancing tail extending horizontally backwards, giving a very horizontally elongated length-to-height ratio of over 3.2:1 (much longer horizontally than tall vertically). Strictly no upright stance, no raised neck, no vertical posture, no oversized arms, no giant hands. The entire horizontal skeleton must be scaled down to comfortably fit inside the 1:1 square frame with generous empty black margin on the left, right, top, and bottom, completely avoiding any cropping of the snout or tail tip. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "mononykus",
+    "name": "モノニクス",
+    "kana": "ものにくす",
+    "scientificName": "Mononykus olecranus",
+    "era": "白亜紀後期",
+    "region": "アジア",
+    "diet": "昆虫食",
+    "length": "1.0m",
+    "weight": "3.0kg",
+    "group": "獣脚類",
+    "description": "前肢の指が退化し、太く頑丈な「1本指の爪」だけを持つ特異な小型羽毛恐竜。",
+    "bioTraits": [
+      {
+        "trait": "探索",
+        "value": "単爪ショベル前肢",
+        "detail": "太く頑丈な1本指の鉤爪を使い、硬いアリ塚や倒木を力強く掘り崩して虫を捕食した"
+      },
+      {
+        "trait": "機動",
+        "value": "超俊足ダッシュ",
+        "detail": "ダチョウのように細長く発達した後肢により、砂漠の地表を高速で疾走した"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 0,
+      "realHeight": 0.5,
+      "realLength": 1.0,
+      "contentHeightPx": 0,
+      "sourceRes": 1024,
+      "zoom": 2.0
+    },
+    "content": "白亜紀後期のモンゴル（ゴビ砂漠）に生息していた小型の羽毛恐竜（アルヴァレスサウルス科）。前肢の指が退化して太い1本指の頑丈な爪だけになっており、肘の筋肉が異常なほど強力に発達している。この前肢でアリ塚を掘り崩してシロアリなどの昆虫を食べていたと考えられている。",
+    "imagePrompt": "Scientific illustration of a Mononykus olecranus, a small bird-like desert theropod covered in fine downy feathers, displaying its distinctive single-clawed muscular short forelimbs, watercolor and detailed ink wash scientific plate style. Cretaceous Gobi desert sand dune habitat with primitive shrubs under natural soft lighting. Pure side profile view, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no text.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Mononykus olecranus. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. Bipedal alvarezsaurid skeleton featuring a slender bird-like skull, extraordinarily short and robust forelimbs each with a single massive claw, long gracile hindlegs, and a slender tail. The entire skeleton must be scaled down to comfortably fit inside the 1:1 square frame with generous empty black margin on the left, right, top, and bottom, completely avoiding any cropping. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "qianzhousaurus",
+    "name": "キアンゾウサウルス",
+    "kana": "きあんぞうさうるす",
+    "scientificName": "Qianzhousaurus sinensis",
+    "era": "白亜紀後期",
+    "region": "アジア",
+    "diet": "肉食",
+    "length": "9.0m",
+    "weight": "1.0t",
+    "group": "獣脚類",
+    "description": "「ピノキオ・レックス」の愛称を持つ、極端に細長く伸びた吻部が特徴のティラノサウルス類。",
+    "bioTraits": [
+      {
+        "trait": "攻撃",
+        "value": "長吻スナップバイト",
+        "detail": "細長い顎を素早く振るい、小型の恐竜や素早い獲物を逃さず挟み捕らえた"
+      },
+      {
+        "trait": "機動",
+        "value": "スマートスプリント",
+        "detail": "ティラノサウルスよりも細身で軽量な骨格を活かし、スピードを活かした追跡狩りを行った"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 0,
+      "realHeight": 2.6,
+      "realLength": 9.0,
+      "contentHeightPx": 0,
+      "sourceRes": 1024,
+      "zoom": 1.3
+    },
+    "content": "白亜紀末期の中国で発見されたティラノサウルス科の大型肉食恐竜。通常のティラノサウルスと異なり、吻部（鼻先）が非常に細長く伸びており、その特徴的な顔つきから「ピノキオ・レックス」の愛称で世界的な話題となった。重厚な獲物を骨ごと砕くティラノサウルスに対し、素早い獲物を捕食する独自の生態ニッチを持っていた。",
+    "imagePrompt": "Scientific illustration of a Qianzhousaurus sinensis theropod dinosaur, featuring its strikingly elongated slender snout and gracile predator build, watercolor and detailed ink wash scientific plate style. Late Cretaceous Asian woodland environment with lush subtropical plants under natural soft lighting. Pure side profile view, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no text.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Qianzhousaurus sinensis. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. Bipedal long-snouted tyrannosaurid skeleton showing a remarkably long, shallow skull with slender jaws, agile torso, and long tail with a length-to-height ratio of roughly 3.4:1. The entire skeleton must be scaled down to comfortably fit inside the 1:1 square frame with generous empty black margin on the left, right, top, and bottom, completely avoiding any cropping of the elongated snout or tail. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "halszkaraptor",
+    "name": "ハルシュカラプトル",
+    "kana": "はるしゅからぷとる",
+    "scientificName": "Halszkaraptor escuilliei",
+    "era": "白亜紀後期",
+    "region": "アジア",
+    "diet": "魚食・肉食",
+    "length": "0.6m",
+    "weight": "1.0kg",
+    "group": "獣脚類",
+    "description": "白鳥のような首とパドル状の前肢を持ち、水中に適応した奇跡の半水生羽毛恐竜。",
+    "bioTraits": [
+      {
+        "trait": "適応",
+        "value": "半水生パドル遊泳",
+        "detail": "ペンギンや水鳥のように前肢をパドルとして使い、水中を巧みに潜水遊泳した"
+      },
+      {
+        "trait": "探索",
+        "value": "白鳥頸スナップ捕食",
+        "detail": "首全体の半分以上を占めるしなやかな首を素早く伸ばし、水中の小魚を捕らえた"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 0,
+      "realHeight": 0.35,
+      "realLength": 0.6,
+      "contentHeightPx": 0,
+      "sourceRes": 1024,
+      "zoom": 2.2
+    },
+    "content": "白亜紀後期のモンゴルに生息していた、ドロマエオサウルス科の極めて特異な小型恐竜。白鳥のように長く柔軟な首、ヒレ（フリッパー）のように水流を受け止める扁平な前肢の骨格、多数の細かい針状の歯を持つ。恐竜でありながら水鳥のように潜水して魚を捕らえる半水生生活に適応していたことが解明された。",
+    "imagePrompt": "Scientific illustration of a Halszkaraptor escuilliei, an extraordinary semi-aquatic feathered dinosaur standing by a clear riverbank, featuring a graceful swan-like elongated neck and flipper-like forelimbs, watercolor and detailed ink wash scientific plate style. Cretaceous lakeside habitat with water lilies and soft sunlight. Pure side profile view, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no text.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Halszkaraptor escuilliei. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. Small bipedal semi-aquatic theropod skeleton showcasing a long swan-like curved neck, small skull with fine needle teeth, flattened paddle-like arm bones, and compact body with a short tail. The entire skeleton must be scaled down to comfortably fit inside the 1:1 square frame with generous empty black margin on the left, right, top, and bottom, completely avoiding any cropping. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "caudipteryx",
+    "name": "カウディプテリクス",
+    "kana": "かうでぃぷてりくす",
+    "scientificName": "Caudipteryx zoui",
+    "era": "白亜紀前期",
+    "region": "アジア",
+    "diet": "雑食",
+    "length": "0.9m",
+    "weight": "5.0kg",
+    "group": "獣脚類",
+    "description": "尾の先に扇状に広がる羽毛と翼を持ち、恐竜から鳥への進化を証明した歴史的羽毛恐竜。",
+    "bioTraits": [
+      {
+        "trait": "社会性",
+        "value": "扇状尾羽ディスプレイ",
+        "detail": "尾の先端に美しく並んだ羽毛を扇のように広げ、仲間へのアピールや威嚇を行った"
+      },
+      {
+        "trait": "適応",
+        "value": "胃石による植物消化",
+        "detail": "胃の中に多数の小石（胃石）を保持し、堅い種子や植物繊維をすり潰して消化した"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 0,
+      "realHeight": 0.6,
+      "realLength": 0.9,
+      "contentHeightPx": 0,
+      "sourceRes": 1024,
+      "zoom": 2.0
+    },
+    "content": "白亜紀前期の中国（熱河層群）から発見された原始的なオヴィラプトロサウルス類。名前は「尾の羽」を意味し、短い尾骨の先端に対称的な扇状の羽毛が保存されていた。前肢にも正羽が並ぶが飛ぶことはできず、ディスプレイや体温保持に使われていた。「恐竜は鳥に進化した」ことを世界に知らしめた金字塔的化石。",
+    "imagePrompt": "Scientific illustration of a Caudipteryx zoui feathered dinosaur, displaying its prominent fan-shaped tail feathers and small feathered wings, watercolor and detailed ink wash scientific plate style. Ancient early Cretaceous temperate forest with gingko and conifers under soft lighting. Pure side profile view, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no text.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Caudipteryx zoui. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. Bipedal oviraptorosaur skeleton featuring a short deep skull with toothless beak, compact bird-like chest, short tail ending in a pygostyle-like structure, and upright running hindlimbs. The entire skeleton must be scaled down to comfortably fit inside the 1:1 square frame with generous empty black margin on the left, right, top, and bottom, completely avoiding any cropping. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "rebbachisaurus",
+    "name": "レバッキサウルス",
+    "kana": "ればっきさうるす",
+    "scientificName": "Rebbachisaurus garasbae",
+    "era": "白亜紀前期 - 中期",
+    "region": "アフリカ",
+    "diet": "植物食",
+    "length": "14.0m",
+    "weight": "7.0t",
+    "group": "竜脚類",
+    "description": "背骨が最大1.5m近くまで垂直に伸び、背中に巨大な帆を持っていたとされる特異な竜脚類。",
+    "bioTraits": [
+      {
+        "trait": "適応",
+        "value": "高神経棘の背帆",
+        "detail": "背骨から伸びる長大な突起が皮膚の帆を支え、放熱やディスプレイの役割を果たした"
+      },
+      {
+        "trait": "探索",
+        "value": "幅広直線状クチバシ",
+        "detail": "直線的に広がった口先で、地表近くのシダや下草を芝刈り機のように効率よく刈り取った"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 0,
+      "realHeight": 4.5,
+      "realLength": 14.0,
+      "contentHeightPx": 0,
+      "sourceRes": 1024,
+      "zoom": 1.1
+    },
+    "content": "白亜紀前期から中期の北アフリカに生息していたディプロドクス上科の竜脚類。最大の特徴は背骨の神経棘が異常に高く伸びている点で、生前はスピノサウルスのような背中の帆、あるいはラクダのような肉質のコブがあったと考えられている。南米とアフリカの大陸分裂の歴史を物語る重要化石でもある。",
+    "imagePrompt": "Scientific illustration of a Rebbachisaurus garasbae sauropod dinosaur, showcasing the prominent tall sail or crest along its back supported by elongated neural spines, watercolor and detailed ink wash scientific plate style. Cretaceous North African lush delta environment with giant ferns and palms under natural soft lighting. Pure side profile view, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no text.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Rebbachisaurus garasbae. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. Diplodocoid sauropod skeleton featuring an extraordinarily tall row of elongated neural spines forming a distinct tall sail along the dorsal vertebrae, a long neck, and whip-like tail with a length-to-height ratio of roughly 3.1:1. The entire skeleton must be scaled down to comfortably fit inside the 1:1 square frame with generous empty black margin on the left, right, top, and bottom, completely avoiding any cropping of the top spine tips, head, or tail. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "koreaceratops",
+    "name": "コリアケラトプス",
+    "kana": "こりあけらとぷす",
+    "scientificName": "Koreaceratops hwaseongensis",
+    "era": "白亜紀前期",
+    "region": "アジア",
+    "diet": "植物食",
+    "length": "1.7m",
+    "weight": "30kg",
+    "group": "角竜類",
+    "description": "尾骨の突起が上下に伸びて平たい「ヒレ状の尾」を持ち、泳ぎに適応していたとされる原始的角竜。",
+    "bioTraits": [
+      {
+        "trait": "適応",
+        "value": "オール状パドル尾",
+        "detail": "尾骨の神経棘が垂直に高く伸びた平たい尾を左右に振り、水中を力強く推進した"
+      },
+      {
+        "trait": "機動",
+        "value": "二足・四足両用歩行",
+        "detail": "発達した後肢で素早く二足歩行しつつ、水辺の採食時は前肢もついて安定した姿勢をとった"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 0,
+      "realHeight": 0.7,
+      "realLength": 1.7,
+      "contentHeightPx": 0,
+      "sourceRes": 1024,
+      "zoom": 1.8
+    },
+    "content": "白亜紀前期の韓国（華城市）で発見された原始的な角竜類。最大の特徴は尾骨の神経棘が上下に著しく伸び、オールの刃のように平たいヒレ状の尾を形成していた点。この形態から、水辺に生息して尾を左右にくねらせて泳いでいたと考えられ、角竜類が水中適応を果たしていた可能性を示す極めて貴重な証拠となった。",
+    "imagePrompt": "Scientific illustration of a Koreaceratops hwaseongensis primitive ceratopsian dinosaur walking along a prehistoric riverbank, featuring its distinctive tall paddle-like flattened swimming tail, watercolor and detailed ink wash scientific plate style. Cretaceous riparian vegetation with horsetails and ferns under soft natural lighting. Pure side profile view, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no text.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Koreaceratops hwaseongensis. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. Basal neoceratopsian skeleton featuring a small parrot-like beak, compact skull, bipedal or semi-quadrupedal stance, and an unmistakable deep paddle-like tail formed by extremely tall neural spines. The entire skeleton must be scaled down to comfortably fit inside the 1:1 square frame with generous empty black margin on the left, right, top, and bottom, completely avoiding any cropping of the tall tail spines or snout. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "ornithocheirus",
+    "name": "オルニトケイルス",
+    "kana": "おるにとけいるす",
+    "scientificName": "Ornithocheirus simus",
+    "era": "白亜紀前期",
+    "region": "ヨーロッパ",
+    "diet": "魚食",
+    "length": "2.5m",
+    "weight": "20kg",
+    "group": "翼竜",
+    "description": "クチバシの先端に丸いキール状のトサカを持ち、海洋上空を長距離滑空した大型翼竜の代表格。",
+    "bioTraits": [
+      {
+        "trait": "探索",
+        "value": "キール嘴と針状咬合",
+        "detail": "先端が膨らんだキール状の嘴と外向きの鋭い歯で、水面近くを泳ぐ魚を確実に捕獲した"
+      },
+      {
+        "trait": "機動",
+        "value": "大洋ダイナミックソアリング",
+        "detail": "6mに及ぶ細長いアホウドリのような翼で、洋上の風に乗って何千キロも省エネ滑空した"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 0,
+      "realHeight": 1.2,
+      "realLength": 2.5,
+      "contentHeightPx": 0,
+      "sourceRes": 1024,
+      "zoom": 1.6
+    },
+    "content": "白亜紀前期のヨーロッパや南米に生息していた大型の翼竜。翼開長は約6mに達する。細長いクチバシの先端の上下に、半円形のキール状（竜骨状）のトサカがあるのが特徴。現在のアホウドリのように海風を利用したダイナミック・ソアリングを行い、大洋を渡りながら水面の魚を捕食していた。",
+    "imagePrompt": "Scientific illustration of an Ornithocheirus simus large pterosaur standing on a coastal cliff in quadrupedal pose with folded wings, displaying its distinctive semicircular keel crest at the tip of its long toothed beak, watercolor and detailed ink wash scientific plate style. Cretaceous coastal scenery with crashing waves under natural soft lighting. Pure side profile view, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no text.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of an Ornithocheirus simus. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. Quadrupedal resting pterosaur skeleton featuring an elongated skull with rounded semicircular keel crests on both upper and lower jaw tips, interlocking forward-pointing teeth, neatly folded long wing finger bones, and compact body with short hindlimbs. The entire skeleton must be scaled down to comfortably fit inside the 1:1 square frame with generous empty black margin on the left, right, top, and bottom, completely avoiding any cropping of the beak tip or wing knuckles. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "ophthalmosaurus",
+    "name": "オフタルモサウルス",
+    "kana": "おふたるもさうるす",
+    "scientificName": "Ophthalmosaurus icenicus",
+    "era": "ジュラ紀後期",
+    "region": "ヨーロッパ",
+    "diet": "魚食",
+    "length": "5.0m",
+    "weight": "1.0t",
+    "group": "魚竜・首長竜",
+    "description": "動物界最大級の巨大な眼（直径20cm超）を持ち、深海潜水でイカを狩った代表的魚竜。",
+    "bioTraits": [
+      {
+        "trait": "感覚",
+        "value": "巨大強膜輪暗視眼",
+        "detail": "頑丈な骨の輪（強膜輪）に守られた巨大な眼で、水深数百メートルの暗闇でも獲物を探知した"
+      },
+      {
+        "trait": "機動",
+        "value": "流線型マグロ遊泳",
+        "detail": "イルカやマグロに似た極限の流線型ボディと三日月尾ビレで、高速潜水・急浮上を繰り返した"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 0,
+      "realHeight": 1.6,
+      "realLength": 5.0,
+      "contentHeightPx": 0,
+      "sourceRes": 1024,
+      "zoom": 1.4
+    },
+    "content": "ジュラ紀後期の海洋に生息していた代表的な魚竜。学名は「眼のトカゲ」を意味し、頭骨の大部分を占める直径約22cmもの巨大な眼窩を持つ。眼球を水圧から守る骨質の「強膜輪」が極めて発達しており、光の届かない水深500m以上の深海に潜ってイカや発光魚を捕食していたと考えられている。",
+    "imagePrompt": "Scientific illustration of an Ophthalmosaurus icenicus ichthyosaur swimming horizontally in deep blue water, featuring its immense circular eye socket with visible sclerotic ring and dolphin-like hydrodynamic body, watercolor and detailed ink wash scientific plate style. Jurassic open ocean environment with soft light filtering from above. Pure side profile view, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no text.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of an Ophthalmosaurus icenicus. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. Dolphin-shaped ichthyosaur skeleton featuring a streamlined skull dominated by an immense circular orbit with prominent sclerotic ring plates, toothless or finely toothed slender snout, compact paddle flippers, and a downturned tail spine supporting a crescent tail fin with a length-to-height ratio of roughly 3.1:1. The entire skeleton must be scaled down to comfortably fit inside the 1:1 square frame with generous empty black margin on the left, right, top, and bottom, completely avoiding any cropping. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  },
+  {
+    "id": "temnodontosaurus",
+    "name": "テムノドントサウルス",
+    "kana": "てむのどんとさうるす",
+    "scientificName": "Temnodontosaurus platyodon",
+    "era": "ジュラ紀前期",
+    "region": "ヨーロッパ",
+    "diet": "肉食",
+    "length": "10.0m",
+    "weight": "8.0t",
+    "group": "魚竜・首長竜",
+    "description": "全長10mを超え、他の魚竜や首長竜をも捕食したジュラ紀前期の海の絶対的頂点捕食者。",
+    "bioTraits": [
+      {
+        "trait": "攻撃",
+        "value": "巨大切断顎",
+        "detail": "刃物のように鋭い巨大な円錐歯が並ぶ長大な顎で、大型の首長竜の骨肉を一噛みで両断した"
+      },
+      {
+        "trait": "感覚",
+        "value": "直径25cm超巨眼",
+        "detail": "あらゆる脊椎動物の中で史上最大級の眼球を持ち、遠方の巨大獲物を素早く視認・追跡した"
+      }
+    ],
+    "cyberMetadata": {
+      "bottomGap": 0,
+      "realHeight": 2.5,
+      "realLength": 10.0,
+      "contentHeightPx": 0,
+      "sourceRes": 1024,
+      "zoom": 1.2
+    },
+    "content": "ジュラ紀前期のヨーロッパの海洋に君臨した超巨大魚竜。全長は10m以上、体重は8t前後に達する。動物史上最大級の直径25cmを超える眼球骨と、獲物の肉を切り裂くナイフのような鋭い牙がびっしり並ぶ長大な顎を持っていた。胃の内容物から首長竜や他の魚竜、アンモナイトを捕食していたことが判明している海のスーパープレデター。",
+    "imagePrompt": "Scientific illustration of a colossal Temnodontosaurus platyodon apex marine predator ichthyosaur swimming powerfully, showcasing its massive predatory jaws lined with cutting teeth and immense eye, watercolor and detailed ink wash scientific plate style. Early Jurassic open sea with soft filtered sunlight. Pure side profile view, centered in a 1:1 square frame. Extremely high contrast, clean outlines, no modern elements, no text.",
+    "cyberPrompt": "A sleek, futuristic cybernetic skeleton profile of a Temnodontosaurus platyodon. White holographic bone structure made of clean, glowing white lines on a pure black background (#000000). Minimalist tech vector graphic, digital blueprint style. Pure side profile view, facing left. Colossal apex ichthyosaur skeleton featuring a massive heavy skull with cutting conical teeth, enormous sclerotic eye ring, robust elongated ribcage, broad paddle limbs, and down-bent tail vertebrae with a length-to-height ratio of roughly 3.6:1. The entire skeleton must be scaled down to comfortably fit inside the 1:1 square frame with generous empty black margin on the left, right, top, and bottom, completely avoiding any cropping of the snout or tail. No grid lines, no HUD interface elements, no text, no glowing aura, high contrast, ultra-clean outlines, flat 2D style vector design."
+  }
+]
