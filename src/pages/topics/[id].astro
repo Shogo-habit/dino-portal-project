@@ -74,16 +74,21 @@ const articleSchema = {
         
         {relatedDinos.length > 0 && (
             <section class="related-specimens" style="margin-top: 60px;">
-                <h3 class="related-title" style="border-bottom: 1px solid var(--panel-border); padding-bottom: 10px; margin-bottom: 20px;">関連するアーカイブデータ</h3>
+                <h2 class="related-title" style="border-bottom: 1px solid var(--panel-border); padding-bottom: 10px; margin-bottom: 20px; font-size: 14px; font-family: var(--font-mono); color: var(--primary-neon); font-weight: bold; letter-spacing: 1px;">
+                    [ 関連する恐竜図鑑・実寸サイズ比較 ]
+                </h2>
                 <div class="related-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 15px;">
                     {relatedDinos.map(d => (
-                        <a href={`/dictionary/${d.id}`} style="text-decoration: none; color: inherit;">
+                        <a href={`/dictionary/${d.id}/`} style="text-decoration: none; color: inherit;" title={`【${d.name}】人間との実寸サイズ比較・図鑑データを見る`}>
                             <div class="related-card hud-panel" style="cursor: pointer; height: 100%;">
                                 <div class="related-img-wrap" style="width: 100%; height: auto; aspect-ratio: 1 / 1; overflow: hidden; position: relative; background: #000;">
                                     <img src={`/${d.image}`} alt={d.name} width="160" height="160" loading="lazy" decoding="async" style="width: 100%; height: 100%; display: block; object-fit: contain;">
                                 </div>
-                                <h4 class="related-name" style="font-size: 12px; margin: 8px 0 4px 0; color: var(--text-main);">{d.name}</h4>
+                                <h3 class="related-name" style="font-size: 13px; margin: 8px 0 4px 0; color: var(--text-main); font-weight: bold;">{d.name}</h3>
                                 <div class="related-meta" style="font-size: 9px; color: var(--text-dim);">{d.era} / {d.region}</div>
+                                <span style="font-size: 10px; color: var(--primary-neon); font-family: var(--font-mono); display: block; margin-top: 6px; font-weight: bold;">
+                                    [ 実寸比較・詳細図鑑 &raquo; ]
+                                </span>
                             </div>
                         </a>
                     ))}

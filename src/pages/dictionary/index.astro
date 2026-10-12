@@ -151,6 +151,7 @@ const GROUPS = [
     <input type="hidden" id="filter-era" value="">
     <input type="hidden" id="filter-region" value="">
     <input type="hidden" id="filter-group" value="">
+    <input type="hidden" id="filter-diet" value="">
 
     <div class="dino-grid" id="dino-grid-content">
         {DINOSAURS.map(d => (
@@ -183,9 +184,10 @@ const GROUPS = [
             const era = document.getElementById('filter-era') as HTMLInputElement;
             const region = document.getElementById('filter-region') as HTMLInputElement;
             const group = document.getElementById('filter-group') as HTMLInputElement;
+            const diet = document.getElementById('filter-diet') as HTMLInputElement;
             const sort = document.getElementById('sort-order') as HTMLSelectElement;
             const cardGrid = document.getElementById('dino-grid-content');
-            if (!search || !era || !region || !group || !sort || !cardGrid) return;
+            if (!search || !era || !region || !group || !diet || !sort || !cardGrid) return;
 
             const cards = Array.from(cardGrid.getElementsByClassName('dino-card')) as HTMLElement[];
 
@@ -220,6 +222,7 @@ const GROUPS = [
                     era: era.value,
                     region: region.value,
                     group: group.value,
+                    diet: diet.value,
                     sort: sort.value
                 };
                 localStorage.setItem(DICT_FILTERS_KEY, JSON.stringify(state));
@@ -231,13 +234,15 @@ const GROUPS = [
                 const pEra = params.get('era');
                 const pRegion = params.get('region');
                 const pGroup = params.get('group');
+                const pDiet = params.get('diet');
                 const pSearch = params.get('search');
                 
-                if (pEra || pRegion || pGroup || pSearch) {
+                if (pEra || pRegion || pGroup || pDiet || pSearch) {
                     search.value = pSearch || '';
                     era.value = pEra || '';
                     region.value = pRegion || '';
                     group.value = pGroup || '';
+                    diet.value = pDiet || '';
                     sort.value = 'kana';
                     saveFiltersState();
                     return;
@@ -251,6 +256,7 @@ const GROUPS = [
                     era.value = state.era || '';
                     region.value = state.region || '';
                     group.value = state.group || '';
+                    diet.value = state.diet || '';
                     sort.value = state.sort || 'kana';
                 }
             };
@@ -264,13 +270,14 @@ const GROUPS = [
                 if (era.value) html += `<span class="filter-chip">${era.value}</span>`;
                 if (region.value) html += `<span class="filter-chip">${region.value}</span>`;
                 if (group.value) html += `<span class="filter-chip">${group.value}</span>`;
+                if (diet.value) html += `<span class="filter-chip">${diet.value}</span>`;
                 if (!html) html = '<span style="font-size: 11px; color: var(--text-dim);">未設定</span>';
                 
                 chipContainer.innerHTML = html;
 
                 // Toggle reset button visibility
                 if (resetBtn) {
-                    const hasActiveFilter = !!(era.value || region.value || group.value || search.value.trim() || sort.value !== 'kana');
+                    const hasActiveFilter = !!(era.value || region.value || group.value || diet.value || search.value.trim() || sort.value !== 'kana');
                     resetBtn.style.display = hasActiveFilter ? 'inline-block' : 'none';
                 }
             };
@@ -345,7 +352,12 @@ const GROUPS = [
                         }
                     }
 
-                    if (matchesSearch && matchesEra && matchesRegion && matchesGroup) {
+                    // Match Diet
+                    const dietVal = diet.value;
+                    const cardDiet = card.getAttribute('data-diet') || '';
+                    const matchesDiet = !dietVal || cardDiet.includes(dietVal);
+
+                    if (matchesSearch && matchesEra && matchesRegion && matchesGroup && matchesDiet) {
                         card.style.display = 'block';
                     } else {
                         card.style.display = 'none';
@@ -429,6 +441,7 @@ const GROUPS = [
                     era.value = '';
                     region.value = '';
                     group.value = '';
+                    diet.value = '';
                     search.value = '';
                     sort.value = 'kana';
                     

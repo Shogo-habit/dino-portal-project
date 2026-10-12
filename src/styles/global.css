@@ -481,6 +481,8 @@ body {
 }
 
 .detail-visual-column {
+  grid-column: 1;
+  grid-row: 1;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -488,6 +490,8 @@ body {
 }
 
 .detail-data {
+  grid-column: 2;
+  grid-row: 1;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -2423,4 +2427,107 @@ body {
   transform: translateX(2px);
 }
 
+/* --- パンくずリスト (Breadcrumbs) --- */
+.breadcrumb-nav {
+  margin-bottom: 25px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+.breadcrumb-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 6px;
+}
+.breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-dim);
+}
+.breadcrumb-link {
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.breadcrumb-link:hover {
+  color: var(--primary-neon);
+  text-shadow: 0 0 8px rgba(0, 242, 255, 0.6);
+}
+.breadcrumb-separator {
+  margin-left: 6px;
+  color: rgba(0, 242, 255, 0.35);
+  user-select: none;
+  font-size: 11px;
+}
+.breadcrumb-item.current {
+  color: var(--primary-neon);
+  font-weight: bold;
+}
 
+/* --- スペック絞り込みリンク (Spec Links) --- */
+.spec-link {
+  color: var(--text-main);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.spec-link:hover {
+  color: var(--primary-neon);
+  text-shadow: 0 0 8px rgba(0, 242, 255, 0.6);
+}
+.spec-link::after {
+  content: "»";
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--primary-neon);
+  opacity: 0.6;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.spec-link:hover::after {
+  transform: translateX(2px);
+  opacity: 1;
+}
+
+/* --- アーカイブ詳細解説 (Markdown) スタイル --- */
+.archival-content h3 {
+  color: var(--primary-neon);
+  font-size: 14.5px;
+  font-family: var(--font-mono);
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  padding-left: 10px;
+  border-left: 3px solid var(--primary-neon);
+  background: linear-gradient(90deg, rgba(0, 242, 255, 0.08) 0%, transparent 100%);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.archival-content h3:first-child {
+  margin-top: 0;
+}
+.archival-content p {
+  margin-bottom: 16px;
+  line-height: 1.85;
+}
+.archival-content p:last-child {
+  margin-bottom: 0;
+}
+.archival-content strong {
+  color: var(--primary-neon);
+  font-weight: bold;
+}
+.archival-content ul {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+.archival-content li {
+  margin-bottom: 6px;
+  line-height: 1.7;
+}
