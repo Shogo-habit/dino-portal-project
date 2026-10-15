@@ -1,0 +1,162 @@
+{
+  "incisivosaurus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 986,
+    "bottomGap": 531,
+    "realHeight": 0.4,
+    "realLength": 1,
+    "zoom": 1.8
+  },
+  "inostrancevia": {
+    "sourceRes": 1024,
+    "contentHeightPx": 440,
+    "bottomGap": 292,
+    "realHeight": 1.4,
+    "realLength": 3.5,
+    "zoom": 1.2
+  },
+  "jakapil": {
+    "sourceRes": 2816,
+    "contentHeightPx": 1104,
+    "bottomGap": 800,
+    "realHeight": 0.5,
+    "realLength": 1.5,
+    "zoom": 2
+  },
+  "jeholopterus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 786,
+    "bottomGap": 100,
+    "realHeight": 0.35,
+    "realLength": 0.4,
+    "zoom": 2.2
+  },
+  "juravenator": {
+    "sourceRes": 1024,
+    "contentHeightPx": 451,
+    "bottomGap": 286,
+    "realHeight": 0.35,
+    "realLength": 0.8,
+    "zoom": 2.2
+  },
+  "kryptops": {
+    "sourceRes": 3168,
+    "contentHeightPx": 1033,
+    "bottomGap": 1050,
+    "realHeight": 2,
+    "realLength": 6,
+    "zoom": 1.35
+  },
+  "kunbarrasaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 345,
+    "bottomGap": 337,
+    "realHeight": 0.8,
+    "realLength": 2.5,
+    "zoom": 1.4
+  },
+  "lesothosaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 345,
+    "bottomGap": 340,
+    "realHeight": 0.7,
+    "realLength": 2,
+    "zoom": 1.7
+  },
+  "liliensternus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 759,
+    "bottomGap": 644,
+    "realHeight": 1.5,
+    "realLength": 5.1,
+    "zoom": 1.35
+  },
+  "longisquama": {
+    "sourceRes": 2048,
+    "contentHeightPx": 1242,
+    "bottomGap": 689,
+    "realHeight": 0.15,
+    "realLength": 0.15,
+    "zoom": 3
+  },
+  "massospondylus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 777,
+    "bottomGap": 635,
+    "realHeight": 1.5,
+    "realLength": 4,
+    "zoom": 1.35
+  },
+  "metriacanthosaurus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 694,
+    "bottomGap": 677,
+    "realHeight": 2.5,
+    "realLength": 8,
+    "zoom": 1.15
+  },
+  "micropachycephalosaurus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 899,
+    "bottomGap": 565,
+    "realHeight": 0.4,
+    "realLength": 1,
+    "zoom": 2
+  },
+  "minmi": {
+    "sourceRes": 1024,
+    "contentHeightPx": 290,
+    "bottomGap": 360,
+    "realHeight": 0.9,
+    "realLength": 3,
+    "zoom": 1.4
+  },
+  "mixosaurus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 571,
+    "bottomGap": 810,
+    "realHeight": 0.3,
+    "realLength": 1,
+    "zoom": 1.8
+  },
+  "odontochelys": {
+    "sourceRes": 2048,
+    "contentHeightPx": 655,
+    "bottomGap": 694,
+    "realHeight": 0.15,
+    "realLength": 0.4,
+    "zoom": 2.5
+  },
+  "opabinia": {
+    "sourceRes": 2816,
+    "contentHeightPx": 840,
+    "bottomGap": 960,
+    "realHeight": 0.03,
+    "realLength": 0.07,
+    "zoom": 3.5
+  },
+  "pisanosaurus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 828,
+    "bottomGap": 611,
+    "realHeight": 0.35,
+    "realLength": 1,
+    "zoom": 2
+  },
+  "placerias": {
+    "sourceRes": 2048,
+    "contentHeightPx": 733,
+    "bottomGap": 658,
+    "realHeight": 1.6,
+    "realLength": 3,
+    "zoom": 1.35
+  },
+  "placodus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 284,
+    "bottomGap": 368,
+    "realHeight": 0.5,
+    "realLength": 2,
+    "zoom": 1.5
+  }
+}

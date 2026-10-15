@@ -1,0 +1,82 @@
+{
+  "daspletosaurus": {
+    "id": "daspletosaurus",
+    "sourceRes": 1024,
+    "contentHeightPx": 584,
+    "contentWidthPx": 960,
+    "bottomGap": 184,
+    "leftGap": 40
+  },
+  "majungasaurus": {
+    "id": "majungasaurus",
+    "sourceRes": 1024,
+    "contentHeightPx": 456,
+    "contentWidthPx": 976,
+    "bottomGap": 264,
+    "leftGap": 23
+  },
+  "chasmosaurus": {
+    "id": "chasmosaurus",
+    "sourceRes": 1024,
+    "contentHeightPx": 616,
+    "contentWidthPx": 976,
+    "bottomGap": 216,
+    "leftGap": 24
+  },
+  "psittacosaurus": {
+    "id": "psittacosaurus",
+    "sourceRes": 1024,
+    "contentHeightPx": 496,
+    "contentWidthPx": 984,
+    "bottomGap": 256,
+    "leftGap": 24
+  },
+  "sinoceratops": {
+    "id": "sinoceratops",
+    "sourceRes": 1024,
+    "contentHeightPx": 391,
+    "contentWidthPx": 830,
+    "bottomGap": 317,
+    "leftGap": 378
+  },
+  "sauropelta": {
+    "id": "sauropelta",
+    "sourceRes": 1024,
+    "contentHeightPx": 472,
+    "contentWidthPx": 992,
+    "bottomGap": 296,
+    "leftGap": 16
+  },
+  "huayangosaurus": {
+    "id": "huayangosaurus",
+    "sourceRes": 1024,
+    "contentHeightPx": 457,
+    "contentWidthPx": 977,
+    "bottomGap": 279,
+    "leftGap": 65
+  },
+  "alamosaurus": {
+    "id": "alamosaurus",
+    "sourceRes": 1024,
+    "contentHeightPx": 568,
+    "contentWidthPx": 984,
+    "bottomGap": 232,
+    "leftGap": 24
+  },
+  "dunkleosteus": {
+    "id": "dunkleosteus",
+    "sourceRes": 1024,
+    "contentHeightPx": 416,
+    "contentWidthPx": 944,
+    "bottomGap": 304,
+    "leftGap": 55
+  },
+  "ichthyosaurus": {
+    "id": "ichthyosaurus",
+    "sourceRes": 1024,
+    "contentHeightPx": 448,
+    "contentWidthPx": 960,
+    "bottomGap": 280,
+    "leftGap": 40
+  }
+}

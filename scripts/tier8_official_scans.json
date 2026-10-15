@@ -1,0 +1,82 @@
+{
+  "daspletosaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 584,
+    "contentWidthPx": 960,
+    "bottomGap": 184,
+    "leftGap": 32,
+    "outputPath": "/Users/kosako/kaihatsu/dinosaurs website/public/images/cyber/daspletosaurus.webp"
+  },
+  "majungasaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 456,
+    "contentWidthPx": 976,
+    "bottomGap": 264,
+    "leftGap": 24,
+    "outputPath": "/Users/kosako/kaihatsu/dinosaurs website/public/images/cyber/majungasaurus.webp"
+  },
+  "chasmosaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 616,
+    "contentWidthPx": 976,
+    "bottomGap": 216,
+    "leftGap": 24,
+    "outputPath": "/Users/kosako/kaihatsu/dinosaurs website/public/images/cyber/chasmosaurus.webp"
+  },
+  "psittacosaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 496,
+    "contentWidthPx": 984,
+    "bottomGap": 256,
+    "leftGap": 24,
+    "outputPath": "/Users/kosako/kaihatsu/dinosaurs website/public/images/cyber/psittacosaurus.webp"
+  },
+  "sinoceratops": {
+    "sourceRes": 1024,
+    "contentHeightPx": 391,
+    "contentWidthPx": 829,
+    "bottomGap": 317,
+    "leftGap": 194,
+    "outputPath": "/Users/kosako/kaihatsu/dinosaurs website/public/images/cyber/sinoceratops.webp"
+  },
+  "sauropelta": {
+    "sourceRes": 1024,
+    "contentHeightPx": 472,
+    "contentWidthPx": 992,
+    "bottomGap": 296,
+    "leftGap": 16,
+    "outputPath": "/Users/kosako/kaihatsu/dinosaurs website/public/images/cyber/sauropelta.webp"
+  },
+  "huayangosaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 457,
+    "contentWidthPx": 977,
+    "bottomGap": 279,
+    "leftGap": 46,
+    "outputPath": "/Users/kosako/kaihatsu/dinosaurs website/public/images/cyber/huayangosaurus.webp"
+  },
+  "alamosaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 568,
+    "contentWidthPx": 984,
+    "bottomGap": 232,
+    "leftGap": 24,
+    "outputPath": "/Users/kosako/kaihatsu/dinosaurs website/public/images/cyber/alamosaurus.webp"
+  },
+  "dunkleosteus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 416,
+    "contentWidthPx": 944,
+    "bottomGap": 304,
+    "leftGap": 32,
+    "outputPath": "/Users/kosako/kaihatsu/dinosaurs website/public/images/cyber/dunkleosteus.webp"
+  },
+  "ichthyosaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 448,
+    "contentWidthPx": 960,
+    "bottomGap": 280,
+    "leftGap": 32,
+    "outputPath": "/Users/kosako/kaihatsu/dinosaurs website/public/images/cyber/ichthyosaurus.webp"
+  }
+}

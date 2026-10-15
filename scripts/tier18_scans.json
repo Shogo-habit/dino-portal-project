@@ -1,0 +1,102 @@
+{
+  "aetosaurus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 526,
+    "bottomGap": 733
+  },
+  "alanqa": {
+    "sourceRes": 1024,
+    "contentHeightPx": 965,
+    "bottomGap": 16
+  },
+  "anomalocaris": {
+    "sourceRes": 2816,
+    "contentHeightPx": 760,
+    "bottomGap": 1016
+  },
+  "cetiosaurus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 551,
+    "bottomGap": 748
+  },
+  "chaoyangsaurus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 939,
+    "bottomGap": 559
+  },
+  "chialingosaurus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 865,
+    "bottomGap": 591
+  },
+  "chungkingosaurus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 904,
+    "bottomGap": 570
+  },
+  "desmatosuchus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 356,
+    "bottomGap": 334
+  },
+  "diamantinasaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 342,
+    "bottomGap": 341
+  },
+  "dinichthys": {
+    "sourceRes": 1024,
+    "contentHeightPx": 440,
+    "bottomGap": 291
+  },
+  "eudimorphodon": {
+    "sourceRes": 1024,
+    "contentHeightPx": 662,
+    "bottomGap": 201
+  },
+  "euparkeria": {
+    "sourceRes": 2048,
+    "contentHeightPx": 618,
+    "bottomGap": 715
+  },
+  "eustreptospondylus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 663,
+    "bottomGap": 658
+  },
+  "fruitadens": {
+    "sourceRes": 1024,
+    "contentHeightPx": 391,
+    "bottomGap": 317
+  },
+  "gargoyleosaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 366,
+    "bottomGap": 308
+  },
+  "guaibasaurus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 668,
+    "bottomGap": 690
+  },
+  "hainosaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 285,
+    "bottomGap": 359
+  },
+  "hallucigenia": {
+    "sourceRes": 1024,
+    "contentHeightPx": 456,
+    "bottomGap": 284
+  },
+  "henodus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 456,
+    "bottomGap": 204
+  },
+  "hyperodapedon": {
+    "sourceRes": 1024,
+    "contentHeightPx": 260,
+    "bottomGap": 374
+  }
+}

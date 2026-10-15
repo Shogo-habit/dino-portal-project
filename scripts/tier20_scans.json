@@ -1,0 +1,162 @@
+{
+  "probactrosaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 431,
+    "bottomGap": 296,
+    "realHeight": 2,
+    "realLength": 6,
+    "zoom": 1.4
+  },
+  "proganochelys": {
+    "sourceRes": 2048,
+    "contentHeightPx": 813,
+    "bottomGap": 611,
+    "realHeight": 0.4,
+    "realLength": 1,
+    "zoom": 1.8
+  },
+  "rhabdodon": {
+    "sourceRes": 1024,
+    "contentHeightPx": 334,
+    "bottomGap": 345,
+    "realHeight": 1.5,
+    "realLength": 4,
+    "zoom": 1.5
+  },
+  "rhoetosaurus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 914,
+    "bottomGap": 567,
+    "realHeight": 4,
+    "realLength": 15,
+    "zoom": 1.55
+  },
+  "riojasaurus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 759,
+    "bottomGap": 643,
+    "realHeight": 3,
+    "realLength": 10,
+    "zoom": 1.3
+  },
+  "rugops": {
+    "sourceRes": 1024,
+    "contentHeightPx": 408,
+    "bottomGap": 286,
+    "realHeight": 2,
+    "realLength": 6,
+    "zoom": 1.35
+  },
+  "rutiodon": {
+    "sourceRes": 2048,
+    "contentHeightPx": 435,
+    "bottomGap": 807,
+    "realHeight": 0.6,
+    "realLength": 3,
+    "zoom": 1.6
+  },
+  "savannasaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 255,
+    "bottomGap": 376,
+    "realHeight": 3.5,
+    "realLength": 15,
+    "zoom": 1.4
+  },
+  "scutellosaurus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 783,
+    "bottomGap": 633,
+    "realHeight": 0.4,
+    "realLength": 1.2,
+    "zoom": 2
+  },
+  "shringasaurus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 978,
+    "bottomGap": 535,
+    "realHeight": 1.2,
+    "realLength": 3,
+    "zoom": 1.4
+  },
+  "silesaurus": {
+    "sourceRes": 3168,
+    "contentHeightPx": 1069,
+    "bottomGap": 1051,
+    "realHeight": 0.7,
+    "realLength": 2.3,
+    "zoom": 1.8
+  },
+  "sordes": {
+    "sourceRes": 1024,
+    "contentHeightPx": 521,
+    "bottomGap": 233,
+    "realHeight": 0.25,
+    "realLength": 0.35,
+    "zoom": 2.5
+  },
+  "staurikosaurus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 814,
+    "bottomGap": 617,
+    "realHeight": 0.8,
+    "realLength": 2.1,
+    "zoom": 1.6
+  },
+  "stegocephalia": {
+    "sourceRes": 3168,
+    "contentHeightPx": 806,
+    "bottomGap": 1122,
+    "realHeight": 0.35,
+    "realLength": 1.5,
+    "zoom": 2
+  },
+  "tanystropheus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 379,
+    "bottomGap": 343,
+    "realHeight": 1.8,
+    "realLength": 6,
+    "zoom": 1.35
+  },
+  "thecodontosaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 473,
+    "bottomGap": 276,
+    "realHeight": 0.8,
+    "realLength": 2.5,
+    "zoom": 1.7
+  },
+  "timimus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 688,
+    "bottomGap": 649,
+    "realHeight": 1,
+    "realLength": 3,
+    "zoom": 1.5
+  },
+  "unaysaurus": {
+    "sourceRes": 2752,
+    "contentHeightPx": 760,
+    "bottomGap": 996,
+    "realHeight": 0.8,
+    "realLength": 2.5,
+    "zoom": 1.7
+  },
+  "vectipelta": {
+    "sourceRes": 2752,
+    "contentHeightPx": 720,
+    "bottomGap": 1008,
+    "realHeight": 1.3,
+    "realLength": 4,
+    "zoom": 1.4
+  },
+  "vulcanodon": {
+    "sourceRes": 1024,
+    "contentHeightPx": 434,
+    "bottomGap": 286,
+    "realHeight": 3,
+    "realLength": 6.5,
+    "zoom": 1.35
+  }
+}

@@ -145,6 +145,7 @@ let refW = 0;
 let refH = 0;
 let refX = 0;
 let refY = 0;
+let dinoTagX = 0;
 
 const BASELINE_Y = 315; // SVG内でのベースラインのY座標 (400 - 85)
 
@@ -205,7 +206,8 @@ if (hasComparison) {
     const dinoBottomGapPx = meta.bottomGap * dinoScale;
     
     dinoX = (650 * finalLeftPercent / 100);
-    dinoY = BASELINE_Y - dinoH + dinoBottomGapPx;
+    const dinoOffsetYPx = meta.dinoOffsetY ? parseFloat(meta.dinoOffsetY as string) : 0;
+    dinoY = BASELINE_Y - dinoH + dinoBottomGapPx + dinoOffsetYPx;
 
     const refTargetH = ref.realHeight * pxPerMeter;
     const refScale = refTargetH / ref.contentHeightPx;
@@ -217,7 +219,8 @@ if (hasComparison) {
     refY = BASELINE_Y - refH + refBottomGapPx;
 
     // 4. 実座標ベースの衝突判定
-    const dinoTagX = dinoX + dinoW / 2;
+    const dinoTagOffsetX = meta.dinoTagOffsetX ? parseFloat(meta.dinoTagOffsetX as string) : 0;
+    dinoTagX = dinoX + dinoW / 2 + dinoTagOffsetX;
     const refTagX = refX + refW / 2;
     if (Math.abs(dinoTagX - refTagX) < 180) {
         isLabelConflict = true;
@@ -549,7 +552,7 @@ if (hasComparison && h3List.length > 0) {
                                         <image href={`/images/cyber/${d.id}.webp`} x={dinoX} y={dinoY} width={dinoW} height={dinoH} class="cyber-hud-specimen" />
                                         <image href="/images/cyber/human_front.webp" x={refX} y={refY} width={refW} height={refH} />
                                         
-                                        <g transform={`translate(${dinoX + dinoW/2}, ${isLabelConflict ? 377 : 350})`}>
+                                        <g transform={`translate(${dinoTagX}, ${isLabelConflict ? 377 : 350})`}>
                                             <rect x="-105" y="-12" width="210" height="30" fill="rgba(0, 10, 20, 0.75)" stroke="rgba(0, 242, 255, 0.25)" stroke-width="1" rx="3" />
                                             <line x1="0" y1="-25" x2="0" y2="-12" stroke="rgba(0, 242, 255, 0.2)" stroke-width="1" stroke-dasharray="2,2" />
                                             <text text-anchor="middle" fill="#00f2ff" font-size="11.5" font-family="var(--font-mono)" font-weight="bold">{d.name}</text>

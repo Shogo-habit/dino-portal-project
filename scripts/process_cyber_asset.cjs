@@ -97,6 +97,10 @@ async function processCyberAsset(inputPath, destPath, options = {}) {
     });
   }
 
+  if (finalRes > 1024) {
+    sharpInstance = sharpInstance.resize(1024, 1024);
+  }
+
   // Ensure output directory exists
   fs.mkdirSync(path.dirname(destPath), { recursive: true });
 

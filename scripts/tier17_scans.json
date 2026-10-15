@@ -1,0 +1,102 @@
+{
+  "struthiomimus": {
+    "sourceRes": 2816,
+    "contentHeightPx": 1372,
+    "bottomGap": 724
+  },
+  "thanatotheristes": {
+    "sourceRes": 2048,
+    "contentHeightPx": 814,
+    "bottomGap": 616
+  },
+  "ulughbegsaurus": {
+    "sourceRes": 2816,
+    "contentHeightPx": 1061,
+    "bottomGap": 823
+  },
+  "piatnitzkysaurus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 575,
+    "bottomGap": 737
+  },
+  "elaphrosaurus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 725,
+    "bottomGap": 661
+  },
+  "puertasaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 430,
+    "bottomGap": 299
+  },
+  "opisthocoelicaudia": {
+    "sourceRes": 1024,
+    "contentHeightPx": 379,
+    "bottomGap": 321
+  },
+  "barapasaurus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 801,
+    "bottomGap": 624
+  },
+  "spinophorosaurus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 500,
+    "bottomGap": 773
+  },
+  "hypsilophodon": {
+    "sourceRes": 2816,
+    "contentHeightPx": 1200,
+    "bottomGap": 784
+  },
+  "dryosaurus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 805,
+    "bottomGap": 603
+  },
+  "leaellynasaura": {
+    "sourceRes": 1024,
+    "contentHeightPx": 436,
+    "bottomGap": 294
+  },
+  "panoplosaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 341,
+    "bottomGap": 341
+  },
+  "antarctopelta": {
+    "sourceRes": 2048,
+    "contentHeightPx": 703,
+    "bottomGap": 695
+  },
+  "dacentrurus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 811,
+    "bottomGap": 618
+  },
+  "xenoceratops": {
+    "sourceRes": 1024,
+    "contentHeightPx": 538,
+    "bottomGap": 272
+  },
+  "ornithocheirus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 482,
+    "bottomGap": 271
+  },
+  "sinopterus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 1085,
+    "bottomGap": 346
+  },
+  "prognathodon": {
+    "sourceRes": 1024,
+    "contentHeightPx": 495,
+    "bottomGap": 215
+  },
+  "styxosaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 195,
+    "bottomGap": 410
+  }
+}

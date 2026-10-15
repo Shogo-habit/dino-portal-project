@@ -44,6 +44,8 @@ const dinosaursCollection = defineCollection({
       sourceRes: z.number(),
       dinoLeft: z.string().optional(),
       refRight: z.string().optional(),
+      dinoOffsetY: z.union([z.string(), z.number()]).optional(),
+      dinoTagOffsetX: z.union([z.string(), z.number()]).optional(),
       zoom: z.number(),
     }).optional(),
     references: z.array(z.object({

@@ -1,0 +1,112 @@
+{
+  "ezomikasaryu": {
+    "sourceRes": 1024,
+    "contentHeightPx": 234,
+    "bottomGap": 371
+  },
+  "mifuneryu": {
+    "sourceRes": 1024,
+    "contentHeightPx": 400,
+    "bottomGap": 307
+  },
+  "moshiryu": {
+    "sourceRes": 1024,
+    "contentHeightPx": 258,
+    "bottomGap": 383
+  },
+  "utatsusaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 201,
+    "bottomGap": 390
+  },
+  "nipponosaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 468,
+    "bottomGap": 243
+  },
+  "koshisaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 347,
+    "bottomGap": 332
+  },
+  "paralitherizinosaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 893,
+    "bottomGap": 61
+  },
+  "tyrannomimus": {
+    "sourceRes": 2816,
+    "contentHeightPx": 1248,
+    "bottomGap": 776
+  },
+  "wakinosaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 714,
+    "bottomGap": 151
+  },
+  "sanchuryu": {
+    "sourceRes": 1024,
+    "contentHeightPx": 585,
+    "bottomGap": 215
+  },
+  "wakayama-soryu": {
+    "sourceRes": 1024,
+    "contentHeightPx": 281,
+    "bottomGap": 351
+  },
+  "nipponopterus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 1557,
+    "bottomGap": 228
+  },
+  "albalophosaurus": {
+    "sourceRes": 3168,
+    "contentHeightPx": 967,
+    "bottomGap": 1082
+  },
+  "koreaceratops": {
+    "sourceRes": 1024,
+    "contentHeightPx": 444,
+    "bottomGap": 279
+  },
+  "goyocephale": {
+    "sourceRes": 1024,
+    "contentHeightPx": 383,
+    "bottomGap": 320
+  },
+  "bagaceratops": {
+    "sourceRes": 1024,
+    "contentHeightPx": 536,
+    "bottomGap": 204
+  },
+  "tarchia": {
+    "sourceRes": 1024,
+    "contentHeightPx": 301,
+    "bottomGap": 342
+  },
+  "shamosaurus": {
+    "sourceRes": 2048,
+    "contentHeightPx": 599,
+    "bottomGap": 722
+  },
+  "nemegtosaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 411,
+    "bottomGap": 293
+  },
+  "omeisaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 470,
+    "bottomGap": 277
+  },
+  "lufengosaurus": {
+    "sourceRes": 1024,
+    "contentHeightPx": 392,
+    "bottomGap": 313
+  },
+  "ornithomimus": {
+    "sourceRes": 2816,
+    "contentHeightPx": 1390,
+    "bottomGap": 704
+  }
+}
