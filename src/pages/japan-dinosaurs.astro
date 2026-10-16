@@ -123,7 +123,7 @@ const schema = [
             戦後長きにわたり、日本列島は新生代の火山活動やプレート沈み込みに伴う地殻変動が極めて激しいため、「中生代の陸成層がほとんど残っておらず、恐竜化石の発見は絶望的である」というのが地質学界の常識でした。
           </p>
           <p style="margin-bottom: 12px; color: var(--text-dim);">
-            この定説を打ち破ったのが、1978年に岩手県岩泉町の茂師海岸で発見された「**モシリュウ（竜脚類の上腕骨化石）**」です。続いて1979年には熊本県御船町で肉食恐竜の歯化石「ミフネリュウ」が発見され、日本列島にも確実に恐竜が生息していたことが決定づけられました。
+            この定説を打ち破ったのが、1978年に岩手県岩泉町の茂師海岸で発見された「<strong style="color: var(--text-main); font-weight: 700;">モシリュウ（竜脚類の上腕骨化石）</strong>」です。続いて1979年には熊本県御船町で肉食恐竜の歯化石「ミフネリュウ」が発見され、日本列島にも確実に恐竜が生息していたことが決定づけられました。
           </p>
         </section>
 
@@ -151,10 +151,10 @@ const schema = [
             3. 東アジア大陸沿岸部が育んだ「固有のモザイク進化」
           </h3>
           <p style="margin-bottom: 12px; color: var(--text-dim);">
-            中生代当時、日本列島は現在のように島国として孤立しておらず、**ユーラシア大陸の東端（沿岸域）**に結合していました。この沿岸域は、大陸内部の乾燥・砂漠地帯（モンゴル・ゴビ砂漠など）とは大きく異なり、湿潤で豊かな針葉樹林・温帯雨林が広がっていました。
+            中生代当時、日本列島は現在のように島国として孤立しておらず、<strong style="color: var(--text-main); font-weight: 700;">ユーラシア大陸の東端（沿岸域）</strong>に結合していました。この沿岸域は、大陸内部の乾燥・砂漠地帯（モンゴル・ゴビ砂漠など）とは大きく異なり、湿潤で豊かな針葉樹林・温帯雨林が広がっていました。
           </p>
           <p style="margin-bottom: 12px; color: var(--text-dim);">
-            福井で発見された**フクイベナトル**のように、テタヌラ類とコエルロサウリア類の原始的・派生的特徴が入り交じった「モザイク的特徴」を持つ恐竜が多く見られるのは、沿岸森林環境が大陸内部とは異なる独自の進化の実験場（レフュジア：避難所）として機能していた証左と考えられています。
+            福井で発見された<strong style="color: var(--text-main); font-weight: 700;">フクイベナトル</strong>のように、テタヌラ類とコエルロサウリア類の原始的・派生的特徴が入り交じった「モザイク的特徴」を持つ恐竜が多く見られるのは、沿岸森林環境が大陸内部とは異なる独自の進化の実験場（レフュジア：避難所）として機能していた証左と考えられています。
           </p>
         </section>
 
@@ -163,10 +163,10 @@ const schema = [
             4. 世界に誇る奇跡の全身骨格「カムイサウルス（むかわ竜）」
           </h3>
           <p style="margin-bottom: 12px; color: var(--text-dim);">
-            2019年に新属新種として正式記載された**カムイサウルス・ジャポニクス（Kamuysaurus japonicus）**は、日本の古生物学史上最大の発見と称えられています。海成層から発見されたにもかかわらず、頭骨から尾の先端まで骨の8割以上が関節した状態で残っており、陸上恐竜の遺骸が死後速やかに海へ流されて泥の中に埋没した奇跡のプロセスが解明されました。
+            2019年に新属新種として正式記載された<strong style="color: var(--text-main); font-weight: 700;">カムイサウルス・ジャポニクス（Kamuysaurus japonicus）</strong>は、日本の古生物学史上最大の発見と称えられています。海成層から発見されたにもかかわらず、頭骨から尾の先端まで骨の8割以上が関節した状態で残っており、陸上恐竜の遺骸が死後速やかに海へ流されて泥の中に埋没した奇跡のプロセスが解明されました。
           </p>
           <p style="margin-bottom: 0; color: var(--text-dim);">
-            さらに淡路島で発見された**ヤマトサウルス・イザナギイ**など、日本の化石群はハドロサウルス類の起源と大陸間渡りルートの解明において、世界中の研究者から熱狂的な注目を集めています。
+            さらに淡路島で発見された<strong style="color: var(--text-main); font-weight: 700;">ヤマトサウルス・イザナギイ</strong>など、日本の化石群はハドロサウルス類の起源と大陸間渡りルートの解明において、世界中の研究者から熱狂的な注目を集めています。
           </p>
         </section>
 
@@ -206,8 +206,8 @@ const schema = [
         {japanDinosaurs.map(d => (
           <div class="dino-card hud-panel" data-name={d.name} data-kana={d.kana} data-length={d.length} data-diet={d.diet} data-group={d.group}>
             <a href={`/dictionary/${d.id}/`} style="text-decoration: none; color: inherit; display: block; height: 100%;">
-              <div class="card-img-wrap" style="position: relative; overflow: hidden; aspect-ratio: 16/9; background: #000;">
-                <img src={`/${d.image}`} alt={d.name} loading="lazy" decoding="async" width="400" height="225" style="width: 100%; height: 100%; object-fit: cover;">
+              <div class="card-img-wrap" style="position: relative; overflow: hidden; aspect-ratio: 1 / 1; background: #000;">
+                <img src={`/${d.image}`} alt={d.name} loading="lazy" decoding="async" width="400" height="400" style="width: 100%; height: 100%; object-fit: contain;">
                 <div style="position: absolute; top: 8px; left: 8px; background: rgba(0, 0, 0, 0.7); padding: 2px 8px; border-radius: 2px; font-family: var(--font-mono); font-size: 10px; color: var(--secondary-neon); border: 1px solid rgba(0, 255, 102, 0.3);">
                   {d.region}
                 </div>

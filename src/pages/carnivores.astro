@@ -114,10 +114,10 @@ const schema = [
             1. 獣脚類（Theropoda）：究極の捕食マシンの解剖学的共通点
           </h3>
           <p style="margin-bottom: 12px; color: var(--text-dim);">
-            肉食恐竜のほぼすべてが属する**獣脚類（Theropoda：けものあしるい）**は、二足歩行に完全に特化した骨格を持ちます。強靭な尾が運動時のカウンターバランサー（釣り合い錘）として機能し、重心を骨盤直下に集中させることで、急停止や急速旋回を可能にしました。
+            肉食恐竜のほぼすべてが属する<strong style="color: var(--text-main); font-weight: 700;">獣脚類（Theropoda：けものあしるい）</strong>は、二足歩行に完全に特化した骨格を持ちます。強靭な尾が運動時のカウンターバランサー（釣り合い錘）として機能し、重心を骨盤直下に集中させることで、急停止や急速旋回を可能にしました。
           </p>
           <p style="margin-bottom: 12px; color: var(--text-dim);">
-            骨の内部は極限まで空洞化（含気骨）されており、巨大な体躯でありながら俊敏なフットワークを実現。さらに、鳥類と同様の一方向性気嚢呼吸システムにより、激しい追跡劇の最中でも血中酸素濃度を極限まで高く保つことができました。歯の前後縁にはミクロ単位の**鋸歯（セレーション）**が並び、獲物の分厚い皮や筋肉繊維をステーキナイフのように効率的に切り裂く構造となっています。
+            骨の内部は極限まで空洞化（含気骨）されており、巨大な体躯でありながら俊敏なフットワークを実現。さらに、鳥類と同様の一方向性気嚢呼吸システムにより、激しい追跡劇の最中でも血中酸素濃度を極限まで高く保つことができました。歯の前後縁にはミクロ単位の<strong style="color: var(--text-main); font-weight: 700;">鋸歯（セレーション）</strong>が並び、獲物の分厚い皮や筋肉繊維をステーキナイフのように効率的に切り裂く構造となっています。
           </p>
         </section>
 
@@ -144,10 +144,10 @@ const schema = [
             3. 小型〜中型ハンターの知能・感覚器と羽毛の進化
           </h3>
           <p style="margin-bottom: 12px; color: var(--text-dim);">
-            巨大肉食恐竜の陰で、小型獣脚類は驚異的な知能と感覚器官の進化を遂げました。**ドロマエオサウルス科（ヴェロキラプトル、デイノニクス等）**は、後肢第2指に大きく反り返った鋭利な「シックルクロー（鎌状鉤爪）」を持ち、獲物の背中に飛び乗って固定具として使用したと推測されています。
+            巨大肉食恐竜の陰で、小型獣脚類は驚異的な知能と感覚器官の進化を遂げました。<strong style="color: var(--text-main); font-weight: 700;">ドロマエオサウルス科（ヴェロキラプトル、デイノニクス等）</strong>は、後肢第2指に大きく反り返った鋭利な「シックルクロー（鎌状鉤爪）」を持ち、獲物の背中に飛び乗って固定具として使用したと推測されています。
           </p>
           <p style="margin-bottom: 12px; color: var(--text-dim);">
-            また、**トロオドン科**は全恐竜中で最も高い脳化指数（EQ）を持ち、頭骨に占める脳容積が極めて大きく、大きな眼窩から夜間視覚や高度な状況判断能力を持っていたことが分かっています。彼らの体表を覆っていた羽毛は、敏捷な跳躍時の空気抵抗制御や求愛ディスプレイに用いられ、この系譜から現生鳥類が誕生しました。
+            また、<strong style="color: var(--text-main); font-weight: 700;">トロオドン科</strong>は全恐竜中で最も高い脳化指数（EQ）を持ち、頭骨に占める脳容積が極めて大きく、大きな眼窩から夜間視覚や高度な状況判断能力を持っていたことが分かっています。彼らの体表を覆っていた羽毛は、敏捷な跳躍時の空気抵抗制御や求愛ディスプレイに用いられ、この系譜から現生鳥類が誕生しました。
           </p>
         </section>
 
@@ -199,8 +199,8 @@ const schema = [
         {carnivoreDinosaurs.map(d => (
           <div class="dino-card hud-panel" data-name={d.name} data-kana={d.kana} data-length={d.length} data-diet={d.diet} data-group={d.group}>
             <a href={`/dictionary/${d.id}/`} style="text-decoration: none; color: inherit; display: block; height: 100%;">
-              <div class="card-img-wrap" style="position: relative; overflow: hidden; aspect-ratio: 16/9; background: #000;">
-                <img src={`/${d.image}`} alt={d.name} loading="lazy" decoding="async" width="400" height="225" style="width: 100%; height: 100%; object-fit: cover;">
+              <div class="card-img-wrap" style="position: relative; overflow: hidden; aspect-ratio: 1 / 1; background: #000;">
+                <img src={`/${d.image}`} alt={d.name} loading="lazy" decoding="async" width="400" height="400" style="width: 100%; height: 100%; object-fit: contain;">
                 <div style="position: absolute; top: 8px; left: 8px; background: rgba(0, 0, 0, 0.7); padding: 2px 8px; border-radius: 2px; font-family: var(--font-mono); font-size: 10px; color: #ff9900; border: 1px solid rgba(255, 153, 0, 0.3);">
                   {d.era}
                 </div>

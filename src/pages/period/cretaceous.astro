@@ -112,7 +112,7 @@ const schema = [
             白亜紀（Cretaceous Period）に入ると、パンゲア大陸の解体はさらに加速し、大西洋が大きく開き、北米大陸、ユーラシア大陸、南米大陸、アフリカ大陸、インド亜大陸、南極・豪州大陸が海によって隔絶されました。地理的な孤立は「地域固有の進化（適応放散）」を促し、各地域で独自の恐竜相が爆発的に発達しました。
           </p>
           <p style="margin-bottom: 12px; color: var(--text-dim);">
-            また、白亜紀前期に誕生した**被子植物（顕花植物：花を咲かせ果実をつける植物）**は、昆虫との共進化を通じて瞬く間に地球全土へ拡大しました。成長が早く栄養価の高い被子植物の台頭は、恐竜たちの咀嚼装置や消化器系に根本的な進化圧（セレクション）をもたらしたのです。
+            また、白亜紀前期に誕生した<strong style="color: var(--text-main); font-weight: 700;">被子植物（顕花植物：花を咲かせ果実をつける植物）</strong>は、昆虫との共進化を通じて瞬く間に地球全土へ拡大しました。成長が早く栄養価の高い被子植物の台頭は、恐竜たちの咀嚼装置や消化器系に根本的な進化圧（セレクション）をもたらしたのです。
           </p>
         </section>
 
@@ -139,7 +139,7 @@ const schema = [
             3. 超大型肉食恐竜の群雄割拠と羽毛恐竜の開花
           </h3>
           <p style="margin-bottom: 12px; color: var(--text-dim);">
-            白亜紀は肉食恐竜（獣脚類）の進化においても頂点を極めました。北米の頂点捕食者**ティラノサウルス・レックス**は、約3〜6トンという生物史上屈指の咬合力を誇り、太いバナナ型の歯で獲物の骨ごと粉砕して捕食しました。一方、北アフリカの湿地帯には全長14mを超える半水生プレデター**スピノサウルス**が君臨し、南米では肉裂き特化の巨刃を持つ**ギガノトサウルス**や**ティラノティタン**が繁栄しました。
+            白亜紀は肉食恐竜（獣脚類）の進化においても頂点を極めました。北米の頂点捕食者<strong style="color: var(--text-main); font-weight: 700;">ティラノサウルス・レックス</strong>は、約3〜6トンという生物史上屈指の咬合力を誇り、太いバナナ型の歯で獲物の骨ごと粉砕して捕食しました。一方、北アフリカの湿地帯には全長14mを超える半水生プレデター<strong style="color: var(--text-main); font-weight: 700;">スピノサウルス</strong>が君臨し、南米では肉裂き特化の巨刃を持つ<strong style="color: var(--text-main); font-weight: 700;">ギガノトサウルス</strong>や<strong style="color: var(--text-main); font-weight: 700;">ティラノティタン</strong>が繁栄しました。
           </p>
           <p style="margin-bottom: 12px; color: var(--text-dim);">
             さらに中国・遼寧省の熱河生物群（Jehol Biota）などから発見された無数の羽毛恐竜化石（シノサウロプテリクス、ミクロラプトル、デイノニクス等）は、羽毛が飛行以前に「体温保持（恒温性）」や「ディスプレイ」として進化し、小型獣脚類の一部が現代の鳥類へと直結する系統樹を確立したことを決定づけました。
@@ -194,8 +194,8 @@ const schema = [
         {cretaceousDinosaurs.map(d => (
           <div class="dino-card hud-panel" data-name={d.name} data-kana={d.kana} data-length={d.length} data-diet={d.diet} data-group={d.group}>
             <a href={`/dictionary/${d.id}/`} style="text-decoration: none; color: inherit; display: block; height: 100%;">
-              <div class="card-img-wrap" style="position: relative; overflow: hidden; aspect-ratio: 16/9; background: #000;">
-                <img src={`/${d.image}`} alt={d.name} loading="lazy" decoding="async" width="400" height="225" style="width: 100%; height: 100%; object-fit: cover;">
+              <div class="card-img-wrap" style="position: relative; overflow: hidden; aspect-ratio: 1 / 1; background: #000;">
+                <img src={`/${d.image}`} alt={d.name} loading="lazy" decoding="async" width="400" height="400" style="width: 100%; height: 100%; object-fit: contain;">
                 <div style="position: absolute; top: 8px; left: 8px; background: rgba(0, 0, 0, 0.7); padding: 2px 8px; border-radius: 2px; font-family: var(--font-mono); font-size: 10px; color: var(--alert-neon); border: 1px solid rgba(255, 0, 85, 0.3);">
                   {d.era}
                 </div>
