@@ -4,21 +4,39 @@ import PillarNav from '../components/PillarNav.astro';
 import { getCollection } from 'astro:content';
 
 const allDinosaurs = await getCollection('dinosaurs');
-// 海生爬虫類・海洋古生物を動的抽出
-const marineKeywords = [
-  '首長竜', '魚竜', '海棲', '海生', 'モササウルス', 'ティロサウルス', 'ハイノサウルス',
-  'プログナソドン', 'メガロドン', 'ヘノドゥス', 'プラコドゥス', 'ノトサウルス', 'ウタツサウルス', 'クロノサウルス',
-  'リオプレウロドン', 'プレシオサウルス', 'エラスモサウルス', 'フタバサウルス', 'ショニサウルス', 'ミクソサウルス',
-  'テムノドントサウルス', 'キンボスポンディルス', 'クリプトクリドゥス', 'ステノプテリギウス', 'メトリオリンクス'
-];
+
+// 海生爬虫類・海洋古生物を厳密に抽出
+// ※ 陸棲恐竜・翼竜・鳥類グループ（「北海道」等の地名ヒットや「ギガノトサウルス」等の部分一致を含む）を完全除外
+const nonMarineGroups = new Set([
+  '獣脚類', '竜脚類', '鳥脚類', '角竜類', '剣竜類', 'よろい竜類', '堅頭竜類', '翼竜', '鳥類'
+]);
+
+const marineIds = new Set([
+  'archelon', 'cryptoclidus', 'cymbospondylus', 'elasmosaurus', 'ezomikasaryu',
+  'futabasaurus', 'hainosaurus', 'henodus', 'ichthyosaurus', 'kronosaurus',
+  'liopleurodon', 'mixosaurus', 'mosasaurus', 'nothosaurus', 'ophthalmosaurus',
+  'placodus', 'plesiosaurus', 'pliosaurus', 'prognathodon', 'rhomaleosaurus',
+  'shonisaurus', 'styxosaurus', 'temnodontosaurus', 'tylosaurus', 'utatsusaurus',
+  'wakayama-soryu',
+  // Tier 25 新規追加予定の海生爬虫類
+  'globidens', 'dolichorhynchops', 'stenopterygius', 'metriorhynchus',
+  'attenborosaurus', 'clidastes', 'eurhinosaurus', 'peloneustes', 'thalassomedon'
+]);
 
 const marineDinosaurs = allDinosaurs
   .filter(entry => {
     const d = entry.data;
-    const inGroup = d.group && (d.group.includes('首長竜') || d.group.includes('魚竜') || d.group.includes('海棲爬虫類'));
-    const inRegion = d.region && (d.region.includes('海') || d.region.includes('海洋'));
-    const inNameOrDesc = marineKeywords.some(k => d.name.includes(k) || (d.group && d.group.includes(k)));
-    return inGroup || inRegion || inNameOrDesc;
+    // 恐竜・翼竜・鳥類は無条件除外
+    if (d.group && nonMarineGroups.has(d.group)) return false;
+
+    // 海生爬虫類グループ（首長竜、魚竜、海棲爬虫類等）、または海生爬虫類IDホワイトリスト
+    const isMarineGroup = d.group && (
+      d.group.includes('首長竜') || 
+      d.group.includes('魚竜') || 
+      d.group.includes('海棲爬虫類') || 
+      d.group.includes('海生')
+    );
+    return isMarineGroup || marineIds.has(d.id);
   })
   .map(entry => entry.data);
 
