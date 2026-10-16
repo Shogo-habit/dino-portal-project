@@ -1,0 +1,281 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PillarNav from '../components/PillarNav.astro';
+import { getCollection } from 'astro:content';
+
+const allDinosaurs = await getCollection('dinosaurs');
+// 日本で発見された恐竜・古生物を動的抽出
+const japanKeywords = [
+  'フクイ', 'カムイ', 'ヤマト', 'タンバ', 'ササヤマ', 'ヒプノ', 'ティラノミムス',
+  'エゾミカサ', 'コシサウルス', 'サンチュウ', 'アルバロフォ', 'ワカヤマ', 'ワキノ',
+  'モシリュウ', 'ミフネ', 'パラリテリジノ', 'ニッポノプテルス'
+];
+
+const japanDinosaurs = allDinosaurs
+  .filter(entry => {
+    const d = entry.data;
+    const inRegion = d.region && (d.region.includes('日本') || d.region.includes('福井') || d.region.includes('兵庫') || d.region.includes('北海道') || d.region.includes('熊本') || d.region.includes('福島') || d.region.includes('岩手') || d.region.includes('石川'));
+    const inName = japanKeywords.some(k => d.name.includes(k));
+    return inRegion || inName;
+  })
+  .map(entry => entry.data);
+
+// 50音順にデフォルトソート
+japanDinosaurs.sort((a, b) => a.kana.localeCompare(b.kana, 'ja'));
+
+// パンくずリスト & 構造化データ (Schema.org)
+const breadcrumbs = [
+  { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://dino-portal.com/" },
+  { "@type": "ListItem", "position": 2, "name": "恐竜図鑑", "item": "https://dino-portal.com/dictionary/" },
+  { "@type": "ListItem", "position": 3, "name": "日本の恐竜完全名鑑", "item": "https://dino-portal.com/japan-dinosaurs/" }
+];
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": breadcrumbs
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "日本の恐竜完全名鑑 - 日本列島産化石の全網羅と発掘史",
+    "description": "フクイラプトル、フクイサウルス、カムイサウルス（むかわ竜）など日本で発見された恐竜・古生物を完全網羅。福井・兵庫・北海道・熊本の4大産地と発掘史。",
+    "url": "https://dino-portal.com/japan-dinosaurs/",
+    "hasPart": japanDinosaurs.map(d => ({
+      "@type": "Thing",
+      "name": d.name,
+      "url": `https://dino-portal.com/dictionary/${d.id}/`,
+      "description": d.description
+    }))
+  }
+];
+---
+
+<Layout 
+  title="日本の恐竜完全名鑑 - 日本列島産化石の全網羅と発掘史 | Dino-Portal" 
+  description="フクイラプトル、フクイサウルス、カムイサウルス（むかわ竜）、ヤマトサウルス、タンバティタニスなど日本で発見された恐竜・古生物を完全網羅。福井・兵庫・北海道・熊本の4大産地、東アジア大陸辺縁部の進化史を徹底解剖。"
+  activeTab="dictionary"
+  schema={schema}
+>
+  <div class="pillar-container" style="max-width: 1400px; margin: 0 auto; padding: 20px 20px 80px;">
+    
+    <!-- Breadcrumb bar -->
+    <nav aria-label="パンくずリスト" style="margin-bottom: 25px; font-family: var(--font-mono); font-size: 12px; color: var(--text-dim); display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+      <a href="/" style="color: var(--primary-neon); text-decoration: none;">HOME</a>
+      <span>/</span>
+      <a href="/dictionary/" style="color: var(--primary-neon); text-decoration: none;">DICTIONARY</a>
+      <span>/</span>
+      <span style="color: var(--text-main);">TOPIC: JAPAN DINOSAURS</span>
+    </nav>
+
+    <!-- Hero Banner Header -->
+    <header class="pillar-hero hud-panel" style="padding: 40px; margin-bottom: 40px; position: relative; overflow: hidden; border-color: rgba(0, 255, 102, 0.4); background: linear-gradient(135deg, rgba(0, 255, 102, 0.08) 0%, rgba(3, 6, 8, 0.8) 100%);">
+      <div class="hero-tag" style="display: inline-flex; align-items: center; gap: 8px; padding: 4px 12px; background: rgba(0, 255, 102, 0.15); border: 1px solid var(--secondary-neon); border-radius: 2px; font-family: var(--font-mono); font-size: 11px; color: var(--secondary-neon); margin-bottom: 15px; letter-spacing: 1.5px;">
+        <span>// REGIONAL PALEONTOLOGY ARCHIVE</span>
+        <span>|</span>
+        <span>JAPANESE FOSSIL SPECIMENS</span>
+      </div>
+      
+      <h1 style="font-size: clamp(26px, 4vw, 42px); font-weight: 800; color: var(--text-main); line-height: 1.3; margin-bottom: 15px; letter-spacing: -0.5px;">
+        日本の恐竜完全名鑑<br>
+        <span style="font-size: clamp(16px, 2.5vw, 24px); color: var(--secondary-neon); font-weight: 600;">日本列島産化石の全網羅と4大産地の発掘史</span>
+      </h1>
+
+      <p style="font-size: 15px; line-height: 1.8; color: var(--text-dim); max-width: 900px; margin-bottom: 25px;">
+        かつて「火山活動と激しい地殻変動のせいで、日本に恐竜化石は残らない」と信じられていた時代がありました。しかし1978年のモシリュウ発見を契機に、福井、兵庫、北海道、熊本など全国で次々と世界的発見が相次ぎ、日本はアジアを代表する恐竜化石のホットスポットとなりました。日本初記載の新種恐竜から奇跡の全身骨格「むかわ竜」まで、日本列島に生きた古生物たちの全容を学術的に解説します。
+      </p>
+
+      <div class="hero-stats" style="display: flex; gap: 20px; flex-wrap: wrap; align-items: center; border-top: 1px solid rgba(0, 255, 102, 0.2); padding-top: 20px;">
+        <div style="font-family: var(--font-mono);">
+          <span style="font-size: 11px; color: var(--text-dim); display: block;">REGISTERED JAPANESE SPECIMENS</span>
+          <span style="font-size: 24px; font-weight: 700; color: var(--secondary-neon);">{japanDinosaurs.length} <span style="font-size: 14px; color: var(--text-dim);">種掲載中</span></span>
+        </div>
+        <div style="height: 30px; width: 1px; background: rgba(0, 255, 102, 0.2);"></div>
+        <div style="font-family: var(--font-mono);">
+          <span style="font-size: 11px; color: var(--text-dim); display: block;">MAJOR FOSSIL REGIONS</span>
+          <span style="font-size: 18px; font-weight: 600; color: var(--text-main);">福井・兵庫・北海道・熊本</span>
+        </div>
+        <div style="height: 30px; width: 1px; background: rgba(0, 255, 102, 0.2);"></div>
+        <div style="font-family: var(--font-mono);">
+          <span style="font-size: 11px; color: var(--text-dim); display: block;">SIGNIFICANCE</span>
+          <span style="font-size: 14px; font-weight: 600; color: var(--text-main);">東アジア大陸沿岸部の固有生態系</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Academic Guide Article Section -->
+    <article class="academic-guide hud-panel" style="padding: 40px; margin-bottom: 50px; background: rgba(3, 6, 8, 0.6); border-color: rgba(0, 255, 102, 0.25);">
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 30px; border-bottom: 2px solid var(--secondary-neon); padding-bottom: 15px;">
+        <span style="font-size: 24px;">🗾</span>
+        <h2 style="font-size: 22px; color: var(--secondary-neon); font-weight: 700; margin: 0; letter-spacing: 0.5px;">
+          日本の古生物学：発掘の歴史、4大産地、東アジア大陸辺縁部の進化ドラマ
+        </h2>
+      </div>
+
+      <div class="article-content" style="color: var(--text-main); font-size: 15px; line-height: 1.9;">
+        
+        <section style="margin-bottom: 35px;">
+          <h3 style="font-size: 18px; color: #fff; border-left: 4px solid var(--secondary-neon); padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
+            1. 「日本に恐竜はいない」の常識を覆した1978年の奇跡
+          </h3>
+          <p style="margin-bottom: 12px; color: var(--text-dim);">
+            戦後長きにわたり、日本列島は新生代の火山活動やプレート沈み込みに伴う地殻変動が極めて激しいため、「中生代の陸成層がほとんど残っておらず、恐竜化石の発見は絶望的である」というのが地質学界の常識でした。
+          </p>
+          <p style="margin-bottom: 12px; color: var(--text-dim);">
+            この定説を打ち破ったのが、1978年に岩手県岩泉町の茂師海岸で発見された「**モシリュウ（竜脚類の上腕骨化石）**」です。続いて1979年には熊本県御船町で肉食恐竜の歯化石「ミフネリュウ」が発見され、日本列島にも確実に恐竜が生息していたことが決定づけられました。
+          </p>
+        </section>
+
+        <section style="margin-bottom: 35px;">
+          <h3 style="font-size: 18px; color: #fff; border-left: 4px solid var(--secondary-neon); padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
+            2. 日本の4大恐竜化石産地と地層の特徴
+          </h3>
+          <p style="margin-bottom: 12px; color: var(--text-dim);">
+            現在、日本国内には世界的にも注目される4大恐竜化石産地が存在し、次々と新属新種が記載されています。
+          </p>
+          
+          <div style="background: rgba(0, 255, 102, 0.04); border-left: 3px solid var(--secondary-neon); padding: 15px 20px; margin: 15px 0; border-radius: 0 4px 4px 0;">
+            <h4 style="font-size: 14px; color: var(--secondary-neon); margin-bottom: 8px; font-weight: 700;">🏛 日本の恐竜化石4大拠点</h4>
+            <ul style="margin: 0; padding-left: 20px; font-size: 14px; color: var(--text-dim); line-height: 1.7;">
+              <li><strong>福井県勝山市（手取層群北谷層：白亜紀前期・約1億2000万年前）:</strong> 日本の恐竜王国。フクイラプトル、フクイサウルス、フクイティタン、フクイベナトル、コシサウルス、ヒプノヴェナトル、ティラノミムスなど新種が集中。河川氾濫原の保存状態の良いボーンベッド。</li>
+              <li><strong>兵庫県丹波篠山市（篠山層群：白亜紀前期・約1億1000万年前）:</strong> 「丹波竜」こと超大型竜脚類タンバティタニス・アミキティエが産出。さらに世界最小クラスの恐竜卵化石（ヒメオーリサス・マストリクテンシス）や原始的角竜ササヤマグノームスが発見。</li>
+              <li><strong>北海道むかわ町・中川町（蝦夷層群：白亜紀後期・約7200万年前）:</strong> 海成層から奇跡的に完全な形で堆積したハドロサウルス類「カムイサウルス・ジャポニクス（むかわ竜）」。骨の8割以上が残る日本最大の全身骨格。さらに巨大テリジノサウルス類パラリテリジノサウルスも産出。</li>
+              <li><strong>熊本県御船町（御船層群：白亜紀後期・約9000万年前）:</strong> 日本初の肉食恐竜化石が発見された地。大型獣脚類（カルカロドントサウルス類等）や鎧竜類の歯化石が豊富。</li>
+            </ul>
+          </div>
+        </section>
+
+        <section style="margin-bottom: 35px;">
+          <h3 style="font-size: 18px; color: #fff; border-left: 4px solid var(--secondary-neon); padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
+            3. 東アジア大陸沿岸部が育んだ「固有のモザイク進化」
+          </h3>
+          <p style="margin-bottom: 12px; color: var(--text-dim);">
+            中生代当時、日本列島は現在のように島国として孤立しておらず、**ユーラシア大陸の東端（沿岸域）**に結合していました。この沿岸域は、大陸内部の乾燥・砂漠地帯（モンゴル・ゴビ砂漠など）とは大きく異なり、湿潤で豊かな針葉樹林・温帯雨林が広がっていました。
+          </p>
+          <p style="margin-bottom: 12px; color: var(--text-dim);">
+            福井で発見された**フクイベナトル**のように、テタヌラ類とコエルロサウリア類の原始的・派生的特徴が入り交じった「モザイク的特徴」を持つ恐竜が多く見られるのは、沿岸森林環境が大陸内部とは異なる独自の進化の実験場（レフュジア：避難所）として機能していた証左と考えられています。
+          </p>
+        </section>
+
+        <section>
+          <h3 style="font-size: 18px; color: #fff; border-left: 4px solid var(--secondary-neon); padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
+            4. 世界に誇る奇跡の全身骨格「カムイサウルス（むかわ竜）」
+          </h3>
+          <p style="margin-bottom: 12px; color: var(--text-dim);">
+            2019年に新属新種として正式記載された**カムイサウルス・ジャポニクス（Kamuysaurus japonicus）**は、日本の古生物学史上最大の発見と称えられています。海成層から発見されたにもかかわらず、頭骨から尾の先端まで骨の8割以上が関節した状態で残っており、陸上恐竜の遺骸が死後速やかに海へ流されて泥の中に埋没した奇跡のプロセスが解明されました。
+          </p>
+          <p style="margin-bottom: 0; color: var(--text-dim);">
+            さらに淡路島で発見された**ヤマトサウルス・イザナギイ**など、日本の化石群はハドロサウルス類の起源と大陸間渡りルートの解明において、世界中の研究者から熱狂的な注目を集めています。
+          </p>
+        </section>
+
+      </div>
+    </article>
+
+    <!-- Specimen List & Interactive Filter Section -->
+    <section class="specimen-section" style="margin-bottom: 60px;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px; margin-bottom: 25px; border-bottom: 1px solid rgba(0, 255, 102, 0.2); padding-bottom: 15px;">
+        <div>
+          <span style="font-family: var(--font-mono); font-size: 11px; color: var(--secondary-neon); letter-spacing: 2px;">// JAPANESE SPECIMEN DATABASE</span>
+          <h2 style="font-size: 24px; color: var(--text-main); margin-top: 5px; font-weight: 700;">日本産化石の登録標本一覧</h2>
+        </div>
+
+        <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+          <input 
+            type="text" 
+            id="specimen-search" 
+            placeholder="日本の恐竜を検索..." 
+            aria-label="日本の恐竜の名前で検索"
+            style="padding: 10px 15px; font-size: 13px; background: rgba(0, 255, 102, 0.05); border: 1px solid var(--secondary-neon); color: var(--text-main); border-radius: 4px; width: 220px;"
+          >
+          <select 
+            id="specimen-sort" 
+            aria-label="並び替え順"
+            style="padding: 10px 15px; font-size: 13px; background: rgba(0, 255, 102, 0.05); border: 1px solid var(--secondary-neon); color: var(--text-main); border-radius: 4px;"
+          >
+            <option value="kana">かな順（あいうえお）</option>
+            <option value="size-desc">全長順（大きい順）</option>
+            <option value="size-asc">全長順（小さい順）</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Dinosaur Card Grid -->
+      <div class="dino-grid" id="specimen-grid">
+        {japanDinosaurs.map(d => (
+          <div class="dino-card hud-panel" data-name={d.name} data-kana={d.kana} data-length={d.length} data-diet={d.diet} data-group={d.group}>
+            <a href={`/dictionary/${d.id}/`} style="text-decoration: none; color: inherit; display: block; height: 100%;">
+              <div class="card-img-wrap" style="position: relative; overflow: hidden; aspect-ratio: 16/9; background: #000;">
+                <img src={`/${d.image}`} alt={d.name} loading="lazy" decoding="async" width="400" height="225" style="width: 100%; height: 100%; object-fit: cover;">
+                <div style="position: absolute; top: 8px; left: 8px; background: rgba(0, 0, 0, 0.7); padding: 2px 8px; border-radius: 2px; font-family: var(--font-mono); font-size: 10px; color: var(--secondary-neon); border: 1px solid rgba(0, 255, 102, 0.3);">
+                  {d.region}
+                </div>
+              </div>
+              <div class="card-info" style="padding: 15px;">
+                <h3 class="card-title" style="font-size: 17px; font-weight: 700; color: var(--text-main); margin-bottom: 4px;">{d.name}</h3>
+                <div style="font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); margin-bottom: 10px; font-style: italic;">{d.scientificName}</div>
+                <div class="card-tags" style="display: flex; gap: 6px; flex-wrap: wrap;">
+                  <span class="card-tag group-tag" style="font-size: 11px; padding: 2px 8px; background: rgba(0, 255, 102, 0.1); border: 1px solid rgba(0, 255, 102, 0.3); border-radius: 2px; color: var(--secondary-neon);">{d.group || '日本産古生物'}</span>
+                  <span class="card-tag" style="font-size: 11px; padding: 2px 8px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 2px; color: var(--text-dim);">{d.length}</span>
+                  <span class="card-tag" style="font-size: 11px; padding: 2px 8px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 2px; color: var(--text-dim);">{d.era}</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Topic Cluster Cross-Nav -->
+    <PillarNav currentPillar="japan-dinosaurs" />
+
+  </div>
+
+  <script>
+    function initPillarSpecimens() {
+      const search = document.getElementById('specimen-search') as HTMLInputElement;
+      const sort = document.getElementById('specimen-sort') as HTMLSelectElement;
+      const grid = document.getElementById('specimen-grid');
+      if (!search || !sort || !grid) return;
+
+      const cards = Array.from(grid.getElementsByClassName('dino-card')) as HTMLElement[];
+
+      const parseLen = (str: string) => {
+        const m = str.match(/[0-9.]+/);
+        return m ? parseFloat(m[0]) : 0;
+      };
+
+      function updateGrid() {
+        const query = search.value.trim().toLowerCase();
+        const sortVal = sort.value;
+
+        cards.forEach(card => {
+          const name = (card.dataset.name || '').toLowerCase();
+          const kana = (card.dataset.kana || '').toLowerCase();
+          const match = !query || name.includes(query) || kana.includes(query);
+          card.style.display = match ? 'block' : 'none';
+        });
+
+        const sorted = cards.slice().sort((a, b) => {
+          if (sortVal === 'kana') {
+            return (a.dataset.kana || '').localeCompare(b.dataset.kana || '', 'ja');
+          } else if (sortVal === 'size-desc') {
+            return parseLen(b.dataset.length || '0') - parseLen(a.dataset.length || '0');
+          } else if (sortVal === 'size-asc') {
+            return parseLen(a.dataset.length || '0') - parseLen(b.dataset.length || '0');
+          }
+          return 0;
+        });
+
+        sorted.forEach(c => grid.appendChild(c));
+      }
+
+      search.addEventListener('input', updateGrid);
+      sort.addEventListener('change', updateGrid);
+    }
+
+    document.addEventListener('astro:page-load', initPillarSpecimens);
+    initPillarSpecimens();
+  </script>
+</Layout>

@@ -1,0 +1,269 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PillarNav from '../../components/PillarNav.astro';
+import { getCollection } from 'astro:content';
+
+const allDinosaurs = await getCollection('dinosaurs');
+// ジュラ紀の恐竜・古生物を動的抽出
+const jurassicDinosaurs = allDinosaurs
+  .filter(entry => entry.data.era.includes('ジュラ'))
+  .map(entry => entry.data);
+
+// 50音順にデフォルトソート
+jurassicDinosaurs.sort((a, b) => a.kana.localeCompare(b.kana, 'ja'));
+
+// パンくずリスト & 構造化データ (Schema.org)
+const breadcrumbs = [
+  { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://dino-portal.com/" },
+  { "@type": "ListItem", "position": 2, "name": "恐竜図鑑", "item": "https://dino-portal.com/dictionary/" },
+  { "@type": "ListItem", "position": 3, "name": "ジュラ紀の恐竜完全ガイド", "item": "https://dino-portal.com/period/jurassic/" }
+];
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": breadcrumbs
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "ジュラ紀の恐竜完全ガイド - 巨大竜脚類と剣竜類の黄金時代",
+    "description": "ジュラ紀（約2億100万年前〜1億4500万年前）に繁栄した恐竜・古生物を徹底解説。アロサウルス、ステゴサウルス、ブラキオサウルスなどの代表種一覧と最新学説。",
+    "url": "https://dino-portal.com/period/jurassic/",
+    "hasPart": jurassicDinosaurs.map(d => ({
+      "@type": "Thing",
+      "name": d.name,
+      "url": `https://dino-portal.com/dictionary/${d.id}/`,
+      "description": d.description
+    }))
+  }
+];
+---
+
+<Layout 
+  title="ジュラ紀の恐竜完全ガイド - 巨大竜脚類と剣竜類の黄金時代 | Dino-Portal" 
+  description="約2億100万年〜1億4500万年前のジュラ紀に繁栄した恐竜・古生物を徹底解説。アロサウルス、ブラキオサウルス、ステゴサウルス等の代表種一覧、超巨大化を可能にした気嚢システム、モリソン累層の生態系を学術的に網羅。"
+  activeTab="dictionary"
+  schema={schema}
+>
+  <div class="pillar-container" style="max-width: 1400px; margin: 0 auto; padding: 20px 20px 80px;">
+    
+    <!-- Breadcrumb bar -->
+    <nav aria-label="パンくずリスト" style="margin-bottom: 25px; font-family: var(--font-mono); font-size: 12px; color: var(--text-dim); display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+      <a href="/" style="color: var(--primary-neon); text-decoration: none;">HOME</a>
+      <span>/</span>
+      <a href="/dictionary/" style="color: var(--primary-neon); text-decoration: none;">DICTIONARY</a>
+      <span>/</span>
+      <span style="color: var(--text-main);">PERIOD: JURASSIC</span>
+    </nav>
+
+    <!-- Hero Banner Header -->
+    <header class="pillar-hero hud-panel" style="padding: 40px; margin-bottom: 40px; position: relative; overflow: hidden; border-color: rgba(0, 242, 255, 0.4); background: linear-gradient(135deg, rgba(0, 242, 255, 0.08) 0%, rgba(3, 6, 8, 0.8) 100%);">
+      <div class="hero-tag" style="display: inline-flex; align-items: center; gap: 8px; padding: 4px 12px; background: rgba(0, 242, 255, 0.15); border: 1px solid var(--primary-neon); border-radius: 2px; font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); margin-bottom: 15px; letter-spacing: 1.5px;">
+        <span>// GEOLOGICAL ERA ARCHIVE</span>
+        <span>|</span>
+        <span>201.3 MA – 145.0 MA</span>
+      </div>
+      
+      <h1 style="font-size: clamp(26px, 4vw, 42px); font-weight: 800; color: var(--text-main); line-height: 1.3; margin-bottom: 15px; letter-spacing: -0.5px;">
+        ジュラ紀の恐竜完全ガイド<br>
+        <span style="font-size: clamp(16px, 2.5vw, 24px); color: var(--primary-neon); font-weight: 600;">巨大竜脚類と剣竜類の黄金時代</span>
+      </h1>
+
+      <p style="font-size: 15px; line-height: 1.8; color: var(--text-dim); max-width: 900px; margin-bottom: 25px;">
+        三畳紀末の大量絶滅を生き延びた恐竜たちは、温暖湿潤な気候と広大な針葉樹林に恵まれたジュラ紀において爆発的な巨大化と多様化を遂げました。全長30メートルに迫るスーパーサウルスやブラキオサウルス等の巨大竜脚類、背面の骨板で武装したステゴサウルス、そして生態系の頂点に君臨したアロサウルス。中生代のシンボルたちが闊歩したジュラ紀の全貌を、最新の古生物学的知見とともに解き明かします。
+      </p>
+
+      <div class="hero-stats" style="display: flex; gap: 20px; flex-wrap: wrap; align-items: center; border-top: 1px solid rgba(0, 242, 255, 0.2); padding-top: 20px;">
+        <div style="font-family: var(--font-mono);">
+          <span style="font-size: 11px; color: var(--text-dim); display: block;">REGISTERED SPECIMENS</span>
+          <span style="font-size: 24px; font-weight: 700; color: var(--primary-neon);">{jurassicDinosaurs.length} <span style="font-size: 14px; color: var(--text-dim);">種掲載中</span></span>
+        </div>
+        <div style="height: 30px; width: 1px; background: rgba(0, 242, 255, 0.2);"></div>
+        <div style="font-family: var(--font-mono);">
+          <span style="font-size: 11px; color: var(--text-dim); display: block;">TIME SPAN</span>
+          <span style="font-size: 18px; font-weight: 600; color: var(--text-main);">約5,600万年間</span>
+        </div>
+        <div style="height: 30px; width: 1px; background: rgba(0, 242, 255, 0.2);"></div>
+        <div style="font-family: var(--font-mono);">
+          <span style="font-size: 11px; color: var(--text-dim); display: block;">REPRESENTATIVE FORMATIONS</span>
+          <span style="font-size: 14px; font-weight: 600; color: var(--text-main);">モリソン層（北米）/ テンダグル層（タンザニア）</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Academic Guide Article Section -->
+    <article class="academic-guide hud-panel" style="padding: 40px; margin-bottom: 50px; background: rgba(3, 6, 8, 0.6); border-color: rgba(0, 242, 255, 0.25);">
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 30px; border-bottom: 2px solid var(--primary-neon); padding-bottom: 15px;">
+        <span style="font-size: 24px;">📚</span>
+        <h2 style="font-size: 22px; color: var(--primary-neon); font-weight: 700; margin: 0; letter-spacing: 0.5px;">
+          ジュラ紀の古生物学：生態系・骨格進化・地球環境の徹底解説
+        </h2>
+      </div>
+
+      <div class="article-content" style="color: var(--text-main); font-size: 15px; line-height: 1.9;">
+        
+        <section style="margin-bottom: 35px;">
+          <h3 style="font-size: 18px; color: #fff; border-left: 4px solid var(--primary-neon); padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
+            1. パンゲア分裂と温暖多湿な「恐竜の理想郷」
+          </h3>
+          <p style="margin-bottom: 12px; color: var(--text-dim);">
+            ジュラ紀（Jurassic Period）は、超大陸パンゲアがローラシア大陸（北半球）とゴンドワナ大陸（南半球）へと本格的に分裂を始めた時代です。大陸間にテチス海が広がり、海洋からの湿った大気が内陸深くまで循環するようになったことで、前時代（三畳紀）の極端な乾燥気候は劇的に緩和されました。
+          </p>
+          <p style="margin-bottom: 12px; color: var(--text-dim);">
+            地球全体が極地に至るまで氷床の存在しない温暖な温室状態（グリーンハウス気候）となり、ソテツ類、針葉樹、イチョウ類、大型トクサ類、木生シダが地球規模の大森林を形成しました。この豊富で無尽蔵ともいえる植物資源が、生物史上例を見ない超巨大恐竜たちの進化を強力に下支えしたのです。
+          </p>
+        </section>
+
+        <section style="margin-bottom: 35px;">
+          <h3 style="font-size: 18px; color: #fff; border-left: 4px solid var(--primary-neon); padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
+            2. 竜脚下目の超巨大化：気嚢システムと骨格の軽量化構造
+          </h3>
+          <p style="margin-bottom: 12px; color: var(--text-dim);">
+            ジュラ紀を象徴する最大の特徴は、**竜脚類（Sauropoda）**の圧倒的な巨大化です。ブラキオサウルス、ディプロドクス、アパトサウルス、カマラサウルス、スーパーサウルスなどが陸上生態系を完全に支配しました。彼らが30トン〜80トンにも達する巨体を維持できた背景には、現代の鳥類にも受け継がれている先進的な生体力学的適応が存在します。
+          </p>
+          
+          <div style="background: rgba(0, 242, 255, 0.04); border-left: 3px solid var(--secondary-neon); padding: 15px 20px; margin: 15px 0; border-radius: 0 4px 4px 0;">
+            <h4 style="font-size: 14px; color: var(--secondary-neon); margin-bottom: 8px; font-weight: 700;">🔬 巨大化を可能にした3大生理的イノベーション</h4>
+            <ul style="margin: 0; padding-left: 20px; font-size: 14px; color: var(--text-dim); line-height: 1.7;">
+              <li><strong>気嚢システム（一方向性肺換気）:</strong> 骨の内部まで入り込んだ気嚢が常に新鮮な酸素を供給し、巨大な肺胞の換気効率を極限まで高めた。</li>
+              <li><strong>骨のハニカム中空化（含気骨）:</strong> 頚椎や背椎が蜂の巣状に空洞化され、強度を保ちつつ驚異的な軽量化を実現。極めて長い首を軽快に支えることができた。</li>
+              <li><strong>咀嚼を放棄した省エネ摂食:</strong> 歯で噛み砕かず丸呑みし、巨大な発酵タンクとしての胃腸と胃石で効率的に消化。重い頭骨や強大な咀嚼筋を不要とし、小さな頭部と長い首の両立に成功。</li>
+            </ul>
+          </div>
+        </section>
+
+        <section style="margin-bottom: 35px;">
+          <h3 style="font-size: 18px; color: #fff; border-left: 4px solid var(--primary-neon); padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
+            3. 装盾類（剣竜類）の繁栄：背部骨板とサゴマイザーの機能美
+          </h3>
+          <p style="margin-bottom: 12px; color: var(--text-dim);">
+            低木やシダ植物を主食とする中型植物食恐竜として繁栄したのが**剣竜下目（Stegosauria）**です。ステゴサウルスやケントロサウルス、トゥオジャンゴサウルスなど、背面に並ぶ互い違いの骨板（プレート）や鋭利なトゲは古代生物の中でも屈指の造形美を誇ります。
+          </p>
+          <p style="margin-bottom: 12px; color: var(--text-dim);">
+            骨板の機能については長年議論が続いてきましたが、近年の血管網スキャンにより、太陽熱を吸収・放熱する**体温調節ラジエーター**としての機能、血管に血液を送り込んで赤く変色させ捕食者を威嚇・求愛する**ディスプレイ機能**の双方が解明されています。また、尾の先端にある強大な骨質スパイク「**サゴマイザー（Thagomizer）**」は、アロサウルスの腰椎骨を貫通した傷跡化石が発見されるなど、極めて実戦的かつ致命的な防衛兵器であったことが実証されています。
+          </p>
+        </section>
+
+        <section>
+          <h3 style="font-size: 18px; color: #fff; border-left: 4px solid var(--primary-neon); padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
+            4. 頂点捕食者アロサウルスとモリソン累層の軍拡競争
+          </h3>
+          <p style="margin-bottom: 12px; color: var(--text-dim);">
+            ジュラ紀後期の北米モリソン累層（Morrison Formation）は、古生物学史上最も豊かな生態系化石を産出しています。この食物連鎖の頂点に君臨したのが**アロサウルス（Allosaurus fragilis）**です。アロサウルスの頭骨生体力学シミュレーションによると、彼らは顎を90度近くまで大きく開き、強靭な首の筋肉を使って上顎を「手斧」のように獲物の肉体へ叩きつける独特の攻撃戦術を用いていました。
+          </p>
+          <p style="margin-bottom: 0; color: var(--text-dim);">
+            同時代には超大型獣脚類トルヴォサウルスや角を持つケラトサウルスも共存しており、獲物のサイズや生息環境（森林内か氾濫原か）によって厳密なニッチ分化（生態的地位の棲み分け）を成立させていたことが最新研究で明らかになっています。
+          </p>
+        </section>
+
+      </div>
+    </article>
+
+    <!-- Specimen List & Interactive Filter Section -->
+    <section class="specimen-section" style="margin-bottom: 60px;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px; margin-bottom: 25px; border-bottom: 1px solid rgba(0, 242, 255, 0.2); padding-bottom: 15px;">
+        <div>
+          <span style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); letter-spacing: 2px;">// JURASSIC SPECIMEN DATABASE</span>
+          <h2 style="font-size: 24px; color: var(--text-main); margin-top: 5px; font-weight: 700;">ジュラ紀の登録標本一覧</h2>
+        </div>
+
+        <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+          <input 
+            type="text" 
+            id="specimen-search" 
+            placeholder="ジュラ紀恐竜を検索..." 
+            aria-label="ジュラ紀恐竜の名前で検索"
+            style="padding: 10px 15px; font-size: 13px; background: rgba(0, 242, 255, 0.05); border: 1px solid var(--primary-neon); color: var(--text-main); border-radius: 4px; width: 220px;"
+          >
+          <select 
+            id="specimen-sort" 
+            aria-label="並び替え順"
+            style="padding: 10px 15px; font-size: 13px; background: rgba(0, 242, 255, 0.05); border: 1px solid var(--primary-neon); color: var(--text-main); border-radius: 4px;"
+          >
+            <option value="kana">かな順（あいうえお）</option>
+            <option value="size-desc">全長順（大きい順）</option>
+            <option value="size-asc">全長順（小さい順）</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Dinosaur Card Grid -->
+      <div class="dino-grid" id="specimen-grid">
+        {jurassicDinosaurs.map(d => (
+          <div class="dino-card hud-panel" data-name={d.name} data-kana={d.kana} data-length={d.length} data-diet={d.diet} data-group={d.group}>
+            <a href={`/dictionary/${d.id}/`} style="text-decoration: none; color: inherit; display: block; height: 100%;">
+              <div class="card-img-wrap" style="position: relative; overflow: hidden; aspect-ratio: 16/9; background: #000;">
+                <img src={`/${d.image}`} alt={d.name} loading="lazy" decoding="async" width="400" height="225" style="width: 100%; height: 100%; object-fit: cover;">
+                <div style="position: absolute; top: 8px; left: 8px; background: rgba(0, 0, 0, 0.7); padding: 2px 8px; border-radius: 2px; font-family: var(--font-mono); font-size: 10px; color: var(--primary-neon); border: 1px solid rgba(0, 242, 255, 0.3);">
+                  {d.era}
+                </div>
+              </div>
+              <div class="card-info" style="padding: 15px;">
+                <h3 class="card-title" style="font-size: 17px; font-weight: 700; color: var(--text-main); margin-bottom: 4px;">{d.name}</h3>
+                <div style="font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); margin-bottom: 10px; font-style: italic;">{d.scientificName}</div>
+                <div class="card-tags" style="display: flex; gap: 6px; flex-wrap: wrap;">
+                  <span class="card-tag group-tag" style="font-size: 11px; padding: 2px 8px; background: rgba(0, 242, 255, 0.1); border: 1px solid rgba(0, 242, 255, 0.3); border-radius: 2px; color: var(--primary-neon);">{d.group || '恐竜'}</span>
+                  <span class="card-tag" style="font-size: 11px; padding: 2px 8px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 2px; color: var(--text-dim);">{d.length}</span>
+                  <span class="card-tag" style="font-size: 11px; padding: 2px 8px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 2px; color: var(--text-dim);">{d.diet}</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Topic Cluster Cross-Nav -->
+    <PillarNav currentPillar="jurassic" />
+
+  </div>
+
+  <script>
+    function initPillarSpecimens() {
+      const search = document.getElementById('specimen-search') as HTMLInputElement;
+      const sort = document.getElementById('specimen-sort') as HTMLSelectElement;
+      const grid = document.getElementById('specimen-grid');
+      if (!search || !sort || !grid) return;
+
+      const cards = Array.from(grid.getElementsByClassName('dino-card')) as HTMLElement[];
+
+      const parseLen = (str: string) => {
+        const m = str.match(/[0-9.]+/);
+        return m ? parseFloat(m[0]) : 0;
+      };
+
+      function updateGrid() {
+        const query = search.value.trim().toLowerCase();
+        const sortVal = sort.value;
+
+        cards.forEach(card => {
+          const name = (card.dataset.name || '').toLowerCase();
+          const kana = (card.dataset.kana || '').toLowerCase();
+          const match = !query || name.includes(query) || kana.includes(query);
+          card.style.display = match ? 'block' : 'none';
+        });
+
+        const sorted = cards.slice().sort((a, b) => {
+          if (sortVal === 'kana') {
+            return (a.dataset.kana || '').localeCompare(b.dataset.kana || '', 'ja');
+          } else if (sortVal === 'size-desc') {
+            return parseLen(b.dataset.length || '0') - parseLen(a.dataset.length || '0');
+          } else if (sortVal === 'size-asc') {
+            return parseLen(a.dataset.length || '0') - parseLen(b.dataset.length || '0');
+          }
+          return 0;
+        });
+
+        sorted.forEach(c => grid.appendChild(c));
+      }
+
+      search.addEventListener('input', updateGrid);
+      sort.addEventListener('change', updateGrid);
+    }
+
+    document.addEventListener('astro:page-load', initPillarSpecimens);
+    initPillarSpecimens();
+  </script>
+</Layout>

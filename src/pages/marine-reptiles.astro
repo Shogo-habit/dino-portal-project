@@ -1,0 +1,282 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PillarNav from '../components/PillarNav.astro';
+import { getCollection } from 'astro:content';
+
+const allDinosaurs = await getCollection('dinosaurs');
+// 海生爬虫類・海洋古生物を動的抽出
+const marineKeywords = [
+  '首長竜', '魚竜', '海棲', '海生', 'モササウルス', 'ティロサウルス', 'ハイノサウルス',
+  'プログナソドン', 'メガロドン', 'ヘノドゥス', 'プラコドゥス', 'ノトサウルス', 'ウタツサウルス', 'クロノサウルス',
+  'リオプレウロドン', 'プレシオサウルス', 'エラスモサウルス', 'フタバサウルス', 'ショニサウルス', 'ミクソサウルス',
+  'テムノドントサウルス', 'キンボスポンディルス', 'クリプトクリドゥス', 'ステノプテリギウス', 'メトリオリンクス'
+];
+
+const marineDinosaurs = allDinosaurs
+  .filter(entry => {
+    const d = entry.data;
+    const inGroup = d.group && (d.group.includes('首長竜') || d.group.includes('魚竜') || d.group.includes('海棲爬虫類'));
+    const inRegion = d.region && (d.region.includes('海') || d.region.includes('海洋'));
+    const inNameOrDesc = marineKeywords.some(k => d.name.includes(k) || (d.group && d.group.includes(k)));
+    return inGroup || inRegion || inNameOrDesc;
+  })
+  .map(entry => entry.data);
+
+// 50音順にデフォルトソート
+marineDinosaurs.sort((a, b) => a.kana.localeCompare(b.kana, 'ja'));
+
+// パンくずリスト & 構造化データ (Schema.org)
+const breadcrumbs = [
+  { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://dino-portal.com/" },
+  { "@type": "ListItem", "position": 2, "name": "恐竜図鑑", "item": "https://dino-portal.com/dictionary/" },
+  { "@type": "ListItem", "position": 3, "name": "中生代の海生爬虫類図鑑", "item": "https://dino-portal.com/marine-reptiles/" }
+];
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": breadcrumbs
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "中生代の海生爬虫類図鑑 - モササウルス・首長竜・魚竜の海中支配",
+    "description": "「海に恐竜はいなかった」古生物学の常識から、中生代の海を支配したモササウルス、首長竜、魚竜等の生態を完全解説。水中適応、収斂進化、海洋食物連鎖の全貌。",
+    "url": "https://dino-portal.com/marine-reptiles/",
+    "hasPart": marineDinosaurs.map(d => ({
+      "@type": "Thing",
+      "name": d.name,
+      "url": `https://dino-portal.com/dictionary/${d.id}/`,
+      "description": d.description
+    }))
+  }
+];
+---
+
+<Layout 
+  title="中生代の海生爬虫類図鑑 - モササウルス・首長竜・魚竜の海中支配 | Dino-Portal" 
+  description="「海に恐竜はいなかった」古生物学の事実から、中生代の海を支配したモササウルス、プレシオサウルス、クロノサウルス、イクチオサウルス等の海生爬虫類を完全解説。水中適応、収斂進化、食物連鎖ピラミッドを徹底解剖。"
+  activeTab="dictionary"
+  schema={schema}
+>
+  <div class="pillar-container" style="max-width: 1400px; margin: 0 auto; padding: 20px 20px 80px;">
+    
+    <!-- Breadcrumb bar -->
+    <nav aria-label="パンくずリスト" style="margin-bottom: 25px; font-family: var(--font-mono); font-size: 12px; color: var(--text-dim); display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+      <a href="/" style="color: var(--primary-neon); text-decoration: none;">HOME</a>
+      <span>/</span>
+      <a href="/dictionary/" style="color: var(--primary-neon); text-decoration: none;">DICTIONARY</a>
+      <span>/</span>
+      <span style="color: var(--text-main);">TOPIC: MARINE REPTILES</span>
+    </nav>
+
+    <!-- Hero Banner Header -->
+    <header class="pillar-hero hud-panel" style="padding: 40px; margin-bottom: 40px; position: relative; overflow: hidden; border-color: rgba(0, 208, 255, 0.4); background: linear-gradient(135deg, rgba(0, 208, 255, 0.08) 0%, rgba(3, 6, 8, 0.8) 100%);">
+      <div class="hero-tag" style="display: inline-flex; align-items: center; gap: 8px; padding: 4px 12px; background: rgba(0, 208, 255, 0.15); border: 1px solid #00d0ff; border-radius: 2px; font-family: var(--font-mono); font-size: 11px; color: #00d0ff; margin-bottom: 15px; letter-spacing: 1.5px;">
+        <span>// OCEANIC BIOME ARCHIVE</span>
+        <span>|</span>
+        <span>MESOZOIC MARINE PREDATORS</span>
+      </div>
+      
+      <h1 style="font-size: clamp(26px, 4vw, 42px); font-weight: 800; color: var(--text-main); line-height: 1.3; margin-bottom: 15px; letter-spacing: -0.5px;">
+        中生代の海生爬虫類図鑑<br>
+        <span style="font-size: clamp(16px, 2.5vw, 24px); color: #00d0ff; font-weight: 600;">モササウルス・首長竜・魚竜が拓いた深海の王国</span>
+      </h1>
+
+      <p style="font-size: 15px; line-height: 1.8; color: var(--text-dim); max-width: 900px; margin-bottom: 25px;">
+        陸上を恐竜たちが闊歩していた中生代、広大な大洋を支配していたのは「恐竜」ではなく、海へと再進出した驚異の爬虫類たちでした。イルカに酷似した高速遊泳者「魚竜」、四つのヒレで優雅かつ力強く海中を飛翔した「首長竜」、そして白亜紀末期に海の食物連鎖の頂点を極めた「モササウルス類」。胎生出産やヒレの骨化など、究極の海洋適応を成し遂げた海の覇者たちの真実に迫ります。
+      </p>
+
+      <div class="hero-stats" style="display: flex; gap: 20px; flex-wrap: wrap; align-items: center; border-top: 1px solid rgba(0, 208, 255, 0.2); padding-top: 20px;">
+        <div style="font-family: var(--font-mono);">
+          <span style="font-size: 11px; color: var(--text-dim); display: block;">REGISTERED SPECIMENS</span>
+          <span style="font-size: 24px; font-weight: 700; color: #00d0ff;">{marineDinosaurs.length} <span style="font-size: 14px; color: var(--text-dim);">種掲載中</span></span>
+        </div>
+        <div style="height: 30px; width: 1px; background: rgba(0, 208, 255, 0.2);"></div>
+        <div style="font-family: var(--font-mono);">
+          <span style="font-size: 11px; color: var(--text-dim); display: block;">MAJOR ORDERS</span>
+          <span style="font-size: 18px; font-weight: 600; color: var(--text-main);">魚竜目 / 首長竜目 / 有鱗目</span>
+        </div>
+        <div style="height: 30px; width: 1px; background: rgba(0, 208, 255, 0.2);"></div>
+        <div style="font-family: var(--font-mono);">
+          <span style="font-size: 11px; color: var(--text-dim); display: block;">KEY FACT</span>
+          <span style="font-size: 14px; font-weight: 600; color: var(--text-main);">学術的に恐竜とは別系統の海棲爬虫類群</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Academic Guide Article Section -->
+    <article class="academic-guide hud-panel" style="padding: 40px; margin-bottom: 50px; background: rgba(3, 6, 8, 0.6); border-color: rgba(0, 208, 255, 0.25);">
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 30px; border-bottom: 2px solid #00d0ff; padding-bottom: 15px;">
+        <span style="font-size: 24px;">🌊</span>
+        <h2 style="font-size: 22px; color: #00d0ff; font-weight: 700; margin: 0; letter-spacing: 0.5px;">
+          海生爬虫類の古生物学：恐竜との違い、海洋適応、収斂進化のメカニズム
+        </h2>
+      </div>
+
+      <div class="article-content" style="color: var(--text-main); font-size: 15px; line-height: 1.9;">
+        
+        <section style="margin-bottom: 35px;">
+          <h3 style="font-size: 18px; color: #fff; border-left: 4px solid #00d0ff; padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
+            1. 古生物学の最重要事実：「海に恐竜はいなかった」
+          </h3>
+          <p style="margin-bottom: 12px; color: var(--text-dim);">
+            一般にモササウルスやプレシオサウルスは「海の恐竜」と誤解されがちですが、学術的な分類上、**恐竜（Dinosauria）は「直立歩行に適応した四肢を骨盤の真下に持つ陸棲主竜類」**と定義されています。したがって、中生代の海洋を生息圏とした爬虫類たちは、恐竜とは全く異なる系統から海へと進出した「**海生爬虫類（Marine Reptiles）**」です。
+          </p>
+          <p style="margin-bottom: 12px; color: var(--text-dim);">
+            陸上で恐竜が進化を謳歌していたのと完全に並行して、海中では異なる爬虫類グループが次々と海洋適応を遂げ、食物連鎖の頂点ピラミッドを形成していました。彼らの存在を知ることは、中生代の生命圏全体を俯瞰する上で不可欠なピースです。
+          </p>
+        </section>
+
+        <section style="margin-bottom: 35px;">
+          <h3 style="font-size: 18px; color: #fff; border-left: 4px solid #00d0ff; padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
+            2. 三大海生爬虫類グループの進化と覇権の交代劇
+          </h3>
+          <p style="margin-bottom: 12px; color: var(--text-dim);">
+            中生代の海では、時代ごとに支配的なグループが劇的に入れ替わるダイナミックな交代劇が繰り広げられました。
+          </p>
+          
+          <div style="background: rgba(0, 208, 255, 0.04); border-left: 3px solid #00d0ff; padding: 15px 20px; margin: 15px 0; border-radius: 0 4px 4px 0;">
+            <h4 style="font-size: 14px; color: #00d0ff; margin-bottom: 8px; font-weight: 700;">🦈 海を支配した3大海洋爬虫類系統</h4>
+            <ul style="margin: 0; padding-left: 20px; font-size: 14px; color: var(--text-dim); line-height: 1.7;">
+              <li><strong>魚竜目（Ichthyosauria）:</strong> 三畳紀前期（ウタツサウルス等）に出現し、ジュラ紀に全盛期を迎えたグループ。流線型のマグロ・イルカ型ボディ、垂直の尾鰭、巨大な眼窩（オフタルモサウルス）を持ち、深海潜水と高速遊泳に特化。</li>
+              <li><strong>首長竜目（Plesiosauria）:</strong> 三畳紀末から白亜紀末まで生存。4つのヒレで水面下を「羽ばたく」ように進む。全長の半分以上が首を占める長頸型（プレシオサウルス、エラスモサウルス、フタバサウルス）と、短頸で超巨大な頭骨を持つ超大型肉食型（プリオサウルス、クロノサウルス）に二極分化。</li>
+              <li><strong>モササウルス科（Mosasauridae）:</strong> 白亜紀後期に突如出現した海棲オオトカゲ（有鱗目）。魚竜絶滅後の空白となった海洋ニッチを電光石火の勢いで奪取し、全長15m級のティロサウルスやモササウルスが中生代末期の海を完全支配。</li>
+            </ul>
+          </div>
+        </section>
+
+        <section style="margin-bottom: 35px;">
+          <h3 style="font-size: 18px; color: #fff; border-left: 4px solid #00d0ff; padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
+            3. 水中生活への生理的ブレイクスルー：胎生と骨のヒレ化
+          </h3>
+          <p style="margin-bottom: 12px; color: var(--text-dim);">
+            陸棲爬虫類が海へ適応するためには、克服しなければならない巨大な生物学的障壁が存在しました。その最大の課題が「**繁殖（産卵）**」です。硬い卵殻を持つ羊膜類の卵は水中では呼吸できず溺死してしまうため、ウミガメのように陸へ上がって産卵するか、体内受精・体内発生させるしかありません。
+          </p>
+          <p style="margin-bottom: 12px; color: var(--text-dim);">
+            ドイツ・ホルツマーデン産のステノプテリギウス化石などからは、**母親の胎内から尾から順に子供を出産している決定的瞬間**が奇跡的に保存された化石が多数発見されており、魚竜や首長竜、モササウルス類が「完全な胎生（あるいは卵胎生）」を獲得していたことが証明されています。また、指の骨の節数が極端に増加する「多指症・多指骨症（Hyperphalangy）」により、柔軟で強靭なパドル状ヒレを生み出しました。
+          </p>
+        </section>
+
+        <section>
+          <h3 style="font-size: 18px; color: #fff; border-left: 4px solid #00d0ff; padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
+            4. 収斂進化の極致と海洋生態系ピラミッド
+          </h3>
+          <p style="margin-bottom: 12px; color: var(--text-dim);">
+            魚竜（爬虫類）とイルカ（哺乳類）、マグロ（魚類）が、全く異なる祖先から出発しながら瓜二つの流線型体型に行き着いた現象は、進化生物学における「**収斂進化（Convergent Evolution）**」の最高のお手本です。水という高密度の流体中で最も抵抗を減らす物理法則が、億年の時を超えて共通の形態を彫り出しました。
+          </p>
+          <p style="margin-bottom: 0; color: var(--text-dim);">
+            中生代の海には、アンモナイト、ベレムナイト（古代イカ）、巨大硬骨魚類（シファクティヌス等）、巨大サメ類（クレトキシリナ等）がひしめき合い、陸上以上に熾烈で巨大な食物連鎖ピラミッドが成立していました。白亜紀末の小惑星衝突により、海中プランクトンの死滅とともにこの壮大な海洋生態系も幕を閉じました。
+          </p>
+        </section>
+
+      </div>
+    </article>
+
+    <!-- Specimen List & Interactive Filter Section -->
+    <section class="specimen-section" style="margin-bottom: 60px;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px; margin-bottom: 25px; border-bottom: 1px solid rgba(0, 208, 255, 0.2); padding-bottom: 15px;">
+        <div>
+          <span style="font-family: var(--font-mono); font-size: 11px; color: #00d0ff; letter-spacing: 2px;">// MARINE REPTILE SPECIMEN DATABASE</span>
+          <h2 style="font-size: 24px; color: var(--text-main); margin-top: 5px; font-weight: 700;">海生爬虫類・海洋古生物の登録標本一覧</h2>
+        </div>
+
+        <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+          <input 
+            type="text" 
+            id="specimen-search" 
+            placeholder="海生爬虫類を検索..." 
+            aria-label="海生爬虫類の名前で検索"
+            style="padding: 10px 15px; font-size: 13px; background: rgba(0, 208, 255, 0.05); border: 1px solid #00d0ff; color: var(--text-main); border-radius: 4px; width: 220px;"
+          >
+          <select 
+            id="specimen-sort" 
+            aria-label="並び替え順"
+            style="padding: 10px 15px; font-size: 13px; background: rgba(0, 208, 255, 0.05); border: 1px solid #00d0ff; color: var(--text-main); border-radius: 4px;"
+          >
+            <option value="kana">かな順（あいうえお）</option>
+            <option value="size-desc">全長順（大きい順）</option>
+            <option value="size-asc">全長順（小さい順）</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Dinosaur Card Grid -->
+      <div class="dino-grid" id="specimen-grid">
+        {marineDinosaurs.map(d => (
+          <div class="dino-card hud-panel" data-name={d.name} data-kana={d.kana} data-length={d.length} data-diet={d.diet} data-group={d.group}>
+            <a href={`/dictionary/${d.id}/`} style="text-decoration: none; color: inherit; display: block; height: 100%;">
+              <div class="card-img-wrap" style="position: relative; overflow: hidden; aspect-ratio: 16/9; background: #000;">
+                <img src={`/${d.image}`} alt={d.name} loading="lazy" decoding="async" width="400" height="225" style="width: 100%; height: 100%; object-fit: cover;">
+                <div style="position: absolute; top: 8px; left: 8px; background: rgba(0, 0, 0, 0.7); padding: 2px 8px; border-radius: 2px; font-family: var(--font-mono); font-size: 10px; color: #00d0ff; border: 1px solid rgba(0, 208, 255, 0.3);">
+                  {d.era}
+                </div>
+              </div>
+              <div class="card-info" style="padding: 15px;">
+                <h3 class="card-title" style="font-size: 17px; font-weight: 700; color: var(--text-main); margin-bottom: 4px;">{d.name}</h3>
+                <div style="font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); margin-bottom: 10px; font-style: italic;">{d.scientificName}</div>
+                <div class="card-tags" style="display: flex; gap: 6px; flex-wrap: wrap;">
+                  <span class="card-tag group-tag" style="font-size: 11px; padding: 2px 8px; background: rgba(0, 208, 255, 0.1); border: 1px solid rgba(0, 208, 255, 0.3); border-radius: 2px; color: #00d0ff;">{d.group || '海棲爬虫類'}</span>
+                  <span class="card-tag" style="font-size: 11px; padding: 2px 8px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 2px; color: var(--text-dim);">{d.length}</span>
+                  <span class="card-tag" style="font-size: 11px; padding: 2px 8px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 2px; color: var(--text-dim);">{d.diet}</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Topic Cluster Cross-Nav -->
+    <PillarNav currentPillar="marine-reptiles" />
+
+  </div>
+
+  <script>
+    function initPillarSpecimens() {
+      const search = document.getElementById('specimen-search') as HTMLInputElement;
+      const sort = document.getElementById('specimen-sort') as HTMLSelectElement;
+      const grid = document.getElementById('specimen-grid');
+      if (!search || !sort || !grid) return;
+
+      const cards = Array.from(grid.getElementsByClassName('dino-card')) as HTMLElement[];
+
+      const parseLen = (str: string) => {
+        const m = str.match(/[0-9.]+/);
+        return m ? parseFloat(m[0]) : 0;
+      };
+
+      function updateGrid() {
+        const query = search.value.trim().toLowerCase();
+        const sortVal = sort.value;
+
+        cards.forEach(card => {
+          const name = (card.dataset.name || '').toLowerCase();
+          const kana = (card.dataset.kana || '').toLowerCase();
+          const match = !query || name.includes(query) || kana.includes(query);
+          card.style.display = match ? 'block' : 'none';
+        });
+
+        const sorted = cards.slice().sort((a, b) => {
+          if (sortVal === 'kana') {
+            return (a.dataset.kana || '').localeCompare(b.dataset.kana || '', 'ja');
+          } else if (sortVal === 'size-desc') {
+            return parseLen(b.dataset.length || '0') - parseLen(a.dataset.length || '0');
+          } else if (sortVal === 'size-asc') {
+            return parseLen(a.dataset.length || '0') - parseLen(b.dataset.length || '0');
+          }
+          return 0;
+        });
+
+        sorted.forEach(c => grid.appendChild(c));
+      }
+
+      search.addEventListener('input', updateGrid);
+      sort.addEventListener('change', updateGrid);
+    }
+
+    document.addEventListener('astro:page-load', initPillarSpecimens);
+    initPillarSpecimens();
+  </script>
+</Layout>

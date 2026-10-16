@@ -1,0 +1,1802 @@
+{
+  "abelisaurus": {
+    "file": "abelisaurus.md",
+    "name": "アベリサウルス",
+    "sci": "Abelisaurus comahuensis",
+    "group": "獣脚類"
+  },
+  "acrocanthosaurus": {
+    "file": "acrocanthosaurus.md",
+    "name": "アクロカントサウルス",
+    "sci": "Acrocanthosaurus atokensis",
+    "group": "獣脚類"
+  },
+  "aetosaurus": {
+    "file": "aetosaurus.md",
+    "name": "アエトサウルス",
+    "sci": "Aetosaurus ferratus",
+    "group": "その他"
+  },
+  "alamosaurus": {
+    "file": "alamosaurus.md",
+    "name": "アラモサウルス",
+    "sci": "Alamosaurus sanjuanensis",
+    "group": "竜脚類"
+  },
+  "alanqa": {
+    "file": "alanqa.md",
+    "name": "アランカ",
+    "sci": "Alanqa saharica",
+    "group": "翼竜"
+  },
+  "albalophosaurus": {
+    "file": "albalophosaurus.md",
+    "name": "アルバロフォサウルス",
+    "sci": "Albalophosaurus yamaguchiorum",
+    "group": "角竜類"
+  },
+  "albertosaurus": {
+    "file": "albertosaurus.md",
+    "name": "アルバートサウルス",
+    "sci": "Albertosaurus sarcophagus",
+    "group": "獣脚類"
+  },
+  "allosaurus": {
+    "file": "allosaurus.md",
+    "name": "アロサウルス",
+    "sci": "Allosaurus fragilis",
+    "group": "獣脚類"
+  },
+  "amargasaurus": {
+    "file": "amargasaurus.md",
+    "name": "アマルガサウルス",
+    "sci": "Amargasaurus cazaui",
+    "group": "竜脚類"
+  },
+  "ampelosaurus": {
+    "file": "ampelosaurus.md",
+    "name": "アンペロサウルス",
+    "sci": "Ampelosaurus atacis",
+    "group": "竜脚類"
+  },
+  "anhanguera": {
+    "file": "anhanguera.md",
+    "name": "アンハングエラ",
+    "sci": "Anhanguera piscator",
+    "group": "翼竜"
+  },
+  "ankylosaurus": {
+    "file": "ankylosaurus.md",
+    "name": "アンキロサウルス",
+    "sci": "Ankylosaurus magniventris",
+    "group": "よろい竜類"
+  },
+  "anomalocaris": {
+    "file": "anomalocaris.md",
+    "name": "アノマロカリス",
+    "sci": "Anomalocaris canadensis",
+    "group": "その他"
+  },
+  "antarctopelta": {
+    "file": "antarctopelta.md",
+    "name": "アンタークトペルタ",
+    "sci": "Antarctopelta oliveroi",
+    "group": "よろい竜類"
+  },
+  "anurognathus": {
+    "file": "anurognathus.md",
+    "name": "アヌログナトゥス",
+    "sci": "Anurognathus ammoni",
+    "group": "翼竜"
+  },
+  "apatosaurus": {
+    "file": "apatosaurus.md",
+    "name": "アパトサウルス",
+    "sci": "Apatosaurus ajax",
+    "group": "竜脚類"
+  },
+  "archaeopteryx": {
+    "file": "archaeopteryx.md",
+    "name": "アーケオプテリクス",
+    "sci": "Archaeopteryx lithographica",
+    "group": "獣脚類"
+  },
+  "archelon": {
+    "file": "archelon.md",
+    "name": "アーケロン",
+    "sci": "Archelon ischyros",
+    "group": "その他"
+  },
+  "argentinosaurus": {
+    "file": "argentinosaurus.md",
+    "name": "アルゼンチノサウルス",
+    "sci": "Argentinosaurus huinculensis",
+    "group": "竜脚類"
+  },
+  "australovenator": {
+    "file": "australovenator.md",
+    "name": "アウストラロヴェナトル",
+    "sci": "Australovenator wintonensis",
+    "group": "獣脚類"
+  },
+  "austroraptor": {
+    "file": "austroraptor.md",
+    "name": "アウストロラプトル",
+    "sci": "Austroraptor cabazai",
+    "group": "獣脚類"
+  },
+  "bagaceratops": {
+    "file": "bagaceratops.md",
+    "name": "バガケラトプス",
+    "sci": "Bagaceratops rozhdestvenskyi",
+    "group": "角竜類"
+  },
+  "bajadasaurus": {
+    "file": "bajadasaurus.md",
+    "name": "バジャダサウルス",
+    "sci": "Bajadasaurus pronuspinax",
+    "group": "竜脚類"
+  },
+  "barapasaurus": {
+    "file": "barapasaurus.md",
+    "name": "バラパサウルス",
+    "sci": "Barapasaurus tagorei",
+    "group": "竜脚類"
+  },
+  "barosaurus": {
+    "file": "barosaurus.md",
+    "name": "バロサウルス",
+    "sci": "Barosaurus lentus",
+    "group": "竜脚類"
+  },
+  "baryonyx": {
+    "file": "baryonyx.md",
+    "name": "バリオニクス",
+    "sci": "Baryonyx walkeri",
+    "group": "獣脚類"
+  },
+  "borealopelta": {
+    "file": "borealopelta.md",
+    "name": "ボレアロペルタ",
+    "sci": "Borealopelta markmitchelli",
+    "group": "よろい竜類"
+  },
+  "brachiosaurus": {
+    "file": "brachiosaurus.md",
+    "name": "ブラキオサウルス",
+    "sci": "Brachiosaurus altithorax",
+    "group": "竜脚類"
+  },
+  "brontosaurus": {
+    "file": "brontosaurus.md",
+    "name": "ブロントサウルス",
+    "sci": "Brontosaurus excelsus",
+    "group": "竜脚類"
+  },
+  "camarasaurus": {
+    "file": "camarasaurus.md",
+    "name": "カマラサウルス",
+    "sci": "Camarasaurus supremus",
+    "group": "竜脚類"
+  },
+  "camptosaurus": {
+    "file": "camptosaurus.md",
+    "name": "カンプトサウルス",
+    "sci": "Camptosaurus dispar",
+    "group": "鳥脚類"
+  },
+  "carcharodontosaurus": {
+    "file": "carcharodontosaurus.md",
+    "name": "カルカロドントサウルス",
+    "sci": "Carcharodontosaurus saharicus",
+    "group": "獣脚類"
+  },
+  "carnotaurus": {
+    "file": "carnotaurus.md",
+    "name": "カルノタウルス",
+    "sci": "Carnotaurus sastrei",
+    "group": "獣脚類"
+  },
+  "caudipteryx": {
+    "file": "caudipteryx.md",
+    "name": "カウディプテリクス",
+    "sci": "Caudipteryx zoui",
+    "group": "獣脚類"
+  },
+  "centrosaurus": {
+    "file": "centrosaurus.md",
+    "name": "セントロサウルス",
+    "sci": "Centrosaurus apertus",
+    "group": "角竜類"
+  },
+  "ceratosaurus": {
+    "file": "ceratosaurus.md",
+    "name": "ケラトサウルス",
+    "sci": "Ceratosaurus nasicornis",
+    "group": "獣脚類"
+  },
+  "cetiosaurus": {
+    "file": "cetiosaurus.md",
+    "name": "セティオサウルス",
+    "sci": "Cetiosaurus oxoniensis",
+    "group": "竜脚類"
+  },
+  "chaoyangsaurus": {
+    "file": "chaoyangsaurus.md",
+    "name": "チャオヤンサウルス",
+    "sci": "Chaoyangsaurus youngi",
+    "group": "角竜類"
+  },
+  "chasmosaurus": {
+    "file": "chasmosaurus.md",
+    "name": "カスモサウルス",
+    "sci": "Chasmosaurus belli",
+    "group": "角竜類"
+  },
+  "chialingosaurus": {
+    "file": "chialingosaurus.md",
+    "name": "チアリンゴサウルス",
+    "sci": "Chialingosaurus kuani",
+    "group": "剣竜類"
+  },
+  "chilesaurus": {
+    "file": "chilesaurus.md",
+    "name": "チレサウルス",
+    "sci": "Chilesaurus diegosaurezi",
+    "group": "獣脚類"
+  },
+  "chungkingosaurus": {
+    "file": "chungkingosaurus.md",
+    "name": "チュンキンゴサウルス",
+    "sci": "Chungkingosaurus jiangeensis",
+    "group": "剣竜類"
+  },
+  "coelophysis": {
+    "file": "coelophysis.md",
+    "name": "コエロフィシス",
+    "sci": "Coelophysis bauri",
+    "group": "獣脚類"
+  },
+  "compsognathus": {
+    "file": "compsognathus.md",
+    "name": "コンプソグナトゥス",
+    "sci": "Compsognathus longipes",
+    "group": "獣脚類"
+  },
+  "concavenator": {
+    "file": "concavenator.md",
+    "name": "コンカベナトル",
+    "sci": "Concavenator corcovatus",
+    "group": "獣脚類"
+  },
+  "corythosaurus": {
+    "file": "corythosaurus.md",
+    "name": "コリトサウルス",
+    "sci": "Corythosaurus casuarius",
+    "group": "鳥脚類"
+  },
+  "cryolophosaurus": {
+    "file": "cryolophosaurus.md",
+    "name": "クリオロフォサウルス",
+    "sci": "Cryolophosaurus ellioti",
+    "group": "獣脚類"
+  },
+  "cryptoclidus": {
+    "file": "cryptoclidus.md",
+    "name": "クリプトクリドゥス",
+    "sci": "Cryptoclidus eurymerus",
+    "group": "魚竜・首長竜"
+  },
+  "cymbospondylus": {
+    "file": "cymbospondylus.md",
+    "name": "キンボスポンディルス",
+    "sci": "Cymbospondylus petrinus",
+    "group": "魚竜・首長竜"
+  },
+  "dacentrurus": {
+    "file": "dacentrurus.md",
+    "name": "ダセントルールス",
+    "sci": "Dacentrurus armatus",
+    "group": "剣竜類"
+  },
+  "darwinopterus": {
+    "file": "darwinopterus.md",
+    "name": "ダーウィノプテルス",
+    "sci": "Darwinopterus modularis",
+    "group": "翼竜"
+  },
+  "daspletosaurus": {
+    "file": "daspletosaurus.md",
+    "name": "ダスプレトサウルス",
+    "sci": "Daspletosaurus torosus",
+    "group": "獣脚類"
+  },
+  "deinocheirus": {
+    "file": "deinocheirus.md",
+    "name": "デイノケイルス",
+    "sci": "Deinocheirus mirificus",
+    "group": "獣脚類"
+  },
+  "deinonychus": {
+    "file": "deinonychus.md",
+    "name": "デイノニクス",
+    "sci": "Deinonychus antirrhopus",
+    "group": "獣脚類"
+  },
+  "deinosuchus": {
+    "file": "deinosuchus.md",
+    "name": "デイノスクス",
+    "sci": "Deinosuchus rugosus",
+    "group": "その他"
+  },
+  "desmatosuchus": {
+    "file": "desmatosuchus.md",
+    "name": "デスマトスクス",
+    "sci": "Desmatosuchus spurensis",
+    "group": "その他"
+  },
+  "diabloceratops": {
+    "file": "diabloceratops.md",
+    "name": "ディアブロケラトプス",
+    "sci": "Diabloceratops eatoni",
+    "group": "角竜類"
+  },
+  "diamantinasaurus": {
+    "file": "diamantinasaurus.md",
+    "name": "ディアマンティナサウルス",
+    "sci": "Diamantinasaurus matildae",
+    "group": "竜脚類"
+  },
+  "dicraeosaurus": {
+    "file": "dicraeosaurus.md",
+    "name": "ディクラエオサウルス",
+    "sci": "Dicraeosaurus hansemanni",
+    "group": "竜脚類"
+  },
+  "dilophosaurus": {
+    "file": "dilophosaurus.md",
+    "name": "ディロフォサウルス",
+    "sci": "Dilophosaurus wetherilli",
+    "group": "獣脚類"
+  },
+  "dimetrodon": {
+    "file": "dimetrodon.md",
+    "name": "ディメトロドン",
+    "sci": "Dimetrodon",
+    "group": "その他"
+  },
+  "dimorphodon": {
+    "file": "dimorphodon.md",
+    "name": "ディモルフォドン",
+    "sci": "Dimorphodon macronyx",
+    "group": "翼竜"
+  },
+  "dinichthys": {
+    "file": "dinichthys.md",
+    "name": "ディニクティス",
+    "sci": "Dinichthys herzeri",
+    "group": "その他"
+  },
+  "diplodocus": {
+    "file": "diplodocus.md",
+    "name": "ディプロドクス",
+    "sci": "Diplodocus longus",
+    "group": "竜脚類"
+  },
+  "dracorex": {
+    "file": "dracorex.md",
+    "name": "ドラコレックス",
+    "sci": "Dracorex hogwartsia",
+    "group": "堅頭竜類"
+  },
+  "dreadnoughtus": {
+    "file": "dreadnoughtus.md",
+    "name": "ドレッドノータス",
+    "sci": "Dreadnoughtus schrani",
+    "group": "竜脚類"
+  },
+  "dromaeosaurus": {
+    "file": "dromaeosaurus.md",
+    "name": "ドロマエオサウルス",
+    "sci": "Dromaeosaurus albertensis",
+    "group": "獣脚類"
+  },
+  "dryosaurus": {
+    "file": "dryosaurus.md",
+    "name": "ドリオサウルス",
+    "sci": "Dryosaurus altus",
+    "group": "鳥脚類"
+  },
+  "dsungaripterus": {
+    "file": "dsungaripterus.md",
+    "name": "ズンガリプテルス",
+    "sci": "Dsungaripterus weii",
+    "group": "翼竜"
+  },
+  "dunkleosteus": {
+    "file": "dunkleosteus.md",
+    "name": "ダンクレオステウス",
+    "sci": "Dunkleosteus terrelli",
+    "group": "その他"
+  },
+  "edaphosaurus": {
+    "file": "edaphosaurus.md",
+    "name": "エダフォサウルス",
+    "sci": "Edaphosaurus pogonias",
+    "group": "その他"
+  },
+  "edmontonia": {
+    "file": "edmontonia.md",
+    "name": "エドモントニア",
+    "sci": "Edmontonia longiceps",
+    "group": "よろい竜類"
+  },
+  "edmontosaurus": {
+    "file": "edmontosaurus.md",
+    "name": "エドモントサウルス",
+    "sci": "Edmontosaurus annectens",
+    "group": "鳥脚類"
+  },
+  "einiosaurus": {
+    "file": "einiosaurus.md",
+    "name": "エイニオサウルス",
+    "sci": "Einiosaurus procurvicornis",
+    "group": "角竜類"
+  },
+  "elaphrosaurus": {
+    "file": "elaphrosaurus.md",
+    "name": "エラフロサウルス",
+    "sci": "Elaphrosaurus bambergi",
+    "group": "獣脚類"
+  },
+  "elasmosaurus": {
+    "file": "elasmosaurus.md",
+    "name": "エラスモサウルス",
+    "sci": "Elasmosaurus platyurus",
+    "group": "首長竜"
+  },
+  "eoraptor": {
+    "file": "eoraptor.md",
+    "name": "エオラプトル",
+    "sci": "Eoraptor lunensis",
+    "group": "獣脚類"
+  },
+  "eotriceratops": {
+    "file": "eotriceratops.md",
+    "name": "エオトリケラトプス",
+    "sci": "Eotriceratops xerinsularis",
+    "group": "角竜類"
+  },
+  "eudimorphodon": {
+    "file": "eudimorphodon.md",
+    "name": "エウディモルフォドン",
+    "sci": "Eudimorphodon ranzii",
+    "group": "翼竜"
+  },
+  "euoplocephalus": {
+    "file": "euoplocephalus.md",
+    "name": "エウオプロケファルス",
+    "sci": "Euoplocephalus tutus",
+    "group": "よろい竜類"
+  },
+  "euparkeria": {
+    "file": "euparkeria.md",
+    "name": "ユーパルケリア",
+    "sci": "Euparkeria capensis",
+    "group": "その他"
+  },
+  "europasaurus": {
+    "file": "europasaurus.md",
+    "name": "エウロパサウルス",
+    "sci": "Europasaurus holgeri",
+    "group": "竜脚類"
+  },
+  "eustreptospondylus": {
+    "file": "eustreptospondylus.md",
+    "name": "ユーストレプトスポンディルス",
+    "sci": "Eustreptospondylus oxoniensis",
+    "group": "獣脚類"
+  },
+  "ezomikasaryu": {
+    "file": "ezomikasaryu.md",
+    "name": "エゾミカサリュウ",
+    "sci": "Taniwhasaurus mikasaensis",
+    "group": "海棲爬虫類"
+  },
+  "fruitadens": {
+    "file": "fruitadens.md",
+    "name": "フルイタデンス",
+    "sci": "Fruitadens haagarorum",
+    "group": "鳥脚類"
+  },
+  "fukuipteryx": {
+    "file": "fukuipteryx.md",
+    "name": "フクイプテリクス",
+    "sci": "Fukuipteryx prima",
+    "group": "鳥類"
+  },
+  "fukuiraptor": {
+    "file": "fukuiraptor.md",
+    "name": "フクイラプトル",
+    "sci": "Fukuiraptor kitadaniensis",
+    "group": "獣脚類"
+  },
+  "fukuisaurus": {
+    "file": "fukuisaurus.md",
+    "name": "フクイサウルス",
+    "sci": "Fukuisaurus tetoriensis",
+    "group": "鳥脚類"
+  },
+  "fukuititan": {
+    "file": "fukuititan.md",
+    "name": "フクイティタン",
+    "sci": "Fukuititan nipponensis",
+    "group": "竜脚類"
+  },
+  "fukuivenator": {
+    "file": "fukuivenator.md",
+    "name": "フクイベナトル",
+    "sci": "Fukuivenator paradoxus",
+    "group": "獣脚類"
+  },
+  "futabasaurus": {
+    "file": "futabasaurus.md",
+    "name": "フタバサウルス",
+    "sci": "Futabasaurus suzukii",
+    "group": "首長竜"
+  },
+  "futalognkosaurus": {
+    "file": "futalognkosaurus.md",
+    "name": "フタロンコサウルス",
+    "sci": "Futalognkosaurus dukei",
+    "group": "竜脚類"
+  },
+  "gallimimus": {
+    "file": "gallimimus.md",
+    "name": "ガリミムス",
+    "sci": "Gallimimus bullatus",
+    "group": "獣脚類"
+  },
+  "gargoyleosaurus": {
+    "file": "gargoyleosaurus.md",
+    "name": "ガーゴイレオサウルス",
+    "sci": "Gargoyleosaurus parkpinorum",
+    "group": "よろい竜類"
+  },
+  "gastonia": {
+    "file": "gastonia.md",
+    "name": "ガストニア",
+    "sci": "Gastonia burgei",
+    "group": "よろい竜類"
+  },
+  "giganotosaurus": {
+    "file": "giganotosaurus.md",
+    "name": "ギガノトサウルス",
+    "sci": "Giganotosaurus carolini",
+    "group": "獣脚類"
+  },
+  "gigantoraptor": {
+    "file": "gigantoraptor.md",
+    "name": "ギガントラプトル",
+    "sci": "Gigantoraptor erlianensis",
+    "group": "獣脚類"
+  },
+  "gigantspinosaurus": {
+    "file": "gigantspinosaurus.md",
+    "name": "ギガントスピノサウルス",
+    "sci": "Gigantspinosaurus sichuanensis",
+    "group": "剣竜類"
+  },
+  "giraffatitan": {
+    "file": "giraffatitan.md",
+    "name": "ギラファティタン",
+    "sci": "Giraffatitan brancai",
+    "group": "竜脚類"
+  },
+  "gorgosaurus": {
+    "file": "gorgosaurus.md",
+    "name": "ゴルゴサウルス",
+    "sci": "Gorgosaurus libratus",
+    "group": "獣脚類"
+  },
+  "goyocephale": {
+    "file": "goyocephale.md",
+    "name": "ゴヨケファレ",
+    "sci": "Goyocephale lattimorei",
+    "group": "堅頭竜類"
+  },
+  "guaibasaurus": {
+    "file": "guaibasaurus.md",
+    "name": "グアイバサウルス",
+    "sci": "Guaibasaurus candelariensis",
+    "group": "獣脚類"
+  },
+  "guanlong": {
+    "file": "guanlong.md",
+    "name": "グアンロン",
+    "sci": "Guanlong wucaii",
+    "group": "獣脚類"
+  },
+  "hadrosaurus": {
+    "file": "hadrosaurus.md",
+    "name": "ハドロサウルス",
+    "sci": "Hadrosaurus foulkii",
+    "group": "鳥脚類"
+  },
+  "hainosaurus": {
+    "file": "hainosaurus.md",
+    "name": "ハイノサウルス",
+    "sci": "Hainosaurus bernardi",
+    "group": "魚竜・首長竜"
+  },
+  "hallucigenia": {
+    "file": "hallucigenia.md",
+    "name": "ハルキゲニア",
+    "sci": "Hallucigenia sparsa",
+    "group": "その他"
+  },
+  "halszkaraptor": {
+    "file": "halszkaraptor.md",
+    "name": "ハルシュカラプトル",
+    "sci": "Halszkaraptor escuilliei",
+    "group": "獣脚類"
+  },
+  "henodus": {
+    "file": "henodus.md",
+    "name": "ヘノドゥス",
+    "sci": "Henodus chelyops",
+    "group": "魚竜・首長竜"
+  },
+  "herrerasaurus": {
+    "file": "herrerasaurus.md",
+    "name": "ヘレラサウルス",
+    "sci": "Herrerasaurus ischigualastensis",
+    "group": "獣脚類"
+  },
+  "hesperosaurus": {
+    "file": "hesperosaurus.md",
+    "name": "ヘスペロサウルス",
+    "sci": "Hesperosaurus mjosi",
+    "group": "剣竜類"
+  },
+  "homalocephale": {
+    "file": "homalocephale.md",
+    "name": "ホマロケファレ",
+    "sci": "Homalocephale calathocercos",
+    "group": "堅頭竜類"
+  },
+  "huayangosaurus": {
+    "file": "huayangosaurus.md",
+    "name": "ファヤンゴサウルス",
+    "sci": "Huayangosaurus taibaii",
+    "group": "剣竜類"
+  },
+  "hylaeosaurus": {
+    "file": "hylaeosaurus.md",
+    "name": "ヒラエオサウルス",
+    "sci": "Hylaeosaurus armatus",
+    "group": "よろい竜類"
+  },
+  "hyperodapedon": {
+    "file": "hyperodapedon.md",
+    "name": "ハイペロダペドン",
+    "sci": "Hyperodapedon gordoni",
+    "group": "その他"
+  },
+  "hypnovenator": {
+    "file": "hypnovenator.md",
+    "name": "ヒプノヴェナトル",
+    "sci": "Hypnovenator matsubaraetoheorum",
+    "group": "獣脚類"
+  },
+  "hypsilophodon": {
+    "file": "hypsilophodon.md",
+    "name": "ヒプシロフォドン",
+    "sci": "Hypsilophodon foxii",
+    "group": "鳥脚類"
+  },
+  "ichthyosaurus": {
+    "file": "ichthyosaurus.md",
+    "name": "イクチオサウルス",
+    "sci": "Ichthyosaurus communis",
+    "group": "魚竜"
+  },
+  "iguanodon": {
+    "file": "iguanodon.md",
+    "name": "イグアノドン",
+    "sci": "Iguanodon bernissartensis",
+    "group": "鳥脚類"
+  },
+  "incisivosaurus": {
+    "file": "incisivosaurus.md",
+    "name": "インシシボサウルス",
+    "sci": "Incisivosaurus gauthieri",
+    "group": "獣脚類"
+  },
+  "inostrancevia": {
+    "file": "inostrancevia.md",
+    "name": "イノストランケビア",
+    "sci": "Inostrancevia alexandri",
+    "group": "その他"
+  },
+  "irritator": {
+    "file": "irritator.md",
+    "name": "イリタトル",
+    "sci": "Irritator challengeri",
+    "group": "獣脚類"
+  },
+  "jakapil": {
+    "file": "jakapil.md",
+    "name": "ジャカピル",
+    "sci": "Jakapil kaniukura",
+    "group": "よろい竜類"
+  },
+  "jeholopterus": {
+    "file": "jeholopterus.md",
+    "name": "ジェホロプテルス",
+    "sci": "Jeholopterus ningchengensis",
+    "group": "翼竜"
+  },
+  "jobaria": {
+    "file": "jobaria.md",
+    "name": "ジョバリア",
+    "sci": "Jobaria tiguidensis",
+    "group": "竜脚類"
+  },
+  "juravenator": {
+    "file": "juravenator.md",
+    "name": "ジュラベナトル",
+    "sci": "Juravenator starki",
+    "group": "獣脚類"
+  },
+  "kamuysaurus": {
+    "file": "kamuysaurus.md",
+    "name": "カムイサウルス",
+    "sci": "Kamuysaurus japonicus",
+    "group": "鳥脚類"
+  },
+  "kentrosaurus": {
+    "file": "kentrosaurus.md",
+    "name": "ケントロサウルス",
+    "sci": "Kentrosaurus aethiopicus",
+    "group": "剣竜類"
+  },
+  "koreaceratops": {
+    "file": "koreaceratops.md",
+    "name": "コリアケラトプス",
+    "sci": "Koreaceratops hwaseongensis",
+    "group": "角竜類"
+  },
+  "koshisaurus": {
+    "file": "koshisaurus.md",
+    "name": "コシサウルス",
+    "sci": "Koshisaurus katsuyama",
+    "group": "鳥脚類"
+  },
+  "kosmoceratops": {
+    "file": "kosmoceratops.md",
+    "name": "コスモケラトプス",
+    "sci": "Kosmoceratops richardsoni",
+    "group": "角竜類"
+  },
+  "kronosaurus": {
+    "file": "kronosaurus.md",
+    "name": "クロノサウルス",
+    "sci": "Kronosaurus queenslandicus",
+    "group": "魚竜・首長竜"
+  },
+  "kryptops": {
+    "file": "kryptops.md",
+    "name": "クリプトプス",
+    "sci": "Kryptops palaios",
+    "group": "獣脚類"
+  },
+  "kulindadromeus": {
+    "file": "kulindadromeus.md",
+    "name": "クリンダドロメウス",
+    "sci": "Kulindadromeus zabaikalicus",
+    "group": "鳥脚類"
+  },
+  "kunbarrasaurus": {
+    "file": "kunbarrasaurus.md",
+    "name": "クンバラサウルス",
+    "sci": "Kunbarrasaurus ieveli",
+    "group": "よろい竜類"
+  },
+  "lambeosaurus": {
+    "file": "lambeosaurus.md",
+    "name": "ランベオサウルス",
+    "sci": "Lambeosaurus lambei",
+    "group": "鳥脚類"
+  },
+  "leaellynasaura": {
+    "file": "leaellynasaura.md",
+    "name": "レアエリナサウラ",
+    "sci": "Leaellynasaura amicagraphica",
+    "group": "鳥脚類"
+  },
+  "leedsichthys": {
+    "file": "leedsichthys.md",
+    "name": "リードシクティス",
+    "sci": "Leedsichthys problematicus",
+    "group": "魚類"
+  },
+  "leptoceratops": {
+    "file": "leptoceratops.md",
+    "name": "レプトケラトプス",
+    "sci": "Leptoceratops gracilis",
+    "group": "角竜類"
+  },
+  "lesothosaurus": {
+    "file": "lesothosaurus.md",
+    "name": "レソトサウルス",
+    "sci": "Lesothosaurus diagnosticus",
+    "group": "その他"
+  },
+  "liliensternus": {
+    "file": "liliensternus.md",
+    "name": "リリエンステルヌス",
+    "sci": "Liliensternus liliensterni",
+    "group": "獣脚類"
+  },
+  "liopleurodon": {
+    "file": "liopleurodon.md",
+    "name": "リオプレウロドン",
+    "sci": "Liopleurodon ferox",
+    "group": "魚竜・首長竜"
+  },
+  "longisquama": {
+    "file": "longisquama.md",
+    "name": "ロンギスクアマ",
+    "sci": "Longisquama insignis",
+    "group": "その他"
+  },
+  "lufengosaurus": {
+    "file": "lufengosaurus.md",
+    "name": "ルーフェンゴサウルス",
+    "sci": "Lufengosaurus huenei",
+    "group": "竜脚類"
+  },
+  "maiasaura": {
+    "file": "maiasaura.md",
+    "name": "マイアサウラ",
+    "sci": "Maiasaura peeblesorum",
+    "group": "鳥脚類"
+  },
+  "maip": {
+    "file": "maip.md",
+    "name": "マイプ",
+    "sci": "Maip macrothorax",
+    "group": "獣脚類"
+  },
+  "majungasaurus": {
+    "file": "majungasaurus.md",
+    "name": "マジュンガサウルス",
+    "sci": "Majungasaurus crenatissimus",
+    "group": "獣脚類"
+  },
+  "mamenchisaurus": {
+    "file": "mamenchisaurus.md",
+    "name": "マメンチサウルス",
+    "sci": "Mamenchisaurus hochuanensis",
+    "group": "竜脚類"
+  },
+  "mapusaurus": {
+    "file": "mapusaurus.md",
+    "name": "マップサウルス",
+    "sci": "Mapusaurus roseae",
+    "group": "獣脚類"
+  },
+  "masiakasaurus": {
+    "file": "masiakasaurus.md",
+    "name": "マシアカサウルス",
+    "sci": "Masiakasaurus knopfleri",
+    "group": "獣脚類"
+  },
+  "massospondylus": {
+    "file": "massospondylus.md",
+    "name": "マッソスポンディルス",
+    "sci": "Massospondylus carinatus",
+    "group": "竜脚類"
+  },
+  "medusaceratops": {
+    "file": "medusaceratops.md",
+    "name": "メデューサケラトプス",
+    "sci": "Medusaceratops lokii",
+    "group": "角竜類"
+  },
+  "megalodon": {
+    "file": "megalodon.md",
+    "name": "メガロドン",
+    "sci": "Otodus megalodon",
+    "group": "その他"
+  },
+  "megalosaurus": {
+    "file": "megalosaurus.md",
+    "name": "メガロサウルス",
+    "sci": "Megalosaurus bucklandii",
+    "group": "獣脚類"
+  },
+  "megaraptor": {
+    "file": "megaraptor.md",
+    "name": "メガラプトル",
+    "sci": "Megaraptor namunhuaiquii",
+    "group": "獣脚類"
+  },
+  "meraxes": {
+    "file": "meraxes.md",
+    "name": "メルクセス",
+    "sci": "Meraxes gigas",
+    "group": "獣脚類"
+  },
+  "metriacanthosaurus": {
+    "file": "metriacanthosaurus.md",
+    "name": "メトリアカントサウルス",
+    "sci": "Metriacanthosaurus parkeri",
+    "group": "獣脚類"
+  },
+  "micropachycephalosaurus": {
+    "file": "micropachycephalosaurus.md",
+    "name": "ミクロパキケファロサウルス",
+    "sci": "Micropachycephalosaurus hongtuyanensis",
+    "group": "鳥脚類"
+  },
+  "microraptor": {
+    "file": "microraptor.md",
+    "name": "ミクロラプトル",
+    "sci": "Microraptor zhaoianus",
+    "group": "獣脚類"
+  },
+  "mifuneryu": {
+    "file": "mifuneryu.md",
+    "name": "ミフネリュウ",
+    "sci": "Theropoda gen. et sp. indet.",
+    "group": "獣脚類"
+  },
+  "minmi": {
+    "file": "minmi.md",
+    "name": "ミンミ",
+    "sci": "Minmi paravertebra",
+    "group": "よろい竜類"
+  },
+  "miragaia": {
+    "file": "miragaia.md",
+    "name": "ミラガイア",
+    "sci": "Miragaia longicollum",
+    "group": "剣竜類"
+  },
+  "mixosaurus": {
+    "file": "mixosaurus.md",
+    "name": "ミクソサウルス",
+    "sci": "Mixosaurus cornalianus",
+    "group": "魚竜"
+  },
+  "monolophosaurus": {
+    "file": "monolophosaurus.md",
+    "name": "モノロフォサウルス",
+    "sci": "Monolophosaurus jiangi",
+    "group": "獣脚類"
+  },
+  "mononykus": {
+    "file": "mononykus.md",
+    "name": "モノニクス",
+    "sci": "Mononykus olecranus",
+    "group": "獣脚類"
+  },
+  "montanoceratops": {
+    "file": "montanoceratops.md",
+    "name": "モンタノケラトプス",
+    "sci": "Montanoceratops cerorhynchus",
+    "group": "角竜類"
+  },
+  "mosasaurus": {
+    "file": "mosasaurus.md",
+    "name": "モササウルス",
+    "sci": "Mosasaurus hoffmanni",
+    "group": "その他"
+  },
+  "moshiryu": {
+    "file": "moshiryu.md",
+    "name": "モシリュウ",
+    "sci": "Sauropoda indet.",
+    "group": "竜脚類"
+  },
+  "muttaburrasaurus": {
+    "file": "muttaburrasaurus.md",
+    "name": "ムッタブラサウルス",
+    "sci": "Muttaburrasaurus langdoni",
+    "group": "鳥脚類"
+  },
+  "nanuqsaurus": {
+    "file": "nanuqsaurus.md",
+    "name": "ナヌークサウルス",
+    "sci": "Nanuqsaurus hoglundi",
+    "group": "獣脚類"
+  },
+  "nasutoceratops": {
+    "file": "nasutoceratops.md",
+    "name": "ナーストケラトプス",
+    "sci": "Nasutoceratops titani",
+    "group": "角竜類"
+  },
+  "nemegtosaurus": {
+    "file": "nemegtosaurus.md",
+    "name": "ネメグトサウルス",
+    "sci": "Nemegtosaurus mongoliensis",
+    "group": "竜脚類"
+  },
+  "nigersaurus": {
+    "file": "nigersaurus.md",
+    "name": "ニジェールサウルス",
+    "sci": "Nigersaurus taqueti",
+    "group": "竜脚類"
+  },
+  "nipponopterus": {
+    "file": "nipponopterus.md",
+    "name": "ニッポノプテルス",
+    "sci": "Nipponopterus mifunensis",
+    "group": "翼竜"
+  },
+  "nipponosaurus": {
+    "file": "nipponosaurus.md",
+    "name": "ニッポノサウルス",
+    "sci": "Nipponosaurus sachalinensis",
+    "group": "鳥脚類"
+  },
+  "nodosaurus": {
+    "file": "nodosaurus.md",
+    "name": "ノドサウルス",
+    "sci": "Nodosaurus textilis",
+    "group": "よろい竜類"
+  },
+  "nothosaurus": {
+    "file": "nothosaurus.md",
+    "name": "ノトサウルス",
+    "sci": "Nothosaurus mirabilis",
+    "group": "魚竜・首長竜"
+  },
+  "nyctosaurus": {
+    "file": "nyctosaurus.md",
+    "name": "ニクトサウルス",
+    "sci": "Nyctosaurus gracilis",
+    "group": "翼竜"
+  },
+  "odontochelys": {
+    "file": "odontochelys.md",
+    "name": "オドントケリス",
+    "sci": "Odontochelys semitestacea",
+    "group": "その他"
+  },
+  "olorotitan": {
+    "file": "olorotitan.md",
+    "name": "オロロティタン",
+    "sci": "Olorotitan arharensis",
+    "group": "鳥脚類"
+  },
+  "omeisaurus": {
+    "file": "omeisaurus.md",
+    "name": "オメイサウルス",
+    "sci": "Omeisaurus tianfuensis",
+    "group": "竜脚類"
+  },
+  "opabinia": {
+    "file": "opabinia.md",
+    "name": "オパビニア",
+    "sci": "Opabinia regalis",
+    "group": "その他"
+  },
+  "ophthalmosaurus": {
+    "file": "ophthalmosaurus.md",
+    "name": "オフタルモサウルス",
+    "sci": "Ophthalmosaurus icenicus",
+    "group": "魚竜・首長竜"
+  },
+  "opisthocoelicaudia": {
+    "file": "opisthocoelicaudia.md",
+    "name": "オピストコエリカウディア",
+    "sci": "Opisthocoelicaudia skarzynskii",
+    "group": "竜脚類"
+  },
+  "ornithocheirus": {
+    "file": "ornithocheirus.md",
+    "name": "オルニトケイルス",
+    "sci": "Ornithocheirus simus",
+    "group": "翼竜"
+  },
+  "ornithomimus": {
+    "file": "ornithomimus.md",
+    "name": "オルニトミムス",
+    "sci": "Ornithomimus edmontonicus",
+    "group": "獣脚類"
+  },
+  "ouranosaurus": {
+    "file": "ouranosaurus.md",
+    "name": "オウラノサウルス",
+    "sci": "Ouranosaurus nigeriensis",
+    "group": "鳥脚類"
+  },
+  "oviraptor": {
+    "file": "oviraptor.md",
+    "name": "オヴィラプトル",
+    "sci": "Oviraptor philoceratops",
+    "group": "獣脚類"
+  },
+  "pachycephalosaurus": {
+    "file": "pachycephalosaurus.md",
+    "name": "パキケファロサウルス",
+    "sci": "Pachycephalosaurus wyomingensis",
+    "group": "堅頭竜類"
+  },
+  "pachyrhinosaurus": {
+    "file": "pachyrhinosaurus.md",
+    "name": "パキリノサウルス",
+    "sci": "Pachyrhinosaurus canadensis",
+    "group": "角竜類"
+  },
+  "panoplosaurus": {
+    "file": "panoplosaurus.md",
+    "name": "パノプロサウルス",
+    "sci": "Panoplosaurus mirus",
+    "group": "よろい竜類"
+  },
+  "paralitherizinosaurus": {
+    "file": "paralitherizinosaurus.md",
+    "name": "パラリテリジノサウルス",
+    "sci": "Paralitherizinosaurus japonicus",
+    "group": "獣脚類"
+  },
+  "paralititan": {
+    "file": "paralititan.md",
+    "name": "パラリティタン",
+    "sci": "Paralititan stromeri",
+    "group": "竜脚類"
+  },
+  "parasaurolophus": {
+    "file": "parasaurolophus.md",
+    "name": "パラサウロロフス",
+    "sci": "Parasaurolophus walkeri",
+    "group": "鳥脚類"
+  },
+  "patagotitan": {
+    "file": "patagotitan.md",
+    "name": "パタゴティタン",
+    "sci": "Patagotitan mayorum",
+    "group": "竜脚類"
+  },
+  "pentaceratops": {
+    "file": "pentaceratops.md",
+    "name": "ペンタケラトプス",
+    "sci": "Pentaceratops sternbergii",
+    "group": "角竜類"
+  },
+  "piatnitzkysaurus": {
+    "file": "piatnitzkysaurus.md",
+    "name": "ピアトニツキーサウルス",
+    "sci": "Piatnitzkysaurus floresi",
+    "group": "獣脚類"
+  },
+  "pinacosaurus": {
+    "file": "pinacosaurus.md",
+    "name": "ピナコサウルス",
+    "sci": "Pinacosaurus grangeri",
+    "group": "よろい竜類"
+  },
+  "pisanosaurus": {
+    "file": "pisanosaurus.md",
+    "name": "ピサノサウルス",
+    "sci": "Pisanosaurus mertii",
+    "group": "鳥脚類"
+  },
+  "placerias": {
+    "file": "placerias.md",
+    "name": "プラケリアス",
+    "sci": "Placerias hesternus",
+    "group": "その他"
+  },
+  "placodus": {
+    "file": "placodus.md",
+    "name": "プラコドゥス",
+    "sci": "Placodus gigas",
+    "group": "魚竜・首長竜"
+  },
+  "plateosaurus": {
+    "file": "plateosaurus.md",
+    "name": "プラテオサウルス",
+    "sci": "Plateosaurus trossingensis",
+    "group": "竜脚類"
+  },
+  "plesiosaurus": {
+    "file": "plesiosaurus.md",
+    "name": "プレシオサウルス",
+    "sci": "Plesiosaurus dolichodeirus",
+    "group": "首長竜"
+  },
+  "pliosaurus": {
+    "file": "pliosaurus.md",
+    "name": "プリオサウルス",
+    "sci": "Pliosaurus brachydeirus",
+    "group": "魚竜・首長竜"
+  },
+  "polacanthus": {
+    "file": "polacanthus.md",
+    "name": "ポラカントゥス",
+    "sci": "Polacanthus foxii",
+    "group": "よろい竜類"
+  },
+  "postosuchus": {
+    "file": "postosuchus.md",
+    "name": "ポストスクス",
+    "sci": "Postosuchus kirkpatricki",
+    "group": "その他"
+  },
+  "prenocephale": {
+    "file": "prenocephale.md",
+    "name": "プレノケファレ",
+    "sci": "Prenocephale prenes",
+    "group": "堅頭竜類"
+  },
+  "probactrosaurus": {
+    "file": "probactrosaurus.md",
+    "name": "プロバクトロサウルス",
+    "sci": "Probactrosaurus gobiensis",
+    "group": "鳥脚類"
+  },
+  "proganochelys": {
+    "file": "proganochelys.md",
+    "name": "プロガノケリス",
+    "sci": "Proganochelys quenstedti",
+    "group": "その他"
+  },
+  "prognathodon": {
+    "file": "prognathodon.md",
+    "name": "プログナソドン",
+    "sci": "Prognathodon solvayi",
+    "group": "魚竜・首長竜"
+  },
+  "protoceratops": {
+    "file": "protoceratops.md",
+    "name": "プロトケラトプス",
+    "sci": "Protoceratops andrewsi",
+    "group": "角竜類"
+  },
+  "psittacosaurus": {
+    "file": "psittacosaurus.md",
+    "name": "プシッタコサウルス",
+    "sci": "Psittacosaurus mongoliensis",
+    "group": "角竜類"
+  },
+  "pteranodon": {
+    "file": "pteranodon.md",
+    "name": "プテラノドン",
+    "sci": "Pteranodon longiceps",
+    "group": "翼竜"
+  },
+  "pterodactylus": {
+    "file": "pterodactylus.md",
+    "name": "プテロダクティルス",
+    "sci": "Pterodactylus antiquus",
+    "group": "翼竜"
+  },
+  "pterodaustro": {
+    "file": "pterodaustro.md",
+    "name": "プテロダウストロ",
+    "sci": "Pterodaustro guinazui",
+    "group": "翼竜"
+  },
+  "puertasaurus": {
+    "file": "puertasaurus.md",
+    "name": "プエルタサウルス",
+    "sci": "Puertasaurus reuili",
+    "group": "竜脚類"
+  },
+  "qianzhousaurus": {
+    "file": "qianzhousaurus.md",
+    "name": "キアンゾウサウルス",
+    "sci": "Qianzhousaurus sinensis",
+    "group": "獣脚類"
+  },
+  "quetzalcoatlus": {
+    "file": "quetzalcoatlus.md",
+    "name": "ケツァルコアトルス",
+    "sci": "Quetzalcoatlus northropi",
+    "group": "翼竜"
+  },
+  "rapetosaurus": {
+    "file": "rapetosaurus.md",
+    "name": "ラペトサウルス",
+    "sci": "Rapetosaurus krausei",
+    "group": "竜脚類"
+  },
+  "rebbachisaurus": {
+    "file": "rebbachisaurus.md",
+    "name": "レバッキサウルス",
+    "sci": "Rebbachisaurus garasbae",
+    "group": "竜脚類"
+  },
+  "rhabdodon": {
+    "file": "rhabdodon.md",
+    "name": "ラブドドン",
+    "sci": "Rhabdodon priscus",
+    "group": "鳥脚類"
+  },
+  "rhamphorhynchus": {
+    "file": "rhamphorhynchus.md",
+    "name": "ランフォリンクス",
+    "sci": "Rhamphorhynchus muensteri",
+    "group": "翼竜"
+  },
+  "rhoetosaurus": {
+    "file": "rhoetosaurus.md",
+    "name": "ロエトサウルス",
+    "sci": "Rhoetosaurus brownei",
+    "group": "竜脚類"
+  },
+  "rhomaleosaurus": {
+    "file": "rhomaleosaurus.md",
+    "name": "ロマレオサウルス",
+    "sci": "Rhomaleosaurus cramptoni",
+    "group": "魚竜・首長竜"
+  },
+  "riojasaurus": {
+    "file": "riojasaurus.md",
+    "name": "リオハサウルス",
+    "sci": "Riojasaurus incertus",
+    "group": "竜脚類"
+  },
+  "rugops": {
+    "file": "rugops.md",
+    "name": "ルゴプス",
+    "sci": "Rugops primus",
+    "group": "獣脚類"
+  },
+  "rutiodon": {
+    "file": "rutiodon.md",
+    "name": "ルティオドン",
+    "sci": "Rutiodon carolinensis",
+    "group": "その他"
+  },
+  "saichania": {
+    "file": "saichania.md",
+    "name": "サイカニア",
+    "sci": "Saichania chulsanensis",
+    "group": "よろい竜類"
+  },
+  "saltasaurus": {
+    "file": "saltasaurus.md",
+    "name": "サルタサウルス",
+    "sci": "Saltasaurus loricatus",
+    "group": "竜脚類"
+  },
+  "sanchuryu": {
+    "file": "sanchuryu.md",
+    "name": "サンチュウリュウ",
+    "sci": "Ornithomimosauria indet.",
+    "group": "獣脚類"
+  },
+  "sarcosuchus": {
+    "file": "sarcosuchus.md",
+    "name": "サルコスクス",
+    "sci": "Sarcosuchus imperator",
+    "group": "その他"
+  },
+  "sasayamagnomus": {
+    "file": "sasayamagnomus.md",
+    "name": "ササヤマグノームス",
+    "sci": "Sasayamagnomus saeki",
+    "group": "角竜類"
+  },
+  "sauropelta": {
+    "file": "sauropelta.md",
+    "name": "サウロペルタ",
+    "sci": "Sauropelta edwardsorum",
+    "group": "よろい竜類"
+  },
+  "saurophaganax": {
+    "file": "saurophaganax.md",
+    "name": "サウロファガナクス",
+    "sci": "Saurophaganax maximus",
+    "group": "獣脚類"
+  },
+  "sauroposeidon": {
+    "file": "sauroposeidon.md",
+    "name": "サウロポセイドン",
+    "sci": "Sauroposeidon proteles",
+    "group": "竜脚類"
+  },
+  "savannasaurus": {
+    "file": "savannasaurus.md",
+    "name": "サヴァンナサウルス",
+    "sci": "Savannasaurus elliottorum",
+    "group": "竜脚類"
+  },
+  "scelidosaurus": {
+    "file": "scelidosaurus.md",
+    "name": "スケリドサウルス",
+    "sci": "Scelidosaurus harrisonii",
+    "group": "よろい竜類"
+  },
+  "scutellosaurus": {
+    "file": "scutellosaurus.md",
+    "name": "スクテロサウルス",
+    "sci": "Scutellosaurus lawleri",
+    "group": "よろい竜類"
+  },
+  "shamosaurus": {
+    "file": "shamosaurus.md",
+    "name": "シャモサウルス",
+    "sci": "Shamosaurus scutatus",
+    "group": "よろい竜類"
+  },
+  "shantungosaurus": {
+    "file": "shantungosaurus.md",
+    "name": "シャントゥンゴサウルス",
+    "sci": "Shantungosaurus giganteus",
+    "group": "鳥脚類"
+  },
+  "shonisaurus": {
+    "file": "shonisaurus.md",
+    "name": "ショニサウルス",
+    "sci": "Shonisaurus popularis",
+    "group": "魚竜・首長竜"
+  },
+  "shringasaurus": {
+    "file": "shringasaurus.md",
+    "name": "シュリンガサウルス",
+    "sci": "Shringasaurus indicus",
+    "group": "その他"
+  },
+  "shunosaurus": {
+    "file": "shunosaurus.md",
+    "name": "シュノサウルス",
+    "sci": "Shunosaurus lii",
+    "group": "竜脚類"
+  },
+  "silesaurus": {
+    "file": "silesaurus.md",
+    "name": "シレサウルス",
+    "sci": "Silesaurus opolensis",
+    "group": "その他"
+  },
+  "sinoceratops": {
+    "file": "sinoceratops.md",
+    "name": "シノケラトプス",
+    "sci": "Sinoceratops zhuchengensis",
+    "group": "角竜類"
+  },
+  "sinopterus": {
+    "file": "sinopterus.md",
+    "name": "シノプテルス",
+    "sci": "Sinopterus dongi",
+    "group": "翼竜"
+  },
+  "sinosauropteryx": {
+    "file": "sinosauropteryx.md",
+    "name": "シノサウロプテリクス",
+    "sci": "Sinosauropteryx prima",
+    "group": "獣脚類"
+  },
+  "sordes": {
+    "file": "sordes.md",
+    "name": "ソルデス",
+    "sci": "Sordes pilosus",
+    "group": "翼竜"
+  },
+  "spinophorosaurus": {
+    "file": "spinophorosaurus.md",
+    "name": "スピノフォロサウルス",
+    "sci": "Spinophorosaurus nigerensis",
+    "group": "竜脚類"
+  },
+  "spinosaurus": {
+    "file": "spinosaurus.md",
+    "name": "スピノサウルス",
+    "sci": "Spinosaurus aegyptiacus",
+    "group": "獣脚類"
+  },
+  "staurikosaurus": {
+    "file": "staurikosaurus.md",
+    "name": "スタウリコサウルス",
+    "sci": "Staurikosaurus pricei",
+    "group": "獣脚類"
+  },
+  "stegocephalia": {
+    "file": "stegocephalia.md",
+    "name": "ステゴセファリア",
+    "sci": "Stegocephalia (Labyrinthodontia)",
+    "group": "その他"
+  },
+  "stegoceras": {
+    "file": "stegoceras.md",
+    "name": "ステゴケラス",
+    "sci": "Stegoceras validum",
+    "group": "堅頭竜類"
+  },
+  "stegosaurus": {
+    "file": "stegosaurus.md",
+    "name": "ステゴサウルス",
+    "sci": "Stegosaurus stenops",
+    "group": "剣竜類"
+  },
+  "stegouros": {
+    "file": "stegouros.md",
+    "name": "ステゴロウロス",
+    "sci": "Stegouros elengassen",
+    "group": "よろい竜類"
+  },
+  "struthiomimus": {
+    "file": "struthiomimus.md",
+    "name": "ストルティオミムス",
+    "sci": "Struthiomimus altus",
+    "group": "獣脚類"
+  },
+  "stygimoloch": {
+    "file": "stygimoloch.md",
+    "name": "スティギモロク",
+    "sci": "Stygimoloch spinifer",
+    "group": "堅頭竜類"
+  },
+  "styracosaurus": {
+    "file": "styracosaurus.md",
+    "name": "スティラコサウルス",
+    "sci": "Styracosaurus albertensis",
+    "group": "角竜類"
+  },
+  "styxosaurus": {
+    "file": "styxosaurus.md",
+    "name": "スティクソサウルス",
+    "sci": "Styxosaurus snowii",
+    "group": "首長竜"
+  },
+  "suchomimus": {
+    "file": "suchomimus.md",
+    "name": "スコミムス",
+    "sci": "Suchomimus tenerensis",
+    "group": "獣脚類"
+  },
+  "supersaurus": {
+    "file": "supersaurus.md",
+    "name": "スーパーサウルス",
+    "sci": "Supersaurus vivianae",
+    "group": "竜脚類"
+  },
+  "tambatitan": {
+    "file": "tambatitan.md",
+    "name": "タンバティタニス",
+    "sci": "Tambatitanis amicitiae",
+    "group": "竜脚類"
+  },
+  "tanystropheus": {
+    "file": "tanystropheus.md",
+    "name": "タニストロフェウス",
+    "sci": "Tanystropheus hydroides",
+    "group": "その他"
+  },
+  "tapejara": {
+    "file": "tapejara.md",
+    "name": "タペヤラ",
+    "sci": "Tapejara wellnhoferi",
+    "group": "翼竜"
+  },
+  "tarbosaurus": {
+    "file": "tarbosaurus.md",
+    "name": "タルボサウルス",
+    "sci": "Tarbosaurus bataar",
+    "group": "獣脚類"
+  },
+  "tarchia": {
+    "file": "tarchia.md",
+    "name": "タルキア",
+    "sci": "Tarchia teresae",
+    "group": "よろい竜類"
+  },
+  "temnodontosaurus": {
+    "file": "temnodontosaurus.md",
+    "name": "テムノドントサウルス",
+    "sci": "Temnodontosaurus platyodon",
+    "group": "魚竜・首長竜"
+  },
+  "tenontosaurus": {
+    "file": "tenontosaurus.md",
+    "name": "テノントサウルス",
+    "sci": "Tenontosaurus tilletti",
+    "group": "鳥脚類"
+  },
+  "thalassodromeus": {
+    "file": "thalassodromeus.md",
+    "name": "タラソドロメウス",
+    "sci": "Thalassodromeus sethi",
+    "group": "翼竜"
+  },
+  "thanatotheristes": {
+    "file": "thanatotheristes.md",
+    "name": "タナトテリステス",
+    "sci": "Thanatotheristes degrootorum",
+    "group": "獣脚類"
+  },
+  "thecodontosaurus": {
+    "file": "thecodontosaurus.md",
+    "name": "テコドントサウルス",
+    "sci": "Thecodontosaurus antiquus",
+    "group": "竜脚類"
+  },
+  "therizinosaurus": {
+    "file": "therizinosaurus.md",
+    "name": "テリジノサウルス",
+    "sci": "Therizinosaurus cheloniformis",
+    "group": "獣脚類"
+  },
+  "timimus": {
+    "file": "timimus.md",
+    "name": "ティミムス",
+    "sci": "Timimus hermani",
+    "group": "獣脚類"
+  },
+  "titanoboa": {
+    "file": "titanoboa.md",
+    "name": "ティタノボア",
+    "sci": "Titanoboa cerrejonensis",
+    "group": "その他"
+  },
+  "torosaurus": {
+    "file": "torosaurus.md",
+    "name": "トロサウルス",
+    "sci": "Torosaurus latus",
+    "group": "角竜類"
+  },
+  "torvosaurus": {
+    "file": "torvosaurus.md",
+    "name": "トルヴォサウルス",
+    "sci": "Torvosaurus tanneri",
+    "group": "獣脚類"
+  },
+  "triceratops": {
+    "file": "triceratops.md",
+    "name": "トリケラトプス",
+    "sci": "Triceratops horridus",
+    "group": "角竜類"
+  },
+  "tropeognathus": {
+    "file": "tropeognathus.md",
+    "name": "トロペオグナトゥス",
+    "sci": "Tropeognathus mesembrinus",
+    "group": "翼竜"
+  },
+  "tsintaosaurus": {
+    "file": "tsintaosaurus.md",
+    "name": "チンタオサウルス",
+    "sci": "Tsintaosaurus spinorhinus",
+    "group": "鳥脚類"
+  },
+  "tuojiangosaurus": {
+    "file": "tuojiangosaurus.md",
+    "name": "トゥオジャンゴサウルス",
+    "sci": "Tuojiangosaurus multispinus",
+    "group": "剣竜類"
+  },
+  "tupandactylus": {
+    "file": "tupandactylus.md",
+    "name": "トゥパンダクティルス",
+    "sci": "Tupandactylus imperator",
+    "group": "翼竜"
+  },
+  "tylosaurus": {
+    "file": "tylosaurus.md",
+    "name": "ティロサウルス",
+    "sci": "Tylosaurus proriger",
+    "group": "魚竜・首長竜"
+  },
+  "tyrannomimus": {
+    "file": "tyrannomimus.md",
+    "name": "ティラノミムス",
+    "sci": "Tyrannomimus fukuiensis",
+    "group": "獣脚類"
+  },
+  "tyrannosaurus": {
+    "file": "tyrannosaurus.md",
+    "name": "ティラノサウルス",
+    "sci": "Tyrannosaurus rex",
+    "group": "獣脚類"
+  },
+  "ulughbegsaurus": {
+    "file": "ulughbegsaurus.md",
+    "name": "ウルグベグサウルス",
+    "sci": "Ulughbegsaurus uzbekistanensis",
+    "group": "獣脚類"
+  },
+  "unaysaurus": {
+    "file": "unaysaurus.md",
+    "name": "ウナイサウルス",
+    "sci": "Unaysaurus tolentinoi",
+    "group": "竜脚類"
+  },
+  "utahraptor": {
+    "file": "utahraptor.md",
+    "name": "ユタラプトル",
+    "sci": "Utahraptor ostrommaysi",
+    "group": "獣脚類"
+  },
+  "utatsusaurus": {
+    "file": "utatsusaurus.md",
+    "name": "ウタツサウルス",
+    "sci": "Utatsusaurus hataii",
+    "group": "魚竜"
+  },
+  "vectipelta": {
+    "file": "vectipelta.md",
+    "name": "ヴェクティペルタ",
+    "sci": "Vectipelta barretti",
+    "group": "よろい竜類"
+  },
+  "velociraptor": {
+    "file": "velociraptor.md",
+    "name": "ヴェロキラプトル",
+    "sci": "Velociraptor mongoliensis",
+    "group": "獣脚類"
+  },
+  "vulcanodon": {
+    "file": "vulcanodon.md",
+    "name": "ブルカノドン",
+    "sci": "Vulcanodon karibaensis",
+    "group": "竜脚類"
+  },
+  "wakayama-soryu": {
+    "file": "wakayama-soryu.md",
+    "name": "ワカヤマソウリュウ",
+    "sci": "Megapterygius wakayamaensis",
+    "group": "海棲爬虫類"
+  },
+  "wakinosaurus": {
+    "file": "wakinosaurus.md",
+    "name": "ワキノサウルス",
+    "sci": "Wakinosaurus satoi",
+    "group": "獣脚類"
+  },
+  "wuerhosaurus": {
+    "file": "wuerhosaurus.md",
+    "name": "ウエルホサウルス",
+    "sci": "Wuerhosaurus homheni",
+    "group": "剣竜類"
+  },
+  "xenoceratops": {
+    "file": "xenoceratops.md",
+    "name": "クセノケラトプス",
+    "sci": "Xenoceratops foremostensis",
+    "group": "角竜類"
+  },
+  "yamatosaurus": {
+    "file": "yamatosaurus.md",
+    "name": "ヤマトサウルス",
+    "sci": "Yamatosaurus izanagii",
+    "group": "鳥脚類"
+  },
+  "yangchuanosaurus": {
+    "file": "yangchuanosaurus.md",
+    "name": "ヤンチュアノサウルス",
+    "sci": "Yangchuanosaurus shangyouensis",
+    "group": "獣脚類"
+  },
+  "yi": {
+    "file": "yi.md",
+    "name": "イー",
+    "sci": "Yi qi",
+    "group": "獣脚類"
+  },
+  "yutyrannus": {
+    "file": "yutyrannus.md",
+    "name": "ユティラヌス",
+    "sci": "Yutyrannus huali",
+    "group": "獣脚類"
+  },
+  "zuniceratops": {
+    "file": "zuniceratops.md",
+    "name": "ズニケラトプス",
+    "sci": "Zuniceratops christopheri",
+    "group": "角竜類"
+  },
+  "zuul": {
+    "file": "zuul.md",
+    "name": "ズール",
+    "sci": "Zuul crurivastator",
+    "group": "よろい竜類"
+  }
+}

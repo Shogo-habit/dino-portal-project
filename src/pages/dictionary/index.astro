@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import PillarNav from '../../components/PillarNav.astro';
 import { getCollection } from 'astro:content';
 
 const dinosaurEntries = await getCollection('dinosaurs');
@@ -56,6 +57,21 @@ const GROUPS = [
                    aria-label="恐竜の名前で検索">
         </div>
     </section>
+
+    <!-- Pillar Quick Nav Bar -->
+    <div class="pillar-quick-strip hud-panel" style="margin-bottom: 20px; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; background: rgba(0, 242, 255, 0.04); border-color: rgba(0, 242, 255, 0.2);">
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); letter-spacing: 1px;">[ 特集ピラー解説 ]</span>
+            <span style="font-size: 12px; color: var(--text-dim);">テーマ別に深掘りした完全ガイド:</span>
+        </div>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <a href="/period/jurassic/" class="scan-tag-btn" style="text-decoration: none; font-size: 11px; padding: 4px 10px;">🦕 ジュラ紀</a>
+            <a href="/period/cretaceous/" class="scan-tag-btn" style="text-decoration: none; font-size: 11px; padding: 4px 10px;">🦖 白亜紀</a>
+            <a href="/carnivores/" class="scan-tag-btn" style="text-decoration: none; font-size: 11px; padding: 4px 10px;">⚡ 肉食恐竜</a>
+            <a href="/marine-reptiles/" class="scan-tag-btn" style="text-decoration: none; font-size: 11px; padding: 4px 10px;">🌊 海生爬虫類</a>
+            <a href="/japan-dinosaurs/" class="scan-tag-btn" style="text-decoration: none; font-size: 11px; padding: 4px 10px;">🗾 日本の恐竜</a>
+        </div>
+    </div>
 
     <!-- Filter Toggle & Active Chips -->
     <div class="filter-controls-header hud-panel" style="margin-bottom: 20px; padding: 10px 20px; display: flex; align-items: center; gap: 20px; justify-content: space-between; cursor: pointer;" id="filter-accordion-toggle">
@@ -173,6 +189,9 @@ const GROUPS = [
             </div>
         ))}
     </div>
+
+    <!-- Topic Cluster Cross-Nav -->
+    <PillarNav />
 
     <!-- Client-side filter and state scripts -->
     <script>

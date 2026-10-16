@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import PillarNav from '../components/PillarNav.astro';
 import { getCollection } from 'astro:content';
 import { AUTHOR_DATA } from '../data/author';
 
@@ -86,6 +87,8 @@ const recentlyAddedDinos = dinosaurs
                     </div>
                 </div>
             </div>
+
+            <PillarNav />
 
             <div class="author-summary hud-panel">
                 <h4 style="margin-bottom: 20px; border-bottom: 1px solid var(--panel-border); padding-bottom: 10px;">プロフィール</h4>
