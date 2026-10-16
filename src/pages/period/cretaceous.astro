@@ -50,7 +50,7 @@ const schema = [
   <div class="pillar-container" style="max-width: 1400px; margin: 0 auto; padding: 20px 20px 80px;">
     
     <!-- Breadcrumb bar -->
-    <nav aria-label="パンくずリスト" style="margin-bottom: 25px; font-family: var(--font-mono); font-size: 12px; color: var(--text-dim); display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+    <nav aria-label="パンくずリスト" style="margin-bottom: 25px; font-family: var(--font-mono); font-size: 12px; color: #d8edf2; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
       <a href="/" style="color: var(--primary-neon); text-decoration: none;">HOME</a>
       <span>/</span>
       <a href="/dictionary/" style="color: var(--primary-neon); text-decoration: none;">DICTIONARY</a>
@@ -71,23 +71,23 @@ const schema = [
         <span style="font-size: clamp(16px, 2.5vw, 24px); color: var(--alert-neon); font-weight: 600;">生物多様性の極致とK-Pg大量絶滅</span>
       </h1>
 
-      <p style="font-size: 15px; line-height: 1.8; color: var(--text-dim); max-width: 900px; margin-bottom: 25px;">
+      <p style="font-size: 15px; line-height: 1.8; color: #d8edf2; max-width: 900px; margin-bottom: 25px;">
         中生代最後の時代である白亜紀は、恐竜進化の頂点（クライマックス）であり、現代の地球環境の礎が築かれた時代です。大陸分裂が生んだ孤立環境によって角竜、鎧竜、ハドロサウルス類、羽毛恐竜が爆発的な多様化を遂げ、ティラノサウルスやスピノサウルスといった究極の大型獣脚類が君臨しました。そして約6600万年前、巨大小惑星の衝突によって迎えた壮絶な終焉。白亜紀7,900万年の進化史を網羅します。
       </p>
 
       <div class="hero-stats" style="display: flex; gap: 20px; flex-wrap: wrap; align-items: center; border-top: 1px solid rgba(255, 0, 85, 0.2); padding-top: 20px;">
         <div style="font-family: var(--font-mono);">
-          <span style="font-size: 11px; color: var(--text-dim); display: block;">REGISTERED SPECIMENS</span>
-          <span style="font-size: 24px; font-weight: 700; color: var(--alert-neon);">{cretaceousDinosaurs.length} <span style="font-size: 14px; color: var(--text-dim);">種掲載中</span></span>
+          <span style="font-size: 11px; color: #d8edf2; display: block;">REGISTERED SPECIMENS</span>
+          <span style="font-size: 24px; font-weight: 700; color: var(--alert-neon);">{cretaceousDinosaurs.length} <span style="font-size: 14px; color: #d8edf2;">種掲載中</span></span>
         </div>
         <div style="height: 30px; width: 1px; background: rgba(255, 0, 85, 0.2);"></div>
         <div style="font-family: var(--font-mono);">
-          <span style="font-size: 11px; color: var(--text-dim); display: block;">TIME SPAN</span>
+          <span style="font-size: 11px; color: #d8edf2; display: block;">TIME SPAN</span>
           <span style="font-size: 18px; font-weight: 600; color: var(--text-main);">約7,900万年間</span>
         </div>
         <div style="height: 30px; width: 1px; background: rgba(255, 0, 85, 0.2);"></div>
         <div style="font-family: var(--font-mono);">
-          <span style="font-size: 11px; color: var(--text-dim); display: block;">KEY MILESTONES</span>
+          <span style="font-size: 11px; color: #d8edf2; display: block;">KEY MILESTONES</span>
           <span style="font-size: 14px; font-weight: 600; color: var(--text-main);">被子植物の開花 / 羽毛の進化 / K-Pg小惑星衝突</span>
         </div>
       </div>
@@ -108,10 +108,10 @@ const schema = [
           <h3 style="font-size: 18px; color: #fff; border-left: 4px solid var(--alert-neon); padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
             1. 大陸分裂と「被子植物革命」が生んだ生態系の多様性爆発
           </h3>
-          <p style="margin-bottom: 12px; color: var(--text-dim);">
+          <p style="margin-bottom: 12px; color: #d8edf2;">
             白亜紀（Cretaceous Period）に入ると、パンゲア大陸の解体はさらに加速し、大西洋が大きく開き、北米大陸、ユーラシア大陸、南米大陸、アフリカ大陸、インド亜大陸、南極・豪州大陸が海によって隔絶されました。地理的な孤立は「地域固有の進化（適応放散）」を促し、各地域で独自の恐竜相が爆発的に発達しました。
           </p>
-          <p style="margin-bottom: 12px; color: var(--text-dim);">
+          <p style="margin-bottom: 12px; color: #d8edf2;">
             また、白亜紀前期に誕生した<strong style="color: var(--text-main); font-weight: 700;">被子植物（顕花植物：花を咲かせ果実をつける植物）</strong>は、昆虫との共進化を通じて瞬く間に地球全土へ拡大しました。成長が早く栄養価の高い被子植物の台頭は、恐竜たちの咀嚼装置や消化器系に根本的な進化圧（セレクション）をもたらしたのです。
           </p>
         </section>
@@ -120,16 +120,25 @@ const schema = [
           <h3 style="font-size: 18px; color: #fff; border-left: 4px solid var(--alert-neon); padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
             2. 角竜・鎧竜・カモノハシ竜：武装と「デンタルバッテリー」の奇跡
           </h3>
-          <p style="margin-bottom: 12px; color: var(--text-dim);">
+          <p style="margin-bottom: 12px; color: #d8edf2;">
             白亜紀の植物食恐竜は、捕食者に対する防御武装と摂食効率の両面で驚くべき進化を遂げました。
           </p>
           
           <div style="background: rgba(255, 0, 85, 0.04); border-left: 3px solid var(--alert-neon); padding: 15px 20px; margin: 15px 0; border-radius: 0 4px 4px 0;">
             <h4 style="font-size: 14px; color: var(--alert-neon); margin-bottom: 8px; font-weight: 700;">🛡 白亜紀植物食恐竜の三大進化戦略</h4>
-            <ul style="margin: 0; padding-left: 20px; font-size: 14px; color: var(--text-dim); line-height: 1.7;">
-              <li><strong>角竜下目（Ceratopsia）:</strong> トリケラトプスやカスモサウルス。頸部を防御し強大な顎筋の付着点となった骨質フリル、鋭い角、ハサミのように硬い植物を切り刻む強靭な嘴と歯列。</li>
-              <li><strong>曲竜下目（Ankylosauria）:</strong> アンキロサウルスやノドサウルス。背中全面を覆う骨質装甲板（皮骨板）とトゲ、尾端の骨塊ハンマーによる絶対防御。</li>
-              <li><strong>ハドロサウルス科（Hadrosauridae）:</strong> エドモントサウルスやパラサウロロフス。数百本から千本以上の歯が幾重にも重なり合う「デンタルバッテリー構造」により、あらゆる植物をすり潰す極限の咀嚼能力を獲得。頭部の空洞トサカによる発声コミュニケーション。</li>
+            <ul style="margin: 0; padding-left: 20px; font-size: 14.5px; color: #cfe6eb; line-height: 1.8;">
+              <li style="margin-bottom: 12px;">
+                <strong style="color: #fff;">角竜下目（Ceratopsia）:</strong><br>
+                トリケラトプスやカスモサウルス。頸部を防御し強大な顎筋の付着点となった骨質フリル、鋭い角、ハサミのように硬い植物を切り刻む強靭な嘴と歯列。
+              </li>
+              <li style="margin-bottom: 12px;">
+                <strong style="color: #fff;">曲竜下目（Ankylosauria）:</strong><br>
+                アンキロサウルスやノドサウルス。背中全面を覆う骨質装甲板（皮骨板）とトゲ、尾端の骨塊ハンマーによる絶対防御。
+              </li>
+              <li style="margin-bottom: 0;">
+                <strong style="color: #fff;">ハドロサウルス科（Hadrosauridae）:</strong><br>
+                エドモントサウルスやパラサウロロフス。数百本から千本以上の歯が幾重にも重なり合う「デンタルバッテリー構造」により、あらゆる植物をすり潰す極限の咀嚼能力を獲得。頭部の空洞トサカによる発声コミュニケーション。
+              </li>
             </ul>
           </div>
         </section>
@@ -138,10 +147,10 @@ const schema = [
           <h3 style="font-size: 18px; color: #fff; border-left: 4px solid var(--alert-neon); padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
             3. 超大型肉食恐竜の群雄割拠と羽毛恐竜の開花
           </h3>
-          <p style="margin-bottom: 12px; color: var(--text-dim);">
+          <p style="margin-bottom: 12px; color: #d8edf2;">
             白亜紀は肉食恐竜（獣脚類）の進化においても頂点を極めました。北米の頂点捕食者<strong style="color: var(--text-main); font-weight: 700;">ティラノサウルス・レックス</strong>は、約3〜6トンという生物史上屈指の咬合力を誇り、太いバナナ型の歯で獲物の骨ごと粉砕して捕食しました。一方、北アフリカの湿地帯には全長14mを超える半水生プレデター<strong style="color: var(--text-main); font-weight: 700;">スピノサウルス</strong>が君臨し、南米では肉裂き特化の巨刃を持つ<strong style="color: var(--text-main); font-weight: 700;">ギガノトサウルス</strong>や<strong style="color: var(--text-main); font-weight: 700;">ティラノティタン</strong>が繁栄しました。
           </p>
-          <p style="margin-bottom: 12px; color: var(--text-dim);">
+          <p style="margin-bottom: 12px; color: #d8edf2;">
             さらに中国・遼寧省の熱河生物群（Jehol Biota）などから発見された無数の羽毛恐竜化石（シノサウロプテリクス、ミクロラプトル、デイノニクス等）は、羽毛が飛行以前に「体温保持（恒温性）」や「ディスプレイ」として進化し、小型獣脚類の一部が現代の鳥類へと直結する系統樹を確立したことを決定づけました。
           </p>
         </section>
@@ -150,10 +159,10 @@ const schema = [
           <h3 style="font-size: 18px; color: #fff; border-left: 4px solid var(--alert-neon); padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
             4. K-Pg境界の破局：小惑星衝突と恐竜絶滅の真相
           </h3>
-          <p style="margin-bottom: 12px; color: var(--text-dim);">
+          <p style="margin-bottom: 12px; color: #d8edf2;">
             約6,600万年前、白亜紀末期（マーストリヒチアン期末）。現在のメキシコ・ユカタン半島付近に、直径約10〜15キロメートルの巨大小惑星が衝突しました（チクシュルーブ衝突体）。衝突エネルギーは広島型原爆の数十億倍に達し、世界規模の大津波、マグニチュード11以上の超巨大地震、そして舞い上がった岩石蒸気が地球全土へ降り注ぐ「赤外線放射パルス」によって全地球的な大森林火災が発生しました。
           </p>
-          <p style="margin-bottom: 0; color: var(--text-dim);">
+          <p style="margin-bottom: 0; color: #d8edf2;">
             大気中に巻き上げられた硫黄エアロゾルと煤（すす）は太陽光を遮断し、地球規模の急激な寒冷化「衝突の冬」と光合成の停止を引き起こしました。植物プランクトンや陸上植物が壊滅したことで食物連鎖は根底から崩壊し、非鳥類型恐竜、翼竜、海生爬虫類、アンモナイトを含む全生物種の約75%が地球上から永遠に姿を消しました。しかし、小型で高い適応力を持っていた鳥類恐竜のみがこの大絶滅の試練を生き延び、現代の大空に1万種以上の鳥類として今なお羽ばたき続けています。
           </p>
         </section>
@@ -202,11 +211,11 @@ const schema = [
               </div>
               <div class="card-info" style="padding: 15px;">
                 <h3 class="card-title" style="font-size: 17px; font-weight: 700; color: var(--text-main); margin-bottom: 4px;">{d.name}</h3>
-                <div style="font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); margin-bottom: 10px; font-style: italic;">{d.scientificName}</div>
+                <div style="font-family: var(--font-mono); font-size: 11px; color: #d8edf2; margin-bottom: 10px; font-style: italic;">{d.scientificName}</div>
                 <div class="card-tags" style="display: flex; gap: 6px; flex-wrap: wrap;">
                   <span class="card-tag group-tag" style="font-size: 11px; padding: 2px 8px; background: rgba(255, 0, 85, 0.1); border: 1px solid rgba(255, 0, 85, 0.3); border-radius: 2px; color: var(--alert-neon);">{d.group || '恐竜'}</span>
-                  <span class="card-tag" style="font-size: 11px; padding: 2px 8px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 2px; color: var(--text-dim);">{d.length}</span>
-                  <span class="card-tag" style="font-size: 11px; padding: 2px 8px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 2px; color: var(--text-dim);">{d.diet}</span>
+                  <span class="card-tag" style="font-size: 11px; padding: 2px 8px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 2px; color: #d8edf2;">{d.length}</span>
+                  <span class="card-tag" style="font-size: 11px; padding: 2px 8px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 2px; color: #d8edf2;">{d.diet}</span>
                 </div>
               </div>
             </a>
@@ -267,3 +276,27 @@ const schema = [
     initPillarSpecimens();
   </script>
 </Layout>
+
+<style>
+
+  .academic-guide p {
+    color: #d8edf2 !important;
+    font-size: 15.5px;
+    line-height: 1.95;
+    letter-spacing: 0.2px;
+  }
+  .academic-guide li {
+    color: #cfe6eb !important;
+    font-size: 14.5px;
+    line-height: 1.8;
+  }
+  .pillar-hero p {
+    color: #d1e8ec !important;
+    font-size: 15.5px;
+    line-height: 1.85;
+  }
+  .article-content {
+    color: #e0faff;
+  }
+
+</style>

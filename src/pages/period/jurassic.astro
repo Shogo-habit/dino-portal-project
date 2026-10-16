@@ -50,7 +50,7 @@ const schema = [
   <div class="pillar-container" style="max-width: 1400px; margin: 0 auto; padding: 20px 20px 80px;">
     
     <!-- Breadcrumb bar -->
-    <nav aria-label="パンくずリスト" style="margin-bottom: 25px; font-family: var(--font-mono); font-size: 12px; color: var(--text-dim); display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+    <nav aria-label="パンくずリスト" style="margin-bottom: 25px; font-family: var(--font-mono); font-size: 12px; color: #d8edf2; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
       <a href="/" style="color: var(--primary-neon); text-decoration: none;">HOME</a>
       <span>/</span>
       <a href="/dictionary/" style="color: var(--primary-neon); text-decoration: none;">DICTIONARY</a>
@@ -71,23 +71,23 @@ const schema = [
         <span style="font-size: clamp(16px, 2.5vw, 24px); color: var(--primary-neon); font-weight: 600;">巨大竜脚類と剣竜類の黄金時代</span>
       </h1>
 
-      <p style="font-size: 15px; line-height: 1.8; color: var(--text-dim); max-width: 900px; margin-bottom: 25px;">
+      <p style="font-size: 15px; line-height: 1.8; color: #d8edf2; max-width: 900px; margin-bottom: 25px;">
         三畳紀末の大量絶滅を生き延びた恐竜たちは、温暖湿潤な気候と広大な針葉樹林に恵まれたジュラ紀において爆発的な巨大化と多様化を遂げました。全長30メートルに迫るスーパーサウルスやブラキオサウルス等の巨大竜脚類、背面の骨板で武装したステゴサウルス、そして生態系の頂点に君臨したアロサウルス。中生代のシンボルたちが闊歩したジュラ紀の全貌を、最新の古生物学的知見とともに解き明かします。
       </p>
 
       <div class="hero-stats" style="display: flex; gap: 20px; flex-wrap: wrap; align-items: center; border-top: 1px solid rgba(0, 242, 255, 0.2); padding-top: 20px;">
         <div style="font-family: var(--font-mono);">
-          <span style="font-size: 11px; color: var(--text-dim); display: block;">REGISTERED SPECIMENS</span>
-          <span style="font-size: 24px; font-weight: 700; color: var(--primary-neon);">{jurassicDinosaurs.length} <span style="font-size: 14px; color: var(--text-dim);">種掲載中</span></span>
+          <span style="font-size: 11px; color: #d8edf2; display: block;">REGISTERED SPECIMENS</span>
+          <span style="font-size: 24px; font-weight: 700; color: var(--primary-neon);">{jurassicDinosaurs.length} <span style="font-size: 14px; color: #d8edf2;">種掲載中</span></span>
         </div>
         <div style="height: 30px; width: 1px; background: rgba(0, 242, 255, 0.2);"></div>
         <div style="font-family: var(--font-mono);">
-          <span style="font-size: 11px; color: var(--text-dim); display: block;">TIME SPAN</span>
+          <span style="font-size: 11px; color: #d8edf2; display: block;">TIME SPAN</span>
           <span style="font-size: 18px; font-weight: 600; color: var(--text-main);">約5,600万年間</span>
         </div>
         <div style="height: 30px; width: 1px; background: rgba(0, 242, 255, 0.2);"></div>
         <div style="font-family: var(--font-mono);">
-          <span style="font-size: 11px; color: var(--text-dim); display: block;">REPRESENTATIVE FORMATIONS</span>
+          <span style="font-size: 11px; color: #d8edf2; display: block;">REPRESENTATIVE FORMATIONS</span>
           <span style="font-size: 14px; font-weight: 600; color: var(--text-main);">モリソン層（北米）/ テンダグル層（タンザニア）</span>
         </div>
       </div>
@@ -108,10 +108,10 @@ const schema = [
           <h3 style="font-size: 18px; color: #fff; border-left: 4px solid var(--primary-neon); padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
             1. パンゲア分裂と温暖多湿な「恐竜の理想郷」
           </h3>
-          <p style="margin-bottom: 12px; color: var(--text-dim);">
+          <p style="margin-bottom: 12px; color: #d8edf2;">
             ジュラ紀（Jurassic Period）は、超大陸パンゲアがローラシア大陸（北半球）とゴンドワナ大陸（南半球）へと本格的に分裂を始めた時代です。大陸間にテチス海が広がり、海洋からの湿った大気が内陸深くまで循環するようになったことで、前時代（三畳紀）の極端な乾燥気候は劇的に緩和されました。
           </p>
-          <p style="margin-bottom: 12px; color: var(--text-dim);">
+          <p style="margin-bottom: 12px; color: #d8edf2;">
             地球全体が極地に至るまで氷床の存在しない温暖な温室状態（グリーンハウス気候）となり、ソテツ類、針葉樹、イチョウ類、大型トクサ類、木生シダが地球規模の大森林を形成しました。この豊富で無尽蔵ともいえる植物資源が、生物史上例を見ない超巨大恐竜たちの進化を強力に下支えしたのです。
           </p>
         </section>
@@ -120,16 +120,25 @@ const schema = [
           <h3 style="font-size: 18px; color: #fff; border-left: 4px solid var(--primary-neon); padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
             2. 竜脚下目の超巨大化：気嚢システムと骨格の軽量化構造
           </h3>
-          <p style="margin-bottom: 12px; color: var(--text-dim);">
+          <p style="margin-bottom: 12px; color: #d8edf2;">
             ジュラ紀を象徴する最大の特徴は、<strong style="color: var(--text-main); font-weight: 700;">竜脚類（Sauropoda）</strong>の圧倒的な巨大化です。ブラキオサウルス、ディプロドクス、アパトサウルス、カマラサウルス、スーパーサウルスなどが陸上生態系を完全に支配しました。彼らが30トン〜80トンにも達する巨体を維持できた背景には、現代の鳥類にも受け継がれている先進的な生体力学的適応が存在します。
           </p>
           
           <div style="background: rgba(0, 242, 255, 0.04); border-left: 3px solid var(--secondary-neon); padding: 15px 20px; margin: 15px 0; border-radius: 0 4px 4px 0;">
             <h4 style="font-size: 14px; color: var(--secondary-neon); margin-bottom: 8px; font-weight: 700;">🔬 巨大化を可能にした3大生理的イノベーション</h4>
-            <ul style="margin: 0; padding-left: 20px; font-size: 14px; color: var(--text-dim); line-height: 1.7;">
-              <li><strong>気嚢システム（一方向性肺換気）:</strong> 骨の内部まで入り込んだ気嚢が常に新鮮な酸素を供給し、巨大な肺胞の換気効率を極限まで高めた。</li>
-              <li><strong>骨のハニカム中空化（含気骨）:</strong> 頚椎や背椎が蜂の巣状に空洞化され、強度を保ちつつ驚異的な軽量化を実現。極めて長い首を軽快に支えることができた。</li>
-              <li><strong>咀嚼を放棄した省エネ摂食:</strong> 歯で噛み砕かず丸呑みし、巨大な発酵タンクとしての胃腸と胃石で効率的に消化。重い頭骨や強大な咀嚼筋を不要とし、小さな頭部と長い首の両立に成功。</li>
+            <ul style="margin: 0; padding-left: 20px; font-size: 14.5px; color: #cfe6eb; line-height: 1.8;">
+              <li style="margin-bottom: 12px;">
+                <strong style="color: #fff;">気嚢システム（一方向性肺換気）:</strong><br>
+                骨の内部まで入り込んだ気嚢が常に新鮮な酸素を供給し、巨大な肺胞の換気効率を極限まで高めた。
+              </li>
+              <li style="margin-bottom: 12px;">
+                <strong style="color: #fff;">骨のハニカム中空化（含気骨）:</strong><br>
+                頚椎や背椎が蜂の巣状に空洞化され、強度を保ちつつ驚異的な軽量化を実現。極めて長い首を軽快に支えることができた。
+              </li>
+              <li style="margin-bottom: 0;">
+                <strong style="color: #fff;">咀嚼を放棄した省エネ摂食:</strong><br>
+                歯で噛み砕かず丸呑みし、巨大な発酵タンクとしての胃腸と胃石で効率的に消化。重い頭骨や強大な咀嚼筋を不要とし、小さな頭部と長い首の両立に成功。
+              </li>
             </ul>
           </div>
         </section>
@@ -138,10 +147,10 @@ const schema = [
           <h3 style="font-size: 18px; color: #fff; border-left: 4px solid var(--primary-neon); padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
             3. 装盾類（剣竜類）の繁栄：背部骨板とサゴマイザーの機能美
           </h3>
-          <p style="margin-bottom: 12px; color: var(--text-dim);">
+          <p style="margin-bottom: 12px; color: #d8edf2;">
             低木やシダ植物を主食とする中型植物食恐竜として繁栄したのが<strong style="color: var(--text-main); font-weight: 700;">剣竜下目（Stegosauria）</strong>です。ステゴサウルスやケントロサウルス、トゥオジャンゴサウルスなど、背面に並ぶ互い違いの骨板（プレート）や鋭利なトゲは古代生物の中でも屈指の造形美を誇ります。
           </p>
-          <p style="margin-bottom: 12px; color: var(--text-dim);">
+          <p style="margin-bottom: 12px; color: #d8edf2;">
             骨板の機能については長年議論が続いてきましたが、近年の血管網スキャンにより、太陽熱を吸収・放熱する<strong style="color: var(--text-main); font-weight: 700;">体温調節ラジエーター</strong>としての機能、血管に血液を送り込んで赤く変色させ捕食者を威嚇・求愛する<strong style="color: var(--text-main); font-weight: 700;">ディスプレイ機能</strong>の双方が解明されています。また、尾の先端にある強大な骨質スパイク「<strong style="color: var(--text-main); font-weight: 700;">サゴマイザー（Thagomizer）</strong>」は、アロサウルスの腰椎骨を貫通した傷跡化石が発見されるなど、極めて実戦的かつ致命的な防衛兵器であったことが実証されています。
           </p>
         </section>
@@ -150,10 +159,10 @@ const schema = [
           <h3 style="font-size: 18px; color: #fff; border-left: 4px solid var(--primary-neon); padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
             4. 頂点捕食者アロサウルスとモリソン累層の軍拡競争
           </h3>
-          <p style="margin-bottom: 12px; color: var(--text-dim);">
+          <p style="margin-bottom: 12px; color: #d8edf2;">
             ジュラ紀後期の北米モリソン累層（Morrison Formation）は、古生物学史上最も豊かな生態系化石を産出しています。この食物連鎖の頂点に君臨したのが<strong style="color: var(--text-main); font-weight: 700;">アロサウルス（Allosaurus fragilis）</strong>です。アロサウルスの頭骨生体力学シミュレーションによると、彼らは顎を90度近くまで大きく開き、強靭な首の筋肉を使って上顎を「手斧」のように獲物の肉体へ叩きつける独特の攻撃戦術を用いていました。
           </p>
-          <p style="margin-bottom: 0; color: var(--text-dim);">
+          <p style="margin-bottom: 0; color: #d8edf2;">
             同時代には超大型獣脚類トルヴォサウルスや角を持つケラトサウルスも共存しており、獲物のサイズや生息環境（森林内か氾濫原か）によって厳密なニッチ分化（生態的地位の棲み分け）を成立させていたことが最新研究で明らかになっています。
           </p>
         </section>
@@ -202,11 +211,11 @@ const schema = [
               </div>
               <div class="card-info" style="padding: 15px;">
                 <h3 class="card-title" style="font-size: 17px; font-weight: 700; color: var(--text-main); margin-bottom: 4px;">{d.name}</h3>
-                <div style="font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); margin-bottom: 10px; font-style: italic;">{d.scientificName}</div>
+                <div style="font-family: var(--font-mono); font-size: 11px; color: #d8edf2; margin-bottom: 10px; font-style: italic;">{d.scientificName}</div>
                 <div class="card-tags" style="display: flex; gap: 6px; flex-wrap: wrap;">
                   <span class="card-tag group-tag" style="font-size: 11px; padding: 2px 8px; background: rgba(0, 242, 255, 0.1); border: 1px solid rgba(0, 242, 255, 0.3); border-radius: 2px; color: var(--primary-neon);">{d.group || '恐竜'}</span>
-                  <span class="card-tag" style="font-size: 11px; padding: 2px 8px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 2px; color: var(--text-dim);">{d.length}</span>
-                  <span class="card-tag" style="font-size: 11px; padding: 2px 8px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 2px; color: var(--text-dim);">{d.diet}</span>
+                  <span class="card-tag" style="font-size: 11px; padding: 2px 8px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 2px; color: #d8edf2;">{d.length}</span>
+                  <span class="card-tag" style="font-size: 11px; padding: 2px 8px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 2px; color: #d8edf2;">{d.diet}</span>
                 </div>
               </div>
             </a>
@@ -267,3 +276,27 @@ const schema = [
     initPillarSpecimens();
   </script>
 </Layout>
+
+<style>
+
+  .academic-guide p {
+    color: #d8edf2 !important;
+    font-size: 15.5px;
+    line-height: 1.95;
+    letter-spacing: 0.2px;
+  }
+  .academic-guide li {
+    color: #cfe6eb !important;
+    font-size: 14.5px;
+    line-height: 1.8;
+  }
+  .pillar-hero p {
+    color: #d1e8ec !important;
+    font-size: 15.5px;
+    line-height: 1.85;
+  }
+  .article-content {
+    color: #e0faff;
+  }
+
+</style>
