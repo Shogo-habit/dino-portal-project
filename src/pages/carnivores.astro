@@ -4,13 +4,16 @@ import PillarNav from '../components/PillarNav.astro';
 import { getCollection } from 'astro:content';
 
 const allDinosaurs = await getCollection('dinosaurs');
-// 肉食恐竜・獣脚類（植物食を除く獣脚類、または肉食・魚食）を動的抽出
+// 純粋な肉食恐竜のみを抽出（獣脚類に限定し、植物食・雑食・昆虫食特化型を除外）
 const carnivoreDinosaurs = allDinosaurs
   .filter(entry => {
     const d = entry.data;
-    const isMeatOrFish = d.diet.includes('肉食') || d.diet.includes('魚食') || d.diet.includes('動物食');
-    const isCarnivorousTheropod = d.group === '獣脚類' && !d.diet.includes('植物食');
-    return isMeatOrFish || isCarnivorousTheropod;
+    if (d.group !== '獣脚類') return false;
+    const diet = d.diet || '';
+    if (diet.includes('雑食') || diet.includes('昆虫') || diet.includes('草食') || diet.includes('植物')) {
+      return false;
+    }
+    return diet.includes('肉食') || diet.includes('魚食') || diet.includes('動物食');
   })
   .map(entry => entry.data);
 
@@ -123,7 +126,7 @@ const schema = [
 
         <section style="margin-bottom: 35px;">
           <h3 style="font-size: 18px; color: #fff; border-left: 4px solid #ff9900; padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
-            2. 三大超大型プレデターの比較：誰が「真の最強」か？
+            2. 三大超大型肉食恐竜の比較：誰が「真の最強」か？
           </h3>
           <p style="margin-bottom: 12px; color: var(--text-dim);">
             大衆文化において常に論争となる「最強の肉食恐竜」ですが、古生物学的にはそれぞれが全く異なる獲物と生態系ニッチに適応した「各分野のスペシャリスト」であることが分かっています。
@@ -131,10 +134,19 @@ const schema = [
           
           <div style="background: rgba(255, 153, 0, 0.04); border-left: 3px solid #ff9900; padding: 15px 20px; margin: 15px 0; border-radius: 0 4px 4px 0;">
             <h4 style="font-size: 14px; color: #ff9900; margin-bottom: 8px; font-weight: 700;">⚔️ 三大超巨大肉食恐竜の生態学的プロファイル</h4>
-            <ul style="margin: 0; padding-left: 20px; font-size: 14px; color: var(--text-dim); line-height: 1.7;">
-              <li><strong>ティラノサウルス・レックス（骨砕き型）:</strong> 全長12〜13m、体重8〜9トン。咬合力は約35,000〜57,000ニュートン（現生ワニの3倍以上）。断面が楕円形のバナナ型歯で獲物の骨ごと粉砕・圧殺する絶対的パワー。両眼の視野が約55度重複し、優れた立体視と距離測定能力を誇る。</li>
-              <li><strong>スピノサウルス（半水生・魚食型）:</strong> 全長14m超、体重7〜8トン。ワニのように細長い吻部、円滑な円錐歯、水流を感じ取る吻部の感覚神経孔、パドル状の平たい尾鰭。水深の深い河川環境でオンコプリスティス等の巨大魚類を捕食した水陸両棲の巨獣。</li>
-              <li><strong>ギガノトサウルス（肉裂きスライサー型）:</strong> 全長12〜13m、体重7〜8トン。薄く平たいブレード状の歯が並び、超大型竜脚類（ティタノサウルス類）に深い裂傷を負わせて失血死を狙うハンティング戦術。</li>
+            <ul style="margin: 0; padding-left: 20px; font-size: 14px; color: var(--text-dim); line-height: 1.8;">
+              <li style="margin-bottom: 12px;">
+                <strong>ティラノサウルス・レックス（骨砕き型）:</strong><br>
+                全長12〜13m、体重8〜9トン。咬合力は約35,000〜57,000ニュートン（現生ワニの3倍以上）。断面が楕円形のバナナ型歯で獲物の骨ごと粉砕・圧殺する絶対的パワー。両眼の視野が約55度重複し、優れた立体視と距離測定能力を誇る。
+              </li>
+              <li style="margin-bottom: 12px;">
+                <strong>スピノサウルス（半水生・魚食型）:</strong><br>
+                全長14m超、体重7〜8トン。ワニのように細長い吻部、円滑な円錐歯、水流を感じ取る吻部の感覚神経孔、パドル状の平たい尾鰭。水深の深い河川環境でオンコプリスティス等の巨大魚類を捕食した水陸両棲の巨獣。
+              </li>
+              <li style="margin-bottom: 0;">
+                <strong>ギガノトサウルス（肉裂きスライサー型）:</strong><br>
+                全長12〜13m、体重7〜8トン。薄く平たいブレード状の歯が並び、超大型竜脚類（ティタノサウルス類）に深い裂傷を負わせて失血死を狙うハンティング戦術。
+              </li>
             </ul>
           </div>
         </section>
@@ -153,7 +165,7 @@ const schema = [
 
         <section>
           <h3 style="font-size: 18px; color: #fff; border-left: 4px solid #ff9900; padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
-            4. 咬合力ランキングと最新の生体力学シミュレーション
+            4. 咬合力に関する最新の見解
           </h3>
           <p style="margin-bottom: 12px; color: var(--text-dim);">
             近年、有限要素法（FEA）によるCTスキャンデータを用いた咬合シミュレーションが劇的な進歩を遂げています。顎骨の骨密度、咬筋・翼突筋の付着面積、顎関節の応力分布を総合的に解析した結果、ティラノサウルスの噛む力は成体の象を上に乗せたのと同等の圧力を奥歯1本に集中させることが可能であったことが確認されました。
@@ -171,7 +183,8 @@ const schema = [
       <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px; margin-bottom: 25px; border-bottom: 1px solid rgba(255, 153, 0, 0.2); padding-bottom: 15px;">
         <div>
           <span style="font-family: var(--font-mono); font-size: 11px; color: #ff9900; letter-spacing: 2px;">// CARNIVORE SPECIMEN DATABASE</span>
-          <h2 style="font-size: 24px; color: var(--text-main); margin-top: 5px; font-weight: 700;">肉食恐竜・獣脚類の登録標本一覧</h2>
+          <h2 style="font-size: 24px; color: var(--text-main); margin-top: 5px; font-weight: 700;">純粋な肉食恐竜の登録標本一覧</h2>
+          <p style="font-size: 12px; color: var(--text-dim); margin-top: 6px;">※ 本図鑑では、獣脚類の中でも植物食・雑食・昆虫食特化型を除き、他の動物（魚類を含む）の肉を主食とした純粋な肉食恐竜のみを厳選して収録・分類しています。</p>
         </div>
 
         <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
