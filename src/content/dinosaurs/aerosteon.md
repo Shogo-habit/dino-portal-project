@@ -19,10 +19,10 @@ bioTraits:
     value: "巨大な鎌状のハンドクロー"
     detail: "メガラプトル類特有の強靭に発達した前肢と巨大な親指の鉤爪を振るい、獲物を逃さず拘束して切り裂いた"
 cyberMetadata:
-  bottomGap: 322
+  bottomGap: 321
   realHeight: 2.6
   realLength: 9
-  contentHeightPx: 381
+  contentHeightPx: 382
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"

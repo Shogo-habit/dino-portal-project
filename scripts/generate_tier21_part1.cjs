@@ -87,10 +87,10 @@ const dinosaurs = [
       }
     ],
     cyberMetadata: {
-      bottomGap: 322,
+      bottomGap: 321,
       realHeight: 2.6,
       realLength: 9.0,
-      contentHeightPx: 381,
+      contentHeightPx: 382,
       sourceRes: 1024,
       dinoLeft: "5%",
       refRight: "15%",
