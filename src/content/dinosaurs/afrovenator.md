@@ -2,6 +2,7 @@
 id: "afrovenator"
 name: "アフロベナトル"
 kana: "あふろべなとる"
+aliases: ["アフロヴェナトル","あふろゔぇなとる","アフロベナートル","あふろべなーとる","アフロヴェナートル","あふろゔぇなーとる"]
 scientificName: "Afrovenator abakensis"
 era: "ジュラ紀中期"
 region: "ニジェール（アガデス地域 ティウラレン層）"
