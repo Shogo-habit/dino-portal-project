@@ -26,6 +26,7 @@ cyberMetadata:
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"
+  dinoTagOffsetX: -75
   zoom: 1.4
 ---
 

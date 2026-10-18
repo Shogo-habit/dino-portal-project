@@ -26,7 +26,8 @@ cyberMetadata:
   sourceRes: 1024
   dinoLeft: "5%"
   refRight: "15%"
-  zoom: 1.45
+  dinoTagOffsetX: -75
+  zoom: 1.3
 ---
 
 ### 「小さな暴君」の誕生とクリーブランド頭骨標本：80年にわたる研究の軌跡

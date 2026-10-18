@@ -154,7 +154,8 @@ const dinosaurs = [
       sourceRes: 1024,
       dinoLeft: "5%",
       refRight: "15%",
-      zoom: 1.45
+      dinoTagOffsetX: -75,
+      zoom: 1.3
     },
     content: `### 「小さな暴君」の誕生とクリーブランド頭骨標本：80年にわたる研究の軌跡
 
@@ -215,6 +216,7 @@ const dinosaurs = [
       sourceRes: 1024,
       dinoLeft: "5%",
       refRight: "15%",
+      dinoTagOffsetX: -75,
       zoom: 1.4
     },
     content: `### ゴビ砂漠の湖成層から現れた「異なる枝の暴君竜」：アリオラムスの発見史
@@ -313,6 +315,7 @@ for (const d of dinosaurs) {
   ).join('\n');
 
   const aliasesLine = d.aliases ? `aliases: ${JSON.stringify(d.aliases)}\n` : '';
+  const tagOffsetLine = d.cyberMetadata.dinoTagOffsetX !== undefined ? `  dinoTagOffsetX: ${d.cyberMetadata.dinoTagOffsetX}\n` : '';
   const md = `---
 id: "${d.id}"
 name: "${d.name}"
@@ -336,7 +339,7 @@ cyberMetadata:
   sourceRes: ${d.cyberMetadata.sourceRes}
   dinoLeft: "${d.cyberMetadata.dinoLeft}"
   refRight: "${d.cyberMetadata.refRight}"
-  zoom: ${d.cyberMetadata.zoom}
+${tagOffsetLine}  zoom: ${d.cyberMetadata.zoom}
 ---
 
 ${d.content}
