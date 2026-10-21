@@ -25,7 +25,7 @@ cyberMetadata:
   realLength: 1
   contentHeightPx: 374
   sourceRes: 1024
-  dinoLeft: "10%"
+  dinoLeft: "18%"
   refRight: "15%"
   zoom: 1
 ---
