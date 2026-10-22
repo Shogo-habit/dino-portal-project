@@ -601,17 +601,16 @@ const GROUPS = [
             function scrollToCard(targetCard: HTMLElement) {
                 const appContainer = document.getElementById('app-container');
                 const isAppScroll = appContainer && appContainer.scrollHeight > appContainer.clientHeight && getComputedStyle(appContainer).overflowY !== 'visible';
-                const stickyHeader = document.querySelector('.archive-sticky-header');
-                const headerHeight = stickyHeader ? stickyHeader.getBoundingClientRect().height : 100;
+                const topPadding = 15;
 
                 if (isAppScroll && appContainer) {
                     const cardRect = targetCard.getBoundingClientRect();
                     const containerRect = appContainer.getBoundingClientRect();
-                    const targetScrollTop = appContainer.scrollTop + (cardRect.top - containerRect.top) - headerHeight - 15;
+                    const targetScrollTop = appContainer.scrollTop + (cardRect.top - containerRect.top) - topPadding;
                     appContainer.scrollTo({ top: Math.max(0, targetScrollTop), behavior: 'smooth' });
                 } else {
                     const cardRect = targetCard.getBoundingClientRect();
-                    const targetY = window.pageYOffset + cardRect.top - headerHeight - 15;
+                    const targetY = window.pageYOffset + cardRect.top - topPadding;
                     window.scrollTo({ top: Math.max(0, targetY), behavior: 'smooth' });
                 }
 
@@ -625,12 +624,58 @@ const GROUPS = [
                 }, 1500);
             }
 
+            function preloadRowCards(row: string) {
+                if (!row || !kanaRowMap[row]) return;
+                const allowedChars = kanaRowMap[row];
+                const currentCards = Array.from(cardGrid.getElementsByClassName('dino-card')) as HTMLElement[];
+                const matchingCards = currentCards.filter(card => {
+                    if (card.style.display === 'none') return false;
+                    const kana = (card.getAttribute('data-kana') || '').trim();
+                    const name = (card.getAttribute('data-name') || '').trim();
+                    const firstChar = kana.charAt(0) || name.charAt(0);
+                    return allowedChars.includes(firstChar);
+                });
+                matchingCards.slice(0, 4).forEach(c => {
+                    const img = c.querySelector('img') as HTMLImageElement;
+                    if (img && img.src) {
+                        img.loading = 'eager';
+                        img.setAttribute('fetchpriority', 'high');
+                        const p = new Image();
+                        p.src = img.src;
+                    }
+                });
+            }
+
+            // Idle preloader for kana anchor images (starting with tail-end rows like 'わ', 'ら', 'や')
+            function scheduleBackgroundPreload() {
+                const idle = window.requestIdleCallback || ((cb: () => void) => setTimeout(cb, 400));
+                idle(() => {
+                    const tailFirst = ['わ', 'ら', 'や', 'ま', 'は', 'な', 'た', 'さ', 'か', 'あ'];
+                    tailFirst.forEach(row => {
+                        preloadRowCards(row);
+                    });
+                });
+            }
+
             const kanaButtons = document.querySelectorAll('.kana-jump-btn');
             kanaButtons.forEach(btn => {
+                const row = (btn as HTMLElement).dataset.row;
+
+                // Preload on mouse hover or touch start so images are primed before click finishes
+                btn.addEventListener('pointerenter', () => {
+                    if (row) preloadRowCards(row);
+                }, { passive: true });
+
+                btn.addEventListener('touchstart', () => {
+                    if (row) preloadRowCards(row);
+                }, { passive: true });
+
                 btn.addEventListener('click', (e) => {
                     e.preventDefault();
-                    const row = (btn as HTMLElement).dataset.row;
                     if (!row || !kanaRowMap[row]) return;
+
+                    // Immediately force high-priority loading for this row
+                    preloadRowCards(row);
 
                     // Ensure sorted by kana for consistent alphabetical grouping
                     if (sort.value !== 'kana') {
@@ -689,6 +734,7 @@ const GROUPS = [
             // Init load
             loadFiltersState();
             updateList();
+            scheduleBackgroundPreload();
         }
 
         // Run on load and transitions
