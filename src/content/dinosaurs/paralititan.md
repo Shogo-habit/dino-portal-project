@@ -1,7 +1,7 @@
 ---
 id: "paralititan"
 name: "パラリティタン"
-kana: "ぱらりていたん"
+kana: "ぱらりてぃたん"
 scientificName: "Paralititan stromeri"
 era: "白亜紀後期"
 region: "アフリカ（エジプト）"

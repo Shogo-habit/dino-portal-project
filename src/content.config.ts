@@ -21,6 +21,7 @@ const dinosaursCollection = defineCollection({
     id: z.string(),
     name: z.string(),
     kana: z.string(),
+    aliases: z.array(z.string()).default([]),
     scientificName: z.string(),
     era: z.string(),
     region: z.string(),

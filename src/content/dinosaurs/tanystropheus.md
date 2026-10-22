@@ -1,7 +1,7 @@
 ---
 id: "tanystropheus"
 name: "タニストロフェウス"
-kana: "たにとろふぇうす"
+kana: "たにすとろふぇうす"
 scientificName: "Tanystropheus hydroides"
 era: "三畳紀中期"
 region: "ヨーロッパ・アジア"

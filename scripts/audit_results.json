@@ -44,6 +44,28 @@
     "issues": []
   },
   {
+    "id": "aerosteon",
+    "name": "アエロステオン",
+    "scientificName": "Aerosteon riocoloradensis",
+    "group": "獣脚類",
+    "diet": "肉食",
+    "era": "白亜紀後期",
+    "realHeight": 2.6,
+    "realLength": 9,
+    "length": "9.0m",
+    "weight": "2.0t",
+    "charCount": 2115,
+    "rawCharCount": 2146,
+    "h3Count": 4,
+    "h3Headings": [
+      "パタゴニアの赤色砂岩から甦った「空気の骨」：鳥型呼吸進化を証明した発見史",
+      "実寸サイズと軽快なスケール：全長約9.0メートル・全高約2.6メートルの俊敏な大型捕食者",
+      "骨格の隅々まで侵入した気嚢システムとメガラプトル類の巨大ハンドクロー",
+      "白亜紀後期パタゴニアの捕食者ギルドと南半球獣脚類の独自進化"
+    ],
+    "issues": []
+  },
+  {
     "id": "aetosaurus",
     "name": "アエトサウルス",
     "scientificName": "Aetosaurus ferratus",
@@ -62,6 +84,28 @@
       "実寸サイズと低重心の装甲スケール：全長約1.0メートル・背丈全高約0.2メートルのコンパクト体躯",
       "全身を隙間なく包む生体プレートアーマーとスコップ型頭骨の解剖学的特徴",
       "三畳紀後期の主竜類社会：肉食偽ワニ類の脅威と草食装甲ニッチの確立"
+    ],
+    "issues": []
+  },
+  {
+    "id": "afrovenator",
+    "name": "アフロベナトル",
+    "scientificName": "Afrovenator abakensis",
+    "group": "獣脚類",
+    "diet": "肉食",
+    "era": "ジュラ紀中期",
+    "realHeight": 2.4,
+    "realLength": 8,
+    "length": "8.0m",
+    "weight": "1.5t",
+    "charCount": 2191,
+    "rawCharCount": 2227,
+    "h3Count": 4,
+    "h3Headings": [
+      "サハラ砂漠の灼熱の大地から現れた「アフリカの狩人」：ティウラレン層の発掘史",
+      "実寸サイズと均整の取れたスケール：全長約8.0メートル・全高約2.4メートルの俊敏な捕食者",
+      "低く細長い頭骨と3本指の鋭利なフッククロー：メガロサウルス科の攻撃解剖学",
+      "ジュラ紀中期ゴンドワナ大陸の生態系とパンゲア分裂期の生物地理学的意義"
     ],
     "issues": []
   },
@@ -150,6 +194,28 @@
       "人間との実寸サイズ比較・スレンダーかつ長脚の俊足スケール",
       "生態と群れ狩り仮説・驚異の機動力",
       "最新の古生物学知見と成長速度・寿命の解明"
+    ],
+    "issues": []
+  },
+  {
+    "id": "alioramus",
+    "name": "アリオラムス",
+    "scientificName": "Alioramus remotus",
+    "group": "獣脚類",
+    "diet": "肉食",
+    "era": "白亜紀後期",
+    "realHeight": 2,
+    "realLength": 6,
+    "length": "6.0m",
+    "weight": "700kg",
+    "charCount": 2061,
+    "rawCharCount": 2092,
+    "h3Count": 4,
+    "h3Headings": [
+      "ゴビ砂漠の湖成層から現れた「異なる枝の暴君竜」：アリオラムスの発見史",
+      "実寸サイズと流線型のスケール：全長約6.0メートル・全高約2.0メートルの俊足ハンター",
+      "鼻骨に並ぶ5個の骨質コブとティラノサウルス科最多クラスの歯列",
+      "ネメグト層の湿地帯生態系と巨大王者タルボサウルスとの完璧な棲み分け"
     ],
     "issues": []
   },
@@ -406,8 +472,8 @@
     "realLength": 35,
     "length": "35.0m",
     "weight": "70.0t",
-    "charCount": 2540,
-    "rawCharCount": 2581,
+    "charCount": 2539,
+    "rawCharCount": 2580,
     "h3Count": 4,
     "h3Headings": [
       "名前の由来と生息環境・分類",
@@ -418,8 +484,30 @@
     "issues": []
   },
   {
+    "id": "aucasaurus",
+    "name": "アウカサウルス",
+    "scientificName": "Aucasaurus garridoi",
+    "group": "獣脚類",
+    "diet": "肉食",
+    "era": "白亜紀後期",
+    "realHeight": 1.9,
+    "realLength": 5.5,
+    "length": "5.5m",
+    "weight": "700kg",
+    "charCount": 2217,
+    "rawCharCount": 2252,
+    "h3Count": 4,
+    "h3Headings": [
+      "恐竜の卵の聖地「アウカ・マウエボ」から現れた奇跡の全身骨格：発見と命名",
+      "実寸サイズと強靭な脚力のスケール：全長約5.5メートル・全高約1.9メートルの俊足ハンター",
+      "カルノタウルスを超える「究極に退化した腕」と角を持たない低い眼窩上の隆起",
+      "白亜紀後期パタゴニアの営巣地「アウカ・マウエボ」と竜脚類の幼体を狙う捕食戦略"
+    ],
+    "issues": []
+  },
+  {
     "id": "australovenator",
-    "name": "アウストラロヴェナトル",
+    "name": "アウストラロベナトル",
     "scientificName": "Australovenator wintonensis",
     "group": "獣脚類",
     "diet": "肉食",
@@ -428,8 +516,8 @@
     "realLength": 6,
     "length": "6.0m",
     "weight": "500kg",
-    "charCount": 2266,
-    "rawCharCount": 2303,
+    "charCount": 2256,
+    "rawCharCount": 2293,
     "h3Count": 4,
     "h3Headings": [
       "名前の由来と生息環境・分類",
@@ -568,6 +656,28 @@
       "人間との実寸サイズ比較・水辺の狩人たるスケール",
       "生態と魚食性の証拠・ワニ状の顎と30cmの鉤爪",
       "最新の古生物学知見と研究史・アマチュアの発見から新世界へ"
+    ],
+    "issues": []
+  },
+  {
+    "id": "bistahieversor",
+    "name": "ビスタヒエバーソー",
+    "scientificName": "Bistahieversor sealeyi",
+    "group": "獣脚類",
+    "diet": "肉食",
+    "era": "白亜紀後期",
+    "realHeight": 2.8,
+    "realLength": 9,
+    "length": "9.0m",
+    "weight": "2.5t",
+    "charCount": 1915,
+    "rawCharCount": 1949,
+    "h3Count": 4,
+    "h3Headings": [
+      "ニューメキシコの荒野から甦った「ビスタヒの破壊者」：南部暴君竜の発見史",
+      "実寸サイズと重厚なスケール：全長約9.0メートル・全高約2.8メートルの南部頂点捕食者",
+      "上下に深く発達した重厚な頭骨と64本の歯・眼窩上の追加開口部が示す独自の進化",
+      "南北に分断されたララミディア大陸の古生物地理学と南部固有の生態系"
     ],
     "issues": []
   },
@@ -946,6 +1056,28 @@
     "issues": []
   },
   {
+    "id": "coelurus",
+    "name": "コエルルス",
+    "scientificName": "Coelurus fragilis",
+    "group": "獣脚類",
+    "diet": "肉食",
+    "era": "ジュラ紀後期",
+    "realHeight": 0.8,
+    "realLength": 2.4,
+    "length": "2.4m",
+    "weight": "20kg",
+    "charCount": 2316,
+    "rawCharCount": 2350,
+    "h3Count": 4,
+    "h3Headings": [
+      "「骨戦争」の最中に発見された「中空の尾」：コエルロサウルス類の名前の由来となった歴史的名属",
+      "実寸サイズとスレンダーなスケール：全長約2.4メートル・全高約0.8メートルの軽量ランナー",
+      "極限まで軽量化された「空気の骨」と、オルニトレステスとの混同から復活までの紆余曲折",
+      "ジュラ紀後期の巨大恐竜帝国「モリソン層」を駆け抜けたスピードハンター"
+    ],
+    "issues": []
+  },
+  {
     "id": "compsognathus",
     "name": "コンプソグナトゥス",
     "scientificName": "Compsognathus longipes",
@@ -978,8 +1110,8 @@
     "realLength": 6,
     "length": "6.0m",
     "weight": "400kg",
-    "charCount": 2068,
-    "rawCharCount": 2104,
+    "charCount": 2067,
+    "rawCharCount": 2103,
     "h3Count": 4,
     "h3Headings": [
       "名前の由来と生息環境・分類",
@@ -1210,6 +1342,28 @@
     "issues": []
   },
   {
+    "id": "deltadromeus",
+    "name": "デルタドロメウス",
+    "scientificName": "Deltadromeus agilis",
+    "group": "獣脚類",
+    "diet": "肉食",
+    "era": "白亜紀後期",
+    "realHeight": 2.5,
+    "realLength": 8,
+    "length": "8.0m",
+    "weight": "1.2t",
+    "charCount": 2184,
+    "rawCharCount": 2223,
+    "h3Count": 4,
+    "h3Headings": [
+      "サハラ砂漠のケムケム層群から現れた「俊敏なデルタの走者」：発見史と分類の変遷",
+      "実寸サイズと超長脚のスケール：全長約8.0メートル・全高約2.5メートルの高速ランナー",
+      "大腿骨をしのぐ細長いすねの骨と円盤状の烏口骨・バハリアサウルス同種論争",
+      "巨大肉食獣脚類がひしめく「ケムケム河川デルタ」での生態的地位と生存戦略"
+    ],
+    "issues": []
+  },
+  {
     "id": "desmatosuchus",
     "name": "デスマトスクス",
     "scientificName": "Desmatosuchus spurensis",
@@ -1264,14 +1418,14 @@
     "realLength": 16,
     "length": "16.0m",
     "weight": "20.0t",
-    "charCount": 2607,
-    "rawCharCount": 2654,
+    "charCount": 2603,
+    "rawCharCount": 2650,
     "h3Count": 4,
     "h3Headings": [
       "豪州アウトバックに眠る「マチルダの巨躯」：ウィントン累層における世紀の発見",
       "実寸サイズと超重量級プロポーション：全長約16.0メートル・腰高全高約4.5メートルの重厚体躯",
       "幅広の胸郭と頑強な四肢構造：ゴンドワナ大陸独自のティタノサウルス進化",
-      "白亜紀豪州の氾濫原古生態系：アウストラロヴェナトルとの緊迫した生存闘争"
+      "白亜紀豪州の氾濫原古生態系：アウストラロベナトルとの緊迫した生存闘争"
     ],
     "issues": []
   },
@@ -1294,6 +1448,28 @@
       "人間との実寸サイズ比較・13メートルの引き締まった短頸竜脚類スケール",
       "生態と二叉神経棘の秘密・テンダグルの低層採餌スペシャリスト",
       "最新の古生物学知見とテンダグル発掘標本が拓いた竜脚類の多様性"
+    ],
+    "issues": []
+  },
+  {
+    "id": "dilong",
+    "name": "ディロン",
+    "scientificName": "Dilong paradoxus",
+    "group": "獣脚類",
+    "diet": "肉食",
+    "era": "白亜紀前期",
+    "realHeight": 0.6,
+    "realLength": 1.6,
+    "length": "1.6m",
+    "weight": "15kg",
+    "charCount": 1924,
+    "rawCharCount": 1954,
+    "h3Count": 4,
+    "h3Headings": [
+      "遼寧省の火山灰層が明かした「羽毛をまとった小さな皇帝」：世界を揺るがせた発見史",
+      "実寸サイズと機敏なスケール：全長約1.6メートル・全高約0.6メートルの小型ハンター",
+      "顎と尾に刻まれた「プロトフェザー」の痕跡とY字型鼻骨稜を持つ頭骨構造",
+      "熱河生物群の冷涼な森林生態系と火山噴火が封じ込めた白亜紀のタイムカプセル"
     ],
     "issues": []
   },
@@ -1792,8 +1968,8 @@
     "realLength": 6.2,
     "length": "6.2m",
     "weight": "800kg",
-    "charCount": 2191,
-    "rawCharCount": 2229,
+    "charCount": 2232,
+    "rawCharCount": 2270,
     "h3Count": 4,
     "h3Headings": [
       "名前の由来と生息環境・分類",
@@ -1902,8 +2078,8 @@
     "realLength": 4.2,
     "length": "4.2m",
     "weight": "300kg",
-    "charCount": 2063,
-    "rawCharCount": 2087,
+    "charCount": 2062,
+    "rawCharCount": 2086,
     "h3Count": 4,
     "h3Headings": [
       "名前の由来と生息環境・分類",
@@ -1924,8 +2100,8 @@
     "realLength": 4.7,
     "length": "4.7m",
     "weight": "1.0t",
-    "charCount": 2206,
-    "rawCharCount": 2239,
+    "charCount": 2205,
+    "rawCharCount": 2238,
     "h3Count": 4,
     "h3Headings": [
       "名前の由来と生息環境・分類",
@@ -2068,6 +2244,28 @@
     "issues": []
   },
   {
+    "id": "gasosaurus",
+    "name": "ガソサウルス",
+    "scientificName": "Gasosaurus constructus",
+    "group": "獣脚類",
+    "diet": "肉食",
+    "era": "ジュラ紀中期",
+    "realHeight": 1.2,
+    "realLength": 3.5,
+    "length": "3.5m",
+    "weight": "150kg",
+    "charCount": 2224,
+    "rawCharCount": 2260,
+    "h3Count": 4,
+    "h3Headings": [
+      "天然ガスプラントの建設現場から掘り出された「ガストカゲ」：発見と命名のエピソード",
+      "実寸サイズと身軽なスケール：全長約3.5メートル・全高約1.2メートルの中型ハンター",
+      "硬く引き締まった尾と発達した恥骨端：テタヌラ類（堅尾類）の幕開けを告げる骨格構造",
+      "ジュラ紀中期・大山舗（シャシミアオ層）の緑豊かな森林生態系と狩猟ターゲット"
+    ],
+    "issues": []
+  },
+  {
     "id": "gastonia",
     "name": "ガストニア",
     "scientificName": "Gastonia burgei",
@@ -2174,6 +2372,28 @@
       "人間との実寸サイズ比較・ビルの4階に達する13メートルの圧倒的キリン体型スケール",
       "生態と高木の樹冠を独占した高所採食システム",
       "最新の古生物学知見とブラキオサウルスからの独立論争"
+    ],
+    "issues": []
+  },
+  {
+    "id": "gojirasaurus",
+    "name": "ゴジラサウルス",
+    "scientificName": "Gojirasaurus quayi",
+    "group": "獣脚類",
+    "diet": "肉食",
+    "era": "三畳紀後期",
+    "realHeight": 1.8,
+    "realLength": 5.5,
+    "length": "5.5m",
+    "weight": "180kg",
+    "charCount": 2167,
+    "rawCharCount": 2203,
+    "h3Count": 4,
+    "h3Headings": [
+      "怪獣王「ゴジラ」の名を冠した公式学名：ケネス・カーペンター博士による発見と命名",
+      "実寸サイズと三畳紀の巨人スケール：全長約5.5メートル・全高約1.8メートルの黎明期ハンター",
+      "細身でしなやかなコエロフィシス上科の骨格構造とキメラ標本論争の検証",
+      "巨大ワニ型爬虫類が支配する三畳紀後期の大地での生存競争と生態的地位"
     ],
     "issues": []
   },
@@ -2509,7 +2729,7 @@
   },
   {
     "id": "hypnovenator",
-    "name": "ヒプノヴェナトル",
+    "name": "ヒプノベナトル",
     "scientificName": "Hypnovenator matsubaraetoheorum",
     "group": "獣脚類",
     "diet": "肉食・雑食",
@@ -2518,8 +2738,8 @@
     "realLength": 0.8,
     "length": "0.8m",
     "weight": "3.5kg",
-    "charCount": 2065,
-    "rawCharCount": 2094,
+    "charCount": 2057,
+    "rawCharCount": 2086,
     "h3Count": 4,
     "h3Headings": [
       "丹波篠山から現れた「眠れる狩人」：日本産トロオドン科の新星",
@@ -2540,8 +2760,8 @@
     "realLength": 1.8,
     "length": "1.8m",
     "weight": "20kg",
-    "charCount": 2421,
-    "rawCharCount": 2469,
+    "charCount": 2420,
+    "rawCharCount": 2468,
     "h3Count": 4,
     "h3Headings": [
       "ワイト島の海岸崖に眠る「高隆起歯の蜥蜴」：英国小型恐竜の発見史と樹上説の誤謬",
@@ -2584,8 +2804,8 @@
     "realLength": 10,
     "length": "10.0m",
     "weight": "4.0t",
-    "charCount": 2056,
-    "rawCharCount": 2079,
+    "charCount": 2055,
+    "rawCharCount": 2078,
     "h3Count": 4,
     "h3Headings": [
       "名前の由来と生息環境・分類",
@@ -2650,8 +2870,8 @@
     "realLength": 8,
     "length": "8.0m",
     "weight": "1.0t",
-    "charCount": 2184,
-    "rawCharCount": 2216,
+    "charCount": 2235,
+    "rawCharCount": 2267,
     "h3Count": 4,
     "h3Headings": [
       "化石密輸と石膏修復に翻弄された「苛立ちのトカゲ」の数奇な運命",
@@ -2716,14 +2936,14 @@
     "realLength": 18,
     "length": "18.0m",
     "weight": "20.0t",
-    "charCount": 2176,
-    "rawCharCount": 2210,
+    "charCount": 2173,
+    "rawCharCount": 2207,
     "h3Count": 4,
     "h3Headings": [
       "サハラ砂漠の伝説の怪物「ジョバー」の名を冠したアフリカの原始的巨竜",
       "実寸サイズと巨大骨格の検証：全長約18.0メートル・全高約6.0メートルの堂々たるスケール",
       "スプーン状の頑丈な歯列と二足立ち上がりによる高所採食仮説",
-      "ティウラレン層の古代森林とアフロヴェナトルとの緊迫した共存"
+      "ティウラレン層の古代森林とアフロベナトルとの緊迫した共存"
     ],
     "issues": []
   },
@@ -2980,8 +3200,8 @@
     "realLength": 2,
     "length": "2.0m",
     "weight": "10kg",
-    "charCount": 2390,
-    "rawCharCount": 2437,
+    "charCount": 2389,
+    "rawCharCount": 2436,
     "h3Count": 4,
     "h3Headings": [
       "南極圏の暗闇に輝く大きな瞳：ダイナソー・コーブの奇跡「レアリンのトカゲ」",
@@ -3076,6 +3296,28 @@
       "形態とサイズ・生態スケール：三畳紀最大級の捕食者の実寸",
       "特殊な解剖学的特徴：一対の薄い頭冠と鋭利な鋸歯列",
       "古生態学と進化史上の意義：三畳紀末の陸上生態系を支配した頂点捕食者"
+    ],
+    "issues": []
+  },
+  {
+    "id": "limusaurus",
+    "name": "リムサウルス",
+    "scientificName": "Limusaurus inextricabilis",
+    "group": "獣脚類",
+    "diet": "植物食・雑食",
+    "era": "ジュラ紀後期",
+    "realHeight": 0.7,
+    "realLength": 1.7,
+    "length": "1.7m",
+    "weight": "15kg",
+    "charCount": 2329,
+    "rawCharCount": 2367,
+    "h3Count": 4,
+    "h3Headings": [
+      "ジュンガル盆地の「死の泥沼（デストラップ）」から発見された19体の骨格：発見と命名",
+      "実寸サイズとダチョウ型体型のスケール：全長約1.7メートル・全高約0.7メートルの俊足ランナー",
+      "赤ちゃんには歯があり大人になると歯が消える！前代未聞の食性転換と鳥類の指の謎",
+      "ジュラ紀後期・石樹溝層の湿地帯と「泥の罠」が生んだ奇跡の生態記録"
     ],
     "issues": []
   },
@@ -3235,7 +3477,7 @@
   },
   {
     "id": "mapusaurus",
-    "name": "マップサウルス",
+    "name": "マプサウルス",
     "scientificName": "Mapusaurus roseae",
     "group": "獣脚類",
     "diet": "肉食",
@@ -3244,8 +3486,8 @@
     "realLength": 12.2,
     "length": "12.2m",
     "weight": "5.0t",
-    "charCount": 2148,
-    "rawCharCount": 2182,
+    "charCount": 2137,
+    "rawCharCount": 2171,
     "h3Count": 4,
     "h3Headings": [
       "名前の由来と生息環境・分類",
@@ -3366,6 +3608,28 @@
     "issues": []
   },
   {
+    "id": "megapnosaurus",
+    "name": "メガプノサウルス",
+    "scientificName": "Megapnosaurus rhodesiensis",
+    "group": "獣脚類",
+    "diet": "肉食",
+    "era": "ジュラ紀前期",
+    "realHeight": 0.9,
+    "realLength": 3,
+    "length": "3.0m",
+    "weight": "30kg",
+    "charCount": 2218,
+    "rawCharCount": 2253,
+    "h3Count": 4,
+    "h3Headings": [
+      "「シンタルスス」から「大きな死んだトカゲ」へ：学名変更のドラマと30体の集団化石",
+      "実寸サイズと俊敏なスケール：全長約3.0メートル・全高約0.9メートルの軽量級スプリンター",
+      "鳥のように癒合した足首の骨と上顎のくびれ・骨組織学が明かした成長曲線",
+      "ジュラ紀前期の乾燥した砂丘オアシスでの群れ行動と狩猟スタイル"
+    ],
+    "issues": []
+  },
+  {
     "id": "megaraptor",
     "name": "メガラプトル",
     "scientificName": "Megaraptor namunhuaiquii",
@@ -3384,6 +3648,28 @@
       "実寸サイズと体格の検証：全長約8.0メートル・全高約2.5メートルのスマートな骨格スケール",
       "30センチメートルの凶悪な前肢鎌爪と細長い頭骨による複合ハンティング戦術",
       "白亜紀後期のパタゴニア生態系における地位と頂点捕食者への道"
+    ],
+    "issues": []
+  },
+  {
+    "id": "mei",
+    "name": "メイ",
+    "scientificName": "Mei long",
+    "group": "獣脚類",
+    "diet": "肉食・昆虫食",
+    "era": "白亜紀前期",
+    "realHeight": 0.2,
+    "realLength": 0.5,
+    "length": "0.5m",
+    "weight": "1kg",
+    "charCount": 2095,
+    "rawCharCount": 2129,
+    "h3Count": 4,
+    "h3Headings": [
+      "1億2500万年前の眠りから覚めた「寐竜（メイ・ロン）」：古生物学史に残る奇跡の睡眠化石",
+      "実寸サイズと愛らしいスケール：全長約0.5メートル・全高約0.2メートルの小鳥・アヒルサイズ",
+      "頭を腕の下に入れて丸くなる「タック・イン」姿勢：鳥の行動と恒温性を裏付ける決定的証拠",
+      "「白亜紀のポンペイ」陸家屯層の火山災害と、小さな森のハンターの暮らし"
     ],
     "issues": []
   },
@@ -3696,6 +3982,28 @@
     "issues": []
   },
   {
+    "id": "nanotyrannus",
+    "name": "ナノティラヌス",
+    "scientificName": "Nanotyrannus lancensis",
+    "group": "獣脚類",
+    "diet": "肉食",
+    "era": "白亜紀後期",
+    "realHeight": 1.8,
+    "realLength": 5,
+    "length": "5.0m",
+    "weight": "600kg",
+    "charCount": 2103,
+    "rawCharCount": 2139,
+    "h3Count": 4,
+    "h3Headings": [
+      "「小さな暴君」の誕生とクリーブランド頭骨標本：80年にわたる研究の軌跡",
+      "実寸サイズと俊足のスケール：全長約5.0メートル・全高約1.8メートルの高速追跡者",
+      "成体Tレックスとの決定的な解剖学的差異：歯の本数・前肢の大きさ・成長曲線",
+      "白亜紀最末期ヘルクリーク層の生態系と「中位捕食者」の空白を埋めた役割"
+    ],
+    "issues": []
+  },
+  {
     "id": "nanuqsaurus",
     "name": "ナヌークサウルス",
     "scientificName": "Nanuqsaurus hoglundi",
@@ -3762,6 +4070,28 @@
     "issues": []
   },
   {
+    "id": "neovenator",
+    "name": "ネオベナトル",
+    "scientificName": "Neovenator salerii",
+    "group": "獣脚類",
+    "diet": "肉食",
+    "era": "白亜紀前期",
+    "realHeight": 2.3,
+    "realLength": 7.5,
+    "length": "7.5m",
+    "weight": "1.0t",
+    "charCount": 1982,
+    "rawCharCount": 2019,
+    "h3Count": 4,
+    "h3Headings": [
+      "ワイト島の崩落崖から出現した「新たな狩人」：ヨーロッパ白亜紀獣脚類の発見史",
+      "実寸サイズと俊敏なスケール：全長約7.5メートル・全高約2.3メートルの流線型ハンター",
+      "吻部に張り巡らされた「第六感」の神経血管網と高度な含気骨格システム",
+      "ウェセックス層の氾濫原生態系とアロサウルス上科の新たな進化系統の確立"
+    ],
+    "issues": []
+  },
+  {
     "id": "nigersaurus",
     "name": "ニジェールサウルス",
     "scientificName": "Nigersaurus taqueti",
@@ -3824,6 +4154,28 @@
       "実寸サイズと成長段階の科学：成体全長約7.6メートル・全高約3.8メートルの巨躯",
       "ランベオサウルス亜科の解剖学的特徴：中空のトサカと高密度デンタルバッテリー",
       "21世紀の再検証と東アジア白亜紀生態系における重要性"
+    ],
+    "issues": []
+  },
+  {
+    "id": "noasaurus",
+    "name": "ノアサウルス",
+    "scientificName": "Noasaurus leali",
+    "group": "獣脚類",
+    "diet": "肉食",
+    "era": "白亜紀後期",
+    "realHeight": 0.6,
+    "realLength": 1.5,
+    "length": "1.5m",
+    "weight": "15kg",
+    "charCount": 2176,
+    "rawCharCount": 2217,
+    "h3Count": 4,
+    "h3Headings": [
+      "アルゼンチン北西部から現れた「北西のトカゲ」：ホセ・ボナパルテによる発見と命名",
+      "実寸サイズと軽快なスケール：全長約1.5メートル・全高約0.6メートルの小型ハンター",
+      "古生物学史に残る「鎌状の鉤爪」の逆転劇：足の爪から手の爪への再解釈",
+      "白亜紀最末期レチョ層の生態系と小型脊椎動物を狙う俊敏な捕食スタイル"
     ],
     "issues": []
   },
@@ -4044,6 +4396,28 @@
       "実寸サイズと長大翼のスケール：体長約2.5メートル・地上全高約1.2メートル・翼開長約6メートル",
       "海洋上空を制覇した流体力学的嘴とダイナミック・ソアリングのメカニズム",
       "白亜紀中期の海洋航空生態系：大陸間を架橋したグローバルな生命史"
+    ],
+    "issues": []
+  },
+  {
+    "id": "ornitholestes",
+    "name": "オルニトレステス",
+    "scientificName": "Ornitholestes hermanni",
+    "group": "獣脚類",
+    "diet": "肉食",
+    "era": "ジュラ紀後期",
+    "realHeight": 0.7,
+    "realLength": 2,
+    "length": "2.0m",
+    "weight": "15kg",
+    "charCount": 2302,
+    "rawCharCount": 2346,
+    "h3Count": 4,
+    "h3Headings": [
+      "1900年のボーン・キャビン採石場での発見と「小鳥泥棒」の名前の由来",
+      "実寸サイズと軽快なスケール：全長約2.0メートル・全高約0.7メートルの俊敏なハンター",
+      "始祖鳥を捕まえる復元画の伝統と、「鼻の上の角」をめぐる100年越しの真相",
+      "ジュラ紀後期モリソン層の森林生態系と、巨大恐竜の足元を駆けるニッチ戦略"
     ],
     "issues": []
   },
@@ -4476,8 +4850,8 @@
     "realLength": 5,
     "length": "5.0m",
     "weight": "2.0t",
-    "charCount": 2094,
-    "rawCharCount": 2127,
+    "charCount": 2092,
+    "rawCharCount": 2125,
     "h3Count": 4,
     "h3Headings": [
       "英国ワイト島の地層から現れた「多数のトゲを持つトカゲ」",
@@ -4550,6 +4924,28 @@
       "形態とサイズ・生態スケール：中型鳥脚類の実寸プロファイル",
       "特殊な解剖学的特徴：デンタルバッテリーの黎明と親指スパイクの退化",
       "古生態学と進化史上の意義：アジアから世界へ広がった新世代の草食恐竜"
+    ],
+    "issues": []
+  },
+  {
+    "id": "proceratosaurus",
+    "name": "プロケラトサウルス",
+    "scientificName": "Proceratosaurus bradleyi",
+    "group": "獣脚類",
+    "diet": "肉食",
+    "era": "ジュラ紀中期",
+    "realHeight": 1,
+    "realLength": 3,
+    "length": "3.0m",
+    "weight": "40kg",
+    "charCount": 2250,
+    "rawCharCount": 2279,
+    "h3Count": 4,
+    "h3Headings": [
+      "100年の時を超えて明かされた正体：「ケラトサウルスの祖先」から「暴君竜の源流」へ",
+      "実寸サイズと俊敏なスケール：全長約3.0メートル・全高約1.0メートルの軽快な小型ハンター",
+      "鼻先の骨質クレストと「異形歯性」が示すティラノサウルス上科のDNA",
+      "ジュラ紀中期イギリスの古環境と暴君竜1億年の進化の幕開け"
     ],
     "issues": []
   },
@@ -4792,6 +5188,28 @@
       "実寸サイズと骨格プロポーション：全長約15.0メートル・全高約3.5メートルの均整巨躯",
       "成長スピードの奇跡と表皮を防御する巨大オステオダーム（皮骨板）",
       "白亜紀末期マダガスカルの乾燥氾濫原と孤立生態系における王者の役割"
+    ],
+    "issues": []
+  },
+  {
+    "id": "raptorex",
+    "name": "ラプトレックス",
+    "scientificName": "Raptorex kriegsteini",
+    "group": "獣脚類",
+    "diet": "肉食",
+    "era": "白亜紀前期 - 後期",
+    "realHeight": 0.9,
+    "realLength": 2.5,
+    "length": "2.5m",
+    "weight": "65kg",
+    "charCount": 1963,
+    "rawCharCount": 1996,
+    "h3Count": 4,
+    "h3Headings": [
+      "「略奪する王」の衝撃デビューと産出地を巡るミステリー：ラプトレックスの研究史",
+      "実寸サイズと凝縮されたスケール：全長約2.5メートル・全高約0.9メートルの小型ボディ",
+      "大型ティラノサウルス科のボディプランは「小型のうちに完成した」のか？",
+      "白亜紀前期の新属か、タルボサウルスの幼体か：古生物学を発展させた大論争"
     ],
     "issues": []
   },
@@ -5158,8 +5576,8 @@
     "realLength": 15,
     "length": "15.0m",
     "weight": "18t",
-    "charCount": 2714,
-    "rawCharCount": 2763,
+    "charCount": 2713,
+    "rawCharCount": 2762,
     "h3Count": 4,
     "h3Headings": [
       "発見と命名の歴史：オーストラリアのサバンナが明かした大陸横断の証拠",
@@ -5192,6 +5610,28 @@
     "issues": []
   },
   {
+    "id": "scipionyx",
+    "name": "スキピオニクス",
+    "scientificName": "Scipionyx samniticus",
+    "group": "獣脚類",
+    "diet": "肉食",
+    "era": "白亜紀前期",
+    "realHeight": 0.2,
+    "realLength": 0.5,
+    "length": "0.5m",
+    "weight": "1kg",
+    "charCount": 2269,
+    "rawCharCount": 2308,
+    "h3Count": 4,
+    "h3Headings": [
+      "イタリア初の恐竜化石「チッチョ（Ciro）」の発見と『Nature』誌の表紙を飾った衝撃",
+      "実寸サイズと幼体標本のスケール：成体化石は未発見・全長約0.5メートルは幼体の実寸値",
+      "気管・肝臓・腸のシワまで見える奇跡の「内臓化石」とワニ型横隔膜呼吸システムの解明",
+      "白亜紀イタリアの珊瑚礁の島々と、お腹に残された「最後の食事」の記録"
+    ],
+    "issues": []
+  },
+  {
     "id": "scutellosaurus",
     "name": "スクテロサウルス",
     "scientificName": "Scutellosaurus lawleri",
@@ -5210,6 +5650,28 @@
       "形態とサイズ・生態スケール：小柄な体躯と超長大な尾の実寸",
       "特殊な解剖学的特徴：数百枚の小盾板と究極のダイナミックバランサー",
       "古生態学と進化史上の意義：ジュラ紀の砂丘地帯を駆け抜けたパイオニア"
+    ],
+    "issues": []
+  },
+  {
+    "id": "segisaurus",
+    "name": "セギサウルス",
+    "scientificName": "Segisaurus halli",
+    "group": "獣脚類",
+    "diet": "肉食・昆虫食",
+    "era": "ジュラ紀前期",
+    "realHeight": 0.4,
+    "realLength": 1,
+    "length": "1.0m",
+    "weight": "5kg",
+    "charCount": 2157,
+    "rawCharCount": 2196,
+    "h3Count": 4,
+    "h3Headings": [
+      "アリゾナの聖なる渓谷「ツェギ・キャニオン」での発見：ナバホ族の案内人が見つけた唯一の骨格",
+      "実寸サイズとガチョウ大のスケール：全長約1.0メートル・全高約0.4メートルの小さな砂漠の住人",
+      "恐竜から鳥類への進化を証明した「V字型の鎖骨（叉骨）」と充実した長骨の謎",
+      "ジュラ紀前期「ナバホ大砂漠」の過酷な砂丘環境と昆虫・小動物を狙う生態"
     ],
     "issues": []
   },
@@ -5412,6 +5874,28 @@
     "issues": []
   },
   {
+    "id": "sinraptor",
+    "name": "シンラプトル",
+    "scientificName": "Sinraptor dongi",
+    "group": "獣脚類",
+    "diet": "肉食",
+    "era": "ジュラ紀後期",
+    "realHeight": 2.4,
+    "realLength": 7.6,
+    "length": "7.6m",
+    "weight": "1.3t",
+    "charCount": 2156,
+    "rawCharCount": 2190,
+    "h3Count": 4,
+    "h3Headings": [
+      "ジュンガル盆地から発掘された「中国の略奪者」：中国・カナダ恐竜プロジェクトの歴史的快挙",
+      "実寸サイズと精悍なスケール：全長約7.6メートル・全高約2.4メートルの東アジア頂点捕食者",
+      "究極まで空洞化した頭骨構造と顔面に刻まれた「同種間バトル」の生々しい傷跡",
+      "石樹溝層の豊かな森林生態系とマメンチサウルス等との共進化"
+    ],
+    "issues": []
+  },
+  {
     "id": "sordes",
     "name": "ソルデス",
     "scientificName": "Sordes pilosus",
@@ -5567,7 +6051,7 @@
   },
   {
     "id": "stegouros",
-    "name": "ステゴロウロス",
+    "name": "ステゴウロス",
     "scientificName": "Stegouros elengassen",
     "group": "よろい竜類",
     "diet": "植物食",
@@ -5576,8 +6060,8 @@
     "realLength": 2,
     "length": "2.0m",
     "weight": "100kg",
-    "charCount": 2197,
-    "rawCharCount": 2229,
+    "charCount": 2189,
+    "rawCharCount": 2221,
     "h3Count": 4,
     "h3Headings": [
       "南米最南端パタゴニアで発見された「屋根付きの尾」を持つ新系統の曲竜類",
@@ -5730,8 +6214,8 @@
     "realLength": 15,
     "length": "15.0m",
     "weight": "20.0t",
-    "charCount": 2180,
-    "rawCharCount": 2214,
+    "charCount": 2179,
+    "rawCharCount": 2213,
     "h3Count": 4,
     "h3Headings": [
       "名前の由来と生息環境・分類",
@@ -6072,6 +6556,28 @@
     "issues": []
   },
   {
+    "id": "troodon",
+    "name": "トロオドン",
+    "scientificName": "Troodon formosus",
+    "group": "獣脚類",
+    "diet": "肉食・雑食",
+    "era": "白亜紀後期",
+    "realHeight": 0.9,
+    "realLength": 2,
+    "length": "2.0m",
+    "weight": "50kg",
+    "charCount": 2281,
+    "rawCharCount": 2312,
+    "h3Count": 4,
+    "h3Headings": [
+      "北米最古の恐竜化石「傷つける歯」の発見とステノニコサウルスとの分類史",
+      "実寸サイズと俊敏なスケール：全長約2.0メートル・全高約0.9メートルのスリムな体躯",
+      "恐竜界随一の脳化指数と夜行性の立体視：もしも絶滅しなかったら「ディノサウロイド」？",
+      "器用な前肢と「肉食・雑食」の柔軟な食性、オスが抱卵した子育ての証拠"
+    ],
+    "issues": []
+  },
+  {
     "id": "tropeognathus",
     "name": "トロペオグナトゥス",
     "scientificName": "Tropeognathus mesembrinus",
@@ -6226,6 +6732,28 @@
     "issues": []
   },
   {
+    "id": "tyrannotitan",
+    "name": "ティラノティタン",
+    "scientificName": "Tyrannotitan chubutensis",
+    "group": "獣脚類",
+    "diet": "肉食",
+    "era": "白亜紀前期",
+    "realHeight": 3.8,
+    "realLength": 12.2,
+    "length": "12.2m",
+    "weight": "6.0t",
+    "charCount": 2317,
+    "rawCharCount": 2359,
+    "h3Count": 4,
+    "h3Headings": [
+      "パタゴニアの牧場から発掘された「暴君の巨人」：フェルナンド・ノヴァスらによる発見と命名",
+      "実寸サイズと圧倒的質量のスケール：全長約12.2メートル・全高約3.8メートルの超重量級捕食者",
+      "ナイフの歯と骨砕きの歯を兼ね備えた「極厚のブレード歯」と特異な肩帯・仙椎の構造",
+      "超巨大竜脚類パタゴティタンと生きた白亜紀前期パタゴニアの生態系と狩猟戦術"
+    ],
+    "issues": []
+  },
+  {
     "id": "ulughbegsaurus",
     "name": "ウルグベグサウルス",
     "scientificName": "Ulughbegsaurus uzbekistanensis",
@@ -6324,8 +6852,8 @@
     "realLength": 4,
     "length": "4.0m",
     "weight": "1.0t",
-    "charCount": 2606,
-    "rawCharCount": 2662,
+    "charCount": 2605,
+    "rawCharCount": 2661,
     "h3Count": 4,
     "h3Headings": [
       "発見と命名の歴史：142年の時を超えてワイト島に蘇った新鎧竜",
@@ -6464,6 +6992,28 @@
       "実寸サイズと重厚なスケール感：全長約6.0メートル・背丈全高約2.2メートルの頑強体躯",
       "異質な角とスパイクの謎：防御兵器と種内ディスプレイの二重適応",
       "白亜紀沿岸湿地の生態系：強靭な顎が生み出す粉砕力と共存戦略"
+    ],
+    "issues": []
+  },
+  {
+    "id": "xiongguanlong",
+    "name": "シオングアンロン",
+    "scientificName": "Xiongguanlong baimoensis",
+    "group": "獣脚類",
+    "diet": "肉食",
+    "era": "白亜紀前期",
+    "realHeight": 1.4,
+    "realLength": 4,
+    "length": "4.0m",
+    "weight": "270kg",
+    "charCount": 2286,
+    "rawCharCount": 2322,
+    "h3Count": 4,
+    "h3Headings": [
+      "万里の長城・嘉峪関の「白魔城」から現れたミッシングリンク：発見と命名の経緯",
+      "実寸サイズと過渡期のスケール：全長約4.0メートル・全高約1.4メートルの中型捕食者",
+      "ガビアルのように細長い吻部と大型種へ通じる強靭な後頭部・脊椎のモザイク進化",
+      "白亜紀前期・新民堡層群の湖沼生態系と中型ハンターとしての狩猟戦略"
     ],
     "issues": []
   },

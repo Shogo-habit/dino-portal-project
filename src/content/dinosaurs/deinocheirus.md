@@ -1,7 +1,7 @@
 ---
 id: "deinocheirus"
 name: "デイノケイルス"
-kana: "でぃのけいるす"
+kana: "でいのけいるす"
 scientificName: "Deinocheirus mirificus"
 era: "白亜紀後期"
 region: "アジア"

@@ -2,6 +2,7 @@
 id: "juravenator"
 name: "ジュラベナトル"
 kana: "じゅらべなとる"
+aliases: ["ジュラヴェナトル", "じゅらゔぇなとる", "ジュラベナートル", "じゅらべなーとる", "ジュラヴェナートル", "じゅらゔぇなーとる"]
 scientificName: "Juravenator starki"
 era: "ジュラ紀後期"
 region: "ヨーロッパ（ドイツ・バイエルン州）"

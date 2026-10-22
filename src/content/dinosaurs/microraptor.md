@@ -1,7 +1,7 @@
 ---
 id: "microraptor"
 name: "ミクロラプトル"
-kana: "みくらぷとる"
+kana: "みくろらぷとる"
 scientificName: "Microraptor zhaoianus"
 era: "白亜紀前期"
 region: "アジア"

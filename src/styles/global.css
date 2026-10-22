@@ -177,6 +177,12 @@ body {
   overflow-y: auto;
   position: relative;
   z-index: 50;
+  display: flex;
+  flex-direction: column;
+}
+
+#app-content-wrapper {
+  flex: 1;
 }
 
 /* Scrollbar */
@@ -193,16 +199,17 @@ body {
 
 .main-footer {
   border-top: 1px solid var(--panel-border);
-  background: var(--bg-color);
+  background: rgba(3, 6, 8, 0.9);
   z-index: 10;
   position: relative;
+  margin: 40px -40px -40px -40px;
 }
 
 .ai-disclaimer {
   font-size: 9px;
   color: var(--text-dim);
   text-align: center;
-  padding: 12px 20px;
+  padding: 15px 40px;
   background: rgba(0, 242, 255, 0.02);
   letter-spacing: 0.5px;
 }
@@ -2117,6 +2124,14 @@ body {
     padding: 20px 15px; /* モバイルでは余白を狭める */
     overflow-y: visible !important;
     flex: none !important;
+  }
+
+  .main-footer {
+    margin: 20px -15px -20px -15px;
+  }
+
+  .ai-disclaimer {
+    padding: 12px 15px;
   }
 
 

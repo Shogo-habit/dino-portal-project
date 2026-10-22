@@ -138,44 +138,20 @@ const fullOgImageUrl = new URL(ogImage, 'https://dino-portal.com/');
         <div id="app-content-wrapper">
             <slot />
         </div>
+
+        <footer class="main-footer">
+            <div class="ai-disclaimer" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                <span>本図鑑の視覚データは、最新の古生物学的知見に基づきAIによって生成されたシミュレーション画像です。</span>
+                <div class="footer-links" style="display: flex; gap: 15px;">
+                    <a href="/privacy/" class="footer-privacy-link" style="color: var(--primary-neon); text-decoration: none; font-size: 11px; font-family: var(--font-mono); transition: opacity 0.3s ease;">
+                        [ PRIVACY POLICY ]
+                    </a>
+                    <a href="/contact/" class="footer-privacy-link" style="color: var(--primary-neon); text-decoration: none; font-size: 11px; font-family: var(--font-mono); transition: opacity 0.3s ease;">
+                        [ CONTACT ]
+                    </a>
+                </div>
+            </div>
+        </footer>
     </main>
-
-    <footer class="main-footer" style="padding: 30px 40px; border-top: 1px solid var(--panel-border); background: rgba(3, 6, 8, 0.9);">
-        <!-- Pillar Quick Navigation -->
-        <div class="footer-pillar-nav" style="margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid rgba(0, 242, 255, 0.15);">
-            <div style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); margin-bottom: 12px; letter-spacing: 1.5px;">
-                // TOPIC CLUSTER PILLAR PAGES
-            </div>
-            <div style="display: flex; flex-wrap: wrap; gap: 15px 25px; font-size: 13px;">
-                <a href="/period/jurassic/" style="color: var(--text-dim); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='var(--primary-neon)'" onmouseout="this.style.color='var(--text-dim)'">
-                    🦕 ジュラ紀完全ガイド
-                </a>
-                <a href="/period/cretaceous/" style="color: var(--text-dim); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='var(--primary-neon)'" onmouseout="this.style.color='var(--text-dim)'">
-                    🦖 白亜紀完全ガイド
-                </a>
-                <a href="/carnivores/" style="color: var(--text-dim); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='var(--primary-neon)'" onmouseout="this.style.color='var(--text-dim)'">
-                    ⚡ 最強の肉食恐竜図鑑
-                </a>
-                <a href="/marine-reptiles/" style="color: var(--text-dim); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='var(--primary-neon)'" onmouseout="this.style.color='var(--text-dim)'">
-                    🌊 海生爬虫類図鑑
-                </a>
-                <a href="/japan-dinosaurs/" style="color: var(--text-dim); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='var(--primary-neon)'" onmouseout="this.style.color='var(--text-dim)'">
-                    🗾 日本の恐竜完全名鑑
-                </a>
-            </div>
-        </div>
-
-        <div class="ai-disclaimer" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-            <span>本図鑑の視覚データは、最新の古生物学的知見に基づきAIによって生成されたシミュレーション画像です。</span>
-            <div class="footer-links" style="display: flex; gap: 15px;">
-                <a href="/privacy/" class="footer-privacy-link" style="color: var(--primary-neon); text-decoration: none; font-size: 11px; font-family: var(--font-mono); transition: opacity 0.3s ease;">
-                    [ PRIVACY POLICY ]
-                </a>
-                <a href="/contact/" class="footer-privacy-link" style="color: var(--primary-neon); text-decoration: none; font-size: 11px; font-family: var(--font-mono); transition: opacity 0.3s ease;">
-                    [ CONTACT ]
-                </a>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>

@@ -6,6 +6,7 @@ import mdx from '@astrojs/mdx';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://dino-portal.com',
+  trailingSlash: 'always',
   redirects: {
     '/dictionary/kamuyasaurus': '/dictionary/kamuysaurus/',
   },

@@ -1,7 +1,7 @@
 ---
 id: "wuerhosaurus"
 name: "ウエルホサウルス"
-kana: "うえほさうるす"
+kana: "うえるほさうるす"
 scientificName: "Wuerhosaurus homheni"
 era: "白亜紀前期"
 region: "アジア"

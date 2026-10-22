@@ -2,18 +2,37 @@
 id: "dinosaur-size-ranking"
 date: "2026.06.16"
 category: "ranking"
-title: "【一番大きいのは？】恐竜の大きさランキングTOP10！最大の恐竜を最新の学説から徹底解説"
-summary: "地球上で最も大きかった恐竜はどれ？最新の研究データをもとに、全長や体重を比較した「恐竜の大きさランキングTOP10」を大発表！アルゼンチノサウルスやパタゴティタンなどの超巨大な竜脚類を中心に、子供向けに分かりやすく解説します。"
+title: "【世界最大の恐竜はどれ？】恐竜の大きさランキングTOP10！一番でかいアルゼンチノサウルスなど超巨大竜脚類の全長・体重を徹底比較"
+summary: "太古の地球で最も大きかった恐竜はどれ？最新の古生物学研究データをもとに、陸上生物史上最大を誇る「恐竜の大きさ（体重・全長）ランキングTOP10」を大発表！世界一大きいアルゼンチノサウルス（全長35m・70t超）やパタゴティタンなど、一番でかい超巨大恐竜たちの驚異のスケールを子供向けにわかりやすく徹底解説します。"
 image: "images/topics/dinosaur-size-ranking/dinosaur_size_ranking.webp"
 relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauroposeidon", "futalognkosaurus", "mamenchisaurus", "brachiosaurus", "supersaurus", "apatosaurus", "diplodocus"]
 ---
 
 <p class="article-paragraph">
-  「地球の歴史の中で、一番大きい恐竜はいったいどれだったんだろう？」そんな疑問を抱いたことはありませんか？かつて地球上をのし歩いていた恐竜たちの中には、現代のビルや新幹線すら超えるほどの途方もない巨体を誇る種類が存在していました。
+  「太古の時代に存在した恐竜の中で、もっとも大きかったとされるのは何？」「世界一大きい、一番でかい恐竜はいったいどれだったんだろう？」そんな疑問を抱いたことはありませんか？
 </p>
 <p class="article-paragraph">
-  この記事では、最新の古生物学の研究データに基づき、もっとも信頼性の高い陸上恐竜の「重さ（体重）」に焦点を当てた<strong>恐竜の大きさランキングTOP10</strong>を大発表します！巨大な草食恐竜たちがなぜそれほどまで巨大化できたのか、その体の秘密や、現代の動物・乗り物との分かりやすい比較を交えて、お子様と一緒にワクワクしながら学べる内容でお届けします。さあ、太古の地球を支配した超巨大恐竜たちのロマンあふれる世界をのぞいてみましょう！
+  結論から言うと、現在の古生物学で最も有力視されている<strong>世界最大の恐竜は、南米アルゼンチンで発見された超巨大竜脚類「アルゼンチノサウルス」</strong>です！その巨体は全長35メートル超、体重70〜80トンにも達し、現代の大型バス3台分、新幹線1両を軽く超える圧倒的なスケールを誇ります。
 </p>
+<p class="article-paragraph">
+  この記事では、最新の研究データに基づき、もっとも信頼性の高い陸上恐竜の「重さ（体重）」に焦点を当てた<strong>恐竜の大きさランキングTOP10</strong>を大発表！巨大な草食恐竜たちがなぜそれほどまで巨大化できたのか、その体の秘密や、現代の動物・乗り物との分かりやすい比較を交えて、お子様と一緒にワクワクしながら学べる内容でお届けします。
+</p>
+
+<!-- 実寸サイズ比較シミュレータへの誘導バナー -->
+<div class="hud-panel size-comparison-banner" style="margin: 25px 0 35px 0; padding: 20px; border: 1px solid var(--primary-neon); background: rgba(0, 242, 255, 0.04); border-radius: 6px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1);">
+  <div style="font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 6px; letter-spacing: 1.5px; font-weight: bold;">
+    [ INTERACTIVE SIMULATOR / 実寸比較 ]
+  </div>
+  <div style="font-size: 17px; font-weight: bold; color: #fff; margin-bottom: 8px;">
+    📐 人間（170cm）や他の恐竜と実寸で並べてみよう！
+  </div>
+  <p style="font-size: 13px; color: var(--text-dim); line-height: 1.6; margin: 0 0 15px 0;">
+    当サイトの「サイズ比較シミュレータ」では、アルゼンチノサウルスやブラキオサウルス、ティラノサウルスを人間と1:1のスケールで自由に並べて大きさを体感できます。
+  </p>
+  <a href="/size-comparison/" class="nav-link" style="display: inline-flex; align-items: center; gap: 8px; background: var(--primary-neon); color: #010408; font-weight: bold; padding: 10px 22px; border-radius: 4px; text-decoration: none; font-size: 14px; font-family: var(--font-mono); transition: all 0.3s ease; box-shadow: 0 0 12px rgba(0, 242, 255, 0.4);">
+    <span>サイズ比較シミュレータを起動する</span> &raquo;
+  </a>
+</div>
 
 <h2 class="article-section-title">恐竜の大きさはどう測る？知っておきたい「全長」と「体重」の基本</h2>
 <p class="article-paragraph">
@@ -495,10 +514,31 @@ relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauropose
   恐竜の化石発掘は今も世界中で続いており、明日にでも「アルゼンチノサウルスを超える最大の恐竜」の骨が発見されるかもしれません。そんな未知のフロンティアと最新科学の進歩こそが、恐竜研究の最大の魅力です。ぜひ親子で「この恐竜はこんなに大きかったんだね」「今度は本物の骨を見に博物館に行ってみよう！」と語り合い、太古の地球への知的好奇心のロマンを膨らませてみてくださいね！
 </p>
 
+<!-- 実寸サイズ比較シミュレータ＆図鑑への回遊導線 -->
+<div class="hud-panel" style="margin: 30px 0; padding: 20px; border: 1px solid var(--primary-neon); background: rgba(0, 242, 255, 0.03); border-radius: 6px;">
+  <div style="font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 6px; letter-spacing: 1px; font-weight: bold;">
+    [ NEXT ACTION / 実寸サイズシミュレータへ ]
+  </div>
+  <h3 style="font-size: 16px; margin: 0 0 10px 0; color: #fff;">
+    今回登場した巨大恐竜たちを、人間と並べて大きさを体感してみませんか？
+  </h3>
+  <p style="font-size: 13px; color: var(--text-dim); line-height: 1.6; margin: 0 0 15px 0;">
+    ブラキオサウルス、アルゼンチノサウルス、ティラノサウルスなどを自由に選んで、1:1のスケールで比較できるシミュレーション機能を無料で公開しています。
+  </p>
+  <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+    <a href="/size-comparison/" class="nav-link" style="display: inline-flex; align-items: center; gap: 6px; background: var(--primary-neon); color: #010408; font-weight: bold; padding: 10px 18px; border-radius: 4px; text-decoration: none; font-size: 13px; font-family: var(--font-mono);">
+      <span>📐 実寸サイズ比較シミュレータ</span> &raquo;
+    </a>
+    <a href="/dictionary/" class="nav-link" style="display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--panel-border); background: var(--panel-bg); color: var(--text-main); font-weight: bold; padding: 10px 18px; border-radius: 4px; text-decoration: none; font-size: 13px; font-family: var(--font-mono);">
+      <span>☷ 恐竜図鑑トップへ</span> &raquo;
+    </a>
+  </div>
+</div>
+
 <p class="article-paragraph" style="margin-top: 15px; margin-bottom: 0;">
   ※巨大恐竜の代名詞！ブラキオサウルスの大きさや生態をさらに詳しく知りたい方はこちら：
 </p>
-<a href="/topics/brachiosaurus-guide" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
+<a href="/topics/brachiosaurus-guide/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; margin-top: 8px; margin-bottom: 20px; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: fit-content; max-width: 100%;">
   <img src="/images/topics/brachiosaurus-guide/brachiosaurus_detail.webp" alt="ブラキオサウルスのすべてを徹底解説" style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 2px; border: 1px solid var(--panel-border); margin-bottom: 10px; display: block;">
   <span style="color: var(--primary-neon); text-decoration: underline; font-weight: bold; font-size: 13px; display: block;">
     【巨大恐竜の代表格】ブラキオサウルスとは？大きさ・特徴・生態をわかりやすく解説！

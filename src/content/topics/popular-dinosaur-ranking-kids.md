@@ -2,22 +2,37 @@
 id: "popular-dinosaur-ranking-kids"
 date: "2026.06.18"
 category: "ranking"
-title: "子供に人気の恐竜ランキングTOP10！なぜ人気なのかも解説"
-summary: "「一番人気の恐竜はどれ？」全国のファン投票や図鑑アンケート、おもちゃの売れ筋データを合算した、本当に納得できる『子供に人気の恐竜ランキングTOP10』を発表！各恐竜の特徴や「なぜ人気なのか」という秘密まで、子供向けに優しく解説します。"
+title: "【一番人気はどれ？】恐竜人気ランキングTOP10！かっこいい人気恐竜の特徴と人気の理由を子供向けに解説"
+summary: "子供に一番人気の恐竜はどれ？全国のファン投票や図鑑アンケートをもとに、かっこいい「恐竜人気ランキングTOP10」を発表！ティラノサウルスやトリケラトプスなど、定番のスター恐竜から知る人ぞ知る人気者まで、特徴や人気の理由を子供向けに優しく解説します。"
 image: "images/topics/popular-dinosaur-ranking-kids/popular_dinosaur_ranking.webp"
 securityLevel: "LEVEL 1 (KIDS FRIENDLY)"
 relatedSpecimens: ["tyrannosaurus","triceratops","spinosaurus","mosasaurus","brachiosaurus","stegosaurus","pteranodon","velociraptor","ankylosaurus","parasaurolophus"]
 ---
 
 <p class="article-paragraph">
-  「地球の歴史の中で、一番人気の恐竜はどれなんだろう？」<br>
-  「子供が大好きな恐竜をプレゼントしたいけれど、どれが人気なのかな？」<br>
+  「地球の歴史の中で、一番人気の恐竜はどれなんだろう？」「かっこいい恐竜をプレゼントしたいけれど、どれが人気なのかな？」<br>
   恐竜が大好きなお子様を持つ保護者の方や、自分のお気に入りの恐竜が何位なのか知りたい子供たちにとって、人気の恐竜ランキングはとても気になるテーマですよね。
 </p>
 
 <p class="article-paragraph">
   実は、恐竜の人気は生息していた時代や最新の研究、さらには映画や図鑑などの影響によって少しずつ変化しています。そこでこの記事では、<strong>全国の恐竜ファンによる最新の投票データ、図鑑の読者アンケート、そしておもちゃ（フィギュアなど）の売れ筋情報</strong>を独自に合算した、客観的で納得感のある「総合人気ランキングTOP10」を作成しました！
 </p>
+
+<!-- 早見一覧＆サイズ比較誘導 -->
+<div class="hud-panel" style="margin: 25px 0; padding: 18px; border: 1px solid var(--primary-neon); background: rgba(0, 242, 255, 0.04); border-radius: 6px;">
+  <div style="font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 6px; letter-spacing: 1px; font-weight: bold;">
+    [ POPULARITY TOP 10 / 人気恐竜ランキングTOP10 ]
+  </div>
+  <p style="font-size: 13px; color: var(--text-dim); margin: 0 0 12px 0; line-height: 1.6;">
+    1位 ティラノサウルス / 2位 トリケラトプス / 3位 スピノサウルス / 4位 モササウルス / 5位 ブラキオサウルス / 6位 ステゴサウルス / 7位 プテラノドン / 8位 ヴェロキラプトル / 9位 アンキロサウルス / 10位 パラサウロロフス
+  </p>
+  <div style="border-top: 1px solid var(--panel-border); padding-top: 10px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+    <span style="font-size: 12px; color: var(--text-dim);">人気恐竜たちの実際の大きさを人間と比べてみよう！</span>
+    <a href="/size-comparison/" class="nav-link" style="display: inline-flex; align-items: center; gap: 6px; background: var(--primary-neon); color: #010408; font-weight: bold; padding: 6px 14px; border-radius: 4px; text-decoration: none; font-size: 12px; font-family: var(--font-mono);">
+      <span>📐 実寸サイズ比較を起動</span> &raquo;
+    </a>
+  </div>
+</div>
 
 <p class="article-paragraph">
   それぞれの恐竜が持つすごい特徴や「なぜ人気なのか」という秘密を、子供たちにも分かりやすい言葉で丁寧に解説します。さらに、記事の後半では「恐竜じゃないのに大人気の生き物」の謎や、よくある疑問にも答えていきますので、ぜひ親子で一緒に楽しんでくださいね！

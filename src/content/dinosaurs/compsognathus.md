@@ -2,6 +2,7 @@
 id: "compsognathus"
 name: "コンプソグナトゥス"
 kana: "こんぷそぐなとぅす"
+aliases: ["コンプソグナトス", "こんぷそぐなとす"]
 scientificName: "Compsognathus longipes"
 era: "ジュラ紀後期"
 region: "ヨーロッパ（ドイツ・フランス）"

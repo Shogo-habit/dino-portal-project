@@ -171,7 +171,7 @@ const GROUPS = [
 
     <div class="dino-grid" id="dino-grid-content">
         {DINOSAURS.map(d => (
-            <div class="dino-card hud-panel" data-id={d.id} data-name={d.name} data-kana={d.kana} data-scientific={d.scientificName} data-group={d.group || '未分類'} data-era={d.era} data-region={d.region} data-length={d.length} data-diet={d.diet}>
+            <div class="dino-card hud-panel" data-id={d.id} data-name={d.name} data-kana={d.kana} data-aliases={(d.aliases || []).join(',')} data-scientific={d.scientificName} data-group={d.group || '未分類'} data-era={d.era} data-region={d.region} data-length={d.length} data-diet={d.diet}>
                 <a href={`/dictionary/${d.id}/`} style="text-decoration: none; color: inherit; display: block; height: 100%;">
                     <div class="card-img-wrap">
                         <img src={`/${d.image}`} alt={d.name} loading="lazy" decoding="async" width="400" height="225">
@@ -207,12 +207,42 @@ const GROUPS = [
             const sort = document.getElementById('sort-order') as HTMLSelectElement;
             const cardGrid = document.getElementById('dino-grid-content');
             if (!search || !era || !region || !group || !diet || !sort || !cardGrid) return;
+            if (cardGrid.dataset.initialized === 'true') return;
+            cardGrid.dataset.initialized = 'true';
 
             const cards = Array.from(cardGrid.getElementsByClassName('dino-card')) as HTMLElement[];
 
-            // Hilper utils
+            // Helper utils
             const hiraToKata = (str: string) => str.replace(/[\u3041-\u3096]/g, m => String.fromCharCode(m.charCodeAt(0) + 0x60));
             const kataToHira = (str: string) => str.replace(/[\u30a1-\u30f6]/g, m => String.fromCharCode(m.charCodeAt(0) - 0x60));
+            const normalizeJa = (str: string) => {
+                if (!str) return '';
+                return str
+                    .normalize('NFC')
+                    .trim()
+                    .toLowerCase()
+                    .replace(/[\s　・＝=＿_\-]/g, '')
+                    .replace(/[\u3041-\u3096]/g, m => String.fromCharCode(m.charCodeAt(0) + 0x60))
+                    .replace(/ヴァ/g, 'バ')
+                    .replace(/ヴィ/g, 'ビ')
+                    .replace(/ヴェ/g, 'ベ')
+                    .replace(/ヴォ/g, 'ボ')
+                    .replace(/ヴュ/g, 'ビュ')
+                    .replace(/ヴ/g, 'ブ')
+                    .replace(/ベナートル/g, 'ベナトル')
+                    .replace(/トゥ/g, 'ト')
+                    .replace(/ドゥ/g, 'ド')
+                    .replace(/ァ/g, 'ア')
+                    .replace(/ィ/g, 'イ')
+                    .replace(/ゥ/g, 'ウ')
+                    .replace(/ェ/g, 'エ')
+                    .replace(/ォ/g, 'オ')
+                    .replace(/ャ/g, 'ヤ')
+                    .replace(/ュ/g, 'ユ')
+                    .replace(/ョ/g, 'ヨ')
+                    .replace(/ッ/g, 'ツ')
+                    .replace(/ヮ/g, 'ワ');
+            };
             const extractNumber = (str: string) => {
                 if (!str) return 0;
                 const match = str.match(/[0-9.]+/);
@@ -267,9 +297,10 @@ const GROUPS = [
                     return;
                 }
 
-                // 2. localStorage fallback
+                // 2. Restore from localStorage only if returning from a dinosaur detail page
                 const saved = localStorage.getItem(DICT_FILTERS_KEY);
-                if (saved) {
+                const fromDetail = document.referrer && document.referrer.includes('/dictionary/');
+                if (saved && fromDetail) {
                     const state = JSON.parse(saved);
                     search.value = state.search || '';
                     era.value = state.era || '';
@@ -277,6 +308,14 @@ const GROUPS = [
                     group.value = state.group || '';
                     diet.value = state.diet || '';
                     sort.value = state.sort || 'kana';
+                } else {
+                    search.value = '';
+                    era.value = '';
+                    region.value = '';
+                    group.value = '';
+                    diet.value = '';
+                    sort.value = 'kana';
+                    saveFiltersState();
                 }
             };
 
@@ -301,14 +340,108 @@ const GROUPS = [
                 }
             };
 
+            const checkCardMatchesSearch = (card: HTMLElement, searchVal: string, searchKata: string, searchHira: string, normSearch: string) => {
+                if (!searchVal) return true;
+                const name = card.getAttribute('data-name') || '';
+                const kana = card.getAttribute('data-kana') || '';
+                const aliases = (card.getAttribute('data-aliases') || '').split(',').filter(Boolean);
+                const id = (card.getAttribute('data-id') || '').toLowerCase();
+                const scientific = (card.getAttribute('data-scientific') || '').toLowerCase();
+
+                return (
+                    name.includes(searchKata) ||
+                    kana.includes(searchHira) ||
+                    (normSearch.length > 0 && (normalizeJa(name).includes(normSearch) || normalizeJa(kana).includes(normSearch))) ||
+                    aliases.some(a => a.includes(searchKata) || a.includes(searchHira) || (normSearch.length > 0 && normalizeJa(a).includes(normSearch))) ||
+                    id.includes(searchVal) ||
+                    scientific.includes(searchVal)
+                );
+            };
+
+            const checkCardMatchesCategory = (card: HTMLElement, eraVal: string, regionVal: string, groupVal: string, dietVal: string) => {
+                const cardEra = card.getAttribute('data-era') || '';
+                const cardRegion = card.getAttribute('data-region') || '';
+                const cardGroup = card.getAttribute('data-group') || '';
+                const cardDiet = card.getAttribute('data-diet') || '';
+
+                // Match Era
+                let matchesEra = !eraVal;
+                if (eraVal) {
+                    if (eraVal === '古生代') {
+                        matchesEra = cardEra.includes('古生代') || cardEra.includes('カンブリア') || cardEra.includes('オルドビス') || cardEra.includes('シルル') || cardEra.includes('デボン') || cardEra.includes('石炭') || cardEra.includes('ペルム');
+                    } else {
+                        matchesEra = cardEra.includes(eraVal);
+                    }
+                }
+
+                // Match Region
+                let matchesRegion = !regionVal;
+                if (regionVal) {
+                    if (regionVal === '海洋') {
+                        matchesRegion = cardRegion.includes('海') && !cardRegion.includes('北海道');
+                    } else if (regionVal === '北アメリカ') {
+                        matchesRegion = cardRegion.includes('北アメリカ') || cardRegion.includes('北米') || cardRegion.includes('カナダ') || (cardRegion.includes('アメリカ') && !cardRegion.includes('南アメリカ'));
+                    } else if (regionVal === '南アメリカ') {
+                        matchesRegion = cardRegion.includes('南アメリカ') || cardRegion.includes('南米') || cardRegion.includes('アルゼンチン') || cardRegion.includes('ブラジル') || cardRegion.includes('チリ');
+                    } else if (regionVal === 'アジア') {
+                        matchesRegion = (cardRegion.includes('アジア') || cardRegion.includes('中国') || cardRegion.includes('モンゴル') || cardRegion.includes('韓国') || cardRegion.includes('インド') || cardRegion.includes('ウズベキスタン') || cardRegion.includes('タイ') || cardRegion.includes('カザフスタン')) && !cardRegion.includes('ロシア');
+                    } else if (regionVal === 'ヨーロッパ') {
+                        matchesRegion = cardRegion.includes('ヨーロッパ') || cardRegion.includes('イギリス') || cardRegion.includes('ドイツ') || cardRegion.includes('フランス') || cardRegion.includes('スペイン') || cardRegion.includes('ポルトガル') || cardRegion.includes('スコットランド');
+                    } else if (regionVal === 'アフリカ') {
+                        matchesRegion = cardRegion.includes('アフリカ') || cardRegion.includes('タンザニア') || cardRegion.includes('ニジェール') || cardRegion.includes('エジプト') || cardRegion.includes('モロッコ') || cardRegion.includes('マダガスカル');
+                    } else if (regionVal === 'オセアニア') {
+                        matchesRegion = cardRegion.includes('オセアニア') || cardRegion.includes('オーストラリア');
+                    } else if (regionVal === '日本') {
+                        matchesRegion = cardRegion.includes('日本') || cardRegion.includes('樺太');
+                    } else {
+                        matchesRegion = cardRegion.includes(regionVal);
+                    }
+                }
+
+                // Match Group
+                let matchesGroup = !groupVal;
+                if (groupVal) {
+                    if (groupVal === 'その他') {
+                        const knownGroups = ['獣脚類', '竜脚類', '鳥脚類', '剣竜類', '堅頭竜類', 'よろい竜類', '角竜類', '翼竜', '首長竜', '魚竜'];
+                        matchesGroup = !knownGroups.includes(cardGroup);
+                    } else {
+                        matchesGroup = cardGroup === groupVal;
+                    }
+                }
+
+                // Match Diet
+                const matchesDiet = !dietVal || cardDiet.includes(dietVal);
+
+                return matchesEra && matchesRegion && matchesGroup && matchesDiet;
+            };
+
             const updateList = () => {
                 const searchVal = search.value.trim().toLowerCase();
                 const searchKata = hiraToKata(searchVal);
                 const searchHira = kataToHira(searchVal);
+                const normSearch = normalizeJa(searchVal);
+
+                // If user typed a search query and active category filters would hide all matching results, auto-clear category filters
+                if (searchVal && (era.value || region.value || group.value || diet.value)) {
+                    const hasMatchWithFilters = cards.some(c =>
+                        checkCardMatchesSearch(c, searchVal, searchKata, searchHira, normSearch) &&
+                        checkCardMatchesCategory(c, era.value, region.value, group.value, diet.value)
+                    );
+                    const hasMatchWithoutFilters = cards.some(c =>
+                        checkCardMatchesSearch(c, searchVal, searchKata, searchHira, normSearch)
+                    );
+                    if (!hasMatchWithFilters && hasMatchWithoutFilters) {
+                        era.value = '';
+                        region.value = '';
+                        group.value = '';
+                        diet.value = '';
+                    }
+                }
 
                 const eraVal = era.value;
                 const regionVal = region.value;
                 const groupVal = group.value;
+                const dietVal = diet.value;
                 const sortVal = sort.value;
 
                 // Save
@@ -328,55 +461,10 @@ const GROUPS = [
 
                 // Filter & Sort
                 cards.forEach(card => {
-                    const name = card.getAttribute('data-name') || '';
-                    const kana = card.getAttribute('data-kana') || '';
-                    const id = card.getAttribute('data-id') || '';
-                    const scientific = (card.getAttribute('data-scientific') || '').toLowerCase();
-                    const cardEra = card.getAttribute('data-era') || '';
-                    const cardRegion = card.getAttribute('data-region') || '';
-                    const cardGroup = card.getAttribute('data-group') || '';
+                    const matchesSearch = checkCardMatchesSearch(card, searchVal, searchKata, searchHira, normSearch);
+                    const matchesCategory = checkCardMatchesCategory(card, eraVal, regionVal, groupVal, dietVal);
 
-                    // Match Search
-                    const matchesSearch = !searchVal || 
-                        name.startsWith(searchKata) ||
-                        kana.startsWith(searchHira) ||
-                        id.includes(searchVal) ||
-                        scientific.includes(searchVal);
-
-                    // Match Era
-                    const matchesEra = !eraVal || cardEra.includes(eraVal);
-
-                    // Match Region
-                    let matchesRegion = !regionVal;
-                    if (regionVal) {
-                        if (regionVal === '海洋') {
-                            matchesRegion = cardRegion.includes('海') && !cardRegion.includes('北海道');
-                        } else if (regionVal === 'アジア') {
-                            matchesRegion = cardRegion.includes('アジア') && !cardRegion.includes('ロシア');
-                        } else if (regionVal === 'オセアニア') {
-                            matchesRegion = cardRegion.includes('オセアニア') || cardRegion.includes('オーストラリア');
-                        } else {
-                            matchesRegion = cardRegion.includes(regionVal);
-                        }
-                    }
-
-                    // Match Group
-                    let matchesGroup = !groupVal;
-                    if (groupVal) {
-                        if (groupVal === 'その他') {
-                            const knownGroups = ['獣脚類', '竜脚類', '鳥脚類', '剣竜類', '堅頭竜類', 'よろい竜類', '角竜類', '翼竜', '首長竜', '魚竜'];
-                            matchesGroup = !knownGroups.includes(cardGroup);
-                        } else {
-                            matchesGroup = cardGroup === groupVal;
-                        }
-                    }
-
-                    // Match Diet
-                    const dietVal = diet.value;
-                    const cardDiet = card.getAttribute('data-diet') || '';
-                    const matchesDiet = !dietVal || cardDiet.includes(dietVal);
-
-                    if (matchesSearch && matchesEra && matchesRegion && matchesGroup && matchesDiet) {
+                    if (matchesSearch && matchesCategory) {
                         card.style.display = 'block';
                     } else {
                         card.style.display = 'none';
@@ -476,6 +564,7 @@ const GROUPS = [
 
         // Run on load and transitions
         document.addEventListener('astro:page-load', initDictionary);
+        initDictionary();
     </script>
 </Layout>
 

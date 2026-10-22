@@ -2,6 +2,7 @@
 id: "fukuivenator"
 name: "フクイベナトル"
 kana: "ふくいべなとる"
+aliases: ["フクイヴェナトル", "ふくいゔぇなとる", "フクイベナートル", "ふくいべなーとる", "フクイヴェナートル", "ふくいゔぇなーとる"]
 scientificName: "Fukuivenator paradoxus"
 era: "白亜紀前期"
 region: "日本（福井県）"

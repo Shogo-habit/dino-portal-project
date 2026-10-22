@@ -95,6 +95,26 @@ const articleSchema = {
                 </div>
             </section>
         )}
+
+        <!-- 全トピックス共通の目玉機能（サイズ比較・クイズ）誘導 -->
+        <section class="topic-features-cta hud-panel" style="margin-top: 50px; padding: 22px; border: 1px solid var(--panel-border); background: rgba(0, 242, 255, 0.02); border-radius: 6px;">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 6px; letter-spacing: 1.5px; font-weight: bold;">
+                [ INTERACTIVE LAB / 体験型シミュレータ＆機能 ]
+            </div>
+            <div style="font-size: 15px; font-weight: bold; color: #fff; margin-bottom: 12px;">
+                Dino-Portalの体験機能で遊んでみよう
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 15px;">
+                <a href="/size-comparison/" style="text-decoration: none; color: inherit; display: block; padding: 15px; border: 1px solid var(--panel-border); background: var(--panel-bg); border-radius: 4px; transition: all 0.3s ease;">
+                    <div style="font-size: 14px; font-weight: bold; color: var(--primary-neon); margin-bottom: 5px;">📐 実寸サイズ比較シミュレータ</div>
+                    <div style="font-size: 12px; color: var(--text-dim); line-height: 1.5;">好きな恐竜と人間（170cm）を1:1スケールで自由に並べて大きさを体感！</div>
+                </a>
+                <a href="/quiz/" style="text-decoration: none; color: inherit; display: block; padding: 15px; border: 1px solid var(--panel-border); background: var(--panel-bg); border-radius: 4px; transition: all 0.3s ease;">
+                    <div style="font-size: 14px; font-weight: bold; color: var(--primary-neon); margin-bottom: 5px;">☵ 恐竜クイズチャレンジ</div>
+                    <div style="font-size: 12px; color: var(--text-dim); line-height: 1.5;">古生物学の最新知識をテスト！全問正解を目指そう。</div>
+                </a>
+            </div>
+        </section>
         
         <div style="margin-top: 40px; border-top: 1px solid var(--panel-border); padding-top: 20px;">
             <a href="/topics/" class="nav-link" aria-label="トピックス一覧に戻る" style="text-decoration: none;">[ トピックス一覧に戻る ]</a>

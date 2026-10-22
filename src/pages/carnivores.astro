@@ -210,7 +210,7 @@ const schema = [
       <!-- Dinosaur Card Grid -->
       <div class="dino-grid" id="specimen-grid">
         {carnivoreDinosaurs.map(d => (
-          <div class="dino-card hud-panel" data-name={d.name} data-kana={d.kana} data-length={d.length} data-diet={d.diet} data-group={d.group}>
+          <div class="dino-card hud-panel" data-id={d.id} data-name={d.name} data-kana={d.kana} data-aliases={(d.aliases || []).join(',')} data-scientific={d.scientificName} data-length={d.length} data-diet={d.diet} data-group={d.group}>
             <a href={`/dictionary/${d.id}/`} style="text-decoration: none; color: inherit; display: block; height: 100%;">
               <div class="card-img-wrap" style="position: relative; overflow: hidden; aspect-ratio: 1 / 1; background: #000;">
                 <img src={`/${d.image}`} alt={d.name} loading="lazy" decoding="async" width="400" height="400" style="width: 100%; height: 100%; object-fit: contain;">
@@ -244,8 +244,41 @@ const schema = [
       const sort = document.getElementById('specimen-sort') as HTMLSelectElement;
       const grid = document.getElementById('specimen-grid');
       if (!search || !sort || !grid) return;
+      if (grid.dataset.initialized === 'true') return;
+      grid.dataset.initialized = 'true';
 
       const cards = Array.from(grid.getElementsByClassName('dino-card')) as HTMLElement[];
+
+      const hiraToKata = (str: string) => str.replace(/[\u3041-\u3096]/g, m => String.fromCharCode(m.charCodeAt(0) + 0x60));
+      const kataToHira = (str: string) => str.replace(/[\u30a1-\u30f6]/g, m => String.fromCharCode(m.charCodeAt(0) - 0x60));
+      const normalizeJa = (str: string) => {
+        if (!str) return '';
+        return str
+          .normalize('NFC')
+          .trim()
+          .toLowerCase()
+          .replace(/[\s　・＝=＿_\-]/g, '')
+          .replace(/[\u3041-\u3096]/g, m => String.fromCharCode(m.charCodeAt(0) + 0x60))
+          .replace(/ヴァ/g, 'バ')
+          .replace(/ヴィ/g, 'ビ')
+          .replace(/ヴェ/g, 'ベ')
+          .replace(/ヴォ/g, 'ボ')
+          .replace(/ヴュ/g, 'ビュ')
+          .replace(/ヴ/g, 'ブ')
+                .replace(/ベナートル/g, 'ベナトル')
+          .replace(/トゥ/g, 'ト')
+          .replace(/ドゥ/g, 'ド')
+          .replace(/ァ/g, 'ア')
+          .replace(/ィ/g, 'イ')
+          .replace(/ゥ/g, 'ウ')
+          .replace(/ェ/g, 'エ')
+          .replace(/ォ/g, 'オ')
+          .replace(/ャ/g, 'ヤ')
+          .replace(/ュ/g, 'ユ')
+          .replace(/ョ/g, 'ヨ')
+          .replace(/ッ/g, 'ツ')
+          .replace(/ヮ/g, 'ワ');
+      };
 
       const parseLen = (str: string) => {
         const m = str.match(/[0-9.]+/);
@@ -254,12 +287,24 @@ const schema = [
 
       function updateGrid() {
         const query = search.value.trim().toLowerCase();
+        const queryKata = hiraToKata(query);
+        const queryHira = kataToHira(query);
+        const normQuery = normalizeJa(query);
         const sortVal = sort.value;
 
         cards.forEach(card => {
-          const name = (card.dataset.name || '').toLowerCase();
-          const kana = (card.dataset.kana || '').toLowerCase();
-          const match = !query || name.includes(query) || kana.includes(query);
+          const name = card.dataset.name || '';
+          const kana = card.dataset.kana || '';
+          const aliases = (card.dataset.aliases || '').split(',').filter(Boolean);
+          const id = (card.dataset.id || '').toLowerCase();
+          const scientific = (card.dataset.scientific || '').toLowerCase();
+          const match = !query ||
+            name.includes(queryKata) ||
+            kana.includes(queryHira) ||
+            (normQuery.length > 0 && (normalizeJa(name).includes(normQuery) || normalizeJa(kana).includes(normQuery))) ||
+            aliases.some(a => a.includes(queryKata) || a.includes(queryHira) || (normQuery.length > 0 && normalizeJa(a).includes(normQuery))) ||
+            id.includes(query) ||
+            scientific.includes(query);
           card.style.display = match ? 'block' : 'none';
         });
 

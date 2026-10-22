@@ -1,7 +1,7 @@
 ---
 id: "velociraptor"
 name: "ヴェロキラプトル"
-kana: "ヴぇろきらぷとる"
+kana: "ゔぇろきらぷとる"
 scientificName: "Velociraptor mongoliensis"
 era: "白亜紀後期"
 region: "アジア"

@@ -2,18 +2,45 @@
 id: "strongest-dinosaur-ranking-kids"
 date: "2026.06.15"
 category: "ranking"
-title: "最強の恐竜ランキングTOP10！子供にもわかりやすく解説"
-summary: "「地球で一番強い恐竜はどれ？」誰もが夢見る最強 of 最強の恐竜ランキングTOP10を、最新の科学と複数の説を交えて子供向けにわかりやすく解説します！ティラノサウルスなどの巨大肉食恐竜から、最強の防御力を誇る草食恐竜まで、強さの秘密や対決バトル予想も掲載。"
+title: "【最強の恐竜はどれ？】強さランキングTOP10！ティラノサウルスやスピノサウルスなど頂点に立つ恐竜を子供向けに徹底解説"
+summary: "太古の地球で一番強かった恐竜は誰？最新の古生物学に基づく「最強の恐竜ランキングTOP10」を大発表！絶対王者ティラノサウルスや水陸両用スピノサウルス、鉄壁のトリケラトプスなど、攻撃力・防御力・噛む力を徹底比較して子供向けにわかりやすく解説します。"
 image: "images/topics/strongest-dinosaur-ranking-kids/strength_ranking.webp"
 securityLevel: "LEVEL 1 (KIDS FRIENDLY)"
 relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
 ---
 
 <p class="article-paragraph">
-  「地球の歴史の中で、一番強い恐竜はどれだったんだろう？」「もし戦ったら、誰が勝つの？」<br>
+  「地球の歴史の中で、一番強い恐竜はどれだったんだろう？」「ティラノサウルスとスピノサウルス、もし戦ったら誰が勝つの？」<br>
   恐竜が大好きな子供たちだけでなく、大人のみなさんも一度は胸を躍らせて考えたことがありますよね。
-  映画やアニメで大あばれする恐竜たちを見ると、彼らの戦闘力や「最強」の座がどこにあるのか、とても気になります。
 </p>
+
+<!-- 早見クイックサマリー -->
+<div class="hud-panel" style="margin: 25px 0; padding: 20px; border: 1px solid var(--primary-neon); background: rgba(0, 242, 255, 0.04); border-radius: 6px;">
+  <div style="font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 6px; letter-spacing: 1px; font-weight: bold;">
+    [ QUICK SUMMARY / 最強恐竜TOP10 早見表 ]
+  </div>
+  <div style="font-size: 16px; font-weight: bold; color: #fff; margin-bottom: 12px;">
+    🏆 最強恐竜ランキングTOP10 一覧
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; font-size: 13px;">
+    <div style="background: rgba(255,255,255,0.03); padding: 8px 12px; border-left: 3px solid #ff4d4d; border-radius: 2px;"><strong>第1位：</strong>ティラノサウルス</div>
+    <div style="background: rgba(255,255,255,0.03); padding: 8px 12px; border-left: 3px solid #ff922b; border-radius: 2px;"><strong>第2位：</strong>ギガノトサウルス</div>
+    <div style="background: rgba(255,255,255,0.03); padding: 8px 12px; border-left: 3px solid #ff922b; border-radius: 2px;"><strong>第3位：</strong>カルカロドントサウルス</div>
+    <div style="background: rgba(255,255,255,0.03); padding: 8px 12px; border-left: 3px solid #4dadf7; border-radius: 2px;"><strong>第4位：</strong>スピノサウルス</div>
+    <div style="background: rgba(255,255,255,0.03); padding: 8px 12px; border-left: 3px solid #51cf66; border-radius: 2px;"><strong>第5位：</strong>トリケラトプス</div>
+    <div style="background: rgba(255,255,255,0.03); padding: 8px 12px; border-left: 3px solid #51cf66; border-radius: 2px;"><strong>第6位：</strong>アンキロサウルス</div>
+    <div style="background: rgba(255,255,255,0.03); padding: 8px 12px; border-left: 3px solid #fcc419; border-radius: 2px;"><strong>第7位：</strong>アルゼンチノサウルス</div>
+    <div style="background: rgba(255,255,255,0.03); padding: 8px 12px; border-left: 3px solid #845ef7; border-radius: 2px;"><strong>第8位：</strong>アロサウルス</div>
+    <div style="background: rgba(255,255,255,0.03); padding: 8px 12px; border-left: 3px solid #ff6b6b; border-radius: 2px;"><strong>第9位：</strong>テリジノサウルス</div>
+    <div style="background: rgba(255,255,255,0.03); padding: 8px 12px; border-left: 3px solid #20c997; border-radius: 2px;"><strong>第10位：</strong>ヴェロキラプトル</div>
+  </div>
+  <div style="margin-top: 15px; border-top: 1px solid var(--panel-border); padding-top: 12px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+    <span style="font-size: 12px; color: var(--text-dim);">肉食恐竜と草食恐竜、実際の大きさはどう違う？</span>
+    <a href="/size-comparison/" class="nav-link" style="display: inline-flex; align-items: center; gap: 6px; background: var(--primary-neon); color: #010408; font-weight: bold; padding: 6px 14px; border-radius: 4px; text-decoration: none; font-size: 12px; font-family: var(--font-mono);">
+      <span>📐 実寸サイズで比べる</span> &raquo;
+    </a>
+  </div>
+</div>
 
 <p class="article-paragraph">
   実は、大昔に暮らしていた恐竜たちの「最強」を決めるのは、専門家の間でも意見が分かれるとても難しいテーマです。
@@ -22,9 +49,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
 </p>
 
 <p class="article-paragraph">
-  この記事では、最新の科学的なデータをもとに、<strong style="color: var(--primary-neon);">「最強の恐竜ランキングTOP10」</strong>を発表します！
-  それぞれの恐竜が持っていたすごい武器や強さの秘密を、子供たちにも分かりやすい言葉で丁寧に解説します。
-  さらに、夢の「恐竜バトル」の予想や、よくある質問にも答えていきますので、ぜひ親子で一緒に楽しんでくださいね！
+  この記事では、最新の科学的なデータをもとに、それぞれの恐竜が持っていた驚異の武器や強さの秘密を、子供たちにも分かりやすい言葉で丁寧に解説します！さらに、夢の「恐竜バトル」の予想や、よくある質問にも答えていきますので、ぜひ親子で一緒に楽しんでくださいね！
 </p>
 
 <h2 class="article-section-title">最強の恐竜はどう決まる？（強さの基準）</h2>

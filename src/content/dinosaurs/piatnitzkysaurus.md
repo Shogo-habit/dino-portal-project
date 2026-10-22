@@ -1,7 +1,7 @@
 ---
 id: "piatnitzkysaurus"
 name: "ピアトニツキーサウルス"
-kana: "ぴあとにっきーさうるす"
+kana: "ぴあとにつきーさうるす"
 scientificName: "Piatnitzkysaurus floresi"
 era: "ジュラ紀中期"
 region: "アルゼンチン（チュブ県パタゴニア）"

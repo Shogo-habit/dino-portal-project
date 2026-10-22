@@ -1,7 +1,7 @@
 ---
 id: "oviraptor"
 name: "オヴィラプトル"
-kana: "おヴぃらぷとる"
+kana: "おゔぃらぷとる"
 scientificName: "Oviraptor philoceratops"
 era: "白亜紀後期"
 region: "アジア"
