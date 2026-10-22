@@ -11,6 +11,7 @@ interface Props {
   ogType?: string;
   noindex?: boolean;
   schema?: object | object[];
+  preloadImage?: string;
 }
 
 const { 
@@ -20,7 +21,8 @@ const {
   ogImage = '/images/map/world/cyber_world_map.webp',
   ogType = 'website',
   noindex = false,
-  schema
+  schema,
+  preloadImage
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, 'https://dino-portal.com/');
@@ -41,6 +43,10 @@ const fullOgImageUrl = new URL(ogImage, 'https://dino-portal.com/');
     <meta name="description" content={description}>
     {noindex && <meta name="robots" content="noindex" />}
     <link rel="canonical" href={canonicalURL.href}>
+    
+    {preloadImage && (
+      <link rel="preload" as="image" href={preloadImage} fetchpriority="high" />
+    )}
     
 
 

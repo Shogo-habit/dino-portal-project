@@ -169,6 +169,23 @@ const GROUPS = [
     <input type="hidden" id="filter-group" value="">
     <input type="hidden" id="filter-diet" value="">
 
+    <!-- 五十音ジャンプバー (PC・スマホ両対応) -->
+    <div class="kana-jump-bar hud-panel" style="margin-bottom: 20px; padding: 10px 16px; display: flex; align-items: center; justify-content: space-between; gap: 8px; overflow-x: auto; scrollbar-width: none; background: rgba(0, 242, 255, 0.03); border-color: rgba(0, 242, 255, 0.2);">
+        <div style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); white-space: nowrap; display: flex; align-items: center; gap: 4px; flex-shrink: 0;">
+            <span>⚡ 五十音:</span>
+        </div>
+        <div class="kana-chips-wrap" style="display: flex; gap: 6px; flex-wrap: nowrap; align-items: center; overflow-x: auto; scrollbar-width: none;">
+            {['あ', 'か', 'さ', 'た', 'な', 'は', 'ま', 'や', 'ら', 'わ'].map(row => (
+                <button type="button" class="kana-jump-btn scan-tag-btn" data-row={row} style="padding: 5px 11px; font-size: 12px; font-weight: bold; cursor: pointer; min-width: 32px; text-align: center; border-radius: 3px;" title={`${row}行へジャンプ`}>
+                    {row}
+                </button>
+            ))}
+            <button type="button" id="kana-top-btn" class="scan-tag-btn" style="padding: 5px 12px; font-size: 11px; font-family: var(--font-mono); color: var(--text-dim); cursor: pointer; white-space: nowrap; border-radius: 3px;">
+                ▲ TOP
+            </button>
+        </div>
+    </div>
+
     <div class="dino-grid" id="dino-grid-content">
         {DINOSAURS.map(d => (
             <div class="dino-card hud-panel" data-id={d.id} data-name={d.name} data-kana={d.kana} data-aliases={(d.aliases || []).join(',')} data-scientific={d.scientificName} data-group={d.group || '未分類'} data-era={d.era} data-region={d.region} data-length={d.length} data-diet={d.diet}>
@@ -554,6 +571,63 @@ const GROUPS = [
                     
                     // Trigger list update and save state
                     updateList();
+                });
+            }
+
+            // Kana jump bar logic
+            const kanaRowMap: Record<string, string[]> = {
+                'あ': ['あ', 'い', 'う', 'え', 'お', 'ア', 'イ', 'ウ', 'エ', 'オ', 'ヴ'],
+                'か': ['か', 'き', 'く', 'け', 'こ', 'カ', 'キ', 'ク', 'ケ', 'コ', 'が', 'ぎ', 'ぐ', 'げ', 'ご', 'ガ', 'ギ', 'グ', 'ゲ', 'ゴ'],
+                'さ': ['さ', 'し', 'す', 'せ', 'そ', 'サ', 'シ', 'ス', 'セ', 'ソ', 'ざ', 'じ', 'ず', 'ぜ', 'ぞ', 'ザ', 'ジ', 'ズ', 'ゼ', 'ゾ'],
+                'た': ['た', 'ち', 'つ', 'て', 'と', 'タ', 'チ', 'ツ', 'テ', 'ト', 'だ', 'ぢ', 'づ', 'で', 'ど', 'ダ', 'ヂ', 'ヅ', 'デ', 'ド'],
+                'な': ['な', 'に', 'ぬ', 'ね', 'の', 'ナ', 'ニ', 'ヌ', 'ネ', 'ノ'],
+                'は': ['は', 'ひ', 'ふ', 'へ', 'ほ', 'ハ', 'ヒ', 'フ', 'ヘ', 'ホ', 'ば', 'び', 'ぶ', 'べ', 'ぼ', 'バ', 'ビ', 'ブ', 'ベ', 'ボ', 'ぱ', 'ぴ', 'ぷ', 'ぺ', 'ぽ', 'パ', 'ピ', 'プ', 'ペ', 'ポ'],
+                'ま': ['ま', 'み', 'む', 'め', 'も', 'マ', 'ミ', 'ム', 'メ', 'モ'],
+                'や': ['や', 'ゆ', 'よ', 'ヤ', 'ユ', 'ヨ'],
+                'ら': ['ら', 'り', 'る', 'れ', 'ろ', 'ラ', 'リ', 'ル', 'レ', 'ロ'],
+                'わ': ['わ', 'を', 'ん', 'ワ', 'ヲ', 'ン']
+            };
+
+            const kanaButtons = document.querySelectorAll('.kana-jump-btn');
+            kanaButtons.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const row = (btn as HTMLElement).dataset.row;
+                    if (!row || !kanaRowMap[row]) return;
+
+                    const allowedChars = kanaRowMap[row];
+                    // Find first visible card matching this kana row
+                    const targetCard = cards.find(card => {
+                        if (card.style.display === 'none') return false;
+                        const kana = card.getAttribute('data-kana') || '';
+                        const name = card.getAttribute('data-name') || '';
+                        const firstChar = kana.charAt(0) || name.charAt(0);
+                        return allowedChars.includes(firstChar);
+                    });
+
+                    if (targetCard) {
+                        const stickyHeader = document.querySelector('.archive-sticky-header');
+                        const offset = stickyHeader ? stickyHeader.getBoundingClientRect().height : 120;
+                        const cardRect = targetCard.getBoundingClientRect();
+                        const targetY = window.pageYOffset + cardRect.top - offset - 15;
+                        window.scrollTo({ top: Math.max(0, targetY), behavior: 'smooth' });
+
+                        // Visual feedback glow on target card
+                        targetCard.style.transition = 'all 0.3s ease';
+                        targetCard.style.borderColor = 'var(--secondary-neon)';
+                        targetCard.style.boxShadow = '0 0 20px var(--secondary-neon)';
+                        setTimeout(() => {
+                            targetCard.style.borderColor = '';
+                            targetCard.style.boxShadow = '';
+                        }, 1200);
+                    }
+                });
+            });
+
+            const topBtn = document.getElementById('kana-top-btn');
+            if (topBtn) {
+                topBtn.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                 });
             }
 

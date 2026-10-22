@@ -52,17 +52,17 @@ const articleSchema = {
 };
 ---
 
-<Layout title={`${topic.title} | Dino-Portal`} activeTab="topics" description={topic.summary} ogImage={`/${topic.image}`} schema={articleSchema}>
+<Layout title={`${topic.title} | Dino-Portal`} activeTab="topics" description={topic.summary} ogImage={`/${topic.image}`} schema={articleSchema} preloadImage={`/${topic.image}`}>
 
     <article class="topic-article hud-panel">
-        <div class="topic-detail-header" style="border-bottom: 1px solid var(--panel-border); padding-bottom: 15px; margin-bottom: 25px;">
-            <div class="topic-meta" style="font-size: 11px; color: var(--primary-neon); font-family: var(--font-mono); margin-bottom: 10px;">
+        <div class="topic-detail-header" style="border-bottom: 1px solid var(--panel-border); padding-bottom: 15px; margin-bottom: 20px;">
+            <div class="topic-meta" style="font-size: 11px; color: var(--primary-neon); font-family: var(--font-mono); margin-bottom: 8px;">
                 {topic.date}
             </div>
-            <h1 class="topic-title" style="font-size: 28px; color: var(--primary-neon); margin: 0;">{topic.title}</h1>
+            <h1 class="topic-title" style="color: var(--primary-neon); margin: 0; line-height: 1.35;">{topic.title}</h1>
         </div>
         
-        <img src={`/${topic.image}`} class="topic-detail-img" alt={topic.title} width="800" height="450" style="width: 100%; height: auto; display: block; object-fit: cover;" decoding="async" fetchpriority="high">
+        <img src={`/${topic.image}`} class="topic-detail-img" alt={topic.title} width="800" height="400" decoding="async" fetchpriority="high">
         
         <div class="topic-content">
             <Content />

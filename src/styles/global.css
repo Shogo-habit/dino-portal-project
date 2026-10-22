@@ -2140,13 +2140,26 @@ body {
   .main-header {
     flex-direction: column;
     height: auto;
-    padding: 15px 15px 5px 15px;
-    gap: 12px;
+    padding: 10px 15px 4px 15px;
+    gap: 8px;
   }
 
   .logo-container {
     align-items: center;
     text-align: center;
+  }
+
+  .logo-prefix {
+    font-size: 9px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .status-indicator {
+    font-size: 9px;
   }
 
   .nav-menu {
@@ -2155,12 +2168,17 @@ body {
     white-space: nowrap;
     display: flex;
     flex-wrap: nowrap;
-    gap: 8px;
-    padding-bottom: 10px;
+    gap: 6px;
+    padding-bottom: 6px;
     /* スクロールバー非表示 (Firefox / IE) */
     scrollbar-width: none;
     -ms-overflow-style: none;
     -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-menu .nav-link {
+    padding: 6px 12px;
+    font-size: 12px;
   }
 
   /* Chrome / Safari / Opera 用スクロールバー非表示 */
@@ -2339,6 +2357,46 @@ body {
   .sync-meter-container {
     width: 130px !important;
     height: 130px !important;
+  }
+}
+
+/* スマートフォン端末 (max-width: 600px) 用の2列グリッド＆ファーストビュー最適化 */
+@media (max-width: 600px) {
+  .topic-detail-img {
+    max-height: 200px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .topic-title {
+    font-size: 21px !important;
+  }
+
+  .dino-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .dino-card {
+    min-width: 0 !important;
+  }
+
+  .card-info {
+    padding: 10px 8px !important;
+  }
+
+  .dino-name {
+    font-size: 13px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .dino-meta {
+    font-size: 9px !important;
+  }
+
+  .dino-length {
+    font-size: 10px !important;
   }
 }
 

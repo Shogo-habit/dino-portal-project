@@ -79,6 +79,19 @@ if (!defaultDino) {
         <div class="hud-panel stage-hud" id="comparison-stage-container" style="height: 405px; position: relative; overflow: hidden; background: rgba(3, 6, 8, 0.4); border-color: var(--panel-border); user-select: none;">
             <div class="hud-corner top-left"></div>
             <div class="hud-corner bottom-right"></div>
+
+            <!-- Floating Cyber HUD Zoom Controls -->
+            <div class="stage-zoom-controls" style="position: absolute; top: 10px; right: 10px; z-index: 20; display: flex; align-items: center; gap: 5px; background: rgba(1, 10, 18, 0.85); border: 1px solid var(--panel-border); border-radius: 4px; padding: 4px 6px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);">
+                <button type="button" id="zoom-in-btn" class="scan-tag-btn" style="padding: 3px 8px; font-size: 13px; font-weight: bold; cursor: pointer; min-width: 26px; text-align: center;" title="拡大">
+                    ＋
+                </button>
+                <button type="button" id="zoom-out-btn" class="scan-tag-btn" style="padding: 3px 8px; font-size: 13px; font-weight: bold; cursor: pointer; min-width: 26px; text-align: center;" title="縮小">
+                    －
+                </button>
+                <button type="button" id="zoom-fit-btn" class="scan-tag-btn" style="padding: 3px 8px; font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); cursor: pointer; white-space: nowrap;" title="全体表示にリセット">
+                    ⟲ 全体
+                </button>
+            </div>
             
             <!-- Dynamic Grid overlay background controlled by zoom -->
             <div id="dynamic-grid" style="position: absolute; inset: 0; background-image: linear-gradient(rgba(0, 242, 255, 0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 242, 255, 0.15) 1px, transparent 1px); background-size: 50px 50px; pointer-events: none; opacity: 0.25; z-index: 1;"></div>
@@ -126,6 +139,7 @@ if (!defaultDino) {
 
         let currentZoom = 1.0;
         let targetZoom = 1.0;
+        let panOffsetX = 0;
         let activeAsset: any = null;
         let activeDino: any = null;
         let animationFrameId: number | null = null;
@@ -208,6 +222,72 @@ if (!defaultDino) {
                 updateSelectedDino();
             });
 
+            // Bind Zoom HUD controls
+            const zoomInBtn = document.getElementById('zoom-in-btn');
+            if (zoomInBtn) {
+                zoomInBtn.addEventListener('click', () => {
+                    targetZoom = Math.min(targetZoom * 1.35, 350);
+                    startZoomAnimation();
+                });
+            }
+
+            const zoomOutBtn = document.getElementById('zoom-out-btn');
+            if (zoomOutBtn) {
+                zoomOutBtn.addEventListener('click', () => {
+                    targetZoom = Math.max(targetZoom / 1.35, 8);
+                    startZoomAnimation();
+                });
+            }
+
+            const zoomFitBtn = document.getElementById('zoom-fit-btn');
+            if (zoomFitBtn) {
+                zoomFitBtn.addEventListener('click', () => {
+                    panOffsetX = 0;
+                    recalculateAutofocus();
+                });
+            }
+
+            // Bind Touch Pinch & Swipe
+            let touchStartDist = 0;
+            let touchStartZoom = 1.0;
+            let touchStartX = 0;
+
+            stageContainer.addEventListener('touchstart', (e: TouchEvent) => {
+                if (e.touches.length === 2) {
+                    touchStartDist = Math.hypot(
+                        e.touches[0].clientX - e.touches[1].clientX,
+                        e.touches[0].clientY - e.touches[1].clientY
+                    );
+                    touchStartZoom = currentZoom;
+                } else if (e.touches.length === 1) {
+                    touchStartX = e.touches[0].clientX;
+                }
+            }, { passive: true });
+
+            stageContainer.addEventListener('touchmove', (e: TouchEvent) => {
+                if (e.touches.length === 2 && touchStartDist > 0) {
+                    const dist = Math.hypot(
+                        e.touches[0].clientX - e.touches[1].clientX,
+                        e.touches[0].clientY - e.touches[1].clientY
+                    );
+                    const factor = dist / touchStartDist;
+                    targetZoom = Math.max(8, Math.min(350, touchStartZoom * factor));
+                    currentZoom = targetZoom;
+                    renderStage();
+                } else if (e.touches.length === 1 && touchStartDist === 0) {
+                    const deltaX = e.touches[0].clientX - touchStartX;
+                    touchStartX = e.touches[0].clientX;
+                    panOffsetX += deltaX;
+                    renderStage();
+                }
+            }, { passive: true });
+
+            stageContainer.addEventListener('touchend', (e: TouchEvent) => {
+                if (e.touches.length < 2) {
+                    touchStartDist = 0;
+                }
+            }, { passive: true });
+
             // Bind window resize
             window.removeEventListener('resize', handleResize);
             window.addEventListener('resize', handleResize);
@@ -271,6 +351,7 @@ if (!defaultDino) {
 
         function recalculateAutofocus() {
             if (!stageContainer) return;
+            panOffsetX = 0;
             if (activeAsset && activeDino) {
                 const isMobile = window.innerWidth <= 768;
 
@@ -418,7 +499,7 @@ if (!defaultDino) {
             // Compute corresponding dinoLeft style value
             const dinoLeftEdge = dinoVisualLeft - dino_l_pad;
             const dinoLeft = dinoLeftEdge - 150 + (dinoTotalH / 2);
-            dinoEl.style.left = `${dinoLeft}px`;
+            dinoEl.style.left = `${dinoLeft + panOffsetX}px`;
 
             // Compute corresponding refLeft style value
             const refVisualLeft = dinoVisualLeft + dinoVisualW + gap;
@@ -429,7 +510,7 @@ if (!defaultDino) {
             let refLeft = refLeftEdge - 100 + (refTotalH / 2);
 
             refEl.style.right = 'auto';
-            refEl.style.left = `${refLeft}px`;
+            refEl.style.left = `${refLeft + panOffsetX}px`;
 
             // Dynamic panel height adjustment for mobile to prevent huge top empty spaces
             if (isMobile) {
