@@ -6,7 +6,7 @@ title: "【恐竜誕生の歴史】世界で最初に名前がついた恐竜と
 summary: "「恐竜」という言葉が存在しなかった19世紀初頭、最初に見つかった化石は「巨人の骨」や「ドラゴンの遺骸」と信じられていました。歴史上初めて正式に学名が与えられた「メガロサウルス」「イグアノドン」「ヒラエオサウルス」の最初の3頭と、「恐竜（Dinosauria）」という言葉が誕生した知られざる歴史、そしてなぜイグアノドンだけが圧倒的に有名なのかを徹底解説。"
 image: "images/topics/first-named-dinosaur/first_named_dinosaur.webp"
 securityLevel: "LEVEL 3 (PUBLIC)"
-relatedSpecimens: ["megalosaurus","iguanodon","hylaeosaurus"]
+relatedSpecimens: ["megalosaurus","iguanodon","hylaeosaurus","wakinosaurus"]
 ---
 
 <h2 class="article-section-title">世界で最初に名前がついた恐竜をめぐる探求</h2>
@@ -240,6 +240,22 @@ relatedSpecimens: ["megalosaurus","iguanodon","hylaeosaurus"]
 <p class="article-paragraph">
   メガロサウルス、イグアノドン、ヒラエオサウルスという最初の3頭が切り開いた道は、現代のティラノサウルスやトリケラトプスといった大人気恐竜の研究にも脈々と受け継がれています。次に博物館で復元骨格を見上げるときは、ぜひ彼らの「最初の発見者たち」の情熱と、200年の科学の歩みに思いを馳せてみてください。
 </p>
+
+<!-- 日本で最初に命名された肉食恐竜コラム -->
+<div class="hud-panel" style="margin: 30px 0; padding: 20px; border: 1px solid var(--primary-neon); background: rgba(0, 242, 255, 0.03); border-radius: 6px;">
+  <div style="font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 6px; letter-spacing: 1px; font-weight: bold;">
+    [ JAPANESE DISCOVERY / 日本の古生物史 ]
+  </div>
+  <h3 style="font-size: 17px; margin: 0 0 10px 0; color: #fff;">
+    💡 日本で最初に名前がついた肉食恐竜をご存知ですか？
+  </h3>
+  <p style="font-size: 13px; color: var(--text-dim); line-height: 1.6; margin: 0 0 15px 0;">
+    世界で最初の肉食恐竜が1824年のメガロサウルスなら、<strong>日本国内で歴史上初めて国際的な正式学名（属名・種小名）が与えられた肉食恐竜</strong>は、1992年に福岡県北九州市で発見された歯化石をもとに命名された<strong>「ワキノサウルス（Wakinosaurus satoi）」</strong>です。全長約6メートルの中大型獣脚類で、日本の恐竜発掘史における極めて重要な記念碑的標本です。
+  </p>
+  <a href="/dictionary/wakinosaurus/" class="nav-link" style="display: inline-flex; align-items: center; gap: 6px; background: var(--primary-neon); color: #010408; font-weight: bold; padding: 8px 16px; border-radius: 4px; text-decoration: none; font-size: 12px; font-family: var(--font-mono);">
+    <span>ワキノサウルスの図鑑データを見る</span> &raquo;
+  </a>
+</div>
 
 <p class="article-paragraph" style="margin-top: 30px; margin-bottom: 0;">
   ※頭骨の一部しか見つかっていない恐竜の全身像をどうやって予測するのか？古生物学者の「パズル解き」の裏側はこちら：

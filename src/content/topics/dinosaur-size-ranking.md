@@ -505,6 +505,99 @@ relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauropose
 }
 </style>
 
+<h2 class="article-section-title">【徹底比較】ブラキオサウルスとアルゼンチノサウルスの違いは？どっちが大きい？</h2>
+
+<p class="article-paragraph">
+  恐竜の大きさを調べるとき、多くの人が気になるのが<strong>「知名度ナンバーワンのブラキオサウルスと、最大と言われるアルゼンチノサウルスはどっちが大きいの？」「スーパーサウルスとの違いは？」</strong>という疑問です。
+  ここでは、検索でもよく比較される4大超巨大恐竜＋現代のシロナガスクジラのスペックを徹底比較します！
+</p>
+
+<!-- 巨大恐竜スペック比較表（モバイル横スクロール対応） -->
+<div style="overflow-x: auto; margin: 25px 0; border: 1px solid var(--panel-border); border-radius: 6px; background: rgba(0,0,0,0.4);">
+  <table style="width: 100%; min-width: 620px; border-collapse: collapse; font-size: 13px; text-align: left;">
+    <thead>
+      <tr style="background: rgba(0, 242, 255, 0.08); border-bottom: 2px solid var(--primary-neon); color: var(--primary-neon); font-family: var(--font-mono);">
+        <th style="padding: 12px 14px;">恐竜・生物名</th>
+        <th style="padding: 12px 14px;">全長（長さ）</th>
+        <th style="padding: 12px 14px;">推定体重（重さ）</th>
+        <th style="padding: 12px 14px;">全高（高さ）</th>
+        <th style="padding: 12px 14px;">生息時代・特徴</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom: 1px solid var(--panel-border);">
+        <td style="padding: 12px 14px; font-weight: bold; color: #fff;">
+          <a href="/dictionary/argentinosaurus/" style="color: var(--primary-neon); text-decoration: underline;">アルゼンチノサウルス</a>
+        </td>
+        <td style="padding: 12px 14px;">約35〜40m</td>
+        <td style="padding: 12px 14px; color: #ff6b6b; font-weight: bold;">約70〜80トン</td>
+        <td style="padding: 12px 14px;">約15m</td>
+        <td style="padding: 12px 14px; color: var(--text-dim);">白亜紀後期・南米。陸上生物史上、最も重く巨大な絶対王者。</td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--panel-border); background: rgba(255,255,255,0.01);">
+        <td style="padding: 12px 14px; font-weight: bold; color: #fff;">
+          <a href="/dictionary/brachiosaurus/" style="color: var(--primary-neon); text-decoration: underline;">ブラキオサウルス</a>
+        </td>
+        <td style="padding: 12px 14px;">約25m</td>
+        <td style="padding: 12px 14px;">約30〜50トン</td>
+        <td style="padding: 12px 14px; color: #fcc419; font-weight: bold;">約12〜13m</td>
+        <td style="padding: 12px 14px; color: var(--text-dim);">ジュラ紀後期・北米。前脚が長く、キリンのように首を垂直に持ち上げる。</td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--panel-border);">
+        <td style="padding: 12px 14px; font-weight: bold; color: #fff;">
+          <a href="/dictionary/supersaurus/" style="color: var(--primary-neon); text-decoration: underline;">スーパーサウルス</a>
+        </td>
+        <td style="padding: 12px 14px; color: #51cf66; font-weight: bold;">約33〜35m</td>
+        <td style="padding: 12px 14px;">約35〜40トン</td>
+        <td style="padding: 12px 14px;">約10m</td>
+        <td style="padding: 12px 14px; color: var(--text-dim);">ジュラ紀後期・北米。首としっぽが極めて長い「長さ特化型」の体型。</td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--panel-border); background: rgba(255,255,255,0.01);">
+        <td style="padding: 12px 14px; font-weight: bold; color: #fff;">
+          <a href="/dictionary/patagotitan/" style="color: var(--primary-neon); text-decoration: underline;">パタゴティタン</a>
+        </td>
+        <td style="padding: 12px 14px;">約37m</td>
+        <td style="padding: 12px 14px;">約70トン</td>
+        <td style="padding: 12px 14px;">約14m</td>
+        <td style="padding: 12px 14px; color: var(--text-dim);">白亜紀後期・南米。アルゼンチノサウルスに匹敵する全身化石が発見された巨獣。</td>
+      </tr>
+      <tr style="background: rgba(77, 171, 247, 0.05);">
+        <td style="padding: 12px 14px; font-weight: bold; color: #4dadf7;">
+          【海】シロナガスクジラ
+        </td>
+        <td style="padding: 12px 14px;">約30m</td>
+        <td style="padding: 12px 14px; color: #4dadf7; font-weight: bold;">約150〜190トン</td>
+        <td style="padding: 12px 14px;">約4m</td>
+        <td style="padding: 12px 14px; color: var(--text-dim);">現代・全海洋。水の浮力に支えられ、体重では恐竜を遥かに超える地球史上最重量生物。</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 18px;">1. ブラキオサウルスとアルゼンチノサウルスの違いは？</h3>
+<p class="article-paragraph">
+  結論から言うと、<strong>生物としての総合的なボリューム（体重・全長）では、アルゼンチノサウルスがブラキオサウルスを圧倒</strong>しています。アルゼンチノサウルス（体重約70〜80トン）は、ブラキオサウルス（体重約30〜50トン）の約1.5倍から2倍近く重く、全長も10メートル以上長いです。
+</p>
+<p class="article-paragraph">
+  「でも、映画や絵本ではブラキオサウルスのほうが大きく見える」と感じる人が多い理由は、その<strong>「姿勢（プロポーション）」</strong>にあります。ブラキオサウルスは前脚が後ろ脚より長く、キリンのように首を真上近くまでピンと直立させることができました。そのためビル4階に匹敵する「見上げる高さ（約13メートル）」の迫力があり、印象に強く残りやすいのです。一方のアルゼンチノサウルスは首をやや前斜め〜水平に伸ばす姿勢をとるため、高さよりも「前後の長さと胴体の圧倒的な分厚さ」で勝負するタイプでした。
+</p>
+
+<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 18px;">2. スーパーサウルスとアルゼンチノサウルス・ブラキオサウルスの違いは？</h3>
+<p class="article-paragraph">
+  スーパーサウルス（全長約33〜35メートル）は、「長さ（全長）」だけで言えばアルゼンチノサウルスに肉薄し、ブラキオサウルス（全長約25メートル）を大きく上回ります。
+</p>
+<p class="article-paragraph">
+  しかし、スーパーサウルスはディプロドクス科に近い細身のスリムな体型をしており、全長の大部分を細い首とムチのような尾が占めています。そのため体重は35〜40トン前後に留まり、胴体自体の質量や骨の太さではアルゼンチノサウルスの半分程度しかありません。つまり、<strong>スーパーサウルスは「長さ特化型」、アルゼンチノサウルスは「長さ・太さ・重さすべてが規格外の超ヘビー級」</strong>と言えます。
+</p>
+
+<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 18px;">3. シロナガスクジラと恐竜の比較：地球史上、本当に一番重いのは誰？</h3>
+<p class="article-paragraph">
+  「地球の歴史の中で、恐竜よりも大きい生き物はいないの？」という疑問に対する驚きの答えが、なんと<strong>現代の海を泳ぐ「シロナガスクジラ」</strong>です。
+</p>
+<p class="article-paragraph">
+  シロナガスクジラの全長は約30メートルでアルゼンチノサウルス（約35メートル）よりやや短いものの、体重は最大で<strong>約150〜190トン</strong>にも達します。陸上では自らの体重を4本の脚で支えなければならないため重さ80トン前後が骨格の限界ですが、水の中なら「浮力」が体重を支えてくれるため、これほどの途方もない質量まで巨大化することができました。「地球史上最も重い動物」の記録保持者は、恐竜ではなく現代の海に生きるクジラなのです。
+</p>
+
 <h2 class="article-section-title">まとめ：地球上で一番大きい恐竜たちのロマンを感じよう！</h2>
 <p class="article-paragraph">
   今回は、最新の古生物学データをもとにした「恐竜の大きさランキングTOP10」を紹介しました。

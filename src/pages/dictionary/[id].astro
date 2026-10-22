@@ -44,8 +44,12 @@ function generateDynamicFAQs(dino: any) {
 const faqs = generateDynamicFAQs(d);
 
 // 2. Title & Meta Description for SEO
-const pageTitle = `【${d.name}】大きさ・生態・特徴を人間と比較解説 | Dino-Portal 恐竜図鑑`;
-const pageDescription = `【${d.name}（${d.scientificName}）の完全図鑑】全長${d.length}・体重${d.weight}。人間との実寸サイズ比較スケール、生息年代（${d.era}）、食性、化石・生物学的特徴を詳しく解説。`;
+const primaryAlias = (d.aliases || []).find((a: string) => !a.match(/^[\u3041-\u3096]+$/) && a !== d.name);
+const nameWithAlias = primaryAlias ? `${d.name}（${primaryAlias}）` : d.name;
+const categoryLabel = d.group === '翼竜' ? '翼竜' : d.group === '首長竜' ? '首長竜' : d.group === '魚竜' ? '魚竜' : (d.era.includes('古生代') || d.group === 'その他') ? '古生物' : '恐竜';
+
+const pageTitle = `【${nameWithAlias}】大きさ・生態・特徴を人間と比較解説 | Dino-Portal ${categoryLabel}図鑑`;
+const pageDescription = `【${nameWithAlias}（${d.scientificName}）の完全図鑑】全長${d.length}・体重${d.weight}。人間との実寸サイズ比較スケール、生息年代（${d.era}）、食性、化石・生物学的特徴を詳しく解説。`;
 
 // 3. JSON-LD Schema (Taxon, Breadcrumb, Article, FAQ)
 const taxonSchema = {

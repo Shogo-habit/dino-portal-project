@@ -98,6 +98,10 @@ relatedSpecimens: ["eoraptor","allosaurus","triceratops"]
     <img src="/images/archaeopteryx.webp" alt="アーケオプテリクス" style="width: 100%; height: 100px; object-fit: contain; border-radius: 2px; margin-bottom: 8px; display: block;" />
     <span style="color: var(--primary-neon); font-weight: bold; font-size: 13px;">アーケオプテリクス</span>
   </a>
+  <a href="/dictionary/torvosaurus/" class="article-link" style="text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; box-shadow: 0 0 5px rgba(0, 242, 255, 0.05);" onmouseover="this.style.borderColor='var(--primary-neon)'; this.style.boxShadow='0 0 10px rgba(0, 242, 255, 0.2)';" onmouseout="this.style.borderColor='var(--panel-border)'; this.style.boxShadow='0 0 5px rgba(0, 242, 255, 0.05)';">
+    <img src="/images/torvosaurus.webp" alt="トルヴォサウルス" style="width: 100%; height: 100px; object-fit: contain; border-radius: 2px; margin-bottom: 8px; display: block;" />
+    <span style="color: var(--primary-neon); font-weight: bold; font-size: 13px;">トルヴォサウルス</span>
+  </a>
 </div>
 
 <h2 class="article-section-title">3. 白亜紀：大陸分裂による百花繚乱の多様化と、ドラマチックな最期</h2>
@@ -132,6 +136,14 @@ relatedSpecimens: ["eoraptor","allosaurus","triceratops"]
   <a href="/dictionary/mosasaurus/" class="article-link" style="text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; box-shadow: 0 0 5px rgba(0, 242, 255, 0.05);" onmouseover="this.style.borderColor='var(--primary-neon)'; this.style.boxShadow='0 0 10px rgba(0, 242, 255, 0.2)';" onmouseout="this.style.borderColor='var(--panel-border)'; this.style.boxShadow='0 0 5px rgba(0, 242, 255, 0.05)';">
     <img src="/images/mosasaurus.webp" alt="モササウルス" style="width: 100%; height: 100px; object-fit: contain; border-radius: 2px; margin-bottom: 8px; display: block;" />
     <span style="color: var(--primary-neon); font-weight: bold; font-size: 13px;">モササウルス</span>
+  </a>
+  <a href="/dictionary/australovenator/" class="article-link" style="text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; box-shadow: 0 0 5px rgba(0, 242, 255, 0.05);" onmouseover="this.style.borderColor='var(--primary-neon)'; this.style.boxShadow='0 0 10px rgba(0, 242, 255, 0.2)';" onmouseout="this.style.borderColor='var(--panel-border)'; this.style.boxShadow='0 0 5px rgba(0, 242, 255, 0.05)';">
+    <img src="/images/australovenator.webp" alt="アウストラロベナトル" style="width: 100%; height: 100px; object-fit: contain; border-radius: 2px; margin-bottom: 8px; display: block;" />
+    <span style="color: var(--primary-neon); font-weight: bold; font-size: 13px;">アウストラロベナトル</span>
+  </a>
+  <a href="/dictionary/leaellynasaura/" class="article-link" style="text-decoration: none; color: inherit; padding: 10px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; box-shadow: 0 0 5px rgba(0, 242, 255, 0.05);" onmouseover="this.style.borderColor='var(--primary-neon)'; this.style.boxShadow='0 0 10px rgba(0, 242, 255, 0.2)';" onmouseout="this.style.borderColor='var(--panel-border)'; this.style.boxShadow='0 0 5px rgba(0, 242, 255, 0.05)';">
+    <img src="/images/leaellynasaura.webp" alt="レアエリナサウラ" style="width: 100%; height: 100px; object-fit: contain; border-radius: 2px; margin-bottom: 8px; display: block;" />
+    <span style="color: var(--primary-neon); font-weight: bold; font-size: 13px;">レアエリナサウラ</span>
   </a>
 </div>
 
