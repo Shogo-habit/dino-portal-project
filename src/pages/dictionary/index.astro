@@ -180,9 +180,6 @@ const GROUPS = [
                     {row}
                 </button>
             ))}
-            <button type="button" id="kana-top-btn" class="scan-tag-btn" style="padding: 5px 12px; font-size: 11px; font-family: var(--font-mono); color: var(--text-dim); cursor: pointer; white-space: nowrap; border-radius: 3px;">
-                ▲ TOP
-            </button>
         </div>
     </div>
 
@@ -657,13 +654,6 @@ const GROUPS = [
                     }
                 });
             });
-
-            const topBtn = document.getElementById('kana-top-btn');
-            if (topBtn) {
-                topBtn.addEventListener('click', () => {
-                    scrollPageTo(0);
-                });
-            }
 
             // Floating Top Button logic
             const floatingTopBtn = document.getElementById('floating-top-btn');
