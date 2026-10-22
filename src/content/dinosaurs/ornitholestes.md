@@ -20,10 +20,10 @@ bioTraits:
     value: "長年描かれた「鼻の上の角」の否定"
     detail: "20世紀の復元図では鼻先に小さな角（トサカ）がある姿で有名だったが、近年の再調査で化石の破損・変形だったと判明した"
 cyberMetadata:
-  bottomGap: 285
+  bottomGap: 284
   realHeight: 0.7
   realLength: 2.0
-  contentHeightPx: 454
+  contentHeightPx: 457
   sourceRes: 1024
   dinoLeft: "10%"
   refRight: "15%"

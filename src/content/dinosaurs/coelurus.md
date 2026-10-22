@@ -20,7 +20,7 @@ bioTraits:
     value: "細長い首と前肢・バネのような後肢"
     detail: "同時代のオルニトレステスよりも首と胴体、足の甲が長く伸び、軽量な骨格を活かして平原や森林を高速で駆け回った"
 cyberMetadata:
-  bottomGap: 330
+  bottomGap: 329
   realHeight: 0.8
   realLength: 2.4
   contentHeightPx: 343
