@@ -26,6 +26,44 @@ const recentlyAddedDinos = dinosaurs
       <h2 class="page-title">ホーム</h2>
     </section>
 
+    <!-- Quick Search HUD Bar -->
+    <div class="home-quick-search hud-panel" style="margin-bottom: 30px; padding: 18px 24px; background: rgba(0, 242, 255, 0.03); border-color: rgba(0, 242, 255, 0.25); position: relative;">
+        <div class="hud-corner top-left"></div>
+        <div class="hud-corner bottom-right"></div>
+        <form action="/dictionary/" method="get" class="home-search-form" style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+            <div style="font-family: var(--font-mono); font-size: 13px; color: var(--primary-neon); font-weight: bold; white-space: nowrap; display: flex; align-items: center; gap: 6px;">
+                <span>⚡ 恐竜クイック検索:</span>
+            </div>
+            <div style="flex: 1; min-width: 240px; position: relative;">
+                <input 
+                    type="text" 
+                    name="search" 
+                    id="home-dino-search" 
+                    class="search-input" 
+                    placeholder="恐竜名を入力（例：ティラノサウルス、ブラキオ、肉食...）" 
+                    style="width: 100%; margin-bottom: 0; padding: 12px 18px; font-size: 14px; border-color: var(--primary-neon); background: rgba(1, 10, 20, 0.85); height: 44px; border-radius: 4px;"
+                    autocomplete="off"
+                    aria-label="恐竜を検索"
+                />
+            </div>
+            <button 
+                type="submit" 
+                class="scan-tag-btn" 
+                style="padding: 0 24px; height: 44px; font-size: 13px; font-weight: bold; background: var(--primary-neon); color: #01060f; border-color: var(--primary-neon); cursor: pointer; display: flex; align-items: center; justify-content: center; border-radius: 4px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.35); flex-shrink: 0;"
+            >
+                図鑑を検索 ➔
+            </button>
+        </form>
+        <div class="home-popular-searches" style="margin-top: 14px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+            <span style="font-family: var(--font-mono); font-size: 11px; color: var(--text-dim);">人気検索:</span>
+            {['ティラノサウルス', 'トリケラトプス', 'スピノサウルス', 'ブラキオサウルス', 'プテラノドン', 'モササウルス', 'フクイラプトル'].map(name => (
+                <a href={`/dictionary/?search=${encodeURIComponent(name)}`} class="popular-search-chip">
+                    {name}
+                </a>
+            ))}
+        </div>
+    </div>
+
     <div class="home-layout">
         <div class="home-main-column">
             <a href={`/dictionary/${pickupDino.id}/`} class="dino-day-hero hud-panel">
@@ -323,5 +361,24 @@ const recentlyAddedDinos = dinosaurs
     border: 1px solid var(--panel-border);
     background: rgba(0, 242, 255, 0.1);
     box-shadow: 0 0 12px rgba(0, 242, 255, 0.15);
+  }
+
+  .popular-search-chip {
+    font-size: 11px;
+    color: var(--text-dim);
+    text-decoration: none;
+    padding: 3px 10px;
+    background: rgba(0, 242, 255, 0.03);
+    border: 1px solid var(--panel-border);
+    border-radius: 4px;
+    transition: all 0.25s ease;
+  }
+
+  .popular-search-chip:hover {
+    color: var(--primary-neon);
+    border-color: var(--primary-neon);
+    background: rgba(0, 242, 255, 0.12);
+    box-shadow: 0 0 10px rgba(0, 242, 255, 0.25);
+    transform: translateY(-1px);
   }
 </style>

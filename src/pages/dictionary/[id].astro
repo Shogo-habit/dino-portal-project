@@ -240,13 +240,81 @@ const baseEra = ERAS_LIST.find(e => d.era.includes(e)) || d.era;
 const REGIONS_LIST = ["北アメリカ", "南アメリカ", "アジア", "ロシア", "アフリカ", "ヨーロッパ", "日本", "海洋", "オセアニア"];
 const baseRegion = REGIONS_LIST.find(r => d.region.includes(r)) || d.region;
 
-const relatedSpecimens = allDinosaurs.filter(item => {
-    if (item.id === d.id) return false;
-    const matchesGroup = item.group === d.group;
-    const matchesEra = baseEra && item.era.includes(baseEra);
-    const matchesRegion = item.region === d.region;
-    return matchesGroup || matchesEra || matchesRegion;
-}).slice(0, 4);
+// 代表的ライバル・対決・共存ペアマップ
+const iconicPairs: Record<string, string[]> = {
+    'tyrannosaurus': ['triceratops', 'ankylosaurus', 'spinosaurus', 'giganotosaurus', 'albertosaurus', 'dakotaraptor'],
+    'triceratops': ['tyrannosaurus', 'torosaurus', 'ankylosaurus', 'edmontosaurus', 'styracosaurus'],
+    'spinosaurus': ['carcharodontosaurus', 'tyrannosaurus', 'baryonyx', 'suchomimus', 'sarcosuchus'],
+    'brachiosaurus': ['argentinosaurus', 'apatosaurus', 'allosaurus', 'diplodocus', 'camarasaurus', 'giraffatitan'],
+    'allosaurus': ['stegosaurus', 'ceratosaurus', 'brachiosaurus', 'apatosaurus', 'camptosaurus'],
+    'stegosaurus': ['allosaurus', 'ceratosaurus', 'kentrosaurus', 'camptosaurus'],
+    'ankylosaurus': ['tyrannosaurus', 'triceratops', 'borealopelta', 'euoplocephalus', 'zuul'],
+    'velociraptor': ['protoceratops', 'deinonychus', 'utahraptor', 'oviraptor'],
+    'mosasaurus': ['tylosaurus', 'plesiosaurus', 'elasmolasaurus', 'megalodon', 'archelon'],
+    'argentinosaurus': ['brachiosaurus', 'patagotitan', 'mapusaurus', 'giganotosaurus']
+};
+
+interface RelatedDinoItem {
+    dino: any;
+    score: number;
+    relationBadge: string;
+    relationNote: string;
+}
+
+const scoredDinosaurs: RelatedDinoItem[] = allDinosaurs
+    .filter(item => item.id !== d.id)
+    .map(item => {
+        let score = 0;
+        let badges: string[] = [];
+        let note = '';
+
+        const sameGroup = d.group && item.group === d.group;
+        const sameEra = baseEra && item.era.includes(baseEra);
+        const sameRegion = (baseRegion && item.region.includes(baseRegion)) || (d.region === item.region);
+
+        if (sameEra && sameRegion) {
+            score += 10;
+            if (d.diet.includes('肉食') && item.diet.includes('草食')) {
+                badges.push('🦕 獲物・共存種');
+                note = `${baseEra}の${baseRegion}で共存した獲物・大型草食種`;
+            } else if (d.diet.includes('肉食') && item.diet.includes('肉食')) {
+                badges.push('⚔️ 生態系のライバル');
+                note = `${baseEra}の${baseRegion}で頂点捕食者の座を争った肉食種`;
+            } else {
+                badges.push('🌍 同時代・同地域');
+                note = `${baseEra}の${baseRegion}の生態系を構成した共存古生物`;
+            }
+        } else if (sameGroup) {
+            score += 7;
+            badges.push(`⚡ 同系統（${d.group}）`);
+            note = `系統進化学的に近縁な関係にある${d.group}`;
+        } else if (sameEra) {
+            score += 4;
+            badges.push(`⏳ 同時代（${baseEra}）`);
+            note = `${baseEra}の地球上で同時期に繁栄した生物`;
+        } else if (sameRegion) {
+            score += 3;
+            badges.push(`📍 同地域（${baseRegion}）`);
+            note = `同じ${baseRegion}の大地・地層から発見された生物`;
+        }
+
+        // Direct iconic match pairings
+        if (iconicPairs[d.id] && iconicPairs[d.id].includes(item.id)) {
+            score += 15;
+            if (badges.length === 0 || !badges[0].startsWith('⚔️')) {
+                badges.unshift('🔥 代表的ライバル');
+            }
+        }
+
+        return {
+            dino: item,
+            score,
+            relationBadge: badges[0] || `[ ${item.group || '古生物'} ]`,
+            relationNote: note || `${item.era} / ${item.region}`
+        };
+    })
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 6);
 
 const topics = await getCollection('topics');
 
@@ -532,7 +600,7 @@ if (hasComparison && h3List.length > 0) {
                                     <div class="opt1-inline-title">
                                         <span class="opt1-inline-heading-text">人間（身長1.7m）との体格差ビジュアル比較</span>
                                     </div>
-                                    <a href="/size-comparison/" class="opt1-sim-link">
+                                    <a href={hasComparison ? `/size-comparison/?dino=${d.id}` : "/size-comparison/"} class="opt1-sim-link">
                                         [ サイズ比較シミュレータで他生物と比較する ] &raquo;
                                     </a>
                                 </div>
@@ -695,7 +763,7 @@ if (hasComparison && h3List.length > 0) {
                     </div>
 
                     <!-- サイズ比較シミュレータへのクイックジャンプ -->
-                    <a href="/size-comparison/" class="rail-quick-cta hud-panel">
+                    <a href={hasComparison ? `/size-comparison/?dino=${d.id}` : "/size-comparison/"} class="rail-quick-cta hud-panel">
                         <div style="font-size: 10px; color: var(--secondary-neon); font-family: var(--font-mono); font-weight: bold; margin-bottom: 2px;">
                             SIZE SIMULATOR
                         </div>
@@ -733,20 +801,42 @@ if (hasComparison && h3List.length > 0) {
                 </div>
             )}
 
-            {relatedSpecimens.length > 0 && (
+            {scoredDinosaurs.length > 0 && (
                 <div class="related-specimens" style="margin-top: 50px;">
-                    <h2 style="border-bottom: 1px solid var(--panel-border); padding-bottom: 10px; margin-bottom: 20px; font-size: 15px; font-family: var(--font-mono); color: var(--primary-neon); font-weight: bold; letter-spacing: 1px;">
-                        [ 関連する恐竜・標本データ ]
-                    </h2>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 15px;">
-                        {relatedSpecimens.map(item => (
-                            <a href={`/dictionary/${item.id}/`} style="text-decoration: none; color: inherit;">
-                                <div class="related-card hud-panel" style="cursor: pointer; height: 100%;">
-                                    <div style="width: 100%; aspect-ratio: 1 / 1; overflow: hidden; background: #000;">
-                                        <img src={`/${item.image}`} alt={item.name} width="160" height="160" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: contain;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 20px; border-bottom: 1px solid var(--panel-border); padding-bottom: 12px; flex-wrap: wrap; gap: 10px;">
+                        <div>
+                            <h2 style="font-size: 16px; font-family: var(--font-mono); color: var(--primary-neon); font-weight: bold; letter-spacing: 1px; margin: 0 0 4px 0;">
+                                [ 関連する恐竜・共存古生物アーカイブ ]
+                            </h2>
+                            <p style="font-size: 12px; color: var(--text-dim); margin: 0;">
+                                {d.name}と生態系や系統進化で深く関わる標本データ（ライバル・共存種・同系統）
+                            </p>
+                        </div>
+                        <a href="/dictionary/" style="font-family: var(--font-mono); font-size: 12px; color: var(--primary-neon); text-decoration: none;">
+                            [ 図鑑一覧ですべて探す &raquo; ]
+                        </a>
+                    </div>
+
+                    <div class="related-specimens-grid">
+                        {scoredDinosaurs.map(({ dino: item, relationBadge, relationNote }) => (
+                            <a href={`/dictionary/${item.id}/`} class="related-dino-card hud-panel" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;">
+                                <div class="related-card-badge">{relationBadge}</div>
+                                <div class="related-img-wrap">
+                                    <img src={`/${item.image}`} alt={item.name} width="360" height="202" loading="lazy" decoding="async" />
+                                </div>
+                                <div class="related-card-body">
+                                    <h3 class="related-card-title">{item.name}</h3>
+                                    <div class="related-card-sub">{item.scientificName}</div>
+                                    <div class="related-card-stats">
+                                        <span class="related-stat-pill">全長 {item.length}</span>
+                                        <span class="related-stat-pill">{item.diet}</span>
+                                        <span class="related-stat-pill">{item.era}</span>
                                     </div>
-                                    <h3 style="font-size: 12.5px; margin: 8px 0 4px 0; color: var(--text-main); font-weight: bold;">{item.name}</h3>
-                                    <div style="font-size: 10px; color: var(--text-dim);">{item.era} / {item.region}</div>
+                                    <div class="related-card-note">{relationNote}</div>
+                                </div>
+                                <div class="related-card-footer">
+                                    <span>詳細アーカイブを解析</span>
+                                    <span class="arrow">&raquo;</span>
                                 </div>
                             </a>
                         ))}
@@ -1417,6 +1507,137 @@ if (hasComparison && h3List.length > 0) {
         }
         .opt1-side-rail {
             display: none;
+        }
+    }
+
+    /* 関連恐竜・共存古生物グリッド */
+    .related-specimens-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+
+    .related-dino-card {
+        position: relative;
+        overflow: hidden;
+        background: rgba(3, 10, 20, 0.75);
+        border: 1px solid var(--panel-border);
+        border-radius: 6px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .related-dino-card:hover {
+        border-color: var(--primary-neon) !important;
+        box-shadow: 0 6px 25px rgba(0, 242, 255, 0.25);
+        transform: translateY(-4px);
+    }
+
+    .related-card-badge {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 5;
+        font-family: var(--font-mono);
+        font-size: 11px;
+        font-weight: bold;
+        background: rgba(3, 8, 16, 0.88);
+        backdrop-filter: blur(6px);
+        color: var(--primary-neon);
+        border: 1px solid rgba(0, 242, 255, 0.4);
+        padding: 3px 8px;
+        border-radius: 3px;
+        letter-spacing: 0.5px;
+    }
+
+    .related-img-wrap {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+        background: #020509;
+        border-bottom: 1px solid var(--panel-border);
+    }
+
+    .related-img-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: transform 0.4s ease;
+    }
+
+    .related-dino-card:hover .related-img-wrap img {
+        transform: scale(1.08);
+    }
+
+    .related-card-body {
+        padding: 14px 16px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .related-card-title {
+        font-size: 15px;
+        font-weight: bold;
+        color: var(--text-main);
+        margin: 0 0 2px 0;
+    }
+
+    .related-card-sub {
+        font-family: var(--font-mono);
+        font-size: 11px;
+        color: var(--text-dim);
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+
+    .related-card-stats {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-bottom: 8px;
+    }
+
+    .related-stat-pill {
+        font-family: var(--font-mono);
+        font-size: 10.5px;
+        color: var(--primary-neon);
+        background: rgba(0, 242, 255, 0.06);
+        border: 1px solid rgba(0, 242, 255, 0.2);
+        padding: 2px 7px;
+        border-radius: 2px;
+    }
+
+    .related-card-note {
+        font-size: 11.5px;
+        color: var(--text-dim);
+        line-height: 1.5;
+        margin-top: auto;
+    }
+
+    .related-card-footer {
+        padding: 10px 16px;
+        border-top: 1px solid rgba(0, 242, 255, 0.1);
+        background: rgba(0, 242, 255, 0.02);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: var(--font-mono);
+        font-size: 11px;
+        color: var(--primary-neon);
+        font-weight: bold;
+    }
+
+    @media (max-width: 900px) {
+        .related-specimens-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+        }
+    }
+
+    @media (max-width: 550px) {
+        .related-specimens-grid {
+            grid-template-columns: 1fr;
+            gap: 12px;
         }
     }
 </style>

@@ -193,6 +193,16 @@ if (!defaultDino) {
             currentZoom = 1.0;
             targetZoom = 1.0;
 
+            // Check for ?dino= URL parameter to auto-select requested specimen
+            const urlParams = new URLSearchParams(window.location.search);
+            const targetDinoId = urlParams.get('dino');
+            if (targetDinoId && dinoSelector) {
+                const matchedOption = Array.from(dinoSelector.options).find(opt => opt.value === targetDinoId);
+                if (matchedOption) {
+                    dinoSelector.value = targetDinoId;
+                }
+            }
+
             // Load initial dino
             updateSelectedDino();
 
@@ -246,6 +256,17 @@ if (!defaultDino) {
                 // Update Detail Link
                 if (dinoDetailLink) {
                     dinoDetailLink.href = `/dictionary/${dinoId}/`;
+                }
+
+                // Sync URL query parameter without page reload
+                try {
+                    const currentUrl = new URL(window.location.href);
+                    if (currentUrl.searchParams.get('dino') !== dinoId) {
+                        currentUrl.searchParams.set('dino', dinoId);
+                        window.history.replaceState({}, '', currentUrl.toString());
+                    }
+                } catch (e) {
+                    // Ignore in non-browser or sandboxed environments
                 }
 
                 // Recalculate zoom and trigger autofocus

@@ -619,8 +619,8 @@ relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauropose
     ブラキオサウルス、アルゼンチノサウルス、ティラノサウルスなどを自由に選んで、1:1のスケールで比較できるシミュレーション機能を無料で公開しています。
   </p>
   <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-    <a href="/size-comparison/" class="nav-link" style="display: inline-flex; align-items: center; gap: 6px; background: var(--primary-neon); color: #010408; font-weight: bold; padding: 10px 18px; border-radius: 4px; text-decoration: none; font-size: 13px; font-family: var(--font-mono);">
-      <span>📐 実寸サイズ比較シミュレータ</span> &raquo;
+    <a href="/size-comparison/?dino=argentinosaurus" class="nav-link" style="display: inline-flex; align-items: center; gap: 6px; background: var(--primary-neon); color: #010408; font-weight: bold; padding: 10px 18px; border-radius: 4px; text-decoration: none; font-size: 13px; font-family: var(--font-mono);">
+      <span>📐 アルゼンチノサウルスの実寸サイズを比較</span> &raquo;
     </a>
     <a href="/dictionary/" class="nav-link" style="display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--panel-border); background: var(--panel-bg); color: var(--text-main); font-weight: bold; padding: 10px 18px; border-radius: 4px; text-decoration: none; font-size: 13px; font-family: var(--font-mono);">
       <span>☷ 恐竜図鑑トップへ</span> &raquo;
