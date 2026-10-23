@@ -27,6 +27,7 @@ cyberMetadata:
   dinoLeft: "4%"
   refRight: "12%"
   zoom: 1.25
+  refScale: 0.5
 references:
   - title: "Archelon ischyros: a new gigantic cryptodire testudinata from the Fort Pierre Cretaceous of South Dakota"
     journal: "American Journal of Science"

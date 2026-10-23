@@ -213,7 +213,8 @@ if (hasComparison) {
     const dinoOffsetYPx = meta.dinoOffsetY ? parseFloat(meta.dinoOffsetY as string) : 0;
     dinoY = BASELINE_Y - dinoH + dinoBottomGapPx + dinoOffsetYPx;
 
-    const refTargetH = ref.realHeight * pxPerMeter;
+    const refScaleMultiplier = meta.refScale ?? 1.0;
+    const refTargetH = ref.realHeight * pxPerMeter * refScaleMultiplier;
     const refScale = refTargetH / ref.contentHeightPx;
     refW = ref.sourceRes * refScale;
     refH = ref.sourceRes * refScale;
