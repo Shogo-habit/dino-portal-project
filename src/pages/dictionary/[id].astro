@@ -23,21 +23,40 @@ const allDinosaurs = (await getCollection('dinosaurs')).map(entry => entry.data)
 // 1. FAQ Generation Logic for SEO/GEO
 function generateDynamicFAQs(dino: any) {
     const faqs = [];
-    if (dino.bioTraits && dino.bioTraits.length > 0) {
-        const primaryTrait = dino.bioTraits[0];
+    
+    // 1. 大きさ・体長（検索クエリで最も多い「〇〇 大きさ」「〇〇 全長」に対応）
+    if (dino.length) {
         faqs.push({
-            q: `${dino.name}の持つ「${primaryTrait.trait}」とはどのような能力ですか？`,
-            a: `${primaryTrait.trait}は解析値で「${primaryTrait.value}」と評価されています。詳細は：${primaryTrait.detail}`
+            q: `${dino.name}の大きさ（全長・体重）はどのくらいですか？`,
+            a: `${dino.name}の成体の推定全長は約${dino.length}${dino.weight ? `、推定体重は約${dino.weight}` : ''}です。本ページの実寸サイズ比較スケールにて人間との対比を確認できます。`
         });
     }
-    faqs.push({
-        q: `${dino.name}はどのような食性を持っていましたか？`,
-        a: `${dino.name}は「${dino.diet}」でした。`
-    });
-    faqs.push({
-        q: `${dino.name}はどこで、いつ頃生息していましたか？`,
-        a: `${dino.era}の${dino.region}に生息していました。`
-    });
+
+    // 2. 特徴・生体力学的強み（不自然なAI/ゲーム的数値を排除し自然な解説に）
+    if (dino.bioTraits && dino.bioTraits.length > 0) {
+        const traitsDesc = dino.bioTraits.map((t: any) => `【${t.trait}】${t.detail}`).join('、');
+        faqs.push({
+            q: `${dino.name}の主な特徴や生態的強みは何ですか？`,
+            a: `${dino.name}の特徴として、${traitsDesc}などが挙げられます。`
+        });
+    }
+
+    // 3. 食性
+    if (dino.diet) {
+        faqs.push({
+            q: `${dino.name}は何を食べていましたか？（食性）`,
+            a: `${dino.name}は「${dino.diet}」の古生物でした。`
+        });
+    }
+
+    // 4. 生息年代と地域
+    if (dino.era && dino.region) {
+        faqs.push({
+            q: `${dino.name}はいつの時代、どこに生息していましたか？`,
+            a: `中生代${dino.era}に、現在の${dino.region}周辺に生息していました。`
+        });
+    }
+    
     return faqs;
 }
 

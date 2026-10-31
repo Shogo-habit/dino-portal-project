@@ -2,8 +2,8 @@
 id: "trex-feathers"
 date: "2026.05.21"
 category: "theory"
-title: "ティラノサウルスの「羽毛」論争と最新の姿：モフモフ説は否定された？"
-summary: "一時期「ティラノサウルスは全身羽毛に覆われていた」という説がメディアを席巻したが、その後の皮膚化石の発見により「大人のティラノサウルスはウロコに覆われていた」という説が有力になっている。最新の研究からティラノサウルスの本当の姿を読み解く。"
+title: "【2026年最新】ティラノサウルスの羽毛論争と本当の姿！モフモフ説は嘘？最新研究が明かす見た目の真実"
+summary: "ティラノサウルス最新の姿はモフモフ？ウロコ？皮膚化石の発見により「大人のT-レックスはウロコで覆われていた」説が確定的に。羽毛論争の変遷と、2026年現在の古生物学が明かす本当の見た目・生態を徹底解説！"
 image: "images/topics/trex-feathers/trex_feathers.webp"
 securityLevel: "LEVEL 2 (SCIENTIFIC REVISION)"
 relatedSpecimens: ["tyrannosaurus","yutyrannus","nanuqsaurus"]

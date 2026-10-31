@@ -2,8 +2,8 @@
 id: "dinosaur-size-ranking"
 date: "2026.06.16"
 category: "ranking"
-title: "【世界最大の恐竜はどれ？】恐竜の大きさランキングTOP10！一番でかいアルゼンチノサウルスなど超巨大竜脚類の全長・体重を徹底比較"
-summary: "太古の地球で最も大きかった恐竜はどれ？最新の古生物学研究データをもとに、陸上生物史上最大を誇る「恐竜の大きさ（体重・全長）ランキングTOP10」を大発表！世界一大きいアルゼンチノサウルス（全長35m・70t超）やパタゴティタンなど、一番でかい超巨大恐竜たちの驚異のスケールを子供向けにわかりやすく徹底解説します。"
+title: "【世界最大の恐竜はどれ？】太古で一番大きい恐竜ランキングTOP10！全長・体重・高さを徹底比較"
+summary: "太古の時代に存在した恐竜の中で最も大きかったのは南米の「アルゼンチノサウルス」（全長35m・体重70t超）！最新研究データに基づく世界最大の恐竜ランキングTOP10を発表。パタゴティタンやスーパーサウルスなど、一番でかい超巨大恐竜たちのスケールを人間との実寸比較を交えて徹底解説します。"
 image: "images/topics/dinosaur-size-ranking/dinosaur_size_ranking.webp"
 relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauroposeidon", "futalognkosaurus", "mamenchisaurus", "brachiosaurus", "supersaurus", "apatosaurus", "diplodocus"]
 ---
