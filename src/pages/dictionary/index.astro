@@ -38,6 +38,21 @@ const GROUPS = [
     { id: '魚竜', label: '魚竜' },
     { id: 'その他', label: 'その他' }
 ];
+
+function getClade(group: string): string {
+    if (['獣脚類', '竜脚類', '鳥脚類', '剣竜類', '堅頭竜類', 'よろい竜類', '角竜類'].includes(group)) return 'dinosaur';
+    if (group === '翼竜') return 'pterosaur';
+    if (['首長竜', '魚竜', '海棲爬虫類', '魚竜・首長竜'].includes(group)) return 'marine';
+    return 'other';
+}
+
+const CLADES = [
+    { id: '', label: 'すべて', count: DINOSAURS.length },
+    { id: 'dinosaur', label: '🦖 恐竜', count: DINOSAURS.filter(d => getClade(d.group) === 'dinosaur').length },
+    { id: 'pterosaur', label: '🦇 翼竜', count: DINOSAURS.filter(d => getClade(d.group) === 'pterosaur').length },
+    { id: 'marine', label: '🌊 海生爬虫類', count: DINOSAURS.filter(d => getClade(d.group) === 'marine').length },
+    { id: 'other', label: '🦠 古生代・その他', count: DINOSAURS.filter(d => getClade(d.group) === 'other').length }
+];
 ---
 
 <Layout title="【恐竜図鑑サイト】恐竜一覧300種以上！実寸サイズ比較と最新学説で探せるデジタル恐竜図鑑 | Dino-Portal" activeTab="dictionary" description="【恐竜図鑑サイトの決定版】300種以上の恐竜・古生物を一覧網羅！人間との実寸サイズ比較、生息年代、分類（獣脚類・竜脚類・翼竜・首長竜など）、生息地域から直感的に検索・観察できる次世代デジタル恐竜図鑑。">
@@ -57,6 +72,32 @@ const GROUPS = [
                    aria-label="恐竜の名前で検索">
         </div>
     </section>
+
+    <!-- Clade Selector Tabs (施策5: 生物大分類タブ) -->
+    <div class="clade-selector-container hud-panel" style="margin-bottom: 15px; padding: 12px 18px; background: rgba(0, 242, 255, 0.03); border-color: rgba(0, 242, 255, 0.25);">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); letter-spacing: 1px; font-weight: bold;">[ 生物区分 / CLADE ]</span>
+            </div>
+            <div class="clade-tabs-wrap" style="display: flex; gap: 8px; flex-wrap: wrap;" role="tablist" aria-label="生物大分類">
+                {CLADES.map(c => (
+                    <button 
+                        type="button" 
+                        class={`clade-tab-btn scan-tag-btn ${c.id === '' ? 'active' : ''}`} 
+                        data-clade={c.id}
+                        role="tab"
+                        aria-selected={c.id === '' ? 'true' : 'false'}
+                        style="padding: 6px 12px; font-size: 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; border-radius: 4px;"
+                    >
+                        <span>{c.label}</span>
+                        <span class="clade-count-badge" style="font-family: var(--font-mono); font-size: 10px; opacity: 0.85; background: rgba(0, 242, 255, 0.12); padding: 1px 6px; border-radius: 10px;">
+                            {c.count}
+                        </span>
+                    </button>
+                ))}
+            </div>
+        </div>
+    </div>
 
     <!-- Pillar Quick Nav Bar -->
     <div class="pillar-quick-strip hud-panel" style="margin-bottom: 20px; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; background: rgba(0, 242, 255, 0.04); border-color: rgba(0, 242, 255, 0.2);">
@@ -164,6 +205,7 @@ const GROUPS = [
     </div>
 
     <!-- Hidden state stores -->
+    <input type="hidden" id="filter-clade" value="">
     <input type="hidden" id="filter-era" value="">
     <input type="hidden" id="filter-region" value="">
     <input type="hidden" id="filter-group" value="">
@@ -185,7 +227,7 @@ const GROUPS = [
 
     <div class="dino-grid" id="dino-grid-content">
         {DINOSAURS.map(d => (
-            <div class="dino-card hud-panel" data-id={d.id} data-name={d.name} data-kana={d.kana} data-aliases={(d.aliases || []).join(',')} data-scientific={d.scientificName} data-group={d.group || '未分類'} data-era={d.era} data-region={d.region} data-length={d.length} data-diet={d.diet}>
+            <div class="dino-card hud-panel" data-id={d.id} data-name={d.name} data-kana={d.kana} data-aliases={(d.aliases || []).join(',')} data-scientific={d.scientificName} data-group={d.group || '未分類'} data-era={d.era} data-region={d.region} data-length={d.length} data-diet={d.diet} data-clade={getClade(d.group)}>
                 <a href={`/dictionary/${d.id}/`} style="text-decoration: none; color: inherit; display: block; height: 100%;">
                     <div class="card-img-wrap">
                         <img src={`/${d.image}`} alt={d.name} loading="lazy" decoding="async" width="400" height="225">
@@ -219,13 +261,14 @@ const GROUPS = [
 
         function initDictionary() {
             const search = document.getElementById('dino-search') as HTMLInputElement;
+            const clade = document.getElementById('filter-clade') as HTMLInputElement;
             const era = document.getElementById('filter-era') as HTMLInputElement;
             const region = document.getElementById('filter-region') as HTMLInputElement;
             const group = document.getElementById('filter-group') as HTMLInputElement;
             const diet = document.getElementById('filter-diet') as HTMLInputElement;
             const sort = document.getElementById('sort-order') as HTMLSelectElement;
             const cardGrid = document.getElementById('dino-grid-content');
-            if (!search || !era || !region || !group || !diet || !sort || !cardGrid) return;
+            if (!search || !clade || !era || !region || !group || !diet || !sort || !cardGrid) return;
             if (cardGrid.dataset.initialized === 'true') return;
             cardGrid.dataset.initialized = 'true';
 
@@ -287,6 +330,7 @@ const GROUPS = [
             const saveFiltersState = () => {
                 const state = {
                     search: search.value,
+                    clade: clade.value,
                     era: era.value,
                     region: region.value,
                     group: group.value,
@@ -296,22 +340,35 @@ const GROUPS = [
                 localStorage.setItem(DICT_FILTERS_KEY, JSON.stringify(state));
             };
 
+            const updateCladeTabs = () => {
+                const cladeVal = clade.value;
+                document.querySelectorAll('.clade-tab-btn').forEach(btn => {
+                    const bClade = btn.getAttribute('data-clade') || '';
+                    const isActive = bClade === cladeVal;
+                    btn.classList.toggle('active', isActive);
+                    btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+                });
+            };
+
             const loadFiltersState = () => {
                 // 1. URL parameters check
                 const params = new URLSearchParams(window.location.search);
+                const pClade = params.get('clade') || params.get('type');
                 const pEra = params.get('era');
                 const pRegion = params.get('region');
                 const pGroup = params.get('group');
                 const pDiet = params.get('diet');
                 const pSearch = params.get('search');
                 
-                if (pEra || pRegion || pGroup || pDiet || pSearch) {
+                if (pClade || pEra || pRegion || pGroup || pDiet || pSearch) {
                     search.value = pSearch || '';
+                    clade.value = pClade || '';
                     era.value = pEra || '';
                     region.value = pRegion || '';
                     group.value = pGroup || '';
                     diet.value = pDiet || '';
                     sort.value = 'kana';
+                    updateCladeTabs();
                     saveFiltersState();
                     return;
                 }
@@ -322,6 +379,7 @@ const GROUPS = [
                 if (saved && fromDetail) {
                     const state = JSON.parse(saved);
                     search.value = state.search || '';
+                    clade.value = state.clade || '';
                     era.value = state.era || '';
                     region.value = state.region || '';
                     group.value = state.group || '';
@@ -329,6 +387,7 @@ const GROUPS = [
                     sort.value = state.sort || 'kana';
                 } else {
                     search.value = '';
+                    clade.value = '';
                     era.value = '';
                     region.value = '';
                     group.value = '';
@@ -336,6 +395,7 @@ const GROUPS = [
                     sort.value = 'kana';
                     saveFiltersState();
                 }
+                updateCladeTabs();
             };
 
             const updateFilterChips = () => {
@@ -343,7 +403,15 @@ const GROUPS = [
                 const resetBtn = document.getElementById('filter-reset-btn');
                 if (!chipContainer) return;
                 
+                const cladeLabels: Record<string, string> = {
+                    dinosaur: '🦖 恐竜',
+                    pterosaur: '🦇 翼竜',
+                    marine: '🌊 海生爬虫類',
+                    other: '🦠 古生代・その他'
+                };
+                
                 let html = '';
+                if (clade.value) html += `<span class="filter-chip">${cladeLabels[clade.value] || clade.value}</span>`;
                 if (era.value) html += `<span class="filter-chip">${era.value}</span>`;
                 if (region.value) html += `<span class="filter-chip">${region.value}</span>`;
                 if (group.value) html += `<span class="filter-chip">${group.value}</span>`;
@@ -354,7 +422,7 @@ const GROUPS = [
 
                 // Toggle reset button visibility
                 if (resetBtn) {
-                    const hasActiveFilter = !!(era.value || region.value || group.value || diet.value || search.value.trim() || sort.value !== 'kana');
+                    const hasActiveFilter = !!(clade.value || era.value || region.value || group.value || diet.value || search.value.trim() || sort.value !== 'kana');
                     resetBtn.style.display = hasActiveFilter ? 'inline-block' : 'none';
                 }
             };
@@ -377,11 +445,15 @@ const GROUPS = [
                 );
             };
 
-            const checkCardMatchesCategory = (card: HTMLElement, eraVal: string, regionVal: string, groupVal: string, dietVal: string) => {
+            const checkCardMatchesCategory = (card: HTMLElement, cladeVal: string, eraVal: string, regionVal: string, groupVal: string, dietVal: string) => {
+                const cardClade = card.getAttribute('data-clade') || '';
                 const cardEra = card.getAttribute('data-era') || '';
                 const cardRegion = card.getAttribute('data-region') || '';
                 const cardGroup = card.getAttribute('data-group') || '';
                 const cardDiet = card.getAttribute('data-diet') || '';
+
+                // Match Clade (施策5: 生物大分類)
+                const matchesClade = !cladeVal || cardClade === cladeVal;
 
                 // Match Era
                 let matchesEra = !eraVal;
@@ -431,7 +503,7 @@ const GROUPS = [
                 // Match Diet
                 const matchesDiet = !dietVal || cardDiet.includes(dietVal);
 
-                return matchesEra && matchesRegion && matchesGroup && matchesDiet;
+                return matchesClade && matchesEra && matchesRegion && matchesGroup && matchesDiet;
             };
 
             const updateList = () => {
@@ -441,22 +513,25 @@ const GROUPS = [
                 const normSearch = normalizeJa(searchVal);
 
                 // If user typed a search query and active category filters would hide all matching results, auto-clear category filters
-                if (searchVal && (era.value || region.value || group.value || diet.value)) {
+                if (searchVal && (clade.value || era.value || region.value || group.value || diet.value)) {
                     const hasMatchWithFilters = cards.some(c =>
                         checkCardMatchesSearch(c, searchVal, searchKata, searchHira, normSearch) &&
-                        checkCardMatchesCategory(c, era.value, region.value, group.value, diet.value)
+                        checkCardMatchesCategory(c, clade.value, era.value, region.value, group.value, diet.value)
                     );
                     const hasMatchWithoutFilters = cards.some(c =>
                         checkCardMatchesSearch(c, searchVal, searchKata, searchHira, normSearch)
                     );
                     if (!hasMatchWithFilters && hasMatchWithoutFilters) {
+                        clade.value = '';
                         era.value = '';
                         region.value = '';
                         group.value = '';
                         diet.value = '';
+                        updateCladeTabs();
                     }
                 }
 
+                const cladeVal = clade.value;
                 const eraVal = era.value;
                 const regionVal = region.value;
                 const groupVal = group.value;
@@ -466,6 +541,7 @@ const GROUPS = [
                 // Save
                 saveFiltersState();
                 updateFilterChips();
+                updateCladeTabs();
 
                 // UI Active States
                 document.querySelectorAll('.timeline-era').forEach(t => {
@@ -481,7 +557,7 @@ const GROUPS = [
                 // Filter & Sort
                 cards.forEach(card => {
                     const matchesSearch = checkCardMatchesSearch(card, searchVal, searchKata, searchHira, normSearch);
-                    const matchesCategory = checkCardMatchesCategory(card, eraVal, regionVal, groupVal, dietVal);
+                    const matchesCategory = checkCardMatchesCategory(card, cladeVal, eraVal, regionVal, groupVal, dietVal);
 
                     if (matchesSearch && matchesCategory) {
                         card.style.display = 'block';
@@ -557,6 +633,17 @@ const GROUPS = [
                 });
             }
 
+            // Clade tabs click logic (施策5: 生物大分類切り替え)
+            document.querySelectorAll('.clade-tab-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const targetClade = btn.getAttribute('data-clade') || '';
+                    clade.value = targetClade;
+                    updateCladeTabs();
+                    saveFiltersState();
+                    updateList();
+                });
+            });
+
             // Reset button logic
             const resetBtn = document.getElementById('filter-reset-btn');
             if (resetBtn) {
@@ -564,12 +651,14 @@ const GROUPS = [
                     e.stopPropagation();
                     
                     // Reset all filters
+                    clade.value = '';
                     era.value = '';
                     region.value = '';
                     group.value = '';
                     diet.value = '';
                     search.value = '';
                     sort.value = 'kana';
+                    updateCladeTabs();
                     
                     // Trigger list update and save state
                     updateList();
@@ -744,6 +833,31 @@ const GROUPS = [
 </Layout>
 
 <style>
+    /* 施策5: 大分類（CLADE）タブボタンスタイル */
+    .clade-tab-btn {
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        border: 1px solid rgba(0, 242, 255, 0.25) !important;
+        background: rgba(1, 10, 20, 0.6) !important;
+        color: var(--text-main) !important;
+    }
+    .clade-tab-btn:hover {
+        border-color: var(--primary-neon) !important;
+        background: rgba(0, 242, 255, 0.1) !important;
+        box-shadow: 0 0 10px rgba(0, 242, 255, 0.25);
+    }
+    .clade-tab-btn.active {
+        background: var(--primary-neon) !important;
+        color: #01060f !important;
+        border-color: var(--primary-neon) !important;
+        font-weight: bold;
+        box-shadow: 0 0 15px rgba(0, 242, 255, 0.45);
+    }
+    .clade-tab-btn.active .clade-count-badge {
+        background: rgba(1, 6, 15, 0.25) !important;
+        color: #01060f !important;
+        font-weight: 800;
+    }
+
     #filter-reset-btn:hover {
         border-color: #ff0055 !important;
         background: rgba(255, 0, 85, 0.15) !important;
