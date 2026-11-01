@@ -2,8 +2,8 @@
 id: "dinosaur-size-ranking"
 date: "2026.06.16"
 category: "ranking"
-title: "【世界最大の恐竜はどれ？】太古で一番大きい恐竜ランキングTOP10！全長・体重・高さを徹底比較"
-summary: "太古の時代に存在した恐竜の中で最も大きかったのは南米の「アルゼンチノサウルス」（全長35m・体重70t超）！最新研究データに基づく世界最大の恐竜ランキングTOP10を発表。パタゴティタンやスーパーサウルスなど、一番でかい超巨大恐竜たちのスケールを人間との実寸比較を交えて徹底解説します。"
+title: "【結論】世界最大の恐竜はアルゼンチノサウルス！太古で一番大きい恐竜ランキングTOP10｜実寸比較"
+summary: "太古の時代に存在した恐竜で最も大きかったのは南米の超巨大竜脚類「アルゼンチノサウルス」（全長約35m・体重70〜90t）！世界最大の恐竜ランキングTOP10を最新学説ベースで徹底解説。長さNo.1のスーパーサウルスや背の高さNo.1のサウロポセイドン、肉食恐竜との比較まで人間との実寸1:1スケールで完全網羅。"
 image: "images/topics/dinosaur-size-ranking/dinosaur_size_ranking.webp"
 relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauroposeidon", "futalognkosaurus", "mamenchisaurus", "brachiosaurus", "supersaurus", "apatosaurus", "diplodocus"]
 ---
@@ -12,8 +12,44 @@ relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauropose
   「太古の時代に存在した恐竜の中で、もっとも大きかったとされるのは何？」「世界一大きい、一番でかい恐竜はいったいどれだったんだろう？」そんな疑問を抱いたことはありませんか？
 </p>
 <p class="article-paragraph">
-  結論から言うと、現在の古生物学で最も有力視されている<strong>世界最大の恐竜は、南米アルゼンチンで発見された超巨大竜脚類「アルゼンチノサウルス」</strong>です！その巨体は全長35メートル超、体重70〜80トンにも達し、現代の大型バス3台分、新幹線1両を軽く超える圧倒的なスケールを誇ります。
+  結論から言うと、現在の古生物学で最も有力視されている<strong>世界最大の恐竜は、南米アルゼンチンで発見された超巨大竜脚類「アルゼンチノサウルス」</strong>です！その巨体は全長35メートル超、体重70〜90トンにも達し、現代の大型バス3台分、新幹線1両を軽く超える圧倒的なスケールを誇ります。
 </p>
+
+<!-- ファーストビュー結論クイックアンサー枠（強調スニペット・AI Overview対策） -->
+<section class="hud-panel answer-summary-box" style="margin: 25px 0 30px 0; padding: 22px; border: 2px solid var(--primary-neon); background: rgba(0, 242, 255, 0.05); border-radius: 6px; box-shadow: 0 0 20px rgba(0, 242, 255, 0.15);">
+  <div style="font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 6px; letter-spacing: 1.5px; font-weight: bold;">
+    [ QUICK ANSWER / 3秒でわかる結論まとめ ]
+  </div>
+  <h2 style="font-size: 19px; font-weight: bold; color: #fff; margin: 0 0 15px 0; line-height: 1.4; border-bottom: 1px dashed rgba(0, 242, 255, 0.3); padding-bottom: 10px;">
+    太古の時代に存在した恐竜の中で最も大きかったのは？【結論】
+  </h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-bottom: 15px;">
+    <div style="background: rgba(1, 10, 18, 0.7); border: 1px solid rgba(0, 242, 255, 0.25); padding: 12px 14px; border-radius: 4px;">
+      <div style="font-size: 11px; color: var(--primary-neon); font-family: var(--font-mono); font-weight: bold; margin-bottom: 4px;">🏆 世界最大の恐竜（体重・質量）</div>
+      <div style="font-size: 16px; font-weight: bold; color: #fff; margin-bottom: 4px;"><a href="/dictionary/argentinosaurus/" style="color: #fff; text-decoration: underline;">アルゼンチノサウルス</a></div>
+      <div style="font-size: 12px; color: var(--text-dim);">推定全長 約35m / 推定体重 約70〜90トン（新幹線1両・アフリカゾウ15頭分に匹敵）</div>
+    </div>
+    <div style="background: rgba(1, 10, 18, 0.7); border: 1px solid rgba(0, 242, 255, 0.25); padding: 12px 14px; border-radius: 4px;">
+      <div style="font-size: 11px; color: var(--primary-neon); font-family: var(--font-mono); font-weight: bold; margin-bottom: 4px;">📏 世界最長の恐竜（頭から尾の全長）</div>
+      <div style="font-size: 16px; font-weight: bold; color: #fff; margin-bottom: 4px;"><a href="/dictionary/supersaurus/" style="color: #fff; text-decoration: underline;">スーパーサウルス</a></div>
+      <div style="font-size: 12px; color: var(--text-dim);">推定全長 約39m以上 / 推定体重 約35トン（25mプールを軽々超える長さ）</div>
+    </div>
+    <div style="background: rgba(1, 10, 18, 0.7); border: 1px solid rgba(0, 242, 255, 0.25); padding: 12px 14px; border-radius: 4px;">
+      <div style="font-size: 11px; color: var(--primary-neon); font-family: var(--font-mono); font-weight: bold; margin-bottom: 4px;">🏢 最も背が高い恐竜（頭頂高）</div>
+      <div style="font-size: 16px; font-weight: bold; color: #fff; margin-bottom: 4px;"><a href="/dictionary/sauroposeidon/" style="color: #fff; text-decoration: underline;">サウロポセイドン</a></div>
+      <div style="font-size: 12px; color: var(--text-dim);">推定全高 約17m / 推定体重 約50〜60トン（ビルの6階窓を見上げる高さ）</div>
+    </div>
+    <div style="background: rgba(1, 10, 18, 0.7); border: 1px solid rgba(0, 242, 255, 0.25); padding: 12px 14px; border-radius: 4px;">
+      <div style="font-size: 11px; color: var(--primary-neon); font-family: var(--font-mono); font-weight: bold; margin-bottom: 4px;">🦖 世界最大の肉食恐竜</div>
+      <div style="font-size: 16px; font-weight: bold; color: #fff; margin-bottom: 4px;"><a href="/dictionary/spinosaurus/" style="color: #fff; text-decoration: underline;">スピノサウルス</a> / <a href="/dictionary/tyrannosaurus/" style="color: #fff; text-decoration: underline;">T-レックス</a></div>
+      <div style="font-size: 12px; color: var(--text-dim);">全長約15m（スピノサウルス）/ 体重約9トン（ティラノサウルス）</div>
+    </div>
+  </div>
+  <p style="font-size: 12.5px; color: var(--text-dim); line-height: 1.6; margin: 0;">
+    ※古生物学上、「最大の恐竜」を比較する際は骨格と筋肉の質量（ボリューム）を表す「体重」で比べるのが最も科学的信頼性が高いとされています。以下で最新研究に基づく体重ランキングTOP10を詳しく解説します。
+  </p>
+</section>
+
 <p class="article-paragraph">
   この記事では、最新の研究データに基づき、もっとも信頼性の高い陸上恐竜の「重さ（体重）」に焦点を当てた<strong>恐竜の大きさランキングTOP10</strong>を大発表！巨大な草食恐竜たちがなぜそれほどまで巨大化できたのか、その体の秘密や、現代の動物・乗り物との分かりやすい比較を交えて、お子様と一緒にワクワクしながら学べる内容でお届けします。
 </p>

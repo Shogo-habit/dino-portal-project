@@ -114,8 +114,9 @@ if (isPterosaur) {
     };
 }
 
-const pageTitle = `【${nameWithAlias}】大きさ・生態・特徴を人間と比較解説 | Dino-Portal ${categoryLabel}図鑑`;
-const pageDescription = `【${nameWithAlias}（${d.scientificName}）の完全図鑑】全長${d.length}・体重${d.weight}。人間との実寸サイズ比較スケール、生息年代（${d.era}）、食性、化石・生物学的特徴を詳しく解説。`;
+const pageTitle = `【${nameWithAlias}】実寸サイズ比較・生息年代・生態 | Dino-Portal ${categoryLabel}図鑑`;
+const cleanDesc = d.description ? d.description.replace(/\r?\n/g, ' ').trim() : '';
+const pageDescription = `【${nameWithAlias}（${d.scientificName}）】全長${d.length}・体重${d.weight}。人間（170cm）との実寸サイズ比較スケールを搭載。${cleanDesc}`;
 
 // 3. JSON-LD Schema (Taxon, Breadcrumb, Article, FAQ)
 const taxonSchema = {
@@ -394,6 +395,14 @@ const deepDiveTopic = topics
         const titleMatch = t.title.includes(d.name) || (d.id === 'tyrannosaurus' && (t.title.includes('T-レックス') || t.title.includes('ティラノ')));
         const idMatch = t.id.includes(d.id) || (d.id === 'tyrannosaurus' && t.id.startsWith('trex-'));
         return titleMatch || idMatch;
+    });
+
+// ランキング・特集への文脈アンカー導線（サイズランキングや最強ランキング等のピラー記事への導線）
+const rankingTopic = topics
+    .map(entry => entry.data)
+    .find(t => {
+        if (t.category !== 'ranking') return false;
+        return t.relatedSpecimens && t.relatedSpecimens.includes(d.id);
     });
 
 // フッター用関連特集（レジャー・グッズ等を除外し、恐竜に関連する記事を優先）
@@ -751,6 +760,18 @@ if (hasComparison && h3List.length > 0) {
                                 <span>{d.name}の生態・最新学説をさらに詳しく知る：</span>
                                 <strong style="color: var(--primary-neon); text-decoration: underline;">『{deepDiveTopic.title}』</strong>
                                 <span style="color: var(--primary-neon); font-family: var(--font-mono); font-size: 12px;">&raquo;</span>
+                            </a>
+                        </div>
+                    )}
+
+                    <!-- 特集ランキングへの文脈アンカー導線（サイズ比較や最強ランキング選出種に表示） -->
+                    {rankingTopic && (
+                        <div class="contextual-ranking-banner hud-panel" style="margin-top: 20px; padding: 14px 18px; border-left: 3px solid #ffcc00; background: rgba(255, 204, 0, 0.04); border-color: rgba(255, 204, 0, 0.25);">
+                            <a href={`/topics/${rankingTopic.id}/`} style="color: var(--text-main); text-decoration: none; font-size: 13.5px; display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; line-height: 1.6;">
+                                <span style="color: #ffcc00; font-weight: bold; font-family: var(--font-mono); font-size: 11px;">[ 🏆 RANKING ENTRY ]</span>
+                                <span>{d.name}が登場する特集：</span>
+                                <strong style="color: #ffcc00; text-decoration: underline;">『{rankingTopic.title}』</strong>
+                                <span style="color: #ffcc00; font-family: var(--font-mono); font-size: 12px;">&raquo;</span>
                             </a>
                         </div>
                     )}

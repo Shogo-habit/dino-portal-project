@@ -2,6 +2,7 @@
 id: "eustreptospondylus"
 name: "ユーストレプトスポンディルス"
 kana: "ゆーすとれぷとすぽんでぃるす"
+aliases: ["エウストレプトスポンディルス", "えうすとれぷとすぽんでぃるす", "Eustreptospondylus", "泳ぐ恐竜"]
 scientificName: "Eustreptospondylus oxoniensis"
 era: "ジュラ紀中期"
 region: "ヨーロッパ（イギリス・オックスフォードシャー）"
@@ -10,7 +11,7 @@ length: "4.6m"
 weight: "500kg"
 image: "images/eustreptospondylus.webp"
 group: "獣脚類"
-description: "「真によく曲がる脊椎」を意味する、ジュラ紀中期のヨーロッパ島嶼群に生息したメガロサウルス科の活動的肉食恐竜。海岸や干潟を徘徊して海洋生物の死骸を漁り、島から島へと浅瀬を泳ぎ渡ったとされる沿冠のハンター。"
+description: "「真によく曲がる脊椎」を意味するジュラ紀中期の肉食恐竜。ヨーロッパの多島海域で浅瀬を泳ぎ渡り、干潟の魚や打ち上げられた海生爬虫類の死骸を漁ったとされる海陸両用の俊敏ハンター。"
 bioTraits:
   - trait: "海洋適応"
     value: "島嶼環境と遊泳行動"

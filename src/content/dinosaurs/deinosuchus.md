@@ -2,6 +2,7 @@
 id: "deinosuchus"
 name: "デイノスクス"
 kana: "でいのすくす"
+aliases: ["ダイノスクス", "だいノスクス", "Deinosuchus", "恐ろしいワニ"]
 scientificName: "Deinosuchus rugosus"
 era: "白亜紀後期"
 region: "北アメリカ"
@@ -10,7 +11,7 @@ length: "10.6m"
 weight: "5.0t"
 image: "images/deinosuchus.webp"
 group: "その他"
-description: "史上最大級のワニ類。恐竜をも捕食していたと考えられており、その咬合力はティラノサウルスに匹敵したという説もある。現代のワニをそのまま巨大化させたような姿をしていた。"
+description: "全長10m超・体重5tに達する史上最大級の巨大ワニ。ティラノサウルスに匹敵する咬合力10トンと必殺のデスロールで、水辺に近づく大型恐竜すら捕食した白亜紀北米の水陸両用プレデター。"
 bioTraits:
   - trait: "咬合力"
     value: "驚異的"

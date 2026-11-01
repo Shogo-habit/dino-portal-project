@@ -2,6 +2,7 @@
 id: "eotriceratops"
 name: "エオトリケラトプス"
 kana: "えおとりけらとぷす"
+aliases: ["エオ・トリケラトプス", "Eotriceratops", "初期のトリケラトプス"]
 scientificName: "Eotriceratops xerinsularis"
 era: "白亜紀後期"
 region: "北米 (カナダ)"
@@ -10,7 +11,7 @@ length: "8.5m"
 weight: "10t"
 image: "images/eotriceratops.webp"
 group: "角竜類"
-description: "「夜明けの3本の角を持つ顔」を意味する、陸生動物最大級の頭骨（約3m）を持つ超巨大角竜。トリケラトプスを凌ぐ巨体を誇る。"
+description: "「夜明けの3本角の顔」を意味する、陸生動物史上最大級の頭骨（約3m）を持つ体重10トンの超巨大角竜。トリケラトプスを凌ぐ巨躯を誇り、巨大角竜進化の鍵を握る最古の大型属。"
 bioTraits:
   - trait: "頭骨"
     value: "巨大頭骨と前方湾曲角"
