@@ -4,7 +4,7 @@ date: "2026.08.19"
 category: "museum_goods"
 title: "恐竜博物館のついでじゃない！子連れ（4歳・2歳）で楽しむ「かつやまディノパーク」混雑状況とベビーカー移動の注意点"
 summary: "福井県立恐竜博物館のすぐ隣にある「かつやまディノパーク」。日曜日に4歳・2歳の子連れで訪れたリアルな体験記。想像以上の恐竜たちのクオリティと大迫力の演出、混雑状況に加え、ベビーカー利用時の激しいアップダウンや服装・荷物の注意点など、事前に知っておくべき攻略ポイントを徹底解説します！"
-image: "images/topics/katsuyama-dino-park/entrance.webp"
+image: "images/topics/katsuyama-dino-park/header.webp"
 securityLevel: "LEVEL 3 (PUBLIC)"
 relatedSpecimens: ["tyrannosaurus", "triceratops", "spinosaurus", "mamenchisaurus", "allosaurus", "ankylosaurus"]
 ---
