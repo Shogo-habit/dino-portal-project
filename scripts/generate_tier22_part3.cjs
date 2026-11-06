@@ -35,7 +35,7 @@ const dinosaurs = [
       contentHeightPx: 518,
       sourceRes: 1024,
       dinoLeft: "10%",
-      refRight: "15%",
+      refRight: "8%",
       zoom: 1.3
     },
     content: `### ユタ州の白亜系に眠る進化の鍵：シーダーマウンテン層での大量発掘と命名の背景
