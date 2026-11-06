@@ -507,7 +507,7 @@
   },
   {
     "id": "australovenator",
-    "name": "アウストラロベナトル",
+    "name": "アウストラロヴェナトル",
     "scientificName": "Australovenator wintonensis",
     "group": "獣脚類",
     "diet": "肉食",
@@ -656,6 +656,50 @@
       "人間との実寸サイズ比較・水辺の狩人たるスケール",
       "生態と魚食性の証拠・ワニ状の顎と30cmの鉤爪",
       "最新の古生物学知見と研究史・アマチュアの発見から新世界へ"
+    ],
+    "issues": []
+  },
+  {
+    "id": "beipiaosaurus",
+    "name": "ベイピアオサウルス",
+    "scientificName": "Beipiaosaurus inexpectus",
+    "group": "獣脚類",
+    "diet": "植物食",
+    "era": "白亜紀前期",
+    "realHeight": 0.9,
+    "realLength": 2.2,
+    "length": "2.2m",
+    "weight": "85kg",
+    "charCount": 1985,
+    "rawCharCount": 2022,
+    "h3Count": 4,
+    "h3Headings": [
+      "熱河生物群の驚愕「思いがけないトカゲ」：原始的テリジノサウルス類の歴史的発見",
+      "実寸サイズと独特のスケール：全長約2.2メートル・全高約0.9メートルが示すどっしりした体型",
+      "二重構造の羽毛「原羽毛と特殊リボン状羽毛EBFFs」が明かした羽毛進化のミッシングリンク",
+      "巨大な前肢の鎌爪と広大な腹部：肉食の祖先から植物食への劇的な食性転換"
+    ],
+    "issues": []
+  },
+  {
+    "id": "beishanlong",
+    "name": "ベイシャンロン",
+    "scientificName": "Beishanlong grandis",
+    "group": "獣脚類",
+    "diet": "雑食・植物食",
+    "era": "白亜紀前期",
+    "realHeight": 2.3,
+    "realLength": 7,
+    "length": "7.0m",
+    "weight": "600kg",
+    "charCount": 2027,
+    "rawCharCount": 2065,
+    "h3Count": 4,
+    "h3Headings": [
+      "シルクロードの荒野「北山」から現れた巨大獣脚類：甘粛省における骨格発掘",
+      "実寸サイズと圧倒的スケール：全長約7.0メートル・全高約2.3メートルが誇る初期ダチョウ恐竜の巨躯",
+      "強靭な前肢と長大な鎌爪：巨大な体躯を支えた採食生態とデイノケイルス科との類縁",
+      "骨組織が語る「まだ成長途中」の真実とオルニトミモサウルス類の巨大化適応"
     ],
     "issues": []
   },
@@ -4642,6 +4686,28 @@
     "issues": []
   },
   {
+    "id": "pelecanimimus",
+    "name": "ペレカニミムス",
+    "scientificName": "Pelecanimimus polyodon",
+    "group": "獣脚類",
+    "diet": "魚食・肉食・雑食",
+    "era": "白亜紀前期",
+    "realHeight": 0.8,
+    "realLength": 2,
+    "length": "2.0m",
+    "weight": "25kg",
+    "charCount": 1992,
+    "rawCharCount": 2030,
+    "h3Count": 4,
+    "h3Headings": [
+      "ヨーロッパの湿原に眠る最古のダチョウ恐竜：ラス・オヤス層での奇跡の化石発見",
+      "実寸サイズと細身のスケール：全長約2.0メートル・全高約0.8メートルの軽快なプロポーション",
+      "獣脚類最多の220本超の微細歯と喉袋の軟組織：ペリカンに類似した捕食メカニズム",
+      "歯を失う前のオルニトミモサウルス類：ダチョウ恐竜の初期進化と羽毛・皮膚の痕跡"
+    ],
+    "issues": []
+  },
+  {
     "id": "pentaceratops",
     "name": "ペンタケラトプス",
     "scientificName": "Pentaceratops sternbergii",
@@ -5808,6 +5874,28 @@
     "issues": []
   },
   {
+    "id": "sinocalliopteryx",
+    "name": "シノカリオプテリクス",
+    "scientificName": "Sinocalliopteryx gigas",
+    "group": "獣脚類",
+    "diet": "肉食",
+    "era": "白亜紀前期",
+    "realHeight": 0.8,
+    "realLength": 2.4,
+    "length": "2.4m",
+    "weight": "20kg",
+    "charCount": 2089,
+    "rawCharCount": 2124,
+    "h3Count": 4,
+    "h3Headings": [
+      "義県層に現れたコンプソグナトゥス科の巨人：「中国の美しい羽」の命名と発掘",
+      "実寸サイズとスケール：全長約2.4メートル・全高約0.8メートルが示す大型捕食者への跳躍",
+      "腹中に遺された驚愕のメニュー：ドロマエオサウルス類や原始鳥類を丸呑みした生態",
+      "全身を包む繊細な繊維状原羽毛と活発な狩りを支えた温血性の証拠"
+    ],
+    "issues": []
+  },
+  {
     "id": "sinoceratops",
     "name": "シノケラトプス",
     "scientificName": "Sinoceratops zhuchengensis",
@@ -5848,6 +5936,28 @@
       "実寸サイズと引き締まった骨格：体長約1.2メートル・地上全高約0.5メートル・翼開長約1.9メートル",
       "尖ったトサカとオウム状の嘴：植物食から小動物捕食までこなす驚異の雑食適応",
       "熱河の森を翔ける飛行家：樹上登攀能力と原始鳥類との熾烈な共存"
+    ],
+    "issues": []
+  },
+  {
+    "id": "sinornithomimus",
+    "name": "シノルニトミムス",
+    "scientificName": "Sinornithomimus dongi",
+    "group": "獣脚類",
+    "diet": "植物食・雑食",
+    "era": "白亜紀後期",
+    "realHeight": 0.8,
+    "realLength": 2,
+    "length": "2.0m",
+    "weight": "25kg",
+    "charCount": 2049,
+    "rawCharCount": 2088,
+    "h3Count": 4,
+    "h3Headings": [
+      "ゴビ砂漠の泥沼に閉じ込められた若き群れ：奇跡のボーンベッド発見と命名",
+      "実寸サイズと俊敏なスケール：全長約2.0メートル・全高約0.8メートルの洗練された走行体型",
+      "年齢構成が明かす未成年グループの社会性：恐竜の集団生活と親離れの生態",
+      "胃石が決定づけた完全なる植物消化へのシフトとオルニトミモサウルス科の食性進化"
     ],
     "issues": []
   },

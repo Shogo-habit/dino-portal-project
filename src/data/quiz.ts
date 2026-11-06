@@ -1,552 +1,1136 @@
-export interface QuizSpecimen {
+export type QuizQuestionType = 'visual' | 'silhouette' | 'skeletal' | 'hints' | 'trivia' | 'academic';
+
+export interface QuizQuestionItem {
     id: string;
-    name: string;
-    zoom: number;
-    originX: string;
-    originY: string;
-    featureName: string; // クイズでフォーカスする特徴的な部位の名称
     difficulty: 'beginner' | 'intermediate' | 'advanced' | 'master';
+    type: QuizQuestionType;
+    dinoId?: string; // 関連する恐竜ID（図鑑リンク用）
+    question: string;
+    choices: string[]; // 4つの選択肢文字列
+    correctAnswer: string; // 正解の文字列（シャッフル後も追跡できるように文字列で保持）
+    explanation: string; // 正解の解説
+    hints?: [string, string, string]; // 3大ヒント（type === 'hints' の場合）
+    choiceNotes?: Record<string, string>; // 各選択肢の一言メモ（選択肢文字列 -> 解説）
+    category?: string; // 分野・テーマ
 }
 
-export const QUIZ_SPECIMENS: QuizSpecimen[] = [
+// ==========================================
+// 1. 初級 (BEGINNER) データ: TOP10恐竜 × 3パターン (計30問)
+// ==========================================
+
+export interface Top10DinoSpec {
+    id: string;
+    name: string;
+    oneLiner: string; // 一言解説
+    visualPrompt: string;
+    silhouettePrompt: string;
+    hints: [string, string, string];
+    correctExplanation: string;
+}
+
+export const TOP_10_DINOSAURS: Top10DinoSpec[] = [
     {
         id: "tyrannosaurus",
         name: "ティラノサウルス",
-        zoom: 3.5,
-        originX: "18%",
-        originY: "48%",
-        featureName: "骨を噛み砕くための強大な顎と鋭い牙",
-        difficulty: "beginner"
+        oneLiner: "白亜紀末期の北米に君臨した最強の大型肉食恐竜。噛む力は約6トンに達する。",
+        visualPrompt: "この白亜紀最強の大型肉食恐竜はどれ？",
+        silhouettePrompt: "このシルエットの恐竜はどれ？",
+        hints: [
+            "誰もが知っている恐竜界の絶対王者！超大型の肉食恐竜",
+            "体はとても巨大なのに、「前あし」が小さくて指が2本しかない",
+            "骨ごと獲物を噛み砕く、史上最強クラスのアゴと鋭いキバを持つ"
+        ],
+        correctExplanation: "ティラノサウルスは白亜紀末期の北米に生息した最大級の肉食恐竜です。強大な顎と太いバナナのような歯を持ち、獲物の骨ごと噛み砕いて捕食していました。"
     },
     {
         id: "triceratops",
         name: "トリケラトプス",
-        zoom: 3.5,
-        originX: "15%",
-        originY: "50%",
-        featureName: "敵を威嚇し自衛するための強靭な角と襟飾り（フリル）",
-        difficulty: "beginner"
-    },
-    {
-        id: "spinosaurus",
-        name: "スピノサウルス",
-        zoom: 3.8,
-        originX: "50%",
-        originY: "45%",
-        featureName: "背中にそびえる大きな帆（神経棘）",
-        difficulty: "beginner"
+        oneLiner: "3本の角と大きな首の襟飾り（フリル）を持つ、最大級で最も有名な角竜。",
+        visualPrompt: "目の上に2本、鼻の上に1本の角を持つこの植物食恐竜は？",
+        silhouettePrompt: "このシルエットの恐竜はどれ？",
+        hints: [
+            "ティラノサウルスとたたかった、大人気の強い草食恐竜",
+            "首のまわりを守る、大きな骨のえり飾り（フリル）がある",
+            "顔に「3本の立派なツノ」が生えている"
+        ],
+        correctExplanation: "トリケラトプスは「3本の角を持つ顔」という意味の植物食恐竜です。ティラノサウルスと激しい戦いを繰り広げた化石も発見されています。"
     },
     {
         id: "stegosaurus",
         name: "ステゴサウルス",
-        zoom: 3.8,
-        originX: "52%",
-        originY: "40%",
-        featureName: "背中に対になって並ぶ独特な骨板",
-        difficulty: "beginner"
-    },
-    {
-        id: "ankylosaurus",
-        name: "アンキロサウルス",
-        zoom: 3.8,
-        originX: "90%",
-        originY: "50%",
-        featureName: "骨を砕く破壊力を持つ尾の先端のハンマー",
-        difficulty: "beginner"
-    },
-    {
-        id: "velociraptor",
-        name: "ヴェロキラプトル",
-        zoom: 4.0,
-        originX: "45%",
-        originY: "60%",
-        featureName: "獲物の急所を執拗に狙うための後肢の巨大な鉤爪",
-        difficulty: "beginner"
-    },
-    {
-        id: "allosaurus",
-        name: "アロサウルス",
-        zoom: 3.5,
-        originX: "20%",
-        originY: "45%",
-        featureName: "目の上にある小さな角状のコブと捕食用の頭部",
-        difficulty: "beginner"
+        oneLiner: "背中にひし形の骨板が並び、尾に4本のトゲを持つジュラ紀の代表的剣竜。",
+        visualPrompt: "背中に板が並び、尾にトゲを持つこの恐竜は？",
+        silhouettePrompt: "このシルエットの恐竜はどれ？",
+        hints: [
+            "四本足でのっしのっしと歩く、おとなしい草食恐竜",
+            "背中にひし形の「骨の板」がズラリと2列に並んでいる",
+            "しっぽの先に、敵をやっつけるための「4本の鋭いトゲ」がある"
+        ],
+        correctExplanation: "ステゴサウルスはジュラ紀後期に生息した剣竜です。背中の骨板は体温調節や威嚇に使われ、尾の先のトゲ（サゴマイザー）で肉食恐竜を撃退していました。"
     },
     {
         id: "brachiosaurus",
         name: "ブラキオサウルス",
-        zoom: 3.8,
-        originX: "18%",
-        originY: "20%",
-        featureName: "高所の植物を食べるための極めて長い首と小さな頭部",
-        difficulty: "beginner"
+        oneLiner: "前足が後ろ足より長く、首を高く持ち上げていた巨大竜脚類。",
+        visualPrompt: "首が極めて長く、前足が後ろ足より長いこの巨大恐竜は？",
+        silhouettePrompt: "このシルエットの恐竜はどれ？",
+        hints: [
+            "ビルの4階まで届く、キリンのような超巨大草食恐竜",
+            "高い木の葉っぱを食べやすくするため、「前足」が「後ろ足」より長い",
+            "長い首を上にぐーんと伸ばした姿がトレードマーク！"
+        ],
+        correctExplanation: "ブラキオサウルスは「腕トカゲ」という意味の巨大竜脚類です。前足が後ろ足より長く、キリンのように高い木の上の葉を効率よく食べていました。"
     },
     {
-        id: "mosasaurus",
-        name: "モササウルス",
-        zoom: 3.5,
-        originX: "20%",
-        originY: "52%",
-        featureName: "カメの甲羅をも砕く強力な咬合力を持つ頭部",
-        difficulty: "beginner"
-    },
-    {
-        id: "iguanodon",
-        name: "イグアノドン",
-        zoom: 3.8,
-        originX: "30%",
-        originY: "58%",
-        featureName: "自衛武器として使われた親指の鋭いスパイク",
-        difficulty: "beginner"
-    },
-    {
-        id: "parasaurolophus",
-        name: "パラサウロロフス",
-        zoom: 3.8,
-        originX: "22%",
-        originY: "42%",
-        featureName: "音を響かせて仲間と通信するための後方に伸びるトサカ",
-        difficulty: "beginner"
+        id: "spinosaurus",
+        name: "スピノサウルス",
+        oneLiner: "背中に高さ2m近い巨大な帆を持ち、泳ぎが得意だった史上最長の肉食恐竜。",
+        visualPrompt: "背中に大きな帆があり、水辺で魚を捕らえていたこの肉食恐竜は？",
+        silhouettePrompt: "このシルエットの恐竜はどれ？",
+        hints: [
+            "ティラノサウルスよりも体が長い、超巨大な肉食恐竜",
+            "背中に高さ2メートル近い「大きな帆（ほ）」がある",
+            "ワニのような細長い口としっぽを使って、水の中で魚をつかまえていた"
+        ],
+        correctExplanation: "スピノサウルスは背中に巨大な帆（神経棘）を持つ大型肉食恐竜です。近年の研究でオール状の尾を持ち、水中を自在に泳いで巨大魚を捕食していたことが判明しました。"
     },
     {
         id: "pteranodon",
         name: "プテラノドン",
-        zoom: 3.5,
-        originX: "35%",
-        originY: "45%",
-        featureName: "飛行時の舵やディスプレイの役割を持った頭部後方のトサカ",
-        difficulty: "beginner"
+        oneLiner: "大空を飛行していた翼開長7mの代表的翼竜。実は恐竜ではなく空飛ぶ爬虫類。",
+        visualPrompt: "大きな翼を広げて空を飛んでいた、トサカが特徴的なこの古生物は？",
+        silhouettePrompt: "この古生物のシルエットはどれ？",
+        hints: [
+            "大きな翼を広げて大空を飛んでいた、空の古生物",
+            "頭の後ろに長く伸びたカッコいい「トサカ」がある",
+            "恐竜図鑑の常連だけど、足の骨の構造から「実は恐竜ではなく翼竜（空飛ぶ爬虫類）」！"
+        ],
+        correctExplanation: "プテラノドンは白亜紀後期の空を支配した大型翼竜です。「歯のない翼」という意味を持ち、クチバシには歯がなく、ペリカンのように海で魚を丸呑みしていました。"
     },
     {
-        id: "quetzalcoatlus",
-        name: "ケツァルコアトルス",
-        zoom: 3.5,
-        originX: "25%",
-        originY: "40%",
-        featureName: "地上で獲物を捕らえるための非常に長いクチバシ",
-        difficulty: "beginner"
-    },
-    {
-        id: "therizinosaurus",
-        name: "テリジノサウルス",
-        zoom: 3.8,
-        originX: "28%",
-        originY: "52%",
-        featureName: "長さ1メートルに達する史上最大級の大鎌のような前肢の爪",
-        difficulty: "beginner"
+        id: "ankylosaurus",
+        name: "アンキロサウルス",
+        oneLiner: "全身が強固な骨の鎧で覆われ、尾の先に骨のハンマーを持つ装甲恐竜の王者。",
+        visualPrompt: "全身が硬い鎧で覆われ、尾の先に重い塊を持つこの恐竜は？",
+        silhouettePrompt: "この恐竜のシルエットはどれ？",
+        hints: [
+            "全身が硬い骨のヨロイで覆われた「歩く戦車」のような恐竜",
+            "お腹以外はガチガチで、肉食恐竜のキバも通さない",
+            "しっぽの先に、敵の骨をくだく重い「骨のハンマー」がついている"
+        ],
+        correctExplanation: "アンキロサウルスは白亜紀末期の鎧竜です。背中全面が装甲板で守られており、尾の先の頑丈なハンマーは肉食恐竜の足を骨折させるほどの破壊力がありました。"
     },
     {
         id: "pachycephalosaurus",
         name: "パキケファロサウルス",
-        zoom: 3.8,
-        originX: "18%",
-        originY: "42%",
-        featureName: "頭突きやディスプレイに使われた厚さ25cmに達する分厚い頭骨",
-        difficulty: "beginner"
+        oneLiner: "頭頂部が厚さ25cmもの骨でヘルメットのように盛り上がった石頭恐竜。",
+        visualPrompt: "頭のてっぺんがヘルメットのように丸く盛り上がっているこの恐竜は？",
+        silhouettePrompt: "この恐竜のシルエットはどれ？",
+        hints: [
+            "二本足で素早く走る、頭がとっても頑丈な恐竜",
+            "頭のてっぺんがヘルメットのように丸く分厚く盛り上がっている",
+            "頭骨の厚さはなんと約25cm！別名「石頭恐竜（いしあたまきょうりゅう）」"
+        ],
+        correctExplanation: "パキケファロサウルスは「分厚い頭のトカゲ」という意味の恐竜です。頭頂部がドーム状に極めて分厚く、ライバルとの押し合いや威嚇、側面への打撃に使われました。"
     },
     {
-        id: "carnotaurus",
-        name: "カルノタウルス",
-        zoom: 3.8,
-        originX: "25%",
-        originY: "40%",
-        featureName: "目の上にある2本の鋭い角",
-        difficulty: "intermediate"
+        id: "velociraptor",
+        name: "ヴェロキラプトル",
+        oneLiner: "後ろ足に鋭い鉤爪を持つ俊足の小型獣脚類。映画で有名だが実物は羽毛恐竜。",
+        visualPrompt: "後あしに鋭い鉤爪（かぎづめ）を持ち、足がとても速い小型の肉食恐竜は？",
+        silhouettePrompt: "この恐竜のシルエットはどれ？",
+        hints: [
+            "映画でも大活躍！知能が高くて足がとても速い小型の肉食恐竜",
+            "後ろ足に獲物をしとめる大きな「カギ爪」を持っている",
+            "映画では人間サイズだけど、「実は全長約2m・腰の高さは大人のヒザ丈くらい」で全身に羽毛が生えていた！"
+        ],
+        correctExplanation: "ヴェロキラプトルは白亜紀後期のモンゴルに生息した小型肉食恐竜です。映画の大型でウロコの姿とは異なり、実際は七面鳥のように全身羽毛に覆われた体長2m前後の敏捷なハンターでした。"
     },
     {
-        id: "elasmosaurus",
-        name: "エラスモサウルス",
-        zoom: 3.5,
-        originX: "25%",
-        originY: "35%",
-        featureName: "70個以上の骨からなる極めて長い首",
-        difficulty: "intermediate"
+        id: "mosasaurus",
+        name: "モササウルス",
+        oneLiner: "4枚のヒレ足と強力な顎で白亜紀の海に君臨した海の覇者。実は海生爬虫類。",
+        visualPrompt: "ヒレ足と鋭い歯を持ち、白亜紀の海を支配した海の怪物は？",
+        silhouettePrompt: "この海の古生物のシルエットはどれ？",
+        hints: [
+            "白亜紀の海に君臨した、巨大で獰猛な「海の王者」",
+            "手足が泳ぎやすい「ヒレ」になっていて、アゴの力でサメやカメを丸呑みにした",
+            "映画でも大人気だけど、「実は恐竜ではなく海の爬虫類（トカゲの仲間）」！"
+        ],
+        correctExplanation: "モササウルスは白亜紀末期の海に生息した巨大海生爬虫類（有鱗類）です。恐竜ではなくオオトカゲに近い仲間で、流線型の胴体と強力な二重のアゴで食物連鎖の頂点に立っていました。"
+    }
+];
+
+// 初級の全30問を自動展開生成
+export function getBeginnerQuestions(): QuizQuestionItem[] {
+    const list: QuizQuestionItem[] = [];
+    const top10Names = TOP_10_DINOSAURS.map(d => d.name);
+
+    TOP_10_DINOSAURS.forEach(dino => {
+        // 誤答用メモマップ
+        const choiceNotes: Record<string, string> = {};
+        TOP_10_DINOSAURS.forEach(d => {
+            choiceNotes[d.name] = d.oneLiner;
+        });
+
+        // 誤答選択肢候補
+        const otherNames = top10Names.filter(n => n !== dino.name);
+
+        // 1. メインイラスト
+        list.push({
+            id: `beg_vis_${dino.id}`,
+            difficulty: 'beginner',
+            type: 'visual',
+            dinoId: dino.id,
+            question: dino.visualPrompt,
+            choices: [dino.name, ...otherNames.slice(0, 3)],
+            correctAnswer: dino.name,
+            explanation: dino.correctExplanation,
+            choiceNotes: choiceNotes
+        });
+
+        // 2. シルエット
+        list.push({
+            id: `beg_sil_${dino.id}`,
+            difficulty: 'beginner',
+            type: 'silhouette',
+            dinoId: dino.id,
+            question: dino.silhouettePrompt,
+            choices: [dino.name, ...otherNames.slice(0, 3)],
+            correctAnswer: dino.name,
+            explanation: dino.correctExplanation,
+            choiceNotes: choiceNotes
+        });
+
+        // 3. 3大ヒント
+        list.push({
+            id: `beg_hnt_${dino.id}`,
+            difficulty: 'beginner',
+            type: 'hints',
+            dinoId: dino.id,
+            question: "3つの手がかりから恐竜を推理してください。",
+            choices: [dino.name, ...otherNames.slice(0, 3)],
+            correctAnswer: dino.name,
+            explanation: dino.correctExplanation,
+            hints: dino.hints,
+            choiceNotes: choiceNotes
+        });
+    });
+
+    return list;
+}
+
+// ==========================================
+// 2. 中級 (INTERMEDIATE) データ
+// (中堅20種のクイズ ＋ 初級恐竜の簡単雑学)
+// ==========================================
+
+export const INTERMEDIATE_QUESTIONS: QuizQuestionItem[] = [
+    // --- 中堅20種の出題 ---
+    {
+        id: "int_car_vis",
+        difficulty: "intermediate",
+        type: "visual",
+        dinoId: "carnotaurus",
+        question: "目の上に牛のような2本のツノを持ち、前あしが極端に短いこの肉食恐竜は？",
+        choices: ["カルノタウルス", "ケラトサウルス", "アロサウルス", "マジュンガサウルス"],
+        correctAnswer: "カルノタウルス",
+        explanation: "カルノタウルスは「肉食の雄牛」という意味の俊足肉食恐竜です。目の上の2本の角と、指を動かすことすらできなかった極端に退化した小さな前足が特徴です。",
+        choiceNotes: {
+            "カルノタウルス": "白亜紀南米の俊足ハンター。牛のような角と極小の前足が特徴。",
+            "ケラトサウルス": "鼻の上に1本の角を持つジュラ紀の肉食恐竜。",
+            "アロサウルス": "ジュラ紀北米の頂点捕食者。目の上に小さな骨の隆起を持つ。",
+            "マジュンガサウルス": "マダガスカル島で発見された頭頂部に1本のドーム状の角を持つ恐竜。"
+        }
     },
     {
-        id: "fukuisaurus",
-        name: "フクイサウルス",
-        zoom: 3.8,
-        originX: "22%",
-        originY: "48%",
-        featureName: "植物を効率よくすりつぶすための頑丈な上顎と歯",
-        difficulty: "intermediate"
+        id: "int_the_vis",
+        difficulty: "intermediate",
+        type: "visual",
+        dinoId: "therizinosaurus",
+        question: "前あしに長さ1メートルに達する大鎌のような巨大なツメを持つこの恐竜は？",
+        choices: ["テリジノサウルス", "デイノケイルス", "ヴェロキラプトル", "スピノサウルス"],
+        correctAnswer: "テリジノサウルス",
+        explanation: "テリジノサウルスは「大鎌トカゲ」という意味の植物食（または雑食）恐竜です。長さ1mにもなる巨大な爪で木の枝を引き寄せて葉を食べていました。",
+        choiceNotes: {
+            "テリジノサウルス": "史上最長（1m）の前足の爪を持つ、おとなしい植物食中心の巨竜。",
+            "デイノケイルス": "アヒルのようなくちばしと巨大な腕を持つオルニトミムス類。",
+            "ヴェロキラプトル": "後ろ足に鋭い鉤爪を持つ小型肉食恐竜。",
+            "スピノサウルス": "背中に大きな帆を持つ水棲肉食恐竜。"
+        }
     },
     {
-        id: "giganotosaurus",
-        name: "ギガノトサウルス",
-        zoom: 3.5,
-        originX: "22%",
-        originY: "45%",
-        featureName: "肉を切り裂くのに適した薄く鋭い歯が並ぶ巨大な頭部",
-        difficulty: "intermediate"
+        id: "int_ple_vis",
+        difficulty: "intermediate",
+        type: "visual",
+        dinoId: "plesiosaurus",
+        question: "4枚のヒレ足と長い首を持ち、中生代の海を優雅に泳いで魚を捕食していたこの首長竜は？",
+        choices: ["プレシオサウルス", "モササウルス", "イクチオサウルス", "エラスモサウルス"],
+        correctAnswer: "プレシオサウルス",
+        explanation: "プレシオサウルスはジュラ紀前期の海に生息した首長竜の代表格です。4つのヒレ足を使ってまるで海中を飛ぶように羽ばたいて泳いでいました。",
+        choiceNotes: {
+            "プレシオサウルス": "首長竜の代表種。4枚のヒレ足と適度な長さの首を持つ。",
+            "モササウルス": "ワニのような頭と強力なアゴを持つ海のトカゲ（有鱗類）。",
+            "イクチオサウルス": "イルカによく似た姿に進化した魚竜。",
+            "エラスモサウルス": "首の骨が70個以上もある超長頸の首長竜。"
+        }
     },
     {
-        id: "oviraptor",
-        name: "オヴィラプトル",
-        zoom: 3.8,
-        originX: "25%",
-        originY: "40%",
-        featureName: "卵や木の実を砕くための歯のない強力なくちばし",
-        difficulty: "intermediate"
+        id: "int_sty_vis",
+        difficulty: "intermediate",
+        type: "visual",
+        dinoId: "styracosaurus",
+        question: "首の襟飾り（フリル）から長いトゲが放射状に突き出ている、この特徴的な角竜は？",
+        choices: ["スティラコサウルス", "トリケラトプス", "パキリノサウルス", "カスモサウルス"],
+        correctAnswer: "スティラコサウルス",
+        explanation: "スティラコサウルスは「スパイクのあるトカゲ」という意味の角竜です。鼻の上の長い1本の角に加え、フリルから何本もの長いトゲが突き出た派手な姿をしていました。",
+        choiceNotes: {
+            "スティラコサウルス": "フリルの周囲に長い棘が放射状に並ぶ派手な角竜。",
+            "トリケラトプス": "目の上に2本、鼻の上に1本の角を持つ角竜の王者。",
+            "パキリノサウルス": "角の代わりに鼻の上に硬い骨のコブを持つ角竜。",
+            "カスモサウルス": "首の後ろに極めて巨大なフリルを持つ角竜。"
+        }
     },
     {
-        id: "dilophosaurus",
-        name: "ディロフォサウルス",
-        zoom: 3.8,
-        originX: "22%",
-        originY: "38%",
-        featureName: "頭部にある一対（2本）の高く丸いトサカ",
-        difficulty: "intermediate"
+        id: "int_par_sil",
+        difficulty: "intermediate",
+        type: "silhouette",
+        dinoId: "parasaurolophus",
+        question: "頭の後ろに長く伸びた管状のトサカが特徴的な、この恐竜のシルエットはどれ？",
+        choices: ["パラサウロロフス", "コリトサウルス", "ランベオサウルス", "マイアサウラ"],
+        correctAnswer: "パラサウロロフス",
+        explanation: "パラサウロロフスは頭の後ろに約1.8mの空洞のトサカを持っています。鼻腔と繋がっており、空気を送り込んでホルンのように低周波の音を響かせて交信していました。",
+        choiceNotes: {
+            "パラサウロロフス": "後ろに長く伸びる管状のトサカで音を鳴らして仲間と通信した。",
+            "コリトサウルス": "ヘルメット（半円形）のような丸いトサカを持つ鳥脚類。",
+            "ランベオサウルス": "斧（オノ）のような形状のトサカを持つ鳥脚類。",
+            "マイアサウラ": "目立ったトサカはなく、子育ての化石で有名な恐竜。"
+        }
     },
     {
-        id: "baryonyx",
-        name: "バリオニクス",
-        zoom: 3.8,
-        originX: "32%",
-        originY: "55%",
-        featureName: "親指にある長さ30cmに達する巨大な鉤爪",
-        difficulty: "intermediate"
+        id: "int_dil_sil",
+        difficulty: "intermediate",
+        type: "silhouette",
+        dinoId: "dilophosaurus",
+        question: "頭の上に2枚の半円形のトサカが平行に並んでいる、このシルエットの肉食恐竜は？",
+        choices: ["ディロフォサウルス", "ケラトサウルス", "アロサウルス", "コエロフィシス"],
+        correctAnswer: "ディロフォサウルス",
+        explanation: "ディロフォサウルスは「2つのトサカを持つトカゲ」という意味のジュラ紀前期の肉食恐竜です。頭骨の上に薄く丸い骨のトサカが一対並んでいました。",
+        choiceNotes: {
+            "ディロフォサウルス": "頭の上に薄い半円形の2枚のトサカを持つ肉食恐竜。",
+            "ケラトサウルス": "鼻の上に鋭い角を1本持つジュラ紀の捕食者。",
+            "アロサウルス": "目の上に小さな骨の突起を持つジュラ紀の王者。",
+            "コエロフィシス": "三畳紀の細身で敏捷な小型肉食恐竜。"
+        }
     },
     {
-        id: "deinocheirus",
-        name: "デイノケイルス",
-        zoom: 3.8,
-        originX: "15%",
-        originY: "48%",
-        featureName: "魚などを捕らえるための平らなアヒルのようなくちばし",
-        difficulty: "intermediate"
+        id: "int_ama_sil",
+        difficulty: "intermediate",
+        type: "silhouette",
+        dinoId: "amargasaurus",
+        question: "首から背中にかけて「2列の長いたてがみのようなトゲ」が並ぶ、このシルエットの恐竜は？",
+        choices: ["アマルガサウルス", "ステゴサウルス", "ブラキオサウルス", "ディプロドクス"],
+        correctAnswer: "アマルガサウルス",
+        explanation: "アマルガサウルスは南米アルゼンチンで発見された小型の竜脚類です。首の骨（神経棘）が2列に深く枝分かれして長く伸びており、独特のトゲ状突起を形成していました。",
+        choiceNotes: {
+            "アマルガサウルス": "首から背中に対になって伸びる長いトゲを持つ個性派竜脚類。",
+            "ステゴサウルス": "背中にひし形の骨板が並び、尾にトゲを持つ剣竜。",
+            "ブラキオサウルス": "首が長く前足が高い超巨大竜脚類。",
+            "ディプロドクス": "鞭のように細長い尾を持つ細身の巨大竜脚類。"
+        }
     },
     {
-        id: "apatosaurus",
-        name: "アパトサウルス",
-        zoom: 3.8,
-        originX: "85%",
-        originY: "45%",
-        featureName: "天敵の威嚇や攻撃に使われた鞭のような長い尾",
-        difficulty: "intermediate"
+        id: "int_igu_hnt",
+        difficulty: "intermediate",
+        type: "hints",
+        dinoId: "iguanodon",
+        question: "3つの手がかりから恐竜を推理してください。",
+        choices: ["イグアノドン", "マイアサウラ", "パラサウロロフス", "アンキロサウルス"],
+        correctAnswer: "イグアノドン",
+        explanation: "イグアノドンは世界で2番目に学名が命名された歴史的な恐竜です。発見当初は鼻の上の角と誤認された円錐形の骨は、前足の親指にある防衛用スパイクでした。",
+        hints: [
+            "恐竜の中で世界で2番目に名前がつけられた、歴史的に有名な草食恐竜",
+            "昔は「鼻の上のツノ」と間違えられて復元されていたパーツがある",
+            "前足の親指に、敵から身を守る「鋭いトゲ（スパイク）」を持っている！"
+        ],
+        choiceNotes: {
+            "イグアノドン": "親指に鋭いトゲ（スパイク）を持つ歴史的草食恐竜。",
+            "マイアサウラ": "親指のトゲはなく、子育てで有名なカモノハシ恐竜。",
+            "パラサウロロフス": "頭に長い管状トサカを持つ植物食恐竜。",
+            "アンキロサウルス": "親指ではなく全身が硬い鎧板で覆われた恐竜。"
+        }
     },
     {
-        id: "kentrosaurus",
-        name: "ケントロサウルス",
-        zoom: 3.8,
-        originX: "60%",
-        originY: "40%",
-        featureName: "背中から尾にかけて並ぶ鋭く長いトゲ（スパイク）",
-        difficulty: "intermediate"
+        id: "int_dei_hnt",
+        difficulty: "intermediate",
+        type: "hints",
+        dinoId: "deinonychus",
+        question: "3つの手がかりから恐竜を推理してください。",
+        choices: ["デイノニクス", "オルニトミムス", "テリジノサウルス", "コンプソグナトゥス"],
+        correctAnswer: "デイノニクス",
+        explanation: "デイノニクスは「恐ろしい鉤爪」という意味の肉食恐竜です。ジョン・オストロム博士が本種の研究から俊敏で恒温動物のような生態を提唱し、「恐竜ルネサンス」の引き金となりました。",
+        hints: [
+            "「恐ろしい鉤爪（かぎづめ）」という意味の名前を持つ肉食恐竜",
+            "映画『ジュラシック・パーク』のラプトルの実際のモデルになった恐竜",
+            "後ろ足の大きなカギ爪と素早い動きから、「恐竜は温血動物だったのでは？」という大論争を巻き起こした！"
+        ],
+        choiceNotes: {
+            "デイノニクス": "後ろ足の巨大な鉤爪を持ち、恐竜ルネサンスを引き起こした肉食恐竜。",
+            "オルニトミムス": "爪ではなく足の速さ（ダチョウ体型）が特徴の恐竜。",
+            "テリジノサウルス": "後ろ足ではなく「前足」に巨大な爪を持つ植物食恐竜。",
+            "コンプソグナトゥス": "ニワトリ大の小型恐竜で、大きな鉤爪は持たない。"
+        }
     },
     {
-        id: "acrocanthosaurus",
-        name: "アクロカントサウルス",
-        zoom: 3.8,
-        originX: "50%",
-        originY: "38%",
-        featureName: "背中に沿って走る特徴的な低い帆状の突起",
-        difficulty: "intermediate"
+        id: "int_arg_hnt",
+        difficulty: "intermediate",
+        type: "hints",
+        dinoId: "argentinosaurus",
+        question: "3つの手がかりから恐竜を推理してください。",
+        choices: ["アルゼンチノサウルス", "ブラキオサウルス", "ステゴサウルス", "ティラノサウルス"],
+        correctAnswer: "アルゼンチノサウルス",
+        explanation: "アルゼンチノサウルスは白亜紀後期の南米に生息したティタノサウルス類です。全長35m超・体重70t超と推定され、陸上を歩いた脊椎動物として史上最大級の質量を誇ります。",
+        hints: [
+            "全長35メートル以上、体重約70トン以上！地球の歴史上「最大級」の超巨大恐竜",
+            "骨の化石1個（背骨）だけでも大人の身長（1.5m以上）を超える大きさがある",
+            "南アメリカのアルゼンチンで発見された、歩くだけで大地を揺るがした巨竜！"
+        ],
+        choiceNotes: {
+            "アルゼンチノサウルス": "全長35m・体重70tを超える地球史上最大級の超巨竜。",
+            "ブラキオサウルス": "ジュラ紀の巨竜だが、全長約25mで一回り小さい。",
+            "ステゴサウルス": "全長約9mの剣竜。",
+            "ティラノサウルス": "全長約12mの肉食恐竜。"
+        }
     },
     {
-        id: "amargasaurus",
-        name: "アマルガサウルス",
-        zoom: 3.8,
-        originX: "30%",
-        originY: "40%",
-        featureName: "首から背中にかけて並ぶ2列の長い棘（きょく）",
-        difficulty: "intermediate"
+        id: "int_all_vis",
+        difficulty: "intermediate",
+        type: "visual",
+        dinoId: "allosaurus",
+        question: "目の上に小さな角状のコブを持ち、ジュラ紀の生態系の頂点に君臨したこの大型肉食恐竜は？",
+        choices: ["アロサウルス", "ティラノサウルス", "カルノタウルス", "スピノサウルス"],
+        correctAnswer: "アロサウルス",
+        explanation: "アロサウルスは「異なるトカゲ」という意味のジュラ紀後期の頂点捕食者です。目の上の突起と鋭い牙、強力な3本指の前足を持ち、ステゴサウルスなどを狩っていました。",
+        choiceNotes: {
+            "アロサウルス": "ジュラ紀北米の支配者。目の上の骨のコブが目印。",
+            "ティラノサウルス": "白亜紀末期の最強肉食恐竜（指は2本）。",
+            "カルノタウルス": "白亜紀南米の角を持つ俊足肉食恐竜。",
+            "スピノサウルス": "背中に大きな帆を持つ水棲肉食恐竜。"
+        }
     },
     {
-        id: "archaeopteryx",
-        name: "アーケオプテリクス",
-        zoom: 3.8,
-        originX: "40%",
-        originY: "45%",
-        featureName: "鳥類への進化の過程を示す美しい羽毛",
-        difficulty: "intermediate"
+        id: "int_apa_vis",
+        difficulty: "intermediate",
+        type: "visual",
+        dinoId: "apatosaurus",
+        question: "かつて「ブロントサウルス」と呼ばれ親しまれた、鞭のような長い尾を持つこの巨大竜脚類は？",
+        choices: ["アパトサウルス", "ブラキオサウルス", "アンキロサウルス", "トリケラトプス"],
+        correctAnswer: "アパトサウルス",
+        explanation: "アパトサウルスはジュラ紀後期の超大型草食恐竜です。首が太く頑丈で、鞭のように細長くしなる尾の先を音速で打ち鳴らして天敵を威嚇していたと考えられています。",
+        choiceNotes: {
+            "アパトサウルス": "太い首と鞭のような尾を持つ代表的竜脚類（旧ブロントサウルス）。",
+            "ブラキオサウルス": "前足が後ろ足より長く、首を高く立てた竜脚類。",
+            "アンキロサウルス": "全身装甲と尾のハンマーを持つ鎧竜。",
+            "トリケラトプス": "3本の角とフリルを持つ角竜。"
+        }
     },
     {
-        id: "archelon",
-        name: "アルケロン",
-        zoom: 3.5,
-        originX: "50%",
-        originY: "48%",
-        featureName: "現生のカメとは異なり、甲羅が皮膚で覆われていた肋骨のフレーム",
-        difficulty: "intermediate"
+        id: "int_gig_vis",
+        difficulty: "intermediate",
+        type: "visual",
+        dinoId: "giganotosaurus",
+        question: "南アメリカで発見された、ティラノサウルスに匹敵する体長約13mの巨大肉食恐竜は？",
+        choices: ["ギガノトサウルス", "カルノタウルス", "メガロサウルス", "アロサウルス"],
+        correctAnswer: "ギガノトサウルス",
+        explanation: "ギガノトサウルスは「南の巨大なトカゲ」という意味の白亜紀中期の大型肉食恐竜です。薄く鋭利なナイフのような歯を持ち、巨大な竜脚類を襲っていたとされます。",
+        choiceNotes: {
+            "ギガノトサウルス": "南米で発見された、T-レックスに匹敵する巨大肉食恐竜。",
+            "カルノタウルス": "同じ南米の恐竜だが、頭に牛のような角を持つ中型種。",
+            "メガロサウルス": "イギリスで世界最初に命名されたジュラ紀の恐竜。",
+            "アロサウルス": "北米のジュラ紀を代表する大型肉食恐竜。"
+        }
     },
     {
-        id: "dimetrodon",
-        name: "ディメトロドン",
-        zoom: 3.8,
-        originX: "50%",
-        originY: "35%",
-        featureName: "体温調節やディスプレイに使われた背中の巨大な帆",
-        difficulty: "intermediate"
+        id: "int_que_vis",
+        difficulty: "intermediate",
+        type: "visual",
+        dinoId: "quetzalcoatlus",
+        question: "翼を広げると10メートル以上！キリン並みの背丈を誇る地球史上最大級の翼竜は？",
+        choices: ["ケツァルコアトルス", "プテラノドン", "ディモルフォドン", "ランフォリンクス"],
+        correctAnswer: "ケツァルコアトルス",
+        explanation: "ケツァルコアトルスは白亜紀末期の北米に生息した史上最大級の翼竜です。地上に降り立つとキリン並みの高さがあり、長いクチバシで小型動物を丸呑みしていました。",
+        choiceNotes: {
+            "ケツァルコアトルス": "翼開長10m超・キリン大の体高を誇る超巨大翼竜。",
+            "プテラノドン": "翼開長7m、頭の後ろに長いトサカを持つ有名な翼竜。",
+            "ディモルフォドン": "ジュラ紀の長い尾と大きな頭を持つ原始的翼竜。",
+            "ランフォリンクス": "ジュラ紀の細長い尾の先に菱形の膜を持つ翼竜。"
+        }
     },
     {
-        id: "diplodocus",
-        name: "ディプロドクス",
-        zoom: 3.8,
-        originX: "82%",
-        originY: "48%",
-        featureName: "敵を威嚇し音速で振り回された鞭のように細長い尾の先端",
-        difficulty: "advanced"
+        id: "int_arc_vis",
+        difficulty: "intermediate",
+        type: "visual",
+        dinoId: "archaeopteryx",
+        question: "鳥のような美しい羽毛と、恐竜特有の歯や長い尾の骨を持つ「最古の鳥類（始祖鳥）」は？",
+        choices: ["アーケオプテリクス", "シノサウロプテリクス", "ミクロラプトル", "プテラノドン"],
+        correctAnswer: "アーケオプテリクス",
+        explanation: "アーケオプテリクス（始祖鳥）はジュラ紀後期のドイツで発見された化石です。鳥類の羽毛と翼を持ちながら、顎には鋭い歯、翼には鉤爪、長い骨質の尾を持つ過渡期の重要種です。",
+        choiceNotes: {
+            "アーケオプテリクス": "羽毛と歯・長い尾を持つ有名な原始的鳥類（始祖鳥）。",
+            "シノサウロプテリクス": "白亜紀の羽毛恐竜（中華竜鳥）。",
+            "ミクロラプトル": "4枚の翼を持つ小型羽毛恐竜。",
+            "プテラノドン": "羽毛ではなく皮膜の翼を持つ大型翼竜。"
+        }
+    },
+
+    // --- 初級恐竜の簡単雑学（洗練された選択肢） ---
+    {
+        id: "int_tri_spino",
+        difficulty: "intermediate",
+        type: "trivia",
+        dinoId: "spinosaurus",
+        question: "背中に巨大な帆を持つスピノサウルス。2020年に尾の化石が発見されたことで判明した「驚きの特徴」はどれ？",
+        choices: [
+            "平たいオールのような尾を持ち、水中を自在に泳いでいた",
+            "チーターのように長い足で、陸上を時速60kmで疾走していた",
+            "ライオンのように群れを作り、集団で大型恐竜を襲っていた",
+            "強力な後ろ足で跳躍し、飛んでいる翼竜を空中で捕まえていた"
+        ],
+        correctAnswer: "平たいオールのような尾を持ち、水中を自在に泳いでいた",
+        explanation: "2020年にモロッコでほぼ完全な尾の化石が発見され、尾の上下に骨が伸びて「櫂（オール）」のような形状をしていたことが判明。強い推進力で水中を泳いでいたことが確定しました。",
+        category: "初級恐竜雑学"
     },
     {
-        id: "hadrosaurus",
-        name: "ハドロサウルス",
-        zoom: 3.8,
-        originX: "18%",
-        originY: "45%",
-        featureName: "何百本もの小さな歯が隙間なく並ぶデンタルバッテリー構造の口",
-        difficulty: "advanced"
+        id: "int_tri_tricera",
+        difficulty: "intermediate",
+        type: "trivia",
+        dinoId: "triceratops",
+        question: "トリケラトプスの首の周りにある大きな「襟飾り（フリル）」。かつては硬い盾と考えられていましたが、近年の研究で最も有力視されている「本当の役割」はどれ？",
+        choices: [
+            "仲間へのアピール（求愛・ディスプレイ）や威嚇、体温調節",
+            "音を反響させて遠くの仲間と交信する巨大なパラボラアンテナ",
+            "脂肪を蓄えて乾季を乗り切るためのコブ（栄養タンク）",
+            "首の筋肉を極限まで鍛えて、大木をなぎ倒すための重り"
+        ],
+        correctAnswer: "仲間へのアピール（求愛・ディスプレイ）や威嚇、体温調節",
+        explanation: "フリルの骨は意外に薄く、表面には無数の血管が走った痕跡があります。このため防御用の盾というより、異性へのアピールや威嚇、血管を巡らせて熱を逃がすラジエーターだったとされています。",
+        category: "初級恐竜雑学"
     },
     {
-        id: "juravenator",
-        name: "ジュラベナトル",
-        zoom: 3.8,
-        originX: "55%",
-        originY: "50%",
-        featureName: "鱗と羽毛の両方の痕跡が発見された尾の付け根付近の皮膚",
-        difficulty: "advanced"
+        id: "int_tri_tyranno",
+        difficulty: "intermediate",
+        type: "trivia",
+        dinoId: "tyrannosaurus",
+        question: "映画等では猛スピードで車を追いかけるティラノサウルスですが、近年のコンピューター・生体力学シミュレーションが導き出した「成体の最高速度」はどれくらい？",
+        choices: [
+            "時速約15〜20km（人間の小走り〜ジョギング程度）",
+            "時速約40〜45km（ウサイン・ボルト並みの全力疾走）",
+            "時速約60〜70km（自動車やチーター並みの超高速）",
+            "歩くことしかできず時速5km未満"
+        ],
+        correctAnswer: "時速約15〜20km（人間の小走り〜ジョギング程度）",
+        explanation: "成体のティラノサウルスは体重が8トン以上もあるため、時速30km以上で走ると足の骨が自重に耐え切れず骨折してしまうことが判明。待ち伏せして仕留めるハンターだったと考えられています。",
+        category: "初級恐竜雑学"
     },
     {
-        id: "lambeosaurus",
-        name: "ランベオサウルス",
-        zoom: 3.8,
-        originX: "22%",
-        originY: "38%",
-        featureName: "音を響かせて通信したとされる特徴的な斧（コブ）状のトサカ",
-        difficulty: "advanced"
+        id: "int_tri_stego",
+        difficulty: "intermediate",
+        type: "trivia",
+        dinoId: "stegosaurus",
+        question: "体重が2〜3トンもある巨大な草食恐竜ステゴサウルス。その「脳の重さ」はどれくらいしかなかった？",
+        choices: [
+            "約30グラム（クルミやゴルフボール程度）",
+            "約300グラム（リンゴ程度）",
+            "約1.5キログラム（成人男性程度）",
+            "約5キログラム（スイカ程度）"
+        ],
+        correctAnswer: "約30グラム（クルミやゴルフボール程度）",
+        explanation: "ステゴサウルスの脳は体重比で恐竜の中でも最も小さい部類に入り、わずか約30g（クルミ大）程度しかありませんでした。かつて腰に「第2の脳」があると言われたのは神経の束（グリコーゲン体）です。",
+        category: "初級恐竜雑学"
     },
     {
-        id: "nigersaurus",
-        name: "ニジェールサウルス",
-        zoom: 3.8,
-        originX: "18%",
-        originY: "52%",
-        featureName: "地表の植物を効率よく刈り取るための横に広い掃除機のような口",
-        difficulty: "advanced"
+        id: "int_tri_ptera",
+        difficulty: "intermediate",
+        type: "trivia",
+        dinoId: "pteranodon",
+        question: "翼を広げると7メートル以上もあった大空の支配者プテラノドン。「プテラノドン」という学名が持つ本当の意味は？",
+        choices: [
+            "「歯のない翼」",
+            "「空飛ぶ悪魔」",
+            "「巨大なトサカ」",
+            "「風をつかむ指」",
+        ],
+        correctAnswer: "「歯のない翼」",
+        explanation: "「プテロ（翼）＋ア（否定・無）＋オドン（歯）」というギリシャ語に由来し、「歯のない翼」を意味します。魚を丸呑みしていたため、クチバシには歯が一本もありませんでした。",
+        category: "初級恐竜雑学"
     },
     {
-        id: "bajadasaurus",
-        name: "バジャダサウルス",
-        zoom: 3.8,
-        originX: "25%",
-        originY: "38%",
-        featureName: "首から前向きに長く伸びる独特で巨大な棘（神経棘）",
-        difficulty: "advanced"
+        id: "int_tri_ankylo",
+        difficulty: "intermediate",
+        type: "trivia",
+        dinoId: "ankylosaurus",
+        question: "全身が骨質の装甲板でガチガチに固められた「歩く戦車」アンキロサウルス。実は「唯一の弱点（ヨロイがない場所）」はどこだった？",
+        choices: [
+            "お腹（下面）",
+            "背中の中心ライン",
+            "首のまわり",
+            "尾のつけ根"
+        ],
+        correctAnswer: "お腹（下面）",
+        explanation: "背中や頭、まぶたまでも頑丈な骨板で守られていましたが、お腹の側だけは装甲がなく柔らかい皮膚が露出していました。ひっくり返されると無防備になるのが最大の弱点でした。",
+        category: "初級恐竜雑学"
+    }
+];
+
+// ==========================================
+// 3. 上級 (ADVANCED) データ
+// (骨格スキャン推理 ＋ 3大ヒント ＋ 雑学 ＋ アカデミック)
+// ==========================================
+
+export const ADVANCED_QUESTIONS: QuizQuestionItem[] = [
+    // --- 厳選・骨格スキャン推理 ---
+    {
+        id: "adv_skl_igu",
+        difficulty: "advanced",
+        type: "skeletal",
+        dinoId: "iguanodon",
+        question: "暗闇に青く浮かび上がるこの透過骨格。前足の親指に円錐形の「鋭い骨のスパイク」を持つこの草食恐竜は？",
+        choices: ["イグアノドン", "カンプトサウルス", "ハドロサウルス", "マイアサウラ"],
+        correctAnswer: "イグアノドン",
+        explanation: "イグアノドンの骨格最大の特徴は、前足の第1指（親指）が円錐形の強固な骨質スパイクになっている点です。肉食恐竜への武器として使われました。",
+        choiceNotes: {
+            "イグアノドン": "親指に鋭い防御用スパイク骨を持つ。",
+            "カンプトサウルス": "イグアノドンに近いジュラ紀の恐竜だが、親指スパイクは未発達。",
+            "ハドロサウルス": "親指が退化して存在しない鳥脚類。",
+            "マイアサウラ": "親指スパイクを持たないカモノハシ恐竜。"
+        }
     },
     {
-        id: "psittacosaurus",
-        name: "プシッタコサウルス",
-        zoom: 3.8,
-        originX: "18%",
-        originY: "42%",
-        featureName: "木の実を砕くための頑丈なオウム状の嘴（くちばし）",
-        difficulty: "advanced"
+        id: "adv_skl_allo",
+        difficulty: "advanced",
+        type: "skeletal",
+        dinoId: "allosaurus",
+        question: "目の上に涙骨からなる「一対の小さな骨の突起」を持ち、ジュラ紀の頂点に立ったこの骨格は？",
+        choices: ["アロサウルス", "ケラトサウルス", "メガロサウルス", "トルボサウルス"],
+        correctAnswer: "アロサウルス",
+        explanation: "アロサウルスの頭骨は目の上（涙骨）に一対の三角の突起があり、眼窩の前方には大きな空洞（前眼窩窓）が広がって軽量化されていました。",
+        choiceNotes: {
+            "アロサウルス": "目の上に一対の骨の突起を持つジュラ紀の王者。",
+            "ケラトサウルス": "鼻の上に1本の明確な角状突起を持つ。",
+            "メガロサウルス": "頭骨上部に突起を持たない原始的獣脚類。",
+            "トルボサウルス": "より重厚で突起のない巨大な頭骨を持つ。"
+        }
     },
     {
-        id: "carcharodontosaurus",
-        name: "カルカロドントサウルス",
-        zoom: 3.8,
-        originX: "22%",
-        originY: "45%",
-        featureName: "獲物の肉を切り裂くのに適した薄くギザギザなサメのような歯",
-        difficulty: "advanced"
+        id: "adv_skl_ama",
+        difficulty: "advanced",
+        type: "skeletal",
+        dinoId: "amargasaurus",
+        question: "首から背中にかけて「2列の長い神経棘（骨のトゲ）」が立ち並んでいる、この透過骨格は？",
+        choices: ["アマルガサウルス", "ディプロドクス", "マメンチサウルス", "バジャダサウルス"],
+        correctAnswer: "アマルガサウルス",
+        explanation: "アマルガサウルスの頸椎（首の骨）は二又に分かれて高く伸びており、背中にかけて2列の長い骨の棘列を形成していました。",
+        choiceNotes: {
+            "アマルガサウルス": "首から背中に対になって後方に伸びる長い神経棘を持つ。",
+            "ディプロドクス": "首に長い棘はなく、鞭のような細長い尾が特徴。",
+            "マメンチサウルス": "全長の半分を占める超長頸を持つが、棘は長くない。",
+            "バジャダサウルス": "首のトゲが前向き（前方）に伸びる近縁種。"
+        }
     },
     {
-        id: "gigantspinosaurus",
-        name: "ギガントスピノサウルス",
-        zoom: 3.8,
-        originX: "42%",
-        originY: "45%",
-        featureName: "肩から後方に向かって長く突き出した巨大な一対の棘（肩甲棘）",
-        difficulty: "advanced"
+        id: "adv_skl_dei",
+        difficulty: "advanced",
+        type: "skeletal",
+        dinoId: "deinonychus",
+        question: "後ろ足の第2指に、上方に大きく反り上がった「巨大な鎌状の鉤爪（シックルクロー）」を持つこの骨格は？",
+        choices: ["デイノニクス", "オルニトミムス", "コンプソグナトゥス", "オヴィラプトル"],
+        correctAnswer: "デイノニクス",
+        explanation: "デイノニクスの後肢の第2指は特殊な関節構造により大きく上に持ち上げることができ、歩行時の摩耗を防ぎつつ獲物の急所を刺し抜く凶器となっていました。",
+        choiceNotes: {
+            "デイノニクス": "第2指に上方に跳ね上がる巨大な鉤爪骨を持つ。",
+            "オルニトミムス": "爪は平たく短く、走ることに特化した足骨格。",
+            "コンプソグナトゥス": "非常に細い小型骨格で、巨大な鉤爪はない。",
+            "オヴィラプトル": "くちばしを持ち、足の鉤爪は小さい。"
+        }
     },
     {
-        id: "utahraptor",
-        name: "ユタラプトル",
-        zoom: 3.8,
-        originX: "45%",
-        originY: "62%",
-        featureName: "獲物の急所を狙い突き刺すための後肢にある20cm以上の巨大な鉤爪",
-        difficulty: "advanced"
+        id: "adv_skl_ken",
+        difficulty: "advanced",
+        type: "skeletal",
+        dinoId: "kentrosaurus",
+        question: "背中の前半には板が並び、腰から尾にかけては「長い鋭いトゲ（スパイク骨）」が並ぶこの骨格は？",
+        choices: ["ケントロサウルス", "ステゴサウルス", "トゥオジャンゴサウルス", "ファヤンゴサウルス"],
+        correctAnswer: "ケントロサウルス",
+        explanation: "ケントロサウルスはステゴサウルスの近縁種ですが、骨板は首まわりのみで小さく、体の後半から尾にかけては長いスパイクがびっしりと並んでいました。",
+        choiceNotes: {
+            "ケントロサウルス": "体の後半から尾にかけて長いスパイクが並ぶ攻撃的剣竜。",
+            "ステゴサウルス": "背中のほぼ全域に大きなひし形の骨板が並ぶ。",
+            "トゥオジャンゴサウルス": "中国の剣竜。背中の板は先が尖った三角形。",
+            "ファヤンゴサウルス": "原始的な小型剣竜で、肩にスパイクを持つ。"
+        }
+    },
+
+    // --- 3大ヒント・捜査ログ推理 ---
+    {
+        id: "adv_hnt_yut",
+        difficulty: "advanced",
+        type: "hints",
+        dinoId: "yutyrannus",
+        question: "3つの手がかりから恐竜を推理してください。",
+        choices: ["ユウティラヌス", "シノサウロプテリクス", "デイノケイルス", "ベイピアオサウルス"],
+        correctAnswer: "ユウティラヌス",
+        explanation: "ユウティラヌスは中国遼寧省で発見された大型獣脚類（ティラノサウルス上科）です。全身から15〜20cmの羽毛化石が確認され、「世界最大の羽毛恐竜」として知られます。",
+        hints: [
+            "全長約9メートル / 体重約1.4トン / 二足歩行・肉食",
+            "白亜紀前期（約1億2500万年前）/ 中国・遼寧省",
+            "ティラノサウルスの仲間でありながら、全身が長さ15〜20cmの羽毛で覆われていた化石が発見された「世界最大の羽毛恐竜」！"
+        ]
     },
     {
-        id: "wuerhosaurus",
-        name: "ウエルホサウルス",
-        zoom: 3.8,
-        originX: "48%",
-        originY: "42%",
-        featureName: "ステゴサウルス類に比べて低く丸みを帯びた形状の骨板",
-        difficulty: "advanced"
+        id: "adv_hnt_dei_ch",
+        difficulty: "advanced",
+        type: "hints",
+        dinoId: "deinocheirus",
+        question: "3つの手がかりから恐竜を推理してください。",
+        choices: ["デイノケイルス", "テリジノサウルス", "ギガントラプトル", "ガリミムス"],
+        correctAnswer: "デイノケイルス",
+        explanation: "1965年に発見された長さ2.4mの巨大な前あし化石から50年近く謎の怪物とされていましたが、2014年にほぼ完全な骨格が発見され、アヒルのようなくちばしと背中に帆を持つオルニトミムス類と判明しました。",
+        hints: [
+            "全長約11メートル / 体重約6.4トン / 雑食性",
+            "白亜紀後期 / モンゴル・ゴビ砂漠",
+            "1965年の発見から約50年間「長さ2.4メートルの巨大な両腕」しか見つからず謎の怪物と恐れられたが、2014年にアヒルのようなくちばしと背中に帆を持つ全体像が判明！"
+        ]
     },
     {
-        id: "xenoceratops",
-        name: "クセノケラトプス",
-        zoom: 3.8,
-        originX: "20%",
-        originY: "45%",
-        featureName: "襟飾り（フリル）の端から突き出る巨大なスパイク状の角",
-        difficulty: "advanced"
+        id: "adv_hnt_car_ch",
+        difficulty: "advanced",
+        type: "hints",
+        dinoId: "carcharodontosaurus",
+        question: "3つの手がかりから恐竜を推理してください。",
+        choices: ["カルカロドントサウルス", "ティラノサウルス", "ギガノトサウルス", "メガラプトル"],
+        correctAnswer: "カルカロドントサウルス",
+        explanation: "カルカロドントサウルスは「ホホジロザメのトカゲ」という意味の巨大獣脚類です。サメのように縁にギザギザ（鋸歯）がある薄く鋭利な歯で獲物の肉を切り裂いて仕留めていました。",
+        hints: [
+            "全長約12〜13メートル / 体重約6〜8トン / 肉食",
+            "白亜紀前期〜中期 / 北アフリカ（スピノサウルスと同時代・同地域）",
+            "ホホジロザメのように側面に細かなギザギザ（鋸歯）がある薄く鋭い歯を持ち、獲物の肉を切り裂いて大出血を起こさせて仕留めていた巨竜！"
+        ]
     },
     {
-        id: "yutyrannus",
-        name: "ユティラヌス",
-        zoom: 3.5,
-        originX: "45%",
-        originY: "48%",
-        featureName: "寒冷な気候から身を守るために発達した全身を覆う羽毛の痕跡",
-        difficulty: "advanced"
+        id: "adv_hnt_nig",
+        difficulty: "advanced",
+        type: "hints",
+        dinoId: "nigersaurus",
+        question: "3つの手がかりから恐竜を推理してください。",
+        choices: ["ニジェールサウルス", "アマルガサウルス", "ディプロドクス", "カマラサウルス"],
+        correctAnswer: "ニジェールサウルス",
+        explanation: "ニジェールサウルスは口の先端が横一直線に平たくなっており、地表のシダなどを効率よく刈り取るために500本以上の予備の歯を持っていました。「中生代の掃除機」の異名を持ちます。",
+        hints: [
+            "全長約9メートル / 四足歩行・植物食の竜脚類",
+            "白亜紀前期 / アフリカ（ニジェール）",
+            "頭骨が極端に軽く、口の先端が横一文字に平たく広がっており、掃除機のように地表の植物を刈り取るために500本以上の予備の歯を持っていた！"
+        ]
+    },
+
+    // --- 恐竜雑学（実は〇〇だった！） ---
+    {
+        id: "adv_tri_ovi",
+        difficulty: "advanced",
+        type: "trivia",
+        dinoId: "oviraptor",
+        question: "かつてプロトケラトプスの卵を盗んで食べていたと考えられ、「卵泥棒」という不名誉な学名を付けられたオヴィラプトル。1990年代の研究で判明した「本当の姿」はどれ？",
+        choices: [
+            "盗んでいたのではなく、自分の巣の卵の上に座って鳥のように温めていた（抱卵）",
+            "卵を割るのではなく、卵の殻を自分の巣の壁材として利用していた",
+            "水中に潜って巨大魚の卵を専門に捕食していた",
+            "カッコウのように、他の恐竜の巣に自分の卵を産み落として育てさせていた（托卵）"
+        ],
+        correctAnswer: "盗んでいたのではなく、自分の巣の卵の上に座って鳥のように温めていた（抱卵）",
+        explanation: "巣の上で両腕を広げて卵を温める姿勢の化石が発見され、さらに卵の中の胎児骨格を調べたところオヴィラプトル自身の子どもであることが判明。卵泥棒どころか愛情深い親恐竜でした。",
+        category: "名誉挽回雑学"
     },
     {
-        id: "zuniceratops",
-        name: "ズニケラトプス",
-        zoom: 3.8,
-        originX: "22%",
-        originY: "45%",
-        featureName: "角竜類の進化の鍵を握る、目の上（眉上）に発達した一対の角",
-        difficulty: "advanced"
+        id: "adv_tri_bra",
+        difficulty: "advanced",
+        type: "trivia",
+        dinoId: "brachiosaurus",
+        question: "昔の図鑑では、頭のてっぺんにある鼻の穴から息をし、深い湖の底に沈んで暮らしていたと描かれていたブラキオサウルス。現在この「潜水説」が完全に否定されている物理的な理由は？",
+        choices: [
+            "水圧が強すぎて胸が締め付けられ、肺を広げて息を吸うことができないため",
+            "骨の密度が軽すぎて、水に入ると体が浮いて沈むことができないため",
+            "水に入ると皮膚のウロコがふやけて剥がれ落ちてしまうため",
+            "首が長すぎて、頭から心臓に血液を送る弁が水中で破裂してしまうため"
+        ],
+        correctAnswer: "水圧が強すぎて胸が締め付けられ、肺を広げて息を吸うことができないため",
+        explanation: "生体力学の計算により、首だけを水面に出して胴体を水深数メートルに沈めると、水圧によって胸が外から強力に押しつぶされ、筋肉の力では肺を広げて呼吸できないことが証明されました。",
+        category: "通説の覆り雑学"
     },
     {
-        id: "argentinosaurus",
-        name: "アルゼンチノサウルス",
-        zoom: 3.5,
-        originX: "28%",
-        originY: "55%",
-        featureName: "超巨大な質量を支えるために発達した太い柱のような前肢",
-        difficulty: "advanced"
+        id: "adv_tri_sino",
+        difficulty: "advanced",
+        type: "trivia",
+        dinoId: "sinosauropteryx",
+        question: "1996年に中国で発見され、世界で初めて羽毛の痕跡が確認された小型肉食恐竜シノサウロプテリクス。2010年に電子顕微鏡でメラノソーム（色素小体）を分析した結果、判明した「尾の本当のカラーリング」はどれ？",
+        choices: [
+            "栗色（赤茶色）と白の「しましま模様」",
+            "カラスのように全身が「真っ黒」",
+            "クジャクのように光り輝く「メタリックグリーン」",
+            "雪景色に溶け込む完全な「純白」"
+        ],
+        correctAnswer: "栗色（赤茶色）と白の「しましま模様」",
+        explanation: "化石に残された微小なメラニン色素の形状から、恐竜史上初めて「生前の体色」が科学的に特定されました。アライグマのような赤茶と白の鮮やかな縞模様の尾を持っていたことが判明しています。",
+        category: "古生物科学雑学"
+    },
+
+    // --- 4択アカデミック ---
+    {
+        id: "adv_aca_bird",
+        difficulty: "advanced",
+        type: "academic",
+        question: "骨盤の形によって恐竜は「鳥盤類（鳥に似た骨盤）」と「竜盤類（トカゲに似た骨盤）」の2つに大別されますが、現代のスズメやダチョウなどの鳥類が進化したのはどちらのグループ？",
+        choices: [
+            "竜盤類（鳥盤類ではなく、竜盤類の獣脚類から進化した）",
+            "鳥盤類（名前の通り、鳥盤類から直接進化した）",
+            "鳥盤類と竜盤類が交配して誕生した中間グループ",
+            "どちらの恐竜でもなく、恐竜絶滅後にワニの祖先から進化した"
+        ],
+        correctAnswer: "竜盤類（鳥盤類ではなく、竜盤類の獣脚類から進化した）",
+        explanation: "恐竜学で最も有名な逆転現象。「鳥盤類」という名前がついているにもかかわらず、鳥類の直接の祖先はティラノサウルスと同じ「竜盤類（獣脚類）」から進化しました。",
+        category: "系統進化"
     },
     {
-        id: "sasayamagnomus",
-        name: "ササヤマグノームス",
-        zoom: 3.8,
-        originX: "18%",
-        originY: "48%",
-        featureName: "角竜類の進化を示す小さな吻部と原始的なオウム状のクチバシ",
-        difficulty: "master"
+        id: "adv_aca_owen",
+        difficulty: "advanced",
+        type: "academic",
+        question: "1842年に、メガロサウルス・イグアノドン・ヒラエオサウルスの化石を比較研究し、世界で初めて「Dinosauria（恐竜＝恐ろしいほど巨大なトカゲ）」という言葉を作り出したイギリスの古生物学者は？",
+        choices: [
+            "リチャード・オーウェン",
+            "ギデオン・マンテル",
+            "ウィリアム・バックランド",
+            "チャールズ・ダーウィン"
+        ],
+        correctAnswer: "リチャード・オーウェン",
+        explanation: "比較解剖学の権威リチャード・オーウェン卿が提唱しました。「恐ろしいほど巨大なトカゲ」という意味のギリシャ語を組み合わせた造語です。",
+        category: "恐竜研究史"
     },
     {
-        id: "fukuivenator",
-        name: "フクイベナトル",
-        zoom: 3.5,
-        originX: "22%",
-        originY: "45%",
-        featureName: "鳥類に似た二股に分かれた鎖骨や、肉食・草食両方の特徴を持つ頭部",
-        difficulty: "master"
+        id: "adv_aca_battery",
+        difficulty: "advanced",
+        type: "academic",
+        question: "白亜紀後期に大繁栄したハドロサウルス類（カモノハシ竜）が、硬いスギやマツの針葉樹をすり潰して食べることができた秘密である「デンタルバッテリー」とはどんな構造？",
+        choices: [
+            "何百本もの歯が密生して重なり合い、削れても下から新しい歯が次々と押し出される構造",
+            "電気ウナギのように歯に微弱な電流を流して植物の繊維を分解する構造",
+            "顎の骨自体が鉄分を豊富に含み、ヤスリのように硬く変化した構造",
+            "歯が一本もなく、胃の中にある大量の胃石だけで植物を破砕する構造"
+        ],
+        correctAnswer: "何百本もの歯が密生して重なり合い、削れても下から新しい歯が次々と押し出される構造",
+        explanation: "上下の顎に何層にも重なった予備の歯がぎっしり詰まっており、表面がすり減ると自動的に奥から新しい歯が出てくる、天然の自動交換式おろし金のような構造でした。",
+        category: "機能解剖学"
+    }
+];
+
+// ==========================================
+// 4. 恐竜博士 (MASTER) データ
+// (全10問 / 20秒タイマー / 視覚当てゼロの真の知識勝負)
+// ==========================================
+
+export const MASTER_QUESTIONS: QuizQuestionItem[] = [
+    // --- 3大ヒント推理（過渡期・奇跡の化石） ---
+    {
+        id: "mst_hnt_bor",
+        difficulty: "master",
+        type: "hints",
+        dinoId: "borealopelta",
+        question: "3つの手がかりから恐竜を推理してください。",
+        choices: ["ボレアロペルタ", "エドモントニア", "サウロペルタ", "ノドサウルス"],
+        correctAnswer: "ボレアロペルタ",
+        explanation: "カナダの油砂採掘鉱山で発見されたノドサウルス類。装甲板だけでなく皮膚組織や最後の食事（シダの葉）まで奇跡的に立体のまま残っており、世界で最も美しい化石と称されます。",
+        hints: [
+            "全長約5.5メートル / 体重約1.3トン / 白亜紀前期の鎧竜（ノドサウルス科）",
+            "2011年、カナダの鉱山で奇跡的に皮膚や装甲板が立体のまま化石化したミイラ状態で発見",
+            "皮膚から赤褐色の色素（フェオメラニン）が検出され、腹部が白く背部が暗い「保護色（カウンターシェーディング）」を持っていたこと、さらに胃の中から「最後に食べたシダ類の葉」まで特定された！"
+        ]
     },
     {
-        id: "borealopelta",
-        name: "ボレアロペルタ",
-        zoom: 3.8,
-        originX: "20%",
-        originY: "45%",
-        featureName: "ほぼ生前の立体的な形状を保ったまま化石化した、頭部から肩にかけての頑丈なスパイクと装甲",
-        difficulty: "master"
+        id: "mst_hnt_fuk",
+        difficulty: "master",
+        type: "hints",
+        dinoId: "fukuivenator",
+        question: "3つの手がかりから恐竜を推理してください。",
+        choices: ["フクイベナトル", "フクイラプトル", "シノベナトル", "コシサウルス"],
+        correctAnswer: "フクイベナトル",
+        explanation: "福井県勝山市で発見された原始的なコエルロサウリア類。「福井の狩人」という名前に反して、木の葉状の歯から雑食〜草食傾向だったことが判明し、鳥類への進化と食性の多様化を示す重要種です。",
+        hints: [
+            "全長約2.4メートル / 体重約25kg / 白亜紀前期（約1億2000万年前）",
+            "福井県勝山市の手取層群北谷層で発見",
+            "獣脚類（マニラプトル形類）でありながら、すり潰すのに適した平たい木の葉状の歯を持ち「雑食〜草食傾向」だった。鳥類のように二股に癒合した「叉骨（さこつ）」が完全な形で発見された！"
+        ]
     },
     {
-        id: "dunkleosteus",
-        name: "ダンクレオステウス",
-        zoom: 3.5,
-        originX: "25%",
-        originY: "50%",
-        featureName: "歯の代わりにナイフのように機能した、強力な頭甲の一部である鋭い骨質の顎板",
-        difficulty: "master"
+        id: "mst_hnt_sas",
+        difficulty: "master",
+        type: "hints",
+        dinoId: "sasayamagnomus",
+        question: "3つの手がかりから恐竜を推理してください。",
+        choices: ["ササヤマグノームス", "タンバティタニス", "ヤマトサウルス", "フクイサウルス"],
+        correctAnswer: "ササヤマグノームス",
+        explanation: "2024年に兵庫県丹波篠山市の約1億1000万年前の地層から新種記載された原始的角竜。アジアで誕生した角竜の祖先がベーリング陸橋を渡って北米へと放散した進化ルートを実証しました。",
+        hints: [
+            "全長約80センチメートル / 二足歩行の原始的な小型植物食恐竜",
+            "兵庫県丹波篠山市の約1億1000万年前の地層（篠山層群）で発見",
+            "2024年に新種記載。オウムのようなクチバシを持つ角竜類であり、アジアで誕生した角竜の祖先がベーリング陸橋を渡って北米へと広がっていった進化経路の謎を解くミッシングリンク！"
+        ]
     },
     {
-        id: "sarcosuchus",
-        name: "サルコスクス",
-        zoom: 3.5,
-        originX: "15%",
-        originY: "52%",
-        featureName: "獲物を捕食するために肥大化した、スコップ状の吻部（口先）の先端部分",
-        difficulty: "master"
+        id: "mst_hnt_dun",
+        difficulty: "master",
+        type: "hints",
+        dinoId: "dunkleosteus",
+        question: "3つの手がかりから古生物を推理してください。",
+        choices: ["ダンクレオステウス", "メガロドン", "ティクタアリク", "オルトケラス"],
+        correctAnswer: "ダンクレオステウス",
+        explanation: "古生代デボン紀後期の頂点捕食者である巨大板皮類。普通の歯を持たず、硬い頭甲の顎骨がナイフのように尖った構造で、最大5000Nの力でサメを真っ二つに噛み砕いていました。",
+        hints: [
+            "全長約6〜8メートル / 体重約1〜2トン / 古生代デボン紀後期の頂点捕食者",
+            "強力な甲冑（板皮）で頭部を固め、当時の海でサメや大型節足動物を捕食",
+            "普通の「歯」を一本も持っておらず、頭部の骨質の鎧（頭甲）の一部がナイフのように尖って飛び出した「骨の刃」を噛み合わせて獲物を切断していた！"
+        ]
     },
     {
-        id: "tanystropheus",
-        name: "タニストロフェウス",
-        zoom: 3.2,
-        originX: "30%",
-        originY: "40%",
-        featureName: "全長の半分以上を占め、頸椎自体が一つずつ非常に長く伸びた極端な首",
-        difficulty: "master"
+        id: "mst_hnt_eor",
+        difficulty: "master",
+        type: "hints",
+        dinoId: "eoraptor",
+        question: "3つの手がかりから恐竜を推理してください。",
+        choices: ["エオラプトル", "ヘレラサウルス", "コエロフィシス", "プラテオサウルス"],
+        correctAnswer: "エオラプトル",
+        explanation: "エオラプトルは「夜明けの泥棒」という意味の最初期の恐竜です。肉食用の鋭い歯と草食用の木の葉型の歯の両方を持ち、恐竜共通の祖先の姿を色濃く残しています。",
+        hints: [
+            "全長約1メートル / 体重約10kg / 三畳紀後期（約2億3000万年前）",
+            "アルゼンチン北西部のイスチグアラスト累層（月の谷）で発見",
+            "最初期の恐竜の一つ。肉食用の鋭い歯と植物食用の木の葉型の歯の両方を持ち、「恐竜全体の共通祖先」がどのような姿をしていたのかを物語る「夜明けの泥棒」！"
+        ]
     },
     {
-        id: "leedsichthys",
-        name: "リードシクティス",
-        zoom: 3.2,
-        originX: "25%",
-        originY: "48%",
-        featureName: "海水中のプランクトンを効率よく濾過するための、頭部にある巨大なエラ（鰓）の構造",
-        difficulty: "master"
+        id: "mst_hnt_meg",
+        difficulty: "master",
+        type: "hints",
+        dinoId: "megaraptor",
+        question: "3つの手がかりから恐竜を推理してください。",
+        choices: ["メガラプトル", "カルノタウルス", "スピノサウルス", "ギガノトサウルス"],
+        correctAnswer: "メガラプトル",
+        explanation: "1997年発見当初、35cmの巨大な爪が後ろ足のものと誤認され巨大なドロマエオサウルス類と考えられましたが、後の完全骨格発見で「前足の親指の爪」と判明しました。",
+        hints: [
+            "全長約8〜9メートル / 白亜紀後期の南米（アルゼンチン）",
+            "1997年の発見時、長さ約35cmの巨大な鉤爪が「後ろ足の爪」と誤認され、巨大なドロマエオサウルス類と考えられた",
+            "後の完全な化石発見により、巨大な爪は後ろ足ではなく「前足（親指）」の武器だったことが判明。独自の進化を遂げた肉食恐竜グループ「メガラプトラ類」の基準となった！"
+        ]
+    },
+
+    // --- 恐竜雑学（実は〇〇だった！） ---
+    {
+        id: "mst_tri_arms",
+        difficulty: "master",
+        type: "trivia",
+        dinoId: "tyrannosaurus",
+        question: "体長12mに対して長さ1m足らずしかなく、「何の役にも立たなかった」と揶揄されることもあるティラノサウルスの前足。近年の筋肉付着部の研究で判明した、その「意外なパワー」はどれくらい？",
+        choices: [
+            "片腕だけで約180〜200kg（大人のヒグマ並み）の重量を持ち上げられる怪力だった",
+            "骨が退化して筋肉がほとんどなく、1kgの小石を持ち上げるのが限界だった",
+            "人間とほぼ同じ筋力（約30〜40kg程度）しかなかった",
+            "筋肉ではなく関節が完全に固着しており、ピクリとも動かすことができなかった"
+        ],
+        correctAnswer: "片腕だけで約180〜200kg（大人のヒグマ並み）の重量を持ち上げられる怪力だった",
+        explanation: "前足の上腕骨や烏口骨には太く頑丈な筋肉が付着しており、獲物を胸元に強く押さえつけたり、寝そべった状態から起き上がる際に強大なパワーを発揮していたと考えられています。",
+        category: "解剖雑学"
     },
     {
-        id: "tapejara",
-        name: "タペヤラ",
-        zoom: 3.5,
-        originX: "28%",
-        originY: "40%",
-        featureName: "頭頂部にそびえ立つ、骨質と皮膚の膜からなる巨大な帆状のトサカ",
-        difficulty: "master"
+        id: "mst_tri_airsac",
+        difficulty: "master",
+        type: "trivia",
+        question: "竜脚類（ブラキオサウルス等）が超巨大化でき、獣脚類（ティラノサウルス等）が俊敏に活動できた最大の秘密とされる、鳥類と共通の「呼吸システム」はどれ？",
+        choices: [
+            "骨の中に空気の袋（気嚢）が入り込み、吸う時も吐く時も常に新鮮な空気が肺を一方通行で流れるシステム",
+            "皮膚の表面にある無数の微細孔から直接酸素を取り込む皮膚呼吸システム",
+            "カメのように総排出腔（お尻の穴）から水中の酸素を吸収する補助呼吸システム",
+            "血液中のヘモグロビン濃度が人間の10倍あり、息を止めたまま1時間運動できるシステム"
+        ],
+        correctAnswer: "骨の中に空気の袋（気嚢）が入り込み、吸う時も吐く時も常に新鮮な空気が肺を一方通行で流れるシステム",
+        explanation: "骨を中空にして大幅に軽量化しつつ、吸気・呼気のどちらでも常に肺に酸素を一方通行で供給し続ける「気嚢（きのう）システム」を持っていたため、酸素濃度の低い中生代でも巨体を維持・活性化できました。",
+        category: "生理学雑学"
     },
     {
-        id: "mamenchisaurus",
-        name: "マメンチサウルス",
-        zoom: 3.2,
-        originX: "20%",
-        originY: "30%",
-        featureName: "長い首の竜脚類の中でも群を抜いて長く、体長の約半分にも達する驚異的な首",
-        difficulty: "master"
+        id: "mst_tri_headbutt",
+        difficulty: "master",
+        type: "trivia",
+        dinoId: "pachycephalosaurus",
+        question: "頭骨の厚さが25cmもある石頭恐竜パキケファロサウルス。かつて信じられていた「頭突きによる正面衝突」が現在疑問視され、有力視されている「本当の使われ方」はどれ？",
+        choices: [
+            "正面衝突すると首の骨が脱臼するため、相手の脇腹（側面）への打撃や押し合いに使っていた",
+            "地面を掘り返して植物の根や地中の昆虫を食べるためのショベルとして使っていた",
+            "肉食恐竜に丸呑みされた際、胃を内側から破って脱出するための武器だった",
+            "川を泳ぐときに水流を切り裂く船首（キール）の役割を果たしていた"
+        ],
+        correctAnswer: "正面衝突すると首の骨が脱臼するため、相手の脇腹（側面）への打撃や押し合いに使っていた",
+        explanation: "コンピューター・シミュレーションにより、時速数十キロで正面から頭突きをすると頸椎（首の骨）が負荷に耐えられないことが判明。オオツノヒツジのように正面衝突するのではなく、相手の側面への体当たりや押し合いだった説が有力です。",
+        category: "生態雑学"
     },
     {
-        id: "concavenator",
-        name: "コンカベナトル",
-        zoom: 3.8,
-        originX: "58%",
-        originY: "40%",
-        featureName: "背中（腰の上部）にラクダのコブのようにそびえ立つ、三角形の奇妙な骨の隆起",
-        difficulty: "master"
+        id: "mst_tri_spino_nose",
+        difficulty: "master",
+        type: "trivia",
+        dinoId: "spinosaurus",
+        question: "水中で魚を捕食していたスピノサウルス。水面で息をしやすくするために、鼻の穴（外鼻孔）は頭骨のどこにあった？",
+        choices: [
+            "口の先端ではなく、目のすぐ前の頭骨の後方寄りにあった",
+            "クジラのように頭のてっぺん（後頭部）の真上にあった",
+            "アゴの下側の皮膚に隠れるように位置していた",
+            "背中の帆の付け根に管状に通っていた"
+        ],
+        correctAnswer: "口の先端ではなく、目のすぐ前の頭骨の後方寄りにあった",
+        explanation: "ワニと同様に、アゴの先端を水中に深く差し込んで魚を狙っている状態でも、水面上に出ている目の前の鼻孔からそのまま呼吸ができるよう、頭骨の後方に開口していました。",
+        category: "解剖雑学"
     },
     {
-        id: "fukuiraptor",
-        name: "フクイラプトル",
-        zoom: 3.8,
-        originX: "40%",
-        originY: "58%",
-        featureName: "獲物を捕らえるために非常に大きく発達した、強力な前肢の鋭い鉤爪",
-        difficulty: "master"
+        id: "mst_tri_dilopho",
+        difficulty: "master",
+        type: "trivia",
+        dinoId: "dilophosaurus",
+        question: "映画『ジュラシック・パーク』では首にエリマキを広げて毒液を吐きかける姿が有名になった小型肉食恐竜ディロフォサウルス。実際の化石・古生物学の研究から判明している本当の姿は？",
+        choices: [
+            "エリマキも毒もなく、映画より遥かに大型（全長約6〜7m）のどう猛な捕食者だった",
+            "毒は吐かなかったが、首の周りに威嚇用の皮膚のエリマキは実際に存在した",
+            "エリマキはなかったが、歯の根元にコブラのような毒腺の痕跡が発見された",
+            "映画の通りの姿（小型・エリマキ・毒液）が化石の軟組織から完全に実証された"
+        ],
+        correctAnswer: "エリマキも毒もなく、映画より遥かに大型（全長約6〜7m）のどう猛な捕食者だった",
+        explanation: "エリマキや毒液は映画のための完全な創作（フィクション）です。実際のディロフォサウルスはジュラ紀前期の頂点捕食者で、全長6〜7mを超える堂々たる大型獣脚類でした。",
+        category: "創作と真実雑学"
     },
     {
-        id: "futabasaurus",
-        name: "フタバサウルス",
-        zoom: 3.5,
-        originX: "45%",
-        originY: "65%",
-        featureName: "日本で発見された代表的な首長竜の、水中を羽ばたくように泳ぐための巨大な四肢のヒレ",
-        difficulty: "master"
+        id: "mst_tri_neck_angle",
+        difficulty: "master",
+        type: "trivia",
+        question: "昔のイラストではキリンのように首を垂直に高く持ち上げていたブラキオサウルスやディプロドクスなどの竜脚類。近年の頸椎（首の骨）の関節可動域研究で判明した「普段の首の姿勢」は？",
+        choices: [
+            "首の骨の噛み合わせ上、垂直に持ち上げるのは困難で、水平〜やや斜め前方に保っていた",
+            "首の骨が極めて柔軟で、白鳥のようにS字型に巻き取って休んでいた",
+            "頭を常に地面に密着させ、アリクイのように地面を這わせていた",
+            "筋肉の構造上、左右にしか動かせず、上下には一切動かせなかった"
+        ],
+        correctAnswer: "首の骨の噛み合わせ上、垂直に持ち上げるのは困難で、水平〜やや斜め前方に保っていた",
+        explanation: "頸椎の関節を精密に解析した結果、真上に持ち上げると骨同士がぶつかって神経を圧迫することが判明。また、頭を高く上げすぎると脳に血を送る心臓の血圧が限界を超えるため、水平〜斜め前方が自然な姿勢でした。",
+        category: "生体力学雑学"
     },
     {
-        id: "kamuysaurus",
-        name: "カムイサウルス",
-        zoom: 3.5,
-        originX: "20%",
-        originY: "45%",
-        featureName: "日本国内でほぼ全身の骨格が発見された、ハドロサウルス科に見られる特徴的な頭部構造",
-        difficulty: "master"
+        id: "mst_tri_roar",
+        difficulty: "master",
+        type: "trivia",
+        question: "映画などではライオンのように口を大きく開けて「ガオー！」と咆哮する肉食恐竜ですが、発声器官と現生鳥類・ワニの研究から推定される「実際の恐竜の鳴き声」に近いのはどれ？",
+        choices: [
+            "口を閉じたまま喉を膨らませて出す「クックッ」というハトのような鳴き声や低周波のうなり声",
+            "現代の哺乳類と同じく、声帯を震わせて叫ぶ鋭い金切り声",
+            "発声器官が一切存在しなかったため、完全に無音（声が出せなかった）",
+            "カエルのように口腔共鳴袋を使って甲高いケロケロ音を出していた"
+        ],
+        correctAnswer: "口を閉じたまま喉を膨らませて出す「クックッ」というハトのような鳴き声や低周波のうなり声",
+        explanation: "鳥やワニの比較解剖から、鳥のように口を閉じた状態で食道や気嚢を共鳴させる「閉口発声（クローズドマウス・ボーカリゼーション）」を行っていたと考えられています。咆哮ではなく、地響きのような低周波音や鳩のような声だった説が有力です。",
+        category: "古生物音声学"
+    },
+
+    // --- 4択アカデミック（最新学説・古生物学の最前線） ---
+    {
+        id: "mst_aca_season",
+        difficulty: "master",
+        type: "academic",
+        question: "約6600万年前に起きた巨大隕石衝突（K-Pg境界）。2022年の魚化石の骨組織分析により特定され、その後の「衝突の冬（寒冷化）」による壊滅的ダメージを決定づけた「衝突の季節（北半球）」はいつ？",
+        choices: [
+            "春（生物が繁殖・成長を始める最も無防備な時期）",
+            "真夏（日照時間が最も長い猛暑の時期）",
+            "秋（生物が冬眠の準備に入っていた時期）",
+            "真冬（すでに厳しい寒冷期に入っていた時期）"
+        ],
+        correctAnswer: "春（生物が繁殖・成長を始める最も無防備な時期）",
+        explanation: "衝突直後に埋まった魚の骨の年輪と炭素同位体比から、衝突が「北半球の春」に起きたことが特定されました。巻き上げられた塵や硫黄による急速な寒冷化『衝突の冬（隕石の冬）』が、生物が活動を始める最も繊細な春に直撃したため、生態系の崩壊が決定的になりました。",
+        category: "大絶滅史"
     },
     {
-        id: "deinosuchus",
-        name: "デイノスクス",
-        zoom: 3.5,
-        originX: "20%",
-        originY: "50%",
-        featureName: "中生代の恐竜をも水中に引きずり込んで捕食したと推測される、分厚く強大な頭骨",
-        difficulty: "master"
+        id: "mst_aca_definition",
+        difficulty: "master",
+        type: "academic",
+        question: "現代の分岐分類学において、「恐竜（Dinosauria）」というグループはどのように厳密に定義されている？",
+        choices: [
+            "トリケラトプスと現生鳥類の最も近い共通祖先、およびそのすべての子孫",
+            "中生代に生息していた、体長1メートルを超えるすべての絶滅爬虫類",
+            "骨盤の腸骨・恥骨・坐骨が完全に融合し、空を飛ぶ能力を持たない生物",
+            "卵生であり、直立歩行が可能な変温性の大型四足動物"
+        ],
+        correctAnswer: "トリケラトプスと現生鳥類の最も近い共通祖先、およびそのすべての子孫",
+        explanation: "現代の生物学では形態ではなく系統樹の分岐で定義されます。鳥盤類（トリケラトプス）と竜盤類（現生鳥類）の最近共通祖先とその子孫全体を恐竜と定義することで、鳥類も矛盾なく恐竜に含まれ、翼竜やワニは正確に除外されます。",
+        category: "分岐分類学"
     },
     {
-        id: "titanoboa",
-        name: "ティタノボア",
-        zoom: 3.0,
-        originX: "50%",
-        originY: "50%",
-        featureName: "全長13メートルを超え、獲物を締め殺すのに十分な太さを持つ史上最大のヘビの強靭な胴体",
-        difficulty: "master"
+        id: "mst_aca_soft_tissue",
+        difficulty: "master",
+        type: "academic",
+        dinoId: "tyrannosaurus",
+        question: "2005年、メアリー・シュワイツァー博士の研究チームが6800万年前のティラノサウルスの大腿骨化石から脱灰処理によって発見し、従来の常識を覆したものはどれ？",
+        choices: [
+            "弾力性を保ったままの本物の「血管やコラーゲンタンパク質」",
+            "完全に複製可能な恐竜の完全長DNA塩基配列",
+            "胃の中に未消化のまま残っていた哺乳類の毛皮",
+            "骨の空洞の中に密封されていた白亜紀の大気サンプル"
+        ],
+        correctAnswer: "弾力性を保ったままの本物の「血管やコラーゲンタンパク質」",
+        explanation: "化石の中から柔軟性のある本物の血管や赤血球状細胞、コラーゲンが検出され、Science誌に掲載。タンパク質のアミノ酸配列を分析したところ、現生のニワトリやダチョウと極めて近いことが分子レベルで証明されました。",
+        category: "古分子生物学"
+    },
+    {
+        id: "mst_aca_medullary",
+        difficulty: "master",
+        type: "academic",
+        dinoId: "tyrannosaurus",
+        question: "化石から恐竜の性別（オス・メス）を見分けることは極めて困難ですが、ティラノサウルスの大腿骨内部から発見され、「確実にメス（産卵期）である」と特定できる決定打となった骨組織はどれ？",
+        choices: [
+            "卵の殻を作るためのカルシウムを蓄える「骨髄骨（Medullary Bone）」",
+            "骨盤の内側にだけ形成される卵を支えるための軟骨層",
+            "オス同士の闘争による噛み傷がないツルツルした頭骨表面",
+            "胎児を体内で育てるための腹腔の骨質拡張プレート"
+        ],
+        correctAnswer: "卵の殻を作るためのカルシウムを蓄える「骨髄骨（Medullary Bone）」",
+        explanation: "現生の鳥類のメスが産卵前に骨の内側にカルシウム貯蔵組織「骨髄骨」を一時的に作ることと同じ構造がティラノサウルスの大腿骨で発見され、この個体が産卵期のメスであることが証明されました。",
+        category: "生殖生物学"
+    },
+    {
+        id: "mst_aca_temperature",
+        difficulty: "master",
+        type: "academic",
+        question: "「恐竜は変温動物か、恒温動物か」という長年の大論争。骨の成長速度や同位体温度計を用いた近年の研究で導き出された最も有力な見解はどれ？",
+        choices: [
+            "変温動物と恒温動物の中間に位置する「中温性（メソサーム）」、または多くのグループが高い内温性（恒温性）を持っていた",
+            "すべての恐竜が完全にワニと同じ変温動物であり、日向ぼっこなしでは動けなかった",
+            "小型恐竜だけが変温動物で、体重1トンを超える恐竜だけが恒温動物に進化した",
+            "生涯を通じて体温が一定ではなく、夏は恒温動物、冬は変温動物に切り替わっていた"
+        ],
+        correctAnswer: "変温動物と恒温動物の中間に位置する「中温性（メソサーム）」、または多くのグループが高い内温性（恒温性）を持っていた",
+        explanation: "骨組織の成長スピードや卵殻の炭素・酸素同位体温度計の分析により、恐竜は現代の爬虫類よりも遥かに代謝が高く、マグロのような「中温動物」、あるいは多くの獣脚類・鳥脚類が高い恒温性をすでに持っていたことが定説化しています。",
+        category: "代謝生理学"
+    },
+    {
+        id: "mst_aca_kamuy",
+        difficulty: "master",
+        type: "academic",
+        dinoId: "kamuysaurus",
+        question: "2019年に北海道むかわ町で発見され、全身の8割以上の骨が揃って見つかった「日本の恐竜研究史上最大の発見」とも呼ばれるハドロサウルス類の正式な学名は？",
+        choices: [
+            "カムイサウルス（カムイサウルス・ジャポニクス）",
+            "フクイサウルス（フクイサウルス・テトリエンシス）",
+            "ヤマトサウルス（ヤマトサウルス・イザナギイ）",
+            "タンバティタニス（タンバティタニス・アミキソルム）"
+        ],
+        correctAnswer: "カムイサウルス（カムイサウルス・ジャポニクス）",
+        explanation: "通称「むかわ竜」。アイヌ語で神を意味する「カムイ」から『カムイサウルス・ジャポニクス（日本の神のトカゲ）』と命名されました。海成層で見つかった海岸性ハドロサウルス類の新種です。",
+        category: "日本古生物史"
     }
 ];
