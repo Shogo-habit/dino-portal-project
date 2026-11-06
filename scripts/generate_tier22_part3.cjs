@@ -101,7 +101,7 @@ const dinosaurs = [
       contentHeightPx: 512,
       sourceRes: 1024,
       dinoLeft: "10%",
-      refRight: "15%",
+      refRight: "8%",
       zoom: 1.3
     },
     content: `### ゴビ砂漠に甦る死神のトカゲ：バヤンシレ層での奇跡的な完全頭骨の発見
@@ -236,7 +236,7 @@ const dinosaurs = [
       realLength: 0.6,
       contentHeightPx: 430,
       sourceRes: 1024,
-      dinoLeft: "15%",
+      dinoLeft: "28%",
       refRight: "15%",
       zoom: 1.8
     },
