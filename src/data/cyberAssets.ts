@@ -36,8 +36,8 @@ export const REFERENCE_ASSETS = {
         name: "シロナガスクジラ",
         realHeight: 5.0,
         realLength: 30.0,
-        bottomGap: 330,
-        contentHeightPx: 153,
+        bottomGap: 383,
+        contentHeightPx: 156,
         sourceRes: 1024
     },
     AIRPLANE: {
@@ -47,8 +47,8 @@ export const REFERENCE_ASSETS = {
         name: "大型旅客機",
         realHeight: 19.0,
         realLength: 70.0,
-        bottomGap: 381,
-        contentHeightPx: 262,
+        bottomGap: 410,
+        contentHeightPx: 258,
         sourceRes: 1024
     }
 };
