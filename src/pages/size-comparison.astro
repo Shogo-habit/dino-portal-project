@@ -115,6 +115,108 @@ if (!defaultDino) {
                 </div>
             </div>
         </div>
+
+        <!-- HUB NAVIGATION: ACTIVE SPECIMEN SMART CARD -->
+        <div class="hud-panel specimen-card-hud" id="active-specimen-card">
+            <div class="hud-corner top-left"></div>
+            <div class="hud-corner bottom-right"></div>
+            <div class="specimen-card-inner">
+                <div class="specimen-thumb-wrap">
+                    <img id="card-dino-img" src="" alt="Dinosaur" class="specimen-card-thumb" />
+                    <span id="card-dino-diet" class="specimen-card-badge">--</span>
+                </div>
+                <div class="specimen-card-body">
+                    <div class="specimen-card-header">
+                        <div class="specimen-name-group">
+                            <h3 id="card-dino-name" class="specimen-card-name">--</h3>
+                            <span id="card-dino-scientific" class="specimen-card-scientific">--</span>
+                        </div>
+                        <div class="specimen-meta-tags">
+                            <span class="meta-tag"><strong style="color:var(--primary-neon);">時代:</strong> <span id="card-dino-era">--</span></span>
+                            <span class="meta-tag"><strong style="color:var(--primary-neon);">生息地:</strong> <span id="card-dino-region">--</span></span>
+                            <span class="meta-tag"><strong style="color:var(--secondary-neon);">全長:</strong> <span id="card-dino-length">--</span></span>
+                            <span class="meta-tag"><strong style="color:var(--secondary-neon);">体重:</strong> <span id="card-dino-weight">--</span></span>
+                        </div>
+                    </div>
+                    <p id="card-dino-desc" class="specimen-card-desc">--</p>
+                    <div class="specimen-card-actions">
+                        <a id="card-dino-detail-btn" href="" class="card-detail-cta-btn">
+                            <span class="cta-arrow">▶</span> この恐竜の個別図鑑アーカイブを見る（全生態・化石解説へ）
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HUB NAVIGATION: RELATED SPECIAL TOPICS -->
+        <div class="hud-panel related-topics-hud" id="related-topic-container" style="display: none;">
+            <div class="hud-corner top-left"></div>
+            <div class="hud-corner bottom-right"></div>
+            <div class="related-topic-content">
+                <div class="related-topic-icon" id="related-topic-icon">🏆</div>
+                <div class="related-topic-info">
+                    <div class="related-topic-label">[ 関連特集記事 RECOMMENDATION ]</div>
+                    <a id="related-topic-link" href="" class="related-topic-title">--</a>
+                </div>
+                <a id="related-topic-btn" href="" class="related-topic-btn">記事を読む ➔</a>
+            </div>
+        </div>
+
+        <!-- HUB NAVIGATION: QUICK PRESETS -->
+        <div class="hud-panel preset-hud">
+            <div class="hud-corner top-left"></div>
+            <div class="hud-corner bottom-right"></div>
+            <div class="preset-header">
+                <span class="preset-title">[ クイック比較プリセット - 代表的な恐竜を即座にシミュレート ]</span>
+                <span class="preset-subtitle">ワンタップで選択恐竜を瞬時に切り替えられます</span>
+            </div>
+            
+            <div class="preset-groups-container">
+                <!-- Group 1: 超巨大恐竜 -->
+                <div class="preset-group">
+                    <div class="preset-group-label">👑 超巨大恐竜 (20m超)</div>
+                    <div class="preset-buttons">
+                        <button type="button" class="preset-btn" data-dino-id="argentinosaurus">アルゼンチノサウルス (35m)</button>
+                        <button type="button" class="preset-btn" data-dino-id="supersaurus">スーパーサウルス (40m)</button>
+                        <button type="button" class="preset-btn" data-dino-id="brachiosaurus">ブラキオサウルス (25m)</button>
+                        <button type="button" class="preset-btn" data-dino-id="patagotitan">パタゴティタン (37m)</button>
+                    </div>
+                </div>
+
+                <!-- Group 2: 最強大型肉食恐竜 -->
+                <div class="preset-group">
+                    <div class="preset-group-label">⚔ 大型肉食恐竜 (頂点捕食者)</div>
+                    <div class="preset-buttons">
+                        <button type="button" class="preset-btn" data-dino-id="tyrannosaurus">ティラノサウルス (12m)</button>
+                        <button type="button" class="preset-btn" data-dino-id="spinosaurus">スピノサウルス (15m)</button>
+                        <button type="button" class="preset-btn" data-dino-id="giganotosaurus">ギガノトサウルス (13m)</button>
+                        <button type="button" class="preset-btn" data-dino-id="carcharodontosaurus">カルカロドントサウルス (12.5m)</button>
+                    </div>
+                </div>
+
+                <!-- Group 3: 人気草食・装甲・角竜 -->
+                <div class="preset-group">
+                    <div class="preset-group-label">🛡 人気草食・角竜・よろい竜</div>
+                    <div class="preset-buttons">
+                        <button type="button" class="preset-btn" data-dino-id="triceratops">トリケラトプス (9m)</button>
+                        <button type="button" class="preset-btn" data-dino-id="stegosaurus">ステゴサウルス (9m)</button>
+                        <button type="button" class="preset-btn" data-dino-id="ankylosaurus">アンキロサウルス (8m)</button>
+                        <button type="button" class="preset-btn" data-dino-id="parasaurolophus">パラサウロロフス (10m)</button>
+                    </div>
+                </div>
+
+                <!-- Group 4: 小型・俊敏・羽毛恐竜 -->
+                <div class="preset-group">
+                    <div class="preset-group-label">🪶 小型・俊敏・羽毛恐竜</div>
+                    <div class="preset-buttons">
+                        <button type="button" class="preset-btn" data-dino-id="velociraptor">ヴェロキラプトル (2m)</button>
+                        <button type="button" class="preset-btn" data-dino-id="microraptor">ミクロラプトル (0.8m)</button>
+                        <button type="button" class="preset-btn" data-dino-id="compsognathus">コンプソグナトゥス (1m)</button>
+                        <button type="button" class="preset-btn" data-dino-id="deinonychus">デイノニクス (3.4m)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
  
     <!-- CLIENT SCRIPT FOR INTERACTIVE LOGIC -->
@@ -149,6 +251,24 @@ if (!defaultDino) {
         let dinoHudSpecs: HTMLElement | null = null;
         let dinoDetailLink: HTMLAnchorElement | null = null;
 
+        // Smart Specimen Card Elements
+        let cardDinoImg: HTMLImageElement | null = null;
+        let cardDinoDiet: HTMLElement | null = null;
+        let cardDinoName: HTMLElement | null = null;
+        let cardDinoScientific: HTMLElement | null = null;
+        let cardDinoEra: HTMLElement | null = null;
+        let cardDinoRegion: HTMLElement | null = null;
+        let cardDinoLength: HTMLElement | null = null;
+        let cardDinoWeight: HTMLElement | null = null;
+        let cardDinoDesc: HTMLElement | null = null;
+        let cardDinoDetailBtn: HTMLAnchorElement | null = null;
+
+        // Related Topic Elements
+        let relatedTopicContainer: HTMLElement | null = null;
+        let relatedTopicIcon: HTMLElement | null = null;
+        let relatedTopicLink: HTMLAnchorElement | null = null;
+        let relatedTopicBtn: HTMLAnchorElement | null = null;
+
         // Dino specs from datasets
         let dinoRealH = 2.0;
         let dinoRealL = 6.0;
@@ -181,6 +301,24 @@ if (!defaultDino) {
             dinoHudSpecs = document.getElementById('dino-hud-specs') as HTMLElement;
             dinoDetailLink = document.getElementById('dino-detail-link') as HTMLAnchorElement;
 
+            // Smart Card Elements
+            cardDinoImg = document.getElementById('card-dino-img') as HTMLImageElement;
+            cardDinoDiet = document.getElementById('card-dino-diet') as HTMLElement;
+            cardDinoName = document.getElementById('card-dino-name') as HTMLElement;
+            cardDinoScientific = document.getElementById('card-dino-scientific') as HTMLElement;
+            cardDinoEra = document.getElementById('card-dino-era') as HTMLElement;
+            cardDinoRegion = document.getElementById('card-dino-region') as HTMLElement;
+            cardDinoLength = document.getElementById('card-dino-length') as HTMLElement;
+            cardDinoWeight = document.getElementById('card-dino-weight') as HTMLElement;
+            cardDinoDesc = document.getElementById('card-dino-desc') as HTMLElement;
+            cardDinoDetailBtn = document.getElementById('card-dino-detail-btn') as HTMLAnchorElement;
+
+            // Related Topics
+            relatedTopicContainer = document.getElementById('related-topic-container') as HTMLElement;
+            relatedTopicIcon = document.getElementById('related-topic-icon') as HTMLElement;
+            relatedTopicLink = document.getElementById('related-topic-link') as HTMLAnchorElement;
+            relatedTopicBtn = document.getElementById('related-topic-btn') as HTMLAnchorElement;
+
             // Guard: skip initialization if elements do not exist (when transition brings us to another page)
             if (!selector || !dinoSelector || !stageContainer) return;
 
@@ -202,6 +340,25 @@ if (!defaultDino) {
                     dinoSelector.value = targetDinoId;
                 }
             }
+
+            // Bind preset buttons
+            const presetButtons = document.querySelectorAll('.preset-btn');
+            presetButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const targetId = btn.getAttribute('data-dino-id');
+                    if (targetId && dinoSelector) {
+                        const matched = Array.from(dinoSelector.options).find(opt => opt.value === targetId);
+                        if (matched) {
+                            dinoSelector.value = targetId;
+                            updateSelectedDino();
+                            // Smooth scroll slightly towards stage if on mobile
+                            if (window.innerWidth <= 768 && stageContainer) {
+                                stageContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                            }
+                        }
+                    }
+                });
+            });
 
             // Load initial dino
             updateSelectedDino();
@@ -228,6 +385,79 @@ if (!defaultDino) {
 
         function formatVal(val: number): string {
             return val % 1 === 0 ? val.toFixed(1) : val.toString();
+        }
+
+        function updateRelatedTopic(dino: any) {
+            if (!relatedTopicContainer || !relatedTopicIcon || !relatedTopicLink || !relatedTopicBtn) return;
+            
+            const id = dino.id || '';
+            const group = dino.group || '';
+            const realL = dino.cyberMetadata?.realLength || 0;
+
+            let topic = {
+                icon: '📚',
+                title: '恐竜とは何か？爬虫類との違い・分類・進化の基礎知識ガイド',
+                url: '/topics/what-is-dinosaur/'
+            };
+
+            // 巨大竜脚類 (全長20m以上、または特定の超大型種)
+            const giantIds = ['argentinosaurus', 'supersaurus', 'patagotitan', 'dreadnoughtus', 'brachiosaurus', 'sauroposeidon', 'alamosaurus', 'mamenchisaurus', 'diplodocus', 'apatosaurus', 'barosaurus', 'puertasaurus'];
+            if (giantIds.includes(id) || realL >= 20 || group === '竜脚類') {
+                topic = {
+                    icon: '🏆',
+                    title: '【結論】世界最大の恐竜はアルゼンチノサウルス！太古で一番大きい恐竜ランキングTOP10｜実寸比較',
+                    url: '/topics/dinosaur-size-ranking/'
+                };
+            }
+            // 最強大型肉食恐竜
+            else if (['tyrannosaurus', 'spinosaurus', 'giganotosaurus', 'carcharodontosaurus', 'tarbosaurus', 'allosaurus', 'mapusaurus', 'acrocanthosaurus'].includes(id)) {
+                topic = {
+                    icon: '⚔',
+                    title: '史上最強の恐竜は誰だ？ティラノサウルス vs スピノサウルス・ギガノトサウルス徹底論争',
+                    url: '/topics/strongest-dinosaur-debate/'
+                };
+            }
+            // 海生爬虫類・古生物
+            else if (['mosasaurus', 'plesiosaurus', 'tylosaurus', 'futabasaurus', 'kronosaurus', 'archelon', 'dunkleosteus', 'anomalocaris', 'dimetrodon', 'ichthyosaurus', 'shonisaurus'].includes(id) || ['首長竜', '魚竜', 'その他'].includes(group)) {
+                topic = {
+                    icon: '🌊',
+                    title: 'モササウルスや首長竜は「恐竜」じゃない？恐竜の定義と古生物の真実',
+                    url: '/topics/not-dinosaurs-truth/'
+                };
+            }
+            // 角竜類
+            else if (group === '角竜類' || ['triceratops', 'torosaurus', 'styracosaurus', 'pachyrhinosaurus', 'centrosaurus'].includes(id)) {
+                topic = {
+                    icon: '🛡',
+                    title: 'トリケラトプスのフリルの謎とは？防御・威嚇・体温調節の最新学説',
+                    url: '/topics/triceratops-frill-mystery/'
+                };
+            }
+            // 羽毛恐竜・小型獣脚類
+            else if (['archaeopteryx', 'velociraptor', 'microraptor', 'yutyrannus', 'anchiornis', 'caudipteryx', 'deinonychus'].includes(id)) {
+                topic = {
+                    icon: '🪶',
+                    title: 'ティラノサウルスには本当に羽毛が生えていたのか？最新学説で迫る真実',
+                    url: '/topics/trex-feathers/'
+                };
+            }
+
+            relatedTopicIcon.innerText = topic.icon;
+            relatedTopicLink.innerText = topic.title;
+            relatedTopicLink.href = topic.url;
+            relatedTopicBtn.href = topic.url;
+            relatedTopicContainer.style.display = 'block';
+        }
+
+        function updatePresetButtons(currentId: string) {
+            const buttons = document.querySelectorAll('.preset-btn');
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-dino-id') === currentId) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
         }
 
         function updateSelectedDino() {
@@ -257,6 +487,30 @@ if (!defaultDino) {
                 if (dinoDetailLink) {
                     dinoDetailLink.href = `/dictionary/${dinoId}/`;
                 }
+
+                // Update Smart Card UI
+                if (cardDinoImg) cardDinoImg.src = `/${activeDino.image || 'images/' + dinoId + '.webp'}`;
+                if (cardDinoDiet) {
+                    cardDinoDiet.innerText = activeDino.diet || '不明';
+                    cardDinoDiet.setAttribute('data-diet', activeDino.diet || '');
+                }
+                if (cardDinoName) cardDinoName.innerText = dinoName;
+                if (cardDinoScientific) cardDinoScientific.innerText = activeDino.scientificName ? `学名: ${activeDino.scientificName}` : '';
+                if (cardDinoEra) cardDinoEra.innerText = activeDino.era || '--';
+                if (cardDinoRegion) cardDinoRegion.innerText = activeDino.region || '--';
+                if (cardDinoLength) cardDinoLength.innerText = dinoLength || '--';
+                if (cardDinoWeight) cardDinoWeight.innerText = activeDino.weight || '--';
+                if (cardDinoDesc) cardDinoDesc.innerText = activeDino.description || '詳細な生態や化石の発見エピソードは個別図鑑アーカイブにてご覧いただけます。';
+                if (cardDinoDetailBtn) {
+                    cardDinoDetailBtn.href = `/dictionary/${dinoId}/`;
+                    cardDinoDetailBtn.innerHTML = `<span class="cta-arrow">▶</span> 「${dinoName}」の個別図鑑アーカイブを見る（全生態・化石写真へ）`;
+                }
+
+                // Update Related Special Topic
+                updateRelatedTopic(activeDino);
+
+                // Update Preset buttons active state
+                updatePresetButtons(dinoId);
 
                 // Sync URL query parameter without page reload
                 try {
@@ -632,7 +886,343 @@ if (!defaultDino) {
             text-shadow: 0 0 5px var(--secondary-neon);
         }
 
+        /* 施策①: SMART SPECIMEN CARD STYLES */
+        .specimen-card-hud {
+            padding: 24px;
+            background: rgba(3, 10, 18, 0.7);
+            border-color: var(--panel-border);
+            position: relative;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .specimen-card-inner {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .specimen-thumb-wrap {
+            position: relative;
+            flex-shrink: 0;
+            width: 140px;
+            height: 140px;
+            border-radius: 6px;
+            border: 1px solid var(--primary-neon);
+            overflow: hidden;
+            background: rgba(0, 242, 255, 0.04);
+            box-shadow: 0 0 15px rgba(0, 242, 255, 0.15);
+        }
+
+        .specimen-card-thumb {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .specimen-thumb-wrap:hover .specimen-card-thumb {
+            transform: scale(1.08);
+        }
+
+        .specimen-card-badge {
+            position: absolute;
+            bottom: 6px;
+            right: 6px;
+            font-family: var(--font-mono);
+            font-size: 10px;
+            font-weight: bold;
+            padding: 2px 6px;
+            border-radius: 3px;
+            background: rgba(3, 10, 18, 0.85);
+            border: 1px solid var(--primary-neon);
+            color: var(--primary-neon);
+        }
+
+        .specimen-card-body {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .specimen-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 12px;
+            border-bottom: 1px solid rgba(0, 242, 255, 0.15);
+            padding-bottom: 8px;
+        }
+
+        .specimen-card-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--text-main);
+            margin: 0;
+            letter-spacing: 0.5px;
+        }
+
+        .specimen-card-scientific {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            color: var(--text-dim);
+            font-style: italic;
+            display: block;
+            margin-top: 2px;
+        }
+
+        .specimen-meta-tags {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            font-family: var(--font-mono);
+            font-size: 12px;
+            color: var(--text-main);
+        }
+
+        .meta-tag {
+            background: rgba(0, 242, 255, 0.05);
+            padding: 3px 8px;
+            border-radius: 3px;
+            border: 1px solid rgba(0, 242, 255, 0.15);
+        }
+
+        .specimen-card-desc {
+            font-size: 13px;
+            color: var(--text-dim);
+            line-height: 1.6;
+            margin: 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .specimen-card-actions {
+            margin-top: 4px;
+        }
+
+        .card-detail-cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(0, 242, 255, 0.1);
+            border: 1px solid var(--primary-neon);
+            color: var(--primary-neon);
+            text-decoration: none;
+            padding: 9px 18px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: var(--font-mono);
+            letter-spacing: 0.5px;
+            transition: all 0.25s ease;
+            box-shadow: 0 0 12px rgba(0, 242, 255, 0.15);
+        }
+
+        .card-detail-cta-btn:hover {
+            background: var(--primary-neon) !important;
+            color: #030812 !important;
+            box-shadow: 0 0 20px rgba(0, 242, 255, 0.5) !important;
+            transform: translateX(4px);
+        }
+
+        .cta-arrow {
+            font-size: 10px;
+            transition: transform 0.2s ease;
+        }
+
+        .card-detail-cta-btn:hover .cta-arrow {
+            transform: translateX(3px);
+        }
+
+        /* 施策③: RELATED SPECIAL TOPICS BANNER */
+        .related-topics-hud {
+            padding: 14px 20px;
+            background: rgba(1, 15, 25, 0.7);
+            border: 1px solid rgba(0, 242, 255, 0.3);
+            border-left: 4px solid var(--secondary-neon);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .related-topic-content {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .related-topic-icon {
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .related-topic-info {
+            flex-grow: 1;
+        }
+
+        .related-topic-label {
+            font-family: var(--font-mono);
+            font-size: 10px;
+            color: var(--secondary-neon);
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+        }
+
+        .related-topic-title {
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            line-height: 1.4;
+            transition: color 0.2s;
+        }
+
+        .related-topic-title:hover {
+            color: var(--primary-neon);
+            text-decoration: underline;
+        }
+
+        .related-topic-btn {
+            flex-shrink: 0;
+            font-family: var(--font-mono);
+            font-size: 11px;
+            font-weight: bold;
+            color: var(--secondary-neon);
+            background: rgba(255, 170, 0, 0.1);
+            border: 1px solid rgba(255, 170, 0, 0.4);
+            padding: 6px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .related-topic-btn:hover {
+            background: var(--secondary-neon);
+            color: #030812;
+            box-shadow: 0 0 15px rgba(255, 170, 0, 0.4);
+        }
+
+        /* 施策②: PRESET HUD STYLES */
+        .preset-hud {
+            padding: 22px;
+            background: rgba(3, 8, 15, 0.65);
+            border: 1px solid var(--panel-border);
+        }
+
+        .preset-header {
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 8px;
+            border-bottom: 1px solid rgba(0, 242, 255, 0.15);
+            padding-bottom: 8px;
+        }
+
+        .preset-title {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            color: var(--primary-neon);
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .preset-subtitle {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            color: var(--text-dim);
+        }
+
+        .preset-groups-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .preset-group {
+            background: rgba(1, 10, 20, 0.4);
+            border: 1px solid rgba(0, 242, 255, 0.12);
+            padding: 12px;
+            border-radius: 4px;
+        }
+
+        .preset-group-label {
+            font-size: 12px;
+            font-weight: bold;
+            color: var(--text-main);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .preset-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .preset-btn {
+            background: rgba(0, 242, 255, 0.04);
+            border: 1px solid rgba(0, 242, 255, 0.2);
+            color: var(--text-dim);
+            font-family: var(--font-mono);
+            font-size: 11px;
+            padding: 6px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: left;
+        }
+
+        .preset-btn:hover {
+            color: var(--primary-neon);
+            border-color: var(--primary-neon);
+            background: rgba(0, 242, 255, 0.12);
+            box-shadow: 0 0 8px rgba(0, 242, 255, 0.2);
+        }
+
+        .preset-btn.active {
+            background: var(--primary-neon) !important;
+            color: #030812 !important;
+            font-weight: bold;
+            border-color: var(--primary-neon) !important;
+            box-shadow: 0 0 12px rgba(0, 242, 255, 0.45);
+        }
+
         @media (max-width: 768px) {
+            .specimen-card-inner {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+
+            .specimen-thumb-wrap {
+                width: 100%;
+                height: 180px;
+            }
+
+            .card-detail-cta-btn {
+                width: 100%;
+                justify-content: center;
+                box-sizing: border-box;
+                text-align: center;
+                font-size: 12px;
+            }
+
+            .related-topic-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .related-topic-btn {
+                align-self: flex-end;
+            }
+
             .control-hud {
                 flex-direction: column;
                 align-items: stretch;
