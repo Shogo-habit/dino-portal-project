@@ -9,7 +9,7 @@ securityLevel: "LEVEL 3 (PUBLIC)"
 relatedSpecimens: ["triceratops"]
 ---
 
-<h2 class="article-section-title">ティラノサウルスと並ぶ、白亜紀の2大スター</h2>
+<h2 class="article-section-title">[ティラノサウルス](/dictionary/tyrannosaurus/)と並ぶ、白亜紀の2大スター</h2>
 <p class="article-paragraph">
   大昔の地球にいた恐竜たちの中で、最も人気があるのはどの恐竜でしょうか。多くの人は、するどい牙と強靭な体を持つ肉食恐竜「ティラノサウルス」を思い浮かべるでしょう。そして、そのティラノサウルスと肩を並べるほどの圧倒的な人気を誇るのが、頭に3本の角と大きな襟飾り（フリル）を持つ植物食恐竜「トリケラトプス」です。
 </p>

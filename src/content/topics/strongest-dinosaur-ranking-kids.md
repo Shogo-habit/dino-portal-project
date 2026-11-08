@@ -524,7 +524,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
 
 <p class="article-paragraph">
   <strong style="color: var(--primary-neon);">Q. 空の恐竜で一番強いのはどれ？</strong><br>
-  <strong>A. 翼竜（よくりゅう）の「ケツァルコアトルス」が最強と言われています。</strong><br>
+  <strong>A. 翼竜（よくりゅう）の「[ケツァルコアトルス](/dictionary/quetzalcoatlus/)」が最強と言われています。</strong><br>
   （※翼竜は厳密には恐竜の仲間ではありませんが）翼を広げると10メートル以上（軽飛行機と同じ大きさ）になり、キリンと同じくらいの背の高さがありました。空から急降下して獲物を丸呑みにする、空の絶対的王者でした。
 </p>
 

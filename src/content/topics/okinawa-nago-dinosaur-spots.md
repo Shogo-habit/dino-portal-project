@@ -55,7 +55,7 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "stegosaurus", "therizinosaur
 </p>
 
 <p class="article-paragraph">
-  王者の風格漂うティラノサウルスはもちろん、長い爪がトレードマークの<strong>テリジノサウルス</strong>や、太古の海から首をもたげる<strong>エラスモサウルス</strong>など、恐竜・古生物の種類も非常に豊富。恐竜の卵からひょっこり顔を出せるフォトスポットなども随所にあり、子どもも大人も大興奮でシャッターを切り続けました。
+  王者の風格漂う[ティラノサウルス](/dictionary/tyrannosaurus/)はもちろん、長い爪がトレードマークの<strong>[テリジノサウルス](/dictionary/therizinosaurus/)</strong>や、太古の海から首をもたげる<strong>[エラスモサウルス](/dictionary/elasmosaurus/)</strong>など、恐竜・古生物の種類も非常に豊富。恐竜の卵からひょっこり顔を出せるフォトスポットなども随所にあり、子どもも大人も大興奮でシャッターを切り続けました。
 </p>
 
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 30px auto; max-width: 976px;">
@@ -83,7 +83,7 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "stegosaurus", "therizinosaur
 
 <h3 style="color: var(--primary-neon); margin-top: 30px; margin-bottom: 10px; font-size: 16px;">探検後は恐竜ショップ＆御菓子御殿の紅芋スイーツ天国！</h3>
 <p class="article-paragraph">
-  コースの終点付近には、子どもたちが飛びつく<strong>ステゴサウルスの巨大すべり台</strong>や、フィギュア・グッズが所狭しと並ぶ<strong>本格的な恐竜ショップ</strong>が待っています！
+  コースの終点付近には、子どもたちが飛びつく<strong>[ステゴサウルス](/dictionary/stegosaurus/)の巨大すべり台</strong>や、フィギュア・グッズが所狭しと並ぶ<strong>本格的な恐竜ショップ</strong>が待っています！
 </p>
 
 <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin: 30px auto; max-width: 976px;">

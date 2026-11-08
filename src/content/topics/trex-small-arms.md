@@ -15,10 +15,10 @@ relatedSpecimens: ["tyrannosaurus","carnotaurus"]
   地球史上最強の肉食恐竜として名高い<strong>ティラノサウルス・レックス（T-Rex）</strong>。全長12メートルを超え、体重は9トンにも達する強靭な体躯、そして車をも噛み砕く巨大な頭骨を持つこの絶対王者は、まさに白亜紀末期の生態系の頂点に君臨していました。しかし、その圧倒的な威容の中で、誰もが奇妙に感じるアンバランスなパーツが存在します。それが、驚くほど短く小さな<strong style="color: var(--primary-neon);">「前足（腕）」</strong>です。
 </p>
 <p class="article-paragraph">
-  T-Rexの前肢の長さはわずか約1メートル。これは大人の人間の腕とほぼ同等の長さしかありません。12メートルを超える巨大な体に対してあまりにも小さく、自分の口にすら届かないこの腕は、一見すると何の役にも立っていない退化した無駄なパーツのようにも見えます。映画やアニメでもしばしば「手が短くて困るティラノサウルス」として愛嬌たっぷりに描かれることの多いこの前足ですが、本当にただの「役立たずの無駄」だったのでしょうか？
+  T-Rexの前肢の長さはわずか約1メートル。これは大人の人間の腕とほぼ同等の長さしかありません。12メートルを超える巨大な体に対してあまりにも小さく、自分の口にすら届かないこの腕は、一見すると何の役にも立っていない退化した無駄なパーツのようにも見えます。映画やアニメでもしばしば「手が短くて困る[ティラノサウルス](/dictionary/tyrannosaurus/)」として愛嬌たっぷりに描かれることの多いこの前足ですが、本当にただの「役立たずの無駄」だったのでしょうか？
 </p>
 <p class="article-paragraph">
-  近年の古生物学研究では、この小さな前足が単なる退化の産物ではなく、彼らの生存戦略と進化の歴史において<strong style="color: var(--primary-neon);">極めて重要な意味</strong>を持っていたことが明らかになりつつあります。本記事では、なぜティラノサウルスの前足がこれほどまでに小さくなったのかという進化学的背景から、骨や筋肉の構造が明かす驚くべきポテンシャル、そして現在古生物学者たちの間で活発に議論されている「5つの用途説」、さらにはカルノタウルスなど他の恐竜との比較まで、最新の知見をもとに徹底解説します。
+  近年の古生物学研究では、この小さな前足が単なる退化の産物ではなく、彼らの生存戦略と進化の歴史において<strong style="color: var(--primary-neon);">極めて重要な意味</strong>を持っていたことが明らかになりつつあります。本記事では、なぜティラノサウルスの前足がこれほどまでに小さくなったのかという進化学的背景から、骨や筋肉の構造が明かす驚くべきポテンシャル、そして現在古生物学者たちの間で活発に議論されている「5つの用途説」、さらには[カルノタウルス](/dictionary/carnotaurus/)など他の恐竜との比較まで、最新の知見をもとに徹底解説します。
 </p>
 
 <h2 class="article-section-title">見かけによらない？前足の基本スペックと驚異のポテンシャル</h2>
@@ -44,7 +44,7 @@ relatedSpecimens: ["tyrannosaurus","carnotaurus"]
 
 <h2 class="article-section-title">なぜ前足は小さくなった？頭部巨大化とのトレードオフ</h2>
 <p class="article-paragraph">
-  ティラノサウルスの進化の系統樹を遡ると、ジュラ紀や白亜紀前期に生息していた初期の祖先たち（コエルロサウルス類、ディロング、グアンロンなど）は、体に対する前足の比率が現在よりもはるかに長く、3本の長い指で獲物をしっかりと掴んで狩りを行っていたことが分かっています。しかし、白亜紀後期に向かって進化が進むにつれ、彼らの前足は段階的に短くなっていきました。
+  ティラノサウルスの進化の系統樹を遡ると、ジュラ紀や白亜紀前期に生息していた初期の祖先たち（コエルロサウルス類、ディロング、[グアンロン](/dictionary/guanlong/)など）は、体に対する前足の比率が現在よりもはるかに長く、3本の長い指で獲物をしっかりと掴んで狩りを行っていたことが分かっています。しかし、白亜紀後期に向かって進化が進むにつれ、彼らの前足は段階的に短くなっていきました。
 </p>
 <p class="article-paragraph">
   この縮小プロセスの最大の要因は、捕食スタイルの劇的な変化と<strong style="color: var(--primary-neon);">「頭部の巨大化」</strong>にあります。
@@ -96,10 +96,10 @@ relatedSpecimens: ["tyrannosaurus","carnotaurus"]
 
 <h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">1. カルノタウルス：肘の関節すらなくした超退化型</h3>
 <p class="article-paragraph">
-  南米に生息していたアベリサウルス類の肉食恐竜<strong>カルノタウルス</strong>は、ティラノサウルスよりもさらに極端に前足が退化していました。その腕はティラノサウルスよりも格段に短く、なんと「肘（ひじ）の関節」がほぼ機能しない棒状の構造をしていました。さらに手の先には、指の関節を持たない4本の短い指の骨が、まるで直接手のひらから突き出ているかのように並んでいました。彼らの前足は完全に用途を失っていたと考えられています。
+  南米に生息していた[アベリサウルス](/dictionary/abelisaurus/)類の肉食恐竜<strong>カルノタウルス</strong>は、ティラノサウルスよりもさらに極端に前足が退化していました。その腕はティラノサウルスよりも格段に短く、なんと「肘（ひじ）の関節」がほぼ機能しない棒状の構造をしていました。さらに手の先には、指の関節を持たない4本の短い指の骨が、まるで直接手のひらから突き出ているかのように並んでいました。彼らの前足は完全に用途を失っていたと考えられています。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">2. モノニクス：シロアリの巣を暴く「1本指」のスペシャリスト</h3>
+<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">2. [モノニクス](/dictionary/mononykus/)：シロアリの巣を暴く「1本指」のスペシャリスト</h3>
 <p class="article-paragraph">
   鳥類に極めて近い小型の獣脚類<strong>モノニクス</strong>は、体長1メートルほどの小さな恐竜ですが、その前肢は極めて特異でした。腕自体は非常に短くがっしりとしており、指はなんと「1本」しかありませんでした。その唯一の指の先には、腕の長さに匹敵するほど巨大で頑丈な爪が1つだけ備わっていました。この腕は、現在のミアリクイのように、頑丈なシロアリの巣の泥壁を突き崩して中の虫を食べるために進化した「超特化型のシャベル」だったと考えられています。
 </p>
@@ -125,7 +125,7 @@ relatedSpecimens: ["tyrannosaurus","carnotaurus"]
       </tr>
       <tr style="border-bottom: 1px solid var(--panel-border);">
         <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">カルノタウルス</td>
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">ケラトサウルス類（アベリサウルス科）</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">[ケラトサウルス](/dictionary/ceratosaurus/)類（アベリサウルス科）</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">4本</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">肘が曲がらず指関節も未発達</td>
         <td style="padding: 10px;">機能なし（完全に退化した痕跡器官）</td>

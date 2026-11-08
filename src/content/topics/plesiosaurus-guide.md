@@ -10,7 +10,7 @@ relatedSpecimens: ["plesiosaurus", "elasmosaurus", "futabasaurus", "mosasaurus"]
 ---
 
 「首がとっても長い海の生き物はなに？」
-「プレシオサウルスって、モササウルスと何が違うの？」
+「プレシオサウルスって、[モササウルス](/dictionary/mosasaurus/)と何が違うの？」
 
 <p class="article-paragraph" style="margin-bottom: 40px;">
   恐竜時代の海を代表する大スター、首長竜の<strong style="color: var(--primary-neon);">プレシオサウルス</strong>。その優雅で独特な泳ぎ方や、長い首に進化した科学的な理由、モササウルスなどのライバルとの強さの違いについて、子供から大人までわかりやすく解説します！
@@ -69,7 +69,7 @@ relatedSpecimens: ["plesiosaurus", "elasmosaurus", "futabasaurus", "mosasaurus"]
 
 <h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">全長は何メートル？プレシオサウルスのサイズ</h3>
 <p class="article-paragraph">
-  プレシオサウルスの大きさは、<strong>全長が約3〜5メートル</strong>です。モササウルス（15メートル超）や、後世の巨大な首長竜エラスモサウルス（10メートル超）に比べると、実はかなり小柄でスマートな体をしていました。
+  プレシオサウルスの大きさは、<strong>全長が約3〜5メートル</strong>です。モササウルス（15メートル超）や、後世の巨大な首長竜[エラスモサウルス](/dictionary/elasmosaurus/)（10メートル超）に比べると、実はかなり小柄でスマートな体をしていました。
   体重は約200〜500キログラム程度で、現代の大きなイルカや牛と同じくらいの重さです。
 </p>
 
@@ -106,7 +106,7 @@ relatedSpecimens: ["plesiosaurus", "elasmosaurus", "futabasaurus", "mosasaurus"]
     Q3. 日本でもプレシオサウルスの仲間は見つかっている？
   </p>
   <p class="article-paragraph" style="margin-bottom: 0;">
-    <strong>A. はい、非常に有名な「フタバスズキリュウ（フタバサウルス）」が日本で見つかっています！</strong><br>
+    <strong>A. はい、非常に有名な「フタバスズキリュウ（[フタバサウルス](/dictionary/futabasaurus/)）」が日本で見つかっています！</strong><br>
     1968年に福島県で高校生（当時）の鈴木直さんによって発見されたフタバスズキリュウは、プレシオサウルスの親戚である巨大な首長竜です。日本でほぼ全身の骨が見つかった初めての首長竜として、日本の古生物研究の歴史に大きな名を残しました。
   </p>
 </div>

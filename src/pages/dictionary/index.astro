@@ -258,6 +258,7 @@ const CLADES = [
     <script>
         const COLLECTION_KEY = 'dino_portal_saved_observations';
         const DICT_FILTERS_KEY = 'dino_portal_dict_filters';
+        const DICT_SCROLL_POS_KEY = 'dino_portal_dict_scroll_y';
 
         function initDictionary() {
             const search = document.getElementById('dino-search') as HTMLInputElement;
@@ -679,13 +680,61 @@ const CLADES = [
                 'わ': ['わ', 'を', 'ん', 'ワ', 'ヲ', 'ン']
             };
 
-            function scrollPageTo(targetY: number) {
+            function scrollPageTo(targetY: number, behavior: ScrollBehavior = 'smooth') {
                 const appContainer = document.getElementById('app-container');
                 if (appContainer && appContainer.scrollHeight > appContainer.clientHeight && getComputedStyle(appContainer).overflowY !== 'visible') {
-                    appContainer.scrollTo({ top: targetY, behavior: 'smooth' });
+                    appContainer.scrollTo({ top: targetY, behavior });
                 }
-                window.scrollTo({ top: targetY, behavior: 'smooth' });
+                window.scrollTo({ top: targetY, behavior });
             }
+
+            // スクロール位置の現在値を取得（PC: appContainer / モバイル: window）
+            const getCurrentScrollY = () => {
+                const appContainer = document.getElementById('app-container');
+                if (appContainer && appContainer.scrollHeight > appContainer.clientHeight && getComputedStyle(appContainer).overflowY !== 'visible') {
+                    return appContainer.scrollTop;
+                }
+                return window.pageYOffset || document.documentElement.scrollTop;
+            };
+
+            // 詳細ページへ遷移する際にスクロール位置をsessionStorageに一時記憶
+            const saveScrollPos = () => {
+                const y = getCurrentScrollY();
+                if (y > 0) {
+                    sessionStorage.setItem(DICT_SCROLL_POS_KEY, String(y));
+                }
+            };
+
+            // 詳細ページから戻った時のみスクロール位置を復元
+            const restoreScrollPos = () => {
+                const savedYStr = sessionStorage.getItem(DICT_SCROLL_POS_KEY);
+                const fromDetail = document.referrer && document.referrer.includes('/dictionary/');
+                if (savedYStr && fromDetail) {
+                    const targetY = parseFloat(savedYStr);
+                    if (!isNaN(targetY) && targetY > 0) {
+                        // 即座に復元し、描画完了後（画像ロードやDOM確定後）に微調整
+                        scrollPageTo(targetY, 'auto');
+                        requestAnimationFrame(() => {
+                            scrollPageTo(targetY, 'auto');
+                        });
+                        setTimeout(() => {
+                            scrollPageTo(targetY, 'auto');
+                            sessionStorage.removeItem(DICT_SCROLL_POS_KEY);
+                        }, 80);
+                        return;
+                    }
+                }
+                // 詳細から戻った時以外はクリア（通常アクセス時に古い位置へ飛ぶのを防止）
+                sessionStorage.removeItem(DICT_SCROLL_POS_KEY);
+            };
+
+            // カードクリック時にスクロール位置を保存
+            cardGrid.addEventListener('click', (e) => {
+                const link = (e.target as HTMLElement).closest('a');
+                if (link && link.href && link.href.includes('/dictionary/')) {
+                    saveScrollPos();
+                }
+            }, { passive: true });
 
             function scrollToCard(targetCard: HTMLElement) {
                 const appContainer = document.getElementById('app-container');
@@ -823,6 +872,7 @@ const CLADES = [
             // Init load
             loadFiltersState();
             updateList();
+            restoreScrollPos();
             scheduleBackgroundPreload();
         }
 

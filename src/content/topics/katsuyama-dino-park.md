@@ -85,7 +85,7 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "spinosaurus", "mamenchisauru
 </p>
 
 <p class="article-paragraph">
-  生い茂る木々の隙間から突然姿を現す巨大な恐竜たちは、まるでジュラシック・パークに迷い込んだかのような臨場感。4歳の息子は最初のうち、その迫力に圧倒されて私の足にしがみついていましたが、次第に大興奮で「あそこにティラノサウルスがいる！」「次はトリケラトプスだ！」と目を輝かせていました。
+  生い茂る木々の隙間から突然姿を現す巨大な恐竜たちは、まるでジュラシック・パークに迷い込んだかのような臨場感。4歳の息子は最初のうち、その迫力に圧倒されて私の足にしがみついていましたが、次第に大興奮で「あそこに[ティラノサウルス](/dictionary/tyrannosaurus/)がいる！」「次は[トリケラトプス](/dictionary/triceratops/)だ！」と目を輝かせていました。
 </p>
 
 <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin: 30px auto; max-width: 976px;">
@@ -100,7 +100,7 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "spinosaurus", "mamenchisauru
 </div>
 
 <p class="article-paragraph">
-  特に全長20メートルを超える超巨大な<strong>マメンチサウルス</strong>や、水辺の支配者<strong>スピノサウルス</strong>などの演出は圧巻の一言。森という天然のステージだからこそ、機械的な冷たさが一切なく、「本当に恐竜がここに生きている」かのような生命力を感じることができました。
+  特に全長20メートルを超える超巨大な<strong>[マメンチサウルス](/dictionary/mamenchisaurus/)</strong>や、水辺の支配者<strong>[スピノサウルス](/dictionary/spinosaurus/)</strong>などの演出は圧巻の一言。森という天然のステージだからこそ、機械的な冷たさが一切なく、「本当に恐竜がここに生きている」かのような生命力を感じることができました。
 </p>
 
 <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin: 0 auto 30px auto; max-width: 976px;">
@@ -117,15 +117,15 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "spinosaurus", "mamenchisauru
 <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin: 0 auto 40px auto; max-width: 976px;">
   <div style="text-align: center; margin-bottom: 15px;">
     <img src="/images/topics/katsuyama-dino-park/allosaurus.webp" alt="鋭い目つきのアロサウルス" style="height: 260px; width: auto; max-width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; display: block; margin: 0 auto;" />
-    <span style="font-size: 11px; color: var(--text-dim); display: block; text-align: center; margin-top: 5px;">俊敏に襲いかかりそうなアロサウルス</span>
+    <span style="font-size: 11px; color: var(--text-dim); display: block; text-align: center; margin-top: 5px;">俊敏に襲いかかりそうな[アロサウルス](/dictionary/allosaurus/)</span>
   </div>
   <div style="text-align: center; margin-bottom: 15px;">
     <img src="/images/topics/katsuyama-dino-park/ankylosaurus.webp" alt="頑丈な装甲を持つアンキロサウルス" style="height: 260px; width: auto; max-width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; display: block; margin: 0 auto;" />
-    <span style="font-size: 11px; color: var(--text-dim); display: block; text-align: center; margin-top: 5px;">尻尾のハンマーが強力なアンキロサウルス</span>
+    <span style="font-size: 11px; color: var(--text-dim); display: block; text-align: center; margin-top: 5px;">尻尾のハンマーが強力な[アンキロサウルス](/dictionary/ankylosaurus/)</span>
   </div>
   <div style="text-align: center; margin-bottom: 15px;">
     <img src="/images/topics/katsuyama-dino-park/einiosaurus.webp" alt="前に曲がった角が特徴的なエイニオサウルス" style="height: 260px; width: auto; max-width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; display: block; margin: 0 auto;" />
-    <span style="font-size: 11px; color: var(--text-dim); display: block; text-align: center; margin-top: 5px;">独特な角の形状をしたエイニオサウルス</span>
+    <span style="font-size: 11px; color: var(--text-dim); display: block; text-align: center; margin-top: 5px;">独特な角の形状をした[エイニオサウルス](/dictionary/einiosaurus/)</span>
   </div>
 </div>
 

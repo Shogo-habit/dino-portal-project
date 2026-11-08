@@ -9,9 +9,9 @@ securityLevel: "LEVEL 2 (SCIENTIFIC REVISION)"
 relatedSpecimens: ["tyrannosaurus","yutyrannus","nanuqsaurus"]
 ---
 
-<h2 class="article-section-title">「全身モフモフ」のティラノサウルス像の誕生</h2>
+<h2 class="article-section-title">「全身モフモフ」の[ティラノサウルス](/dictionary/tyrannosaurus/)像の誕生</h2>
 <p class="article-paragraph">
-  1990年代以降、中国で羽毛を持った恐竜の化石が次々と発見されました。特に2012年に発見された「ユティラヌス（Yutyrannus huali）」は、ティラノサウルスの近縁種でありながら全長9メートルに達し、全身が長い羽毛で覆われていました。
+  1990年代以降、中国で羽毛を持った恐竜の化石が次々と発見されました。特に2012年に発見された「[ユティラヌス](/dictionary/yutyrannus/)（Yutyrannus huali）」は、ティラノサウルスの近縁種でありながら全長9メートルに達し、全身が長い羽毛で覆われていました。
 </p>
 <p class="article-paragraph">
   この発見は古生物学界に衝撃を与え、「もし近縁種が全身羽毛に覆われていたなら、ティラノサウルス・レックスも同じように羽毛で覆われていたはずだ」という推測が一気に広まりました。その結果、数多くのドキュメンタリーや図鑑で「巨大な鳥のように全身が羽毛で覆われた（モフモフの）ティラノサウルス」が描かれるようになりました。

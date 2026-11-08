@@ -351,10 +351,10 @@ relatedSpecimens: ["tyrannosaurus","triceratops","spinosaurus","mosasaurus","bra
 <h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 18px;">Q2：日本にも、こんな人気のかっこいい恐竜はいたの？</h3>
 <p class="article-paragraph">
   もちろんいました！<br>
-  日本では福井県を中心にたくさんの化石が見つかっており、日本オリジナルの恐竜として<strong>「フクイラプトル」</strong>（するどいツメを持つ肉食恐竜）や、<strong>「フクイサウルス」</strong>（イグアナの仲間である草食恐竜）などが有名です。
+  日本では福井県を中心にたくさんの化石が見つかっており、日本オリジナルの恐竜として<strong>「[フクイラプトル](/dictionary/fukuiraptor/)」</strong>（するどいツメを持つ肉食恐竜）や、<strong>「[フクイサウルス](/dictionary/fukuisaurus/)」</strong>（イグアナの仲間である草食恐竜）などが有名です。
 </p>
 <p class="article-paragraph">
-  また、福島県ではモササウルスの仲間である巨大な首長竜<strong>「フタバサウルス（フタバスズキリュウ）」</strong>の化石が見つかり、子供たちに広く親しまれています。
+  また、福島県ではモササウルスの仲間である巨大な首長竜<strong>「[フタバサウルス](/dictionary/futabasaurus/)（フタバスズキリュウ）」</strong>の化石が見つかり、子供たちに広く親しまれています。
 </p>
 
 <h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 18px;">Q3：人気の恐竜の名前にはどんな意味があるの？</h3>

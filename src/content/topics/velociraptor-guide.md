@@ -55,7 +55,7 @@ relatedSpecimens: ["velociraptor", "deinonychus", "utahraptor", "microraptor", "
 
 <h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">3. 高い知能と獲物を見逃さない「立体視（りったいし）」</h3>
 <p class="article-paragraph">
-  ヴェロキラプトルは、恐竜の中でも<strong style="color: var(--primary-neon);">体重に対する脳の重さの割合が非常に高い</strong>グループ（ドロマエオサウルス科）に属しています。複雑な動きをすばやく判断し、獲物の動きを先読みして動くなど、トカゲやワニよりもはるかにスマートでした。
+  ヴェロキラプトルは、恐竜の中でも<strong style="color: var(--primary-neon);">体重に対する脳の重さの割合が非常に高い</strong>グループ（[ドロマエオサウルス](/dictionary/dromaeosaurus/)科）に属しています。複雑な動きをすばやく判断し、獲物の動きを先読みして動くなど、トカゲやワニよりもはるかにスマートでした。
 </p>
 <p class="article-paragraph">
   さらに、頭骨をCTスキャンした結果、目が頭の側面にではなく、やや正面を向いて配置されていたことが分かっています。これにより、左右の目の視界が重なり、人間やタカのように物を立体的に見る<strong style="color: var(--primary-neon);">「立体視（りったいし）」</strong>が可能でした。
@@ -72,7 +72,7 @@ relatedSpecimens: ["velociraptor", "deinonychus", "utahraptor", "microraptor", "
 
 <h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">疑問1：映画のラプトルは、実はヴェロキラプトルではない？</h3>
 <p class="article-paragraph">
-  実は、映画『ジュラシック・パーク』に登場するラプトルのモデルになったのは、ヴェロキラプトルではなく、北アメリカで発見された<strong style="color: var(--primary-neon);">「デイノニクス」</strong>という別の恐竜です。デイノニクスは全長約3.4mあり、人間と互角に戦えるサイズ感を持っています。
+  実は、映画『ジュラシック・パーク』に登場するラプトルのモデルになったのは、ヴェロキラプトルではなく、北アメリカで発見された<strong style="color: var(--primary-neon);">「[デイノニクス](/dictionary/deinonychus/)」</strong>という別の恐竜です。デイノニクスは全長約3.4mあり、人間と互角に戦えるサイズ感を持っています。
 </p>
 <p class="article-paragraph">
   映画の原作者であるマイケル・クライトンが小説を書いた当時、「デイノニクスはヴェロキラプトルと同じ仲間だから、ヴェロキラプトル・アンティルロプス（※デイノニクスの別名）と呼ぶべきだ」という一部の学説が出されていました。原作者は「ヴェロキラプトル」という名前の響きがスマートでかっこいいと気に入り、デイノニクスの大きさのまま名前を「ヴェロキラプトル」にして執筆したのです。学術的にはこれらは別の種類とされていますが、映画のヒットにより「ラプトル＝大きくて怖い」というイメージが定着しました。
@@ -81,7 +81,7 @@ relatedSpecimens: ["velociraptor", "deinonychus", "utahraptor", "microraptor", "
 <h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">疑問2：映画のように、チームワークで群れで狩りをした？</h3>
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;"><div style="flex: 1; min-width: 280px;"><p class="article-paragraph" style="margin-top: 0;">映画では、リーダー（ブルーなど）の指示に従って、組織的に人間を追い詰める頭の良い姿が描かれています。しかし、実際のヴェロキラプトルがそこまで高度なチームワークを持っていたかは、まだ科学的に証明されていません。</p><p class="article-paragraph">デイノニクスの化石では、複数個体が一緒に見つかる例がありますが、ヴェロキラプトルの化石はほとんどが単独で見つかっています。最近の研究では、彼らはライオンのように役割分担をして狩りをするのではなく、現代のコモドオオトカゲやワニのように、「一匹が獲物を襲っているのを見て、近くにいた他の仲間がエサのおこぼれをもらおうとドタバタと集まってきただけ」という説が強くなっています。チームワークというよりは、利己的なハンターの集まりだったのかもしれません。</p><p class="article-paragraph" style="margin-bottom: 0;">それでも、彼らが白亜紀の生態系において極めて優秀な捕食者であったことは疑いようがありません。非常に軽量な骨格と、長く強力な後肢、および優れた視覚を駆使して、砂漠や半乾燥地帯に生息する小動物や他の草食恐竜を俊敏に追い詰め、鋭いアゴとシックルクローで確実に狩りを行っていたと考えられます。</p></div><div style="width: 375px; flex-shrink: 0; margin: 0 auto;"><img src="/images/topics/velociraptor-guide/velociraptor_hunting.webp" alt="獲物を狩るヴェロキラプトル" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" /></div></div>
 
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">疑問3：世紀の発見「格闘の化石」プロトケラトプスとの死闘</h3>
+<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">疑問3：世紀の発見「格闘の化石」[プロトケラトプス](/dictionary/protoceratops/)との死闘</h3>
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;"><div style="flex: 1; min-width: 280px;"><p class="article-paragraph" style="margin-top: 0;">ヴェロキラプトルがどのようなハンターだったかを示す、世界で最も有名な化石があります。それが1971年にモンゴルのゴビ砂漠で発見された「格闘の化石」です。</p><p class="article-paragraph">なんと、肉食恐竜ヴェロキラプトルと、草食恐竜プロトケラトプスが、お互いに攻撃し合った状態のまま化石になっているのです。</p><p class="article-paragraph" style="margin-bottom: 0;">化石を詳しく分析すると、ヴェロキラプトルは後ろ足の「シックルクロー」をプロトケラトプスの喉元に深く突き刺しており、プロトケラトプスはヴェロキラプトルの右腕を強力なクチバシでガブッと噛み砕こうとしています。この激しい戦闘の最中に、突然の砂嵐による土砂崩れが発生し、二匹はもつれ合ったまま地中に生き埋めになったと考えられています。二匹が実際に命がけで戦っていた決定的な証拠です。</p></div><div style="width: 375px; flex-shrink: 0; margin: 0 auto;"><img src="/images/topics/velociraptor-guide/velociraptor_vs_protoceratops.webp" alt="プロトケラトプスとヴェロキラプトルの格闘化石" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" /></div></div>
 
 <h2 class="article-section-title">ラプトルの仲間たち（ドロマエオサウルス科）の比較</h2>
@@ -102,7 +102,7 @@ relatedSpecimens: ["velociraptor", "deinonychus", "utahraptor", "microraptor", "
     </thead>
     <tbody>
       <tr style="border-bottom: 1px solid var(--panel-border);">
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">ミクロラプトル</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">[ミクロラプトル](/dictionary/microraptor/)</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">約80cm（体重1kg）</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">中国</td>
         <td style="padding: 10px;">手足に4枚の翼を持ち、ムササビのように滑空できた小さなラプトル。カラスのような黒い光沢羽毛。</td>
@@ -120,7 +120,7 @@ relatedSpecimens: ["velociraptor", "deinonychus", "utahraptor", "microraptor", "
         <td style="padding: 10px;">映画のラプトルのベースモデル。この恐竜の研究から「恐竜は温血動物で活発だった」という温血説（恐竜ルネサンス）が始まった。</td>
       </tr>
       <tr>
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">ユタラプトル</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">[ユタラプトル](/dictionary/utahraptor/)</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">約6.0m（体重500kg）</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">アメリカ</td>
         <td style="padding: 10px;">ラプトル類の最大級モンスター。ヒグマ並みの重さがあり、巨大なシックルクローは20cm以上あった。</td>

@@ -22,7 +22,7 @@ relatedSpecimens: ["ankylosaurus", "borealopelta", "stegosaurus", "tyrannosaurus
 <p class="article-paragraph" style="margin-top: 0;">アンキロサウルスの一番の特徴は、なんと言っても頭から背中、しっぽにかけて体を覆っている頑丈な「骨のよろい（皮骨：ひこつ）」です。この骨の板は皮膚の中で発達したもので、まるで中世の騎士のよろいや現代の戦車のように体を守っていました。</p>
 <p class="article-paragraph">アンキロサウルスは、このように体に硬い装甲を持つ<strong style="color: var(--primary-neon);">「曲竜類（きょくりゅうるい）」</strong>または「よろい竜」と呼ばれるグループの代表格です。のんびりとした草食恐竜ですが、肉食恐竜に襲われても簡単に噛みつかれないような究極の進化を遂げた姿なのです。</p>
 <h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">いつの時代にどこで生きていた？アンキロサウルスの基本データ</h3>
-<p class="article-paragraph" style="margin-bottom: 0;">アンキロサウルスが生きていたのは、恐竜時代が終わりを迎える白亜紀の後期（約6800万〜6600万年前）です。現在の北アメリカ大陸に生息しており、最強の肉食恐竜ティラノサウルスや、3本の角を持つトリケラトプスと同じ森や草原で暮らしていました。</p>
+<p class="article-paragraph" style="margin-bottom: 0;">アンキロサウルスが生きていたのは、恐竜時代が終わりを迎える白亜紀の後期（約6800万〜6600万年前）です。現在の北アメリカ大陸に生息しており、最強の肉食恐竜[ティラノサウルス](/dictionary/tyrannosaurus/)や、3本の角を持つ[トリケラトプス](/dictionary/triceratops/)と同じ森や草原で暮らしていました。</p>
 </div>
 <div style="width: 220px; flex-shrink: 0; margin: 35px auto 0 auto;">
 <a href="/dictionary/ankylosaurus/" class="article-link" style="display: inline-block; text-decoration: none; color: inherit; padding: 12px; border: 1px solid var(--panel-border); border-radius: 4px; background: rgba(255, 255, 255, 0.02); width: 100%; box-sizing: border-box; transition: border-color 0.2s ease;">

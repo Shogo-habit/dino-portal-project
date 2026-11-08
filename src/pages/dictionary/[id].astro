@@ -794,7 +794,7 @@ if (hasComparison && h3List.length > 0) {
 
                 <!-- アーカイブに戻る ＆ フィードバック -->
                 <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--panel-border); padding-top: 20px; gap: 20px; flex-wrap: wrap;">
-                    <a href="/dictionary/" class="nav-link" aria-label="アーカイブ一覧に戻る" style="text-decoration: none;">[ アーカイブに戻る ]</a>
+                    <a href="/dictionary/" id="back-to-archive-link" class="nav-link" aria-label="アーカイブ一覧に戻る" style="text-decoration: none;">[ アーカイブに戻る ]</a>
                     
                     <div class="feedback-container" id="feedback-detail" style="display: flex; align-items: center; gap: 10px;">
                         <span style="font-size: 11px; color: var(--text-dim); font-family: var(--font-mono);">
@@ -1155,11 +1155,31 @@ if (hasComparison && h3List.length > 0) {
             onScroll();
         }
 
+        // [ アーカイブに戻る ] スマートリンク（直前の一覧ページがあれば履歴を戻りスクロール位置を復元）
+        function initBackToArchiveLink() {
+            const backLink = document.getElementById('back-to-archive-link');
+            if (!backLink) return;
+
+            backLink.addEventListener('click', (e) => {
+                if (window.history.length > 1 && document.referrer) {
+                    try {
+                        const refUrl = new URL(document.referrer);
+                        // 同一オリジンの図鑑一覧から来た場合のみ履歴を戻る（外部からのアクセス時は安全にhrefへ遷移）
+                        if (refUrl.origin === window.location.origin && refUrl.pathname === '/dictionary/') {
+                            e.preventDefault();
+                            window.history.back();
+                        }
+                    } catch (_) {}
+                }
+            });
+        }
+
         // 初期化トリガー
         function initAll() {
             initSpecimenDetail();
             initSpecimenSlider();
             initArticleScrollSpy();
+            initBackToArchiveLink();
         }
 
         if (document.readyState === 'loading') {

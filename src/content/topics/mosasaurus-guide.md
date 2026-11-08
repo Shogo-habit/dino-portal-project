@@ -32,7 +32,7 @@ relatedSpecimens: ["mosasaurus", "wakayama-soryu", "plesiosaurus", "ichthyosauru
 </div>
 </div>
 
-<h2 class="article-section-title">まるで海のティラノサウルス！モササウルスの強さはどれくらい？</h2>
+<h2 class="article-section-title">まるで海の[ティラノサウルス](/dictionary/tyrannosaurus/)！モササウルスの強さはどれくらい？</h2>
 
 <p class="article-paragraph">
   モササウルスが「海の王者」と呼ばれる最大の理由は、その<strong style="color: var(--primary-neon);">圧倒的な強さ</strong>にあります。まさに、陸の上で最強だったティラノサウルスの海バージョンと言える存在でした。
@@ -153,13 +153,13 @@ relatedSpecimens: ["mosasaurus", "wakayama-soryu", "plesiosaurus", "ichthyosauru
   恐竜時代の海には、モササウルスのほかにもたくさんの巨大な爬虫類たちが泳いでいました。よく図鑑で混ざってしまいがちなライバルたちとの違いを整理しましょう。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">首が長くて有名！「プレシオサウルス（首長竜）」との違い</h3>
+<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">首が長くて有名！「[プレシオサウルス](/dictionary/plesiosaurus/)（首長竜）」との違い</h3>
 <p class="article-paragraph">
   「首長竜（くびながりゅう）」と呼ばれるプレシオサウルスのなかまは、その名の通り首が非常に長く、鳥のような小さな頭を持っていました。彼らは4つの大きなヒレを羽ばたかせるようにして、ペンギンのように泳いでいました。
   それに対してモササウルスは首が短く、体全体がヘビのように細長いトカゲ体型をしていました。プレシオサウルスは大人しい性質で主に小魚を食べていましたが、モササウルスは凶暴な海のハンターとしてプレシオサウルスさえも獲物にしていました。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">魚にそっくり！「魚竜（イクチオサウルス）」との違い</h3>
+<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">魚にそっくり！「魚竜（[イクチオサウルス](/dictionary/ichthyosaurus/)）」との違い</h3>
 <p class="article-paragraph">
   「魚竜（ぎょりゅう）」のなかまでも有名であるイクチオサウルスは、イルカにそっくりの体型をしていました。モササウルスよりもずっと前の時代（三畳紀〜ジュラ紀）に海で大活躍し、イルカのように超高速で泳ぐことが得意でした。
   イルカ型のイクチオサウルス、首の長い首長竜、そしてトカゲ型のモササウルス。同じ爬虫類でも、海の中でまったく違う姿に進化していったのはとても面白いですね。

@@ -32,7 +32,7 @@ relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauropose
     <div style="background: rgba(1, 10, 18, 0.7); border: 1px solid rgba(0, 242, 255, 0.25); padding: 12px 14px; border-radius: 4px;">
       <div style="font-size: 11px; color: var(--primary-neon); font-family: var(--font-mono); font-weight: bold; margin-bottom: 4px;">📏 世界最長の恐竜（頭から尾の全長）</div>
       <div style="font-size: 16px; font-weight: bold; color: #fff; margin-bottom: 4px;"><a href="/dictionary/supersaurus/" style="color: #fff; text-decoration: underline;">スーパーサウルス</a></div>
-      <div style="font-size: 12px; color: var(--text-dim);">推定全長 約39m以上 / 推定体重 約35トン（25mプールを軽々超える長さ）</div>
+      <div style="font-size: 12px; color: var(--text-dim);">推定全長 約39〜42m / 推定体重 約35〜40トン（25mプールを軽々超える地球最長候補）</div>
     </div>
     <div style="background: rgba(1, 10, 18, 0.7); border: 1px solid rgba(0, 242, 255, 0.25); padding: 12px 14px; border-radius: 4px;">
       <div style="font-size: 11px; color: var(--primary-neon); font-family: var(--font-mono); font-weight: bold; margin-bottom: 4px;">🏢 最も背が高い恐竜（頭頂高）</div>
@@ -127,7 +127,7 @@ relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauropose
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
       - <strong>スペック</strong>：全長 約21〜23メートル / 体重 約20〜30トン<br>
-      - <strong>特徴</strong>：かつて「ブロントサウルス」という名前でも親しまれた恐竜に近い仲間です。ディプロドクスと全長は似ていますが、骨の一つひとつが非常に太くがっしりとしており、首も太く肉厚でした。そのため、同じくらいの長さのディプロドクスよりもかなり重い体重を持っていました。<br>
+      - <strong>特徴</strong>：かつて「[ブロントサウルス](/dictionary/brontosaurus/)」という名前でも親しまれた恐竜に近い仲間です。ディプロドクスと全長は似ていますが、骨の一つひとつが非常に太くがっしりとしており、首も太く肉厚でした。そのため、同じくらいの長さのディプロドクスよりもかなり重い体重を持っていました。<br>
       - <strong>子供向け例え</strong>：全長は大型観光バス2台分！骨が太くて力持ちなラグビー選手のような恐竜です。
     </p>
   </div>
@@ -145,9 +145,9 @@ relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauropose
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px; margin-top: 15px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
-      - <strong>スペック</strong>：全長 約39メートル以上 / 体重 約30〜40トン<br>
-      - <strong>特徴</strong>：頭の先からしっぽの先までの「全長」においては、世界最長の恐竜候補筆頭です。25メートルプールを楽々と超える長大な体を持っていましたが、ディプロドクスの仲間らしくやはり極めてスリムな体型をしていたため、体重ランキングでは8位に位置します。<br>
-      - <strong>子供向け例え</strong>：プールの端から端まで届く驚異の長さ！でも、体重はスリムに抑えられています。
+      - <strong>スペック</strong>：全長 約39〜42メートル / 体重 約35〜40トン<br>
+      - <strong>特徴</strong>：頭の先からしっぽの先までの「全長」においては、現在知られている恐竜の中で世界最長の筆頭候補です。かつては全長33〜35mとされていましたが、2021年の古生物学会で発表された骨格再検証（混同されていた別種の骨の分離と同定）により、ディプロドクスに似た極めて長大な首と尾を持つプロポーションであることが判明しました。スリムな体型だったため、体重（ボリューム）ランキングでは8位にとどまります。<br>
+      - <strong>子供向け例え</strong>：25mプールを軽々と超える驚異の超ロングボディ！世界一長い恐竜のナンバーワン候補です。
     </p>
   </div>
   <div style="flex-shrink: 0; margin: 0 auto;">
@@ -240,9 +240,9 @@ relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauropose
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px; margin-top: 15px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
-      - <strong>スペック</strong>：全長 約26メートル / 体重 約50〜60トン<br>
-      - <strong>特徴</strong>：学名は「何も恐れない」という意味で、当時の巨大な戦艦ドレッドノート号にちなんで名付けられました。この恐竜の素晴らしい点は、発見された骨の数が全体の約7割と非常に多く、他の巨大恐竜に比べて体重の推定値が極めて正確に計算されている点です。<br>
-      - <strong>子供向け例え</strong>：体重はアフリカゾウ約10頭分！全身の骨がバッチリ見つかった、信頼の超重量級！
+      - <strong>スペック</strong>：全長 約26メートル / 推定体重 約30〜59トン（※最新3D容積モデル約30t前後）<br>
+      - <strong>特徴</strong>：学名は「何も恐れない」という意味で、当時の巨大な無敵戦艦ドレッドノートにちなんで名付けられました。全身の骨の約7割が発見された奇跡的な標本です。2014年の記載当初は四肢骨の太さから「約59トン」と推定され世界を驚かせましたが、その後の3Dレーザースキャンによる体積モデル（凸包法）の再検証により、現在では「約30〜40トン（それでも超巨大ですが）」とする学説が有力視されています。全身の骨が揃っているからこそ、科学の進歩とともに最も正確な研究が進んでいる基準恐竜です。<br>
+      - <strong>子供向け例え</strong>：無敵の戦艦の名を持つ巨獣！骨がたくさん見つかったからこそ、最新技術で体重の秘密がどんどん解き明かされています。
     </p>
   </div>
   <div style="flex-shrink: 0; margin: 0 auto;">
@@ -306,7 +306,7 @@ relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauropose
 ### 重さならアルゼンチノサウルス！長さならスーパーサウルス！
 <p class="article-paragraph">
   大きさを「質量（重さ）」で定義する場合、現在の科学的合意では<strong>アルゼンチノサウルスが最大の恐竜</strong>です。推定される体重約70〜90トンは、他の追随を許さない圧倒的な重量です。
-  しかし、大きさを「全長（頭からしっぽの先までの長さ）」で比べる場合、1位は<strong>スーパーサウルス（約39m以上）</strong>になる可能性が非常に高くなります。このように、長さで見るか、重さで見るかによってナンバーワンが変わるのが、巨大恐竜たちの比較の面白いところです。
+  しかし、大きさを「全長（頭からしっぽの先までの長さ）」で比べる場合、1位は<strong>スーパーサウルス（約39〜42m）</strong>になる可能性が非常に高くなります。このように、長さで見るか、重さで見るかによってナンバーワンが変わるのが、巨大恐竜たちの比較の面白いところです。
 </p>
 
 ### なぜ一番が決まらないの？「化石が一部しか見つからない」という謎
@@ -350,8 +350,8 @@ relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauropose
         <td style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center; font-weight: bold;">3</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">ドレッドノータス</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center;">約26m</td>
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center;">約50〜60t</td>
-        <td style="padding: 10px;">骨の約7割が発見され、体重推定の正確さが最高クラス。</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center;">約30〜59t</td>
+        <td style="padding: 10px;">骨の約7割を発見。当初59t発表後、最新3Dスキャンで約30〜40t説が有力に。</td>
       </tr>
       <tr style="border-bottom: 1px solid var(--panel-border);">
         <td style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center; font-weight: bold;">4</td>
@@ -384,7 +384,7 @@ relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauropose
       <tr style="border-bottom: 1px solid var(--panel-border);">
         <td style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center; font-weight: bold;">8</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">スーパーサウルス</td>
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center;">約39m以上</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center;">約39〜42m</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border); text-align: center;">約30〜40t</td>
         <td style="padding: 10px;">全長（長さ）では世界最長候補。非常に細身。</td>
       </tr>
@@ -420,7 +420,7 @@ relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauropose
 ### Q2: 海の王者「シロナガスクジラ」とどっちが大きいの？
 <p class="article-paragraph">
   <strong>A. 体重（重さ）ではシロナガスクジラ（約190トン）の圧倒的な勝ちです！</strong><br>
-  現代の海に住むシロナガスクジラは、全長約30メートル、体重は約190トンにも達します。全長（長さ）ではスーパーサウルス（約39m）などの恐竜が上回る場合がありますが、体重においては、シロナガスクジラの方がアルゼンチノサウルスの2倍以上も重く、地球の歴史上もっとも重い動物とされています。水の中では浮力が働くため、陸上よりもはるかに重い体を維持することができるからです。
+  現代の海に住むシロナガスクジラは、全長約30メートル、体重は約190トンにも達します。全長（長さ）ではスーパーサウルス（約39〜42m）などの恐竜が上回る場合がありますが、体重においては、シロナガスクジラの方がアルゼンチノサウルスの2倍以上も重く、地球の歴史上もっとも重い動物とされています。水の中では浮力が働くため、陸上よりもはるかに重い体を維持することができるからです（※モササウルスや魚竜など太古の海の怪物との実寸比較は記事後半の【番外編】で詳しく解説しています！）。
 </p>
 
 ### Q3: 恐竜はどうしてこんなに大きくなれたの？
@@ -583,10 +583,10 @@ relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauropose
         <td style="padding: 12px 14px; font-weight: bold; color: #fff;">
           <a href="/dictionary/supersaurus/" style="color: var(--primary-neon); text-decoration: underline;">スーパーサウルス</a>
         </td>
-        <td style="padding: 12px 14px; color: #51cf66; font-weight: bold;">約33〜35m</td>
+        <td style="padding: 12px 14px; color: #51cf66; font-weight: bold;">約39〜42m</td>
         <td style="padding: 12px 14px;">約35〜40トン</td>
         <td style="padding: 12px 14px;">約10m</td>
-        <td style="padding: 12px 14px; color: var(--text-dim);">ジュラ紀後期・北米。首としっぽが極めて長い「長さ特化型」の体型。</td>
+        <td style="padding: 12px 14px; color: var(--text-dim);">ジュラ紀後期・北米。首としっぽが極めて長い「長さ特化型」。最新研究で世界最長候補へ。</td>
       </tr>
       <tr style="border-bottom: 1px solid var(--panel-border); background: rgba(255,255,255,0.01);">
         <td style="padding: 12px 14px; font-weight: bold; color: #fff;">
@@ -620,19 +620,122 @@ relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauropose
 
 <h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 18px;">2. スーパーサウルスとアルゼンチノサウルス・ブラキオサウルスの違いは？</h3>
 <p class="article-paragraph">
-  スーパーサウルス（全長約33〜35メートル）は、「長さ（全長）」だけで言えばアルゼンチノサウルスに肉薄し、ブラキオサウルス（全長約25メートル）を大きく上回ります。
+  スーパーサウルス（全長約39〜42メートル）は、「長さ（全長）」においてはアルゼンチノサウルス（約35メートル）をも上回り、ブラキオサウルス（約25メートル）とは15メートル以上の差をつけて世界最長候補に君臨します。
 </p>
 <p class="article-paragraph">
-  しかし、スーパーサウルスはディプロドクス科に近い細身のスリムな体型をしており、全長の大部分を細い首とムチのような尾が占めています。そのため体重は35〜40トン前後に留まり、胴体自体の質量や骨の太さではアルゼンチノサウルスの半分程度しかありません。つまり、<strong>スーパーサウルスは「長さ特化型」、アルゼンチノサウルスは「長さ・太さ・重さすべてが規格外の超ヘビー級」</strong>と言えます。
+  しかし、スーパーサウルスはディプロドクス科に近い細身のスリムな体型をしており、全長の大部分を細い首とムチのような尾が占めています。そのため体重は35〜40トン前後に留まり、胴体自体の質量や骨の太さではアルゼンチノサウルス（約70〜90トン）の半分以下しかありません。つまり、<strong>スーパーサウルスは「長さ特化型のスプリンター体型」、アルゼンチノサウルスは「長さ・太さ・重さすべてが規格外の超ヘビー級」</strong>と言えます。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 18px;">3. シロナガスクジラと恐竜の比較：地球史上、本当に一番重いのは誰？</h3>
+<h2 class="article-section-title">【番外編】海の巨大生物と大きさ比較！モササウルスや魚竜はアルゼンチノサウルスより大きいの？</h2>
+
 <p class="article-paragraph">
-  「地球の歴史の中で、恐竜よりも大きい生き物はいないの？」という疑問に対する驚きの答えが、なんと<strong>現代の海を泳ぐ「シロナガスクジラ」</strong>です。
+  恐竜図鑑や映画（『ジュラシック・ワールド』など）を見ていると、水中で大暴れする巨大なモササウルスや首長竜を目にします。「太古の海にいた怪物は、陸の王者アルゼンチノサウルスよりも大きかったの？」という疑問について、最新の古生物学データをもとに徹底比較してみましょう！
+</p>
+
+<!-- 海の巨大生物スペック比較表（モバイル横スクロール対応） -->
+<div style="overflow-x: auto; margin: 25px 0; border: 1px solid var(--panel-border); border-radius: 6px; background: rgba(0,0,0,0.4);">
+  <table style="width: 100%; min-width: 640px; border-collapse: collapse; font-size: 13px; text-align: left;">
+    <thead>
+      <tr style="background: rgba(0, 242, 255, 0.08); border-bottom: 2px solid var(--primary-neon); color: var(--primary-neon); font-family: var(--font-mono);">
+        <th style="padding: 12px 14px;">生物名・グループ</th>
+        <th style="padding: 12px 14px;">全長（長さ）</th>
+        <th style="padding: 12px 14px;">推定体重（重さ）</th>
+        <th style="padding: 12px 14px;">生息域・特徴</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom: 1px solid var(--panel-border); background: rgba(255, 107, 107, 0.04);">
+        <td style="padding: 12px 14px; font-weight: bold; color: #ff6b6b;">
+          🏆 <a href="/dictionary/argentinosaurus/" style="color: #ff6b6b; text-decoration: underline;">アルゼンチノサウルス</a><br>
+          <span style="font-size: 11px; color: var(--text-dim); font-weight: normal;">【陸上恐竜・竜脚類】</span>
+        </td>
+        <td style="padding: 12px 14px; font-weight: bold;">約35〜40m</td>
+        <td style="padding: 12px 14px; color: #ff6b6b; font-weight: bold;">約70〜90トン</td>
+        <td style="padding: 12px 14px; color: var(--text-dim);">白亜紀後期・南米陸上。陸上生物史上、最も重く巨大な絶対王者。</td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--panel-border);">
+        <td style="padding: 12px 14px; font-weight: bold; color: #4dadf7;">
+          <a href="/dictionary/shonisaurus/" style="color: #4dadf7; text-decoration: underline;">ショニサウルス</a><br>
+          <span style="font-size: 11px; color: var(--text-dim); font-weight: normal;">【海生爬虫類・魚竜】</span>
+        </td>
+        <td style="padding: 12px 14px;">約21m（最大約25m説）</td>
+        <td style="padding: 12px 14px;">約30〜40トン</td>
+        <td style="padding: 12px 14px; color: var(--text-dim);">三畳紀後期・全海洋。中生代の海で最大の体躯を誇った超巨大魚竜。</td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--panel-border);">
+        <td style="padding: 12px 14px; font-weight: bold; color: #4dadf7;">
+          <a href="/dictionary/mosasaurus/" style="color: #4dadf7; text-decoration: underline;">モササウルス</a><br>
+          <span style="font-size: 11px; color: var(--text-dim); font-weight: normal;">【海生爬虫類・有鱗類】</span>
+        </td>
+        <td style="padding: 12px 14px;">約13〜17m</td>
+        <td style="padding: 12px 14px;">約10〜14トン</td>
+        <td style="padding: 12px 14px; color: var(--text-dim);">白亜紀末期・海洋。映画で大人気だが、実寸はアルゼンチノサウルスの半分以下。</td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--panel-border);">
+        <td style="padding: 12px 14px; font-weight: bold; color: #4dadf7;">
+          <a href="/dictionary/plesiosaurus/" style="color: #4dadf7; text-decoration: underline;">プレシオサウルス類</a> / <a href="/dictionary/kronosaurus/" style="color: #4dadf7; text-decoration: underline;">クロノサウルス</a><br>
+          <span style="font-size: 11px; color: var(--text-dim); font-weight: normal;">【海生爬虫類・首長竜】</span>
+        </td>
+        <td style="padding: 12px 14px;">約9〜12m</td>
+        <td style="padding: 12px 14px;">約8〜11トン</td>
+        <td style="padding: 12px 14px; color: var(--text-dim);">ジュラ紀〜白亜紀・海洋。4枚のヒレ脚で泳ぐ、有名なネッシー型＆短首大型ハンター。</td>
+      </tr>
+      <tr style="background: rgba(77, 171, 247, 0.08);">
+        <td style="padding: 12px 14px; font-weight: bold; color: #4dadf7;">
+          👑 【海】シロナガスクジラ<br>
+          <span style="font-size: 11px; color: var(--text-dim); font-weight: normal;">【現生哺乳類・クジラ目】</span>
+        </td>
+        <td style="padding: 12px 14px; font-weight: bold;">約30m</td>
+        <td style="padding: 12px 14px; color: #4dadf7; font-weight: bold;">約150〜190トン</td>
+        <td style="padding: 12px 14px; color: var(--text-dim);">現代・全海洋。水の浮力に支えられ、体重では恐竜を遥かに超える地球史上最重量生物。</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 18px;">1. 映画で人気のモササウルスはアルゼンチノサウルスより大きかった？</h3>
+<p class="article-paragraph">
+  結論から言うと、<strong>モササウルス（全長約13〜17m、体重約10〜14トン）はアルゼンチノサウルス（全長約35m、体重約70〜90トン）の半分以下の大きさ</strong>でした。
 </p>
 <p class="article-paragraph">
-  シロナガスクジラの全長は約30メートルでアルゼンチノサウルス（約35メートル）よりやや短いものの、体重は最大で<strong>約150〜190トン</strong>にも達します。陸上では自らの体重を4本の脚で支えなければならないため重さ80トン前後が骨格の限界ですが、水の中なら「浮力」が体重を支えてくれるため、これほどの途方もない質量まで巨大化することができました。「地球史上最も重い動物」の記録保持者は、恐竜ではなく現代の海に生きるクジラなのです。
+  映画『ジュラシック・ワールド』では全長30メートル以上ある怪獣のように描かれ、観客に鮮烈な印象を与えましたが、実際の化石記録において最大の種（*Mosasaurus hoffmannii*）でも全長は約17メートル前後です。海の肉食捕食者としてはティラノサウルスをも凌駕する途方もない怪物ですが、陸上の超巨大竜脚類と並べると、アルゼンチノサウルスの胴体にも満たないサイズ感になります。
 </p>
+
+<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 18px;">2. 中生代の海で一番大きかったのは「巨大魚竜」！</h3>
+<p class="article-paragraph">
+  太古の海の中で、もっとも巨大竜脚類に迫るサイズを誇ったのはモササウルスではなく、三畳紀後期に繁栄した<strong>巨大魚竜「ショニサウルス」や「シャスタサウルス類」</strong>でした。
+</p>
+<p class="article-paragraph">
+  ショニサウルスは全長約21メートル、体重約30〜40トンに達し、現代のマッコウクジラに匹敵する巨体で海を回遊していました。さらに近年、イギリスのサマセット州などで発見された未記載の巨大顎骨化石からは、<strong>全長25メートル前後に達する超巨大魚竜</strong>が存在した可能性も指摘されており、古生物学界で大きな注目を集めています。
+</p>
+
+<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 18px;">3. 地球史上もっとも重いのは「現代のシロナガスクジラ」</h3>
+<p class="article-paragraph">
+  「地球の歴史の中で、恐竜よりも大きい生き物はいないの？」という疑問に対する驚きの真実が、<strong>現代の海を泳ぐ「シロナガスクジラ」</strong>です。
+</p>
+<p class="article-paragraph">
+  シロナガスクジラの全長は約30メートルでアルゼンチノサウルス（約35メートル）よりやや短いものの、体重は最大で<strong>約150〜190トン</strong>にも達します。陸上では自らの体重を4本の脚と骨格だけで支えなければならないため「重さ80〜90トン前後」が物理的な生物の限界とされていますが、水中では強力な「浮力」が働くため、内臓や骨格が自重で潰れることなく、陸上恐竜の2倍以上の超重量まで巨大化することができました。「地球史上もっとも重い動物」の栄冠は、太古の恐竜ではなく、現代の海に生きるクジラが保持しています。
+</p>
+
+<!-- 非恐竜解説への回遊導線パネル -->
+<div class="hud-panel" style="margin: 25px 0 35px 0; padding: 20px; border: 1px solid rgba(77, 171, 247, 0.4); background: rgba(77, 171, 247, 0.05); border-radius: 6px;">
+  <div style="font-size: 11px; font-family: var(--font-mono); color: #4dadf7; margin-bottom: 6px; letter-spacing: 1.5px; font-weight: bold;">
+    [ PALEO KNOWLEDGE / 古生物の基礎知識 ]
+  </div>
+  <div style="font-size: 16px; font-weight: bold; color: #fff; margin-bottom: 8px;">
+    💡 豆知識：モササウルスや首長竜・魚竜は「恐竜」ではない！
+  </div>
+  <p style="font-size: 13px; color: var(--text-dim); line-height: 1.7; margin: 0 0 15px 0;">
+    映画や図鑑でよく恐竜と一緒に紹介されるモササウルスやプレシオサウルス（首長竜）、ショニサウルス（魚竜）ですが、実は生物学的には<strong>恐竜ではありません</strong>。<br>
+    恐竜の厳密な定義は「脚が胴体の真下に直立して伸びている陸上爬虫類」であり、ヒレ足で海を泳ぐ彼らは、恐竜と同じ時代に海へ適応進化した<strong>「海生爬虫類（かいせいはちゅうるい）」</strong>というまったく別のグループです。
+  </p>
+  <div style="border-top: 1px dashed rgba(77, 171, 247, 0.3); padding-top: 12px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between;">
+    <span style="font-size: 12.5px; color: #ced4da;">「恐竜と非恐竜の違い」をもっと詳しく知りたい方はこちら：</span>
+    <a href="/topics/not-dinosaurs-truth/" style="display: inline-flex; align-items: center; gap: 6px; background: rgba(77, 171, 247, 0.2); border: 1px solid #4dadf7; color: #fff; font-weight: bold; padding: 8px 16px; border-radius: 4px; text-decoration: none; font-size: 13px; font-family: var(--font-mono); transition: all 0.2s ease;">
+      <span>特集「恐竜じゃない古生物の真実」を読む</span> &raquo;
+    </a>
+  </div>
+</div>
 
 <h2 class="article-section-title">まとめ：地球上で一番大きい恐竜たちのロマンを感じよう！</h2>
 <p class="article-paragraph">

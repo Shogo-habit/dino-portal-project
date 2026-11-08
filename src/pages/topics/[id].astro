@@ -117,7 +117,29 @@ const articleSchema = {
         </section>
         
         <div style="margin-top: 40px; border-top: 1px solid var(--panel-border); padding-top: 20px;">
-            <a href="/topics/" class="nav-link" aria-label="トピックス一覧に戻る" style="text-decoration: none;">[ トピックス一覧に戻る ]</a>
+            <a href="/topics/" id="back-to-topics-link" class="nav-link" aria-label="トピックス一覧に戻る" style="text-decoration: none;">[ トピックス一覧に戻る ]</a>
         </div>
     </article>
+
+    <script>
+        function initBackToTopicsLink() {
+            const backLink = document.getElementById('back-to-topics-link');
+            if (!backLink) return;
+
+            backLink.addEventListener('click', (e) => {
+                if (window.history.length > 1 && document.referrer) {
+                    try {
+                        const refUrl = new URL(document.referrer);
+                        if (refUrl.origin === window.location.origin && refUrl.pathname === '/topics/') {
+                            e.preventDefault();
+                            window.history.back();
+                        }
+                    } catch (_) {}
+                }
+            });
+        }
+
+        initBackToTopicsLink();
+        document.addEventListener('astro:page-load', initBackToTopicsLink);
+    </script>
 </Layout>

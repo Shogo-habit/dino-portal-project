@@ -46,7 +46,7 @@ relatedSpecimens: ["fukuiraptor", "fukuisaurus", "fukuititan", "fukuivenator"]
 <ul style="color: var(--text-main); line-height: 1.8; margin-bottom: 25px; padding-left: 20px;">
   <li><strong>日時指定予約が非常に取りやすい：</strong>現在は事前予約制となっていますが、平日は直前でも比較的希望の時間帯を確保しやすくなっています。</li>
   <li><strong>展示エリアを最前列で見られる：</strong>大迫力の恐竜骨格のすぐ近くまで、子どもたちが自分のペースで近づいてじっくりと観察できます。</li>
-  <li><strong>写真を撮影しやすい：</strong>他の観光客の映り込みを気にせず、迫力あるティラノサウルスの前で家族の記念写真をきれいに撮影できました。</li>
+  <li><strong>写真を撮影しやすい：</strong>他の観光客の映り込みを気にせず、迫力ある[ティラノサウルス](/dictionary/tyrannosaurus/)の前で家族の記念写真をきれいに撮影できました。</li>
 </ul>
 
 <h2 class="article-section-title">2. 山口県からの車移動！子どもの疲れを最小限に抑える大移動ケア</h2>
@@ -116,7 +116,7 @@ relatedSpecimens: ["fukuiraptor", "fukuisaurus", "fukuititan", "fukuivenator"]
   </div>
   <div style="flex: 1; min-width: 250px;">
     <img src="/images/topics/fukui-dinosaur-museum-guide/fukui_dinosaur_museum_fukuiraptor.webp" alt="福井県を代表する恐竜フクイラプトル" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; display: block;" />
-    <span style="font-size: 11px; color: var(--text-dim); display: block; text-align: center; margin-top: 5px;">福井県を代表する恐竜フクイラプトルの復元模型</span>
+    <span style="font-size: 11px; color: var(--text-dim); display: block; text-align: center; margin-top: 5px;">福井県を代表する恐竜[フクイラプトル](/dictionary/fukuiraptor/)の復元模型</span>
   </div>
   <div style="flex: 1; min-width: 250px;">
     <img src="/images/topics/fukui-dinosaur-museum-guide/fukui_dinosaur_museum_tyrannosaurus_bone.webp" alt="ティラノサウルスの全身骨格標本" style="width: 100%; height: auto; border: 1px solid var(--panel-border); border-radius: 4px; display: block;" />
@@ -195,6 +195,6 @@ relatedSpecimens: ["fukuiraptor", "fukuisaurus", "fukuititan", "fukuivenator"]
     <span style="font-size: 11px; color: var(--text-dim); display: block; text-align: center; margin-top: 5px;">日本で発見された福井の恐竜たちの展示コーナー</span>
   </div>
 
-  フクイラプトルやフクイサウルスの実物大の骨格模型を目の当たりにし、目を輝かせていた4歳の息子の姿は、忘れられない思い出です。
+  フクイラプトルや[フクイサウルス](/dictionary/fukuisaurus/)の実物大の骨格模型を目の当たりにし、目を輝かせていた4歳の息子の姿は、忘れられない思い出です。
   遠方から子連れでの来館を検討している皆様も、ぜひこの記事を参考に、事前の準備をしっかり整えて太古の恐竜たちの世界を楽しんできてくださいね！
 </p>

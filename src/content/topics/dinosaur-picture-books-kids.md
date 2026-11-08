@@ -141,7 +141,7 @@ relatedSpecimens: ["triceratops", "tyrannosaurus", "brachiosaurus"]
   <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
       <strong>【読み聞かせやすさ：★★★★★ | 親子の会話：★★★★★ | 対象：3〜4歳】</strong><br>
-      ただのデータの羅列ではなく、恐竜の一日や驚きの生態を「短いお話（ストーリー）」に仕立てた図鑑です。「なぜティラノサウルスの目は前を向いているの？」「お母さんマイアサウラの子育て」など、親が物語として読んであげることで、子どもの心に深く残ります。
+      ただのデータの羅列ではなく、恐竜の一日や驚きの生態を「短いお話（ストーリー）」に仕立てた図鑑です。「なぜ[ティラノサウルス](/dictionary/tyrannosaurus/)の目は前を向いているの？」「お母さん[マイアサウラ](/dictionary/maiasaura/)の子育て」など、親が物語として読んであげることで、子どもの心に深く残ります。
     </p>
     <p class="article-paragraph" style="margin-bottom: 0;">
       お話のすぐ下に、親子で会話が弾むような「問いかけ（クエスチョン）」が載っているのも素晴らしいポイント。寝かしつけ前の読書タイムや、絵本代わりに大活躍する一冊です。
@@ -234,7 +234,7 @@ relatedSpecimens: ["triceratops", "tyrannosaurus", "brachiosaurus"]
       海外の洗練されたアートブックのような美しいイラストが印象的な図鑑です。最大の特徴は、恐竜の「学名（ラテン語）」のアルファベット順（AからZまで）に構成されている点です。
     </p>
     <p class="article-paragraph" style="margin-bottom: 0;">
-      「ティラノサウルスはTのページ」「アロサウルスはAのページ」といったように、アルファベットの形や並び方に自然と親しみながら、恐竜の名前を覚えることができます。他の図鑑とは一味違う、知的で美しいレイアウトはリビングの本棚に飾っておきたくなる魅力を放っています。
+      「ティラノサウルスはTのページ」「[アロサウルス](/dictionary/allosaurus/)はAのページ」といったように、アルファベットの形や並び方に自然と親しみながら、恐竜の名前を覚えることができます。他の図鑑とは一味違う、知的で美しいレイアウトはリビングの本棚に飾っておきたくなる魅力を放っています。
     </p>
   </div>
   <div class="toy-affiliate-wrap" style="width: 300px; flex-shrink: 0; margin: 0 auto;">

@@ -114,7 +114,7 @@ relatedSpecimens: ["tyrannosaurus","triceratops","brachiosaurus","mosasaurus","p
 </p>
 <p class="article-paragraph">
   <strong style="color: var(--primary-neon);">ジュラ紀（じゅらき / 約2億〜1億4500万年前）⇨【恐竜の黄金期】</strong><br>
-  暖かく雨が多い気候になり、豊かな森が広がりました。ブラキオサウルスのような超巨大な草食恐竜や、アロサウルスのようなどっしりとした肉食恐竜が登場し、恐竜が陸上の完全な主役になりました。
+  暖かく雨が多い気候になり、豊かな森が広がりました。ブラキオサウルスのような超巨大な草食恐竜や、[アロサウルス](/dictionary/allosaurus/)のようなどっしりとした肉食恐竜が登場し、恐竜が陸上の完全な主役になりました。
 </p>
 <p class="article-paragraph">
   <strong style="color: var(--primary-neon);">白亜紀（はくあき / 約1億4500万〜6600万年前）⇨【恐竜の最盛期】</strong><br>
@@ -149,7 +149,7 @@ relatedSpecimens: ["tyrannosaurus","triceratops","brachiosaurus","mosasaurus","p
   シダ植物や針葉樹などの葉っぱ、新芽を食べていたグループです。肉食恐竜から身を守るために、それぞれが独自の「武器」や「鎧」、あるいは「圧倒的な大きさ」を発達させました。
 </p>
 <p class="article-paragraph">
-  代表例として、3本の鋭い角と大きなフリルで武装した「トリケラトプス」、ビル4階分の高さがある超長首の「ブラキオサウルス」、しっぽのハンマーと頑丈なトゲの鎧で武装した「アンキロサウルス」などがいます。
+  代表例として、3本の鋭い角と大きなフリルで武装した「トリケラトプス」、ビル4階分の高さがある超長首の「ブラキオサウルス」、しっぽのハンマーと頑丈なトゲの鎧で武装した「[アンキロサウルス](/dictionary/ankylosaurus/)」などがいます。
 </p>
 
 <h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">さらに細かい分類：獣脚類・竜脚類・鳥盤類</h3>
@@ -176,7 +176,7 @@ relatedSpecimens: ["tyrannosaurus","triceratops","brachiosaurus","mosasaurus","p
       <tr style="border-bottom: 1px solid var(--panel-border);">
         <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon);">竜脚類<br><span style="font-size: 11px; font-weight: normal; color: var(--text-dim);">(りゅうきゃくるい)</span></td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">植物</td>
-        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">ブラキオサウルス<br>ディプロドクス<br>アパトサウルス</td>
+        <td style="padding: 10px; border-right: 1px solid var(--panel-border);">ブラキオサウルス<br>ディプロドクス<br>[アパトサウルス](/dictionary/apatosaurus/)</td>
         <td style="padding: 10px;">首と尾が非常に長く、四足歩行する巨大な草食恐竜のグループ。地球史上最大の陸上動物たちがここに含まれる。</td>
       </tr>
       <tr>
@@ -382,7 +382,7 @@ relatedSpecimens: ["tyrannosaurus","triceratops","brachiosaurus","mosasaurus","p
 <h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">Q3. 一番大きい恐竜は何？</h3>
 <p class="article-paragraph">
   <strong>A. 全長40メートルにも達した「アルゼンチノサウルス」などの竜脚類です。</strong><br>
-  これまでに発見された中で最も大きい恐竜は、草食恐竜のグループ（竜脚類）の「アルゼンチノサウルス」や「パタゴティタン」と考えられています。
+  これまでに発見された中で最も大きい恐竜は、草食恐竜のグループ（竜脚類）の「アルゼンチノサウルス」や「[パタゴティタン](/dictionary/patagotitan/)」と考えられています。
 </p>
 <p class="article-paragraph">
   全長は約35〜40メートルもあり、これはプール2個分に近い長さです。体重は約70〜80トンに達し、現代のアフリカゾウが12頭以上集まった重さに匹敵します。あまりにも巨大なため、大人の姿になれば天敵の肉食恐竜に襲われることはありませんでした。
@@ -394,7 +394,7 @@ relatedSpecimens: ["tyrannosaurus","triceratops","brachiosaurus","mosasaurus","p
   「日本には大昔、恐竜はいなかったのでは？」と思われていた時期もありましたが、現在ではたくさんの発見があります。
 </p>
 <p class="article-paragraph">
-  特に福井県勝山市では多くの化石が見つかっており、「フクイラプトル」や「フクイサウルス」といった、名前に「フクイ」とついた新種の恐竜が発見されています。また、兵庫県で発見された「ササヤマグノムス」や、北海道で見つかったほぼ全身の骨格「カムイサウルス（むかわ竜）」など、日本各地で大昔に恐竜が豊かに暮らしていた証拠が見つかっています。
+  特に福井県勝山市では多くの化石が見つかっており、「[フクイラプトル](/dictionary/fukuiraptor/)」や「[フクイサウルス](/dictionary/fukuisaurus/)」といった、名前に「フクイ」とついた新種の恐竜が発見されています。また、兵庫県で発見された「ササヤマグノムス」や、北海道で見つかったほぼ全身の骨格「[カムイサウルス](/dictionary/kamuysaurus/)（むかわ竜）」など、日本各地で大昔に恐竜が豊かに暮らしていた証拠が見つかっています。
 </p>
 
 

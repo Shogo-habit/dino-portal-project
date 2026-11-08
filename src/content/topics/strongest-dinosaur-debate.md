@@ -74,7 +74,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
 </div>
 
 <p class="article-paragraph">
-  一方で、肉食恐竜（獣脚類）のサイズランキングは、全長において1位<strong style="color: var(--primary-neon);">スピノサウルス（約15m）</strong>、2位<strong style="color: var(--primary-neon);">ギガノトサウルス（約13m）</strong>、3位<strong style="color: var(--primary-neon);">ティラノサウルス（約12.3m）</strong>の順となります。
+  一方で、肉食恐竜（獣脚類）のサイズランキングは、全長において1位<strong style="color: var(--primary-neon);">スピノサウルス（約15m）</strong>、2位<strong style="color: var(--primary-neon);">[ギガノトサウルス](/dictionary/giganotosaurus/)（約13m）</strong>、3位<strong style="color: var(--primary-neon);">ティラノサウルス（約12.3m）</strong>の順となります。
   しかし、体重の観点ではティラノサウルスが約8〜9トンと、他の巨大肉食恐竜より骨格がはるかに太く頑丈で肉厚であったため、実質的な「最大・最重量の肉食恐竜」はティラノサウルスであったというのが最新の定説です。
 </p>
 
@@ -106,7 +106,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
 <h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 18px;">ディフェンダー（草食・装甲恐竜部門）：最強の盾と破壊兵器</h3>
 
 <p class="article-paragraph">
-  <strong style="color: var(--primary-neon);">【最強の盾】トリケラトプス</strong><br>
+  <strong style="color: var(--primary-neon);">【最強の盾】[トリケラトプス](/dictionary/triceratops/)</strong><br>
   頭部だけで全長約2.5メートルに達し、3本の鋭く頑丈な角と、首を守る厚い骨質のフリルを備えたトリケラトプス（全長約9m、体重約6〜12t）は、草食恐竜でありながら「最強候補」に必ず名前が挙がります。
   彼らは肉食恐竜から逃げるのではなく、角を正面に向けて突撃するカウンター戦法を用いました。化石からは、ティラノサウルスの牙による噛み傷や、逆にトリケラトプスの角によってティラノサウルスの骨が貫かれた痕跡が発見されており、肉食恐竜にとって最も危険で油断できない戦闘力を持っていました。
 </p>

@@ -22,7 +22,7 @@ relatedSpecimens: ["dilophosaurus","monolophosaurus","velociraptor","spinosaurus
   では、実際のディロフォサウルスはどのような恐竜だったのでしょうか。まず、映画の描写と最も大きく異なるのがその<strong style="color: var(--primary-neon);">「サイズ」</strong>です。映画では人間より少し小さいサイズ（全長1.5〜2メートル程度）として描かれていましたが、化石から判明している大人のディロフォサウルスは<strong style="color: var(--primary-neon);">全長約6〜7メートル、体重は約400キログラム</strong>に達する大型の肉食恐竜でした。
 </p>
 <p class="article-paragraph">
-  彼らが生息していたのは、今から約1億9300万年前のジュラ紀前期。当時、恐竜たちはまだ進化の途上にあり、後に現れるティラノサウルスのような10メートルを超える超巨大肉食恐竜は存在していませんでした。つまり、全長7メートルのディロフォサウルスは、当時の北アメリカ大陸において圧倒的な大きさを誇り、生態系の頂点に君臨していた<strong style="color: var(--primary-neon);">「頂点捕食者（アペックス・プレデター）」</strong>だったのです。映画のような「コソコソと待ち伏せて毒を吐くトカゲ」ではなく、力強く獲物をねじ伏せる堂々たる王者でした。
+  彼らが生息していたのは、今から約1億9300万年前のジュラ紀前期。当時、恐竜たちはまだ進化の途上にあり、後に現れる[ティラノサウルス](/dictionary/tyrannosaurus/)のような10メートルを超える超巨大肉食恐竜は存在していませんでした。つまり、全長7メートルのディロフォサウルスは、当時の北アメリカ大陸において圧倒的な大きさを誇り、生態系の頂点に君臨していた<strong style="color: var(--primary-neon);">「頂点捕食者（アペックス・プレデター）」</strong>だったのです。映画のような「コソコソと待ち伏せて毒を吐くトカゲ」ではなく、力強く獲物をねじ伏せる堂々たる王者でした。
 </p>
 <p class="article-paragraph">
   唯一、映画でも正しく描かれていた特徴が、頭骨のてっぺんにある<strong style="color: var(--primary-neon);">「一対の半月状のトサカ（クレスト）」</strong>です。ディロフォサウルスという名前も「2つの隆起（トサカ）を持つトカゲ」という意味を持っています。しかし、このトサカは非常に薄く脆いため、戦いの武器としては使えなかったと考えられています。現代の鳥類（ヒクイドリなど）と同じように、仲間同士で自分の存在をアピールしたり、求愛行動で異性を惹きつけたりするための「ディスプレイ（飾り）」の役割を果たしていた可能性が高いと推測されています。
@@ -111,7 +111,7 @@ relatedSpecimens: ["dilophosaurus","monolophosaurus","velociraptor","spinosaurus
         <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); white-space: nowrap;">ヴェロキラプトル</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">人間サイズ（全長3〜4m）、緑〜褐色のウロコ肌。</td>
         <td style="padding: 10px; border-right: 1px solid var(--panel-border);">コヨーテ程度のサイズ（全長約1.8m、腰高60cm程度）、全身が鳥のような羽毛で覆われていた。</td>
-        <td style="padding: 10px;">サイズが大幅に引き上げられ、羽毛が排除された。映画のデザインは近縁のデイノニクスに近い。</td>
+        <td style="padding: 10px;">サイズが大幅に引き上げられ、羽毛が排除された。映画のデザインは近縁の[デイノニクス](/dictionary/deinonychus/)に近い。</td>
       </tr>
       <tr style="border-bottom: 1px solid var(--panel-border);">
         <td style="padding: 10px; border-right: 1px solid var(--panel-border); font-weight: bold; color: var(--primary-neon); white-space: nowrap;">スピノサウルス</td>

@@ -11,7 +11,7 @@ relatedSpecimens: ["pteranodon","futabasaurus","mosasaurus"]
 
 <h2 class="article-section-title">図鑑の「主役たち」が恐竜じゃない？</h2>
 <p class="article-paragraph">
-  「恐竜図鑑」を開くと、ティラノサウルスやトリケラトプスのすぐ横に、大空を優雅に舞うプテラノドンや、海を支配していた巨大なモササウルス、首長竜のフタバサウルスが当たり前のように描かれています。しかし、古生物学の世界では<strong style="color: var(--primary-neon);">「プテラノドンもモササウルスも首長竜も、すべて恐竜ではない」</strong>という驚きの事実をご存じでしょうか？
+  「恐竜図鑑」を開くと、[ティラノサウルス](/dictionary/tyrannosaurus/)や[トリケラトプス](/dictionary/triceratops/)のすぐ横に、大空を優雅に舞う[プテラノドン](/dictionary/pteranodon/)や、海を支配していた巨大な[モササウルス](/dictionary/mosasaurus/)、首長竜の[フタバサウルス](/dictionary/futabasaurus/)が当たり前のように描かれています。しかし、古生物学の世界では<strong style="color: var(--primary-neon);">「プテラノドンもモササウルスも首長竜も、すべて恐竜ではない」</strong>という驚きの事実をご存じでしょうか？
 </p>
 <p class="article-paragraph">
   「大昔の巨大な爬虫類はみんな恐竜じゃないの？」と思うかもしれませんが、実は科学的な分類において、恐竜とそれ以外の古生物との間には非常に明確な「境界線」が存在します。本記事では、誰かに話したくなる恐竜と非恐竜の決定的な違いを、骨格構造の謎から最新の進化論まで交えて徹底解説します！
@@ -65,7 +65,7 @@ relatedSpecimens: ["pteranodon","futabasaurus","mosasaurus"]
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0; margin-bottom: 0;">
-      代表例：<strong>プテラノドン</strong>、<strong>ケツァルコアトルス</strong><br>
+      代表例：<strong>プテラノドン</strong>、<strong>[ケツァルコアトルス](/dictionary/quetzalcoatlus/)</strong><br>
       翼竜は恐竜と共通の祖先（主竜類）から三畳紀に枝分かれした「いとこ」のような存在ですが、恐竜とは異なるグループです。
       彼らの最大の特徴は、空を飛ぶための骨格構造にあります。翼竜は前肢の<strong style="color: var(--primary-neon);">「薬指（第4指）」が信じられないほど細長く進化</strong>し、その1本の指と胴体の間に皮膚の膜（翼膜）を張って翼にしていました。骨盤に直立用の穴はなく、脚は横に這うように生えていたため、陸上では4足で這うようにしか移動できませんでした。
       なお、鳥類は「恐竜の生き残り（獣脚類）」ですが、鳥の翼は前肢の指が退化・融合して羽毛で飛ぶため、翼竜の翼とは全く異なる骨格の進化（収斂進化）の結果です。
@@ -80,7 +80,7 @@ relatedSpecimens: ["pteranodon","futabasaurus","mosasaurus"]
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0; margin-bottom: 0;">
-      代表例：<strong>フタバサウルス</strong>、<strong>プレシオサウルス</strong><br>
+      代表例：<strong>フタバサウルス</strong>、<strong>[プレシオサウルス](/dictionary/plesiosaurus/)</strong><br>
       首長竜は、恐竜とはるか昔に別れた全く異なる系統の爬虫類です。
       水中で生きるために、彼らの四肢は骨が平たく並び、オールのような<strong style="color: var(--primary-neon);">「ヒレ」</strong>へと完全に変化しました。骨格的には、肩の骨（肩甲骨）や胸の骨（烏口骨）が体の腹側で板のように巨大化（腹側帯）し、強力な筋肉でヒレを羽ばたかせるための土台となっていました。当然、陸上を歩くための直立関節などは持たず、陸に上がることは困難でした。
     </p>
@@ -94,7 +94,7 @@ relatedSpecimens: ["pteranodon","futabasaurus","mosasaurus"]
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0; margin-bottom: 0;">
-      代表例：<strong>モササウルス</strong>、<strong>ティロサウルス</strong><br>
+      代表例：<strong>モササウルス</strong>、<strong>[ティロサウルス](/dictionary/tylosaurus/)</strong><br>
       映画などで大暴れするモササウルスですが、彼らは恐竜でも首長竜でもありません。系統的には、現代の<strong style="color: var(--primary-neon);">「オオトカゲ」や「ヘビ」に極めて近いグループ（有鱗目）</strong>です。
       骨格を見ると、トカゲ特有の「関節の緩い顎（二重関節の顎骨）」を持っており、ヘビのように下顎が左右に開き、大きな獲物を丸呑みすることができました。四肢は泳ぐためのヒレになっていますが、骨を透かすと、指の骨の数が異常に増える「指骨多骨症（しこつたこつしょう）」というトカゲ特有の海適応が見られます。つまり、モササウルスは「海に適応して超巨大化したトカゲ」そのものなのです。
     </p>
