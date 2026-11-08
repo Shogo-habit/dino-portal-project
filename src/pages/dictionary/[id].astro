@@ -1161,15 +1161,18 @@ if (hasComparison && h3List.length > 0) {
             if (!backLink) return;
 
             backLink.addEventListener('click', (e) => {
-                if (window.history.length > 1 && document.referrer) {
-                    try {
-                        const refUrl = new URL(document.referrer);
-                        // 同一オリジンの図鑑一覧から来た場合のみ履歴を戻る（外部からのアクセス時は安全にhrefへ遷移）
-                        if (refUrl.origin === window.location.origin && refUrl.pathname === '/dictionary/') {
-                            e.preventDefault();
-                            window.history.back();
-                        }
-                    } catch (_) {}
+                sessionStorage.setItem('dino_force_back_navigation', 'true');
+                if (window.history.length > 1) {
+                    if (document.referrer) {
+                        try {
+                            const refUrl = new URL(document.referrer);
+                            if (refUrl.origin !== window.location.origin) {
+                                return; // 外部サイトから直接開いた場合は通常のhref="/dictionary/"へ遷移
+                            }
+                        } catch (_) {}
+                    }
+                    e.preventDefault();
+                    window.history.back();
                 }
             });
         }

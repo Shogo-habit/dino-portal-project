@@ -127,14 +127,18 @@ const articleSchema = {
             if (!backLink) return;
 
             backLink.addEventListener('click', (e) => {
-                if (window.history.length > 1 && document.referrer) {
-                    try {
-                        const refUrl = new URL(document.referrer);
-                        if (refUrl.origin === window.location.origin && refUrl.pathname === '/topics/') {
-                            e.preventDefault();
-                            window.history.back();
-                        }
-                    } catch (_) {}
+                sessionStorage.setItem('dino_force_back_navigation', 'true');
+                if (window.history.length > 1) {
+                    if (document.referrer) {
+                        try {
+                            const refUrl = new URL(document.referrer);
+                            if (refUrl.origin !== window.location.origin) {
+                                return; // 外部サイトから直接開いた場合は通常のhref="/topics/"へ遷移
+                            }
+                        } catch (_) {}
+                    }
+                    e.preventDefault();
+                    window.history.back();
                 }
             });
         }

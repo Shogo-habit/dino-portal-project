@@ -163,18 +163,20 @@ const fullOgImageUrl = new URL(ogImage, 'https://dino-portal.com/');
     <!-- Global Scroll Restoration for #app-container & window across Astro ClientRouter -->
     <script>
         const SCROLL_POS_CACHE_KEY = 'dino_portal_scroll_positions';
-        let isBackNavigation = false;
+        const FORCE_BACK_KEY = 'dino_force_back_navigation';
+        let navigationMode: 'idle' | 'back' | 'forward' = 'idle';
+        let restoreTimer: any = null;
 
-        // 1. Astro ClientRouterのナビゲーション方向を監視（ブラウザの戻る操作を判定）
-        document.addEventListener('astro:before-preparation', (event: any) => {
-            isBackNavigation = event.direction === 'back';
-            saveCurrentPosition();
-        });
-
-        // 2. ブラウザ標準のpopstateでも念のため捕捉
-        window.addEventListener('popstate', () => {
-            isBackNavigation = true;
-        });
+        function normalizePath(rawPath: string): string {
+            try {
+                const url = new URL(rawPath, window.location.origin);
+                let p = url.pathname;
+                if (!p.endsWith('/')) p += '/';
+                return url.search ? `${p}${url.search}` : p;
+            } catch (_) {
+                return rawPath;
+            }
+        }
 
         function getContainer(): HTMLElement | null {
             return document.getElementById('app-container');
@@ -196,34 +198,70 @@ const fullOgImageUrl = new URL(ogImage, 'https://dino-portal.com/');
 
         function saveCurrentPosition() {
             const container = getContainer();
-            const currentPath = window.location.pathname + window.location.search;
+            const currentPath = normalizePath(window.location.pathname + window.location.search);
             const currentScroll = getScrollTop(container);
 
-            try {
-                const cache = JSON.parse(sessionStorage.getItem(SCROLL_POS_CACHE_KEY) || '{}');
-                cache[currentPath] = currentScroll;
-                sessionStorage.setItem(SCROLL_POS_CACHE_KEY, JSON.stringify(cache));
-            } catch (_) {}
+            if (currentScroll > 0) {
+                try {
+                    const cache = JSON.parse(sessionStorage.getItem(SCROLL_POS_CACHE_KEY) || '{}');
+                    cache[currentPath] = currentScroll;
+                    sessionStorage.setItem(SCROLL_POS_CACHE_KEY, JSON.stringify(cache));
+                } catch (_) {}
+            }
         }
 
-        // スクロール中も最新位置をキャッシュ（100msデバウンスで常に最新スクロール位置を保持）
+        // スクロール中も常に最新位置をキャッシュ（80msデバウンス）
         let scrollSaveTimer: any = null;
         function onScrollThrottled() {
             clearTimeout(scrollSaveTimer);
             scrollSaveTimer = setTimeout(() => {
                 saveCurrentPosition();
-            }, 100);
+            }, 80);
         }
+
+        // 1. Astro ClientRouterのナビゲーション開始を監視
+        document.addEventListener('astro:before-preparation', (event: any) => {
+            const isBackward = event.direction === 'backward' || event.direction === 'back';
+            const fromPath = normalizePath(window.location.pathname);
+            const toUrl = new URL(event.to.href, window.location.origin);
+            const toPath = normalizePath(toUrl.pathname);
+
+            // 詳細ページから一覧ページ（/dictionary/ または /topics/）へ戻る場合
+            const isReturnToDictionary = fromPath.startsWith('/dictionary/') && fromPath !== '/dictionary/' && toPath === '/dictionary/';
+            const isReturnToTopics = fromPath.startsWith('/topics/') && fromPath !== '/topics/' && toPath === '/topics/';
+            const isForceBack = sessionStorage.getItem(FORCE_BACK_KEY) === 'true';
+
+            if (isBackward || isReturnToDictionary || isReturnToTopics || isForceBack) {
+                navigationMode = 'back';
+            } else {
+                navigationMode = 'forward';
+            }
+            sessionStorage.removeItem(FORCE_BACK_KEY);
+            saveCurrentPosition();
+        });
+
+        // 2. ブラウザ標準のpopstate（戻る・進む）でも捕捉
+        window.addEventListener('popstate', () => {
+            navigationMode = 'back';
+        });
 
         // 3. ページ離脱直前（before-swap）でも確実に最新位置を保存
         document.addEventListener('astro:before-swap', saveCurrentPosition);
 
-        // 4. ページ読み込み／復帰時にスクロールを復元（DOM確定のズレを防ぐ多段リトライ適用）
-        const restoreCurrentPosition = () => {
-            const container = getContainer();
-            const targetPath = window.location.pathname + window.location.search;
+        // 4. カード等のリンククリック時に即座に現在位置を保存
+        document.addEventListener('click', (e) => {
+            const target = (e.target as HTMLElement)?.closest('a');
+            if (target && target.href && !target.href.startsWith('#')) {
+                saveCurrentPosition();
+            }
+        }, { capture: true, passive: true });
 
-            // スクロール監視イベントのバインド
+        // 5. スクロール復元処理
+        function performScrollRestoration() {
+            const container = getContainer();
+            const targetPath = normalizePath(window.location.pathname + window.location.search);
+
+            // スクロールリスナーの再登録
             if (container) {
                 container.removeEventListener('scroll', onScrollThrottled);
                 container.addEventListener('scroll', onScrollThrottled, { passive: true });
@@ -231,34 +269,41 @@ const fullOgImageUrl = new URL(ogImage, 'https://dino-portal.com/');
             window.removeEventListener('scroll', onScrollThrottled);
             window.addEventListener('scroll', onScrollThrottled, { passive: true });
 
-            if (isBackNavigation) {
+            if (navigationMode === 'back') {
                 try {
                     const cache = JSON.parse(sessionStorage.getItem(SCROLL_POS_CACHE_KEY) || '{}');
                     const savedPos = cache[targetPath];
 
                     if (typeof savedPos === 'number' && savedPos > 0) {
-                        setScrollTop(container, savedPos);
-                        requestAnimationFrame(() => {
+                        const applyScroll = () => {
                             setScrollTop(container, savedPos);
-                        });
-                        setTimeout(() => {
-                            setScrollTop(container, savedPos);
-                        }, 60);
-                        setTimeout(() => {
-                            setScrollTop(container, savedPos);
-                        }, 180);
+                        };
+
+                        // DOM描画や画像のレイアウト確定のズレに対応して多段で確実に固定
+                        applyScroll();
+                        requestAnimationFrame(applyScroll);
+                        setTimeout(applyScroll, 30);
+                        setTimeout(applyScroll, 80);
+                        setTimeout(applyScroll, 180);
+                        setTimeout(applyScroll, 320);
+                        setTimeout(applyScroll, 500);
                     }
                 } catch (_) {}
-            } else {
-                // 通常の新規ページ遷移時は一番上から表示
-                setScrollTop(container, 0);
-            }
-            // フラグを初期化
-            isBackNavigation = false;
-        };
 
-        document.addEventListener('astro:after-swap', restoreCurrentPosition);
-        document.addEventListener('astro:page-load', restoreCurrentPosition);
+                // 一定時間経過後にナビゲーションモードをidleにリセット（page-load等での誤爆防止）
+                clearTimeout(restoreTimer);
+                restoreTimer = setTimeout(() => {
+                    navigationMode = 'idle';
+                }, 600);
+            } else if (navigationMode === 'forward') {
+                // 通常の前方遷移時は一番上から表示
+                setScrollTop(container, 0);
+                navigationMode = 'idle';
+            }
+        }
+
+        document.addEventListener('astro:after-swap', performScrollRestoration);
+        document.addEventListener('astro:page-load', performScrollRestoration);
     </script>
 </body>
 </html>
