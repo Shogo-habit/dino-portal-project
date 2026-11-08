@@ -272,8 +272,6 @@ const categoriesWithLabels = sortedCategories.map(cat => {
 </style>
 
 <script>
-    const TOPICS_SCROLL_POS_KEY = 'dino_portal_topics_scroll_y';
-
     function initFilters() {
         const filterButtons = document.querySelectorAll('.filter-btn');
         const sortSelect = document.getElementById('sort-select') as HTMLSelectElement;
@@ -285,57 +283,6 @@ const categoriesWithLabels = sortedCategories.map(cat => {
 
         let currentFilter = 'all';
         let currentSort = 'newest';
-
-        function scrollPageTo(targetY: number, behavior: ScrollBehavior = 'smooth') {
-            const appContainer = document.getElementById('app-container');
-            if (appContainer && appContainer.scrollHeight > appContainer.clientHeight && getComputedStyle(appContainer).overflowY !== 'visible') {
-                appContainer.scrollTo({ top: targetY, behavior });
-            }
-            window.scrollTo({ top: targetY, behavior });
-        }
-
-        const getCurrentScrollY = () => {
-            const appContainer = document.getElementById('app-container');
-            if (appContainer && appContainer.scrollHeight > appContainer.clientHeight && getComputedStyle(appContainer).overflowY !== 'visible') {
-                return appContainer.scrollTop;
-            }
-            return window.pageYOffset || document.documentElement.scrollTop;
-        };
-
-        const saveScrollPos = () => {
-            const y = getCurrentScrollY();
-            if (y > 0) {
-                sessionStorage.setItem(TOPICS_SCROLL_POS_KEY, String(y));
-            }
-        };
-
-        const restoreScrollPos = () => {
-            const savedYStr = sessionStorage.getItem(TOPICS_SCROLL_POS_KEY);
-            const fromDetail = document.referrer && document.referrer.includes('/topics/');
-            if (savedYStr && fromDetail) {
-                const targetY = parseFloat(savedYStr);
-                if (!isNaN(targetY) && targetY > 0) {
-                    scrollPageTo(targetY, 'auto');
-                    requestAnimationFrame(() => {
-                        scrollPageTo(targetY, 'auto');
-                    });
-                    setTimeout(() => {
-                        scrollPageTo(targetY, 'auto');
-                        sessionStorage.removeItem(TOPICS_SCROLL_POS_KEY);
-                    }, 80);
-                    return;
-                }
-            }
-            sessionStorage.removeItem(TOPICS_SCROLL_POS_KEY);
-        };
-
-        // 記事カードクリック時にスクロール位置を記憶
-        topicList.addEventListener('click', (e) => {
-            const link = (e.target as HTMLElement).closest('a');
-            if (link && link.href && link.href.includes('/topics/')) {
-                saveScrollPos();
-            }
-        }, { passive: true });
 
         function updateList() {
             let visibleCount = 0;
@@ -402,9 +349,8 @@ const categoriesWithLabels = sortedCategories.map(cat => {
                 updateList();
             });
         }
-        // Run initial update and restore scroll position
+        // Run initial update
         updateList();
-        restoreScrollPos();
     }
 
     // Run on initial load and view transitions
