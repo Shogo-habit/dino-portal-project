@@ -318,9 +318,33 @@ const iconicPairs: Record<string, string[]> = {
     'stegosaurus': ['allosaurus', 'ceratosaurus', 'kentrosaurus', 'camptosaurus'],
     'ankylosaurus': ['tyrannosaurus', 'triceratops', 'borealopelta', 'euoplocephalus', 'zuul'],
     'velociraptor': ['protoceratops', 'deinonychus', 'utahraptor', 'oviraptor'],
-    'mosasaurus': ['tylosaurus', 'plesiosaurus', 'elasmolasaurus', 'megalodon', 'archelon'],
+    'mosasaurus': ['tylosaurus', 'plesiosaurus', 'elasmosaurus', 'megalodon', 'archelon', 'kronosaurus'],
+    'elasmosaurus': ['styxosaurus', 'plesiosaurus', 'futabasaurus', 'mosasaurus', 'tylosaurus', 'kronosaurus', 'archelon'],
     'argentinosaurus': ['brachiosaurus', 'patagotitan', 'mapusaurus', 'giganotosaurus']
 };
+
+// 生態ニッチ・生物大分類判定（首長竜・海棲爬虫類、翼竜、恐竜の棲み分け）
+function getBioCategory(item: any): 'marine' | 'pterosaur' | 'dinosaur' | 'other' {
+    const g = item.group || '';
+    const r = item.region || '';
+    const n = item.name || '';
+    const id = item.id || '';
+    const marineGroups = ['首長竜', '魚竜', '魚竜・首長竜', '海棲爬虫類', '魚類'];
+    const marineKeywords = [
+        'モササウルス', 'ティロサウルス', 'クロノサウルス', 'プレシオサウルス', 
+        'エラスモサウルス', 'リオプレウロドン', 'アーケロン', 'ダンクルオステウス', 
+        'メガロドン', 'イクチオサウルス', 'ショニサウルス', 'フタバサウルス', 
+        'スティクソサウルス', 'プロトステガ'
+    ];
+    if (marineGroups.includes(g) || r.includes('海') || marineKeywords.some(k => n.includes(k) || id.includes(k))) {
+        return 'marine';
+    }
+    if (g === '翼竜') return 'pterosaur';
+    if (['獣脚類', '竜脚類', '角竜類', 'よろい竜類', '鳥脚類', '剣竜類', '堅頭竜類'].includes(g)) return 'dinosaur';
+    return 'other';
+}
+
+const currentBioCat = getBioCategory(d);
 
 interface RelatedDinoItem {
     dino: any;
@@ -336,12 +360,78 @@ const scoredDinosaurs: RelatedDinoItem[] = allDinosaurs
         let badges: string[] = [];
         let note = '';
 
-        const sameGroup = d.group && item.group === d.group;
+        const itemBioCat = getBioCategory(item);
+        const isIconicPair = Boolean(iconicPairs[d.id] && iconicPairs[d.id].includes(item.id));
+
+        // 1. 生態ニッチマッチ（海棲生物同士、翼竜同士、恐竜同士の棲み分け）
+        if (currentBioCat === itemBioCat) {
+            if (currentBioCat === 'marine') score += 25;
+            else if (currentBioCat === 'pterosaur') score += 25;
+            else score += 10;
+        } else if (!isIconicPair) {
+            // ニッチ不一致ペナルティ（例: 首長竜の枠に陸上恐竜が乱入するのを防止）
+            score -= 25;
+        }
+
+        // 2. 系統・グループマッチ（同系統最優先）
+        const exactSameGroup = d.group && item.group === d.group;
+        const marineAffinity = currentBioCat === 'marine' && itemBioCat === 'marine';
+        
+        if (exactSameGroup) {
+            score += 25;
+        } else if (marineAffinity) {
+            score += 12; // 首長竜とモササウルス類・魚竜等の海洋上位互換親和
+        }
+
+        // 3. 時代・地域の加算スコアリング
         const sameEra = baseEra && item.era.includes(baseEra);
         const sameRegion = (baseRegion && item.region.includes(baseRegion)) || (d.region === item.region);
 
         if (sameEra && sameRegion) {
-            score += 10;
+            score += 15;
+            if (d.diet.includes('肉食') && item.diet.includes('草食')) {
+                score += 5;
+            } else if (d.diet.includes('肉食') && item.diet.includes('肉食')) {
+                score += 5;
+            }
+        } else if (sameEra) {
+            score += 6;
+        } else if (sameRegion) {
+            score += 4;
+        }
+
+        // 4. 代表的ライバル・対決関係の直接指定ボーナス
+        if (isIconicPair) {
+            score += 40;
+        }
+
+        // 5. 最適なリレーションバッジと解説ノートの選定
+        if (isIconicPair) {
+            badges.push('🔥 代表的ライバル');
+            note = `学術・メディアで広く対比・研究される代表的古生物`;
+        } else if (exactSameGroup && sameEra && sameRegion) {
+            badges.push(`⚡ 共存近縁種（${d.group}）`);
+            note = `${baseEra}の${baseRegion}で同時期に繁栄した近縁種`;
+        } else if (exactSameGroup) {
+            badges.push(`⚡ 近縁種（${d.group}）`);
+            note = `系統進化学的に近縁な関係にある${d.group}`;
+        } else if (marineAffinity) {
+            if (sameEra) {
+                badges.push(`🌊 共存海生生物（${baseEra}）`);
+                note = `${baseEra}の海洋生態系を共に支配した大型海生生物`;
+            } else {
+                badges.push(`🌊 海生古生物`);
+                note = `中生代の海洋生態系を構成した大型海生生物`;
+            }
+        } else if (currentBioCat === 'pterosaur' && itemBioCat === 'pterosaur') {
+            if (sameEra) {
+                badges.push(`🪶 同時代の翼竜（${baseEra}）`);
+                note = `${baseEra}の大空で同時期に繁栄した翼竜`;
+            } else {
+                badges.push(`🪶 翼竜`);
+                note = `中生代の大空を支配した翼竜類`;
+            }
+        } else if (sameEra && sameRegion) {
             if (d.diet.includes('肉食') && item.diet.includes('草食')) {
                 badges.push('🦕 獲物・共存種');
                 note = `${baseEra}の${baseRegion}で共存した獲物・大型草食種`;
@@ -352,26 +442,12 @@ const scoredDinosaurs: RelatedDinoItem[] = allDinosaurs
                 badges.push('🌍 同時代・同地域');
                 note = `${baseEra}の${baseRegion}の生態系を構成した共存古生物`;
             }
-        } else if (sameGroup) {
-            score += 7;
-            badges.push(`⚡ 同系統（${d.group}）`);
-            note = `系統進化学的に近縁な関係にある${d.group}`;
         } else if (sameEra) {
-            score += 4;
             badges.push(`⏳ 同時代（${baseEra}）`);
             note = `${baseEra}の地球上で同時期に繁栄した生物`;
         } else if (sameRegion) {
-            score += 3;
             badges.push(`📍 同地域（${baseRegion}）`);
             note = `同じ${baseRegion}の大地・地層から発見された生物`;
-        }
-
-        // Direct iconic match pairings
-        if (iconicPairs[d.id] && iconicPairs[d.id].includes(item.id)) {
-            score += 15;
-            if (badges.length === 0 || !badges[0].startsWith('⚔️')) {
-                badges.unshift('🔥 代表的ライバル');
-            }
         }
 
         return {
@@ -383,6 +459,19 @@ const scoredDinosaurs: RelatedDinoItem[] = allDinosaurs
     })
     .sort((a, b) => b.score - a.score)
     .slice(0, 6);
+
+// 五十音順ソート＆前後ナビゲーション用データの算出
+const sortedDinosaurs = [...allDinosaurs].sort((a, b) => {
+    return (a.kana || a.name).localeCompare(b.kana || b.name, 'ja');
+});
+
+const currentDinoIdx = sortedDinosaurs.findIndex(item => item.id === d.id);
+const prevDino = currentDinoIdx > 0 
+    ? sortedDinosaurs[currentDinoIdx - 1] 
+    : sortedDinosaurs[sortedDinosaurs.length - 1];
+const nextDino = (currentDinoIdx >= 0 && currentDinoIdx < sortedDinosaurs.length - 1) 
+    ? sortedDinosaurs[currentDinoIdx + 1] 
+    : sortedDinosaurs[0];
 
 const topics = await getCollection('topics');
 
@@ -792,17 +881,29 @@ if (hasComparison && h3List.length > 0) {
                     ))}
                 </div>
 
-                <!-- アーカイブに戻る ＆ フィードバック -->
-                <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--panel-border); padding-top: 20px; gap: 20px; flex-wrap: wrap;">
-                    <a href="/dictionary/" id="back-to-archive-link" class="nav-link" aria-label="アーカイブ一覧に戻る" style="text-decoration: none;">[ アーカイブに戻る ]</a>
-                    
-                    <div class="feedback-container" id="feedback-detail" style="display: flex; align-items: center; gap: 10px;">
-                        <span style="font-size: 11px; color: var(--text-dim); font-family: var(--font-mono);">
-                            期待したデータは得られましたか？
-                        </span>
-                        <button class="feedback-btn" id="feedback-yes" aria-label="はい">YES</button>
-                        <button class="feedback-btn" id="feedback-no" aria-label="いいえ">NO</button>
-                        <div class="feedback-msg" id="msg-detail" style="font-size: 11px; color: var(--secondary-neon); font-family: var(--font-mono); opacity: 0; transition: opacity 0.3s ease; position: absolute; margin-top: 25px;"></div>
+                <!-- アーカイブに戻る ＆ 前後クイックナビ ＆ フィードバック -->
+                <div class="detail-quick-nav-bar" style="margin-top: 40px; border-top: 1px solid var(--panel-border); padding-top: 20px; display: flex; flex-direction: column; gap: 16px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;">
+                        <div class="quick-nav-links" style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+                            <a href={`/dictionary/${prevDino.id}/`} class="quick-nav-pill" title={`五十音順で前の恐竜: ${prevDino.name}（${prevDino.kana}）`}>
+                                <span style="font-size: 10px; color: var(--primary-neon); opacity: 0.8;">&laquo; 前</span>
+                                <span class="pill-name">{prevDino.name}</span>
+                            </a>
+                            <a href="/dictionary/" id="back-to-archive-link" class="nav-link" aria-label="アーカイブ一覧に戻る" style="text-decoration: none; font-size: 12px;">[ アーカイブ一覧 ]</a>
+                            <a href={`/dictionary/${nextDino.id}/`} class="quick-nav-pill" title={`五十音順で次の恐竜: ${nextDino.name}（${nextDino.kana}）`}>
+                                <span class="pill-name">{nextDino.name}</span>
+                                <span style="font-size: 10px; color: var(--primary-neon); opacity: 0.8;">次 &raquo;</span>
+                            </a>
+                        </div>
+                        
+                        <div class="feedback-container" id="feedback-detail" style="display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 11px; color: var(--text-dim); font-family: var(--font-mono);">
+                                期待したデータは得られましたか？
+                            </span>
+                            <button class="feedback-btn" id="feedback-yes" aria-label="はい">YES</button>
+                            <button class="feedback-btn" id="feedback-no" aria-label="いいえ">NO</button>
+                            <div class="feedback-msg" id="msg-detail" style="font-size: 11px; color: var(--secondary-neon); font-family: var(--font-mono); opacity: 0; transition: opacity 0.3s ease; position: absolute; margin-top: 25px;"></div>
+                        </div>
                     </div>
                 </div>
 
@@ -957,6 +1058,38 @@ if (hasComparison && h3List.length > 0) {
                     </div>
                 </div>
             )}
+
+            <!-- 五十音順 前後恐竜ナビゲーションバー -->
+            <nav class="specimen-seq-nav hud-panel" aria-label="五十音順ナビゲーション">
+                <div class="hud-corner top-left"></div>
+                <div class="hud-corner bottom-right"></div>
+                
+                <a href={`/dictionary/${prevDino.id}/`} class="seq-nav-card seq-prev" title={`五十音順で前の恐竜: ${prevDino.name}（${prevDino.kana}）`}>
+                    <div class="seq-nav-badge">
+                        <span class="seq-arrow">&laquo;</span> PREV SPECIMEN
+                    </div>
+                    <div class="seq-nav-main">
+                        <span class="seq-name">{prevDino.name}</span>
+                        <span class="seq-kana">{prevDino.kana}</span>
+                    </div>
+                </a>
+
+                <a href="/dictionary/" class="seq-nav-hub" title="五十音順の恐竜図鑑一覧へ">
+                    <span class="seq-hub-icon">❖</span>
+                    <span class="seq-hub-title">五十音順図鑑 INDEX</span>
+                    <span class="seq-hub-desc">全335種アーカイブ</span>
+                </a>
+
+                <a href={`/dictionary/${nextDino.id}/`} class="seq-nav-card seq-next" title={`五十音順で次の恐竜: ${nextDino.name}（${nextDino.kana}）`}>
+                    <div class="seq-nav-badge">
+                        NEXT SPECIMEN <span class="seq-arrow">&raquo;</span>
+                    </div>
+                    <div class="seq-nav-main">
+                        <span class="seq-name">{nextDino.name}</span>
+                        <span class="seq-kana">{nextDino.kana}</span>
+                    </div>
+                </a>
+            </nav>
         </section>
     </article>
 
@@ -1775,6 +1908,196 @@ if (hasComparison && h3List.length > 0) {
         .related-specimens-grid {
             grid-template-columns: 1fr;
             gap: 12px;
+        }
+    }
+
+    /* 前後クイックナビピル（記事中段） */
+    .quick-nav-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 5px 12px;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 242, 255, 0.25);
+        background: rgba(0, 242, 255, 0.04);
+        font-size: 12px;
+        color: var(--text-main);
+        text-decoration: none;
+        font-family: var(--font-mono);
+        transition: all 0.2s ease;
+    }
+
+    .quick-nav-pill:hover {
+        border-color: var(--primary-neon);
+        color: var(--primary-neon);
+        background: rgba(0, 242, 255, 0.12);
+        box-shadow: 0 0 10px rgba(0, 242, 255, 0.2);
+    }
+
+    .quick-nav-pill .pill-name {
+        font-weight: bold;
+    }
+
+    /* 五十音順 前後恐竜ナビゲーションバー（記事末尾） */
+    .specimen-seq-nav {
+        margin-top: 45px;
+        padding: 20px 24px;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        gap: 20px;
+        background: rgba(3, 10, 20, 0.85);
+        border: 1px solid rgba(0, 242, 255, 0.2);
+        position: relative;
+    }
+
+    .seq-nav-card {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        text-decoration: none;
+        padding: 14px 18px;
+        border: 1px solid var(--panel-border);
+        border-radius: 4px;
+        background: rgba(0, 242, 255, 0.02);
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .seq-nav-card:hover {
+        border-color: var(--primary-neon);
+        background: rgba(0, 242, 255, 0.08);
+        box-shadow: 0 4px 20px rgba(0, 242, 255, 0.2);
+        transform: translateY(-2px);
+    }
+
+    .seq-prev {
+        text-align: left;
+    }
+
+    .seq-next {
+        text-align: right;
+    }
+
+    .seq-next .seq-nav-badge {
+        justify-content: flex-end;
+    }
+
+    .seq-next .seq-nav-main {
+        justify-content: flex-end;
+    }
+
+    .seq-nav-badge {
+        font-family: var(--font-mono);
+        font-size: 10px;
+        font-weight: bold;
+        color: var(--primary-neon);
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .seq-arrow {
+        font-size: 14px;
+        line-height: 1;
+    }
+
+    .seq-nav-main {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .seq-name {
+        font-size: 15px;
+        font-weight: bold;
+        color: var(--text-main);
+        letter-spacing: 0.5px;
+    }
+
+    .seq-kana {
+        font-size: 11px;
+        color: var(--text-dim);
+        font-family: var(--font-mono);
+    }
+
+    .seq-nav-hub {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        padding: 10px 16px;
+        border: 1px dashed rgba(0, 242, 255, 0.3);
+        border-radius: 4px;
+        transition: all 0.2s ease;
+        white-space: nowrap;
+    }
+
+    .seq-nav-hub:hover {
+        border-color: var(--primary-neon);
+        background: rgba(0, 242, 255, 0.08);
+        box-shadow: 0 0 15px rgba(0, 242, 255, 0.15);
+    }
+
+    .seq-hub-icon {
+        color: var(--primary-neon);
+        font-size: 14px;
+        margin-bottom: 2px;
+    }
+
+    .seq-hub-title {
+        font-family: var(--font-mono);
+        font-size: 11px;
+        font-weight: bold;
+        color: var(--primary-neon);
+        letter-spacing: 1px;
+    }
+
+    .seq-hub-desc {
+        font-size: 10px;
+        color: var(--text-dim);
+    }
+
+    @media (max-width: 768px) {
+        .specimen-seq-nav {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 12px;
+            padding: 16px;
+        }
+
+        .seq-nav-hub {
+            grid-column: 1 / -1;
+            grid-row: 2;
+            padding: 8px 12px;
+        }
+
+        .seq-name {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .specimen-seq-nav {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+        }
+
+        .seq-next {
+            text-align: left;
+        }
+
+        .seq-next .seq-nav-badge {
+            justify-content: flex-start;
+        }
+
+        .seq-next .seq-nav-main {
+            justify-content: flex-start;
+        }
+
+        .seq-nav-hub {
+            grid-row: 3;
         }
     }
 </style>
