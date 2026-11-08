@@ -79,7 +79,6 @@ async function processCyberAsset(inputPath, destPath, options = {}) {
   if (options.flop) {
     sharpInstance = sharpInstance.flop();
   }
-  let finalRes = Math.max(width, height);
 
   if (width > height) {
     const extendVal = Math.floor((width - height) / 2);
@@ -97,15 +96,15 @@ async function processCyberAsset(inputPath, destPath, options = {}) {
     });
   }
 
-  if (finalRes > 1024) {
-    sharpInstance = sharpInstance.resize(1024, 1024);
-  }
+  // Ensure square buffer is finalized before scaling to exactly 1024x1024
+  const squareBuffer = await sharpInstance.png().toBuffer();
+  let finalSharp = sharp(squareBuffer).resize(1024, 1024);
 
   // Ensure output directory exists
   fs.mkdirSync(path.dirname(destPath), { recursive: true });
 
   // 3. ロスレスWebPとして保存
-  await sharpInstance.webp({ lossless: true }).toFile(destPath);
+  await finalSharp.webp({ lossless: true }).toFile(destPath);
 
   // 4. 保存した透過正方形画像のピクセル走査（実体高さ & 下部余白）
   const processed = await sharp(destPath).raw().toBuffer({ resolveWithObject: true });

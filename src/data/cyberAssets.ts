@@ -28,5 +28,27 @@ export const REFERENCE_ASSETS = {
         bottomGap: 195,
         contentHeightPx: 587,
         sourceRes: 1024
+    },
+    WHALE: {
+        id: 'whale',
+        icon: 'images/cyber/whale_side.webp',
+        label: "シロナガスクジラ (全長30m)",
+        name: "シロナガスクジラ",
+        realHeight: 5.0,
+        realLength: 30.0,
+        bottomGap: 330,
+        contentHeightPx: 153,
+        sourceRes: 1024
+    },
+    AIRPLANE: {
+        id: 'airplane',
+        icon: 'images/cyber/airplane_side.webp',
+        label: "大型ジェット旅客機 (全長70m)",
+        name: "大型旅客機",
+        realHeight: 19.0,
+        realLength: 70.0,
+        bottomGap: 381,
+        contentHeightPx: 262,
+        sourceRes: 1024
     }
 };
