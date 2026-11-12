@@ -145,9 +145,55 @@ const fullOgImageUrl = new URL(ogImage, 'https://dino-portal.com/');
             <slot />
         </div>
 
-        <footer class="main-footer">
-            <div class="ai-disclaimer" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-                <span>本図鑑の視覚データは、最新の古生物学的知見に基づきAIによって生成されたシミュレーション画像です。</span>
+        <footer class="main-footer" style="padding: 40px 20px 25px; border-top: 1px solid rgba(0, 242, 255, 0.2); background: rgba(3, 6, 8, 0.95); margin-top: 60px;">
+            <div class="footer-nav-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; max-width: 1300px; margin: 0 auto 35px;">
+                <div>
+                    <div style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); letter-spacing: 1.5px; margin-bottom: 12px; font-weight: bold;">
+                        [ GEOLOGICAL ERAS / 時代別アーカイブ ]
+                    </div>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 2;">
+                        <li><a href="/period/triassic/" style="color: #cfe6eb; text-decoration: none; transition: color 0.2s ease;">三畳紀の古生物完全ガイド</a></li>
+                        <li><a href="/period/jurassic/" style="color: #cfe6eb; text-decoration: none; transition: color 0.2s ease;">ジュラ紀の恐竜完全ガイド</a></li>
+                        <li><a href="/period/cretaceous/" style="color: #cfe6eb; text-decoration: none; transition: color 0.2s ease;">白亜紀の恐竜完全ガイド</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); letter-spacing: 1.5px; margin-bottom: 12px; font-weight: bold;">
+                        [ TAXONOMY & CLADES / 生態・系統別 ]
+                    </div>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 2;">
+                        <li><a href="/carnivores/" style="color: #cfe6eb; text-decoration: none; transition: color 0.2s ease;">最強の肉食恐竜図鑑</a></li>
+                        <li><a href="/herbivores/" style="color: #cfe6eb; text-decoration: none; transition: color 0.2s ease;">巨大草食恐竜図鑑</a></li>
+                        <li><a href="/marine-reptiles/" style="color: #cfe6eb; text-decoration: none; transition: color 0.2s ease;">中生代の海生爬虫類図鑑</a></li>
+                        <li><a href="/japan-dinosaurs/" style="color: #cfe6eb; text-decoration: none; transition: color 0.2s ease;">日本の恐竜完全名鑑</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); letter-spacing: 1.5px; margin-bottom: 12px; font-weight: bold;">
+                        [ INTERACTIVE FEATURES / シミュレータ・マップ ]
+                    </div>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 2;">
+                        <li><a href="/size-comparison/" style="color: #cfe6eb; text-decoration: none; transition: color 0.2s ease;">実寸サイズ比較シミュレータ</a></li>
+                        <li><a href="/world-map/" style="color: #cfe6eb; text-decoration: none; transition: color 0.2s ease;">世界恐竜発見マップ</a></li>
+                        <li><a href="/japan-map/" style="color: #cfe6eb; text-decoration: none; transition: color 0.2s ease;">日本恐竜発掘マップ</a></li>
+                        <li><a href="/quiz/" style="color: #cfe6eb; text-decoration: none; transition: color 0.2s ease;">恐竜博士クイズ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); letter-spacing: 1.5px; margin-bottom: 12px; font-weight: bold;">
+                        [ FEATURED TOPICS / 注目の特集記事 ]
+                    </div>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 2;">
+                        <li><a href="/topics/jurassic-world-dinosaurs-vs-reality/" style="color: #cfe6eb; text-decoration: none; transition: color 0.2s ease;">映画と本物の恐竜の違い徹底検証</a></li>
+                        <li><a href="/topics/dinosaur-size-ranking/" style="color: #cfe6eb; text-decoration: none; transition: color 0.2s ease;">太古で一番大きい恐竜ランキング</a></li>
+                        <li><a href="/topics/strongest-dinosaur-debate/" style="color: #cfe6eb; text-decoration: none; transition: color 0.2s ease;">最強恐竜は誰だ？徹底論争</a></li>
+                        <li><a href="/topics/not-dinosaurs-truth/" style="color: #cfe6eb; text-decoration: none; transition: color 0.2s ease;">翼竜・首長竜が恐竜じゃない理由</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ai-disclaimer" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; border-top: 1px solid rgba(0, 242, 255, 0.15); padding-top: 20px; max-width: 1300px; margin: 0 auto;">
+                <span style="font-size: 12px; color: var(--text-dim);">本図鑑の視覚データは、最新の古生物学的知見に基づきAIによって生成されたシミュレーション画像です。</span>
                 <div class="footer-links" style="display: flex; gap: 15px;">
                     <a href="/privacy/" class="footer-privacy-link" style="color: var(--primary-neon); text-decoration: none; font-size: 11px; font-family: var(--font-mono); transition: opacity 0.3s ease;">
                         [ PRIVACY POLICY ]

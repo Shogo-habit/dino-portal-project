@@ -13,6 +13,12 @@
 
 ## ✅ 完了済みタスク (Done)
 
+- [x] **【SEO施策2】Google画像検索SEOの強化（alt属性最適化・SVG検索タグ・ImageObject構造化データ実装）** (2026/11/08)
+  - **メイン復元イラストの `alt` 属性リッチ化**: `src/pages/dictionary/[id].astro` および `src/pages/dictionary/index.astro` の単一名称alt（`alt={d.name}`）を、「学名（英語）・生体復元イラスト・姿・中生代時代・分類・全長」を含む検索需要網羅型altへ動的最適化。
+  - **サイバー骨格側面図の検索インデックス化**: SVG要素に `role="img"`, `aria-labelledby`, `<title>`, `<desc>` を実装し、Google等のクローラーが骨格実寸サイズ比較図の内容を正確に解読できるよう整備。
+  - **Schema.org `ImageObject` 構造化データ（JSON-LD）の完全実装**: 全335頭の図鑑ページに、生体復元イラスト（`#primaryimage`）および骨格図（`#cyber`）の `ImageObject`（caption, description, creator, creditText, copyrightNotice, representativeOfPage）を動的生成・出力。
+  - `ASTRO_TELEMETRY_DISABLED=1 npm run build` を実行し、全385ページのHTML生成・正常出力を検証完了。
+
 - [x] **シミュレータ（/size-comparison/）の比較対象アセット追加（大型旅客機＆シロナガスクジラ）** (2026/11/08)
   - **大型ジェット旅客機（全長70m / 全高19m）**: ボーイング777/747クラスのサイバー透過ワイヤーフレーム側面図（1024x1024 RGBAロスレスWebP）を制作・接地自動スキャン反映。
   - **シロナガスクジラ（全長30m / 全高5m）**: 地球史上最大の動物のサイバー透過骨格側面図（1024x1024 RGBAロスレスWebP）を制作・接地自動スキャン反映。

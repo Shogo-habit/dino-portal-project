@@ -30,7 +30,7 @@ Googleカレンダー（`kosako20200405@gmail.com`）と完全に同期してい
   - 五十音順で前後の恐竜へスムーズに読み進められる大型HUDナビゲーションコンポーネント（`specimen-seq-nav`）および記事中段のクイックナビピル（`detail-quick-nav-bar`）を詳細ページに新設。
 - [ ] **【恐竜追加 第1弾】Tier 23（No.336〜345）10種追加**（リリース日: 2026/11/09）
   - Googleカレンダー: [イベントリンク](https://www.google.com/calendar/event?eid=ZmpzZGNob2I5M2F2b25wb3ExaTIzNHFnbzAga29zYWtvMjAyMDA0MDVAbQ) (ID: `fjsdchob93avonpoq1i234qgo0`)
-  - イラスト生成、透過WebP化、自動接地スキャン、学術解説執筆
+  - 進捗: No.336〜340（Tier 22 Part 4・5種: ハプロケイルス〜シノルニトサウルス）完了・累計340種到達 (2026/11/12)。残り No.341〜345（5種）を制作予定。
 
 ### 第2週（2026/11/16 〜 2026/11/22）: Tier 24追加 ＆ SEO点検 ＆ 三畳紀ピラー公開
 - [ ] **【恐竜追加 第2弾】Tier 24（No.346〜355）10種追加**（リリース日: 2026/11/16）
@@ -39,19 +39,24 @@ Googleカレンダー（`kosako20200405@gmail.com`）と完全に同期してい
 - [ ] **【SEO点検】お宝記事のSearch Consoleデータ追跡・CTR検証**（実施日: 2026/11/18）
   - Googleカレンダー: [イベントリンク](https://www.google.com/calendar/event?eid=dDc3Ymh2aDFzNzFqZHN2ZXJzbWlvMXJxNGMga29zYWtvMjAyMDA0MDVAbQ) (ID: `t77bhvh1s71jdsversmio1rq4c`)
   - `/topics/dinosaur-size-ranking/` のCTR（現状0.43% ➔ 目標3.0%以上）および穴場恐竜5種のインプレッション・順位推移を検証
-- [ ] **【SEOピラー新設 2-1】三畳紀の恐竜・古生物一覧（`/period/triassic/`）公開**（公開日: 2026/11/20）
-  - Googleカレンダー: [イベントリンク](https://www.google.com/calendar/event?eid=Y2ptNTRicmcwdmlranFkamRtbGo0aWk4bDQga29zYWtvMjAyMDA0MDVAbQ) (ID: `cjm54brg0vikjqdjdmlj4ii8l4`)
-  - 三畳紀の全種フィルタリング一覧ページ新設、内部リンク最適化
+- [x] **【SEOピラー新設 2-1】三畳紀の恐竜・古生物一覧（`/period/triassic/`）公開**（公開日: 2026/11/10 先行公開）
+  - コエロフィシス、エオラプトル、ヘレラサウルス、プラテオサウルス等全33種の三畳紀古生物を体系化。二足歩行イノベーションやクルロタルシ類との覇権争いを解説。
+- [x] **【SEOピラー新設 2-1】草食恐竜一覧（`/herbivores/`）公開**（公開日: 2026/11/10 先行公開）
+  - 全163種の植物食恐竜を網羅。竜脚類・角竜類・鎧竜類・剣竜類・鳥脚類の5大グループ別フィルタリングとデンタルバッテリー等の消化戦略を解説。
+- [x] **【特集記事公開 2-2】高需要トピック記事『映画「ジュラシック・ワールド」と本物の恐竜の違い徹底検証』公開**（公開日: 2026/11/10 先行公開）
+  - ラプトルの羽毛・サイズ、モササウルスの実寸・尾鰭、T-REXの視力・唸り声、ディロフォサウルスの実寸など8大真実を徹底比較。
+- [x] **【国内特集強化】日本の恐竜完全名鑑（`/japan-dinosaurs/`）全面刷新 ＆ 発掘マップ連動**（2026/11/10 完了）
+  - 2024年命名の最新種（ササヤマグノームス、ヒプノベナトル等）の解説追記、地域別フィルター、日本恐竜マップ（`/japan-map/`）への誘導バナーを新設。
+- [x] **【内部リンク最適化】全32トピック記事のインライン内部リンク最新走査・更新**（2026/11/10 完了）
+- [x] **【フッターサイトマップ新設】ヘッダーを汚さずに全7大ピラー・マップ・特集への回遊導線を強化**（2026/11/10 完了）
 
 ### 第3週（2026/11/23 〜 2026/11/29）: Tier 25追加 ＆ 特集記事① ＆ 草食ピラー公開
 - [ ] **【恐竜追加 第3弾】Tier 25（No.356〜365）10種追加**（リリース日: 2026/11/23）
   - Googleカレンダー: [イベントリンク](https://www.google.com/calendar/event?eid=ZjN1bHB0MTBoZDBmZDNtdmRsaWQyYnUxYjQga29zYWtvMjAyMDA0MDVAbQ) (ID: `f3ulpt10hd0fd3mvdlid2bu1b4`)
   - 累計365種到達
-- [ ] **【特集記事公開 2-2】高需要トピック記事①公開**（公開日: 2026/11/26）
-  - Googleカレンダー: [イベントリンク](https://www.google.com/calendar/event?eid=dHBxMGdmNGFoa3VsNnZ0aGtrcTlpdGF0cjQga29zYWtvMjAyMDA0MDVAbQ) (ID: `tpq0gf4ahkul6vthkkq9itatr4`)
-  - 映画と最新学説の比較検証記事等の執筆・図鑑リンク網連携
-- [ ] **【SEOピラー新設 2-1】草食恐竜一覧（`/herbivores/`）公開**
-  - 草食恐竜特設ピラーページの公開、検索ボリューム獲得
+- [ ] **【特集記事公開 2-2】高需要トピック記事②公開**（公開日: 2026/12/04）
+  - Googleカレンダー: [イベントリンク](https://www.google.com/calendar/event?eid=dnRjYmtobTg0cGRvYXJwMmRyOGhwZjlwcGMga29zYWtvMjAyMDA0MDVAbQ) (ID: `vtcbkhm84pdoarp2dr8hpf9ppc`)
+  - 全国の恐竜博物館・化石発掘スポットまとめ記事等の執筆・公開（※ユーザー判断により保留中）
 
 ### 第4週（2026/11/30 〜 2026/12/08）: Tier 26追加（40頭達成） ＆ 特集記事② ＆ 月間総括
 - [ ] **【恐竜追加 第4弾】Tier 26（No.366〜375）10種追加 ＆ 月間40種達成！**（リリース日: 2026/11/30）

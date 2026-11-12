@@ -104,6 +104,29 @@ const schema = [
       </div>
     </header>
 
+    <!-- Interactive Map CTA Banner -->
+    <aside class="map-cta-banner hud-panel" style="margin-bottom: 40px; padding: 22px 30px; border-color: rgba(0, 255, 102, 0.4); background: linear-gradient(90deg, rgba(0, 255, 102, 0.1) 0%, rgba(3, 6, 8, 0.9) 100%); display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; border-radius: 4px;">
+      <div style="display: flex; align-items: center; gap: 15px;">
+        <span style="font-size: 34px;">🗺️</span>
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 10px; color: var(--secondary-neon); letter-spacing: 1.5px; margin-bottom: 2px;">INTERACTIVE GEOLOGICAL MAP</div>
+          <h2 style="font-size: 18px; font-weight: 700; color: #fff; margin: 0 0 4px 0;">
+            インタラクティブ日本恐竜マップで探検する
+          </h2>
+          <p style="font-size: 13px; color: #d8edf2; margin: 0;">
+            北海道から九州まで、全国7大エリアの発掘地点・都道府県別化石分布を地図上で直感探索！
+          </p>
+        </div>
+      </div>
+      <a 
+        href="/japan-map/" 
+        style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 22px; background: rgba(0, 255, 102, 0.18); border: 1px solid var(--secondary-neon); color: var(--secondary-neon); font-family: var(--font-mono); font-size: 13px; font-weight: 700; text-decoration: none; border-radius: 4px; transition: all 0.2s ease; white-space: nowrap;"
+      >
+        <span>MAPを開く</span>
+        <span>→</span>
+      </a>
+    </aside>
+
     <!-- Academic Guide Article Section -->
     <article class="academic-guide hud-panel" style="padding: 40px; margin-bottom: 50px; background: rgba(3, 6, 8, 0.6); border-color: rgba(0, 255, 102, 0.25);">
       <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 30px; border-bottom: 2px solid var(--secondary-neon); padding-bottom: 15px;">
@@ -182,6 +205,37 @@ const schema = [
           </p>
         </section>
 
+        <section>
+          <h3 style="font-size: 18px; color: #fff; border-left: 4px solid var(--secondary-neon); padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
+            5. 近年の新種ラッシュ：2020年代に正式命名された日本の新恐竜・古生物たち
+          </h3>
+          <p style="margin-bottom: 12px; color: #d8edf2;">
+            日本の恐竜研究は2020年代に入り空前の加速期を迎えています。微細化石のスクリーニング技術やCTスキャンを用いた最新の系統解析により、日本独自の驚くべき新種が次々と記載されています。
+          </p>
+          <ul style="margin: 0; padding-left: 20px; font-size: 14px; color: #d8edf2; line-height: 1.8;">
+            <li style="margin-bottom: 8px;">
+              <strong style="color: #fff;">ササヤマグノームス（*Sasayamagnomus*・2024年命名）:</strong><br>
+              兵庫県丹波篠山市の篠山層群から記載。全長約80cmの極小角竜。角竜類が東アジア沿岸部からベーリング陸橋を渡って北米へと放散した初期進化ルートを証明した世界的標本。
+            </li>
+            <li style="margin-bottom: 8px;">
+              <strong style="color: #fff;">ヒプノベナトル（*Hypnovenator*・2024年命名）:</strong><br>
+              福井県勝山市手取層群から記載。鳥のように体を丸めて眠る姿勢（睡眠ポーズ）で化石化したトロオドン科の新種。
+            </li>
+            <li style="margin-bottom: 8px;">
+              <strong style="color: #fff;">ティラノミムス（*Tyrannomimus*・2023年命名）:</strong><br>
+              福井県勝山市より記載。当初ティラノサウルス上科の骨と誤認されていたが、原始的なデイノケイルス科（オルニトミモサウルス類）の新属新種と判明。
+            </li>
+            <li style="margin-bottom: 8px;">
+              <strong style="color: #fff;">パラリテリジノサウルス（*Paralitherizinosaurus*・2022年命名）:</strong><br>
+              北海道中川町の海成層から産出。「海の近くに生息したテリジノサウルス類」としてアジア最東端での生息を実証。
+            </li>
+            <li style="margin-bottom: 0;">
+              <strong style="color: #fff;">ワカヤマソウリュウ（*Megapterygius*・2023年命名）:</strong><br>
+              和歌山県有田川町から産出したほぼ完全なモササウルス類。後肢フリッパーが前肢より長く、背鰭を持っていた可能性が示唆された異形の海棲プレデター。
+            </li>
+          </ul>
+        </section>
+
       </div>
     </article>
 
@@ -199,8 +253,21 @@ const schema = [
             id="specimen-search" 
             placeholder="日本の恐竜を検索..." 
             aria-label="日本の恐竜の名前で検索"
-            style="padding: 10px 15px; font-size: 13px; background: rgba(0, 255, 102, 0.05); border: 1px solid var(--secondary-neon); color: var(--text-main); border-radius: 4px; width: 220px;"
+            style="padding: 10px 15px; font-size: 13px; background: rgba(0, 255, 102, 0.05); border: 1px solid var(--secondary-neon); color: var(--text-main); border-radius: 4px; width: 200px;"
           >
+          <select 
+            id="specimen-region" 
+            aria-label="発掘地域で絞り込み"
+            style="padding: 10px 15px; font-size: 13px; background: rgba(0, 255, 102, 0.05); border: 1px solid var(--secondary-neon); color: var(--text-main); border-radius: 4px;"
+          >
+            <option value="all">すべての地域（全国）</option>
+            <option value="北海道">北海道（むかわ・中川・三笠）</option>
+            <option value="東北">東北（岩手・宮城・福島）</option>
+            <option value="中部・北陸">中部・北陸（福井・石川）</option>
+            <option value="近畿">近畿（兵庫・淡路島・和歌山）</option>
+            <option value="関東">関東（群馬・神流町）</option>
+            <option value="九州">九州（熊本・福岡）</option>
+          </select>
           <select 
             id="specimen-sort" 
             aria-label="並び替え順"
@@ -216,7 +283,7 @@ const schema = [
       <!-- Dinosaur Card Grid -->
       <div class="dino-grid" id="specimen-grid">
         {japanDinosaurs.map(d => (
-          <div class="dino-card hud-panel" data-id={d.id} data-name={d.name} data-kana={d.kana} data-aliases={(d.aliases || []).join(',')} data-scientific={d.scientificName} data-length={d.length} data-diet={d.diet} data-group={d.group}>
+          <div class="dino-card hud-panel" data-id={d.id} data-name={d.name} data-kana={d.kana} data-aliases={(d.aliases || []).join(',')} data-scientific={d.scientificName} data-length={d.length} data-diet={d.diet} data-group={d.group} data-region={d.region}>
             <a href={`/dictionary/${d.id}/`} style="text-decoration: none; color: inherit; display: block; height: 100%;">
               <div class="card-img-wrap" style="position: relative; overflow: hidden; aspect-ratio: 1 / 1; background: #000;">
                 <img src={`/${d.image}`} alt={d.name} loading="lazy" decoding="async" width="400" height="400" style="width: 100%; height: 100%; object-fit: contain;">
@@ -247,6 +314,7 @@ const schema = [
   <script>
     function initPillarSpecimens() {
       const search = document.getElementById('specimen-search') as HTMLInputElement;
+      const region = document.getElementById('specimen-region') as HTMLSelectElement;
       const sort = document.getElementById('specimen-sort') as HTMLSelectElement;
       const grid = document.getElementById('specimen-grid');
       if (!search || !sort || !grid) return;
@@ -271,7 +339,7 @@ const schema = [
           .replace(/ヴォ/g, 'ボ')
           .replace(/ヴュ/g, 'ビュ')
           .replace(/ヴ/g, 'ブ')
-                .replace(/ベナートル/g, 'ベナトル')
+          .replace(/ベナートル/g, 'ベナトル')
           .replace(/トゥ/g, 'ト')
           .replace(/ドゥ/g, 'ド')
           .replace(/ァ/g, 'ア')
@@ -296,6 +364,7 @@ const schema = [
         const queryKata = hiraToKata(query);
         const queryHira = kataToHira(query);
         const normQuery = normalizeJa(query);
+        const regionVal = region ? region.value : 'all';
         const sortVal = sort.value;
 
         cards.forEach(card => {
@@ -304,14 +373,27 @@ const schema = [
           const aliases = (card.dataset.aliases || '').split(',').filter(Boolean);
           const id = (card.dataset.id || '').toLowerCase();
           const scientific = (card.dataset.scientific || '').toLowerCase();
-          const match = !query ||
+          const cardRegion = card.dataset.region || '';
+
+          const matchQuery = !query ||
             name.includes(queryKata) ||
             kana.includes(queryHira) ||
             (normQuery.length > 0 && (normalizeJa(name).includes(normQuery) || normalizeJa(kana).includes(normQuery))) ||
             aliases.some(a => a.includes(queryKata) || a.includes(queryHira) || (normQuery.length > 0 && normalizeJa(a).includes(normQuery))) ||
             id.includes(query) ||
             scientific.includes(query);
-          card.style.display = match ? 'block' : 'none';
+
+          let matchRegion = true;
+          if (regionVal !== 'all') {
+            if (regionVal === '北海道') matchRegion = cardRegion.includes('北海道') || cardRegion.includes('むかわ') || cardRegion.includes('中川') || cardRegion.includes('三笠');
+            else if (regionVal === '東北') matchRegion = cardRegion.includes('岩手') || cardRegion.includes('宮城') || cardRegion.includes('福島');
+            else if (regionVal === '中部・北陸') matchRegion = cardRegion.includes('福井') || cardRegion.includes('石川');
+            else if (regionVal === '近畿') matchRegion = cardRegion.includes('兵庫') || cardRegion.includes('和歌山') || cardRegion.includes('淡路');
+            else if (regionVal === '関東') matchRegion = cardRegion.includes('群馬') || cardRegion.includes('神流');
+            else if (regionVal === '九州') matchRegion = cardRegion.includes('熊本') || cardRegion.includes('福岡');
+          }
+
+          card.style.display = (matchQuery && matchRegion) ? 'block' : 'none';
         });
 
         const sorted = cards.slice().sort((a, b) => {
@@ -329,6 +411,7 @@ const schema = [
       }
 
       search.addEventListener('input', updateGrid);
+      if (region) region.addEventListener('change', updateGrid);
       sort.addEventListener('change', updateGrid);
     }
 

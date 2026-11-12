@@ -23,7 +23,7 @@ if (!defaultDino) {
 }
 ---
 
-<Layout title="恐竜サイズ比較シミュレータ｜人間・動物・クジラ・旅客機と実寸1:1比較 | Dino-Portal" activeTab="comparison" description="335種以上の恐竜・古生物を人間（1.7m）やアフリカゾウ、シロナガスクジラ（30m）、大型ジェット旅客機（70m）と実寸1:1スケールで自由に並べて大きさ比較できる体験型シミュレータ。ティラノサウルスや超巨大竜脚類の真のスケールをブラウザ上で体感！">
+<Layout title="恐竜サイズ比較シミュレータ｜人間・動物・クジラ・旅客機と実寸1:1比較 | Dino-Portal" activeTab="comparison" description="340種以上の恐竜・古生物を人間（1.7m）やアフリカゾウ、シロナガスクジラ（30m）、大型ジェット旅客機（70m）と実寸1:1スケールで自由に並べて大きさ比較できる体験型シミュレータ。ティラノサウルスや超巨大竜脚類の真のスケールをブラウザ上で体感！">
     <section class="page-header">
         <h2 class="page-title">サイズ比較シミュレータ</h2>
         <p class="page-subtitle">恐竜と現代の様々なオブジェクトのサイズを視覚的に比較できるシミュレーションツールです。</p>
@@ -35,9 +35,22 @@ if (!defaultDino) {
             <div class="hud-corner top-left"></div>
             <div class="hud-corner bottom-right"></div>
             
+            <!-- Mode Selector HUD -->
+            <div class="control-group mode-control-group">
+                <label class="control-label">[ 表示モード切替 ]</label>
+                <div class="hud-mode-toggle" id="hud-mode-toggle">
+                    <button type="button" class="mode-btn active" id="btn-mode-bone" data-mode="bone">
+                        <span class="mode-icon">💀</span> 骨格実寸モード
+                    </button>
+                    <button type="button" class="mode-btn" id="btn-mode-battle" data-mode="battle">
+                        <span class="mode-icon">⚡</span> リアル威嚇対決モード
+                    </button>
+                </div>
+            </div>
+
             <!-- Dino Selector -->
             <div class="control-group">
-                <label class="control-label">[ 基準恐竜の選択 ]</label>
+                <label class="control-label">[ 基準恐竜 (左側) ]</label>
                 <select id="dino-selector" class="hud-select">
                     {comparisonDinos.map(dino => (
                         <option 
@@ -53,11 +66,34 @@ if (!defaultDino) {
 
             <!-- Target Selector -->
             <div class="control-group">
-                <label class="control-label">[ 比較対象の選択 ]</label>
+                <label class="control-label">[ 比較・対決対象 (右側) ]</label>
                 <select id="asset-selector" class="hud-select">
-                    {Object.values(REFERENCE_ASSETS).map(asset => (
-                        <option value={asset.id} data-asset={JSON.stringify(asset)}>{asset.label}</option>
-                    ))}
+                    <optgroup label="現代の比較対象（人間・動物・乗り物）">
+                        {Object.values(REFERENCE_ASSETS).map(asset => (
+                            <option value={asset.id} data-asset={JSON.stringify(asset)} data-type="reference">{asset.label}</option>
+                        ))}
+                    </optgroup>
+                    <optgroup label="恐竜・古生物と直接対決（実寸VS）">
+                        {comparisonDinos.map(dino => {
+                            const assetData = {
+                                id: dino.id,
+                                name: dino.data.name,
+                                label: `【恐竜】${dino.data.name}（${dino.data.cyberMetadata?.realHeight}m）`,
+                                icon: `images/cyber/${dino.id}.webp`,
+                                realHeight: dino.data.cyberMetadata?.realHeight || 2.0,
+                                realLength: dino.data.cyberMetadata?.realLength || parseFloat(dino.data.length),
+                                bottomGap: dino.data.cyberMetadata?.bottomGap || 280,
+                                contentHeightPx: dino.data.cyberMetadata?.contentHeightPx || 450,
+                                sourceRes: dino.data.cyberMetadata?.sourceRes || 1024,
+                                isDino: true
+                            };
+                            return (
+                                <option value={dino.id} data-asset={JSON.stringify(assetData)} data-type="dinosaur">
+                                    【恐竜】{dino.data.name} (全長{dino.data.length} / 高{dino.data.cyberMetadata?.realHeight}m)
+                                </option>
+                            );
+                        })}
+                    </optgroup>
                 </select>
             </div>
 
@@ -247,6 +283,58 @@ if (!defaultDino) {
         let refImg: HTMLImageElement | null = null;
         let refTag: HTMLElement | null = null;
 
+        // Mode: 'bone' (cyber skeleton) or 'battle' (photorealistic threat battle)
+        let currentMode: 'bone' | 'battle' = 'bone';
+
+        // Battle Assets Registry (Calibrated for strict length & posture proportion)
+        const BATTLE_ASSETS: Record<string, { image: string; contentHeightPx: number; bottomGap: number }> = {
+            tyrannosaurus: {
+                image: '/images/cyber/tyrannosaurus_battle.webp',
+                // Calibrated to hip height 4.0m (realHeight 4.5m * 351px / 4.0m = 395px)
+                contentHeightPx: 395,
+                bottomGap: 306
+            },
+            triceratops: {
+                image: '/images/cyber/triceratops_battle.webp',
+                contentHeightPx: 322,
+                bottomGap: 305
+            },
+            spinosaurus: {
+                image: '/images/cyber/spinosaurus_battle.webp',
+                contentHeightPx: 319,
+                bottomGap: 297
+            },
+            giganotosaurus: {
+                image: '/images/cyber/giganotosaurus_battle.webp',
+                contentHeightPx: 295,
+                bottomGap: 346
+            },
+            brachiosaurus: {
+                image: '/images/cyber/brachiosaurus_battle.webp',
+                // Aspect 1.91:1, Length 25.0m, Height 13.0m
+                contentHeightPx: 514,
+                bottomGap: 254
+            },
+            ankylosaurus: {
+                image: '/images/cyber/ankylosaurus_battle.webp',
+                // Calibrated to hip height 1.7m / length 7.0m (realHeight 1.7m * 985px / 7.0m = 239px)
+                contentHeightPx: 239,
+                bottomGap: 328
+            },
+            mosasaurus: {
+                image: '/images/cyber/mosasaurus_battle.webp',
+                // Calibrated to exact length 17.0m (realHeight 3.5m * 980px / 17.0m = 202px)
+                contentHeightPx: 202,
+                bottomGap: 413
+            },
+            pteranodon: {
+                image: '/images/cyber/pteranodon_battle.webp',
+                // Standing height 3.0m / wings folded length ~5.0m (contentHeightPx 583 matches skeleton 579)
+                contentHeightPx: 583,
+                bottomGap: 221
+            }
+        };
+
         // Stats UI Elements
         let dinoHudSpecs: HTMLElement | null = null;
         let dinoDetailLink: HTMLAnchorElement | null = null;
@@ -331,7 +419,7 @@ if (!defaultDino) {
             currentZoom = 1.0;
             targetZoom = 1.0;
 
-            // Check for ?dino= URL parameter to auto-select requested specimen
+            // Check for URL parameters
             const urlParams = new URLSearchParams(window.location.search);
             const targetDinoId = urlParams.get('dino');
             if (targetDinoId && dinoSelector) {
@@ -340,6 +428,28 @@ if (!defaultDino) {
                     dinoSelector.value = targetDinoId;
                 }
             }
+
+            const targetCompareId = urlParams.get('compare') || urlParams.get('vs');
+            if (targetCompareId && selector) {
+                const matchedOption = Array.from(selector.options).find(opt => opt.value === targetCompareId);
+                if (matchedOption) {
+                    selector.value = targetCompareId;
+                }
+            }
+
+            const targetMode = urlParams.get('mode');
+            if (targetMode === 'battle') {
+                currentMode = 'battle';
+            } else {
+                currentMode = 'bone';
+            }
+            updateModeButtons();
+
+            // Bind mode buttons
+            const btnBone = document.getElementById('btn-mode-bone');
+            const btnBattle = document.getElementById('btn-mode-battle');
+            btnBone?.addEventListener('click', () => setMode('bone'));
+            btnBattle?.addEventListener('click', () => setMode('battle'));
 
             // Bind preset buttons
             const presetButtons = document.querySelectorAll('.preset-btn');
@@ -460,6 +570,60 @@ if (!defaultDino) {
             });
         }
 
+        function updateModeButtons() {
+            const btnBone = document.getElementById('btn-mode-bone');
+            const btnBattle = document.getElementById('btn-mode-battle');
+            if (btnBone && btnBattle) {
+                if (currentMode === 'battle') {
+                    btnBattle.classList.add('active');
+                    btnBone.classList.remove('active');
+                } else {
+                    btnBone.classList.add('active');
+                    btnBattle.classList.remove('active');
+                }
+            }
+        }
+
+        function setMode(newMode: 'bone' | 'battle') {
+            if (currentMode === newMode) return;
+            currentMode = newMode;
+            updateModeButtons();
+            updateSelectedDino();
+            updateSelectedAsset();
+            updateUrlParams();
+        }
+
+        function updateUrlParams() {
+            try {
+                const currentUrl = new URL(window.location.href);
+                if (dinoId) currentUrl.searchParams.set('dino', dinoId);
+                if (activeAsset && activeAsset.id) {
+                    if (activeAsset.isDino) {
+                        currentUrl.searchParams.set('vs', activeAsset.id);
+                        currentUrl.searchParams.delete('compare');
+                    } else {
+                        currentUrl.searchParams.set('compare', activeAsset.id);
+                        currentUrl.searchParams.delete('vs');
+                    }
+                }
+                if (currentMode === 'battle') {
+                    currentUrl.searchParams.set('mode', 'battle');
+                } else {
+                    currentUrl.searchParams.delete('mode');
+                }
+                window.history.replaceState({}, '', currentUrl.toString());
+
+                // Update document title dynamically
+                if (activeAsset && activeAsset.isDino) {
+                    document.title = `【実寸対決】${dinoName} vs ${activeAsset.name} 大きさ比較シミュレータ | Dino-Portal`;
+                } else if (activeAsset) {
+                    document.title = `${dinoName}と${activeAsset.name}の実寸サイズ比較シミュレータ | Dino-Portal`;
+                }
+            } catch (e) {
+                // Ignore in non-browser
+            }
+        }
+
         function updateSelectedDino() {
             if (!dinoSelector || !dinoImg || !dinoTag) return;
             const option = dinoSelector.options[dinoSelector.selectedIndex];
@@ -471,17 +635,38 @@ if (!defaultDino) {
                 dinoLength = activeDino.length;
                 dinoRealH = activeDino.cyberMetadata?.realHeight || 2.0;
                 dinoRealL = activeDino.cyberMetadata?.realLength || 6.0;
-                dinoContentH = activeDino.cyberMetadata?.contentHeightPx || 450;
                 dinoSourceRes = activeDino.cyberMetadata?.sourceRes || 1024;
-                dinoBottomGap = activeDino.cyberMetadata?.bottomGap || 280;
 
-                // Update Specimen UI
-                dinoImg.src = `/images/cyber/${dinoId}.webp`;
+                // Mode-aware visual & scanning bounds
+                if (currentMode === 'battle' && BATTLE_ASSETS[dinoId]) {
+                    dinoImg.src = BATTLE_ASSETS[dinoId].image;
+                    dinoContentH = BATTLE_ASSETS[dinoId].contentHeightPx;
+                    dinoBottomGap = BATTLE_ASSETS[dinoId].bottomGap;
+                    dinoImg.style.mixBlendMode = 'normal';
+                } else {
+                    dinoImg.src = `/images/cyber/${dinoId}.webp`;
+                    dinoContentH = activeDino.cyberMetadata?.contentHeightPx || 450;
+                    dinoBottomGap = activeDino.cyberMetadata?.bottomGap || 280;
+                    dinoImg.style.mixBlendMode = 'screen';
+                }
+
                 dinoImg.alt = dinoName;
-                dinoTag.innerText = `${dinoName} / 高さ ${formatVal(dinoRealH)}m（全長 ${dinoLength}）`;
+                if (currentMode === 'battle' && dinoId === 'tyrannosaurus') {
+                    dinoTag.innerText = `${dinoName} / 腰高 4.0m（体高 4.5m / 全長 ${dinoLength}）`;
+                } else if (dinoId === 'pteranodon') {
+                    dinoTag.innerText = `${dinoName} / 直立高 3.0m（全長 ${dinoLength} / 翼開長 7.0m）`;
+                } else {
+                    dinoTag.innerText = `${dinoName} / 高さ ${formatVal(dinoRealH)}m（全長 ${dinoLength}）`;
+                }
 
                 // Update Stats HUD
-                if (dinoHudSpecs) dinoHudSpecs.innerText = `${formatVal(dinoRealH)}m / ${formatVal(dinoRealL)}m`;
+                if (dinoHudSpecs) {
+                    if (currentMode === 'battle' && dinoId === 'tyrannosaurus') {
+                        dinoHudSpecs.innerText = `腰高4.0m(体高4.5m) / ${formatVal(dinoRealL)}m`;
+                    } else {
+                        dinoHudSpecs.innerText = `${formatVal(dinoRealH)}m / ${formatVal(dinoRealL)}m`;
+                    }
+                }
 
                 // Update Detail Link
                 if (dinoDetailLink) {
@@ -512,16 +697,8 @@ if (!defaultDino) {
                 // Update Preset buttons active state
                 updatePresetButtons(dinoId);
 
-                // Sync URL query parameter without page reload
-                try {
-                    const currentUrl = new URL(window.location.href);
-                    if (currentUrl.searchParams.get('dino') !== dinoId) {
-                        currentUrl.searchParams.set('dino', dinoId);
-                        window.history.replaceState({}, '', currentUrl.toString());
-                    }
-                } catch (e) {
-                    // Ignore in non-browser or sandboxed environments
-                }
+                // Sync URL query parameter & title
+                updateUrlParams();
 
                 // Recalculate zoom and trigger autofocus
                 recalculateAutofocus();
@@ -533,15 +710,44 @@ if (!defaultDino) {
             const option = selector.options[selector.selectedIndex];
             activeAsset = JSON.parse(option.getAttribute('data-asset') || '{}');
             
-            // Set image and tag
             if (activeAsset) {
-                refImg.src = '/' + activeAsset.icon;
+                const isDinoTarget = !!activeAsset.isDino;
+
+                // Orientation: face left if dinosaur target, otherwise standard translateX(-50%)
+                if (isDinoTarget) {
+                    refImg.style.setProperty('transform', 'translateX(-50%) scaleX(-1)', 'important');
+                } else {
+                    refImg.style.setProperty('transform', 'translateX(-50%)', 'important');
+                }
+
+                // Mode-aware visual & scanning bounds
+                if (currentMode === 'battle' && isDinoTarget && BATTLE_ASSETS[activeAsset.id]) {
+                    refImg.src = BATTLE_ASSETS[activeAsset.id].image;
+                    activeAsset.contentHeightPx = BATTLE_ASSETS[activeAsset.id].contentHeightPx;
+                    activeAsset.bottomGap = BATTLE_ASSETS[activeAsset.id].bottomGap;
+                    refImg.style.mixBlendMode = 'normal';
+                } else {
+                    refImg.src = '/' + activeAsset.icon;
+                    refImg.style.mixBlendMode = (activeAsset.id === 'human') ? 'normal' : 'screen';
+                    if (isDinoTarget && activeAsset.rawDino?.cyberMetadata) {
+                        activeAsset.contentHeightPx = activeAsset.rawDino.cyberMetadata.contentHeightPx;
+                        activeAsset.bottomGap = activeAsset.rawDino.cyberMetadata.bottomGap;
+                    }
+                }
+
                 refImg.alt = activeAsset.label;
-                if (activeAsset.realLength) {
+                if (currentMode === 'battle' && activeAsset.id === 'tyrannosaurus') {
+                    refTag.innerText = `${activeAsset.name} / 全長 ${formatVal(activeAsset.realLength)}m（腰高 4.0m / 体高 4.5m）`;
+                } else if (activeAsset.id === 'pteranodon') {
+                    refTag.innerText = `${activeAsset.name} / 直立高 3.0m（全長 ${formatVal(activeAsset.realLength)}m / 翼開長 7.0m）`;
+                } else if (activeAsset.realLength) {
                     refTag.innerText = `${activeAsset.name} / 全長 ${formatVal(activeAsset.realLength)}m（高さ ${formatVal(activeAsset.realHeight)}m）`;
                 } else {
                     refTag.innerText = `${activeAsset.name} / 高さ ${formatVal(activeAsset.realHeight)}m`;
                 }
+
+                // Sync URL query parameter & title
+                updateUrlParams();
 
                 // Recalculate zoom and trigger autofocus
                 recalculateAutofocus();
@@ -640,6 +846,9 @@ if (!defaultDino) {
                 compsognathus: { left: 44, right: 37 },
                 brachiosaurus: { left: 54, right: 44 },
                 tyrannosaurus: { left: 29, right: 31 },
+                ankylosaurus: { left: 20, right: 20 },
+                mosasaurus: { left: 22, right: 22 },
+                pteranodon: { left: 22, right: 22 },
                 sinoceratops: { left: 196, right: 162 },
                 human: { left: 329, right: 328 },
                 car: { left: 11, right: 8 },
@@ -678,11 +887,16 @@ if (!defaultDino) {
             dinoImg.style.bottom = `-${dinoOffset}px`;
             dinoImg.style.marginBottom = '0px';
 
-
-
             refImg.style.height = `${refTotalH}px`;
             refImg.style.bottom = `-${refOffset}px`;
             refImg.style.marginBottom = '0px';
+
+            // Sync ref orientation: face left when confronting dinosaur, standard translateX(-50%) for reference assets
+            if (activeAsset && activeAsset.isDino) {
+                refImg.style.setProperty('transform', 'translateX(-50%) scaleX(-1)', 'important');
+            } else {
+                refImg.style.setProperty('transform', 'translateX(-50%)', 'important');
+            }
 
             // 5. Position elements dynamically to be centered as a pair in the stage
             const stageW = stageContainer.clientWidth || SAFE_ZONE_W;
@@ -807,6 +1021,51 @@ if (!defaultDino) {
             gap: 20px;
             align-items: center;
             border-color: var(--primary-neon);
+        }
+
+        .hud-mode-toggle {
+            display: inline-flex;
+            background: rgba(3, 8, 16, 0.85);
+            border: 1px solid rgba(0, 242, 255, 0.3);
+            border-radius: 4px;
+            padding: 3px;
+            gap: 4px;
+        }
+
+        .mode-btn {
+            background: transparent;
+            border: 1px solid transparent;
+            color: var(--text-dim);
+            font-family: var(--font-mono);
+            font-size: 12.5px;
+            padding: 6px 12px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+        }
+
+        .mode-btn:hover {
+            color: var(--text-main);
+            background: rgba(0, 242, 255, 0.08);
+        }
+
+        .mode-btn.active {
+            background: rgba(0, 242, 255, 0.18);
+            border-color: var(--primary-neon);
+            color: var(--primary-neon);
+            box-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
+            font-weight: bold;
+        }
+
+        .mode-btn.active[data-mode="battle"] {
+            background: rgba(255, 0, 85, 0.2);
+            border-color: #ff0055;
+            color: #ff3377;
+            box-shadow: 0 0 12px rgba(255, 0, 85, 0.45);
         }
 
         .control-group {

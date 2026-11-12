@@ -160,6 +160,57 @@ const breadcrumbSchema = {
     ]
 };
 
+// 4. Size comparison rendering details
+const PANEL_HEIGHT = 400;
+const BASELINE_PX = 100;
+const SAFE_ZONE_H = PANEL_HEIGHT - BASELINE_PX; // 300px
+const SAFE_ZONE_W = 600;
+
+const imagePath = path.join(process.cwd(), 'public', 'images', 'cyber', `${entry.id}.webp`);
+const hasComparison = !!d.cyberMetadata && fs.existsSync(imagePath);
+
+// Image SEO (Alt texts & ImageObject Schema)
+const mainImageAlt = `${d.name}（${d.nameEn || d.name}）の生体復元イラスト・姿｜中生代${d.era} ${categoryLabel}（全長${d.length}）`;
+
+const imageSchemaList: any[] = [
+    {
+        "@type": "ImageObject",
+        "@id": `https://dino-portal.com/${d.image}#primaryimage`,
+        "url": `https://dino-portal.com/${d.image}`,
+        "contentUrl": `https://dino-portal.com/${d.image}`,
+        "caption": `${d.name}（${d.nameEn || d.name}）の生体復元イラスト`,
+        "description": `中生代${d.era}の${categoryLabel}「${d.name}」のリアルな復元想像図・外見特徴。推定全長約${d.length}、推定体重約${d.weight}。`,
+        "name": `${d.name}の復元イラスト`,
+        "representativeOfPage": true,
+        "creator": {
+            "@type": "Organization",
+            "name": "Dino-Portal Lab",
+            "url": "https://dino-portal.com/"
+        },
+        "creditText": "Dino-Portal",
+        "copyrightNotice": "© Dino-Portal"
+    }
+];
+
+if (hasComparison) {
+    imageSchemaList.push({
+        "@type": "ImageObject",
+        "@id": `https://dino-portal.com/images/cyber/${d.id}.webp#cyber`,
+        "url": `https://dino-portal.com/images/cyber/${d.id}.webp`,
+        "contentUrl": `https://dino-portal.com/images/cyber/${d.id}.webp`,
+        "caption": `${d.name}と人間（1.7m）の実寸1:1サイズ比較骨格図`,
+        "description": `${d.name}（全長${d.length}）の骨格側面図と人間（1.7m）の実寸比率スケール比較。`,
+        "name": `${d.name}の骨格図・実寸サイズ比較図`,
+        "creator": {
+            "@type": "Organization",
+            "name": "Dino-Portal Lab",
+            "url": "https://dino-portal.com/"
+        },
+        "creditText": "Dino-Portal",
+        "copyrightNotice": "© Dino-Portal"
+    });
+}
+
 const schema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -167,7 +218,10 @@ const schema = {
             "@type": "Article",
             "headline": pageTitle,
             "description": pageDescription,
-            "image": `https://dino-portal.com/${d.image}`,
+            "image": [
+                `https://dino-portal.com/${d.image}`,
+                ...(hasComparison ? [`https://dino-portal.com/images/cyber/${d.id}.webp`] : [])
+            ],
             "author": {
                 "@type": "Person",
                 "name": AUTHOR_DATA.name,
@@ -179,6 +233,7 @@ const schema = {
                 "@id": `https://dino-portal.com/dictionary/${entry.id}/#taxon`
             }
         },
+        ...imageSchemaList,
         taxonSchema,
         breadcrumbSchema,
         {
@@ -195,14 +250,6 @@ const schema = {
     ]
 };
 
-// 4. Size comparison rendering details
-const PANEL_HEIGHT = 400;
-const BASELINE_PX = 100;
-const SAFE_ZONE_H = PANEL_HEIGHT - BASELINE_PX; // 300px
-const SAFE_ZONE_W = 600;
-
-const imagePath = path.join(process.cwd(), 'public', 'images', 'cyber', `${entry.id}.webp`);
-const hasComparison = !!d.cyberMetadata && fs.existsSync(imagePath);
 let dinoLeft = '15%';
 let refRight = '15%';
 let isLabelConflict = false;
@@ -611,11 +658,11 @@ if (hasComparison && h3List.length > 0) {
                         <div class="slider-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden;">
                             <div class="slider-track" id="dino-slider" style="display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; scrollbar-width: none; width: 100%; height: 100%;">
                                 <div class="slider-slide" style="flex: 0 0 100%; width: 100%; min-width: 100%; max-width: 100%; height: 100%; scroll-snap-align: start; display: flex; justify-content: center; align-items: center;">
-                                    <img src={`/${d.image}`} alt={d.name} fetchpriority="high" decoding="async" width="800" height="533" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 0 30px rgba(0,242,255,0.3));">
+                                    <img src={`/${d.image}`} alt={mainImageAlt} fetchpriority="high" decoding="async" width="800" height="533" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 0 30px rgba(0,242,255,0.3));">
                                 </div>
                                 {d.gallery.map((imgUrl, idx) => (
                                     <div class="slider-slide" style="flex: 0 0 100%; width: 100%; min-width: 100%; max-width: 100%; height: 100%; scroll-snap-align: start; display: flex; justify-content: center; align-items: center;">
-                                        <img src={`/${imgUrl}`} alt={`${d.name} イラスト ${idx + 2}`} loading="lazy" decoding="async" width="800" height="533" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 0 30px rgba(0,242,255,0.3));">
+                                        <img src={`/${imgUrl}`} alt={`${d.name}（${d.nameEn || d.name}）の生体復元イラスト バリエーション${idx + 2}｜中生代${d.era}`} loading="lazy" decoding="async" width="800" height="533" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 0 30px rgba(0,242,255,0.3));">
                                     </div>
                                 ))}
                             </div>
@@ -634,7 +681,7 @@ if (hasComparison && h3List.length > 0) {
                         <div class="hud-corner top-left"></div>
                         <div class="hud-corner bottom-right"></div>
                         <div class="scan-line-ani"></div>
-                        <img src={`/${d.image}`} alt={d.name} fetchpriority="high" decoding="async" width="800" height="533" style="width: 100%; height: 100%; object-fit: contain;">
+                        <img src={`/${d.image}`} alt={mainImageAlt} fetchpriority="high" decoding="async" width="800" height="533" style="width: 100%; height: 100%; object-fit: contain;">
                     </div>
                 )}
             </div>
@@ -797,7 +844,9 @@ if (hasComparison && h3List.length > 0) {
                                 </div>
 
                                 <div class="size-comparison-panel hud-panel opt1-comparison-frame">
-                                    <svg viewBox="0 0 650 400" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="display: block; overflow: visible;">
+                                    <svg viewBox="0 0 650 400" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="display: block; overflow: visible;" role="img" aria-labelledby={`svg-title-${d.id} svg-desc-${d.id}`}>
+                                        <title id={`svg-title-${d.id}`}>{d.name}と人間（1.7m）の実寸1:1サイズ比較骨格図</title>
+                                        <desc id={`svg-desc-${d.id}`}>{d.name}（全長 {d.length}、全高 {formatVal(d.cyberMetadata?.realHeight || 0)}m）と標準的な人間（身長 1.7m）の精密なスケール比較グラフィックです。</desc>
                                         <defs>
                                             <pattern id="hud-grid-minor-opt1" width="20" height="20" patternUnits="userSpaceOnUse">
                                                 <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(0, 242, 255, 0.04)" stroke-width="1"/>
@@ -1077,7 +1126,7 @@ if (hasComparison && h3List.length > 0) {
                 <a href="/dictionary/" class="seq-nav-hub" title="五十音順の恐竜図鑑一覧へ">
                     <span class="seq-hub-icon">❖</span>
                     <span class="seq-hub-title">五十音順図鑑 INDEX</span>
-                    <span class="seq-hub-desc">全335種アーカイブ</span>
+                    <span class="seq-hub-desc">全340種アーカイブ</span>
                 </a>
 
                 <a href={`/dictionary/${nextDino.id}/`} class="seq-nav-card seq-next" title={`五十音順で次の恐竜: ${nextDino.name}（${nextDino.kana}）`}>

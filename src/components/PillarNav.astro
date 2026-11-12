@@ -1,11 +1,20 @@
 ---
 interface Props {
-  currentPillar?: 'jurassic' | 'cretaceous' | 'carnivores' | 'marine-reptiles' | 'japan-dinosaurs';
+  currentPillar?: 'triassic' | 'jurassic' | 'cretaceous' | 'carnivores' | 'herbivores' | 'marine-reptiles' | 'japan-dinosaurs';
 }
 
 const { currentPillar } = Astro.props;
 
 const PILLARS = [
+  {
+    id: 'triassic',
+    href: '/period/triassic/',
+    badge: '時代別ピラー',
+    title: '三畳紀の古生物完全ガイド',
+    desc: '恐竜誕生と最古のハンターたち。パンゲア大陸での黎明期と進化の幕開け。',
+    accentColor: '#ffb700',
+    icon: '🦎'
+  },
   {
     id: 'jurassic',
     href: '/period/jurassic/',
@@ -34,6 +43,15 @@ const PILLARS = [
     icon: '⚡'
   },
   {
+    id: 'herbivores',
+    href: '/herbivores/',
+    badge: '生態・系統別ピラー',
+    title: '巨大草食恐竜図鑑',
+    desc: '竜脚類・角竜・鎧竜・剣竜・鳥脚類。植物食恐竜の驚異の進化と巨大化戦略。',
+    accentColor: '#00ffaa',
+    icon: '🌿'
+  },
+  {
     id: 'marine-reptiles',
     href: '/marine-reptiles/',
     badge: '生息圏別ピラー',
@@ -60,7 +78,7 @@ const PILLARS = [
       <span style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); letter-spacing: 2px;">TOPIC CLUSTER NAVIGATION</span>
       <h3 style="font-size: 20px; color: var(--text-main); margin-top: 5px; font-weight: 700;">テーマ別ピラーページ（完全網羅ガイド）</h3>
     </div>
-    <span style="font-size: 13px; color: var(--text-dim); font-family: var(--font-mono);">全5大特集アーカイブ</span>
+    <span style="font-size: 13px; color: var(--text-dim); font-family: var(--font-mono);">全7大特集アーカイブ</span>
   </div>
 
   <div class="pillar-cards-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px;">

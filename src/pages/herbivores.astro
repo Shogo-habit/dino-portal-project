@@ -1,0 +1,377 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PillarNav from '../components/PillarNav.astro';
+import { getCollection } from 'astro:content';
+
+const allDinosaurs = await getCollection('dinosaurs');
+// 植物食・草食恐竜を動的抽出
+const herbivoreDinosaurs = allDinosaurs
+  .filter(entry => {
+    const d = entry.data;
+    const diet = d.diet || '';
+    return diet.includes('植物食') || diet.includes('草食');
+  })
+  .map(entry => entry.data);
+
+// 50音順にデフォルトソート
+herbivoreDinosaurs.sort((a, b) => a.kana.localeCompare(b.kana, 'ja'));
+
+// パンくずリスト & 構造化データ (Schema.org)
+const breadcrumbs = [
+  { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://dino-portal.com/" },
+  { "@type": "ListItem", "position": 2, "name": "恐竜図鑑", "item": "https://dino-portal.com/dictionary/" },
+  { "@type": "ListItem", "position": 3, "name": "巨大草食恐竜図鑑", "item": "https://dino-portal.com/herbivores/" }
+];
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": breadcrumbs
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "巨大草食恐竜図鑑 - 竜脚類・角竜・鎧竜・剣竜・鳥脚類の進化と巨大化戦略",
+    "description": "中生代に繁栄した草食・植物食恐竜を完全網羅。アルゼンチノサウルス、トリケラトプス、アンキロサウルス、ステゴサウルス、パラサウロロフス等の防衛武器、デンタルバッテリー、消化戦略を学術的に徹底解説。",
+    "url": "https://dino-portal.com/herbivores/",
+    "hasPart": herbivoreDinosaurs.map(d => ({
+      "@type": "Thing",
+      "name": d.name,
+      "url": `https://dino-portal.com/dictionary/${d.id}/`,
+      "description": d.description
+    }))
+  }
+];
+---
+
+<Layout 
+  title="巨大草食恐竜図鑑 - 竜脚類・角竜・鎧竜・剣竜・鳥脚類の進化と巨大化戦略 | Dino-Portal" 
+  description="ブラキオサウルス、トリケラトプス、アンキロサウルス、ステゴサウルスなど中生代の草食・植物食恐竜を完全網羅。超巨大化を支えた含気骨と消化機構、捕食者を撃退する角・鎧・骨板・スパイクの進化史を徹底解剖。"
+  activeTab="dictionary"
+  schema={schema}
+>
+  <div class="pillar-container" style="max-width: 1400px; margin: 0 auto; padding: 20px 20px 80px;">
+    
+    <!-- Breadcrumb bar -->
+    <nav aria-label="パンくずリスト" style="margin-bottom: 25px; font-family: var(--font-mono); font-size: 12px; color: #d8edf2; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+      <a href="/" style="color: var(--primary-neon); text-decoration: none;">HOME</a>
+      <span>/</span>
+      <a href="/dictionary/" style="color: var(--primary-neon); text-decoration: none;">DICTIONARY</a>
+      <span>/</span>
+      <span style="color: var(--text-main);">TOPIC: HERBIVORES</span>
+    </nav>
+
+    <!-- Hero Banner Header -->
+    <header class="pillar-hero hud-panel" style="padding: 40px; margin-bottom: 40px; position: relative; overflow: hidden; border-color: rgba(0, 255, 170, 0.4); background: linear-gradient(135deg, rgba(0, 255, 170, 0.08) 0%, rgba(3, 6, 8, 0.8) 100%);">
+      <div class="hero-tag" style="display: inline-flex; align-items: center; gap: 8px; padding: 4px 12px; background: rgba(0, 255, 170, 0.15); border: 1px solid #00ffaa; border-radius: 2px; font-family: var(--font-mono); font-size: 11px; color: #00ffaa; margin-bottom: 15px; letter-spacing: 1.5px;">
+        <span>HERBIVORE TAXONOMY ARCHIVE</span>
+        <span>|</span>
+        <span>SAUROPODS, CERATOPSIANS, HADROSAURS & THYREOPHORA</span>
+      </div>
+      
+      <h1 style="font-size: clamp(26px, 4vw, 42px); font-weight: 800; color: var(--text-main); line-height: 1.3; margin-bottom: 15px; letter-spacing: -0.5px;">
+        巨大草食恐竜図鑑<br>
+        <span style="font-size: clamp(16px, 2.5vw, 24px); color: #00ffaa; font-weight: 600;">植物食恐竜の驚異の進化・防衛武装・巨大化戦略</span>
+      </h1>
+
+      <p style="font-size: 15px; line-height: 1.8; color: #d8edf2; max-width: 900px; margin-bottom: 25px;">
+        中生代の陸上生態系を支え、バイオマス（生物量）の大半を占めた植物食恐竜たち。地球史上最大の巨躯を誇る竜脚類、強靭な角とフリルで武装した角竜類、戦車のように重厚な鎧をまとった鎧竜類、優美な骨板と尾のトゲを輝かせた剣竜類、そして驚異のデンタルバッテリーで植物をすり潰した鳥脚類。過酷な肉食恐竜との生存競争の中で磨き上げられた究極の防御システムと巨大化の秘密を徹底解剖します。
+      </p>
+
+      <div class="hero-stats" style="display: flex; gap: 20px; flex-wrap: wrap; align-items: center; border-top: 1px solid rgba(0, 255, 170, 0.2); padding-top: 20px;">
+        <div style="font-family: var(--font-mono);">
+          <span style="font-size: 11px; color: #d8edf2; display: block;">REGISTERED HERBIVORES</span>
+          <span style="font-size: 24px; font-weight: 700; color: #00ffaa;">{herbivoreDinosaurs.length} <span style="font-size: 14px; color: #d8edf2;">種掲載中</span></span>
+        </div>
+        <div style="height: 30px; width: 1px; background: rgba(0, 255, 170, 0.2);"></div>
+        <div style="font-family: var(--font-mono);">
+          <span style="font-size: 11px; color: #d8edf2; display: block;">MAX WEIGHT</span>
+          <span style="font-size: 18px; font-weight: 600; color: var(--text-main);">推定 70 – 90 トン級（アルゼンチノサウルス等）</span>
+        </div>
+        <div style="height: 30px; width: 1px; background: rgba(0, 255, 170, 0.2);"></div>
+        <div style="font-family: var(--font-mono);">
+          <span style="font-size: 11px; color: #d8edf2; display: block;">MAJOR CLADES</span>
+          <span style="font-size: 14px; font-weight: 600; color: var(--text-main);">竜脚形類 / 角竜類 / 鎧竜類 / 剣竜類 / 鳥脚類</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Academic Guide Article Section -->
+    <article class="academic-guide hud-panel" style="padding: 40px; margin-bottom: 50px; background: rgba(3, 6, 8, 0.6); border-color: rgba(0, 255, 170, 0.25);">
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 30px; border-bottom: 2px solid #00ffaa; padding-bottom: 15px;">
+        <span style="font-size: 24px;">🌿</span>
+        <h2 style="font-size: 22px; color: #00ffaa; font-weight: 700; margin: 0; letter-spacing: 0.5px;">
+          植物食恐竜の古生物学：解剖学的特長・消化イノベーション・防衛軍拡競争
+        </h2>
+      </div>
+
+      <div class="article-content" style="color: var(--text-main); font-size: 15px; line-height: 1.9;">
+        
+        <section style="margin-bottom: 35px;">
+          <h3 style="font-size: 18px; color: #fff; border-left: 4px solid #00ffaa; padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
+            1. 中生代のバイオマスを支えた「草食恐竜」の進化史
+          </h3>
+          <p style="margin-bottom: 12px; color: #d8edf2;">
+            生態ピラミッドにおいて、頂点捕食者が生存するためにはその数十倍から数百倍もの植物食動物（一次消費者）のバイオマス（生物体量）が必要です。三畳紀の小型二足歩行種（エオラプトル等）から分岐した恐竜たちは、植物食へと適応することで急速に多様化し、地球史上最大の陸上脊椎動物へと成長していきました。
+          </p>
+          <p style="margin-bottom: 12px; color: #d8edf2;">
+            植物食恐竜は大きく<strong style="color: var(--text-main); font-weight: 700;">竜盤類（Saurischia）</strong>に属する竜脚形類と、<strong style="color: var(--text-main); font-weight: 700;">鳥盤類（Ornithischia）</strong>に二分されます。鳥盤類はさらに角竜類、鎧竜類、剣竜類、鳥脚類、厚頭竜類へと細分化され、それぞれのニッチにおいて独自の摂食・防衛システムを極限まで発達させました。
+          </p>
+        </section>
+
+        <section style="margin-bottom: 35px;">
+          <h3 style="font-size: 18px; color: #fff; border-left: 4px solid #00ffaa; padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
+            2. 五大草食グループの防衛武装と骨格イノベーション
+          </h3>
+          <p style="margin-bottom: 12px; color: #d8edf2;">
+            獰猛な肉食恐竜（ティラノサウルスやアロサウルス類）の攻撃から身を守るため、草食恐竜たちは驚くべき防御兵器を進化させました。
+          </p>
+          
+          <div style="background: rgba(0, 255, 170, 0.04); border-left: 3px solid #00ffaa; padding: 15px 20px; margin: 15px 0; border-radius: 0 4px 4px 0;">
+            <h4 style="font-size: 14px; color: #00ffaa; margin-bottom: 8px; font-weight: 700;">🛡️ 5大草食系統の生存戦略プロファイル</h4>
+            <ul style="margin: 0; padding-left: 20px; font-size: 14px; color: #d8edf2; line-height: 1.8;">
+              <li style="margin-bottom: 12px;">
+                <strong style="color: #fff;">竜脚形類（超巨大化の壁）:</strong><br>
+                ブラキオサウルス、アルゼンチノサウルス、ディプロドクス等。圧倒的な体重（数十トン）自体が最強の防御。長大な首で高木の樹冠を独占摂食し、ムチのような尾で捕食者を牽制。
+              </li>
+              <li style="margin-bottom: 12px;">
+                <strong style="color: #fff;">角竜下目（角と頭骨フリル）:</strong><br>
+                トリケラトプス、スティラコサウルス等。首を守る強固な骨質フリルと鋭利な角。前面からの突進攻撃でティラノサウルスの突撃をも受け止め、撃退した。
+              </li>
+              <li style="margin-bottom: 12px;">
+                <strong style="color: #fff;">鎧竜下目（生きた戦車）:</strong><br>
+                アンキロサウルス、ボレアロペルタ等。頭部から背中、眼瞼にまで及ぶ骨質皮骨板（オステオダーム）の装甲。尾の先端にある数十キログラムの骨塊「テールクラブ」で肉食恐竜の脛骨を粉砕。
+              </li>
+              <li style="margin-bottom: 12px;">
+                <strong style="color: #fff;">剣竜下目（骨板とスパイク）:</strong><br>
+                ステゴサウルス、ケントロサウルス等。背面の放熱・威嚇プレートと、尾端の致命的な4本スパイク「サゴマイザー」による精密迎撃。
+              </li>
+              <li style="margin-bottom: 0;">
+                <strong style="color: #fff;">鳥脚下目（俊足と群れ社会）:</strong><br>
+                パラサウロロフス、イグアノドン、エドモントサウルス、カムイサウルス等。二足・四足歩行の柔軟な切り替えによる高速離脱。頭骨のとさかによる低周波コミュニケーションと巨大な群れ（ヘルス）の防衛ネットワーク。
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section style="margin-bottom: 35px;">
+          <h3 style="font-size: 18px; color: #fff; border-left: 4px solid #00ffaa; padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
+            3. 消化器系と歯の進化：硬い植物をエネルギーに変える奇跡
+          </h3>
+          <p style="margin-bottom: 12px; color: #d8edf2;">
+            中生代の植物（針葉樹、ソテツ、イチョウ、シダ類）は細胞壁（セルロースやリグニン）が極めて強固で、消化には高度な仕組みが必要でした。植物食恐竜たちは、現代の哺乳類とは全く異なる驚異的な方法でこの課題を克服しました。
+          </p>
+          <p style="margin-bottom: 12px; color: #d8edf2;">
+            竜脚類は噛まずに丸呑みし、巨大な腹腔内の<strong style="color: var(--text-main); font-weight: 700;">「巨大発酵タンク（腸管）」</strong>と胃石によって長時間かけて微生物発酵分解を行いました。一方、白亜紀に爆発的繁栄を遂げたハドロサウルス類は、上下の顎に数百本から千本以上の微細な歯が密生する<strong style="color: var(--text-main); font-weight: 700;">「デンタルバッテリー」</strong>を発達させました。歯が摩耗しても下から次々と新しい歯が押し出される構造により、砥石のように硬いトクサや針葉樹を粉々にすり潰す完全咀嚼を成し遂げたのです。
+          </p>
+        </section>
+
+        <section>
+          <h3 style="font-size: 18px; color: #fff; border-left: 4px solid #00ffaa; padding-left: 12px; margin-bottom: 15px; font-weight: 700;">
+            4. 被子植物（花と広葉樹）の出現と植物食恐竜の共進化
+          </h3>
+          <p style="margin-bottom: 12px; color: #d8edf2;">
+            白亜紀前期に起きた最大の植物革命が<strong style="color: var(--text-main); font-weight: 700;">被子植物（顕花植物）</strong>の出現です。急速に成長し、栄養価の高い葉や実をつける被子植物の拡散に伴い、低層の植物を効率よく刈り取る角竜類や鳥脚類が爆発的に種を増やしました。
+          </p>
+          <p style="margin-bottom: 0; color: #d8edf2;">
+            恐竜に食べられることで種子を遠方へ散布させる植物と、それを主食として代謝を高めた恐竜たち。この壮大な共進化（コ・エボリューション）こそが、白亜紀後期における恐竜の空前絶後の多様性を生み出した真の原動力であったことが最新の古植物学研究で明らかにされています。
+          </p>
+        </section>
+
+      </div>
+    </article>
+
+    <!-- Specimen List & Interactive Filter Section -->
+    <section class="specimen-section" style="margin-bottom: 60px;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px; margin-bottom: 25px; border-bottom: 1px solid rgba(0, 255, 170, 0.2); padding-bottom: 15px;">
+        <div>
+          <span style="font-family: var(--font-mono); font-size: 11px; color: #00ffaa; letter-spacing: 2px;">HERBIVORE SPECIMEN DATABASE</span>
+          <h2 style="font-size: 24px; color: var(--text-main); margin-top: 5px; font-weight: 700;">草食・植物食恐竜の登録標本一覧</h2>
+          <p style="font-size: 12px; color: #d8edf2; margin-top: 6px;">※ 竜脚形類、角竜類、鎧竜類、剣竜類、鳥脚類をはじめ、植物食に適応した全中生代恐竜・古生物を収録しています。</p>
+        </div>
+
+        <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+          <input 
+            type="text" 
+            id="specimen-search" 
+            placeholder="草食恐竜を検索..." 
+            aria-label="草食恐竜の名前で検索"
+            style="padding: 10px 15px; font-size: 13px; background: rgba(0, 255, 170, 0.05); border: 1px solid #00ffaa; color: var(--text-main); border-radius: 4px; width: 220px;"
+          >
+          <select 
+            id="specimen-group" 
+            aria-label="分類グループで絞り込み"
+            style="padding: 10px 15px; font-size: 13px; background: rgba(0, 255, 170, 0.05); border: 1px solid #00ffaa; color: var(--text-main); border-radius: 4px;"
+          >
+            <option value="all">すべての分類（全種）</option>
+            <option value="竜脚">竜脚形類（首の長い恐竜）</option>
+            <option value="角竜">角竜類（トリケラトプス等）</option>
+            <option value="鎧竜">鎧竜類（アンキロサウルス等）</option>
+            <option value="剣竜">剣竜類（ステゴサウルス等）</option>
+            <option value="鳥脚">鳥脚類（ハドロサウルス等）</option>
+            <option value="その他">その他・テリジノサウルス類等</option>
+          </select>
+          <select 
+            id="specimen-sort" 
+            aria-label="並び替え順"
+            style="padding: 10px 15px; font-size: 13px; background: rgba(0, 255, 170, 0.05); border: 1px solid #00ffaa; color: var(--text-main); border-radius: 4px;"
+          >
+            <option value="kana">かな順（あいうえお）</option>
+            <option value="size-desc">全長順（大きい順）</option>
+            <option value="size-asc">全長順（小さい順）</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Dinosaur Card Grid -->
+      <div class="dino-grid" id="specimen-grid">
+        {herbivoreDinosaurs.map(d => (
+          <div class="dino-card hud-panel" data-id={d.id} data-name={d.name} data-kana={d.kana} data-aliases={(d.aliases || []).join(',')} data-scientific={d.scientificName} data-length={d.length} data-diet={d.diet} data-group={d.group}>
+            <a href={`/dictionary/${d.id}/`} style="text-decoration: none; color: inherit; display: block; height: 100%;">
+              <div class="card-img-wrap" style="position: relative; overflow: hidden; aspect-ratio: 1 / 1; background: #000;">
+                <img src={`/${d.image}`} alt={d.name} loading="lazy" decoding="async" width="400" height="400" style="width: 100%; height: 100%; object-fit: contain;">
+                <div style="position: absolute; top: 8px; left: 8px; background: rgba(0, 0, 0, 0.7); padding: 2px 8px; border-radius: 2px; font-family: var(--font-mono); font-size: 10px; color: #00ffaa; border: 1px solid rgba(0, 255, 170, 0.3);">
+                  {d.era}
+                </div>
+              </div>
+              <div class="card-info" style="padding: 15px;">
+                <h3 class="card-title" style="font-size: 17px; font-weight: 700; color: var(--text-main); margin-bottom: 4px;">{d.name}</h3>
+                <div style="font-family: var(--font-mono); font-size: 11px; color: #d8edf2; margin-bottom: 10px; font-style: italic;">{d.scientificName}</div>
+                <div class="card-tags" style="display: flex; gap: 6px; flex-wrap: wrap;">
+                  <span class="card-tag group-tag" style="font-size: 11px; padding: 2px 8px; background: rgba(0, 255, 170, 0.1); border: 1px solid rgba(0, 255, 170, 0.3); border-radius: 2px; color: #00ffaa;">{d.group || '恐竜'}</span>
+                  <span class="card-tag" style="font-size: 11px; padding: 2px 8px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 2px; color: #d8edf2;">{d.length}</span>
+                  <span class="card-tag" style="font-size: 11px; padding: 2px 8px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 2px; color: #d8edf2;">{d.diet}</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Topic Cluster Navigation component -->
+    <PillarNav currentPillar="herbivores" />
+
+  </div>
+</Layout>
+
+<style>
+  .dino-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+  }
+
+  .dino-card {
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    border-color: rgba(0, 255, 170, 0.2);
+  }
+
+  .dino-card:hover {
+    transform: translateY(-4px);
+    border-color: #00ffaa;
+    box-shadow: 0 8px 25px rgba(0, 255, 170, 0.25);
+  }
+
+  .card-img-wrap img {
+    transition: transform 0.5s ease;
+  }
+
+  .dino-card:hover .card-img-wrap img {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 768px) {
+    .dino-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .pillar-hero {
+      padding: 25px 20px !important;
+    }
+    .academic-guide {
+      padding: 25px 20px !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .dino-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  function setupSearchAndSort() {
+    const searchInput = document.getElementById('specimen-search') as HTMLInputElement;
+    const groupSelect = document.getElementById('specimen-group') as HTMLSelectElement;
+    const sortSelect = document.getElementById('specimen-sort') as HTMLSelectElement;
+    const grid = document.getElementById('specimen-grid');
+    if (!grid) return;
+
+    const cards = Array.from(grid.getElementsByClassName('dino-card')) as HTMLElement[];
+
+    function parseLength(lenStr: string): number {
+      if (!lenStr) return 0;
+      const m = lenStr.match(/([0-9.]+)\s*m/i);
+      return m ? parseFloat(m[1]) : 0;
+    }
+
+    function applyFilters() {
+      const q = (searchInput?.value || '').trim().toLowerCase();
+      const groupFilter = groupSelect?.value || 'all';
+      const sortMode = sortSelect?.value || 'kana';
+
+      // 1. Filter
+      cards.forEach(card => {
+        const name = (card.dataset.name || '').toLowerCase();
+        const kana = (card.dataset.kana || '').toLowerCase();
+        const aliases = (card.dataset.aliases || '').toLowerCase();
+        const scientific = (card.dataset.scientific || '').toLowerCase();
+        const group = (card.dataset.group || '').toLowerCase();
+
+        const matchQuery = !q || 
+          name.includes(q) || 
+          kana.includes(q) || 
+          aliases.includes(q) || 
+          scientific.includes(q) ||
+          group.includes(q);
+
+        let matchGroup = true;
+        if (groupFilter !== 'all') {
+          if (groupFilter === 'その他') {
+            matchGroup = !group.includes('竜脚') && !group.includes('角竜') && !group.includes('鎧竜') && !group.includes('剣竜') && !group.includes('鳥脚');
+          } else {
+            matchGroup = group.includes(groupFilter.toLowerCase());
+          }
+        }
+
+        card.style.display = (matchQuery && matchGroup) ? 'block' : 'none';
+      });
+
+      // 2. Sort
+      const sortedCards = cards.slice().sort((a, b) => {
+        if (sortMode === 'size-desc') {
+          return parseLength(b.dataset.length || '') - parseLength(a.dataset.length || '');
+        } else if (sortMode === 'size-asc') {
+          return parseLength(a.dataset.length || '') - parseLength(b.dataset.length || '');
+        } else {
+          const kanaA = a.dataset.kana || a.dataset.name || '';
+          const kanaB = b.dataset.kana || b.dataset.name || '';
+          return kanaA.localeCompare(kanaB, 'ja');
+        }
+      });
+
+      sortedCards.forEach(c => grid.appendChild(c));
+    }
+
+    searchInput?.addEventListener('input', applyFilters);
+    groupSelect?.addEventListener('change', applyFilters);
+    sortSelect?.addEventListener('change', applyFilters);
+  }
+
+  // Setup on page load and client navigations
+  setupSearchAndSort();
+  document.addEventListener('astro:page-load', setupSearchAndSort);
+</script>
