@@ -1,5 +1,27 @@
 [
   {
+    "id": "aardonyx",
+    "name": "アールドニクス",
+    "scientificName": "Aardonyx celestae",
+    "group": "竜脚形類（基盤的竜脚形類）",
+    "diet": "植物食",
+    "era": "ジュラ紀前期",
+    "realHeight": 2.2,
+    "realLength": 7,
+    "length": "7.0m",
+    "weight": "1700kg",
+    "charCount": 1928,
+    "rawCharCount": 1960,
+    "h3Count": 4,
+    "h3Headings": [
+      "大地の爪が証明した進化の順序：エリオット層上部での発掘と命名",
+      "実寸サイズとスケール：全長約7.0メートル・全高約2.2メートルが示す重厚な過渡期体躯",
+      "頬の喪失と太い爪：真竜脚類への階段を登る解剖学",
+      "大量摂食から巨体化、そして四足歩行へ：ジュラ紀南アフリカの証人"
+    ],
+    "issues": []
+  },
+  {
     "id": "abelisaurus",
     "name": "アベリサウルス",
     "scientificName": "Abelisaurus comahuensis",
@@ -282,6 +304,28 @@
       "人間との実寸サイズ比較・背中に装甲を背負う15メートルの島嶼竜脚類スケール",
       "生態と背中に並ぶ円錐形の防護オステオダーム",
       "最新の古生物学知見と脳函CTスキャンが明かした感覚世界"
+    ],
+    "issues": []
+  },
+  {
+    "id": "anchisaurus",
+    "name": "アンキサウルス",
+    "scientificName": "Anchisaurus polyzelus",
+    "group": "竜脚形類（アンキサウルス科）",
+    "diet": "植物食・雑食",
+    "era": "ジュラ紀前期",
+    "realHeight": 0.75,
+    "realLength": 2,
+    "length": "2.0m",
+    "weight": "27kg",
+    "charCount": 1878,
+    "rawCharCount": 1909,
+    "h3Count": 4,
+    "h3Headings": [
+      "恐竜命名以前のアメリカ大発見：コネチカット川流域での発掘史",
+      "実寸サイズとスケール：全長約2.0メートル・全高約0.75メートルが織りなす優美な骨格",
+      "二足と四足を操る万能性：器用な手先と多様な歯列",
+      "ジュラ紀初期リフトバレーの俊敏な生存者"
     ],
     "issues": []
   },
@@ -3872,6 +3916,28 @@
     "issues": []
   },
   {
+    "id": "melanorosaurus",
+    "name": "メラノロサウルス",
+    "scientificName": "Melanorosaurus readi",
+    "group": "竜脚形類（メラノロサウルス科）",
+    "diet": "植物食",
+    "era": "三畳紀後期",
+    "realHeight": 2.4,
+    "realLength": 8,
+    "length": "8.0m",
+    "weight": "1300kg",
+    "charCount": 1892,
+    "rawCharCount": 1926,
+    "h3Count": 4,
+    "h3Headings": [
+      "黒い山の巨竜誕生：エリオット層下部での発見と命名",
+      "実寸サイズとスケール：全長約8.0メートル・全高約2.4メートルが物語る三畳紀の巨体",
+      "完全四足歩行への転換点：柱状前肢と巨大親指爪の共生",
+      "パンゲア南部カルー盆地の王者：巨大植物食ニッチの制覇"
+    ],
+    "issues": []
+  },
+  {
     "id": "meraxes",
     "name": "メルクセス",
     "scientificName": "Meraxes gigas",
@@ -5720,6 +5786,28 @@
     "issues": []
   },
   {
+    "id": "saturnalia",
+    "name": "サトゥルナリア",
+    "scientificName": "Saturnalia tupiniquim",
+    "group": "竜脚形類（基盤的竜脚形類）",
+    "diet": "植物食・雑食",
+    "era": "三畳紀後期",
+    "realHeight": 0.55,
+    "realLength": 1.5,
+    "length": "1.5m",
+    "weight": "10kg",
+    "charCount": 1904,
+    "rawCharCount": 1936,
+    "h3Count": 4,
+    "h3Headings": [
+      "カーニバルの夜が名付けた進化の黎明：サンタマリア層での発掘と命名",
+      "実寸サイズとスケール：全長約1.5メートル・全高約0.55メートルが示す軽快な祖先像",
+      "雑食から植物食への進化の交差点：頭骨・歯列と前肢の解剖学",
+      "超大陸パンゲアの三畳紀河川生態系：巨大化への最初の第一歩"
+    ],
+    "issues": []
+  },
+  {
     "id": "sauropelta",
     "name": "サウロペルタ",
     "scientificName": "Sauropelta edwardsorum",
@@ -7410,6 +7498,28 @@
       "実寸サイズと軽量骨格の検証：全長約0.6メートル・全高約0.2メートルの極小スケール",
       "謎の針状骨「スタイロポディウム」と皮膜による滑空メカニズム",
       "ジュラ紀中後期の燕遼生物群と樹上生態系におけるニッチ"
+    ],
+    "issues": []
+  },
+  {
+    "id": "yunnanosaurus",
+    "name": "ユンナノサウルス",
+    "scientificName": "Yunnanosaurus huangi",
+    "group": "竜脚形類（ユンナノサウルス科）",
+    "diet": "植物食",
+    "era": "ジュラ紀前期",
+    "realHeight": 2.2,
+    "realLength": 7,
+    "length": "7.0m",
+    "weight": "1500kg",
+    "charCount": 1898,
+    "rawCharCount": 1939,
+    "h3Count": 4,
+    "h3Headings": [
+      "中国古生物学の黎明と「雲南のトカゲ」：禄豊層での歴史的発掘",
+      "実寸サイズとスケール：全長約7.0メートル・全高約2.2メートルが誇る堂々たる体格",
+      "60本以上のスプーン状歯と自己研磨システム：驚異の収斂進化",
+      "ジュラ紀前期・禄豊盆地の豊かな森と多層採食戦略"
     ],
     "issues": []
   },
