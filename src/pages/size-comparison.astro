@@ -58,7 +58,7 @@ if (!defaultDino) {
                             data-dino={JSON.stringify(dino.data)}
                             selected={dino.id === defaultDino.id}
                         >
-                            {dino.data.name} ({dino.data.cyberMetadata?.realHeight}m)
+                            {dino.data.name} (全長{dino.data.length})
                         </option>
                     ))}
                 </select>
@@ -78,7 +78,7 @@ if (!defaultDino) {
                             const assetData = {
                                 id: dino.id,
                                 name: dino.data.name,
-                                label: `【恐竜】${dino.data.name}（${dino.data.cyberMetadata?.realHeight}m）`,
+                                label: `【恐竜】${dino.data.name} (全長${dino.data.length})`,
                                 icon: `images/cyber/${dino.id}.webp`,
                                 realHeight: dino.data.cyberMetadata?.realHeight || 2.0,
                                 realLength: dino.data.cyberMetadata?.realLength || parseFloat(dino.data.length),
@@ -89,7 +89,7 @@ if (!defaultDino) {
                             };
                             return (
                                 <option value={dino.id} data-asset={JSON.stringify(assetData)} data-type="dinosaur">
-                                    【恐竜】{dino.data.name} (全長{dino.data.length} / 高{dino.data.cyberMetadata?.realHeight}m)
+                                    【恐竜】{dino.data.name} (全長{dino.data.length})
                                 </option>
                             );
                         })}
@@ -100,7 +100,7 @@ if (!defaultDino) {
             <!-- Stats display -->
             <div class="control-group stats-group">
                 <div class="stats-label-wrap">
-                    <span class="stats-label">[ 基準高/長 ]</span><br/>
+                    <span class="stats-label">[ 基準全長 ]</span><br/>
                     <span id="dino-hud-specs" class="stats-value">--</span>
                 </div>
                 <div class="detail-link-wrap">
@@ -134,7 +134,7 @@ if (!defaultDino) {
                 <div class="specimen-container dino-specimen" id="dino-element" 
                      style="position: absolute; left: 360px; bottom: 25px; height: 380px; width: 300px; transition: transform 0.1s ease-out; overflow: visible; z-index: 4;">
                     <img id="dino-img" src="" alt="DINOSAUR" class="cyber-hud-specimen" 
-                          style="position: absolute; left: 50%; transform: translateX(-50%) !important; width: auto; mix-blend-mode: screen !important; max-width: none !important; max-height: none !important;" />
+                          style="position: absolute; left: 50%; transform: translateX(-50%); width: auto; mix-blend-mode: screen !important; max-width: none !important; max-height: none !important;" />
                     <div id="dino-tag" class="vis-tag dino-tag" style="white-space: nowrap; position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-family: var(--font-mono); font-size: 11px; color: var(--text-main); background: transparent !important; border: none !important; padding: 0; z-index: 10; clip-path: none !important; width: auto !important;">
                         --
                     </div>
@@ -144,7 +144,7 @@ if (!defaultDino) {
                 <div class="specimen-container reference-specimen" id="ref-element" 
                      style="position: absolute; right: 80px; bottom: 25px; height: 380px; width: 200px; transition: transform 0.1s ease-out; overflow: visible; z-index: 5;">
                     <img id="ref-img" src="" alt="REFERENCE" class="cyber-hud-specimen" 
-                          style="position: absolute; left: 50%; transform: translateX(-50%) !important; width: auto; max-width: none !important; max-height: none !important;" />
+                          style="position: absolute; left: 50%; transform: translateX(-50%); width: auto; max-width: none !important; max-height: none !important;" />
                     <div id="ref-tag" class="vis-tag ref-tag" style="white-space: nowrap; position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-family: var(--font-mono); font-size: 11px; color: var(--secondary-neon); background: transparent !important; border: none !important; padding: 0; z-index: 10; clip-path: none !important;">
                         --
                     </div>
@@ -332,8 +332,105 @@ if (!defaultDino) {
                 // Standing height 3.0m / wings folded length ~5.0m (contentHeightPx 583 matches skeleton 579)
                 contentHeightPx: 583,
                 bottomGap: 221
+            },
+            pachycephalosaurus: {
+                image: '/images/cyber/pachycephalosaurus_battle.webp',
+                // Headbutt threat stance, realHeight 1.8m, Length 4.5m
+                contentHeightPx: 394,
+                bottomGap: 315
+            },
+            stegosaurus: {
+                image: '/images/cyber/stegosaurus_battle.webp',
+                // Calibrated to exact length 9.0m, Plate peak 4.0m (realHeight 4.0m * 980px / 9.0m = 435px)
+                contentHeightPx: 435,
+                bottomGap: 289
+            },
+            parasaurolophus: {
+                image: '/images/cyber/parasaurolophus_battle.webp',
+                // Calibrated to exact length 9.5m, Crest peak 4.0m (realHeight 4.0m * 980px / 9.5m = 413px)
+                contentHeightPx: 413,
+                bottomGap: 280
+            },
+            quetzalcoatlus: {
+                image: '/images/cyber/quetzalcoatlus_battle.webp',
+                // Towering giraffe-sized upright stance, Standing height 5.0m, Length ~5.9m (Wingspan 11.0m)
+                contentHeightPx: 800,
+                bottomGap: 112
+            },
+            elasmosaurus: {
+                image: '/images/cyber/elasmosaurus_battle.webp',
+                // Calibrated to exact length 14.0m, Swimming height 3.5m (realHeight 3.5m * 980px / 14.0m = 245px)
+                contentHeightPx: 245,
+                bottomGap: 388
+            },
+            velociraptor: {
+                image: '/images/cyber/velociraptor_battle.webp',
+                // Feathered avian agility, realHeight 0.6m, Length 2.0m (0.6 * 980 / 2.0 = 294px)
+                contentHeightPx: 294,
+                bottomGap: 302
+            },
+            allosaurus: {
+                image: '/images/cyber/allosaurus_battle.webp',
+                // Jurassic apex predator charge, realHeight 3.5m, Length 8.5m (3.5 * 980 / 8.5 = 403px)
+                contentHeightPx: 403,
+                bottomGap: 328
+            },
+            styracosaurus: {
+                image: '/images/cyber/styracosaurus_battle.webp',
+                // Long nasal horn & spiked frill, realHeight 2.3m, Length 5.5m (2.3 * 980 / 5.5 = 409px)
+                contentHeightPx: 409,
+                bottomGap: 285
+            },
+            argentinosaurus: {
+                image: '/images/cyber/argentinosaurus_battle.webp',
+                // Titanic sauropod, realHeight 9.0m, Length 35.0m (9.0 * 980 / 35.0 = 252px)
+                contentHeightPx: 252,
+                bottomGap: 321
+            },
+            iguanodon: {
+                image: '/images/cyber/iguanodon_battle.webp',
+                // Conical thumb spikes rearing stance, realHeight 3.7m, Length 10.0m (3.7 * 980 / 10.0 = 362px)
+                contentHeightPx: 362,
+                bottomGap: 273
             }
         };
+
+        // 骨格側面図で頭部が原画で右向きの恐竜ID一覧（その他はすべて左向き）
+        const RIGHT_FACING_SKELETONS = new Set([
+            'bajadasaurus', 'barosaurus', 'borealopelta', 'ceratosaurus', 'deinocheirus',
+            'dimorphodon', 'edmontosaurus', 'elasmosaurus', 'euoplocephalus', 'gorgosaurus',
+            'hallucigenia', 'huayangosaurus', 'koreaceratops', 'majungasaurus', 'mamenchisaurus',
+            'mapusaurus', 'mosasaurus', 'nyctosaurus', 'oviraptor', 'patagotitan',
+            'polacanthus', 'proganochelys', 'prognathodon', 'quetzalcoatlus', 'saichania',
+            'stegouros', 'suchomimus', 'tapejara', 'tuojiangosaurus', 'tupandactylus',
+            'tyrannosaurus', 'wuerhosaurus'
+        ]);
+
+        function syncOrientations() {
+            if (!dinoImg || !refImg) return;
+
+            // 1. 基準恐竜 (左側): 常に右向き（向かい合う形）
+            // バトルモード: 原画が右向きなので反転不要
+            // 骨格図モード: 原画が右向きならそのまま、左向きなら反転して右向きに
+            const isDinoSkelRight = RIGHT_FACING_SKELETONS.has((dinoId || '').toLowerCase());
+            const dinoNeedFlip = (currentMode !== 'battle') && !isDinoSkelRight;
+            dinoImg.style.setProperty('transform', 'translateX(-50%)' + (dinoNeedFlip ? ' scaleX(-1)' : ''), 'important');
+
+            // 2. 比較・対決対象 (右側): 恐竜の場合は常に左向き（向かい合う形）
+            // バトルモード: 原画が右向きなので反転して左向きに
+            // 骨格図モード: 原画が右向きなら反転して左向きに、左向きならそのまま
+            // 現代オブジェクト（人間・乗り物・動物等）: 反転不要
+            let refNeedFlip = false;
+            if (activeAsset && activeAsset.isDino) {
+                if (currentMode === 'battle') {
+                    refNeedFlip = true;
+                } else {
+                    const isRefSkelRight = RIGHT_FACING_SKELETONS.has((activeAsset.id || '').toLowerCase());
+                    refNeedFlip = isRefSkelRight;
+                }
+            }
+            refImg.style.setProperty('transform', 'translateX(-50%)' + (refNeedFlip ? ' scaleX(-1)' : ''), 'important');
+        }
 
         // Stats UI Elements
         let dinoHudSpecs: HTMLElement | null = null;
@@ -651,20 +748,22 @@ if (!defaultDino) {
                 }
 
                 dinoImg.alt = dinoName;
-                if (currentMode === 'battle' && dinoId === 'tyrannosaurus') {
-                    dinoTag.innerText = `${dinoName} / 腰高 4.0m（体高 4.5m / 全長 ${dinoLength}）`;
-                } else if (dinoId === 'pteranodon') {
-                    dinoTag.innerText = `${dinoName} / 直立高 3.0m（全長 ${dinoLength} / 翼開長 7.0m）`;
+                if (dinoId === 'pteranodon') {
+                    dinoTag.innerText = `${dinoName} / 全長 3.5m（翼開長 7.0m）`;
+                } else if (dinoId === 'quetzalcoatlus') {
+                    dinoTag.innerText = `${dinoName} / 全長 5.9m（翼開長 11.0m）`;
                 } else {
-                    dinoTag.innerText = `${dinoName} / 高さ ${formatVal(dinoRealH)}m（全長 ${dinoLength}）`;
+                    dinoTag.innerText = `${dinoName} / 全長 ${dinoLength}`;
                 }
 
                 // Update Stats HUD
                 if (dinoHudSpecs) {
-                    if (currentMode === 'battle' && dinoId === 'tyrannosaurus') {
-                        dinoHudSpecs.innerText = `腰高4.0m(体高4.5m) / ${formatVal(dinoRealL)}m`;
+                    if (dinoId === 'pteranodon') {
+                        dinoHudSpecs.innerText = `全長 3.5m (翼開長 7.0m)`;
+                    } else if (dinoId === 'quetzalcoatlus') {
+                        dinoHudSpecs.innerText = `全長 5.9m (翼開長 11.0m)`;
                     } else {
-                        dinoHudSpecs.innerText = `${formatVal(dinoRealH)}m / ${formatVal(dinoRealL)}m`;
+                        dinoHudSpecs.innerText = `全長 ${dinoLength || (formatVal(dinoRealL) + 'm')}`;
                     }
                 }
 
@@ -713,12 +812,8 @@ if (!defaultDino) {
             if (activeAsset) {
                 const isDinoTarget = !!activeAsset.isDino;
 
-                // Orientation: face left if dinosaur target, otherwise standard translateX(-50%)
-                if (isDinoTarget) {
-                    refImg.style.setProperty('transform', 'translateX(-50%) scaleX(-1)', 'important');
-                } else {
-                    refImg.style.setProperty('transform', 'translateX(-50%)', 'important');
-                }
+                // Sync orientations (dino facing right, target facing left)
+                syncOrientations();
 
                 // Mode-aware visual & scanning bounds
                 if (currentMode === 'battle' && isDinoTarget && BATTLE_ASSETS[activeAsset.id]) {
@@ -736,14 +831,20 @@ if (!defaultDino) {
                 }
 
                 refImg.alt = activeAsset.label;
-                if (currentMode === 'battle' && activeAsset.id === 'tyrannosaurus') {
-                    refTag.innerText = `${activeAsset.name} / 全長 ${formatVal(activeAsset.realLength)}m（腰高 4.0m / 体高 4.5m）`;
-                } else if (activeAsset.id === 'pteranodon') {
-                    refTag.innerText = `${activeAsset.name} / 直立高 3.0m（全長 ${formatVal(activeAsset.realLength)}m / 翼開長 7.0m）`;
-                } else if (activeAsset.realLength) {
-                    refTag.innerText = `${activeAsset.name} / 全長 ${formatVal(activeAsset.realLength)}m（高さ ${formatVal(activeAsset.realHeight)}m）`;
+                if (activeAsset.id === 'pteranodon') {
+                    refTag.innerText = `${activeAsset.name} / 全長 3.5m（翼開長 7.0m）`;
+                } else if (activeAsset.id === 'quetzalcoatlus') {
+                    refTag.innerText = `${activeAsset.name} / 全長 5.9m（翼開長 11.0m）`;
+                } else if (activeAsset.isDino) {
+                    refTag.innerText = `${activeAsset.name} / 全長 ${formatVal(activeAsset.realLength)}m`;
+                } else if (activeAsset.id === 'human') {
+                    refTag.innerText = `${activeAsset.name} / 身長 ${formatVal(activeAsset.realHeight)}m`;
+                } else if (activeAsset.id === 'car') {
+                    refTag.innerText = `${activeAsset.name} / 車高 ${formatVal(activeAsset.realHeight)}m`;
+                } else if (activeAsset.id === 'elephant') {
+                    refTag.innerText = `${activeAsset.name} / 体高 ${formatVal(activeAsset.realHeight)}m`;
                 } else {
-                    refTag.innerText = `${activeAsset.name} / 高さ ${formatVal(activeAsset.realHeight)}m`;
+                    refTag.innerText = `${activeAsset.name} / 全長 ${formatVal(activeAsset.realLength || activeAsset.realHeight)}m`;
                 }
 
                 // Sync URL query parameter & title
@@ -849,6 +950,16 @@ if (!defaultDino) {
                 ankylosaurus: { left: 20, right: 20 },
                 mosasaurus: { left: 22, right: 22 },
                 pteranodon: { left: 22, right: 22 },
+                pachycephalosaurus: { left: 22, right: 22 },
+                stegosaurus: { left: 22, right: 22 },
+                parasaurolophus: { left: 22, right: 22 },
+                quetzalcoatlus: { left: 37, right: 37 },
+                elasmosaurus: { left: 22, right: 22 },
+                velociraptor: { left: 22, right: 22 },
+                allosaurus: { left: 22, right: 22 },
+                styracosaurus: { left: 22, right: 22 },
+                argentinosaurus: { left: 22, right: 22 },
+                iguanodon: { left: 22, right: 22 },
                 sinoceratops: { left: 196, right: 162 },
                 human: { left: 329, right: 328 },
                 car: { left: 11, right: 8 },
@@ -891,12 +1002,8 @@ if (!defaultDino) {
             refImg.style.bottom = `-${refOffset}px`;
             refImg.style.marginBottom = '0px';
 
-            // Sync ref orientation: face left when confronting dinosaur, standard translateX(-50%) for reference assets
-            if (activeAsset && activeAsset.isDino) {
-                refImg.style.setProperty('transform', 'translateX(-50%) scaleX(-1)', 'important');
-            } else {
-                refImg.style.setProperty('transform', 'translateX(-50%)', 'important');
-            }
+            // Sync dino & ref orientation (dino facing right, target facing left)
+            syncOrientations();
 
             // 5. Position elements dynamically to be centered as a pair in the stage
             const stageW = stageContainer.clientWidth || SAFE_ZONE_W;

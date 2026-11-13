@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import AffiliateSection from '../../components/AffiliateSection.astro';
 import { REFERENCE_ASSETS } from '../../data/cyberAssets';
+import { RIGHT_FACING_SKELETONS } from '../../data/skeletonFacing';
 import { AUTHOR_DATA } from '../../data/author';
 import { getCollection, render } from 'astro:content';
 import { createMarkdownProcessor } from '@astrojs/markdown-remark';
@@ -264,10 +265,15 @@ let refH = 0;
 let refX = 0;
 let refY = 0;
 let dinoTagX = 0;
+let dinoNeedFlip = false;
 
 const BASELINE_Y = 315; // SVG内でのベースラインのY座標 (400 - 85)
 
 if (hasComparison) {
+    const isSkelRight = RIGHT_FACING_SKELETONS.has(d.id.toLowerCase());
+    // 人間（右側）に向かい合うよう、原画が左向きの骨格図は左右反転して右向きにする
+    dinoNeedFlip = !isSkelRight;
+
     const meta = d.cyberMetadata!;
     const realH = meta.realHeight || (parseFloat(d.length) * 0.35);
     const realL = meta.realLength || parseFloat(d.length);
@@ -861,7 +867,13 @@ if (hasComparison && h3List.length > 0) {
                                         
                                         <line x1="0" y1="315" x2="650" y2="315" stroke="rgba(0, 242, 255, 0.3)" stroke-width="1.5" stroke-dasharray="4,4" />
                                         
-                                        <image href={`/images/cyber/${d.id}.webp`} x={dinoX} y={dinoY} width={dinoW} height={dinoH} class="cyber-hud-specimen" />
+                                        {dinoNeedFlip ? (
+                                            <g transform={`translate(${dinoX * 2 + dinoW}, 0) scale(-1, 1)`}>
+                                                <image href={`/images/cyber/${d.id}.webp`} x={dinoX} y={dinoY} width={dinoW} height={dinoH} class="cyber-hud-specimen" />
+                                            </g>
+                                        ) : (
+                                            <image href={`/images/cyber/${d.id}.webp`} x={dinoX} y={dinoY} width={dinoW} height={dinoH} class="cyber-hud-specimen" />
+                                        )}
                                         <image href="/images/cyber/human_front.webp" x={refX} y={refY} width={refW} height={refH} />
                                         
                                         <g transform={`translate(${dinoTagX}, ${isLabelConflict ? 377 : 350})`}>
@@ -869,7 +881,9 @@ if (hasComparison && h3List.length > 0) {
                                             <line x1="0" y1="-25" x2="0" y2="-12" stroke="rgba(0, 242, 255, 0.2)" stroke-width="1" stroke-dasharray="2,2" />
                                             <text text-anchor="middle" fill="#00f2ff" font-size="11.5" font-family="var(--font-mono)" font-weight="bold">{d.name}</text>
                                             <text text-anchor="middle" fill="#00f2ff" font-size="9" opacity="0.8" font-family="var(--font-mono)" y="13">
-                                                高さ {formatVal(d.cyberMetadata?.realHeight || 0)}m（全長 {d.length}）
+                                                {d.id === 'pteranodon' ? '全長 3.5m（翼開長 7.0m）' :
+                                                 d.id === 'quetzalcoatlus' ? '全長 5.9m（翼開長 11.0m）' :
+                                                 `全長 ${d.length}`}
                                             </text>
                                         </g>
                                         
@@ -877,7 +891,7 @@ if (hasComparison && h3List.length > 0) {
                                             <rect x="-55" y="-12" width="110" height="30" fill="rgba(0, 10, 20, 0.75)" stroke="rgba(0, 242, 255, 0.25)" stroke-width="1" rx="3" />
                                             <line x1="0" y1="-25" x2="0" y2="-12" stroke="rgba(0, 242, 255, 0.2)" stroke-width="1" stroke-dasharray="2,2" />
                                             <text text-anchor="middle" fill="#00f2ff" font-size="11.5" font-family="var(--font-mono)" font-weight="bold">人間</text>
-                                            <text text-anchor="middle" fill="#00f2ff" font-size="9" opacity="0.8" font-family="var(--font-mono)" y="13">高さ 1.7m</text>
+                                            <text text-anchor="middle" fill="#00f2ff" font-size="9" opacity="0.8" font-family="var(--font-mono)" y="13">身長 1.7m</text>
                                         </g>
                                     </svg>
                                 </div>
