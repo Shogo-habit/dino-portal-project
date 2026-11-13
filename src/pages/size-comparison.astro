@@ -97,17 +97,11 @@ if (!defaultDino) {
                 </select>
             </div>
 
-            <!-- Stats display -->
-            <div class="control-group stats-group">
-                <div class="stats-label-wrap">
-                    <span class="stats-label">[ 基準全長 ]</span><br/>
-                    <span id="dino-hud-specs" class="stats-value">--</span>
-                </div>
-                <div class="detail-link-wrap">
-                    <a id="dino-detail-link" href="" class="dino-detail-link">
-                        図鑑アーカイブ ➔
-                    </a>
-                </div>
+            <!-- Detail Link directly to the right of Target Selector -->
+            <div class="control-group detail-link-group">
+                <a id="dino-detail-link" href="" class="dino-detail-link" title="個別図鑑アーカイブで詳細な生態や化石写真を見る">
+                    図鑑アーカイブ ➔
+                </a>
             </div>
         </div>
 
@@ -799,6 +793,9 @@ if (!defaultDino) {
                 // Sync URL query parameter & title
                 updateUrlParams();
 
+                // Sync orientations immediately on selection change
+                syncOrientations();
+
                 // Recalculate zoom and trigger autofocus
                 recalculateAutofocus();
             }
@@ -849,6 +846,9 @@ if (!defaultDino) {
 
                 // Sync URL query parameter & title
                 updateUrlParams();
+
+                // Sync orientations immediately on selection change
+                syncOrientations();
 
                 // Recalculate zoom and trigger autofocus
                 recalculateAutofocus();
@@ -1204,47 +1204,30 @@ if (!defaultDino) {
 
 
 
-        .control-group.stats-group {
-            flex-direction: row;
-            gap: 20px;
-            font-family: var(--font-mono);
-            border-left: 1px solid var(--panel-border);
-            padding-left: 20px;
-            align-items: center;
-        }
-
-        .stats-label {
-            color: var(--text-dim);
-            font-size: 11px;
-            letter-spacing: 0.5px;
-        }
-
-        .stats-value {
-            color: var(--text-main);
-            font-size: 16px;
-            font-weight: bold;
-            line-height: 1.6;
-        }
-
-        .detail-link-wrap {
-            padding-left: 20px;
-            border-left: 1px solid var(--panel-border);
+        .control-group.detail-link-group {
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-bottom: 2px;
         }
 
         .dino-detail-link {
             color: var(--secondary-neon);
             text-decoration: none;
-            font-size: 11px;
+            font-size: 13px;
             font-weight: bold;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
             border: 1px solid rgba(0, 242, 255, 0.4);
-            padding: 5px 12px;
+            padding: 9px 16px;
             border-radius: 4px;
-            background: rgba(0, 242, 255, 0.05);
-            transition: all 0.3s ease;
-            display: inline-block;
+            background: rgba(0, 242, 255, 0.08);
+            transition: all 0.25s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+            height: 38px;
+            box-sizing: border-box;
         }
 
         .specimen-container {
@@ -1252,10 +1235,11 @@ if (!defaultDino) {
         }
 
         .dino-detail-link:hover {
-            background: rgba(0, 242, 255, 0.15) !important;
-            border-color: var(--secondary-neon) !important;
-            box-shadow: 0 0 10px rgba(0, 242, 255, 0.2);
-            text-shadow: 0 0 5px var(--secondary-neon);
+            background: rgba(0, 242, 255, 0.2) !important;
+            border-color: var(--primary-neon) !important;
+            color: #fff !important;
+            box-shadow: 0 0 12px rgba(0, 242, 255, 0.4);
+            transform: translateX(2px);
         }
 
         /* 施策①: SMART SPECIMEN CARD STYLES */
@@ -1605,18 +1589,13 @@ if (!defaultDino) {
                 min-width: 0;
             }
 
-            .control-group.stats-group {
-                border-left: none;
-                padding-left: 0;
-                border-top: 1px solid var(--panel-border);
-                padding-top: 15px;
+            .control-group.detail-link-group {
                 width: 100%;
-                justify-content: space-between;
+                margin-top: 0;
             }
 
-            .detail-link-wrap {
-                border-left: none;
-                padding-left: 0;
+            .dino-detail-link {
+                width: 100%;
             }
         }
     </style>
