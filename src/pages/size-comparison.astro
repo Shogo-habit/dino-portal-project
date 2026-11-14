@@ -21,9 +21,57 @@ const defaultDino = comparisonDinos.find(d => d.id === 'tyrannosaurus') || compa
 if (!defaultDino) {
     throw new Error("No dinosaurs available for size comparison.");
 }
+
+// Battle Dinosaurs for Schema.org ImageObject
+const battleDinos = dinosaurs.filter(dino => {
+    const battlePath = path.join(process.cwd(), 'public', 'images', 'cyber', `${dino.id}_battle.webp`);
+    return fs.existsSync(battlePath);
+}).sort((a, b) => a.data.kana.localeCompare(b.data.kana, 'ja'));
+
+const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebApplication",
+            "@id": "https://dino-portal.com/size-comparison/#app",
+            "name": "恐竜サイズ比較シミュレータ",
+            "url": "https://dino-portal.com/size-comparison/",
+            "applicationCategory": "EducationalApplication",
+            "operatingSystem": "All",
+            "browserRequirements": "Requires JavaScript. Requires HTML5 Canvas/SVG.",
+            "description": "345種以上の恐竜・古生物を人間（1.7m）やアフリカゾウ、シロナガスクジラ（30m）、大型ジェット旅客機（70m）と実寸1:1スケールで自由に並べて大きさ比較できるインタラクティブシミュレータ。骨格実寸モードとリアル対決モードに対応。",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "JPY"
+            },
+            "creator": {
+                "@type": "Organization",
+                "name": "Dino-Portal Lab",
+                "url": "https://dino-portal.com/"
+            }
+        },
+        ...battleDinos.map(dino => ({
+            "@type": "ImageObject",
+            "@id": `https://dino-portal.com/images/cyber/${dino.id}_battle.webp#battle`,
+            "url": `https://dino-portal.com/images/cyber/${dino.id}_battle.webp`,
+            "contentUrl": `https://dino-portal.com/images/cyber/${dino.id}_battle.webp`,
+            "caption": `${dino.data.name}（${dino.data.nameEn || dino.data.name}）のリアル対決・咆哮アセット`,
+            "description": `${dino.data.name}（推定全長${dino.data.length}）のリアル威嚇戦闘ポーズ復元図。サイズ比較シミュレータのリアル対決モード対応アセット。`,
+            "name": `${dino.data.name}のリアル対決グラフィック`,
+            "creator": {
+                "@type": "Organization",
+                "name": "Dino-Portal Lab",
+                "url": "https://dino-portal.com/"
+            },
+            "creditText": "Dino-Portal",
+            "copyrightNotice": "© Dino-Portal"
+        }))
+    ]
+};
 ---
 
-<Layout title="恐竜サイズ比較シミュレータ｜人間・動物・クジラ・旅客機と実寸1:1比較 | Dino-Portal" activeTab="comparison" description="345種以上の恐竜・古生物を人間（1.7m）やアフリカゾウ、シロナガスクジラ（30m）、大型ジェット旅客機（70m）と実寸1:1スケールで自由に並べて大きさ比較できる体験型シミュレータ。ティラノサウルスや超巨大竜脚類の真のスケールをブラウザ上で体感！">
+<Layout title="恐竜サイズ比較シミュレータ｜人間・動物・クジラ・旅客機と実寸1:1比較 | Dino-Portal" activeTab="comparison" description="345種以上の恐竜・古生物を人間（1.7m）やアフリカゾウ、シロナガスクジラ（30m）、大型ジェット旅客機（70m）と実寸1:1スケールで自由に並べて大きさ比較できる体験型シミュレータ。ティラノサウルスや超巨大竜脚類の真のスケールをブラウザ上で体感！" schema={schema}>
     <section class="page-header">
         <h2 class="page-title">サイズ比較シミュレータ</h2>
         <p class="page-subtitle">恐竜と現代の様々なオブジェクトのサイズを視覚的に比較できるシミュレーションツールです。</p>

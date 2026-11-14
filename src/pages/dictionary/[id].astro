@@ -22,6 +22,96 @@ const { data: d } = entry;
 const allDinosaurs = (await getCollection('dinosaurs')).map(entry => entry.data);
 
 // 1. FAQ Generation Logic for SEO/GEO
+// 学術的最新知見・検索意図特化型FAQマスター
+const ACADEMIC_FAQS: Record<string, Array<{ q: string; a: string }>> = {
+    tyrannosaurus: [
+        {
+            q: "ティラノサウルスには本当に羽毛が生えていたのですか？",
+            a: "成体のティラノサウルスの皮膚印象化石（標本「ワイレックス」など）の調査により、首、腰、尾などの大部分がウロコで覆われていたことが判明しています。幼体期には体温保持用の綿羽が生えていた可能性がありますが、成体は巨体による熱放散（慣性恒温性）の観点からも、全身が厚い羽毛で覆われていたわけではないという見解が現代古生物学の定説です。"
+        },
+        {
+            q: "ティラノサウルスの噛む力（咬合力）はどのくらい強かったのですか？",
+            a: "生体力学解析によると、ティラノサウルスの咬合力は約35,000〜57,000ニュートン（約3.5〜5.8トン以上）と算出されています。これはトリケラトプス等の分厚い骨を粉砕して骨髄ごと摂取できる破骨性の破壊力であり、地球上の陸生肉食動物として史上最強クラスです。"
+        }
+    ],
+    spinosaurus: [
+        {
+            q: "スピノサウルスは水中で泳いでいたのですか？（最新の半水生適応説）",
+            a: "2020年に発見されたオール状の平たく幅広な尾椎化石や、骨密度（オステオスクレローシス）の極めて高い骨格構造の研究により、スピノサウルスが遊泳して獲物を追う「半水生の捕食者」であったことが学術的に強く支持されています。水辺に依存し、巨大な魚類（オンコプリスティス等）を主食としていました。"
+        },
+        {
+            q: "スピノサウルスの背中の大きな帆にはどのような役割がありましたか？",
+            a: "かつては体温調節（熱交換ラジエーター）が主目的と考えられていましたが、帆の骨の血管網や近縁種の比較から、同種間での誇示（ディスプレイ）や威嚇、あるいは水中での横ブレを防ぐ方向安定板（キール）のような役割を果たしていた可能性が有力視されています。"
+        }
+    ],
+    triceratops: [
+        {
+            q: "トリケラトプスの巨大なフリルと3本の角は何に使われていましたか？",
+            a: "ティラノサウルス等の捕食者に対する防御・刺突武器としての機能に加え、フリルの骨に残る同種間の角による傷跡化石から、繁殖期におけるオス同士の儀礼的闘争やディスプレイ（求愛・個体識別）に重要な役割を果たしていたことが明らかになっています。"
+        }
+    ],
+    velociraptor: [
+        {
+            q: "ヴェロキラプトルには本当に羽毛が生えていましたか？映画との違いは？",
+            a: "はい。前肢（尺骨）の化石に羽軸が付着する窪み「羽柄突起（Quill knobs）」が発見されており、現生鳥類と同様の本物の風切羽が生えていたことが確証されています。また、実物は体長約2m・腰高約50cm・体重15kg前後と小型で敏捷な羽毛恐竜であり、映画等の描写（デイノニクス大）とはサイズ感も異なります。"
+        }
+    ],
+    stegosaurus: [
+        {
+            q: "ステゴサウルスの背中の骨板はどのように並んでいて、何のためにありましたか？",
+            a: "ステゴサウルスの骨板は骨格に癒合しておらず皮膚に埋もれており、背中に互い違い（互生）の2列で並んでいました。内部に微細な血管網が走っていることから体温調節機能を持つとともに、血管を充血させて赤くフラッシュさせ威嚇や求愛を行うディスプレイ装置として機能していたと考えられています。"
+        }
+    ],
+    brachiosaurus: [
+        {
+            q: "ブラキオサウルスは首をまっすぐ垂直に持ち上げることができましたか？",
+            a: "ブラキオサウルスは前肢が後肢よりも著しく長いため、自然な骨格姿勢で肩が高く首が斜め上方に伸びていました。近年の頸椎（首の骨）の可動域解析によると、真上（垂直90度）まで反らすことは困難でしたが、斜め45〜60度程度の高木の葉を効率よく摂食するのに最適化されていたとされます。"
+        }
+    ],
+    ankylosaurus: [
+        {
+            q: "アンキロサウルスの尾のハンマーはティラノサウルスの骨を折ることができましたか？",
+            a: "生体力学シミュレーションによると、尾の先端にある骨質の塊（テールクラブ）をフルスイングした際の衝撃力は数千ニュートンを超え、ティラノサウルスなどの大型肉食恐竜の脛骨（すねの骨）を骨折させるのに十分な破壊力を持っていたと算出されています。"
+        }
+    ],
+    pachycephalosaurus: [
+        {
+            q: "パキケファロサウルスは頭同士で本当に激突（頭突き）していたのですか？",
+            a: "厚さ20cm以上に達するドーム状頭頂骨のCTスキャンにより、慢性骨髄炎や激突による治癒痕（化石病理）が多数発見されています。現代のオオツノヒツジのように、頭部や胴体側面を激しくぶつけ合って群れの順位や繁殖権を争っていたことが学術的に強く支持されています。"
+        }
+    ],
+    argentinosaurus: [
+        {
+            q: "アルゼンチノサウルスの超巨体（70〜100トン超）を支える仕組みはどうなっていたのですか？",
+            a: "アルゼンチノサウルスは脊椎骨の内部に空気の袋（気嚢）を取り込むことで骨格を極限まで軽量化し、自重による圧壊を防いでいました。また、巨大な心臓と超高血圧によって長い首の先にある脳まで血液を循環させていたと考えられています。"
+        }
+    ],
+    mosasaurus: [
+        {
+            q: "モササウルスは恐竜ですか？それとも別の生き物ですか？",
+            a: "モササウルスは恐竜ではなく、現代のオオトカゲやヘビに極めて近縁な「海生有鱗類（爬虫類）」です。二重関節の顎や鋭い歯、二叉の舌を持っていた可能性が高く、白亜紀後期の海洋生態系の頂点捕食者として君臨しました。"
+        }
+    ],
+    allosaurus: [
+        {
+            q: "アロサウルスはティラノサウルスと狩りの方法がどのように違いますか？",
+            a: "ティラノサウルスが強力な顎圧で骨ごと噛み砕くスタイルだったのに対し、アロサウルスは発達した3本指の前肢カギ爪と、上顎を斧のように獲物に打ち下ろして肉を切り裂く「ハチェット（手斧）ストライク」と呼ばれる狩猟スタイルをとっていたと考えられています。"
+        }
+    ],
+    quetzalcoatlus: [
+        {
+            q: "ケツァルコアトルスのようなキリン大の巨体で本当に空を飛べたのですか？",
+            a: "翼開長10〜11mに達しますが、骨格が極限まで中空化・軽量化されており体重は約200〜250kgでした。前肢と後肢の両方を使って地面を強く蹴り上げる「四肢跳躍（クアドラペダル・ローンチ）」によって離陸し、強力な滑空能力と上昇気流を利用して長距離を飛行できました。"
+        }
+    ],
+    giganotosaurus: [
+        {
+            q: "ギガノトサウルスはティラノサウルスより大きかったのですか？",
+            a: "ギガノトサウルスは全長約12〜13mとティラノサウルスに匹敵あるいはわずかに上回る全長を持ちますが、体幅や骨太さ、推定体重（約7〜8トン）においてはティラノサウルス（約8〜9トン）の方が重厚であったとされています。南米大陸の白亜紀を代表する超巨大肉食恐竜です。"
+        }
+    ]
+};
+
 function generateDynamicFAQs(dino: any) {
     const faqs = [];
     
@@ -31,6 +121,13 @@ function generateDynamicFAQs(dino: any) {
             q: `${dino.name}の大きさ（全長・体重）はどのくらいですか？`,
             a: `${dino.name}の成体の推定全長は約${dino.length}${dino.weight ? `、推定体重は約${dino.weight}` : ''}です。本ページの実寸サイズ比較スケールにて人間との対比を確認できます。`
         });
+    }
+
+    // 学術的最新知見・特化型FAQ（該当前提）
+    if (dino.id && ACADEMIC_FAQS[dino.id]) {
+        for (const item of ACADEMIC_FAQS[dino.id]) {
+            faqs.push(item);
+        }
     }
 
     // 2. 特徴・生体力学的強み（不自然なAI/ゲーム的数値を排除し自然な解説に）
@@ -55,6 +152,14 @@ function generateDynamicFAQs(dino: any) {
         faqs.push({
             q: `${dino.name}はいつの時代、どこに生息していましたか？`,
             a: `中生代${dino.era}に、現在の${dino.region}周辺に生息していました。`
+        });
+    }
+
+    // 5. サイズ比較シミュレータ導線（cyberMetadata保有種）
+    if (dino.cyberMetadata) {
+        faqs.push({
+            q: `${dino.name}のサイズを人間や他の恐竜と比較することはできますか？`,
+            a: `はい。当サイトの「恐竜サイズ比較シミュレータ」にて、${dino.name}を人間（1.7m）や現代の動物（ゾウ・クジラ）、超巨大恐竜と実寸1:1スケールで自由に並べて比較可能です。骨格実寸モードおよびリアル対決モードに対応しています。`
         });
     }
     
@@ -170,6 +275,9 @@ const SAFE_ZONE_W = 600;
 const imagePath = path.join(process.cwd(), 'public', 'images', 'cyber', `${entry.id}.webp`);
 const hasComparison = !!d.cyberMetadata && fs.existsSync(imagePath);
 
+const battleImagePath = path.join(process.cwd(), 'public', 'images', 'cyber', `${entry.id}_battle.webp`);
+const hasBattleImage = fs.existsSync(battleImagePath);
+
 // Image SEO (Alt texts & ImageObject Schema)
 const mainImageAlt = `${d.name}（${d.nameEn || d.name}）の生体復元イラスト・姿｜中生代${d.era} ${categoryLabel}（全長${d.length}）`;
 
@@ -212,6 +320,25 @@ if (hasComparison) {
     });
 }
 
+if (hasBattleImage) {
+    imageSchemaList.push({
+        "@type": "ImageObject",
+        "@id": `https://dino-portal.com/images/cyber/${d.id}_battle.webp#battle`,
+        "url": `https://dino-portal.com/images/cyber/${d.id}_battle.webp`,
+        "contentUrl": `https://dino-portal.com/images/cyber/${d.id}_battle.webp`,
+        "caption": `${d.name}（${d.nameEn || d.name}）のリアル対決・威嚇戦闘復元図`,
+        "description": `${d.name}（中生代${d.era}）の臨場感あふれる咆哮・威嚇戦闘ポーズのリアル復元グラフィック。実寸サイズ比較シミュレータのリアル対決モード対応アセット。`,
+        "name": `${d.name}のリアル対決イラスト・復元図`,
+        "creator": {
+            "@type": "Organization",
+            "name": "Dino-Portal Lab",
+            "url": "https://dino-portal.com/"
+        },
+        "creditText": "Dino-Portal",
+        "copyrightNotice": "© Dino-Portal"
+    });
+}
+
 const schema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -221,7 +348,8 @@ const schema = {
             "description": pageDescription,
             "image": [
                 `https://dino-portal.com/${d.image}`,
-                ...(hasComparison ? [`https://dino-portal.com/images/cyber/${d.id}.webp`] : [])
+                ...(hasComparison ? [`https://dino-portal.com/images/cyber/${d.id}.webp`] : []),
+                ...(hasBattleImage ? [`https://dino-portal.com/images/cyber/${d.id}_battle.webp`] : [])
             ],
             "author": {
                 "@type": "Person",
