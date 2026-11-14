@@ -250,6 +250,28 @@ const schema = {
             </div>
             
             <div class="preset-groups-container">
+                <!-- Group 0: 宿命の対決ドリームマッチ -->
+                <div class="preset-group battle-matchup-group" style="grid-column: 1 / -1; border-bottom: 1px dashed var(--panel-border); padding-bottom: 12px; margin-bottom: 8px;">
+                    <div class="preset-group-label" style="color: var(--secondary-neon); font-weight: bold;">⚡ 宿命の対決・必見ドリームマッチ（1タップ対決）</div>
+                    <div class="preset-buttons" style="display: flex; flex-wrap: wrap; gap: 8px;">
+                        <button type="button" class="preset-btn matchup-btn" data-dino-id="tyrannosaurus" data-vs-id="triceratops">
+                            🦖 ティラノサウルス vs トリケラトプス 🛡️
+                        </button>
+                        <button type="button" class="preset-btn matchup-btn" data-dino-id="velociraptor" data-vs-id="protoceratops">
+                            🪶 ヴェロキラプトル vs プロトケラトプス 🏜️
+                        </button>
+                        <button type="button" class="preset-btn matchup-btn" data-dino-id="allosaurus" data-vs-id="stegosaurus">
+                            ⚔️ アロサウルス vs ステゴサウルス 🌲
+                        </button>
+                        <button type="button" class="preset-btn matchup-btn" data-dino-id="tyrannosaurus" data-vs-id="spinosaurus">
+                            👑 ティラノサウルス vs スピノサウルス 🌊
+                        </button>
+                        <button type="button" class="preset-btn matchup-btn" data-dino-id="tyrannosaurus" data-vs-id="giganotosaurus">
+                            🔥 ティラノサウルス vs ギガノトサウルス 🌋
+                        </button>
+                    </div>
+                </div>
+
                 <!-- Group 1: 超巨大恐竜 -->
                 <div class="preset-group">
                     <div class="preset-group-label">👑 超巨大恐竜 (20m超)</div>
@@ -434,7 +456,52 @@ const schema = {
                 // Conical thumb spikes rearing stance, realHeight 3.7m, Length 10.0m (3.7 * 980 / 10.0 = 362px)
                 contentHeightPx: 362,
                 bottomGap: 273
+            },
+            protoceratops: {
+                image: '/images/cyber/protoceratops_battle.webp',
+                // Fighting Dinosaurs rival, realHeight 1.03m, Length 1.8m
+                contentHeightPx: 550,
+                bottomGap: 237
+            },
+            human: {
+                image: '/images/cyber/human_real.webp',
+                // Photorealistic adult field explorer, realHeight 1.7m
+                contentHeightPx: 936,
+                bottomGap: 44
+            },
+            car: {
+                image: '/images/cyber/car_real.webp',
+                // Photorealistic passenger SUV, realHeight 1.5m
+                contentHeightPx: 388,
+                bottomGap: 318
+            },
+            elephant: {
+                image: '/images/cyber/elephant_real.webp',
+                // Photorealistic African Elephant, realHeight 3.2m
+                contentHeightPx: 596,
+                bottomGap: 214
+            },
+            whale: {
+                image: '/images/cyber/whale_real.webp',
+                // Photorealistic Blue Whale, realHeight 5.0m, realLength 30.0m
+                contentHeightPx: 210,
+                bottomGap: 407
+            },
+            airplane: {
+                image: '/images/cyber/airplane_real.webp',
+                // Photorealistic Commercial Jet Airliner, realHeight 19.0m, realLength 70.0m
+                contentHeightPx: 260,
+                bottomGap: 382
             }
+        };
+
+        // 骨格モード時のリファレンスオブジェクト基本メトリクス（サイバー線画）
+        const BONE_REF_ASSETS: Record<string, { contentHeightPx: number; bottomGap: number }> = {
+            human: { contentHeightPx: 936, bottomGap: 50 },
+            car: { contentHeightPx: 305, bottomGap: 375 },
+            elephant: { contentHeightPx: 587, bottomGap: 195 },
+            whale: { contentHeightPx: 156, bottomGap: 383 },
+            airplane: { contentHeightPx: 258, bottomGap: 410 }
         };
 
         // 骨格側面図で頭部が原画で右向きの恐竜ID一覧（その他はすべて左向き）
@@ -662,16 +729,28 @@ const schema = {
                 btn.addEventListener('click', () => {
                     if (btn.classList.contains('disabled-in-battle')) return;
                     const targetId = btn.getAttribute('data-dino-id');
+                    const targetVsId = btn.getAttribute('data-vs-id');
+
                     if (targetId && dinoSelector) {
                         const matched = Array.from(dinoSelector.options).find(opt => opt.value === targetId);
                         if (matched) {
                             dinoSelector.value = targetId;
                             updateSelectedDino();
-                            // Smooth scroll slightly towards stage if on mobile
-                            if (window.innerWidth <= 768 && stageContainer) {
-                                stageContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                            }
                         }
+                    }
+                    if (targetVsId && selector) {
+                        const matchedVs = Array.from(selector.options).find(opt => opt.value === targetVsId);
+                        if (matchedVs) {
+                            selector.value = targetVsId;
+                            updateSelectedAsset();
+                        }
+                    }
+                    if (targetId) {
+                        updatePresetButtons(targetId);
+                    }
+                    // Smooth scroll slightly towards stage if on mobile
+                    if (window.innerWidth <= 768 && stageContainer) {
+                        stageContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                     }
                 });
             });
@@ -768,7 +847,15 @@ const schema = {
         function updatePresetButtons(currentId: string) {
             const buttons = document.querySelectorAll('.preset-btn');
             buttons.forEach(btn => {
-                if (btn.getAttribute('data-dino-id') === currentId) {
+                const dinoIdAttr = btn.getAttribute('data-dino-id');
+                const vsIdAttr = btn.getAttribute('data-vs-id');
+                if (vsIdAttr) {
+                    if (dinoIdAttr === currentId && vsIdAttr === (activeAsset?.id || '')) {
+                        btn.classList.add('active');
+                    } else {
+                        btn.classList.remove('active');
+                    }
+                } else if (dinoIdAttr === currentId) {
                     btn.classList.add('active');
                 } else {
                     btn.classList.remove('active');
@@ -929,7 +1016,7 @@ const schema = {
                 syncOrientations();
 
                 // Mode-aware visual & scanning bounds
-                if (currentMode === 'battle' && isDinoTarget && BATTLE_ASSETS[activeAsset.id]) {
+                if (currentMode === 'battle' && BATTLE_ASSETS[activeAsset.id]) {
                     refImg.src = BATTLE_ASSETS[activeAsset.id].image;
                     activeAsset.contentHeightPx = BATTLE_ASSETS[activeAsset.id].contentHeightPx;
                     activeAsset.bottomGap = BATTLE_ASSETS[activeAsset.id].bottomGap;
@@ -940,6 +1027,9 @@ const schema = {
                     if (isDinoTarget && activeAsset.rawDino?.cyberMetadata) {
                         activeAsset.contentHeightPx = activeAsset.rawDino.cyberMetadata.contentHeightPx;
                         activeAsset.bottomGap = activeAsset.rawDino.cyberMetadata.bottomGap;
+                    } else if (BONE_REF_ASSETS[activeAsset.id]) {
+                        activeAsset.contentHeightPx = BONE_REF_ASSETS[activeAsset.id].contentHeightPx;
+                        activeAsset.bottomGap = BONE_REF_ASSETS[activeAsset.id].bottomGap;
                     }
                 }
 
@@ -1059,6 +1149,7 @@ const schema = {
             const dinoDegenZoom = 1.0; // Enforce natural 1:1 scale ratio in simulator
 
             // Padding lookup table (pixels of transparent margins out of 1024px canvas)
+            const isBattle = currentMode === 'battle';
             const paddingTable: Record<string, { left: number; right: number }> = {
                 compsognathus: { left: 44, right: 37 },
                 brachiosaurus: { left: 54, right: 44 },
@@ -1076,12 +1167,13 @@ const schema = {
                 styracosaurus: { left: 22, right: 22 },
                 argentinosaurus: { left: 22, right: 22 },
                 iguanodon: { left: 22, right: 22 },
+                protoceratops: { left: 22, right: 22 },
                 sinoceratops: { left: 196, right: 162 },
-                human: { left: 329, right: 328 },
-                car: { left: 11, right: 8 },
-                elephant: { left: 70, right: 60 },
-                whale: { left: 42, right: 45 },
-                airplane: { left: 55, right: 19 },
+                human: isBattle ? { left: 364, right: 365 } : { left: 329, right: 328 },
+                car: isBattle ? { left: 22, right: 22 } : { left: 11, right: 8 },
+                elephant: isBattle ? { left: 62, right: 62 } : { left: 70, right: 60 },
+                whale: isBattle ? { left: 22, right: 22 } : { left: 42, right: 45 },
+                airplane: isBattle ? { left: 22, right: 22 } : { left: 55, right: 19 },
                 styxosaurus: { left: 61, right: 30 },
                 thalassodromeus: { left: 249, right: 147 }
             };
