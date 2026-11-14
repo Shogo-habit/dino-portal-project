@@ -13,6 +13,11 @@
 
 ## ✅ 完了済みタスク (Done)
 
+- [x] **【GSC警告改善】ImageObject構造化データへのライセンス情報（`license` / `acquireLicensePage`）完全準拠実装** (2026/11/14)
+  - **背景と原因**: Google Search Consoleの「画像メタデータ」にて、図鑑詳細ページおよびシミュレータページの `ImageObject` に対し『項目「acquireLicensePage」がありません』『項目「license」がありません』と警告（推奨・必須項目の欠落）が検出された事象に対応。
+  - **ライセンス条項URL（`license`）の実装**: 全画像メタデータに利用規約・著作権セクションへの直接アンカーURL（`https://dino-portal.com/privacy/#copyright`）を動的付与。あわせて `src/pages/privacy/index.astro` に `id="copyright"` を設置。
+  - **ライセンス取得・問い合わせURL（`acquireLicensePage`）の実装**: 画像利用申請やライセンス問い合わせを受け付ける `https://dino-portal.com/contact/` を設定。
+  - **反映対象**: `src/pages/dictionary/[id].astro`（全恐竜の生体復元図、骨格側面図、リアル対決画像）および `src/pages/size-comparison.astro`（対決アセット群）。全398ページの静的HTMLビルドおよびJSON-LDの完全出力を検証完了。
 - [x] **【SEO施策2】リアル対決アセット（`_battle.webp`）のSchema.org `ImageObject` 構造化データ実装** (2026/11/14)
   - **個別図鑑（`/dictionary/[id]/`）**: 実装済み全18種のリアル対決画像に対し、専用の `ImageObject`（`#battle`、臨場感ある威嚇・咆哮ポーズ解説文、クレジット表記）を動的生成し、`Article.image` および `imageSchemaList` に連動インデックス化。
   - **シミュレータ（`/size-comparison/`）**: `WebApplication` 構造化データとともに、全18種のリアル対決アセット群を `ImageObject` として完全登録。Google画像検索およびリッチリザルトでの露出を強化。
