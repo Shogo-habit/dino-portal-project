@@ -350,12 +350,34 @@ const schema = {
         // Mode: 'bone' (cyber skeleton) or 'battle' (photorealistic threat battle)
         let currentMode: 'bone' | 'battle' = 'bone';
 
+        // 骨格モード時の公式全長（realLength）整合用キャリブレーション（骨格⇔リアル切替でサイズ差0%を実現）
+        const BONE_CALIBRATED_ASSETS: Record<string, { contentHeightPx: number; bottomGap: number }> = {
+            tyrannosaurus: { contentHeightPx: 353, bottomGap: 273 },
+            triceratops: { contentHeightPx: 314, bottomGap: 346 },
+            velociraptor: { contentHeightPx: 290, bottomGap: 332 },
+            protoceratops: { contentHeightPx: 550, bottomGap: 226 },
+            allosaurus: { contentHeightPx: 396, bottomGap: 319 },
+            stegosaurus: { contentHeightPx: 421, bottomGap: 261 },
+            spinosaurus: { contentHeightPx: 317, bottomGap: 307 },
+            giganotosaurus: { contentHeightPx: 282, bottomGap: 342 },
+            brachiosaurus: { contentHeightPx: 482, bottomGap: 98 },
+            ankylosaurus: { contentHeightPx: 229, bottomGap: 391 },
+            mosasaurus: { contentHeightPx: 196, bottomGap: 356 },
+            pteranodon: { contentHeightPx: 579, bottomGap: 206 },
+            pachycephalosaurus: { contentHeightPx: 392, bottomGap: 263 },
+            parasaurolophus: { contentHeightPx: 405, bottomGap: 240 },
+            quetzalcoatlus: { contentHeightPx: 921, bottomGap: 42 },
+            elasmosaurus: { contentHeightPx: 238, bottomGap: 222 },
+            styracosaurus: { contentHeightPx: 402, bottomGap: 294 },
+            argentinosaurus: { contentHeightPx: 247, bottomGap: 354 },
+            iguanodon: { contentHeightPx: 360, bottomGap: 331 }
+        };
+
         // Battle Assets Registry (Calibrated for strict length & posture proportion)
         const BATTLE_ASSETS: Record<string, { image: string; contentHeightPx: number; bottomGap: number }> = {
             tyrannosaurus: {
                 image: '/images/cyber/tyrannosaurus_battle.webp',
-                // Calibrated to hip height 4.0m (realHeight 4.5m * 351px / 4.0m = 395px)
-                contentHeightPx: 395,
+                contentHeightPx: 349,
                 bottomGap: 306
             },
             triceratops: {
@@ -366,101 +388,86 @@ const schema = {
             spinosaurus: {
                 image: '/images/cyber/spinosaurus_battle.webp',
                 contentHeightPx: 319,
-                bottomGap: 297
+                bottomGap: 296
             },
             giganotosaurus: {
                 image: '/images/cyber/giganotosaurus_battle.webp',
-                contentHeightPx: 295,
+                contentHeightPx: 294,
                 bottomGap: 346
             },
             brachiosaurus: {
                 image: '/images/cyber/brachiosaurus_battle.webp',
-                // Aspect 1.91:1, Length 25.0m, Height 13.0m
-                contentHeightPx: 514,
+                contentHeightPx: 512,
                 bottomGap: 254
             },
             ankylosaurus: {
                 image: '/images/cyber/ankylosaurus_battle.webp',
-                // Calibrated to hip height 1.7m / length 7.0m (realHeight 1.7m * 985px / 7.0m = 239px)
                 contentHeightPx: 239,
                 bottomGap: 328
             },
             mosasaurus: {
                 image: '/images/cyber/mosasaurus_battle.webp',
-                // Calibrated to exact length 17.0m (realHeight 3.5m * 980px / 17.0m = 202px)
                 contentHeightPx: 202,
                 bottomGap: 413
             },
             pteranodon: {
                 image: '/images/cyber/pteranodon_battle.webp',
-                // Standing height 3.0m / wings folded length ~5.0m (contentHeightPx 583 matches skeleton 579)
                 contentHeightPx: 583,
                 bottomGap: 221
             },
             pachycephalosaurus: {
                 image: '/images/cyber/pachycephalosaurus_battle.webp',
-                // Headbutt threat stance, realHeight 1.8m, Length 4.5m
-                contentHeightPx: 394,
+                contentHeightPx: 392,
                 bottomGap: 315
             },
             stegosaurus: {
                 image: '/images/cyber/stegosaurus_battle.webp',
-                // Calibrated to exact length 9.0m, Plate peak 4.0m (realHeight 4.0m * 980px / 9.0m = 435px)
-                contentHeightPx: 435,
+                contentHeightPx: 436,
                 bottomGap: 289
             },
             parasaurolophus: {
                 image: '/images/cyber/parasaurolophus_battle.webp',
-                // Calibrated to exact length 9.5m, Crest peak 4.0m (realHeight 4.0m * 980px / 9.5m = 413px)
                 contentHeightPx: 413,
                 bottomGap: 280
             },
             quetzalcoatlus: {
                 image: '/images/cyber/quetzalcoatlus_battle.webp',
-                // Towering giraffe-sized upright stance, Standing height 5.0m, Length ~5.9m (Wingspan 11.0m)
                 contentHeightPx: 800,
                 bottomGap: 112
             },
             elasmosaurus: {
                 image: '/images/cyber/elasmosaurus_battle.webp',
-                // Calibrated to exact length 14.0m, Swimming height 3.5m (realHeight 3.5m * 980px / 14.0m = 245px)
                 contentHeightPx: 245,
                 bottomGap: 388
             },
             velociraptor: {
                 image: '/images/cyber/velociraptor_battle.webp',
-                // Feathered avian agility, realHeight 0.6m, Length 2.0m (0.6 * 980 / 2.0 = 294px)
                 contentHeightPx: 294,
                 bottomGap: 302
             },
             allosaurus: {
                 image: '/images/cyber/allosaurus_battle.webp',
-                // Jurassic apex predator charge, realHeight 3.5m, Length 8.5m (3.5 * 980 / 8.5 = 403px)
-                contentHeightPx: 403,
+                contentHeightPx: 404,
                 bottomGap: 328
             },
             styracosaurus: {
                 image: '/images/cyber/styracosaurus_battle.webp',
-                // Long nasal horn & spiked frill, realHeight 2.3m, Length 5.5m (2.3 * 980 / 5.5 = 409px)
-                contentHeightPx: 409,
+                contentHeightPx: 410,
                 bottomGap: 285
             },
             argentinosaurus: {
                 image: '/images/cyber/argentinosaurus_battle.webp',
-                // Titanic sauropod, realHeight 9.0m, Length 35.0m (9.0 * 980 / 35.0 = 252px)
                 contentHeightPx: 252,
                 bottomGap: 321
             },
             iguanodon: {
                 image: '/images/cyber/iguanodon_battle.webp',
-                // Conical thumb spikes rearing stance, realHeight 3.7m, Length 10.0m (3.7 * 980 / 10.0 = 362px)
-                contentHeightPx: 362,
+                contentHeightPx: 363,
                 bottomGap: 273
             },
             protoceratops: {
                 image: '/images/cyber/protoceratops_battle.webp',
-                // Fighting Dinosaurs rival, realHeight 1.03m, Length 1.8m
-                contentHeightPx: 550,
+                contentHeightPx: 561,
                 bottomGap: 237
             },
             human: {
@@ -939,8 +946,13 @@ const schema = {
                     dinoImg.style.mixBlendMode = 'normal';
                 } else {
                     dinoImg.src = `/images/cyber/${dinoId}.webp`;
-                    dinoContentH = activeDino.cyberMetadata?.contentHeightPx || 450;
-                    dinoBottomGap = activeDino.cyberMetadata?.bottomGap || 280;
+                    if (BONE_CALIBRATED_ASSETS[dinoId]) {
+                        dinoContentH = BONE_CALIBRATED_ASSETS[dinoId].contentHeightPx;
+                        dinoBottomGap = BONE_CALIBRATED_ASSETS[dinoId].bottomGap;
+                    } else {
+                        dinoContentH = activeDino.cyberMetadata?.contentHeightPx || 450;
+                        dinoBottomGap = activeDino.cyberMetadata?.bottomGap || 280;
+                    }
                     dinoImg.style.mixBlendMode = 'screen';
                 }
 
@@ -1024,9 +1036,14 @@ const schema = {
                 } else {
                     refImg.src = '/' + activeAsset.icon;
                     refImg.style.mixBlendMode = (activeAsset.id === 'human') ? 'normal' : 'screen';
-                    if (isDinoTarget && activeAsset.rawDino?.cyberMetadata) {
-                        activeAsset.contentHeightPx = activeAsset.rawDino.cyberMetadata.contentHeightPx;
-                        activeAsset.bottomGap = activeAsset.rawDino.cyberMetadata.bottomGap;
+                    if (isDinoTarget) {
+                        if (BONE_CALIBRATED_ASSETS[activeAsset.id]) {
+                            activeAsset.contentHeightPx = BONE_CALIBRATED_ASSETS[activeAsset.id].contentHeightPx;
+                            activeAsset.bottomGap = BONE_CALIBRATED_ASSETS[activeAsset.id].bottomGap;
+                        } else if (activeAsset.rawDino?.cyberMetadata) {
+                            activeAsset.contentHeightPx = activeAsset.rawDino.cyberMetadata.contentHeightPx;
+                            activeAsset.bottomGap = activeAsset.rawDino.cyberMetadata.bottomGap;
+                        }
                     } else if (BONE_REF_ASSETS[activeAsset.id]) {
                         activeAsset.contentHeightPx = BONE_REF_ASSETS[activeAsset.id].contentHeightPx;
                         activeAsset.bottomGap = BONE_REF_ASSETS[activeAsset.id].bottomGap;

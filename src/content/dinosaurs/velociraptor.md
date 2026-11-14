@@ -25,7 +25,7 @@ cyberMetadata:
   bottomGap: 332
   realHeight: 0.6
   realLength: 2.0
-  contentHeightPx: 360
+  contentHeightPx: 290
   sourceRes: 1024
   dinoLeft: "12%"
   refRight: "12%"
