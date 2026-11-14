@@ -43,7 +43,7 @@ if (!defaultDino) {
                         <span class="mode-icon">💀</span> 骨格実寸モード
                     </button>
                     <button type="button" class="mode-btn" id="btn-mode-battle" data-mode="battle">
-                        <span class="mode-icon">⚡</span> リアル威嚇対決モード
+                        <span class="mode-icon">⚡</span> リアル対決モード
                     </button>
                 </div>
             </div>
@@ -73,7 +73,7 @@ if (!defaultDino) {
                             <option value={asset.id} data-asset={JSON.stringify(asset)} data-type="reference">{asset.label}</option>
                         ))}
                     </optgroup>
-                    <optgroup label="恐竜・古生物と直接対決（実寸VS）">
+                    <optgroup label="恐竜・古生物と直接対決（実寸VS）" id="dino-optgroup">
                         {comparisonDinos.map(dino => {
                             const assetData = {
                                 id: dino.id,
@@ -391,14 +391,70 @@ if (!defaultDino) {
 
         // 骨格側面図で頭部が原画で右向きの恐竜ID一覧（その他はすべて左向き）
         const RIGHT_FACING_SKELETONS = new Set([
-            'bajadasaurus', 'barosaurus', 'borealopelta', 'ceratosaurus', 'deinocheirus',
-            'dimorphodon', 'edmontosaurus', 'elasmosaurus', 'euoplocephalus', 'gorgosaurus',
-            'hallucigenia', 'huayangosaurus', 'koreaceratops', 'majungasaurus', 'mamenchisaurus',
-            'mapusaurus', 'mosasaurus', 'nyctosaurus', 'oviraptor', 'patagotitan',
-            'polacanthus', 'proganochelys', 'prognathodon', 'quetzalcoatlus', 'saichania',
-            'stegouros', 'suchomimus', 'tapejara', 'tuojiangosaurus', 'tupandactylus',
-            'tyrannosaurus', 'wuerhosaurus'
+            'anhanguera', 'bajadasaurus', 'barosaurus', 'borealopelta', 'ceratosaurus',
+            'deinocheirus', 'edmontosaurus', 'elasmosaurus', 'gorgosaurus', 'hallucigenia',
+            'kentrosaurus', 'majungasaurus', 'mamenchisaurus', 'mapusaurus', 'oviraptor',
+            'patagotitan', 'proganochelys', 'protoceratops', 'quetzalcoatlus', 'saichania',
+            'shonisaurus', 'suchomimus', 'tapejara', 'tupandactylus', 'tyrannosaurus'
         ]);
+
+        // Dynamic options cache for filtering in battle mode
+        let allDinoOptions: HTMLOptionElement[] = [];
+        let allVsDinoOptions: HTMLOptionElement[] = [];
+
+        function filterSelectorsForMode(mode: 'bone' | 'battle') {
+            if (!dinoSelector || !selector) return;
+            const isBattle = mode === 'battle';
+            const currentDinoVal = dinoSelector.value;
+            const currentAssetVal = selector.value;
+
+            // 1. Filter dino-selector
+            dinoSelector.innerHTML = '';
+            const filteredDinoOpts = isBattle 
+                ? allDinoOptions.filter(opt => !!BATTLE_ASSETS[opt.value])
+                : allDinoOptions;
+            filteredDinoOpts.forEach(opt => dinoSelector!.appendChild(opt.cloneNode(true) as HTMLOptionElement));
+
+            if (filteredDinoOpts.some(opt => opt.value === currentDinoVal)) {
+                dinoSelector.value = currentDinoVal;
+            } else {
+                dinoSelector.value = 'tyrannosaurus';
+            }
+
+            // 2. Filter asset-selector (dino-optgroup)
+            const dinoOptgroup = document.getElementById('dino-optgroup') as HTMLOptGroupElement;
+            if (dinoOptgroup) {
+                dinoOptgroup.innerHTML = '';
+                const filteredVsOpts = isBattle
+                    ? allVsDinoOptions.filter(opt => !!BATTLE_ASSETS[opt.value])
+                    : allVsDinoOptions;
+                filteredVsOpts.forEach(opt => dinoOptgroup.appendChild(opt.cloneNode(true) as HTMLOptionElement));
+
+                // Check if current asset is still valid in dropdown
+                const allCurrentAssetOpts = Array.from(selector.querySelectorAll('option'));
+                if (allCurrentAssetOpts.some(opt => opt.value === currentAssetVal)) {
+                    selector.value = currentAssetVal;
+                } else {
+                    selector.value = isBattle ? 'triceratops' : 'human';
+                }
+            }
+
+            // 3. Preset buttons disabled state in battle mode
+            const presetButtons = document.querySelectorAll('.preset-btn');
+            presetButtons.forEach(btn => {
+                const id = btn.getAttribute('data-dino-id');
+                if (id) {
+                    const hasBattle = !!BATTLE_ASSETS[id];
+                    if (isBattle && !hasBattle) {
+                        btn.classList.add('disabled-in-battle');
+                        (btn as HTMLButtonElement).disabled = true;
+                    } else {
+                        btn.classList.remove('disabled-in-battle');
+                        (btn as HTMLButtonElement).disabled = false;
+                    }
+                }
+            });
+        }
 
         function syncOrientations() {
             if (!dinoImg || !refImg) return;
@@ -510,6 +566,15 @@ if (!defaultDino) {
             currentZoom = 1.0;
             targetZoom = 1.0;
 
+            // Cache original option elements for dynamic filtering in battle mode
+            if (dinoSelector && allDinoOptions.length === 0) {
+                allDinoOptions = Array.from(dinoSelector.options).map(o => o.cloneNode(true) as HTMLOptionElement);
+            }
+            const dinoOptgroup = document.getElementById('dino-optgroup') as HTMLOptGroupElement;
+            if (dinoOptgroup && allVsDinoOptions.length === 0) {
+                allVsDinoOptions = Array.from(dinoOptgroup.querySelectorAll('option')).map(o => o.cloneNode(true) as HTMLOptionElement);
+            }
+
             // Check for URL parameters
             const urlParams = new URLSearchParams(window.location.search);
             const targetDinoId = urlParams.get('dino');
@@ -534,6 +599,7 @@ if (!defaultDino) {
             } else {
                 currentMode = 'bone';
             }
+            filterSelectorsForMode(currentMode);
             updateModeButtons();
 
             // Bind mode buttons
@@ -546,6 +612,7 @@ if (!defaultDino) {
             const presetButtons = document.querySelectorAll('.preset-btn');
             presetButtons.forEach(btn => {
                 btn.addEventListener('click', () => {
+                    if (btn.classList.contains('disabled-in-battle')) return;
                     const targetId = btn.getAttribute('data-dino-id');
                     if (targetId && dinoSelector) {
                         const matched = Array.from(dinoSelector.options).find(opt => opt.value === targetId);
@@ -678,6 +745,7 @@ if (!defaultDino) {
         function setMode(newMode: 'bone' | 'battle') {
             if (currentMode === newMode) return;
             currentMode = newMode;
+            filterSelectorsForMode(currentMode);
             updateModeButtons();
             updateSelectedDino();
             updateSelectedAsset();
@@ -1547,6 +1615,16 @@ if (!defaultDino) {
             font-weight: bold;
             border-color: var(--primary-neon) !important;
             box-shadow: 0 0 12px rgba(0, 242, 255, 0.45);
+        }
+
+        .preset-btn.disabled-in-battle {
+            opacity: 0.28;
+            cursor: not-allowed !important;
+            filter: grayscale(1);
+            border-color: rgba(255, 255, 255, 0.1) !important;
+            background: rgba(255, 255, 255, 0.02) !important;
+            color: rgba(255, 255, 255, 0.3) !important;
+            pointer-events: none;
         }
 
         @media (max-width: 768px) {
