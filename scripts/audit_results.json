@@ -2772,6 +2772,28 @@
     "issues": []
   },
   {
+    "id": "haplocanthosaurus",
+    "name": "ハプロカントサウルス",
+    "scientificName": "Haplocanthosaurus delfsi",
+    "group": "竜脚下目（基盤的竜脚類）",
+    "diet": "植物食",
+    "era": "ジュラ紀後期",
+    "realHeight": 4.8,
+    "realLength": 15,
+    "length": "15.0m",
+    "weight": "13.0t",
+    "charCount": 2337,
+    "rawCharCount": 2372,
+    "h3Count": 4,
+    "h3Headings": [
+      "クリーブランド自然史博物館の至宝：モリソン層での発見と命名",
+      "実寸サイズとスケール：全長約15.0メートル・全高約4.8メートルが示すモリソン層の特異性",
+      "分岐しない単一神経棘の謎：生体力学と独自の系統的位置",
+      "アロサウルスが跳梁するモリソン層氾濫原での孤高のサバイバル"
+    ],
+    "issues": []
+  },
+  {
     "id": "haplocheirus",
     "name": "ハプロケイルス",
     "scientificName": "Haplocheirus sollers",
@@ -3102,6 +3124,28 @@
     "issues": []
   },
   {
+    "id": "isanosaurus",
+    "name": "イサノサウルス",
+    "scientificName": "Isanosaurus attavipachi",
+    "group": "竜脚形類（真竜脚類）",
+    "diet": "植物食",
+    "era": "三畳紀後期",
+    "realHeight": 2.5,
+    "realLength": 6.5,
+    "length": "6.5m",
+    "weight": "1.5t",
+    "charCount": 2362,
+    "rawCharCount": 2396,
+    "h3Count": 4,
+    "h3Headings": [
+      "タイの赤土から現れた進化の証人：ナムポーン層での発掘と命名",
+      "実寸サイズとスケール：全長約6.5メートル・全高約2.5メートルが示す黎明期の直立骨格",
+      "真竜脚類への決定的一歩：柱状四肢と骨格の革新",
+      "三畳紀末期の超大陸熱帯生態系：巨大恐竜帝国の幕開け"
+    ],
+    "issues": []
+  },
+  {
     "id": "jakapil",
     "name": "ジャカピル",
     "scientificName": "Jakapil kaniukura",
@@ -3296,6 +3340,28 @@
       "人間との実寸サイズ比較・15本の角が並ぶ4.8メートルの華麗なる装甲スケール",
       "生態と15本の角が織りなす究極の求愛ディスプレイ",
       "最新の古生物学知見とララミディア大陸の生物多様性の奇跡"
+    ],
+    "issues": []
+  },
+  {
+    "id": "kotasaurus",
+    "name": "コタサウルス",
+    "scientificName": "Kotasaurus yamanpalliensis",
+    "group": "竜脚下目（基盤的竜脚類）",
+    "diet": "植物食",
+    "era": "ジュラ紀前期",
+    "realHeight": 3,
+    "realLength": 9,
+    "length": "9.0m",
+    "weight": "2.5t",
+    "charCount": 2098,
+    "rawCharCount": 2131,
+    "h3Count": 4,
+    "h3Headings": [
+      "デカン高原に眠るジュラ紀の黎明：コタ累層での集団発掘と命名",
+      "実寸サイズとスケール：全長約9.0メートル・全高約3.0メートルが物語る過渡期の体躯",
+      "原始と先進のモザイク進化：祖先的骨盤と頑強な柱状四肢",
+      "ジュラ紀前期ゴンドワナ大陸の森林生態系と群れの行動"
     ],
     "issues": []
   },
@@ -4880,6 +4946,28 @@
       "人間との実寸サイズ比較・トサカだけで人間サイズに迫る巨躯",
       "生態と音響メカニズム・太古の森に響き渡る重低音",
       "最新の古生物学知見と化石発見エピソード"
+    ],
+    "issues": []
+  },
+  {
+    "id": "patagosaurus",
+    "name": "パタゴサウルス",
+    "scientificName": "Patagosaurus fariasi",
+    "group": "竜脚下目（ケティオサウルス科）",
+    "diet": "植物食",
+    "era": "ジュラ紀中期",
+    "realHeight": 5.5,
+    "realLength": 18,
+    "length": "18.0m",
+    "weight": "9.0t",
+    "charCount": 2125,
+    "rawCharCount": 2159,
+    "h3Count": 4,
+    "h3Headings": [
+      "パタゴニアの荒野に眠る中生代の巨人：カニャドン・アスファルト層での発見",
+      "実寸サイズとスケール：全長約18.0メートル・全高約5.5メートルの中期ジュラ紀の巨人像",
+      "質実剛健なケティオサウルス型解剖学：密実な脊椎とスプーン状歯列",
+      "ボーンベッドが明かす群れの絆とジュラ紀パタゴニアの捕食者たち"
     ],
     "issues": []
   },
@@ -7080,6 +7168,28 @@
       "人間との実寸サイズ比較・2.2メートルの超巨大トサカがそびえる5メートルの皇帝スケール",
       "生態と超巨大トサカの軟部組織・オウム嘴の食性",
       "最新の古生物学知見と羽毛メラノソーム解析が明かした極彩色の真実"
+    ],
+    "issues": []
+  },
+  {
+    "id": "turiasaurus",
+    "name": "トゥリアサウルス",
+    "scientificName": "Turiasaurus riodevensis",
+    "group": "竜脚下目（トゥリアサウルス類）",
+    "diet": "植物食",
+    "era": "ジュラ紀後期",
+    "realHeight": 8,
+    "realLength": 30,
+    "length": "30.0m",
+    "weight": "40.0t",
+    "charCount": 2384,
+    "rawCharCount": 2419,
+    "h3Count": 4,
+    "h3Headings": [
+      "テルエルの巨人が覆した古生物学の常識：リオデバ村での大発見",
+      "実寸サイズとスケール：全長約30.0メートル・全高約8.0メートルのテルエルの巨人",
+      "独自系統「トゥリアサウリア」の確立：ハート型の歯と非新竜脚類の頂点",
+      "ジュラ紀末期イベリア半島の生態系：頂点捕食者をも寄せ付けぬ巨山"
     ],
     "issues": []
   },

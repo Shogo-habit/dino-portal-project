@@ -35,7 +35,7 @@ Googleカレンダー（`kosako20200405@gmail.com`）と完全に同期してい
 ### 第2週（2026/11/16 〜 2026/11/22）: Tier 24追加 ＆ SEO点検 ＆ 三畳紀ピラー公開
 - [ ] **【恐竜追加 第2弾】Tier 24（No.346〜355）10種追加**（リリース日: 2026/11/16）
   - Googleカレンダー: [イベントリンク](https://www.google.com/calendar/event?eid=ZXJ2aDdtczE5MmxiMGxuajAxY2Z2a2p1a2cga29zYWtvMjAyMDA0MDVAbQ) (ID: `ervh7ms192lb0lnj01cfvkjukg`)
-  - 累計355種到達
+  - 進捗: 前半5種（No.346〜350: イサノサウルス、コタサウルス、パタゴサウルス、トゥリアサウルス、ハプロカントサウルス）のメイン復元図・骨格透過アセット・詳細記事を前倒し登録完了し、**累計350種到達** (2026/11/15)。後半5種（No.351〜355）の追加待ち。
 - [ ] **【SEO点検】お宝記事のSearch Consoleデータ追跡・CTR検証**（実施日: 2026/11/18）
   - Googleカレンダー: [イベントリンク](https://www.google.com/calendar/event?eid=dDc3Ymh2aDFzNzFqZHN2ZXJzbWlvMXJxNGMga29zYWtvMjAyMDA0MDVAbQ) (ID: `t77bhvh1s71jdsversmio1rq4c`)
   - `/topics/dinosaur-size-ranking/` のCTR（現状0.43% ➔ 目標3.0%以上）および穴場恐竜5種のインプレッション・順位推移を検証
