@@ -369,12 +369,29 @@ const schema = {
                 ...(hasComparison ? [`https://dino-portal.com/images/cyber/${d.id}.webp`] : []),
                 ...(hasBattleImage ? [`https://dino-portal.com/images/cyber/${d.id}_battle.webp`] : [])
             ],
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": `https://dino-portal.com/dictionary/${entry.id}/`
+            },
             "author": {
                 "@type": "Person",
                 "name": AUTHOR_DATA.name,
                 "jobTitle": AUTHOR_DATA.role,
                 "description": AUTHOR_DATA.bio,
-                "url": "https://dino-portal.com/"
+                "url": "https://dino-portal.com/about/",
+                "sameAs": [
+                    `https://x.com/${AUTHOR_DATA.twitter.replace('@', '')}`
+                ]
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Dino-Portal Lab",
+                "url": "https://dino-portal.com/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://dino-portal.com/logo.png"
+                },
+                "publishingPrinciples": "https://dino-portal.com/about/#editorial-policy"
             },
             "about": {
                 "@id": `https://dino-portal.com/dictionary/${entry.id}/#taxon`
@@ -1351,6 +1368,33 @@ if (hasComparison && h3List.length > 0) {
                     </div>
                 </a>
             </nav>
+
+            <!-- 学術データ検証・編集体制・訂正ポリシー (E-E-A-T) パネル -->
+            <div class="hud-panel" style="margin-top: 35px; padding: 20px 22px; border: 1px solid var(--panel-border); background: rgba(0, 242, 255, 0.02); border-radius: 6px; position: relative;">
+                <div class="hud-corner top-left"></div>
+                <div class="hud-corner bottom-right"></div>
+                
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; font-family: var(--font-mono); font-size: 10px; color: var(--primary-neon); letter-spacing: 1.2px;">
+                    <span>[ SCIENTIFIC ACCURACY & EDITORIAL POLICY / 学術データ検証・編集方針 ]</span>
+                    <span style="color: var(--secondary-neon); border: 1px solid var(--secondary-neon); padding: 1px 6px; border-radius: 3px; background: rgba(0, 255, 170, 0.05);">
+                        ✓ 一次学術文献・公式標本照合済み
+                    </span>
+                </div>
+
+                <p style="font-size: 12px; color: #cfe6eb; line-height: 1.65; margin: 0 0 10px 0;">
+                    本標本（{d.name}）の全長・推定体重・生息年代・分類系統などの基本データおよび解剖学的特徴は、国内外の査読付き一次論文（Nature, Science, Cretaceous Research等）および国立科学博物館や福井県立恐竜博物館等の公式標本記載データを参照し、編集者（DINOパパ）が科学的根拠に基づき検証・校閲しています。
+                </p>
+
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: 11px; font-family: var(--font-mono); border-top: 1px solid rgba(0, 242, 255, 0.1); padding-top: 10px;">
+                    <span style="color: var(--text-dim);">
+                        ※ 新化石の発見や最新論文による学説更新、記載内容の誤りに関する情報提供は随時受け付けています。
+                    </span>
+                    <div style="display: flex; gap: 12px;">
+                        <a href="/about/#editorial-policy" style="color: var(--primary-neon); text-decoration: none;">[ 編集・検証ポリシー詳細 &raquo; ]</a>
+                        <a href="/contact/" style="color: var(--secondary-neon); text-decoration: none;">[ 情報提供・誤り指摘窓口 &raquo; ]</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </article>
 

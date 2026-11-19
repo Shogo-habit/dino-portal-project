@@ -82,7 +82,7 @@ const fullOgImageUrl = new URL(ogImage, 'https://dino-portal.com/');
       </>
     )}
 
-    <!-- Base Schema -->
+    <!-- Base Schema with E-E-A-T metadata -->
     <script type="application/ld+json" is:inline>
     {
       "@context": "https://schema.org",
@@ -90,7 +90,18 @@ const fullOgImageUrl = new URL(ogImage, 'https://dino-portal.com/');
       "name": "Dino-Portal Lab",
       "url": "https://dino-portal.com/",
       "logo": "https://dino-portal.com/logo.png",
-      "description": "次世代の恐竜デジタルアーカイブプロジェクト"
+      "description": "一次文献に基づく正確な古生物データと実寸サイズ比較を融合した次世代恐竜デジタル図鑑プロジェクト",
+      "publishingPrinciples": "https://dino-portal.com/about/#editorial-policy",
+      "sameAs": [
+        "https://x.com/DinoPortalLab"
+      ],
+      "knowsAbout": [
+        "Paleontology",
+        "Dinosaurs",
+        "Fossil Reconstruction",
+        "Mesozoic Era",
+        "Comparative Anatomy"
+      ]
     }
     </script>
     

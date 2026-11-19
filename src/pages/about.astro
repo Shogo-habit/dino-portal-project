@@ -1,9 +1,46 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { AUTHOR_DATA } from '../data/author';
+
+const aboutSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "Dino-Portal 運営者情報・編集ポリシー・ファクトチェック方針",
+  "description": "350種以上の恐竜・古生物データを一次学術文献に基づき検証・発信するDino-Portalの運営者プロフィール、編集方針、ファクトチェック体制のご案内。",
+  "url": "https://dino-portal.com/about/",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Dino-Portal Lab",
+    "url": "https://dino-portal.com/",
+    "logo": "https://dino-portal.com/logo.png",
+    "description": "一次文献に基づく正確な古生物データと実寸サイズ比較を融合した次世代恐竜デジタル図鑑プロジェクト",
+    "publishingPrinciples": "https://dino-portal.com/about/#editorial-policy",
+    "correctionsPolicy": "https://dino-portal.com/about/#correction-policy",
+    "founder": {
+      "@type": "Person",
+      "name": AUTHOR_DATA.name,
+      "jobTitle": AUTHOR_DATA.role,
+      "description": AUTHOR_DATA.bio,
+      "url": "https://dino-portal.com/about/",
+      "sameAs": [
+        `https://x.com/${AUTHOR_DATA.twitter.replace('@', '')}`
+      ]
+    },
+    "knowsAbout": [
+      "Paleontology",
+      "Dinosaurs",
+      "Fossil Reconstruction",
+      "Mesozoic Era",
+      "Cretaceous Period",
+      "Jurassic Period",
+      "Triassic Period",
+      "Comparative Anatomy"
+    ]
+  }
+};
 ---
 
-<Layout title="ABOUT - プロフィール & サイトについて | Dino-Portal" activeTab="about">
+<Layout title="ABOUT - 運営者プロフィール & 編集・検証ポリシー | Dino-Portal" activeTab="about" description="Dino-Portalの運営者プロフィール、一次学術論文に基づくリサーチ方針、ファクトチェックおよび訂正ポリシーを公明正大に開示しています。" schema={aboutSchema}>
   <div class="page-header">
     <h1 class="page-title">サイト運営者プロフィール＆ミッション</h1>
   </div>
@@ -76,25 +113,44 @@ import { AUTHOR_DATA } from '../data/author';
     </div>
 
     <!-- コンテンツ制作方針とアフィリエイトについて -->
-    <div class="hud-panel" style="margin-top: 30px;">
-      <h3 class="section-title">EDITORIAL POLICY / コンテンツ制作・運営方針</h3>
-      <div class="policy-grid">
+    <div class="hud-panel" style="margin-top: 30px;" id="editorial-policy">
+      <h3 class="section-title">EDITORIAL POLICY / コンテンツ制作・編集・ファクトチェック方針</h3>
+      <p class="story-paragraph" style="margin-bottom: 20px;">
+        『Dino-Portal』は、大人も子どもも安心して楽しめる「最も正確でエキサイティングな次世代デジタル恐竜図鑑」を目指し、誠実で透明性の高いコンテンツ制作・検証を行っています。大学等の研究機関に属するアカデミアの学者ではない独立リサーチャー（2児の父）が運営しているからこそ、以下の厳格な基準を自らに課し、誇張や偏りのない中立的な情報発信を徹底しています。
+      </p>
+
+      <div class="policy-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
         <div class="policy-item">
-          <h4>1. 科学的根拠に基づいた情報発信</h4>
-          <p>紹介する恐竜データや解説は、論文や専門書など信頼性の高いソースに基づき、常に最新の古生物学説を取り入れるよう努めています。</p>
+          <h4>1. 査読付き学術論文・公式資料の徹底調査</h4>
+          <p>
+            恐竜の体長、推定体重、生息年代、分類系統などの基礎データは、国内外の査読付き一次論文（*Nature, Science, Cretaceous Research, Journal of Vertebrate Paleontology, PeerJ, PLOS ONE, Lethaia* 等）や、国立科学博物館、福井県立恐竜博物館、ロイヤル・ティレル古生物学博物館などの公的機関が公開する標本記載データを直接参照・照合しています。
+          </p>
         </div>
+
         <div class="policy-item">
-          <h4>2. 親子の知的好奇心を刺激するビジュアル</h4>
-          <p>恐竜の生態をリアルにイメージできるよう、AIシミュレーションを活用した高精細なビジュアル表現と、HUD（ヘッドアップディスプレイ）を模した直感的なデザインを融合させています。</p>
+          <h4>2. AIの活用と人間による厳格なファクトチェック</h4>
+          <p>
+            本サイトでは、膨大な古生物データの構造化や復元図生成の支援に最先端AI技術を活用しています。しかし、AIの出力した数値をそのまま公開することは一切ありません。骨格プロポーション、前足の指の数、羽毛の有無、食性などの解剖学的・生態的特徴は、必ず人間が一次文献と突き合わせて点検・校閲を行っています。
+          </p>
         </div>
+
+        <div class="policy-item" id="correction-policy">
+          <h4>3. 迅速な訂正ポリシーと情報提供窓口</h4>
+          <p>
+            古生物学は、新化石の発見や最新の解析手法によって学説が日々塗り替えられるダイナミックな学問です。当ポータルでは、掲載内容に誤記や最新学説との相違が確認された場合、速やかに再検証を行い、改訂内容を反映します。読者の皆様や専門家の方々からの情報提供・ご指摘は、<a href="/contact/" style="color: var(--primary-neon); text-decoration: none;">[ お問い合わせフォーム ]</a>より随時受け付けています。
+          </p>
+        </div>
+
         <div class="policy-item">
-          <h4>3. 適切な情報整理と内部リンク</h4>
-          <p>個々の恐竜データとトピックス（特集記事）を密接にリンクさせ、読みたい情報へスムーズにアクセスできる動線を設計しています。</p>
+          <h4>4. 親子・教育に配慮したアクセシビリティ</h4>
+          <p>
+            学術的な厳密さを追求しつつも、子どもたちの知的好奇心を決して置き去りにしません。全漢字へのふりがな（ルビ）切り替え機能、五十音ナビゲーション、1:1の実寸サイズ比較シミュレータなど、あらゆる年齢層が直感的に学べるユーザー体験（UX）を追求しています。
+          </p>
         </div>
       </div>
       
       <div class="affiliate-notice" style="margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(0, 242, 255, 0.1); font-size: 12px; color: var(--text-dim);">
-        <p style="margin-bottom: 10px; font-weight: bold; color: var(--primary-neon);">[ アフィリエイトプログラムについて ]</p>
+        <p style="margin-bottom: 10px; font-weight: bold; color: var(--primary-neon);">[ アフィリエイトプログラムおよび収益の還元について ]</p>
         <p>
           Dino-Portalは、Amazonアソシエイトおよびもしもアフィリエイトなどのアフィリエイトプログラムに参加しています。記事内で紹介しているおすすめの図鑑や関連商品は、運営者が実際に子どもと読んで良かったものや、古生物学習において強く推薦できるアイテムを厳選してご紹介しています。リンク経由での紹介料は、サイトのサーバー維持費や、新たな恐竜図鑑・資料の購入費など、すべて本サイトの品質向上とコンテンツ制作に還元されます。
         </p>
