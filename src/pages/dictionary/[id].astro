@@ -188,6 +188,7 @@ const isDinosaur = ['獣脚類', '竜脚類', '鳥脚類', '剣竜類', '堅頭�
 const isPterosaur = d.group === '翼竜';
 const isMarineReptile = ['首長竜', '魚竜', '海棲爬虫類', '魚竜・首長竜'].includes(d.group);
 const isPaleozoicOrOther = !isDinosaur && !isPterosaur && !isMarineReptile;
+const isTriassic = d.era.includes('三畳');
 
 let nonDinoNotice: {
     badge: string;
@@ -869,6 +870,32 @@ if (hasComparison && h3List.length > 0) {
                                 <div>
                                     <a href={nonDinoNotice.linkUrl} style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); text-decoration: underline; text-underline-offset: 3px; display: inline-flex; align-items: center; gap: 4px; transition: opacity 0.2s;">
                                         <span>{nonDinoNotice.linkText}</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                )}
+
+                {isTriassic && (
+                    <aside class="triassic-notice-banner hud-panel" aria-label="時代別アーカイブ情報" style="margin-bottom: 20px; padding: 14px 18px; border: 1px solid rgba(255, 183, 0, 0.4); background: rgba(255, 183, 0, 0.05); border-radius: 4px; position: relative;">
+                        <div class="hud-corner top-left" style="border-top-color: #ffb700; border-left-color: #ffb700;"></div>
+                        <div class="hud-corner bottom-right" style="border-bottom-color: #ffb700; border-right-color: #ffb700;"></div>
+                        <div style="display: flex; gap: 12px; align-items: flex-start;">
+                            <span style="font-size: 20px; line-height: 1.2; flex-shrink: 0;" aria-hidden="true">🏜️</span>
+                            <div style="flex: 1; min-width: 0;">
+                                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 5px; flex-wrap: wrap;">
+                                    <span style="font-family: var(--font-mono); font-size: 10px; color: #ffb700; background: rgba(255, 183, 0, 0.15); border: 1px solid #ffb700; padding: 1px 6px; border-radius: 2px; font-weight: bold;">
+                                        三畳紀アーカイブ
+                                    </span>
+                                    <strong style="font-size: 13px; color: #fff; letter-spacing: 0.5px;">恐竜誕生前夜：中生代最初の時代（約2億5190万〜2億130万年前）</strong>
+                                </div>
+                                <p style="font-size: 12px; color: var(--text-dim); line-height: 1.6; margin: 0 0 8px 0;">
+                                    {d.name}が生息した三畳紀は、超大陸パンゲアの過酷な乾燥環境で最古の二足歩行恐竜や強力な偽鰐類（クルロタルシ類）が覇権を争った黎明の時代です。
+                                </p>
+                                <div>
+                                    <a href="/period/triassic/" style="font-family: var(--font-mono); font-size: 11px; color: #ffb700; text-decoration: underline; text-underline-offset: 3px; display: inline-flex; align-items: center; gap: 4px; font-weight: bold; transition: opacity 0.2s;">
+                                        <span>【特設ピラー】三畳紀の恐竜・古生物完全ガイドを見る（全36種） ➔</span>
                                     </a>
                                 </div>
                             </div>

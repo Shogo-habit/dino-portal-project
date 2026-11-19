@@ -2,8 +2,8 @@
 id: "strongest-dinosaur-ranking-kids"
 date: "2026.06.15"
 category: "ranking"
-title: "【最強の恐竜はどれ？】強さランキングTOP10！ティラノサウルスやスピノサウルスなど頂点に立つ恐竜を子供向けに徹底解説"
-summary: "太古の地球で一番強かった恐竜は誰？最新の古生物学に基づく「最強の恐竜ランキングTOP10」を大発表！絶対王者ティラノサウルスや水陸両用スピノサウルス、鉄壁のトリケラトプスなど、攻撃力・防御力・噛む力を徹底比較して子供向けにわかりやすく解説します。"
+title: "【結論】恐竜最強ランキングTOP10！一番強い恐竜は誰？強さ・噛む力を子供向けに徹底解説"
+summary: "「恐竜の中で一番強いのは誰？」「太古の地球最強は？」その答えは、驚異の咬合力と巨体を誇る絶対王者『ティラノサウルス』！最新学説に基づく恐竜最強ランキングTOP10を発表。水陸両用スピノサウルスや鉄壁トリケラトプスなど強さ・武器を子供向けに徹底比較！"
 image: "images/topics/strongest-dinosaur-ranking-kids/strength_ranking.webp"
 securityLevel: "LEVEL 1 (KIDS FRIENDLY)"
 relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]

@@ -65,6 +65,12 @@ relatedSpecimens: ["eoraptor","allosaurus","triceratops"]
   </a>
 </div>
 
+<div style="margin: -15px 0 35px 0; text-align: center;">
+  <a href="/period/triassic/" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background: rgba(255, 183, 0, 0.12); border: 1px solid #ffb700; border-radius: 4px; color: #ffb700; text-decoration: none; font-weight: bold; font-size: 14px; transition: all 0.3s ease;">
+    <span>🏜️ 【特設ピラー】三畳紀の古生物完全ガイドを見る（全36種の一覧・進化史） ➔</span>
+  </a>
+</div>
+
 <h2 class="article-section-title">2. ジュラ紀：温暖化と森林の広がり、恐竜の「超巨大化」黄金期</h2>
 <p class="article-paragraph">
   今から約2億130万年前〜1億4500万年前までの時代です。

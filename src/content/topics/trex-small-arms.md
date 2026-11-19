@@ -2,13 +2,44 @@
 id: "trex-small-arms"
 date: "2026.05.23"
 category: "theory"
-title: "ティラノサウルスの「小さな前足」の謎！何のために使っていた？"
-summary: "体長12メートルを超える巨大な体に、人間とほぼ同じ長さの小さな前足。アンバランスで愛嬌すら感じるティラノサウルスの前足の使い道について、最新の説をわかりやすく解説。"
+title: "【答え】ティラノサウルスの前足の指は3本？本当は何本？小さな腕の使い道と驚異の筋力｜最新学説"
+summary: "「ティラノサウルスの前足の指は3本である？」その答えは『×（実質2本）』！なぜ指が減り腕が短くなったのか、指は何本あるのかという疑問から、片腕で200kgを持ち上げた驚異の筋力、狩りや交尾など最新研究が明かす5つの使い道まで徹底解説。"
 image: "images/topics/trex-small-arms/trex_small_arms.webp"
 securityLevel: "LEVEL 2 (SCIENTIFIC REVISION)"
 relatedSpecimens: ["tyrannosaurus","carnotaurus"]
 ---
 
+<!-- ファーストビュー結論クイックアンサー枠（強調スニペット・AI Overview・クイズ対策） -->
+<section class="hud-panel answer-summary-box" style="margin: 20px 0 30px 0; padding: 22px; border: 2px solid var(--primary-neon); background: rgba(0, 242, 255, 0.05); border-radius: 6px; box-shadow: 0 0 20px rgba(0, 242, 255, 0.15);">
+  <div style="font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 6px; letter-spacing: 1.5px; font-weight: bold;">
+    [ QUICK ANSWER / 3秒でわかる疑問と答え ]
+  </div>
+  <h2 style="font-size: 18px; font-weight: bold; color: #fff; margin: 0 0 14px 0; line-height: 1.4; border-bottom: 1px dashed rgba(0, 242, 255, 0.3); padding-bottom: 10px;">
+    Q. ティラノサウルスの前足の指は3本である？本当は何本？
+  </h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-bottom: 12px;">
+    <div style="background: rgba(1, 10, 18, 0.7); border: 1px solid rgba(0, 242, 255, 0.25); padding: 12px 14px; border-radius: 4px;">
+      <div style="font-size: 11px; color: var(--primary-neon); font-family: var(--font-mono); font-weight: bold; margin-bottom: 4px;">❌ 判定（クイズ・検定の答え）</div>
+      <div style="font-size: 16px; font-weight: bold; color: #ff6b6b; margin-bottom: 4px;">答えは「×（誤り）」！</div>
+      <div style="font-size: 12px; color: var(--text-dim);">ティラノサウルスの機能的な前足の指は<strong>「2本」</strong>です（祖先は3本指でしたが進化の過程で縮小・退化）。</div>
+    </div>
+    <div style="background: rgba(1, 10, 18, 0.7); border: 1px solid rgba(0, 242, 255, 0.25); padding: 12px 14px; border-radius: 4px;">
+      <div style="font-size: 11px; color: var(--primary-neon); font-family: var(--font-mono); font-weight: bold; margin-bottom: 4px;">🦴 3本目の指はどうなった？</div>
+      <div style="font-size: 16px; font-weight: bold; color: #fff; margin-bottom: 4px;">皮膚の中に痕跡骨として埋没</div>
+      <div style="font-size: 12px; color: var(--text-dim);">3本目の指（第3中手骨）は骨の痕跡としてわずかに残るのみで、外側に見える爪付きの指は2本だけです。</div>
+    </div>
+    <div style="background: rgba(1, 10, 18, 0.7); border: 1px solid rgba(0, 242, 255, 0.25); padding: 12px 14px; border-radius: 4px;">
+      <div style="font-size: 11px; color: var(--primary-neon); font-family: var(--font-mono); font-weight: bold; margin-bottom: 4px;">💪 前足の長さと筋力パワー</div>
+      <div style="font-size: 16px; font-weight: bold; color: #fff; margin-bottom: 4px;">長さ約1m / 片腕で約200kg超！</div>
+      <div style="font-size: 12px; color: var(--text-dim);">人の腕ほどの長さですが、骨密度が高く極めて頑丈。片腕で成人男性2〜3人を持ち上げる怪力がありました。</div>
+    </div>
+    <div style="background: rgba(1, 10, 18, 0.7); border: 1px solid rgba(0, 242, 255, 0.25); padding: 12px 14px; border-radius: 4px;">
+      <div style="font-size: 11px; color: var(--primary-neon); font-family: var(--font-mono); font-weight: bold; margin-bottom: 4px;">🎯 何のために使っていた？</div>
+      <div style="font-size: 16px; font-weight: bold; color: #fff; margin-bottom: 4px;">獲物の拘束・起き上がり補助など</div>
+      <div style="font-size: 12px; color: var(--text-dim);">「無駄な退化」ではなく、地面から立ち上がる際の支えや、交尾時の固定、近接での獲物ホールドに活用されました。</div>
+    </div>
+  </div>
+</section>
 
 <h2 class="article-section-title">アンバランスすぎる「小さな前足」</h2>
 <p class="article-paragraph">

@@ -19,6 +19,25 @@ const breadcrumbs = [
   { "@type": "ListItem", "position": 3, "name": "三畳紀の古生物完全ガイド", "item": "https://dino-portal.com/period/triassic/" }
 ];
 
+const faqList = [
+  {
+    q: "最初の恐竜はいつ誕生しましたか？最古の恐竜は何ですか？",
+    a: "恐竜は中生代三畳紀中期（約2億3300万年前）、超大陸パンゲアの南米ゴンドワナ（現在のアルゼンチン・ブラジル周辺）で誕生しました。最古級の真正恐竜として、体長約1mの俊敏な雑食恐竜「エオラプトル（Eoraptor）」や、体長約3〜4mの肉食恐竜「ヘレラサウルス（Herrerasaurus）」、ブラジルの「スタウリコサウルス」などが知られています。"
+  },
+  {
+    q: "三畳紀の陸上生態系の頂点に君臨していたのはどんな生物ですか？",
+    a: "三畳紀の陸上生態系の頂点は恐竜ではなく、現代のワニの祖先系統にあたる「偽鰐類（クルロタルシ類 / Pseudosuchia）」でした。最大級の肉食ハンター「ポストスクス（Postosuchus）」やサウロスクス、鎧をまとった草食のデスマトスクスなどが陸上を支配しており、当時の恐竜は彼らの足元で暮らす小柄な新参生物でした。"
+  },
+  {
+    q: "なぜ恐竜は三畳紀末の大量絶滅を生き残り、ジュラ紀の覇者になれたのですか？",
+    a: "主な要因として、(1)「寛骨臼の貫通」による完全な直立二足歩行での高い運動性能・省エネ移動、(2)現代の鳥類にも受け継がれる高効率換気システム「気嚢（きのう）呼吸」、(3)低酸素・寒冷化に耐える原羽毛や代謝調節能力が挙げられます。三畳紀末（T-J境界）の巨大火山噴火に伴う地球規模の環境激変で偽鰐類の大半が絶滅した際、この優れた生存適応力を持っていた恐竜が空白となった生態系ニッチを瞬く間に占拠しました。"
+  },
+  {
+    q: "三畳紀の海や空にはどのような古生物が生息していましたか？",
+    a: "海には、イルカに似た流線型の巨大魚竜「ショニサウルス」や「キンボスポンディルス」、首長竜の祖先となるノトサウルス類やプラコドゥス類が生息していました。また空には、恐竜の近縁である最古の翼竜「エウディモルフォドン」などがすでに羽ばたいていました。"
+  }
+];
+
 const schema = [
   {
     "@context": "https://schema.org",
@@ -36,6 +55,18 @@ const schema = [
       "name": d.name,
       "url": `https://dino-portal.com/dictionary/${d.id}/`,
       "description": d.description
+    }))
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqList.map(item => ({
+      "@type": "Question",
+      "name": item.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.a
+      }
     }))
   }
 ];
@@ -219,6 +250,30 @@ const schema = [
                 </div>
               </div>
             </a>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Academic FAQ Section for Search Intent & AIO -->
+    <section class="triassic-faq hud-panel" style="padding: 35px 40px; margin-bottom: 50px; background: rgba(3, 6, 8, 0.7); border-color: rgba(255, 183, 0, 0.3);">
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 25px; border-bottom: 2px solid #ffb700; padding-bottom: 12px;">
+        <span style="font-size: 22px;">💡</span>
+        <h2 style="font-size: 20px; color: #ffb700; font-weight: 700; margin: 0; letter-spacing: 0.5px;">
+          三畳紀の古生物に関するよくある質問（FAQ）
+        </h2>
+      </div>
+
+      <div class="faq-list" style="display: flex; flex-direction: column; gap: 18px;">
+        {faqList.map(item => (
+          <div class="faq-item" style="padding: 16px 20px; background: rgba(255, 183, 0, 0.03); border: 1px solid rgba(255, 183, 0, 0.15); border-radius: 4px;">
+            <h3 style="font-size: 15px; color: #fff; margin: 0 0 8px 0; font-weight: 700; display: flex; align-items: baseline; gap: 8px;">
+              <span style="color: #ffb700; font-family: var(--font-mono); font-weight: 800; font-size: 16px;">Q.</span>
+              <span>{item.q}</span>
+            </h3>
+            <p style="font-size: 13.5px; line-height: 1.8; color: #cfe6eb; margin: 0; padding-left: 24px;">
+              {item.a}
+            </p>
           </div>
         ))}
       </div>
