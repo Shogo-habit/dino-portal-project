@@ -31,7 +31,7 @@ cyberMetadata:
   sourceRes: 1024
   dinoLeft: "15%"
   refRight: "10%"
-  zoom: 1.15
+  zoom: 1.3
 ---
 
 ### 中国古生物学の黎明を飾る記念碑的発見：蒙陰層での発掘とカール・ウィマンの研究

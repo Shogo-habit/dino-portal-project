@@ -98,8 +98,8 @@ const dinosaurs = [
       realLength: 5.0,
       contentHeightPx: 356,
       sourceRes: 1024,
-      dinoLeft: "15%",
-      refRight: "10%",
+      dinoLeft: "0%",
+      refRight: "-10%",
       zoom: 1.3
     },
     content: `### ジュラ紀ジュンガル盆地から蘇った「美しいトカゲ」：石樹溝層の発掘史
@@ -164,7 +164,7 @@ const dinosaurs = [
       sourceRes: 1024,
       dinoLeft: "15%",
       refRight: "10%",
-      zoom: 1.15
+      zoom: 1.3
     },
     content: `### 中国古生物学の黎明を飾る記念碑的発見：蒙陰層での発掘とカール・ウィマンの研究
 ユーヘロプス（学名: *Euhelopus zdanskyi*）は、中生代白亜紀前期（バレミアン期からアプチアン期・約1億3000万〜1億2500万年前）の東アジア、現在の中国東部・山東省蒙陰県に分布する蒙陰層から発掘された、歴史的意義の深い長頸竜脚類です。本種は中国の地層から科学的に発掘・記載された恐竜の記念すべき第1号の一つとして、古生物学史に燦然とその名を刻んでいます。
