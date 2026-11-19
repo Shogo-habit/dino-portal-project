@@ -748,6 +748,28 @@
     "issues": []
   },
   {
+    "id": "bellusaurus",
+    "name": "ベルサウルス",
+    "scientificName": "Bellusaurus sui",
+    "group": "竜脚下目（真竜脚類）",
+    "diet": "植物食",
+    "era": "ジュラ紀中期",
+    "realHeight": 1.5,
+    "realLength": 5,
+    "length": "5.0m",
+    "weight": "500kg",
+    "charCount": 2015,
+    "rawCharCount": 2047,
+    "h3Count": 4,
+    "h3Headings": [
+      "ジュラ紀ジュンガル盆地から蘇った「美しいトカゲ」：石樹溝層の発掘史",
+      "実寸サイズとスケール：全長約5.0メートル・全高約1.5メートルが物語る可憐な体躯",
+      "17頭の化石が語る成長と解剖学：真竜脚類の初期形態とスプーン状歯",
+      "太古の泥流が遺したタイムカプセル：幼体群の社会生態とジュラ紀アジアの環境"
+    ],
+    "issues": []
+  },
+  {
     "id": "bistahieversor",
     "name": "ビスタヒエバーソー",
     "scientificName": "Bistahieversor sealeyi",
@@ -814,6 +836,28 @@
     "issues": []
   },
   {
+    "id": "brachytrachelopan",
+    "name": "ブラキトラケロパン",
+    "scientificName": "Brachytrachelopan mesai",
+    "group": "竜脚下目（ディクラエオサウルス科）",
+    "diet": "植物食",
+    "era": "ジュラ紀後期",
+    "realHeight": 2.5,
+    "realLength": 10,
+    "length": "10.0m",
+    "weight": "5.0t",
+    "charCount": 2237,
+    "rawCharCount": 2269,
+    "h3Count": 4,
+    "h3Headings": [
+      "パタゴニアの牧場で発見された異形の巨竜：カニャドン・カルカロ層の奇跡",
+      "実寸サイズとスケール：全長約10.0メートル・全高約2.5メートルが示す驚異の低重心プロポーション",
+      "竜脚類の常識を覆す解剖学的革命：極小の頸椎と発達した神経棘",
+      "ジュラ紀後期のパタゴニア氾濫原：大型竜脚類との棲み分けと進化の勝利"
+    ],
+    "issues": []
+  },
+  {
     "id": "brontosaurus",
     "name": "ブロントサウルス",
     "scientificName": "Brontosaurus excelsus",
@@ -834,6 +878,90 @@
       "最新の古生物学知見と学名復活のドラマ・112年の時を経て"
     ],
     "issues": []
+  },
+  {
+    "id": "bruhathkayosaurus",
+    "name": "ブルハトカヨサウルス",
+    "scientificName": "Bruhathkayosaurus matleyi",
+    "group": "竜脚類",
+    "diet": "草食",
+    "era": "白亜紀後期",
+    "realHeight": null,
+    "realLength": null,
+    "length": "38.0m",
+    "weight": "110.0t",
+    "charCount": 4082,
+    "rawCharCount": 4141,
+    "h3Count": 5,
+    "h3Headings": [
+      "名前の由来と発見史・南インドの巨大ティタノサウルス類",
+      "標本消失の悲劇と2022年の未公開写真による劇的再検証",
+      "人間との実寸サイズ比較・アルゼンチノサウルスを超える超巨大スケール",
+      "生態と100トン超の巨体を維持するエネルギー循環・陸上動物の限界点",
+      "最新の古生物学知見と今後の発掘・再発見への期待"
+    ],
+    "issues": [
+      {
+        "type": "MISSING_FIELD",
+        "field": "cyberMetadata",
+        "message": "Missing field: cyberMetadata"
+      },
+      {
+        "type": "MISSING_CYBER_FIELD",
+        "field": "realHeight",
+        "message": "Missing cyberMetadata.realHeight"
+      },
+      {
+        "type": "MISSING_CYBER_FIELD",
+        "field": "realLength",
+        "message": "Missing cyberMetadata.realLength"
+      },
+      {
+        "type": "MISSING_CYBER_FIELD",
+        "field": "contentHeightPx",
+        "message": "Missing cyberMetadata.contentHeightPx"
+      },
+      {
+        "type": "MISSING_CYBER_FIELD",
+        "field": "bottomGap",
+        "message": "Missing cyberMetadata.bottomGap"
+      },
+      {
+        "type": "MISSING_CYBER_FIELD",
+        "field": "sourceRes",
+        "message": "Missing cyberMetadata.sourceRes"
+      },
+      {
+        "type": "MISSING_CYBER_FIELD",
+        "field": "zoom",
+        "message": "Missing cyberMetadata.zoom"
+      },
+      {
+        "type": "MISSING_CYBER_IMAGE",
+        "path": "public/images/cyber/bruhathkayosaurus.webp"
+      },
+      {
+        "type": "INVALID_H3_COUNT",
+        "count": 5,
+        "message": "H3 heading count is 5 (expected exactly 4)"
+      },
+      {
+        "type": "MISSING_SIZE_KEYWORD_IN_H3_2",
+        "heading": "標本消失の悲劇と2022年の未公開写真による劇的再検証",
+        "message": "Second H3 heading must contain (サイズ|実寸|スケール): \"標本消失の悲劇と2022年の未公開写真による劇的再検証\""
+      },
+      {
+        "type": "BODY_LENGTH_HIGH",
+        "chars": 4082,
+        "message": "Body text is very long: 4082 chars (without whitespace)"
+      },
+      {
+        "type": "WEIGHT_NOT_IN_SECTION2",
+        "weight": "110.0t",
+        "weightNum": 110,
+        "message": "Weight \"110.0t\" number (110) not clearly found in Section 2"
+      }
+    ]
   },
   {
     "id": "camarasaurus",
@@ -2046,6 +2174,28 @@
     "issues": []
   },
   {
+    "id": "erketu",
+    "name": "エルケツ",
+    "scientificName": "Erketu ellisoni",
+    "group": "竜脚下目（ソンフォスポンディリ類）",
+    "diet": "植物食",
+    "era": "白亜紀前期",
+    "realHeight": 4.8,
+    "realLength": 15,
+    "length": "15.0m",
+    "weight": "6.0t",
+    "charCount": 2079,
+    "rawCharCount": 2111,
+    "h3Count": 4,
+    "h3Headings": [
+      "ゴビ砂漠の風化した赤色砂岩から現れた奇跡：ボロン・トゥカル層の発掘と命名",
+      "実寸サイズとスケール：全長約15.0メートル・全高約4.8メートルが描くスレンダーな超長頸シルエット",
+      "首が体の半分を占める異形の生体力学：極限の軽量化と気嚢システムの秘密",
+      "白亜紀中央アジアの氾濫原とオアシス：省エネ摂食戦略がもたらした生態的優位"
+    ],
+    "issues": []
+  },
+  {
     "id": "erlikosaurus",
     "name": "エルリコサウルス",
     "scientificName": "Erlikosaurus andrewsi",
@@ -2086,6 +2236,28 @@
       "実寸サイズと飛行スケールの解剖学：翼開長約1.0メートル・着地全高約0.4メートルの軽量体躯",
       "多咬頭歯の超機能分担と骨化腱で固められた空力スタビライザー",
       "テチス海ラグーンの生態系と翼竜類における先駆的ニッチの確立"
+    ],
+    "issues": []
+  },
+  {
+    "id": "euhelopus",
+    "name": "ユーヘロプス",
+    "scientificName": "Euhelopus zdanskyi",
+    "group": "竜脚下目（ユーヘロプス科）",
+    "diet": "植物食",
+    "era": "白亜紀前期",
+    "realHeight": 4.5,
+    "realLength": 15,
+    "length": "15.0m",
+    "weight": "15.0t",
+    "charCount": 2144,
+    "rawCharCount": 2176,
+    "h3Count": 4,
+    "h3Headings": [
+      "中国古生物学の黎明を飾る記念碑的発見：蒙陰層での発掘とカール・ウィマンの研究",
+      "実寸サイズとスケール：全長約15.0メートル・全高約4.5メートルが誇る天を衝く長頸",
+      "19個の頸椎と前高後低の骨格アーキテクチャ：高木冠を征服した生体力学",
+      "白亜紀前期の東アジア隔離生態系：固有の進化を遂げたユーヘロプス科の栄華"
     ],
     "issues": []
   },
@@ -6992,6 +7164,28 @@
       "人間との実寸サイズ比較・3メートルの鎌首と13メートルの巨大巨蛇スケール",
       "生態とセレホンの熱帯湿地を支配した絞め殺しの力・魚食の真実",
       "最新の古生物学知見と地球温暖化がもたらした変温動物の巨大化限界"
+    ],
+    "issues": []
+  },
+  {
+    "id": "titanosaurus",
+    "name": "ティタノサウルス",
+    "scientificName": "Titanosaurus indicus",
+    "group": "竜脚下目（ティタノサウルス科）",
+    "diet": "植物食",
+    "era": "白亜紀後期",
+    "realHeight": 3,
+    "realLength": 12,
+    "length": "12.0m",
+    "weight": "12.0t",
+    "charCount": 2047,
+    "rawCharCount": 2079,
+    "h3Count": 4,
+    "h3Headings": [
+      "1877年のインドから始まった大分類群の黎明：ラメタ層の発掘とリチャード・ライデッカー",
+      "実寸サイズとスケール：全長約12.0メートル・全高約3.0メートルが示す堅牢な重装甲ボディ",
+      "前凹型椎体とワイドゲージ歩行：ティタノサウルス類を世界制覇へ導いた骨格革新",
+      "白亜紀末期のゴンドワナ孤立大陸：火山活動と白亜紀末大量絶滅への道程"
     ],
     "issues": []
   },

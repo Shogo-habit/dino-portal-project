@@ -24,10 +24,10 @@ bioTraits:
     value: "ボール＆ソケット状の強固な脊椎関節結合"
     detail: "尾や胴体の柔軟な可動性と重力分散を両立し、白亜紀末の地球環境での大適応放散を支えた"
 cyberMetadata:
-  bottomGap: 290
+  bottomGap: 304
   realHeight: 3
   realLength: 12
-  contentHeightPx: 420
+  contentHeightPx: 415
   sourceRes: 1024
   dinoLeft: "15%"
   refRight: "10%"

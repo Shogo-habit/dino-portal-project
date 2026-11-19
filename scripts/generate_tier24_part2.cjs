@@ -221,10 +221,10 @@ const dinosaurs = [
       }
     ],
     cyberMetadata: {
-      bottomGap: 280,
+      bottomGap: 305,
       realHeight: 4.8,
       realLength: 15.0,
-      contentHeightPx: 460,
+      contentHeightPx: 402,
       sourceRes: 1024,
       dinoLeft: "15%",
       refRight: "10%",
@@ -285,10 +285,10 @@ const dinosaurs = [
       }
     ],
     cyberMetadata: {
-      bottomGap: 290,
+      bottomGap: 304,
       realHeight: 3.0,
       realLength: 12.0,
-      contentHeightPx: 420,
+      contentHeightPx: 415,
       sourceRes: 1024,
       dinoLeft: "15%",
       refRight: "10%",

@@ -24,10 +24,10 @@ bioTraits:
     value: "薄い骨壁と気嚢ネットワークによる重量相殺"
     detail: "巨大な首の重量を劇的に減らすため、骨の内部はハニカム状の空洞（気嚢痕）で満たされていた"
 cyberMetadata:
-  bottomGap: 280
+  bottomGap: 305
   realHeight: 4.8
   realLength: 15
-  contentHeightPx: 460
+  contentHeightPx: 402
   sourceRes: 1024
   dinoLeft: "15%"
   refRight: "10%"
