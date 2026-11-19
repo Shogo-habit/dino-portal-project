@@ -24,10 +24,10 @@ bioTraits:
     value: "肩が高く胸部が持ち上がった力学的フレーム"
     detail: "前肢優位の骨格構造により、自然な姿勢で首を上空へと高く立ち上げる姿勢を実現した"
 cyberMetadata:
-  bottomGap: 280
+  bottomGap: 260
   realHeight: 4.5
   realLength: 15
-  contentHeightPx: 450
+  contentHeightPx: 511
   sourceRes: 1024
   dinoLeft: "15%"
   refRight: "10%"

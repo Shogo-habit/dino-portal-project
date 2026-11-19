@@ -24,10 +24,10 @@ bioTraits:
     value: "推定体重約5トンの安定した低重心骨格"
     detail: "過酷なジュラ紀後期のパタゴニア氾濫原において低木層を独占する独自の生態ニッチを開拓した"
 cyberMetadata:
-  bottomGap: 290
+  bottomGap: 323
   realHeight: 2.5
   realLength: 10
-  contentHeightPx: 420
+  contentHeightPx: 356
   sourceRes: 1024
   dinoLeft: "15%"
   refRight: "10%"

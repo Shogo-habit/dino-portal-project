@@ -24,10 +24,10 @@ bioTraits:
     value: "成体未到達を示す未癒合の神経弓と軽快な四肢"
     detail: "真竜脚類初期のスプーン状歯を持ち、水辺の柔らかなシダ植物や裸子植物の葉を摂取した"
 cyberMetadata:
-  bottomGap: 290
+  bottomGap: 334
   realHeight: 1.5
   realLength: 5
-  contentHeightPx: 420
+  contentHeightPx: 356
   sourceRes: 1024
   dinoLeft: "15%"
   refRight: "10%"
