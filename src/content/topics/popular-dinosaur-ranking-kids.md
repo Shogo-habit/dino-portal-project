@@ -2,8 +2,8 @@
 id: "popular-dinosaur-ranking-kids"
 date: "2026.06.18"
 category: "ranking"
-title: "【一番人気はどれ？】恐竜人気ランキングTOP10！かっこいい人気恐竜の特徴と人気の理由を子供向けに解説"
-summary: "子供に一番人気の恐竜はどれ？全国のファン投票や図鑑アンケートをもとに、かっこいい「恐竜人気ランキングTOP10」を発表！ティラノサウルスやトリケラトプスなど、定番のスター恐竜から知る人ぞ知る人気者まで、特徴や人気の理由を子供向けに優しく解説します。"
+title: "【結論】恐竜人気ランキングTOP10！一番人気の恐竜は誰？かっこいい恐竜の特徴と人気の理由を子供向けに徹底解説"
+summary: "子供に一番人気の恐竜はどれ？全国のファン投票や図鑑アンケートをもとに、かっこいい「恐竜人気ランキングTOP10」を発表！1位ティラノサウルス、2位トリケラトプス、3位スピノサウルスなど定番のスター恐竜から知る人ぞ知る人気者まで、特徴や人気の理由を子供向けに優しく解説します。"
 image: "images/topics/popular-dinosaur-ranking-kids/popular_dinosaur_ranking.webp"
 securityLevel: "LEVEL 1 (KIDS FRIENDLY)"
 relatedSpecimens: ["tyrannosaurus","triceratops","spinosaurus","mosasaurus","brachiosaurus","stegosaurus","pteranodon","velociraptor","ankylosaurus","parasaurolophus"]
@@ -14,18 +14,40 @@ relatedSpecimens: ["tyrannosaurus","triceratops","spinosaurus","mosasaurus","bra
   恐竜が大好きなお子様を持つ保護者の方や、自分のお気に入りの恐竜が何位なのか知りたい子供たちにとって、人気の恐竜ランキングはとても気になるテーマですよね。
 </p>
 
-<p class="article-paragraph">
-  実は、恐竜の人気は生息していた時代や最新の研究、さらには映画や図鑑などの影響によって少しずつ変化しています。そこでこの記事では、<strong>全国の恐竜ファンによる最新の投票データ、図鑑の読者アンケート、そしておもちゃ（フィギュアなど）の売れ筋情報</strong>を独自に合算した、客観的で納得感のある「総合人気ランキングTOP10」を作成しました！
-</p>
-
 <!-- 早見一覧＆サイズ比較誘導 -->
-<div class="hud-panel" style="margin: 25px 0; padding: 18px; border: 1px solid var(--primary-neon); background: rgba(0, 242, 255, 0.04); border-radius: 6px;">
-  <div style="font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 6px; letter-spacing: 1px; font-weight: bold;">
-    [ POPULARITY TOP 10 / 人気恐竜ランキングTOP10 ]
+<div class="hud-panel" style="margin: 25px 0; padding: 20px; border: 1px solid var(--primary-neon); background: rgba(0, 242, 255, 0.05); border-radius: 6px;">
+  <div style="font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 12px; letter-spacing: 1.5px; font-weight: bold;">
+    🏆 【結論発表】子供に大人気の恐竜総合ランキング TOP10 早見表
   </div>
-  <p style="font-size: 13px; color: var(--text-dim); margin: 0 0 12px 0; line-height: 1.6;">
-    1位 ティラノサウルス / 2位 トリケラトプス / 3位 スピノサウルス / 4位 モササウルス / 5位 ブラキオサウルス / 6位 ステゴサウルス / 7位 プテラノドン / 8位 ヴェロキラプトル / 9位 アンキロサウルス / 10位 パラサウロロフス
-  </p>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin-bottom: 15px;">
+    <div style="background: rgba(255, 215, 0, 0.1); border: 1px solid #ffd700; padding: 8px 12px; border-radius: 4px;">
+      <strong style="color: #ffd700; font-size: 14px;">🥇 第1位：ティラノサウルス</strong>
+      <span style="display: block; font-size: 11px; color: var(--text-dim);">絶対王者・最強の肉食恐竜</span>
+    </div>
+    <div style="background: rgba(192, 192, 192, 0.1); border: 1px solid #c0c0c0; padding: 8px 12px; border-radius: 4px;">
+      <strong style="color: #c0c0c0; font-size: 14px;">🥈 第2位：トリケラトプス</strong>
+      <span style="display: block; font-size: 11px; color: var(--text-dim);">3本の角と頑丈なフリル</span>
+    </div>
+    <div style="background: rgba(205, 127, 50, 0.1); border: 1px solid #cd7f32; padding: 8px 12px; border-radius: 4px;">
+      <strong style="color: #cd7f32; font-size: 14px;">🥉 第3位：スピノサウルス</strong>
+      <span style="display: block; font-size: 11px; color: var(--text-dim);">超巨大な帆と水陸両用ハンター</span>
+    </div>
+    <div style="background: rgba(1, 10, 20, 0.7); border: 1px solid rgba(0, 242, 255, 0.2); padding: 8px 12px; border-radius: 4px;">
+      <span style="color: var(--primary-neon); font-size: 13px; font-weight: bold;">第4位：モササウルス</span>
+      <span style="display: block; font-size: 11px; color: var(--text-dim);">海の巨大プレデター（海生爬虫類）</span>
+    </div>
+    <div style="background: rgba(1, 10, 20, 0.7); border: 1px solid rgba(0, 242, 255, 0.2); padding: 8px 12px; border-radius: 4px;">
+      <span style="color: var(--primary-neon); font-size: 13px; font-weight: bold;">第5位：ブラキオサウルス</span>
+      <span style="display: block; font-size: 11px; color: var(--text-dim);">ビルに匹敵する超巨大竜脚類</span>
+    </div>
+    <div style="background: rgba(1, 10, 20, 0.7); border: 1px solid rgba(0, 242, 255, 0.2); padding: 8px 12px; border-radius: 4px;">
+      <span style="color: var(--text-main); font-size: 12px;">第6位：ステゴサウルス</span><br>
+      <span style="color: var(--text-main); font-size: 12px;">第7位：プテラノドン</span><br>
+      <span style="color: var(--text-main); font-size: 12px;">第8位：ヴェロキラプトル</span><br>
+      <span style="color: var(--text-main); font-size: 12px;">第9位：アンキロサウルス</span><br>
+      <span style="color: var(--text-main); font-size: 12px;">第10位：パラサウロロフス</span>
+    </div>
+  </div>
   <div style="border-top: 1px solid var(--panel-border); padding-top: 10px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
     <span style="font-size: 12px; color: var(--text-dim);">人気恐竜たちの実際の大きさを人間と比べてみよう！</span>
     <a href="/size-comparison/" class="nav-link" style="display: inline-flex; align-items: center; gap: 6px; background: var(--primary-neon); color: #010408; font-weight: bold; padding: 6px 14px; border-radius: 4px; text-decoration: none; font-size: 12px; font-family: var(--font-mono);">

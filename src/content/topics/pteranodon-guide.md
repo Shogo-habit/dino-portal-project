@@ -2,12 +2,40 @@
 id: "pteranodon-guide"
 date: "2026.06.29"
 category: "introduction"
-title: "プテラノドンの強さとは？強さ・大きさ・生態を子供でもわかりやすく解説"
-summary: "空飛ぶ巨大な翼竜プテラノドン！翼を広げると小型飛行機に匹敵するその大きさ、どうやって飛んでいたのかという飛行のひみつ、そして恐竜との決定的な違いを子供向けにわかりやすく解説します。映画のように人間を乗せて飛べるの？といった気になる疑問にも迫ります！"
+title: "【実は恐竜じゃない？】プテラノドンの大きさ・翼開長・飛行の秘密を子供向けに徹底解説！"
+summary: "空飛ぶ巨大な翼竜プテラノドン！翼を広げると小型飛行機に匹敵するその大きさ、どうやって飛んでいたのかという飛行のひみつ、そして「実は恐竜ではない」という決定的な理由を子供向けにわかりやすく解説します。映画のように人間を乗せて飛べるの？といった気になる疑問にも迫ります！"
 image: "images/topics/pteranodon-guide/pteranodon_detail.webp"
 securityLevel: "LEVEL 2 (SCIENTIFIC REVISION)"
 relatedSpecimens: ["pteranodon", "quetzalcoatlus", "alanqa", "tyrannosaurus"]
 ---
+
+<!-- 結論早見クイックアンサー枠 -->
+<div class="hud-panel" style="margin: 20px 0 35px 0; padding: 20px; border: 1px solid var(--primary-neon); background: rgba(0, 242, 255, 0.05); border-radius: 6px;">
+  <div style="font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 8px; letter-spacing: 1.5px; font-weight: bold;">
+    ⚡ 30秒でわかる！プテラノドンの真実・結論早見表
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 12px;">
+    <div style="background: rgba(1, 10, 20, 0.7); padding: 10px; border-radius: 4px; border: 1px solid rgba(0, 242, 255, 0.2);">
+      <span style="font-size: 11px; color: var(--text-dim); display: block;">分類</span>
+      <strong style="color: #ffb700; font-size: 14px;">恐竜ではなく「翼竜」</strong>
+    </div>
+    <div style="background: rgba(1, 10, 20, 0.7); padding: 10px; border-radius: 4px; border: 1px solid rgba(0, 242, 255, 0.2);">
+      <span style="font-size: 11px; color: var(--text-dim); display: block;">翼を広げた長さ（翼開長）</span>
+      <strong style="color: var(--primary-neon); font-size: 14px;">約 7 〜 9 m（軽飛行機並）</strong>
+    </div>
+    <div style="background: rgba(1, 10, 20, 0.7); padding: 10px; border-radius: 4px; border: 1px solid rgba(0, 242, 255, 0.2);">
+      <span style="font-size: 11px; color: var(--text-dim); display: block;">推定体重</span>
+      <strong style="color: var(--text-main); font-size: 14px;">約 20 〜 25 kg（骨が空洞）</strong>
+    </div>
+    <div style="background: rgba(1, 10, 20, 0.7); padding: 10px; border-radius: 4px; border: 1px solid rgba(0, 242, 255, 0.2);">
+      <span style="font-size: 11px; color: var(--text-dim); display: block;">主なエサ</span>
+      <strong style="color: var(--text-main); font-size: 14px;">海の魚・イカ（ペリカンスタイル）</strong>
+    </div>
+  </div>
+  <div style="font-size: 12px; color: var(--text-dim); line-height: 1.6; border-top: 1px solid rgba(0, 242, 255, 0.15); padding-top: 8px;">
+    ※「プテラノドン」という名前の意味は「歯のない翼」。大きなクチバシには歯が一本もなく、骨の厚さはわずか1mmしかありませんでした。
+  </div>
+</div>
 
 「空を飛ぶ恐竜のなかまで一番強いのはプテラノドン？」
 「どうやってあんなに大きな体で空を飛んでいたの？」
