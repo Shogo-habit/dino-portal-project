@@ -23,6 +23,25 @@ const breadcrumbs = [
   { "@type": "ListItem", "position": 3, "name": "巨大草食恐竜図鑑", "item": "https://dino-portal.com/herbivores/" }
 ];
 
+const faqList = [
+  {
+    q: "なぜ草食恐竜は肉食恐竜よりも圧倒的に巨大化できたのですか？",
+    a: "竜脚類などの草食恐竜が体長30m・体重70t超に巨大化できた理由は、(1)鳥類と同様の「含気骨（骨の空洞化）」と高効率換気システム「気嚢呼吸」による骨格軽量化と排熱能力、(2)咀嚼せずに丸呑みして巨大な消化器官（発酵タンク）で植物を消化する高速摂取戦略、(3)成長速度の極めて速い代謝システム、(4)一度に多くの卵を産む繁殖戦略など、複数の進化適応が組み合わさったためです。"
+  },
+  {
+    q: "草食恐竜はどのようにして肉食恐竜から身を守っていたのですか？",
+    a: "主なグループごとに異なる驚異的な防衛システムを進化させました。トリケラトプスなどの「角竜類」は強靭な角と頭部のフリル、「鎧竜類（アンキロサウルス等）」は全身の装甲板と骨のハンマー（テールクラブ）、「剣竜類（ステゴサウルス等）」は背中の骨板と尾の鋭いスパイク（サゴマイザー）、「竜脚類」は圧倒的な体格差と鞭のような長大な尾、そして「鳥脚類（ハドロサウルス等）」は優れた視力・嗅覚と群れによる警戒網で対抗しました。"
+  },
+  {
+    q: "「デンタルバッテリー」とは何ですか？草食恐竜の歯の秘密",
+    a: "デンタルバッテリーとは、ハドロサウルス類や角竜類が発達させた、数百〜千本以上の歯が幾重にも密集して連続的に生え変わる究極の咀嚼システムです。硬く繊維質の多い白亜紀の被子植物やスギ・ヒノキ類をやすりのように効率よくすり潰すことができ、すり減った歯は下から次々と押し出されて新しい歯に交代しました。"
+  },
+  {
+    q: "草食恐竜が飲み込んでいた「胃石（いせき）」とは何ですか？",
+    a: "胃石とは、歯で細かく噛み砕くことが苦手だった竜脚類などの恐竜が、飲み込んだ硬い小石のことです。胃の筋肉運動によって石同士がぶつかり合い、固い針葉樹の葉などをすり潰すミキサーのような役割を果たしました。化石の胃のあった位置から磨かれた丸い石がまとまって発見されることで証明されています。"
+  }
+];
+
 const schema = [
   {
     "@context": "https://schema.org",
@@ -40,6 +59,18 @@ const schema = [
       "name": d.name,
       "url": `https://dino-portal.com/dictionary/${d.id}/`,
       "description": d.description
+    }))
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqList.map(item => ({
+      "@type": "Question",
+      "name": item.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.a
+      }
     }))
   }
 ];
@@ -245,6 +276,30 @@ const schema = [
                 </div>
               </div>
             </a>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Academic FAQ Section for Search Intent & AIO -->
+    <section class="herbivore-faq hud-panel" style="padding: 35px 40px; margin-bottom: 50px; background: rgba(3, 6, 8, 0.7); border-color: rgba(0, 255, 170, 0.3);">
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 25px; border-bottom: 2px solid #00ffaa; padding-bottom: 12px;">
+        <span style="font-size: 22px;">💡</span>
+        <h2 style="font-size: 20px; color: #00ffaa; font-weight: 700; margin: 0; letter-spacing: 0.5px;">
+          植物食・草食恐竜に関するよくある質問（FAQ）
+        </h2>
+      </div>
+
+      <div class="faq-list" style="display: flex; flex-direction: column; gap: 18px;">
+        {faqList.map(item => (
+          <div class="faq-item" style="padding: 16px 20px; background: rgba(0, 255, 170, 0.03); border: 1px solid rgba(0, 255, 170, 0.15); border-radius: 4px;">
+            <h3 style="font-size: 15px; color: #fff; margin: 0 0 8px 0; font-weight: 700; display: flex; align-items: baseline; gap: 8px;">
+              <span style="color: #00ffaa; font-family: var(--font-mono); font-weight: 800; font-size: 16px;">Q.</span>
+              <span>{item.q}</span>
+            </h3>
+            <p style="font-size: 13.5px; line-height: 1.8; color: #cfe6eb; margin: 0; padding-left: 24px;">
+              {item.a}
+            </p>
           </div>
         ))}
       </div>

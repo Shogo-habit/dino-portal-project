@@ -189,6 +189,7 @@ const isPterosaur = d.group === '翼竜';
 const isMarineReptile = ['首長竜', '魚竜', '海棲爬虫類', '魚竜・首長竜'].includes(d.group);
 const isPaleozoicOrOther = !isDinosaur && !isPterosaur && !isMarineReptile;
 const isTriassic = d.era.includes('三畳');
+const isHerbivore = (d.diet || '').includes('植物食') || (d.diet || '').includes('草食');
 
 let nonDinoNotice: {
     badge: string;
@@ -896,6 +897,32 @@ if (hasComparison && h3List.length > 0) {
                                 <div>
                                     <a href="/period/triassic/" style="font-family: var(--font-mono); font-size: 11px; color: #ffb700; text-decoration: underline; text-underline-offset: 3px; display: inline-flex; align-items: center; gap: 4px; font-weight: bold; transition: opacity 0.2s;">
                                         <span>【特設ピラー】三畳紀の恐竜・古生物完全ガイドを見る（全36種） ➔</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                )}
+
+                {isHerbivore && (
+                    <aside class="herbivore-notice-banner hud-panel" aria-label="食性・生態アーカイブ情報" style="margin-bottom: 20px; padding: 14px 18px; border: 1px solid rgba(0, 255, 170, 0.4); background: rgba(0, 255, 170, 0.05); border-radius: 4px; position: relative;">
+                        <div class="hud-corner top-left" style="border-top-color: #00ffaa; border-left-color: #00ffaa;"></div>
+                        <div class="hud-corner bottom-right" style="border-bottom-color: #00ffaa; border-right-color: #00ffaa;"></div>
+                        <div style="display: flex; gap: 12px; align-items: flex-start;">
+                            <span style="font-size: 20px; line-height: 1.2; flex-shrink: 0;" aria-hidden="true">🌿</span>
+                            <div style="flex: 1; min-width: 0;">
+                                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 5px; flex-wrap: wrap;">
+                                    <span style="font-family: var(--font-mono); font-size: 10px; color: #00ffaa; background: rgba(0, 255, 170, 0.15); border: 1px solid #00ffaa; padding: 1px 6px; border-radius: 2px; font-weight: bold;">
+                                        植物食恐竜アーカイブ
+                                    </span>
+                                    <strong style="font-size: 13px; color: #fff; letter-spacing: 0.5px;">巨大化戦略・防衛武装を進化させた草食恐竜</strong>
+                                </div>
+                                <p style="font-size: 12px; color: var(--text-dim); line-height: 1.6; margin: 0 0 8px 0;">
+                                    {d.name}は中生代の豊かな植物相に適応した植物食（草食）恐竜です。超巨大化を支えた含気骨や強力な防衛武装（角・鎧・骨板・デンタルバッテリー等）の進化史を特設ピラーで詳しく解説しています。
+                                </p>
+                                <div>
+                                    <a href="/herbivores/" style="font-family: var(--font-mono); font-size: 11px; color: #00ffaa; text-decoration: underline; text-underline-offset: 3px; display: inline-flex; align-items: center; gap: 4px; font-weight: bold; transition: opacity 0.2s;">
+                                        <span>【特設ピラー】巨大草食恐竜図鑑を見る（全177種） ➔</span>
                                     </a>
                                 </div>
                             </div>
