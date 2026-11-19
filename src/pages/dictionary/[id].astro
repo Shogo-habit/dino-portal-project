@@ -181,15 +181,15 @@ const faqs = generateDynamicFAQs(d);
 // 2. Title & Meta Description for SEO
 const primaryAlias = (d.aliases || []).find((a: string) => !a.match(/^[\u3041-\u3096]+$/) && a !== d.name);
 const nameWithAlias = primaryAlias ? `${d.name}（${primaryAlias}）` : d.name;
-const categoryLabel = d.group === '翼竜' ? '翼竜' : d.group === '首長竜' ? '首長竜' : d.group === '魚竜' ? '魚竜' : (d.era.includes('古生代') || d.group === 'その他') ? '古生物' : '恐竜';
-
 // 施策5: 恐竜以外の古生物に対する生物学的解説判定
-const isDinosaur = ['獣脚類', '竜脚類', '鳥脚類', '剣竜類', '堅頭竜類', 'よろい竜類', '角竜類'].includes(d.group);
-const isPterosaur = d.group === '翼竜';
-const isMarineReptile = ['首長竜', '魚竜', '海棲爬虫類', '魚竜・首長竜'].includes(d.group);
+const isDinosaur = ['獣脚', '竜脚', '鳥脚', '剣竜', '堅頭竜', 'よろい竜', '曲竜', '角竜', '鳥類'].some(g => d.group.includes(g)) || d.id === 'lesothosaurus';
+const isPterosaur = d.group.includes('翼竜');
+const isMarineReptile = ['首長竜', '魚竜', '海棲爬虫類', '魚竜・首長竜'].some(g => d.group.includes(g)) || d.id === 'mosasaurus';
 const isPaleozoicOrOther = !isDinosaur && !isPterosaur && !isMarineReptile;
 const isTriassic = d.era.includes('三畳');
 const isHerbivore = (d.diet || '').includes('植物食') || (d.diet || '').includes('草食');
+
+const categoryLabel = isPterosaur ? '翼竜' : isMarineReptile ? '海生爬虫類' : isDinosaur ? '恐竜' : '古生物';
 
 let nonDinoNotice: {
     badge: string;
@@ -869,6 +869,54 @@ if (hasComparison && h3List.length > 0) {
                     </div>
                 </header>
 
+                <div class="hud-panel" style="padding: 16px 20px; margin-bottom: 20px; background: rgba(0, 242, 255, 0.02); border-color: rgba(0, 242, 255, 0.2);">
+                    <p style="line-height: 1.7; font-size: 14px; margin: 0; color: var(--text-main);">{d.description}</p>
+                </div>
+
+                <!-- 基本スペック表 -->
+                <div class="hud-panel" style="padding: 20px; margin-bottom: 20px; border-color: rgba(0, 242, 255, 0.2); position: relative;">
+                    <div class="hud-corner top-left" style="border-top-color: rgba(0, 242, 255, 0.35); border-left-color: rgba(0, 242, 255, 0.35);"></div>
+                    <div class="hud-corner bottom-right" style="border-bottom-color: rgba(0, 242, 255, 0.35); border-right-color: rgba(0, 242, 255, 0.35);"></div>
+                    <h2 style="border-bottom: 1px solid var(--panel-border); padding-bottom: 8px; margin-bottom: 15px; color: var(--primary-neon); font-size: 13px; font-weight: bold; letter-spacing: 1px; font-family: var(--font-mono);">
+                        [ 基本スペック・生息環境 ]
+                    </h2>
+                    <div class="spec-panel" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 0 0 15px 0;">
+                        <div class="spec-item" style="border-color: rgba(0, 242, 255, 0.1); background: rgba(1, 10, 18, 0.6); padding: 8px 10px;">
+                            <span class="spec-label">生息年代</span><br>
+                            <a href={`/dictionary/?era=${encodeURIComponent(baseEra)}`} class="spec-link" title={`「${baseEra}」の恐竜一覧を見る`}>{d.era}</a>
+                        </div>
+                        <div class="spec-item" style="border-color: rgba(0, 242, 255, 0.1); background: rgba(1, 10, 18, 0.6); padding: 8px 10px;">
+                            <span class="spec-label">生息地域</span><br>
+                            <a href={`/dictionary/?region=${encodeURIComponent(baseRegion)}`} class="spec-link" title={`「${baseRegion}」の恐竜一覧を見る`}>{d.region}</a>
+                        </div>
+                        <div class="spec-item" style="border-color: rgba(0, 242, 255, 0.1); background: rgba(1, 10, 18, 0.6); padding: 8px 10px;">
+                            <span class="spec-label">分類</span><br>
+                            <a href={`/dictionary/?group=${encodeURIComponent(d.group)}`} class="spec-link" title={`「${d.group}」の恐竜一覧を見る`}>{d.group}</a>
+                        </div>
+                        <div class="spec-item" style="border-color: rgba(0, 242, 255, 0.1); background: rgba(1, 10, 18, 0.6); padding: 8px 10px;">
+                            <span class="spec-label">食性</span><br>
+                            <a href={`/dictionary/?diet=${encodeURIComponent(d.diet)}`} class="spec-link" title={`「${d.diet}」の恐竜一覧を見る`}>{d.diet}</a>
+                        </div>
+                        <div class="spec-item" style="border-color: rgba(0, 242, 255, 0.1); background: rgba(1, 10, 18, 0.6); padding: 8px 10px;"><span class="spec-label">全長</span><br>{d.length}</div>
+                        <div class="spec-item" style="border-color: rgba(0, 242, 255, 0.1); background: rgba(1, 10, 18, 0.6); padding: 8px 10px;"><span class="spec-label">推定体重</span><br>{d.weight}</div>
+                    </div>
+
+                    <!-- 生物学的特性 -->
+                    {d.bioTraits && d.bioTraits.length > 0 && (
+                        <div style="border-top: 1px dashed rgba(0, 242, 255, 0.15); padding-top: 12px;">
+                            <div style="display: flex; flex-direction: column; gap: 8px;">
+                                {d.bioTraits.map(t => (
+                                    <div style="font-size: 12.5px; line-height: 1.5; color: var(--text-main);">
+                                        <strong style="color: var(--primary-neon); font-family: var(--font-mono); margin-right: 6px;">{t.trait}</strong>
+                                        <span style="color: var(--text-dim); margin-right: 6px;">:</span>
+                                        <span>{t.detail}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+                </div>
+
                 {nonDinoNotice && (
                     <aside class="non-dino-notice-banner hud-panel" aria-label="生物分類情報" style="margin-bottom: 20px; padding: 14px 18px; border: 1px solid rgba(0, 242, 255, 0.35); background: rgba(0, 242, 255, 0.04); border-radius: 4px; position: relative;">
                         <div class="hud-corner top-left" style="border-top-color: var(--primary-neon); border-left-color: var(--primary-neon);"></div>
@@ -946,54 +994,6 @@ if (hasComparison && h3List.length > 0) {
                         </div>
                     </aside>
                 )}
-
-                <div class="hud-panel" style="padding: 16px 20px; margin-bottom: 20px; background: rgba(0, 242, 255, 0.02); border-color: rgba(0, 242, 255, 0.2);">
-                    <p style="line-height: 1.7; font-size: 14px; margin: 0; color: var(--text-main);">{d.description}</p>
-                </div>
-
-                <!-- 基本スペック表 -->
-                <div class="hud-panel" style="padding: 20px; border-color: rgba(0, 242, 255, 0.2); position: relative;">
-                    <div class="hud-corner top-left" style="border-top-color: rgba(0, 242, 255, 0.35); border-left-color: rgba(0, 242, 255, 0.35);"></div>
-                    <div class="hud-corner bottom-right" style="border-bottom-color: rgba(0, 242, 255, 0.35); border-right-color: rgba(0, 242, 255, 0.35);"></div>
-                    <h2 style="border-bottom: 1px solid var(--panel-border); padding-bottom: 8px; margin-bottom: 15px; color: var(--primary-neon); font-size: 13px; font-weight: bold; letter-spacing: 1px; font-family: var(--font-mono);">
-                        [ 基本スペック・生息環境 ]
-                    </h2>
-                    <div class="spec-panel" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 0 0 15px 0;">
-                        <div class="spec-item" style="border-color: rgba(0, 242, 255, 0.1); background: rgba(1, 10, 18, 0.6); padding: 8px 10px;">
-                            <span class="spec-label">生息年代</span><br>
-                            <a href={`/dictionary/?era=${encodeURIComponent(baseEra)}`} class="spec-link" title={`「${baseEra}」の恐竜一覧を見る`}>{d.era}</a>
-                        </div>
-                        <div class="spec-item" style="border-color: rgba(0, 242, 255, 0.1); background: rgba(1, 10, 18, 0.6); padding: 8px 10px;">
-                            <span class="spec-label">生息地域</span><br>
-                            <a href={`/dictionary/?region=${encodeURIComponent(baseRegion)}`} class="spec-link" title={`「${baseRegion}」の恐竜一覧を見る`}>{d.region}</a>
-                        </div>
-                        <div class="spec-item" style="border-color: rgba(0, 242, 255, 0.1); background: rgba(1, 10, 18, 0.6); padding: 8px 10px;">
-                            <span class="spec-label">分類</span><br>
-                            <a href={`/dictionary/?group=${encodeURIComponent(d.group)}`} class="spec-link" title={`「${d.group}」の恐竜一覧を見る`}>{d.group}</a>
-                        </div>
-                        <div class="spec-item" style="border-color: rgba(0, 242, 255, 0.1); background: rgba(1, 10, 18, 0.6); padding: 8px 10px;">
-                            <span class="spec-label">食性</span><br>
-                            <a href={`/dictionary/?diet=${encodeURIComponent(d.diet)}`} class="spec-link" title={`「${d.diet}」の恐竜一覧を見る`}>{d.diet}</a>
-                        </div>
-                        <div class="spec-item" style="border-color: rgba(0, 242, 255, 0.1); background: rgba(1, 10, 18, 0.6); padding: 8px 10px;"><span class="spec-label">全長</span><br>{d.length}</div>
-                        <div class="spec-item" style="border-color: rgba(0, 242, 255, 0.1); background: rgba(1, 10, 18, 0.6); padding: 8px 10px;"><span class="spec-label">推定体重</span><br>{d.weight}</div>
-                    </div>
-
-                    <!-- 生物学的特性 -->
-                    {d.bioTraits && d.bioTraits.length > 0 && (
-                        <div style="border-top: 1px dashed rgba(0, 242, 255, 0.15); padding-top: 12px;">
-                            <div style="display: flex; flex-direction: column; gap: 8px;">
-                                {d.bioTraits.map(t => (
-                                    <div style="font-size: 12.5px; line-height: 1.5; color: var(--text-main);">
-                                        <strong style="color: var(--primary-neon); font-family: var(--font-mono); margin-right: 6px;">{t.trait}</strong>
-                                        <span style="color: var(--text-dim); margin-right: 6px;">:</span>
-                                        <span>{t.detail}</span>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    )}
-                </div>
             </div>
         </section>
 
