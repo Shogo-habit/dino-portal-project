@@ -109,13 +109,6 @@ const fullOgImageUrl = new URL(ogImage, 'https://dino-portal.com/');
       <script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />
     )}
     
-    <!-- 即時ふりがな（ルビ）モード判定（チラつき防止） -->
-    <script is:inline>
-      if (typeof localStorage !== 'undefined' && localStorage.getItem('dino-furigana') === 'true') {
-        document.documentElement.classList.add('furigana-mode');
-      }
-    </script>
-    
     <ClientRouter />
 </head>
 <body class="hud-theme">
@@ -156,13 +149,6 @@ const fullOgImageUrl = new URL(ogImage, 'https://dino-portal.com/');
                 <span class="nav-icon" aria-hidden="true">✉</span> お問い合わせ
             </a>
         </nav>
-        <div class="header-tools" style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
-            <button id="furigana-toggle-btn" class="furigana-btn" type="button" aria-pressed="false" title="漢字のふりがな（ルビ）を表示・非表示">
-                <span style="font-size: 13px;">👶</span>
-                <span>ふりがな</span>
-                <span class="furigana-status" id="furigana-status-text">OFF</span>
-            </button>
-        </div>
     </header>
 
     <main id="app-container">
@@ -373,41 +359,8 @@ const fullOgImageUrl = new URL(ogImage, 'https://dino-portal.com/');
             }
         }
 
-        // 6. ふりがな（ルビ）トグル制御
-        function setupFuriganaToggle() {
-            const toggleBtn = document.getElementById('furigana-toggle-btn');
-            const statusText = document.getElementById('furigana-status-text');
-            const isFurigana = localStorage.getItem('dino-furigana') === 'true';
-
-            function applyState(enabled: boolean) {
-                if (enabled) {
-                    document.documentElement.classList.add('furigana-mode');
-                    if (statusText) statusText.textContent = 'ON';
-                    if (toggleBtn) toggleBtn.setAttribute('aria-pressed', 'true');
-                } else {
-                    document.documentElement.classList.remove('furigana-mode');
-                    if (statusText) statusText.textContent = 'OFF';
-                    if (toggleBtn) toggleBtn.setAttribute('aria-pressed', 'false');
-                }
-            }
-
-            applyState(isFurigana);
-
-            if (toggleBtn && !toggleBtn.dataset.bound) {
-                toggleBtn.dataset.bound = 'true';
-                toggleBtn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const current = document.documentElement.classList.contains('furigana-mode');
-                    const next = !current;
-                    localStorage.setItem('dino-furigana', String(next));
-                    applyState(next);
-                });
-            }
-        }
-
         document.addEventListener('astro:after-swap', performScrollRestoration);
         document.addEventListener('astro:page-load', performScrollRestoration);
-        document.addEventListener('astro:page-load', setupFuriganaToggle);
     </script>
 </body>
 </html>
