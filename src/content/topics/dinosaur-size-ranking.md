@@ -5,7 +5,7 @@ category: "ranking"
 title: "【結論】アルゼンチノサウルスより大きい恐竜はいる？太古で一番大きい恐竜ランキングTOP10｜実寸比較"
 summary: "「アルゼンチノサウルスより大きい恐竜はいるのか？」「太古で最も大きかったのは？」その答えは、公式認定ではアルゼンチノサウルス（約35m/80t）！幻の巨竜ブルハトカヨサウルスやマラプニサウルスの真相、長さNo.1スーパーサウルス、世界最大の恐竜ランキングTOP10まで最新研究を完全解説。"
 image: "images/topics/dinosaur-size-ranking/dinosaur_size_ranking.webp"
-relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauroposeidon", "futalognkosaurus", "mamenchisaurus", "brachiosaurus", "supersaurus", "apatosaurus", "diplodocus"]
+relatedSpecimens: ["argentinosaurus", "bruhathkayosaurus", "patagotitan", "dreadnoughtus", "sauroposeidon", "futalognkosaurus", "mamenchisaurus", "brachiosaurus", "supersaurus", "apatosaurus", "diplodocus"]
 ---
 
 <p class="article-paragraph">
@@ -34,8 +34,8 @@ relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauropose
     </div>
     <div style="background: rgba(1, 10, 18, 0.7); border: 1px solid rgba(0, 242, 255, 0.25); padding: 12px 14px; border-radius: 4px;">
       <div style="font-size: 11px; color: #ff922b; font-family: var(--font-mono); font-weight: bold; margin-bottom: 4px;">❓ アルゼンチノサウルスを超える幻の恐竜？</div>
-      <div style="font-size: 16px; font-weight: bold; color: #fff; margin-bottom: 4px;">ブルハトカヨサウルス（未確定）</div>
-      <div style="font-size: 12px; color: var(--text-dim);">推定全長40m超・体重100t超の説があったが、化石が豪雨で流出し現存しないため公式未公認（詳細は後述）</div>
+      <div style="font-size: 16px; font-weight: bold; color: #fff; margin-bottom: 4px;"><a href="/dictionary/bruhathkayosaurus/" style="color: #fff; text-decoration: underline;">ブルハトカヨサウルス</a></div>
+      <div style="font-size: 12px; color: var(--text-dim);">推定全長38〜44m・体重100〜130t。豪雨で標本消失も2022年に発見当時の写真が再発掘（詳細は図鑑データへ）</div>
     </div>
     <div style="background: rgba(1, 10, 18, 0.7); border: 1px solid rgba(0, 242, 255, 0.25); padding: 12px 14px; border-radius: 4px;">
       <div style="font-size: 11px; color: var(--primary-neon); font-family: var(--font-mono); font-weight: bold; margin-bottom: 4px;">📏 世界最長の恐竜（頭から尾の全長）</div>
@@ -634,7 +634,7 @@ relatedSpecimens: ["argentinosaurus", "patagotitan", "dreadnoughtus", "sauropose
   「アルゼンチノサウルスより大きい恐竜は本当にいないのか？」「100トンを超える超巨大恐竜の噂は本当？」という疑問は、古生物ファンの間で今も最も熱く議論されるテーマの一つです。実は、過去の学術報告や発掘記録において、アルゼンチノサウルスを上回るとされた「超巨竜候補」が存在します。
 </p>
 <ul class="article-paragraph" style="line-height: 1.8; margin-left: 20px; color: var(--text-dim);">
-  <li><strong style="color: #fff;">ブルハトカヨサウルス（Bruhathkayosaurus）</strong>：インドの白亜紀後期層から発見された竜脚類。脛骨（すねの骨）が約2メートルあり、当初は全長40〜44メートル、体重100〜130トン超という文字通りの地球史上最大生物と試算されました。しかし、詳細な追加調査や精密計測が行われる前に、モンスーンの豪雨と洪水によって化石自体が脆く崩壊・消失してしまい、現在標本が存在しません。そのため「珪化木（木の化石）の誤認だったのではないか」「もし骨だとしてもアルゼンチノサウルスと同等サイズではないか」など議論が続いており、確証ある化石がないため公式な世界一記録には認定されていません。</li>
+  <li><strong style="color: #fff;"><a href="/dictionary/bruhathkayosaurus/" style="color: #ff922b; text-decoration: underline;">ブルハトカヨサウルス（Bruhathkayosaurus）</a></strong>：インドの白亜紀後期層から発見された超巨大竜脚類。脛骨（すねの骨）が約2メートルあり、全長38〜44メートル、体重110〜130トン超という文字通りの地球史上最大生物と試算されました。モンスーンの豪雨と洪水によって化石標本が失われたものの、2022年に発見当時の未公開写真が再発掘され、真正の巨大竜脚類骨格であることが科学的に再実証されて大きな話題を呼んでいます。現存する骨格がないため公式ギネス等には未認定ですが、「アルゼンチノサウルスを超える最有力候補」として注目されています（<a href="/dictionary/bruhathkayosaurus/" style="color: var(--primary-neon);">詳細な図鑑データを見る ➔</a>）。</li>
   <li><strong style="color: #fff;">マラプニサウルス（旧アンフィコエリアス・フラギリムス）</strong>：かつて高さ2.7メートルの巨大脊椎骨スケッチに基づき「全長50〜60メートル、体重120トン超」と推定され、伝説の超巨竜として話題になりました。しかし2018年の再研究で、ディプロドクス科ではなくレッバキサウルス科に近縁であると判明。細長い体型ではなくずんぐりした体型だったと再解釈され、現在では全長約30メートル前後、体重約30〜40トン程度へと大幅に下方修正されています。</li>
 </ul>
 <p class="article-paragraph">
