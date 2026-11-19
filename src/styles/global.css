@@ -2611,3 +2611,72 @@ body {
   margin-bottom: 6px;
   line-height: 1.7;
 }
+
+/* ==========================================================================
+   ふりがな（ルビ）モード共通スタイル（キッズ・ファミリー対応）
+   ========================================================================== */
+.furigana-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  background: rgba(0, 242, 255, 0.05);
+  border: 1px solid rgba(0, 242, 255, 0.3);
+  border-radius: 20px;
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.furigana-btn:hover {
+  border-color: var(--primary-neon);
+  color: var(--text-main);
+  background: rgba(0, 242, 255, 0.12);
+}
+
+.furigana-status {
+  font-size: 9px;
+  padding: 1px 6px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-dim);
+  font-weight: bold;
+}
+
+html.furigana-mode .furigana-btn {
+  border-color: #00ffaa;
+  background: rgba(0, 255, 170, 0.15);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 255, 170, 0.35);
+}
+
+html.furigana-mode .furigana-status {
+  background: #00ffaa;
+  color: #01060f;
+  font-weight: bold;
+}
+
+/* 通常時はルビを非表示（デザイン崩れ防止） */
+ruby rt {
+  display: none;
+  font-size: 0.6em;
+  color: #00ffaa;
+  letter-spacing: 0;
+  font-weight: normal;
+  user-select: none;
+  line-height: 1;
+}
+
+/* ふりがなモードON時にルビを明瞭表示 */
+html.furigana-mode ruby {
+  ruby-align: center;
+}
+
+html.furigana-mode ruby rt {
+  display: block;
+  text-align: center;
+  margin-bottom: 2px;
+}

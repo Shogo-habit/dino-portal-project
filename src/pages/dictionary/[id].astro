@@ -843,7 +843,7 @@ if (hasComparison && h3List.length > 0) {
                 <header class="detail-header" style="margin-bottom: 20px;">
                     <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px; flex-wrap: wrap;">
                         <div>
-                            <h1 class="detail-title" style="margin-bottom: 4px;">{d.name}</h1>
+                            <h1 class="detail-title" style="margin-bottom: 4px;"><ruby>{d.name}<rt>{d.kana}</rt></ruby></h1>
                             <p class="detail-scientific" style="margin-bottom: 0;">[ {d.scientificName} ]</p>
                         </div>
                         <button class="save-btn" id="observe-save-btn" aria-label="図鑑に保存" data-id={d.id}>
@@ -943,23 +943,23 @@ if (hasComparison && h3List.length > 0) {
                     </h2>
                     <div class="spec-panel" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 0 0 15px 0;">
                         <div class="spec-item" style="border-color: rgba(0, 242, 255, 0.1); background: rgba(1, 10, 18, 0.6); padding: 8px 10px;">
-                            <span class="spec-label">生息年代</span><br>
+                            <span class="spec-label"><ruby>生息年代<rt>せいそくねんだい</rt></ruby></span><br>
                             <a href={`/dictionary/?era=${encodeURIComponent(baseEra)}`} class="spec-link" title={`「${baseEra}」の恐竜一覧を見る`}>{d.era}</a>
                         </div>
                         <div class="spec-item" style="border-color: rgba(0, 242, 255, 0.1); background: rgba(1, 10, 18, 0.6); padding: 8px 10px;">
-                            <span class="spec-label">生息地域</span><br>
+                            <span class="spec-label"><ruby>生息地域<rt>せいそくちいき</rt></ruby></span><br>
                             <a href={`/dictionary/?region=${encodeURIComponent(baseRegion)}`} class="spec-link" title={`「${baseRegion}」の恐竜一覧を見る`}>{d.region}</a>
                         </div>
                         <div class="spec-item" style="border-color: rgba(0, 242, 255, 0.1); background: rgba(1, 10, 18, 0.6); padding: 8px 10px;">
-                            <span class="spec-label">分類</span><br>
+                            <span class="spec-label"><ruby>分類<rt>ぶんるい</rt></ruby></span><br>
                             <a href={`/dictionary/?group=${encodeURIComponent(d.group)}`} class="spec-link" title={`「${d.group}」の恐竜一覧を見る`}>{d.group}</a>
                         </div>
                         <div class="spec-item" style="border-color: rgba(0, 242, 255, 0.1); background: rgba(1, 10, 18, 0.6); padding: 8px 10px;">
-                            <span class="spec-label">食性</span><br>
+                            <span class="spec-label"><ruby>食性<rt>しょくせい</rt></ruby></span><br>
                             <a href={`/dictionary/?diet=${encodeURIComponent(d.diet)}`} class="spec-link" title={`「${d.diet}」の恐竜一覧を見る`}>{d.diet}</a>
                         </div>
-                        <div class="spec-item" style="border-color: rgba(0, 242, 255, 0.1); background: rgba(1, 10, 18, 0.6); padding: 8px 10px;"><span class="spec-label">全長</span><br>{d.length}</div>
-                        <div class="spec-item" style="border-color: rgba(0, 242, 255, 0.1); background: rgba(1, 10, 18, 0.6); padding: 8px 10px;"><span class="spec-label">推定体重</span><br>{d.weight}</div>
+                        <div class="spec-item" style="border-color: rgba(0, 242, 255, 0.1); background: rgba(1, 10, 18, 0.6); padding: 8px 10px;"><span class="spec-label"><ruby>全長<rt>ぜんちょう</rt></ruby></span><br>{d.length}</div>
+                        <div class="spec-item" style="border-color: rgba(0, 242, 255, 0.1); background: rgba(1, 10, 18, 0.6); padding: 8px 10px;"><span class="spec-label"><ruby>推定体重<rt>すいていたいじゅう</rt></ruby></span><br>{d.weight}</div>
                     </div>
 
                     <!-- 生物学的特性 -->

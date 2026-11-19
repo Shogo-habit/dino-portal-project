@@ -37,13 +37,47 @@ const recentlyAddedDinos = dinosaurs
 ---
 
 <Layout 
-  title="恐竜図鑑 DINO-PORTAL｜350種以上の恐竜・古生物を実寸サイズ比較" 
+  title="【恐竜図鑑】350種以上の恐竜・古生物を実寸サイズ比較！最新学説の日本最大級ポータル | DINO-PORTAL" 
   activeTab="home" 
-  description="350種以上の恐竜・古生物データを最新学説に基づき網羅した次世代デジタル恐竜図鑑「DINO-PORTAL」。人間や動物との実寸大サイズ比較シミュレータ、時代・系統・地域別検索、化石や生物学的特徴の徹底解説まで完全収録。" 
+  description="【国内最大級の恐竜図鑑】350種以上の恐竜・古生物データを最新学説に基づき完全網羅。人間や車、シロナガスクジラと実寸大1:1で並べられるサイズ比較シミュレータ、時代・系統・地域別検索、化石や生物学的特徴の徹底解説まで完全収録した次世代デジタル恐竜図鑑。" 
   ogImage="/images/map/world/cyber_world_map.webp"
 >
-    <section class="page-header">
-      <h2 class="page-title">ホーム</h2>
+    <!-- トップページ 国内No.1ヒーローバナー -->
+    <section class="home-hero-portal hud-panel" style="margin-bottom: 25px; padding: 28px 30px; background: linear-gradient(135deg, rgba(0, 242, 255, 0.08) 0%, rgba(1, 10, 20, 0.95) 100%); border: 1px solid var(--primary-neon); border-radius: 6px; position: relative;">
+        <div class="hud-corner top-left"></div>
+        <div class="hud-corner bottom-right"></div>
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+            <div style="max-width: 800px;">
+                <div style="display: inline-flex; align-items: center; gap: 8px; padding: 3px 10px; background: rgba(0, 242, 255, 0.15); border: 1px solid var(--primary-neon); border-radius: 2px; font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); margin-bottom: 12px; letter-spacing: 1.5px;">
+                    <span>DIGITAL PALEONTOLOGY ARCHIVE</span>
+                    <span>|</span>
+                    <span>350+ SPECIMENS</span>
+                </div>
+                <h1 style="font-size: clamp(22px, 3.5vw, 34px); font-weight: 800; color: #fff; margin: 0 0 10px 0; line-height: 1.35; letter-spacing: -0.5px;">
+                    恐竜図鑑 DINO-PORTAL<br>
+                    <span style="font-size: clamp(14px, 2vw, 18px); color: var(--primary-neon); font-weight: 600;">350種以上の恐竜・古生物を実寸大サイズ比較！最新学説完全対応</span>
+                </h1>
+                <p style="font-size: 13.5px; color: #cfe6eb; line-height: 1.75; margin: 0;">
+                    人間・現代動物・車と実寸1:1で並べられる「サイズ比較シミュレータ」をはじめ、白亜紀・ジュラ紀・三畳紀の350頭以上を完全網羅。一次学術論文と最新古生物学に基づく日本最大級の次世代デジタル恐竜図鑑です。
+                </p>
+            </div>
+            
+            <!-- 3大実績バッジ -->
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                <div style="background: rgba(1, 15, 28, 0.8); border: 1px solid rgba(0, 242, 255, 0.3); padding: 10px 16px; border-radius: 4px; text-align: center; min-width: 100px;">
+                    <span style="font-family: var(--font-mono); font-size: 10px; color: var(--text-dim); display: block;">登録標本数</span>
+                    <strong style="font-size: 20px; color: var(--primary-neon); font-family: var(--font-mono);">{dinosaurs.length} <span style="font-size: 11px;">種</span></strong>
+                </div>
+                <div style="background: rgba(1, 15, 28, 0.8); border: 1px solid rgba(0, 255, 170, 0.3); padding: 10px 16px; border-radius: 4px; text-align: center; min-width: 100px;">
+                    <span style="font-family: var(--font-mono); font-size: 10px; color: var(--text-dim); display: block;">実寸比較</span>
+                    <strong style="font-size: 20px; color: #00ffaa; font-family: var(--font-mono);">1:1 <span style="font-size: 11px;">SCALE</span></strong>
+                </div>
+                <div style="background: rgba(1, 15, 28, 0.8); border: 1px solid rgba(255, 183, 0, 0.3); padding: 10px 16px; border-radius: 4px; text-align: center; min-width: 100px;">
+                    <span style="font-family: var(--font-mono); font-size: 10px; color: var(--text-dim); display: block;">最新学説</span>
+                    <strong style="font-size: 20px; color: #ffb700; font-family: var(--font-mono);">2024+ <span style="font-size: 11px;">READY</span></strong>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Quick Search HUD Bar -->

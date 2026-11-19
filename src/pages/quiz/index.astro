@@ -253,19 +253,19 @@ const BEGINNER_QUESTIONS = getBeginnerQuestions();
             <div id="master-certificate-area" style="display: none; max-width: 640px; margin: 0 auto 35px auto;">
                 <div class="hud-panel cert-card" style="border: 2px solid var(--secondary-neon); background: rgba(0, 255, 102, 0.03); padding: 30px; border-radius: 6px; text-align: center; position: relative; box-shadow: 0 0 25px rgba(0, 255, 102, 0.15);">
                     <div style="font-family: var(--font-mono); font-size: 10px; color: var(--secondary-neon); letter-spacing: 2px; margin-bottom: 8px;">DINO-PORTAL PALEONTOLOGY COUNCIL</div>
-                    <h3 style="font-size: 22px; color: #fff; letter-spacing: 3px; margin-bottom: 6px;">恐竜博士 認定証</h3>
+                    <h3 id="cert-main-title" style="font-size: 22px; color: #fff; letter-spacing: 3px; margin-bottom: 6px;">恐竜段位 認定証</h3>
                     <div id="cert-rank-title" style="font-size: 16px; color: var(--secondary-neon); font-family: var(--font-mono); font-weight: bold; margin-bottom: 18px;">
                         [ S級・主席 恐竜博士 ]
                     </div>
                     
-                    <p style="font-size: 13px; color: var(--text-main); line-height: 1.8; margin-bottom: 20px;">
-                        貴殿は当ポータルが実施した恐竜博士認定試験（全10問タイムアタック）において、卓抜した古生物学的知見と探究心を示し、極めて優秀な成績を収めたことをここに証します。
+                    <p id="cert-main-desc" style="font-size: 13px; color: var(--text-main); line-height: 1.8; margin-bottom: 20px;">
+                        貴殿は当ポータルが実施した恐竜認定試験において、卓抜した古生物学的知見と探究心を示し、優秀な成績を収めたことをここに証します。
                     </p>
 
                     <!-- User Name Input -->
                     <div style="margin-bottom: 20px; display: flex; justify-content: center; align-items: center; gap: 10px;">
                         <span style="font-family: var(--font-mono); font-size: 12px; color: var(--text-dim);">認定者氏名:</span>
-                        <input type="text" id="cert-user-name" placeholder="お名前・ニックネーム" maxlength="20" style="background: rgba(0,0,0,0.5); border: 1px solid var(--panel-border); color: #fff; padding: 6px 12px; border-radius: 3px; font-size: 13px; text-align: center; outline: none;">
+                        <input type="text" id="cert-user-name" placeholder="お名前・ニックネームを入力" maxlength="20" style="background: rgba(0,0,0,0.5); border: 1px solid var(--panel-border); color: #fff; padding: 6px 12px; border-radius: 3px; font-size: 13px; text-align: center; outline: none;">
                     </div>
 
                     <div style="display: flex; justify-content: space-around; border-top: 1px dashed rgba(0, 255, 102, 0.2); padding-top: 15px; font-family: var(--font-mono); font-size: 11px; color: var(--secondary-neon);">
@@ -1055,11 +1055,23 @@ const BEGINNER_QUESTIONS = getBeginnerQuestions();
             const rankBadge = document.getElementById('result-rank-badge');
             const rankDesc = document.getElementById('result-rank-desc');
             const certArea = document.getElementById('master-certificate-area');
-            const isExam = quizState.selectedMode === 'exam';
+            const certMainTitle = document.getElementById('cert-main-title');
+            const certMainDesc = document.getElementById('cert-main-desc');
+            const certRank = document.getElementById('cert-rank-title');
+            const certSerial = document.getElementById('cert-serial-id');
+            const certDate = document.getElementById('cert-issue-date');
+            const userNameInput = document.getElementById('cert-user-name') as HTMLInputElement;
+            const shareXBtn = document.getElementById('share-x-btn') as HTMLAnchorElement;
 
             certArea!.style.display = 'none';
 
-            if (isExam) {
+            let certTitle = "";
+            let certRankText = "";
+            let certDescText = "";
+            let certBadgeColor = "var(--primary-neon)";
+            let certPrefix = "DP-QZ";
+
+            if (quizState.selectedMode === 'exam') {
                 const isPass = finalScorePercent >= 70;
                 const resultTitle = document.querySelector('.result-title');
                 if (resultTitle) {
@@ -1069,9 +1081,15 @@ const BEGINNER_QUESTIONS = getBeginnerQuestions();
                 }
 
                 if (isPass) {
+                    certTitle = "恐竜学検定 模擬試験 合格証";
+                    certRankText = `[ 恐竜学検定 ${quizState.selectedDifficulty === 'beginner' ? '初級' : '中級'} 合格 ]`;
+                    certDescText = "貴殿は当ポータルが実施した恐竜学検定模擬試験において、基準スコア（70%以上）を突破し、優れた古生物学の知見を証明したことを証します。";
+                    certPrefix = "DP-EXM";
+                    certBadgeColor = "var(--secondary-neon)";
+                    
                     rankBadge!.innerText = `【合格】恐竜学検定 ${quizState.selectedDifficulty === 'beginner' ? '初級' : '中級'} 模擬試験`;
                     rankBadge!.style.color = "var(--secondary-neon)";
-                    rankDesc!.innerHTML = `合格おめでとうございます！基準（70%以上）をクリアしました。実際の検定本番でも実力を発揮できる素晴らしい知識量です。`;
+                    rankDesc!.innerHTML = `合格おめでとうございます！基準（70%以上）をクリアしました。実際の検定本番でも実力を発揮できる素晴らしい知識量です。下記の合格認定証を発行します。`;
                 } else {
                     rankBadge!.innerText = `【不合格】恐竜学検定 ${quizState.selectedDifficulty === 'beginner' ? '初級' : '中級'} 模擬試験`;
                     rankBadge!.style.color = "var(--alert-neon)";
@@ -1080,40 +1098,17 @@ const BEGINNER_QUESTIONS = getBeginnerQuestions();
             } else if (quizState.selectedDifficulty === 'master') {
                 // Master Mode Results
                 if (finalScorePercent >= 80) {
-                    certArea!.style.display = 'block';
                     const isPerfect = finalScorePercent === 100;
-                    const certRank = document.getElementById('cert-rank-title');
-                    const certSerial = document.getElementById('cert-serial-id');
-                    const certDate = document.getElementById('cert-issue-date');
-                    const userNameInput = document.getElementById('cert-user-name') as HTMLInputElement;
-                    const shareXBtn = document.getElementById('share-x-btn') as HTMLAnchorElement;
-
-                    const rankStr = isPerfect ? "S級・主席 恐竜博士" : "A級・公認 恐竜博士";
-                    certRank!.innerText = `[ ${rankStr} ]`;
-                    certRank!.style.color = isPerfect ? "var(--secondary-neon)" : "var(--primary-neon)";
-
-                    const serial = `DP-MST-${Date.now().toString().slice(-6)}`;
-                    certSerial!.innerText = serial;
-
-                    const now = new Date();
-                    const dateStr = `${now.getFullYear()}.${String(now.getMonth() + 1).padStart(2, '0')}.${String(now.getDate()).padStart(2, '0')}`;
-                    certDate!.innerText = dateStr;
+                    certTitle = "恐竜博士 認定証";
+                    certRankText = isPerfect ? "[ S級・主席 恐竜博士 ]" : "[ A級・公認 恐竜博士 ]";
+                    certDescText = "貴殿は最高難易度「恐竜博士認定試験」（10問タイムアタック）において、卓抜した知見と探究心を示し、最高峰の栄冠に到達したことを証します。";
+                    certPrefix = "DP-MST";
+                    certBadgeColor = isPerfect ? "var(--secondary-neon)" : "#ffb700";
 
                     // Save Master achievement
-                    localStorage.setItem('dino_portal_master_certified', rankStr);
+                    localStorage.setItem('dino_portal_master_certified', certRankText);
 
-                    // Setup X Share Link
-                    const updateShareUrl = () => {
-                        const name = userNameInput.value.trim() || '恐竜ファン';
-                        const text = `恐竜ポータルの最高難易度【恐竜博士認定試験】に合格し、『${rankStr}』に認定されました！\n正解率: ${finalScorePercent}% (10問中${quizState.score}問正解)\nシリアル番号: ${serial}\n#DinoPortal #恐竜クイズ #恐竜博士`;
-                        const shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(window.location.origin + '/quiz/')}`;
-                        shareXBtn.href = shareUrl;
-                    };
-
-                    updateShareUrl();
-                    userNameInput.addEventListener('input', updateShareUrl);
-
-                    rankBadge!.innerText = `【認定】${rankStr} 誕生！`;
+                    rankBadge!.innerText = `【認定】${certRankText} 誕生！`;
                     rankBadge!.style.color = isPerfect ? "var(--secondary-neon)" : "var(--primary-neon)";
                     rankDesc!.innerHTML = `難攻不落の博士モード（10問・20秒タイムアタック）を見事に突破しました！下記の認定デジタル証を発行します。`;
                 } else {
@@ -1125,6 +1120,26 @@ const BEGINNER_QUESTIONS = getBeginnerQuestions();
                 // Beginner / Intermediate / Advanced Results
                 const isAdvancedUnlock = quizState.selectedDifficulty === 'advanced' && finalScorePercent >= 80;
                 
+                if (quizState.selectedDifficulty === 'advanced' && finalScorePercent >= 70) {
+                    certTitle = "恐竜段位 認定証";
+                    certRankText = "[ 上級・古生物研究員級 ]";
+                    certDescText = "貴殿は上級恐竜クイズにおいて高度な専門知識と観察眼を発揮し、優秀な古生物研究員としての段位を獲得したことを証します。";
+                    certPrefix = "DP-ADV";
+                    certBadgeColor = "#ffd700";
+                } else if (quizState.selectedDifficulty === 'intermediate' && finalScorePercent >= 70) {
+                    certTitle = "恐竜段位 認定証";
+                    certRankText = "[ 中級・恐竜レンジャー級 ]";
+                    certDescText = "貴殿は中級恐竜クイズにおいて恐竜の生態と多様性を深く見抜き、頼もしい恐竜レンジャーとしての段位を獲得したことを証します。";
+                    certPrefix = "DP-INT";
+                    certBadgeColor = "#00f2ff";
+                } else if (quizState.selectedDifficulty === 'beginner' && finalScorePercent >= 70) {
+                    certTitle = "恐竜段位 認定証";
+                    certRankText = "[ 初級・恐竜たまご級 ]";
+                    certDescText = "貴殿は初級恐竜クイズにおいて恐竜の基本をしっかりとマスターし、未来の恐竜博士への第一歩を踏み出したことを証します。";
+                    certPrefix = "DP-BGN";
+                    certBadgeColor = "#00ffaa";
+                }
+
                 if (finalScorePercent === 100) {
                     rankBadge!.innerText = "Sランク: 恐竜マスター (全問正解！)";
                     rankBadge!.style.color = "var(--secondary-neon)";
@@ -1158,6 +1173,39 @@ const BEGINNER_QUESTIONS = getBeginnerQuestions();
                     rankBadge!.style.color = "var(--alert-neon)";
                     rankDesc!.innerHTML = "少し難しかったかもしれません。図鑑アーカイブや3Dスキャンで恐竜の特徴をチェックして再挑戦してみましょう！";
                 }
+            }
+
+            // 認定証の表示制御
+            if (certRankText) {
+                certArea!.style.display = 'block';
+                if (certMainTitle) certMainTitle.innerText = certTitle;
+                if (certRank) {
+                    certRank.innerText = certRankText;
+                    certRank.style.color = certBadgeColor;
+                }
+                if (certMainDesc) certMainDesc.innerText = certDescText;
+
+                const serial = `${certPrefix}-${Date.now().toString().slice(-6)}`;
+                if (certSerial) certSerial.innerText = serial;
+
+                const now = new Date();
+                const dateStr = `${now.getFullYear()}.${String(now.getMonth() + 1).padStart(2, '0')}.${String(now.getDate()).padStart(2, '0')}`;
+                if (certDate) certDate.innerText = dateStr;
+
+                // Save achievement
+                localStorage.setItem('dino_portal_certified_rank', certRankText);
+
+                const updateShareUrl = () => {
+                    const name = userNameInput?.value.trim() || '恐竜ファン';
+                    const text = `恐竜ポータルの恐竜クイズで『${certRankText}』に認定されました！🎉\n正解率: ${finalScorePercent}% (10問中${quizState.score}問正解)\n認定番号: ${serial}\n#DinoPortal #恐竜クイズ #恐竜図鑑`;
+                    const shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(window.location.origin + '/quiz/')}`;
+                    if (shareXBtn) shareXBtn.href = shareUrl;
+                };
+
+                updateShareUrl();
+                userNameInput?.addEventListener('input', updateShareUrl);
+            } else {
+                certArea!.style.display = 'none';
             }
 
             // Render Review Cards
