@@ -263,7 +263,7 @@ const dinos = [
       realLength: 7.0,
       contentHeightPx: 272,
       sourceRes: 1024,
-      dinoLeft: "5%",
+      dinoLeft: "0%",
       refRight: "0%",
       zoom: 1.2
     },
