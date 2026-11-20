@@ -340,7 +340,7 @@ const dinos = [
       sourceRes: 1024,
       dinoLeft: "0%",
       refRight: "-2%",
-      zoom: 1.17
+      zoom: 1.05
     },
     sections: [
       {

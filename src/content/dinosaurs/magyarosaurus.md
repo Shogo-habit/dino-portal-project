@@ -30,7 +30,7 @@ cyberMetadata:
   sourceRes: 1024
   dinoLeft: "0%"
   refRight: "-2%"
-  zoom: 1.17
+  zoom: 1.05
 ---
 
 ### トランシルヴァニアの古城から始まった伝説：ノプシャ男爵とハツェグ島の小人恐竜
