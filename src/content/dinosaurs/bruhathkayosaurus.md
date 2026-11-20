@@ -31,9 +31,9 @@ cyberMetadata:
   realLength: 38.0
   contentHeightPx: 283
   sourceRes: 1024
-  dinoLeft: "1%"
-  refRight: "0%"
-  zoom: 1.0
+  dinoLeft: "-1%"
+  refRight: "-3%"
+  zoom: 1.2
 references:
   - title: "A new sauropod dinosaur from the Upper Cretaceous of India"
     journal: "Journal of the Palaeontological Society of India"
