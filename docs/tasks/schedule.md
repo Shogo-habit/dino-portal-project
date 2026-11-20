@@ -66,7 +66,7 @@ Googleカレンダー（`kosako20200405@gmail.com`）と完全に同期してい
 ### 第3週（2026/11/23 〜 2026/11/29）: Tier 25追加 ＆ 特集記事① ＆ 草食ピラー公開
 - [ ] **【恐竜追加 第3弾】Tier 25（No.356〜365）10種追加**（リリース日: 2026/11/23）
   - Googleカレンダー: [イベントリンク](https://www.google.com/calendar/event?eid=ZjN1bHB0MTBoZDBmZDNtdmRsaWQyYnUxYjQga29zYWtvMjAyMDA0MDVAbQ) (ID: `f3ulpt10hd0fd3mvdlid2bu1b4`)
-  - 累計365種到達
+  - **進捗（Part 1前倒し完了 / 2026/11/20）**: No.356〜360（アンデサウルス、マラウイサウルス、マシャカリサウルス、ゴンドワナティタン、マジャーロサウルス）の計5頭を先行登録完了！全頭のヴィンテージ図鑑風イラスト、4ch完全透過サイバー骨格側面図、自動接地ピクセル走査、2,000字規模の学術解説記事を完全実装。**累計360種到達！** 残り5頭（Part 2: No.361〜365）で目標完遂予定。
 - [ ] **【特集記事公開 2-2】高需要トピック記事②公開**（公開日: 2026/12/04）
   - Googleカレンダー: [イベントリンク](https://www.google.com/calendar/event?eid=dnRjYmtobTg0cGRvYXJwMmRyOGhwZjlwcGMga29zYWtvMjAyMDA0MDVAbQ) (ID: `vtcbkhm84pdoarp2dr8hpf9ppc`)
   - 全国の恐竜博物館・化石発掘スポットまとめ記事等の執筆・公開（※ユーザー判断により保留中）

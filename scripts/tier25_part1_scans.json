@@ -1,0 +1,57 @@
+[
+  {
+    "id": "andesaurus",
+    "name": "アンデサウルス",
+    "realLength": 15,
+    "realHeight": 3.8,
+    "contentHeightPx": 263,
+    "bottomGap": 369,
+    "aspectRatio": "NaN",
+    "effectiveRenderedLength": "NaN",
+    "isTemporaryCyber": false
+  },
+  {
+    "id": "malawisaurus",
+    "name": "マラウイサウルス",
+    "realLength": 16,
+    "realHeight": 4.2,
+    "contentHeightPx": 268,
+    "bottomGap": 373,
+    "aspectRatio": "NaN",
+    "effectiveRenderedLength": "NaN",
+    "isTemporaryCyber": false
+  },
+  {
+    "id": "maxakalisaurus",
+    "name": "マシャカリサウルス",
+    "realLength": 13,
+    "realHeight": 3.5,
+    "contentHeightPx": 252,
+    "bottomGap": 373,
+    "aspectRatio": "NaN",
+    "effectiveRenderedLength": "NaN",
+    "isTemporaryCyber": false
+  },
+  {
+    "id": "gondwanatitan",
+    "name": "ゴンドワナティタン",
+    "realLength": 7,
+    "realHeight": 2,
+    "contentHeightPx": 272,
+    "bottomGap": 370,
+    "aspectRatio": "NaN",
+    "effectiveRenderedLength": "NaN",
+    "isTemporaryCyber": false
+  },
+  {
+    "id": "magyarosaurus",
+    "name": "マジャーロサウルス",
+    "realLength": 6,
+    "realHeight": 1.8,
+    "contentHeightPx": 272,
+    "bottomGap": 370,
+    "aspectRatio": "NaN",
+    "effectiveRenderedLength": "NaN",
+    "isTemporaryCyber": true
+  }
+]
