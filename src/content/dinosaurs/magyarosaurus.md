@@ -28,9 +28,9 @@ cyberMetadata:
   realLength: 6
   contentHeightPx: 286
   sourceRes: 1024
-  dinoLeft: "5%"
-  refRight: "0%"
-  zoom: 0.7
+  dinoLeft: "0%"
+  refRight: "-2%"
+  zoom: 1.3
 ---
 
 ### トランシルヴァニアの古城から始まった伝説：ノプシャ男爵とハツェグ島の小人恐竜

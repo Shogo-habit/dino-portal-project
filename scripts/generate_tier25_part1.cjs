@@ -338,9 +338,9 @@ const dinos = [
       realLength: 6.0,
       contentHeightPx: 286,
       sourceRes: 1024,
-      dinoLeft: "5%",
-      refRight: "0%",
-      zoom: 0.7
+      dinoLeft: "0%",
+      refRight: "-2%",
+      zoom: 1.3
     },
     sections: [
       {
