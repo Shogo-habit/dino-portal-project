@@ -31,9 +31,9 @@ cyberMetadata:
   realLength: 15.0
   contentHeightPx: 244
   sourceRes: 1024
-  dinoLeft: "1%"
-  refRight: "-3%"
-  zoom: 1.0
+  dinoLeft: "-1%"
+  refRight: "-4%"
+  zoom: 1.2
 ---
 
 ### 中国古生物学の黎明を飾る記念碑的発見：蒙陰層での発掘とカール・ウィマンの研究
