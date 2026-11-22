@@ -9,6 +9,16 @@ export const REFERENCE_ASSETS = {
         contentHeightPx: 936,
         sourceRes: 1024
     },
+    DINO_PAPA: {
+        id: 'dino_papa',
+        icon: 'images/cyber/dino_papa_front.webp',
+        label: "DINOパパ (1.7m)",
+        name: "DINOパパ",
+        realHeight: 1.7,
+        bottomGap: 44,
+        contentHeightPx: 936,
+        sourceRes: 1024
+    },
     CAR: {
         id: 'car',
         icon: 'images/cyber/car_side.webp',

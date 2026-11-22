@@ -438,7 +438,7 @@ const schema = {
             },
             stegosaurus: {
                 image: '/images/cyber/stegosaurus_battle.webp',
-                contentHeightPx: 436,
+                contentHeightPx: 447,
                 bottomGap: 289
             },
             parasaurolophus: {
@@ -448,8 +448,8 @@ const schema = {
             },
             quetzalcoatlus: {
                 image: '/images/cyber/quetzalcoatlus_battle.webp',
-                contentHeightPx: 800,
-                bottomGap: 112
+                contentHeightPx: 799,
+                bottomGap: 113
             },
             elasmosaurus: {
                 image: '/images/cyber/elasmosaurus_battle.webp',
@@ -527,6 +527,12 @@ const schema = {
                 contentHeightPx: 936,
                 bottomGap: 44
             },
+            dino_papa: {
+                image: '/images/cyber/dino_papa_real.webp',
+                // Photorealistic DINO Papa field explorer, realHeight 1.7m
+                contentHeightPx: 936,
+                bottomGap: 44
+            },
             car: {
                 image: '/images/cyber/car_real.webp',
                 // Photorealistic passenger SUV, realHeight 1.5m, realLength 4.5m
@@ -556,6 +562,7 @@ const schema = {
         // 骨格モード時のリファレンスオブジェクト基本メトリクス（サイバー線画）
         const BONE_REF_ASSETS: Record<string, { contentHeightPx: number; bottomGap: number }> = {
             human: { contentHeightPx: 936, bottomGap: 50 },
+            dino_papa: { contentHeightPx: 936, bottomGap: 44 },
             car: { contentHeightPx: 305, bottomGap: 375 },
             elephant: { contentHeightPx: 587, bottomGap: 195 },
             whale: { contentHeightPx: 156, bottomGap: 383 },
@@ -1091,7 +1098,7 @@ const schema = {
                     refImg.style.mixBlendMode = 'normal';
                 } else {
                     refImg.src = '/' + activeAsset.icon;
-                    refImg.style.mixBlendMode = (activeAsset.id === 'human') ? 'normal' : 'screen';
+                    refImg.style.mixBlendMode = (activeAsset.id === 'human' || activeAsset.id === 'dino_papa') ? 'normal' : 'screen';
                     if (isDinoTarget) {
                         if (BONE_CALIBRATED_ASSETS[activeAsset.id]) {
                             activeAsset.contentHeightPx = BONE_CALIBRATED_ASSETS[activeAsset.id].contentHeightPx;
@@ -1116,7 +1123,7 @@ const schema = {
                     refTag.innerText = `${activeAsset.name} / 全長 5.9m（翼開長 11.0m）`;
                 } else if (activeAsset.isDino) {
                     refTag.innerText = `${activeAsset.name} / 全長 ${formatVal(activeAsset.realLength)}m`;
-                } else if (activeAsset.id === 'human') {
+                } else if (activeAsset.id === 'human' || activeAsset.id === 'dino_papa') {
                     refTag.innerText = `${activeAsset.name} / 身長 ${formatVal(activeAsset.realHeight)}m`;
                 } else if (activeAsset.id === 'car') {
                     refTag.innerText = `${activeAsset.name} / 車高 ${formatVal(activeAsset.realHeight)}m`;
@@ -1253,6 +1260,7 @@ const schema = {
                 futabasaurus: isBattle ? { left: 22, right: 22 } : { left: 20, right: 21 },
                 sinoceratops: { left: 196, right: 162 },
                 human: isBattle ? { left: 364, right: 365 } : { left: 329, right: 328 },
+                dino_papa: { left: 246, right: 448 },
                 car: isBattle ? { left: 22, right: 22 } : { left: 11, right: 8 },
                 elephant: isBattle ? { left: 62, right: 62 } : { left: 70, right: 60 },
                 whale: isBattle ? { left: 22, right: 22 } : { left: 42, right: 45 },
