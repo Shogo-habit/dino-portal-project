@@ -271,6 +271,15 @@ const schema = {
                         <button type="button" class="preset-btn matchup-btn" data-dino-id="tyrannosaurus" data-vs-id="giganotosaurus">
                             🔥 ティラノサウルス vs ギガノトサウルス 🌋
                         </button>
+                        <button type="button" class="preset-btn matchup-btn" data-dino-id="carnotaurus" data-vs-id="tyrannosaurus">
+                            🐂 カルノタウルス vs ティラノサウルス ⚡
+                        </button>
+                        <button type="button" class="preset-btn matchup-btn" data-dino-id="therizinosaurus" data-vs-id="giganotosaurus">
+                            🪓 テリジノサウルス vs ギガノトサウルス ⚔️
+                        </button>
+                        <button type="button" class="preset-btn matchup-btn" data-dino-id="futabasaurus" data-vs-id="mosasaurus">
+                            🌊 フタバサウルス vs モササウルス 🦈
+                        </button>
                     </div>
                 </div>
 
@@ -372,7 +381,12 @@ const schema = {
             elasmosaurus: { contentHeightPx: 238, bottomGap: 222 },
             styracosaurus: { contentHeightPx: 402, bottomGap: 294 },
             argentinosaurus: { contentHeightPx: 247, bottomGap: 354 },
-            iguanodon: { contentHeightPx: 360, bottomGap: 331 }
+            iguanodon: { contentHeightPx: 360, bottomGap: 331 },
+            carnotaurus: { contentHeightPx: 347, bottomGap: 286 },
+            therizinosaurus: { contentHeightPx: 474, bottomGap: 236 },
+            dilophosaurus: { contentHeightPx: 301, bottomGap: 216 },
+            fukuiraptor: { contentHeightPx: 369, bottomGap: 265 },
+            futabasaurus: { contentHeightPx: 407, bottomGap: 299 }
         };
 
         // Battle Assets Registry (Calibrated for strict length & posture proportion)
@@ -471,6 +485,36 @@ const schema = {
                 image: '/images/cyber/protoceratops_battle.webp',
                 contentHeightPx: 561,
                 bottomGap: 237
+            },
+            carnotaurus: {
+                image: '/images/cyber/carnotaurus_battle.webp',
+                // Bull horns, agile hunter, realHeight 2.8m, Length 7.5m (2.8 * 980 / 7.5 = 366px)
+                contentHeightPx: 366,
+                bottomGap: 297
+            },
+            therizinosaurus: {
+                image: '/images/cyber/therizinosaurus_battle.webp',
+                // Giant scythe claws upright stance, realHeight 5.0m, Length 10.0m (5.0 * 980 / 10.0 = 490px)
+                contentHeightPx: 490,
+                bottomGap: 147
+            },
+            dilophosaurus: {
+                image: '/images/cyber/dilophosaurus_battle.webp',
+                // Paired skull crests, realHeight 2.2m, Length 7.0m (2.2 * 980 / 7.0 = 308px)
+                contentHeightPx: 308,
+                bottomGap: 287
+            },
+            fukuiraptor: {
+                image: '/images/cyber/fukuiraptor_battle.webp',
+                // Japanese megaraptoran, realHeight 1.6m, Length 4.2m (1.6 * 980 / 4.2 = 373px)
+                contentHeightPx: 373,
+                bottomGap: 274
+            },
+            futabasaurus: {
+                image: '/images/cyber/futabasaurus_battle.webp',
+                // Japanese elasmosaurid plesiosaur, realHeight 2.9m, Length 7.0m (2.9 * 980 / 7.0 = 406px)
+                contentHeightPx: 406,
+                bottomGap: 400
             },
             human: {
                 image: '/images/cyber/human_real.webp',
@@ -1187,6 +1231,11 @@ const schema = {
                 argentinosaurus: { left: 22, right: 22 },
                 iguanodon: { left: 22, right: 22 },
                 protoceratops: { left: 22, right: 22 },
+                carnotaurus: isBattle ? { left: 22, right: 22 } : { left: 47, right: 47 },
+                therizinosaurus: isBattle ? { left: 22, right: 22 } : { left: 38, right: 39 },
+                dilophosaurus: isBattle ? { left: 22, right: 22 } : { left: 32, right: 33 },
+                fukuiraptor: isBattle ? { left: 22, right: 22 } : { left: 27, right: 28 },
+                futabasaurus: isBattle ? { left: 22, right: 22 } : { left: 20, right: 21 },
                 sinoceratops: { left: 196, right: 162 },
                 human: isBattle ? { left: 364, right: 365 } : { left: 329, right: 328 },
                 car: isBattle ? { left: 22, right: 22 } : { left: 11, right: 8 },
