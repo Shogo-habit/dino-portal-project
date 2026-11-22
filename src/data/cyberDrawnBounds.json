@@ -1,0 +1,2390 @@
+{
+  "aardonyx": {
+    "drawnHeight": 426,
+    "drawnWidth": 978,
+    "bottomGap": 299,
+    "topGap": 299
+  },
+  "abelisaurus": {
+    "drawnHeight": 451,
+    "drawnWidth": 993,
+    "bottomGap": 259,
+    "topGap": 314
+  },
+  "acrocanthosaurus": {
+    "drawnHeight": 361,
+    "drawnWidth": 931,
+    "bottomGap": 333,
+    "topGap": 330
+  },
+  "aerosteon": {
+    "drawnHeight": 383,
+    "drawnWidth": 920,
+    "bottomGap": 320,
+    "topGap": 321
+  },
+  "aetosaurus": {
+    "drawnHeight": 526,
+    "drawnWidth": 1850,
+    "bottomGap": 733,
+    "topGap": 789
+  },
+  "afrovenator": {
+    "drawnHeight": 341,
+    "drawnWidth": 937,
+    "bottomGap": 341,
+    "topGap": 342
+  },
+  "airplane_real": {
+    "drawnHeight": 260,
+    "drawnWidth": 980,
+    "bottomGap": 382,
+    "topGap": 382
+  },
+  "airplane_side": {
+    "drawnHeight": 279,
+    "drawnWidth": 951,
+    "bottomGap": 410,
+    "topGap": 335
+  },
+  "alamosaurus": {
+    "drawnHeight": 556,
+    "drawnWidth": 974,
+    "bottomGap": 238,
+    "topGap": 230
+  },
+  "alanqa": {
+    "drawnHeight": 965,
+    "drawnWidth": 914,
+    "bottomGap": 16,
+    "topGap": 43
+  },
+  "albalophosaurus": {
+    "drawnHeight": 967,
+    "drawnWidth": 2414,
+    "bottomGap": 1082,
+    "topGap": 1119
+  },
+  "albertosaurus": {
+    "drawnHeight": 552,
+    "drawnWidth": 974,
+    "bottomGap": 230,
+    "topGap": 242
+  },
+  "alioramus": {
+    "drawnHeight": 412,
+    "drawnWidth": 934,
+    "bottomGap": 306,
+    "topGap": 306
+  },
+  "allosaurus": {
+    "drawnHeight": 383,
+    "drawnWidth": 962,
+    "bottomGap": 319,
+    "topGap": 322
+  },
+  "allosaurus_battle": {
+    "drawnHeight": 368,
+    "drawnWidth": 980,
+    "bottomGap": 328,
+    "topGap": 328
+  },
+  "amargasaurus": {
+    "drawnHeight": 582,
+    "drawnWidth": 977,
+    "bottomGap": 194,
+    "topGap": 248
+  },
+  "ampelosaurus": {
+    "drawnHeight": 540,
+    "drawnWidth": 962,
+    "bottomGap": 224,
+    "topGap": 260
+  },
+  "anchisaurus": {
+    "drawnHeight": 474,
+    "drawnWidth": 960,
+    "bottomGap": 278,
+    "topGap": 272
+  },
+  "andesaurus": {
+    "drawnHeight": 263,
+    "drawnWidth": 971,
+    "bottomGap": 369,
+    "topGap": 392
+  },
+  "anhanguera": {
+    "drawnHeight": 856,
+    "drawnWidth": 928,
+    "bottomGap": 76,
+    "topGap": 92
+  },
+  "ankylosaurus": {
+    "drawnHeight": 244,
+    "drawnWidth": 944,
+    "bottomGap": 391,
+    "topGap": 389
+  },
+  "ankylosaurus_battle": {
+    "drawnHeight": 333,
+    "drawnWidth": 985,
+    "bottomGap": 328,
+    "topGap": 363
+  },
+  "anomalocaris": {
+    "drawnHeight": 760,
+    "drawnWidth": 2506,
+    "bottomGap": 1016,
+    "topGap": 1040
+  },
+  "antarctopelta": {
+    "drawnHeight": 703,
+    "drawnWidth": 1796,
+    "bottomGap": 695,
+    "topGap": 650
+  },
+  "anurognathus": {
+    "drawnHeight": 460,
+    "drawnWidth": 684,
+    "bottomGap": 282,
+    "topGap": 282
+  },
+  "apatosaurus": {
+    "drawnHeight": 701,
+    "drawnWidth": 911,
+    "bottomGap": 171,
+    "topGap": 152
+  },
+  "archaeopteryx": {
+    "drawnHeight": 696,
+    "drawnWidth": 938,
+    "bottomGap": 170,
+    "topGap": 158
+  },
+  "archelon": {
+    "drawnHeight": 577,
+    "drawnWidth": 899,
+    "bottomGap": 156,
+    "topGap": 291
+  },
+  "argentinosaurus": {
+    "drawnHeight": 325,
+    "drawnWidth": 962,
+    "bottomGap": 354,
+    "topGap": 345
+  },
+  "argentinosaurus_battle": {
+    "drawnHeight": 383,
+    "drawnWidth": 980,
+    "bottomGap": 321,
+    "topGap": 320
+  },
+  "aucasaurus": {
+    "drawnHeight": 357,
+    "drawnWidth": 925,
+    "bottomGap": 331,
+    "topGap": 336
+  },
+  "australovenator": {
+    "drawnHeight": 383,
+    "drawnWidth": 959,
+    "bottomGap": 318,
+    "topGap": 323
+  },
+  "austroraptor": {
+    "drawnHeight": 880,
+    "drawnWidth": 1830,
+    "bottomGap": 586,
+    "topGap": 582
+  },
+  "bagaceratops": {
+    "drawnHeight": 536,
+    "drawnWidth": 828,
+    "bottomGap": 204,
+    "topGap": 284
+  },
+  "bajadasaurus": {
+    "drawnHeight": 647,
+    "drawnWidth": 834,
+    "bottomGap": 168,
+    "topGap": 209
+  },
+  "barapasaurus": {
+    "drawnHeight": 801,
+    "drawnWidth": 1889,
+    "bottomGap": 624,
+    "topGap": 623
+  },
+  "barosaurus": {
+    "drawnHeight": 784,
+    "drawnWidth": 968,
+    "bottomGap": 120,
+    "topGap": 120
+  },
+  "baryonyx": {
+    "drawnHeight": 390,
+    "drawnWidth": 935,
+    "bottomGap": 317,
+    "topGap": 317
+  },
+  "beipiaosaurus": {
+    "drawnHeight": 457,
+    "drawnWidth": 881,
+    "bottomGap": 284,
+    "topGap": 283
+  },
+  "beishanlong": {
+    "drawnHeight": 459,
+    "drawnWidth": 907,
+    "bottomGap": 284,
+    "topGap": 281
+  },
+  "bellusaurus": {
+    "drawnHeight": 356,
+    "drawnWidth": 950,
+    "bottomGap": 334,
+    "topGap": 334
+  },
+  "bistahieversor": {
+    "drawnHeight": 367,
+    "drawnWidth": 911,
+    "bottomGap": 328,
+    "topGap": 329
+  },
+  "borealopelta": {
+    "drawnHeight": 307,
+    "drawnWidth": 994,
+    "bottomGap": 358,
+    "topGap": 359
+  },
+  "brachiosaurus": {
+    "drawnHeight": 836,
+    "drawnWidth": 926,
+    "bottomGap": 98,
+    "topGap": 90
+  },
+  "brachiosaurus_battle": {
+    "drawnHeight": 514,
+    "drawnWidth": 985,
+    "bottomGap": 254,
+    "topGap": 256
+  },
+  "brachytrachelopan": {
+    "drawnHeight": 357,
+    "drawnWidth": 941,
+    "bottomGap": 322,
+    "topGap": 345
+  },
+  "brontosaurus": {
+    "drawnHeight": 663,
+    "drawnWidth": 973,
+    "bottomGap": 157,
+    "topGap": 204
+  },
+  "bruhathkayosaurus": {
+    "drawnHeight": 284,
+    "drawnWidth": 976,
+    "bottomGap": 369,
+    "topGap": 371
+  },
+  "camarasaurus": {
+    "drawnHeight": 653,
+    "drawnWidth": 974,
+    "bottomGap": 166,
+    "topGap": 205
+  },
+  "camptosaurus": {
+    "drawnHeight": 378,
+    "drawnWidth": 972,
+    "bottomGap": 309,
+    "topGap": 337
+  },
+  "car_real": {
+    "drawnHeight": 388,
+    "drawnWidth": 980,
+    "bottomGap": 318,
+    "topGap": 318
+  },
+  "car_side": {
+    "drawnHeight": 308,
+    "drawnWidth": 932,
+    "bottomGap": 369,
+    "topGap": 347
+  },
+  "carcharodontosaurus": {
+    "drawnHeight": 326,
+    "drawnWidth": 992,
+    "bottomGap": 318,
+    "topGap": 380
+  },
+  "carnotaurus": {
+    "drawnHeight": 448,
+    "drawnWidth": 930,
+    "bottomGap": 286,
+    "topGap": 290
+  },
+  "carnotaurus_battle": {
+    "drawnHeight": 430,
+    "drawnWidth": 980,
+    "bottomGap": 297,
+    "topGap": 297
+  },
+  "caudipteryx": {
+    "drawnHeight": 575,
+    "drawnWidth": 765,
+    "bottomGap": 225,
+    "topGap": 224
+  },
+  "centrosaurus": {
+    "drawnHeight": 609,
+    "drawnWidth": 973,
+    "bottomGap": 239,
+    "topGap": 176
+  },
+  "ceratosaurus": {
+    "drawnHeight": 575,
+    "drawnWidth": 968,
+    "bottomGap": 225,
+    "topGap": 224
+  },
+  "cetiosaurus": {
+    "drawnHeight": 551,
+    "drawnWidth": 1781,
+    "bottomGap": 748,
+    "topGap": 749
+  },
+  "chaoyangsaurus": {
+    "drawnHeight": 939,
+    "drawnWidth": 1748,
+    "bottomGap": 559,
+    "topGap": 550
+  },
+  "chasmosaurus": {
+    "drawnHeight": 614,
+    "drawnWidth": 967,
+    "bottomGap": 215,
+    "topGap": 195
+  },
+  "chialingosaurus": {
+    "drawnHeight": 865,
+    "drawnWidth": 1786,
+    "bottomGap": 591,
+    "topGap": 592
+  },
+  "chilesaurus": {
+    "drawnHeight": 945,
+    "drawnWidth": 2243,
+    "bottomGap": 895,
+    "topGap": 912
+  },
+  "chirostenotes": {
+    "drawnHeight": 790,
+    "drawnWidth": 946,
+    "bottomGap": 118,
+    "topGap": 116
+  },
+  "chungkingosaurus": {
+    "drawnHeight": 904,
+    "drawnWidth": 1830,
+    "bottomGap": 570,
+    "topGap": 574
+  },
+  "citipati": {
+    "drawnHeight": 556,
+    "drawnWidth": 888,
+    "bottomGap": 232,
+    "topGap": 236
+  },
+  "coelophysis": {
+    "drawnHeight": 469,
+    "drawnWidth": 985,
+    "bottomGap": 251,
+    "topGap": 304
+  },
+  "coelurus": {
+    "drawnHeight": 345,
+    "drawnWidth": 919,
+    "bottomGap": 328,
+    "topGap": 351
+  },
+  "compsognathus": {
+    "drawnHeight": 524,
+    "drawnWidth": 943,
+    "bottomGap": 232,
+    "topGap": 268
+  },
+  "concavenator": {
+    "drawnHeight": 603,
+    "drawnWidth": 972,
+    "bottomGap": 201,
+    "topGap": 220
+  },
+  "corythosaurus": {
+    "drawnHeight": 505,
+    "drawnWidth": 968,
+    "bottomGap": 259,
+    "topGap": 260
+  },
+  "cryolophosaurus": {
+    "drawnHeight": 725,
+    "drawnWidth": 929,
+    "bottomGap": 181,
+    "topGap": 118
+  },
+  "cryptoclidus": {
+    "drawnHeight": 662,
+    "drawnWidth": 1687,
+    "bottomGap": 661,
+    "topGap": 725
+  },
+  "cymbospondylus": {
+    "drawnHeight": 280,
+    "drawnWidth": 973,
+    "bottomGap": 353,
+    "topGap": 391
+  },
+  "dacentrurus": {
+    "drawnHeight": 811,
+    "drawnWidth": 1819,
+    "bottomGap": 618,
+    "topGap": 619
+  },
+  "darwinopterus": {
+    "drawnHeight": 1325,
+    "drawnWidth": 1711,
+    "bottomGap": 268,
+    "topGap": 455
+  },
+  "daspletosaurus": {
+    "drawnHeight": 581,
+    "drawnWidth": 953,
+    "bottomGap": 187,
+    "topGap": 256
+  },
+  "deinocheirus": {
+    "drawnHeight": 469,
+    "drawnWidth": 982,
+    "bottomGap": 278,
+    "topGap": 277
+  },
+  "deinonychus": {
+    "drawnHeight": 382,
+    "drawnWidth": 933,
+    "bottomGap": 284,
+    "topGap": 358
+  },
+  "deinosuchus": {
+    "drawnHeight": 268,
+    "drawnWidth": 943,
+    "bottomGap": 372,
+    "topGap": 384
+  },
+  "deltadromeus": {
+    "drawnHeight": 370,
+    "drawnWidth": 929,
+    "bottomGap": 324,
+    "topGap": 330
+  },
+  "desmatosuchus": {
+    "drawnHeight": 356,
+    "drawnWidth": 987,
+    "bottomGap": 334,
+    "topGap": 334
+  },
+  "diabloceratops": {
+    "drawnHeight": 637,
+    "drawnWidth": 976,
+    "bottomGap": 234,
+    "topGap": 153
+  },
+  "diamantinasaurus": {
+    "drawnHeight": 342,
+    "drawnWidth": 971,
+    "bottomGap": 341,
+    "topGap": 341
+  },
+  "dicraeosaurus": {
+    "drawnHeight": 904,
+    "drawnWidth": 3998,
+    "bottomGap": 1590,
+    "topGap": 1634
+  },
+  "dilong": {
+    "drawnHeight": 321,
+    "drawnWidth": 859,
+    "bottomGap": 352,
+    "topGap": 351
+  },
+  "dilophosaurus": {
+    "drawnHeight": 586,
+    "drawnWidth": 959,
+    "bottomGap": 216,
+    "topGap": 222
+  },
+  "dilophosaurus_battle": {
+    "drawnHeight": 449,
+    "drawnWidth": 980,
+    "bottomGap": 288,
+    "topGap": 287
+  },
+  "dimetrodon": {
+    "drawnHeight": 720,
+    "drawnWidth": 956,
+    "bottomGap": 152,
+    "topGap": 152
+  },
+  "dimorphodon": {
+    "drawnHeight": 901,
+    "drawnWidth": 923,
+    "bottomGap": 66,
+    "topGap": 57
+  },
+  "dinichthys": {
+    "drawnHeight": 440,
+    "drawnWidth": 939,
+    "bottomGap": 291,
+    "topGap": 293
+  },
+  "dino_papa_front": {
+    "drawnHeight": 936,
+    "drawnWidth": 329,
+    "bottomGap": 44,
+    "topGap": 44
+  },
+  "dino_papa_real": {
+    "drawnHeight": 936,
+    "drawnWidth": 329,
+    "bottomGap": 44,
+    "topGap": 44
+  },
+  "diplodocus": {
+    "drawnHeight": 242,
+    "drawnWidth": 970,
+    "bottomGap": 389,
+    "topGap": 393
+  },
+  "dracorex": {
+    "drawnHeight": 426,
+    "drawnWidth": 914,
+    "bottomGap": 299,
+    "topGap": 299
+  },
+  "dreadnoughtus": {
+    "drawnHeight": 274,
+    "drawnWidth": 890,
+    "bottomGap": 375,
+    "topGap": 375
+  },
+  "dromaeosaurus": {
+    "drawnHeight": 1200,
+    "drawnWidth": 2600,
+    "bottomGap": 768,
+    "topGap": 848
+  },
+  "dryosaurus": {
+    "drawnHeight": 805,
+    "drawnWidth": 1867,
+    "bottomGap": 603,
+    "topGap": 640
+  },
+  "dsungaripterus": {
+    "drawnHeight": 720,
+    "drawnWidth": 944,
+    "bottomGap": 94,
+    "topGap": 210
+  },
+  "dunkleosteus": {
+    "drawnHeight": 408,
+    "drawnWidth": 945,
+    "bottomGap": 308,
+    "topGap": 308
+  },
+  "edaphosaurus": {
+    "drawnHeight": 454,
+    "drawnWidth": 876,
+    "bottomGap": 285,
+    "topGap": 285
+  },
+  "edmontonia": {
+    "drawnHeight": 275,
+    "drawnWidth": 938,
+    "bottomGap": 360,
+    "topGap": 389
+  },
+  "edmontosaurus": {
+    "drawnHeight": 469,
+    "drawnWidth": 972,
+    "bottomGap": 262,
+    "topGap": 293
+  },
+  "einiosaurus": {
+    "drawnHeight": 558,
+    "drawnWidth": 962,
+    "bottomGap": 266,
+    "topGap": 200
+  },
+  "elaphrosaurus": {
+    "drawnHeight": 725,
+    "drawnWidth": 1855,
+    "bottomGap": 661,
+    "topGap": 662
+  },
+  "elasmosaurus": {
+    "drawnHeight": 541,
+    "drawnWidth": 950,
+    "bottomGap": 222,
+    "topGap": 261
+  },
+  "elasmosaurus_battle": {
+    "drawnHeight": 248,
+    "drawnWidth": 980,
+    "bottomGap": 388,
+    "topGap": 388
+  },
+  "elephant_real": {
+    "drawnHeight": 596,
+    "drawnWidth": 900,
+    "bottomGap": 214,
+    "topGap": 214
+  },
+  "elephant_side": {
+    "drawnHeight": 613,
+    "drawnWidth": 868,
+    "bottomGap": 185,
+    "topGap": 226
+  },
+  "eoraptor": {
+    "drawnHeight": 598,
+    "drawnWidth": 958,
+    "bottomGap": 227,
+    "topGap": 199
+  },
+  "eotriceratops": {
+    "drawnHeight": 438,
+    "drawnWidth": 944,
+    "bottomGap": 293,
+    "topGap": 293
+  },
+  "epidexipteryx": {
+    "drawnHeight": 483,
+    "drawnWidth": 940,
+    "bottomGap": 275,
+    "topGap": 266
+  },
+  "erketu": {
+    "drawnHeight": 402,
+    "drawnWidth": 968,
+    "bottomGap": 305,
+    "topGap": 317
+  },
+  "erlikosaurus": {
+    "drawnHeight": 512,
+    "drawnWidth": 935,
+    "bottomGap": 257,
+    "topGap": 255
+  },
+  "eudimorphodon": {
+    "drawnHeight": 662,
+    "drawnWidth": 951,
+    "bottomGap": 201,
+    "topGap": 161
+  },
+  "euhelopus": {
+    "drawnHeight": 239,
+    "drawnWidth": 962,
+    "bottomGap": 387,
+    "topGap": 398
+  },
+  "euoplocephalus": {
+    "drawnHeight": 450,
+    "drawnWidth": 979,
+    "bottomGap": 263,
+    "topGap": 311
+  },
+  "euparkeria": {
+    "drawnHeight": 618,
+    "drawnWidth": 1715,
+    "bottomGap": 715,
+    "topGap": 715
+  },
+  "europasaurus": {
+    "drawnHeight": 1187,
+    "drawnWidth": 1914,
+    "bottomGap": 433,
+    "topGap": 428
+  },
+  "eustreptospondylus": {
+    "drawnHeight": 663,
+    "drawnWidth": 1876,
+    "bottomGap": 658,
+    "topGap": 727
+  },
+  "ezomikasaryu": {
+    "drawnHeight": 234,
+    "drawnWidth": 921,
+    "bottomGap": 371,
+    "topGap": 419
+  },
+  "falcarius": {
+    "drawnHeight": 519,
+    "drawnWidth": 936,
+    "bottomGap": 252,
+    "topGap": 253
+  },
+  "fruitadens": {
+    "drawnHeight": 391,
+    "drawnWidth": 920,
+    "bottomGap": 317,
+    "topGap": 316
+  },
+  "fukuipteryx": {
+    "drawnHeight": 1416,
+    "drawnWidth": 1966,
+    "bottomGap": 672,
+    "topGap": 728
+  },
+  "fukuiraptor": {
+    "drawnHeight": 483,
+    "drawnWidth": 969,
+    "bottomGap": 265,
+    "topGap": 276
+  },
+  "fukuiraptor_battle": {
+    "drawnHeight": 475,
+    "drawnWidth": 980,
+    "bottomGap": 275,
+    "topGap": 274
+  },
+  "fukuisaurus": {
+    "drawnHeight": 472,
+    "drawnWidth": 975,
+    "bottomGap": 261,
+    "topGap": 291
+  },
+  "fukuititan": {
+    "drawnHeight": 488,
+    "drawnWidth": 970,
+    "bottomGap": 274,
+    "topGap": 262
+  },
+  "fukuivenator": {
+    "drawnHeight": 580,
+    "drawnWidth": 971,
+    "bottomGap": 226,
+    "topGap": 218
+  },
+  "futabasaurus": {
+    "drawnHeight": 401,
+    "drawnWidth": 983,
+    "bottomGap": 299,
+    "topGap": 324
+  },
+  "futabasaurus_battle": {
+    "drawnHeight": 223,
+    "drawnWidth": 980,
+    "bottomGap": 401,
+    "topGap": 400
+  },
+  "futalognkosaurus": {
+    "drawnHeight": 210,
+    "drawnWidth": 953,
+    "bottomGap": 407,
+    "topGap": 407
+  },
+  "gallimimus": {
+    "drawnHeight": 471,
+    "drawnWidth": 924,
+    "bottomGap": 276,
+    "topGap": 277
+  },
+  "gargoyleosaurus": {
+    "drawnHeight": 366,
+    "drawnWidth": 892,
+    "bottomGap": 308,
+    "topGap": 350
+  },
+  "gasosaurus": {
+    "drawnHeight": 405,
+    "drawnWidth": 908,
+    "bottomGap": 309,
+    "topGap": 310
+  },
+  "gastonia": {
+    "drawnHeight": 432,
+    "drawnWidth": 940,
+    "bottomGap": 242,
+    "topGap": 350
+  },
+  "giganotosaurus": {
+    "drawnHeight": 332,
+    "drawnWidth": 917,
+    "bottomGap": 342,
+    "topGap": 350
+  },
+  "giganotosaurus_battle": {
+    "drawnHeight": 283,
+    "drawnWidth": 957,
+    "bottomGap": 346,
+    "topGap": 395
+  },
+  "gigantoraptor": {
+    "drawnHeight": 930,
+    "drawnWidth": 922,
+    "bottomGap": 45,
+    "topGap": 49
+  },
+  "gigantspinosaurus": {
+    "drawnHeight": 524,
+    "drawnWidth": 973,
+    "bottomGap": 212,
+    "topGap": 288
+  },
+  "giraffatitan": {
+    "drawnHeight": 911,
+    "drawnWidth": 818,
+    "bottomGap": 51,
+    "topGap": 62
+  },
+  "gojirasaurus": {
+    "drawnHeight": 345,
+    "drawnWidth": 925,
+    "bottomGap": 340,
+    "topGap": 339
+  },
+  "gondwanatitan": {
+    "drawnHeight": 273,
+    "drawnWidth": 955,
+    "bottomGap": 370,
+    "topGap": 381
+  },
+  "gorgosaurus": {
+    "drawnHeight": 501,
+    "drawnWidth": 972,
+    "bottomGap": 253,
+    "topGap": 270
+  },
+  "goyocephale": {
+    "drawnHeight": 383,
+    "drawnWidth": 890,
+    "bottomGap": 320,
+    "topGap": 321
+  },
+  "guaibasaurus": {
+    "drawnHeight": 668,
+    "drawnWidth": 1801,
+    "bottomGap": 690,
+    "topGap": 690
+  },
+  "guanlong": {
+    "drawnHeight": 403,
+    "drawnWidth": 984,
+    "bottomGap": 310,
+    "topGap": 311
+  },
+  "hadrosaurus": {
+    "drawnHeight": 387,
+    "drawnWidth": 987,
+    "bottomGap": 295,
+    "topGap": 342
+  },
+  "hainosaurus": {
+    "drawnHeight": 285,
+    "drawnWidth": 979,
+    "bottomGap": 359,
+    "topGap": 380
+  },
+  "hallucigenia": {
+    "drawnHeight": 456,
+    "drawnWidth": 844,
+    "bottomGap": 284,
+    "topGap": 284
+  },
+  "halszkaraptor": {
+    "drawnHeight": 1420,
+    "drawnWidth": 1620,
+    "bottomGap": 315,
+    "topGap": 313
+  },
+  "haplocanthosaurus": {
+    "drawnHeight": 502,
+    "drawnWidth": 952,
+    "bottomGap": 261,
+    "topGap": 261
+  },
+  "haplocheirus": {
+    "drawnHeight": 412,
+    "drawnWidth": 922,
+    "bottomGap": 279,
+    "topGap": 333
+  },
+  "henodus": {
+    "drawnHeight": 456,
+    "drawnWidth": 973,
+    "bottomGap": 204,
+    "topGap": 364
+  },
+  "herrerasaurus": {
+    "drawnHeight": 320,
+    "drawnWidth": 934,
+    "bottomGap": 344,
+    "topGap": 360
+  },
+  "hesperosaurus": {
+    "drawnHeight": 894,
+    "drawnWidth": 1829,
+    "bottomGap": 578,
+    "topGap": 576
+  },
+  "homalocephale": {
+    "drawnHeight": 407,
+    "drawnWidth": 973,
+    "bottomGap": 309,
+    "topGap": 308
+  },
+  "huayangosaurus": {
+    "drawnHeight": 1248,
+    "drawnWidth": 2560,
+    "bottomGap": 776,
+    "topGap": 792
+  },
+  "human_front": {
+    "drawnHeight": 944,
+    "drawnWidth": 367,
+    "bottomGap": 42,
+    "topGap": 38
+  },
+  "human_real": {
+    "drawnHeight": 936,
+    "drawnWidth": 295,
+    "bottomGap": 44,
+    "topGap": 44
+  },
+  "hylaeosaurus": {
+    "drawnHeight": 331,
+    "drawnWidth": 972,
+    "bottomGap": 339,
+    "topGap": 354
+  },
+  "hyperodapedon": {
+    "drawnHeight": 260,
+    "drawnWidth": 969,
+    "bottomGap": 374,
+    "topGap": 390
+  },
+  "hypnovenator": {
+    "drawnHeight": 1027,
+    "drawnWidth": 2462,
+    "bottomGap": 923,
+    "topGap": 962
+  },
+  "hypsilophodon": {
+    "drawnHeight": 1200,
+    "drawnWidth": 2624,
+    "bottomGap": 784,
+    "topGap": 832
+  },
+  "ichthyosaurus": {
+    "drawnHeight": 446,
+    "drawnWidth": 951,
+    "bottomGap": 279,
+    "topGap": 299
+  },
+  "iguanodon": {
+    "drawnHeight": 354,
+    "drawnWidth": 972,
+    "bottomGap": 331,
+    "topGap": 339
+  },
+  "iguanodon_battle": {
+    "drawnHeight": 479,
+    "drawnWidth": 980,
+    "bottomGap": 273,
+    "topGap": 272
+  },
+  "incisivosaurus": {
+    "drawnHeight": 986,
+    "drawnWidth": 1822,
+    "bottomGap": 531,
+    "topGap": 531
+  },
+  "inostrancevia": {
+    "drawnHeight": 440,
+    "drawnWidth": 964,
+    "bottomGap": 292,
+    "topGap": 292
+  },
+  "irritator": {
+    "drawnHeight": 640,
+    "drawnWidth": 1816,
+    "bottomGap": 681,
+    "topGap": 727
+  },
+  "isanosaurus": {
+    "drawnHeight": 428,
+    "drawnWidth": 946,
+    "bottomGap": 295,
+    "topGap": 301
+  },
+  "jakapil": {
+    "drawnHeight": 1104,
+    "drawnWidth": 2656,
+    "bottomGap": 800,
+    "topGap": 912
+  },
+  "jeholopterus": {
+    "drawnHeight": 786,
+    "drawnWidth": 880,
+    "bottomGap": 100,
+    "topGap": 138
+  },
+  "jobaria": {
+    "drawnHeight": 638,
+    "drawnWidth": 982,
+    "bottomGap": 174,
+    "topGap": 212
+  },
+  "juravenator": {
+    "drawnHeight": 451,
+    "drawnWidth": 973,
+    "bottomGap": 286,
+    "topGap": 287
+  },
+  "kamuysaurus": {
+    "drawnHeight": 395,
+    "drawnWidth": 964,
+    "bottomGap": 309,
+    "topGap": 320
+  },
+  "kentrosaurus": {
+    "drawnHeight": 517,
+    "drawnWidth": 973,
+    "bottomGap": 239,
+    "topGap": 268
+  },
+  "koreaceratops": {
+    "drawnHeight": 444,
+    "drawnWidth": 848,
+    "bottomGap": 279,
+    "topGap": 301
+  },
+  "koshisaurus": {
+    "drawnHeight": 347,
+    "drawnWidth": 945,
+    "bottomGap": 332,
+    "topGap": 345
+  },
+  "kosmoceratops": {
+    "drawnHeight": 933,
+    "drawnWidth": 1890,
+    "bottomGap": 578,
+    "topGap": 537
+  },
+  "kotasaurus": {
+    "drawnHeight": 419,
+    "drawnWidth": 966,
+    "bottomGap": 290,
+    "topGap": 315
+  },
+  "kronosaurus": {
+    "drawnHeight": 383,
+    "drawnWidth": 961,
+    "bottomGap": 277,
+    "topGap": 364
+  },
+  "kryptops": {
+    "drawnHeight": 1033,
+    "drawnWidth": 2932,
+    "bottomGap": 1050,
+    "topGap": 1085
+  },
+  "kulindadromeus": {
+    "drawnHeight": 409,
+    "drawnWidth": 892,
+    "bottomGap": 308,
+    "topGap": 307
+  },
+  "kunbarrasaurus": {
+    "drawnHeight": 345,
+    "drawnWidth": 964,
+    "bottomGap": 337,
+    "topGap": 342
+  },
+  "lambeosaurus": {
+    "drawnHeight": 840,
+    "drawnWidth": 978,
+    "bottomGap": 87,
+    "topGap": 97
+  },
+  "leaellynasaura": {
+    "drawnHeight": 436,
+    "drawnWidth": 955,
+    "bottomGap": 294,
+    "topGap": 294
+  },
+  "leedsichthys": {
+    "drawnHeight": 484,
+    "drawnWidth": 968,
+    "bottomGap": 248,
+    "topGap": 292
+  },
+  "leptoceratops": {
+    "drawnHeight": 720,
+    "drawnWidth": 964,
+    "bottomGap": 144,
+    "topGap": 160
+  },
+  "lesothosaurus": {
+    "drawnHeight": 345,
+    "drawnWidth": 910,
+    "bottomGap": 340,
+    "topGap": 339
+  },
+  "liliensternus": {
+    "drawnHeight": 759,
+    "drawnWidth": 1789,
+    "bottomGap": 644,
+    "topGap": 645
+  },
+  "limusaurus": {
+    "drawnHeight": 412,
+    "drawnWidth": 925,
+    "bottomGap": 306,
+    "topGap": 306
+  },
+  "linhenykus": {
+    "drawnHeight": 431,
+    "drawnWidth": 932,
+    "bottomGap": 299,
+    "topGap": 294
+  },
+  "liopleurodon": {
+    "drawnHeight": 376,
+    "drawnWidth": 958,
+    "bottomGap": 276,
+    "topGap": 372
+  },
+  "longisquama": {
+    "drawnHeight": 1242,
+    "drawnWidth": 1767,
+    "bottomGap": 689,
+    "topGap": 117
+  },
+  "lufengosaurus": {
+    "drawnHeight": 392,
+    "drawnWidth": 894,
+    "bottomGap": 313,
+    "topGap": 319
+  },
+  "magyarosaurus": {
+    "drawnHeight": 273,
+    "drawnWidth": 955,
+    "bottomGap": 370,
+    "topGap": 381
+  },
+  "maiasaura": {
+    "drawnHeight": 565,
+    "drawnWidth": 962,
+    "bottomGap": 187,
+    "topGap": 272
+  },
+  "maip": {
+    "drawnHeight": 985,
+    "drawnWidth": 2652,
+    "bottomGap": 875,
+    "topGap": 956
+  },
+  "majungasaurus": {
+    "drawnHeight": 450,
+    "drawnWidth": 971,
+    "bottomGap": 264,
+    "topGap": 310
+  },
+  "malawisaurus": {
+    "drawnHeight": 268,
+    "drawnWidth": 948,
+    "bottomGap": 373,
+    "topGap": 383
+  },
+  "mamenchisaurus": {
+    "drawnHeight": 680,
+    "drawnWidth": 980,
+    "bottomGap": 168,
+    "topGap": 176
+  },
+  "mapusaurus": {
+    "drawnHeight": 408,
+    "drawnWidth": 960,
+    "bottomGap": 301,
+    "topGap": 315
+  },
+  "masiakasaurus": {
+    "drawnHeight": 570,
+    "drawnWidth": 1777,
+    "bottomGap": 674,
+    "topGap": 804
+  },
+  "massospondylus": {
+    "drawnHeight": 777,
+    "drawnWidth": 1816,
+    "bottomGap": 635,
+    "topGap": 636
+  },
+  "maxakalisaurus": {
+    "drawnHeight": 253,
+    "drawnWidth": 961,
+    "bottomGap": 372,
+    "topGap": 399
+  },
+  "medusaceratops": {
+    "drawnHeight": 1246,
+    "drawnWidth": 2879,
+    "bottomGap": 915,
+    "topGap": 911
+  },
+  "megalodon": {
+    "drawnHeight": 527,
+    "drawnWidth": 937,
+    "bottomGap": 255,
+    "topGap": 242
+  },
+  "megalosaurus": {
+    "drawnHeight": 397,
+    "drawnWidth": 985,
+    "bottomGap": 269,
+    "topGap": 358
+  },
+  "megapnosaurus": {
+    "drawnHeight": 370,
+    "drawnWidth": 916,
+    "bottomGap": 328,
+    "topGap": 326
+  },
+  "megaraptor": {
+    "drawnHeight": 306,
+    "drawnWidth": 924,
+    "bottomGap": 346,
+    "topGap": 372
+  },
+  "mei": {
+    "drawnHeight": 431,
+    "drawnWidth": 884,
+    "bottomGap": 297,
+    "topGap": 296
+  },
+  "melanorosaurus": {
+    "drawnHeight": 445,
+    "drawnWidth": 967,
+    "bottomGap": 290,
+    "topGap": 289
+  },
+  "meraxes": {
+    "drawnHeight": 960,
+    "drawnWidth": 2632,
+    "bottomGap": 840,
+    "topGap": 1016
+  },
+  "metriacanthosaurus": {
+    "drawnHeight": 694,
+    "drawnWidth": 1740,
+    "bottomGap": 677,
+    "topGap": 677
+  },
+  "micropachycephalosaurus": {
+    "drawnHeight": 899,
+    "drawnWidth": 1823,
+    "bottomGap": 565,
+    "topGap": 584
+  },
+  "microraptor": {
+    "drawnHeight": 446,
+    "drawnWidth": 919,
+    "bottomGap": 259,
+    "topGap": 319
+  },
+  "mifuneryu": {
+    "drawnHeight": 400,
+    "drawnWidth": 989,
+    "bottomGap": 307,
+    "topGap": 317
+  },
+  "minmi": {
+    "drawnHeight": 290,
+    "drawnWidth": 986,
+    "bottomGap": 360,
+    "topGap": 374
+  },
+  "miragaia": {
+    "drawnHeight": 326,
+    "drawnWidth": 981,
+    "bottomGap": 352,
+    "topGap": 346
+  },
+  "mixosaurus": {
+    "drawnHeight": 571,
+    "drawnWidth": 1818,
+    "bottomGap": 810,
+    "topGap": 667
+  },
+  "monolophosaurus": {
+    "drawnHeight": 503,
+    "drawnWidth": 969,
+    "bottomGap": 256,
+    "topGap": 265
+  },
+  "mononykus": {
+    "drawnHeight": 539,
+    "drawnWidth": 912,
+    "bottomGap": 244,
+    "topGap": 241
+  },
+  "montanoceratops": {
+    "drawnHeight": 407,
+    "drawnWidth": 916,
+    "bottomGap": 309,
+    "topGap": 308
+  },
+  "mosasaurus": {
+    "drawnHeight": 308,
+    "drawnWidth": 950,
+    "bottomGap": 356,
+    "topGap": 360
+  },
+  "mosasaurus_battle": {
+    "drawnHeight": 199,
+    "drawnWidth": 980,
+    "bottomGap": 413,
+    "topGap": 412
+  },
+  "moshiryu": {
+    "drawnHeight": 258,
+    "drawnWidth": 985,
+    "bottomGap": 383,
+    "topGap": 383
+  },
+  "muttaburrasaurus": {
+    "drawnHeight": 522,
+    "drawnWidth": 953,
+    "bottomGap": 206,
+    "topGap": 296
+  },
+  "nanotyrannus": {
+    "drawnHeight": 403,
+    "drawnWidth": 925,
+    "bottomGap": 307,
+    "topGap": 314
+  },
+  "nanuqsaurus": {
+    "drawnHeight": 554,
+    "drawnWidth": 970,
+    "bottomGap": 216,
+    "topGap": 254
+  },
+  "nasutoceratops": {
+    "drawnHeight": 631,
+    "drawnWidth": 975,
+    "bottomGap": 186,
+    "topGap": 207
+  },
+  "nemegtosaurus": {
+    "drawnHeight": 412,
+    "drawnWidth": 914,
+    "bottomGap": 292,
+    "topGap": 320
+  },
+  "neovenator": {
+    "drawnHeight": 370,
+    "drawnWidth": 915,
+    "bottomGap": 327,
+    "topGap": 327
+  },
+  "nigersaurus": {
+    "drawnHeight": 288,
+    "drawnWidth": 964,
+    "bottomGap": 363,
+    "topGap": 373
+  },
+  "nipponopterus": {
+    "drawnHeight": 1557,
+    "drawnWidth": 1425,
+    "bottomGap": 228,
+    "topGap": 263
+  },
+  "nipponosaurus": {
+    "drawnHeight": 468,
+    "drawnWidth": 962,
+    "bottomGap": 243,
+    "topGap": 313
+  },
+  "noasaurus": {
+    "drawnHeight": 366,
+    "drawnWidth": 853,
+    "bottomGap": 330,
+    "topGap": 328
+  },
+  "nodosaurus": {
+    "drawnHeight": 984,
+    "drawnWidth": 2640,
+    "bottomGap": 864,
+    "topGap": 968
+  },
+  "nothosaurus": {
+    "drawnHeight": 432,
+    "drawnWidth": 983,
+    "bottomGap": 269,
+    "topGap": 323
+  },
+  "nyctosaurus": {
+    "drawnHeight": 921,
+    "drawnWidth": 718,
+    "bottomGap": 52,
+    "topGap": 51
+  },
+  "odontochelys": {
+    "drawnHeight": 655,
+    "drawnWidth": 1713,
+    "bottomGap": 694,
+    "topGap": 699
+  },
+  "olorotitan": {
+    "drawnHeight": 458,
+    "drawnWidth": 972,
+    "bottomGap": 283,
+    "topGap": 283
+  },
+  "omeisaurus": {
+    "drawnHeight": 470,
+    "drawnWidth": 876,
+    "bottomGap": 277,
+    "topGap": 277
+  },
+  "opabinia": {
+    "drawnHeight": 840,
+    "drawnWidth": 2576,
+    "bottomGap": 960,
+    "topGap": 1016
+  },
+  "opabinia_cleaned": {
+    "drawnHeight": 840,
+    "drawnWidth": 2680,
+    "bottomGap": 960,
+    "topGap": 1016
+  },
+  "ophthalmosaurus": {
+    "drawnHeight": 348,
+    "drawnWidth": 872,
+    "bottomGap": 338,
+    "topGap": 338
+  },
+  "opisthocoelicaudia": {
+    "drawnHeight": 379,
+    "drawnWidth": 916,
+    "bottomGap": 321,
+    "topGap": 324
+  },
+  "ornithocheirus": {
+    "drawnHeight": 482,
+    "drawnWidth": 802,
+    "bottomGap": 271,
+    "topGap": 271
+  },
+  "ornitholestes": {
+    "drawnHeight": 457,
+    "drawnWidth": 938,
+    "bottomGap": 284,
+    "topGap": 283
+  },
+  "ornithomimus": {
+    "drawnHeight": 1390,
+    "drawnWidth": 2715,
+    "bottomGap": 704,
+    "topGap": 722
+  },
+  "ouranosaurus": {
+    "drawnHeight": 417,
+    "drawnWidth": 986,
+    "bottomGap": 296,
+    "topGap": 311
+  },
+  "oviraptor": {
+    "drawnHeight": 742,
+    "drawnWidth": 933,
+    "bottomGap": 153,
+    "topGap": 129
+  },
+  "pachycephalosaurus": {
+    "drawnHeight": 489,
+    "drawnWidth": 981,
+    "bottomGap": 263,
+    "topGap": 272
+  },
+  "pachycephalosaurus_battle": {
+    "drawnHeight": 394,
+    "drawnWidth": 980,
+    "bottomGap": 315,
+    "topGap": 315
+  },
+  "pachyrhinosaurus": {
+    "drawnHeight": 607,
+    "drawnWidth": 979,
+    "bottomGap": 224,
+    "topGap": 193
+  },
+  "panoplosaurus": {
+    "drawnHeight": 341,
+    "drawnWidth": 920,
+    "bottomGap": 341,
+    "topGap": 342
+  },
+  "paralitherizinosaurus": {
+    "drawnHeight": 893,
+    "drawnWidth": 966,
+    "bottomGap": 61,
+    "topGap": 70
+  },
+  "paralititan": {
+    "drawnHeight": 385,
+    "drawnWidth": 939,
+    "bottomGap": 319,
+    "topGap": 320
+  },
+  "parasaurolophus": {
+    "drawnHeight": 508,
+    "drawnWidth": 963,
+    "bottomGap": 240,
+    "topGap": 276
+  },
+  "parasaurolophus_battle": {
+    "drawnHeight": 465,
+    "drawnWidth": 980,
+    "bottomGap": 280,
+    "topGap": 279
+  },
+  "patagosaurus": {
+    "drawnHeight": 424,
+    "drawnWidth": 973,
+    "bottomGap": 288,
+    "topGap": 312
+  },
+  "patagotitan": {
+    "drawnHeight": 481,
+    "drawnWidth": 977,
+    "bottomGap": 271,
+    "topGap": 272
+  },
+  "pelecanimimus": {
+    "drawnHeight": 517,
+    "drawnWidth": 935,
+    "bottomGap": 253,
+    "topGap": 254
+  },
+  "pentaceratops": {
+    "drawnHeight": 1264,
+    "drawnWidth": 2544,
+    "bottomGap": 784,
+    "topGap": 768
+  },
+  "piatnitzkysaurus": {
+    "drawnHeight": 575,
+    "drawnWidth": 1803,
+    "bottomGap": 737,
+    "topGap": 736
+  },
+  "pinacosaurus": {
+    "drawnHeight": 274,
+    "drawnWidth": 898,
+    "bottomGap": 375,
+    "topGap": 375
+  },
+  "pisanosaurus": {
+    "drawnHeight": 828,
+    "drawnWidth": 1684,
+    "bottomGap": 611,
+    "topGap": 609
+  },
+  "placerias": {
+    "drawnHeight": 733,
+    "drawnWidth": 1670,
+    "bottomGap": 658,
+    "topGap": 657
+  },
+  "placodus": {
+    "drawnHeight": 284,
+    "drawnWidth": 958,
+    "bottomGap": 368,
+    "topGap": 372
+  },
+  "plateosaurus": {
+    "drawnHeight": 1073,
+    "drawnWidth": 2598,
+    "bottomGap": 845,
+    "topGap": 898
+  },
+  "plesiosaurus": {
+    "drawnHeight": 533,
+    "drawnWidth": 939,
+    "bottomGap": 258,
+    "topGap": 233
+  },
+  "pliosaurus": {
+    "drawnHeight": 623,
+    "drawnWidth": 1798,
+    "bottomGap": 716,
+    "topGap": 709
+  },
+  "polacanthus": {
+    "drawnHeight": 381,
+    "drawnWidth": 977,
+    "bottomGap": 322,
+    "topGap": 321
+  },
+  "postosuchus": {
+    "drawnHeight": 289,
+    "drawnWidth": 975,
+    "bottomGap": 362,
+    "topGap": 373
+  },
+  "prenocephale": {
+    "drawnHeight": 671,
+    "drawnWidth": 1833,
+    "bottomGap": 689,
+    "topGap": 688
+  },
+  "probactrosaurus": {
+    "drawnHeight": 431,
+    "drawnWidth": 917,
+    "bottomGap": 296,
+    "topGap": 297
+  },
+  "proceratosaurus": {
+    "drawnHeight": 354,
+    "drawnWidth": 887,
+    "bottomGap": 335,
+    "topGap": 335
+  },
+  "proganochelys": {
+    "drawnHeight": 813,
+    "drawnWidth": 1772,
+    "bottomGap": 611,
+    "topGap": 624
+  },
+  "prognathodon": {
+    "drawnHeight": 495,
+    "drawnWidth": 948,
+    "bottomGap": 215,
+    "topGap": 314
+  },
+  "protoceratops": {
+    "drawnHeight": 549,
+    "drawnWidth": 961,
+    "bottomGap": 226,
+    "topGap": 249
+  },
+  "protoceratops_battle": {
+    "drawnHeight": 550,
+    "drawnWidth": 980,
+    "bottomGap": 237,
+    "topGap": 237
+  },
+  "psittacosaurus": {
+    "drawnHeight": 488,
+    "drawnWidth": 973,
+    "bottomGap": 258,
+    "topGap": 278
+  },
+  "pteranodon": {
+    "drawnHeight": 579,
+    "drawnWidth": 986,
+    "bottomGap": 206,
+    "topGap": 239
+  },
+  "pteranodon_battle": {
+    "drawnHeight": 583,
+    "drawnWidth": 980,
+    "bottomGap": 221,
+    "topGap": 220
+  },
+  "pterodactylus": {
+    "drawnHeight": 629,
+    "drawnWidth": 962,
+    "bottomGap": 224,
+    "topGap": 171
+  },
+  "pterodaustro": {
+    "drawnHeight": 717,
+    "drawnWidth": 945,
+    "bottomGap": 133,
+    "topGap": 174
+  },
+  "puertasaurus": {
+    "drawnHeight": 430,
+    "drawnWidth": 983,
+    "bottomGap": 299,
+    "topGap": 295
+  },
+  "qianzhousaurus": {
+    "drawnHeight": 345,
+    "drawnWidth": 937,
+    "bottomGap": 339,
+    "topGap": 340
+  },
+  "quetzalcoatlus": {
+    "drawnHeight": 921,
+    "drawnWidth": 883,
+    "bottomGap": 42,
+    "topGap": 61
+  },
+  "quetzalcoatlus_battle": {
+    "drawnHeight": 799,
+    "drawnWidth": 950,
+    "bottomGap": 113,
+    "topGap": 112
+  },
+  "rapetosaurus": {
+    "drawnHeight": 288,
+    "drawnWidth": 908,
+    "bottomGap": 368,
+    "topGap": 368
+  },
+  "raptorex": {
+    "drawnHeight": 361,
+    "drawnWidth": 862,
+    "bottomGap": 331,
+    "topGap": 332
+  },
+  "rebbachisaurus": {
+    "drawnHeight": 372,
+    "drawnWidth": 902,
+    "bottomGap": 326,
+    "topGap": 326
+  },
+  "rhabdodon": {
+    "drawnHeight": 334,
+    "drawnWidth": 900,
+    "bottomGap": 345,
+    "topGap": 345
+  },
+  "rhamphorhynchus": {
+    "drawnHeight": 625,
+    "drawnWidth": 975,
+    "bottomGap": 271,
+    "topGap": 128
+  },
+  "rhoetosaurus": {
+    "drawnHeight": 914,
+    "drawnWidth": 1876,
+    "bottomGap": 567,
+    "topGap": 567
+  },
+  "rhomaleosaurus": {
+    "drawnHeight": 615,
+    "drawnWidth": 1708,
+    "bottomGap": 682,
+    "topGap": 751
+  },
+  "riojasaurus": {
+    "drawnHeight": 759,
+    "drawnWidth": 1883,
+    "bottomGap": 643,
+    "topGap": 646
+  },
+  "rugops": {
+    "drawnHeight": 408,
+    "drawnWidth": 948,
+    "bottomGap": 286,
+    "topGap": 330
+  },
+  "rutiodon": {
+    "drawnHeight": 435,
+    "drawnWidth": 1850,
+    "bottomGap": 807,
+    "topGap": 806
+  },
+  "saichania": {
+    "drawnHeight": 431,
+    "drawnWidth": 959,
+    "bottomGap": 286,
+    "topGap": 307
+  },
+  "saltasaurus": {
+    "drawnHeight": 534,
+    "drawnWidth": 981,
+    "bottomGap": 229,
+    "topGap": 261
+  },
+  "sanchuryu": {
+    "drawnHeight": 585,
+    "drawnWidth": 962,
+    "bottomGap": 215,
+    "topGap": 224
+  },
+  "sarcosuchus": {
+    "drawnHeight": 199,
+    "drawnWidth": 946,
+    "bottomGap": 396,
+    "topGap": 429
+  },
+  "sasayamagnomus": {
+    "drawnHeight": 453,
+    "drawnWidth": 926,
+    "bottomGap": 286,
+    "topGap": 285
+  },
+  "saturnalia": {
+    "drawnHeight": 375,
+    "drawnWidth": 956,
+    "bottomGap": 318,
+    "topGap": 331
+  },
+  "sauropelta": {
+    "drawnHeight": 466,
+    "drawnWidth": 984,
+    "bottomGap": 297,
+    "topGap": 261
+  },
+  "saurophaganax": {
+    "drawnHeight": 1132,
+    "drawnWidth": 2683,
+    "bottomGap": 822,
+    "topGap": 862
+  },
+  "sauroposeidon": {
+    "drawnHeight": 380,
+    "drawnWidth": 977,
+    "bottomGap": 322,
+    "topGap": 322
+  },
+  "savannasaurus": {
+    "drawnHeight": 255,
+    "drawnWidth": 982,
+    "bottomGap": 376,
+    "topGap": 393
+  },
+  "scelidosaurus": {
+    "drawnHeight": 349,
+    "drawnWidth": 982,
+    "bottomGap": 336,
+    "topGap": 339
+  },
+  "scipionyx": {
+    "drawnHeight": 405,
+    "drawnWidth": 913,
+    "bottomGap": 310,
+    "topGap": 309
+  },
+  "scutellosaurus": {
+    "drawnHeight": 783,
+    "drawnWidth": 1905,
+    "bottomGap": 633,
+    "topGap": 632
+  },
+  "segisaurus": {
+    "drawnHeight": 374,
+    "drawnWidth": 921,
+    "bottomGap": 325,
+    "topGap": 325
+  },
+  "segnosaurus": {
+    "drawnHeight": 527,
+    "drawnWidth": 927,
+    "bottomGap": 251,
+    "topGap": 246
+  },
+  "shamosaurus": {
+    "drawnHeight": 599,
+    "drawnWidth": 1788,
+    "bottomGap": 722,
+    "topGap": 727
+  },
+  "shantungosaurus": {
+    "drawnHeight": 339,
+    "drawnWidth": 973,
+    "bottomGap": 330,
+    "topGap": 355
+  },
+  "shonisaurus": {
+    "drawnHeight": 390,
+    "drawnWidth": 966,
+    "bottomGap": 291,
+    "topGap": 343
+  },
+  "shringasaurus": {
+    "drawnHeight": 978,
+    "drawnWidth": 1867,
+    "bottomGap": 535,
+    "topGap": 535
+  },
+  "shunosaurus": {
+    "drawnHeight": 447,
+    "drawnWidth": 964,
+    "bottomGap": 295,
+    "topGap": 282
+  },
+  "shuvuuia": {
+    "drawnHeight": 430,
+    "drawnWidth": 885,
+    "bottomGap": 291,
+    "topGap": 303
+  },
+  "silesaurus": {
+    "drawnHeight": 1069,
+    "drawnWidth": 2337,
+    "bottomGap": 1051,
+    "topGap": 1048
+  },
+  "sinocalliopteryx": {
+    "drawnHeight": 364,
+    "drawnWidth": 920,
+    "bottomGap": 329,
+    "topGap": 331
+  },
+  "sinoceratops": {
+    "drawnHeight": 1212,
+    "drawnWidth": 2085,
+    "bottomGap": 999,
+    "topGap": 989
+  },
+  "sinopterus": {
+    "drawnHeight": 1085,
+    "drawnWidth": 1244,
+    "bottomGap": 346,
+    "topGap": 617
+  },
+  "sinornithomimus": {
+    "drawnHeight": 596,
+    "drawnWidth": 833,
+    "bottomGap": 221,
+    "topGap": 207
+  },
+  "sinornithosaurus": {
+    "drawnHeight": 420,
+    "drawnWidth": 972,
+    "bottomGap": 302,
+    "topGap": 302
+  },
+  "sinosauropteryx": {
+    "drawnHeight": 727,
+    "drawnWidth": 1914,
+    "bottomGap": 610,
+    "topGap": 711
+  },
+  "sinraptor": {
+    "drawnHeight": 330,
+    "drawnWidth": 930,
+    "bottomGap": 341,
+    "topGap": 353
+  },
+  "sordes": {
+    "drawnHeight": 521,
+    "drawnWidth": 937,
+    "bottomGap": 233,
+    "topGap": 270
+  },
+  "spinophorosaurus": {
+    "drawnHeight": 500,
+    "drawnWidth": 1874,
+    "bottomGap": 773,
+    "topGap": 775
+  },
+  "spinosaurus": {
+    "drawnHeight": 405,
+    "drawnWidth": 951,
+    "bottomGap": 307,
+    "topGap": 312
+  },
+  "spinosaurus_battle": {
+    "drawnHeight": 394,
+    "drawnWidth": 956,
+    "bottomGap": 296,
+    "topGap": 334
+  },
+  "staurikosaurus": {
+    "drawnHeight": 814,
+    "drawnWidth": 1690,
+    "bottomGap": 617,
+    "topGap": 617
+  },
+  "stegocephalia": {
+    "drawnHeight": 806,
+    "drawnWidth": 2859,
+    "bottomGap": 1122,
+    "topGap": 1240
+  },
+  "stegoceras": {
+    "drawnHeight": 430,
+    "drawnWidth": 884,
+    "bottomGap": 297,
+    "topGap": 297
+  },
+  "stegosaurus": {
+    "drawnHeight": 505,
+    "drawnWidth": 947,
+    "bottomGap": 261,
+    "topGap": 258
+  },
+  "stegosaurus_battle": {
+    "drawnHeight": 447,
+    "drawnWidth": 980,
+    "bottomGap": 289,
+    "topGap": 288
+  },
+  "stegouros": {
+    "drawnHeight": 1208,
+    "drawnWidth": 2648,
+    "bottomGap": 800,
+    "topGap": 808
+  },
+  "struthiomimus": {
+    "drawnHeight": 1372,
+    "drawnWidth": 2634,
+    "bottomGap": 724,
+    "topGap": 720
+  },
+  "stygimoloch": {
+    "drawnHeight": 430,
+    "drawnWidth": 894,
+    "bottomGap": 297,
+    "topGap": 297
+  },
+  "styracosaurus": {
+    "drawnHeight": 512,
+    "drawnWidth": 961,
+    "bottomGap": 294,
+    "topGap": 218
+  },
+  "styracosaurus_battle": {
+    "drawnHeight": 454,
+    "drawnWidth": 980,
+    "bottomGap": 285,
+    "topGap": 285
+  },
+  "styxosaurus": {
+    "drawnHeight": 195,
+    "drawnWidth": 934,
+    "bottomGap": 410,
+    "topGap": 419
+  },
+  "suchomimus": {
+    "drawnHeight": 431,
+    "drawnWidth": 977,
+    "bottomGap": 290,
+    "topGap": 303
+  },
+  "supersaurus": {
+    "drawnHeight": 213,
+    "drawnWidth": 988,
+    "bottomGap": 403,
+    "topGap": 408
+  },
+  "tambatitan": {
+    "drawnHeight": 472,
+    "drawnWidth": 988,
+    "bottomGap": 276,
+    "topGap": 276
+  },
+  "tanystropheus": {
+    "drawnHeight": 379,
+    "drawnWidth": 981,
+    "bottomGap": 343,
+    "topGap": 302
+  },
+  "tapejara": {
+    "drawnHeight": 955,
+    "drawnWidth": 721,
+    "bottomGap": 35,
+    "topGap": 34
+  },
+  "tarbosaurus": {
+    "drawnHeight": 435,
+    "drawnWidth": 960,
+    "bottomGap": 268,
+    "topGap": 321
+  },
+  "tarchia": {
+    "drawnHeight": 301,
+    "drawnWidth": 982,
+    "bottomGap": 342,
+    "topGap": 381
+  },
+  "temnodontosaurus": {
+    "drawnHeight": 341,
+    "drawnWidth": 918,
+    "bottomGap": 341,
+    "topGap": 342
+  },
+  "tenontosaurus": {
+    "drawnHeight": 298,
+    "drawnWidth": 980,
+    "bottomGap": 329,
+    "topGap": 397
+  },
+  "thalassodromeus": {
+    "drawnHeight": 787,
+    "drawnWidth": 628,
+    "bottomGap": 143,
+    "topGap": 94
+  },
+  "thanatotheristes": {
+    "drawnHeight": 814,
+    "drawnWidth": 1892,
+    "bottomGap": 616,
+    "topGap": 618
+  },
+  "thecodontosaurus": {
+    "drawnHeight": 473,
+    "drawnWidth": 930,
+    "bottomGap": 276,
+    "topGap": 275
+  },
+  "therizinosaurus": {
+    "drawnHeight": 569,
+    "drawnWidth": 947,
+    "bottomGap": 236,
+    "topGap": 219
+  },
+  "therizinosaurus_battle": {
+    "drawnHeight": 729,
+    "drawnWidth": 980,
+    "bottomGap": 148,
+    "topGap": 147
+  },
+  "timimus": {
+    "drawnHeight": 688,
+    "drawnWidth": 1836,
+    "bottomGap": 649,
+    "topGap": 711
+  },
+  "titanoboa": {
+    "drawnHeight": 876,
+    "drawnWidth": 974,
+    "bottomGap": 77,
+    "topGap": 71
+  },
+  "titanosaurus": {
+    "drawnHeight": 251,
+    "drawnWidth": 921,
+    "bottomGap": 386,
+    "topGap": 387
+  },
+  "torosaurus": {
+    "drawnHeight": 588,
+    "drawnWidth": 967,
+    "bottomGap": 238,
+    "topGap": 198
+  },
+  "torvosaurus": {
+    "drawnHeight": 1008,
+    "drawnWidth": 2579,
+    "bottomGap": 832,
+    "topGap": 976
+  },
+  "triceratops": {
+    "drawnHeight": 333,
+    "drawnWidth": 942,
+    "bottomGap": 346,
+    "topGap": 345
+  },
+  "triceratops_battle": {
+    "drawnHeight": 388,
+    "drawnWidth": 965,
+    "bottomGap": 305,
+    "topGap": 331
+  },
+  "troodon": {
+    "drawnHeight": 483,
+    "drawnWidth": 939,
+    "bottomGap": 269,
+    "topGap": 272
+  },
+  "tropeognathus": {
+    "drawnHeight": 672,
+    "drawnWidth": 949,
+    "bottomGap": 223,
+    "topGap": 129
+  },
+  "tsintaosaurus": {
+    "drawnHeight": 851,
+    "drawnWidth": 1821,
+    "bottomGap": 599,
+    "topGap": 598
+  },
+  "tuojiangosaurus": {
+    "drawnHeight": 1264,
+    "drawnWidth": 2688,
+    "bottomGap": 768,
+    "topGap": 784
+  },
+  "tupandactylus": {
+    "drawnHeight": 940,
+    "drawnWidth": 776,
+    "bottomGap": 42,
+    "topGap": 42
+  },
+  "turiasaurus": {
+    "drawnHeight": 490,
+    "drawnWidth": 985,
+    "bottomGap": 267,
+    "topGap": 267
+  },
+  "tylosaurus": {
+    "drawnHeight": 302,
+    "drawnWidth": 993,
+    "bottomGap": 362,
+    "topGap": 360
+  },
+  "tyrannomimus": {
+    "drawnHeight": 1248,
+    "drawnWidth": 2608,
+    "bottomGap": 776,
+    "topGap": 792
+  },
+  "tyrannosaurus": {
+    "drawnHeight": 407,
+    "drawnWidth": 964,
+    "bottomGap": 273,
+    "topGap": 344
+  },
+  "tyrannosaurus_battle": {
+    "drawnHeight": 351,
+    "drawnWidth": 955,
+    "bottomGap": 306,
+    "topGap": 367
+  },
+  "tyrannotitan": {
+    "drawnHeight": 327,
+    "drawnWidth": 944,
+    "bottomGap": 348,
+    "topGap": 349
+  },
+  "ulughbegsaurus": {
+    "drawnHeight": 1061,
+    "drawnWidth": 2634,
+    "bottomGap": 823,
+    "topGap": 932
+  },
+  "unaysaurus": {
+    "drawnHeight": 760,
+    "drawnWidth": 2058,
+    "bottomGap": 996,
+    "topGap": 996
+  },
+  "utahraptor": {
+    "drawnHeight": 369,
+    "drawnWidth": 977,
+    "bottomGap": 318,
+    "topGap": 337
+  },
+  "utatsusaurus": {
+    "drawnHeight": 201,
+    "drawnWidth": 963,
+    "bottomGap": 390,
+    "topGap": 433
+  },
+  "vectipelta": {
+    "drawnHeight": 720,
+    "drawnWidth": 2616,
+    "bottomGap": 1008,
+    "topGap": 1024
+  },
+  "velociraptor": {
+    "drawnHeight": 360,
+    "drawnWidth": 967,
+    "bottomGap": 332,
+    "topGap": 332
+  },
+  "velociraptor_battle": {
+    "drawnHeight": 421,
+    "drawnWidth": 980,
+    "bottomGap": 302,
+    "topGap": 301
+  },
+  "vulcanodon": {
+    "drawnHeight": 434,
+    "drawnWidth": 974,
+    "bottomGap": 286,
+    "topGap": 304
+  },
+  "wakayama-soryu": {
+    "drawnHeight": 281,
+    "drawnWidth": 922,
+    "bottomGap": 351,
+    "topGap": 392
+  },
+  "wakinosaurus": {
+    "drawnHeight": 714,
+    "drawnWidth": 985,
+    "bottomGap": 151,
+    "topGap": 159
+  },
+  "whale_real": {
+    "drawnHeight": 210,
+    "drawnWidth": 980,
+    "bottomGap": 407,
+    "topGap": 407
+  },
+  "whale_side": {
+    "drawnHeight": 239,
+    "drawnWidth": 938,
+    "bottomGap": 382,
+    "topGap": 403
+  },
+  "wuerhosaurus": {
+    "drawnHeight": 413,
+    "drawnWidth": 978,
+    "bottomGap": 305,
+    "topGap": 306
+  },
+  "xenoceratops": {
+    "drawnHeight": 538,
+    "drawnWidth": 963,
+    "bottomGap": 272,
+    "topGap": 214
+  },
+  "xiongguanlong": {
+    "drawnHeight": 396,
+    "drawnWidth": 923,
+    "bottomGap": 314,
+    "topGap": 314
+  },
+  "yamatosaurus": {
+    "drawnHeight": 495,
+    "drawnWidth": 974,
+    "bottomGap": 252,
+    "topGap": 277
+  },
+  "yangchuanosaurus": {
+    "drawnHeight": 1064,
+    "drawnWidth": 2568,
+    "bottomGap": 856,
+    "topGap": 896
+  },
+  "yi": {
+    "drawnHeight": 981,
+    "drawnWidth": 1331,
+    "bottomGap": 533,
+    "topGap": 534
+  },
+  "yunnanosaurus": {
+    "drawnHeight": 596,
+    "drawnWidth": 963,
+    "bottomGap": 200,
+    "topGap": 228
+  },
+  "yutyrannus": {
+    "drawnHeight": 543,
+    "drawnWidth": 938,
+    "bottomGap": 247,
+    "topGap": 234
+  },
+  "zuniceratops": {
+    "drawnHeight": 553,
+    "drawnWidth": 991,
+    "bottomGap": 241,
+    "topGap": 230
+  },
+  "zuul": {
+    "drawnHeight": 329,
+    "drawnWidth": 929,
+    "bottomGap": 344,
+    "topGap": 351
+  }
+}

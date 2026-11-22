@@ -39,7 +39,7 @@ const schema = {
             "applicationCategory": "EducationalApplication",
             "operatingSystem": "All",
             "browserRequirements": "Requires JavaScript. Requires HTML5 Canvas/SVG.",
-            "description": "360種以上の恐竜・古生物を人間（1.7m）やアフリカゾウ、シロナガスクジラ（30m）、大型ジェット旅客機（70m）と実寸1:1スケールで自由に並べて大きさ比較できるインタラクティブシミュレータ。骨格実寸モードとリアル対決モードに対応。",
+            "description": "365種以上の恐竜・古生物を人間（1.7m）やアフリカゾウ、シロナガスクジラ（30m）、大型ジェット旅客機（70m）と実寸1:1スケールで自由に並べて大きさ比較できるインタラクティブシミュレータ。骨格実寸モードとリアル対決モードに対応。",
             "offers": {
                 "@type": "Offer",
                 "price": "0",
@@ -73,7 +73,7 @@ const schema = {
 };
 ---
 
-<Layout title="恐竜サイズ比較シミュレータ｜人間・動物・クジラ・旅客機と実寸1:1比較 | Dino-Portal" activeTab="comparison" description="360種以上の恐竜・古生物を人間（1.7m）やアフリカゾウ、シロナガスクジラ（30m）、大型ジェット旅客機（70m）と実寸1:1スケールで自由に並べて大きさ比較できる体験型シミュレータ。ティラノサウルスや超巨大竜脚類の真のスケールをブラウザ上で体感！" schema={schema}>
+<Layout title="恐竜サイズ比較シミュレータ｜人間・動物・クジラ・旅客機と実寸1:1比較 | Dino-Portal" activeTab="comparison" description="365種以上の恐竜・古生物を人間（1.7m）やアフリカゾウ、シロナガスクジラ（30m）、大型ジェット旅客機（70m）と実寸1:1スケールで自由に並べて大きさ比較できる体験型シミュレータ。ティラノサウルスや超巨大竜脚類の真のスケールをブラウザ上で体感！" schema={schema}>
     <section class="page-header">
         <h2 class="page-title">サイズ比較シミュレータ</h2>
         <p class="page-subtitle">恐竜と現代の様々なオブジェクトのサイズを視覚的に比較できるシミュレーションツールです。</p>
@@ -332,6 +332,8 @@ const schema = {
  
     <!-- CLIENT SCRIPT FOR INTERACTIVE LOGIC -->
     <script>
+        import CYBER_DRAWN_BOUNDS from '../data/cyberDrawnBounds.json';
+
         const PANEL_HEIGHT = 405;
         const BASELINE_PX = 25;
         const SAFE_ZONE_H = PANEL_HEIGHT - BASELINE_PX; // 380px
@@ -362,129 +364,148 @@ const schema = {
         let currentMode: 'bone' | 'battle' = 'bone';
 
         // 骨格モード時の公式全長（realLength）整合用キャリブレーション（骨格⇔リアル切替でサイズ差0%を実現）
-        const BONE_CALIBRATED_ASSETS: Record<string, { contentHeightPx: number; bottomGap: number }> = {
-            tyrannosaurus: { contentHeightPx: 353, bottomGap: 273 },
-            triceratops: { contentHeightPx: 314, bottomGap: 346 },
-            velociraptor: { contentHeightPx: 290, bottomGap: 332 },
-            protoceratops: { contentHeightPx: 550, bottomGap: 226 },
-            allosaurus: { contentHeightPx: 396, bottomGap: 319 },
-            stegosaurus: { contentHeightPx: 421, bottomGap: 261 },
-            spinosaurus: { contentHeightPx: 317, bottomGap: 307 },
-            giganotosaurus: { contentHeightPx: 282, bottomGap: 342 },
-            brachiosaurus: { contentHeightPx: 482, bottomGap: 98 },
-            ankylosaurus: { contentHeightPx: 229, bottomGap: 391 },
-            mosasaurus: { contentHeightPx: 196, bottomGap: 356 },
-            pteranodon: { contentHeightPx: 579, bottomGap: 206 },
-            pachycephalosaurus: { contentHeightPx: 392, bottomGap: 263 },
-            parasaurolophus: { contentHeightPx: 405, bottomGap: 240 },
-            quetzalcoatlus: { contentHeightPx: 921, bottomGap: 42 },
-            elasmosaurus: { contentHeightPx: 238, bottomGap: 222 },
-            styracosaurus: { contentHeightPx: 402, bottomGap: 294 },
-            argentinosaurus: { contentHeightPx: 247, bottomGap: 354 },
-            iguanodon: { contentHeightPx: 360, bottomGap: 331 },
-            carnotaurus: { contentHeightPx: 347, bottomGap: 286 },
-            therizinosaurus: { contentHeightPx: 474, bottomGap: 236, drawnHeightPx: 569 } as any,
-            dilophosaurus: { contentHeightPx: 301, bottomGap: 216 },
-            fukuiraptor: { contentHeightPx: 369, bottomGap: 265 },
-            futabasaurus: { contentHeightPx: 407, bottomGap: 299 }
+        const BONE_CALIBRATED_ASSETS: Record<string, { contentHeightPx: number; bottomGap: number; drawnHeightPx?: number }> = {
+            tyrannosaurus: { contentHeightPx: 353, bottomGap: 273, drawnHeightPx: 440 },
+            triceratops: { contentHeightPx: 314, bottomGap: 346, drawnHeightPx: 367 },
+            velociraptor: { contentHeightPx: 290, bottomGap: 332, drawnHeightPx: 395 },
+            protoceratops: { contentHeightPx: 550, bottomGap: 226, drawnHeightPx: 550 },
+            allosaurus: { contentHeightPx: 396, bottomGap: 319, drawnHeightPx: 395 },
+            stegosaurus: { contentHeightPx: 421, bottomGap: 261, drawnHeightPx: 486 },
+            spinosaurus: { contentHeightPx: 317, bottomGap: 307, drawnHeightPx: 440 },
+            giganotosaurus: { contentHeightPx: 282, bottomGap: 342, drawnHeightPx: 388 },
+            brachiosaurus: { contentHeightPx: 482, bottomGap: 98, drawnHeightPx: 828 },
+            ankylosaurus: { contentHeightPx: 229, bottomGap: 391, drawnHeightPx: 275 },
+            mosasaurus: { contentHeightPx: 196, bottomGap: 356, drawnHeightPx: 288 },
+            pteranodon: { contentHeightPx: 579, bottomGap: 206, drawnHeightPx: 588 },
+            pachycephalosaurus: { contentHeightPx: 392, bottomGap: 263, drawnHeightPx: 474 },
+            parasaurolophus: { contentHeightPx: 405, bottomGap: 240, drawnHeightPx: 520 },
+            quetzalcoatlus: { contentHeightPx: 921, bottomGap: 42, drawnHeightPx: 921 },
+            elasmosaurus: { contentHeightPx: 238, bottomGap: 222, drawnHeightPx: 556 },
+            styracosaurus: { contentHeightPx: 402, bottomGap: 294, drawnHeightPx: 432 },
+            argentinosaurus: { contentHeightPx: 247, bottomGap: 354, drawnHeightPx: 326 },
+            iguanodon: { contentHeightPx: 360, bottomGap: 331, drawnHeightPx: 382 },
+            carnotaurus: { contentHeightPx: 347, bottomGap: 286, drawnHeightPx: 428 },
+            therizinosaurus: { contentHeightPx: 474, bottomGap: 236, drawnHeightPx: 569 },
+            dilophosaurus: { contentHeightPx: 301, bottomGap: 216, drawnHeightPx: 568 },
+            fukuiraptor: { contentHeightPx: 369, bottomGap: 265, drawnHeightPx: 470 },
+            futabasaurus: { contentHeightPx: 407, bottomGap: 299, drawnHeightPx: 402 }
         };
 
         // Battle Assets Registry (Calibrated for strict length & posture proportion)
-        const BATTLE_ASSETS: Record<string, { image: string; contentHeightPx: number; bottomGap: number }> = {
+        const BATTLE_ASSETS: Record<string, { image: string; contentHeightPx: number; bottomGap: number; drawnHeightPx?: number }> = {
             tyrannosaurus: {
                 image: '/images/cyber/tyrannosaurus_battle.webp',
                 contentHeightPx: 349,
-                bottomGap: 306
+                bottomGap: 306,
+                drawnHeightPx: 351
             },
             triceratops: {
                 image: '/images/cyber/triceratops_battle.webp',
                 contentHeightPx: 322,
-                bottomGap: 305
+                bottomGap: 305,
+                drawnHeightPx: 388
             },
             spinosaurus: {
                 image: '/images/cyber/spinosaurus_battle.webp',
                 contentHeightPx: 319,
-                bottomGap: 296
+                bottomGap: 296,
+                drawnHeightPx: 394
             },
             giganotosaurus: {
                 image: '/images/cyber/giganotosaurus_battle.webp',
                 contentHeightPx: 294,
-                bottomGap: 346
+                bottomGap: 346,
+                drawnHeightPx: 283
             },
             brachiosaurus: {
                 image: '/images/cyber/brachiosaurus_battle.webp',
                 contentHeightPx: 512,
-                bottomGap: 254
+                bottomGap: 254,
+                drawnHeightPx: 514
             },
             ankylosaurus: {
                 image: '/images/cyber/ankylosaurus_battle.webp',
                 contentHeightPx: 239,
-                bottomGap: 328
+                bottomGap: 328,
+                drawnHeightPx: 333
             },
             mosasaurus: {
                 image: '/images/cyber/mosasaurus_battle.webp',
                 contentHeightPx: 202,
-                bottomGap: 413
+                bottomGap: 413,
+                drawnHeightPx: 199
             },
             pteranodon: {
                 image: '/images/cyber/pteranodon_battle.webp',
                 contentHeightPx: 583,
-                bottomGap: 221
+                bottomGap: 221,
+                drawnHeightPx: 583
             },
             pachycephalosaurus: {
                 image: '/images/cyber/pachycephalosaurus_battle.webp',
                 contentHeightPx: 392,
-                bottomGap: 315
+                bottomGap: 315,
+                drawnHeightPx: 394
             },
             stegosaurus: {
                 image: '/images/cyber/stegosaurus_battle.webp',
                 contentHeightPx: 447,
-                bottomGap: 289
+                bottomGap: 289,
+                drawnHeightPx: 447
             },
             parasaurolophus: {
                 image: '/images/cyber/parasaurolophus_battle.webp',
                 contentHeightPx: 413,
-                bottomGap: 280
+                bottomGap: 280,
+                drawnHeightPx: 465
             },
             quetzalcoatlus: {
                 image: '/images/cyber/quetzalcoatlus_battle.webp',
                 contentHeightPx: 799,
-                bottomGap: 113
+                bottomGap: 113,
+                drawnHeightPx: 799
             },
             elasmosaurus: {
                 image: '/images/cyber/elasmosaurus_battle.webp',
                 contentHeightPx: 245,
-                bottomGap: 388
+                bottomGap: 388,
+                drawnHeightPx: 248
             },
             velociraptor: {
                 image: '/images/cyber/velociraptor_battle.webp',
                 contentHeightPx: 294,
-                bottomGap: 302
+                bottomGap: 302,
+                drawnHeightPx: 421
             },
             allosaurus: {
                 image: '/images/cyber/allosaurus_battle.webp',
                 contentHeightPx: 404,
-                bottomGap: 328
+                bottomGap: 328,
+                drawnHeightPx: 368
             },
             styracosaurus: {
                 image: '/images/cyber/styracosaurus_battle.webp',
                 contentHeightPx: 410,
-                bottomGap: 285
+                bottomGap: 285,
+                drawnHeightPx: 454
             },
             argentinosaurus: {
                 image: '/images/cyber/argentinosaurus_battle.webp',
                 contentHeightPx: 252,
-                bottomGap: 321
+                bottomGap: 321,
+                drawnHeightPx: 383
             },
             iguanodon: {
                 image: '/images/cyber/iguanodon_battle.webp',
                 contentHeightPx: 363,
-                bottomGap: 273
+                bottomGap: 273,
+                drawnHeightPx: 479
             },
             protoceratops: {
                 image: '/images/cyber/protoceratops_battle.webp',
                 contentHeightPx: 561,
-                bottomGap: 237
+                bottomGap: 237,
+                drawnHeightPx: 550
             },
             carnotaurus: {
                 image: '/images/cyber/carnotaurus_battle.webp',
@@ -492,64 +513,69 @@ const schema = {
                 contentHeightPx: 366,
                 bottomGap: 297,
                 drawnHeightPx: 430
-            } as any,
+            },
             therizinosaurus: {
                 image: '/images/cyber/therizinosaurus_battle.webp',
                 // Giant scythe claws upright stance, realHeight 5.0m, Length 10.0m (5.0 * 980 / 10.0 = 490px)
                 contentHeightPx: 490,
                 bottomGap: 148,
                 drawnHeightPx: 729
-            } as any,
+            },
             dilophosaurus: {
                 image: '/images/cyber/dilophosaurus_battle.webp',
                 // Paired skull crests, realHeight 2.2m, Length 7.0m (2.2 * 980 / 7.0 = 308px)
                 contentHeightPx: 308,
                 bottomGap: 288,
                 drawnHeightPx: 449
-            } as any,
+            },
             fukuiraptor: {
                 image: '/images/cyber/fukuiraptor_battle.webp',
                 // Japanese megaraptoran, realHeight 1.6m, Length 4.2m (1.6 * 980 / 4.2 = 373px)
                 contentHeightPx: 373,
                 bottomGap: 275,
                 drawnHeightPx: 475
-            } as any,
+            },
             futabasaurus: {
                 image: '/images/cyber/futabasaurus_battle.webp',
                 // Japanese elasmosaurid plesiosaur, realHeight 2.9m, Length 7.0m (2.9 * 980 / 7.0 = 406px)
                 contentHeightPx: 406,
                 bottomGap: 401,
                 drawnHeightPx: 223
-            } as any,
+            },
             human: {
                 image: '/images/cyber/dino_papa_real.webp',
                 // Photorealistic DINO Papa (1.7m) for real battle mode
                 contentHeightPx: 936,
-                bottomGap: 44
+                bottomGap: 44,
+                drawnHeightPx: 936
             },
             car: {
                 image: '/images/cyber/car_real.webp',
                 // Photorealistic passenger SUV, realHeight 1.5m, realLength 4.5m
                 contentHeightPx: 327,
-                bottomGap: 318
+                bottomGap: 318,
+                drawnHeightPx: 388
             },
             elephant: {
                 image: '/images/cyber/elephant_real.webp',
                 // Photorealistic African Elephant, realHeight 3.2m
                 contentHeightPx: 596,
-                bottomGap: 214
+                bottomGap: 214,
+                drawnHeightPx: 596
             },
             whale: {
                 image: '/images/cyber/whale_real.webp',
                 // Photorealistic Blue Whale, realHeight 5.0m, realLength 30.0m (calibrated to exact 30.0m)
                 contentHeightPx: 163,
-                bottomGap: 407
+                bottomGap: 407,
+                drawnHeightPx: 210
             },
             airplane: {
                 image: '/images/cyber/airplane_real.webp',
                 // Photorealistic Commercial Jet Airliner, realHeight 19.0m, realLength 70.0m
                 contentHeightPx: 260,
-                bottomGap: 382
+                bottomGap: 382,
+                drawnHeightPx: 260
             }
         };
 
@@ -999,18 +1025,23 @@ const schema = {
                     dinoImg.src = BATTLE_ASSETS[dinoId].image;
                     dinoContentH = BATTLE_ASSETS[dinoId].contentHeightPx;
                     dinoBottomGap = BATTLE_ASSETS[dinoId].bottomGap;
-                    dinoDrawnH = (BATTLE_ASSETS[dinoId] as any).drawnHeightPx || dinoContentH;
+                    dinoDrawnH = (BATTLE_ASSETS[dinoId] as any).drawnHeightPx
+                        || (CYBER_DRAWN_BOUNDS as any)[dinoId + '_battle']?.drawnHeight
+                        || (CYBER_DRAWN_BOUNDS as any)[dinoId]?.drawnHeight
+                        || dinoContentH;
                     dinoImg.style.mixBlendMode = 'normal';
                 } else {
                     dinoImg.src = `/images/cyber/${dinoId}.webp`;
                     if (BONE_CALIBRATED_ASSETS[dinoId]) {
                         dinoContentH = BONE_CALIBRATED_ASSETS[dinoId].contentHeightPx;
                         dinoBottomGap = BONE_CALIBRATED_ASSETS[dinoId].bottomGap;
-                        dinoDrawnH = (BONE_CALIBRATED_ASSETS[dinoId] as any).drawnHeightPx || dinoContentH;
+                        dinoDrawnH = (BONE_CALIBRATED_ASSETS[dinoId] as any).drawnHeightPx
+                            || (CYBER_DRAWN_BOUNDS as any)[dinoId]?.drawnHeight
+                            || dinoContentH;
                     } else {
                         dinoContentH = activeDino.cyberMetadata?.contentHeightPx || 450;
                         dinoBottomGap = activeDino.cyberMetadata?.bottomGap || 280;
-                        dinoDrawnH = dinoContentH;
+                        dinoDrawnH = (CYBER_DRAWN_BOUNDS as any)[dinoId]?.drawnHeight || dinoContentH;
                     }
                     dinoImg.style.mixBlendMode = 'screen';
                 }
@@ -1091,7 +1122,11 @@ const schema = {
                     refImg.src = BATTLE_ASSETS[activeAsset.id].image;
                     activeAsset.contentHeightPx = BATTLE_ASSETS[activeAsset.id].contentHeightPx;
                     activeAsset.bottomGap = BATTLE_ASSETS[activeAsset.id].bottomGap;
-                    activeAsset.drawnHeightPx = (BATTLE_ASSETS[activeAsset.id] as any).drawnHeightPx || activeAsset.contentHeightPx;
+                    activeAsset.drawnHeightPx = (BATTLE_ASSETS[activeAsset.id] as any).drawnHeightPx
+                        || (CYBER_DRAWN_BOUNDS as any)[activeAsset.id + '_battle']?.drawnHeight
+                        || (CYBER_DRAWN_BOUNDS as any)[activeAsset.id + '_real']?.drawnHeight
+                        || (CYBER_DRAWN_BOUNDS as any)[activeAsset.id]?.drawnHeight
+                        || activeAsset.contentHeightPx;
                     refImg.style.mixBlendMode = 'normal';
                 } else {
                     refImg.src = '/' + activeAsset.icon;
@@ -1100,16 +1135,18 @@ const schema = {
                         if (BONE_CALIBRATED_ASSETS[activeAsset.id]) {
                             activeAsset.contentHeightPx = BONE_CALIBRATED_ASSETS[activeAsset.id].contentHeightPx;
                             activeAsset.bottomGap = BONE_CALIBRATED_ASSETS[activeAsset.id].bottomGap;
-                            activeAsset.drawnHeightPx = (BONE_CALIBRATED_ASSETS[activeAsset.id] as any).drawnHeightPx || activeAsset.contentHeightPx;
+                            activeAsset.drawnHeightPx = (BONE_CALIBRATED_ASSETS[activeAsset.id] as any).drawnHeightPx
+                                || (CYBER_DRAWN_BOUNDS as any)[activeAsset.id]?.drawnHeight
+                                || activeAsset.contentHeightPx;
                         } else if (activeAsset.rawDino?.cyberMetadata) {
                             activeAsset.contentHeightPx = activeAsset.rawDino.cyberMetadata.contentHeightPx;
                             activeAsset.bottomGap = activeAsset.rawDino.cyberMetadata.bottomGap;
-                            activeAsset.drawnHeightPx = activeAsset.contentHeightPx;
+                            activeAsset.drawnHeightPx = (CYBER_DRAWN_BOUNDS as any)[activeAsset.id]?.drawnHeight || activeAsset.contentHeightPx;
                         }
                     } else if (BONE_REF_ASSETS[activeAsset.id]) {
                         activeAsset.contentHeightPx = BONE_REF_ASSETS[activeAsset.id].contentHeightPx;
                         activeAsset.bottomGap = BONE_REF_ASSETS[activeAsset.id].bottomGap;
-                        activeAsset.drawnHeightPx = activeAsset.contentHeightPx;
+                        activeAsset.drawnHeightPx = (CYBER_DRAWN_BOUNDS as any)[activeAsset.id]?.drawnHeight || activeAsset.contentHeightPx;
                     }
                 }
 

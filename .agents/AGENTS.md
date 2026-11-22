@@ -43,6 +43,14 @@
     *   高さ方向: 恐竜がViewBox上端を突き抜けて見切れるのを防ぐため、高さ上限クランプを常に適用する。
     *   幅方向（左右）: `zoom` が明示的に指定されている拡大表示時は、迫力ある表示とはみ出しを許容するため、左右幅のクランプ制限はバイパス（適用除外）とする。`zoom` が未指定の時のみ、安全のための左右クランプを適用する。
 
+2.  **サイズシミュレータ（リアル対決・骨格実寸）での見切れ防止基準**:
+    *   **実体描画高さ (`drawnHeightPx`) の必須設定**:
+        *   骨格図およびリアル対決画像において、姿勢（首上げ・尾立ち等）により実際の立ち姿の高さが基準高さ（`contentHeightPx`）と大きく異なる場合、オートフォーカス計算（`effectiveDinoH = dinoDrawnH * realH / contentH`）が実際の高さを把握できずステージ上端を見切らせる原因となる。
+        *   新規にリアル対決アセット（`*_battle.webp`）を追加する際は、必ず `npm run test:drawn-heights` を実行して実ピクセル描画高さを検証し、`BATTLE_ASSETS` 内に正確な `drawnHeightPx` を定義すること。
+    *   **システム的二重防護（自動フォールバック）**:
+        *   万一 `BATTLE_ASSETS` で `drawnHeightPx` の指定が漏れた場合でも、シミュレータは `src/data/cyberDrawnBounds.json` のピクセル走査結果へ自動フォールバックし、見切れを未然に防止する。
+        *   新規画像追加時は `node scripts/verify_drawn_heights.cjs --update` を実行することで、全アセットの正確な境界座標が `cyberDrawnBounds.json` に同期される。
+
 ---
 
 ## 4. プロジェクト・タスク管理連動ルール
