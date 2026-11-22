@@ -383,7 +383,7 @@ const schema = {
             argentinosaurus: { contentHeightPx: 247, bottomGap: 354 },
             iguanodon: { contentHeightPx: 360, bottomGap: 331 },
             carnotaurus: { contentHeightPx: 347, bottomGap: 286 },
-            therizinosaurus: { contentHeightPx: 474, bottomGap: 236 },
+            therizinosaurus: { contentHeightPx: 474, bottomGap: 236, drawnHeightPx: 569 } as any,
             dilophosaurus: { contentHeightPx: 301, bottomGap: 216 },
             fukuiraptor: { contentHeightPx: 369, bottomGap: 265 },
             futabasaurus: { contentHeightPx: 407, bottomGap: 299 }
@@ -490,32 +490,37 @@ const schema = {
                 image: '/images/cyber/carnotaurus_battle.webp',
                 // Bull horns, agile hunter, realHeight 2.8m, Length 7.5m (2.8 * 980 / 7.5 = 366px)
                 contentHeightPx: 366,
-                bottomGap: 297
-            },
+                bottomGap: 297,
+                drawnHeightPx: 430
+            } as any,
             therizinosaurus: {
                 image: '/images/cyber/therizinosaurus_battle.webp',
                 // Giant scythe claws upright stance, realHeight 5.0m, Length 10.0m (5.0 * 980 / 10.0 = 490px)
                 contentHeightPx: 490,
-                bottomGap: 147
-            },
+                bottomGap: 148,
+                drawnHeightPx: 729
+            } as any,
             dilophosaurus: {
                 image: '/images/cyber/dilophosaurus_battle.webp',
                 // Paired skull crests, realHeight 2.2m, Length 7.0m (2.2 * 980 / 7.0 = 308px)
                 contentHeightPx: 308,
-                bottomGap: 287
-            },
+                bottomGap: 288,
+                drawnHeightPx: 449
+            } as any,
             fukuiraptor: {
                 image: '/images/cyber/fukuiraptor_battle.webp',
                 // Japanese megaraptoran, realHeight 1.6m, Length 4.2m (1.6 * 980 / 4.2 = 373px)
                 contentHeightPx: 373,
-                bottomGap: 274
-            },
+                bottomGap: 275,
+                drawnHeightPx: 475
+            } as any,
             futabasaurus: {
                 image: '/images/cyber/futabasaurus_battle.webp',
                 // Japanese elasmosaurid plesiosaur, realHeight 2.9m, Length 7.0m (2.9 * 980 / 7.0 = 406px)
                 contentHeightPx: 406,
-                bottomGap: 400
-            },
+                bottomGap: 401,
+                drawnHeightPx: 223
+            } as any,
             human: {
                 image: '/images/cyber/human_real.webp',
                 // Photorealistic adult field explorer, realHeight 1.7m
@@ -676,6 +681,7 @@ const schema = {
         let dinoRealH = 2.0;
         let dinoRealL = 6.0;
         let dinoContentH = 450;
+        let dinoDrawnH = 450;
         let dinoSourceRes = 1024;
         let dinoBottomGap = 280;
         let dinoName = "";
@@ -989,15 +995,18 @@ const schema = {
                     dinoImg.src = BATTLE_ASSETS[dinoId].image;
                     dinoContentH = BATTLE_ASSETS[dinoId].contentHeightPx;
                     dinoBottomGap = BATTLE_ASSETS[dinoId].bottomGap;
+                    dinoDrawnH = (BATTLE_ASSETS[dinoId] as any).drawnHeightPx || dinoContentH;
                     dinoImg.style.mixBlendMode = 'normal';
                 } else {
                     dinoImg.src = `/images/cyber/${dinoId}.webp`;
                     if (BONE_CALIBRATED_ASSETS[dinoId]) {
                         dinoContentH = BONE_CALIBRATED_ASSETS[dinoId].contentHeightPx;
                         dinoBottomGap = BONE_CALIBRATED_ASSETS[dinoId].bottomGap;
+                        dinoDrawnH = (BONE_CALIBRATED_ASSETS[dinoId] as any).drawnHeightPx || dinoContentH;
                     } else {
                         dinoContentH = activeDino.cyberMetadata?.contentHeightPx || 450;
                         dinoBottomGap = activeDino.cyberMetadata?.bottomGap || 280;
+                        dinoDrawnH = dinoContentH;
                     }
                     dinoImg.style.mixBlendMode = 'screen';
                 }
@@ -1078,6 +1087,7 @@ const schema = {
                     refImg.src = BATTLE_ASSETS[activeAsset.id].image;
                     activeAsset.contentHeightPx = BATTLE_ASSETS[activeAsset.id].contentHeightPx;
                     activeAsset.bottomGap = BATTLE_ASSETS[activeAsset.id].bottomGap;
+                    activeAsset.drawnHeightPx = (BATTLE_ASSETS[activeAsset.id] as any).drawnHeightPx || activeAsset.contentHeightPx;
                     refImg.style.mixBlendMode = 'normal';
                 } else {
                     refImg.src = '/' + activeAsset.icon;
@@ -1086,13 +1096,16 @@ const schema = {
                         if (BONE_CALIBRATED_ASSETS[activeAsset.id]) {
                             activeAsset.contentHeightPx = BONE_CALIBRATED_ASSETS[activeAsset.id].contentHeightPx;
                             activeAsset.bottomGap = BONE_CALIBRATED_ASSETS[activeAsset.id].bottomGap;
+                            activeAsset.drawnHeightPx = (BONE_CALIBRATED_ASSETS[activeAsset.id] as any).drawnHeightPx || activeAsset.contentHeightPx;
                         } else if (activeAsset.rawDino?.cyberMetadata) {
                             activeAsset.contentHeightPx = activeAsset.rawDino.cyberMetadata.contentHeightPx;
                             activeAsset.bottomGap = activeAsset.rawDino.cyberMetadata.bottomGap;
+                            activeAsset.drawnHeightPx = activeAsset.contentHeightPx;
                         }
                     } else if (BONE_REF_ASSETS[activeAsset.id]) {
                         activeAsset.contentHeightPx = BONE_REF_ASSETS[activeAsset.id].contentHeightPx;
                         activeAsset.bottomGap = BONE_REF_ASSETS[activeAsset.id].bottomGap;
+                        activeAsset.drawnHeightPx = activeAsset.contentHeightPx;
                     }
                 }
 
@@ -1132,9 +1145,11 @@ const schema = {
                 const dinoDegenZoom = 1.0; // Enforce natural 1:1 scale ratio in simulator
                 const marginFactor = 0.94;
 
-                // 1. Calculate height-based target pxPerMeter
-                // Let the tallest element (dino under zoom, or reference asset) fit vertically in the stage height (380px)
-                const maxRealH = Math.max(dinoRealH * dinoDegenZoom, activeAsset.realHeight);
+                // 1. Calculate height-based target pxPerMeter using true visual standing height above ground
+                const effectiveDinoH = (dinoDrawnH * dinoRealH / dinoContentH) * dinoDegenZoom;
+                const refDrawnH = activeAsset.drawnHeightPx || activeAsset.contentHeightPx;
+                const effectiveRefH = (refDrawnH * activeAsset.realHeight / activeAsset.contentHeightPx);
+                const maxRealH = Math.max(effectiveDinoH, effectiveRefH);
                 const targetPxPerMeterH = (SAFE_ZONE_H * marginFactor) / maxRealH;
 
                 // 2. Calculate width-based target pxPerMeter bounds to prevent overflow
