@@ -1,0 +1,41 @@
+[
+  {
+    "id": "isisaurus",
+    "name": "イシスサウルス",
+    "realLength": 18,
+    "realHeight": 4.5,
+    "rawContentHeightPx": 618,
+    "contentHeightPx": 239,
+    "bottomGap": 206,
+    "contentWidthPx": 955,
+    "zoom": 1.15,
+    "aspectRatio": "1.55",
+    "calibratedEffectiveLength": "17.98"
+  },
+  {
+    "id": "notocolossus",
+    "name": "ノトコロッスス",
+    "realLength": 28,
+    "realHeight": 8.5,
+    "rawContentHeightPx": 274,
+    "contentHeightPx": 299,
+    "bottomGap": 375,
+    "contentWidthPx": 984,
+    "zoom": 1.05,
+    "aspectRatio": "3.59",
+    "calibratedEffectiveLength": "27.97"
+  },
+  {
+    "id": "epachthosaurus",
+    "name": "エパクトサウルス",
+    "realLength": 18,
+    "realHeight": 4.8,
+    "rawContentHeightPx": 348,
+    "contentHeightPx": 258,
+    "bottomGap": 337,
+    "contentWidthPx": 966,
+    "zoom": 1.12,
+    "aspectRatio": "2.78",
+    "calibratedEffectiveLength": "17.97"
+  }
+]

@@ -23,10 +23,10 @@ bioTraits:
     value: "白亜紀末期の被子植物・菌類の摂食"
     detail: "化石糞からヤシ科などの植物遺体や真菌胞子が検出され、リアルな食事内容が完全に特定された"
 cyberMetadata:
-  bottomGap: 363
+  bottomGap: 206
   realHeight: 4.5
   realLength: 18
-  contentHeightPx: 245
+  contentHeightPx: 239
   sourceRes: 1024
   dinoLeft: "0%"
   refRight: "-3%"

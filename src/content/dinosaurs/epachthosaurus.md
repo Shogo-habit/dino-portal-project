@@ -23,10 +23,10 @@ bioTraits:
     value: "ハイポスフェン関節と前凹型尾椎"
     detail: "原始的な脊椎補強システムを残しながら、先進的なティタノサウルス類の運動形態を獲得していた"
 cyberMetadata:
-  bottomGap: 380
+  bottomGap: 337
   realHeight: 4.8
   realLength: 18
-  contentHeightPx: 260
+  contentHeightPx: 258
   sourceRes: 1024
   dinoLeft: "0%"
   refRight: "-3%"

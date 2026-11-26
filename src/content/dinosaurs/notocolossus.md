@@ -23,10 +23,10 @@ bioTraits:
     value: "短縮した頑丈な中足骨と融合した足根骨"
     detail: "50トンを超える超重量を分散・支持するための極めて特殊な衝撃吸収・免震歩行構造を証明"
 cyberMetadata:
-  bottomGap: 379
+  bottomGap: 375
   realHeight: 8.5
   realLength: 28
-  contentHeightPx: 296
+  contentHeightPx: 299
   sourceRes: 1024
   dinoLeft: "0%"
   refRight: "-3%"
