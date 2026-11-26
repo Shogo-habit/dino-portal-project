@@ -29,8 +29,8 @@ cyberMetadata:
   contentHeightPx: 239
   sourceRes: 1024
   dinoLeft: "0%"
-  refRight: "-3%"
-  zoom: 1.15
+  refRight: "8%"
+  zoom: 0.69
 ---
 
 ### デカン玄武岩地帯から出現した異形：インド統計研究所に因む学名と発掘史
