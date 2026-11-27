@@ -14,11 +14,8 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
   恐竜が大好きな子供たちだけでなく、大人のみなさんも一度は胸を躍らせて考えたことがありますよね。
 </p>
 
-<!-- 早見クイックサマリー -->
+<!-- 早見サマリー -->
 <div class="hud-panel" style="margin: 25px 0; padding: 20px; border: 1px solid var(--primary-neon); background: rgba(0, 242, 255, 0.04); border-radius: 6px;">
-  <div style="font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 6px; letter-spacing: 1px; font-weight: bold;">
-    [ QUICK SUMMARY / 最強恐竜TOP10 早見表 ]
-  </div>
   <div style="font-size: 16px; font-weight: bold; color: #fff; margin-bottom: 12px;">
     🏆 最強恐竜ランキングTOP10 一覧
   </div>

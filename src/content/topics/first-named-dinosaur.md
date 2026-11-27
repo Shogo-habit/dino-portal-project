@@ -243,9 +243,6 @@ relatedSpecimens: ["megalosaurus","iguanodon","hylaeosaurus","wakinosaurus"]
 
 <!-- 日本で最初に命名された肉食恐竜コラム -->
 <div class="hud-panel" style="margin: 30px 0; padding: 20px; border: 1px solid var(--primary-neon); background: rgba(0, 242, 255, 0.03); border-radius: 6px;">
-  <div style="font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 6px; letter-spacing: 1px; font-weight: bold;">
-    [ JAPANESE DISCOVERY / 日本の古生物史 ]
-  </div>
   <h3 style="font-size: 17px; margin: 0 0 10px 0; color: #fff;">
     💡 日本で最初に名前がついた肉食恐竜をご存知ですか？
   </h3>

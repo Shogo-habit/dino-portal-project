@@ -728,9 +728,6 @@ relatedSpecimens: ["argentinosaurus", "bruhathkayosaurus", "patagotitan", "dread
 
 <!-- 非恐竜解説への回遊導線パネル -->
 <div class="hud-panel" style="margin: 25px 0 35px 0; padding: 20px; border: 1px solid rgba(77, 171, 247, 0.4); background: rgba(77, 171, 247, 0.05); border-radius: 6px;">
-  <div style="font-size: 11px; font-family: var(--font-mono); color: #4dadf7; margin-bottom: 6px; letter-spacing: 1.5px; font-weight: bold;">
-    [ PALEO KNOWLEDGE / 古生物の基礎知識 ]
-  </div>
   <div style="font-size: 16px; font-weight: bold; color: #fff; margin-bottom: 8px;">
     💡 豆知識：モササウルスや首長竜・魚竜は「恐竜」ではない！
   </div>
@@ -757,9 +754,6 @@ relatedSpecimens: ["argentinosaurus", "bruhathkayosaurus", "patagotitan", "dread
 
 <!-- 実寸サイズ比較シミュレータ＆図鑑への回遊導線 -->
 <div class="hud-panel" style="margin: 30px 0; padding: 20px; border: 1px solid var(--primary-neon); background: rgba(0, 242, 255, 0.03); border-radius: 6px;">
-  <div style="font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 6px; letter-spacing: 1px; font-weight: bold;">
-    [ NEXT ACTION / 実寸サイズシミュレータへ ]
-  </div>
   <h3 style="font-size: 16px; margin: 0 0 10px 0; color: #fff;">
     今回登場した巨大恐竜たちを、人間と並べて大きさを体感してみませんか？
   </h3>

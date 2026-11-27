@@ -32,11 +32,8 @@ faqs:
   なぜ今、日本でこれほどまでに新種が見つかるのでしょうか？そしてそれらの恐竜たちは、どのような姿で太古の日本列島を生きていたのでしょうか？最新の一次学術論文と発掘データに基づき、日本発の最新恐竜オールスターを徹底解説します！
 </p>
 
-<!-- 2024-2026 新種恐竜 早見HUDテーブル -->
+<!-- 2024-2026 新種恐竜 早見テーブル -->
 <div class="hud-panel" style="margin: 30px 0; padding: 22px; border: 1px solid rgba(0, 242, 255, 0.35); background: rgba(0, 15, 25, 0.7); border-radius: 6px;">
-  <div style="font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 6px; letter-spacing: 1.5px; font-weight: bold;">
-    [ SPECIMEN ARCHIVE / 近年命名された日本の代表的恐竜・古生物 ]
-  </div>
   <div style="font-size: 16px; font-weight: bold; color: #fff; margin-bottom: 15px;">
     日本産新種恐竜・最新発見スペック早見表
   </div>
