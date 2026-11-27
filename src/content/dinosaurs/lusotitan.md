@@ -28,9 +28,9 @@ cyberMetadata:
   realLength: 25
   contentHeightPx: 403
   sourceRes: 1024
-  dinoLeft: "0%"
+  dinoLeft: "5%"
   refRight: "8%"
-  zoom: 1
+  zoom: 0.62
 ---
 
 ### ポルトガル・ロウリニャン層の巨神：ド・ラパレント博士の記載から独立属への道
