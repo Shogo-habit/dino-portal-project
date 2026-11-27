@@ -12,6 +12,10 @@ const topicsCollection = defineCollection({
     image: z.string(),
     securityLevel: z.string().optional(),
     relatedSpecimens: z.array(z.string()).default([]),
+    faqs: z.array(z.object({
+      question: z.string(),
+      answer: z.string(),
+    })).default([]),
   })
 });
 

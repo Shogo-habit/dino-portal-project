@@ -30,6 +30,27 @@ if (featuredTopics.length < 5) {
   featuredTopics.push(...remaining.slice(0, 5 - featuredTopics.length));
 }
 
+// 最新トレンド・新発見トピックス（案Bのタブ表示用）
+const trendTopicIds = [
+  'japan-new-dinosaurs-2024-2026',
+  'sasayamagnomus-discovery',
+  'jurassic-world-dinosaurs-vs-reality',
+  'dinosaur-size-ranking',
+  'trex-small-arms'
+];
+const trendTopics = trendTopicIds
+  .map(id => topics.find(t => t.id === id)?.data)
+  .filter((t): t is NonNullable<typeof t> => !!t);
+
+if (trendTopics.length < 5) {
+  const existingIds = new Set(trendTopics.map(t => t.id));
+  const remaining = topics
+    .map(t => t.data)
+    .filter(t => !existingIds.has(t.id))
+    .sort((a, b) => b.date.localeCompare(a.date));
+  trendTopics.push(...remaining.slice(0, 5 - trendTopics.length));
+}
+
 const recentlyAddedIds = ['australovenator', 'leaellynasaura', 'savannasaurus'];
 const recentlyAddedDinos = dinosaurs
   .filter(d => recentlyAddedIds.includes(d.id))
@@ -220,11 +241,21 @@ const recentlyAddedDinos = dinosaurs
             <div class="news-summary-sidebar hud-panel" style="margin-bottom: 30px; position: relative;">
                 <div class="hud-corner top-left"></div>
                 <div class="hud-corner bottom-right"></div>
-                <h4 style="margin-bottom: 16px; border-bottom: 1px solid var(--panel-border); padding-bottom: 10px; color: var(--primary-neon); font-family: var(--font-mono); font-size: 13px; letter-spacing: 1px; display: flex; justify-content: space-between; align-items: center;">
-                    <span>[ 注目の特集 ＆ ランキング ]</span>
-                    <span style="font-size: 10px; opacity: 0.75; color: var(--text-dim);">TOP 5</span>
-                </h4>
-                <div class="featured-topics-list" style="display: flex; flex-direction: column; gap: 10px;">
+                <!-- 特集＆最新トレンド タブ切り替えヘッダー -->
+                <div style="margin-bottom: 14px; border-bottom: 1px solid var(--panel-border); padding-bottom: 8px; display: flex; justify-content: space-between; align-items: center; gap: 8px;">
+                    <div style="display: flex; gap: 6px;">
+                        <button id="sidebar-tab-ranking" class="sidebar-tab-btn active" onclick="switchSidebarTopicTab('ranking')">
+                            🏆 殿堂TOP5
+                        </button>
+                        <button id="sidebar-tab-trend" class="sidebar-tab-btn" onclick="switchSidebarTopicTab('trend')">
+                            ⚡ 最新トレンド
+                        </button>
+                    </div>
+                    <span style="font-size: 10px; opacity: 0.75; color: var(--primary-neon); font-family: var(--font-mono);">TOPICS</span>
+                </div>
+
+                <!-- タブ1: 殿堂入りTOP5 -->
+                <div id="sidebar-list-ranking" class="featured-topics-list" style="display: flex; flex-direction: column; gap: 10px;">
                     {featuredTopics.map((item, idx) => (
                         <a href={`/topics/${item.id}/`} class="featured-topic-item" style="text-decoration: none; color: inherit; display: flex; gap: 10px; align-items: center; padding: 7px 10px; border-radius: 4px; border: 1px solid rgba(0, 242, 255, 0.12); background: rgba(0, 242, 255, 0.02); transition: all 0.25s ease;">
                             <div class="featured-topic-rank" style="font-family: var(--font-mono); font-size: 12px; font-weight: bold; width: 16px; text-align: center; color: var(--primary-neon); flex-shrink: 0;">
@@ -246,6 +277,34 @@ const recentlyAddedDinos = dinosaurs
                         </a>
                     ))}
                 </div>
+
+                <!-- タブ2: 最新トレンド・新発見 -->
+                <div id="sidebar-list-trend" class="featured-topics-list" style="display: none; flex-direction: column; gap: 10px;">
+                    {trendTopics.map((item, idx) => (
+                        <a href={`/topics/${item.id}/`} class="featured-topic-item" style="text-decoration: none; color: inherit; display: flex; gap: 10px; align-items: center; padding: 7px 10px; border-radius: 4px; border: 1px solid rgba(255, 183, 0, 0.2); background: rgba(255, 183, 0, 0.02); transition: all 0.25s ease;">
+                            <div class="featured-topic-rank" style="font-family: var(--font-mono); font-size: 12px; font-weight: bold; width: 16px; text-align: center; color: #ffb700; flex-shrink: 0;">
+                                {idx + 1}
+                            </div>
+                            <div class="featured-topic-thumb" style="width: 50px; height: 50px; flex-shrink: 0; border: 1px solid rgba(255, 183, 0, 0.3); overflow: hidden; border-radius: 2px;">
+                                <img src={`/${item.image}`} alt={item.title} loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;" />
+                            </div>
+                            <div style="flex: 1; min-width: 0;">
+                                <div style="display: flex; align-items: center; gap: 4px; margin-bottom: 2px;">
+                                    <span style="font-size: 9px; padding: 1px 4px; background: rgba(255, 183, 0, 0.2); color: #ffb700; border-radius: 2px; font-family: var(--font-mono);">TREND</span>
+                                </div>
+                                <h5 style="margin: 0 0 3px 0; font-size: 12px; line-height: 1.4; color: var(--text-main); font-weight: 600; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                    {item.title}
+                                </h5>
+                                <div style="display: flex; gap: 6px; align-items: center;">
+                                    <span style="font-family: var(--font-mono); font-size: 10px; color: var(--text-dim);">
+                                        {item.date}
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    ))}
+                </div>
+
                 <div style="margin-top: 14px; text-align: right;">
                     <a href="/topics/" style="font-size: 11px; color: var(--primary-neon); text-decoration: none; font-family: var(--font-mono);">
                         [ 全30+記事の一覧へ ➔ ]
@@ -284,7 +343,55 @@ const recentlyAddedDinos = dinosaurs
     </div>
 </Layout>
 
+<script is:inline>
+  function switchSidebarTopicTab(tab) {
+    const btnRanking = document.getElementById('sidebar-tab-ranking');
+    const btnTrend = document.getElementById('sidebar-tab-trend');
+    const listRanking = document.getElementById('sidebar-list-ranking');
+    const listTrend = document.getElementById('sidebar-list-trend');
+
+    if (!btnRanking || !btnTrend || !listRanking || !listTrend) return;
+
+    if (tab === 'ranking') {
+      btnRanking.classList.add('active');
+      btnTrend.classList.remove('active');
+      listRanking.style.display = 'flex';
+      listTrend.style.display = 'none';
+    } else {
+      btnRanking.classList.remove('active');
+      btnTrend.classList.add('active');
+      listRanking.style.display = 'none';
+      listTrend.style.display = 'flex';
+    }
+  }
+</script>
+
 <style>
+  /* サイドバー タブボタンスタイル */
+  .sidebar-tab-btn {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 242, 255, 0.25);
+    background: rgba(0, 242, 255, 0.05);
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .sidebar-tab-btn:hover {
+    color: #fff;
+    border-color: var(--primary-neon);
+    background: rgba(0, 242, 255, 0.12);
+  }
+  .sidebar-tab-btn.active {
+    color: var(--primary-neon);
+    border-color: var(--primary-neon);
+    background: rgba(0, 242, 255, 0.2);
+    font-weight: bold;
+    box-shadow: 0 0 8px rgba(0, 242, 255, 0.25);
+  }
+
   .featured-topic-item:hover {
     border-color: var(--primary-neon) !important;
     background: rgba(0, 242, 255, 0.08) !important;

@@ -188,6 +188,21 @@ const isMarineReptile = ['首長竜', '魚竜', '海棲爬虫類', '魚竜・首
 const isPaleozoicOrOther = !isDinosaur && !isPterosaur && !isMarineReptile;
 const isTriassic = d.era.includes('三畳');
 const isHerbivore = (d.diet || '').includes('植物食') || (d.diet || '').includes('草食');
+const JURASSIC_WORLD_FEATURED_IDS = [
+    'velociraptor',
+    'tyrannosaurus',
+    'mosasaurus',
+    'spinosaurus',
+    'dilophosaurus',
+    'pteranodon',
+    'brachiosaurus',
+    'triceratops',
+    'ankylosaurus',
+    'stegosaurus',
+    'giganotosaurus',
+    'carnotaurus'
+];
+const isJurassicFeatured = JURASSIC_WORLD_FEATURED_IDS.includes(d.id);
 
 const categoryLabel = isPterosaur ? '翼竜' : isMarineReptile ? '海生爬虫類' : isDinosaur ? '恐竜' : '古生物';
 
@@ -988,6 +1003,32 @@ if (hasComparison && h3List.length > 0) {
                                 <div>
                                     <a href="/herbivores/" style="font-family: var(--font-mono); font-size: 11px; color: #00ffaa; text-decoration: underline; text-underline-offset: 3px; display: inline-flex; align-items: center; gap: 4px; font-weight: bold; transition: opacity 0.2s;">
                                         <span>【特設ピラー】巨大草食恐竜図鑑を見る（全177種） ➔</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                )}
+
+                {isJurassicFeatured && (
+                    <aside class="jurassic-notice-banner hud-panel" aria-label="映画検証アーカイブ情報" style="margin-bottom: 20px; padding: 14px 18px; border: 1px solid rgba(255, 0, 85, 0.45); background: rgba(255, 0, 85, 0.05); border-radius: 4px; position: relative;">
+                        <div class="hud-corner top-left" style="border-top-color: #ff0055; border-left-color: #ff0055;"></div>
+                        <div class="hud-corner bottom-right" style="border-bottom-color: #ff0055; border-right-color: #ff0055;"></div>
+                        <div style="display: flex; gap: 12px; align-items: flex-start;">
+                            <span style="font-size: 20px; line-height: 1.2; flex-shrink: 0;" aria-hidden="true">🎬</span>
+                            <div style="flex: 1; min-width: 0;">
+                                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 5px; flex-wrap: wrap;">
+                                    <span style="font-family: var(--font-mono); font-size: 10px; color: #ff0055; background: rgba(255, 0, 85, 0.15); border: 1px solid #ff0055; padding: 1px 6px; border-radius: 2px; font-weight: bold;">
+                                        映画検証アーカイブ
+                                    </span>
+                                    <strong style="font-size: 13px; color: #fff; letter-spacing: 0.5px;">『ジュラシック・ワールド』と本物の恐竜の違い徹底検証</strong>
+                                </div>
+                                <p style="font-size: 12px; color: var(--text-dim); line-height: 1.6; margin: 0 0 8px 0;">
+                                    映画で大活躍する{d.name}ですが、最新の古生物学研究では羽毛・実寸サイズ・骨格構造・生態など、劇中の演出とは全く異なる驚きの真実が明らかになっています。
+                                </p>
+                                <div>
+                                    <a href="/topics/jurassic-world-dinosaurs-vs-reality/" style="font-family: var(--font-mono); font-size: 11px; color: #ff0055; text-decoration: underline; text-underline-offset: 3px; display: inline-flex; align-items: center; gap: 4px; font-weight: bold; transition: opacity 0.2s;">
+                                        <span>【特集記事】映画の描写と最新科学が暴く8つの真実を徹底比較 ➔</span>
                                     </a>
                                 </div>
                             </div>

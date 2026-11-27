@@ -66,7 +66,7 @@ relatedSpecimens: ["argentinosaurus", "bruhathkayosaurus", "patagotitan", "dread
     📐 人間（170cm）や他の恐竜と実寸で並べてみよう！
   </div>
   <p style="font-size: 13px; color: var(--text-dim); line-height: 1.6; margin: 0 0 15px 0;">
-    当サイトの「サイズ比較シミュレータ」では、アルゼンチノサウルスやブラキオサウルス、ティラノサウルスを人間と1:1のスケールで自由に並べて大きさを体感できます。
+    当サイトの「サイズ比較シミュレータ」では、アルゼンチノサウルスやブラキオサウルス、<a href="/dictionary/tyrannosaurus/">ティラノサウルス</a>を人間と1:1のスケールで自由に並べて大きさを体感できます。
   </p>
   <a href="/size-comparison/" class="nav-link" style="display: inline-flex; align-items: center; gap: 8px; background: var(--primary-neon); color: #010408; font-weight: bold; padding: 10px 22px; border-radius: 4px; text-decoration: none; font-size: 14px; font-family: var(--font-mono); transition: all 0.3s ease; box-shadow: 0 0 12px rgba(0, 242, 255, 0.4);">
     <span>サイズ比較シミュレータを起動する</span> &raquo;
@@ -130,7 +130,7 @@ relatedSpecimens: ["argentinosaurus", "bruhathkayosaurus", "patagotitan", "dread
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
       - <strong>スペック</strong>：全長 約21〜23メートル / 体重 約20〜30トン<br>
-      - <strong>特徴</strong>：かつて「[ブロントサウルス](/dictionary/brontosaurus/)」という名前でも親しまれた恐竜に近い仲間です。ディプロドクスと全長は似ていますが、骨の一つひとつが非常に太くがっしりとしており、首も太く肉厚でした。そのため、同じくらいの長さのディプロドクスよりもかなり重い体重を持っていました。<br>
+      - <strong>特徴</strong>：かつて「<a href="/dictionary/brontosaurus/">ブロントサウルス</a>」という名前でも親しまれた恐竜に近い仲間です。ディプロドクスと全長は似ていますが、骨の一つひとつが非常に太くがっしりとしており、首も太く肉厚でした。そのため、同じくらいの長さのディプロドクスよりもかなり重い体重を持っていました。<br>
       - <strong>子供向け例え</strong>：全長は大型観光バス2台分！骨が太くて力持ちなラグビー選手のような恐竜です。
     </p>
   </div>
@@ -416,7 +416,7 @@ relatedSpecimens: ["argentinosaurus", "bruhathkayosaurus", "patagotitan", "dread
 
 ### Q1: 一番大きい肉食恐竜はどれ？ティラノサウルスの大きさは？
 <p class="article-paragraph">
-  <strong>A. 肉食恐竜の最大級は「スピノサウルス」（全長約15m）や「ティラノサウルス」（全長約12m、体重約9トン）です。</strong><br>
+  <strong>A. 肉食恐竜の最大級は「<a href="/dictionary/spinosaurus/">スピノサウルス</a>」（全長約15m）や「ティラノサウルス」（全長約12m、体重約9トン）です。</strong><br>
   今回のランキングに登場した超巨大恐竜はすべて植物食恐竜（竜脚類）でした。お肉を食べる肉食恐竜の最大クラス（ティラノサウルスなど）でも体重は約9トンであり、植物食恐竜（アルゼンチノサウルスは約80トン）の方が圧倒的に巨大でした。これは、植物食恐竜の方がたくさんのエネルギーを植物から摂取し、体を大きくして肉食恐竜から身を守る必要があったためです。
 </p>
 

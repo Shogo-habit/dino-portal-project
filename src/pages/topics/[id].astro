@@ -67,9 +67,25 @@ const articleSchema = {
     "publishingPrinciples": "https://dino-portal.com/about/#editorial-policy"
   }
 };
+
+// FAQ Schema (if FAQs are defined in frontmatter)
+const faqSchema = (topic.faqs && topic.faqs.length > 0) ? {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": topic.faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+} : null;
+
+const pageSchemas = faqSchema ? [articleSchema, faqSchema] : articleSchema;
 ---
 
-<Layout title={`${topic.title} | Dino-Portal`} activeTab="topics" description={topic.summary} ogImage={`/${topic.image}`} schema={articleSchema} preloadImage={`/${topic.image}`}>
+<Layout title={`${topic.title} | Dino-Portal`} activeTab="topics" description={topic.summary} ogImage={`/${topic.image}`} schema={pageSchemas} preloadImage={`/${topic.image}`}>
 
     <article class="topic-article hud-panel">
         <div class="topic-detail-header" style="border-bottom: 1px solid var(--panel-border); padding-bottom: 15px; margin-bottom: 20px;">
@@ -91,6 +107,30 @@ const articleSchema = {
         <div class="topic-content">
             <Content />
         </div>
+
+        {topic.faqs && topic.faqs.length > 0 && (
+            <section class="topic-faq-section hud-panel" style="margin-top: 50px; padding: 25px; border: 1px solid rgba(0, 242, 255, 0.3); background: rgba(0, 20, 30, 0.6); border-radius: 6px;">
+                <div style="font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 6px; letter-spacing: 1.5px; font-weight: bold;">
+                    [ Q&A ARCHIVE / よくある疑問・検証FAQ ]
+                </div>
+                <h2 style="font-size: 18px; font-weight: bold; color: #fff; margin-bottom: 20px; border-bottom: 1px solid var(--panel-border); padding-bottom: 10px;">
+                    この記事に関するよくある質問
+                </h2>
+                <div class="faq-list" style="display: flex; flex-direction: column; gap: 15px;">
+                    {topic.faqs.map((faq, idx) => (
+                        <div class="faq-item" style="border: 1px solid rgba(0, 242, 255, 0.15); background: rgba(0, 242, 255, 0.02); border-radius: 4px; padding: 16px 20px;">
+                            <div style="font-size: 15px; font-weight: bold; color: var(--primary-neon); margin-bottom: 8px; display: flex; align-items: baseline; gap: 10px;">
+                                <span style="font-family: var(--font-mono); color: var(--secondary-neon); font-size: 14px;">Q{idx + 1}.</span>
+                                <span>{faq.question}</span>
+                            </div>
+                            <div style="font-size: 13.5px; color: #d8edf2; line-height: 1.75; padding-left: 28px;">
+                                {faq.answer}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </section>
+        )}
 
         <!-- 執筆者・編集体制（E-E-A-T）ボックス -->
         <AuthorBox lastUpdated={topic.date} />

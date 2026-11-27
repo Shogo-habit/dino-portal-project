@@ -103,8 +103,8 @@ function processArticle(filePath, isDryRun = true) {
     const pattern = new RegExp(`(?<![\\u30A0-\\u30FF])${dino.name}(?![\\u30A0-\\u30FF])`, 'm');
 
     if (pattern.test(protectedBody)) {
-      // 初出の1箇所のみ置換
-      protectedBody = protectedBody.replace(pattern, `[${dino.name}](/dictionary/${dino.id}/)`);
+      // 初出の1箇所のみ置換（HTMLブロック内でも確実にリンク化されるようaタグで出力）
+      protectedBody = protectedBody.replace(pattern, `<a href="/dictionary/${dino.id}/">${dino.name}</a>`);
       linkedDinoIds.add(dino.id);
       addedLinks.push(`${dino.name} (-> /dictionary/${dino.id}/)`);
     }

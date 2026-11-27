@@ -29,6 +29,44 @@ body {
   flex-direction: column;
 }
 
+/* --- GLOBAL LINKS --- */
+a, a:link {
+  color: var(--primary-neon); /* ブラウザデフォルトの濃い青(#0000ee)を鮮やかなネオンシアンで上書き */
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 242, 255, 0.45);
+  text-underline-offset: 3px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease, text-shadow 0.2s ease;
+}
+
+a:visited {
+  color: #7dd3fc; /* 訪問後もブラウザデフォルトの濃い紫(#551a8b)に沈ませず、高視認性のアイスブルーに保持 */
+  text-decoration-color: rgba(125, 211, 252, 0.45);
+}
+
+a:hover, a:focus-visible {
+  color: #ffffff;
+  text-decoration-color: var(--primary-neon);
+  text-shadow: 0 0 8px rgba(0, 242, 255, 0.7);
+}
+
+a:active {
+  color: var(--secondary-neon);
+  text-decoration-color: var(--secondary-neon);
+}
+
+/* ボタン・カード・ナビゲーション等のUIコンポーネントがvisitedで変色しないよう保護 */
+.nav-link:visited,
+.scan-tag-btn:visited,
+.featured-topic-item:visited,
+.popular-search-chip:visited,
+.recent-dino-item-link:visited,
+.related-card:visited,
+.logo-container:visited,
+.footer-privacy-link:visited,
+.topic-item:visited {
+  color: inherit;
+}
+
 /* --- OVERLAYS --- */
 .scanlines {
   display: none !important;
@@ -699,19 +737,78 @@ body {
 }
 
 .article-section-title {
-  color: var(--primary-neon);
+  color: #ffffff; /* 見出し文字はクリアな純白で可読性を最大化 */
   margin-top: 40px;
   margin-bottom: 15px;
-  border-left: 3px solid var(--primary-neon);
-  padding-left: 12px;
-  font-size: 18px;
-  letter-spacing: 1px;
+  border-left: 4px solid var(--primary-neon); /* 左のアクセントバーのみ水色 */
+  padding-left: 14px;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.4;
 }
 
 .article-paragraph {
   margin-bottom: 20px;
   text-align: justify;
   letter-spacing: 0.5px;
+  color: #cfe6eb; /* 本文の地色：目に優しいアイシーホワイト */
+}
+
+/* ★ 重要箇所の強調（strong）：水色ではなく「琥珀ゴールド（アンバー）」で差別化 ★ */
+.topic-content strong,
+.article-paragraph strong,
+.archival-content strong,
+.hud-panel strong,
+.topic-content b,
+.article-paragraph b {
+  color: #ffb700 !important; /* 琥珀色（化石・アンバー）：重要キーワードが一目で浮き上がる */
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(255, 183, 0, 0.25);
+}
+
+/* 記事本文・図鑑解説文内のリンク高視認性スタイル（ダークテーマ最適化） */
+.topic-content a,
+.article-paragraph a,
+.archival-content a,
+.hud-panel a:not(.scan-tag-btn):not(.nav-link) {
+  color: var(--primary-neon); /* リンクは一貫してシアン水色 */
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 242, 255, 0.6);
+  text-underline-offset: 3px;
+  transition: all 0.2s ease;
+}
+
+/* リンクと強調が重なった場合はリンク（水色＋下線）を優先して「押せること」を明示 */
+.topic-content a strong,
+.article-paragraph a strong,
+.topic-content strong a,
+.article-paragraph strong a {
+  color: var(--primary-neon) !important;
+  text-decoration: underline !important;
+}
+
+.topic-content a:visited,
+.article-paragraph a:visited,
+.archival-content a:visited,
+.hud-panel a:not(.scan-tag-btn):not(.nav-link):visited {
+  color: #7dd3fc; /* 訪問後も決して紫に沈まず、はっきりと読める高コントラストなアイスブルー */
+  text-decoration-color: rgba(125, 211, 252, 0.45);
+}
+
+.topic-content a:visited strong,
+.article-paragraph a:visited strong {
+  color: #7dd3fc !important;
+}
+
+.topic-content a:hover,
+.article-paragraph a:hover,
+.archival-content a:hover,
+.hud-panel a:not(.scan-tag-btn):not(.nav-link):hover {
+  color: #ffffff !important;
+  text-decoration-color: var(--primary-neon);
+  text-shadow: 0 0 10px rgba(0, 242, 255, 0.8);
 }
 
 /* --- SEO & GEO COMPONENTS --- */
