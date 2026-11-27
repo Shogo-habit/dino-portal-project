@@ -33,19 +33,19 @@ relatedSpecimens: ["pteranodon","futabasaurus","mosasaurus"]
   では、恐竜とそれ以外の爬虫類を分ける「骨格構造」の具体的な違いはどこにあるのでしょうか？その核心は、腰の骨（骨盤）と太ももの骨（大腿骨）の接合部にあります。もっとも重要なポイントは、骨盤の関節のくぼみである<strong style="color: var(--primary-neon);">「寛骨臼（かんこつきゅう）」</strong>と大腿骨の先端の形です。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">① 非恐竜爬虫類の骨格：横に突き出て折れ曲がる「這い歩き型」</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">① 非恐竜爬虫類の骨格：横に突き出て折れ曲がる「這い歩き型」</h3>
 <p class="article-paragraph">
   トカゲやワニ、あるいはプテラノドン（翼竜）やモササウルスなどの非恐竜爬虫類では、骨盤の側面にある寛骨臼は<strong style="color: var(--primary-neon);">「カップ状のくぼみ（穴が開いていない状態）」</strong>になっています。大腿骨の頭部（大腿骨頭）はまっすぐ伸びており、これが骨盤の側面に横からはまり込みます。
   そのため、大腿骨は一度胴体の横に大きく突き出てから、L字型に折れ曲がって地面に接します。これによってお腹を地面にこするような「這い歩き（非直立姿勢）」になり、歩くたびに体が左右に大きくうねります。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">② 恐竜の骨格：突き抜けた穴にはまり込む「直立歩行型」</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">② 恐竜の骨格：突き抜けた穴にはまり込む「直立歩行型」</h3>
 <p class="article-paragraph">
   一方、恐竜の骨格には驚くべき進化の工夫が施されています。恐竜の寛骨臼には、なんと<strong style="color: var(--primary-neon);">「完全に突き抜けた丸い穴」</strong>が開いています。そして大腿骨の先端（大腿骨頭）が内側へ向けてほぼ直角（L字型）に曲がり、この骨盤の穴にはまり込む構造になっています。
   この「穴にはまり込む」構造により、大腿骨は横に突き出ることなく、骨盤の真下へ向けてまっすぐ垂直に伸びることになります。これこそが恐竜を支える「直立歩行」の秘密なのです。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">③ 生理学的な大メリット：走りながら呼吸できる！</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">③ 生理学的な大メリット：走りながら呼吸できる！</h3>
 <p class="article-paragraph">
   この骨格の違いは、呼吸効率にも決定的な差をもたらしました。トカゲのように体を左右にくねらせて走る動物は、走っている間は胸が圧迫されて肺の換気ができなくなります（これを「キャリアーの制約」と呼びます）。そのため、トカゲは少し走ると息が切れて立ち止まらなければなりません。
   しかし、恐竜は直立歩行によって左右のうねりをなくしたため、<strong style="color: var(--primary-neon);">「走りながらでも正常に呼吸する」</strong>ことができるようになりました。これにより、抜群の持久力と敏捷性を手に入れ、獲物を追いかけたり天敵から逃げたりする上で圧倒的なアドバンテージを得たのです。
@@ -61,7 +61,7 @@ relatedSpecimens: ["pteranodon","futabasaurus","mosasaurus"]
   それでは、図鑑の常連でありながら恐竜ではない、代表的な3つのグループの正体と骨格的特徴を見ていきましょう。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">1. 翼を広げて空を舞う「翼竜（よくりゅう）」</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">1. 翼を広げて空を舞う「翼竜（よくりゅう）」</h3>
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0; margin-bottom: 0;">
@@ -76,7 +76,7 @@ relatedSpecimens: ["pteranodon","futabasaurus","mosasaurus"]
   </div>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">2. 海を優雅に泳ぐ「首長竜（くびながりゅう）」</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">2. 海を優雅に泳ぐ「首長竜（くびながりゅう）」</h3>
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0; margin-bottom: 0;">
@@ -90,7 +90,7 @@ relatedSpecimens: ["pteranodon","futabasaurus","mosasaurus"]
   </div>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">3. 海洋の巨大な支配者「モササウルス類」</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">3. 海洋の巨大な支配者「モササウルス類」</h3>
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0; margin-bottom: 0;">

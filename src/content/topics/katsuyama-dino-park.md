@@ -53,7 +53,7 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "spinosaurus", "mamenchisauru
 </p>
 
 <div class="hud-panel" style="padding: 20px; border: 1px solid var(--panel-border); background: rgba(0, 242, 255, 0.02); margin-bottom: 30px;">
-  <h3 style="color: var(--primary-neon); margin-top: 0; margin-bottom: 10px; font-size: 16px;">⚠️ ベビーカー移動のリアルな現実</h3>
+  <h3 style="color: #ffffff; margin-top: 0; margin-bottom: 10px; font-size: 16px;">⚠️ ベビーカー移動のリアルな現実</h3>
   <p class="article-paragraph" style="margin-top: 5px; margin-bottom: 0;">
     2歳の娘をベビーカーに乗せ、4歳の息子の手を引きながら歩きましたが、急な上り坂ではベビーカーを押し上げるのに全身の筋肉を使うため、大人（私）は汗だくでまるで「筋トレ」状態。逆に下り坂では、ベビーカーが加速しないようしっかり踏ん張ってブレーキをかけ続けなければならず、膝や腕に大きな負担がかかります。
   </p>
@@ -136,7 +136,7 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "spinosaurus", "mamenchisauru
 </p>
 
 <div class="hud-panel" style="padding: 20px; border: 1px solid var(--panel-border); background: rgba(0, 242, 255, 0.02); margin-bottom: 40px;">
-  <h3 style="color: var(--primary-neon); margin-top: 0; margin-bottom: 15px; font-size: 16px; border-bottom: 1px solid var(--panel-border); padding-bottom: 8px;">🦕 かつやまディノパーク子連れ攻略チェックリスト</h3>
+  <h3 style="color: #ffffff; margin-top: 0; margin-bottom: 15px; font-size: 16px; border-bottom: 1px solid var(--panel-border); padding-bottom: 8px;">🦕 かつやまディノパーク子連れ攻略チェックリスト</h3>
   <table style="width: 100%; border-collapse: collapse; font-size: 13px; color: var(--text-main);">
     <thead>
       <tr style="border-bottom: 1px solid rgba(0, 242, 255, 0.2); text-align: left;">

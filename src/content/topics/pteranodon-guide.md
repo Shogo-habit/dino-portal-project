@@ -44,14 +44,14 @@ relatedSpecimens: ["pteranodon", "quetzalcoatlus", "alanqa", "tyrannosaurus"]
   映画やアニメ、恐竜図鑑で空の大スターとして描かれる<strong style="color: var(--primary-neon);">プテラノドン</strong>。しかし、実は恐竜ではないという驚きの事実や、大空を自在に飛び回るための進化した体、そのユニークな生態について、子供から大人までわかりやすく解説します！
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 0; margin-bottom: 10px; font-size: 16px;">恐竜じゃないの！？プテラノドンの意外な分類</h3>
+<h3 style="color: #ffffff; margin-top: 0; margin-bottom: 10px; font-size: 16px;">恐竜じゃないの！？プテラノドンの意外な分類</h3>
 <p class="article-paragraph" style="margin-top: 0;">まず知っておきたいのは、プテラノドンは科学的には<strong>「恐竜ではない」</strong>ということです！
 恐竜は「陸の上で足をまっすぐ下に伸ばして直立歩行する爬虫類」と定義されています。プテラノドンのように、空を飛ぶために前足の指が長く伸び、そこに皮膚の膜（翼）が張ったグループは<strong style="color: var(--primary-neon);">「翼竜（よくりゅう）」</strong>と呼ばれます。</p>
 <p class="article-paragraph" style="margin-bottom: 30px;">翼竜は恐竜のとても近い親戚ですが、独自の進化を遂げて空の支配者となった爬虫類なのです。その中でもプテラノドンは最も有名で、世界中で愛されています。</p>
 
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 25px;">
 <div style="flex: 1; min-width: 280px;">
-<h3 style="color: var(--primary-neon); margin-top: 0; margin-bottom: 10px; font-size: 16px;">いつの時代にどこで生きていた？プテラノドンの基本データ</h3>
+<h3 style="color: #ffffff; margin-top: 0; margin-bottom: 10px; font-size: 16px;">いつの時代にどこで生きていた？プテラノドンの基本データ</h3>
 <p class="article-paragraph" style="margin-top: 0; margin-bottom: 30px;">プテラノドンが生きていたのは、白亜紀の後期（約8800万〜7500万年前）です。主に現在の北アメリカ大陸の広い内海（大きな海）の周辺で暮らしていました。彼らの化石は海の地層からたくさん見つかるため、海の近くで魚を捕って生活していたことがわかっています。<br>その他の基本データは右のアーカイブにも記載しています。</p>
 
 <h2 class="article-section-title" style="margin-top: 0; margin-bottom: 15px;">翼を広げると小型飛行機！？プテラノドンの大きさを身近なもので比較！</h2>
@@ -67,12 +67,12 @@ relatedSpecimens: ["pteranodon", "quetzalcoatlus", "alanqa", "tyrannosaurus"]
 </div>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">翼を広げた長さ（翼開長）は何メートル？</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">翼を広げた長さ（翼開長）は何メートル？</h3>
 <p class="article-paragraph">
   プテラノドンが翼を左右に目一杯広げたときの長さ（翼開長：よくかいちょう）は、大きなもので<strong>約7〜9メートル</strong>に達しました。これは、現代の空を飛ぶ鳥の中で最も大きいワタリアホウドリ（約3.5メートル）の2倍以上という巨大さです。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">乗用車やグライダーと比べてみよう！</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">乗用車やグライダーと比べてみよう！</h3>
 <p class="article-paragraph">
   翼開長約8メートルというのは、一般的な<strong>「乗用車を縦に2台並べた長さ」よりも大きい</strong>ことになります。あるいは、航空自衛隊などの軽飛行機や、空を滑空する<strong>「グライダー」の翼の幅</strong>に匹敵します。
   これほど巨大な生き物が空に浮かび、大きな影を水面に落としながら飛んでいた姿は、まさに大迫力だったに違いありません。
@@ -83,13 +83,13 @@ relatedSpecimens: ["pteranodon", "quetzalcoatlus", "alanqa", "tyrannosaurus"]
 <p class="article-paragraph">
   こんなに大きな体で、なぜ空を飛ぶことができたのでしょうか。そこには、極限まで無駄を削ぎ落とした「飛行特化型」の素晴らしい体の仕組みがありました。
 </p>
-<h3 style="color: var(--primary-neon); margin-top: 0; margin-bottom: 10px; font-size: 16px;">骨の厚さはわずか1ミリ！ストローのように中が空洞の骨</h3>
+<h3 style="color: #ffffff; margin-top: 0; margin-bottom: 10px; font-size: 16px;">骨の厚さはわずか1ミリ！ストローのように中が空洞の骨</h3>
 <p class="article-paragraph" style="margin-top: 0;">
 プテラノドンの骨は、なんと中身がスカスカの空洞になっていました。骨の壁の厚さはわずか1ミリメートルほどしかなく、まるでストローのような構造です。さらに骨の中には、肺とつながった「気嚢（きのう）」と呼ばれる空気の袋が入り込んでいました。
 この極限の軽量化により、翼を広げると8メートルもあるのに、<strong>体重はわずか15〜20キログラム程度</strong>（小学生の低学年と同じくらい）しかありませんでした。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">羽ばたかずに風に乗る「滑空（ソアリング）」の達人</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">羽ばたかずに風に乗る「滑空（ソアリング）」の達人</h3>
 <p class="article-paragraph">
 プテラノドンは、鳥のように忙しくパタパタと羽ばたくことはほとんどしませんでした。
 海の上を吹く上昇気流（風）をとらえ、巨大な翼をパラグライダーのように広げてゆっくりと滑空する<strong>「ソアリング（帆翔）」</strong>という飛び方をしていました。この方法なら、エネルギーをほとんど使わずに、何百キロメートルもの距離を飛び続けることができたのです。
@@ -108,13 +108,13 @@ relatedSpecimens: ["pteranodon", "quetzalcoatlus", "alanqa", "tyrannosaurus"]
   空の支配者プテラノドンは、日々の生活の中でどのように食べ物を手に入れていたのでしょうか。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">歯がないくちばしで魚を丸呑み！プテラノドンの名前の由来</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">歯がないくちばしで魚を丸呑み！プテラノドンの名前の由来</h3>
 <p class="article-paragraph">
   プテラノドンという名前は、ギリシャ語で<strong>「歯のない翼」</strong>という意味があります。その名の通り、彼らのくちばしには歯が一本もありませんでした。
   現代のペリカンのような長いクチバシを使って、水面近くを泳ぐ魚やイカを見つけると、飛びながらクチバシを水中に差し込んで器用にすくい取り、そのまま丸呑みにして食べていました。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">頭の後ろに伸びた「大きなトサカ」の役割とは？</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">頭の後ろに伸びた「大きなトサカ」の役割とは？</h3>
 <p class="article-paragraph">
   プテラノドンのもうひとつの目印が、頭の後ろに向かって長く突き出た「トサカ（骨質の冠）」です。
   このトサカは、空を飛ぶときに風を受けて頭の向きを安定させる<strong>「舵（かじ）の役割」</strong>や、大きなクチバシとの<strong>「重さのバランスを取る天秤（てんびん）の役割」</strong>を果たしていたと考えられています。また、オスの方がメスよりもトサカがはるかに大きかったことから、「オスの強さや魅力をアピールするために存在した」という説も有力です。

@@ -12,10 +12,10 @@ const { lastUpdated } = Astro.props;
   <div class="hud-corner top-left"></div>
   <div class="hud-corner bottom-right"></div>
   
-  <div style="font-family: var(--font-mono); font-size: 10px; color: var(--primary-neon); letter-spacing: 1.5px; margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
-    <span>[ EDITORIAL & FACT-CHECK / 記事執筆・編集体制 ]</span>
+  <div style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-neon); letter-spacing: 1px; margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+    <span style="font-weight: bold;">記事執筆・編集体制</span>
     {lastUpdated && (
-      <span style="color: var(--text-dim);">最終査読・更新: {lastUpdated}</span>
+      <span style="color: var(--text-dim); font-size: 10px;">最終査読・更新: {lastUpdated}</span>
     )}
   </div>
 

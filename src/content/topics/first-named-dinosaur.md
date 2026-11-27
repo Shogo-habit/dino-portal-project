@@ -36,7 +36,7 @@ relatedSpecimens: ["megalosaurus","iguanodon","hylaeosaurus","wakinosaurus"]
   「恐竜」の定義を決定づけ、歴史のスタートラインを飾った3頭の恐竜たちは、いずれもイギリスの豊かな地層からほぼ同時期に発見されました。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 0; margin-bottom: 10px; font-size: 18px;">1. メガロサウルス（1824年命名）</h3>
+<h3 style="color: #ffffff; margin-top: 0; margin-bottom: 10px; font-size: 18px;">1. メガロサウルス（1824年命名）</h3>
 <p class="article-paragraph" style="margin-top: 0;">
   歴史上、最も最初に正式な学名が与えられた恐竜が、ジュラ紀中期の肉食恐竜である<strong>メガロサウルス（Megalosaurus）</strong>です。
 </p>
@@ -50,7 +50,7 @@ relatedSpecimens: ["megalosaurus","iguanodon","hylaeosaurus","wakinosaurus"]
   <img src="/images/topics/first-named-dinosaur/first_named_dinosaur1.webp" alt="メガロサウルスの復元イラスト (歴史的復元)" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 0; margin-bottom: 10px; font-size: 18px;">2. イグアノドン（1825年命名）</h3>
+<h3 style="color: #ffffff; margin-top: 0; margin-bottom: 10px; font-size: 18px;">2. イグアノドン（1825年命名）</h3>
 <p class="article-paragraph" style="margin-top: 0;">
   世界で2番目に名前がついたのが、草食恐竜の<strong>イグアノドン（Iguanodon）</strong>です。
 </p>
@@ -66,7 +66,7 @@ relatedSpecimens: ["megalosaurus","iguanodon","hylaeosaurus","wakinosaurus"]
 
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 25px;">
   <div style="flex: 1; min-width: 280px;">
-    <h3 style="color: var(--primary-neon); margin-top: 0; margin-bottom: 10px; font-size: 18px;">3. ヒラエオサウルス（1833年命名）</h3>
+    <h3 style="color: #ffffff; margin-top: 0; margin-bottom: 10px; font-size: 18px;">3. ヒラエオサウルス（1833年命名）</h3>
     <p class="article-paragraph" style="margin-top: 0;">
       3番目に正式命名されたのが、白亜紀前期に生息していた原始的な鎧竜（<a href="/dictionary/ankylosaurus/">アンキロサウルス</a>類）である<strong>ヒラエオサウルス（Hylaeosaurus）</strong>です。
     </p>
@@ -87,7 +87,7 @@ relatedSpecimens: ["megalosaurus","iguanodon","hylaeosaurus","wakinosaurus"]
   これら「最初の3大恐竜」は、恐竜研究の歴史において常に同格として紹介されるべき存在です。しかし現実には、現代の子供向け図鑑やポップカルチャーにおいて、イグアノドンが主役級の知名度を誇る一方で、メガロサウルスやヒラエオサウルスは「名前すら聞いたことがない」という人が大半です。この圧倒的な知名度の差は、以下の3つの明確な要因から生じています。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">原因1：ベルギーで起きた「奇跡の大量発見」と完全な全身骨格</h3>
+<h3 style="color: #ffffff; margin-top: 20px; margin-bottom: 10px; font-size: 16px;">原因1：ベルギーで起きた「奇跡の大量発見」と完全な全身骨格</h3>
 <p class="article-paragraph">
   最大の要因は、発見された化石の「完全度（クオリティ）」の差にあります。
   メガロサウルスとヒラエオサウルスは、初発見から200年近く経った今日に至るまで、<strong>完全な全身骨格がただの1体も発見されていません</strong>。見つかっているのは部分的な顎、背骨の断片、一部の肢の骨やトゲなどに過ぎず、博物館で展示されている骨格も多くが他の恐竜からの推測に基づくレプリカです。
@@ -96,7 +96,7 @@ relatedSpecimens: ["megalosaurus","iguanodon","hylaeosaurus","wakinosaurus"]
   これに対しイグアノドンは、1878年にベルギーのベルニサール炭鉱の地下322メートルにおいて、なんと<strong>30体以上ものほぼ完全な全身骨格が一度にまとまって発見されるという「古生物学史上最大の奇跡」</strong>が起きました。これによりイグアノドンの正確な骨のつながりが完全に証明され、世界中の博物館に巨大な全身骨格が直立して展示されるようになりました。この視覚的なインパクトこそが、知名度において決定的な差を生み出したのです。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">原因2：強烈な「キャラクター性（特徴）」の有無</h3>
+<h3 style="color: #ffffff; margin-top: 20px; margin-bottom: 10px; font-size: 16px;">原因2：強烈な「キャラクター性（特徴）」の有無</h3>
 <p class="article-paragraph">
   イグアノドンには、子供にとっても一目でわかる強烈な特徴がありました。それが<strong>「親指の鋭いトゲ（スパイク）」</strong>です。さらに、当初は「鼻の角」と間違えられていたのが、のちの研究で「手の親指の爪」へと劇的に復元が変わったという歴史的エピソードも、人々の知的好奇心を刺激しました。
 </p>
@@ -107,7 +107,7 @@ relatedSpecimens: ["megalosaurus","iguanodon","hylaeosaurus","wakinosaurus"]
   ヒラエオサウルスも同様に、背中にトゲを持つ鎧竜ですが、のちに発見された全身トゲだらけのアンキロサウルスや、背中に見事なプレートを持つ<a href="/dictionary/stegosaurus/">ステゴサウルス</a>などの派手な後輩恐竜たちに、ビジュアルのインパクトで完全に負けてしまったのです。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">原因3：ポップカルチャーにおける露出度の差</h3>
+<h3 style="color: #ffffff; margin-top: 20px; margin-bottom: 10px; font-size: 16px;">原因3：ポップカルチャーにおける露出度の差</h3>
 <p class="article-paragraph">
   完全な骨格が初期に復元されたイグアノドンは、創作の世界でも早くからスターとなりました。
   アーサー・コナン・ドイルが書いた不朽のSF冒険小説『失われた世界（The Lost World）』（1912年）において、探検隊が恐竜の生存する高原で最初に出会ったのがイグアノドンの群れでした。さらに決定打となったのは、2000年のディズニーの長編CG映画『ダイナソー（Dinosaur）』で、主人公の恐竜「アラダー」にイグアノドンが抜擢されたことです。これにより、世界の数多くの子供たちにその名前と姿が浸透することになりました。
@@ -128,7 +128,7 @@ relatedSpecimens: ["megalosaurus","iguanodon","hylaeosaurus","wakinosaurus"]
   <img src="/images/topics/first-named-dinosaur/first_named_dinosaur3.webp" alt="「恐竜（Dinosauria）」という言葉の誕生" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">歴史を創った最初の3大恐竜スペック比較</h3>
+<h3 style="color: #ffffff; margin-top: 20px; margin-bottom: 10px; font-size: 16px;">歴史を創った最初の3大恐竜スペック比較</h3>
 <div class="table-container" style="overflow-x: auto; margin-bottom: 25px;">
   <table style="width: 100%; border-collapse: collapse; border: 1px solid var(--panel-border); font-size: 14px;">
     <thead>

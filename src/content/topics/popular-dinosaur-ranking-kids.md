@@ -66,7 +66,7 @@ relatedSpecimens: ["tyrannosaurus","triceratops","spinosaurus","mosasaurus","bra
   それでは、みんなが選んだ大人気の恐竜・古代生物ランキングTOP10を発表します！それぞれの特徴や人気の秘密を見ていきましょう。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第1位：ティラノサウルス（みんなが認める最強の王様！迫力満点のキバとあご）</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第1位：ティラノサウルス（みんなが認める最強の王様！迫力満点のキバとあご）</h3>
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -100,7 +100,7 @@ relatedSpecimens: ["tyrannosaurus","triceratops","spinosaurus","mosasaurus","bra
   </span>
 </a>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第2位：トリケラトプス（3本の角がかっこいい！ティラノサウルスと並ぶ草食のヒーロー）</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第2位：トリケラトプス（3本の角がかっこいい！ティラノサウルスと並ぶ草食のヒーロー）</h3>
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -134,7 +134,7 @@ relatedSpecimens: ["tyrannosaurus","triceratops","spinosaurus","mosasaurus","bra
   </span>
 </a>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第3位：スピノサウルス（最新の研究でも超話題！背中の帆と鋭いツメを持つ水中のハンター）</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第3位：スピノサウルス（最新の研究でも超話題！背中の帆と鋭いツメを持つ水中のハンター）</h3>
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -168,7 +168,7 @@ relatedSpecimens: ["tyrannosaurus","triceratops","spinosaurus","mosasaurus","bra
   </span>
 </a>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第4位：モササウルス（海の最強王者！映画でも大かつやくの巨大なトカゲ）</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第4位：モササウルス（海の最強王者！映画でも大かつやくの巨大なトカゲ）</h3>
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -192,7 +192,7 @@ relatedSpecimens: ["tyrannosaurus","triceratops","spinosaurus","mosasaurus","bra
   </div>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第5位：ブラキオサウルス（ビルと同じくらいの超巨大サイズ！長い首がやさしい巨人）</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第5位：ブラキオサウルス（ビルと同じくらいの超巨大サイズ！長い首がやさしい巨人）</h3>
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -216,7 +216,7 @@ relatedSpecimens: ["tyrannosaurus","triceratops","spinosaurus","mosasaurus","bra
   </div>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第6位：ステゴサウルス（背中の板としっぽのトゲが目印！ジュラ紀のおしゃれな恐竜）</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第6位：ステゴサウルス（背中の板としっぽのトゲが目印！ジュラ紀のおしゃれな恐竜）</h3>
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -240,7 +240,7 @@ relatedSpecimens: ["tyrannosaurus","triceratops","spinosaurus","mosasaurus","bra
   </div>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第7位：プテラノドン（大空をダイナミックに飛ぶ！翼を広げると7メートルを超える空の王者）</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第7位：プテラノドン（大空をダイナミックに飛ぶ！翼を広げると7メートルを超える空の王者）</h3>
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -264,7 +264,7 @@ relatedSpecimens: ["tyrannosaurus","triceratops","spinosaurus","mosasaurus","bra
   </div>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第8位：ヴェロキプトル（走るのがとても速い！頭がよくてチームワークで戦うスピードスター）</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第8位：ヴェロキプトル（走るのがとても速い！頭がよくてチームワークで戦うスピードスター）</h3>
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -288,7 +288,7 @@ relatedSpecimens: ["tyrannosaurus","triceratops","spinosaurus","mosasaurus","bra
   </div>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第9位：アンキロサウルス（体全体が頑丈なよろい！しっぽのハンマーで敵をやっつける）</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第9位：アンキロサウルス（体全体が頑丈なよろい！しっぽのハンマーで敵をやっつける）</h3>
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -312,7 +312,7 @@ relatedSpecimens: ["tyrannosaurus","triceratops","spinosaurus","mosasaurus","bra
   </div>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第10位：パラサウロロフス（頭の後ろに伸びる長いトサカ！ラッパのような音で会話する恐竜）</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第10位：パラサウロロフス（頭の後ろに伸びる長いトサカ！ラッパのような音で会話する恐竜）</h3>
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -341,17 +341,17 @@ relatedSpecimens: ["tyrannosaurus","triceratops","spinosaurus","mosasaurus","bra
   何千万年も昔に絶滅してしまい、今は骨（化石）しか残っていない恐竜たち。それなのに、どうして現代の子供たちは、こんなにも恐竜に夢中になるのでしょうか？そこには、子供たちの好奇心を刺激する3つの大きな秘密があります。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">理由1：ツノ、よろい、トゲなど、見た目が個性的でキャラクター性が高いから</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">理由1：ツノ、よろい、トゲなど、見た目が個性的でキャラクター性が高いから</h3>
 <p class="article-paragraph">
   恐竜たちには、それぞれ「トリケラトプス＝3本の角」「アンキロサウルス＝しっぽのハンマー」といった、一目でわかるトレードマークがあります。これがまるでアニメや特撮のヒーロー、あるいはポケモンのようなキャラクターに似ており、子供たちにとって「個性を覚えてお気に入りを選ぶ楽しさ」があるのです。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">理由2：地球の歴史上に「本当に実在した」圧倒的な大きさと強さにワクワクするから</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">理由2：地球の歴史上に「本当に実在した」圧倒的な大きさと強さにワクワクするから</h3>
 <p class="article-paragraph">
   絵本に出てくる怪獣やファンタジーのドラゴンと違い、恐竜たちはかつて「本当に地球の上を歩いていた」という事実が最大の魅力です。ビルに届くような大きさの生き物が本当にいた、というリアリティが、子供たちの「本当のことを知りたい！」という知的探究心や冒険心を強烈に揺さぶるのです。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">理由3：図鑑やおもちゃ、映画を通じて、日常の遊びと結びついているから</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">理由3：図鑑やおもちゃ、映画を通じて、日常の遊びと結びついているから</h3>
 <p class="article-paragraph">
   リアルで動かせるフィギュア（アニアなど）を戦わせたり、図鑑で名前や大きさのデータを調べたり、映画を観たりと、日常の「遊び」のインフラが極めて整っています。遊べば遊ぶほど詳しくなり、達成感や楽しさがどんどん深まるスパイラルが、恐竜人気を支えています。
 </p>
@@ -361,7 +361,7 @@ relatedSpecimens: ["tyrannosaurus","triceratops","spinosaurus","mosasaurus","bra
   恐竜について詳しくなると、子供たちからは「もっと知りたい！」と少しマニアックな質問が出てくるようになります。ここでは、よくある3つの疑問に分かりやすく答えます。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 18px;">Q1：ランキングに載っているモササウルスやプテラノドンは「恐竜ではない」って本当？</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 18px;">Q1：ランキングに載っているモササウルスやプテラノドンは「恐竜ではない」って本当？</h3>
 <p class="article-paragraph">
   はい、実は学術的には<strong>恐竜ではありません</strong>。<br>
   恐竜の定義は「大昔の地球の『陸の上』で暮らしていた、骨盤の形が特別な爬虫類」です。
@@ -370,7 +370,7 @@ relatedSpecimens: ["tyrannosaurus","triceratops","spinosaurus","mosasaurus","bra
   海をスイスイ泳ぐ「モササウルス」や、空を大きく飛ぶ「プテラノドン」は、直立歩行をせず、海や空に適応した別の爬虫類のグループ（翼竜や海生爬虫類）に分類されます。「恐竜と同じ時代に生きていた、同じくらい凄くて大人気の別の爬虫類」と覚えると、さらに恐竜の時代が面白くなりますね。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 18px;">Q2：日本にも、こんな人気のかっこいい恐竜はいたの？</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 18px;">Q2：日本にも、こんな人気のかっこいい恐竜はいたの？</h3>
 <p class="article-paragraph">
   もちろんいました！<br>
   日本では福井県を中心にたくさんの化石が見つかっており、日本オリジナルの恐竜として<strong>「<a href="/dictionary/fukuiraptor/">フクイラプトル</a>」</strong>（するどいツメを持つ肉食恐竜）や、<strong>「<a href="/dictionary/fukuisaurus/">フクイサウルス</a>」</strong>（イグアナの仲間である草食恐竜）などが有名です。
@@ -379,7 +379,7 @@ relatedSpecimens: ["tyrannosaurus","triceratops","spinosaurus","mosasaurus","bra
   また、福島県ではモササウルスの仲間である巨大な首長竜<strong>「<a href="/dictionary/futabasaurus/">フタバサウルス</a>（フタバスズキリュウ）」</strong>の化石が見つかり、子供たちに広く親しまれています。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 18px;">Q3：人気の恐竜の名前にはどんな意味があるの？</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 18px;">Q3：人気の恐竜の名前にはどんな意味があるの？</h3>
 <p class="article-paragraph">
   恐竜の学名（名前）はギリシャ語やラテン語が元になっており、その特徴を表す意味が込められています。
 </p>

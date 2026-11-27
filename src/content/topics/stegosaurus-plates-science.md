@@ -18,7 +18,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus","miragaia"]
 </p>
 
 <h2 class="article-section-title">基本スペックと発見の歴史：150年前の誤解から解き明かされた実像</h2>
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">「瓦屋根のトカゲ」の名の由来と発見のドラマ</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">「瓦屋根のトカゲ」の名の由来と発見のドラマ</h3>
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -33,7 +33,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus","miragaia"]
   </div>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">「脳がクルミサイズ」という伝説と知能の真実</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">「脳がクルミサイズ」という伝説と知能の真実</h3>
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -49,7 +49,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus","miragaia"]
 </div>
 
 <h2 class="article-section-title">背中の板「骨板（プレート）」の謎を徹底解剖：最新科学が明かす驚愕の真実</h2>
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">なぜ「防具（盾）」ではなかったのか？3つの科学的証拠</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">なぜ「防具（盾）」ではなかったのか？3つの科学的証拠</h3>
 <p class="article-paragraph">
   長年、図鑑や映画では、背中に立ち並ぶ17〜19枚の板は、肉食恐竜<a href="/dictionary/allosaurus/">アロサウルス</a>の襲撃から背骨や内臓を守る「盾（アーマー）」として描かれてきました。しかし、現代の古生物学者たちによる詳細な分析の結果、物理的な盾として機能させるには以下のような致命的な欠陥があることが分かりました。
 </p>
@@ -63,7 +63,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus","miragaia"]
   <strong style="color: var(--primary-neon);">③ 骨格と直接つながっていなかったこと：</strong>ステゴサウルスの板は、背骨や肋骨から伸びた骨ではなく、皮膚の中に埋もれていた「皮膚骨（骨化皮）」という組織でした。つまり、ただ皮膚の上に浮いている状態だったため、強い衝撃を受けると根元から簡単にもぎ取れてしまったと考えられます。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">体温をコントロールする「熱力学的ラジエーター説」</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">体温をコントロールする「熱力学的ラジエーター説」</h3>
 <p class="article-paragraph">
   では、盾でないなら何の目的があったのでしょうか。1970年代に提唱され、現在も非常に有力視されているのが、体温を調整するための「空調システム（ラジエーター）」としての役割です。
 </p>
@@ -71,7 +71,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus","miragaia"]
   ステゴサウルスの背中の板は、互い違いにジグザグに配置されていました。これは風を受けた際に空気の渦を作り出し、板の表面を効率よく冷却するための空力的な配置であることが、風洞実験やコンピューターシミュレーションによって実証されています。気温が低い朝には、板の平らな面を太陽に向けて日光をたっぷり浴び、板を通る血液を温めて全身に送り、活動を開始します。逆に、日中の厳しい暑さの中では、風を浴びて板の血管から余分な熱を放出し、脳や内臓がオーバーヒートするのを防いでいました。現代のアフリカゾウが巨大な耳で風を受けて血流を冷やすのと同じメカニズムを、彼らは背中の板で実現していたのです。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">一瞬で色を変える？「威嚇・求愛のために使っていた説」</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">一瞬で色を変える？「威嚇・求愛のために使っていた説」</h3>
 <p class="article-paragraph">
   もう一つの主要な説が、敵への威嚇や仲間・異性へのアピールの役割です。
 </p>
@@ -83,7 +83,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus","miragaia"]
 </div>
 
 <h2 class="article-section-title">尾の必殺武器「サゴマイザー」と宿敵アロサウルスとのリアルな死闘</h2>
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">4本のスパイク「サゴマイザー」の圧倒的威力と漫画から生まれた公式学名</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">4本のスパイク「サゴマイザー」の圧倒的威力と漫画から生まれた公式学名</h3>
 <p class="article-paragraph">
   ステゴサウルスの本当の武器は、背中の板ではなく、尾の先端にある4本の鋭く頑丈な骨のスパイクです。このトゲは長さが60〜90センチメートルもあり、硬い角質で覆われていました。この尾の武器は、学術的にも正式に<strong style="color: var(--primary-neon);">「サゴマイザー（Thagomizer）」</strong>と呼ばれています。
 </p>
@@ -91,7 +91,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus","miragaia"]
   この風変わりな名前の由来は、なんとアメリカのSF風刺漫画『ザ・ファーサイド（The Far Side）』です。1982年の作中で、原始人が黒板にステゴサウルスの尾のトゲを指して「絶滅したサゴ・シモンズ氏にちなんで、サゴマイザーと呼びます」とジョークを描いたところ、この表現を非常に気に入った古生物学者ケン・カーペンターが学会で使い始め、現在では公式な古生物学用語として定着してしまったという非常にユニークな歴史を持っています。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">「腰にも脳があった」という第2の脳説の真実</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">「腰にも脳があった」という第2の脳説の真実</h3>
 <p class="article-paragraph">
   かつて「ステゴサウルスには腰にも脳（第2の脳）があった」という説が広く語られていました。腰の骨盤の近くの脊髄に、頭の脳よりも数十倍も大きい空洞（腰仙骨膨大部）が見つかったためです。
 </p>
@@ -99,7 +99,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus","miragaia"]
   しかし、現代の研究ではこれは「第2の脳」ではなく、鳥類などにも見られる「グリコーゲン体」と呼ばれる組織や、巨大な下半身と尾の筋肉を素早く制御するための巨大な神経束の合流地点であったと考えられています。クルミサイズの頭の脳だけでは、尾の先にあるサゴマイザーを俊敏に動かして敵を正確に攻撃することが難しいため、腰に位置する強力な中継神経系が、尾を振り回す運動をオートマチックにコントロールしていたのです。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">化石に刻まれた決定的証拠：宿敵アロサウルスとの闘いの痕跡</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">化石に刻まれた決定的証拠：宿敵アロサウルスとの闘いの痕跡</h3>
 <p class="article-paragraph">
   サゴマイザーが単なる飾りではなく、実戦で使われた強力な凶器であったことは、化石そのものが証明しています。
 </p>
@@ -108,7 +108,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus","miragaia"]
 </p>
 
 <h2 class="article-section-title">ステゴサウルスと個性豊かな「剣竜類（装盾類）」の進化の系譜</h2>
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">スパイクだらけの種から首の長い種まで</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">スパイクだらけの種から首の長い種まで</h3>
 <p class="article-paragraph">
   ステゴサウルスは剣竜類のなかで最大かつ最も有名な種ですが、世界中からは他にもユニークな形に進化を遂げた様々な剣竜の仲間たちが発見されています。
 </p>
@@ -116,7 +116,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus","miragaia"]
   例えば、アフリカで発見された<strong style="color: var(--primary-neon);">ケントロサウルス</strong>は、背中の前半部分には小さな板が並びますが、後半から尾にかけてはすべて長いトゲ（スパイク）に変化しており、さらに肩の横からも巨大なスパイクが突き出ていました。中国で発見された<strong style="color: var(--primary-neon);">ウエルホサウルス</strong>は、板の形が丸い木の葉型ではなく、非常に平らで長方形に近い独特のプレートを持っていました。さらにポルトガルで発見された<strong style="color: var(--primary-neon);">ミラガイア</strong>は、他の剣竜とは比べ物にならないほど首の骨（頚椎）の数が多く、まるで竜脚類（カミナリ竜）のように長い首を持ち、高い場所の植物を食べることに適応していました。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">剣竜類の代表的な仲間たちの比較</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">剣竜類の代表的な仲間たちの比較</h3>
 <div class="table-container" style="overflow-x: auto; margin-bottom: 25px; margin-top: 15px;">
   <table style="width: 100%; border-collapse: collapse; border: 1px solid var(--panel-border); font-size: 14px;">
     <thead>
@@ -199,7 +199,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus","miragaia"]
 </div>
 
 <h2 class="article-section-title">親子で学ぶ！博物館の見学ポイントとおもちゃ紹介</h2>
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">博物館でここをチェックしよう！骨格標本の観察眼</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">博物館でここをチェックしよう！骨格標本の観察眼</h3>
 <p class="article-paragraph">
   全国の博物館（国立科学博物館や福井県立恐竜博物館など）でステゴサウルスの全身骨格標本を見学する際は、親子で以下のポイントを間近で観察してみてください。
 </p>
@@ -207,7 +207,7 @@ relatedSpecimens: ["stegosaurus","kentrosaurus","wuerhosaurus","miragaia"]
   まず、<strong style="color: var(--primary-neon);">「背中の板の根元」</strong>に注目してください。板の底面は平らになっており、背骨と関節で繋がっていないことがはっきりと分かります。「この板は骨とくっついていなくて、皮膚の上に立っていたんだよ」と子供に教えてあげることで、皮膚骨（骨化皮）という不思議な生態をリアルに理解できます。次に、<strong style="color: var(--primary-neon);">「尾のスパイク（サゴマイザー）の角度」</strong>を見てみましょう。トゲは真上ではなく、斜め後ろや横に向かって突き出しています。これは尾を左右に振り回した際、真横から近づいてくる肉食恐竜の脇腹や足に最も効率的に突き刺さるように設計された、恐るべき実戦用の配置であることが視覚的に納得できるはずです。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">手で触って学ぶ進化！アニア「AL-03 ステゴサウルス」の魅力</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">手で触って学ぶ進化！アニア「AL-03 ステゴサウルス」の魅力</h3>
 <div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
   <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0; margin-bottom: 20px;">

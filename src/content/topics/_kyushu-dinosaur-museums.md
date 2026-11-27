@@ -83,7 +83,7 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "velociraptor", "protoceratop
   熊本県の中央に位置する御船町は、古くから多くの恐竜化石が発掘されてきた「恐竜の街」です。町の中心部にある博物館は、スタイリッシュな外観と充実した展示内容を誇ります。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">見逃せない見どころ</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">見逃せない見どころ</h3>
 <p class="article-paragraph">
   白亜紀の御船を再現した展示室では、日本で初めて発見された肉食恐竜である<strong>「ミフネリュウ（単恐竜類）」の歯のレプリカ</strong>や、九州産の貴重な化石が多数展示されています。
   また、ガラス張りの部屋のなかで研究員の方々が実際に化石をクリーニング（削り出し）している様子を間近で見学できる<strong>「オープンラボ（バックヤード展示）」</strong>は必見。
@@ -97,7 +97,7 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "velociraptor", "protoceratop
   <img src="/images/topics/kyushu-dinosaur-museums/mifune_museum_detail.webp" alt="御船町恐竜博物館の展示" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">子連れ攻略ポイント</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">子連れ攻略ポイント</h3>
   館内はワンフロア（一部スロープあり）で非常にコンパクトにまとまっているため、歩き始めたばかりの幼児連れでも迷子になりにくく、疲れにくいのが大きなメリットです。
   お隣には「カルチャーセンター」や芝生の公園があり、お弁当を持参してピクニックをするのもおすすめ。土日祝の体験学習プログラムはWEBで事前予約をしておくと安心です。
 
@@ -109,7 +109,7 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "velociraptor", "protoceratop
   福岡県北九州市にある「いのちのたび博物館」は、西日本でトップクラスの規模を誇る自然史博物館です。大昔の地球誕生から恐竜時代、そして人類の歴史までを壮大なスケールで学べます。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">見逃せない見どころ</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">見逃せない見どころ</h3>
 <p class="article-paragraph">
   メインホールにそびえ立つ、<strong>全長35メートルを超える超巨大恐竜「セイスモサウルス（ディプロドクスの一種）」や、ティラノサウルスの全身骨格</strong>の群れは息をのむ大迫力。
   さらに、暗闇のなかで音・光・風の演出と共に、リアルに動く恐竜ロボットたちがジュラ紀の北九州を体現するジオラマシアター<strong>「エンバイラマ館」</strong>は子供たちに大人気！タイムスリップしたかのようなドキドキ感を体験できます。
@@ -122,7 +122,7 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "velociraptor", "protoceratop
   <img src="/images/topics/kyushu-dinosaur-museums/inochinotabi_museum_detail.webp" alt="いのちのたび博物館の展示" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">子連れ攻略ポイント</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">子連れ攻略ポイント</h3>
   館内が非常に広いため、全部しっかり回ると大人でも足が疲れます。幼児連れの場合はベビーカーを持参するか、お気に入りの展示エリア（恐竜フロア）に絞って見学するのがコツです。
   週末や夏休み期間は<strong>「完全事前予約制」</strong>となるため、必ず公式サイトから入館時間指定のチケットを予約してからお出かけください。ランチは隣接する「イオンモール八幡東」に歩いて行けるため、子連れランチには全く困りません。
 
@@ -134,7 +134,7 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "velociraptor", "protoceratop
   長崎半島の南端、野母崎（のもざき）地区に2021年に誕生した新しい博物館です。長崎市は近年、ハドロサウルス類の大型化石やティラノサウルス類の巨大な歯の化石が次々と見つかり、大注目されています。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">見逃せない見どころ</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">見逃せない見どころ</h3>
 <p class="article-paragraph">
   世界で最も保存状態が良いとされる<strong>ティラノサウルスの実物全身骨格レプリカ「トリックス（Trix）」</strong>が日本で唯一常設展示されています。その大きさ（全長約13m）と、かがみ込むような迫力あるポージングは一見の価値あり。
   また、長崎で実際に見つかった恐竜の骨や歯の最新化石もたくさん展示されています。
@@ -148,7 +148,7 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "velociraptor", "protoceratop
   <img src="/images/topics/kyushu-dinosaur-museums/benex_museum_detail.webp" alt="長崎市恐竜博物館" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">子連れ攻略ポイント</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">子連れ攻略ポイント</h3>
   長崎市街地から車で約40分、海岸線の美しいドライブコースを進んだ場所にあります。
   土日祝や夏休み期間は、入館整理券（事前予約）が推奨されています。
   お出かけの際は、ぜひスニーカーなどの動きやすい服装を用意してください。博物館で学んだあと、お隣の恐竜公園でヘトヘトになるまで遊ぶのが定番の黄金コースです。また、天気が良ければ公園の展望台から世界遺産・軍艦島がくっきりと見えます！
@@ -157,12 +157,12 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "velociraptor", "protoceratop
 
 <h2 class="article-section-title">九州の恐竜お出かけを120%楽しむためのコツ</h2>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">1. 事前予約のタイミングを逃さない</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">1. 事前予約のタイミングを逃さない</h3>
 <p class="article-paragraph">
   特に「いのちのたび博物館」の週末分や夏休み期間の予約枠は、直前になると完売してしまうことが多々あります。予定日の2週間〜1ヶ月前には公式サイトで予約枠を確認する習慣をつけましょう。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">2. 屋内と屋外の「ハイブリッド移動」を想定する</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">2. 屋内と屋外の「ハイブリッド移動」を想定する</h3>
 <p class="article-paragraph">
   長崎や御船のように、近くに魅力的な公園や屋外広場があるケースが多いです。館内は冷暖房が効いていますが、外遊び用に「帽子」「多めの水分」「着替え」を車やバッグに常備しておくと、お出かけの快適さが格段にアップします。
 </p>

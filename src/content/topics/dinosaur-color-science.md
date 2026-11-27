@@ -40,17 +40,17 @@ relatedSpecimens: ["yutyrannus","velociraptor","archaeopteryx"]
   この最新技術によって、すでに何種類もの恐竜たちの本当のカラーリングが明らかになっています。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">1. <a href="/dictionary/sinosauropteryx/">シノサウロプテリクス</a>（中華竜鳥）：初のカラー復元</h3>
+<h3 style="color: #ffffff; margin-top: 20px; margin-bottom: 10px; font-size: 16px;">1. <a href="/dictionary/sinosauropteryx/">シノサウロプテリクス</a>（中華竜鳥）：初のカラー復元</h3>
 <p class="article-paragraph">
   2010年、世界で初めてカラーリングが科学的に特定された恐竜です。背中から尾にかけてフサフサした単純な羽毛で覆われており、全体的に**赤褐色（ジンジャーオレンジ）と白の美しいシマシマ模様の尾**を持っていたことが判明しました。これは現代のレッサーパンダのように、茂みの中でカモフラージュ（背景に溶け込む）する役割を果たしていたと考えられています。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">2. アンキオルニス：全身カラフルなコーディネート</h3>
+<h3 style="color: #ffffff; margin-top: 20px; margin-bottom: 10px; font-size: 16px;">2. アンキオルニス：全身カラフルなコーディネート</h3>
 <p class="article-paragraph">
   ほぼ全身のカラーが判明したジュラ紀の小型羽毛恐竜。体はシックなダークグレー、翼（前肢と後肢）には白と黒の美しい縞模様（ストライプ）があり、頭部には鮮やかな**赤褐色のトサカ**を持っていました。キツツキに似た非常にカラフルで目立つ姿をしており、生存競争における仲間同士のアピール（ディスプレイ）に使われていたと推測されています。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">3. <a href="/dictionary/microraptor/">ミクロラプトル</a>：虹色に輝く黒い翼</h3>
+<h3 style="color: #ffffff; margin-top: 20px; margin-bottom: 10px; font-size: 16px;">3. <a href="/dictionary/microraptor/">ミクロラプトル</a>：虹色に輝く黒い翼</h3>
 <p class="article-paragraph">
   4つの翼を持つことで有名な白亜紀の小型獣脚類。メラノソームの配列パターンを分析した結果、彼らの羽毛は単なる黒ではなく、光を浴びるとカラスのように美しく輝く**「金属光沢のある黒（構造色）」**だったことが証明されました。夜行性ではなく、陽の光がきらめく日中に活動していた証拠でもあります。
 </p>

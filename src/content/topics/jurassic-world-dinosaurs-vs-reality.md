@@ -37,11 +37,8 @@ faqs:
   実は劇中でも、遺伝子工学者のヘンリー・ウー博士が<strong style="color: var(--primary-neon);">「我々が創り出したのは本物の恐竜ではなく、欠落したDNAをカエル等で補完した展示用モンスターだ」</strong>と語っています。では、映画のカッコいい恐竜たちと、太古の地球を実際に生きていた「本物の恐竜」には、具体的にどのような違いがあるのでしょうか？最新科学が暴いた8つの決定的真実を徹底検証します！
 </p>
 
-<!-- 8大真実 早見比較HUDテーブル -->
+<!-- 8大真実 早見比較テーブル -->
 <div class="hud-panel" style="margin: 30px 0; padding: 22px; border: 1px solid rgba(0, 242, 255, 0.35); background: rgba(0, 15, 25, 0.7); border-radius: 6px;">
-  <div style="font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 6px; letter-spacing: 1.5px; font-weight: bold;">
-    [ QUICK COMPARISON / 映画 vs 本物の恐竜 8大真実早見表 ]
-  </div>
   <div style="font-size: 16px; font-weight: bold; color: #fff; margin-bottom: 15px;">
     映画の描写 vs 最新科学の真実（比較まとめ）
   </div>
@@ -105,7 +102,7 @@ faqs:
   映画で知能の高い看板恐竜として大活躍する<a href="/dictionary/velociraptor/" style="color: var(--primary-neon); text-decoration: underline;">ヴェロキラプトル</a>（ブルーなど）。俊敏な動きと鋭い鉤爪、冷徹なチームプレイで人間を追い詰める姿は強烈な恐怖を植え付けました。しかし、本物の姿は映画とは全く異なります。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">① 実寸サイズ：映画は大人の人間サイズ、本物は「大型犬〜七面鳥サイズ」</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">① 実寸サイズ：映画は大人の人間サイズ、本物は「大型犬〜七面鳥サイズ」</h3>
 <p class="article-paragraph">
   映画のラプトルは体高約1.8メートル、体重約100キログラムと、大人の人間と対等以上の体格を誇ります。しかし、モンゴルの白亜紀後期層から発見される本物のヴェロキラプトル（<em>Velociraptor mongoliensis</em>）は、<strong style="color: var(--primary-neon);">全長約2.0メートル、腰の高さ（全高）は約50センチメートル、体重はわずか15キログラム前後</strong>しかありませんでした。
   現代でいえばコヨーテや大型の七面鳥ほどの大きさであり、人間が見下ろせるサイズ感だったのです。
@@ -114,7 +111,7 @@ faqs:
   ではなぜ映画ではあんなに巨大だったのか？実は原作者のマイケル・クライトンや映画スタッフは、当時北米で発掘され話題となっていた大型近縁種<a href="/dictionary/deinonychus/" style="color: var(--primary-neon); text-decoration: underline;">デイノニクス</a>（全長約3.4メートル）をモデルにし、名前の響きがスマートで格好いい「ヴェロキラプトル」を採用したという裏話があります。さらに映画公開後に、映画のラプトルとほぼ同サイズの超大型種<a href="/dictionary/utahraptor/" style="color: var(--primary-neon); text-decoration: underline;">ユタラプトル</a>（全長約5.5メートル）が発見され、「スピルバーグの予言」と話題になりました。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">② 外見と手首：ウロコ肌ではなく「本物の鳥の翼」を持っていた！</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">② 外見と手首：ウロコ肌ではなく「本物の鳥の翼」を持っていた！</h3>
 <p class="article-paragraph">
   映画のラプトルは爬虫類特有のウロコ肌で、手のひらを下（地面）に向けた「幽霊の手（回内姿勢）」をしています。
   しかし本物の前肢骨（尺骨）には、鳥類と同じ<strong style="color: var(--primary-neon);">「羽柄付着丘（クイルノブ：風切羽が骨に直接固定されていた突起）」</strong>が発見されています。彼らは全身が密な羽毛に覆われ、腕には立派な「翼」を持っていました。
@@ -135,14 +132,14 @@ faqs:
   『ジュラシック・ワールド』で水中から跳び上がり、ホオジロザメを一口で呑み込み、果ては巨大ハイブリッド恐竜インドミナス・レックスをも水中に引きずり込んだ海の絶対王者<a href="/dictionary/mosasaurus/" style="color: var(--primary-neon); text-decoration: underline;">モササウルス</a>。その迫力は圧巻でしたが、サイズと形態には大きな映画的誇張が施されていました。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">① サイズ：映画は推定30メートル超？本物は「最大約13〜15メートル」</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">① サイズ：映画は推定30メートル超？本物は「最大約13〜15メートル」</h3>
 <p class="article-paragraph">
   映画内のモササウルスは、ホオジロザメ（約3m）や人間との対比から逆算すると、全長25〜30メートル以上、シロナガスクジラに匹敵する超ド級スケールで描写されています。
   しかし、化石から復元される最大級のモササウルス（<em>Mosasaurus hoffmannii</em>）の実寸は、<strong style="color: var(--primary-neon);">全長約13〜15メートル、推定体重は約10〜14トン</strong>です。
   それでも現代の大型シャチ（約8m・6トン）の2倍近い巨体であり、白亜紀後期の海において生態系の頂点に君臨していたことは間違いありませんが、クジラのような怪物サイズではありませんでした。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">② 外見：ワニのようなゴツゴツ肌ではなく「サメのように滑らかな肌と三日月尾鰭」</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">② 外見：ワニのようなゴツゴツ肌ではなく「サメのように滑らかな肌と三日月尾鰭」</h3>
 <p class="article-paragraph">
   劇中のモササウルスは背中にワニのような骨板突起が並ぶ怪獣風デザインですが、近年の近縁種（プラテカルプス等）の皮膚軟組織化石の研究により、モササウルス類の皮膚は微細な菱形ウロコで覆われ、サメのように水の抵抗を極限まで減らした非常に滑らかな質感であったことが判明しています。
   さらに、尾の先端はトカゲのように直線的ではなく、<strong style="color: var(--primary-neon);">サメや魚竜のように下向きに折れ曲がった二叉の三日月型尾鰭（テールフルーク）</strong>を持っており、驚異的な遊泳スピードを誇っていました。
@@ -153,19 +150,19 @@ faqs:
   シリーズの絶対的象徴である<a href="/dictionary/tyrannosaurus/" style="color: var(--primary-neon); text-decoration: underline;">ティラノサウルス</a>（T-REX）。第1作の「動かなければ見つからない」というグラント博士のセリフはあまりにも有名ですが、古生物学の視点からは全くの逆です。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">① 視力：タカやワシを凌駕する「驚異の立体視能力」</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">① 視力：タカやワシを凌駕する「驚異の立体視能力」</h3>
 <p class="article-paragraph">
   ティラノサウルスの頭骨をCTスキャンして眼窩（目のくぼみ）の向きを解析した結果、両目の視野が重なり合う角度（両眼視野）はなんと<strong style="color: var(--primary-neon);">約55度</strong>に達します。これは現生の猛禽類（タカやワシ）をも上回り、現代の人間（約50度）以上の広い立体視野です。
   遠近感を正確に把握し、獲物がどれほど静止していようとも、背景から浮かび上がらせて鮮明に識別できたと考えられています。もし本物のT-REXの前でじっと立ち止まったら、真っ先に格好の餌食になっていたはずです！
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">② 鳴き声：ライオンのような大咆哮ではなく「内臓を揺るがす超低周波の唸り」</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">② 鳴き声：ライオンのような大咆哮ではなく「内臓を揺るがす超低周波の唸り」</h3>
 <p class="article-paragraph">
   映画を象徴する「ガオォォォ！」という大音量の咆哮は、ライオンやトラ、ゾウの鳴き声を合成して作られた名音響効果です。
   しかし恐竜の気管・喉頭構造を現生のワニや大型鳥類（エミューやダチョウ）と比較した最新研究によると、ティラノサウルスは口を開けて大声で吠えるのではなく、口を閉じたまま喉の気嚢を共鳴させる<strong style="color: var(--primary-neon);">「クローズドマウス・ボーカリゼーション（超低周波の地鳴り）」</strong>を発していた可能性が高いとされています。人間の可聴域の下限に近い数百ヘルツ以下の重低音は、数キロメートル先まで地面と空気を震わせ、周囲の動物たちに本能的な戦慄を与えていたと考えられます。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">③ 走る速度：ジープを追走する時速50kmは骨が折れる？</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">③ 走る速度：ジープを追走する時速50kmは骨が折れる？</h3>
 <p class="article-paragraph">
   映画では時速50キロメートル以上のジープに追いつきそうな猛スピードで走りますが、骨格強度シミュレーション（有限要素法解析）によると、8〜9トンに達する巨体で時速40km以上の「疾走（両足が同時に地面から離れる走り）」を行うと、大腿骨骨幹部にかかる応力が耐荷重限界を超えて骨折してしまうことが判明しました。
   実際の最高速度は<strong style="color: var(--primary-neon);">時速20〜27キロメートル程度（競歩に近い速足）</strong>であったと推定されています。ジープから逃げ切ることは容易ですが、生身の人間（短距離選手を除く一般人の全力疾走）なら十分に追いつかれてしまう絶妙なスピードです。
@@ -277,7 +274,7 @@ faqs:
   1990年代当時、この設定は極めて知的で説得力に富み、「本当に数年後に恐竜が蘇るのではないか」と世界中の人々を本気でワクワクさせました。しかし、その後の分子生物学および古遺伝学（古代DNA研究）の飛躍的発展により、この夢の設定には<strong style="color: var(--primary-neon);">「乗り越えられない物理・化学的限界」</strong>が存在することが決定づけられました。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">① DNAの半減期は「わずか521年」：6,600万年の歳月に分子は耐えられない</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">① DNAの半減期は「わずか521年」：6,600万年の歳月に分子は耐えられない</h3>
 <p class="article-paragraph">
   2012年、コペンハーゲン大学などの国際研究チーム（Allentoft et al.）は、ニュージーランドで発見された絶滅巨鳥モアの多数の骨化石からDNAの分解速度を精密に測定し、生物学界に衝撃を与える論文を発表しました。
 </p>
@@ -288,13 +285,13 @@ faqs:
   恐竜が絶滅したのは今から<strong style="color: var(--primary-neon);">約6,600万年前</strong>。これはDNAの物理的生存限界（680万年）の約10倍もの超長期間です。たとえ琥珀の中に閉じ込められていたとしても、6,600万年の地熱や経年劣化により、恐竜のDNAは完全に原子・単一分子レベルまでバラバラに破壊されており、配列を読み取ることすら不可能なのです。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">② 琥珀の中の虫は「中身が空洞」：ミイラではなく炭化した殻</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">② 琥珀の中の虫は「中身が空洞」：ミイラではなく炭化した殻</h3>
 <p class="article-paragraph">
   さらに追い討ちをかけたのが、琥珀中の昆虫化石そのものの微細構造スキャンです。
   外見上は琥珀の中で完璧に生前の姿を留めている蚊やアブですが、中身を開いて電子顕微鏡やCTスキャンで観察すると、軟組織や血液は一切残っておらず、<strong style="color: var(--primary-neon);">「昆虫の外骨格のキチン質だけが炭化して残った、完全に中身が空洞の抜け殻」</strong>であることが判明しました。血液細胞そのものがとっくに失われているため、吸血された恐竜の血球を回収することは不可能なのです。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">③ 現代の科学者たちが挑む「もう一つの恐竜復活アプローチ」</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">③ 現代の科学者たちが挑む「もう一つの恐竜復活アプローチ」</h3>
 <p class="article-paragraph">
   では、人類が「生きた恐竜」を目にする道は完全に閉ざされたのでしょうか？実は、現代の最先端科学は映画とは全く別のアプローチで恐竜の形質を呼び戻す研究を進めています。
 </p>

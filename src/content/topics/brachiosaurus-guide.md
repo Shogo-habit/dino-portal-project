@@ -158,7 +158,7 @@ relatedSpecimens: ["brachiosaurus","diplodocus","apatosaurus"]
   ブラキオサウルスに関して、よく子供たちから聞かれる3つの不思議な疑問にお答えします！
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">Q1. 水の中で生活していたって本当？</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">Q1. 水の中で生活していたって本当？</h3>
 <p class="article-paragraph">
   <strong>A. いいえ、陸の上で元気に暮らしていました！</strong><br>
   大昔の図鑑や絵では、ブラキオサウルスがあまりにも重すぎるため、自分の体重を支えきれずに湖や沼の底を歩き、鼻だけを水の上に出してシュノーケルのように息をしていたと描かれていました。
@@ -168,7 +168,7 @@ relatedSpecimens: ["brachiosaurus","diplodocus","apatosaurus"]
   また、彼らの足の骨や筋肉を調べると、重い体重をしっかり支えて陸地を歩ける丈夫な構造になっていました。さらに、骨の内部には鳥と同じように空気が入るすき間（気嚢）がたくさんあり、見た目より体が軽かったことも判明しています。そのため、彼らは水の中ではなく、陸地を力強く歩いて暮らしていました。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">Q2. 首はどこまで動かせたの？</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">Q2. 首はどこまで動かせたの？</h3>
 <p class="article-paragraph">
   <strong>A. 実は「真上」にはあまり伸びず、斜め上や左右に大きく動かしていました！</strong><br>
   かつては首を垂直（90度）にピンと立てていたと考えられていましたが、首の骨（頸椎）のつなぎ目を細かく調べたところ、骨の構造上、真上に向けることは難しく、斜め45度くらいが限界だったのではないかという説が現在では有力です。
@@ -178,7 +178,7 @@ relatedSpecimens: ["brachiosaurus","diplodocus","apatosaurus"]
   また、首は上下だけでなく、左右にも大きく振ることができました。これにより、一歩も動かずに広い範囲の木の葉をまるで掃除機のように効率よく食べることができたのです。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">Q3. 毎日どれくらいの量の食べ物を食べていたの？</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">Q3. 毎日どれくらいの量の食べ物を食べていたの？</h3>
 <p class="article-paragraph">
   <strong>A. 毎日約200〜400キログラムもの木の葉を食べていました！</strong><br>
   あんなに山のように大きな体を維持するためには、大量のエネルギーが必要です。大人のブラキオサウルスは、毎日アフリカゾウの数倍、人間に換算すると数百人分に相当する大量の葉っぱや枝を食べていました。

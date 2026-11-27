@@ -18,10 +18,10 @@ relatedSpecimens: ["ankylosaurus", "borealopelta", "stegosaurus", "tyrannosaurus
 
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 25px;">
 <div style="flex: 1; min-width: 280px;">
-<h3 style="color: var(--primary-neon); margin-top: 0; margin-bottom: 10px; font-size: 16px;">全身がよろいだらけ！アンキロサウルスの意外な分類と特徴</h3>
+<h3 style="color: #ffffff; margin-top: 0; margin-bottom: 10px; font-size: 16px;">全身がよろいだらけ！アンキロサウルスの意外な分類と特徴</h3>
 <p class="article-paragraph" style="margin-top: 0;">アンキロサウルスの一番の特徴は、なんと言っても頭から背中、しっぽにかけて体を覆っている頑丈な「骨のよろい（皮骨：ひこつ）」です。この骨の板は皮膚の中で発達したもので、まるで中世の騎士のよろいや現代の戦車のように体を守っていました。</p>
 <p class="article-paragraph">アンキロサウルスは、このように体に硬い装甲を持つ<strong style="color: var(--primary-neon);">「曲竜類（きょくりゅうるい）」</strong>または「よろい竜」と呼ばれるグループの代表格です。のんびりとした草食恐竜ですが、肉食恐竜に襲われても簡単に噛みつかれないような究極の進化を遂げた姿なのです。</p>
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">いつの時代にどこで生きていた？アンキロサウルスの基本データ</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">いつの時代にどこで生きていた？アンキロサウルスの基本データ</h3>
 <p class="article-paragraph" style="margin-bottom: 0;">アンキロサウルスが生きていたのは、恐竜時代が終わりを迎える白亜紀の後期（約6800万〜6600万年前）です。現在の北アメリカ大陸に生息しており、最強の肉食恐竜<a href="/dictionary/tyrannosaurus/" style="color: var(--primary-neon); text-decoration: underline;">ティラノサウルス</a>や、3本の角を持つ<a href="/dictionary/triceratops/" style="color: var(--primary-neon); text-decoration: underline;">トリケラトプス</a>と同じ森や草原で暮らしていました。</p>
 </div>
 <div style="width: 220px; flex-shrink: 0; margin: 35px auto 0 auto;">
@@ -37,13 +37,13 @@ relatedSpecimens: ["ankylosaurus", "borealopelta", "stegosaurus", "tyrannosaurus
 <p class="article-paragraph">
   アンキロサウルスはただ守るだけではありません。しっぽの先にある巨大な武器を使って、襲ってきた肉食恐竜を返り討ちにする強さを持っていました。
 </p>
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">重さは数十キロ！固まった骨の塊「テールクラブ」</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">重さは数十キロ！固まった骨の塊「テールクラブ」</h3>
 <p class="article-paragraph" style="margin-top: 0;">
 アンキロサウルスのしっぽの先端には、いくつかの硬い骨が融合してできた巨大な塊がついています。これを科学の言葉で<strong style="color: var(--primary-neon);">「テールクラブ（しっぽのハンマー）」</strong>と呼びます。
 このハンマーの重さは数十キログラム、大きなものではなんと大人の体重と同じくらいの重さがありました。これを強力な尾の筋肉で大きく振り回し、迫り来る敵に叩きつけていたのです。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">狙うは足元！ティラノサウルスの骨を粉砕する破壊力</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">狙うは足元！ティラノサウルスの骨を粉砕する破壊力</h3>
 <p class="article-paragraph">
 最新の物理的な研究やシミュレーションによると、このしっぽのハンマーがヒットしたときの衝撃力は、大型肉食恐竜の骨を簡単に粉砕できるほど強力だったことが分かっています。
 </p>
@@ -64,13 +64,13 @@ relatedSpecimens: ["ankylosaurus", "borealopelta", "stegosaurus", "tyrannosaurus
   アンキロサウルスは「戦車」にたとえられますが、どれくらいの大きさだったのでしょうか。背の高さや全体のボリュームを、身の回りのものと比較してみましょう。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">全長は何メートル？アンキロサウルスのサイズデータ</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">全長は何メートル？アンキロサウルスのサイズデータ</h3>
 <p class="article-paragraph">
   アンキロサウルスの大きさは、<strong>全長が約6〜8メートル、体重は約4.5〜8トン</strong>と推定されています。これは現代の陸上で最も大きなアフリカゾウ（約3〜6トン）と同等か、それ以上に重い体です。
   背中が平べったくて横幅が非常に広く、どっしりとした体型をしていました。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">大型SUVやマイクロバスと比べてみよう！</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">大型SUVやマイクロバスと比べてみよう！</h3>
 <p class="article-paragraph">
   全長約7メートルというのは、街中を走る<strong>「マイクロバス（約7メートル）」とほぼ同じ長さ</strong>です。
   また、車幅はなんと2.5〜3メートル近くあり、これは現代 of 大型トラック以上の幅広さです。背の高さは1.7〜2メートル程度と人間と同じくらいだったため、縦に長いのではなく、「横に広く押しつぶされたような、きわめて頑丈な車体」のようでした。この低重心のおかげで、肉食恐竜に襲われてもひっくり返されにくいという強みがありました。
@@ -82,13 +82,13 @@ relatedSpecimens: ["ankylosaurus", "borealopelta", "stegosaurus", "tyrannosaurus
   アンキロサウルスの「よろい」は、ただの硬い皮ではありません。最新の科学によって、その驚くべき構造が明らかになっています。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">コンクリートよりも頑丈！？よろいの内部構造</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">コンクリートよりも頑丈！？よろいの内部構造</h3>
 <p class="article-paragraph">
   アンキロサウルスの皮骨（ひこつ）の化石を顕微鏡で調べると、骨の繊維が複雑に絡み合った特殊な三次元構造をしていることが分かりました。これは現代の「防弾ガラス」や「特殊コンクリート」に非常に近い構造です。
   ただ硬いだけではなく、衝撃を分散して割れにくくする柔軟性を兼ね備えており、ティラノサウルスの数トンにおよぶ噛む力（咬合力）にも耐えられるレベルの強度を誇っていました。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">実はのんびり屋？低い位置の植物を食べる食事スタイル</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">実はのんびり屋？低い位置の植物を食べる食事スタイル</h3>
 <p class="article-paragraph">
   これほど強力な体を持つアンキロサウルスですが、性格は大人しい草食恐竜でした。口は地面の近くにあり、クチバシの奥には小さな頼りない歯が並んでいただけでした。
   そのため、高い木の上にある葉ではなく、地面近くに生えているシダ植物などをむしり取って食べていました。動きは非常にゆっくりで、時速数キロメートル（大人の歩く速さくらい）でマイペースに歩き回っていたと考えられています。

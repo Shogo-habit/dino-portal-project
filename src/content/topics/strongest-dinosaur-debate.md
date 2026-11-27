@@ -21,7 +21,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
   まず、直感的に理解しやすい「大きさ」のランキングから見ていきましょう。恐竜の大きさを測る指標には「全長（頭から尾の先までの長さ）」と「推定体重（体のボリュームや肉の重さ）」の2つがありますが、巨大恐竜たちの圧倒的なスケール感は、現代の陸上最大の動物であるアフリカゾウ（体重約6トン）をはるかに凌駕しています。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 15px; margin-bottom: 10px; font-size: 18px;">1位：アルゼンチノサウルス（全長約35m / 推定体重約70〜90t）</h3>
+<h3 style="color: #ffffff; margin-top: 15px; margin-bottom: 10px; font-size: 18px;">1位：アルゼンチノサウルス（全長約35m / 推定体重約70〜90t）</h3>
 <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0; margin-bottom: 0;">
@@ -39,7 +39,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
   </div>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 15px; margin-bottom: 10px; font-size: 18px;">2位：パタゴティタン（全長約37m / 推定体重約60〜70t）</h3>
+<h3 style="color: #ffffff; margin-top: 15px; margin-bottom: 10px; font-size: 18px;">2位：パタゴティタン（全長約37m / 推定体重約60〜70t）</h3>
 <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0; margin-bottom: 0;">
@@ -56,7 +56,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
   </div>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 15px; margin-bottom: 10px; font-size: 18px;">3位：スーパーサウルス（全長約39m以上 / 推定体重約35〜40t）</h3>
+<h3 style="color: #ffffff; margin-top: 15px; margin-bottom: 10px; font-size: 18px;">3位：スーパーサウルス（全長約39m以上 / 推定体重約35〜40t）</h3>
 <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0; margin-bottom: 0;">
@@ -83,7 +83,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
   次に、本題である「最強恐竜ランキング」の有力候補たちの能力と武器を詳細に分析していきましょう。最強の座を争う恐竜たちは、それぞれ異なる「戦闘システム」を発達させていました。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 15px; margin-bottom: 10px; font-size: 18px;">アタッカー（肉食恐竜部門）：強靭な顎と鋭い牙</h3>
+<h3 style="color: #ffffff; margin-top: 15px; margin-bottom: 10px; font-size: 18px;">アタッカー（肉食恐竜部門）：強靭な顎と鋭い牙</h3>
 
 <p class="article-paragraph">
   <strong style="color: var(--primary-neon);">【絶対王者】ティラノサウルス・レックス</strong><br>
@@ -103,7 +103,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
   彼らの大きな強みは、肉食恐竜の中でもとりわけ発達し、鋭い爪を備えた「強力な前肢」です。ティラノサウルスの前肢が退化して極めて小さかったのに対し、スピノサウルスの腕は長く強靭で、獲物を引っ掛けて引き裂くフックとして機能しました。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 18px;">ディフェンダー（草食・装甲恐竜部門）：最強の盾と破壊兵器</h3>
+<h3 style="color: #ffffff; margin-top: 20px; margin-bottom: 10px; font-size: 18px;">ディフェンダー（草食・装甲恐竜部門）：最強の盾と破壊兵器</h3>
 
 <p class="article-paragraph">
   <strong style="color: var(--primary-neon);">【最強の盾】<a href="/dictionary/triceratops/">トリケラトプス</a></strong><br>

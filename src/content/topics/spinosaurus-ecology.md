@@ -75,7 +75,7 @@ relatedSpecimens: ["spinosaurus","tyrannosaurus"]
   <img src="/images/topics/spinosaurus-ecology/spinosaurus_evolution3.webp" alt="スピノサウルスの生態復元の歴史的変遷" style="width: 100%; border: 1px solid var(--panel-border); border-radius: 4px; box-shadow: 0 0 10px rgba(0, 242, 255, 0.1); display: block;" />
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">【Phase 1】1912年〜1944年：最初の発見と戦争による悲劇</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">【Phase 1】1912年〜1944年：最初の発見と戦争による悲劇</h3>
 <p class="article-paragraph">
   スピノサウルスの研究史は、劇的な発見と悲劇的な喪失から始まりました。1912年、ドイツの古生物学者エルンスト・シュトローマーがエジプトの白亜紀中期の地層から、異様に長い棘突起（背中の帆の骨）と巨大な顎の化石を発見しました。シュトローマーは1915年にこれを「スピノサウルス・エジプティアクス（エジプトの棘トカゲ）」と命名します。
 </p>
@@ -105,7 +105,7 @@ relatedSpecimens: ["spinosaurus","tyrannosaurus"]
     }
   }
 </style>
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">【Phase 2】1980年代〜2000年代：『ジュラシック・パークIII』と陸の凶暴な王者のイメージ</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">【Phase 2】1980年代〜2000年代：『ジュラシック・パークIII』と陸の凶暴な王者のイメージ</h3>
 <div class="spinosaurus-flex-container">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -149,7 +149,7 @@ relatedSpecimens: ["spinosaurus","tyrannosaurus"]
     }
   }
 </style>
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">【Phase 4】2020年：決定打となった「オオサンショウウオのような尾」の発見</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">【Phase 4】2020年：決定打となった「オオサンショウウオのような尾」の発見</h3>
 <div class="spinosaurus-tail-flex-container">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">

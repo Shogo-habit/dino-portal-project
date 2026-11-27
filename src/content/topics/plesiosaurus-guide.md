@@ -18,11 +18,11 @@ relatedSpecimens: ["plesiosaurus", "elasmosaurus", "futabasaurus", "mosasaurus"]
 
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 25px;">
 <div style="flex: 1; min-width: 280px;">
-<h3 style="color: var(--primary-neon); margin-top: 0; margin-bottom: 10px; font-size: 16px;">首長竜のパイオニア！プレシオサウルスの意外な分類</h3>
+<h3 style="color: #ffffff; margin-top: 0; margin-bottom: 10px; font-size: 16px;">首長竜のパイオニア！プレシオサウルスの意外な分類</h3>
 <p class="article-paragraph" style="margin-top: 0;">プレシオサウルスも、実はモササウルスと同じく「恐竜」ではありません！
 恐竜は陸上で暮らす特定の骨格を持った爬虫類のことを指します。プレシオサウルスの仲間は、海で暮らすために手足が大きなヒレになり、首が長く進化した<strong style="color: var(--primary-neon);">「首長竜（くびながりゅう）」</strong>というグループに分類されます。</p>
 <p class="article-paragraph">首長竜は、恐竜と同じ中生代の海で大繁栄した海生爬虫類です。プレシオサウルスはその中でも最初期に発見され、首長竜全体の名前の由来（プレシオサウルス類）にもなった重要な生き物です。</p>
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">いつの時代にどこで生きていた？プレシオサウルスの基本データ</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">いつの時代にどこで生きていた？プレシオサウルスの基本データ</h3>
 <p class="article-paragraph" style="margin-bottom: 0;">プレシオサウルスが生きていたのは、ジュラ紀的の前期（約2億年前〜1億8000万年前）です。主に現在のイギリスやドイツなどのヨーロッパ周辺の海に生息していました。当時は温暖で浅い海が広がっており、たくさんの魚やアンモナイトが暮らす豊かな環境でした。</p>
 </div>
 <div style="width: 220px; flex-shrink: 0; margin: 35px auto 0 auto;">
@@ -39,13 +39,13 @@ relatedSpecimens: ["plesiosaurus", "elasmosaurus", "futabasaurus", "mosasaurus"]
   多くの海の生き物はしっぽを左右に振って泳ぎますが、プレシオサウルスは全く違うユニークな方法で海の中を泳いでいました。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 0; margin-bottom: 10px; font-size: 16px;">4枚の巨大なヒレをはばたかせる「水中羽ばたき」</h3>
+<h3 style="color: #ffffff; margin-top: 0; margin-bottom: 10px; font-size: 16px;">4枚の巨大なヒレをはばたかせる「水中羽ばたき」</h3>
 <p class="article-paragraph" style="margin-top: 0;">
 プレシオサウルスのしっぽは短く、泳ぐための力はありませんでした。その代わり、前後に2枚ずつある<strong>4枚の大きなヒレ（パドル）</strong>がついていました。
 彼らはこのヒレを上下に大きく動かし、まるでペンギンやウミガメが海の中を「羽ばたいて飛ぶ」ように泳いでいました。この4枚のヒレを交互、または同時に動かすことで、水中で急停止したり、くるりと素早く旋回（ターン）したりする抜群の運動神経を誇っていました。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">小魚の群れに気づかれずに近づく「ステルス首」</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">小魚の群れに気づかれずに近づく「ステルス首」</h3>
 <p class="article-paragraph">
 プレシオサウルスの長い首は、狩りのときに最強の武器となりました。
 海の中で大きな体が動くと、水の振動（波）が伝わって魚たちに逃げられてしまいます。しかし、プレシオサウルスは小さな頭と細い首だけを魚の群れに向けてすーっと伸ばすことができました。
@@ -67,13 +67,13 @@ relatedSpecimens: ["plesiosaurus", "elasmosaurus", "futabasaurus", "mosasaurus"]
   「首長竜」と聞くと超巨大な怪物をイメージするかもしれませんが、プレシオサウルス自体のサイズはどれくらいだったのでしょうか。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">全長は何メートル？プレシオサウルスのサイズ</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">全長は何メートル？プレシオサウルスのサイズ</h3>
 <p class="article-paragraph">
   プレシオサウルスの大きさは、<strong>全長が約3〜5メートル</strong>です。モササウルス（15メートル超）や、後世の巨大な首長竜<a href="/dictionary/elasmosaurus/">エラスモサウルス</a>（10メートル超）に比べると、実はかなり小柄でスマートな体をしていました。
   体重は約200〜500キログラム程度で、現代の大きなイルカや牛と同じくらいの重さです。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">プレジャーボートやイルカと比べてみよう！</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">プレジャーボートやイルカと比べてみよう！</h3>
 <p class="article-paragraph">
   全長3〜5メートルというのは、海に浮かぶ<strong>「小さなプレジャーボート（小型ボート）」と同じくらい</strong>のサイズ感です。
   首が体全体の半分近くを占めていたため、胴体部分自体は人間と同じか少し大きいくらいのコンパクトなサイズでした。海で見かけたら、恐ろしいモンスターというよりは、イルカのように親しみやすいサイズ感だったかもしれませんね。

@@ -36,7 +36,7 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "stegosaurus", "therizinosaur
 </p>
 
 <div class="hud-panel" style="padding: 20px; border: 1px solid var(--panel-border); background: rgba(0, 242, 255, 0.02); margin-bottom: 30px;">
-  <h3 style="color: var(--primary-neon); margin-top: 0; margin-bottom: 12px; font-size: 16px;">📍 DINO恐竜PARK 基本データ</h3>
+  <h3 style="color: #ffffff; margin-top: 0; margin-bottom: 12px; font-size: 16px;">📍 DINO恐竜PARK 基本データ</h3>
   <ul style="margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.8; color: var(--text-main);">
     <li><strong>所在地：</strong>沖縄県名護市中山1024-1（御菓子御殿 名護店敷地内）</li>
     <li><strong>営業時間：</strong>9:00〜18:00（最終入園 17:30）/ 年中無休</li>
@@ -46,7 +46,7 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "stegosaurus", "therizinosaur
   </ul>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 30px; margin-bottom: 10px; font-size: 16px;">ついでと侮るなかれ！思いのほか見ごたえ十分で大満足</h3>
+<h3 style="color: #ffffff; margin-top: 30px; margin-bottom: 10px; font-size: 16px;">ついでと侮るなかれ！思いのほか見ごたえ十分で大満足</h3>
 <p class="article-paragraph">
   正直なところ、「沖縄観光やお菓子屋さんのついでにあるミニ展示くらいかな？」とあまり期待せずに立ち寄ったのですが……<strong>良い意味で予想を裏切られ、思いのほかしっかりとした施設で大満足できました！</strong>
 </p>
@@ -81,7 +81,7 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "stegosaurus", "therizinosaur
   </p>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 30px; margin-bottom: 10px; font-size: 16px;">探検後は恐竜ショップ＆御菓子御殿の紅芋スイーツ天国！</h3>
+<h3 style="color: #ffffff; margin-top: 30px; margin-bottom: 10px; font-size: 16px;">探検後は恐竜ショップ＆御菓子御殿の紅芋スイーツ天国！</h3>
 <p class="article-paragraph">
   コースの終点付近には、子どもたちが飛びつく<strong><a href="/dictionary/stegosaurus/">ステゴサウルス</a>の巨大すべり台</strong>や、フィギュア・グッズが所狭しと並ぶ<strong>本格的な恐竜ショップ</strong>が待っています！
 </p>
@@ -111,7 +111,7 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "stegosaurus", "therizinosaur
 </p>
 
 <div class="hud-panel" style="padding: 20px; border: 1px solid var(--panel-border); background: rgba(0, 242, 255, 0.02); margin-bottom: 30px;">
-  <h3 style="color: var(--primary-neon); margin-top: 0; margin-bottom: 12px; font-size: 16px;">📍 ナゴパイナップルパーク 基本データ</h3>
+  <h3 style="color: #ffffff; margin-top: 0; margin-bottom: 12px; font-size: 16px;">📍 ナゴパイナップルパーク 基本データ</h3>
   <ul style="margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.8; color: var(--text-main);">
     <li><strong>所在地：</strong>沖縄県名護市為又1195</li>
     <li><strong>営業時間：</strong>10:00〜18:00（最終入園受付 17:30）/ 年中無休</li>
@@ -122,7 +122,7 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "stegosaurus", "therizinosaur
   </ul>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 30px; margin-bottom: 10px; font-size: 16px;">子連れに優しすぎる！トレイン＆全自動「パイナップル号」で親は極楽</h3>
+<h3 style="color: #ffffff; margin-top: 30px; margin-bottom: 10px; font-size: 16px;">子連れに優しすぎる！トレイン＆全自動「パイナップル号」で親は極楽</h3>
 <p class="article-paragraph">
   DINO恐竜PARKで山道を歩き回った後だからこそ痛感したのが、<strong>ナゴパイナップルパークの圧倒的な子連れホスピタリティ</strong>です！
 </p>
@@ -132,7 +132,7 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "stegosaurus", "therizinosaur
   <li><strong>自動カート「パイナップル号」：</strong>入園してすぐ、パイナップルの形をした全自動カートに乗車。ハンドルを握って運転手気分を味わう子どもを横目に、親は座っているだけで涼しく快適に園内をクルーズ鑑賞できます。</li>
 </ul>
 
-<h3 style="color: var(--primary-neon); margin-top: 30px; margin-bottom: 10px; font-size: 16px;">📸 記念撮影スポットは3箇所！ただしカメラ目線の難易度高め!?</h3>
+<h3 style="color: #ffffff; margin-top: 30px; margin-bottom: 10px; font-size: 16px;">📸 記念撮影スポットは3箇所！ただしカメラ目線の難易度高め!?</h3>
 <p class="article-paragraph">
   園内では、スタッフや自動カメラによる記念写真の撮影スポットが計3箇所用意されています。
 </p>
@@ -146,7 +146,7 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "stegosaurus", "therizinosaur
   ※撮影された写真は出口付近で購入可能ですが、プリント画質はやや粗め・レトロな仕上がりなので、旅の思い出記念として割り切るのが良さそうです。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 30px; margin-bottom: 10px; font-size: 16px;">ダイナソーアドベンチャーツアーの正直な感想：恐竜要素はおまけと捉えるべし</h3>
+<h3 style="color: #ffffff; margin-top: 30px; margin-bottom: 10px; font-size: 16px;">ダイナソーアドベンチャーツアーの正直な感想：恐竜要素はおまけと捉えるべし</h3>
 <p class="article-paragraph">
   パーク内を進んでいくと、南国の植物が生い茂る中に恐竜たちが待ち受ける<strong>「ダイナソーアドベンチャーツアー」</strong>のエリアが登場します！パイナップルと恐竜が融合したキュートなキャラクター「パイナソー」にも出会えます。
 </p>
@@ -233,7 +233,7 @@ relatedSpecimens: ["tyrannosaurus", "triceratops", "stegosaurus", "therizinosaur
 </p>
 
 <div class="hud-panel" style="padding: 20px; border: 1px solid var(--panel-border); background: rgba(0, 242, 255, 0.02); margin-bottom: 40px;">
-  <h3 style="color: var(--primary-neon); margin-top: 0; margin-bottom: 15px; font-size: 16px;">🚗 名護・恐竜ハシゴ満喫のタイムスケジュール</h3>
+  <h3 style="color: #ffffff; margin-top: 0; margin-bottom: 15px; font-size: 16px;">🚗 名護・恐竜ハシゴ満喫のタイムスケジュール</h3>
   <ul style="margin: 0; padding-left: 20px; font-size: 14px; line-height: 2; color: var(--text-main);">
     <li><strong>9:30〜10:30 【DINO恐竜PARK やんばる亜熱帯の森】</strong><br />
       原生林を歩いて大迫力の恐竜探検！フォトスポットで家族写真を撮影。</li>

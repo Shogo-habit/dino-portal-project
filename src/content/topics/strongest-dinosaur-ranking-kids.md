@@ -58,7 +58,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
   恐竜たちの強さを比べるために、この記事では単純な体の大きさだけでなく、以下の4つのポイントに注目して総合的に評価をしています。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 15px; margin-bottom: 10px; font-size: 18px;">強さを決める4つのポイント</h3>
+<h3 style="color: #ffffff; margin-top: 15px; margin-bottom: 10px; font-size: 18px;">強さを決める4つのポイント</h3>
 <ul class="article-paragraph" style="line-height: 1.8; margin-left: 1em;">
   <li><strong style="color: #ff6b6b;">攻撃力：</strong>獲物をしとめるための最大の武器です。アゴで噛む強さや、鋭いツメの破壊力。</li>
   <li><strong style="color: #51cf66;">防御力：</strong>敵の攻撃から身を守る力です。体が圧倒的に大きいことや、全身を覆う頑丈な「ヨロイ」の皮ふなど。</li>
@@ -66,7 +66,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
   <li><strong style="color: #ff922b;">戦う環境：</strong>陸の上で戦うのが得意なのか、水の中で泳ぎながら戦うのが得意なのかといった環境の適応力。</li>
 </ul>
 
-<h3 style="color: var(--primary-neon); margin-top: 15px; margin-bottom: 10px; font-size: 18px;">この記事のランキングルール</h3>
+<h3 style="color: #ffffff; margin-top: 15px; margin-bottom: 10px; font-size: 18px;">この記事のランキングルール</h3>
 <p class="article-paragraph">
   このランキングは、<strong>「陸上での総合的な戦い」</strong>を中心に評価しています。
   また、古生物学の研究は日々進歩しており、「新しい化石が見つかったら順位が変わるかもしれない」というワクワク感も含め、複数の学説があることを前提として紹介しています。
@@ -78,7 +78,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
   それでは、地球史上最も強かった恐竜ランキングTOP10を発表します！
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第1位：ティラノサウルス（圧倒的な噛む力と知能を持つ絶対王者）</h3>
+<h3 style="color: #ffffff; margin-top: 20px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第1位：ティラノサウルス（圧倒的な噛む力と知能を持つ絶対王者）</h3>
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -114,7 +114,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
   </span>
 </a>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第2位グループ（最強を脅かす巨大ライバルたち）</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第2位グループ（最強を脅かす巨大ライバルたち）</h3>
 <p class="article-paragraph">
   ここからは「同率2位」として、ティラノサウルスに匹敵する実力を持っていた最強候補の3頭を紹介します。生息する場所や戦い方が違っていたため、いずれも頂点を狙える実力者たちです。
 </p>
@@ -194,7 +194,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
   </div>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第5位〜第10位（個性派ぞろいの猛者たち）</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 20px; border-left: 4px solid var(--primary-neon); padding-left: 10px;">第5位〜第10位（個性派ぞろいの猛者たち）</h3>
 
 <p class="article-paragraph">
   ここからは、それぞれ独自のすごい武器や防御能力を持っていた人気の恐竜たちを紹介します。
@@ -372,7 +372,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
   もし、時代や生息地を超えて恐竜たちが戦ったらどうなるでしょうか？子供たちが大好きな夢の「恐竜バトル」を科学的に大予想します！
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 15px; margin-bottom: 10px; font-size: 18px;">対決①：ティラノサウルス vs スピノサウルス</h3>
+<h3 style="color: #ffffff; margin-top: 15px; margin-bottom: 10px; font-size: 18px;">対決①：ティラノサウルス vs スピノサウルス</h3>
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -392,7 +392,7 @@ relatedSpecimens: ["tyrannosaurus","spinosaurus","triceratops","ankylosaurus"]
   </div>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 15px; margin-bottom: 10px; font-size: 18px;">対決②：ティラノサウルス vs トリケラトプス</h3>
+<h3 style="color: #ffffff; margin-top: 15px; margin-bottom: 10px; font-size: 18px;">対決②：ティラノサウルス vs トリケラトプス</h3>
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">

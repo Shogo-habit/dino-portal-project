@@ -110,9 +110,6 @@ const pageSchemas = faqSchema ? [articleSchema, faqSchema] : articleSchema;
 
         {topic.faqs && topic.faqs.length > 0 && (
             <section class="topic-faq-section hud-panel" style="margin-top: 50px; padding: 25px; border: 1px solid rgba(0, 242, 255, 0.3); background: rgba(0, 20, 30, 0.6); border-radius: 6px;">
-                <div style="font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 6px; letter-spacing: 1.5px; font-weight: bold;">
-                    [ Q&A ARCHIVE / よくある疑問・検証FAQ ]
-                </div>
                 <h2 style="font-size: 18px; font-weight: bold; color: #fff; margin-bottom: 20px; border-bottom: 1px solid var(--panel-border); padding-bottom: 10px;">
                     この記事に関するよくある質問
                 </h2>
@@ -141,8 +138,8 @@ const pageSchemas = faqSchema ? [articleSchema, faqSchema] : articleSchema;
         
         {relatedDinos.length > 0 && (
             <section class="related-specimens" style="margin-top: 60px;">
-                <h2 class="related-title" style="border-bottom: 1px solid var(--panel-border); padding-bottom: 10px; margin-bottom: 20px; font-size: 14px; font-family: var(--font-mono); color: var(--primary-neon); font-weight: bold; letter-spacing: 1px;">
-                    [ 関連する恐竜図鑑・実寸サイズ比較 ]
+                <h2 class="related-title" style="border-bottom: 1px solid var(--panel-border); padding-bottom: 10px; margin-bottom: 20px; font-size: 14px; color: var(--primary-neon); font-weight: bold; letter-spacing: 0.5px;">
+                    関連する恐竜図鑑・実寸サイズ比較
                 </h2>
                 <div class="related-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 15px;">
                     {relatedDinos.map(d => (
@@ -154,7 +151,7 @@ const pageSchemas = faqSchema ? [articleSchema, faqSchema] : articleSchema;
                                 <h3 class="related-name" style="font-size: 13px; margin: 8px 0 4px 0; color: var(--text-main); font-weight: bold;">{d.name}</h3>
                                 <div class="related-meta" style="font-size: 9px; color: var(--text-dim);">{d.era} / {d.region}</div>
                                 <span style="font-size: 10px; color: var(--primary-neon); font-family: var(--font-mono); display: block; margin-top: 6px; font-weight: bold;">
-                                    [ 実寸比較・詳細図鑑 &raquo; ]
+                                    実寸比較・詳細図鑑 &raquo;
                                 </span>
                             </div>
                         </a>
@@ -165,8 +162,8 @@ const pageSchemas = faqSchema ? [articleSchema, faqSchema] : articleSchema;
 
         <!-- 全トピックス共通の目玉機能（サイズ比較・クイズ）誘導 -->
         <section class="topic-features-cta hud-panel" style="margin-top: 50px; padding: 22px; border: 1px solid var(--panel-border); background: rgba(0, 242, 255, 0.02); border-radius: 6px;">
-            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 6px; letter-spacing: 1.5px; font-weight: bold;">
-                [ INTERACTIVE LAB / 体験型シミュレータ＆機能 ]
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 6px; letter-spacing: 1px; font-weight: bold;">
+                体験型シミュレータ＆機能
             </div>
             <div style="font-size: 15px; font-weight: bold; color: #fff; margin-bottom: 12px;">
                 Dino-Portalの体験機能で遊んでみよう

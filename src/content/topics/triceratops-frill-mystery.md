@@ -41,19 +41,19 @@ relatedSpecimens: ["triceratops","protoceratops","styracosaurus","torosaurus","c
   長年、ティラノサウルスの攻撃を防ぐ最強のバリアだと思われていたトリケラトプスのフリル。しかし、古生物学者たちが化石の微細な構造を詳しく調べた結果、物理的な防具として使用するには重大な欠陥が複数存在することが明らかになりました。その主な根拠は以下の3点です。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">① 骨が薄く、親戚たちのフリルには「大きな穴」が開いていた</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">① 骨が薄く、親戚たちのフリルには「大きな穴」が開いていた</h3>
 <p class="article-paragraph">
   トリケラトプスが属する「角竜類（角を持つ恐竜のグループ）」のほぼすべての種において、フリルの骨の真ん中に<strong style="color: var(--primary-neon);">「窓骨（てんそう）」</strong>と呼ばれる巨大な左右一対の穴が開いていました。この穴の部分は骨がなく、薄い皮膚と血管だけで覆われていました。もしここに肉食恐竜が噛みついたり、ライバルの角が突き刺されば、簡単に貫通してしまいます。
   トリケラトプス自身は例外的にこの穴が塞がった頑丈なフリルを持っていましたが、それでも骨の厚さはわずか数センチメートルしかありませんでした。ティラノサウルスの数トンに達する圧倒的な咬合力（噛む力）の直撃を受ければ、防ぐどころか一撃で粉砕されてしまうほどの薄さだったのです。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">② 表面に張り巡らされた「無数の血管」という大弱点</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">② 表面に張り巡らされた「無数の血管」という大弱点</h3>
 <p class="article-paragraph">
   トリケラトプスのフリルの化石の表面を顕微鏡などで観察すると、木の枝のように枝分かれした複雑な溝がびっしりと刻まれています。これは、フリル全体に<strong style="color: var(--primary-neon);">無数の太い血管が通っていた痕跡</strong>です。
   もしフリルが戦闘用の盾であったなら、血管が豊富に通っている場所を敵に向けて差し出すのは致命的です。ティラノサウルスの鋭い牙でここを傷つけられれば、激しい痛みとともに致命的な大出血を起こし、あっという間に力尽きて捕食されてしまうでしょう。生物の防具として、これほど不合理な構造はありません。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">③ 闘争による「損傷痕」のパターンの矛盾</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">③ 闘争による「損傷痕」のパターンの矛盾</h3>
 <p class="article-paragraph">
   トリケラトプスの頭部化石には、時折ティラノサウルスの噛み跡や、他のトリケラトプスと突き合いをして傷ついたと考えられる痕跡が見つかります。しかし興味深いことに、致命的な傷の多くは「角の付け根」や「顔の側面」に集中しており、フリル自体がボロボロに破壊された化石はほとんどありません。
   これは、彼らが戦う際にフリルを盾として積極的に相手にぶつけるのではなく、主に向かい合って角と角を噛み合わせるように戦っていたことを示唆しています。フリルは戦闘中に「結果的に首を守る防護壁」になったことはあったかもしれませんが、それが本来の主目的ではなかったと考えられています。
@@ -64,7 +64,7 @@ relatedSpecimens: ["triceratops","protoceratops","styracosaurus","torosaurus","c
   では、盾（防具）として使うには不向きであるにもかかわらず、なぜ彼らは頭全体の半分を占めるほどの巨大なフリルを発達させ続けたのでしょうか。進化の歴史において、無駄なパーツがこれほど巨大化することはありません。最新の古生物学では、フリルは彼らの「日常の暮らし」を支える非常に重要なマルチツールであったと考えられており、主に以下の3つの役割があったと提唱されています。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">説1：自己主張と恋のアピール</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">説1：自己主張と恋のアピール</h3>
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0; margin-bottom: 0;">
@@ -77,7 +77,7 @@ relatedSpecimens: ["triceratops","protoceratops","styracosaurus","torosaurus","c
   </div>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">説2：体温をコントロールする「ラジエーター機能」</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">説2：体温をコントロールする「ラジエーター機能」</h3>
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0; margin-bottom: 0;">
@@ -90,7 +90,7 @@ relatedSpecimens: ["triceratops","protoceratops","styracosaurus","torosaurus","c
   </div>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">説3：硬い植物をすりつぶす「巨大な顎を動かす筋肉の土台」</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">説3：硬い植物をすりつぶす「巨大な顎を動かす筋肉の土台」</h3>
 <p class="article-paragraph">
   トリケラトプスは、非常に頑丈なオウムのようなくちばしと、硬いシダ植物の繊維を噛み切るための強力な歯の列を持っていました。この強靭な顎（あご）の力を生み出すには、大量の太い咀嚼筋（噛むための筋肉）が必要でした。
   その巨大な顎の筋肉を固定し、支えるための<strong style="color: var(--primary-neon);">「アンカー（固定場所・土台）」</strong>としてフリルの裏側や付け根が利用されていたという説です。筋肉の付着面が広ければ広いほど、より強力な噛む力を生み出すことができるため、食事を効率化する進化の結果としてフリルが巨大化したという側面もあります。
@@ -149,7 +149,7 @@ relatedSpecimens: ["triceratops","protoceratops","styracosaurus","torosaurus","c
   </table>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 30px; margin-bottom: 15px; font-size: 16px;">個性豊かな角竜たちの詳細図鑑（アーカイブ）</h3>
+<h3 style="color: #ffffff; margin-top: 30px; margin-bottom: 15px; font-size: 16px;">個性豊かな角竜たちの詳細図鑑（アーカイブ）</h3>
 <div class="dino-archive-grid">
   <a href="/dictionary/triceratops/" class="dino-archive-card">
     <div class="dino-archive-img-wrap">

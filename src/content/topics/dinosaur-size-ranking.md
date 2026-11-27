@@ -20,9 +20,6 @@ relatedSpecimens: ["argentinosaurus", "bruhathkayosaurus", "patagotitan", "dread
 
 <!-- ファーストビュー結論クイックアンサー枠（強調スニペット・AI Overview対策） -->
 <section class="hud-panel answer-summary-box" style="margin: 25px 0 30px 0; padding: 22px; border: 2px solid var(--primary-neon); background: rgba(0, 242, 255, 0.05); border-radius: 6px; box-shadow: 0 0 20px rgba(0, 242, 255, 0.15);">
-  <div style="font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 6px; letter-spacing: 1.5px; font-weight: bold;">
-    [ QUICK ANSWER / 3秒でわかる結論まとめ ]
-  </div>
   <h2 style="font-size: 19px; font-weight: bold; color: #fff; margin: 0 0 15px 0; line-height: 1.4; border-bottom: 1px dashed rgba(0, 242, 255, 0.3); padding-bottom: 10px;">
     アルゼンチノサウルスより大きい恐竜はいる？【結論まとめ】
   </h2>
@@ -59,9 +56,6 @@ relatedSpecimens: ["argentinosaurus", "bruhathkayosaurus", "patagotitan", "dread
 
 <!-- 実寸サイズ比較シミュレータへの誘導バナー -->
 <div class="hud-panel size-comparison-banner" style="margin: 25px 0 35px 0; padding: 20px; border: 1px solid var(--primary-neon); background: rgba(0, 242, 255, 0.04); border-radius: 6px; box-shadow: 0 0 15px rgba(0, 242, 255, 0.1);">
-  <div style="font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 6px; letter-spacing: 1.5px; font-weight: bold;">
-    [ INTERACTIVE SIMULATOR / 実寸比較 ]
-  </div>
   <div style="font-size: 17px; font-weight: bold; color: #fff; margin-bottom: 8px;">
     📐 人間（170cm）や他の恐竜と実寸で並べてみよう！
   </div>
@@ -90,7 +84,7 @@ relatedSpecimens: ["argentinosaurus", "bruhathkayosaurus", "patagotitan", "dread
   現代の陸上最大の動物であるアフリカゾウは体重約6〜7トンですが、巨大恐竜たちの体重はその何十倍にも達していました。化石から体重を計算するときは、骨の太さや形から生前の筋肉の量を3Dモデリングで計算し、科学的に推測します。生物としての本当のスケールを比べるためには、この体重（重さ）で比較するのが最も信頼性が高いとされています。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 15px; font-size: 18px;">なぜ巨大化できた？竜脚類の不思議な体のひみつ</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 15px; font-size: 18px;">なぜ巨大化できた？竜脚類の不思議な体のひみつ</h3>
 <p class="article-paragraph">
   ランキングの上位を独占する超巨大恐竜たちは、すべて「竜脚類（りゅうきゃくるい）」と呼ばれる長い首と太い脚を持ったグループです。彼らがこれほど大きくなれたのには、主に2つの理由があります。
 </p>
@@ -613,7 +607,7 @@ relatedSpecimens: ["argentinosaurus", "bruhathkayosaurus", "patagotitan", "dread
   </table>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 18px;">1. ブラキオサウルスとアルゼンチノサウルスの違いは？</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 18px;">1. ブラキオサウルスとアルゼンチノサウルスの違いは？</h3>
 <p class="article-paragraph">
   結論から言うと、<strong>生物としての総合的なボリューム（体重・全長）では、アルゼンチノサウルスがブラキオサウルスを圧倒</strong>しています。アルゼンチノサウルス（体重約70〜80トン）は、ブラキオサウルス（体重約30〜50トン）の約1.5倍から2倍近く重く、全長も10メートル以上長いです。
 </p>
@@ -621,7 +615,7 @@ relatedSpecimens: ["argentinosaurus", "bruhathkayosaurus", "patagotitan", "dread
   「でも、映画や絵本ではブラキオサウルスのほうが大きく見える」と感じる人が多い理由は、その<strong>「姿勢（プロポーション）」</strong>にあります。ブラキオサウルスは前脚が後ろ脚より長く、キリンのように首を真上近くまでピンと直立させることができました。そのためビル4階に匹敵する「見上げる高さ（約13メートル）」の迫力があり、印象に強く残りやすいのです。一方のアルゼンチノサウルスは首をやや前斜め〜水平に伸ばす姿勢をとるため、高さよりも「前後の長さと胴体の圧倒的な分厚さ」で勝負するタイプでした。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 18px;">2. スーパーサウルスとアルゼンチノサウルス・ブラキオサウルスの違いは？</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 18px;">2. スーパーサウルスとアルゼンチノサウルス・ブラキオサウルスの違いは？</h3>
 <p class="article-paragraph">
   スーパーサウルス（全長約39〜42メートル）は、「長さ（全長）」においてはアルゼンチノサウルス（約35メートル）をも上回り、ブラキオサウルス（約25メートル）とは15メートル以上の差をつけて世界最長候補に君臨します。
 </p>
@@ -629,7 +623,7 @@ relatedSpecimens: ["argentinosaurus", "bruhathkayosaurus", "patagotitan", "dread
   しかし、スーパーサウルスはディプロドクス科に近い細身のスリムな体型をしており、全長の大部分を細い首とムチのような尾が占めています。そのため体重は35〜40トン前後に留まり、胴体自体の質量や骨の太さではアルゼンチノサウルス（約70〜90トン）の半分以下しかありません。つまり、<strong>スーパーサウルスは「長さ特化型のスプリンター体型」、アルゼンチノサウルスは「長さ・太さ・重さすべてが規格外の超ヘビー級」</strong>と言えます。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 18px;">3. アルゼンチノサウルスより大きい恐竜はいる？幻の超巨竜「ブルハトカヨサウルス」の真相</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 18px;">3. アルゼンチノサウルスより大きい恐竜はいる？幻の超巨竜「ブルハトカヨサウルス」の真相</h3>
 <p class="article-paragraph">
   「アルゼンチノサウルスより大きい恐竜は本当にいないのか？」「100トンを超える超巨大恐竜の噂は本当？」という疑問は、古生物ファンの間で今も最も熱く議論されるテーマの一つです。実は、過去の学術報告や発掘記録において、アルゼンチノサウルスを上回るとされた「超巨竜候補」が存在します。
 </p>
@@ -708,7 +702,7 @@ relatedSpecimens: ["argentinosaurus", "bruhathkayosaurus", "patagotitan", "dread
   </table>
 </div>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 18px;">1. 映画で人気のモササウルスはアルゼンチノサウルスより大きかった？</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 18px;">1. 映画で人気のモササウルスはアルゼンチノサウルスより大きかった？</h3>
 <p class="article-paragraph">
   結論から言うと、<strong>モササウルス（全長約13〜17m、体重約10〜14トン）はアルゼンチノサウルス（全長約35m、体重約70〜90トン）の半分以下の大きさ</strong>でした。
 </p>
@@ -716,7 +710,7 @@ relatedSpecimens: ["argentinosaurus", "bruhathkayosaurus", "patagotitan", "dread
   映画『ジュラシック・ワールド』では全長30メートル以上ある怪獣のように描かれ、観客に鮮烈な印象を与えましたが、実際の化石記録において最大の種（*Mosasaurus hoffmannii*）でも全長は約17メートル前後です。海の肉食捕食者としてはティラノサウルスをも凌駕する途方もない怪物ですが、陸上の超巨大竜脚類と並べると、アルゼンチノサウルスの胴体にも満たないサイズ感になります。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 18px;">2. 中生代の海で一番大きかったのは「巨大魚竜」！</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 18px;">2. 中生代の海で一番大きかったのは「巨大魚竜」！</h3>
 <p class="article-paragraph">
   太古の海の中で、もっとも巨大竜脚類に迫るサイズを誇ったのはモササウルスではなく、三畳紀後期に繁栄した<strong>巨大魚竜「ショニサウルス」や「シャスタサウルス類」</strong>でした。
 </p>
@@ -724,7 +718,7 @@ relatedSpecimens: ["argentinosaurus", "bruhathkayosaurus", "patagotitan", "dread
   ショニサウルスは全長約21メートル、体重約30〜40トンに達し、現代のマッコウクジラに匹敵する巨体で海を回遊していました。さらに近年、イギリスのサマセット州などで発見された未記載の巨大顎骨化石からは、<strong>全長25メートル前後に達する超巨大魚竜</strong>が存在した可能性も指摘されており、古生物学界で大きな注目を集めています。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 18px;">3. 地球史上もっとも重いのは「現代のシロナガスクジラ」</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 18px;">3. 地球史上もっとも重いのは「現代のシロナガスクジラ」</h3>
 <p class="article-paragraph">
   「地球の歴史の中で、恐竜よりも大きい生き物はいないの？」という疑問に対する驚きの真実が、<strong>現代の海を泳ぐ「シロナガスクジラ」</strong>です。
 </p>

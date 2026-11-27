@@ -737,7 +737,7 @@ a:active {
 }
 
 .article-section-title {
-  color: #ffffff; /* 見出し文字はクリアな純白で可読性を最大化 */
+  color: #ffffff; /* 大見出し文字はクリアな純白で可読性を最大化 */
   margin-top: 40px;
   margin-bottom: 15px;
   border-left: 4px solid var(--primary-neon); /* 左のアクセントバーのみ水色 */
@@ -746,6 +746,20 @@ a:active {
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.4;
+}
+
+/* ★ 小見出し（h3, h4）も大見出しと同じ「純白（#ffffff）」に完全統一 ★ */
+.topic-content h3,
+.topic-content h4,
+.article-paragraph h3,
+.article-paragraph h4,
+article h3,
+article h4,
+.hud-panel h3,
+.hud-panel h4 {
+  color: #ffffff !important; /* 小見出しも水色を廃止し、大見出しと純白で統一 */
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 .article-paragraph {
@@ -2673,10 +2687,10 @@ a:active {
 
 /* --- アーカイブ詳細解説 (Markdown) スタイル --- */
 .archival-content h3 {
-  color: var(--primary-neon);
-  font-size: 14.5px;
-  font-family: var(--font-mono);
-  font-weight: bold;
+  color: #ffffff; /* 図鑑詳細の小見出しも純白で統一 */
+  font-size: 15px;
+  font-family: var(--font-sans);
+  font-weight: 700;
   letter-spacing: 0.8px;
   margin-top: 24px;
   margin-bottom: 12px;
@@ -2697,7 +2711,7 @@ a:active {
   margin-bottom: 0;
 }
 .archival-content strong {
-  color: var(--primary-neon);
+  color: #ffb700; /* 琥珀ゴールドで統一 */
   font-weight: bold;
 }
 .archival-content ul {

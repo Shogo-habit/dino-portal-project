@@ -70,7 +70,7 @@ relatedSpecimens: ["fukuiraptor", "fukuisaurus", "fukuititan", "fukuivenator"]
   ちなみに、我が家は事前に「10時入場」の指定予約チケットを購入していたのですが、当日は予定より早い9時半に到着してしまいました。「予約時間まで外で待つことになるかな…」と心配したのですが、平日の空いている時間帯だったためか、待つことなくその場で入場時間を繰り上げて、スムーズに入館できました。こうした臨機応変な対応を現地ですぐに受けられたのも、大混雑しない平日ならではの隠れたメリットです。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">平日の月曜日に来館するメリット</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">平日の月曜日に来館するメリット</h3>
 <ul style="color: var(--text-main); line-height: 1.8; margin-bottom: 25px; padding-left: 20px;">
   <li><strong>日時指定予約が非常に取りやすい：</strong>現在は事前予約制となっていますが、平日は直前でも比較的希望の時間帯を確保しやすくなっています。</li>
   <li><strong>展示エリアを最前列で見られる：</strong>大迫力の恐竜骨格のすぐ近くまで、子どもたちが自分のペースで近づいてじっくりと観察できます。</li>
@@ -83,7 +83,7 @@ relatedSpecimens: ["fukuiraptor", "fukuisaurus", "fukuititan", "fukuivenator"]
   今回の旅行における最大の難関は、<strong>山口県から福井県への自動車による長距離移動</strong>でした。片道の移動距離は約550km、休憩なしでも6時間半以上かかる大移動です。4歳と2歳の子どもたちが車内で限界を迎えないよう、徹底した「疲れケア」を行いました。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">我が家が実践した長距離ドライブ対策</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">我が家が実践した長距離ドライブ対策</h3>
 <p class="article-paragraph" style="margin-top: 5px;">
   まず、最も重要なのは<strong>「ゆとりを持ったスケジュール設計」</strong>です。移動日と博物館見学日を完全に分けるため、見学の前日に山口県を出発し、滋賀県や福井県内で前泊するプランを採用しました。これにより、見学当日は最高の体力状態で朝から博物館に向かうことができました。
 </p>
@@ -124,7 +124,7 @@ relatedSpecimens: ["fukuiraptor", "fukuisaurus", "fukuititan", "fukuivenator"]
 </div>
 
 <div>
-  <h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">ベビーカー移動のポイントと注意点</h3>
+  <h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">ベビーカー移動のポイントと注意点</h3>
   <p class="article-paragraph" style="margin-top: 0;">
     館内には随所にエレベーターが配置されており、ベビーカーを持ち込んでも上下階の移動に困ることはありません。スロープも緩やかに設計されているため、2歳の娘をベビーカーに乗せたまま、4歳の息子と手をつないで安全に見学することができました。
   </p>
@@ -162,7 +162,7 @@ relatedSpecimens: ["fukuiraptor", "fukuisaurus", "fukuititan", "fukuivenator"]
   博物館の当日チケットを持っていれば、当日に限り何度でも再入場が可能です。そのため、午前中の見学が一区切りついた段階で一度外に出て、ザウルスキッチンで昼食をとることにしました。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">ザウルスキッチンの魅力とおすすめ理由</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">ザウルスキッチンの魅力とおすすめ理由</h3>
 <p class="article-paragraph" style="margin-top: 5px;">
   ザウルスキッチンは、博物館の本館から歩いてすぐの公園内に位置しており、館内レストランに比べて非常に開放的な空間です。平日の月曜日ということもあり、待つことなくスムーズにテーブル席に案内されました。
 </p>
@@ -182,7 +182,7 @@ relatedSpecimens: ["fukuiraptor", "fukuisaurus", "fukuititan", "fukuivenator"]
 </p>
 
 <div class="hud-panel" style="padding: 20px; border: 1px solid var(--panel-border); background: rgba(0, 242, 255, 0.02); margin-bottom: 40px;">
-  <h3 style="color: var(--primary-neon); margin-top: 0; margin-bottom: 15px; font-size: 16px; border-bottom: 1px solid var(--panel-border); padding-bottom: 8px;">🦕 子連れ来館時のおすすめ持ち物・チェックリスト</h3>
+  <h3 style="color: #ffffff; margin-top: 0; margin-bottom: 15px; font-size: 16px; border-bottom: 1px solid var(--panel-border); padding-bottom: 8px;">🦕 子連れ来館時のおすすめ持ち物・チェックリスト</h3>
   <table style="width: 100%; border-collapse: collapse; font-size: 13px; color: var(--text-main);">
     <thead>
       <tr style="border-bottom: 1px solid rgba(0, 242, 255, 0.2); text-align: left;">

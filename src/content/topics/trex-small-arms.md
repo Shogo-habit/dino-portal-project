@@ -11,9 +11,6 @@ relatedSpecimens: ["tyrannosaurus","carnotaurus"]
 
 <!-- ファーストビュー結論クイックアンサー枠（強調スニペット・AI Overview・クイズ対策） -->
 <section class="hud-panel answer-summary-box" style="margin: 20px 0 30px 0; padding: 22px; border: 2px solid var(--primary-neon); background: rgba(0, 242, 255, 0.05); border-radius: 6px; box-shadow: 0 0 20px rgba(0, 242, 255, 0.15);">
-  <div style="font-size: 11px; font-family: var(--font-mono); color: var(--primary-neon); margin-bottom: 6px; letter-spacing: 1.5px; font-weight: bold;">
-    [ QUICK ANSWER / 3秒でわかる疑問と答え ]
-  </div>
   <h2 style="font-size: 18px; font-weight: bold; color: #fff; margin: 0 0 14px 0; line-height: 1.4; border-bottom: 1px dashed rgba(0, 242, 255, 0.3); padding-bottom: 10px;">
     Q. ティラノサウルスの前足の指は3本である？本当は何本？
   </h2>
@@ -95,27 +92,27 @@ relatedSpecimens: ["tyrannosaurus","carnotaurus"]
   では、この「小さくも強靭な腕」を、ティラノサウルスは具体的に何に使っていたのでしょうか。古生物学者たちの間では、主に以下の5つの興味深い仮説が提案され、議論が続けられています。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">仮説1：起き上がり補助説</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">仮説1：起き上がり補助説</h3>
 <p class="article-paragraph">
   ティラノサウルスのような超重量級の恐竜が、地面に伏せて寝そべった状態や休息をとった状態から立ち上がるとき、どのようにして起き上がっていたのかは長年の謎でした。この説では、立ち上がる最初の段階で、小さな前肢を地面に突き立てて、後ろ脚が地面を蹴り上げるまでの間に上半身が前方に滑り落ちるのを防ぐために使ったと考えられています。骨の摩耗痕の分析からも、前肢にかかる負荷の方向がこの動作と一致するという指摘があります。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">仮説2：獲物の強固なホールド（抑え込み）説</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">仮説2：獲物の強固なホールド（抑え込み）説</h3>
 <p class="article-paragraph">
   獲物を強大な顎で捕らえた際、獲物が必死に暴れて逃れようとすると、いくら顎が強くても逃げられるリスクや、顎を痛めるリスクがあります。そこで、顎で噛みついた状態で獲物を自らの胸元へと引き寄せ、この短く力強い前肢と2本の爪でがっちりと挟み込んでホールドし、息の根を止めるまでの間の「抑え込み具」として機能させたという説です。腕が短いからこそ、胸元に密着した獲物に対して最大のパワーを発揮できたというバイオメカニクス的合理性に基づいています。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">仮説3：超至近戦における「切り裂き武器」説</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">仮説3：超至近戦における「切り裂き武器」説</h3>
 <p class="article-paragraph">
   2017年に古生物学者スティーブン・スタンリー博士らが発表したアグレッシブな説です。ティラノサウルスが獲物や天敵と極めて近い距離で取っ組み合いになった際、この短い前足は相手にとって「死角」となります。その隙を突いて、約10センチメートルもある鋭い2本の爪を素早く何度も振るい、相手の皮膚や血管を切り裂いて致命傷を与える「接近戦用の隠し武器（近接短刀）」として使われたという主張です。骨関節の構造上、前足は前後左右にかなり素早く動かせたというデータがこの説を後押ししています。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">仮説4：同種間の激しい闘争における「自己防衛」説（噛みちぎられ防止）</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">仮説4：同種間の激しい闘争における「自己防衛」説（噛みちぎられ防止）</h3>
 <p class="article-paragraph">
   カリフォルニア大学のケビン・パディアン博士が2022年に提唱した、非常にユニークで説得力のある進化学的仮説です。ティラノサウルスは群れで行動したり、倒した獲物（死肉）を複数の個体で争うようにむさぼり食ったりしていたと考えられています。このような狂乱の食事シーンや縄張り争いにおいて、もし長い前肢を持っていたら、隣り合う他の個体に「邪魔な腕を誤って（あるいは故意に）噛みちぎられる」という重大な事故が多発したはずです。腕の噛み傷からの感染症は致命傷になります。そのため、闘争時の噛まれる標的（被攻撃面積）を最小限に抑える生存戦略として、あえて前肢を極限まで小さく退化させたという説です。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 25px; margin-bottom: 10px; font-size: 16px;">仮説5：交尾時における「生殖補助（ホールド）」説</h3>
+<h3 style="color: #ffffff; margin-top: 25px; margin-bottom: 10px; font-size: 16px;">仮説5：交尾時における「生殖補助（ホールド）」説</h3>
 <p class="article-paragraph">
   巨体を持つ恐竜同士の交尾は物理的に非常に困難を極めたと想像されます。特に激しい動きの中で、オスがメスの背後から位置を固定し、バランスを崩さずに姿勢を維持することは容易ではありません。この説では、オスが交尾の際にパートナーであるメスの体をしっかりと掴んで固定し、滑り落ちるのを防ぐための「補助グリップ」として前足が使われたと考えられています。この動作では高い俊敏性は必要なく、短い距離で強い力（グリップ力）を発揮する前肢の特性と極めてよく一致します。
 </p>
@@ -125,12 +122,12 @@ relatedSpecimens: ["tyrannosaurus","carnotaurus"]
   「巨体に対して前足が極端に小さい」という進化のトレンドは、実はティラノサウルス特有のものではありません。恐竜の進化史において、系統の異なる複数の肉食恐竜グループが、それぞれ独立して「前足の縮小化」という全く同じ結論（収斂進化）に達しています。ここでは、ティラノサウルスを凌ぐユニークな前足を持つライバルたちを紹介します。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">1. カルノタウルス：肘の関節すらなくした超退化型</h3>
+<h3 style="color: #ffffff; margin-top: 20px; margin-bottom: 10px; font-size: 16px;">1. カルノタウルス：肘の関節すらなくした超退化型</h3>
 <p class="article-paragraph">
   南米に生息していた<a href="/dictionary/abelisaurus/">アベリサウルス</a>類の肉食恐竜<strong>カルノタウルス</strong>は、ティラノサウルスよりもさらに極端に前足が退化していました。その腕はティラノサウルスよりも格段に短く、なんと「肘（ひじ）の関節」がほぼ機能しない棒状の構造をしていました。さらに手の先には、指の関節を持たない4本の短い指の骨が、まるで直接手のひらから突き出ているかのように並んでいました。彼らの前足は完全に用途を失っていたと考えられています。
 </p>
 
-<h3 style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">2. <a href="/dictionary/mononykus/">モノニクス</a>：シロアリの巣を暴く「1本指」のスペシャリスト</h3>
+<h3 style="color: #ffffff; margin-top: 20px; margin-bottom: 10px; font-size: 16px;">2. <a href="/dictionary/mononykus/">モノニクス</a>：シロアリの巣を暴く「1本指」のスペシャリスト</h3>
 <p class="article-paragraph">
   鳥類に極めて近い小型の獣脚類<strong>モノニクス</strong>は、体長1メートルほどの小さな恐竜ですが、その前肢は極めて特異でした。腕自体は非常に短くがっしりとしており、指はなんと「1本」しかありませんでした。その唯一の指の先には、腕の長さに匹敵するほど巨大で頑丈な爪が1つだけ備わっていました。この腕は、現在のミアリクイのように、頑丈なシロアリの巣の泥壁を突き崩して中の虫を食べるために進化した「超特化型のシャベル」だったと考えられています。
 </p>

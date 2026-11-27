@@ -22,7 +22,7 @@ relatedSpecimens: ["triceratops", "tyrannosaurus", "brachiosaurus"]
   まずは、本記事で紹介するおすすめの6冊について、その基本スペックや特徴を一覧にまとめました。お子さまの現在の年齢や好みに合わせて、最適な一冊を絞り込む参考にしてください。
 </p>
 
-<h3 style="color: var(--primary-neon); font-size: 15px; margin-bottom: 12px;">▼ 3〜4歳向けおすすめ図鑑 比較表</h3>
+<h3 style="color: #ffffff; font-size: 15px; margin-bottom: 12px;">▼ 3〜4歳向けおすすめ図鑑 比較表</h3>
 <div class="table-container" style="overflow-x: auto; margin-bottom: 25px;">
   <table style="width: 100%; border-collapse: collapse; border: 1px solid var(--panel-border); font-size: 13px;">
     <thead>
@@ -56,7 +56,7 @@ relatedSpecimens: ["triceratops", "tyrannosaurus", "brachiosaurus"]
   </table>
 </div>
 
-<h3 style="color: var(--primary-neon); font-size: 15px; margin-top: 25px; margin-bottom: 12px;">▼ 5〜6歳向けおすすめ図鑑 比較表</h3>
+<h3 style="color: #ffffff; font-size: 15px; margin-top: 25px; margin-bottom: 12px;">▼ 5〜6歳向けおすすめ図鑑 比較表</h3>
 <div class="table-container" style="overflow-x: auto; margin-bottom: 25px;">
   <table style="width: 100%; border-collapse: collapse; border: 1px solid var(--panel-border); font-size: 13px;">
     <thead>
@@ -108,7 +108,7 @@ relatedSpecimens: ["triceratops", "tyrannosaurus", "brachiosaurus"]
   3〜4歳児は、「五感を使って楽しむ」ことが学びの入り口です。絵本感覚で指先を動かし、繰り返し遊びたくなるような仕掛けや、温かみのあるストーリー性がある図鑑がおすすめです。
 </p>
 
-<h3 id="detail-hakken" style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">① 『はっけんずかん きょうりゅう 新版 』（Gakken）</h3>
+<h3 id="detail-hakken" style="color: #ffffff; margin-top: 20px; margin-bottom: 10px; font-size: 16px;">① 『はっけんずかん きょうりゅう 新版 』（Gakken）</h3>
 <div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
   <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -136,7 +136,7 @@ relatedSpecimens: ["triceratops", "tyrannosaurus", "brachiosaurus"]
   </div>
 </div>
 
-<h3 id="detail-yomikase" style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">② 『よみきかせずかん きょうりゅう』（KADOKAWA）</h3>
+<h3 id="detail-yomikase" style="color: #ffffff; margin-top: 20px; margin-bottom: 10px; font-size: 16px;">② 『よみきかせずかん きょうりゅう』（KADOKAWA）</h3>
 <div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
   <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -164,7 +164,7 @@ relatedSpecimens: ["triceratops", "tyrannosaurus", "brachiosaurus"]
   </div>
 </div>
 
-<h3 id="detail-madoake" style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">③ 『小学館の図鑑NEO まどあけずかん きょうりゅう』（小学館）</h3>
+<h3 id="detail-madoake" style="color: #ffffff; margin-top: 20px; margin-bottom: 10px; font-size: 16px;">③ 『小学館の図鑑NEO まどあけずかん きょうりゅう』（小学館）</h3>
 <div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
   <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -198,7 +198,7 @@ relatedSpecimens: ["triceratops", "tyrannosaurus", "brachiosaurus"]
   5〜6歳になると、文字を拾って読むことへの興味や、知識を深めることへの意欲が飛躍的に高まります。子どもの「自分で読めた！」という達成感を促すものや、大人顔負けの情報量を持つ本格的な図鑑へのステップアップがおすすめです。
 </p>
 
-<h3 id="detail-jibunde" style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">① 『じぶんでよめる きょうりゅうずかん』（成美堂出版）</h3>
+<h3 id="detail-jibunde" style="color: #ffffff; margin-top: 20px; margin-bottom: 10px; font-size: 16px;">① 『じぶんでよめる きょうりゅうずかん』（成美堂出版）</h3>
 <div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
   <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -226,7 +226,7 @@ relatedSpecimens: ["triceratops", "tyrannosaurus", "brachiosaurus"]
   </div>
 </div>
 
-<h3 id="detail-atoz" style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">② 『はじめての恐竜図鑑 恐竜大行進 A to Z』（誠文堂新光社）</h3>
+<h3 id="detail-atoz" style="color: #ffffff; margin-top: 20px; margin-bottom: 10px; font-size: 16px;">② 『はじめての恐竜図鑑 恐竜大行進 A to Z』（誠文堂新光社）</h3>
 <div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
   <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
@@ -254,7 +254,7 @@ relatedSpecimens: ["triceratops", "tyrannosaurus", "brachiosaurus"]
   </div>
 </div>
 
-<h3 id="detail-move" style="color: var(--primary-neon); margin-top: 20px; margin-bottom: 10px; font-size: 16px;">③ 『講談社の動く図鑑MOVE 恐竜 新訂二版』（講談社）</h3>
+<h3 id="detail-move" style="color: #ffffff; margin-top: 20px; margin-bottom: 10px; font-size: 16px;">③ 『講談社の動く図鑑MOVE 恐竜 新訂二版』（講談社）</h3>
 <div class="toy-intro-row" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 30px;">
   <div class="toy-intro-text" style="flex: 1; min-width: 280px;">
     <p class="article-paragraph" style="margin-top: 0;">
