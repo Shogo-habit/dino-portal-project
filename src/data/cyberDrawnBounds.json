@@ -306,10 +306,10 @@
     "topGap": 318
   },
   "car_side": {
-    "drawnHeight": 308,
-    "drawnWidth": 932,
-    "bottomGap": 369,
-    "topGap": 347
+    "drawnHeight": 316,
+    "drawnWidth": 937,
+    "bottomGap": 366,
+    "topGap": 342
   },
   "carcharodontosaurus": {
     "drawnHeight": 326,
@@ -648,10 +648,10 @@
     "topGap": 214
   },
   "elephant_side": {
-    "drawnHeight": 613,
-    "drawnWidth": 868,
-    "bottomGap": 185,
-    "topGap": 226
+    "drawnHeight": 616,
+    "drawnWidth": 871,
+    "bottomGap": 183,
+    "topGap": 225
   },
   "eoraptor": {
     "drawnHeight": 598,
@@ -1332,10 +1332,10 @@
     "topGap": 265
   },
   "mononykus": {
-    "drawnHeight": 539,
+    "drawnHeight": 542,
     "drawnWidth": 912,
-    "bottomGap": 244,
-    "topGap": 241
+    "bottomGap": 243,
+    "topGap": 239
   },
   "montanoceratops": {
     "drawnHeight": 407,
@@ -2386,5 +2386,65 @@
     "drawnWidth": 929,
     "bottomGap": 344,
     "topGap": 351
+  },
+  "agustinia": {
+    "drawnHeight": 382,
+    "drawnWidth": 940,
+    "bottomGap": 321,
+    "topGap": 321
+  },
+  "chuanjiesaurus": {
+    "drawnHeight": 409,
+    "drawnWidth": 928,
+    "bottomGap": 302,
+    "topGap": 313
+  },
+  "epachthosaurus": {
+    "drawnHeight": 349,
+    "drawnWidth": 966,
+    "bottomGap": 336,
+    "topGap": 339
+  },
+  "isisaurus": {
+    "drawnHeight": 618,
+    "drawnWidth": 955,
+    "bottomGap": 206,
+    "topGap": 200
+  },
+  "limaysaurus": {
+    "drawnHeight": 408,
+    "drawnWidth": 944,
+    "bottomGap": 306,
+    "topGap": 310
+  },
+  "lusotitan": {
+    "drawnHeight": 814,
+    "drawnWidth": 918,
+    "bottomGap": 114,
+    "topGap": 96
+  },
+  "mansourasaurus": {
+    "drawnHeight": 269,
+    "drawnWidth": 946,
+    "bottomGap": 378,
+    "topGap": 377
+  },
+  "notocolossus": {
+    "drawnHeight": 274,
+    "drawnWidth": 984,
+    "bottomGap": 375,
+    "topGap": 375
+  },
+  "quaesitosaurus": {
+    "drawnHeight": 354,
+    "drawnWidth": 934,
+    "bottomGap": 336,
+    "topGap": 334
+  },
+  "tapuiasaurus": {
+    "drawnHeight": 264,
+    "drawnWidth": 946,
+    "bottomGap": 380,
+    "topGap": 380
   }
 }

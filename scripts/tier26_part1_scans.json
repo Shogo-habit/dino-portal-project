@@ -1,0 +1,72 @@
+[
+  {
+    "id": "agustinia",
+    "name": "アグスティニア",
+    "realLength": 15,
+    "realHeight": 3.5,
+    "rawContentHeightPx": 382,
+    "contentHeightPx": 219,
+    "bottomGap": 321,
+    "contentWidthPx": 940,
+    "zoom": 1.15,
+    "aspectRatio": "2.46",
+    "rawEffectiveLength": "8.61",
+    "calibratedEffectiveLength": "15.02"
+  },
+  {
+    "id": "quaesitosaurus",
+    "name": "クアエトサウルス",
+    "realLength": 14,
+    "realHeight": 3.2,
+    "rawContentHeightPx": 352,
+    "contentHeightPx": 213,
+    "bottomGap": 337,
+    "contentWidthPx": 934,
+    "zoom": 1.15,
+    "aspectRatio": "2.65",
+    "rawEffectiveLength": "8.49",
+    "calibratedEffectiveLength": "14.03"
+  },
+  {
+    "id": "lusotitan",
+    "name": "ルソティタン",
+    "realLength": 25,
+    "realHeight": 11,
+    "rawContentHeightPx": 813,
+    "contentHeightPx": 403,
+    "bottomGap": 115,
+    "contentWidthPx": 917,
+    "zoom": 0.95,
+    "aspectRatio": "1.13",
+    "rawEffectiveLength": "12.41",
+    "calibratedEffectiveLength": "25.03"
+  },
+  {
+    "id": "chuanjiesaurus",
+    "name": "チュアンジエサウルス",
+    "realLength": 27,
+    "realHeight": 6.5,
+    "rawContentHeightPx": 407,
+    "contentHeightPx": 223,
+    "bottomGap": 303,
+    "contentWidthPx": 927,
+    "zoom": 1.05,
+    "aspectRatio": "2.28",
+    "rawEffectiveLength": "14.80",
+    "calibratedEffectiveLength": "27.02"
+  },
+  {
+    "id": "limaysaurus",
+    "name": "リマイサウルス",
+    "realLength": 15,
+    "realHeight": 3.8,
+    "rawContentHeightPx": 408,
+    "contentHeightPx": 239,
+    "bottomGap": 306,
+    "contentWidthPx": 944,
+    "zoom": 1.15,
+    "aspectRatio": "2.31",
+    "rawEffectiveLength": "8.79",
+    "calibratedEffectiveLength": "15.01"
+  }
+]

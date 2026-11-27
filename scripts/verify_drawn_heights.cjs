@@ -49,12 +49,12 @@ async function getPixelBounds(filePath) {
 async function verify() {
     console.log('🔍 Checking drawn height calibrations for battle & cyber assets...');
 
-    // 1. Scan all battle and real files in CYBER_DIR
-    const files = fs.readdirSync(CYBER_DIR).filter(f => f.endsWith('_battle.webp') || f.endsWith('_real.webp'));
+    // 1. Scan all webp files in CYBER_DIR (skeletons, battle, real)
+    const files = fs.readdirSync(CYBER_DIR).filter(f => f.endsWith('.webp'));
     const bounds = fs.existsSync(BOUNDS_PATH) ? JSON.parse(fs.readFileSync(BOUNDS_PATH, 'utf8')) : {};
     let updatedBounds = false;
 
-    // 2. Read size-comparison.astro and isolate BATTLE_ASSETS block
+    // 2. Read size-comparison.astro and isolate BATTLE_ASSETS and BONE_CALIBRATED_ASSETS blocks
     const astroContent = fs.readFileSync(SIZE_COMP_PATH, 'utf8');
     const battleAssetsMatch = astroContent.match(/const BATTLE_ASSETS:[^=]*=\s*\{([\s\S]*?)\n\s*\};/);
     if (!battleAssetsMatch) {
@@ -63,11 +63,16 @@ async function verify() {
     }
     const battleAssetsBlock = battleAssetsMatch[1];
 
+    const boneAssetsMatch = astroContent.match(/const BONE_CALIBRATED_ASSETS:[^=]*=\s*\{([\s\S]*?)\n\s*\};/);
+    const boneAssetsBlock = boneAssetsMatch ? boneAssetsMatch[1] : '';
+
     let errors = 0;
     let warnings = 0;
 
     for (const file of files) {
         const key = file.replace('.webp', '');
+        const isBattle = key.endsWith('_battle');
+        const isReal = key.endsWith('_real');
         const baseId = key.replace('_battle', '').replace('_real', '');
         const filePath = path.join(CYBER_DIR, file);
 
@@ -79,34 +84,51 @@ async function verify() {
             updatedBounds = true;
         }
 
-        // Check if defined in BATTLE_ASSETS block
-        const regex = new RegExp(`(?:^|\\n)\\s*${baseId}:\\s*\\{([^}]+)\\}`, 'm');
-        const match = battleAssetsBlock.match(regex);
+        if (isBattle || isReal) {
+            // Check if defined in BATTLE_ASSETS block
+            const regex = new RegExp(`(?:^|\\n)\\s*${baseId}:\\s*\\{([^}]+)\\}`, 'm');
+            const match = battleAssetsBlock.match(regex);
 
-        if (match) {
-            const block = match[1];
-            const contentHeightMatch = block.match(/contentHeightPx:\s*(\d+)/);
-            const drawnHeightMatch = block.match(/drawnHeightPx:\s*(\d+)/);
+            if (match) {
+                const block = match[1];
+                const contentHeightMatch = block.match(/contentHeightPx:\s*(\d+)/);
+                const drawnHeightMatch = block.match(/drawnHeightPx:\s*(\d+)/);
 
-            const contentH = contentHeightMatch ? parseInt(contentHeightMatch[1], 10) : null;
-            const drawnH = drawnHeightMatch ? parseInt(drawnHeightMatch[1], 10) : null;
+                const contentH = contentHeightMatch ? parseInt(contentHeightMatch[1], 10) : null;
+                const drawnH = drawnHeightMatch ? parseInt(drawnHeightMatch[1], 10) : null;
 
-            if (!drawnH) {
-                // If contentHeight differs significantly from actual drawn height, missing drawnHeightPx causes clipping!
-                if (contentH && Math.abs(actual.drawnHeight - contentH) / contentH > 0.05) {
-                    console.error(`❌ [MISMATCH] ${baseId}: Missing drawnHeightPx! contentHeightPx is ${contentH}, but actual drawnHeight is ${actual.drawnHeight} (ratio ${(actual.drawnHeight / contentH).toFixed(2)}x). THIS WILL CAUSE STAGE CLIPPING.`);
-                    errors++;
+                if (!drawnH) {
+                    // If contentHeight differs significantly from actual drawn height, missing drawnHeightPx causes clipping!
+                    if (contentH && Math.abs(actual.drawnHeight - contentH) / contentH > 0.05) {
+                        console.error(`❌ [MISMATCH] (Battle) ${baseId}: Missing drawnHeightPx! contentHeightPx is ${contentH}, but actual drawnHeight is ${actual.drawnHeight} (ratio ${(actual.drawnHeight / contentH).toFixed(2)}x). THIS WILL CAUSE STAGE CLIPPING.`);
+                        errors++;
+                    } else {
+                        console.warn(`⚠️ [WARNING] (Battle) ${baseId}: No explicit drawnHeightPx specified. Actual is ${actual.drawnHeight}.`);
+                        warnings++;
+                    }
                 } else {
-                    console.warn(`⚠️ [WARNING] ${baseId}: No explicit drawnHeightPx specified. Actual is ${actual.drawnHeight}.`);
-                    warnings++;
+                    const diff = Math.abs(drawnH - actual.drawnHeight);
+                    if (diff > 5) {
+                        console.warn(`⚠️ [NOTICE] (Battle) ${baseId}: drawnHeightPx (${drawnH}) differs from scanned (${actual.drawnHeight}) by ${diff}px.`);
+                        warnings++;
+                    }
                 }
-            } else {
-                const diff = Math.abs(drawnH - actual.drawnHeight);
-                if (diff > 5) {
-                    console.warn(`⚠️ [NOTICE] ${baseId}: drawnHeightPx (${drawnH}) differs from scanned (${actual.drawnHeight}) by ${diff}px.`);
+            }
+        } else {
+            // Skeleton asset
+            // If defined in BONE_CALIBRATED_ASSETS, check calibrated values
+            const regex = new RegExp(`(?:^|\\n)\\s*${baseId}:\\s*\\{([^}]+)\\}`, 'm');
+            const match = boneAssetsBlock.match(regex);
+            if (match) {
+                const block = match[1];
+                const contentHeightMatch = block.match(/contentHeightPx:\s*(\d+)/);
+                const drawnHeightMatch = block.match(/drawnHeightPx:\s*(\d+)/);
+                const contentH = contentHeightMatch ? parseInt(contentHeightMatch[1], 10) : null;
+                const drawnH = drawnHeightMatch ? parseInt(drawnHeightMatch[1], 10) : null;
+
+                if (drawnH && Math.abs(drawnH - actual.drawnHeight) > 5) {
+                    console.warn(`⚠️ [NOTICE] (Skeleton) ${baseId}: drawnHeightPx (${drawnH}) differs from scanned (${actual.drawnHeight}) by ${Math.abs(drawnH - actual.drawnHeight)}px.`);
                     warnings++;
-                } else {
-                    console.log(`✅ [OK] ${baseId}: calibrated contentH=${contentH}, drawnH=${drawnH} (actual=${actual.drawnHeight})`);
                 }
             }
         }

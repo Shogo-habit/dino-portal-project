@@ -76,9 +76,11 @@ Googleカレンダー（`kosako20200405@gmail.com`）と完全に同期してい
   - 全国の恐竜博物館・化石発掘スポットまとめ記事等の執筆・公開（※ユーザー判断により保留中）
 
 ### 第4週（2026/11/30 〜 2026/12/08）: Tier 26追加（40頭達成） ＆ 特集記事② ＆ 月間総括
-- [ ] **【恐竜追加 第4弾】Tier 26（No.366〜375）10種追加 ＆ 月間40種達成！**（リリース日: 2026/11/30）
-  - Googleカレンダー: [イベントリンク](https://www.google.com/calendar/event?eid=Z3I3bmRuNTZsMTVnMW9paThqdTBxcXJ0Y2cga29zYWtvMjAyMDA0MDVAbQ) (ID: `gr7ndn56l15g1oii8ju0qqrtcg`)
+- [x] **【恐竜追加 第4弾・前半】Tier 26 Part 1（No.366〜370）5種追加（前倒し達成！）**（2026/11/27 完了）
+  - アグスティニア、クアエトサウルス、ルソティタン、チュアンジエサウルス、リマイサウルスの計5頭を本番追加。ヴィンテージ復元図・4ch透過サイバー骨格図・1:1実寸同期・学術解説記事（各約2,000字）完備。サイト内種数表記を370種へ同期（全424ページビルド成功）。
+- [ ] **【恐竜追加 第4弾・後半】Tier 26 Part 2（No.371〜375）5種追加 ＆ 月間40種達成！**（リリース予定日: 2026/11/30）
   - **累計375種達成！**
+  - Googleカレンダー: [イベントリンク](https://www.google.com/calendar/event?eid=Z3I3bmRuNTZsMTVnMW9paThqdTBxcXJ0Y2cga29zYWtvMjAyMDA0MDVAbQ) (ID: `gr7ndn56l15g1oii8ju0qqrtcg`)
 - [ ] **【特集記事公開 2-2】高需要トピック記事②公開**（公開日: 2026/12/04）
   - Googleカレンダー: [イベントリンク](https://www.google.com/calendar/event?eid=dnRjYmtobTg0cGRvYXJwMmRyOGhwZjlwcGMga29zYWtvMjAyMDA0MDVAbQ) (ID: `vtcbkhm84pdoarp2dr8hpf9ppc`)
   - 全国の恐竜博物館・化石発掘スポットまとめ記事等の執筆・公開

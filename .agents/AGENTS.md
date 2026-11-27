@@ -45,11 +45,13 @@
 
 2.  **サイズシミュレータ（リアル対決・骨格実寸）での見切れ防止基準**:
     *   **実体描画高さ (`drawnHeightPx`) の必須設定**:
-        *   骨格図およびリアル対決画像において、姿勢（首上げ・尾立ち等）により実際の立ち姿の高さが基準高さ（`contentHeightPx`）と大きく異なる場合、オートフォーカス計算（`effectiveDinoH = dinoDrawnH * realH / contentH`）が実際の高さを把握できずステージ上端を見切らせる原因となる。
-        *   新規にリアル対決アセット（`*_battle.webp`）を追加する際は、必ず `npm run test:drawn-heights` を実行して実ピクセル描画高さを検証し、`BATTLE_ASSETS` 内に正確な `drawnHeightPx` を定義すること。
-    *   **システム的二重防護（自動フォールバック）**:
-        *   万一 `BATTLE_ASSETS` で `drawnHeightPx` の指定が漏れた場合でも、シミュレータは `src/data/cyberDrawnBounds.json` のピクセル走査結果へ自動フォールバックし、見切れを未然に防止する。
-        *   新規画像追加時は `node scripts/verify_drawn_heights.cjs --update` を実行することで、全アセットの正確な境界座標が `cyberDrawnBounds.json` に同期される。
+        *   骨格図およびリアル対決画像において、姿勢（首上げ・尾立ち・直立ピラー体型等）により実際の立ち姿の高さが基準高さ（`contentHeightPx`）と大きく異なる場合、オートフォーカス計算（`effectiveDinoH = dinoDrawnH * realH / contentH`）が実際の高さを把握できずステージ上端を見切らせる原因となる。
+        *   特に竜脚類など首の直立・挙上姿勢により実体高さが `contentHeightPx` の1.2倍〜2.5倍を超える種（例: イシスサウルス、ブラキオサウルス等）では、`BONE_CALIBRATED_ASSETS` または `BATTLE_ASSETS` 内に正確な `drawnHeightPx` を定義するか、必ず `src/data/cyberDrawnBounds.json` に実ピクセル高さを同期させること。
+        *   新規にアセット（骨格 `[id].webp` または リアル対決 `*_battle.webp`）を追加・再撮影した際は、必ず `npm run test:drawn-heights` を実行して全アセットの実ピクセル描画高さを検証し、境界データを同期すること。
+    *   **システム的二重防護（自動フォールバック & パイプライン自動同期）**:
+        *   `process_cyber_asset.cjs` パイプラインにより、画像生成・変換時に `src/data/cyberDrawnBounds.json` へ実ピクセル境界が自動書き込みされる。
+        *   万一 `BATTLE_ASSETS` や `BONE_CALIBRATED_ASSETS` で個別の `drawnHeightPx` 指定が漏れた場合でも、シミュレータは `src/data/cyberDrawnBounds.json` のピクセル走査結果へ自動フォールバックし、見切れを未然に防止する。
+        *   CIまたはコミット前には `node scripts/verify_drawn_heights.cjs --update` を実行することで、全アセット（骨格・リアル・乗り物等）の正確な境界座標が `cyberDrawnBounds.json` に最新同期される。
 
 ---
 

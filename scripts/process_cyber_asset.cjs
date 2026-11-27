@@ -150,6 +150,24 @@ async function processCyberAsset(inputPath, destPath, options = {}) {
     outputPath: destPath
   };
 
+  // 自動的に cyberDrawnBounds.json を同期・更新（見切れ事故防止）
+  try {
+    const boundsPath = path.join(__dirname, '..', 'src', 'data', 'cyberDrawnBounds.json');
+    if (fs.existsSync(boundsPath)) {
+      const bounds = JSON.parse(fs.readFileSync(boundsPath, 'utf8'));
+      const key = path.basename(destPath, path.extname(destPath));
+      bounds[key] = {
+        drawnHeight: contentHeightPx,
+        drawnWidth: contentWidthPx,
+        bottomGap: bottomGap,
+        topGap: minY
+      };
+      fs.writeFileSync(boundsPath, JSON.stringify(bounds, null, 2), 'utf8');
+    }
+  } catch (err) {
+    console.warn('Warning: Could not update cyberDrawnBounds.json automatically:', err.message);
+  }
+
   return result;
 }
 
