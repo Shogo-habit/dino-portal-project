@@ -251,8 +251,8 @@ const dinos = [
       realLength: 1.0,
       contentHeightPx: 327,
       sourceRes: 1024,
-      dinoLeft: "0%",
-      refRight: "8%",
+      dinoLeft: "20%",
+      refRight: "15%",
       zoom: 1.2
     },
     sections: [
@@ -327,8 +327,8 @@ const dinos = [
       realLength: 0.45,
       contentHeightPx: 384,
       sourceRes: 1024,
-      dinoLeft: "0%",
-      refRight: "8%",
+      dinoLeft: "28%",
+      refRight: "15%",
       zoom: 1.3
     },
     sections: [
