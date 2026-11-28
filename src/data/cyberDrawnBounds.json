@@ -2460,21 +2460,21 @@
     "topGap": 345
   },
   "saurolophus": {
-    "drawnHeight": 388,
-    "drawnWidth": 919,
-    "bottomGap": 309,
-    "topGap": 327
+    "drawnHeight": 392,
+    "drawnWidth": 954,
+    "bottomGap": 298,
+    "topGap": 334
   },
   "heterodontosaurus": {
-    "drawnHeight": 381,
-    "drawnWidth": 949,
-    "bottomGap": 303,
-    "topGap": 340
+    "drawnHeight": 379,
+    "drawnWidth": 935,
+    "bottomGap": 308,
+    "topGap": 337
   },
   "natovenator": {
-    "drawnHeight": 421,
+    "drawnHeight": 379,
     "drawnWidth": 960,
-    "bottomGap": 292,
-    "topGap": 311
+    "bottomGap": 309,
+    "topGap": 336
   }
 }

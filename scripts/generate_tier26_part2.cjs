@@ -175,10 +175,10 @@ const dinos = [
       }
     ],
     cyberMetadata: {
-      bottomGap: 309,
+      bottomGap: 298,
       realHeight: 3.8,
       realLength: 10.0,
-      contentHeightPx: 349,
+      contentHeightPx: 363,
       sourceRes: 1024,
       dinoLeft: "0%",
       refRight: "8%",
@@ -246,10 +246,10 @@ const dinos = [
       }
     ],
     cyberMetadata: {
-      bottomGap: 303,
+      bottomGap: 308,
       realHeight: 0.35,
       realLength: 1.0,
-      contentHeightPx: 332,
+      contentHeightPx: 327,
       sourceRes: 1024,
       dinoLeft: "0%",
       refRight: "8%",
@@ -322,7 +322,7 @@ const dinos = [
       }
     ],
     cyberMetadata: {
-      bottomGap: 292,
+      bottomGap: 309,
       realHeight: 0.18,
       realLength: 0.45,
       contentHeightPx: 384,

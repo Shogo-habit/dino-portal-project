@@ -202,7 +202,21 @@ const JURASSIC_WORLD_FEATURED_IDS = [
     'giganotosaurus',
     'carnotaurus'
 ];
+const JURASSIC_REBIRTH_FEATURED_IDS = [
+    'titanosaurus',
+    'dreadnoughtus',
+    'mosasaurus',
+    'quetzalcoatlus',
+    'spinosaurus',
+    'tyrannosaurus',
+    'anurognathus',
+    'compsognathus',
+    'velociraptor',
+    'dilophosaurus',
+    'ankylosaurus'
+];
 const isJurassicFeatured = JURASSIC_WORLD_FEATURED_IDS.includes(d.id);
+const isJurassicRebirthFeatured = JURASSIC_REBIRTH_FEATURED_IDS.includes(d.id);
 
 const categoryLabel = isPterosaur ? '翼竜' : isMarineReptile ? '海生爬虫類' : isDinosaur ? '恐竜' : '古生物';
 
@@ -1010,7 +1024,38 @@ if (hasComparison && h3List.length > 0) {
                     </aside>
                 )}
 
-                {isJurassicFeatured && (
+                {isJurassicRebirthFeatured && (
+                    <aside class="jurassic-notice-banner hud-panel" aria-label="最新映画検証アーカイブ情報" style="margin-bottom: 20px; padding: 14px 18px; border: 1px solid rgba(0, 242, 255, 0.45); background: rgba(0, 242, 255, 0.05); border-radius: 4px; position: relative;">
+                        <div class="hud-corner top-left" style="border-top-color: #00f2ff; border-left-color: #00f2ff;"></div>
+                        <div class="hud-corner bottom-right" style="border-bottom-color: #00f2ff; border-right-color: #00f2ff;"></div>
+                        <div style="display: flex; gap: 12px; align-items: flex-start;">
+                            <span style="font-size: 20px; line-height: 1.2; flex-shrink: 0;" aria-hidden="true">🎬</span>
+                            <div style="flex: 1; min-width: 0;">
+                                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 5px; flex-wrap: wrap;">
+                                    <span style="font-family: var(--font-mono); font-size: 10px; color: #00f2ff; background: rgba(0, 242, 255, 0.15); border: 1px solid #00f2ff; padding: 1px 6px; border-radius: 2px; font-weight: bold;">
+                                        最新映画解剖
+                                    </span>
+                                    <strong style="font-size: 13px; color: #fff; letter-spacing: 0.5px;">『ジュラシック・ワールド：リバース』登場生物と2026年最新科学</strong>
+                                </div>
+                                <p style="font-size: 12px; color: var(--text-dim); line-height: 1.6; margin: 0 0 8px 0;">
+                                    映画最新作『ジュラシック・ワールド：リバース』で注目の{d.name}ですが、最新の古生物学研究では劇中のサバイバル演出と異なる驚きの生体真実（実寸・骨格・代謝・生態）が解明されています。
+                                </p>
+                                <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+                                    <a href="/topics/jurassic-world-rebirth-science/" style="font-family: var(--font-mono); font-size: 11px; color: #00f2ff; text-decoration: underline; text-underline-offset: 3px; display: inline-flex; align-items: center; gap: 4px; font-weight: bold; transition: opacity 0.2s;">
+                                        <span>【最新特集】映画の描写 vs 2026年最新古生物学の真実を徹底解剖 ➔</span>
+                                    </a>
+                                    {isJurassicFeatured && (
+                                        <a href="/topics/jurassic-world-dinosaurs-vs-reality/" style="font-family: var(--font-mono); font-size: 11px; color: #ff99aa; text-decoration: underline; text-underline-offset: 3px; display: inline-flex; align-items: center; gap: 4px; font-weight: normal; transition: opacity 0.2s;">
+                                            <span>前作の8大検証記事も見る ➔</span>
+                                        </a>
+                                    )}
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                )}
+
+                {isJurassicFeatured && !isJurassicRebirthFeatured && (
                     <aside class="jurassic-notice-banner hud-panel" aria-label="映画検証アーカイブ情報" style="margin-bottom: 20px; padding: 14px 18px; border: 1px solid rgba(255, 0, 85, 0.45); background: rgba(255, 0, 85, 0.05); border-radius: 4px; position: relative;">
                         <div class="hud-corner top-left" style="border-top-color: #ff0055; border-left-color: #ff0055;"></div>
                         <div class="hud-corner bottom-right" style="border-bottom-color: #ff0055; border-right-color: #ff0055;"></div>

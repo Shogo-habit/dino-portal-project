@@ -26,7 +26,7 @@ bioTraits:
     value: "ドロマエオサウルス科の証"
     detail: "遊泳適応を遂げつつも第2趾に持ち上がった鎌状鉤爪を温存し、水辺での足場固定や獲物の確保に寄与"
 cyberMetadata:
-  bottomGap: 292
+  bottomGap: 309
   realHeight: 0.18
   realLength: 0.45
   contentHeightPx: 384

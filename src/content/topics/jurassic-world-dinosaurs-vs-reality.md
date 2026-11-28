@@ -317,5 +317,20 @@ faqs:
   そして現代、科学の進歩によって明らかになった「本物の恐竜」の姿――鳥類のような豊かな色彩羽毛、驚異的な気嚢システム、緻密な知能と社会性、ダイナミックな海洋適応――は、映画のモンスター描写に勝るとも劣らない、生命の驚異とロマンに満ち溢れています。
 </p>
 <p class="article-paragraph">
-  映画の迫力あるサバイバルを心ゆくまで楽しみながら、ぜひDino-Portalの<a href="/dictionary/" style="color: var(--primary-neon); text-decoration: underline;">370頭の実寸恐竜図鑑</a>で「太古の地球をリアルに生きていた本物の姿」と見比べてみてください。あなたの恐竜探求の旅が、さらに何倍も深く、刺激的なものになるはずです！
+  映画の迫力あるサバイバルを心ゆくまで楽しみながら、ぜひDino-Portalの<a href="/dictionary/" style="color: var(--primary-neon); text-decoration: underline;">全375頭の実寸恐竜図鑑</a>で「太古の地球をリアルに生きていた本物の姿」と見比べてみてください。あなたの恐竜探求の旅が、さらに何倍も深く、刺激的なものになるはずです！
 </p>
+
+<!-- 最新作『ジュラシック・ワールド：リバース』検証特集への誘導バナー -->
+<div class="hud-panel" style="margin: 35px 0 15px 0; padding: 22px; border: 1px solid rgba(0, 242, 255, 0.45); background: linear-gradient(135deg, rgba(0, 20, 35, 0.9) 0%, rgba(10, 30, 45, 0.75) 100%); border-radius: 8px;">
+  <div style="font-size: 15px; font-weight: bold; color: #00f2ff; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+    <span>⚡</span> 最新映画特集：『ジュラシック・ワールド：リバース』徹底解剖も公開中！
+  </div>
+  <p style="font-size: 13.5px; color: #d8edf2; line-height: 1.8; margin-bottom: 15px;">
+    映画最新作『ジュラシック・ワールド：リバース』に登場する巨大恐竜たち（ティタノサウルス類、モササウルス、ケツァルコアトルス、スピノサウルス、アキロプス等）の劇中描写と2026年最新古生物学の真実を徹底比較検証した姉妹編記事もぜひご覧ください！
+  </p>
+  <div>
+    <a href="/topics/jurassic-world-rebirth-science/" style="display: inline-block; padding: 10px 22px; background: rgba(0, 242, 255, 0.15); border: 1px solid #00f2ff; color: #00f2ff; text-decoration: none; font-size: 13px; font-weight: bold; border-radius: 4px; transition: all 0.2s ease;">
+      🎬 『ジュラシック・ワールド：リバース』徹底解剖記事を読む
+    </a>
+  </div>
+</div>

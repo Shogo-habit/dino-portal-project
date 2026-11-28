@@ -24,8 +24,8 @@ const dinos = [
   {
     id: 'saurolophus',
     name: 'サウロロフス',
-    mainInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/saurolophus_main_v2_1795843062241.jpg',
-    cyberInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/saurolophus_cyber_v2_1795843056319.jpg',
+    mainInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/saurolophus_main_v3_fixed_1795857811625.jpg',
+    cyberInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/saurolophus_cyber_v3_1795857839925.jpg',
     realLength: 10.0,
     realHeight: 3.8,
     zoom: 1.1
@@ -33,8 +33,8 @@ const dinos = [
   {
     id: 'heterodontosaurus',
     name: 'ヘテロドントサウルス',
-    mainInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/heterodontosaurus_main_v2_1795843124985.jpg',
-    cyberInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/heterodontosaurus_cyber_v2_1795843066805.jpg',
+    mainInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/heterodontosaurus_main_v3_1795857781105.jpg',
+    cyberInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/heterodontosaurus_cyber_v3_1795857777728.jpg',
     realLength: 1.0,
     realHeight: 0.35,
     zoom: 1.2
@@ -42,8 +42,8 @@ const dinos = [
   {
     id: 'natovenator',
     name: 'ナトヴェナトル',
-    mainInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/natovenator_main_v2_1795843083019.jpg',
-    cyberInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/natovenator_cyber_v2_1795843076874.jpg',
+    mainInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/natovenator_main_v3_final_1795857844921.jpg',
+    cyberInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/natovenator_cyber_v3_1795857849267.jpg',
     realLength: 0.45,
     realHeight: 0.18,
     zoom: 1.3
