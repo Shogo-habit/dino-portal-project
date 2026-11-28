@@ -30,7 +30,7 @@ cyberMetadata:
   sourceRes: 1024
   dinoLeft: "0%"
   refRight: "8%"
-  zoom: 0.95
+  zoom: 1.14
 ---
 
 ### 半世紀以上の封印を破った巨星：ルエリン・プライス技師の発見と2016年の記載史

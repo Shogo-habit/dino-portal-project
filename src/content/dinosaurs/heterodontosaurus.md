@@ -23,10 +23,10 @@ bioTraits:
     value: "採食効率の飛躍的向上"
     detail: "顎の外側に筋肉質の頬を備え、口から植物をこぼすことなく左右・上下の複雑な咀嚼運動を実行"
 cyberMetadata:
-  bottomGap: 307
+  bottomGap: 303
   realHeight: 0.35
   realLength: 1
-  contentHeightPx: 330
+  contentHeightPx: 332
   sourceRes: 1024
   dinoLeft: "0%"
   refRight: "8%"

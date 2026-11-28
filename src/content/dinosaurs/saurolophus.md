@@ -23,10 +23,10 @@ bioTraits:
     value: "生前の外観を伝える完全証拠"
     detail: "胴体や尾のウロコ配列や背面の正中線に沿った皮膚ヒダが克明に化石化し、生体復元の最高峰の基準を提供"
 cyberMetadata:
-  bottomGap: 290
+  bottomGap: 309
   realHeight: 3.8
   realLength: 10
-  contentHeightPx: 363
+  contentHeightPx: 349
   sourceRes: 1024
   dinoLeft: "0%"
   refRight: "8%"

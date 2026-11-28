@@ -19,13 +19,13 @@ const dinos = [
     cyberInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/austroposeidon_cyber_1795839170536.jpg',
     realLength: 25.0,
     realHeight: 5.8,
-    zoom: 0.95
+    zoom: 1.14
   },
   {
     id: 'saurolophus',
     name: 'サウロロフス',
-    mainInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/saurolophus_main_1795839178588.jpg',
-    cyberInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/saurolophus_cyber_1795839179356.jpg',
+    mainInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/saurolophus_main_v2_1795843062241.jpg',
+    cyberInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/saurolophus_cyber_v2_1795843056319.jpg',
     realLength: 10.0,
     realHeight: 3.8,
     zoom: 1.1
@@ -33,8 +33,8 @@ const dinos = [
   {
     id: 'heterodontosaurus',
     name: 'ヘテロドントサウルス',
-    mainInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/heterodontosaurus_main_1795839188582.jpg',
-    cyberInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/heterodontosaurus_cyber_1795839724603.jpg',
+    mainInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/heterodontosaurus_main_v2_1795843124985.jpg',
+    cyberInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/heterodontosaurus_cyber_v2_1795843066805.jpg',
     realLength: 1.0,
     realHeight: 0.35,
     zoom: 1.2
@@ -42,8 +42,8 @@ const dinos = [
   {
     id: 'natovenator',
     name: 'ナトヴェナトル',
-    mainInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/natovenator_main_1795839726197.jpg',
-    cyberInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/natovenator_cyber_1795839770316.jpg',
+    mainInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/natovenator_main_v2_1795843083019.jpg',
+    cyberInput: '/Users/kosako/.gemini/antigravity/brain/3096181c-fca8-4879-b223-0d6f6e79ed1e/natovenator_cyber_v2_1795843076874.jpg',
     realLength: 0.45,
     realHeight: 0.18,
     zoom: 1.3
@@ -99,5 +99,5 @@ for (const dino of dinos) {
 }
 
 fs.writeFileSync(path.join(__dirname, 'tier26_part2_scans.json'), JSON.stringify(results, null, 2));
-console.log('\n=== All Tier 26 Part 2 Assets Processed Successfully! ===');
+console.log('\n=== All Corrected Tier 26 Part 2 Assets Processed Successfully! ===');
 console.table(results);
