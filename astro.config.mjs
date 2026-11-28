@@ -11,6 +11,9 @@ export default defineConfig({
     '/dictionary/kamuyasaurus': '/dictionary/kamuysaurus/',
   },
   integrations: [sitemap({
-    filter: (page) => page !== 'https://dino-portal.com/my-collection/' && page !== 'https://dino-portal.com/my-collection',
+    filter: (page) => 
+      page !== 'https://dino-portal.com/my-collection/' && 
+      page !== 'https://dino-portal.com/my-collection' &&
+      !page.includes('/admin/'),
   }), mdx()],
 });

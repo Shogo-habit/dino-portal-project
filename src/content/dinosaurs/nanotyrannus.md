@@ -32,6 +32,15 @@ cyberMetadata:
 
 ### 「小さな暴君」の誕生とクリーブランド頭骨標本：80年にわたる研究の軌跡
 
+<div style="background: linear-gradient(90deg, rgba(0, 242, 255, 0.12) 0%, rgba(14, 22, 38, 0.8) 100%); border: 1px solid #00f2ff; border-radius: 8px; padding: 14px 18px; margin: 20px 0; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+  <div>
+    <span style="font-size: 0.7rem; font-weight: 800; color: #00f2ff; letter-spacing: 0.15em; display: block; margin-bottom: 2px;">SPECIAL TOPIC FEATURE</span>
+    <strong style="color: #ffffff; font-size: 0.95rem;">【特集】「ナノティラヌス論争」と「戦う恐竜化石」の真相を徹底解剖！</strong>
+    <p style="color: #94a3b8; font-size: 0.8rem; margin: 2px 0 0;">2024年〜2026年最新論文・成長曲線データと奇跡のデュエリング・ダイナソーの全貌</p>
+  </div>
+  <a href="/topics/dueling-dinosaurs-nanotyrannus/" style="display: inline-block; padding: 8px 16px; background: rgba(0, 242, 255, 0.2); border: 1px solid #00f2ff; color: #00f2ff; text-decoration: none; border-radius: 4px; font-weight: 700; font-size: 0.85rem; transition: all 0.2s;">特集記事を読む →</a>
+</div>
+
 ナノティラヌス（学名: *Nanotyrannus lancensis*）は、白亜紀後期最末期（マーストリヒチアン期・約6800万年前〜6600万年前）の北アメリカ大陸西部（ララミディア大陸）に生息していた中型の肉食恐竜（獣脚類・ティラノサウルス科）です。「この恐竜は独立した小型の暴君竜なのか、それとも若き日のティラノサウルス・レックス（*Tyrannosaurus rex*）の姿なのか」という、恐竜学史上最も白熱する大論争の中心にある伝説的な存在です。
 
 ホロタイプ標本（CMNH 7541）は1942年、アメリカ・モンタナ州のヘルクリーク層から発掘された長さ約57センチメートルの完全な頭骨であり、1946年にチャールズ・ギルモアによってゴルゴサウルスの新種（*Gorgosaurus lancensis*）として記載されました。しかし1988年、ロバート・バッカーやフィリップ・カリーらがこの頭骨を再調査し、頭蓋骨が癒合して成体に達していると判断して、ラテン語で「小さな暴君」を意味する新属「ナノティラヌス・ランセンシス（*Nanotyrannus lancensis*）」と再命名しました。さらに2001年には、モンタナ州からほぼ完全な全身骨格である通称「ジェーン（Jane: BMRP 2002.4.1）」が発見され、議論は新たな次元へと突入しました。

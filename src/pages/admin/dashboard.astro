@@ -1,0 +1,1105 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getProjectDashboardData } from '../../lib/dashboardData';
+
+const data = getProjectDashboardData();
+const remainingSpecies = data.speciesTarget - data.speciesCount;
+---
+
+<Layout 
+  title="プロジェクト管理HUDダッシュボード | DINO-PORTAL" 
+  description="DINO-PORTAL 内部管理・進捗モニタリングHUD"
+  noindex={true}
+>
+  <!-- ローカル環境判定用スクリプト（本番環境ではアクセス遮断・非表示） -->
+  <div id="local-env-guard" class="hidden">
+    <div class="guard-overlay">
+      <div class="guard-box">
+        <div class="guard-icon">🔒</div>
+        <h2 class="guard-title">LOCAL ENVIRONMENT ONLY</h2>
+        <p class="guard-desc">このページは開発・管理専用のHUDダッシュボードです。<br>ローカル開発環境（localhost / 127.0.0.1）からのみ閲覧可能です。</p>
+        <a href="/" class="guard-btn">トップページへ戻る</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="dashboard-content" class="dashboard-wrapper">
+    <div class="dashboard-container">
+      
+      <!-- ヘッダーバー -->
+      <header class="hud-header">
+        <div class="header-left">
+          <div class="status-indicator">
+            <span class="pulse-dot"></span>
+            <span class="status-label">LOCAL SYSTEM ONLINE</span>
+          </div>
+          <h1 class="hud-title">プロジェクト管理HUD</h1>
+          <p class="hud-subtitle">DINO-PORTAL MISSION COCKPIT & ROADMAP</p>
+        </div>
+        <div class="header-right">
+          <div class="clock-panel">
+            <span class="clock-label">SYSTEM CLOCK</span>
+            <span id="current-clock" class="clock-time">--:--:--</span>
+          </div>
+          <div class="quick-link-box">
+            <a href="/" class="quick-link-btn" target="_blank" rel="noopener">
+              <span>本番サイト確認</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+            <a href="/size-comparison/" class="quick-link-btn" target="_blank" rel="noopener">
+              <span>シミュレータ</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- KPI メインパネル（3グリッド） -->
+      <section class="kpi-grid">
+        <!-- 恐竜標本数 -->
+        <div class="kpi-card accent-cyan">
+          <div class="kpi-header">
+            <span class="kpi-tag">TARGET 375</span>
+            <span class="kpi-icon">🦖</span>
+          </div>
+          <div class="kpi-value-row">
+            <span class="kpi-number">{data.speciesCount}</span>
+            <span class="kpi-unit">/ {data.speciesTarget} 種</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill cyan-fill" style={`width: ${data.speciesCompletionRate}%`}></div>
+          </div>
+          <div class="kpi-footer">
+            <span class="kpi-status">達成率: <strong>{data.speciesCompletionRate}%</strong></span>
+            <span class="kpi-note">{remainingSpecies > 0 ? `残り ${remainingSpecies} 頭（Tier 26 Part 2）` : '11月月間目標100%達成！'}</span>
+          </div>
+        </div>
+
+        <!-- タスク進捗全体 -->
+        <div class="kpi-card accent-gold">
+          <div class="kpi-header">
+            <span class="kpi-tag">DOCS/TASKS</span>
+            <span class="kpi-icon">📋</span>
+          </div>
+          <div class="kpi-value-row">
+            <span class="kpi-number">{data.tasksSummary.completed}</span>
+            <span class="kpi-unit">/ {data.tasksSummary.total} タスク</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill gold-fill" style={`width: ${data.tasksSummary.rate}%`}></div>
+          </div>
+          <div class="kpi-footer">
+            <span class="kpi-status">進捗率: <strong>{data.tasksSummary.rate}%</strong></span>
+            <span class="kpi-note">未完了: {data.tasksSummary.pending} 件</span>
+          </div>
+        </div>
+
+        <!-- トピック記事 ＆ 公開コンテンツ -->
+        <div class="kpi-card accent-green">
+          <div class="kpi-header">
+            <span class="kpi-tag">PUBLISHED TOPICS</span>
+            <span class="kpi-icon">📝</span>
+          </div>
+          <div class="kpi-value-row">
+            <span class="kpi-number">{data.topicsCount}</span>
+            <span class="kpi-unit">記事公開中</span>
+          </div>
+          <div class="kpi-meta-badge-row">
+            <span class="meta-badge">425 ページ静的配信</span>
+            <span class="meta-badge">内部リンク網 正常</span>
+          </div>
+          <div class="kpi-footer">
+            <span class="kpi-status">最新記事: 日本の新種恐竜</span>
+            <span class="kpi-note">SEO・FAQPageスキーマ完備</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- メインコンテンツ領域（2カラム） -->
+      <div class="dashboard-columns">
+        
+        <!-- 左カラム：未完了タスクと直近のアクション -->
+        <div class="col-main">
+          
+          <!-- 直近の最優先アクション（P0アラート） -->
+          <div class="hud-panel alert-panel">
+            <div class="panel-header alert-header">
+              <div class="panel-title-wrap">
+                <span class="alert-badge">P0 PRIORITY</span>
+                <h2 class="panel-title">11月月間目標の達成：Tier 26 Part 2（No.371〜375）</h2>
+              </div>
+              <span class="due-badge">期日: 2026/11/30 (残り2日)</span>
+            </div>
+            <div class="alert-body">
+              <p class="alert-desc">
+                現在の登録標本数は <strong>{data.speciesCount} 種</strong> です。残り <strong>{remainingSpecies} 頭</strong> の追加により、1ヶ月40頭新規追加の目標（累計375頭）を100%完遂します。
+              </p>
+              <div class="action-checklist">
+                <div class="checklist-item">
+                  <span class="chk-icon">1</span>
+                  <div class="chk-content">
+                    <strong>5頭の選定とデータ作成</strong>
+                    <span>未登録の重要種・系統バランスを考慮した学術記事（各2,000字）の執筆</span>
+                  </div>
+                </div>
+                <div class="checklist-item">
+                  <span class="chk-icon">2</span>
+                  <div class="chk-content">
+                    <strong>ヴィンテージ復元図 ＆ 4ch透過骨格側面図</strong>
+                    <span>完全背景透過（Alpha=0）、AIマーク消滅、自動接地ピクセル走査スキャン</span>
+                  </div>
+                </div>
+                <div class="checklist-item">
+                  <span class="chk-icon">3</span>
+                  <div class="chk-content">
+                    <strong>全ページ375種同期 ＆ ビルド検証</strong>
+                    <span>全429ページ以上の静的HTML生成を確認し本番デプロイ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- カテゴリ別タスク管理パネル -->
+          <div class="hud-panel">
+            <div class="panel-header">
+              <h2 class="panel-title">ファイル別タスク進捗状況</h2>
+              <div class="filter-tabs" id="task-filter-tabs">
+                <button class="filter-tab active" data-target="all">すべて</button>
+                <button class="filter-tab" data-target="pending">未完了のみ</button>
+              </div>
+            </div>
+            
+            <div class="task-file-list">
+              {data.fileSummaries.map((file) => (
+                <div class="task-file-card" data-pending={file.pendingTasks}>
+                  <div class="file-card-header">
+                    <div class="file-info">
+                      <span class="file-name">{file.fileName}</span>
+                      <h3 class="file-title">{file.title}</h3>
+                    </div>
+                    <div class="file-progress-pill">
+                      <span class="pill-text">{file.completedTasks} / {file.totalTasks}</span>
+                      <span class="pill-rate">{file.completionRate}%</span>
+                    </div>
+                  </div>
+                  
+                  <div class="file-sections">
+                    {file.sections.map((section) => {
+                      const pendingCount = section.tasks.filter(t => !t.done).length;
+                      return (
+                        <div class="section-group" data-has-pending={pendingCount > 0 ? "true" : "false"}>
+                          <h4 class="section-title">{section.title}</h4>
+                          <ul class="task-list">
+                            {section.tasks.map((task) => (
+                              <li class={`task-item ${task.done ? 'is-done' : 'is-pending'}`}>
+                                <span class="task-status-box">{task.done ? '✓' : '○'}</span>
+                                <span class="task-text">{task.text}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <!-- 右カラム：スケジュール・直近のGit履歴・システム状態 -->
+        <div class="col-side">
+          
+          <!-- Googleカレンダー連動タイムライン -->
+          <div class="hud-panel">
+            <div class="panel-header">
+              <h2 class="panel-title">スケジュール＆マイルストーン</h2>
+              <span class="panel-sub">Googleカレンダー連動</span>
+            </div>
+            <div class="timeline-list">
+              <div class="timeline-card active">
+                <div class="timeline-date">2026/11/30 (月)</div>
+                <div class="timeline-badge p0">第4週リリース</div>
+                <h4 class="timeline-title">Tier 26 Part 2（No.371〜375）公開</h4>
+                <p class="timeline-desc">月間新規40頭追加完遂・累計375頭突破</p>
+              </div>
+
+              <div class="timeline-card">
+                <div class="timeline-date">2026/12/04 (金)</div>
+                <div class="timeline-badge">特集記事②</div>
+                <h4 class="timeline-title">高需要トピック記事の公開</h4>
+                <p class="timeline-desc">『ジュラシック・ワールド：リバース』または国内新種・ナノティラヌス特集</p>
+              </div>
+
+              <div class="timeline-card">
+                <div class="timeline-date">2026/12/08 (火)</div>
+                <div class="timeline-badge">総括点検</div>
+                <h4 class="timeline-title">1ヶ月開発成果の総括・SEO順位点検</h4>
+                <p class="timeline-desc">Search Console CTR検証・表示速度・回遊導線の最終点検</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 最近の更新履歴（Gitコミット） -->
+          <div class="hud-panel">
+            <div class="panel-header">
+              <h2 class="panel-title">最新コミット履歴</h2>
+              <span class="panel-sub">HEAD log</span>
+            </div>
+            <ul class="commit-list">
+              {data.recentCommits.map((c) => (
+                <li class="commit-item">
+                  <span class="commit-hash">{c.hash}</span>
+                  <span class="commit-msg">{c.message}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <!-- プロジェクト規則リマインダー -->
+          <div class="hud-panel rule-panel">
+            <div class="panel-header">
+              <h2 class="panel-title">制作・品質基準（AGENTS.md）</h2>
+            </div>
+            <ul class="rule-list">
+              <li>
+                <strong>骨格側面図</strong>: 4ch透過WebP (Alpha=0) / 1:1正方形 / AIマーク完全消去 / 自動接地スキャン同期
+              </li>
+              <li>
+                <strong>生体イラスト</strong>: ヴィンテージ図鑑風エッチング＋淡彩水彩 (1024x1024)
+              </li>
+              <li>
+                <strong>解説文スタイル</strong>: 見出しは白文字 / 強調は琥珀ゴールド / リンクは水色
+              </li>
+              <li>
+                <strong>表記ルール</strong>: 英語/日本語スラッシュ併記（<code>[ ENGLISH / 日本語 ]</code>）完全禁止
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</Layout>
+
+<script>
+  // 1. ローカル環境ガード（localhost / 127.0.0.1 以外からの閲覧をブロック）
+  const isLocal = window.location.hostname === 'localhost' || 
+                  window.location.hostname === '127.0.0.1' || 
+                  window.location.hostname.endsWith('.local');
+
+  const guardEl = document.getElementById('local-env-guard');
+  const contentEl = document.getElementById('dashboard-content');
+
+  if (!isLocal) {
+    if (guardEl) guardEl.classList.remove('hidden');
+    if (contentEl) contentEl.style.display = 'none';
+  }
+
+  // 2. リアルタイムシステム時計
+  function updateClock() {
+    const clockEl = document.getElementById('current-clock');
+    if (!clockEl) return;
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    clockEl.textContent = `${hours}:${minutes}:${seconds}`;
+  }
+  updateClock();
+  setInterval(updateClock, 1000);
+
+  // 3. タスクフィルター切り替え
+  const filterTabs = document.querySelectorAll('#task-filter-tabs .filter-tab');
+  filterTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      filterTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      const mode = tab.getAttribute('data-target');
+      const items = document.querySelectorAll('.task-item');
+      const sections = document.querySelectorAll('.section-group');
+
+      if (mode === 'pending') {
+        items.forEach(item => {
+          if (item.classList.contains('is-done')) {
+            (item as HTMLElement).style.display = 'none';
+          } else {
+            (item as HTMLElement).style.display = 'flex';
+          }
+        });
+        sections.forEach(sec => {
+          if (sec.getAttribute('data-has-pending') === 'false') {
+            (sec as HTMLElement).style.display = 'none';
+          } else {
+            (sec as HTMLElement).style.display = 'block';
+          }
+        });
+      } else {
+        items.forEach(item => {
+          (item as HTMLElement).style.display = 'flex';
+        });
+        sections.forEach(sec => {
+          (sec as HTMLElement).style.display = 'block';
+        });
+      }
+    });
+  });
+</script>
+
+<style>
+  /* 共通カラー定義 */
+  :root {
+    --dash-bg: #070b12;
+    --dash-surface: #0e1626;
+    --dash-surface-border: #1b283d;
+    --dash-surface-hover: #141f33;
+    --neon-cyan: #00f2ff;
+    --neon-gold: #ffb700;
+    --neon-green: #10b981;
+    --neon-pink: #ec4899;
+    --neon-red: #ef4444;
+    --text-white: #ffffff;
+    --text-muted: #8ea3bf;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  /* ローカル環境外のアクセス遮断オーバーレイ */
+  .guard-overlay {
+    position: fixed;
+    inset: 0;
+    background: #040810;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .guard-box {
+    background: #0a111e;
+    border: 1px solid #e11d48;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(225, 29, 72, 0.2);
+  }
+
+  .guard-icon {
+    font-size: 3rem;
+    margin-bottom: 16px;
+  }
+
+  .guard-title {
+    color: #f43f5e;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: 0.1em;
+  }
+
+  .guard-desc {
+    color: #94a3b8;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    font-size: 0.95rem;
+  }
+
+  .guard-btn {
+    display: inline-block;
+    padding: 10px 24px;
+    background: #1e293b;
+    color: #ffffff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+  }
+  .guard-btn:hover {
+    background: #334155;
+  }
+
+  /* ダッシュボード本体 */
+  .dashboard-wrapper {
+    background: var(--dash-bg);
+    min-height: 100vh;
+    padding: 32px 20px 80px;
+    color: #d1d5db;
+    font-family: 'Inter Variable', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .dashboard-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  /* ヘッダー */
+  .hud-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--dash-surface-border);
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .status-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+
+  .pulse-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--neon-cyan);
+    box-shadow: 0 0 10px var(--neon-cyan);
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+
+  .status-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--neon-cyan);
+    letter-spacing: 0.15em;
+  }
+
+  .hud-title {
+    color: var(--text-white);
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: 0.04em;
+  }
+
+  .hud-subtitle {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    margin: 4px 0 0;
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .clock-panel {
+    background: var(--dash-surface);
+    border: 1px solid var(--dash-surface-border);
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-align: right;
+  }
+
+  .clock-label {
+    display: block;
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+  }
+
+  .clock-time {
+    font-family: monospace;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--neon-cyan);
+  }
+
+  .quick-link-box {
+    display: flex;
+    gap: 10px;
+  }
+
+  .quick-link-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: var(--dash-surface);
+    border: 1px solid var(--dash-surface-border);
+    border-radius: 6px;
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+  }
+
+  .quick-link-btn:hover {
+    border-color: var(--neon-cyan);
+    color: var(--neon-cyan);
+    background: var(--dash-surface-hover);
+  }
+
+  /* KPI カードグリッド */
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+  }
+
+  .kpi-card {
+    background: var(--dash-surface);
+    border: 1px solid var(--dash-surface-border);
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .kpi-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+  }
+
+  .accent-cyan::before { background: var(--neon-cyan); box-shadow: 0 0 10px var(--neon-cyan); }
+  .accent-gold::before { background: var(--neon-gold); box-shadow: 0 0 10px var(--neon-gold); }
+  .accent-green::before { background: var(--neon-green); box-shadow: 0 0 10px var(--neon-green); }
+
+  .kpi-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .kpi-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+  }
+
+  .kpi-icon {
+    font-size: 1.5rem;
+  }
+
+  .kpi-value-row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+
+  .kpi-number {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--text-white);
+    line-height: 1;
+    font-feature-settings: 'tnum';
+  }
+
+  .kpi-unit {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .progress-bar-bg {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .progress-bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.6s ease;
+  }
+
+  .cyan-fill { background: linear-gradient(90deg, #00b4d8, var(--neon-cyan)); }
+  .gold-fill { background: linear-gradient(90deg, #d97706, var(--neon-gold)); }
+
+  .kpi-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+  }
+
+  .kpi-status strong {
+    color: var(--text-white);
+  }
+
+  .kpi-note {
+    color: var(--neon-gold);
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+
+  .kpi-meta-badge-row {
+    display: flex;
+    gap: 8px;
+  }
+
+  .meta-badge {
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--neon-green);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  /* 2カラムレイアウト */
+  .dashboard-columns {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 28px;
+  }
+
+  @media (max-width: 1024px) {
+    .dashboard-columns {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .col-main, .col-side {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  /* HUD パネル共通 */
+  .hud-panel {
+    background: var(--dash-surface);
+    border: 1px solid var(--dash-surface-border);
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 14px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .panel-title {
+    color: var(--text-white);
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .panel-sub {
+    font-size: 0.75rem;
+    color: var(--neon-cyan);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
+  /* P0 アラートパネル */
+  .alert-panel {
+    border-color: rgba(239, 68, 68, 0.5);
+    background: linear-gradient(180deg, rgba(239, 68, 68, 0.08) 0%, var(--dash-surface) 100%);
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.1);
+  }
+
+  .alert-header {
+    border-bottom-color: rgba(239, 68, 68, 0.2);
+  }
+
+  .panel-title-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .alert-badge {
+    background: var(--neon-red);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding: 3px 8px;
+    border-radius: 4px;
+    letter-spacing: 0.1em;
+    animation: blink 2s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+  }
+
+  .due-badge {
+    background: rgba(255, 183, 0, 0.15);
+    color: var(--neon-gold);
+    border: 1px solid rgba(255, 183, 0, 0.3);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  .alert-desc {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .alert-desc strong {
+    color: var(--neon-gold);
+  }
+
+  .action-checklist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+  }
+
+  .checklist-item {
+    display: flex;
+    gap: 12px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .chk-icon {
+    width: 24px;
+    height: 24px;
+    background: rgba(0, 242, 255, 0.15);
+    color: var(--neon-cyan);
+    border: 1px solid var(--neon-cyan);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 800;
+    flex-shrink: 0;
+  }
+
+  .chk-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .chk-content strong {
+    color: var(--text-white);
+    font-size: 0.85rem;
+  }
+
+  .chk-content span {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+
+  /* フィルタータブ */
+  .filter-tabs {
+    display: flex;
+    gap: 4px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 3px;
+    border-radius: 6px;
+  }
+
+  .filter-tab {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .filter-tab.active {
+    background: var(--dash-surface-border);
+    color: var(--text-white);
+    font-weight: 600;
+  }
+
+  /* ファイル別タスクリスト */
+  .task-file-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .task-file-card {
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--dash-surface-border);
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .file-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .file-name {
+    font-family: monospace;
+    font-size: 0.75rem;
+    color: var(--neon-cyan);
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  .file-title {
+    color: var(--text-white);
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .file-progress-pill {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 4px 10px;
+    border-radius: 20px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 0.75rem;
+  }
+
+  .pill-text {
+    color: var(--text-muted);
+  }
+
+  .pill-rate {
+    color: var(--neon-gold);
+    font-weight: 700;
+  }
+
+  .file-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .section-title {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    padding-left: 8px;
+    border-left: 2px solid var(--neon-cyan);
+  }
+
+  .task-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .task-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .task-status-box {
+    width: 18px;
+    height: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .task-item.is-done .task-status-box {
+    background: rgba(16, 185, 129, 0.2);
+    color: var(--neon-green);
+    border: 1px solid var(--neon-green);
+  }
+
+  .task-item.is-done .task-text {
+    color: #64748b;
+    text-decoration: line-through;
+  }
+
+  .task-item.is-pending .task-status-box {
+    background: rgba(255, 183, 0, 0.15);
+    color: var(--neon-gold);
+    border: 1px solid var(--neon-gold);
+  }
+
+  .task-item.is-pending .task-text {
+    color: #e2e8f0;
+  }
+
+  /* タイムライン */
+  .timeline-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .timeline-card {
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--dash-surface-border);
+    border-radius: 8px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+  }
+
+  .timeline-card.active {
+    border-color: rgba(255, 183, 0, 0.5);
+    background: linear-gradient(90deg, rgba(255, 183, 0, 0.05) 0%, rgba(0, 0, 0, 0.25) 100%);
+  }
+
+  .timeline-date {
+    font-size: 0.75rem;
+    font-family: monospace;
+    color: var(--neon-cyan);
+    font-weight: 700;
+  }
+
+  .timeline-badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    font-size: 0.65rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-white);
+  }
+
+  .timeline-badge.p0 {
+    background: rgba(239, 68, 68, 0.2);
+    color: #f87171;
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    font-weight: 700;
+  }
+
+  .timeline-title {
+    color: var(--text-white);
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .timeline-desc {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  /* コミットリスト */
+  .commit-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .commit-item {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    font-size: 0.8rem;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  }
+
+  .commit-hash {
+    font-family: monospace;
+    color: var(--neon-cyan);
+    background: rgba(0, 242, 255, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    flex-shrink: 0;
+  }
+
+  .commit-msg {
+    color: #cbd5e1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* 規則パネル */
+  .rule-panel {
+    background: rgba(14, 22, 38, 0.6);
+  }
+
+  .rule-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    line-height: 1.5;
+  }
+
+  .rule-list li strong {
+    color: var(--text-white);
+  }
+
+  .rule-list code {
+    background: rgba(0, 0, 0, 0.4);
+    color: var(--neon-gold);
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 0.75rem;
+  }
+</style>
