@@ -2446,5 +2446,35 @@
     "drawnWidth": 946,
     "bottomGap": 380,
     "topGap": 380
+  },
+  "ichthyovenator": {
+    "drawnHeight": 391,
+    "drawnWidth": 954,
+    "bottomGap": 307,
+    "topGap": 326
+  },
+  "austroposeidon": {
+    "drawnHeight": 365,
+    "drawnWidth": 981,
+    "bottomGap": 314,
+    "topGap": 345
+  },
+  "saurolophus": {
+    "drawnHeight": 429,
+    "drawnWidth": 954,
+    "bottomGap": 290,
+    "topGap": 305
+  },
+  "heterodontosaurus": {
+    "drawnHeight": 377,
+    "drawnWidth": 942,
+    "bottomGap": 307,
+    "topGap": 340
+  },
+  "natovenator": {
+    "drawnHeight": 433,
+    "drawnWidth": 946,
+    "bottomGap": 283,
+    "topGap": 308
   }
 }

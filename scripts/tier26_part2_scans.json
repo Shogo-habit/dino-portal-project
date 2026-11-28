@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ichthyovenator",
+    "name": "イクチオヴェナトル",
+    "realLength": 8.5,
+    "realHeight": 2.5,
+    "rawContentHeightPx": 391,
+    "contentHeightPx": 281,
+    "bottomGap": 307,
+    "contentWidthPx": 954,
+    "zoom": 1.15,
+    "aspectRatio": "2.44",
+    "rawEffectiveLength": "6.10",
+    "calibratedEffectiveLength": "8.49"
+  },
+  {
+    "id": "austroposeidon",
+    "name": "オーストロポセイドン",
+    "realLength": 25,
+    "realHeight": 5.8,
+    "rawContentHeightPx": 365,
+    "contentHeightPx": 228,
+    "bottomGap": 314,
+    "contentWidthPx": 981,
+    "zoom": 0.95,
+    "aspectRatio": "2.69",
+    "rawEffectiveLength": "15.59",
+    "calibratedEffectiveLength": "24.96"
+  },
+  {
+    "id": "saurolophus",
+    "name": "サウロロフス",
+    "realLength": 10,
+    "realHeight": 3.8,
+    "rawContentHeightPx": 429,
+    "contentHeightPx": 363,
+    "bottomGap": 290,
+    "contentWidthPx": 954,
+    "zoom": 1.1,
+    "aspectRatio": "2.22",
+    "rawEffectiveLength": "8.45",
+    "calibratedEffectiveLength": "9.99"
+  },
+  {
+    "id": "heterodontosaurus",
+    "name": "ヘテロドントサウルス",
+    "realLength": 1,
+    "realHeight": 0.35,
+    "rawContentHeightPx": 377,
+    "contentHeightPx": 330,
+    "bottomGap": 307,
+    "contentWidthPx": 942,
+    "zoom": 1.2,
+    "aspectRatio": "2.50",
+    "rawEffectiveLength": "0.87",
+    "calibratedEffectiveLength": "1.00"
+  },
+  {
+    "id": "natovenator",
+    "name": "ナトヴェナトル",
+    "realLength": 0.45,
+    "realHeight": 0.18,
+    "rawContentHeightPx": 433,
+    "contentHeightPx": 378,
+    "bottomGap": 283,
+    "contentWidthPx": 946,
+    "zoom": 1.3,
+    "aspectRatio": "2.18",
+    "rawEffectiveLength": "0.39",
+    "calibratedEffectiveLength": "0.45"
+  }
+]
